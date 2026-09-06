@@ -56,7 +56,7 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 32
-- **Deleted Pages**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-deployment-environments/azure-deployment-environments.csv`
 
 ## Classification Statistics
@@ -75,10 +75,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 | *(Unclassified)* | 11 | 34.4% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Automate with GitHub Actions (CI/CD)~~ (https://learn.microsoft.com/en-us/azure/deployment-environments/tutorial-deploy-environments-in-cicd-github)
 
 ## Classified Pages
 

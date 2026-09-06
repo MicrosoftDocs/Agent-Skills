@@ -1,14 +1,14 @@
 ---
 name: azure-peering-service
-description: Expert knowledge for Azure Peering Service development including best practices. Use when designing Peering Service prefixes, routing policies, prefix validation rules, or connectivity constraints, and other Azure Peering Service related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute).
+description: Expert knowledge for Azure Peering Service development including limits & quotas. Use when validating prefix size, routing setup, BGP config, RPKI status, or AS number requirements, and other Azure Peering Service related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure ExpressRoute (use azure-expressroute), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-05-17"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Peering Service Skill
 
-This skill provides expert guidance for Azure Peering Service. Covers best practices. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Peering Service. Covers limits & quotas. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,9 +24,9 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L29-L32 | Technical requirements and best practices for configuring Azure Peering Service prefixes, including routing, prefix validation, and connectivity constraints. |
+| Limits & Quotas | L29-L32 | Prefix size, routing, and configuration requirements your IP prefixes must meet to use Azure Peering Service, including validation and compliance constraints. |
 
-### Best Practices
+### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Meet Azure Peering Service prefix technical requirements | https://learn.microsoft.com/en-us/azure/peering-service/peering-service-prefix-requirements |
+| Meet Azure Peering Service prefix requirements | https://learn.microsoft.com/en-us/azure/peering-service/peering-service-prefix-requirements |

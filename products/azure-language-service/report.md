@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 48
-- **Unchanged**: 132
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -74,50 +74,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 95 | 52.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/language-support)
-  - Updated: 2026-04-09T08:00:00.000Z → 2026-08-17T08:00:00.000Z
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/language-support)
-  - Updated: 2026-06-10T08:00:00.000Z → 2026-08-17T08:00:00.000Z
-- [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/use-containers)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-08-01T08:00:00.000Z
-- [List format](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories-list)
-  - Updated: 2026-04-18T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/conversation-pii-overview)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-08-12T08:00:00.000Z
-- [Detect and redact PII in conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-conversation-pii)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-08-17T08:00:00.000Z
-- [Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/language-service/native-document-support/shared-access-signatures)
-  - Updated: 2026-06-02T08:00:00.000Z → 2026-07-24T08:00:00.000Z
-- [Create a managed identity for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/language-service/native-document-support/managed-identities)
-  - Updated: 2026-04-30T08:00:00.000Z → 2026-08-07T08:00:00.000Z
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/language-support)
-  - Updated: 2026-05-12T08:00:00.000Z → 2026-08-16T08:00:00.000Z
-- [Call the API](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/how-to/call-api)
-  - Updated: 2026-04-04T08:00:00.000Z → 2026-08-12T08:00:00.000Z
-- [Use Docker containers](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/how-to/use-containers)
-  - Updated: 2026-05-27T08:00:00.000Z → 2026-07-21T08:00:00.000Z
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/language-support)
-  - Updated: 2026-05-04T08:00:00.000Z → 2026-08-03T08:00:00.000Z
-- [Create projects](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/create-project)
-  - Updated: 2026-06-01T08:00:00.000Z → 2026-08-04T08:00:00.000Z
-- [Data selection and schema design](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/design-schema)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-08-15T08:00:00.000Z
-- [Label data](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/tag-data)
-  - Updated: 2026-04-03T08:00:00.000Z → 2026-07-29T08:00:00.000Z
-- [Train a model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/train-model)
-  - Updated: 2026-04-18T08:00:00.000Z → 2026-08-08T08:00:00.000Z
-- [Model performance (preview)](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/view-model-evaluation)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-08-18T08:00:00.000Z
-- [Deploy a model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/deploy-model)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-07-22T08:00:00.000Z
-- [Extract entities from text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/call-api)
-  - Updated: 2026-05-20T08:00:00.000Z → 2026-07-31T08:00:00.000Z
-- [Back up and recover your models](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/fail-over)
-  - Updated: 2026-04-06T08:00:00.000Z → 2026-08-10T08:00:00.000Z
-- *...and 28 more*
 
 ## Classified Pages
 

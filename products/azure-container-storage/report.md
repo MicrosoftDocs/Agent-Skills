@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 32
+- **Updated Pages**: 0
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-storage/azure-container-storage.csv`
 
@@ -56,11 +56,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | *(Unclassified)* | 19 | 57.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Release notes for Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-release-notes)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-08-20T22:11:00.000Z
 
 ## Classified Pages
 

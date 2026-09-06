@@ -1,9 +1,9 @@
 ---
 name: azure-networking
-description: Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when designing VNets/VWAN, hub-spoke topologies, Azure Firewall/WAF/DDoS, private access, or NVA perf, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when designing VNets/VWAN, hub-spoke, Azure Firewall/WAF, DDoS/NSG policies, or fixing Microsoft.Network issues, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Networking Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L34-L39 | Diagnosing and resolving Azure network resource issues, including monitoring, troubleshooting connectivity/performance, and fixing failed Microsoft.Network provisioning states. |
 | Best Practices | L40-L44 | Guidance on boosting Azure NVA/VM network throughput and latency using Accelerated Connections, including configuration steps and performance optimization best practices. |
-| Decision Making | L45-L62 | Guidance on choosing Azure network designs and services (topology, load balancing, DDoS/WAF/Firewall, hybrid/multicloud, private access, ingress/egress) for specific deployment scenarios. |
+| Decision Making | L45-L62 | Guidance on choosing Azure network architectures and services (load balancing, DDoS, firewall/WAF, hybrid/multicloud, private access, egress/ingress) for specific deployment scenarios. |
 | Architecture & Design Patterns | L63-L75 | Designing secure Azure network topologies (hub-spoke, flat, multi-region, Virtual WAN), planning IP addressing/subnets, and applying common workload-specific networking patterns. |
 | Security | L76-L90 | Designing and enforcing network security in Azure: firewalls, WAF, NSGs/ASGs, secure DNS, DDoS protection, and applying Zero Trust and policy compliance to all network paths. |
 | Configuration | L91-L95 | Configuring and centrally managing virtual networks with Virtual Network Manager, and enforcing/using built-in Azure Policy definitions for networking resources. |

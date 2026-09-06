@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-09-06'
 category_descriptions:
   best-practices: 'Performance and operations guidance for HorizonDB: data prep for
     AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster
@@ -20,35 +20,33 @@ category_descriptions:
   security: 'Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth,
     access control/roles, users/permissions, data-at-rest encryption, deletion protection,
     and admin password resets.'
-  troubleshooting: Diagnosing and fixing HorizonDB extension management errors and
-    resolving TLS connection issues that occur after certificate rotation.
+  troubleshooting: 'Diagnosing and fixing HorizonDB issues: extension management errors,
+    TLS/cert rotation failures, autovacuum tuning, and transaction ID wraparound prevention.'
   deployment: Guides for migrating data by dumping PostgreSQL databases and restoring
     them into HorizonDB, including required tools, commands, and compatibility considerations.
 skill_description: Expert knowledge for Azure Horizondb development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  tuning pgvector, azure_ai SQL functions, LangChain vector stores, Apache AGE graphs,
-  or HorizonDB search indexes, and other Azure Horizondb related development tasks.
-  Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database),
-  Azure Table Storage (use azure-table-storage).
-use_when: Use when tuning pgvector, azure_ai SQL functions, LangChain vector stores,
-  Apache AGE graphs, or HorizonDB search indexes, and other Azure Horizondb related
-  development tasks.
-confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database
-  (use azure-sql-database), Azure Table Storage (use azure-table-storage).
+  using azure_ai SQL/embeddings, pgvector tuning, Apache AGE graphs, hybrid BM25+vector
+  search, or LangChain, and other Azure Horizondb related development tasks. Not for
+  Azure Cosmos DB (use azure-cosmos-db).
+use_when: Use when using azure_ai SQL/embeddings, pgvector tuning, Apache AGE graphs,
+  hybrid BM25+vector search, or LangChain, and other Azure Horizondb related development
+  tasks.
+confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 ---
 # Azure Horizondb Crawl Report
 
 ## Summary
 
-- **Total Pages**: 144
-- **Fetched**: 144
+- **Total Pages**: 146
+- **Fetched**: 146
 - **Fetch Failed**: 0
-- **Classified**: 109
+- **Classified**: 111
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 0
 - **Unchanged**: 144
 - **Deleted Pages**: 0
@@ -59,17 +57,22 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.4% |
-| best-practices | 7 | 4.9% |
-| configuration | 73 | 50.7% |
+| best-practices | 7 | 4.8% |
+| configuration | 73 | 50.0% |
 | decision-making | 2 | 1.4% |
 | deployment | 1 | 0.7% |
 | integrations | 9 | 6.2% |
 | limits-quotas | 2 | 1.4% |
-| security | 11 | 7.6% |
-| troubleshooting | 2 | 1.4% |
-| *(Unclassified)* | 35 | 24.3% |
+| security | 11 | 7.5% |
+| troubleshooting | 4 | 2.7% |
+| *(Unclassified)* | 35 | 24.0% |
 
 ## Changes
+
+### New Pages
+
+- [Monitor and tune autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-autovacuum-monitor-tune)
+- [Prevent and resolve transaction ID wraparound](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-prevent-resolve-wraparound)
 
 ## Classified Pages
 
@@ -78,6 +81,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Possible errors when managing extensions](https://learn.microsoft.com/en-us/azure/horizondb/extensions/errors-extensions) | troubleshooting | 0.85 | Explicitly about possible errors when managing extensions; likely lists specific error messages/codes and their resolutions unique to HorizonDB’s extension system. |
 | [Replication / Sending Servers](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-replication-sending-servers) | configuration | 0.85 | Provides specific default value (max_replication_slots=10) and concrete numeric guidance for HA scenarios (minimum 4 slots, example calculation for 5 read replicas and 12 logical slots → 21). This is detailed, product-specific configuration guidance. |
 | [Troubleshoot TLS connection failures](https://learn.microsoft.com/en-us/azure/horizondb/security/security-tls-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article for TLS issues, likely mapping specific error messages and misconfigurations to solutions in the HorizonDB context. |
+| [Prevent and resolve transaction ID wraparound](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-prevent-resolve-wraparound) | troubleshooting | 0.82 | The page provides incident-handling guidance for transaction ID wraparound in Azure HorizonDB, including how to respond to Azure Advisor warnings and PostgreSQL wraparound messages, and how to recover when the database starts refusing commands. It maps specific symptoms and warnings to causes and resolution steps, which is product-specific troubleshooting knowledge rather than generic conceptual content. |
 | [Add firewall rules](https://learn.microsoft.com/en-us/azure/horizondb/network/how-to-network-cluster-public-access-add-firewall) | configuration | 0.80 | Describes adding firewall rules with specific parameters (IP ranges, Azure services) and HorizonDB portal/CLI commands. |
 | [Connect clients with TLS](https://learn.microsoft.com/en-us/azure/horizondb/security/security-tls-how-to-connect) | security | 0.80 | How-to for configuring TLS connections, likely including specific connection parameters, SSL/TLS settings, and HorizonDB-specific requirements. |
 | [Connect with SCRAM authentication](https://learn.microsoft.com/en-us/azure/horizondb/security/security-connect-scram) | security | 0.80 | Details configuring and connecting via SCRAM in HorizonDB, including client requirements and cluster-side settings specific to the service. |
@@ -93,6 +97,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Update firewall rules](https://learn.microsoft.com/en-us/azure/horizondb/network/how-to-network-cluster-public-access-update-firewall) | configuration | 0.80 | Describes updating firewall rules (name, start/end IP, description) with specific configuration fields and commands unique to HorizonDB. |
 | [Write-Ahead Log / Checkpoints](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-write-ahead-log-checkpoints) | configuration | 0.80 | Provides product-specific behavior for max_wal_size default calculation based on compute product and guidance to adjust when disk size changes. This is detailed configuration guidance unique to HorizonDB. |
 | [Write-Ahead Log / Settings](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-write-ahead-log-settings) | configuration | 0.80 | Describes wal_buffers default calculation based on compute product and advises adjusting when product changes, referencing specific values tables. This is detailed, HorizonDB-specific configuration guidance. |
+| [Monitor and tune autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-autovacuum-monitor-tune) | troubleshooting | 0.78 | The article is focused on diagnosing and correcting autovacuum issues specific to Azure HorizonDB/PostgreSQL. It describes how to detect when autovacuum is falling behind, how to interpret product-specific metrics and behaviors, and how to safely tune autovacuum settings. This is symptom → diagnosis → tuning guidance that goes beyond generic PostgreSQL knowledge and is tailored to Azure HorizonDB operations. |
 | [AI model management](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-model-management) | configuration | 0.75 | Describes provisioning and managing AI models as a premium feature, with HorizonDB-specific configuration options, constraints, and possibly tier requirements. |
 | [Allow extensions](https://learn.microsoft.com/en-us/azure/horizondb/extensions/how-to-allow-extensions) | configuration | 0.75 | How-to page for allowlisting extensions via cluster configuration using portal/CLI/ARM. Likely includes specific configuration parameters, property names, and required values unique to HorizonDB. |
 | [Client Connection Defaults / Locale and Formatting](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-client-connection-defaults-locale-formatting) | configuration | 0.75 | Client connection defaults / locale and formatting parameters page; likely contains tables of parameters with default values and allowed settings, which are configuration-specific. |

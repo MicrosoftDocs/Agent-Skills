@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-09-06'
 category_descriptions:
   integrations: Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty,
     ServiceNow) to programmatically access, query, and route Azure Service Health
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 49
+- **Updated Pages**: 1
+- **Unchanged**: 48
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -59,6 +59,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 57.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Impacted Resources from Azure Health Advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements)
+  - Updated: 2026-06-23T22:12:00.000Z → 2026-09-04T22:12:00.000Z
 
 ## Classified Pages
 
@@ -104,7 +109,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview) | 0.20 | High-level overview of the Azure Status page and its purpose; no numeric limits, configuration tables, error codes, or product-specific configuration details. |
 | [Billing updates overview](https://learn.microsoft.com/en-us/azure/service-health/billing-elevated-access) | 0.20 | Appears to be an overview of how to view and use billing communications in the Azure portal. No indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
 | [How to report an impact](https://learn.microsoft.com/en-us/azure/service-health/report-issue) | 0.20 | Explains the ability to report service or resource-level impact and how it surfaces in the portal; no indication of specific parameters, limits, or error-code-based troubleshooting. |
-| [Impacted Resources from Azure Health Advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements) | 0.20 | Appears to describe where to view impacted resources and communication in Azure Service Health, but no indication of specific limits, configuration parameters, error codes, or decision matrices with quantified criteria. Content is primarily conceptual/UX guidance rather than expert, product-specific technical details. |
+| [Impacted Resources from Azure Health Advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements) | 0.20 | Describes where to view impacted resources for Azure Service Health advisories and available communication, but does not include numeric limits, configuration tables, error-code-based troubleshooting, or other product-specific expert details. |
 | [Impacted Resources from Azure security advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-security) | 0.20 | Describes feature for viewing impacted resources from security advisories and phased rollout; no detailed security configuration, limits, or troubleshooting mappings. |
 | [Impacted Resources from Service issues](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-outage) | 0.20 | Explains where to see impacted resources during service issues; appears procedural/UX-focused without numeric limits, config parameters, or error codes. |
 | [Impacted Resources from planned maintenance events](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-planned-maintenance) | 0.20 | Describes where to view impacted resources for planned maintenance; appears to be UI/experience explanation without expert-only numeric or config details. |

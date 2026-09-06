@@ -1,9 +1,9 @@
 ---
 name: azure-web-pubsub
-description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT or Socket.IO apps, chat routing, Entra ID auth, geo-replication, or autoscale, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT chat, using Socket.IO, configuring geo-replication/custom domains, or Premium autoscale, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Web PubSub Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L53-L58 | Guidance on choosing the right Web PubSub feature set for your scenario and understanding pricing, quotas, and cost drivers in the Azure Web PubSub billing model. |
 | Architecture & Design Patterns | L59-L65 | Architectural patterns for Web PubSub: multi-region resiliency, bridging MQTT with WebSocket/Web PubSub, and understanding Socket.IO support internals for integration design. |
 | Limits & Quotas | L66-L71 | Capacity and performance limits for Web PubSub (connections, messages, scaling) and which Socket.IO server APIs aren’t supported or behave differently. |
-| Security | L72-L103 | Securing Web PubSub: authN/Z for chat, Socket.IO, MQTT; roles/permissions; Entra ID and managed identities; mTLS and WAF; keys/Key Vault; private endpoints, service tags, and network access controls. |
-| Configuration | L104-L120 | Configuring Web PubSub: storage/chat setup, routing and handlers, custom domains, geo-replication, client URLs, metrics/logs, monitoring, local tunnel, MQTT/Socket.IO, and OData filters. |
-| Integrations & Coding Patterns | L121-L153 | Client/server integration patterns for Web PubSub: SDK and REST usage, WebSocket/MQTT, JSON/protobuf subprotocols, events via CloudEvents/Functions, auth, and Socket.IO integration. |
-| Deployment | L154-L160 | Guides for moving Web PubSub across regions, configuring Premium autoscale, and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub. |
+| Security | L72-L100 | Securing Web PubSub: auth/authorization (keys, Entra ID, certs, roles), network controls (firewalls, private endpoints, tags), key rotation, compliance, and secure outbound connectivity. |
+| Configuration | L101-L116 | Configuring Web PubSub: storage/chat setup, routing and handlers, custom domains, geo-replication, client URLs, metrics/logs, monitoring, local tunnel, MQTT/Socket.IO, and OData filters. |
+| Integrations & Coding Patterns | L117-L150 | Client/server integration patterns for Web PubSub: SDK and REST usage, chat rooms and messaging, WebSocket/MQTT, JSON/protobuf subprotocols, auth, CloudEvents, Functions, and Socket.IO integration. |
+| Deployment | L151-L156 | Guides for moving Web PubSub across regions, configuring Premium autoscale, and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -76,14 +76,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure roles and permissions for Azure Web PubSub chat | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-roles-permissions |
 | Authorize Web PubSub access with Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-azure-ad-authorization |
 | Configure wildcard group role permissions in Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-wildcard-group-roles |
-| Authorize Azure Web PubSub requests with Microsoft Entra applications | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-authorize-from-application |
-| Authorize Azure Web PubSub with managed identity | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-authorize-from-managed-identity |
+| Authorize Azure Web PubSub with Entra applications | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-authorize-from-application |
+| Authorize Azure Web PubSub using managed identities | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-authorize-from-managed-identity |
 | Enable client certificate (mTLS) for Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-client-certificate |
 | Configure Azure Web PubSub Application Firewall for client control | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-configure-application-firewall |
-| Create WebPubSubServiceClient in Java using Azure Identity | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-java-and-azure-identity |
-| Create WebPubSubServiceClient in JavaScript using Azure Identity | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-javascript-and-azure-identity |
-| Create WebPubSubServiceClient in .NET using Azure Identity | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-net-and-azure-identity |
-| Create WebPubSubServiceClient in Python using Azure Identity | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-python-and-azure-identity |
 | Disable key-based auth for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-disable-local-auth |
 | Secure Web PubSub with Azure Application Gateway | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-integrate-app-gateway |
 | Audit Azure Web PubSub compliance with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-monitor-azure-policy |
@@ -94,6 +90,7 @@ This skill requires **network access** to fetch documentation content:
 | Access Key Vault privately from Azure Web PubSub via shared endpoints | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-shared-private-endpoints-key-vault |
 | Secure Web PubSub outbound traffic to Private Link Service | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-shared-private-endpoints-private-link-service |
 | Use Azure Web PubSub service tags for network access control | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-service-tags |
+| Authenticate WebPubSubServiceClient using Azure Identity | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-use-azure-identity |
 | Use managed identities with Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-use-managed-identity |
 | Apply built-in Azure Policy definitions to Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/policy-definitions |
 | Build serverless Web PubSub chat with client authentication | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstart-serverless |
@@ -110,7 +107,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom domains for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-custom-domain |
 | Configure Azure Web PubSub event handlers and routing | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-develop-eventhandler |
 | Enable geo-replication for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-enable-geo-replication |
-| Generate client access URLs for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-generate-client-access-url |
 | Reference for Azure Web PubSub monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-monitor-data-reference |
 | Use Azure Web PubSub local tunnel for development | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-web-pubsub-tunnel-tool |
 | CloudEvents extensions for Web PubSub MQTT handlers | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-mqtt-cloud-events |
@@ -126,6 +122,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Web PubSub chat SDKs and REST APIs | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-reference-sdk-and-rest |
 | Connect MQTT and WebSocket clients to Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-connect-mqtt-websocket-client |
 | Configure Azure Web PubSub client events to Event Hubs | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-develop-event-listener |
+| Generate Azure Web PubSub client access URLs | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-generate-client-access-url |
 | Implement upstream servers for Azure Web PubSub events | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-web-pubsub-write-upstream-server |
 | Create WebSocket clients | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-websocket-connect |
 | Use C# client SDK for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-client-sdk-csharp |
@@ -140,7 +137,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Web PubSub JSON WebSocket subprotocol | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol |
 | Implement reliable protobuf WebSocket subprotocol for Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-reliable-webpubsub-subprotocol |
 | Use Azure Web PubSub protobuf WebSocket subprotocol | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol |
-| Call Azure Web PubSub data plane REST APIs | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-data-plane |
+| Use Azure Web PubSub data plane REST APIs | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-data-plane |
 | REST API semantics for MQTT in Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-mqtt |
 | Use .NET server SDK for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-server-sdk-csharp |
 | Use Java server SDK for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-server-sdk-java |
@@ -157,4 +154,3 @@ This skill requires **network access** to fetch documentation content:
 | Move Azure Web PubSub resources across regions | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-move-across-regions |
 | Configure autoscale for Azure Web PubSub Premium | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-scale-autoscale |
 | Deploy Socket.IO Serverless chat with Azure Functions | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-quickstart |
-| Migrate self-hosted Socket.IO apps to Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-migrate-from-self-hosted |

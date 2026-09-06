@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with IR/SSIS, triggers, data flows, SAP/SaaS connectors, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, SSIS IR/SHIR, CI/CD deployments, or SAP/SaaS integrations, and other Azure Data Factory related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L115-L133 | Guidance on cost planning, connector upgrades, integration runtime and compute choices, and migration/modernization of ADF, SSIS, Synapse, and pipelines to Fabric. |
 | Architecture & Design Patterns | L134-L142 | Patterns and architectures for ADF: efficient mapping data flows, metadata‑driven copy, SSIS IR with SQL MI/failover/VNet, Cosmos DB migration, and SAP CDC design. |
 | Limits & Quotas | L143-L150 | Configuring Until/Wait activity limits and timeouts, understanding data flow reservation discounts, and reviewing ADF service quotas and capacity constraints. |
-| Security | L151-L182 | Securing Data Factory with network, identity, and encryption controls: VNets, private endpoints, firewalls, managed identities, Key Vault, CMK, TLS, and secure access to SQL, Purview, and SSIS IR. |
+| Security | L151-L182 | Securing Data Factory: auth, roles, encryption, Key Vault, managed identities, VNets/private endpoints, firewall/Policy configs, and secure access to SQL, Purview, and SSIS IR. |
 | Configuration | L183-L294 | Configuring ADF: integration runtimes, SSIS/SHIR, triggers, monitoring/logging, copy/data flows, formats/connectors, parameters/expressions, and pipeline/control activities. |
 | Integrations & Coding Patterns | L295-L463 | Patterns and how-tos for connecting ADF to many data sources (SAP, SaaS apps, DBs, files), using mapping data flow functions, running SSIS, Databricks/ML/Synapse jobs, and pipeline templates. |
 | Deployment | L464-L477 | CI/CD and deployment for ADF: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, SSIS job migration, and integration runtime install/migration. |
@@ -170,7 +170,7 @@ This skill requires **network access** to fetch documentation content:
 | Secure Azure Data Factory with managed VNets and private endpoints | https://learn.microsoft.com/en-us/azure/data-factory/managed-virtual-network-private-endpoint |
 | Configure modern trusted service firewall bypass in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/modern-trusted-service |
 | Use built-in Azure Policy definitions for Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/policy-reference |
-| Secure Azure Data Factory with network and identity controls | https://learn.microsoft.com/en-us/azure/data-factory/secure-your-azure-data-factory |
+| Implement security controls for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/secure-your-azure-data-factory |
 | Detect and mask PII data with ADF solution template | https://learn.microsoft.com/en-us/azure/data-factory/solution-template-pii-detection-and-masking |
 | Configure Windows authentication for SSIS packages in Azure | https://learn.microsoft.com/en-us/azure/data-factory/ssis-azure-connect-with-windows-auth |
 | Store ADF credentials securely in Azure Key Vault | https://learn.microsoft.com/en-us/azure/data-factory/store-credentials-in-key-vault |

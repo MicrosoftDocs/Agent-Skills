@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-26'
+generated_at: '2026-09-06'
 category_descriptions:
   security: 'Managing Service Connector security: required permissions, Microsoft
     Entra role assignments, and configuring auth methods (managed identity, service
@@ -7,8 +7,8 @@ category_descriptions:
   deployment: Info on where Service Connector is regionally supported per compute
     service and how to create connections using infrastructure-as-code tools.
   troubleshooting: Diagnosing and resolving common Service Connector errors, connection
-    failures (incl. AKS scenarios), error codes, and configuration issues between
-    Azure compute and backing services.
+    failures, and AKS-specific integration issues, including error codes, logs, and
+    step-by-step troubleshooting guidance.
   configuration: Configuring Service Connector connections via IaC/CLI, setting auth
     and environment variables, and specific setup for Azure Cache for Redis and retrieving
     connection configs.
@@ -20,17 +20,17 @@ category_descriptions:
     issues.
 skill_description: Expert knowledge for Azure Service Connector development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when wiring Azure compute to databases, messaging,
-  storage, AI services, or Azure Cache for Redis via Service Connector, and other
-  Azure Service Connector related development tasks. Not for Azure API Management
-  (use azure-api-management), Azure Functions (use azure-functions), Azure Logic Apps
-  (use azure-logic-apps), Azure App Service (use azure-app-service).
-use_when: Use when wiring Azure compute to databases, messaging, storage, AI services,
-  or Azure Cache for Redis via Service Connector, and other Azure Service Connector
-  related development tasks.
+  patterns, and deployment. Use when wiring Azure compute to Redis, databases, storage,
+  messaging, AI services, or third‑party endpoints, and other Azure Service Connector
+  related development tasks. Not for Azure API Management (use azure-api-management),
+  Azure Connector Namespace (use azure-connector-namespace), Azure Logic Apps (use
+  azure-logic-apps), Azure Service Bus (use azure-service-bus).
+use_when: Use when wiring Azure compute to Redis, databases, storage, messaging, AI
+  services, or third‑party endpoints, and other Azure Service Connector related development
+  tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
-  Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure
-  App Service (use azure-app-service).
+  Connector Namespace (use azure-connector-namespace), Azure Logic Apps (use azure-logic-apps),
+  Azure Service Bus (use azure-service-bus).
 ---
 # Azure Service Connector Crawl Report
 
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 60
+- **Updated Pages**: 1
+- **Unchanged**: 59
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -62,6 +62,11 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 20 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/service-connector/faq)
+  - Updated: 2025-07-25T17:09:00.000Z → 2026-08-31T11:40:00.000Z
 
 ## Classified Pages
 
@@ -99,12 +104,12 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Known limitations](https://learn.microsoft.com/en-us/azure/service-connector/known-limitations) | limits-quotas | 0.78 | The page documents concrete product-specific limitations and constraints for Azure Service Connector, including which connection types, features, and scenarios are not supported and how to mitigate them. These are detailed, version-specific behaviors that an LLM is unlikely to know from training and function as de facto limits/constraints for the service, even if not always expressed as numeric quotas. |
 | [Apache Kafka on Confluent Cloud](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-confluent-kafka) | integrations | 0.76 | The page describes how to integrate Apache Kafka on Confluent Cloud with Azure compute services using Service Connector, listing supported clients, authentication methods, and required environment variables. These concrete configuration parameters and integration patterns are product-specific and fit the integrations sub-skill. |
 | [Connect to Azure Storage using workload identity](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-storage-workload-identity) | integrations | 0.70 | Page describes connecting AKS pods to Azure Storage via Service Connector using workload identity. This involves product-specific configuration (AKS, workload identity, Service Connector wiring) and likely includes parameterized CLI/manifest settings unique to this integration scenario, fitting the integrations sub-skill. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/service-connector/faq) | troubleshooting | 0.70 | FAQ pages for Azure services typically include product-specific error behaviors, limitations, and clarifications (for example, which resource types are supported, how authentication behaves in certain scenarios, and known constraints). These are organized as question → answer mappings that help diagnose and resolve issues unique to Service Connector and ServiceLinker, fitting the troubleshooting pattern more than generic overview content. |
 | [Manage authentication](https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication) | configuration | 0.70 | Describes specific authentication options and how to customize environment variables; likely includes parameter names, allowed values, and mapping behavior that constitute product-specific configuration knowledge. |
 | [Permission requirements](https://learn.microsoft.com/en-us/azure/service-connector/concept-permission) | security | 0.70 | Describes specific permission requirements for creating connections between Azure resources, likely including concrete RBAC roles and scopes, which are product-specific security configuration details. |
 | [Region support](https://learn.microsoft.com/en-us/azure/service-connector/concept-region-support) | deployment | 0.70 | Region support matrix for Service Connector across App Service, Functions, Container Apps, AKS, and Spring Apps is deployment-specific metadata that changes over time and is not generally known to LLMs; it is effectively a platform support matrix. |
 | [Build connections with IaC tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools) | configuration | 0.68 | The article describes how to translate manually created Service Connector connections into IaC templates for CI/CD. This typically includes product-specific resource definitions and configuration parameters (for example, connection resource types, required properties, and their allowed values) that are unique to Azure Service Connector and not just generic IaC usage. While it’s framed as a how-to, the core value is enumerating the specific configuration fields and patterns needed to represent service connections as code, which aligns best with the configuration sub-skill. |
 | [Java JBoss EAP to MySQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-jboss-connect-managed-identity-mysql-database) | integrations | 0.68 | Tutorial shows a concrete, product-specific integration pattern: Java JBoss EAP on Azure App Service connecting to Azure Database for MySQL using managed identity and Service Connector. It typically includes Azure CLI commands, connection configuration details, and environment-specific parameters that go beyond generic concepts. This aligns best with integrations & coding patterns rather than generic how-to content. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/service-connector/faq) | troubleshooting | 0.65 | FAQ pages for a specific Azure service typically include concrete, product-specific answers such as supported scenarios, specific error messages or codes, limitations of Service Connector vs ServiceLinker, and precise behavioral details that go beyond generic concepts. These map to symptom→cause→solution style guidance, fitting troubleshooting. Even if mixed with conceptual Q&A, the expert value is in the specific behaviors and constraints that an LLM is unlikely to know from training. |
 | [Use Service Connector in AKS](https://learn.microsoft.com/en-us/azure/service-connector/how-to-use-service-connector-in-aks) | troubleshooting | 0.65 | Article explicitly mentions troubleshooting along with operations and resource management; likely includes AKS-specific diagnostic steps, error patterns, and resolution guidance for Service Connector. |
 | [Store configuration in App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-portal-app-configuration-store) | integrations | 0.64 | Tutorial covers using Service Connector with Azure App Configuration as a backing store for connection configuration. It likely includes specific configuration keys, how Service Connector outputs are structured, and how they are stored/referenced in App Configuration, which is a concrete integration pattern between these services. |
 

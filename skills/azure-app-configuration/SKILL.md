@@ -1,9 +1,9 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, snapshots, dynamic refresh, Event Grid/REST APIs, or CI/CD with App Configuration, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, snapshots, dynamic refresh, REST API, or CI/CD with Azure App Configuration, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault), Azure Automation (use azure-automation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Configuration Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L41 | Troubleshooting feature flag issues with Application Insights telemetry and diagnosing Azure App Configuration network access and connectivity errors. |
-| Best Practices | L42-L48 | Guidance on using App Configuration effectively, including usage best practices and designing conditional/targeting feature filters for controlled, segmented feature rollouts. |
-| Decision Making | L49-L55 | Guidance on App Configuration client library lifecycle, upgrading Spring Boot apps to v6, and using scorecards to evaluate feature flag impact and decision outcomes. |
-| Limits & Quotas | L56-L66 | Limits, quotas, retention, and lifecycle rules for App Configuration: snapshots, soft delete, feature flag/key-value revisions, throttling, and preview API behavior. |
-| Security | L67-L89 | Securing App Configuration: encryption, Entra ID/RBAC, auth (keys, HMAC, managed identities), REST authz models, private endpoints, network perimeter, and Azure Policy compliance. |
+| Best Practices | L42-L49 | Best practices for App Configuration disaster recovery, efficient usage, and advanced feature management using conditional and targeting filters for safe, controlled rollouts. |
+| Decision Making | L50-L56 | Guidance on App Configuration client library lifecycle, upgrading Spring Boot apps to v6, and using scorecards to evaluate feature flag impact and decision outcomes. |
+| Limits & Quotas | L57-L65 | Limits, quotas, retention, and lifecycle rules for App Configuration: snapshots, soft delete, feature flag/key-value revisions, throttling, and preview API behavior. |
+| Security | L66-L89 | Securing App Configuration: encryption, identity/RBAC, keys/HMAC, REST auth, private endpoints/perimeters, disabling public access, Azure Policy, and compliance best practices. |
 | Configuration | L90-L105 | Configuring App Configuration behavior: feature flags, snapshots, geo-replication, soft delete, Kubernetes/Spring integration, Front Door, AI/chat settings, and dynamic refresh. |
-| Integrations & Coding Patterns | L106-L185 | Patterns and code for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, Functions, feature flags, filters, dynamic refresh, Event Grid, and REST API usage. |
-| Deployment | L186-L194 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, Helm/Kubernetes, and syncing configs via GitHub Actions. |
+| Integrations & Coding Patterns | L106-L184 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, Functions, Aspire, plus dynamic refresh, feature flags, filters, and REST API usage. |
+| Deployment | L185-L192 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, Helm/Kubernetes, and syncing configs via GitHub Actions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -42,6 +42,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Implement resilient disaster recovery for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-disaster-recovery |
 | Apply Azure App Configuration usage best practices | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-best-practices |
 | Use conditional feature filters in Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters |
 | Implement targeting filters for feature rollouts | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter |
@@ -58,8 +59,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Use point-in-time snapshots in Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-point-time-snapshot |
 | Understand preview API lifecycle and deprecation timelines for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-preview-api-life-cycle |
-| Understand soft delete behavior and retention in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-soft-delete |
-| Azure App Configuration FAQ with limits and behavior | https://learn.microsoft.com/en-us/azure/azure-app-configuration/faq |
 | Enhanced feature flag revision retention limits | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-enhanced-feature-flag-revisions |
 | Key-value revision retention limits in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-revisions |
 | Throttling limits and quotas for App Configuration REST | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-throttling |
@@ -85,6 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Entra RBAC for App Configuration REST authorization | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authorization-azure-ad |
 | Authorize App Configuration REST calls with HMAC keys | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authorization-hmac |
 | Authorization models for App Configuration REST API | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authorization-index |
+| Apply security best practices to Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/secure-azure-app-configuration |
 | Azure Policy regulatory compliance controls for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/security-controls-policy |
 
 ### Configuration
@@ -109,7 +109,7 @@ This skill requires **network access** to fetch documentation content:
 | React to App Configuration changes using Event Grid | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-app-configuration-event |
 | Enable dynamic configuration in Aspire with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspire |
 | Enable dynamic configuration in ASP.NET Core with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core |
-| Enable dynamic configuration in ASP.NET (.NET Framework) with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-netfx |
+| Enable dynamic App Configuration in ASP.NET | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-netfx |
 | Use dynamic configuration in Azure Functions with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-azure-functions-csharp |
 | Enable dynamic configuration in AKS using App Configuration Kubernetes Provider | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-azure-kubernetes-service |
 | Enable dynamic configuration refresh in .NET Framework | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet |
@@ -120,7 +120,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable dynamic configuration in Go console apps with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-go-console-app |
 | Use push refresh for dynamic configuration in Java Spring | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-java-spring-push-refresh |
 | Enable dynamic configuration in JavaScript with Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-javascript |
-| Enable dynamic configuration in Python with Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python |
+| Use Azure App Configuration dynamic settings in Python | https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python |
 | Implement .NET feature flags with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-dotnet-reference |
 | Implement feature flags in Go with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-go-reference |
 | Implement feature flags in JavaScript with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-javascript-reference |
@@ -132,7 +132,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Agent Framework with Azure App Configuration in .NET | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-dotnet |
 | Use Agent Framework with Azure App Configuration in Python | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config-python |
 | Configure Event Grid notifications for App Configuration changes | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-app-configuration-event |
-| Implement custom feature filters in ASP.NET Core with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-aspnet-core |
 | Implement custom feature filters in Go Gin with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-go |
 | Implement custom feature filters in Node.js with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-javascript |
 | Implement custom feature filters in Python with App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-python |
@@ -153,14 +152,14 @@ This skill requires **network access** to fetch documentation content:
 | Connect .NET Framework apps to Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-dotnet-app |
 | Integrate Azure App Configuration with .NET console apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-dotnet-core-app |
 | Use Azure App Configuration feature flags in Aspire apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspire |
-| Add Azure App Configuration feature flags to Azure Functions | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-azure-functions-csharp |
+| Use Azure App Configuration feature flags in Functions | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-azure-functions-csharp |
 | Implement Azure App Configuration feature flags in .NET | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-dotnet |
 | Add Azure App Configuration feature flags to .NET background services | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-dotnet-background-service |
 | Add Azure App Configuration feature flags to Go console apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-go-console |
-| Add Azure App Configuration feature flags to Go Gin web apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-go-gin |
+| Add Azure App Configuration feature flags to Go Gin | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-go-gin |
 | Add Azure App Configuration feature flags to Node.js | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-javascript |
 | Use Azure App Configuration feature flags in Python | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-python |
-| Use Azure App Configuration Go provider in console apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-console-app |
+| Integrate Azure App Configuration with Go apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-console-app |
 | Use Azure App Configuration with Go Gin web applications | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-web-app |
 | Access Azure App Configuration from JavaScript apps | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-javascript |
 | Integrate JavaScript apps with Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-javascript-provider |
@@ -190,5 +189,4 @@ This skill requires **network access** to fetch documentation content:
 | Import configuration into App Configuration using Azure Pipelines | https://learn.microsoft.com/en-us/azure/azure-app-configuration/azure-pipeline-import-task |
 | Create App Configuration snapshots with Azure Pipelines | https://learn.microsoft.com/en-us/azure/azure-app-configuration/azure-pipeline-snapshot-task |
 | Integrate App Configuration into CI/CD pipelines | https://learn.microsoft.com/en-us/azure/azure-app-configuration/integrate-ci-cd-pipeline |
-| Use App Configuration with Kubernetes deployments via Helm | https://learn.microsoft.com/en-us/azure/azure-app-configuration/integrate-kubernetes-deployment-helm |
 | Sync GitHub configuration files to App Configuration via GitHub Actions | https://learn.microsoft.com/en-us/azure/azure-app-configuration/push-kv-github-action |

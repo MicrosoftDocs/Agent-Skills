@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   integrations: Using FHIR and DICOM APIs with cURL/SDKs, bulk export/import, search,
     de-identification, events, and integrating with Synapse, ADF, Logic Apps, and
@@ -47,13 +47,13 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 - **Total Pages**: 203
 - **Fetched**: 203
 - **Fetch Failed**: 0
-- **Classified**: 147
-- **Unclassified**: 56
+- **Classified**: 146
+- **Unclassified**: 57
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 192
+- **Updated Pages**: 3
+- **Unchanged**: 200
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
@@ -65,39 +65,23 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | best-practices | 5 | 2.5% |
 | configuration | 47 | 23.2% |
 | decision-making | 4 | 2.0% |
-| deployment | 11 | 5.4% |
+| deployment | 10 | 4.9% |
 | integrations | 33 | 16.3% |
 | limits-quotas | 2 | 1.0% |
 | security | 36 | 17.7% |
 | troubleshooting | 6 | 3.0% |
-| *(Unclassified)* | 56 | 27.6% |
+| *(Unclassified)* | 57 | 28.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Configure local RBAC](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/configure-local-rbac)
-  - Updated: 2025-11-20T08:00:00.000Z → 2026-08-17T06:11:00.000Z
+- [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability)
+  - Updated: 2026-04-16T06:12:00.000Z → 2026-09-02T11:41:00.000Z
 - [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
-  - Updated: 2026-07-06T22:04:00.000Z → 2026-08-17T22:15:00.000Z
-- [Migration from Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/migration-strategies)
-  - Updated: 2026-05-27T20:49:00.000Z → 2026-08-17T08:00:00.000Z
-- [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir)
-  - Updated: 2026-07-14T22:16:00.000Z → 2026-08-22T05:14:00.000Z
+  - Updated: 2026-08-17T22:15:00.000Z → 2026-09-04T17:12:00.000Z
 - [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026)
-  - Updated: 2026-07-29T18:02:00.000Z → 2026-08-17T22:15:00.000Z
-- [Supported features](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-features-supported)
-  - Updated: 2026-01-30T23:12:00.000Z → 2026-08-25T17:51:00.000Z
-- [Configure settings for $convert-data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-configuration)
-  - Updated: 2025-08-12T08:00:00.000Z → 2026-08-24T22:12:00.000Z
-- [$convert-data overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-overview)
-  - Updated: 2025-08-12T08:00:00.000Z → 2026-08-24T22:12:00.000Z
-- [Transform HL7v2 data to FHIR R4](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-azure-data-factory)
-  - Updated: 2025-08-12T08:00:00.000Z → 2026-08-24T22:12:00.000Z
-- [Troubleshoot $convert-data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-troubleshoot)
-  - Updated: 2025-08-12T08:00:00.000Z → 2026-08-24T22:12:00.000Z
-- [$convert-data FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-faq)
-  - Updated: 2025-08-12T08:00:00.000Z → 2026-08-24T22:12:00.000Z
+  - Updated: 2026-08-17T22:15:00.000Z → 2026-09-04T17:12:00.000Z
 
 ## Classified Pages
 
@@ -240,7 +224,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Monitor the de-identification service](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/monitor-deidentification-service) | configuration | 0.65 | Describes which metrics/logs are emitted and how to configure Azure Monitor for this service, including resource-specific metric names and log categories. |
 | [Move to a different subscription](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/move-fhir-service) | deployment | 0.65 | Describes product-specific constraints and steps for moving an Azure API for FHIR instance across subscriptions/resource groups, which is deployment/management specific. |
 | [Python - synchronous](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-python) | integrations | 0.65 | Demonstrates Python code and endpoint usage for the synchronous API, including request/response patterns unique to this service. |
-| [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability) | deployment | 0.65 | Regional availability matrices for specific services/features are product- and region-specific details that change over time and are not reliably known from training data. This is effectively a deployment constraint by region, fitting deployment (platform/tier support matrix by region). |
 | [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir) | security | 0.65 | SMART on FHIR implementation guidance for Azure Health Data Services FHIR service is likely to include product-specific security configuration details (OAuth2/OpenID Connect flows, scopes, client configuration, and server-side behaviors). These are concrete, service-specific security patterns rather than generic theory, so it fits the security sub-skill. |
 | [Supported features](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-features-supported) | configuration | 0.65 | Lists which FHIR features and operations are implemented by this specific service, which is product-specific capability/configuration knowledge not derivable generically. |
 | [Use DICOM data in analytics workloads](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/get-started-with-analytics-dicom) | integrations | 0.65 | Describes concrete steps and configurations to move and analyze DICOM data with ADF and Fabric, which are integration patterns with product-specific settings. |
@@ -271,7 +254,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [2023](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2023) | 0.30 | Release notes for 2023; change log content rather than structured expert-knowledge reference material. |
 | [2024](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2024) | 0.30 | Release notes for 2024; similar to other release notes, not a stable reference for limits, configuration, or troubleshooting. |
 | [2025](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2025) | 0.30 | Release notes for 2025; primarily feature and bug-fix history, not structured limits, configuration, or troubleshooting guidance. |
-| [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026) | 0.30 | Release notes typically list features, fixes, and changes but not the structured limits, configuration tables, error-code mappings, or decision matrices required by the defined sub-skill types. Without evidence of specific numeric limits, config parameters, or troubleshooting mappings, this page is more informational than expert-knowledge per the criteria. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/azure-api-fhir-resource-manager-template) | 0.30 | ARM template quickstart for deploying Azure API for FHIR; focuses on using a sample template and deployment steps. Lacks detailed configuration option tables, limits/quotas, or troubleshooting mappings that would qualify as expert knowledge under the defined categories. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-resource-manager-template) | 0.30 | Page appears to be a how-to guide for deploying an Azure Health Data Services FHIR service using an ARM template with PowerShell or Azure CLI. From the summary, it does not clearly indicate detailed configuration parameter tables, deployment matrices, limits, or other product-specific expert details; it mainly explains using ARM templates and basic deployment steps, which are generic patterns an LLM likely already knows. |
 | [Availability zones](https://learn.microsoft.com/en-us/azure/healthcare-apis/availability-zones) | 0.30 | Availability Zones overview; describes high availability conceptually without specific numeric thresholds or configuration parameter tables. |
@@ -302,9 +284,11 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [FHIR service autoscale](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/autoscale) | 0.20 | The autoscale article description focuses on conceptual behavior (managed environment, automatic scaling, no configuration needed) without indicating specific numeric thresholds, configuration parameters, or tier-based matrices. It reads as a conceptual/behavior overview rather than a detailed limits, configuration, or decision guide, so it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
 | [GitHub Projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-github-projects) | 0.20 | Page primarily lists related open-source GitHub projects and mentions service retirement/migration at a high level. It does not expose product-specific limits, configuration tables, error codes, or detailed decision matrices; content is more navigational/curatorial than expert reference. |
 | [GitHub projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/github-projects) | 0.20 | Catalog of related GitHub projects and samples; no detailed limits, configuration tables, error codes, or product-specific decision/troubleshooting content. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026) | 0.20 | Release notes and retirement timeline; summary does not show specific limits, configuration parameters, error codes, or decision matrices. Primarily announcement and high-level migration guidance rather than detailed expert knowledge per the defined categories. |
+| [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability) | 0.20 | Regional availability overview; likely a matrix of which services are available in which regions, but no indication of limits, quotas, configuration parameters, or decision matrices. Primarily product availability information rather than expert configuration or troubleshooting knowledge. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026) | 0.20 | Release notes and retirement timeline information without visible detailed limits, configuration parameters, or troubleshooting mappings; primarily high-level feature and retirement announcements. |
 | [Supported features](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-features-supported) | 0.20 | The page lists which FHIR specification features are implemented in the Azure Health Data Services FHIR service, but it is essentially a capability/feature support overview. It does not include numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs. Therefore it does not meet any of the expert-knowledge criteria for the defined sub-skill types. |
 | [US Core](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/us-core) | 0.20 | Page is an overview of US Core support in Azure Health Data Services FHIR, describing supported versions and the need to load profiles. It doesn't list numeric limits, configuration parameter tables, error codes, or detailed best-practice rules specific to the product, so it lacks the kind of expert, implementation-specific knowledge required by the defined sub-skill types. |
+| [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026) | 0.10 | Release notes summarizing features, enhancements, and bug fixes for 2026. Typically change logs without structured limits, quotas, configuration tables, or troubleshooting mappings; not aligned with any defined sub-skill type. |
 | [DICOM service](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/overview) | 0.10 | DICOM service overview describing benefits and availability; lacks detailed configuration, limits, or error-resolution content. |
 | [Deployment overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/health-data-services-get-started) | 0.10 | Introductory/marketing-style overview of Azure Health Data Services; lacks concrete configuration values, limits, or decision matrices. |
 | [FHIR service](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/overview) | 0.10 | High-level overview of the FHIR service in Azure Health Data Services; describes capabilities and benefits but does not list concrete limits, configuration tables, error codes, or other expert-only details. |

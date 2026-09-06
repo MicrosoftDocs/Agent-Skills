@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL options and pricing, comparing
     SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices,
@@ -13,9 +13,9 @@ category_descriptions:
   limits-quotas: Info on Azure SQL capacity limits, DTU benchmark behavior, regional
     feature availability, and how to request quota increases for databases and managed
     instances
-  configuration: 'Configuring SQL Server on Azure VMs and related services: VM deployment,
-    storage, clustering/AG, load balancers/listeners, IaaS Agent, backups, performance,
-    and connectivity settings.'
+  configuration: 'Configuring SQL Server on Azure VMs: AG/FCI setup, listeners, load
+    balancers, clustering, storage, backups, monitoring, IaaS Agent, and VM/SQL edition/version
+    settings.'
   best-practices: 'Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN
     listeners, backup/restore, performance tuning, storage and VM sizing, baselines,
     and best practices assessments.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using SQL Server on Azure VMs with AG/FCI, WSFC, DNN listeners,
-  Key Vault/EKM, or Blob backups, and other SQL Server on Azure Virtual Machines related
-  development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL
-  Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Data Science Virtual Machines (use azure-data-science-vm).
-use_when: Use when using SQL Server on Azure VMs with AG/FCI, WSFC, DNN listeners,
-  Key Vault/EKM, or Blob backups, and other SQL Server on Azure Virtual Machines related
-  development tasks.
+  and deployment. Use when configuring SQL Server AG/FCI on Azure VMs, DNN listeners,
+  Key Vault/EKM, Blob backups, or Confidential VMs, and other SQL Server on Azure
+  Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
+  (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
+use_when: Use when configuring SQL Server AG/FCI on Azure VMs, DNN listeners, Key
+  Vault/EKM, Blob backups, or Confidential VMs, and other SQL Server on Azure Virtual
+  Machines related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Data Science Virtual Machines (use azure-data-science-vm).
+  SAP HANA on Azure Large Instances (use azure-sap).
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Total Pages**: 129
 - **Fetched**: 129
 - **Fetch Failed**: 0
-- **Classified**: 99
-- **Unclassified**: 30
+- **Classified**: 98
+- **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 124
+- **Updated Pages**: 3
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -67,27 +67,23 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | best-practices | 10 | 7.8% |
 | configuration | 41 | 31.8% |
 | decision-making | 8 | 6.2% |
-| deployment | 14 | 10.9% |
+| deployment | 13 | 10.1% |
 | integrations | 2 | 1.6% |
 | limits-quotas | 1 | 0.8% |
 | security | 6 | 4.7% |
 | troubleshooting | 12 | 9.3% |
-| *(Unclassified)* | 30 | 23.3% |
+| *(Unclassified)* | 31 | 24.0% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql)
-  - Updated: 2026-05-21T22:36:00.000Z → 2026-08-18T17:35:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-07-16T17:38:00.000Z → 2026-08-27T22:40:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql)
-  - Updated: 2026-07-31T17:52:00.000Z → 2026-08-10T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql)
-  - Updated: 2026-07-28T22:37:00.000Z → 2026-08-10T08:00:00.000Z
-- [Azure Quickstart templates](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-quickstart-template-configure?view=azuresql)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-08-25T22:40:00.000Z
+- [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql)
+  - Updated: 2026-02-18T23:35:00.000Z → 2026-09-04T22:35:00.000Z
+- [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql)
+  - Updated: 2025-09-26T22:35:00.000Z → 2026-09-04T22:35:00.000Z
+- [Domain-independent (workgroup)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-clusterless-workgroup-configure?view=azuresql)
+  - Updated: 2025-09-26T22:35:00.000Z → 2026-09-04T22:35:00.000Z
 
 ## Classified Pages
 
@@ -107,7 +103,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [HADR configuration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/hadr-cluster-best-practices?view=azuresql) | best-practices | 0.80 | Provides supported cluster configurations and best practices for AGs and FCIs on Azure VMs, including Azure-specific settings. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/configure-azure-ad-authentication-for-sql-vm?view=azuresql) | security | 0.80 | Configuring Entra ID auth for SQL VMs requires specific roles, connection strings, and configuration steps that are product-specific security settings. |
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Focuses on out-of-memory errors with causes and remediation steps, including references to service objective limits. |
-| [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql) | configuration | 0.80 | Explains SQL VM management settings exposed via the SQL virtual machines resource, including SQL-specific configuration options. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.78 | A monitoring data reference page for Azure SQL Managed Instance typically enumerates all Azure Monitor metrics, diagnostic log categories, dimensions, and sometimes their units, aggregation types, and default collection behavior. This is product-specific reference information that an LLM is unlikely to fully memorize from training and is used to configure monitoring and alerting. It best fits the configuration sub-skill because it describes concrete monitoring configuration options and schema rather than general concepts. |
 | [Distributed network name (DNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql) | configuration | 0.78 | DNN setup for FCI requires specific cluster resource names and Azure networking parameters that are product-specific configuration details. |
 | [SSL root certificate expiring](https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql) | security | 0.78 | Details certificate authority changes and required client configuration updates to maintain secure connections, which are product-specific security settings. |
@@ -140,6 +135,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [DNN interoperability](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-dnn-interoperability?view=azuresql) | best-practices | 0.70 | Interoperability guidance describes which SQL features work or have caveats with DNN, providing product-specific gotchas and recommendations. |
 | [DNN listener](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-distributed-network-name-dnn-listener-configure?view=azuresql) | configuration | 0.70 | DNN listener configuration is Azure-specific, with particular cluster and networking settings not covered by generic AG knowledge. |
 | [DTU benchmark](https://learn.microsoft.com/en-us/azure/azure-sql/database/dtu-benchmark?view=azuresql) | limits-quotas | 0.70 | DTU benchmark article details workload mix, scaling rules, and metrics with specific quantitative characteristics that are not generic knowledge. |
+| [Domain-independent (workgroup)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-clusterless-workgroup-configure?view=azuresql) | configuration | 0.70 | The article provides detailed, product-specific steps and settings to configure a domain-independent (workgroup) Always On availability group on SQL Server Azure VMs. It includes expert configuration guidance unique to this scenario (cluster/workgroup setup, AG configuration specifics) rather than generic concepts or simple tutorials, fitting best under configuration. |
 | [Extend AG to multiple regions](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multi-subnet-multiple-regions?view=azuresql) | deployment | 0.70 | Cross-region AG setup involves region-specific networking, latency considerations, and Azure resource configuration unique to this deployment pattern. |
 | [Extended Security Updates (ESU)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/extended-security-updates-sql-vm?view=azuresql) | security | 0.70 | ESU documentation for specific SQL Server versions on Azure VMs typically includes product-specific security lifecycle details, eligibility conditions, and configuration steps unique to ESUs, which fall under security-focused configuration and compliance guidance. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql) | troubleshooting | 0.70 | FAQ pages for a specific service typically include product-specific error messages, behavioral quirks, and precise guidance (for example, licensing behavior, backup/restore nuances, performance-related configuration gotchas) that go beyond generic knowledge. These are organized by question/symptom with concrete answers unique to SQL Server on Azure VMs, fitting the troubleshooting pattern. |
@@ -161,13 +157,13 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Quick checklist](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql) | best-practices | 0.70 | Checklist of product-specific performance recommendations for SQL Server on Azure VMs, referencing concrete configuration and tuning actions; part of a best-practices series rather than generic guidance. |
 | [Register single VM](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm?view=azuresql) | configuration | 0.70 | Page provides product-specific steps and parameters for registering a single SQL Server on Azure Windows VM with the SQL IaaS Agent extension, including required resource types, modes, and Azure CLI/PowerShell commands. This is concrete configuration knowledge for this extension rather than generic deployment or conceptual content. |
 | [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql) | configuration | 0.70 | Registration with the SQL IaaS Agent extension for Linux VMs typically involves product-specific configuration steps, parameter names, and required settings unique to Azure SQL on VMs. These are concrete configuration details (extension types, modes, commands, and options) that go beyond generic knowledge and fit the configuration sub-skill. |
-| [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql) | configuration | 0.70 | Describes extension behavior and likely lists extension modes, settings, and parameters specific to SQL IaaS Agent on Linux. |
 | [SQL best practices assessment](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-assessment-for-sql-vm?view=azuresql) | best-practices | 0.70 | The page describes a product-specific SQL best practices assessment feature for SQL Server on Azure VMs, driven by the SQL Assessment API and a rich ruleset. This implies concrete, product-specific DO/DON'T guidance and configuration checks unique to SQL Server on Azure VMs, which qualifies as expert best-practices knowledge rather than a generic overview. |
 | [Storage Spaces Direct (Win2016+)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-storage-spaces-direct-manually-configure?view=azuresql) | configuration | 0.70 | Manual creation of an FCI with Storage Spaces Direct on Azure VMs necessarily documents detailed, product-specific configuration steps (S2D, cluster, disks, SQL settings) with concrete parameter names and values, which qualifies as expert configuration knowledge beyond generic concepts. |
 | [Use Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/create-sql-vm-powershell?view=azuresql) | configuration | 0.70 | Guide covers multiple PowerShell options and parameters for creating SQL VMs beyond a simple quickstart. |
 | [Use the portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal?view=azuresql) | configuration | 0.70 | Explicitly described as a detailed guide of available configuration options when deploying SQL Server on Azure VMs via the portal. Such pages usually enumerate settings (e.g., storage, licensing, backup, security) with specific parameter names and allowed values, matching the configuration category. |
 | [VM size](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-vm-size?view=azuresql) | best-practices | 0.70 | Page focuses on performance best practices and guidelines for VM sizing specific to SQL Server on Azure VMs, including product-specific recommendations and trade-offs between cost and performance; this is actionable, configuration-oriented guidance rather than generic concepts. |
 | [VNN listener](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-vnn-azure-load-balancer-configure?view=azuresql) | configuration | 0.70 | Detailed configuration of Azure Load Balancer for an Always On availability group VNN listener on SQL Server VMs. This involves product-specific load balancer settings (frontend, backend pool, health probes, rules) and SQL AG listener configuration that constitute expert configuration knowledge. |
+| [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql) | configuration | 0.70 | The page describes managing SQL Server on Azure VMs via the SQL virtual machines resource, which typically includes product-specific configuration options (for example, SQL IaaS Agent extension settings, backup, patching, licensing, and other SQL-specific parameters) that go beyond generic VM management. These are concrete, Azure-SQL-VM–specific configuration details rather than conceptual overview, fitting the configuration sub-skill. |
 | [Business continuity in SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/business-continuity-high-availability-disaster-recovery-hadr-overview?view=azuresql) | decision-making | 0.68 | The article compares Azure-only and hybrid HADR/business continuity options (Always On availability groups, failover cluster instances, mirroring, log shipping, backup/restore) specifically for SQL Server on Azure VMs, explaining when to use each approach and their trade-offs. This is product- and platform-specific decision guidance rather than a generic overview, fitting the decision-making sub-skill. |
 | [Set up Azure RHEL VM availability group with fencing](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/rhel-high-availability-fencing-tutorial?view=azuresql) | configuration | 0.68 | HA tutorial for RHEL with Pacemaker and fencing includes concrete cluster resource definitions and fencing parameters unique to this setup. |
 | [Set up Azure SLES VM availability group with fencing](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sles-high-availability-fencing-tutorial?view=azuresql) | configuration | 0.68 | SLES HA and STONITH setup requires specific Pacemaker/STONITH configuration values and Azure integration details. |
@@ -186,7 +182,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Configure cluster quorum](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/hadr-cluster-quorum-configure-how-to?view=azuresql) | configuration | 0.60 | Quorum configuration (disk, cloud, file share witness) on Azure VMs involves specific cluster settings and Azure resource configurations beyond generic clustering concepts. |
 | [Create availability group](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-tutorial-multi-subnet?view=azuresql) | deployment | 0.60 | Step-by-step creation of AGs across subnets in Azure; includes Azure-specific listener and cluster configuration details. |
 | [Create availability group](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-tutorial-single-subnet?view=azuresql) | deployment | 0.60 | Tutorial for AG creation on Azure VMs with Azure networking and load balancer specifics; clearly deployment-focused. |
-| [Domain-independent (workgroup)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-clusterless-workgroup-configure?view=azuresql) | deployment | 0.60 | Workgroup AGs on Azure VMs require non-domain cluster configuration and listener setup that is specific to this deployment scenario. |
 | [Failover cluster instance (FCI)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql) | architecture-patterns | 0.60 | Describes feature differences for FCIs on Azure VMs, which are product-specific architecture patterns. |
 | [Prepare VM for FCI](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-prepare-vm?view=azuresql) | configuration | 0.60 | Prepping VMs for FCIs involves network, storage, and OS settings specific to Azure and SQL FCI requirements. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-prerequisites-tutorial-single-subnet?view=azuresql) | deployment | 0.60 | Prerequisite configuration (network, storage, cluster) for AGs on Azure VMs is deployment-specific and not generic SQL knowledge. |
@@ -216,6 +211,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-portal-quickstart?view=azuresql) | 0.20 | Quickstart tutorial for creating a SQL Server VM in the Azure portal. These typically show step-by-step UI usage without detailed configuration matrices, limits, or error-code-based troubleshooting. |
 | [Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor-classic?view=azuresql) | 0.20 | Describes the classic Azure portal query editor experience and how to run T-SQL in the browser. It is a tool/UX overview without detailed configuration tables, limits, error-code mappings, or other expert-only specifics. |
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | 0.20 | Page focuses on the process for submitting a support request to increase quotas, not on listing specific numeric limits, tier-specific quotas, or timeout values. It lacks detailed configuration parameters, decision matrices, or error-code-based troubleshooting, so none of the expert-knowledge sub-skill types apply. |
+| [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql) | 0.20 | The page is an overview of the SQL Server IaaS Agent extension for Linux VMs and describes its purpose and high-level capabilities. Based on the summary, it doesn't expose specific configuration tables, numeric limits, error codes, or detailed troubleshooting/decision matrices. It appears to be conceptual/introductory rather than containing product-specific expert details that match any sub-skill type. |
 | [Unified inventory (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql) | 0.20 | Preview feature overview for unified inventory; describes the concept and resource type but no detailed configuration parameters, limits, or troubleshooting content. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes and documentation change log for SQL Server on Azure VMs; primarily a high-level 'what's new' overview without detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql) | 0.10 | Described as an overview of SQL Server on Azure VMs for Linux; overviews are explicitly out of scope and typically lack detailed limits, configs, or decision matrices. |

@@ -50,10 +50,10 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 - **Unclassified**: 89
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 231
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 234
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
 ## Classification Statistics
@@ -71,20 +71,6 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | *(Unclassified)* | 89 | 38.0% |
 
 ## Changes
-
-### New Pages
-
-- [2607 - Current](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2607-release-notes)
-- [2604](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes)
-
-### Updated Pages
-
-- [Apply updates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-install-update)
-  - Updated: 2026-05-28T08:00:00.000Z → 2026-08-27T09:10:00.000Z
-
-### Deleted Pages
-
-- ~~2604 - Current~~ (https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2604-release-notes)
 
 ## Classified Pages
 

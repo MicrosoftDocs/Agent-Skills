@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   deployment: 'Deploying and scaling Azure AI Speech: Docker/Kubernetes containers,
     on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 - **Total Pages**: 192
 - **Fetched**: 192
 - **Fetch Failed**: 0
-- **Classified**: 109
-- **Unclassified**: 83
+- **Classified**: 105
+- **Unclassified**: 87
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 183
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 4
+- **Unchanged**: 187
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
 ## Classification Statistics
@@ -62,37 +62,35 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 12 | 6.2% |
-| configuration | 33 | 17.2% |
-| decision-making | 10 | 5.2% |
+| configuration | 32 | 16.7% |
+| decision-making | 9 | 4.7% |
 | deployment | 8 | 4.2% |
-| integrations | 26 | 13.5% |
+| integrations | 24 | 12.5% |
 | limits-quotas | 4 | 2.1% |
 | security | 10 | 5.2% |
 | troubleshooting | 6 | 3.1% |
-| *(Unclassified)* | 83 | 43.2% |
+| *(Unclassified)* | 87 | 45.3% |
 
 ## Changes
 
+### New Pages
+
+- [MAI-Transcribe API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
+
 ### Updated Pages
 
-- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions)
-  - Updated: 2026-07-22T08:00:00.000Z → 2026-08-26T11:04:00.000Z
-- [Speech SDK overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-sdk)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-08-17T22:12:00.000Z
-- [Text to speech avatar overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/what-is-text-to-speech-avatar)
-  - Updated: 2026-05-21T22:09:00.000Z → 2026-08-18T17:10:00.000Z
-- [Custom text to speech avatar overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/what-is-custom-text-to-speech-avatar)
-  - Updated: 2025-12-10T23:10:00.000Z → 2026-08-18T17:10:00.000Z
-- [Create a custom photo avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/custom-photo-avatar-create)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-08-18T17:10:00.000Z
-- [Use LLM speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech)
-  - Updated: 2026-05-13T22:16:00.000Z → 2026-06-05T22:11:00.000Z
-- [Voice Live overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-08-25T08:00:00.000Z
-- [Part 4: Train your voice model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-train-voice)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-06-05T22:11:00.000Z
-- [Voice Live telephony integration](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-telephony)
-  - Updated: 2026-08-10T22:02:00.000Z → 2026-08-26T06:04:00.000Z
+- [Personal voice overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-overview)
+  - Updated: 2025-10-24T22:11:00.000Z → 2026-09-03T06:04:00.000Z
+- [Part 4: Use personal voice in your application](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-how-to-use)
+  - Updated: 2026-05-14T06:21:00.000Z → 2026-09-03T06:04:00.000Z
+- [Use batch synthesis for avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/batch-synthesis-avatar)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-06-05T22:11:00.000Z
+- [Voice Live language support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support)
+  - Updated: 2026-06-02T19:00:00.000Z → 2026-06-23T22:11:00.000Z
+
+### Deleted Pages
+
+- ~~Use MAI-Transcribe~~ (https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
 
 ## Classified Pages
 
@@ -174,7 +172,6 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Track memory usage](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-track-speech-sdk-memory-usage) | best-practices | 0.70 | Discusses memory management tooling, object logging, and object limits specific to Speech SDK; these are product-specific best practices and gotchas. |
 | [Use BYOS Speech resource for Speech to text](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/bring-your-own-storage-speech-resource-speech-to-text) | configuration | 0.70 | Explains how a BYOS-enabled Speech resource binds to a storage account across multiple STT scenarios, with product-specific setup and usage patterns that go beyond generic storage concepts. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-encryption-of-data-at-rest) | security | 0.70 | Details Speech service–specific encryption behavior and CMK usage for data at rest, including how Microsoft-managed and customer-managed keys apply—product-specific security configuration. |
-| [Voice Live language support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support) | configuration | 0.70 | Language support pages typically list supported languages/locales and show how to configure them via specific parameters or settings, which is configuration reference. |
 | [Fast transcription API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/fast-transcription-create) | integrations | 0.68 | The page describes how to use the Azure Speech fast transcription API specifically within Foundry Tools, which typically includes product-specific API/SDK parameters and configuration details (such as request schema, supported options, and response structure) that go beyond generic knowledge. This aligns best with the integrations sub-skill, as it focuses on a concrete integration pattern between Azure Speech and Foundry rather than general concepts. |
 | [How to recognize and translate speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-translate-speech) | integrations | 0.68 | How-to for translating speech including object construction and supported audio formats; likely contains SDK object parameters and accepted formats, which are product-specific integration details. |
 | [Improve recognition with phrase list](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/improve-accuracy-phrase-list) | best-practices | 0.68 | Page provides product-specific guidance on when and how to use phrase lists with Azure Speech (runtime feature, endpoint-level behavior, compatibility with base/custom endpoints, and exclusions like batch transcription). This is actionable, service-specific best-practice guidance rather than generic speech recognition theory. |
@@ -200,13 +197,10 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Part 1: Locate audio files in storage](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription-audio-data) | best-practices | 0.65 | Describes how to structure and expose audio files for batch transcription, including specifics like using Azure Blob Storage containers, using public URIs, and the constraint that URIs requiring authentication or interactive scripts are not supported. These are product-specific gotchas and actionable recommendations about where and how to host audio, fitting best-practices. |
 | [Part 3: Add training datasets](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-create-training-set) | configuration | 0.65 | Focuses on uploading training datasets and meeting data requirements; these are concrete data/config constraints for the service. |
 | [Part 3: Get batch transcription results](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription-get) | configuration | 0.65 | Describes status values and how to retrieve outputs from storage; product-specific job lifecycle and result access patterns. |
-| [Part 4: Use personal voice in your application](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-how-to-use) | integrations | 0.65 | How-to page for using personal voice in apps likely includes API/SDK usage, required parameters (such as speaker profile IDs), and product-specific configuration details for synthesis across languages, which fits integrations & coding patterns. |
 | [Part 6: Deploy a model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-deploy-model) | deployment | 0.65 | Covers when deployment is required vs batch transcription not needing an endpoint and mentions endpoint reuse/update; this is product-specific deployment behavior beyond generic how-to. |
 | [Real-time speech to text containers](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-stt) | configuration | 0.65 | Page describes how to download, install, and run speech-to-text containers, which typically includes container image names, environment variables, and runtime parameters specific to Azure Speech containers. |
-| [Use MAI-Transcribe](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe) | integrations | 0.65 | Describes how to call MAI-Transcribe via the LLM Speech API, likely including model IDs, request parameters, and configuration options specific to this integration. |
 | [Use batch synthesis for text to speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-synthesis) | deployment | 0.65 | Covers asynchronous batch synthesis for long audio, including retirement/migration from Long Audio API and constraints like >10-minute audio, which are product-specific deployment/usage details. |
 | [Get speech recognition results](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-speech-recognition-results) | integrations | 0.60 | How-to guide on using speech recognition results with SDKs; likely includes specific API members, result object fields, and usage patterns unique to Speech SDK. |
-| [Personal voice overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-overview) | decision-making | 0.60 | Describes supported languages/locales and regions for personal voice; helps decide where and how to use the feature based on regional availability. |
 
 ## Unclassified Pages
 
@@ -241,6 +235,7 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [OpenAI text to speech voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/openai-voices) | 0.30 | Summary indicates a conceptual/marketing-style overview of OpenAI text-to-speech voices and model variants (Neural vs NeuralHD) without mention of numeric limits, configuration tables, error codes, or decision matrices. |
 | [Part 1: Create a professional voice project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-create-project) | 0.30 | High-level guidance on creating a professional voice project; summary suggests a getting-started/tutorial style without detailed configuration tables, limits, or error mappings. |
 | [Part 4: Test recognition quality](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-inspect-data) | 0.30 | Describes qualitative inspection and side-by-side testing of custom speech models; no indication of numeric thresholds, configuration parameters, or detailed troubleshooting mappings. |
+| [Part 4: Use personal voice in your application](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-how-to-use) | 0.30 | How-to integration overview for personal voice with high-level usage (speaker profile ID, language detection). Lacks detailed configuration tables, limits, or product-specific error mappings. |
 | [Post-call transcription and analytics quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/call-center-quickstart) | 0.30 | Cross-service quickstart for post-call analytics; mainly a tutorial flow without detailed configuration option tables or error mappings. |
 | [Run batch operations](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-batch-operations) | 0.30 | Batch operations article is described at a high level; summary does not indicate detailed config tables, limits, or error mappings. |
 | [Speech CLI quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-basics) | 0.30 | Quickstart showing basic CLI usage; appears tutorial-like without structured config tables, limits, or error mappings. |
@@ -249,8 +244,9 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Text to speech quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-text-to-speech) | 0.30 | Quickstart likely shows basic usage; summary doesn’t indicate detailed configuration matrices or constraints beyond generic SDK usage. |
 | [Training and testing datasets](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-test-and-train) | 0.30 | Describes dataset types and considerations at a conceptual level; no concrete limits, configs, or product-specific edge cases indicated. |
 | [Transcribe multichannel audio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-recognize-speech-multichannel) | 0.30 | How-to guide for multichannel real-time transcription. Summary mentions preview status and stereo (two-channel) support, but does not show detailed configuration parameters, limits tables, or error-code-based troubleshooting in the provided text. Likely a tutorial-style integration example rather than expert-knowledge reference content. |
-| [Use batch synthesis for avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/batch-synthesis-avatar) | 0.30 | Overview/how-to for batch synthesis avatar; summary does not indicate detailed property tables, limits, or error mappings. |
+| [Use batch synthesis for avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/batch-synthesis-avatar) | 0.30 | Describes batch synthesis avatar API conceptually and use cases. The summary does not indicate presence of numeric limits, detailed configuration parameters, or troubleshooting content. |
 | [Voice Live FAQ](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-faq) | 0.30 | FAQ page is likely mixed and high-level; summary does not indicate detailed error codes, configuration tables, or numeric limits. Without clear evidence of structured troubleshooting or configuration data, it’s treated as non-expert content. |
+| [Voice Live language support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-language-support) | 0.30 | Language support and configuration overview for Voice Live API. Based on the description, it likely lists supported languages/locales but not detailed limits, quotas, or configuration parameter tables. |
 | [Voice Live via WebRTC (preview)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-webrtc) | 0.30 | From the summary, this appears to be a feature/usage overview of using Voice Live API with WebRTC for low-latency voice interactions. It does not clearly indicate presence of numeric limits, configuration tables, error codes, or other product-specific expert details. |
 | [Voice sync for avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/voice-sync-for-avatar) | 0.30 | Described as an introduction to voice sync for avatar; likely conceptual explanation of what it is rather than detailed configuration tables, limits, or troubleshooting content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes) | 0.30 | Release notes summarize new features and changes but typically don't provide stable, reusable expert patterns like limits, configs, or troubleshooting mappings; content is time-bound and not aligned to any listed sub-skill type. |
@@ -266,6 +262,7 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Language identification](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-identification) | 0.20 | Describes language identification concept and a qualitative note about higher initial latency, but lacks concrete numeric thresholds, configuration tables, or detailed error/diagnostic information. |
 | [MAI-Voice](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices) | 0.20 | Appears to be a conceptual/marketing-style overview of MAI-Voice models in public preview without clear evidence of numeric limits, configuration tables, or detailed API/role specifics from the provided summary. |
 | [Part 4: Train your voice model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-train-voice) | 0.20 | Summary suggests a procedural training guide (regions, duration estimate) without clear evidence of detailed limits, configuration tables, error codes, or decision matrices. Likely a how-to article rather than expert-knowledge reference content. |
+| [Personal voice overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-overview) | 0.20 | Overview of personal voice capabilities and supported regions/locales without detailed limits, configuration parameters, or error-specific troubleshooting. Primarily conceptual/feature description. |
 | [Pronunciation assessment in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/pronunciation-assessment-tool) | 0.20 | Explains how to use pronunciation assessment in the Foundry portal and notes preview status. The summary indicates conceptual usage guidance, not specific configuration parameters, limits, or error-resolution content. |
 | [Speech CLI overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-overview) | 0.20 | Conceptual overview of Speech CLI capabilities; lacks detailed config parameters, limits, or troubleshooting mappings. |
 | [Speech SDK overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-sdk) | 0.20 | An 'About the Speech SDK' page is generally a conceptual overview of capabilities, supported languages, and scenarios, without detailed limits, configuration tables, or error-code-based troubleshooting. The summary indicates high-level description of what the SDK does and when to use REST instead, not expert configuration or limits, so it doesn't meet any sub-skill detection criteria. |
@@ -294,4 +291,5 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Transcription models from OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/transcribe-overview) | 0.10 | High-level overview of OpenAI transcription models and where they are available; no specific limits, configuration tables, error codes, or decision matrices with quantified trade-offs. |
 | [Voice Live telephony integration](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-telephony) | 0.10 | Summary describes a solution template and high-level integration with telephony systems but does not indicate presence of specific limits, configuration tables, error codes, or detailed product-specific settings. Appears to be conceptual/overview content rather than expert-knowledge reference material. |
 | [Audio concepts](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/concepts/audio-concepts) | - | Conceptual overview of audio concepts (sampling, formats, codecs) without product-specific limits, configuration values, or troubleshooting details. |
+| [MAI-Transcribe API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe) | - | Based on the summary, this appears to be a feature/model overview and usage introduction for MAI-Transcribe via Azure Speech API, without clear indication of numeric limits, detailed configuration tables, error-code-based troubleshooting, or decision matrices. With the limited snippet, there’s no evidence of the specific expert-knowledge patterns required for any sub-skill type. |
 | [Speech containers overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-overview) | - | Overview of Speech containers and their benefits; lacks detailed configuration parameters, limits, or decision matrices specific to the service. |

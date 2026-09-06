@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs, routing intent, P2S/Always On VPN, Azure Firewall/NVAs, or ExpressRoute/SD-WAN, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VWAN hubs, P2S VPN, BGP/NVA routing, ExpressRoute/SD-WAN, or Azure Firewall integration, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual WAN Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L41 | Diagnosing and fixing Virtual WAN issues, including P2S VPN client prerequisite checks, connectivity problems, and using built-in tools and diagnostics for troubleshooting. |
-| Decision Making | L42-L49 | Guidance on planning and choosing Virtual WAN designs: NVAs in hubs, VPN client migrations, upgrading Basic→Standard, and selecting partners and hub locations. |
+| Decision Making | L42-L49 | Guidance on planning Virtual WAN changes: migrating Linux/P2S VPN clients, switching to Microsoft Entra apps, upgrading Basic→Standard VWAN, and choosing partners/hub locations. |
 | Architecture & Design Patterns | L50-L77 | Designing Virtual WAN hub-and-spoke routing, isolation, DR, and global transit patterns, including routing intent, static/BGP routes, firewalls/NVAs, SD-WAN, ExpressRoute, and Microsoft 365 connectivity. |
 | Limits & Quotas | L78-L84 | Limits and design guidance for Virtual WAN: P2S client pool sizing, hub routing/throughput caps, and using Private Link endpoints within scale and quota constraints. |
 | Security | L85-L94 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions. |
-| Configuration | L95-L147 | Configuring Azure Virtual WAN hubs, routing, BGP/NVA integration, P2S/Always On VPN (certs, Entra ID, IPsec), Azure Firewall/NGFW, and monitoring/route-maps for traffic control. |
+| Configuration | L95-L147 | Configuring Virtual WAN hubs, routing, BGP/NVA integration, P2S VPN (certs, Entra ID, IPsec, client profiles), Azure Firewall/NGFW, and monitoring/metrics for connectivity scenarios. |
 | Integrations & Coding Patterns | L148-L154 | PowerShell and automation patterns for integrating Virtual WAN with ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure Private Link |
 | Deployment | L155-L158 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
 
@@ -124,7 +124,7 @@ This skill requires **network access** to fetch documentation content:
 | Generate P2S User VPN certificates on Linux with strongSwan | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-certificates-linux-strongswan |
 | Configure Virtual WAN P2S VPN with Entra ID and registered client | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-gateway |
 | Configure custom Entra app ID for P2S VPN authentication | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-register-custom-app |
-| Configure Azure VPN Client with Entra ID on Linux | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-linux |
+| Configure Azure VPN Client on Linux for Entra P2S | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-linux |
 | Configure Azure VPN Client with Entra ID on macOS | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-mac |
 | Use supported IPsec policies for Virtual WAN P2S VPN | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-ipsec |
 | Configure P2S VPN address pools with PowerShell in Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-user-groups-powershell |
@@ -139,7 +139,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure P2S VPN user groups and IP pools in Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-create |
 | Set custom IPsec policies in Azure Virtual WAN portal | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-custom-ipsec-portal |
 | Configure supported IPsec policy combinations for Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-ipsec |
-| Configure Virtual WAN P2S with Entra ID auth | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-azure-ad |
+| Configure Entra ID auth for Virtual WAN P2S VPN | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-azure-ad |
 | Create virtual hub route tables to NVAs via PowerShell | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva |
 | Create virtual hub route tables to NVAs via portal | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva-portal |
 | Configure IPsec over ExpressRoute in Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/vpn-over-expressroute |

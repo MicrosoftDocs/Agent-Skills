@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 - **Unclassified**: 41
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 20
-- **Unchanged**: 94
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
@@ -72,53 +72,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 41 | 35.7% |
 
 ## Changes
-
-### New Pages
-
-- [Access Event Hubs from a VM using a managed identity](https://learn.microsoft.com/en-us/azure/event-hubs/authenticate-managed-identity-virtual-machine)
-
-### Updated Pages
-
-- [Python](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-python-get-started-send)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-08-26T05:11:00.000Z
-- [Stream large messages](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-stream-large-messages)
-  - Updated: 2026-07-24T22:16:00.000Z → 2026-08-29T05:31:00.000Z
-- [Validate schemas for Event Hubs SDK based applications](https://learn.microsoft.com/en-us/azure/event-hubs/schema-registry-dotnet-send-receive-quickstart)
-  - Updated: 2025-06-19T05:10:00.000Z → 2026-08-26T05:11:00.000Z
-- [Create a dedicated cluster](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-cluster-create-portal)
-  - Updated: 2026-07-24T22:16:00.000Z → 2026-08-26T05:11:00.000Z
-- [Capture event data in Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-overview)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-08-25T08:00:00.000Z
-- [Overview of Event Hubs emulator](https://learn.microsoft.com/en-us/azure/event-hubs/overview-emulator)
-  - Updated: 2025-07-28T17:12:00.000Z → 2026-08-26T05:11:00.000Z
-- [Premium tier](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-premium-overview)
-  - Updated: 2025-07-28T08:00:00.000Z → 2026-08-26T05:11:00.000Z
-- [Dedicated tier](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-overview)
-  - Updated: 2026-07-24T22:16:00.000Z → 2026-08-25T08:00:00.000Z
-- [Compare tiers](https://learn.microsoft.com/en-us/azure/event-hubs/compare-tiers)
-  - Updated: 2025-04-29T22:02:00.000Z → 2026-08-26T05:11:00.000Z
-- [Schema Registry concepts](https://learn.microsoft.com/en-us/azure/event-hubs/schema-registry-concepts)
-  - Updated: 2025-04-30T17:06:00.000Z → 2026-08-26T05:11:00.000Z
-- [Authenticate and authorize access to Event Hubs resources](https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-event-hubs)
-  - Updated: 2025-07-28T17:12:00.000Z → 2026-08-26T05:11:00.000Z
-- [Authenticate with a shared access signature](https://learn.microsoft.com/en-us/azure/event-hubs/authenticate-shared-access-signature)
-  - Updated: 2025-07-25T08:00:00.000Z → 2026-08-26T05:11:00.000Z
-- [Authenticate with a managed identity](https://learn.microsoft.com/en-us/azure/event-hubs/authenticate-managed-identity)
-  - Updated: 2025-02-11T23:03:00.000Z → 2026-08-26T05:11:00.000Z
-- [Authenticate from an application](https://learn.microsoft.com/en-us/azure/event-hubs/authenticate-application)
-  - Updated: 2025-07-28T22:10:00.000Z → 2026-08-26T05:11:00.000Z
-- [Authorize access with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/event-hubs/authorize-access-azure-active-directory)
-  - Updated: 2025-07-25T08:00:00.000Z → 2026-08-26T05:11:00.000Z
-- [Get Event Hubs connection string](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string)
-  - Updated: 2025-08-11T08:00:00.000Z → 2026-08-26T05:11:00.000Z
-- [Configure processing units for a premium namespace](https://learn.microsoft.com/en-us/azure/event-hubs/configure-processing-units-premium-namespace)
-  - Updated: 2024-11-19T18:02:00.000Z → 2026-08-26T05:11:00.000Z
-- [Test locally with Event Hubs emulator](https://learn.microsoft.com/en-us/azure/event-hubs/test-locally-with-event-hub-emulator)
-  - Updated: 2025-07-28T22:10:00.000Z → 2026-08-26T05:11:00.000Z
-- [Monitor Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs)
-  - Updated: 2025-05-20T08:00:00.000Z → 2026-08-25T08:00:00.000Z
-- [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/event-hubs/configure-customer-managed-key)
-  - Updated: 2026-05-11T22:24:00.000Z → 2026-08-25T08:00:00.000Z
 
 ## Classified Pages
 

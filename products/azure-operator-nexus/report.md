@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
-  configuration: 'Configuring and updating Nexus clusters, Kubernetes, and network
-    fabric: templates/parameters, isolation domains, routing/BGP/QoS, security, monitoring,
-    credentials, and staged commit workflows.'
+  configuration: 'Configuring and operating Nexus clusters and network fabric: templates,
+    isolation domains, routing/BGP/QoS, Kubernetes settings, monitoring, security,
+    credentials, and staged/commit workflows.'
   security: 'Securing Nexus: identity/RBAC, ACLs, SSH and serial access, break-glass
     methods, key/cert/secret rotation, Defender/Policy, managed identities, and secure
     VM/cluster connectivity.'
@@ -27,17 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when managing Nexus
-  clusters, isolation domains, BGP/routing fabric, secure VM connectivity, or near-edge
-  storage, and other Azure Operator Nexus related development tasks. Not for Azure
-  Operator Insights (use azure-operator-insights), Azure Operator Service Manager
-  (use azure-operator-service-manager), Azure Networking (use azure-networking), Azure
-  Virtual Network (use azure-virtual-network).
-use_when: Use when managing Nexus clusters, isolation domains, BGP/routing fabric,
-  secure VM connectivity, or near-edge storage, and other Azure Operator Nexus related
-  development tasks.
-confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights),
-  Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking
-  (use azure-networking), Azure Virtual Network (use azure-virtual-network).
+  clusters, network fabric (BGP/QoS), secure access/RBAC, AKS/ETCD, or near-edge storage,
+  and other Azure Operator Nexus related development tasks. Not for Azure Baremetal
+  Infrastructure (use azure-baremetal-infrastructure), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure Virtual Network (use azure-virtual-network),
+  Azure Operator Service Manager (use azure-operator-service-manager).
+use_when: Use when managing Nexus clusters, network fabric (BGP/QoS), secure access/RBAC,
+  AKS/ETCD, or near-edge storage, and other Azure Operator Nexus related development
+  tasks.
+confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Network
+  (use azure-virtual-network), Azure Operator Service Manager (use azure-operator-service-manager).
 ---
 # Azure Operator Nexus Crawl Report
 
@@ -46,13 +46,13 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 - **Total Pages**: 222
 - **Fetched**: 222
 - **Fetch Failed**: 0
-- **Classified**: 169
-- **Unclassified**: 53
+- **Classified**: 170
+- **Unclassified**: 52
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 3
-- **Unchanged**: 217
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 220
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -62,29 +62,22 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 |------|-------|------------|
 | architecture-patterns | 2 | 0.9% |
 | best-practices | 2 | 0.9% |
-| configuration | 67 | 30.2% |
+| configuration | 68 | 30.6% |
 | decision-making | 5 | 2.3% |
 | deployment | 6 | 2.7% |
 | limits-quotas | 8 | 3.6% |
 | security | 35 | 15.8% |
 | troubleshooting | 44 | 19.8% |
-| *(Unclassified)* | 53 | 23.9% |
+| *(Unclassified)* | 52 | 23.4% |
 
 ## Changes
 
-### New Pages
-
-- [Storage appliance error messages](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-storage-appliance-error-messages)
-- [Volume error messages](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-volume-error-messages)
-
 ### Updated Pages
 
-- [Before you start deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-azure-operator-nexus-prerequisites)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-08-24T17:04:00.000Z
-- [Upgrade Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-upgrade)
-  - Updated: 2026-03-16T22:04:00.000Z → 2026-08-27T22:05:00.000Z
-- [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-kubernetes-cluster-supported-versions)
-  - Updated: 2025-11-11T18:04:00.000Z → 2026-08-28T17:03:00.000Z
+- [Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric-controller)
+  - Updated: 2025-11-18T16:54:00.000Z → 2026-09-01T17:07:00.000Z
+- [Cluster management upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-management-upgrade)
+  - Updated: 2026-01-20T23:02:00.000Z → 2026-09-03T22:05:00.000Z
 
 ## Classified Pages
 
@@ -179,6 +172,7 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Network Packet Broker](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-packet-broker) | configuration | 0.74 | The page describes how to configure a Network Packet Broker in Azure Operator Nexus with product-specific settings and parameters (for mirroring, filtering, and forwarding traffic to vProbes) and includes troubleshooting for common configuration errors. This aligns best with the configuration sub-skill, as it focuses on concrete configuration steps and options rather than generic concepts. |
 | [Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster) | configuration | 0.72 | A 'how to configure cluster deployment' article for Operator Nexus is likely to include product-specific AzCLI commands, required/optional parameter names, and configuration options (for example, cluster properties, allowed values, and defaults) that are unique to this service and not generally known. This fits the configuration sub-skill, as it focuses on concrete settings rather than generic deployment concepts. |
 | [How to Configure Quality of Service (QoS) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service) | configuration | 0.72 | The page describes how to enable/disable and configure Quality of Service specifically for Azure Operator Nexus via Azure CLI, including product-specific commands, flags, and configuration parameters for the network fabric. These are detailed, service-specific configuration options that go beyond generic QoS concepts, fitting the configuration sub-skill type. |
+| [Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric-controller) | configuration | 0.72 | The page provides Azure Operator Nexus–specific CLI commands and parameters to create, modify, check status, and delete a Network Fabric Controller. These commands and resource properties (such as required fields and structure for NFC configuration) are product-specific configuration details that go beyond generic CLI usage, fitting the configuration sub-skill. It is not focused on limits, troubleshooting, or deployment matrices. |
 | [Set up Defender for Cloud security](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security) | security | 0.72 | How-to guide for enabling and configuring Microsoft Defender for Cloud specifically on Azure Operator Nexus subscriptions. Likely includes product-specific security configuration steps, plan/feature enablement details, and required settings unique to Operator Nexus and its bare metal compute servers, which qualify as expert security configuration knowledge rather than generic concepts. |
 | [Access Control List configuration examples](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-acl-examples) | security | 0.70 | Provides concrete ACL examples with specific match criteria and actions, representing product-specific security configuration patterns and edge cases. |
 | [Access Control Lists](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-access-control-lists) | configuration | 0.70 | Describes API-based ACL configuration for NNIs and ISD external networks with rule/action semantics; product-specific configuration model. |
@@ -269,7 +263,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [IP Prefixes Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-ip-prefix) | 0.45 | IP prefix resource overview; describes purpose and ARM modeling conceptually. |
 | [Isolation Domains overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-isolation-domain) | 0.45 | Isolation domains overview; conceptual explanation of L2/L3 isolation types. |
 | [Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric) | 0.45 | Network Fabric configuration via CLI; operational commands, but summary does not indicate parameter tables or constraints. |
-| [Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric-controller) | 0.45 | How-to for configuring Network Fabric Controller via CLI; appears to be command usage, not a full configuration reference with parameter tables. |
 | [Network Fabric Quality of Service (QoS) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-quality-of-service) | 0.45 | QoS overview; describes behavior conceptually, summary does not show concrete parameter tables or limits. |
 | [Networking](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-networking) | 0.45 | Networking concepts overview; detailed but conceptual description of layers without explicit config tables or limits in summary. |
 | [Route Policy Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-route-policies-overview) | 0.45 | Route policies overview; conceptual explanation of BGP attributes and policies without detailed config matrices in summary. |
@@ -285,7 +278,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-kubernetes-cluster) | 0.40 | Nexus Kubernetes Cluster Service introduction; conceptual overview of managed AKS on Nexus. |
 | [Site decommission checklist](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-decommission-nexus-instance-checklist) | 0.40 | Described as a high-level decommissioning checklist; summary doesn’t indicate detailed commands, limits, or configuration parameters. |
 | [Baseboard Management Controller Credential Rotation Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-baseboard-management-controller-credential-rotation) | 0.35 | Describes BMC credential rotation states conceptually; no specific Key Vault, identity, or rotation interval parameters exposed in summary. |
-| [Cluster management upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-management-upgrade) | 0.35 | Cluster management upgrade overview; high-level description of automatic upgrades without detailed parameters. |
 | [Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-controller) | 0.35 | Network Fabric Controller overview; conceptual description of role and capabilities. |
 | [Network Fabric Services](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-services) | 0.35 | Network Fabric Services overview; describes ExpressRoute-based connectivity conceptually. |
 | [Network Fabric management upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-fabric-management-upgrade) | 0.35 | Fabric management upgrade overview; lifecycle description without detailed expert-only parameters. |
@@ -312,6 +304,7 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Before you start deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-azure-operator-nexus-prerequisites) | 0.20 | Prerequisites/overview for creating Network Fabric Controller and Cluster Manager; summary mentions quotas conceptually but no specific numeric limits, configuration tables, or detailed settings. Lacks the concrete values or product-specific parameters required for any sub-skill type. |
 | [Cluster Runtime upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-upgrade-overview) | 0.20 | Conceptual description of disruptive vs non-disruptive cluster runtime upgrades; lacks concrete configuration values, error codes, or quantified decision criteria. |
 | [Cluster deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-deployment-overview) | 0.20 | High-level overview of Azure Operator Nexus cluster deployment lifecycle without specific limits, configuration parameters, decision matrices, or troubleshooting details. |
+| [Cluster management upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-management-upgrade) | 0.20 | Appears to be a high-level overview of Cluster Management Bundle Upgrades for Azure Operator Nexus without specific numeric limits, configuration tables, error codes, or detailed upgrade constraints; no concrete expert-level parameters or decision matrices are evident from the summary. |
 | [Hardware Validation](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-hardware-validation-overview) | 0.20 | High-level overview of hardware validation and BMC/iDRAC context without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Near-edge Compute](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-compute) | 0.20 | Described as an overview of near-edge compute SKUs and resources; sounds conceptual/architectural without explicit limits, configuration tables, or decision matrices. |
 | [Security](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-security) | 0.20 | High-level security concepts and posture; no concrete RBAC roles, config parameters, or error/limit details. |

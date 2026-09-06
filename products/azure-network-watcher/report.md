@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 63
-- **Deleted Pages**: 3
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
 ## Classification Statistics
@@ -63,17 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | *(Unclassified)* | 35 | 53.8% |
 
 ## Changes
-
-### New Pages
-
-- [Install and manage Network Watcher Agent](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-manage)
-- [Update Network Watcher Agent to latest version](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-update)
-
-### Deleted Pages
-
-- ~~Linux~~ (https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-linux)
-- ~~Update to latest version~~ (https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-update)
-- ~~Windows~~ (https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-windows)
 
 ## Classified Pages
 

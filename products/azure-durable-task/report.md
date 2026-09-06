@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 21
+- **Updated Pages**: 0
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-durable-task/azure-durable-task.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | *(Unclassified)* | 6 | 27.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Orchestrator code constraints](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-code-constraints)
-  - Updated: 2026-04-03T21:52:00.000Z → 2026-08-24T08:00:00.000Z
 
 ## Classified Pages
 

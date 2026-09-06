@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-09-06'
 category_descriptions:
   integrations: Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook),
     embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 78
+- **Updated Pages**: 1
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
@@ -53,6 +53,11 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | *(Unclassified)* | 35 | 44.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Transparency note](https://learn.microsoft.com/en-us/azure/health-bot/transparency-note)
+  - Updated: 2024-10-20T15:42:00.000Z → 2026-09-02T10:35:00.000Z
 
 ## Classified Pages
 
@@ -136,8 +141,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Generative Answers On Your Sources](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-generative-answers-on-your-data) | 0.20 | Quickstart for setting up generative answers on private data; summary indicates high-level setup and data residency note without specific limits, configuration tables, error codes, or product-unique best practices. |
 | [Healthcare agent service for Microsoft Copilot M365](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-copilot-m365-integration) | 0.20 | Quickstart-style integration overview that primarily points to a GitHub repository and describes high-level setup for exposing a Healthcare Agent Service instance to Microsoft 365 Copilot. No detailed configuration parameter tables, limits, error codes, or product-specific decision matrices are evident in the summary. |
 | [Healthcare agent service for Microsoft Copilot Studio](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-copilot-studio-integration) | 0.20 | Quickstart for Copilot Studio integration; integration steps but no indication of detailed parameter tables or limits. |
-| [Transparency note](https://learn.microsoft.com/en-us/azure/health-bot/transparency-note) | 0.20 | Transparency note and disclaimer about AI use; policy/ethics content rather than technical expert knowledge. |
 | [Unrecognized Utterances](https://learn.microsoft.com/en-us/azure/health-bot/unrecognized-utterances) | 0.20 | Only title provided; likely conceptual explanation of unrecognized utterances handling, but no evidence of detailed config, limits, or error codes. |
 | [Updates and Announcements](https://learn.microsoft.com/en-us/azure/health-bot/updates) | 0.20 | Release notes and announcements; useful but not a stable expert-knowledge skill type like limits, config, or troubleshooting. |
 | [Create your first healthcare agent service](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-createyourhealthcarebot) | 0.10 | Quickstart tutorial for creating a bot; step-by-step but no detailed configuration matrices, limits, or troubleshooting. |
 | [Healthcare agent service Overview](https://learn.microsoft.com/en-us/azure/health-bot/overview) | 0.10 | High-level overview of the healthcare agent service without product-specific limits, configs, or detailed patterns. |
+| [Transparency note](https://learn.microsoft.com/en-us/azure/health-bot/transparency-note) | 0.10 | Transparency note focuses on AI principles, disclaimers, and responsible use guidance without product-specific limits, configuration parameters, error codes, or technical decision matrices. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   deployment: Guides for deploying Azure Firewall (Standard/Premium), switching SKUs,
     using Bicep/ARM/Terraform, configuring IP Groups, and integrating with Azure DDoS
@@ -8,8 +8,8 @@ category_descriptions:
     using features, performance benchmarks, and deployment steps for Basic with portal
     and policy.
   configuration: 'Configuring Azure Firewall behavior: rules, IP groups, DNS, SNAT,
-    dual-stack, FTP/SQL/DNAT, maintenance windows, logging/monitoring, workbooks,
-    and advanced Premium features.'
+    dual-stack, HTTP/FTP/SQL settings, logging/monitoring, maintenance windows, and
+    advanced Premium features.'
   limits-quotas: Azure Firewall capacity, IP and SNAT port limits, prescaling options,
     TCP idle timeouts, and how to scale/extend outbound connectivity (including via
     NAT Gateway V2).
@@ -29,17 +29,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Firewall development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Azure Firewall SKUs, rules/DNAT/SNAT, DNS proxy, TLS inspection, or
-  multi-hub/spoke routing, and other Azure Firewall related development tasks. Not
-  for Azure DDoS Protection (use azure-ddos-protection), Azure Virtual Network (use
-  azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring Azure Firewall SKUs, rules/DNAT/SNAT, DNS proxy, TLS
-  inspection, or multi-hub/spoke routing, and other Azure Firewall related development
+  configuring Azure Firewall SKUs, DNS/SNAT rules, TLS inspection, multi-hub routing,
+  or DNAT for overlap, and other Azure Firewall related development tasks. Not for
+  Azure Firewall Manager (use azure-firewall-manager), Azure Web Application Firewall
+  (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager).
+use_when: Use when configuring Azure Firewall SKUs, DNS/SNAT rules, TLS inspection,
+  multi-hub routing, or DNAT for overlap, and other Azure Firewall related development
   tasks.
-confusable_not_for: Not for Azure DDoS Protection (use azure-ddos-protection), Azure
-  Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use
-  azure-virtual-network-manager), Azure Web Application Firewall (use azure-web-application-firewall).
+confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager), Azure
+  Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Firewall Crawl Report
 
@@ -48,13 +48,13 @@ confusable_not_for: Not for Azure DDoS Protection (use azure-ddos-protection), A
 - **Total Pages**: 87
 - **Fetched**: 87
 - **Fetch Failed**: 0
-- **Classified**: 56
-- **Unclassified**: 31
+- **Classified**: 55
+- **Unclassified**: 32
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 12
-- **Unchanged**: 75
+- **Updated Pages**: 3
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -68,39 +68,21 @@ confusable_not_for: Not for Azure DDoS Protection (use azure-ddos-protection), A
 | decision-making | 4 | 4.6% |
 | deployment | 6 | 6.9% |
 | integrations | 1 | 1.1% |
-| limits-quotas | 6 | 6.9% |
+| limits-quotas | 5 | 5.7% |
 | security | 10 | 11.5% |
 | troubleshooting | 2 | 2.3% |
-| *(Unclassified)* | 31 | 35.6% |
+| *(Unclassified)* | 32 | 36.8% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Deploy with Availability Zones](https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell)
-  - Updated: 2026-01-15T23:11:00.000Z → 2026-08-26T06:24:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/firewall/deploy-ps-policy)
-  - Updated: 2026-03-30T22:11:00.000Z → 2026-08-27T08:00:00.000Z
-- [DNAT rule for filtering inbound traffic](https://learn.microsoft.com/en-us/azure/firewall/destination-nat-rules)
-  - Updated: 2025-10-14T22:15:00.000Z → 2026-08-28T22:12:00.000Z
-- [Change Azure Firewall SKU](https://learn.microsoft.com/en-us/azure/firewall/change-sku)
-  - Updated: 2026-03-18T08:07:00.000Z → 2026-08-27T08:00:00.000Z
-- [Azure Firewall features by SKU](https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
-  - Updated: 2025-10-01T05:10:00.000Z → 2026-08-28T05:12:00.000Z
-- [FQDN filtering](https://learn.microsoft.com/en-us/azure/firewall/domain-filtering-overview)
-  - Updated: 2025-07-03T05:10:00.000Z → 2026-08-28T22:12:00.000Z
-- [Certifications](https://learn.microsoft.com/en-us/azure/firewall/compliance-certifications)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-08-28T05:12:00.000Z
-- [Integrate with load balancer](https://learn.microsoft.com/en-us/azure/firewall/integrate-lb)
-  - Updated: 2026-03-28T08:00:00.000Z → 2026-08-27T08:00:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/deploy-ps)
-  - Updated: 2026-03-30T22:11:00.000Z → 2026-08-27T08:00:00.000Z
-- [Enterprise CA Certificates](https://learn.microsoft.com/en-us/azure/firewall/premium-deploy-certificates-enterprise-ca)
-  - Updated: 2025-12-31T23:10:00.000Z → 2026-08-27T08:00:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-ps)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-08-27T08:00:00.000Z
-- [Deploy dual-stack firewall (IPv6)](https://learn.microsoft.com/en-us/azure/firewall/deploy-dual-stack-firewall)
-  - Updated: 2026-07-16T22:11:00.000Z → 2026-08-20T11:46:00.000Z
+- [SNAT private ranges](https://learn.microsoft.com/en-us/azure/firewall/snat-private-range)
+  - Updated: 2026-03-28T08:00:00.000Z → 2026-08-31T22:26:00.000Z
+- [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview)
+  - Updated: 2026-03-29T11:12:00.000Z → 2026-08-31T22:26:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
+  - Updated: 2026-06-16T22:28:00.000Z → 2026-08-31T22:26:00.000Z
 
 ## Classified Pages
 
@@ -112,11 +94,10 @@ confusable_not_for: Not for Azure DDoS Protection (use azure-ddos-protection), A
 | [Best practices for performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-best-practices) | best-practices | 0.86 | The page is explicitly a performance best-practices guide for Azure Firewall. It contains product-specific recommendations (for example, how to structure rules, SNAT configuration, IDPS usage, and monitoring choices) that directly affect performance and latency. These are concrete DO/DON'T guidelines tied to Azure Firewall behavior rather than generic networking advice, so it fits the best-practices sub-skill. |
 | [Threat intelligence](https://learn.microsoft.com/en-us/azure/firewall/threat-intel) | security | 0.85 | Details enabling threat intelligence-based filtering, including behavior (evaluated before NAT/network/app rules) and data sources (Microsoft Threat Intelligence feed), which are product-specific security settings. |
 | [Packet capture on Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/packet-capture) | troubleshooting | 0.80 | Packet capture usage is framed for troubleshooting; article covers how to capture and analyze traffic, a product-specific diagnostic workflow. |
-| [SNAT private ranges](https://learn.microsoft.com/en-us/azure/firewall/snat-private-range) | configuration | 0.80 | Explains default SNAT behavior with RFC1918/RFC6598 ranges and how to override it; includes product-specific configuration options and edge-case behavior for SNAT, which is expert configuration knowledge. |
 | [Azure Firewall features by SKU](https://learn.microsoft.com/en-us/azure/firewall/features-by-sku) | decision-making | 0.78 | SKU feature comparison articles typically include detailed, product-specific capability matrices (which features are available or not per Basic/Standard/Premium) and guidance on which SKU to use for different scenarios. This is concrete decision-making information beyond generic knowledge, even if not all numeric limits are shown. |
 | [Choose the right SKU](https://learn.microsoft.com/en-us/azure/firewall/choose-firewall-sku) | decision-making | 0.78 | The page is a comparison guide between Azure Firewall Basic, Standard, and Premium SKUs to help users choose based on requirements. Such SKU selection content typically includes feature comparison tables and scenario-based recommendations (e.g., which SKU for specific security or performance needs), which fits the decision-making sub-skill. It goes beyond a generic overview by guiding SKU choice, even though the summary snippet doesn’t expose all details. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | limits-quotas | 0.78 | FAQ includes product-specific numeric limits (for example, maximum number of IP groups, rules, and collections), timeout and throughput characteristics, and other concrete behavioral details that are not generic networking knowledge. These are expressed as exact values and constraints, fitting the limits-quotas category better than others. |
 | [Performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-performance) | decision-making | 0.78 | The page provides SKU-specific performance and throughput benchmarks for Azure Firewall Basic, Standard, and Premium across different use cases. These quantified metrics (throughput, performance data per SKU/use case) are used to guide selection between tiers, which aligns with decision-making. It goes beyond a conceptual overview by giving concrete performance data that helps users decide which SKU to use for their scenario. |
+| [SNAT private ranges](https://learn.microsoft.com/en-us/azure/firewall/snat-private-range) | configuration | 0.78 | The page describes Azure Firewall’s specific SNAT behavior for private and shared address spaces and how to configure SNAT private IP ranges and auto-learn SNAT routes. It focuses on product-specific configuration options and behaviors (network vs application rules, RFC1918/RFC6598 handling) rather than conceptual networking theory, fitting the configuration sub-skill. |
 | [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior) | limits-quotas | 0.78 | The page describes Azure Firewall TCP session management with specific idle timeout values and behaviors for long-running sessions. These are product-specific timeout limits and behaviors that qualify as expert knowledge under limits-quotas. |
 | [Enterprise CA Certificates](https://learn.microsoft.com/en-us/azure/firewall/premium-deploy-certificates-enterprise-ca) | security | 0.76 | Enterprise CA certificate deployment for Azure Firewall Premium TLS inspection is a product-specific security configuration topic. It likely includes certificate chain requirements, specific certificate types/usages, and configuration steps unique to this service. |
 | [Application rules with SQL FQDNs](https://learn.microsoft.com/en-us/azure/firewall/sql-fqdn-filtering) | configuration | 0.75 | Provides product-specific configuration details: SQL FQDN filtering supported only in proxy mode on port 1433, behavior in redirect mode, and handling non-default ports—these are concrete configuration behaviors unique to Azure Firewall. |
@@ -180,11 +161,11 @@ confusable_not_for: Not for Azure DDoS Protection (use azure-ddos-protection), A
 | [CLI](https://learn.microsoft.com/en-us/azure/firewall/deploy-ps-policy) | 0.30 | Described as a guide to deploy and configure Azure Firewall policy via PowerShell. Likely focuses on procedural commands and basic configuration, without detailed parameter tables, limits, or product-specific best-practice nuances that go beyond standard documentation. |
 | [DNAT rule for filtering inbound traffic](https://learn.microsoft.com/en-us/azure/firewall/destination-nat-rules) | 0.30 | Explains how to set up and monitor DNAT rules, including FQDN filtering. From the summary it looks like a conceptual and procedural configuration guide, not a reference with specific limits, error codes, or detailed configuration matrices. |
 | [Deploy with Availability Zones](https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell) | 0.30 | Appears to be a step-by-step deployment tutorial using PowerShell to enable availability zones for Azure Firewall. No indication of tier-specific limits, configuration parameter tables, or product-specific constraints beyond generic deployment steps. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | 0.30 | FAQ pages often mix conceptual and practical info, but the description does not indicate presence of specific limits, configuration tables, error codes, or other structured expert knowledge required by any sub-skill type. |
 | [Policy Analytics](https://learn.microsoft.com/en-us/azure/firewall/policy-analytics) | 0.30 | Summary indicates a conceptual/feature overview of Policy Analytics (visibility, insights, rule optimization) without evidence of numeric limits, configuration tables, error codes, or detailed settings; likely not containing the specific expert-knowledge patterns defined. |
 | [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal-policy) | 0.30 | Tutorial-style deployment and configuration walkthrough for Azure Firewall in a hybrid network using the portal; primarily step-by-step instructions without clear evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content appears to be general how-to guidance rather than expert-only reference data. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/deploy-ps) | 0.30 | Described as a deployment/configuration tutorial using PowerShell. Tutorials typically show step-by-step commands but not comprehensive configuration tables, limits, or decision matrices. From the summary, it appears generic deployment guidance rather than expert-knowledge configuration or limits. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-ps) | 0.30 | Hybrid network deployment tutorial using PowerShell. The summary focuses on creating virtual networks and using rules, which is procedural tutorial content. It doesn’t clearly indicate detailed configuration tables, limits, or troubleshooting mappings that would qualify as expert knowledge. |
-| [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview) | 0.30 | Lists preview features conceptually; no detailed limits, configs, or troubleshooting mappings. |
 | [Service tags](https://learn.microsoft.com/en-us/azure/firewall/service-tags) | 0.30 | Overview of service tags; describes concept and usage but not detailed configuration parameters, limits, or troubleshooting mappings. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/firewall/deploy-template) | 0.20 | ARM template quickstart; focuses on sample deployment, not on expert configuration or limits. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/firewall/quick-create-multiple-ip-template) | 0.20 | ARM template quickstart; focuses on example deployment, not on exhaustive configuration options, limits, or troubleshooting mappings. |
@@ -193,6 +174,7 @@ confusable_not_for: Not for Azure DDoS Protection (use azure-ddos-protection), A
 | [Certifications](https://learn.microsoft.com/en-us/azure/firewall/compliance-certifications) | 0.20 | Compliance certification pages are largely marketing/compliance overview (listing standards like ISO, SOC, PCI). They rarely contain product-specific configuration, limits, or troubleshooting details, so this doesn’t fit any expert-knowledge sub-skill type. |
 | [FQDN filtering](https://learn.microsoft.com/en-us/azure/firewall/domain-filtering-overview) | 0.20 | Described as an overview of FQDN filtering and how it works with rule types. The summary suggests conceptual behavior, not tables of parameters, limits, or error codes, so it doesn’t meet any expert-knowledge criteria. |
 | [Microsoft Copilot for Security](https://learn.microsoft.com/en-us/azure/firewall/firewall-copilot) | 0.20 | High-level overview of Azure Firewall integration with Microsoft Security Copilot; mostly conceptual description of capabilities, not detailed configuration or limits. |
+| [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview) | 0.20 | Preview features listing; description suggests a high-level enumeration of Azure Firewall preview capabilities without clear indication of numeric limits, configuration tables, error mappings, or other detailed expert-only data. |
 | [Remote work support](https://learn.microsoft.com/en-us/azure/firewall/remote-work-support) | 0.20 | The description and summary indicate a conceptual explanation of how Azure Firewall can support remote work, likely focusing on capabilities and scenarios rather than detailed configuration parameters, limits, or error codes. It reads as guidance/overview, not a parameterized configuration, troubleshooting, or quantified decision guide. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/firewall/deploy-terraform) | 0.20 | Terraform quickstart for Availability Zones; step-by-step deployment content, not expert reference material with limits or specialized patterns. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/firewall/quick-create-multiple-ip-terraform) | 0.20 | Quickstart Terraform deployment tutorial; shows how to deploy but not detailed limits, quotas, or specialized configuration references. |

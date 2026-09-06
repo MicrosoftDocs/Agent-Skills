@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 - **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 18
-- **Unchanged**: 97
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 116
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -69,49 +69,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 36 | 31.0% |
 
 ## Changes
-
-### New Pages
-
-- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/translator/region-support)
-
-### Updated Pages
-
-- [Enable private virtual networks](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/enable-vnet-service-endpoint)
-  - Updated: 2026-06-02T08:00:00.000Z → 2026-08-23T11:06:00.000Z
-- [What are Azure Translator containers?](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/overview)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-07-22T08:00:00.000Z
-- [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/install-run)
-  - Updated: 2026-05-19T08:00:00.000Z → 2026-08-03T08:00:00.000Z
-- [Container configuration guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/configuration)
-  - Updated: 2026-05-22T08:00:00.000Z → 2026-07-31T08:00:00.000Z
-- [Deploy user-managed glossary](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/deploy-user-managed-glossary)
-  - Updated: 2026-04-15T08:00:00.000Z → 2026-08-08T08:00:00.000Z
-- [Translator container FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/faq)
-  - Updated: 2026-07-23T17:19:00.000Z → 2026-08-19T22:12:00.000Z
-- [What are Azure Translator solutions?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/overview)
-  - Updated: 2026-06-03T06:09:00.000Z → 2026-07-26T08:00:00.000Z
-- [What is Microsoft Translator Pro?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/overview)
-  - Updated: 2026-06-03T06:09:00.000Z → 2026-08-14T08:00:00.000Z
-- [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq)
-  - Updated: 2026-07-23T17:19:00.000Z → 2026-08-19T22:12:00.000Z
-- [Automate document translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/connector/document-translation-flow)
-  - Updated: 2026-05-28T08:00:00.000Z → 2026-08-06T08:00:00.000Z
-- [Automate text translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/connector/text-translator-flow)
-  - Updated: 2026-06-12T08:00:00.000Z → 2026-07-21T08:00:00.000Z
-- [Publish a portal custom model](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/publish-model)
-  - Updated: 2026-06-02T08:00:00.000Z → 2026-08-23T11:06:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/ai-services/translator/service-limits)
-  - Updated: 2026-04-17T08:00:00.000Z → 2026-08-11T08:00:00.000Z
-- [Azure Translator FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/faq)
-  - Updated: 2026-07-11T06:03:00.000Z → 2026-08-17T08:00:00.000Z
-- [Enable Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/ai-services/translator/how-to/microsoft-entra-id-auth)
-  - Updated: 2026-05-05T08:00:00.000Z → 2026-08-04T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/overview)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-08-23T11:06:00.000Z
-- [Translate behind firewalls](https://learn.microsoft.com/en-us/azure/ai-services/translator/how-to/use-firewalls)
-  - Updated: 2026-04-30T08:00:00.000Z → 2026-07-28T08:00:00.000Z
-- [HTTP reference](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/reference)
-  - Updated: 2026-06-02T08:00:00.000Z → 2026-08-23T11:06:00.000Z
 
 ## Classified Pages
 

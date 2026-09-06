@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   integrations: Coding patterns and samples for building, running, and attesting Intel
     SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools,
@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 - **Total Pages**: 70
 - **Fetched**: 70
 - **Fetch Failed**: 0
-- **Classified**: 49
-- **Unclassified**: 21
+- **Classified**: 48
+- **Unclassified**: 22
 
 ### Incremental Update
 - **New Pages**: 0
@@ -63,15 +63,15 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | deployment | 6 | 8.6% |
 | integrations | 7 | 10.0% |
 | limits-quotas | 2 | 2.9% |
-| security | 12 | 17.1% |
-| *(Unclassified)* | 21 | 30.0% |
+| security | 11 | 15.7% |
+| *(Unclassified)* | 22 | 31.4% |
 
 ## Changes
 
 ### Updated Pages
 
-- [BeeKeeperAI](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/beekeeperai)
-  - Updated: 2023-07-06T22:41:00.000Z → 2026-08-19T17:11:00.000Z
+- [SKR with Azure Confidential Computing Concept](https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation)
+  - Updated: 2023-08-22T21:55:00.000Z → 2026-09-03T22:14:00.000Z
 
 ## Classified Pages
 
@@ -83,7 +83,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Key rotation for Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/key-rotation-offline) | configuration | 0.80 | Describes how to configure and rotate customer-managed keys via Disk Encryption Sets and managed HSM/Key Vault; includes Azure-specific configuration steps. |
 | [Microsoft Defender for Cloud integration](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-defender-for-cloud) | security | 0.80 | Product-specific integration of Defender for Cloud with guest attestation, including required feature installation and recommendation flows. |
 | [SKR with AMD SEV-SNP based Confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/skr-flow-confidential-vm-sev-snp) | integrations | 0.80 | Describes integration flow between AKV, MAA, and AMD SEV-SNP confidential VMs/AKS, including remote attestation requirements; product-specific integration pattern. |
-| [SKR with Azure Confidential Computing Concept](https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation) | security | 0.80 | Explains SKR policies, how keys are released only to attested TEEs, and how to target specific runtimes; product-specific security mechanism. |
 | [SKR with Confidential containers on Azure Container Instance](https://learn.microsoft.com/en-us/azure/confidential-computing/skr-flow-confidential-containers-azure-container-instance) | integrations | 0.80 | Details SKR flow for confidential containers using Direct Linux Boot and SEV-SNP, contrasting with vTPM-based flows; product-specific integration behavior. |
 | [Virtual Trusted Platform Modules (TPMs) in Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-tpms-in-azure-confidential-vm) | security | 0.80 | Details vTPM behavior in confidential VMs, TPM 2.0 compliance, and protected memory regions; product-specific security mechanism usage. |
 | [Azure confidential VM options](https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-options) | decision-making | 0.75 | Compares AMD SEV-SNP and Intel TDX TEEs for confidential VMs, enabling hardware/TEE selection decisions based on product-specific characteristics. |
@@ -147,6 +146,7 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Habu](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/habu) | 0.20 | Partner solution marketing page for Habu; summary indicates no detailed Azure configuration or troubleshooting content. |
 | [Mithril Security](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/mithril) | 0.20 | Partner solution marketing page for Mithril Security; appears conceptual rather than detailed technical guidance. |
 | [Opaque](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/opaque) | 0.20 | Partner solution marketing page for Opaque; no indication of specific Azure configuration or limits. |
+| [SKR with Azure Confidential Computing Concept](https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation) | 0.20 | From the summary, this is a conceptual guide explaining what Secure Key Release is and how it works with Azure Confidential Computing. It doesn't indicate presence of specific numeric limits, configuration parameter tables, RBAC role lists, error codes, or decision matrices. Without those concrete, product-specific details, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Scone](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/scone) | 0.20 | Partner solution marketing page for Scontain; likely high-level solution description without expert configuration details. |
 | [Trusted compute base (TCB)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-compute-base) | 0.20 | Conceptual explanation of Trusted Computing Base; no concrete Azure configuration, limits, or decision criteria. |
 | [Trusted execution environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment) | 0.20 | Explains what a TEE is conceptually; lacks product-specific configuration, limits, or decision matrices. |

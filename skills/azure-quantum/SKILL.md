@@ -1,9 +1,9 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK (Python/Q#/OpenQASM), Azure Quantum workspaces, IonQ/Quantinuum/Rigetti targets, QIR jobs, or VS Code tools, and other Azure Quantum related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK (Python/Q#), OpenQASM jobs, Rigetti/IonQ/Quantinuum targets, VS Code tools, or Azure CLI/QIR, and other Azure Quantum related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L45-L49 | Tools and techniques for testing, debugging, and validating quantum programs with the Azure Quantum Development Kit (QDK), including simulators, logging, and troubleshooting. |
 | Decision Making | L50-L57 | Guidance on choosing job submission methods, comparing provider pricing and regions, and migrating Azure Quantum workspaces between geographic locations. |
 | Architecture & Design Patterns | L58-L62 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
-| Limits & Quotas | L63-L69 | Managing Azure Quantum quotas, session limits/timeouts, and Rigetti-specific target capacities and hardware constraints. |
-| Security | L70-L80 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
-| Configuration | L81-L93 | Configuring Azure Quantum workspaces, QDK tools, simulators, hardware/error models, resource estimator settings/output, and VS Code integration for specific quantum targets. |
-| Integrations & Coding Patterns | L94-L108 | Using QDK (Python, Q#, OpenQASM) to connect to workspaces, submit/visualize circuits and hybrid jobs, and configure simulators/noise/resource models for Azure Quantum jobs |
+| Limits & Quotas | L63-L70 | Managing Azure Quantum API lifecycles, usage quotas, session limits/timeouts, and Rigetti hardware target constraints and capacity. |
+| Security | L71-L81 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
+| Configuration | L82-L94 | Configuring Azure Quantum workspaces, QDK tools, simulators, hardware/error models, resource estimator settings/output, and VS Code integration for specific quantum targets. |
+| Integrations & Coding Patterns | L95-L108 | Using QDK (Python/Q#) with Azure Quantum: connecting workspaces, submitting jobs/circuits (incl. OpenQASM), configuring simulators and noise models, hybrid workflows, and resource estimation. |
 | Deployment | L109-L113 | Deploying Azure Quantum workspaces via Bicep templates and submitting QIR-based quantum jobs using Azure CLI, including setup, configuration, and command workflows. |
 
 ### Troubleshooting
@@ -63,6 +63,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Manage Azure Quantum preview API lifecycle and expiry | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-api-lifecycle |
 | Review and manage Azure Quantum usage quotas | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-quotas |
 | Manage Azure Quantum sessions and timeouts | https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-sessions |
 | Rigetti provider targets and hardware limits in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-rigetti |
@@ -94,9 +95,8 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Connect Python QDK to an Azure Quantum workspace | https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace |
+| Connect Python QDK to Azure Quantum workspace | https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace |
 | Submit quantum jobs with QDK Python package | https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs-python |
-| Submit Q# and OpenQASM jobs from VS Code | https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs-vscode |
 | Visualize Q# and OpenQASM circuits with QDK | https://learn.microsoft.com/en-us/azure/quantum/how-to-visualize-circuits |
 | Run integrated hybrid quantum jobs with Adaptive RI in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated |
 | Configure neutral atom noise models with QDK Python APIs | https://learn.microsoft.com/en-us/azure/quantum/neutral-atom-noise-models |

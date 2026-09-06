@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: 'Configuring Data API builder: CLI setup, JSON schema, entities,
     data sources, security, caching, telemetry, logging, health checks, OpenAPI, and
@@ -73,8 +73,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Updated Pages
 
-- [Feature Availability](https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability)
-  - Updated: 2026-04-02T23:04:00.000Z → 2026-08-17T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/)
+  - Updated: 2026-06-04T17:04:00Z → 2026-09-02T17:03:00Z
 
 ## Classified Pages
 
@@ -210,7 +210,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start) | 0.20 | Focuses on running `dab start` from VS Code; appears to be a basic usage guide rather than configuration reference or deployment constraints. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/) | 0.20 | High-level description of GraphQL API capabilities (queries, mutations, relationships, aggregation). No indication of detailed config, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/) | 0.20 | Conceptual overview of REST API capabilities (CRUD, filtering, sorting, pagination, OpenAPI). No indication of detailed configuration tables, limits, or error mappings. |
-| [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/) | 0.20 | High-level quickstart hub listing multiple scenarios; no indication of detailed limits, configuration schemas, or error mappings beyond what an LLM likely knows. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/) | 0.20 | Release-notes landing page summarizing versions and features; no detailed limits, configs, or error mappings evident. |
 | [What is Data API builder (DAB)?](https://learn.microsoft.com/en-us/azure/data-api-builder/overview) | 0.20 | High-level product overview of Data API builder; no detailed configuration tables, limits, or product-specific patterns. |
 | [What is REST Endpoint?](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/overview) | 0.20 | “How to call REST endpoints” sounds like general usage/tutorial content without explicit mention of limits, config matrices, or troubleshooting details. |
@@ -220,3 +219,4 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [DAB 1.4 (Stability release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-4) | 0.10 | Release notes for version 1.4; incremental update notes, not deep configuration or troubleshooting content. |
 | [DAB 1.5 (Feature release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-5) | 0.10 | Release notes for version 1.5; mostly feature and bug-fix descriptions without structured expert configuration or limits. |
 | [DAB 1.6 (Stability release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-6) | 0.10 | Release notes for version 1.6; typically change summaries and bug fixes, not structured expert patterns or configs. |
+| [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/) | - | Quickstart page focused on getting started with Data API builder across various databases; likely step-by-step setup and basic usage without detailed limits, configuration matrices, error-code mappings, or product-specific decision criteria. |

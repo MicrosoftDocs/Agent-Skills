@@ -1,9 +1,9 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when integrating AKS/Prometheus, Azure Data Explorer, AI Foundry dashboards, private endpoints, or SMTP alerts, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring private endpoints, Entra group sync, AKS/Prometheus data sources, SMTP alerts, or Enterprise plans, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Grafana Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L34-L39 | Diagnosing and resolving common Azure Managed Grafana issues, including access, configuration, and private endpoint connectivity and DNS problems. |
-| Decision Making | L40-L46 | Planning and executing Grafana decisions: choosing/activating Enterprise plans, migrating from self‑hosted or Azure Grafana Essential, and upgrading Azure Managed Grafana (incl. v12). |
-| Limits & Quotas | L47-L53 | Details on Managed Grafana regional availability, quotas and constraints, plus how to use features like reporting and image rendering within those limits. |
-| Security | L54-L67 | Securing Managed Grafana: encryption, auth (APIs, users, service accounts), roles/permissions, private endpoints, dashboard sharing, Entra group sync, and security best practices. |
-| Configuration | L68-L79 | Configuring Azure Managed Grafana: instance settings, private endpoints, outbound IPs, zone redundancy, plugins, metrics/diagnostics, and SMTP email alerts. |
-| Integrations & Coding Patterns | L80-L89 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
+| Decision Making | L40-L45 | Planning and executing Grafana decisions: choosing/activating Enterprise plans, migrating from self‑hosted or Azure Grafana Essential, and upgrading Azure Managed Grafana (incl. v12). |
+| Limits & Quotas | L46-L52 | Details on Managed Grafana regional availability, quotas and constraints, plus how to use features like reporting and image rendering within those limits. |
+| Security | L53-L66 | Securing Managed Grafana: encryption, auth (users, service accounts, tokens), roles/permissions, private endpoints, Entra group sync, dashboard sharing, and security best practices. |
+| Configuration | L67-L77 | Configuring Azure Managed Grafana: instance settings, private endpoints, outbound IPs, zone redundancy, plugins, metrics/diagnostics, and SMTP email alerts. |
+| Integrations & Coding Patterns | L78-L87 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -42,7 +42,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Migrate self-hosted or cloud Grafana to Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate |
 | Plan migration from Azure Grafana Essential to Standard or Azure Monitor | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate-essential-service-tier |
-| Plan and perform Azure Managed Grafana 12 upgrade | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12 |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -73,7 +72,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure deterministic outbound IPs for Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-deterministic-ip |
 | Enable zone redundancy for Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-enable-zone-redundancy |
 | Manage Grafana plugins in Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins |
-| Monitor Managed Grafana metrics with Azure Monitor | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics |
 | Configure diagnostic settings and logs for Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-workspace |
 | Configure SMTP email alerts in Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-smtp-settings |
 

@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 63
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 68
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
 
@@ -70,21 +70,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | *(Unclassified)* | 15 | 22.1% |
 
 ## Changes
-
-### New Pages
-
-- [Enable disaster recovery for an existing namespace](https://learn.microsoft.com/en-us/azure/notification-hubs/enable-disaster-recovery-existing-namespace)
-
-### Updated Pages
-
-- [Move resources between regions](https://learn.microsoft.com/en-us/azure/notification-hubs/move-registrations)
-  - Updated: 2021-10-25T17:02:00.000Z → 2024-08-04T11:36:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-faq)
-  - Updated: 2026-07-15T22:16:00.000Z → 2026-08-26T11:42:00.000Z
-- [Create notification hub - Azure portal](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-portal)
-  - Updated: 2025-05-01T08:00:00.000Z → 2026-08-26T11:42:00.000Z
-- [UWP React Native sample overview](https://learn.microsoft.com/en-us/azure/notification-hubs/uwp-react)
-  - Updated: 2022-04-25T22:04:00.000Z → 2026-03-25T22:12:00.000Z
 
 ## Classified Pages
 

@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 399
+- **Updated Pages**: 0
+- **Unchanged**: 405
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,21 +76,6 @@ confusable_not_for: Not for Azure Cloud Services (use azure-cloud-services), Azu
 | *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new for Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/whats-new)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Node types and virtual machine scale sets](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-nodetypes)
-  - Updated: 2026-06-24T22:03:00.000Z → 2026-08-27T17:05:00.000Z
-- [Windows](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started)
-  - Updated: 2026-06-22T22:03:00.000Z → 2026-08-19T08:00:00.000Z
-- [Configure secure connections in Visual Studio](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-visualstudio-configure-secure-connections)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-08-25T17:04:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/service-fabric/release-notes)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
-  - Updated: 2026-07-26T11:03:00.000Z → 2026-08-19T08:00:00.000Z
 
 ## Classified Pages
 

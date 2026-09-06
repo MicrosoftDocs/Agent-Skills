@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   integrations: Integrating Azure SRE Agent with DevOps, GitHub, observability, incident
     tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant
     access configuration
-  security: Identity, auth, RBAC, network/firewall, GitHub/ADO access, IP allow-listing,
-    approvals, and security architecture for securely running Azure SRE Agent.
+  security: 'Securing Azure SRE Agent: identities, RBAC and roles, network/firewall,
+    data privacy, GitHub/ADO access, subscription visibility, tool access policies,
+    and approval/run-mode controls.'
   troubleshooting: 'Diagnosing and fixing SRE Agent issues: querying telemetry with
     KQL, filing Azure support tickets, resolving deployment/operation failures, and
     debugging Java performance on AKS.'
@@ -24,14 +25,14 @@ category_descriptions:
     caps, feature restrictions, and what happens when you reach or exceed those limits.
 skill_description: Expert knowledge for Azure Sre Agent development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/GitHub, Log
-  Analytics vs App Insights, AKS Java, IaC deploy, or 30-day trial limits, and other
+  & coding patterns, and deployment. Use when integrating SRE Agent with DevOps/GitHub,
+  configuring tools/telemetry, deploying via IaC, or managing trial limits, and other
   Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor),
   Azure Service Health (use azure-service-health), Azure Reliability (use azure-reliability),
   Azure Resiliency (use azure-resiliency).
-use_when: Use when wiring SRE Agent to DevOps/GitHub, Log Analytics vs App Insights,
-  AKS Java, IaC deploy, or 30-day trial limits, and other Azure Sre Agent related
-  development tasks.
+use_when: Use when integrating SRE Agent with DevOps/GitHub, configuring tools/telemetry,
+  deploying via IaC, or managing trial limits, and other Azure Sre Agent related development
+  tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Health
   (use azure-service-health), Azure Reliability (use azure-reliability), Azure Resiliency
   (use azure-resiliency).
@@ -43,13 +44,13 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 - **Total Pages**: 123
 - **Fetched**: 123
 - **Fetch Failed**: 0
-- **Classified**: 52
-- **Unclassified**: 71
+- **Classified**: 53
+- **Unclassified**: 70
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 12
-- **Unchanged**: 109
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -63,43 +64,16 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 | deployment | 1 | 0.8% |
 | integrations | 17 | 13.8% |
 | limits-quotas | 1 | 0.8% |
-| security | 14 | 11.4% |
+| security | 15 | 12.2% |
 | troubleshooting | 4 | 3.3% |
-| *(Unclassified)* | 71 | 57.7% |
+| *(Unclassified)* | 70 | 56.9% |
 
 ## Changes
 
-### New Pages
-
-- [Live Reports](https://learn.microsoft.com/en-us/azure/sre-agent/live-reports)
-- [Evaluate SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/evaluate)
-
 ### Updated Pages
 
-- [Network integration](https://learn.microsoft.com/en-us/azure/sre-agent/network-integration)
-  - Updated: 2026-06-11T22:20:00.000Z → 2026-08-25T02:03:00.000Z
-- [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions)
-  - Updated: 2026-07-15T22:16:00.000Z → 2026-08-19T22:10:00.000Z
-- [Pricing and billing](https://learn.microsoft.com/en-us/azure/sre-agent/pricing-billing)
-  - Updated: 2026-05-14T11:14:00.000Z → 2026-08-25T02:03:00.000Z
-- [What is SRE Agent?](https://learn.microsoft.com/en-us/azure/sre-agent/overview)
-  - Updated: 2026-07-30T08:00:00.000Z → 2026-08-27T22:11:00.000Z
-- [Create and set up](https://learn.microsoft.com/en-us/azure/sre-agent/create-and-set-up)
-  - Updated: 2026-07-10T08:00:00.000Z → 2026-08-25T22:15:00.000Z
-- [Team onboarding](https://learn.microsoft.com/en-us/azure/sre-agent/team-onboard)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-08-25T22:15:00.000Z
-- [Complete setup](https://learn.microsoft.com/en-us/azure/sre-agent/complete-setup)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-08-25T22:15:00.000Z
-- [Run your first investigation](https://learn.microsoft.com/en-us/azure/sre-agent/first-investigation)
-  - Updated: 2026-07-17T17:52:00.000Z → 2026-08-25T22:15:00.000Z
-- [Automate incident response](https://learn.microsoft.com/en-us/azure/sre-agent/automate-incidents)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-08-25T22:15:00.000Z
-- [Automate workflows](https://learn.microsoft.com/en-us/azure/sre-agent/automate-workflows)
-  - Updated: 2026-04-24T18:40:00.000Z → 2026-08-25T22:15:00.000Z
-- [User roles and permissions](https://learn.microsoft.com/en-us/azure/sre-agent/user-roles)
-  - Updated: 2026-04-07T06:20:00.000Z → 2026-08-25T02:03:00.000Z
-- [Managed connectors](https://learn.microsoft.com/en-us/azure/sre-agent/managed-connectors)
-  - Updated: 2026-06-04T17:12:00.000Z → 2026-08-20T22:11:00.000Z
+- [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy)
+  - Updated: 2026-05-08T06:13:00.000Z → 2026-09-03T22:14:00.000Z
 
 ## Classified Pages
 
@@ -118,6 +92,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 | [Allow list Key Vault firewall](https://learn.microsoft.com/en-us/azure/sre-agent/allow-list-key-vault-firewall) | security | 0.70 | The page describes how to add the agent’s outbound IP addresses to Azure Key Vault firewall so certificate-based connectors can retrieve certificates. This is a product-specific security configuration pattern involving firewall rules and outbound IPs, which qualifies as security expert knowledge rather than a generic concept. |
 | [Azure DevOps Wiki knowledge](https://learn.microsoft.com/en-us/azure/sre-agent/azure-devops-wiki-knowledge) | integrations | 0.70 | Explains connecting Azure DevOps wikis with support for managed identity and PAT; this is a concrete integration with authentication configuration details. |
 | [Configure agent hooks](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-agent-hooks) | configuration | 0.70 | REST API v2 tutorial for Stop and PostToolUse hooks will include JSON schema, field names, and allowed values for hook configuration, fitting configuration. |
+| [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy) | security | 0.70 | The page contains product-specific privacy and data handling details for Azure SRE Agent, including how data is processed and stored when using Anthropic as a non-Microsoft provider under Microsoft's oversight. These are service-specific security/privacy behaviors and controls that go beyond generic concepts, but the summary doesn't indicate numeric limits or configuration tables, so 'security' is the best fit. |
 | [Evaluate SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/evaluate) | limits-quotas | 0.70 | Describes a 30-day evaluation period with waived always-on charges and ongoing consumption charges; trial terms and table details constitute product-specific numeric limits and conditions. |
 | [Kusto tools](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-tools) | integrations | 0.70 | Kusto tools are deterministic query tools with parameterization; page likely documents tool schema, parameter names, and constraints specific to Azure Data Explorer integration, matching integrations. |
 | [MCP server](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server) | integrations | 0.70 | Describes the Azure SRE Agent MCP server and how it integrates with MCP-compatible clients like VS Code, Copilot CLI, and Claude Desktop. This is a product-specific integration pattern exposing the agent’s capabilities into external tools. |
@@ -207,7 +182,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 | [Add a web page knowledge source](https://learn.microsoft.com/en-us/azure/sre-agent/add-web-page) | 0.20 | Simple tutorial to add a web page as a knowledge source; appears to be basic UI steps without configuration tables or advanced patterns. |
 | [Azure Data Explorer connector](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-cluster-grouping) | 0.20 | Describes connecting to Azure Data Explorer clusters and grouping; summary suggests conceptual connector behavior without specific configuration tables, limits, or error mappings. |
 | [Complete setup](https://learn.microsoft.com/en-us/azure/sre-agent/complete-setup) | 0.20 | Describes completing setup and connecting data sources; summary suggests navigation and basic configuration steps rather than detailed parameter tables or constraints. |
-| [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy) | 0.20 | Primarily describes data handling, residency, and privacy posture for Azure SRE Agent and Anthropic as a non-Microsoft provider. It does not expose concrete configuration parameter tables, RBAC role lists, limits/quotas, or other detailed technical settings that meet the expert-knowledge criteria for any sub-skill type. |
 | [Install a Marketplace plugin](https://learn.microsoft.com/en-us/azure/sre-agent/install-plugin-from-marketplace) | 0.20 | Installation tutorial for adding a public plugin marketplace and installing plugins; no limits, configuration tables, error-code troubleshooting, or other expert-only details. |
 | [Install a plugin from URL](https://learn.microsoft.com/en-us/azure/sre-agent/install-plugin-from-url) | 0.20 | Step-by-step guide to install a plugin from a GitHub URL; lacks numeric limits, detailed configuration matrices, or product-specific troubleshooting content. |
 | [Learn via Chat](https://learn.microsoft.com/en-us/azure/sre-agent/docsguide) | 0.20 | DocsGuide feature overview; no indication of detailed configuration parameters, limits, or troubleshooting mappings. |

@@ -53,7 +53,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 111
-- **Deleted Pages**: 4
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
 ## Classification Statistics
@@ -71,13 +71,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 25 | 22.5% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Deploy agent-based Linux worker~~ (https://learn.microsoft.com/en-us/azure/automation/automation-linux-hrw-install)
-- ~~Deploy agent-based Windows worker~~ (https://learn.microsoft.com/en-us/azure/automation/automation-windows-hrw-install)
-- ~~Migrate existing Agent-based Hybrid Workers to Extension-based Workers~~ (https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers)
-- ~~Troubleshoot Agent-based Hybrid Runbook Worker Issues~~ (https://learn.microsoft.com/en-us/azure/automation/troubleshoot/hybrid-runbook-worker)
 
 ## Classified Pages
 

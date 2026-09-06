@@ -1,17 +1,18 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
-  configuration: 'Configuring AVD environments: images, autoscale, networking, RDP/redirection,
-    Teams/OneDrive, licensing, language packs, monitoring, and client/RemoteApp behavior.'
+  configuration: Configuring AVD session hosts, images, autoscale, networking, RDP
+    features/redirection, licensing, app attach, Teams/Office, language packs, monitoring,
+    and client connection settings.
   troubleshooting: 'Diagnosing and fixing AVD issues: agent updates, autoscale, connectivity,
     session host health, graphics/Teams performance, MSIX App Attach, and using logs/Insights
     for troubleshooting.'
-  deployment: 'Guides for deploying and migrating AVD: adding session hosts, moving
-    from classic, hybrid/on-prem setups, regional host pools, region moves, and client/MMR
-    deployment via Intune/ConfigMgr.'
-  best-practices: Best practices for autoscaling, host pool validation, proxy usage,
-    Start VM on Connect, Windows multi-session configuration, and resolving Azure
-    Advisor/FAQ guidance for Azure Virtual Desktop.
+  deployment: 'Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD
+    moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment
+    via Intune/ConfigMgr.'
+  best-practices: Best practices for scaling, validating, and updating AVD host pools;
+    handling Advisor and Start VM on Connect, proxy usage, FAQs, and Windows Enterprise
+    multi-session configuration.
   decision-making: Planning and choosing AVD deployment models, autoscale, regions,
     data locations, storage, licensing, management tools, and estimating/optimizing
     AVD and Insights costs
@@ -29,32 +30,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring host pools, FSLogix profiles, MSIX App Attach, WebRTC redirection,
+  Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App Attach,
   or Teams optimization, and other Azure Virtual Desktop related development tasks.
   Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
-  azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Lab Services
-  (use azure-lab-services).
-use_when: Use when configuring host pools, FSLogix profiles, MSIX App Attach, WebRTC
-  redirection, or Teams optimization, and other Azure Virtual Desktop related development
+  azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
+use_when: Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App
+  Attach, or Teams optimization, and other Azure Virtual Desktop related development
   tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution),
-  Azure Lab Services (use azure-lab-services).
+  Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
 ---
 # Azure Virtual Desktop Crawl Report
 
 ## Summary
 
-- **Total Pages**: 157
-- **Fetched**: 157
+- **Total Pages**: 158
+- **Fetched**: 158
 - **Fetch Failed**: 0
-- **Classified**: 121
+- **Classified**: 122
 - **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 153
+- **New Pages**: 1
+- **Updated Pages**: 5
+- **Unchanged**: 152
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -63,28 +62,34 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 4 | 2.5% |
-| best-practices | 7 | 4.5% |
-| configuration | 56 | 35.7% |
+| best-practices | 8 | 5.1% |
+| configuration | 56 | 35.4% |
 | decision-making | 12 | 7.6% |
 | deployment | 6 | 3.8% |
 | integrations | 3 | 1.9% |
 | limits-quotas | 2 | 1.3% |
-| security | 18 | 11.5% |
-| troubleshooting | 13 | 8.3% |
-| *(Unclassified)* | 36 | 22.9% |
+| security | 18 | 11.4% |
+| troubleshooting | 13 | 8.2% |
+| *(Unclassified)* | 36 | 22.8% |
 
 ## Changes
 
+### New Pages
+
+- [Windows update management methodologies](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts)
+
 ### Updated Pages
 
-- [App Attach overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-08-26T02:53:00.000Z
-- [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension)
-  - Updated: 2026-07-16T03:35:00.000Z → 2026-08-18T20:37:00.000Z
-- [Security recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-08-26T08:00:00.000Z
-- [Regional Host Pools](https://learn.microsoft.com/en-us/azure/virtual-desktop/regional-host-pools)
-  - Updated: 2026-01-12T21:37:00.000Z → 2026-08-29T02:34:00.000Z
+- [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint)
+  - Updated: 2026-07-31T04:58:00.000Z → 2026-09-02T17:31:00.000Z
+- [RemoteApp enhancements (preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements)
+  - Updated: 2026-05-06T18:12:00.000Z → 2026-09-02T05:35:00.000Z
+- [Azure Virtual Desktop Hybrid Overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview)
+  - Updated: 2026-06-26T22:51:00.000Z → 2026-09-01T20:35:00.000Z
+- [Deploy Azure Virtual Desktop Hybrid](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop-hybrid)
+  - Updated: 2026-06-26T22:51:00.000Z → 2026-09-01T20:35:00.000Z
+- [Configure Start VM on Connect](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect)
+  - Updated: 2025-06-20T03:01:00.000Z → 2026-08-31T22:35:00.000Z
 
 ## Classified Pages
 
@@ -98,12 +103,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Uniform Resource Identifier schemes](https://learn.microsoft.com/en-us/azure/virtual-desktop/uri-scheme) | integrations | 0.90 | Details URI commands and parameters for the Remote Desktop client (parameter names, formats, and constraints), which are integration-focused API/URI configuration patterns. |
 | [Available RBAC roles for Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/rbac) | security | 0.85 | Lists Azure Virtual Desktop–specific RBAC roles and their permissions, which are product-specific security configuration details. |
 | [Diagnosing graphics performance issues](https://learn.microsoft.com/en-us/azure/virtual-desktop/remotefx-graphics-performance-counters) | troubleshooting | 0.85 | Explains how to use specific RemoteFX graphics performance counters in PerfMon to diagnose graphics bottlenecks—product-specific counters and interpretation steps. |
-| [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint) | configuration | 0.85 | Page lists exact required FQDNs/endpoints that must be allowed through firewalls/proxies for Azure Virtual Desktop to function. These are product-specific configuration details (hostnames, ports, categories) that qualify as expert configuration knowledge. |
 | [Administrative template](https://learn.microsoft.com/en-us/azure/virtual-desktop/administrative-template) | configuration | 0.80 | Covers adding ADMX templates and configuring features via Intune/Group Policy; implies specific policy names and settings unique to AVD. |
 | [Assign RBAC roles to the service principals](https://learn.microsoft.com/en-us/azure/virtual-desktop/service-principal-assign-roles) | security | 0.80 | How-to for assigning specific Azure RBAC and Entra roles to service principals, including role names and scopes, is security configuration guidance. |
 | [Collect and query user connection quality data](https://learn.microsoft.com/en-us/azure/virtual-desktop/connection-quality-monitoring) | troubleshooting | 0.80 | Shows how to set up and query a specific connection quality data table in Log Analytics, including table names and KQL examples for diagnosing issues—product-specific troubleshooting patterns. |
 | [Configure RDP Shortpath](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-rdp-shortpath) | configuration | 0.80 | How-to configuration article for enabling Shortpath with specific settings and network parameters, matching configuration criteria. |
-| [Configure Start VM on Connect](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect) | configuration | 0.80 | Explains enabling/disabling Start VM on Connect with behavior differences for pooled vs personal pools; involves specific host pool settings and constraints. |
 | [Configure single sign-on using AD FS](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso) | security | 0.80 | Product-specific SSO configuration using AD FS, with concrete settings and integration steps, fits security configuration. |
 | [Network connectivity for 169.254.169.254 and 168.63.129.16](https://learn.microsoft.com/en-us/azure/virtual-desktop/azurecommunicationips) | configuration | 0.80 | The page describes two specific Azure platform IP addresses required for Azure Virtual Desktop and Windows 365 Cloud PCs, and how traffic to them must be handled. These are concrete, product-specific network configuration values (IP addresses and handling rules) that qualify as expert configuration knowledge rather than general concepts. |
 | [Set custom RDP properties](https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties) | configuration | 0.80 | Explicitly about RDP properties with default values and overrides; includes property names, allowed values, and behavior unique to AVD host pools. |
@@ -121,12 +124,14 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [MTP and PTP](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-plug-play-mtp-ptp) | configuration | 0.78 | Explains how to configure redirection for MTP/PTP devices using specific RDP/Group Policy settings and flags, which are product-specific configuration parameters. |
 | [Printers](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers) | configuration | 0.78 | Printer redirection behavior over RDP is controlled via specific configuration options (policy settings, RDP properties, and registry/config parameters) that determine which printers are redirected and how. This page provides product-specific configuration details for Azure Virtual Desktop/Windows 365/Microsoft Dev Box rather than just conceptual guidance, so it fits the configuration sub-skill. |
 | [Require single sign-on using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/virtual-desktop/require-authentication-using-microsoft-entra-id) | security | 0.78 | The page describes how to enforce Microsoft Entra ID authentication for RDP-based connections in Azure Virtual Desktop, including product-specific security configuration steps and settings (for example, how to require Entra ID regardless of client and how it interacts with single sign-on). This is concrete, service-specific security configuration guidance rather than a conceptual overview. |
+| [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint) | configuration | 0.78 | The page lists specific required FQDNs and endpoints that must be allowed through firewalls or proxies for Azure Virtual Desktop session hosts and users. These are product-specific configuration details (exact hostnames, endpoint categories, and usage) that an LLM wouldn't reliably know from training and are needed to correctly configure network access. |
 | [Send diagnostic data to Log Analytics](https://learn.microsoft.com/en-us/azure/virtual-desktop/diagnostics-log-analytics) | troubleshooting | 0.78 | Describes AVD diagnostics categories and how to use Log Analytics to identify connection issues, including specific log categories and queries—symptom-to-diagnosis troubleshooting content. |
 | [Serial/COM ports](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-serial-com-ports) | configuration | 0.78 | Serial/COM redirection requires specific RDP property names and policy settings, which are product-specific configuration details not captured by generic knowledge. |
 | [Smart cards](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-smart-cards) | configuration | 0.78 | Smart card redirection involves concrete RDP/Group Policy settings and possibly flags for enabling/disabling, which are detailed configuration parameters. |
 | [WebAuthn](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-webauthn) | security | 0.78 | WebAuthn redirection is tied to authentication flows (Windows Hello, security keys) and uses specific RDP properties/policies to secure passwordless auth, making it security-focused configuration. |
 | [Audio and video](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-audio-video) | configuration | 0.75 | Provides recommended configuration for audio/video redirection with RDP; includes specific settings and recommended values for AVD. |
 | [Check access to required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/check-access-validate-required-fqdn-endpoint) | troubleshooting | 0.75 | Uses the Agent URL Tool to test access to required endpoints and identify which are blocked, mapping symptom (connectivity issues) to diagnosis and fix. |
+| [Configure Start VM on Connect](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect) | configuration | 0.75 | Page explains how to enable/disable Start VM on Connect with behavior differences for personal vs pooled host pools. This feature is specific to Azure Virtual Desktop and involves configuration of service behavior, qualifying as expert configuration knowledge rather than generic VM power management. |
 | [Create and assign a scaling plan](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan) | configuration | 0.75 | Step-by-step creation of scaling plans; likely includes specific parameters (thresholds, schedules, minimum/maximum hosts) that are product-specific configuration. |
 | [Delegated access](https://learn.microsoft.com/en-us/azure/virtual-desktop/delegated-access-virtual-desktop) | security | 0.75 | Explains delegated access model, role assignments, and scopes for AVD, including concrete role usage patterns, which are security/authorization configuration. |
 | [Increase chroma value to 4:4:4](https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-chroma-value-increase-4-4-4) | configuration | 0.75 | Article explicitly shows how to set chroma value via Intune or Group Policy, implying specific policy names, registry keys, and allowed values (4:2:0 vs 4:4:4). |
@@ -149,7 +154,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Create an MSIX image](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-create-msix-image) | configuration | 0.70 | How-to article for expanding MSIX packages into MSIX images for App Attach. Typically includes concrete commands, paths, and image configuration details specific to Azure Virtual Desktop and App Attach, which qualify as product-specific configuration knowledge beyond generic LLM training. |
 | [Create custom images with Custom image templates](https://learn.microsoft.com/en-us/azure/virtual-desktop/create-custom-image-templates) | configuration | 0.70 | How-to article for creating templates and images will include specific template properties, JSON fields, and Azure portal/CLI parameters unique to AVD image creation. |
 | [Custom image templates overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/custom-image-templates) | configuration | 0.70 | Custom image templates built on Azure Image Builder usually expose template schema fields, parameter names, and allowed values specific to AVD, which are configuration details. |
-| [Deploy Azure Virtual Desktop Hybrid](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop-hybrid) | deployment | 0.70 | Page describes a specific, product-unique deployment scenario (Azure Virtual Desktop Hybrid with on-premises hosts via Azure Arc and AVD Arc extension). It includes ordered deployment steps and requirements specific to this preview feature (Arc-enabling devices, registering session hosts with host pools, using the AVD Arc extension). While the summary snippet doesn't show matrices, this type of hybrid deployment guidance is specialized, implementation-focused knowledge beyond generic deployment commands. |
+| [Deploy Azure Virtual Desktop Hybrid](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop-hybrid) | deployment | 0.70 | Describes product-specific deployment steps and requirements for AVD Hybrid (Arc-enabling devices, running AVD Arc extension, registering session hosts with host pools). This is deployment-focused and contains expert, product-specific guidance beyond generic VM deployment, even though detailed limits or matrices aren't shown in the summary. |
 | [Deploy updates with Configuration Manager](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-automatic-updates) | configuration | 0.70 | Describes creating collections and servicing plans for multi-session Windows; involves specific SCCM query/config parameters unique to this scenario. |
 | [Developer integration for WebRTC call apps](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-developer-integration) | integrations | 0.70 | Developer integration article will contain API usage, JavaScript hooks, and configuration parameters for WebRTC apps to work with AVD redirection, which are integration-specific coding patterns. |
 | [Enable GPU acceleration](https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-enable-gpu-acceleration) | configuration | 0.70 | GPU acceleration setup usually includes specific VM sizes, driver versions, registry/Group Policy settings, and codec options (HEVC/AVC) unique to AVD. |
@@ -168,6 +173,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Peripheral and resource redirection overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-remote-desktop-protocol) | configuration | 0.70 | Details RDP redirection options (clipboard, USB, printers, etc.) with admin configuration guidance; includes specific policy/setting names. |
 | [Proxy support guidelines](https://learn.microsoft.com/en-us/azure/virtual-desktop/proxy-server-support) | best-practices | 0.70 | Proxy guidance for AVD typically includes concrete recommendations such as which URLs/ports to bypass, supported authentication methods, and configuration gotchas specific to AVD agents and clients. |
 | [RDP Shortpath overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath) | configuration | 0.70 | Explains RDP Shortpath behavior (UDP vs TCP, fallback) and conditions; typically includes port and network requirements, which are configuration details. |
+| [RemoteApp enhancements (preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements) | configuration | 0.70 | The page describes how to enable specific preview enhancements for RemoteApps, which likely involves product-specific configuration steps or settings unique to Azure Virtual Desktop. While the summary doesn't show numeric limits or error codes, it indicates detailed enablement instructions for a preview feature, which qualifies as expert configuration knowledge beyond generic concepts. |
 | [Schedule Agent updates](https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates) | configuration | 0.70 | Explains Scheduled Agent Updates feature and how to set maintenance windows; likely includes specific configuration options and parameters for update timing. |
 | [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.70 | The page describes a product-specific security feature (Screen Capture Protection) for Azure Virtual Desktop and Windows 365, including how it interacts with OS-level APIs and client behavior (screenshots, screen sharing). This is detailed, implementation-specific security guidance that goes beyond generic concepts, but doesn't focus on limits, quotas, or other categories. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations) | security | 0.70 | Security-focused guidance for Azure Virtual Desktop. While the summary is high-level, this type of page typically includes product-specific recommendations, RBAC roles, and configuration details (for example, use of Reverse Connect, network and identity settings). These are concrete, Azure Virtual Desktop–specific security patterns rather than generic security concepts, so it fits the security sub-skill. |
@@ -201,9 +207,9 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Preferred application group type overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/preferred-application-group-type) | configuration | 0.65 | Describes behavior of preferred application group type and likely includes specific property names and allowed values that control desktop vs RemoteApp access. |
 | [Redirect video playback and calls](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls) | configuration | 0.65 | Covers multimedia redirection for video and calls over RDP for Azure Virtual Desktop/Windows 365/Dev Box; such articles typically include product-specific settings, client/server configuration parameters, and enablement steps that qualify as configuration expert knowledge. |
 | [Regional Host Pools](https://learn.microsoft.com/en-us/azure/virtual-desktop/regional-host-pools) | decision-making | 0.65 | Described as a 'guide to regional host pools' and notes preview behavior (for example, errors and checkpoints not reported into Log Analytics). Such a guide typically explains when to choose regional host pools versus standard host pools, including resilience, telemetry trade-offs, and preview constraints. That aligns with decision-making content helping users select architecture options based on specific service behavior. |
-| [RemoteApp enhancements (preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements) | configuration | 0.65 | Preview feature article that explains how to manually enable specific RemoteApp enhancements during public preview. These preview configuration steps and flags are time-sensitive, product-specific details that are unlikely to be fully known from training data, fitting configuration best where feature toggles/enablement steps are documented. |
 | [Resolve Azure Advisor recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-advisor-recommendations) | best-practices | 0.65 | Walkthrough of concrete Azure Advisor recommendations and how to remediate them for AVD, which are product-specific DO/DO-NOT style guidance with actionable steps. |
 | [Use features of the Remote Desktop client](https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/client-features-windows-msrdc) | configuration | 0.65 | Explains client features and likely their configuration options; product-specific client behavior and settings when used with AVD. |
+| [Windows update management methodologies](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts) | best-practices | 0.65 | Article focuses on supported update methodologies and recommendations for AVD session hosts, likely including product-specific servicing guidance and recommendation markers. This is actionable, product-specific advice on how to manage updates rather than generic OS update concepts. |
 | [FSLogix profile container overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/fslogix-profile-containers) | architecture-patterns | 0.63 | Explains remote vs local profiles and FSLogix usage in VDI; likely includes pattern guidance on when to use profile containers and trade-offs specific to AVD. |
 | [Ephemeral OS disks](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy/session-hosts/ephemeral-os-disks) | architecture-patterns | 0.62 | Describes an architecture pattern (ephemeral OS disks) with AVD-specific trade-offs and constraints (local storage usage, reimage behavior) that guide when to use this pattern. |
 | [Configure a validation environment](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-validation-environment) | best-practices | 0.60 | Describes how to configure a validation environment and stresses mirroring production; likely includes concrete recommendations and gotchas specific to Azure Virtual Desktop updates. |
@@ -235,7 +241,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Add session hosts to a host pool](https://learn.microsoft.com/en-us/azure/virtual-desktop/add-session-hosts-host-pool) | 0.20 | Page appears to be a procedural how-to for adding session host VMs to an Azure Virtual Desktop host pool. From the summary, it does not clearly expose numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. It looks like a step-by-step task guide rather than expert reference content, so no sub-skill classification is assigned. |
 | [Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-agent) | 0.20 | A 'what's new' change log for the Azure Virtual Desktop Agent; summary indicates release/feature notes but no evidence of limits, configuration tables, error codes, or other structured expert details as defined by the sub-skill types. |
 | [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | A 'what's new' changelog-style page listing recent Azure Virtual Desktop updates; primarily release notes and marketing/overview of new features without structured limits, configuration tables, decision matrices, or troubleshooting mappings. |
-| [Azure Virtual Desktop Hybrid Overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview) | 0.20 | Page is an overview of Azure Virtual Desktop Hybrid, describing what it is and high-level behavior. No detailed limits, configuration parameter tables, error codes, or decision matrices are evident from the summary; content is conceptual rather than expert-level reference. |
+| [Azure Virtual Desktop Hybrid Overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview) | 0.20 | Hybrid overview page is primarily conceptual, describing what Azure Virtual Desktop Hybrid is and high-level behavior of Arc-enabled session hosts, without concrete limits, configuration tables, error codes, or decision matrices. |
 | [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension) | 0.20 | Appears to be a 'what's new' changelog for the multimedia redirection browser extension. Summary suggests feature updates, not detailed limits, configuration tables, error codes, or decision matrices. Without evidence of specific numeric limits, config parameters, or troubleshooting mappings, it doesn't meet any expert-knowledge sub-skill criteria. |
 | [Deploy Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop) | 0.20 | The page is a deployment tutorial showing how to create host pools, workspaces, and session hosts using portal/CLI. It doesn’t present deployment matrices, tier-specific constraints, or other detailed limits/configuration tables; it’s primarily step-by-step guidance that a generic LLM could already approximate. |
 | [Host Component](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection) | 0.20 | Page is a 'what's new' changelog for multimedia redirection host; it lists feature updates but not detailed limits, configuration tables, error mappings, or other structured expert knowledge as defined by the sub-skill types. |

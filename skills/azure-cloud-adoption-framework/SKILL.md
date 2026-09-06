@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning or operating AKS, AVD/Citrix, SAP/Oracle, AVS/VMware, Arc, or org-wide AI agent workloads, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning or operating SAP, Oracle, AKS, AVD/AVS, or Arc workloads and their Azure landing zones, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -24,22 +24,22 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Strategy | L37-L58 | Strategic guidance for planning cloud and AI adoption: business cases, data and AI strategy, hybrid/multicloud, SAP/Oracle, VDI/VMware, plus cost, security, resiliency, and sustainability. |
-| Planning | L59-L86 | Planning cloud adoption and migration: strategies, roadmaps, workload assessments, cost/skills planning, and architecture for Azure, AI agents, AVD, VMware, Oracle, SAP, and startups. |
-| Readiness & Landing Zones | L87-L202 | Designing and operating Azure landing zones: networking, identity, subscriptions, management, automation, multitenant setups, and workload-specific patterns (AI, AVS, SAP, AVD, Citrix, Oracle). |
-| Adoption Patterns | L203-L225 | Patterns and guidance for planning, migrating, modernizing, and operating Azure workloads (cloud‑native, AI, SAP, Oracle, AVD), including architecture choices, rollout, and post‑deployment tasks. |
-| Governance | L226-L260 | Designing and enforcing Azure governance, security, compliance, cost, and tagging policies and guardrails across AI, data, landing zones, Arc, SAP, AVD, VMware, Citrix, and other workloads. |
-| Security | L261-L290 | Designing secure Azure landing zones, identity/RBAC, encryption, network protection, DevOps/AKS/Arc hardening, and workload-specific security for AI, SAP, Oracle, and SQL during cloud adoption. |
-| Operations & Management | L291-L330 | Operating, monitoring, and optimizing Azure and hybrid workloads (AI, data, AKS, AVD, SAP, Oracle, Arc, VMware), including lifecycle, BCDR, automation, and management baselines. |
-| Organization & Teams | L331-L350 | Organizing people and teams for Azure and AI: roles, structures, RACI, CoEs, governance, operations, security, data, DevOps, and breaking silos for effective cloud adoption. |
-| Adoption Scenarios | L351-L423 | End-to-end adoption, landing zone, networking, security, identity, BCDR, cost, and operations guidance for AKS, RHEL, ARO, AVD, Citrix, AVS, Arc, Oracle, SAP, and org-wide AI agents. |
+| Strategy | L37-L59 | Strategic planning for cloud and AI: business cases, org-wide AI roadmap, unified data, hybrid/multicloud, SAP/Oracle/VDI, sovereign cloud, and cost, security, resiliency, sustainability. |
+| Planning | L60-L88 | Planning Azure cloud and AI adoption: migration waves, workload readiness, data/tech architecture, cost, skills, and roadmaps for AVD, VMware, Oracle, SAP, and cloud modernization. |
+| Readiness & Landing Zones | L89-L204 | Designing and operating Azure landing zones: networking, identity, subscriptions, management, automation, multitenant setups, and workload-specific patterns (AI, AVS, SAP, AVD, Citrix, Oracle). |
+| Adoption Patterns | L205-L227 | Patterns and guidance for planning, migrating, modernizing, and operating Azure workloads (cloud‑native, AI, SAP, Oracle, AVD), including architecture choices, rollout, and post‑deployment tasks. |
+| Governance | L228-L262 | Designing and enforcing Azure governance, security, compliance, cost, and tagging policies and guardrails across AI, data, landing zones, Arc, SAP, AVD, VMware, Citrix, and other workloads. |
+| Security | L263-L292 | Designing secure Azure landing zones, identity/RBAC, encryption, network protection, DevOps/AKS/Arc hardening, and workload-specific security for AI, SAP, Oracle, and SQL during cloud adoption. |
+| Operations & Management | L293-L332 | Operating, monitoring, and optimizing Azure and hybrid workloads (AI, data, AKS, AVD, SAP, Oracle, Arc, VMware), including lifecycle, BCDR, automation, and management baselines. |
+| Organization & Teams | L333-L352 | Organizing people and teams for Azure and AI: roles, structures, RACI, CoEs, governance, operations, security, data, DevOps, and breaking silos for effective cloud adoption. |
+| Adoption Scenarios | L353-L424 | End-to-end adoption, migration, landing zone, networking, security, governance, BCDR, and operations patterns for AKS, AVD, AVS, Arc, SAP, Oracle, RHEL, OpenShift, Citrix on Azure |
 
 ### Strategy
 | Topic | URL |
 |-------|-----|
 | Create a business plan for AI agent adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/business-strategy-plan |
-| Define and align an enterprise AI strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy |
-| Define executive strategy to unify data for AI | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform |
+| Create an organization-wide AI strategy and roadmap | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy |
+| Define unified data strategy for AI and analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform |
 | Define unified data strategy for AI and analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform |
 | Identify innovation opportunities with Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/innovate |
 | Define strategic benefits of Azure Virtual Desktop adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/strategy |
@@ -48,6 +48,7 @@ This skill requires **network access** to fetch documentation content:
 | Define unified hybrid and multicloud operations strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Assess strategic impact of migrating Oracle workloads to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-strategy |
 | Define cloud strategy for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |
+| Evaluate and adopt Microsoft Sovereign Cloud strategically | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy |
 | Develop a measurable cloud adoption strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ |
 | Establish and structure a cloud strategy team | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team |
 | Incorporate cost efficiency into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/cost-efficiency |
@@ -59,6 +60,7 @@ This skill requires **network access** to fetch documentation content:
 ### Planning
 | Topic | URL |
 |-------|-----|
+| Plan and govern enterprise adoption of AI agents | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/ |
 | Plan enterprise data architecture to support AI agents | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/data-architecture-plan |
 | Define technology plan for AI agents on Microsoft | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy |
 | Create an actionable AI adoption plan in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/plan |
@@ -351,8 +353,7 @@ This skill requires **network access** to fetch documentation content:
 ### Adoption Scenarios
 | Topic | URL |
 |-------|-----|
-| Plan and govern organization-wide AI agent adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/ |
-| Decide when Azure VMware Solution fits your strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/azure-vmware-solution/strategy |
+| Decide when to adopt Azure VMware Solution for migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/azure-vmware-solution/strategy |
 | Use Azure application landing zone accelerators | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/ |
 | Apply cost governance to AKS using Kubecost | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/cost-governance-with-kubecost |
 | Design identity and access management for AKS landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/identity-and-access-management |

@@ -3,7 +3,7 @@ name: azure-sovereign-us
 description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Gov IL5/FedRAMP, SACA patterns, Gov App Service/ASE, Gov Marketplace, or sovereign storage/SQL APIs, and other Azure US Government related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure US Government Skill

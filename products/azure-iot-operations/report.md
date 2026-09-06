@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: Configuring IoT data flows, endpoints, transforms, MQTT/OPC UA/connectors,
     storage, observability, and health/metrics for Azure IoT Operations deployments.
@@ -9,18 +9,17 @@ category_descriptions:
   decision-making: 'Guidance for planning and choosing Azure IoT Operations architectures:
     data flows vs graphs, deployment topology/sizing, MQTT broker diagnostics, buffering
     and persistence, and OPC UA asset discovery modes.'
-  best-practices: 'Guidance for production-ready Azure IoT Operations: deployment
-    patterns, HA MQTT edge app design, using state store for durable edge data, and
-    testing/troubleshooting MQTT connectivity.'
-  security: 'Securing Azure IoT Operations: TLS/mutual TLS, MQTT authz/authn, OPC
-    UA trust, RBAC/ABAC, cert and secret management, image verification, and internal
-    traffic encryption.'
+  best-practices: 'Guidance on production-ready Azure IoT Operations: MQTT broker
+    HA design, persistent edge state storage, and testing/troubleshooting MQTT connectivity.'
+  security: 'Securing Azure IoT Operations: TLS/cert management, MQTT authz/authn,
+    OPC UA trust, private networking, RBAC/ABAC, secret handling, and image authenticity
+    verification.'
   deployment: Deploying, upgrading, cloning, and managing Azure IoT Operations instances,
     including secure production/test setups, private networks, Dapr/WASM components,
     and supported versions.
-  troubleshooting: 'Diagnosing and fixing Azure IoT Operations issues: debugging WASM
-    modules, private network connectivity, health reason codes, known component problems,
-    and using tools for troubleshooting.'
+  troubleshooting: 'Diagnosing and fixing Azure IoT Operations issues: connectivity
+    and health codes, known component problems, debugging WASM modules, and using
+    tools to troubleshoot deployments.'
   architecture-patterns: Designing Azure IoT architectures using ISA-95 unified namespace
     concepts and planning layered, segmented networking topologies for secure, scalable
     IoT Operations deployments.
@@ -30,13 +29,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Operations development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building MQTT/OPC UA data flows, WASM/ONNX processing, state store usage,
-  Dapr RT endpoints, or ISA‑95 namespaces, and other Azure IoT Operations related
-  development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub),
-  Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
-use_when: Use when building MQTT/OPC UA data flows, WASM/ONNX processing, state store
-  usage, Dapr RT endpoints, or ISA‑95 namespaces, and other Azure IoT Operations related
-  development tasks.
+  Use when building MQTT/OPC UA data flows, WASM/ONNX processing, Dapr/Fabric RT endpoints,
+  or ISA-95 namespaces, and other Azure IoT Operations related development tasks.
+  Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT
+  Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+use_when: Use when building MQTT/OPC UA data flows, WASM/ONNX processing, Dapr/Fabric
+  RT endpoints, or ISA-95 namespaces, and other Azure IoT Operations related development
+  tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub),
   Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 ---
@@ -52,8 +51,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 122
+- **Updated Pages**: 4
+- **Unchanged**: 127
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -63,12 +62,12 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 |------|-------|------------|
 | architecture-patterns | 2 | 1.5% |
 | best-practices | 4 | 3.1% |
-| configuration | 37 | 28.2% |
+| configuration | 36 | 27.5% |
 | decision-making | 7 | 5.3% |
 | deployment | 9 | 6.9% |
 | integrations | 19 | 14.5% |
 | limits-quotas | 3 | 2.3% |
-| security | 13 | 9.9% |
+| security | 14 | 10.7% |
 | troubleshooting | 6 | 4.6% |
 | *(Unclassified)* | 31 | 23.7% |
 
@@ -76,33 +75,22 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 
 ### Updated Pages
 
-- [Known issues](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues)
-  - Updated: 2026-08-03T17:13:00.000Z → 2026-08-21T17:12:00.000Z
-- [Connect to MQTT endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-mqtt-connector)
-  - Updated: 2026-07-14T08:00:00.000Z → 2026-08-18T08:00:00.000Z
-- [Microsoft Fabric Real-Time Intelligence](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-fabric-real-time-intelligence)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-08-25T08:00:00.000Z
-- [OpenTelemetry](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/open-telemetry)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-08-25T08:00:00.000Z
-- [Use WASM transforms](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graph-wasm)
-  - Updated: 2026-08-06T08:00:00.000Z → 2026-08-21T17:12:00.000Z
-- [Deploy modules and graphs](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-wasm-graph-definitions)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-08-21T17:12:00.000Z
 - [Troubleshoot](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-08-25T17:51:00.000Z
-- [Deployment overview](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/overview-deploy)
-  - Updated: 2026-08-14T17:22:00.000Z → 2026-08-27T08:00:00.000Z
-- [Understand assets and devices](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/concept-assets-devices)
-  - Updated: 2026-04-22T22:14:00.000Z → 2026-08-25T17:51:00.000Z
+  - Updated: 2026-08-25T17:51:00.000Z → 2026-09-01T17:13:00.000Z
+- [Production deployment guidelines](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/concept-production-guidelines)
+  - Updated: 2026-06-10T08:00:00.000Z → 2026-09-03T05:24:00.000Z
+- [Deploy with private connectivity](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-private-connectivity)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-09-01T17:13:00.000Z
+- [Troubleshoot private connectivity](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity)
+  - Updated: 2026-07-07T22:18:00.000Z → 2026-09-01T17:13:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Health status reason codes](https://learn.microsoft.com/en-us/azure/iot-operations/reference/health-status-reason-codes) | troubleshooting | 0.90 | The page is a reference of product-specific health status reason codes used by Azure IoT Operations, mapping each code to its meaning and recommended actions. This is organized symptom → cause → resolution and includes identifiers and guidance that aren't derivable from general knowledge, fitting the troubleshooting category. |
+| [Troubleshoot private connectivity](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity) | troubleshooting | 0.85 | The article explicitly focuses on diagnosing and resolving DNS, Private Endpoint, RBAC, and connectivity issues for Azure IoT Operations in private network deployments. It is organized around specific symptoms (DNS, Private Endpoint, RBAC problems) and their resolution, which matches the troubleshooting sub-skill definition with product-specific error/diagnosis guidance. |
 | [Custom RBAC](https://learn.microsoft.com/en-us/azure/iot-operations/reference/custom-rbac) | security | 0.82 | Reference for custom RBAC roles with downloadable examples; expected to list specific role definitions, actions, and scopes unique to Azure IoT Operations resources. |
-| [Troubleshoot](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot) | troubleshooting | 0.82 | Page is explicitly a troubleshooting guide for Azure IoT Operations deployments and configuration. Such pages typically organize issues by symptoms and provide diagnosis and resolution steps unique to the product, which constitutes expert troubleshooting knowledge beyond generic debugging advice. |
-| [Troubleshoot private connectivity](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity) | troubleshooting | 0.82 | The page is explicitly focused on diagnosing and resolving DNS, Private Endpoint, RBAC, and connectivity issues for Azure IoT Operations with private networking. It likely includes symptom-to-cause-to-solution mappings and product-specific diagnostic steps, fitting the troubleshooting sub-skill. |
 | [Expressions reference](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-graphs-expressions) | integrations | 0.80 | Expression reference with positional variables, functions, operators, and metadata is a detailed API-like spec; this is core to coding patterns for transforms and includes product-specific functions and syntax. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues) | troubleshooting | 0.80 | The page enumerates product-specific known issues for Azure IoT Operations components (MQTT broker, OPC UA connector, PLC simulator, data flows, web UI) and provides guidance and workarounds. This is organized around concrete symptoms and resolutions unique to the service, matching the troubleshooting sub-skill definition. |
 | [Listener](https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-brokerlistener) | security | 0.80 | Describes securing MQTT broker communication using BrokerListener, BrokerAuthentication, and BrokerAuthorization resources; this is product-specific security configuration with named resources and likely parameter details. |
@@ -114,6 +102,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 | [Connector for OPC UA](https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-opcua-broker) | configuration | 0.78 | Lists product-specific observability metrics for the OPC UA connector, including exact metric names, types, and dimensions. This is detailed configuration/telemetry reference data that an LLM wouldn't reliably know from training and is used to configure monitoring systems. |
 | [Destination](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-destination) | configuration | 0.78 | Covers configuring destination endpoints and data destinations (topics, containers, tables) for data flows and data flow graphs, including endpoint types supported and how to set dynamic topic routing. This is detailed product configuration (endpoint references, destination node settings) rather than just conceptual guidance. |
 | [State store protocol](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/reference-state-store-protocol) | integrations | 0.78 | Protocol reference for custom state store clients; likely includes MQTT v5 topic formats, payload schemas, and request/response parameters that are product-specific integration details. |
+| [Troubleshoot](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot) | troubleshooting | 0.78 | The page is explicitly a troubleshooting guide for Azure IoT Operations deployments and configuration. Such content typically includes product-specific symptoms, causes, and resolutions that go beyond generic debugging knowledge, matching the troubleshooting criteria. |
 | [Validate images](https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-validate-images) | security | 0.78 | The page provides product-specific steps and commands to validate that Azure IoT Operations Docker and Helm images are legitimately signed by Microsoft, using Notation and specific signing keys. This is concrete security configuration/verification guidance rather than a generic overview. |
 | [Build WASM modules](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-wasm-modules) | integrations | 0.76 | Explains how to build WebAssembly modules for data flows using the Azure IoT Operations Data Flow VS Code extension and dataflow-dev CLI. Likely includes CLI commands, module configuration parameters, and integration points with connectors, which are product-specific integration and coding patterns. |
 | [Source](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-source) | configuration | 0.76 | Describes configuring data flow sources with endpoint references and multiple MQTT/Kafka topics, including use of dataSources fields and wildcard topic filters; these are specific configuration fields and patterns unique to this product. |
@@ -170,7 +159,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 | [OPC UA asset discovery modes](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/concept-opc-ua-asset-discovery) | decision-making | 0.70 | Explains DI-based, type-based, and segmented discovery modes, how they behave, and when each is appropriate; this is product-specific mode selection guidance (symptom of wrong choice, matching to server type model), fitting decision-making. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-graphs) | configuration | 0.70 | Explains the DataflowGraph Kubernetes custom resource and how to wire sources, transforms, and destinations. This implies detailed schema/field names and configuration options for built-in transforms (mapping, filtering, windowing, throttling, enrichment), which are product-specific configuration details. |
 | [Production deployment examples](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/concept-production-examples) | decision-making | 0.70 | Describes real-world production deployment examples with hardware capabilities and data volumes to show how much data Azure IoT Operations can handle. This is scenario-based capacity planning and scaling guidance, helping choose deployment approaches based on quantified data, which fits decision-making. |
-| [Production deployment guidelines](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/concept-production-guidelines) | best-practices | 0.70 | The page provides product-specific recommendations and guidelines for preparing Azure IoT Operations for production, including concrete guidance around single-node vs multi-node clusters and configuration considerations. This is actionable, scenario-focused advice rather than generic concepts, fitting best-practices. It is not primarily about limits, deployment matrices, or security role definitions. |
+| [Production deployment guidelines](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/concept-production-guidelines) | best-practices | 0.70 | The article focuses on preparing Azure IoT Operations for production, including recommendations that differ between single-node and multi-node clusters and product-specific guidance for secure and scalable setups. While it’s not about limits/quotas, it provides concrete, Azure IoT Operations–specific deployment and configuration recommendations that go beyond generic theory, fitting best-practices. |
 | [Profiles](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-profile) | configuration | 0.70 | Explains data flow profile settings including instance count and how they affect runtime behavior; this is product-specific configuration with concrete settings rather than conceptual guidance. |
 | [Set up your own certificate issuer](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-bring-your-own-issuer) | security | 0.70 | Describes how to bring your own CA issuer for internal communications, which is a product-specific security configuration pattern with concrete steps and settings for certificates and trust, qualifying as security expert knowledge. |
 | [Throttle the flow of data](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-throttle) | integrations | 0.70 | Explains the throttle transform that rate-limits MQTT topics in Azure IoT Operations data flow graphs. The underlying doc is likely to include specific configuration fields (intervals, topic patterns, behavior on bursts) that are unique to this product’s data flow engine, making it expert integration/coding guidance rather than generic rate limiting theory. |
@@ -185,7 +174,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 | [Data persistence in the state store](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-state-store) | best-practices | 0.65 | Describes how to develop applications that persist data using the built-in state store, including its distributed, in-memory behavior, versioning, and lock primitives. Contains product-specific usage patterns and edge-case behavior (for example, impact of cluster restart) beyond generic key-value storage concepts. |
 | [Deploy observability resources](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-configure-observability) | configuration | 0.65 | Covers how to deploy observability resources, configure Prometheus metrics, and set up Grafana dashboards using Azure Monitor managed Prometheus and Container Insights; these are product-specific configuration steps and parameters. |
 | [Deploy to a test cluster](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-test-operations) | deployment | 0.65 | How-to deployment article for test clusters via Azure portal; likely includes product-specific deployment options, constraints, and required settings for Arc-enabled clusters. |
-| [Deploy with private connectivity](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-private-connectivity) | configuration | 0.65 | Shows how to add Private Link, Arc Gateway, and Azure Firewall Explicit Proxy for private connectivity; these are concrete, product-specific network configuration steps and scenarios. |
+| [Deploy with private connectivity](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-private-connectivity) | security | 0.65 | The page describes how to add private connectivity using Private Link, Arc Gateway, and Azure Firewall Explicit Proxy for Azure IoT Operations. This involves product-specific secure connectivity configuration patterns and likely includes concrete settings and steps for these services, which aligns with the security sub-skill (secure connectivity and network isolation) rather than generic integration or tutorial content. |
 | [Discover OPC UA assets](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-detect-opc-ua-assets) | configuration | 0.65 | How-to article for enabling and tuning OPC UA asset discovery modes; likely includes specific configuration fields and options for discovery behavior, which are product-specific configuration details. |
 | [Layered networking](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/concept-layered-network) | architecture-patterns | 0.65 | Describes how to deploy across Purdue/ISA-95 layered networks using Envoy proxy chaining, CoreDNS, and Kubernetes configuration; this is a product-specific architecture pattern for network segmentation. |
 | [Persistence](https://learn.microsoft.com/en-us/azure/iot-operations/deployment-plan/deployment-planning-persistence) | decision-making | 0.65 | Deployment planning guidance specific to Azure IoT Operations MQTT broker persistence, focused on when to enable persistence vs relying on replication and disk-backed buffers. This is product-specific decision guidance about durability trade-offs, not generic concepts. |

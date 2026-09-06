@@ -42,9 +42,9 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Unclassified**: 63
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 122
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 127
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -61,21 +61,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 63 | 49.6% |
 
 ## Changes
-
-### New Pages
-
-- [AI agent shared responsibility model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility-ai-agent)
-
-### Updated Pages
-
-- [Shared responsibility in the cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)
-  - Updated: 2026-07-24T18:54:00.000Z → 2026-08-24T22:12:00.000Z
-- [AI shared responsibility model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility-ai)
-  - Updated: 2026-07-24T18:54:00.000Z → 2026-08-24T22:12:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/ai-security-best-practices)
-  - Updated: 2026-02-23T18:40:00.000Z → 2026-08-24T22:12:00.000Z
-- [Certificate Pinning](https://learn.microsoft.com/en-us/azure/security/fundamentals/certificate-pinning)
-  - Updated: 2026-07-21T11:41:00.000Z → 2026-08-27T09:10:00.000Z
 
 ## Classified Pages
 

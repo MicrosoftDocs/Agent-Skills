@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 63
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
@@ -63,50 +63,6 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | *(Unclassified)* | 10 | 15.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Reboot, flush, and schedule updates](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-administration)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Configure redis-cli access](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-redis-cli-tool)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Move between regions](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-moving-resources)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Publishing Azure Cache for Redis events](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-event-grid)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-08-18T17:12:00.000Z
-- [Management FAQs](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-management-faq)
-  - Updated: 2026-08-12T11:45:00.000Z → 2026-08-18T17:12:00.000Z
-- [Persist your cache with Redis data persistence](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-premium-persistence)
-  - Updated: 2025-04-22T05:11:00.000Z → 2026-08-18T17:12:00.000Z
-- [Add more replicas](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-multi-replicas)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-zone-redundancy)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Set up passive geo-replication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-geo-replication)
-  - Updated: 2024-11-15T08:00:00.000Z → 2026-08-18T17:12:00.000Z
-- [Set up Enterprise active geo-replication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-active-geo-replication)
-  - Updated: 2026-05-21T08:00:00.000Z → 2026-08-18T17:12:00.000Z
-- [Configure your cache for high availability](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-high-availability)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-08-18T17:12:00.000Z
-- [Failover and patching](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-failover)
-  - Updated: 2024-04-30T22:14:00.000Z → 2026-08-18T17:12:00.000Z
-- [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-connectivity)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Troubleshoot latency and timeouts](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-timeouts)
-  - Updated: 2025-04-12T05:10:00.000Z → 2026-08-18T17:12:00.000Z
-- [Troubleshoot client](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-client)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Troubleshoot Redis server](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-server)
-  - Updated: 2026-02-26T06:24:00.000Z → 2026-08-18T17:12:00.000Z
-- [Troubleshoot data loss](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-data-loss)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-08-18T17:12:00.000Z
-- [Troubleshooting FAQs](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-monitor-troubleshoot-faq)
-  - Updated: 2026-08-12T11:45:00.000Z → 2026-08-18T17:12:00.000Z
-- [Route events with Azure portal](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-event-grid-quickstart-portal)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- [Route events with Azure CLI](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-event-grid-quickstart-cli)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-08-18T17:12:00.000Z
-- *...and 43 more*
 
 ## Classified Pages
 

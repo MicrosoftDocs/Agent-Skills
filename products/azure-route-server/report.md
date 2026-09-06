@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 19
+- **Updated Pages**: 0
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-route-server/azure-route-server.csv`
 
@@ -62,25 +62,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 8 | 29.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Dual-homed network](https://learn.microsoft.com/en-us/azure/route-server/about-dual-homed-network)
-  - Updated: 2025-09-17T22:11:00.000Z → 2026-08-28T05:12:00.000Z
-- [Path selection](https://learn.microsoft.com/en-us/azure/route-server/path-selection)
-  - Updated: 2025-09-18T22:19:00.000Z → 2026-08-28T05:12:00.000Z
-- [Multi-region design](https://learn.microsoft.com/en-us/azure/route-server/multiregion)
-  - Updated: 2025-09-17T22:11:00.000Z → 2026-08-27T08:00:00.000Z
-- [Route injection in spoke virtual networks](https://learn.microsoft.com/en-us/azure/route-server/route-injection-in-spokes)
-  - Updated: 2025-09-19T05:15:00.000Z → 2026-08-27T08:00:00.000Z
-- [Configure route maps](https://learn.microsoft.com/en-us/azure/route-server/route-maps-how-to)
-  - Updated: 2026-07-30T16:45:00.000Z → 2026-08-18T17:35:00.000Z
-- [Troubleshoot Route Server issues](https://learn.microsoft.com/en-us/azure/route-server/troubleshoot-route-server)
-  - Updated: 2026-03-04T12:31:00.000Z → 2026-08-28T05:12:00.000Z
-- [Monitor Route Server](https://learn.microsoft.com/en-us/azure/route-server/monitor-route-server)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-08-27T08:00:00.000Z
-- [Secure Route Server deployment](https://learn.microsoft.com/en-us/azure/route-server/secure-route-server)
-  - Updated: 2026-06-05T11:44:00.000Z → 2026-08-27T08:00:00.000Z
 
 ## Classified Pages
 

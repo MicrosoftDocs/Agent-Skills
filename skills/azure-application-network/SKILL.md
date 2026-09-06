@@ -3,7 +3,7 @@ name: azure-application-network
 description: Expert knowledge for Azure Application Network development including decision making, and configuration. Use when enabling App Network logs, Azure Monitor metrics, AKS/App Gateway versioning, or upgrade compatibility, and other Azure Application Network related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Networking (use azure-networking), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Network Skill

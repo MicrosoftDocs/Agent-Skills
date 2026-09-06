@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   decision-making: Guidance on choosing Azure regions and services (regional, zonal,
     multiregion, nonregional), using region pairs, and designing multi-region architectures
@@ -7,70 +7,55 @@ category_descriptions:
   architecture-patterns: 'Designing Azure architectures for high availability: zone-resilient
     and zonal deployments, and multiregion patterns (including nonpaired regions)
     for resilient, hardened workloads'
-  best-practices: Patterns and guidance for designing highly available, resilient,
-    and disaster‑ready architectures across many Azure services (AKS, databases, networking,
-    messaging, monitoring, and more).
+  best-practices: Patterns and guidance for designing, configuring, and hardening
+    Azure services (AKS, DBs, networking, messaging, monitoring) for high availability,
+    resiliency, and disaster recovery.
   limits-quotas: Guidance on Azure Queue Storage message size limits and designing
     reliable, scalable Azure Web PubSub apps under service quotas and constraints
 skill_description: Expert knowledge for Azure Reliability development including best
   practices, decision making, architecture & design patterns, and limits & quotas.
-  Use when designing multi-region Azure apps using region pairs, AKS, databases, networking,
-  messaging, or Web PubSub, and other Azure Reliability related development tasks.
-  Not for Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health),
-  Azure Monitor (use azure-monitor), Azure Sre Agent (use azure-sre-agent).
-use_when: Use when designing multi-region Azure apps using region pairs, AKS, databases,
-  networking, messaging, or Web PubSub, and other Azure Reliability related development
-  tasks.
-confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Service
-  Health (use azure-service-health), Azure Monitor (use azure-monitor), Azure Sre
-  Agent (use azure-sre-agent).
+  Use when designing multi-region Azure apps, AKS, DB, networking, Queue Storage,
+  or Web PubSub workloads, and other Azure Reliability related development tasks.
+  Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
+  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+use_when: Use when designing multi-region Azure apps, AKS, DB, networking, Queue Storage,
+  or Web PubSub workloads, and other Azure Reliability related development tasks.
+confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
+  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
+  Recovery (use azure-site-recovery).
 ---
 # Azure Reliability Crawl Report
 
 ## Summary
 
-- **Total Pages**: 109
-- **Fetched**: 109
+- **Total Pages**: 110
+- **Fetched**: 110
 - **Fetch Failed**: 0
-- **Classified**: 46
+- **Classified**: 47
 - **Unclassified**: 63
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 3
-- **Unchanged**: 104
-- **Deleted Pages**: 1
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 109
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 2.8% |
-| best-practices | 36 | 33.0% |
-| decision-making | 5 | 4.6% |
+| architecture-patterns | 3 | 2.7% |
+| best-practices | 37 | 33.6% |
+| decision-making | 5 | 4.5% |
 | limits-quotas | 2 | 1.8% |
-| *(Unclassified)* | 63 | 57.8% |
+| *(Unclassified)* | 63 | 57.3% |
 
 ## Changes
 
 ### New Pages
 
-- [Azure Storage Discovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-discovery)
-- [Azure DNS public zones](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-public)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview)
-  - Updated: 2026-08-12T06:03:00.000Z → 2026-08-12T08:00:00.000Z
-- [Azure Device Registry](https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-08-19T11:02:00.000Z
-- [Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs)
-  - Updated: 2026-01-22T18:34:00.000Z → 2026-08-27T06:02:00.000Z
-
-### Deleted Pages
-
-- ~~Azure DNS~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-dns)
+- [Azure DNS private zones](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-private)
 
 ## Classified Pages
 
@@ -91,6 +76,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Servi
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db) | best-practices | 0.68 | The page focuses on making Azure Cosmos DB resilient to specific outage scenarios (transient faults, zone/region outages, service maintenance) and discusses backup/restore options. This is product-specific reliability guidance with concrete recommendations and patterns for Cosmos DB rather than generic theory, fitting best-practices. It does not primarily enumerate numeric limits/quotas or provide decision matrices, so other categories are less appropriate. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db) | best-practices | 0.68 | The page focuses on making Azure Cosmos DB resilient to specific outage scenarios (transient faults, zone/region outages, service maintenance) and discusses backup/restore options. This is product-specific reliability guidance with concrete recommendations and patterns for Cosmos DB rather than generic theory, fitting best-practices. It does not primarily enumerate numeric limits/quotas or provide decision matrices, so other categories are less appropriate. |
 | [Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-private-resolver) | best-practices | 0.68 | Reliability guidance pages for specific Azure services typically include concrete, product-specific resiliency recommendations (for example, how to distribute resolvers across availability zones, how to configure failover paths, and how to handle regional outages) that go beyond generic concepts. These are actionable DO/DON'T patterns tied to Azure DNS Private Resolver behavior, fitting best-practices. The summary indicates detailed outage scenarios (transient faults, AZ and region outages, service maintenance), which usually map to specific configuration and deployment patterns rather than just conceptual overviews. |
+| [Azure DNS private zones](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-private) | best-practices | 0.68 | The page focuses on making Azure DNS private zones resilient to transient faults and region-wide failures, and discusses SLA-related considerations. While the summary doesn't show numeric limits or configuration tables, reliability guidance for a specific Azure service typically includes product-specific recommendations (for example, zone design, virtual network linkage patterns, failover strategies) and gotchas unique to Azure DNS private zones. This aligns best with the best-practices sub-skill type rather than conceptual overview. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql) | best-practices | 0.68 | Reliability guidance for Azure Database for MySQL typically includes product-specific recommendations (for example, how to configure HA/DR, backup/restore behavior, handling transient faults, and zone/region outage strategies) that go beyond generic concepts. These are actionable DO/DON'T patterns tied to this service’s capabilities rather than just conceptual reliability theory. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql) | best-practices | 0.68 | Reliability guidance for Azure Database for MySQL typically includes product-specific recommendations (for example, how to configure HA/DR, backup/restore behavior, handling transient faults, and zone/region outage strategies) that go beyond generic concepts. These are actionable DO/DON'T patterns tied to this service’s capabilities rather than just conceptual reliability theory. |
 | [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/reliability/reliability-aks) | best-practices | 0.68 | AKS-specific guidance for transient faults, AZs, multi-region support, backups, and maintenance; actionable reliability configuration and patterns. |
