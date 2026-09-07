@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 126
+- **Updated Pages**: 0
+- **Unchanged**: 131
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -66,19 +66,6 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | *(Unclassified)* | 75 | 57.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview)
-  - Updated: 2026-08-04T05:12:00.000Z → 2026-08-27T08:00:00.000Z
-- [Create a routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance)
-  - Updated: 2026-08-04T05:12:00.000Z → 2026-08-19T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview)
-  - Updated: 2026-06-11T17:23:00.000Z → 2026-08-20T17:12:00.000Z
-- [Advertised gateway prefixes](https://learn.microsoft.com/en-us/azure/virtual-network/advertised-gateway-prefixes-overview)
-  - Updated: 2026-05-20T05:21:00.000Z → 2026-08-19T05:11:00.000Z
-- [Linux VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux)
-  - Updated: 2026-08-15T17:11:00.000Z → 2026-08-21T05:10:00.000Z
 
 ## Classified Pages
 

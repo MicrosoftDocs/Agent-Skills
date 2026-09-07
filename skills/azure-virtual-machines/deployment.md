@@ -13,7 +13,6 @@
 | Copy incremental managed disk snapshots across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-copy-incremental-snapshot-across-regions |
 | Export ARM templates for resource groups with VM extensions | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/export-templates |
 | Migrate from Azure HBv2 virtual machines before retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-series-overview |
-| Migrate Linux VMs from unmanaged to managed disks using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks |
 | Upgrade Azure Disk Encryption on existing disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-upgrade |
 | Use Azure DevOps task to inject artifacts into VM images | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-devops-task |
 | Migrate Linux VMs to Azure Premium Storage with Site Recovery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/migrate-to-premium-storage-using-azure-site-recovery |

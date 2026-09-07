@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 14
-- **Unchanged**: 82
+- **Updated Pages**: 0
+- **Unchanged**: 96
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -72,37 +72,6 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | *(Unclassified)* | 29 | 30.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [NAT for ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-nat)
-  - Updated: 2026-03-12T08:00:00.000Z → 2026-08-27T08:00:00.000Z
-- [Router configuration samples for NAT](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-nat)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-08-28T05:12:00.000Z
-- [How to set up private peering for your circuit](https://learn.microsoft.com/en-us/azure/expressroute/configure-expressroute-private-peering)
-  - Updated: 2025-01-31T08:00:00.000Z → 2026-08-27T08:00:00.000Z
-- [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro)
-  - Updated: 2026-08-12T22:14:00.000Z → 2026-08-18T17:35:00.000Z
-- [ExpressRoute Resiliency Guard](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model)
-  - Updated: 2026-08-04T22:41:00.000Z → 2026-08-27T22:11:00.000Z
-- [Migrate to a new circuit](https://learn.microsoft.com/en-us/azure/expressroute/circuit-migration)
-  - Updated: 2025-02-02T12:10:00.000Z → 2026-08-28T05:12:00.000Z
-- [What is ExpressRoute?](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-08-27T08:00:00.000Z
-- [Understand connectivity models](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models)
-  - Updated: 2026-06-24T22:11:00.000Z → 2026-08-28T05:12:00.000Z
-- [Connect Azure to public cloud](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connect-azure-to-public-cloud)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-08-28T05:12:00.000Z
-- [Routing requirements](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-routing)
-  - Updated: 2026-03-17T06:14:00.000Z → 2026-08-27T08:00:00.000Z
-- [Providers by location](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers)
-  - Updated: 2026-04-28T08:00:00.000Z → 2026-08-18T17:35:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings)
-  - Updated: 2026-06-24T22:11:00.000Z → 2026-08-28T05:12:00.000Z
-- [Establish a private connection to a virtual network](https://learn.microsoft.com/en-us/azure/expressroute/configure-expressroute-private-peering)
-  - Updated: 2025-01-31T08:00:00.000Z → 2026-08-27T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-upgrade-circuit-bandwidth)
-  - Updated: 2026-07-29T11:40:00.000Z → 2026-08-28T05:12:00.000Z
 
 ## Classified Pages
 

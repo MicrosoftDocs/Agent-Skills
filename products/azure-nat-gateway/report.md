@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-09-06'
 category_descriptions:
   limits-quotas: SNAT limits, port allocation, scaling behavior, and guidance for
     planning NAT Gateway SNAT capacity, especially when used with Azure Firewall.
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 1
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -66,6 +66,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 11 | 44.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview)
+  - Updated: 2026-07-29T08:00:00.000Z → 2026-08-31T08:00:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +102,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2) | 0.30 | Similar to the Standard article but for StandardV2; summary indicates basic management steps without exposing detailed configuration parameters or limits. |
 | [Migrate outbound access](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-outbound-nat) | 0.30 | Primarily a step-by-step migration tutorial for outbound connectivity; no clear numeric limits, configuration tables, or SKU matrices beyond generic guidance. |
 | [Use a NAT gateway with a hub-and-spoke network](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-route-nat) | 0.30 | Tutorial on using NAT gateway in a hub-and-spoke network; primarily architectural walkthrough and steps, without explicit numeric thresholds, configuration tables, or troubleshooting mappings. |
-| [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) | 0.30 | High-level overview of Azure NAT Gateway features and behavior; no clear evidence of numeric limits, configuration tables, error codes, or other product-specific expert details. |
 | [Create and validate a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway) | 0.20 | Quickstart showing how to create a Standard NAT gateway via portal/CLI/PowerShell; primarily step-by-step instructions without detailed configuration parameter tables or product-specific limits. |
 | [Create and validate a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2) | 0.20 | Quickstart for creating a StandardV2 NAT gateway; focuses on creation steps rather than detailed limits, configuration matrices, or troubleshooting content. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-support-help) | - | Support/help options page that points to where to get assistance. Contains no technical configuration details, limits, error codes, or decision matrices. |
+| [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) | - | High-level overview of Azure NAT Gateway features and behavior without specific numeric limits, configuration tables, error codes, or tier-specific constraints. |

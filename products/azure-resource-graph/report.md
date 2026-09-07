@@ -42,9 +42,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 32
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-graph/azure-resource-graph.csv`
 
@@ -61,15 +61,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 | *(Unclassified)* | 11 | 32.4% |
 
 ## Changes
-
-### New Pages
-
-- [Choose the right query strategy for Azure Resource Graph](https://learn.microsoft.com/en-us/azure/governance/resource-graph/choose-query-strategy)
-
-### Updated Pages
-
-- [What is Azure Resource Graph?](https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview)
-  - Updated: 2024-06-18T08:00:00.000Z → 2026-08-19T17:11:00.000Z
 
 ## Classified Pages
 

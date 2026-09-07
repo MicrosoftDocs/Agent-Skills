@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 485
+- **Updated Pages**: 0
+- **Unchanged**: 493
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -75,25 +75,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | *(Unclassified)* | 118 | 23.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use deployment script resource](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep)
-  - Updated: 2026-01-02T08:00:00.000Z → 2026-08-18T08:00:00.000Z
-- [Create deployment script resource](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-develop)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-08-18T08:00:00.000Z
-- [Access private virtual networks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-08-19T22:10:00.000Z
-- [Use over private Endpoint](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-vnet-private-endpoint)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-08-19T22:10:00.000Z
-- [Create script development environments](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-script-bicep-configure-dev)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-08-17T08:00:00.000Z
-- [Use deployment script](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-deployment-script)
-  - Updated: 2026-06-26T08:00:00.000Z → 2026-08-17T08:00:00.000Z
-- [Deployment script](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template)
-  - Updated: 2026-01-02T08:00:00.000Z → 2026-08-18T08:00:00.000Z
-- [Create deployment script dev environment](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template-configure-dev)
-  - Updated: 2026-06-26T08:00:00.000Z → 2026-08-17T22:15:00.000Z
 
 ## Classified Pages
 

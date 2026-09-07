@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: 'Configuring Microsoft Sentinel: data connectors, ASIM schemas, analytics/automation
     rules, data lake jobs, SAP/Cloud integrations, threat intel, auditing, health
@@ -16,9 +16,9 @@ category_descriptions:
   integrations: Patterns and APIs for integrating Sentinel with logs, threat intel,
     MCP/AI tools, Logic Apps playbooks, data lake, connectors, and external platforms
     like AWS, Entra ID, Purview.
-  troubleshooting: Diagnosing and fixing ingestion, connector, KQL, notebook, automation,
-    analytics rule, and solution issues in Microsoft Sentinel, plus monitoring rule/automation
-    health.
+  troubleshooting: Diagnosing and fixing ingestion, connector, KQL, notebook, MCP,
+    SAP, and analytics rule issues, plus monitoring and troubleshooting scheduled
+    rule execution in Microsoft Sentinel.
   architecture-patterns: 'Designing Microsoft Sentinel architectures: workspace/tenant
     layouts, SIEM coexistence, BCDR, solution components, and custom security graph/data
     lake patterns.'
@@ -31,16 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Sentinel development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring connectors, analytics rules, playbooks, data lake jobs, or SAP/Cloud
-  integrations, and other Azure Sentinel related development tasks. Not for Azure
-  Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security),
-  Azure Monitor (use azure-monitor), Azure External Attack Surface Management (use
-  azure-external-attack-surface-management).
-use_when: Use when configuring connectors, analytics rules, playbooks, data lake jobs,
-  or SAP/Cloud integrations, and other Azure Sentinel related development tasks.
+  configuring data connectors, ASIM schemas, analytics rules, Logic Apps playbooks,
+  or data lake integrations, and other Azure Sentinel related development tasks. Not
+  for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use
+  azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management),
+  Azure Firewall (use azure-firewall).
+use_when: Use when configuring data connectors, ASIM schemas, analytics rules, Logic
+  Apps playbooks, or data lake integrations, and other Azure Sentinel related development
+  tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External
-  Attack Surface Management (use azure-external-attack-surface-management).
+  Azure Security (use azure-security), Azure External Attack Surface Management (use
+  azure-external-attack-surface-management), Azure Firewall (use azure-firewall).
 ---
 # Azure Sentinel Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 397
+- **Updated Pages**: 1
+- **Unchanged**: 407
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
@@ -78,28 +79,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Updated Pages
 
-- [Migrate agent to agentless connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-agent-migrate)
-  - Updated: 2026-08-05T17:42:00.000Z → 2026-08-24T22:42:00.000Z
-- [Use threat indicators in analytics rules](https://learn.microsoft.com/en-us/azure/sentinel/use-threat-indicators-in-analytics-rules)
-  - Updated: 2026-08-08T07:35:00.000Z → 2026-08-19T17:35:00.000Z
-- [Remediate threats while investigating](https://learn.microsoft.com/en-us/azure/sentinel/respond-threats-during-investigation)
-  - Updated: 2026-08-08T07:35:00.000Z → 2026-08-19T17:35:00.000Z
-- [Search large datasets](https://learn.microsoft.com/en-us/azure/sentinel/search-jobs)
-  - Updated: 2026-07-02T08:00:00.000Z → 2026-08-19T17:35:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/sentinel/whats-new)
-  - Updated: 2026-08-11T08:00:00.000Z → 2026-08-24T08:00:00.000Z
-- [Deployment overview](https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview)
-  - Updated: 2026-08-05T17:42:00.000Z → 2026-08-13T22:35:00.000Z
-- [Set up customer-managed keys](https://learn.microsoft.com/en-us/azure/sentinel/customer-managed-keys)
-  - Updated: 2026-07-14T12:35:00.000Z → 2026-08-16T07:34:00.000Z
-- [Logstash plugin with Data Collection Rules](https://learn.microsoft.com/en-us/azure/sentinel/connect-logstash-data-connection-rules)
-  - Updated: 2026-08-08T07:35:00.000Z → 2026-08-22T07:36:00.000Z
-- [Application card for Microsoft Sentinel SIEM](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-siem-application-card)
-  - Updated: 2026-05-26T12:34:00.000Z → 2026-08-24T08:00:00.000Z
-- [Create a pull codeless connector for Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/isv/create-codeless-connector)
-  - Updated: 2026-06-23T17:39:00.000Z → 2026-08-24T22:42:00.000Z
-- [Create pull codeless data connectors with nested API polling](https://learn.microsoft.com/en-us/azure/sentinel/isv/custom-connector-nested-api-polling)
-  - Updated: 2026-07-28T12:37:00.000Z → 2026-08-24T08:00:00.000Z
+- [Troubleshoot SAP data connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot)
+  - Updated: 2026-08-05T17:42:00.000Z → 2026-09-02T12:38:00.000Z
 
 ## Classified Pages
 
@@ -124,6 +105,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [ASIM user management schema](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-user-management) | configuration | 0.86 | Describes the exact schema for user management activities (fields, structure, semantics) in Sentinel, which is detailed configuration/contract data. |
 | [ASIM web session schema](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-web) | configuration | 0.86 | Lists and defines the normalized schema for web session/network activity in Sentinel, which is specific configuration/schema knowledge. |
 | [Configure advanced MSTICPy settings](https://learn.microsoft.com/en-us/azure/sentinel/notebooks-msticpy-advanced) | configuration | 0.86 | Advanced MSTICPy/Jupyter article describes specific configuration parameters such as authentication settings for Azure and Sentinel APIs, autoloading query providers, kernel version management, and environment variables tied to msticpyconfig.yaml. These are product-specific configuration details and parameter names that go beyond generic knowledge. |
+| [Troubleshoot SAP data connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot) | troubleshooting | 0.86 | The page focuses on diagnosing and resolving issues with the Microsoft Sentinel solution for SAP applications agentless data connector. It references specific error locations (SAP Integration Suite message processing logs) and describes how to interpret and act on connector-related errors, fitting the symptom → diagnosis → solution pattern for a product-specific troubleshooting guide. |
 | [ASIM agent event schema](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-agent) | configuration | 0.85 | A normalization schema reference defines specific field names, types, and allowed values for agent event telemetry; this is detailed configuration/contract information unique to Sentinel’s ASIM Agent Event schema, matching the configuration category’s focus on parameter/field definitions and constraints. |
 | [Azure Storage Blob data connector reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connection-rules-reference-azure-storage) | configuration | 0.85 | Provides reference JSON fields and properties for the Azure Storage Blob data connector and its data connection rules, including schema-level configuration parameters unique to Sentinel’s CCF, which fits configuration reference criteria. |
 | [DNS over AMA reference](https://learn.microsoft.com/en-us/azure/sentinel/dns-ama-fields) | configuration | 0.85 | Lists available fields and the normalization schema for DNS logs; includes field names and their mapping, which are detailed configuration/schema references. |
@@ -132,7 +114,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [SentinelAudit table reference](https://learn.microsoft.com/en-us/azure/sentinel/audit-table-reference) | configuration | 0.85 | Reference for SentinelAudit table fields and coverage; provides detailed schema and usage guidance for auditing Sentinel resources. |
 | [SentinelHealth table reference](https://learn.microsoft.com/en-us/azure/sentinel/health-table-reference) | configuration | 0.85 | Reference for SentinelHealth table fields used in health monitoring; includes schema-level details that are product-specific configuration/telemetry knowledge. |
 | [Troubleshoot KQL for the lake](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-troubleshoot) | troubleshooting | 0.85 | Organized as a checklist for resolving common KQL query/job issues, including prerequisites, workspace/table checks, and supported operators; this is symptom→cause→solution troubleshooting specific to Sentinel data lake. |
-| [Troubleshoot SAP data connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article for the agentless data connector; likely organized around specific error messages from SAP Integration Suite logs and corresponding resolutions, matching the troubleshooting criteria. |
 | [Troubleshoot analytics rules](https://learn.microsoft.com/en-us/azure/sentinel/troubleshoot-analytics-rules) | troubleshooting | 0.85 | Explicit troubleshooting article for analytics rules, including meaning of AUTO DISABLED and known issues. Fits symptom→cause→solution troubleshooting with Sentinel-specific behaviors. |
 | [Troubleshoot solutions in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/isv/troubleshoot-sentinel-solutions) | troubleshooting | 0.85 | Explicit troubleshooting guide for data ingestion, analytics, packaging, and agent integration; likely includes symptom→cause→solution mappings and diagnostic steps unique to Sentinel. |
 | [Work with STIX objects and indicators](https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators) | configuration | 0.85 | Provides examples of using ThreatIntelIndicators and ThreatIntelObjects tables and migration guidance; includes table schemas, field names, and query patterns unique to Sentinel’s STIX support. |

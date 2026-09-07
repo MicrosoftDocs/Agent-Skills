@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 21
-- **Unchanged**: 158
+- **Updated Pages**: 0
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -73,50 +73,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | *(Unclassified)* | 53 | 29.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview)
-  - Updated: 2025-12-16T23:42:00.000Z → 2026-08-25T22:15:00.000Z
-- [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2)
-  - Updated: 2026-04-10T08:00:00.000Z → 2026-08-25T22:15:00.000Z
-- [Application Gateway features](https://learn.microsoft.com/en-us/azure/application-gateway/features)
-  - Updated: 2026-07-16T22:11:00.000Z → 2026-08-18T08:00:00.000Z
-- [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works)
-  - Updated: 2024-05-01T22:11:00.000Z → 2026-08-18T22:40:00.000Z
-- [Application Gateway components](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-components)
-  - Updated: 2026-07-16T08:00:00.000Z → 2026-08-26T17:11:00.000Z
-- [Infrastructure](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-infrastructure)
-  - Updated: 2026-08-04T08:00:00.000Z → 2026-08-26T17:11:00.000Z
-- [Frontend IP address](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip)
-  - Updated: 2026-02-10T23:11:00.000Z → 2026-08-20T05:11:00.000Z
-- [Listeners](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-listeners)
-  - Updated: 2025-06-16T08:00:00.000Z → 2026-08-26T17:11:00.000Z
-- [Multi-site hosting](https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview)
-  - Updated: 2025-03-05T08:00:00.000Z → 2026-08-27T17:12:00.000Z
-- [Rewrite HTTP headers and URL](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-08-18T08:00:00.000Z
-- [Understanding pricing](https://learn.microsoft.com/en-us/azure/application-gateway/understanding-pricing)
-  - Updated: 2025-11-04T08:00:00.000Z → 2026-08-25T22:15:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq)
-  - Updated: 2026-07-27T17:13:00.000Z → 2026-08-25T22:15:00.000Z
-- [Private Deployment](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-private-deployment)
-  - Updated: 2025-12-18T18:11:00.000Z → 2026-08-25T22:15:00.000Z
-- [Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link)
-  - Updated: 2026-04-01T22:41:00.000Z → 2026-08-27T09:10:00.000Z
-- [SSL policy overview](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-08-18T08:00:00.000Z
-- [Using Key Vault](https://learn.microsoft.com/en-us/azure/application-gateway/key-vault-certs)
-  - Updated: 2026-06-01T08:00:00.000Z → 2026-08-18T08:00:00.000Z
-- [Generate self-signed certificates for backend](https://learn.microsoft.com/en-us/azure/application-gateway/self-signed-certificates)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-08-26T17:11:00.000Z
-- [Deploy Application Gateway for Containers ALB Controller - Add-on](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-addon)
-  - Updated: 2026-04-29T08:00:00.000Z → 2026-08-26T17:11:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-portal)
-  - Updated: 2025-07-16T22:08:00.000Z → 2026-08-04T08:00:00.000Z
-- [About v1 retirement](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement)
-  - Updated: 2026-05-01T06:12:00.000Z → 2026-08-27T22:11:00.000Z
-- *...and 1 more*
 
 ## Classified Pages
 

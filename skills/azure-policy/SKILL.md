@@ -1,9 +1,9 @@
 ---
 name: azure-policy
-description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when authoring JSON policies, Machine Config, DevOps policy-as-code, Terraform/Gatekeeper, or CI/CD governance, and other Azure Policy related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Resource Manager (use azure-resource-manager), Azure Role-based access control (use azure-rbac), Azure Security (use azure-security).
+description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when authoring JSON policies, deploying guest configs, enforcing security baselines, or using policy-as-code, and other Azure Policy related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Policy Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L50 | Best practices for safely testing and deploying Azure Policy and Machine/Guest Configuration, including PSDSC behavior changes, impact evaluation, and safe rollout strategies. |
 | Decision Making | L51-L58 | Guidance on planning migrations from DSC/Automanage to Machine Configuration/Azure Policy and choosing recommended policy definitions for managing and securing VMs. |
 | Architecture & Design Patterns | L59-L63 | Designing Azure Policy-as-Code workflows, integrating with CI/CD, GitOps, and approvals, and structuring policy repos, environments, and automation for scalable governance. |
-| Security | L64-L168 | Security and compliance baselines with Azure Policy: mapping to standards (CIS, NIST, ISO, FedRAMP, PCI, etc.), machine/guest config baselines, and enforcing MFA and signed configurations. |
+| Security | L64-L168 | Using Azure Policy and Machine Configuration for security baselines, OS/CIS hardening, MFA enforcement, and mapping/regulatory compliance for many standards (NIST, ISO, PCI, HIPAA, FedRAMP, etc.). |
 | Configuration | L169-L208 | Designing, assigning, and managing Azure Policy and Machine Configuration: JSON structures, effects, guest config packages, compliance data, remediation, tags, identities, and exemptions. |
 | Integrations & Coding Patterns | L209-L238 | Patterns for writing reusable Azure Policy definitions (operators, fields, effects, tags, initiatives) and integrating/automating them via Terraform, Kubernetes/Gatekeeper, VS Code, Event Grid, and Resource Graph |
 | Deployment | L239-L249 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish them to storage, export policy for policy-as-code, and enforce Azure Policy in DevOps pipelines |
@@ -69,20 +69,20 @@ This skill requires **network access** to fetch documentation content:
 | Author JSON parameters for Machine Configuration baselines | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-security-baselines/understand-baseline-settings-parameter |
 | Sign Machine Configuration packages and enforce signed content | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/develop-custom-package/6-sign-package |
 | Use regulatory compliance initiatives in Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/concepts/regulatory-compliance |
-| Map Azure Policy to Australian ISM PROTECTED | https://learn.microsoft.com/en-us/azure/governance/policy/samples/australia-ism |
-| Map Azure Policy to Australian ISM PROTECTED | https://learn.microsoft.com/en-us/azure/governance/policy/samples/australia-ism |
-| Azure Policy mappings for Microsoft cloud security benchmark | https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark |
-| Azure Policy mappings for Microsoft cloud security benchmark | https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark |
+| Map Australian ISM PROTECTED controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/australia-ism |
+| Map Australia ISM PROTECTED controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/australia-ism |
+| Apply Microsoft cloud security benchmark with Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark |
+| Implement Microsoft cloud security benchmark via Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark |
 | Map Azure Policy to Canada Federal PBMM | https://learn.microsoft.com/en-us/azure/governance/policy/samples/canada-federal-pbmm |
 | Map Azure Policy to Canada Federal PBMM | https://learn.microsoft.com/en-us/azure/governance/policy/samples/canada-federal-pbmm |
 | Azure Policy mappings for CIS Azure 1.1.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-1-0 |
 | Azure Policy mappings for CIS Azure 1.1.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-1-0 |
-| Azure Policy mappings for CIS Azure 1.3.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-3-0 |
-| Azure Policy mappings for CIS Azure 1.3.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-3-0 |
-| Azure Policy mappings for CIS Azure 1.4.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-4-0 |
-| Azure Policy mappings for CIS Azure 1.4.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-4-0 |
-| Azure Policy mappings for CIS Azure 2.0.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0 |
-| Azure Policy mappings for CIS Azure 2.0.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0 |
+| Implement CIS Azure 1.3.0 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-3-0 |
+| Align CIS Azure 1.3.0 controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-3-0 |
+| Implement CIS Azure 1.4.0 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-4-0 |
+| Align CIS Azure 1.4.0 controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-4-0 |
+| Implement CIS Azure 2.0.0 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0 |
+| Align CIS Azure 2.0.0 controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0 |
 | Apply CIS benchmarks to AlmaLinux via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/alma-ado |
 | Apply CIS benchmarks to AKS Optimized Azure Linux | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/azure-linux-ado |
 | Apply CIS benchmarks to Debian via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/debian-ado |
@@ -91,77 +91,77 @@ This skill requires **network access** to fetch documentation content:
 | Apply CIS benchmarks to Rocky Linux via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rocky-ado |
 | Apply CIS benchmarks to SUSE Linux Enterprise | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/suse-ado |
 | Apply CIS benchmarks to Ubuntu via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/ubuntu-ado |
-| Azure Policy mappings for CMMC Level 3 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3 |
-| Azure Policy mappings for CMMC Level 3 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3 |
-| Azure Policy mappings for FedRAMP High | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-high |
-| Azure Policy mappings for FedRAMP High | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-high |
-| Azure Policy mappings for FedRAMP Moderate | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-moderate |
-| Azure Policy mappings for FedRAMP Moderate | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-moderate |
-| Use Microsoft cloud security benchmark in Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark |
-| Use Microsoft cloud security benchmark in Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark |
+| Map CMMC Level 3 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3 |
+| Map CMMC Level 3 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3 |
+| Map FedRAMP High controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-high |
+| Map FedRAMP High controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-high |
+| Map FedRAMP Moderate controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-moderate |
+| Map FedRAMP Moderate controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-moderate |
+| Apply Microsoft cloud security benchmark via Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark |
+| Implement Gov cloud security benchmark via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark |
 | Use CIS Azure 1.1.0 benchmark with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-1-0 |
 | Use CIS Azure 1.1.0 benchmark with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-1-0 |
-| Use CIS Azure 1.3.0 benchmark with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-3-0 |
-| Use CIS Azure 1.3.0 benchmark with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-3-0 |
-| Implement CMMC Level 3 controls via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cmmc-l3 |
-| Implement CMMC Level 3 controls via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cmmc-l3 |
-| Align FedRAMP High controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high |
-| Align FedRAMP High controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high |
-| Align FedRAMP Moderate controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate |
-| Align FedRAMP Moderate controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate |
+| Align CIS Azure Foundations 1.3.0 with Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-3-0 |
+| Align CIS Azure 1.3.0 (Gov) controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-3-0 |
+| Implement CMMC Level 3 controls using Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cmmc-l3 |
+| Map CMMC Level 3 (Gov) controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cmmc-l3 |
+| Map FedRAMP High requirements to Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high |
+| Map FedRAMP High (Gov) controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high |
+| Map FedRAMP Moderate controls to Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate |
+| Map FedRAMP Moderate (Gov) controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate |
 | Implement IRS 1075 controls using Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-irs-1075-sept2016 |
 | Implement IRS 1075 controls using Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-irs-1075-sept2016 |
 | Map ISO 27001:2013 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-iso-27001 |
 | Map ISO 27001:2013 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-iso-27001 |
-| Implement NIST SP 800-171 R2 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2 |
-| Implement NIST SP 800-171 R2 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2 |
-| Implement NIST SP 800-53 R4 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4 |
-| Implement NIST SP 800-53 R4 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4 |
-| Implement NIST SP 800-53 R5 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5 |
-| Implement NIST SP 800-53 R5 via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5 |
-| Map SOC 2 controls to Azure Policy in Azure Gov | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2 |
-| Map SOC 2 controls to Azure Policy in Azure Gov | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2 |
+| Map NIST SP 800-171 R2 controls to Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2 |
+| Align NIST SP 800-171 R2 controls with Azure Policy in Azure Government | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2 |
+| Implement NIST SP 800-53 Rev. 4 with Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4 |
+| Map NIST SP 800-53 R4 controls to Azure Policy in Azure Government | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4 |
+| Implement NIST SP 800-53 Rev. 5 with Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5 |
+| Use Azure Policy to meet NIST SP 800-53 R5 in Azure Government | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5 |
+| Align SOC 2 requirements with Azure Policy (Gov) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2 |
+| Map SOC 2 controls to Azure Policy initiatives in Azure Government | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2 |
 | Apply CIS Linux security benchmarks via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-cis-linux |
 | Use Docker security baseline with Azure Policy guest configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-docker |
 | Use Linux security baseline with Azure Policy guest configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-linux |
 | Apply Windows Server security baseline via guest configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-windows |
 | Apply Windows Server 2025 security baseline via guest configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-windows-server-2025 |
-| Azure Policy mappings for HIPAA HITRUST | https://learn.microsoft.com/en-us/azure/governance/policy/samples/hipaa-hitrust |
-| Azure Policy mappings for HIPAA HITRUST | https://learn.microsoft.com/en-us/azure/governance/policy/samples/hipaa-hitrust |
+| Map HIPAA HITRUST controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/hipaa-hitrust |
+| Map HIPAA HITRUST controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/hipaa-hitrust |
 | Azure Policy mappings for IRS 1075 (2016) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/irs-1075-sept2016 |
 | Azure Policy mappings for IRS 1075 (2016) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/irs-1075-sept2016 |
 | Azure Policy mappings for ISO 27001:2013 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/iso-27001 |
 | Azure Policy mappings for ISO 27001:2013 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/iso-27001 |
-| Policy mappings for Sovereignty Baseline Confidential | https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-confidential |
-| Policy mappings for Sovereignty Baseline Confidential | https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-confidential |
+| Use Sovereignty Baseline Confidential policies in Azure | https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-confidential |
+| Apply Sovereignty Baseline Confidential policies with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-confidential |
 | Policy mappings for Sovereignty Baseline Global | https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-global |
 | Policy mappings for Sovereignty Baseline Global | https://learn.microsoft.com/en-us/azure/governance/policy/samples/mcfs-baseline-global |
-| Azure Policy mappings for NIST SP 800-171 R2 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-171-r2 |
-| Azure Policy mappings for NIST SP 800-171 R2 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-171-r2 |
-| Azure Policy mappings for NIST SP 800-53 R4 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r4 |
-| Azure Policy mappings for NIST SP 800-53 R4 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r4 |
-| Azure Policy mappings for NIST SP 800-53 R5 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r5 |
-| Azure Policy mappings for NIST SP 800-53 R5 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r5 |
-| Azure Policy mappings for NL BIO Cloud Theme | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nl-bio-cloud-theme |
-| Azure Policy mappings for NL BIO Cloud Theme | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nl-bio-cloud-theme |
+| Map NIST SP 800-171 R2 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-171-r2 |
+| Map NIST SP 800-171 R2 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-171-r2 |
+| Map NIST SP 800-53 Rev.4 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r4 |
+| Map NIST SP 800-53 Rev. 4 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r4 |
+| Map NIST SP 800-53 Rev.5 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r5 |
+| Map NIST SP 800-53 Rev. 5 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r5 |
+| Map NL BIO Cloud Theme controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nl-bio-cloud-theme |
+| Map NL BIO Cloud Theme controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/nl-bio-cloud-theme |
 | Azure Policy mappings for PCI DSS 3.2.1 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/pci-dss-3-2-1 |
 | Azure Policy mappings for PCI DSS 3.2.1 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/pci-dss-3-2-1 |
 | Azure Policy mappings for PCI DSS v4.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/pci-dss-4-0 |
 | Azure Policy mappings for PCI DSS v4.0 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/pci-dss-4-0 |
-| Azure Policy mappings for RBI IT Framework (Banks) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-banks-2016 |
-| Azure Policy mappings for RBI IT Framework (Banks) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-banks-2016 |
-| Azure Policy mappings for RBI IT Framework (NBFC) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-nbfc-2017 |
-| Azure Policy mappings for RBI IT Framework (NBFC) | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-nbfc-2017 |
-| Azure Policy mappings for RMIT Malaysia | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rmit-malaysia |
-| Azure Policy mappings for RMIT Malaysia | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rmit-malaysia |
-| Azure Policy mappings for SOC 2 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/soc-2 |
-| Azure Policy mappings for SOC 2 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/soc-2 |
-| Azure Policy mappings for Spain ENS | https://learn.microsoft.com/en-us/azure/governance/policy/samples/spain-ens |
-| Azure Policy mappings for Spain ENS | https://learn.microsoft.com/en-us/azure/governance/policy/samples/spain-ens |
-| Azure Policy mappings for SWIFT CSP-CSCF 2021 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2021 |
-| Azure Policy mappings for SWIFT CSP-CSCF 2021 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2021 |
-| Azure Policy mappings for SWIFT CSP-CSCF 2022 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2022 |
-| Azure Policy mappings for SWIFT CSP-CSCF 2022 | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2022 |
+| Map RBI IT Framework for Banks controls to Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-banks-2016 |
+| Align RBI IT Framework for Banks with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-banks-2016 |
+| Map RBI IT Framework for NBFC controls to Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-nbfc-2017 |
+| Align RBI IT Framework for NBFC with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rbi-itf-nbfc-2017 |
+| Map RMIT Malaysia controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rmit-malaysia |
+| Map RMIT Malaysia controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/rmit-malaysia |
+| Map SOC 2 controls to Azure Policy initiatives | https://learn.microsoft.com/en-us/azure/governance/policy/samples/soc-2 |
+| Map SOC 2 controls to Azure Policy initiatives | https://learn.microsoft.com/en-us/azure/governance/policy/samples/soc-2 |
+| Map Spain ENS controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/spain-ens |
+| Map Spain ENS controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/spain-ens |
+| Map SWIFT CSP-CSCF 2021 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2021 |
+| Map SWIFT CSP-CSCF 2021 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2021 |
+| Map SWIFT CSP-CSCF 2022 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2022 |
+| Map SWIFT CSP-CSCF 2022 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2022 |
 | Map UK OFFICIAL and UK NHS controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/ukofficial-uknhs |
 | Map UK OFFICIAL and UK NHS controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/ukofficial-uknhs |
 | Enforce multifactor authentication using Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/mfa-enforcement |

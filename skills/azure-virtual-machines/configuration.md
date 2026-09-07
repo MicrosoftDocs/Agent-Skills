@@ -28,9 +28,11 @@
 | Configure and deploy Azure Premium SSD v2 disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2 |
 | Deploy zone-redundant managed disks (ZRS) | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-zrs |
 | Enable on-demand bursting for Premium SSD disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-bursting |
-| Configure and deploy Azure Ultra Disks for VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd |
+| Configure and deploy Azure Ultra SSD managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd |
 | Use Azure disk metrics and bursting metrics | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-metrics |
 | Convert managed disks from LRS to ZRS redundancy | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-migrate-lrs-zrs |
+| Configure per-disk resiliency behavior for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-per-disk-resiliency |
+| Enable and manage per-disk resiliency on managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-per-disk-resiliency-configure |
 | Change performance tiers for Azure Managed Disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-tiers |
 | Enable and configure Azure shared managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable |
 | Configure torn-write prevention on Linux managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention |
@@ -69,6 +71,7 @@
 | Configure Azure Monitor VM availability metric with Flash | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
 | Enable and configure Azure Write Accelerator | https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator |
 | Understand HX-series VM architecture and topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview |
+| Identify Azure-hosted VMs via SMBIOS asset tag | https://learn.microsoft.com/en-us/azure/virtual-machines/identify-azure-vm-from-guest |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
 | Install AMD GPU drivers on Azure N-series Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
@@ -79,6 +82,7 @@
 | Create and encrypt Linux VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart |
 | Encrypt Linux VM disks via Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-portal-quickstart |
 | Create and encrypt Linux VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-powershell-quickstart |
+| Configure direct upload and cross-region copy for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-upload-vhd-to-managed-disk-cli |
 | Use Flatcar Container Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd |
 | Configure Azure VM Image Builder with Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder |
 | Author Bicep and ARM templates for Azure Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-json |
@@ -119,7 +123,6 @@
 | Configure cross-region copy of Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-copy |
 | Configure VM Snapshot extension for restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-vm-snapshot-extension |
 | Configure VM watch Collectors Suite for Azure VM health checks | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-watch-collector-suite |
-| Attach data disks to Windows VMs using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps |
 | Recreate Azure VM to change availability set | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/change-availability-set |
 | Find Marketplace image URNs and plans with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/cli-ps-findimage |
 | Configure WinRM connectivity for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/connect-winrm |

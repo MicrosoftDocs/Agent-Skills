@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 46
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 88
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 95
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-enclave/azure-enclave.csv`
 
@@ -69,25 +69,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 46 | 48.4% |
 
 ## Changes
-
-### New Pages
-
-- [Shared responsibility model](https://learn.microsoft.com/en-us/azure/enclave/shared-responsibility-model)
-
-### Updated Pages
-
-- [Get started with Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/onboard)
-  - Updated: 2026-07-28T17:15:00.000Z → 2026-08-27T09:10:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/enclave/best-practices)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-27T09:10:00.000Z
-- [Observability](https://learn.microsoft.com/en-us/azure/enclave/observability)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-27T22:11:00.000Z
-- [Just-in-time access](https://learn.microsoft.com/en-us/azure/enclave/just-in-time-access)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-28T22:12:00.000Z
-- [Deploy Common Dependencies from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-common-dependencies-service-catalog)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-28T22:12:00.000Z
-- [Deploy service catalog Template from Azure CLI](https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-26T17:11:00.000Z
 
 ## Classified Pages
 

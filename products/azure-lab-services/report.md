@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 102
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 103
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-lab-services/azure-lab-services.csv`
 
 ## Classification Statistics
@@ -73,15 +73,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | *(Unclassified)* | 26 | 25.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Lab Services retirement guide](https://learn.microsoft.com/en-us/azure/lab-services/retirement-guide)
-  - Updated: 2025-11-20T23:11:00.000Z → 2026-08-18T22:40:00.000Z
-
-### Deleted Pages
-
-- ~~Transition to Azure DevTest Labs~~ (https://learn.microsoft.com/en-us/azure/lab-services/transition-devtest-labs-guidance)
 
 ## Classified Pages
 

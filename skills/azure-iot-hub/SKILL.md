@@ -1,9 +1,9 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using IoT Hub/DPS device twins, routing/enrichments, device streams, Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using IoT Hub/DPS for device twins, routing/enrichments, MQTT/AMQP/HTTPS, Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L53 | Diagnosing and fixing IoT Hub/DPS connectivity, routing, proxy, and storage issues; interpreting error codes and collecting/using Device Update and device diagnostic logs. |
-| Best Practices | L54-L62 | Best practices for secure, scalable IoT Hub/DPS deployments: device provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection, auto device config, and IoT Hub hardening. |
-| Decision Making | L63-L75 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
-| Architecture & Design Patterns | L76-L82 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
-| Limits & Quotas | L83-L89 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
-| Security | L90-L127 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID/RBAC, SAS, X.509), certificates/keys, TLS, IP/network controls, private endpoints, policies, and secure device lifecycle management. |
+| Best Practices | L54-L61 | Best practices for secure, scalable IoT Hub/DPS deployments: device provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection, auto device config, and IoT Hub hardening. |
+| Decision Making | L62-L74 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
+| Architecture & Design Patterns | L75-L81 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
+| Limits & Quotas | L82-L88 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
+| Security | L89-L127 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID/RBAC, SAS, X.509), certificates and key rotation, TLS/ciphers, IP/network controls, private endpoints, policies, and best practices. |
 | Configuration | L128-L160 | Configuring IoT Hub and DPS behavior: device/module twins, jobs, messaging, routing, enrichments, protocols, IPs/endpoints, Device Update manifests, file upload, and monitoring settings. |
 | Integrations & Coding Patterns | L161-L185 | Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and message formats/endpoints. |
 | Deployment | L186-L200 | Deploying and updating IoT devices and IoT Hub: Device Update setup/agents, delta/image/package updates, failover, platform support, migrations, and job scheduling. |
@@ -58,7 +58,6 @@ This skill requires **network access** to fetch documentation content:
 | Implement OEM security practices for DPS-enabled devices | https://learn.microsoft.com/en-us/azure/iot-dps/concepts-device-oem-security-practices |
 | Design resilient Azure IoT Hub device reconnection | https://learn.microsoft.com/en-us/azure/iot-hub/concepts-manage-device-reconnections |
 | Apply IoT Hub automatic device configuration best practices | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-configuration-best-practices |
-| Apply security best practices to Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/secure-azure-iot-hub |
 
 ### Decision Making
 | Topic | URL |
@@ -121,6 +120,7 @@ This skill requires **network access** to fetch documentation content:
 | Migrate IoT Hub TLS root certificate to DigiCert G2 | https://learn.microsoft.com/en-us/azure/iot-hub/migrate-tls-certificate |
 | Built-in Azure Policy definitions for IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/policy-reference |
 | Regenerate IoT Hub shared access keys safely | https://learn.microsoft.com/en-us/azure/iot-hub/regenerate-keys |
+| Apply security best practices to Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/secure-azure-iot-hub |
 | Azure Policy compliance controls for IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/security-controls-policy |
 | Create and upload X.509 test certificates for IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-x509-test-certs |
 | Use virtual network and Private Link connectivity with Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/virtual-network-support |

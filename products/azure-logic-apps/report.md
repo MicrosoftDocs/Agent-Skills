@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   integrations: Patterns and SDKs for integrating Logic Apps with AI agents, Azure/OpenAI,
     SAP, B2B/EDI, storage, messaging, on-prem systems, and for coding/testing workflows
@@ -17,8 +17,8 @@ category_descriptions:
     migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS
     Code, DevOps, and Deployment Center.
   decision-making: Guidance on choosing Logic Apps vs other platforms, Standard vs
-    Consumption, migration from BizTalk/Power Automate, and estimating/planning ongoing
-    Logic Apps storage and usage costs.
+    Consumption, estimating and managing costs, and planning migrations (BizTalk,
+    Power Automate) and B2B disaster recovery.
   architecture-patterns: 'Patterns and architectures for Logic Apps: batching, API
     calling, DR/multi-region design, ordered messaging, rules engine behavior, and
     multi-agent/prompt-chaining workflows.'
@@ -31,15 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Logic Apps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building Logic Apps with SAP/B2B, on-prem connectors, private endpoints, CI/CD,
-  or DR/multi-region designs, and other Azure Logic Apps related development tasks.
-  Not for Azure Functions (use azure-functions), Azure Data Factory (use azure-data-factory),
+  building Logic Apps with Azure/OpenAI, SAP/B2B, on-prem connectors, CI/CD deployments,
+  or DR designs, and other Azure Logic Apps related development tasks. Not for Azure
+  Functions (use azure-functions), Azure API Management (use azure-api-management),
   Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
-use_when: Use when building Logic Apps with SAP/B2B, on-prem connectors, private endpoints,
-  CI/CD, or DR/multi-region designs, and other Azure Logic Apps related development
+use_when: Use when building Logic Apps with Azure/OpenAI, SAP/B2B, on-prem connectors,
+  CI/CD deployments, or DR designs, and other Azure Logic Apps related development
   tasks.
-confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Factory
-  (use azure-data-factory), Azure Service Bus (use azure-service-bus), Azure Event
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Management
+  (use azure-api-management), Azure Service Bus (use azure-service-bus), Azure Event
   Grid (use azure-event-grid).
 ---
 # Azure Logic Apps Crawl Report
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 267
+- **Updated Pages**: 1
+- **Unchanged**: 268
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -63,10 +63,10 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 10 | 3.7% |
+| architecture-patterns | 9 | 3.3% |
 | best-practices | 3 | 1.1% |
 | configuration | 32 | 11.9% |
-| decision-making | 8 | 3.0% |
+| decision-making | 9 | 3.3% |
 | deployment | 19 | 7.1% |
 | integrations | 105 | 39.0% |
 | limits-quotas | 5 | 1.9% |
@@ -78,10 +78,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 
 ### Updated Pages
 
-- [Create integration account](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account)
-  - Updated: 2025-09-05T08:00:00.000Z → 2026-08-25T08:00:00.000Z
-- [Manage integration accounts](https://learn.microsoft.com/en-us/azure/logic-apps/enterprise-integration/create-integration-account)
-  - Updated: 2025-09-05T08:00:00.000Z → 2026-08-25T08:00:00.000Z
+- [Set up cross-region disaster recovery for integration accounts](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-b2b-business-continuity)
+  - Updated: 2026-03-13T08:00:00.000Z → 2026-09-03T11:43:00.000Z
 
 ## Classified Pages
 
@@ -237,6 +235,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 | [Scopes](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-run-steps-group-scopes) | configuration | 0.70 | Explains configuring Scope actions, scope status values, and how to drive follow-up actions based on scope outcomes, which is specific to Logic Apps workflow semantics. |
 | [Secure agentic workflows with Easy Auth](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-authentication-agent-workflows) | security | 0.70 | Covers setting up App Service Authentication (Easy Auth) for agentic workflows; such content typically includes specific authentication settings, configuration parameters, and Entra integration details, which are product-specific security configuration knowledge. |
 | [Set up SQL database storage](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-sql-database-storage-standard) | configuration | 0.70 | How-to guide for setting SQL Database as storage provider for Logic Apps Standard; likely includes product-specific configuration parameters (connection settings, schema/artifact storage options, runtime behavior controls) that go beyond generic concepts. |
+| [Set up cross-region disaster recovery for integration accounts](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-b2b-business-continuity) | decision-making | 0.70 | The article describes how to build a business continuity and cross-region disaster recovery plan specifically for Azure Logic Apps integration accounts and B2B artifacts. These DR patterns and recommendations are product-specific and go beyond generic theory, guiding which approaches to use for different B2B scenarios and SLAs. While it may also touch on best practices, the core value is helping users decide and design an appropriate DR strategy for their Logic Apps B2B workloads. |
 | [Standard Automated Test SDK](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/automated-test-sdk) | integrations | 0.70 | SDK reference for unit testing Standard workflows, including classes and enums. These are product-specific APIs and patterns for integrating tests with Logic Apps. |
 | [Switch statements](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-switch-statement) | configuration | 0.70 | Explains the Switch control action, case evaluation, and path execution semantics in Logic Apps, which are specific workflow configuration details. |
 | [Test workflows with mock outputs](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-logic-apps-mock-data-static-results) | configuration | 0.70 | Static results feature involves configuring operations to return mock outputs; includes specific setting names and allowed behaviors unique to Logic Apps testing framework. |
@@ -275,7 +274,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Fa
 | [Move logic app resources](https://learn.microsoft.com/en-us/azure/logic-apps/move-logic-app-resources) | deployment | 0.65 | Migration guidance mentions specific movable resource types and references subscription/region limits; such pages typically include constraints, supported/unsupported scenarios, and method-specific requirements (portal, PowerShell, CLI), which are product-specific deployment/migration details. |
 | [Multi-region deployments for disaster recovery](https://learn.microsoft.com/en-us/azure/logic-apps/multi-region-disaster-recovery) | architecture-patterns | 0.65 | Multi-region disaster recovery guidance for Logic Apps likely includes product-specific deployment patterns, failover strategies, and architecture recommendations unique to Logic Apps, going beyond generic DR concepts. |
 | [Process XML](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-xml) | integrations | 0.65 | Enterprise Integration Pack XML/flat-file processing with schemas, XPath, etc. Typically includes specific actions and configuration options unique to Logic Apps EIP connectors. |
-| [Set up cross-region disaster recovery for integration accounts](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-b2b-business-continuity) | architecture-patterns | 0.65 | The article describes building a business continuity plan and cross-region disaster recovery for integration accounts and B2B artifacts. This is architecture-level guidance specific to Logic Apps B2B workloads, including when and how to set up DR for meeting SLAs, which aligns with architecture-patterns and decision-style guidance rather than generic concepts. |
 | [TestErrorInfo class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-error-info-class-definition) | troubleshooting | 0.65 | Provides structured error information (codes, messages, nested details) for testing scenarios. While an SDK class, it directly maps error codes and messages to structured data, aiding troubleshooting. |
 | [TestIterationItem class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-iteration-item-class-definition) | integrations | 0.65 | Documents a class representing loop iteration items in tests. Product-specific SDK integration pattern for handling loops. |
 | [TestWorkflowOutputParameter class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-workflow-output-parameter-class-definition) | integrations | 0.65 | SDK class reference for workflow output parameters in tests. Contains product-specific properties and usage patterns. |

@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or PostgreSQL workloads, and other Azure Cosmos DB related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, vector search, multi-region HA, or CI/CD deployments, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Blob Storage (use azure-blob-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L141-L191 | Guides for choosing Cosmos DB deployment, scaling, consistency, backup, pricing, and migration options across SQL, MongoDB, Cassandra, Table, and PostgreSQL APIs. |
 | Architecture & Design Patterns | L192-L217 | Patterns and reference architectures for AI agents, change feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL. |
 | Limits & Quotas | L218-L252 | Limits, quotas, and behaviors for Cosmos DB throughput, partitions, backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache, and PostgreSQL clusters. |
-| Security | L253-L319 | Securing Cosmos DB: encryption, keys, RBAC/Entra ID, network isolation (VNet, Private Link, firewalls), auditing, data masking, TLS, and security best practices across all APIs. |
-| Configuration | L320-L444 | Configuring Cosmos DB and its APIs: throughput, indexing, consistency, backup/restore, fleets, emulators, monitoring/alerts, SDK tuning, and PostgreSQL/Cassandra/MongoDB-specific settings. |
+| Security | L253-L318 | Securing Cosmos DB: encryption, keys, RBAC/Entra ID, network isolation (VNet, Private Link, firewalls), auditing, data masking, TLS, and security best practices across all APIs. |
+| Configuration | L319-L444 | Configuring Cosmos DB and its APIs: throughput, indexing, TTL, backup/restore, fleets, monitoring/logging, SDK tuning, emulators, Mongo/Cassandra/PostgreSQL features, HA, and performance settings. |
 | Integrations & Coding Patterns | L445-L566 | SDK usage, bulk import, change feed, vector search, Kafka/Spark/PostgreSQL/Mongo/Cassandra/Gremlin integrations, migration tools, and sample code for app and data connectivity. |
-| Deployment | L567-L593 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
+| Deployment | L567-L592 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -314,7 +314,6 @@ This skill requires **network access** to fetch documentation content:
 | Assign Cosmos DB service principal for Cassandra | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/add-service-principal |
 | Configure customer-managed keys for Cassandra | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/customer-managed-keys |
 | Enable LDAP authentication for Cassandra clusters | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/ldap |
-| Configure outbound network rules for Cassandra | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/network-rules |
 | Secure Cassandra managed instance access via VPN | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/use-vpn |
 
 ### Configuration
@@ -327,7 +326,6 @@ This skill requires **network access** to fetch documentation content:
 | Reconfigure Azure Cosmos DB container partition key | https://learn.microsoft.com/en-us/azure/cosmos-db/change-partition-key |
 | Configure resource model for Cosmos DB point-in-time restore | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-resource-model |
 | Configure Azure Monitor alerts for Cosmos DB metrics and logs | https://learn.microsoft.com/en-us/azure/cosmos-db/create-alerts |
-| Configure and use the Cosmos DB local emulator | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator |
 | Configure and run Azure Cosmos DB Linux-based emulator | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux |
 | Use Windows Cosmos DB emulator command-line and PowerShell | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-windows-arguments |
 | Use Fleet Analytics to monitor Cosmos DB usage and cost | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-analytics |
@@ -344,6 +342,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure per-partition automatic failover for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-per-partition-automatic-failover |
 | Create and configure Cosmos DB fleets and fleetspaces | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-fleet |
 | Define unique key constraints in Azure Cosmos DB containers | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-define-unique-keys |
+| Configure and use Azure Cosmos DB emulator for local development | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator |
 | Enable Cosmos DB Fleet Analytics in Fabric workspace | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-enable-fleet-analytics |
 | Configure and query geospatial indexing in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-geospatial-index-query |
 | Configure and manage Cosmos DB conflict resolution | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-conflicts |
@@ -440,6 +439,7 @@ This skill requires **network access** to fetch documentation content:
 | Run DBA commands and override Cassandra configurations | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/dba-commands |
 | Enable materialized views in managed Cassandra | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/materialized-views |
 | Configure Azure Monitor for Cassandra clusters | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/monitor-clusters |
+| Configure outbound network rules for Cassandra managed instances | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/network-rules |
 | Set up Prometheus and Grafana for Cassandra metrics | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/visualize-prometheus-grafana |
 
 ### Integrations & Coding Patterns
@@ -573,7 +573,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Oracle data to Cosmos DB Cassandra with Striim | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/migrate-data-striim |
 | Deploy Cosmos DB Cassandra resources with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/templates-samples |
 | Deploy Cosmos DB web app using ARM template | https://learn.microsoft.com/en-us/azure/cosmos-db/create-website |
-| Use Cosmos DB emulator for local development and CI | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator |
 | Restore deleted Cosmos DB containers or databases in-account | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-restore-in-account-continuous-backup |
 | Deploy Azure Cosmos DB resources with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-templates |
 | Manage Cosmos DB for MongoDB using Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/manage-with-bicep |

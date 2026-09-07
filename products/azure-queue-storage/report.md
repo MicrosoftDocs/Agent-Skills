@@ -37,9 +37,9 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 - **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 24
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-queue-storage/azure-queue-storage.csv`
 
@@ -55,10 +55,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 1 | 4.0% |
 
 ## Changes
-
-### New Pages
-
-- [Secure your Azure Queue storage](https://learn.microsoft.com/en-us/azure/storage/queues/secure-queues)
 
 ## Classified Pages
 

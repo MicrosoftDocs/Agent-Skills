@@ -37,8 +37,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 22
+- **Updated Pages**: 0
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
@@ -53,11 +53,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 8 | 34.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started)
-  - Updated: 2026-06-15T08:00:00.000Z → 2026-07-14T22:18:00.000Z
 
 ## Classified Pages
 

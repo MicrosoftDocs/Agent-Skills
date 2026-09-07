@@ -1,61 +1,62 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
-  troubleshooting: 'Diagnosing and fixing Azure Monitor issues: agent/extension health,
-    data collection and pipeline errors, alerts/metrics/logs problems, VM/container/App
-    Insights troubleshooting, and DCR/log-based investigations.'
-  configuration: 'Configuring Azure Monitor and agents: data collection rules, diagnostics,
-    logs/metrics schemas, alerts, autoscale, workbooks, and resource-specific monitoring
-    settings across Azure and hybrid environments.'
+  troubleshooting: Diagnosing and fixing Azure Monitor data collection, agents, alerts,
+    pipelines, workspaces, Application Insights, containers, DevCenter, and VM performance
+    issues using logs, tools, and troubleshooters
+  configuration: 'Configuring Azure Monitor: agents, data collection rules, pipelines,
+    alerts, diagnostics, logs/metrics schemas, resource-specific monitoring, workbooks,
+    and integration with OpenTelemetry, Prometheus, and Sentinel.'
   decision-making: Guides for choosing Azure Monitor agents, alerts, metrics/logs
     options, cost planning, and migration paths from legacy tools (MMA, WAD/LAD, SCOM,
     Splunk, Prometheus, SDKs) to modern Azure Monitor.
   limits-quotas: Limits, quotas, performance, and scale behavior for Azure Monitor
     alerts, logs, metrics, Prometheus, Container Insights, Application Insights, Workbooks,
     and supported regions/resources.
-  deployment: Deploying and configuring Azure Monitor agents, VM insights, policies,
-    and .NET profiling/snapshot debugging tools across VMs, App Service, Functions,
-    containers, and Service Fabric.
-  integrations: 'Integrating Azure Monitor with apps and tools: agents, webhooks,
-    ITSM, JS/OpenTelemetry SDKs, Prometheus/Grafana, REST/Logs APIs, and KQL patterns
-    for querying many Azure/third‑party logs.'
+  integrations: 'Integrating Azure Monitor with apps and tools: agents, REST/CLI,
+    webhooks, ITSM, Prometheus/Grafana, and KQL patterns for querying many Azure/third‑party
+    log tables.'
   best-practices: Best practices for configuring, scaling, alerting, querying, and
     cost-optimizing Azure Monitor (logs, metrics, autoscale, AKS/Kubernetes, VMs,
     Prometheus/OpenTelemetry).
   security: 'Securing Azure Monitor and related services: auth, RBAC, network/TLS,
     policy, private link, secure ingestion, and querying/auditing security and compliance
     logs across many Azure products.'
+  deployment: Deploying and configuring Azure Monitor agents, VM insights, policies,
+    and .NET profiling/snapshot debugging tools across VMs, App Service, Functions,
+    containers, and Service Fabric.
   architecture-patterns: Designing end-to-end Azure Monitor architectures, including
     enterprise-scale layouts, data flows, and secure network topologies using Private
     Link for monitoring traffic.
 skill_description: Expert knowledge for Azure Monitor development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring DCRs, Log Analytics, Application Insights, Container/VM insights, or
-  Prometheus/Grafana, and other Azure Monitor related development tasks. Not for Azure
-  Service Health (use azure-service-health), Azure Network Watcher (use azure-network-watcher),
-  Azure Defender For Cloud (use azure-defender-for-cloud), Cost Management (use azure-cost-management).
-use_when: Use when configuring DCRs, Log Analytics, Application Insights, Container/VM
-  insights, or Prometheus/Grafana, and other Azure Monitor related development tasks.
-confusable_not_for: Not for Azure Service Health (use azure-service-health), Azure
-  Network Watcher (use azure-network-watcher), Azure Defender For Cloud (use azure-defender-for-cloud),
-  Cost Management (use azure-cost-management).
+  configuring agents/DCRs, Log Analytics/App Insights, alerts/workbooks, Prometheus/OpenTelemetry,
+  or Sentinel, and other Azure Monitor related development tasks. Not for Azure Network
+  Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health),
+  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security).
+use_when: Use when configuring agents/DCRs, Log Analytics/App Insights, alerts/workbooks,
+  Prometheus/OpenTelemetry, or Sentinel, and other Azure Monitor related development
+  tasks.
+confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), Azure
+  Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Security (use azure-security).
 ---
 # Azure Monitor Crawl Report
 
 ## Summary
 
-- **Total Pages**: 2382
-- **Fetched**: 2382
+- **Total Pages**: 2384
+- **Fetched**: 2384
 - **Fetch Failed**: 0
-- **Classified**: 1811
-- **Unclassified**: 571
+- **Classified**: 1815
+- **Unclassified**: 569
 
 ### Incremental Update
-- **New Pages**: 12
-- **Updated Pages**: 330
-- **Unchanged**: 2040
-- **Deleted Pages**: 3
+- **New Pages**: 2
+- **Updated Pages**: 16
+- **Unchanged**: 2366
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
 ## Classification Statistics
@@ -64,81 +65,56 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 |------|-------|------------|
 | architecture-patterns | 2 | 0.1% |
 | best-practices | 34 | 1.4% |
-| configuration | 1241 | 52.1% |
+| configuration | 1248 | 52.3% |
 | decision-making | 34 | 1.4% |
-| deployment | 18 | 0.8% |
+| deployment | 17 | 0.7% |
 | integrations | 320 | 13.4% |
-| limits-quotas | 28 | 1.2% |
+| limits-quotas | 24 | 1.0% |
 | security | 66 | 2.8% |
-| troubleshooting | 68 | 2.9% |
-| *(Unclassified)* | 571 | 24.0% |
+| troubleshooting | 70 | 2.9% |
+| *(Unclassified)* | 569 | 23.9% |
 
 ## Changes
 
 ### New Pages
 
-- [Assign insights to GitHub Copilot](https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-github-copilot)
-- [Health modeling](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/health-modeling)
-- [External health reports](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/health-report-ingestion)
-- [Data annotations](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/data-annotations)
-- [Analyze health](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/analyze-health)
-- [Microsoft.AzureStackHCI/edgeMachines](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-azurestackhci-edgemachines-metrics)
-- [Microsoft.Network/expressRouteLags](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-expressroutelags-metrics)
-- [Microsoft.Storage/contextCaches/contextCacheContainers](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-storage-contextcaches-contextcachecontainers-metrics)
-- [Microsoft.Peering/peeringServices](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-peering-peeringservices-logs)
-- [PaymentHsmHardwareOperationAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/paymenthsmhardwareoperationauditlogs)
-- [QuantumProviderAccountMessageAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/quantumprovideraccountmessageauditlogs)
-- [QuantumProviderAccountMessageAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/quantumprovideraccountmessageauditlogs)
+- [Oracle.Database/goldenGateDeployments](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/oracle-database-goldengatedeployments-metrics)
+- [Oracle.Database/goldenGateDeployments](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/oracle-database-goldengatedeployments-logs)
 
 ### Updated Pages
 
-- [Get started (supplemental)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-get-started-supplemental)
-  - Updated: 2026-04-08T08:00:00.000Z → 2026-08-19T22:11:00.000Z
-- [Configuration (supplemental)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-config)
-  - Updated: 2026-04-08T08:00:00.000Z → 2026-06-19T08:00:00.000Z
-- [Availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability)
-  - Updated: 2026-02-27T08:00:00.000Z → 2026-08-21T06:04:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-profiler-overview)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-19T22:11:00.000Z
-- [Azure App Service in Windows](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T17:15:00.000Z
-- [Azure App Service in Linux](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-aspnetcore-linux)
-  - Updated: 2026-03-26T22:20:00.000Z → 2026-08-28T17:15:00.000Z
-- [Azure Functions app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-azure-functions)
-  - Updated: 2026-03-26T22:20:00.000Z → 2026-08-28T17:15:00.000Z
-- [Azure Service Fabric app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-servicefabric)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T17:15:00.000Z
-- [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-vm)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T17:15:00.000Z
-- [ASP.NET Core app running in container](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-containers)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T17:15:00.000Z
-- [Configure Profiler](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-settings)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T17:15:00.000Z
-- [Configure BYOS (Bring Your Own Storage)](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-bring-your-own-storage)
-  - Updated: 2026-03-06T08:00:00.000Z → 2026-08-28T17:15:00.000Z
-- [Track Requests](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T17:15:00.000Z
-- [View insights](https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/view-code-optimizations)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-19T22:11:00.000Z
-- [View .NET Profiler data](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-data)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-08-28T17:15:00.000Z
-- [Code Optimizations](https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-troubleshoot)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-19T22:11:00.000Z
-- [Profiler](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-troubleshooting)
-  - Updated: 2026-03-26T22:20:00.000Z → 2026-08-28T17:15:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T22:09:00.000Z
-- [View snapshots](https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-data)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T22:09:00.000Z
-- [Enable Snapshot Debugger for an App Service](https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-app-service)
-  - Updated: 2026-03-19T22:16:00.000Z → 2026-08-28T22:09:00.000Z
-- *...and 310 more*
-
-### Deleted Pages
-
-- ~~Analyze~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/analyze-health)
-- ~~Microsoft.Devices/provisioningServices~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-devices-provisioningservices-logs)
-- ~~Microsoft.Devices/provisioningServices~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-devices-provisioningservices-metrics)
+- [Syslog events](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-syslog)
+  - Updated: 2026-03-03T08:00:00.000Z → 2026-09-02T22:16:00.000Z
+- [Install and run reports](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/performance-diagnostics-run)
+  - Updated: 2026-04-10T17:11:00.000Z → 2026-09-01T08:00:00.000Z
+- [Monitor cluster network](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-network-monitoring)
+  - Updated: 2025-06-29T11:18:00.000Z → 2026-09-03T22:16:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new)
+  - Updated: 2026-08-13T08:00:00.000Z → 2026-09-01T08:00:00.000Z
+- [Supported operating systems](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems)
+  - Updated: 2026-07-02T08:00:00.000Z → 2026-08-31T08:00:00.000Z
+- [Windows clients](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client)
+  - Updated: 2026-07-11T08:00:00.000Z → 2026-09-04T06:09:00.000Z
+- [Azure Monitor dashboards with Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards)
+  - Updated: 2026-08-05T06:04:00.000Z → 2026-09-01T22:22:00.000Z
+- [Delete data from a log table](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-log-data)
+  - Updated: 2025-11-19T23:19:00.000Z → 2026-09-03T22:16:00.000Z
+- [Walkthrough](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-get-started)
+  - Updated: 2026-08-19T08:00:00.000Z → 2026-08-31T22:13:00.000Z
+- [Supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index)
+  - Updated: 2026-08-21T08:00:00.000Z → 2026-08-28T08:00:00.000Z
+- [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index)
+  - Updated: 2026-08-21T08:00:00.000Z → 2026-08-28T08:00:00.000Z
+- [Azure Monitor Logs table feature support](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-features)
+  - Updated: 2026-08-27T08:00:00.000Z → 2026-08-31T08:00:00.000Z
+- [Azure Monitor supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index)
+  - Updated: 2026-08-21T08:00:00.000Z → 2026-08-28T08:00:00.000Z
+- [Microsoft.DocumentDB/DatabaseAccounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-databaseaccounts-metrics)
+  - Updated: 2026-08-26T08:00:00.000Z → 2026-08-31T08:00:00.000Z
+- [Azure Monitor resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index)
+  - Updated: 2026-08-21T08:00:00.000Z → 2026-08-28T08:00:00.000Z
+- [PaymentHsmHardwareOperationAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/paymenthsmhardwareoperationauditlogs)
+  - Updated: 2026-08-21T22:10:00.000Z → 2026-08-31T08:00:00.000Z
 
 ## Classified Pages
 
@@ -250,7 +226,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [MicrosoftGraphActivityLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftgraphactivitylogs) | configuration | 0.86 | MicrosoftGraphActivityLogs table schema is detailed and unique, enabling configuration of monitoring and governance queries. |
 | [MicrosoftGraphPolicyLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftgraphpolicylogs) | configuration | 0.86 | Policy logs table reference with field definitions is expert schema knowledge for configuring compliance and monitoring. |
 | [OfficeActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity) | configuration | 0.86 | Azure Monitor Logs table reference pages enumerate product-specific columns, data types, and semantics for the OfficeActivity table. This is detailed schema/configuration knowledge (field names, meanings, and usage) that isn't generally known from training and is needed to correctly query and interpret these logs. |
-| [PaymentHsmHardwareOperationAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/paymenthsmhardwareoperationauditlogs) | configuration | 0.86 | The table reference defines the exact schema for PaymentHsmHardwareOperationAuditLogs, including specialized fields tied to Azure Payment HSM and Atalla audit logs. These product-specific column definitions and meanings are expert configuration knowledge for building accurate KQL queries and alerts. |
 | [PowerAppsActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerappsactivity) | configuration | 0.86 | The PowerAppsActivity table reference provides detailed column names, types, and event semantics for Power Apps audit logs. This schema-level information is specific to Azure Monitor and Power Apps and is required to correctly configure log queries and analytics. |
 | [PowerAutomateActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerautomateactivity) | configuration | 0.86 | The page documents the PowerAutomateActivity table schema, including product-specific fields and their meanings for Power Automate audit events. These details are expert configuration knowledge used to construct precise KQL queries and monitoring rules. |
 | [PowerBIActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbiactivity) | configuration | 0.86 | The PowerBIActivity table reference describes the exact schema for Power BI audit logs in Azure Monitor, with specific column definitions and event types. This is product-specific configuration information needed for accurate log analysis. |
@@ -433,6 +408,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [ArcK8sAudit](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8saudit) | configuration | 0.82 | ArcK8sAudit table reference defines schema for Kubernetes API server audit logs, including categories and fields. |
 | [ArcK8sAuditAdmin](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8sauditadmin) | configuration | 0.82 | Documents a specialized audit admin table schema for Arc-enabled Kubernetes, which is expert product knowledge. |
 | [ArcK8sControlPlane](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8scontrolplane) | configuration | 0.82 | Control plane logs table reference includes categories and schema details for multiple Kubernetes components. |
+| [Azure Monitor Logs table feature support](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-features) | configuration | 0.82 | Contains a matrix of all Azure Monitor Logs tables and their support for specific features (ingestion-time transformations, Logs Ingestion API, Basic/Auxiliary plans), which is detailed configuration/feature support data not inferable without the reference. |
 | [AzureMetricsV2](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremetricsv2) | configuration | 0.82 | AzureMetricsV2 schema, including categories and dimensions, is detailed platform-specific reference. |
 | [ContainerEvent](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerevent) | configuration | 0.82 | ContainerEvent table schema for customer container events; includes specific columns and meanings. |
 | [ContainerInstanceLog](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerinstancelog) | configuration | 0.82 | ContainerInstanceLog table reference with fields for container instance customer logs. |
@@ -558,8 +534,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [AppServiceFileAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicefileauditlogs) | configuration | 0.80 | File audit logs table schema and fields are documented; this is detailed, product-specific configuration knowledge. |
 | [AppServiceHTTPLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicehttplogs) | configuration | 0.80 | HTTP logs table reference defines concrete columns and their semantics for App Service HTTP logging. |
 | [Automated certificate management (default TLS)](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls-automated) | security | 0.80 | Focuses on automated certificate management via Certificate Manager extension; will contain concrete configuration steps, parameter names, and security settings unique to this product. |
-| [Azure Monitor Logs table feature support](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-features) | limits-quotas | 0.80 | Contains a reference matrix of all Azure Monitor Logs tables and whether they support specific features (ingestion-time transformations, Logs Ingestion API, Basic plan, Auxiliary plan). This is expert knowledge about per-table capabilities/constraints, analogous to a limits/support matrix. |
-| [Azure Monitor supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | limits-quotas | 0.80 | Same content as index 1: a detailed list of supported metrics by resource type. This is a capability/limits catalog that an LLM wouldn’t reliably know, best mapped to limits-quotas. |
 | [Azure Service Fabric app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-servicefabric) | deployment | 0.80 | Requires updating ARM templates and configuring Azure Diagnostics extension with specific settings; these are detailed deployment and configuration parameters unique to Service Fabric. |
 | [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-vm) | deployment | 0.80 | Covers using Az PowerShell and VM extensions to enable Profiler with specific configuration options and constraints for VMs/VMSS, which are deployment-specific expert details. |
 | [AzureDevOpsAuditing](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuredevopsauditing) | configuration | 0.80 | Azure DevOps audit log schema, including event types and fields, is detailed expert reference. |
@@ -776,8 +750,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [StorageCacheOperationEvents](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagecacheoperationevents) | configuration | 0.80 | Defines the schema for Azure HPC Cache operation events, including specific fields for API requests. |
 | [StorageCacheUpgradeEvents](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagecacheupgradeevents) | configuration | 0.80 | Provides exact column definitions for firmware upgrade events in Azure HPC Cache, a specialized log schema. |
 | [StorageCacheWarningEvents](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagecachewarningevents) | configuration | 0.80 | Documents the schema for warning events in Azure HPC Cache, including specific warning-related fields. |
-| [Supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | limits-quotas | 0.80 | Lists the exact metrics available for each Azure resource type. This is a detailed capability/limits catalog (which metrics exist for which provider/type) that an LLM wouldn’t reliably know from training. It’s closest to limits-quotas because it enumerates supported metrics per resource in a reference-style index. |
-| [Syslog events](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-syslog) | configuration | 0.80 | Explains Linux Syslog data source configuration in DCRs, including facilities and severities; Azure-specific configuration details. |
 | [Text logs](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-text) | configuration | 0.80 | Explains Custom Text Logs data source type and its configuration in DCRs; includes Azure-specific parameters and behavior. |
 | [Text parameters](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-text) | configuration | 0.80 | Explains text box parameters, default values from queries, and use as internal variables; product-specific parameter configuration behavior. |
 | [Track Requests](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests) | integrations | 0.80 | Shows code patterns and APIs to manually track requests so Profiler can capture them, including specific SDK calls and parameters, which are integration and coding patterns. |
@@ -793,7 +765,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [WVDConnectionNetworkData](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/wvdconnectionnetworkdata) | integrations | 0.80 | Shows KQL queries for RTT and bandwidth percentiles and top users using WVDConnectionNetworkData schema, which is product-specific. |
 | [Watchlist](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/watchlist) | integrations | 0.80 | Provides specific queries to list watchlist aliases and join Watchlist data with Heartbeat, demonstrating schema and join patterns unique to this feature. |
 | [Windows AMA Troubleshooter](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/troubleshooter-ama-windows) | troubleshooting | 0.80 | Described as a detailed instructions article for a Windows AMA troubleshooter tool; such pages typically list specific checks, log locations, and symptom-to-solution flows unique to the product. |
-| [Windows clients](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client) | configuration | 0.80 | Article provides detailed, product-specific steps and parameters for installing the Azure Monitor Agent via a client installer, associating data collection rules, and managing configuration on Windows 10/11 devices, which goes beyond generic monitoring concepts. |
 | [Windows events](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-windows-events) | configuration | 0.80 | Details Windows events data source in DCRs, including which logs and event levels to collect; product-specific configuration not generally known. |
 | [WireData](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wiredata) | configuration | 0.80 | Defines the WireData table schema, including network-related fields, which is product-specific configuration knowledge. |
 | [Workbook parameters](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-parameters) | configuration | 0.80 | Covers parameter types, input controls, and how parameters are referenced across workbook parts; includes product-specific parameter configuration behaviors. |
@@ -918,6 +889,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [AppPlatformSystemLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appplatformsystemlogs) | configuration | 0.78 | Provides detailed table schema for system logs, including column names and data types, which is expert configuration information. |
 | [AppRequests](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apprequests) | configuration | 0.78 | Application Insights table references define exact columns and their semantics, which are specific configuration details. |
 | [Azure Monitor network access requirements](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/azure-monitor-network-access) | security | 0.78 | Page describes product-specific network access and firewall configuration for Azure Monitor, including use of service tags and endpoint requirements. These are concrete security/network settings unique to the service, matching the security sub-skill criteria. |
+| [Azure Monitor supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | configuration | 0.78 | Same as index 0: a comprehensive reference of which metrics are available for each Azure resource type, representing product-specific configuration/availability data. |
 | [AzureSQLAutomaticTuning](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlautomatictuning) | configuration | 0.78 | Automatic tuning settings change log schema for Azure SQL Database is product-specific. |
 | [AzureSQLBlocks](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlblocks) | configuration | 0.78 | Blocking event log schema for Azure SQL Database is detailed diagnostic reference. |
 | [AzureSQLDatabaseWaitStatistics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqldatabasewaitstatistics) | configuration | 0.78 | Wait statistics log schema for Azure SQL Database is specialized performance diagnostic data. |
@@ -1029,6 +1001,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [OTelSpans](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otelspans) | configuration | 0.78 | Provides detailed schema and field definitions for the OTelSpans table, including column names and meanings, which are product-specific configuration details. |
 | [OTelTraces](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oteltraces) | configuration | 0.78 | Defines the OTelTraces table structure and columns; this is specific log schema/configuration information unique to Azure Monitor. |
 | [OTelTracesAgent](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oteltracesagent) | configuration | 0.78 | Documents the OTelTracesAgent table schema and field behavior, which is detailed, product-specific log configuration. |
+| [Oracle.Database/goldenGateDeployments](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/oracle-database-goldengatedeployments-logs) | configuration | 0.78 | The page is a reference for Azure Monitor log categories specific to Oracle.Database/goldenGateDeployments. It lists product-specific log category names and their meanings, which are configuration/observability details unique to this resource type. This is expert knowledge not generally known from training, but it does not include limits, quotas, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/migration-overview) | decision-making | 0.78 | Provides guidance on choosing between System Center Operations Manager and Azure Monitor and planning migration; includes scenario-based recommendations. |
 | [PFTitleAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pftitleauditlogs) | configuration | 0.78 | Provides the PFTitleAuditLogs table schema and field meanings for PlayFab Title audit logs, which are specific to this integration. |
 | [PGSQLServerLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqlserverlogs) | configuration | 0.78 | Reference for PGSQLServerLogs table schema; column names and meanings for server logs are expert configuration knowledge. |
@@ -1051,6 +1024,8 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [SalesforceLoginHistory](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceloginhistory) | configuration | 0.78 | The SalesforceLoginHistory table reference provides detailed schema information (fields, types, meanings) for login event logs ingested into Microsoft Sentinel. This is specific, structured configuration of the log table that qualifies as expert knowledge for using Azure Monitor queries. |
 | [SentinelBehaviorEntities](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorentities) | configuration | 0.78 | Azure Monitor Logs reference pages for specific tables typically list all columns, data types, and semantics for the SentinelBehaviorEntities table. This schema detail (column names, meanings, and usage in queries) is product-specific configuration/expert knowledge that isn't generally known from training and aligns best with the configuration sub-skill, as it defines how to work with this log table's structured data. |
 | [Service health alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-service-health) | configuration | 0.78 | Page provides concrete ARM template samples and parameter structures for configuring Azure Monitor service health alerts. These include specific property names, schema structure, and configuration patterns that are product-specific and not just conceptual, fitting the configuration category. |
+| [Supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | configuration | 0.78 | Page is a detailed reference list of supported metrics per Azure resource type, including exact metric names and availability that must be looked up and are not derivable from general knowledge. |
+| [Supported operating systems](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems) | configuration | 0.78 | The page is a detailed compatibility matrix listing exactly which operating system versions and editions are supported for the Azure Monitor Agent. This is product-specific configuration/compatibility data that an LLM wouldn't reliably know from training and is needed to decide whether and how to configure the agent on particular OS builds. |
 | [Supported region mappings](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping) | limits-quotas | 0.78 | Provides tables mapping Container Insights regions to Log Analytics and custom metrics regions, which are concrete platform constraints and mappings. |
 | [Update](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/update) | integrations | 0.78 | Contains specific KQL queries over the Update table (columns, joins, filters) to count and list missing updates, which are product-specific query patterns. |
 | [UserPeerAnalytics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/userpeeranalytics) | configuration | 0.78 | Azure Monitor Logs reference pages define table schemas (column names, types, and semantics) that are product-specific configuration/telemetry details not generally known; this fits configuration of log data structures. |
@@ -1177,6 +1152,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [PowerBIDatasetsWorkspace](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbidatasetsworkspace) | configuration | 0.76 | Defines schema for PowerBIDatasetsWorkspace table; field definitions for workspace-level engine events are expert knowledge. |
 | [PowerPlatformAdminActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerplatformadminactivity) | configuration | 0.76 | Provides table schema for Power Platform admin activity logs; column names and semantics are specific configuration details. |
 | [Send to Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs) | configuration | 0.76 | Describes how to configure WAD to send data to Event Hubs; this typically includes specific configuration sections, setting names, and parameter values (e.g., sinks, connection string settings) that are product-specific integration/configuration details. |
+| [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | configuration | 0.76 | Provides a catalog of resource log categories and schemas per service; these category names and schema associations are product-specific reference data that require documentation lookup. |
 | [UpdateRunProgress](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/updaterunprogress) | integrations | 0.76 | Shows concrete Kusto queries on UpdateRunProgress to list installation status per machine, including table/column usage unique to Azure Monitor. |
 | [UpdateSummary](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/updatesummary) | integrations | 0.76 | Provides example KQL queries using UpdateSummary schema to get counts by category and configuration, which are product-specific query patterns. |
 | [WVDCheckpoints](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdcheckpoints) | configuration | 0.76 | Defines the WVDCheckpoints table schema, which is specific to Windows Virtual Desktop telemetry configuration. |
@@ -1247,7 +1223,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [ServiceNow ITOM](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-secure-webhook-connections-servicenow) | integrations | 0.75 | Product-specific integration between ServiceNow and Secure Webhook; expected to contain configuration fields, endpoint details, and mapping specifics unique to this integration. |
 | [SigninLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/signinlogs) | integrations | 0.75 | Provides Kusto queries over SigninLogs (resources per user, distinct users per resource/app, MFA failures, silent sign-in failures), using Azure AD sign-in log schema. |
 | [StorageBlobLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/storagebloblogs) | integrations | 0.75 | Shows queries listing top errors, operations by errors, longest end-to-end latency, throttling, and anonymous access, using StorageBlobLogs-specific fields. |
-| [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | limits-quotas | 0.75 | Provides a detailed reference of supported resource log categories and schemas per service. This is expert, product-specific catalog information (which categories exist for which resource types) that functions like a capability/limits index, fitting best under limits-quotas. |
 | [Supported resources and regions](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/platform-logs-reference) | limits-quotas | 0.75 | Lists resource types, category streams, destination tables, and regions supported for platform log export; this is a detailed support/limits matrix that an LLM is unlikely to know precisely. |
 | [Syslog](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/syslog) | integrations | 0.75 | Includes multiple Kusto queries over Syslog (kernel kills, last 100 events, by facility/process, group changes, failed password changes, SSH failures), using Azure Monitor’s Syslog schema. |
 | [TSIIngress](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/tsiingress) | integrations | 0.75 | Contains detailed queries for TSIIngress (recent connection failures, result descriptions, fix messages, event source properties), using Time Series Insights ingress schema. |
@@ -1349,6 +1324,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Microsoft.Discovery/bookshelves](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-discovery-bookshelves-logs) | configuration | 0.72 | Lists log categories for Microsoft.Discovery/bookshelves. These are product-specific monitoring configuration options. |
 | [Microsoft.Discovery/supercomputers](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-discovery-supercomputers-logs) | configuration | 0.72 | Defines log categories for Microsoft.Discovery/supercomputers. This is specific logging configuration knowledge. |
 | [Microsoft.Discovery/workspaces](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-discovery-workspaces-logs) | configuration | 0.72 | Lists log categories for Microsoft.Discovery/workspaces. These are product-specific logging configuration details. |
+| [Microsoft.DocumentDB/DatabaseAccounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-databaseaccounts-metrics) | configuration | 0.72 | Page is a detailed reference listing all Azure Monitor metric names, dimensions, and meanings for Microsoft.DocumentDB/DatabaseAccounts. These product-specific metric identifiers and their semantics are not generally known from training and are used to configure monitoring/alerting, fitting the configuration sub-skill more than other categories. |
 | [NWConnectionMonitorTestResult](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/nwconnectionmonitortestresult) | integrations | 0.72 | Provides Kusto queries over NWConnectionMonitorTestResult for failed tests and for loss percentage and average latency, using product-specific metrics and columns. |
 | [OEWExperimentAssignmentSummary](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/oewexperimentassignmentsummary) | integrations | 0.72 | Includes Kusto queries over OEWExperimentAssignmentSummary to count assignments per variant and retrieve latest scorecard metadata/results, using schema-specific feature identifiers. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/best-practices-visualize) | decision-making | 0.72 | Compares Azure Monitor visualization options and provides scenario-based guidance on when to use each tool. This is product-specific decision guidance for selecting between multiple visualization approaches, matching the decision-making criteria (service comparison, scenario recommendations), not just a conceptual overview. |
@@ -1411,7 +1387,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Azure App Service in Windows](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler) | deployment | 0.70 | Describes enabling Profiler on App Service with Basic-or-higher tier requirement and likely includes plan-specific support matrices and constraints, which are deployment-specific expert details. |
 | [Azure CLI metric alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/azure-cli-metrics-alert-sample) | integrations | 0.70 | Shows specific Azure CLI commands and parameters to create metric alerts for VMs and App Service Plans, including dimension usage. These are product-specific API/CLI patterns and parameter combinations, fitting integrations & coding patterns. |
 | [Azure Functions app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-azure-functions) | deployment | 0.70 | Shows how to enable Profiler for Functions on App Service plans, including which plans are supported and any runtime constraints, which are deployment-specific expert constraints. |
-| [Azure Monitor resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | configuration | 0.70 | Reference index of supported resource log categories and schemas per Azure resource type; this is product-specific configuration knowledge about how logs are structured and categorized. |
 | [Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/private-link-azure-monitor-workspace) | configuration | 0.70 | Explains private endpoint behavior, IP usage, and requirements for Managed Prometheus and Azure Monitor workspaces; product-specific network config. |
 | [Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy) | configuration | 0.70 | Content describes specific built-in Azure Policy definitions and initiatives for automatically installing Azure Monitor Agent and associating DCRs, including policy names and configuration behavior that are unique to this product. |
 | [Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-policy) | deployment | 0.70 | Uses Azure Policy initiatives to roll out VM insights across environments; this is a deployment/rollout pattern with product-specific policy details, not just conceptual policy info. |
@@ -1478,6 +1453,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [DataverseActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/dataverseactivity) | integrations | 0.70 | Contains specific Kusto queries over DataverseActivity with table/column usage that is product-specific and serves as concrete integration/query patterns. |
 | [Dedicated clusters](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-dedicated-clusters) | decision-making | 0.70 | Dedicated clusters for Azure Monitor Logs typically include commitment-tier thresholds, region/feature support details, and specific conditions for when you must or should use a dedicated cluster (for example, minimum commitment tiers, workspace-linking behavior, and cost/security trade-offs). These are product-specific decision criteria and constraints that go beyond generic knowledge, fitting the decision-making sub-skill. |
 | [Delete and recover a workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-workspace) | configuration | 0.70 | The article goes beyond concepts and includes product-specific behavior and steps for soft-delete, permanent delete, and recovery of Log Analytics workspaces. It describes specific workspace states and required configuration/operations (for example, how to bypass soft-delete and conditions for recovery), which are implementation details not generally known from training. |
+| [Delete data from a log table](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-log-data) | integrations | 0.70 | A Delete Data API article for Azure Monitor Log Analytics typically includes product-specific REST endpoint details, required parameters (such as workspace ID, table name, time range, and filters), and constraints around what data can be deleted and how the operation behaves. These are concrete, service-specific integration and API usage details that go beyond generic knowledge and fit the integrations sub-skill type. |
 | [Deploy agents](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-agent) | deployment | 0.70 | Describes deploying AMA across environments as part of a monitoring guide; includes product-specific deployment requirements and patterns. |
 | [Design a workspace architecture](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-design) | decision-making | 0.70 | Article focuses on criteria for using single vs multiple Log Analytics workspaces, including configuration and placement to meet requirements and optimize costs. This is explicit architecture and selection guidance for workspace design, helping decide between options based on business and cost considerations. That aligns with decision-making (service/architecture selection and trade-offs). Content is product-specific and goes beyond generic concepts. |
 | [DevCenterAgentHealthLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/devcenteragenthealthlogs) | integrations | 0.70 | Shows concrete KQL queries over DevCenterAgentHealthLogs with schema-specific usage, which is detailed integration/query knowledge. |
@@ -1575,6 +1551,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [OpenTelemetry Protocol ingestion overview](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-summary) | decision-making | 0.70 | Compares OpenTelemetry ingestion options (AKS monitoring, Azure Monitor Agent, OpenTelemetry Collector) across environments. Provides decision-focused comparison and guidance on when to use each option, which is product-specific decision-making knowledge beyond generic concepts. |
 | [OpenTelemetry sampling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling) | best-practices | 0.70 | Likely contains product-specific guidance on configuring the custom sampler, recommended sampling configurations, and how to balance cost vs. diagnostic value in Azure Application Insights with OpenTelemetry. These are concrete, service-specific recommendations rather than generic concepts. |
 | [Operational excellence](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-operation) | best-practices | 0.70 | Well-Architected operational excellence pillar with concrete Azure Monitor configuration and process recommendations. |
+| [Oracle.Database/goldenGateDeployments](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/oracle-database-goldengatedeployments-metrics) | configuration | 0.70 | The page is a metrics reference for Oracle.Database/goldenGateDeployments in Azure Monitor and consists of a detailed table of metric names, dimensions, and usage. These are product-specific configuration/telemetry parameters that an LLM wouldn't reliably know from training. It doesn't focus on limits/quotas or troubleshooting, but on the exact metrics available for configuration and monitoring. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/it-service-management-connector-secure-webhook-connections) | security | 0.70 | Focuses on configuring Secure Webhook using Microsoft Entra authentication instead of username/password; contains product-specific security configuration for ITSM integrations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations) | configuration | 0.70 | Details how to define transformations within data collection rules, including KQL-based configuration and possibly transformation-specific settings; this is product-specific configuration guidance rather than generic KQL usage. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/private-link-security) | security | 0.70 | Describes configuring Azure Monitor Private Link Scopes and private endpoints to securely connect VNets to Azure Monitor. Contains product-specific security configuration patterns for network isolation and access, beyond generic Private Link concepts. |
@@ -1587,6 +1564,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [PGSQLQueryStoreWaits](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlquerystorewaits) | integrations | 0.70 | Shows concrete Kusto queries to display wait event trends and top wait events from PGSQLQueryStoreWaits, which are detailed, product-specific log query patterns. |
 | [PGSQLServerLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlserverlogs) | integrations | 0.70 | Contains specific Kusto queries to filter PostgreSQL server logs for errors, fatal messages, deadlocks, shutdown/startup, and connection events, which are concrete integration/query patterns. |
 | [Parse text data](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/parse-text) | best-practices | 0.70 | Compares ingestion-time vs query-time parsing options with Azure Monitor–specific trade-offs and patterns. |
+| [PaymentHsmHardwareOperationAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/paymenthsmhardwareoperationauditlogs) | configuration | 0.70 | Azure Monitor Logs table reference pages typically list column names, data types, and semantics specific to that table. For PaymentHsmHardwareOperationAuditLogs, this includes product-specific log schema for Azure Payment HSM (Atalla audit logs, signed system logs, certificate chain events). These structured fields and their meanings are expert, product-specific knowledge that an LLM is unlikely to know from training, and they function as configuration/telemetry schema details rather than general concepts. |
 | [Perf](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/perf) | integrations | 0.70 | Provides specific Kusto queries over the Perf table (RDMA, CPU percentiles, disk space) using Azure Monitor’s Perf schema, which are product-specific query/integration patterns. |
 | [Pod placement](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-pod-placement) | configuration | 0.70 | Covers pod placement controls for performance, isolation, and compliance; likely includes specific Kubernetes labels/affinity/taint settings and product-specific recommendations. |
 | [Predictive autoscale](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-predictive) | limits-quotas | 0.70 | Mentions minimum seven days of history and a maximum (truncated) history window; predictive autoscale behavior is governed by specific numeric requirements, qualifying as limits/quotas. |
@@ -1626,10 +1604,10 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-spring-boot) | configuration | 0.70 | Explains enabling Application Insights for Spring Boot via JVM arguments or programmatic setup; likely includes specific configuration parameters and code patterns unique to this integration. |
 | [StorageCacheOperationEvents](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/storagecacheoperationevents) | integrations | 0.70 | Provides Kusto queries for failed operations, failed priming jobs, and long-running operations, tied to StorageCacheOperationEvents schema. |
 | [StorageMalwareScanningResults](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/storagemalwarescanningresults) | integrations | 0.70 | Contains queries grouping malicious scan results by storage account and unsuccessful scans by verdict/error, using this malware scanning results schema. |
-| [Supported operating systems](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems) | deployment | 0.70 | Page contains a detailed, product-specific support matrix of operating systems and distributions for Azure Monitor Agent, including version-specific support. This is expert knowledge needed to decide where the agent can be deployed, fitting deployment-related constraints by platform/OS. |
 | [Supported resources and regions](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/metrics-export-reference) | limits-quotas | 0.70 | Reference list of supported resource types and regions for metrics export via DCRs; effectively a capability/limits matrix that defines where the feature works, which is expert knowledge akin to limits/quotas. |
 | [SynapseRbacOperations](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapserbacoperations) | security | 0.70 | SynapseRbacOperations table captures role-based access control operations; such references typically list specific operation names, role identifiers, and scopes, which are product-specific security details. |
 | [Sync ITSM Connector](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-resync-servicenow) | troubleshooting | 0.70 | Focused on manually fixing ServiceNow sync problems and refreshing authentication tokens; provides a concrete procedure to resolve a specific integration failure, fitting troubleshooting guidance. |
+| [Syslog events](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-syslog) | configuration | 0.70 | Syslog collection via Azure Monitor Agent and DCRs typically involves product-specific data source names, configuration fields, and schema details for Linux Syslog in Azure Monitor. These are configuration parameters and options unique to Azure Monitor’s data collection rules, which qualify as expert configuration knowledge beyond generic Syslog concepts. |
 | [TOUserAudits](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/touseraudits) | troubleshooting | 0.70 | TOUserAudits table contains detailed audit logs for Toolchain orchestrator API and external targets; used to monitor and diagnose interactions, with product-specific event fields. |
 | [TOUserDiagnostics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/touserdiagnostics) | troubleshooting | 0.70 | TOUserDiagnostics table is explicitly for diagnosing failed requests on Toolchain orchestrator; log schema is used in troubleshooting flows. |
 | [TSIIngress](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/tsiingress) | troubleshooting | 0.70 | TSIIngress table tracks errors in the ingress pipeline (connection failures, parsing errors); provides symptom logs used to diagnose and resolve ingestion issues. |
@@ -1799,6 +1777,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Honey comb](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-honey-comb) | configuration | 0.65 | Describes honeycomb behavior (cells, clustering, hotspot identification) for metrics; these are specific visualization configuration options. |
 | [IlumioInsights](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/ilumioinsights) | integrations | 0.65 | Shows Kusto queries over IlumioInsights for multiple deny events, reflecting integration-specific schema usage. |
 | [Ingest OTLP signals with AMA (Preview)](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-ingest-agent) | configuration | 0.65 | Page describes concrete configuration for ingesting OpenTelemetry (OTLP) data using Azure Monitor Agent, including endpoint/port and agent configuration details that are specific to Azure Monitor and not generic OTLP concepts. |
+| [Install and run reports](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/performance-diagnostics-run) | troubleshooting | 0.65 | A page about running Performance Diagnostics reports on Azure VMs usually includes specific diagnostic workflows, report types, and possibly guidance tied to particular performance symptoms (CPU, disk, network) and how to interpret the results. This is product-specific troubleshooting guidance for Azure VM performance issues rather than generic performance advice. |
 | [Kubernetes clusters](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-kubernetes) | integrations | 0.65 | Covers specific integration of Azure Monitor-managed Grafana with AKS monitoring, including how to surface cluster metrics and logs in Grafana dashboards. This is product-specific integration/configuration content, not just conceptual guidance. |
 | [Log queries](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-log-query) | configuration | 0.65 | Describes specific Azure Monitor / Log Analytics query patterns and fields for Container insights data, including table/column names and sample Kusto queries that are product-specific configuration/usage details rather than generic concepts. |
 | [Managed workspaces](https://learn.microsoft.com/en-us/azure/azure-monitor/app/managed-workspaces) | configuration | 0.65 | Managed workspaces behavior is product-specific and includes detailed configuration behavior (automatic creation, linkage to Log Analytics workspaces, and constraints) that go beyond generic concepts; this is configuration-focused rather than conceptual. |
@@ -1854,6 +1833,8 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Use Copilot with Workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-copilot-overview) | configuration | 0.65 | Describes how Copilot configures queries, visuals, and parameters via natural language; includes product-specific Copilot behaviors and constraints. |
 | [Use the designer](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/designer) | configuration | 0.65 | Described as providing details of different operations and common tasks in the Designer; this type of article typically enumerates specific configuration options and settings for health model entities, which are product-specific configuration knowledge. |
 | [Use webhooks and email notifications](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-webhook-email) | configuration | 0.65 | Shows how to configure autoscale actions to call web URLs or send emails; involves specific settings and action configuration, fitting configuration. |
+| [Walkthrough](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-get-started) | configuration | 0.65 | The page is a detailed walkthrough of configuring Azure Monitor autoscale for an App Service plan, including specific autoscale rule settings, metric-based triggers, and schedule configurations. These product-specific configuration steps and parameter choices go beyond generic autoscaling concepts and represent expert, implementation-focused knowledge rather than just conceptual overview. |
+| [Windows clients](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client) | troubleshooting | 0.65 | The article includes specific, product-focused installation, configuration, and troubleshooting guidance for the Azure Monitor Agent on Windows 10/11 clients, including steps to diagnose and resolve issues. This goes beyond generic how-to content and likely contains agent-specific error messages, log locations, and resolution steps, fitting the troubleshooting sub-skill. |
 | [Work item integration](https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration) | integrations | 0.65 | Describes work item templates as Azure Monitor Workbooks with embedded KQL and workbook content; likely includes specific resource types, template schema, and parameters unique to this integration. |
 | [microsoft.azureplaywrightservice/accounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-azureplaywrightservice-accounts-logs) | configuration | 0.65 | Lists log categories for microsoft.azureplaywrightservice/accounts; niche service logging configuration. |
 | [microsoft.community/communityTrainings](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-community-communitytrainings-logs) | configuration | 0.65 | Lists log categories for microsoft.community/communityTrainings; niche service logging configuration. |
@@ -1918,7 +1899,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [CrowdStrikeDetections](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/crowdstrikedetections) | integrations | 0.60 | Includes a concrete query counting high severity detections by severity level, specific to this table. |
 | [CrowdStrikeIncidents](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/crowdstrikeincidents) | integrations | 0.60 | Provides a query counting incidents by state (open/in-progress), which is specific to CrowdStrikeIncidents schema. |
 | [DCR Config Generator](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration-data-collection-rule-generator) | decision-making | 0.60 | Covers a PowerShell-based config generator for migrating from MMA to AMA, guiding how to translate workspace configurations into multiple DCR ARM templates; this supports migration decisions and mapping between configurations. |
-| [Delete data from a log table](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-log-data) | integrations | 0.60 | API-based deletion with product-specific parameters and constraints for the Delete Data API, including how to target tables and time ranges. |
 | [Detect and analyze anomalies in log data](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/kql-machine-learning-azure-monitor) | integrations | 0.60 | Covers KQL machine learning operators, functions, and plugins for anomaly detection and time series analysis in Azure Monitor Logs. Such content typically includes operator/function names, parameters, and usage patterns specific to KQL and Azure Monitor, fitting integrations & coding patterns for this product. |
 | [Migration FAQs](https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/migration-faq-scom-manage-instance) | decision-making | 0.60 | FAQ about migrating from Azure Monitor SCOM Managed Instance likely includes migration paths, considerations, and scenario-based guidance for choosing approaches. This is product-specific decision guidance for migration, fitting the decision-making category. |
 | [Monitor Syslog](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-syslog) | configuration | 0.60 | Covers how Syslog events from Linux nodes are collected and accessed; likely includes workspace/table names and collection settings, which are product-specific configuration details. |
@@ -2041,7 +2021,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Microsoft.RecoveryServices/Vaults](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-recoveryservices-vaults-logs) | 0.45 | Mentions ASR replicated items details and daily push frequency, but summary does not show specific limits, configuration parameters, or troubleshooting mappings. |
 | [Microsoft.Synapse/workspaces/bigDataPools](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-synapse-workspaces-bigdatapools-logs) | 0.45 | BigDataPools Spark application end information; summary indicates a single category description, not detailed configuration or limits. |
 | [Microsoft.Synapse/workspaces/scopePools](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-synapse-workspaces-scopepools-logs) | 0.45 | ScopePools SCOPE ended event logs; summary is descriptive only. |
-| [Monitor cluster network](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-network-monitoring) | 0.45 | Network monitoring overview for AKS cluster using Azure Monitor; summary suggests feature description rather than detailed config tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-autonomous-operations) | 0.45 | Describes autonomous operations conceptually (correlating alerts, creating issues, running investigations); summary does not show specific config parameters or limits. |
 | [Smart detection](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-diagnostics) | 0.45 | Smart detection overview; while it may mention some behaviors, the summary does not indicate detailed configuration parameters, limits, or error-code mappings. |
 | [SynapseDXIngestionBatching](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxingestionbatching) | 0.45 | SynapseDXIngestionBatching table reference; focuses on batch statistics (duration, size, blob count) without explicit troubleshooting mappings or configuration parameters. |
@@ -2122,7 +2101,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Microsoft.Devices/IotHubs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-devices-iothubs-metrics) | 0.40 | Page is a metrics catalog for Microsoft.Devices/IotHubs in Azure Monitor. It focuses on which metrics exist, not on numeric limits, configuration parameter tables, or decision/troubleshooting content, so it does not match any defined sub-skill type. |
 | [Microsoft.DigitalTwins/digitalTwinsInstances](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-digitaltwins-digitaltwinsinstances-metrics) | 0.40 | Metrics reference for DigitalTwins instances; provides metric list and logs, not numeric limits, configs, or troubleshooting flows. |
 | [Microsoft.DocumentDB/DatabaseAccounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-documentdb-databaseaccounts-logs) | 0.40 | Reference page listing log categories for Cosmos DB (DocumentDB) accounts; summary indicates descriptive log types but no limits, config tables, or error-code troubleshooting details. |
-| [Microsoft.DocumentDB/DatabaseAccounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-databaseaccounts-metrics) | 0.40 | Page lists supported metrics for Microsoft.DocumentDB/DatabaseAccounts (Azure Cosmos DB) in Azure Monitor. The summary indicates a pure metrics listing without explicit limits, configuration ranges, or troubleshooting mappings, so it does not fit the specified expert-knowledge categories. |
 | [Microsoft.DocumentDB/fleets](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-fleets-metrics) | 0.40 | Metrics reference for DocumentDB/fleets; focuses on supported metrics, not quotas, configuration parameters, or error-resolution data. |
 | [Microsoft.DocumentDB/garnetClusters](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-garnetclusters-metrics) | 0.40 | Metrics reference for DocumentDB/garnetClusters; provides metric catalog only, without numeric limits, configs, or troubleshooting. |
 | [Microsoft.DocumentDB/mongoClusters](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-mongoclusters-metrics) | 0.40 | Metrics reference for DocumentDB/mongoClusters; lists metrics and logs but no quotas, configuration ranges, or decision matrices. |
@@ -2317,7 +2295,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Functions](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/functions) | 0.30 | Explains how to use and create functions in Azure Monitor log queries. This is a usage/tutorial-style article without evidence of numeric limits, specialized configuration tables, or troubleshooting mappings. |
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries) | 0.30 | Introductory tutorial on writing log queries (filtering, sorting, aggregating, time ranges) in KQL and Simple mode. Contains generic query examples but no product-specific limits, configuration settings tables, or troubleshooting mappings. |
 | [Health modeling](https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/health-modeling) | 0.30 | Conceptual explanation of health modeling and commitments/outcomes; lacks concrete configuration values, limits, or troubleshooting mappings. |
-| [Install and run reports](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/performance-diagnostics-run) | 0.30 | Primarily a how-to guide for installing and running performance diagnostics reports. These run/installation articles are usually procedural without detailed error-code mappings, configuration tables, or limits; they don’t meet the thresholds for the defined expert-knowledge categories. |
 | [Live metric stream](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream) | 0.30 | Explains Live Metrics conceptually (real-time monitoring, filters, traces) without exposing detailed config tables, limits, or error mappings. |
 | [Log Analytics workspace insights](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-insights-overview) | 0.30 | High-level overview of Workspace Insights and onboarding; primarily conceptual and navigational without detailed limits, configs, or error mappings. |
 | [Metric alert on Azure Monitor Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-metric-logs) | 0.30 | Appears to be a how-to/tutorial for creating metric alerts on logs. Summary does not indicate detailed limits, configuration tables, error codes, or decision matrices; likely general usage guidance rather than expert-only configuration or constraints. |
@@ -2367,6 +2344,7 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Microsoft.Web/staticsites](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-web-staticsites-logs) | 0.30 | Provides a simple list of log categories for Microsoft.Web/staticsites; lacks detailed configuration, limits, or error-code-based troubleshooting content. |
 | [Microsoft.ZeroTrustSegmentation/segmentationManagers](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-zerotrustsegmentation-segmentationmanagers-logs) | 0.30 | Mentions that requests to the Zero Trust Segmentation service are logged but does not provide detailed fields, limits, or configuration values. |
 | [Migrate policy assignments](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/dependency-agent-migrate-policy) | 0.30 | The page focuses on how to find and update Azure Policy and initiative assignments related to Dependency Agent. From the summary, it appears to be a procedural migration/how-to article without clear evidence of detailed configuration tables, limits, or decision matrices; likely standard guidance an LLM can infer. |
+| [Monitor cluster network](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-network-monitoring) | 0.30 | The summary indicates a conceptual overview of Azure Monitor features for AKS network monitoring, without clear evidence of specific limits, configuration tables, error codes, or decision matrices. It likely describes what can be monitored rather than detailed, product-specific expert configuration or troubleshooting content. |
 | [Move Workbook templates to another region](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbook-templates-move-region) | 0.30 | Region move instructions for workbook templates; likely procedural without deep configuration matrices or limits. |
 | [Move Workbooks to another region](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-move-region) | 0.30 | Primarily a how-to move resource guide without detailed limits, config tables, or product-specific patterns. |
 | [Move a workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/move-workspace) | 0.30 | Covers how to move a Log Analytics workspace between subscriptions/resource groups in the same region. From the summary it is a procedural guide with high-level constraints (same region vs cross-region) but no explicit mention of numeric limits, configuration parameter tables, or error-code-based troubleshooting. |
@@ -2445,7 +2423,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Application Insights overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) | 0.20 | Conceptual overview of Application Insights with OpenTelemetry integration; describes what it is and supported scenarios but lacks detailed configuration tables, limits, or troubleshooting content. |
 | [Autoinstrumentation for AKS](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-codeless) | 0.20 | Described as a step-by-step guide to enable codeless monitoring for AKS workloads. It focuses on onboarding, restarting deployments, and viewing metrics, which is tutorial content rather than detailed limits, configuration tables, or error-code-based troubleshooting. It likely lacks the kind of product-specific numeric limits, parameter tables, or diagnostic mappings required for expert-knowledge classification. |
 | [Automatic instrumentation](https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-overview) | 0.20 | Page is an overview of Application Insights autoinstrumentation with high-level description and no detailed configuration tables, limits, error codes, or product-specific numeric thresholds; it explicitly notes that specifics for languages/platforms are not provided here. |
-| [Azure Monitor dashboards with Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards) | 0.20 | Page is a how-to/tutorial on using Azure Monitor dashboards with Grafana. It focuses on UI steps and general usage, without tables of configuration parameters, numeric limits, error-code-based troubleshooting, or product-specific best-practice gotchas. Content is largely conceptual and procedural, not expert-only reference data. |
 | [Azure Monitor overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview) | 0.20 | High-level overview of Azure Monitor capabilities and components without detailed limits, configuration tables, or troubleshooting mappings. |
 | [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-azure-virtual-machines) | 0.20 | Describes using Grafana dashboards for Azure Virtual Machines with prebuilt dashboards and customization options. It’s primarily a usage/overview/tutorial page; it doesn’t expose detailed configuration tables, limits, error codes, or decision matrices with quantified trade-offs. |
 | [AzureSQLAutomaticTuning](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/azuresqlautomatictuning) | 0.20 | Page provides example Kusto queries for the AzureSQLAutomaticTuning log table, but does not focus on limits, configuration matrices, error-code troubleshooting, or other structured expert reference data as defined in the sub-skill types. It is primarily illustrative query examples rather than product-specific constraints or decision guidance. |
@@ -2500,7 +2477,6 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [SentinelImpervaWAFCloudV2Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/sentinelimpervawafcloudv2logs) | 0.20 | Page provides example Kusto queries for a specific log table. It’s primarily usage examples, not limits, configuration matrices, troubleshooting mappings, or decision guidance with quantified trade-offs. No specific quotas, RBAC roles, config parameter tables, or error-code-based troubleshooting content are present. |
 | [StorageMoverCopyLogsFailed](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/storagemovercopylogsfailed) | 0.20 | Page provides example Kusto queries for a specific log table but no configuration parameters, limits, error codes, or product-specific settings; primarily usage examples rather than expert-only reference data. |
 | [Usage (user behavior analytics)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/usage) | 0.20 | Usage analysis article appears to be conceptual guidance on understanding user behavior and making data-driven decisions with Application Insights, without clear indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
-| [Walkthrough](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-get-started) | 0.20 | This is a getting-started guide for autoscale configuration in the Azure portal. It mainly explains how to set up autoscale and supported resource types, without indicating detailed limits, configuration tables, or product-specific edge cases beyond what a generic tutorial would cover. |
 | [ZTSRequest](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/ztsrequest) | 0.20 | Page provides example Kusto queries for the ZTSRequest log table but does not include limits, quotas, configuration parameter tables, error-code-based troubleshooting, or other product-specific numeric thresholds or decision matrices. It is primarily usage examples rather than expert reference data as defined by the sub-skill types. |
 | [microsoft.azureplaywrightservice/accounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-azureplaywrightservice-accounts) | 0.20 | Azure Monitor table reference summary for Playwright Service accounts; likely lists columns and basic descriptions, not limits, decision matrices, or product-specific troubleshooting details. |
 | [microsoft.batch/batchaccounts](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoft-batch-batchaccounts) | 0.20 | Batch accounts Azure Monitor table reference; summary only notes activity and metrics logs, which are generic and not expert-only configuration or limits content. |
@@ -2527,7 +2503,9 @@ confusable_not_for: Not for Azure Service Health (use azure-service-health), Azu
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview) | 0.10 | Overview of Log Analytics workspaces and concepts; no indication of detailed limits, configuration tables, or troubleshooting mappings. |
 | [Overview of Azure Monitor Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/data-platform-metrics) | 0.10 | Conceptual explanation of metrics in Azure Monitor; no concrete quotas, configuration tables, or troubleshooting mappings. |
 | [Tutorial](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-tutorial) | 0.10 | Tutorial on using Log Analytics and KQL in the Azure portal with sample data. It is primarily a step-by-step learning guide without product-specific limits, configuration tables, error codes, or decision matrices. Content is conceptual and procedural rather than expert reference material. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new) | 0.10 | Change log / what's-new index for documentation; no detailed limits, configs, or troubleshooting content. |
 | [ASimAgentEventLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/asimagenteventlogs) | - | Page provides example Kusto queries for a specific log table; it is usage/tutorial-style content without limits, configuration tables, decision matrices, troubleshooting mappings, or other structured expert-knowledge patterns defined in the sub-skill types. |
 | [ASimAssetEntityLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/asimassetentitylogs) | - | Page provides example Kusto queries for ASimAssetEntityLogs but no limits, configuration tables, error-code troubleshooting, or decision matrices; it's usage examples rather than structured expert reference per the defined sub-skill types. |
+| [Azure Monitor dashboards with Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards) | - | Tutorial-style guidance on using Azure Monitor dashboards with Grafana; likely focuses on how to connect and visualize data without detailed limits, configuration tables, or product-specific error codes. Does not match any expert-knowledge sub-skill criteria. |
+| [Azure Monitor resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | - | This is an index/overview page describing Azure Monitor resource logs and schemas at a high level. It doesn't list specific error codes, limits, configuration parameters, or detailed per-service schemas; it mainly explains the concept of resource logs and how categories map to schemas, so it lacks the kind of expert, product-specific details required. |
 | [Log data ingestion time](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-ingestion-time) | - | The article is described as explaining factors that affect latency conceptually; there is no indication of concrete numeric limits, configuration tables, or specific parameter values. It appears to be a conceptual explanation of ingestion time behavior rather than detailed expert configuration, limits, or troubleshooting content. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new) | - | Change log for documentation updates; no product-specific limits, configs, error codes, or decision matrices. |

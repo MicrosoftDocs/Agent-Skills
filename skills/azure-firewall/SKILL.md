@@ -1,9 +1,9 @@
 ---
 name: azure-firewall
-description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Firewall SKUs, rules/DNAT/SNAT, DNS proxy, TLS inspection, or multi-hub/spoke routing, and other Azure Firewall related development tasks. Not for Azure DDoS Protection (use azure-ddos-protection), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Firewall SKUs, DNS/SNAT rules, TLS inspection, multi-hub routing, or DNAT for overlap, and other Azure Firewall related development tasks. Not for Azure Firewall Manager (use azure-firewall-manager), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firewall Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L48 | Best practices for Azure Firewall DNS proxy/caching, rule and SNAT tuning, using Policy Analytics to refine rules, and hardening firewall security and configuration |
 | Decision Making | L49-L56 | Guidance on selecting the right Azure Firewall SKU (Basic/Standard/Premium) using features, performance benchmarks, and deployment steps for Basic with portal and policy. |
 | Architecture & Design Patterns | L57-L67 | Designing Azure Firewall network architectures: multi-hub/spoke routing, forced tunneling, load balancer integration, control traffic, AVD/M365 protection, and DNAT for overlapping IP spaces. |
-| Limits & Quotas | L68-L77 | Azure Firewall capacity, IP and SNAT port limits, prescaling options, TCP idle timeouts, and how to scale/extend outbound connectivity (including via NAT Gateway V2). |
-| Security | L78-L91 | Securing Azure Firewall: policies, roles/permissions, TLS inspection certs, threat intelligence, AKS and hybrid protection, DNAT inbound rules, and portal-based deployment/configuration. |
-| Configuration | L92-L113 | Configuring Azure Firewall behavior: rules, IP groups, DNS, SNAT, dual-stack, FTP/SQL/DNAT, maintenance windows, logging/monitoring, workbooks, and advanced Premium features. |
-| Integrations & Coding Patterns | L114-L118 | Configuring Azure Firewall to securely access Azure Storage via SFTP, including required rules, network paths, and integration patterns for SFTP traffic. |
-| Deployment | L119-L127 | Guides for deploying Azure Firewall (Standard/Premium), switching SKUs, using Bicep/ARM/Terraform, configuring IP Groups, and integrating with Azure DDoS Protection. |
+| Limits & Quotas | L68-L76 | Azure Firewall capacity, IP and SNAT port limits, prescaling options, TCP idle timeouts, and how to scale/extend outbound connectivity (including via NAT Gateway V2). |
+| Security | L77-L90 | Securing Azure Firewall: policies, roles/permissions, TLS inspection certs, threat intelligence, AKS and hybrid protection, DNAT inbound rules, and portal-based deployment/configuration. |
+| Configuration | L91-L112 | Configuring Azure Firewall behavior: rules, IP groups, DNS, SNAT, dual-stack, HTTP/FTP/SQL settings, logging/monitoring, maintenance windows, and advanced Premium features. |
+| Integrations & Coding Patterns | L113-L117 | Configuring Azure Firewall to securely access Azure Storage via SFTP, including required rules, network paths, and integration patterns for SFTP traffic. |
+| Deployment | L118-L126 | Guides for deploying Azure Firewall (Standard/Premium), switching SKUs, using Bicep/ARM/Terraform, configuring IP Groups, and integrating with Azure DDoS Protection. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -69,7 +69,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Deploy Azure Firewall with multiple public IPs and limits | https://learn.microsoft.com/en-us/azure/firewall/deploy-multi-public-ip-powershell |
-| Azure Firewall FAQ limits, features, and behaviors | https://learn.microsoft.com/en-us/azure/firewall/firewall-faq |
 | Scale Azure Firewall SNAT ports and IP limits | https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway |
 | Integrate Azure Firewall with NAT Gateway V2 for SNAT scaling | https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway-v2 |
 | Configure Azure Firewall prescaling capacity ranges | https://learn.microsoft.com/en-us/azure/firewall/prescaling |

@@ -3,7 +3,7 @@ name: azure-well-architected
 description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs, or configuring AKS, App Service, and databases, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify gaps against Well-Architected guidance. |
-| Recommendations | L44-L117 | Guidance and best practices to design, operate, and optimize Azure workloads across cost, operations, performance, reliability, security, and sustainability. |
+| Recommendations | L44-L117 | Guidance on cost, reliability, performance, security, and operational excellence best practices for Azure workloads, including optimization, monitoring, automation, and sustainable cloud operations. |
 | Design Principles | L118-L132 | Design patterns and best practices for cost, reliability, security, performance, operations, sustainability, and mission-critical design across AI, SaaS, AVD, HPC, and other Azure workloads. |
 | Tradeoffs | L133-L142 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
 | Service Guides | L143-L178 | WAF-aligned design and configuration guidance for specific Azure services (App Service, AKS, networking, databases, storage, messaging) to improve reliability, security, and performance. |
@@ -57,7 +57,7 @@ This skill requires **network access** to fetch documentation content:
 | Implement cost optimization for workload data flows | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-flow-costs |
 | Optimize personnel time for Azure workload operations | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-personnel-time |
 | Optimize scaling strategies to reduce Azure costs | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-scaling-costs |
-| Define and enforce spending guardrails for Azure costs | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/set-spending-guardrails |
+| Implement spending guardrails for Azure cost optimization | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/set-spending-guardrails |
 | Develop background jobs to offload application workloads | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/background-jobs |
 | Create a disaster recovery plan for multi-region workloads | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/disaster-recovery |
 | Implement transient fault handling in cloud applications | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/handle-transient-faults |

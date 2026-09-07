@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: 'Configuring VM Scale Sets: templates, networking, disks, images,
     zones, upgrades, autoscale, repairs, standby pools, instance mix/protection, maintenance,
     and CLI/PowerShell/API management.'
-  decision-making: Guidance on choosing VMSS orchestration/upgrade modes, autoscale,
-    Spot vs standard/priority mix, fault domains, standby pools, and cost-optimized
-    configurations for different workload patterns.
+  decision-making: Guidance on choosing VM scale set modes, features, autoscale, Spot
+    vs standard, instance mix, fault domains, upgrade policies, Hybrid Benefit, and
+    migration/latency tradeoffs.
   security: Encrypting VMSS disks (CLI, PowerShell, ARM), configuring Azure Disk Encryption
     with Key Vault and extensions, and securing scale sets via Azure Policy and RBAC
     for standby pools.
@@ -31,15 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Machine Scale Sets development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when configuring autoscale, standby pools, Spot mixes, disk
-  encryption with Key Vault, or PPG-based VMSS deployments, and other Azure Virtual
-  Machine Scale Sets related development tasks. Not for Azure Virtual Machines (use
-  azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances
-  (use azure-container-instances).
-use_when: Use when configuring autoscale, standby pools, Spot mixes, disk encryption
-  with Key Vault, or PPG-based VMSS deployments, and other Azure Virtual Machine Scale
-  Sets related development tasks.
+  and deployment. Use when configuring autoscale, standby pools, instance mix, disk
+  encryption with Key Vault, or rolling upgrades, and other Azure Virtual Machine
+  Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances).
+use_when: Use when configuring autoscale, standby pools, instance mix, disk encryption
+  with Key Vault, or rolling upgrades, and other Azure Virtual Machine Scale Sets
+  related development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), SQL
   Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes
   Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances).
@@ -56,8 +55,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 94
+- **Updated Pages**: 1
+- **Unchanged**: 93
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -77,6 +76,11 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 19 | 20.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Orchestration modes](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes)
+  - Updated: 2026-05-19T08:00:00.000Z → 2026-09-04T17:02:00.000Z
 
 ## Classified Pages
 
@@ -119,7 +123,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Manage fault domains](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-fault-domains) | decision-making | 0.70 | Guides selection of fault domain counts based on orchestration mode and region/zone; product-specific resiliency design decisions. |
 | [Modify a scale set](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-scale-set) | configuration | 0.70 | Details REST/CLI/PowerShell operations to update scale set model and app configuration; includes product-specific properties and behaviors. |
 | [Monitor automatic repairs service state](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/alert-rules-automatic-repairs-service-state) | configuration | 0.70 | Shows how to configure Azure Monitor alert rules on a specific property (ServiceState) for automatic repairs; product-specific monitoring configuration. |
-| [Orchestration modes](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes) | decision-making | 0.70 | Explains Flexible vs Uniform orchestration modes with product-specific guidance on when to use each; helps decide orchestration mode based on workload characteristics. |
+| [Orchestration modes](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes) | decision-making | 0.70 | The page explains Azure Virtual Machine Scale Sets Flexible vs Uniform orchestration modes with product-specific guidance on when to use each, trade-offs around instance management, upgrades, and compatibility with features. This is concrete decision guidance rather than a generic overview, helping users select the right mode for their scenario. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/instance-mix-overview) | decision-making | 0.70 | Explains instance mix feature, allocation strategies, and when to use multiple VM sizes for cost and provisioning optimization; supports deployment design decisions. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-overview) | decision-making | 0.70 | Describes standby pools, when to use them, and trade-offs for scaling performance; helps decide whether to adopt standby pools for certain workloads. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-policy) | decision-making | 0.70 | Compares automatic, manual, and rolling upgrade modes with impact on uptime; helps select the right mode for scenarios. |

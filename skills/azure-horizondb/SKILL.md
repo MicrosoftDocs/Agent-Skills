@@ -1,9 +1,9 @@
 ---
 name: azure-horizondb
-description: Expert knowledge for Azure Horizondb development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when tuning pgvector, azure_ai SQL functions, LangChain vector stores, Apache AGE graphs, or HorizonDB search indexes, and other Azure Horizondb related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Table Storage (use azure-table-storage).
+description: Expert knowledge for Azure Horizondb development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using azure_ai SQL/embeddings, pgvector tuning, Apache AGE graphs, hybrid BM25+vector search, or LangChain, and other Azure Horizondb related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Horizondb Skill
@@ -24,21 +24,23 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L42 | Diagnosing and fixing HorizonDB extension management errors and resolving TLS connection issues that occur after certificate rotation. |
-| Best Practices | L43-L53 | Performance and operations guidance for HorizonDB: data prep for AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster maintenance best practices. |
-| Decision Making | L54-L59 | Guidance on choosing between vector, full-text, and hybrid search in HorizonDB, and selecting the optimal vector index type for your data, queries, and performance needs. |
-| Architecture & Design Patterns | L60-L65 | Patterns for building RAG with graph data in HorizonDB and implementing hybrid BM25+vector search, including design choices and query strategies. |
-| Limits & Quotas | L66-L71 | Managing HorizonDB replica counts, read-scale limits, and how to request quota or limit increases for HorizonDB resources. |
-| Security | L72-L86 | Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth, access control/roles, users/permissions, data-at-rest encryption, deletion protection, and admin password resets. |
-| Configuration | L87-L163 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance, logging, WAL, and resource tuning. |
-| Integrations & Coding Patterns | L164-L176 | Using HorizonDB with AI: azure_ai SQL/embedding/rerank functions, LangChain vector store, building knowledge graphs, and integrating/moving data via the Azure Storage extension. |
-| Deployment | L177-L180 | Guides for migrating data by dumping PostgreSQL databases and restoring them into HorizonDB, including required tools, commands, and compatibility considerations. |
+| Troubleshooting | L37-L44 | Diagnosing and fixing HorizonDB issues: extension management errors, TLS/cert rotation failures, autovacuum tuning, and transaction ID wraparound prevention. |
+| Best Practices | L45-L55 | Performance and operations guidance for HorizonDB: data prep for AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster maintenance best practices. |
+| Decision Making | L56-L61 | Guidance on choosing between vector, full-text, and hybrid search in HorizonDB, and selecting the optimal vector index type for your data, queries, and performance needs. |
+| Architecture & Design Patterns | L62-L67 | Patterns for building RAG with graph data in HorizonDB and implementing hybrid BM25+vector search, including design choices and query strategies. |
+| Limits & Quotas | L68-L73 | Managing HorizonDB replica counts, read-scale limits, and how to request quota or limit increases for HorizonDB resources. |
+| Security | L74-L88 | Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth, access control/roles, users/permissions, data-at-rest encryption, deletion protection, and admin password resets. |
+| Configuration | L89-L165 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance, logging, WAL, and resource tuning. |
+| Integrations & Coding Patterns | L166-L178 | Using HorizonDB with AI: azure_ai SQL/embedding/rerank functions, LangChain vector store, building knowledge graphs, and integrating/moving data via the Azure Storage extension. |
+| Deployment | L179-L182 | Guides for migrating data by dumping PostgreSQL databases and restoring them into HorizonDB, including required tools, commands, and compatibility considerations. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Resolve common HorizonDB extension management errors | https://learn.microsoft.com/en-us/azure/horizondb/extensions/errors-extensions |
 | Troubleshoot TLS connection failures after HorizonDB cert rotation | https://learn.microsoft.com/en-us/azure/horizondb/security/security-tls-troubleshoot |
+| Monitor and tune autovacuum in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-autovacuum-monitor-tune |
+| Prevent and resolve transaction ID wraparound in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-prevent-resolve-wraparound |
 
 ### Best Practices
 | Topic | URL |

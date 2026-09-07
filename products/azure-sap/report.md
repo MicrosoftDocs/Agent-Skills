@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: 'Configuring SAP on Azure: automation (Terraform, BOM, Ansible),
     networking, storage, HA/DR clusters, monitoring (Azure Monitor, BPS, Datasphere),
@@ -56,8 +56,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 225
+- **Updated Pages**: 1
+- **Unchanged**: 226
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -80,10 +80,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ### Updated Pages
 
-- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker)
-  - Updated: 2026-06-24T08:00:00.000Z → 2026-08-21T05:10:00.000Z
-- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker)
-  - Updated: 2026-07-24T17:11:00.000Z → 2026-08-21T05:10:00.000Z
+- [How to onboard SAP Edge Integration Cell with Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-edge-integration-cell-with-azure)
+  - Updated: 2026-04-22T22:14:00.000Z → 2026-09-03T17:13:00.000Z
 
 ## Classified Pages
 
@@ -297,7 +295,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [Enable Dedicated Hosting Plan in Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/enable-dedicated-hosting-plan) | 0.30 | How-to guide for switching Azure Monitor for SAP solutions from Elastic Premium to a dedicated hosting plan. Summary suggests step-by-step portal actions without exposing detailed configuration parameter tables, limits, or product-specific deployment matrices beyond generic hosting-plan change instructions. |
 | [Foundry AI and SAP Overview](https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/foundry/foundry-ai-sap) | 0.30 | The page is described as an overview of how Microsoft Foundry integrates with SAP to enable agentic AI scenarios. Based on the summary, it focuses on conceptual explanation and benefits rather than specific configuration parameters, limits, error codes, or detailed decision matrices. It appears more like a high-level integration overview without the concrete expert details required by the sub-skill types. |
 | [Get started with Azure Monitor for SAP solutions - Azure portal](https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal) | 0.30 | Quickstart for deploying Azure Monitor for SAP solutions via the portal; likely a step-by-step tutorial without detailed limits, configuration matrices, or product-specific troubleshooting/error-code mappings. |
-| [How to onboard SAP Edge Integration Cell with Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-edge-integration-cell-with-azure) | 0.30 | Onboarding SAP Edge Integration Cell with AKS sounds like a scenario/tutorial. The summary emphasizes hybrid deployment model and high-level description; it doesn’t clearly indicate detailed config tables, limits, or error mappings. Likely a step-by-step tutorial without dense expert-only configuration references. |
 | [Install SAP software - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-install-high-availability-namecustom-cli) | 0.30 | Quickstart for installing a distributed HA SAP system with custom resource names via Azure CLI; focuses on procedural steps rather than limits, configuration matrices, troubleshooting mappings, or quantified best practices. |
 | [Install SAP software - Azure PowerShell](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-install-distributed-non-high-availability) | 0.30 | Quickstart for installing SAP software on Azure using PowerShell; primarily a step-by-step deployment/tutorial flow without configuration tables, limits, error-code mappings, or product-specific decision matrices. |
 | [Integrate with SAP Cloud Appliance Library (CAL)](https://learn.microsoft.com/en-us/azure/sap/automation/deployment-framework) | 0.30 | Overview of the framework and tooling; primarily conceptual description of what it is and high-level capabilities, not detailed configuration or limits. |
@@ -312,6 +309,7 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [View cost analysis for SAP system](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/view-cost-analysis) | 0.30 | Cost analysis viewing guide; likely UI navigation and conceptual usage of VIS cost view without numeric limits, config matrices, or troubleshooting mappings. |
 | [Business Templates](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/business-templates) | 0.20 | Introduces prebuilt templates, Power BI reports, and Copilot agents with high-level capabilities; lacks specific configuration parameters, limits, or error-resolution mappings. |
 | [Download and prepare software media](https://learn.microsoft.com/en-us/azure/sap/automation/software) | 0.20 | Focuses on downloading SAP software using Ansible playbooks and preparing storage; from the summary it looks like a step-by-step tutorial without explicit configuration tables, limits, or troubleshooting mappings. |
+| [How to onboard SAP Edge Integration Cell with Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-edge-integration-cell-with-azure) | 0.20 | From the summary, the page appears to be an onboarding/overview guide for running SAP Edge Integration Cell on AKS and Azure Arc. It likely focuses on conceptual deployment steps and hybrid scenario description rather than detailed configuration tables, limits, quotas, or troubleshooting with specific error codes or parameters. Without evidence of numeric limits, config matrices, or product-specific error mappings, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/automation/deployment-framework) | 0.20 | High-level overview of SAP Deployment Automation Framework; conceptual description of what it is and does. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/about-business-process-solutions) | 0.20 | Introductory overview of Business Process Solutions; describes purpose, benefits, and high-level capabilities without concrete limits, configuration parameters, error codes, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/sap-on-azure-overview) | 0.20 | High-level overview of SAP on Azure offerings without detailed limits, configs, or decision matrices. |

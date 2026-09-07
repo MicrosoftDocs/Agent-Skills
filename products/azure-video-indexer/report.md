@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   best-practices: Best practices for scaling, customizing models (brands, language,
     speech), using AI agents for real-time insights, and designing disaster recovery/failover
@@ -21,19 +21,21 @@ category_descriptions:
   integrations: Using Video Indexer APIs, widgets, and low-code tools to call the
     service, embed insights, automate workflows, and programmatically redact faces
     in videos
-  security: 'Securing Video Indexer: roles and access control, private endpoints,
-    NSG service tags, firewall-protected storage, limited feature access, and security
-    baselines/best practices.'
+  security: 'Securing Video Indexer: roles and access control, NSG service tags, private
+    endpoints, security baselines, and protecting storage with firewalls.'
 skill_description: Expert knowledge for Azure AI Video Indexer development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when indexing video, live camera
-  analysis, custom insights, OpenAI summaries, or Video Indexer APIs, and other Azure
-  AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision),
-  Azure AI Search (use azure-cognitive-search).
-use_when: Use when indexing video, live camera analysis, custom insights, OpenAI summaries,
-  or Video Indexer APIs, and other Azure AI Video Indexer related development tasks.
-confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
-  (use azure-cognitive-search).
+  integrations & coding patterns, and deployment. Use when configuring live camera
+  analysis, custom insights, OpenAI summaries, APIs/widgets, or secure access, and
+  other Azure AI Video Indexer related development tasks. Not for Azure AI Vision
+  (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI
+  Face (use azure-face), Azure AI Immersive Reader (use azure-immersive-reader).
+use_when: Use when configuring live camera analysis, custom insights, OpenAI summaries,
+  APIs/widgets, or secure access, and other Azure AI Video Indexer related development
+  tasks.
+confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom
+  Vision (use azure-custom-vision), Azure AI Face (use azure-face), Azure AI Immersive
+  Reader (use azure-immersive-reader).
 ---
 # Azure AI Video Indexer Crawl Report
 
@@ -47,9 +49,9 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 11
-- **Unchanged**: 72
-- **Deleted Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 83
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
 ## Classification Statistics
@@ -70,32 +72,11 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 
 ### New Pages
 
-- [Live CLI command reference](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-cli-reference)
+- [Secure your Azure AI Video Indexer deployment](https://learn.microsoft.com/en-us/azure/azure-video-indexer/security-baseline-video-indexer)
 
-### Updated Pages
+### Deleted Pages
 
-- [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting)
-  - Updated: 2025-11-18T16:09:00.000Z → 2026-08-17T22:08:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/release-notes)
-  - Updated: 2026-06-02T17:13:00.000Z → 2026-08-17T22:08:00.000Z
-- [Summaries overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-overview)
-  - Updated: 2026-07-16T06:02:00.000Z → 2026-08-25T08:00:00.000Z
-- [Generate summaries](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-task)
-  - Updated: 2026-07-14T22:13:00.000Z → 2026-08-25T08:00:00.000Z
-- [Create prompts](https://learn.microsoft.com/en-us/azure/azure-video-indexer/prompt-overview)
-  - Updated: 2026-07-16T06:02:00.000Z → 2026-08-26T17:09:00.000Z
-- [Connect to other AI models](https://learn.microsoft.com/en-us/azure/azure-video-indexer/generative_ai_with_vi)
-  - Updated: 2026-07-16T06:02:00.000Z → 2026-08-26T17:09:00.000Z
-- [Start on Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-08-17T08:00:00.000Z
-- [Deploy extension](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-extension)
-  - Updated: 2026-04-28T17:22:00.000Z → 2026-08-17T22:08:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-analysis)
-  - Updated: 2026-04-28T17:22:00.000Z → 2026-08-17T22:08:00.000Z
-- [Add or remove cameras](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-add-remove-camera)
-  - Updated: 2026-04-28T17:22:00.000Z → 2026-08-17T22:08:00.000Z
-- [Manage cameras](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-manage-camera)
-  - Updated: 2026-04-28T17:22:00.000Z → 2026-08-17T22:08:00.000Z
+- ~~Security baseline~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/security-baseline-video-indexer)
 
 ## Classified Pages
 
@@ -104,10 +85,10 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | [Support matrix and limitations](https://learn.microsoft.com/en-us/azure/azure-video-indexer/avi-support-matrix) | limits-quotas | 0.95 | Explicitly described as a support matrix and service limits article; such pages list exact file size/duration limits, supported formats, languages, and other numeric constraints that are not generally known from training data. |
 | [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure AI Video Indexer enabled by Arc, focused on connectivity, streaming, and encoding problems. Such content typically includes product-specific error symptoms, causes, and resolutions (for example, Arc connectivity checks, service-specific logs, and remediation steps) that go beyond generic debugging knowledge and are unique to this integration. |
 | [Connect Azure OpenAI](https://learn.microsoft.com/en-us/azure/azure-video-indexer/connect-azure-open-ai-task) | configuration | 0.80 | Explains creating/updating a Video Indexer account with an Azure OpenAI connection; this is configuration-focused and likely includes specific setting names, required fields, and constraints for wiring the two services together. |
-| [Security baseline](https://learn.microsoft.com/en-us/azure/azure-video-indexer/security-baseline-video-indexer) | security | 0.80 | Security baseline article with configurations and best practices; likely lists specific security settings and controls for the service. |
 | [Firewall protected storage](https://learn.microsoft.com/en-us/azure/azure-video-indexer/storage-behind-firewall) | security | 0.78 | The page describes configuring Video Indexer with firewall-protected Azure Storage, including requirements like storage account type (Standard general-purpose v2) and use of user/system-assigned managed identities. These are product-specific security and access configuration details, matching the security sub-skill. |
 | [Live CLI command reference](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-cli-reference) | configuration | 0.78 | A CLI command reference article for vi_cli.sh will list specific command modes, options, flags, and parameter values for Azure AI Video Indexer enabled by Arc. This is product-specific configuration/API surface (arguments, defaults, constraints) that an LLM wouldn’t reliably know from training, fitting the configuration sub-skill type more than generic integrations or tutorials. |
 | [Manage account access](https://learn.microsoft.com/en-us/azure/azure-video-indexer/restricted-viewer-role) | security | 0.78 | Page is about managing access to Azure AI Video Indexer accounts using built-in roles, including a specific 'Restricted Viewer' role. This is product-specific security/authorization configuration with concrete role names and behavior that an LLM is unlikely to fully know from training. |
+| [Secure your Azure AI Video Indexer deployment](https://learn.microsoft.com/en-us/azure/azure-video-indexer/security-baseline-video-indexer) | security | 0.78 | Security baseline articles typically include product-specific RBAC roles, network configuration details, and concrete security settings (for identity, data protection, monitoring, and governance) tailored to Azure AI Video Indexer rather than generic security concepts. |
 | [Add or remove cameras](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-add-remove-camera) | configuration | 0.75 | How-to for adding/removing cameras using the real-time extension, referencing vi_cli.sh commands and options. This implies command/parameter-level configuration details unique to Video Indexer’s Arc extension, fitting the configuration sub-skill. |
 | [Brands model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/customize-brands-model-how-to) | best-practices | 0.70 | How-to for customizing brand models, including how brand detection works with Bing’s brand database and context disambiguation; likely contains product-specific guidance and gotchas for training and using custom brand models, which qualifies as best-practices. |
 | [Choose regions](https://learn.microsoft.com/en-us/azure/azure-video-indexer/regions) | configuration | 0.70 | Describes the location parameter and supported regions; region-specific configuration is product-specific and not generic knowledge. |

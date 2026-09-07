@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using flexible server, replicas, PgBouncer/Query Store, vector search, or AI/ML integrations, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Flexible Server, replicas, PgBouncer, Query Store, Redis caching, or vector search workloads, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L65-L87 | Performance, tuning, and migration best practices for Azure PostgreSQL: query optimization, pooling, extensions, upgrades, Oracle-to-Postgres, bulk load, replicas, and maintenance. |
 | Decision Making | L88-L103 | Guidance on sizing and scaling servers, choosing compute/storage/hosting, planning upgrades and migrations, and configuring networking and replica promotion for Azure PostgreSQL. |
 | Architecture & Design Patterns | L104-L115 | Architectures and patterns for PostgreSQL on Azure: microservices, multitenancy, sharding, table design, caching with Redis, and using OpenAI for recommendations and semantic search. |
-| Limits & Quotas | L116-L140 | Backup, restore, PITR, geo-restore, SSD/SSDv2 limits, capacity/quotas, connection limits, replica behavior, storage performance/autogrow, and migration/conversion limitations. |
+| Limits & Quotas | L116-L140 | Backup, restore, PITR, geo-restore, SSD/SSDv2 limits, quotas, elastic cluster limits, connection caps, migration/conversion limitations, and storage performance/autogrow settings. |
 | Security | L141-L171 | Securing Azure Database for PostgreSQL: identity and access control, firewall/VNet, TLS, encryption, auditing, Defender, policies, and security best practices for flexible server. |
 | Configuration | L172-L257 | Configuring Azure Database for PostgreSQL Flexible Server: server parameters, extensions, networking, logging/metrics, tuning (autovacuum, Query Store, PgBouncer), VS Code tools, and CLI-based management. |
 | Integrations & Coding Patterns | L258-L283 | Integrating Azure PostgreSQL with AI/ML (Language, ML, LangChain, Foundry, Copilot), SDKs (.NET/Java/Python), DevOps tools (VS Code, CLI, ADF), migrations, partitioning, and vector search. |
@@ -125,7 +125,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Premium SSD v2 performance for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2 |
 | Review capacity and functional limits for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-limits |
 | Request quota increases for Azure PostgreSQL Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-request-quota-increase |
-| Capacity and functional limits for PostgreSQL elastic clusters | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations |
+| Review elastic cluster limits for Azure PostgreSQL Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations |
 | Configure maximum client connections in PostgreSQL elastic clusters | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/how-to-network-elastic-clusters-default-maximum-connections |
 | Review known issues and limitations of PostgreSQL migration service | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-known-issues-migration-service |
 | Review limitations of Oracle application conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-application/app-conversions-limitations |

@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with AI backends, Entra/OAuth, VNet/gateways, self-hosted gateways, or multi-region scaling, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with AI backends, VNet/domains, OAuth/Entra ID, self-hosted gateways, or Front Door/App Gateway, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L74-L79 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
 | Limits & Quotas | L80-L100 | Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket), including rate/usage caps, token limits, validation policies, and service/gateway constraints in Azure API Management. |
 | Security | L101-L143 | Securing APIs and gateways: authN/authZ (OAuth2, Entra ID, B2C, JWT, certs, managed identities), TLS/ciphers, content safety, DDoS/Defender, RBAC, and secure developer portal/self-hosted gateway. |
-| Configuration | L144-L241 | Configuring Azure API Management behavior: networking/VNet, domains, gateways, caching (incl. LLM), policies, monitoring/logging, developer portal, subscriptions/users, and deployment templates. |
-| Integrations & Coding Patterns | L242-L274 | Patterns and scripts for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph/GitHub, and importing/exporting APIs (OpenAPI, SAP, Web Apps, Postman, Power Platform). |
-| Deployment | L275-L294 | Deploying and scaling API Management: autoscale, multi-region, backup/restore, migrations, VNet/external access, self-hosted gateways (AKS/K8s/Docker/Arc), and automation of operations/portal. |
+| Configuration | L144-L242 | Configuring Azure API Management and AI Gateway: networking/VNet, domains, caching, policies, monitoring, backends, developer portal, self-hosted gateways, and infrastructure-as-code setup. |
+| Integrations & Coding Patterns | L243-L275 | Patterns and scripts for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph/GitHub, and importing/exporting APIs (OpenAPI, SAP, Web Apps, Postman, Power Platform). |
+| Deployment | L276-L296 | Deploying and scaling API Management: autoscale, multi-region, backup/restore, vNet/external access, self-hosted gateways (AKS/K8s/Docker/Arc), portal automation, APIOps, and MCP versioning. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -145,6 +145,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure private networking for API Management AI Gateway | https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking |
+| Configure models and MCP tools in AI Gateway tier | https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-manage-models-tools |
 | Configure error handling policies in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-error-handling-policies |
 | Configure external Redis-compatible cache for API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache-external |
 | Configure custom domain names for self-hosted gateway | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-custom-domain-gateway |
@@ -291,4 +292,5 @@ This skill requires **network access** to fetch documentation content:
 | Deploy API Management self-hosted gateway to Azure Container Apps | https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-container-apps |
 | Deploy API Management self-hosted gateway to Docker | https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-docker |
 | Deploy API Management self-hosted gateway to Kubernetes with YAML | https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes |
+| Use APIOps CLI to manage Azure API Management config | https://learn.microsoft.com/en-us/azure/api-management/how-to-manage-apiops-cli |
 | Safely version and roll out MCP servers | https://learn.microsoft.com/en-us/azure/api-management/mcp-server-versions |

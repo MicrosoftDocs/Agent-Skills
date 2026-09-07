@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Blob tiers, configuring NFS/BlobFuse mounts, securing SAS/RBAC, tuning performance, or migrating data, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, lifecycle/immutability, NFS/SFTP mounts, static sites, or SDK/CLI data workflows, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L47 | Diagnosing and fixing Azure Blob Storage issues: common task failures, Storage Mover job/network errors, BlobFuse/BlobFuse2 mount & I/O problems, metrics/logging quirks, and NFS 3.0 bugs. |
-| Best Practices | L48-L83 | Performance, reliability, and cost-optimization guidance for Azure Blob/Data Lake: access tiers, lifecycle, hot partitions, NFS/SFTP, client tuning, retries, monitoring, and backup best practices. |
-| Decision Making | L84-L112 | Cost and pricing guidance for Blob Storage: choosing tiers, connectivity, migration tools, data protection, reserved capacity, and estimating end-to-end and feature-specific costs. |
-| Limits & Quotas | L113-L133 | Limits, quotas, performance, and known issues for Blob Storage features (tiers, lifecycle, replication, NFS/SFTP, static sites, premium accounts, tools like BlobFuse and Storage Mover). |
+| Troubleshooting | L36-L48 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover errors/networking, support bundles, BlobFuse/BlobFuse2 mount & I/O problems, metrics/logging quirks, NFS 3.0, and SFTP limitations. |
+| Best Practices | L49-L84 | Performance, reliability, and cost-optimization guidance for Azure Blob/Data Lake: access tiers, lifecycle, hot partitions, NFS/SFTP, client tuning, retries, monitoring, and backup best practices. |
+| Decision Making | L85-L113 | Cost and pricing guidance for Blob Storage: choosing tiers, connectivity, migration tools, data protection, reserved capacity, and estimating end-to-end and feature-specific costs. |
+| Limits & Quotas | L114-L133 | Limits, quotas, performance, and known issues for Blob Storage features (tiers, lifecycle, replication, NFS/SFTP, static sites, premium accounts, tools like BlobFuse and Storage Mover). |
 | Security | L134-L194 | Securing Blob Storage: RBAC/ABAC access control, SAS tokens, SFTP auth, ACLs, encryption (CSE, CPK, scopes), WORM/immutability, private networking, and anonymous access remediation. |
-| Configuration | L195-L256 | Configuring monitoring, lifecycle, immutability, networking, mounts (BlobFuse/NFS), inventory, restore/versioning, and third‑party backup/migration tools for Azure Blob Storage. |
-| Integrations & Coding Patterns | L257-L382 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: connect, upload/download, copy, list, manage containers/blobs/leases/metadata/tags/tiers, events, SAS, mounts, and migration/inventory workflows. |
-| Deployment | L383-L395 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
+| Configuration | L195-L254 | Configuring monitoring, lifecycle, immutability, networking, mounts (BlobFuse/NFS), inventory, restore/versioning, and third‑party backup/migration tools for Azure Blob Storage. |
+| Integrations & Coding Patterns | L255-L380 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: connect, upload/download, copy, list, manage containers/blobs/leases/metadata/tags/tiers, events, SAS, mounts, and migration/inventory workflows. |
+| Deployment | L381-L393 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -44,6 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot common BlobFuse mount and I/O issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-troubleshooting |
 | Troubleshoot Blob Storage metrics and logging behavior | https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-faq |
 | Resolve known NFS 3.0 issues on Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-known-issues |
+| Diagnose SFTP limitations and issues in Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-known-issues |
 
 ### Best Practices
 | Topic | URL |
@@ -127,7 +128,6 @@ This skill requires **network access** to fetch documentation content:
 | Azure Blob Storage scalability and performance limits | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets |
 | Scalability limits for premium block blob storage accounts | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-block-blobs |
 | Use premium page blob storage scalability targets | https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-page-blobs |
-| Limitations and known issues for SFTP on Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-known-issues |
 | Static website hosting behaviors and constraints in Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/static-website-hosting-faq |
 | Static website hosting limits in Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website |
 
@@ -207,7 +207,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure bandwidth schedules for Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/bandwidth-management |
 | Configure and use Azure Storage Mover copy logs | https://learn.microsoft.com/en-us/azure/storage-mover/log-monitoring |
 | Configure networking for Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/network-prerequisites |
-| Configure and understand Azure Blob inventory reports | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-inventory |
 | Enable and configure Azure Blob Storage inventory | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-inventory-how-to |
 | Configure advanced container-level metrics for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-storage-advanced-platform-metrics |
 | Use BlobFuse2 commands to mount Azure Blob storage | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands |
@@ -239,7 +238,6 @@ This skill requires **network access** to fetch documentation content:
 | Manage and restore soft-deleted Azure blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-manage |
 | Enable and manage container soft delete in Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-container-enable |
 | Configure container properties and metadata via .NET | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-properties-metadata |
-| Enable static website hosting on Azure Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to |
 | Configure custom domains for Azure Blob endpoints | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name |
 | Check Blob Storage feature support by account type | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-feature-support-in-storage-accounts |
 | Manage and query Blob data using index tags | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-manage-find-blobs |

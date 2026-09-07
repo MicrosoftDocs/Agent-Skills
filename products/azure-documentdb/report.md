@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 - **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 116
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-documentdb/azure-documentdb.csv`
 
@@ -72,25 +72,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | *(Unclassified)* | 30 | 24.4% |
 
 ## Changes
-
-### New Pages
-
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-cli)
-
-### Updated Pages
-
-- [Configure customer-managed key (CMK) encryption](https://learn.microsoft.com/en-us/azure/documentdb/how-to-data-encryption)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-13T08:00:00.000Z
-- [Manage replication](https://learn.microsoft.com/en-us/azure/documentdb/how-to-cluster-replica)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-08-21T12:05:00.000Z
-- [Restore cluster](https://learn.microsoft.com/en-us/azure/documentdb/how-to-restore-cluster)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-21T12:05:00.000Z
-- [Data API](https://learn.microsoft.com/en-us/azure/documentdb/data-api)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-21T12:05:00.000Z
-- [Configure firewall](https://learn.microsoft.com/en-us/azure/documentdb/how-to-configure-firewall)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-21T12:05:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-portal)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-25T17:18:00.000Z
 
 ## Classified Pages
 

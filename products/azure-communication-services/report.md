@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: Configuring monitoring, logging, metrics, and insights for ACS (chat,
     voice/video, calls, SMS, email), plus setup for Teams interop, direct routing,
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 36
-- **Unchanged**: 482
+- **Updated Pages**: 2
+- **Unchanged**: 516
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -79,47 +79,10 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Updated Pages
 
-- [Teams Phone extensibility quick start](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-quickstart)
-  - Updated: 2026-02-03T23:16:00.000Z → 2026-08-25T22:15:00.000Z
-- [Argentina](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-argentina)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Australia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-australia)
-  - Updated: 2026-01-07T12:18:00.000Z → 2026-08-18T22:40:00.000Z
-- [Austria](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-austria)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-25T02:03:00.000Z
-- [Brazil](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-brazil)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Canada](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-canada)
-  - Updated: 2025-10-20T11:11:00.000Z → 2026-08-18T22:40:00.000Z
-- [Chile](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-chile)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [China](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-china)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Colombia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-colombia)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Denmark](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-denmark)
-  - Updated: 2025-04-19T05:10:00.000Z → 2026-08-18T22:40:00.000Z
-- [Estonia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-estonia)
-  - Updated: 2023-10-22T11:24:00.000Z → 2026-08-18T22:40:00.000Z
-- [France](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-france)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Hong Kong SAR](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-hong-kong)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Indonesia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-indonesia)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Israel](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-israel)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Italy](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-italy)
-  - Updated: 2025-03-04T18:02:00.000Z → 2026-08-18T22:40:00.000Z
-- [Japan](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-japan)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- [Latvia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-latvia)
-  - Updated: 2025-06-27T22:11:00.000Z → 2026-08-18T22:40:00.000Z
-- [Lithuania](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-lithuania)
-  - Updated: 2023-09-12T22:06:00.000Z → 2026-08-18T22:40:00.000Z
-- [Malaysia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-malaysia)
-  - Updated: 2024-03-15T17:03:00.000Z → 2026-08-18T22:40:00.000Z
-- *...and 16 more*
+- [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq)
+  - Updated: 2025-09-03T17:13:00.000Z → 2026-09-01T17:13:00.000Z
+- [Finland](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-finland)
+  - Updated: 2025-06-27T22:11:00.000Z → 2026-09-01T22:21:00.000Z
 
 ## Classified Pages
 
@@ -230,7 +193,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Chile](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-chile) | limits-quotas | 0.78 | Uses tables to define availability, eligibility, and restrictions for Chilean numbers. These detailed, country-specific constraints are expert knowledge and map best to limits-quotas for the service. |
 | [China](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-china) | limits-quotas | 0.78 | Contains tables of availability, eligibility, and restrictions for China phone numbers. These are specific, product- and region-dependent constraints that act as limits/quotas and are not generally known to LLMs. |
 | [Country availability](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/sub-eligibility-number-capability) | limits-quotas | 0.78 | Country/region availability and subscription eligibility article will contain detailed tables of capabilities by country/number type, which are effectively quota/availability limits. |
-| [Finland](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-finland) | limits-quotas | 0.78 | Contains Finland-specific tabular data on which phone number types and capabilities are available and under what eligibility/restriction rules, acting as precise service limits for that country. |
+| [Finland](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-finland) | limits-quotas | 0.78 | The page provides country-specific regulatory and operational constraints for Finland phone numbers and Sender IDs, including requirements like signed Letters of Authorization and conditions under which messages may be blocked. These are precise, product- and country-specific limits and restrictions that aren't generally known from training data and map best to limits-quotas among the available sub-skill types. |
 | [Germany](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-germany) | limits-quotas | 0.78 | Germany-focused tables describe exactly which phone number types and capabilities are available and any restrictions, representing detailed service limits for that geography. |
 | [Ireland](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-ireland) | limits-quotas | 0.78 | Provides Ireland-specific tabular data on number availability, eligibility, and restrictions, which are concrete, product-specific constraints for Azure Communication Services. |
 | [Luxembourg](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-luxembourg) | limits-quotas | 0.78 | Luxembourg-focused tables define which phone number types and capabilities are available and any restrictions, representing precise service constraints for that geography. |
@@ -551,7 +514,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [3. Set up microphone and camera before a call](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/call-readiness/call-readiness-tutorial-part-3-camera-microphone-setup) | 0.45 | Tutorial step for pre-call device setup; likely shows UI flow and basic configuration, but not deep product-specific configuration matrices or limits. |
 | [Add chat to your app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/get-started) | 0.45 | Quickstart for adding chat; primarily step-by-step SDK usage, not a catalog of configuration options or limits. |
 | [Data Channel overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/data-channel) | 0.45 | Data Channel overview is conceptual; summary does not show concrete configuration tables, limits, or detailed API parameter references beyond high-level description. |
-| [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq) | 0.45 | FAQ for Teams Phone extensibility; while product-specific, FAQs are often mixed and not structured as troubleshooting (error-code-based) or configuration tables per the detection hints. |
 | [Understand identifiers](https://learn.microsoft.com/en-us/azure/communication-services/concepts/identifiers) | 0.45 | Identifier types concept page; mostly conceptual with examples, but not configuration tables or numeric constraints. |
 | [Call networking internals](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-flows) | 0.40 | Conceptual description of call networking internals and flows; summary does not indicate detailed configuration tables, limits, or troubleshooting mappings. |
 | [Call readiness overview](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/call-readiness/call-readiness-overview) | 0.40 | High-level tutorial overview for a call readiness experience; primarily conceptual and workflow-oriented without clear evidence of detailed configuration tables or product-specific limits. |
@@ -647,4 +609,5 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/services) | 0.10 | Conceptual list of services and capabilities; no specific numeric limits, configs, or decision matrices indicated. |
 | [What is Azure Communication Services?](https://learn.microsoft.com/en-us/azure/communication-services/overview) | 0.10 | High-level product overview of Azure Communication Services without concrete limits, configs, or error details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/communication-services/whats-new) | 0.10 | What's new changelog-style page; typically feature announcements without detailed limits, configs, or troubleshooting matrices. |
+| [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq) | - | FAQ-style content about Teams Phone extensibility; based on the description it likely covers general questions, behavior explanations, and conceptual guidance rather than specific limits, configuration tables, error-code mappings, or decision matrices with quantified trade-offs. |
 | [Teams Phone extensibility quick start](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-quickstart) | - | Quickstart-style provisioning and usage guide for Teams Phone Extensibility with Azure Communication Services; based on the description, it focuses on how an ISV can provision and guide tenants rather than listing detailed limits, configuration parameter tables, error codes, or decision matrices. Lacks the specific numeric limits, RBAC role lists, or product-specific configuration tables required for expert-knowledge classification. |

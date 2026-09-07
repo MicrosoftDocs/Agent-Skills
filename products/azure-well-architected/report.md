@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   workload-patterns: Design patterns, reference architectures, and end-to-end guidance
     for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including
@@ -10,8 +10,9 @@ category_descriptions:
   design-principles: Design patterns and best practices for cost, reliability, security,
     performance, operations, sustainability, and mission-critical design across AI,
     SaaS, AVD, HPC, and other Azure workloads.
-  recommendations: Guidance and best practices to design, operate, and optimize Azure
-    workloads across cost, operations, performance, reliability, security, and sustainability.
+  recommendations: Guidance on cost, reliability, performance, security, and operational
+    excellence best practices for Azure workloads, including optimization, monitoring,
+    automation, and sustainable cloud operations.
   checklists: Checklists to review Azure workloads for cost, operations, performance,
     reliability, and security best practices and identify gaps against Well-Architected
     guidance.
@@ -43,8 +44,8 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 13
-- **Unchanged**: 199
+- **Updated Pages**: 2
+- **Unchanged**: 210
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -65,32 +66,10 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 
 ### Updated Pages
 
-- [RE:01 Simplicity and efficiency](https://learn.microsoft.com/en-us/azure/well-architected/reliability/simplify)
-  - Updated: 2023-12-01T22:54:00.000Z → 2026-05-13T08:00:00.000Z
-- [RE:02 Critical flows](https://learn.microsoft.com/en-us/azure/well-architected/reliability/identify-flows)
-  - Updated: 2024-01-25T22:58:00.000Z → 2026-07-01T08:00:00.000Z
-- [RE:03 Failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis)
-  - Updated: 2026-01-21T23:02:00.000Z → 2026-08-21T17:06:00.000Z
-- [RE:07 Self-preservation](https://learn.microsoft.com/en-us/azure/well-architected/reliability/self-preservation)
-  - Updated: 2025-02-28T23:00:00.000Z → 2026-08-21T22:02:00.000Z
-- [Azure Firewall](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-firewall)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-sql-database)
-  - Updated: 2026-01-21T23:02:00.000Z → 2026-08-19T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-sql-managed-instance)
-  - Updated: 2026-04-01T22:06:00.000Z → 2026-08-19T08:00:00.000Z
-- [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-machines)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Azure Virtual Network](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network)
-  - Updated: 2026-06-16T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [PE:08 Data performance](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/optimize-data-performance)
-  - Updated: 2023-11-15T08:00:00.000Z → 2026-05-13T08:00:00.000Z
-- [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/postgresql)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-event-hubs)
-  - Updated: 2025-12-18T18:07:00.000Z → 2026-08-19T08:00:00.000Z
+- [CO:04 Spending guardrails](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/set-spending-guardrails)
+  - Updated: 2023-11-15T08:00:00.000Z → 2026-08-31T22:08:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new)
+  - Updated: 2026-06-18T08:00:00.000Z → 2026-08-31T17:12:00.000Z
 
 ## Classified Pages
 
@@ -133,7 +112,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 | [Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-virtual-wan) | service-guides | 0.90 | Virtual WAN–focused WAF service guide covering connectivity, security, and routing across pillars. |
 | [CO:01 Financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility) | recommendations | 0.90 | Explicitly tied to a Cost Optimization checklist recommendation and gives prescriptive steps for building financial responsibility culture. This is detailed how-to guidance behind checklist items. |
 | [CO:02 Cost model](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/cost-model) | recommendations | 0.90 | Supports a Cost Optimization checklist recommendation and provides concrete practices for estimating and forecasting workload costs. This is implementation guidance for a specific checklist item. |
-| [CO:04 Spending guardrails](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/set-spending-guardrails) | recommendations | 0.90 | Tied to a Cost Optimization checklist recommendation and provides specific practices for setting and managing budget guardrails. Detailed implementation guidance behind checklist items. |
 | [CO:06 Usage and billing increments](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/align-usage-to-billing-increments) | recommendations | 0.90 | Explicitly tied to a Cost Optimization checklist recommendation and describes how to adapt workloads or resources to billing meters. Detailed how-to guidance for a specific cost practice. |
 | [CO:07 Component costs](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-component-costs) | recommendations | 0.90 | Maps to a Cost Optimization checklist recommendation and provides detailed steps for evaluating and improving cost-efficiency of workload components. Clear implementation guidance. |
 | [CO:08 Environment costs](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-environment-costs) | recommendations | 0.90 | Supports a Cost Optimization checklist recommendation and gives prescriptive guidance on tailoring each environment for cost effectiveness. Implementation-focused, not just conceptual. |
@@ -181,6 +159,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 | [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-machine-learning) | service-guides | 0.86 | Azure ML–specific architectural recommendations and configuration options aligned to WAF pillars. |
 | [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-netapp-files) | service-guides | 0.86 | Service guide with NetApp Files–specific design and configuration recommendations across multiple pillars. |
 | [Azure Service Fabric](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-fabric) | service-guides | 0.86 | Service Fabric–focused architectural recommendations mapped to WAF pillars with implementation detail. |
+| [CO:04 Spending guardrails](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/set-spending-guardrails) | recommendations | 0.86 | The page is explicitly tied to a Cost Optimization checklist recommendation and provides detailed, prescriptive guidance on how to implement spending guardrails (controls, configuration steps, and practices) to manage costs within a defined budget. It goes beyond high-level principles and offers concrete implementation advice aligned with a specific checklist item, which matches the 'recommendations' sub-skill type. |
 | [Log Analytics](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics) | service-guides | 0.86 | The page is a Well-Architected service guide focused on Log Analytics workspaces, providing Azure Monitor–specific best practices across multiple pillars (for example, how to structure workspaces, configure data collection, retention, access, and performance). This is detailed, service-specific implementation guidance that goes beyond generic concepts and would not be fully captured in general LLM training data, fitting the 'service-guides' category. |
 | [OE:04 Tools and processes](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tools-processes) | recommendations | 0.86 | The page is explicitly described as a guide for an Operational Excellence checklist recommendation, providing detailed implementation guidance on defining standards for software development tools and processes. This aligns with the 'recommendations' type, which is the how-to behind checklist items, rather than high-level principles or checklists themselves. |
 | [OE:11 Safe deployment practices](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/safe-deployments) | recommendations | 0.86 | The page is explicitly a guide for an Operational Excellence checklist recommendation and provides detailed, prescriptive guidance on how to implement safe deployment practices (SDP) to reduce risk of changes. It maps to a specific checklist item in the OpEx pillar and contains concrete implementation steps and patterns, which aligns with the 'recommendations' definition. |
@@ -312,4 +291,4 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 | [Performance Efficiency](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/performance-efficiency) | - | Performance efficiency page offers best practices on capacity planning, monitoring, testing, tuning, and scaling; summary reflects conceptual performance guidance without explicit WAF checklist IDs or detailed service configuration instructions. |
 | [Reliability](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/reliability) | - | Described as an overview of reliability considerations; summary focuses on thinking about constraints, redundancy, scaling, monitoring, and disaster preparation in general terms, not detailed checklist-based or implementation-specific guidance. |
 | [Security](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/security) | - | Security article is characterized as practical and actionable but at an overview level; summary mentions built-in Fabric features (workspaces, identities, managed VNets, CMK) without indicating detailed configuration steps or checklist ID references. |
-| [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new) | - | Page is a change log / updates overview for Well-Architected content, not a pillar-specific guidance page. It does not contain checklist IDs, detailed implementation recommendations, design principles, tradeoff analysis, service-specific WAF guidance, workload patterns, or assessment questions. |
+| [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new) | - | Page is a changelog/overview of recent updates and new documentation, not detailed WAF principles, checklists, recommendations, tradeoffs, service guides, workload patterns, or assessments. |

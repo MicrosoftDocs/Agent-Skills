@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 122
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -73,17 +73,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | *(Unclassified)* | 37 | 29.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication)
-  - Updated: 2026-07-09T22:04:00.000Z → 2026-08-24T08:00:00.000Z
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/service-bus-messaging/network-security-perimeter)
-  - Updated: 2026-07-02T17:11:00.000Z → 2026-08-25T02:03:00.000Z
-- [Message sessions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sessions)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-08-24T17:12:00.000Z
-- [Topic filters and actions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/topic-filters)
-  - Updated: 2026-03-10T08:00:00.000Z → 2026-08-24T17:12:00.000Z
 
 ## Classified Pages
 

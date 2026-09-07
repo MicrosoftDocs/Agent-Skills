@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -7,9 +7,9 @@ category_descriptions:
   best-practices: Best practices for configuring Front Door, tuning caching, using
     rules engine patterns, and optimizing video-on-demand/live streaming performance
     and reliability.
-  decision-making: Guidance on choosing Front Door vs CDN tiers, comparing Standard/Premium/Classic
-    pricing, estimating/optimizing bills, and planning/impacts of tier upgrades or
-    migrations.
+  decision-making: Guidance on Front Door pricing and billing, comparing Standard/Premium/Classic
+    and CDN tiers, choosing tiers, understanding classic retirement, and planning/doing
+    tier upgrades/migrations.
   deployment: Deploying and upgrading Azure Front Door using Bicep, Terraform, PowerShell,
     and DevOps pipelines, including classic→Standard/Premium migrations and Standard→Premium
     upgrades.
@@ -29,13 +29,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Front Door development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring apex domains, rules engine, caching, Private Link origins, or TLS/cert
-  security for Front Door, and other Azure Front Door related development tasks. Not
+  configuring apex domains, rules engine, caching/streaming, Private Link origins,
+  or TLS/mTLS security, and other Azure Front Door related development tasks. Not
   for Azure Application Gateway (use azure-application-gateway), Azure Load Balancer
   (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure
   Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring apex domains, rules engine, caching, Private Link origins,
-  or TLS/cert security for Front Door, and other Azure Front Door related development
+use_when: Use when configuring apex domains, rules engine, caching/streaming, Private
+  Link origins, or TLS/mTLS security, and other Azure Front Door related development
   tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager),
@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 94
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 98
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
 ## Classification Statistics
@@ -75,29 +75,14 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ## Changes
 
-### New Pages
-
-- [Protect sensitive data in logs](https://learn.microsoft.com/en-us/azure/frontdoor/sensitive-data-protection)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
-  - Updated: 2026-07-27T22:17:00.000Z → 2026-08-24T22:12:00.000Z
+- [Understanding billing](https://learn.microsoft.com/en-us/azure/frontdoor/billing)
+  - Updated: 2026-07-14T08:00:00.000Z → 2026-08-31T08:00:00.000Z
+- [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
+  - Updated: 2026-04-24T08:00:00.000Z → 2026-08-28T08:00:00.000Z
 - [Origin selection](https://learn.microsoft.com/en-us/azure/frontdoor/routing-methods)
-  - Updated: 2026-04-30T08:00:00.000Z → 2026-08-24T22:12:00.000Z
-- [Classic to Standard/Premium migration](https://learn.microsoft.com/en-us/azure/frontdoor/tier-migration)
-  - Updated: 2026-08-01T05:13:00.000Z → 2026-08-27T22:11:00.000Z
-- [Migrate from Front Door (classic) - Portal](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier)
-  - Updated: 2026-04-24T08:00:00.000Z → 2026-08-27T09:10:00.000Z
-- [Migrate from Front Door (classic) - PowerShell](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier-powershell)
-  - Updated: 2024-10-15T08:00:00.000Z → 2026-08-27T22:11:00.000Z
-- [Migration FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/migration-faq)
-  - Updated: 2026-07-27T22:17:00.000Z → 2026-08-27T09:10:00.000Z
-
-### Deleted Pages
-
-- ~~Enable log scrubbing~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-protect-sensitive-data)
-- ~~Front Door sensitive data protection~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/sensitive-data-protection)
+  - Updated: 2026-08-24T22:12:00.000Z → 2026-08-28T08:00:00.000Z
 
 ## Classified Pages
 
@@ -140,7 +125,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Secure your Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/secure-front-door) | security | 0.70 | The page is explicitly a security recommendations guide for Azure Front Door, and such documents usually enumerate specific RBAC roles, origin access controls, TLS/HTTPS configuration options, and monitoring/security settings unique to the product. These are concrete, product-specific security configurations rather than generic security concepts, so it fits the security sub-skill. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/frontdoor/terraform-samples) | deployment | 0.70 | Terraform samples expose provider-specific resource blocks, arguments, and supported values for Front Door, representing concrete deployment configuration patterns. |
 | [URL rewrite](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-url-rewrite) | configuration | 0.70 | Explains how to configure URL rewrite conditions and behaviors; product-specific routing configuration patterns. |
-| [Understanding billing](https://learn.microsoft.com/en-us/azure/frontdoor/billing) | decision-making | 0.70 | Billing model pages for a specific Azure service typically include detailed, product-specific cost components (base fees per profile, per-request charges, regional data transfer rates, and tier-based differences). These quantified trade-offs and tier/region-specific pricing considerations help users choose tiers and plan usage, fitting the decision-making category more than generic pricing info. |
+| [Understanding billing](https://learn.microsoft.com/en-us/azure/frontdoor/billing) | decision-making | 0.70 | Billing model details (base fees per profile, request and data transfer charges, and variation by region and tier) provide product-specific, quantified cost and usage information that supports tier and region selection decisions, fitting the decision-making category better than generic pricing info. |
 | [Upload to Azure Storage blobs](https://learn.microsoft.com/en-us/azure/frontdoor/scenario-upload-storage-blobs) | architecture-patterns | 0.70 | Scenario for mission-critical uploads through Front Door to Blob Storage; describes a secure, reliable, scalable architecture pattern with WAF and TLS considerations. |
 | [Compression](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-compression) | configuration | 0.68 | Provides concrete compression settings, behavior for range requests, and header requirements (Content-Length) specific to Front Door. |
 | [Configure HTTPS on a custom domain](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain-https) | configuration | 0.68 | Page describes detailed, product-specific steps and options for enabling/disabling HTTPS on Azure Front Door (classic) custom domains, including certificate usage and platform-specific settings. This is configuration-focused rather than generic tutorial content and includes concrete options/parameters unique to Front Door HTTPS configuration. |
@@ -183,6 +168,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Domains in Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/domain) | 0.30 | From the summary, the page explains what domains are in Azure Front Door and the types supported (subdomains, apex, wildcard) and how they can be used in routes. It doesn't clearly indicate specific numeric limits, configuration parameter tables, error codes, or decision matrices. It appears to be a conceptual/feature overview and basic usage, so no sub-skill type with expert knowledge applies. |
 | [Front Door manager](https://learn.microsoft.com/en-us/azure/frontdoor/manager) | 0.30 | Overview of Front Door manager UI and capabilities; largely conceptual management description. |
 | [Health probes](https://learn.microsoft.com/en-us/azure/frontdoor/health-probes) | 0.30 | Explains health probes and how Front Door monitors origins; summary does not show specific probe configuration tables, timeouts, or limits. |
+| [Origin selection](https://learn.microsoft.com/en-us/azure/frontdoor/routing-methods) | 0.30 | Describes routing methods conceptually; summary does not indicate presence of numeric limits, config tables, or error-code-based troubleshooting. |
 | [Purge cache](https://learn.microsoft.com/en-us/azure/frontdoor/cache-purge) | 0.30 | Primarily a procedural tutorial on purging Azure Front Door cache via portal/CLI/PowerShell; does not emphasize unique limits, configuration matrices, or detailed troubleshooting beyond what an LLM likely knows. |
 | [Route matching](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-route-matching) | 0.30 | Explains how requests are matched to routes conceptually; summary does not indicate detailed config parameter tables or product-specific gotchas. |
 | [Routing architecture](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-architecture) | 0.30 | Routing architecture overview; describes stages and components conceptually without explicit limits, configs, or decision matrices. |
@@ -200,7 +186,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [DDoS protection](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-ddos) | 0.20 | Describes DDoS protection conceptually (global POP count, general protection levels). No indication of specific configuration parameters, limits, error codes, or decision matrices; mostly architectural/marketing overview. |
 | [Endpoints in Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/endpoint) | 0.20 | Conceptual explanation of endpoints and domains; no evidence of numeric limits, config tables, or security/role details. |
 | [Monitor Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/monitor-front-door) | 0.20 | Monitoring overview for Azure Front Door describing available metrics/logs and general use of Azure Monitor; no indication of specific numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or other product-specific expert details. |
-| [Origin selection](https://learn.microsoft.com/en-us/azure/frontdoor/routing-methods) | 0.20 | The routing methods article is primarily a conceptual explanation of the four traffic routing methods (for example, how priority, weighted, or latency-based routing work). The summary does not indicate presence of numeric limits, configuration tables, error codes, or decision matrices with thresholds. It reads as feature explanation rather than expert configuration, limits, or troubleshooting content. |
 | [Set up a Rules Engine (classic)](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-tutorial-rules-engine) | 0.20 | Tutorial for configuring the rules engine; focuses on creating a first rule via portal/CLI, not on exhaustive configuration references, limits, or best-practice guidance with quantified impact. |
 | [Web Application Firewall (WAF) on Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/web-application-firewall) | 0.20 | Article is described as listing WAF features and providing an overview of protection. From the summary it appears feature/marketing oriented, without explicit mention of config tables, ruleset parameters, or error mappings that would qualify as expert knowledge under the defined categories. |
 | [Web Application Firewall and Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-waf) | 0.20 | Tutorial on using Azure Front Door with WAF to scale and protect a web app; primarily scenario walkthrough and conceptual explanation, not detailed security configuration references (roles, scopes) or troubleshooting/error mappings. |
@@ -208,4 +193,4 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Create a Front Door - Portal](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-portal) | 0.10 | Quickstart tutorial for creating a Front Door profile; step-by-step portal usage, not a reference of configuration options or limits. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/frontdoor/support-help) | 0.10 | Page is a general support/help landing page pointing to forums and support channels, without product-specific error codes, diagnostic steps, configuration parameters, or limits. It does not meet the troubleshooting or other expert-knowledge criteria. |
 | [What is Azure Front Door (classic)?](https://learn.microsoft.com/en-us/azure/frontdoor/classic-overview) | 0.10 | Described as an overview of Azure Front Door (classic); overviews are conceptual and marketing-oriented and generally lack detailed limits, configuration tables, or decision matrices. |
-| [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) | 0.10 | High-level product overview of Azure Front Door; no specific limits, configuration tables, error codes, or decision matrices. |
+| [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) | - | High-level product overview of Azure Front Door without specific limits, configuration parameters, error codes, or decision matrices. |

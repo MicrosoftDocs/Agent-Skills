@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 21
+- **Updated Pages**: 0
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
@@ -42,11 +42,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 12 | 54.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Microsoft Security Copilot and Defender EASM](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/easm-copilot)
-  - Updated: 2026-04-24T17:58:00.000Z → 2026-08-19T22:43:00.000Z
 
 ## Classified Pages
 

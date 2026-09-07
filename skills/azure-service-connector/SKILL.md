@@ -1,9 +1,9 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to databases, messaging, storage, AI services, or Azure Cache for Redis via Service Connector, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to Redis, databases, storage, messaging, AI services, or third‑party endpoints, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure Connector Namespace (use azure-connector-namespace), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-26"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L40 | Diagnosing and resolving common Service Connector errors, connection failures (incl. AKS scenarios), error codes, and configuration issues between Azure compute and backing services. |
+| Troubleshooting | L34-L40 | Diagnosing and resolving common Service Connector errors, connection failures, and AKS-specific integration issues, including error codes, logs, and step-by-step troubleshooting guidance. |
 | Limits & Quotas | L41-L45 | Known limitations of Azure Service Connector, unsupported scenarios, and suggested workarounds or alternatives for common connection and configuration issues. |
 | Security | L46-L51 | Managing Service Connector security: required permissions, Microsoft Entra role assignments, and configuring auth methods (managed identity, service principal, key-based). |
 | Configuration | L52-L60 | Configuring Service Connector connections via IaC/CLI, setting auth and environment variables, and specific setup for Azure Cache for Redis and retrieving connection configs. |

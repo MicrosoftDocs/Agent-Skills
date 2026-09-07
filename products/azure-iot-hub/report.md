@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-09-06'
 category_descriptions:
   security: 'Securing IoT Hub, DPS, and Device Update: auth (Entra ID/RBAC, SAS, X.509),
-    certificates/keys, TLS, IP/network controls, private endpoints, policies, and
-    secure device lifecycle management.'
+    certificates and key rotation, TLS/ciphers, IP/network controls, private endpoints,
+    policies, and best practices.'
   best-practices: 'Best practices for secure, scalable IoT Hub/DPS deployments: device
     provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection,
     auto device config, and IoT Hub hardening.'
@@ -30,13 +30,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Hub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using IoT Hub/DPS device twins, routing/enrichments, device streams, Device Update,
-  or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not
+  using IoT Hub/DPS for device twins, routing/enrichments, MQTT/AMQP/HTTPS, Device
+  Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not
   for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure
   IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
-use_when: Use when using IoT Hub/DPS device twins, routing/enrichments, device streams,
-  Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development
-  tasks.
+use_when: Use when using IoT Hub/DPS for device twins, routing/enrichments, MQTT/AMQP/HTTPS,
+  Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
   Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 ---
@@ -52,8 +51,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 195
+- **Updated Pages**: 1
+- **Unchanged**: 194
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -62,17 +61,22 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 1.5% |
-| best-practices | 5 | 2.6% |
+| best-practices | 4 | 2.1% |
 | configuration | 29 | 14.9% |
 | decision-making | 9 | 4.6% |
 | deployment | 12 | 6.2% |
 | integrations | 21 | 10.8% |
 | limits-quotas | 3 | 1.5% |
-| security | 34 | 17.4% |
+| security | 35 | 17.9% |
 | troubleshooting | 13 | 6.7% |
 | *(Unclassified)* | 66 | 33.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Secure your Azure IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub/secure-azure-iot-hub)
+  - Updated: 2025-08-29T17:12:00.000Z → 2026-09-03T22:14:00.000Z
 
 ## Classified Pages
 
@@ -126,7 +130,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Migrate to a new TLS certificate root](https://learn.microsoft.com/en-us/azure/iot-hub/migrate-tls-certificate) | security | 0.75 | Explains impact and steps for moving from Baltimore CyberTrust Root to DigiCert Global Root G2, including service-specific migration behavior. |
 | [Restrict outbound network access](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-restrict-outbound-network-access) | security | 0.75 | Describes using restrictOutboundNetworkAccess API and trusted destinations for routing/file upload/export, which are specific security and data loss prevention configurations. |
 | [Roll device certificates](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-roll-certificates) | security | 0.75 | Explains DPS-specific procedures and considerations for rolling X.509 certificates as a security practice. |
-| [Secure your Azure IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub/secure-azure-iot-hub) | best-practices | 0.75 | Provides IoT Hub–specific security hardening guidance and recommended configurations, which are actionable best practices beyond generic security advice. |
 | [Third-party X.509 certificates](https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-x509) | security | 0.75 | Describes IoT Hub-specific use of CA-signed X.509 certs for device auth, including certificate handling patterns unique to the service. |
 | [Understand module twins](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-module-twins) | configuration | 0.75 | Explains module twin limits (up to 50 per device) and structure; product-specific configuration and behavior for module-level state management. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/iot-hub/monitor-iot-hub-reference) | configuration | 0.74 | The monitoring reference page for Azure IoT Hub typically enumerates all available metrics, dimensions, and diagnostic log categories with their exact names, units, and sometimes value ranges. These are product-specific configuration and telemetry surface details (for example, metric names, dimensions, and log categories used when configuring alerts, dashboards, and diagnostics) that an LLM is unlikely to know reliably from training. This fits the configuration category best because it is essentially a catalog of monitoring-related configuration surfaces rather than general best practices or conceptual guidance. |
@@ -166,6 +169,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Region mapping for scan and failover](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-region-mapping) | deployment | 0.70 | Region mapping for BCDR; will contain specific region-to-region mappings and processing behavior for imports, which are deployment-specific constraints. |
 | [Regulatory compliance controls by Azure Policy](https://learn.microsoft.com/en-us/azure/iot-hub/security-controls-policy) | security | 0.70 | Lists built-in Azure Policy definitions and control mappings for IoT Hub, which are detailed compliance/security configuration references. |
 | [Route device-to-cloud messages to Azure services](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-d2c) | configuration | 0.70 | Dev guide for message routing including endpoint types and routing behavior; likely includes product-specific settings and constraints for routing configuration. |
+| [Secure your Azure IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub/secure-azure-iot-hub) | security | 0.70 | The page focuses on securing Azure IoT Hub deployments and likely includes product-specific security recommendations (for example, use of particular authentication methods, key/identity management patterns, and IoT Hub–specific configuration guidance). These are concrete, service-specific security practices rather than generic security theory, fitting the security sub-skill. While the summary is high level, the article’s stated purpose is detailed best practices for protecting IoT Hub, which typically includes expert configuration and access control guidance. |
 | [Security](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-security) | security | 0.70 | Describes secure workflow, signing, and trust chain for updates; product-specific security model and mechanisms. |
 | [Security practices for device manufacturers](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-device-oem-security-practices) | best-practices | 0.70 | Summarizes recommended security practices for manufacturers preparing devices for DPS; product-specific security best-practices guidance. |
 | [Self-sign script for external CSR](https://learn.microsoft.com/en-us/azure/iot-hub/reference-self-sign-script) | integrations | 0.70 | Page provides a concrete PowerShell/OpenSSL script and parameters for generating a root CA and self-signed CSR specifically for Azure IoT Hub device registry testing. This is product- and tooling-specific integration/code pattern knowledge rather than a generic concept. |

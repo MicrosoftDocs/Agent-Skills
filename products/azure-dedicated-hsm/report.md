@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 15
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
@@ -56,11 +56,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 | *(Unclassified)* | 6 | 37.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate Dedicated HSM from ExpressRoute Basic SKU](https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-basic-standard)
-  - Updated: 2026-08-03T17:33:00.000Z → 2026-08-20T08:00:00.000Z
 
 ## Classified Pages
 

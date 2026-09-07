@@ -18,7 +18,6 @@
 | Use Azure CLI commands to manage Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage |
 | Find and use Azure Marketplace VM image plans via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage |
 | Azure Disk Encryption sample scripts for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-sample-scripts |
-| Download Linux VHDs from Azure using CLI and portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/download-vhd |
 | Resize Azure Disk Encryption LVM-encrypted Linux disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-resize-encrypted-lvm |
 | Retrieve Azure VM CPU metrics via Monitor REST API | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/metrics-vm-usage-rest |
 | Use Scheduled Events on Linux Azure VMs via Metadata Service | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events |
@@ -33,7 +32,7 @@
 | CLI script to export managed disk VHDs to storage accounts | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account |
 | CLI scripts to copy managed disk snapshots across subscriptions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-snapshot-to-same-or-different-subscription |
 | CLI script to export snapshots to storage accounts across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-snapshot-to-storage-account |
-| CLI scripts to create managed disks from snapshots (Linux) | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-managed-disk-from-snapshot |
+| Use Azure CLI to create managed disks from snapshots | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-managed-disk-from-snapshot |
 | CLI script to create managed disks from VHDs in same subscription | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-managed-disk-from-vhd |
 | CLI script to create a VM from an existing managed OS disk | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-vm-from-managed-os-disks |
 | CLI script to create a VM from an OS disk snapshot | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-vm-from-snapshot |
@@ -47,7 +46,6 @@
 | Author ARM templates for Azure VM managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments |
 | Create Azure VM restore points using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-cli |
 | Azure Disk Encryption sample scripts for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts |
-| Download Windows VHDs from Azure using the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/download-vhd |
 | Configure VM virtual networks using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-network-ref |
 | Manage Azure VMs with PowerShell commands | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-ref |
 | Monitor Windows Azure VMs for scheduled maintenance events | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/scheduled-event-service |

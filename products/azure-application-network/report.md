@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: 'Configuring Application Network observability: enabling and analyzing
     logs in Azure Monitor and setting up/using metrics for monitoring and troubleshooting.'
@@ -30,8 +30,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 11
+- **Updated Pages**: 1
+- **Unchanged**: 10
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-network/azure-application-network.csv`
 
@@ -44,6 +44,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 8 | 72.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure Kubernetes Application Network?](https://learn.microsoft.com/en-us/azure/application-network/overview)
+  - Updated: 2026-04-17T22:07:00.000Z → 2026-09-02T06:03:00.000Z
 
 ## Classified Pages
 
@@ -64,4 +69,4 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Traffic management use cases](https://learn.microsoft.com/en-us/azure/application-network/traffic-management-use-cases) | 0.40 | Traffic management use cases describe scenarios (JWT claim-based routing, traffic shifting, fault injection) conceptually; summary lacks concrete configuration values, limits, or detailed error/symptom mappings. |
 | [Architecture overview](https://learn.microsoft.com/en-us/azure/application-network/architecture) | 0.30 | Architecture article appears to describe management/control/data planes and multi-cluster discovery conceptually; no indication of product-specific thresholds, quantified trade-offs, or detailed configuration parameters. |
 | [Overview](https://learn.microsoft.com/en-us/azure/application-network/observability) | 0.30 | Observability overview describes metrics, logs, tracing, and workspace options at a high level; summary suggests conceptual coverage rather than detailed metric definitions, configuration parameters, or log schema references. |
-| [What is Azure Kubernetes Application Network?](https://learn.microsoft.com/en-us/azure/application-network/overview) | 0.20 | High-level overview of Azure Kubernetes Application Network; summary indicates conceptual description of the service and preview caveats, without specific limits, configuration tables, error codes, or decision matrices. |
+| [What is Azure Kubernetes Application Network?](https://learn.microsoft.com/en-us/azure/application-network/overview) | - | High-level preview overview of Azure Kubernetes Application Network; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |

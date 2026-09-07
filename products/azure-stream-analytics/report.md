@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 19
-- **Unchanged**: 146
+- **Updated Pages**: 0
+- **Unchanged**: 165
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -76,47 +76,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 56 | 33.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [ARM template](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-azure-resource-manager)
-  - Updated: 2024-03-07T12:20:00.000Z → 2026-08-27T09:10:00.000Z
-- [Choose a job development tool](https://learn.microsoft.com/en-us/azure/stream-analytics/feature-comparison)
-  - Updated: 2023-09-07T22:21:00.000Z → 2026-08-27T09:10:00.000Z
-- [Kafka input](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-kafka-input)
-  - Updated: 2024-11-19T13:19:00.000Z → 2026-08-27T09:10:00.000Z
-- [Monitor jobs - Azure portal](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-monitoring)
-  - Updated: 2024-07-16T17:03:00.000Z → 2026-08-27T09:10:00.000Z
-- [Azure Cosmos DB optimization](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-documentdb-output)
-  - Updated: 2024-03-29T08:00:00.000Z → 2026-08-27T09:10:00.000Z
-- [JavaScript UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-javascript-user-defined-functions)
-  - Updated: 2023-03-27T00:00:00.000Z → 2026-08-27T09:10:00.000Z
-- [JavaScript UDA](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-javascript-user-defined-aggregates)
-  - Updated: 2022-08-30T11:42:00.000Z → 2026-08-27T09:10:00.000Z
-- [C# UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge-csharp-udf-methods)
-  - Updated: 2024-02-26T08:00:00.000Z → 2026-08-27T09:10:00.000Z
-- [Geospatial functions](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-geospatial-functions)
-  - Updated: 2021-03-07T12:01:00.000Z → 2026-08-27T09:10:00.000Z
-- [Checkpoint and replay](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-concepts-checkpoint-replay)
-  - Updated: 2022-12-01T12:18:00.000Z → 2026-08-27T09:10:00.000Z
-- [Job diagram](https://learn.microsoft.com/en-us/azure/stream-analytics/job-diagram-with-metrics)
-  - Updated: 2023-02-20T12:30:00.000Z → 2026-08-27T09:10:00.000Z
-- [Use SQL reference data](https://learn.microsoft.com/en-us/azure/stream-analytics/sql-reference-data)
-  - Updated: 2024-12-16T23:03:00.000Z → 2026-08-27T09:10:00.000Z
-- [Export and manage jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/visual-studio-code-explore-jobs)
-  - Updated: 2023-05-29T11:14:00.000Z → 2026-08-27T09:10:00.000Z
-- [Test locally with sample data](https://learn.microsoft.com/en-us/azure/stream-analytics/visual-studio-code-local-run)
-  - Updated: 2022-12-30T18:04:00.000Z → 2026-08-27T09:10:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-quick-create-vs)
-  - Updated: 2023-06-08T11:23:00.000Z → 2026-08-27T09:10:00.000Z
-- [Develop an edge job](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio-edge-jobs)
-  - Updated: 2021-01-07T22:58:00.000Z → 2026-08-27T09:10:00.000Z
-- [Query logic](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-troubleshoot-query)
-  - Updated: 2022-12-01T12:18:00.000Z → 2026-08-27T09:10:00.000Z
-- [Watermark delay increase](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-analysis-with-metric-dimensions)
-  - Updated: 2022-12-09T12:15:00.000Z → 2026-08-27T09:10:00.000Z
-- [Data errors](https://learn.microsoft.com/en-us/azure/stream-analytics/data-errors)
-  - Updated: 2022-12-01T12:18:00.000Z → 2026-08-27T09:10:00.000Z
 
 ## Classified Pages
 

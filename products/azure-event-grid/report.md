@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 20
-- **Unchanged**: 245
+- **Updated Pages**: 0
+- **Unchanged**: 265
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -71,49 +71,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | *(Unclassified)* | 86 | 32.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create, view, and manage event subscriptions](https://learn.microsoft.com/en-us/azure/event-grid/create-view-manage-event-subscriptions)
-  - Updated: 2023-11-15T15:28:00.000Z → 2026-08-27T17:12:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart)
-  - Updated: 2025-01-22T08:00:00.000Z → 2026-08-27T17:12:00.000Z
-- [Custom events to an Azure function](https://learn.microsoft.com/en-us/azure/event-grid/custom-event-to-function)
-  - Updated: 2025-06-13T22:03:00.000Z → 2026-08-27T09:10:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-to-event-hubs-portal-namespace-topics)
-  - Updated: 2026-02-18T06:15:00.000Z → 2026-08-27T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-to-azure-functions-portal)
-  - Updated: 2025-06-27T17:46:00.000Z → 2026-08-27T22:11:00.000Z
-- [Terminology](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-event-grid-namespace-terminology)
-  - Updated: 2023-12-12T18:08:00.000Z → 2026-08-27T22:11:00.000Z
-- [Topic spaces](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-topic-spaces)
-  - Updated: 2023-11-15T08:00:00.000Z → 2026-08-27T09:10:00.000Z
-- [Routing MQTT messages](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing)
-  - Updated: 2023-11-15T15:28:00.000Z → 2026-08-27T22:11:00.000Z
-- [MQTT client authentication](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-client-authentication)
-  - Updated: 2026-07-06T22:04:00.000Z → 2026-08-27T09:10:00.000Z
-- [Create and manage namespaces](https://learn.microsoft.com/en-us/azure/event-grid/create-view-manage-namespaces)
-  - Updated: 2026-07-14T05:10:00.000Z → 2026-08-27T09:10:00.000Z
-- [Push delivery overview](https://learn.microsoft.com/en-us/azure/event-grid/namespace-push-delivery-overview)
-  - Updated: 2024-04-01T22:15:00.000Z → 2026-08-27T22:11:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/event-grid/publish-deliver-events-with-namespace-topics)
-  - Updated: 2024-06-27T17:04:00.000Z → 2026-08-27T09:10:00.000Z
-- [Enable diagnostic logs](https://learn.microsoft.com/en-us/azure/event-grid/enable-diagnostic-logs-topic)
-  - Updated: 2023-09-25T08:00:00.000Z → 2026-08-27T22:11:00.000Z
-- [Troubleshoot subscription validation](https://learn.microsoft.com/en-us/azure/event-grid/troubleshoot-subscription-validation)
-  - Updated: 2025-08-18T17:25:00.000Z → 2026-08-27T17:12:00.000Z
-- [Create a custom topic or a domain](https://learn.microsoft.com/en-us/azure/event-grid/create-custom-topic)
-  - Updated: 2024-01-31T23:11:00.000Z → 2026-08-27T22:11:00.000Z
-- [Publish events custom topics using access keys](https://learn.microsoft.com/en-us/azure/event-grid/post-to-custom-topic)
-  - Updated: 2025-07-31T22:14:00.000Z → 2026-08-27T22:11:00.000Z
-- [Filter events](https://learn.microsoft.com/en-us/azure/event-grid/how-to-filter-events)
-  - Updated: 2025-01-22T08:00:00.000Z → 2026-08-27T17:12:00.000Z
-- [Handle Azure Key Vault events using Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/event-grid/handle-key-vault-events-using-azure-monitor-alerts)
-  - Updated: 2024-05-21T15:00:00.000Z → 2026-08-27T22:11:00.000Z
-- [Azure Functions](https://learn.microsoft.com/en-us/azure/event-grid/handler-functions)
-  - Updated: 2025-01-21T08:00:00.000Z → 2026-08-27T22:11:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/create-view-manage-system-topics)
-  - Updated: 2025-01-22T05:32:00.000Z → 2026-08-27T17:12:00.000Z
 
 ## Classified Pages
 

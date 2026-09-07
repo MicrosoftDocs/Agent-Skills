@@ -36,9 +36,9 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 22
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
 ## Classification Statistics
@@ -52,35 +52,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 27 | 81.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Test Plans?](https://learn.microsoft.com/en-us/azure/devops/test/overview?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-08-14T08:00:00.000Z
-- [Navigate Test Plans](https://learn.microsoft.com/en-us/azure/devops/test/navigate-test-plans?view=azure-devops)
-  - Updated: 2026-04-07T01:04:00.000Z → 2026-08-14T08:00:00.000Z
-- [Key concepts](https://learn.microsoft.com/en-us/azure/devops/test/test-objects-overview?view=azure-devops)
-  - Updated: 2026-04-07T01:04:00.000Z → 2026-08-14T08:00:00.000Z
-- [Run manual tests](https://learn.microsoft.com/en-us/azure/devops/test/run-manual-tests?view=azure-devops)
-  - Updated: 2026-04-28T08:00:00.000Z → 2026-08-14T08:00:00.000Z
-- [Test in Connected mode](https://learn.microsoft.com/en-us/azure/devops/test/connected-mode-exploratory-testing?view=azure-devops)
-  - Updated: 2025-10-01T18:04:00.000Z → 2026-08-17T22:06:00.000Z
-- [Explore work items](https://learn.microsoft.com/en-us/azure/devops/test/explore-workitems-exploratory-testing?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-08-17T22:06:00.000Z
-- [Get insights from sessions](https://learn.microsoft.com/en-us/azure/devops/test/insights-exploratory-testing?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-08-17T22:06:00.000Z
-- [Manage test failure type](https://learn.microsoft.com/en-us/azure/devops/test/manage-test-failure-type?view=azure-devops)
-  - Updated: 2026-02-27T22:02:00.000Z → 2026-08-17T22:06:00.000Z
-- [Run automated tests from test plans](https://learn.microsoft.com/en-us/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops)
-  - Updated: 2026-03-18T21:04:00.000Z → 2026-08-17T22:06:00.000Z
-- [Track test status](https://learn.microsoft.com/en-us/azure/devops/test/track-test-status?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-08-17T22:06:00.000Z
-- [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops)
-  - Updated: 2026-08-14T15:04:00.000Z → 2026-08-17T22:06:00.000Z
-
-### Deleted Pages
-
-- ~~Add to existing bugs~~ (https://learn.microsoft.com/en-us/azure/devops/test/add-to-bugs-exploratory-testing?view=azure-devops)
 
 ## Classified Pages
 

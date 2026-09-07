@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 56
+- **Unchanged**: 57
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -63,10 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 31 | 54.4% |
 
 ## Changes
-
-### New Pages
-
-- [Configure a standard service endpoint - Terraform](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-terraform)
 
 ## Classified Pages
 

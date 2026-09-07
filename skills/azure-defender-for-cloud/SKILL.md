@@ -1,9 +1,9 @@
 ---
 name: azure-defender-for-cloud
-description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing VMs, containers/Kubernetes, SQL, storage, multicloud connectors, or Defender for Cloud APIs, and other Azure Defender For Cloud related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure External Attack Surface Management (use azure-external-attack-surface-management), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel).
+description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing VMs, containers/AKS, SQL, storage, multi‑cloud connectors, or automating via Defender APIs, and other Azure Defender For Cloud related development tasks. Not for Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure DDoS Protection (use azure-ddos-protection), Azure External Attack Surface Management (use azure-external-attack-surface-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Cloud Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L86 | Troubleshooting and interpreting Defender for Cloud security alerts, validating protections across Azure/AWS/GCP, and diagnosing deployment, configuration, connector, and sensor issues. |
-| Best Practices | L87-L106 | Best practices for configuring, investigating, and remediating Defender for Cloud alerts, vulnerabilities, misconfigurations, and protection for VMs, SQL, Kubernetes, containers, and storage |
-| Decision Making | L107-L131 | Planning and cost decisions for Defender for Cloud: choosing portals and plans, migrations (Storage, Servers, CSPM, FIM, BYOL), data residency, cost allocation/estimation, and licensing. |
-| Architecture & Design Patterns | L132-L141 | Multicloud security architecture for Defender for Cloud: connector auth for AWS/GCP, secure/private connectivity, container protection design, ownership models, and applying Zero Trust. |
-| Limits & Quotas | L142-L151 | Limits, quotas, and constraints for Defender for Cloud: data ingestion benefits, free trial caps, portal limitations, CSV export limits, data collection extension lifecycles, and storage malware scan capacity. |
-| Security | L152-L211 | Configuring and managing Defender for Cloud security: roles/RBAC, compliance, recommendations, alerts, incident response, storage/VM/container/AKS protections, and secure integrations across clouds. |
-| Configuration | L212-L278 | Configuring and tuning Defender for Cloud features: malware/code/VM/container/SQL/storage scanning, alerts, exports, policies, CI/CD integration, cross-tenant, and automation settings. |
-| Integrations & Coding Patterns | L279-L314 | Integrating Defender for Cloud with SIEMs, XDR, ServiceNow, CI/CD, multi‑cloud logs, partner tools, and using APIs/CLI/ARG to export, query, and automate alerts and SQL VA data. |
-| Deployment | L315-L339 | Guides for planning and deploying Defender for Cloud components (Servers, Containers, SQL, APIs, DevOps, GHAS) at scale, including prerequisites, platform support, and automation options. |
+| Troubleshooting | L37-L86 | Diagnosing, interpreting, and responding to Defender for Cloud security alerts and deployment issues across Azure, AWS, GCP, containers, SQL, storage, DNS, APIs, and VMs. |
+| Best Practices | L87-L106 | Best-practice guides for configuring, investigating, and remediating Defender for Cloud alerts, vulnerabilities, misconfigurations, and EDR gaps across VMs, SQL, Kubernetes, containers, and storage. |
+| Decision Making | L107-L130 | Planning and cost decisions for Defender for Cloud: choosing portals and plans, migrations (Storage, Servers, CSPM, FIM, BYOL), data residency, cost allocation/estimation, and licensing. |
+| Architecture & Design Patterns | L131-L140 | Multicloud security architecture for Defender for Cloud: connector auth for AWS/GCP, secure/private connectivity, container protection design, ownership models, and applying Zero Trust. |
+| Limits & Quotas | L141-L150 | Limits, quotas, and constraints for Defender for Cloud: data ingestion benefits, free trial caps, portal limitations, CSV export limits, data collection extension lifecycles, and storage malware scan capacity. |
+| Security | L151-L210 | Configuring and managing Defender for Cloud security: roles/RBAC, compliance, recommendations, alerts, incident response, storage/VM/container/AKS protections, and secure integrations across clouds. |
+| Configuration | L211-L277 | Configuring and tuning Defender for Cloud features: malware/code/VM/container/SQL/storage scanning, alerts, exports, policies, CI/CD integration, cross-tenant, and automation settings. |
+| Integrations & Coding Patterns | L278-L313 | Integrating Defender for Cloud with SIEMs, XDR, ServiceNow, CI/CD, multi‑cloud logs, partner tools, and using APIs/CLI/ARG to export, query, and automate alerts and SQL VA data. |
+| Deployment | L314-L338 | Guides for planning and deploying Defender for Cloud components (Servers, Containers, SQL, APIs, DevOps, GHAS) at scale, including prerequisites, platform support, and automation options. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -99,7 +99,7 @@ This skill requires **network access** to fetch documentation content:
 | Review and remediate Azure SQL VA findings | https://learn.microsoft.com/en-us/azure/defender-for-cloud/sql-azure-vulnerability-assessment-find |
 | SQL vulnerability assessment rules and guidance | https://learn.microsoft.com/en-us/azure/defender-for-cloud/sql-azure-vulnerability-assessment-rules |
 | Track SQL vulnerability assessment rule changes | https://learn.microsoft.com/en-us/azure/defender-for-cloud/sql-azure-vulnerability-assessment-rules-changelog |
-| Manage transition to individual Defender recommendations | https://learn.microsoft.com/en-us/azure/defender-for-cloud/transition-grouped-individual-recommendations |
+| Operate Defender for Cloud individual recommendations | https://learn.microsoft.com/en-us/azure/defender-for-cloud/transition-grouped-individual-recommendations |
 | Protect Azure VMs with JIT access and application control | https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-protect-resources |
 | Investigate and fix vulnerabilities in running Kubernetes containers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerabilities-containers |
 | Review and remediate Defender registry image vulnerabilities | https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerability-registry-images |
@@ -107,7 +107,6 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Understand Defender AI model scanning and licensing implications | https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-model-security |
 | Choose between Azure and Defender portals for Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/azure-portal-vs-defender-portal-comparison |
 | Allocate Defender for Cloud costs using Azure Cost Analysis | https://learn.microsoft.com/en-us/azure/defender-for-cloud/chargeback |
 | Select and configure Defender for Cloud plans for GCP projects | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-google-plans |

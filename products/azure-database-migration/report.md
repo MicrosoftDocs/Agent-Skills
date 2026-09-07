@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Databas
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 29
+- **Updated Pages**: 0
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-migration/azure-database-migration.csv`
 
@@ -61,13 +61,6 @@ confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Databas
 | *(Unclassified)* | 16 | 51.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dms/faq)
-  - Updated: 2026-05-05T17:17:00.000Z → 2026-08-18T06:04:00.000Z
-- [Services and tools available for data migration scenarios](https://learn.microsoft.com/en-us/azure/dms/dms-tools-matrix)
-  - Updated: 2026-02-20T23:10:00.000Z → 2026-08-18T06:04:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Discovery shared sessions, ACR tool images, REST jobs, supercomputer provisioning, or Log Analytics queries, and other Azure Microsoft Discovery related development tasks.
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery Engine shared sessions, ACR tool images, REST jobs, Log Analytics queries, or Bicep deployments, and other Azure Microsoft Discovery related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L42 | Diagnosing and resolving Microsoft Discovery Engine task failures, and locating/using correlation IDs from Activity Logs to debug and trace issues. |
-| Best Practices | L43-L49 | Best practices for structuring projects and shared sessions, applying responsible AI, calibrating trust and safety patterns, and planning tool capabilities and compute for Discovery. |
+| Best Practices | L43-L49 | Guidance on structuring projects and shared sessions, calibrating trust levels, and applying responsible AI and safety practices when building with Microsoft Discovery. |
 | Decision Making | L50-L57 | Guidance on selecting ACR setup, agent types, pricing/billing, and suitable AI models to design and configure Microsoft Discovery agents effectively. |
 | Architecture & Design Patterns | L58-L62 | Designing and implementing advanced shared session patterns in Discovery Engine, including multi-user session management, data sharing, and scalable architecture best practices. |
 | Limits & Quotas | L63-L68 | Planning capacity and Azure quotas for Microsoft Discovery deployments, plus required naming conventions and rules for Discovery resources. |
-| Security | L69-L84 | Security and compliance for Discovery: encryption at rest, customer-managed keys, RBAC/persona roles, managed identities, network hardening, secure supercomputer access, and audit logging. |
-| Configuration | L85-L105 | Configuring Discovery workspaces, storage, tools, supercomputers, and data handling, plus querying operational, indexing, and activity logs via Log Analytics and Kusto. |
-| Integrations & Coding Patterns | L106-L113 | Patterns and APIs for integrating tools/models into Discovery workflows, including Docker-based packaging, REST job execution, and action script implementation for action-based tools. |
-| Deployment | L114-L119 | Deploying Discovery infrastructure and tools: network-hardened stacks, Bicep-based deployments, REST provisioning of supercomputer resources, and publishing tool images to Azure Container Registry. |
+| Security | L69-L86 | Securing Discovery: encryption, RBAC and persona roles, managed identities, network hardening (incl. supercomputers), least-privilege access, audit logging, and customer-managed keys. |
+| Configuration | L87-L107 | Configuring Discovery workspaces, storage, tools, supercomputers, and data handling, plus querying operational, indexing, and activity logs via Log Analytics and Kusto. |
+| Integrations & Coding Patterns | L108-L118 | Integrating Discovery tools/models into workflows, containerizing with Docker, running jobs via REST, and using .NET, Java, and JavaScript SDKs and action scripts. |
+| Deployment | L119-L124 | Deploying Discovery infrastructure and tools: network-hardened stacks, Bicep-based deployments, REST provisioning of supercomputer resources, and publishing tool images to Azure Container Registry. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -43,7 +43,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply projects and shared session best practices in Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-projects-investigations |
+| Apply project and shared session practices in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-projects-investigations |
 | Apply responsible AI practices in Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-responsible-ai |
 | Calibrate trust and basic shared session patterns in Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-trust-basic-investigation-patterns |
 
@@ -73,10 +73,12 @@ This skill requires **network access** to fetch documentation content:
 | Manage data encryption at rest in Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-data-encryption-at-rest |
 | Configure managed identities for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-managed-identities |
 | Configure network security for Microsoft Discovery workspaces | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-network-security |
-| Configure RBAC role assignments for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-role-assignments |
-| Assign Microsoft Discovery persona RBAC roles via PowerShell | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-assign-persona-roles |
+| Design project-level RBAC boundaries in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-project-rbac |
+| Configure Microsoft Discovery RBAC roles and scopes | https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-role-assignments |
+| Assign Microsoft Discovery persona roles via PowerShell | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-assign-persona-roles |
 | Configure user-assigned managed identities for Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-managed-identity |
 | Configure network security for Microsoft Discovery workspaces | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-network-security |
+| Configure project-level access and least privilege | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-project-rbac |
 | Configure secure networking for Discovery supercomputers | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-supercomputer-network-security |
 | Deploy a fully network-hardened Microsoft Discovery stack | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-network-hardened-stack |
 | Enable and export audit logs for Discovery resources | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-enable-audit-logging |
@@ -110,6 +112,9 @@ This skill requires **network access** to fetch documentation content:
 | Create Dockerfiles to containerize Discovery tools | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-create-tool-docker-file |
 | Use Discovery Supercomputer REST APIs for job runs | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-run-jobs-supercomputer-rest-api |
 | Implement action scripts for Discovery action-based tools | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-write-tool-action-scripts |
+| Use .NET SDK packages for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/reference-dotnet-sdks |
+| Use Java SDK artifacts for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/reference-java-sdks |
+| Use JavaScript SDK packages for Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/reference-javascript-sdks |
 
 ### Deployment
 | Topic | URL |

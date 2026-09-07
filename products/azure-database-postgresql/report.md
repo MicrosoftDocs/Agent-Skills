@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   best-practices: 'Performance, tuning, and migration best practices for Azure PostgreSQL:
     query optimization, pooling, extensions, upgrades, Oracle-to-Postgres, bulk load,
@@ -13,9 +13,9 @@ category_descriptions:
   architecture-patterns: 'Architectures and patterns for PostgreSQL on Azure: microservices,
     multitenancy, sharding, table design, caching with Redis, and using OpenAI for
     recommendations and semantic search.'
-  limits-quotas: Backup, restore, PITR, geo-restore, SSD/SSDv2 limits, capacity/quotas,
-    connection limits, replica behavior, storage performance/autogrow, and migration/conversion
-    limitations.
+  limits-quotas: Backup, restore, PITR, geo-restore, SSD/SSDv2 limits, quotas, elastic
+    cluster limits, connection caps, migration/conversion limitations, and storage
+    performance/autogrow settings.
   decision-making: Guidance on sizing and scaling servers, choosing compute/storage/hosting,
     planning upgrades and migrations, and configuring networking and replica promotion
     for Azure PostgreSQL.
@@ -31,14 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for PostgreSQL development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using flexible server, replicas, PgBouncer/Query Store,
-  vector search, or AI/ML integrations, and other Azure Database for PostgreSQL related
-  development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL
-  Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
-  (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql).
-use_when: Use when using flexible server, replicas, PgBouncer/Query Store, vector
-  search, or AI/ML integrations, and other Azure Database for PostgreSQL related development
-  tasks.
+  and deployment. Use when using Flexible Server, replicas, PgBouncer, Query Store,
+  Redis caching, or vector search workloads, and other Azure Database for PostgreSQL
+  related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure
+  Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use
+  azure-database-mysql).
+use_when: Use when using Flexible Server, replicas, PgBouncer, Query Store, Redis
+  caching, or vector search workloads, and other Azure Database for PostgreSQL related
+  development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
   (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql).
@@ -54,10 +55,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 130
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 12
-- **Unchanged**: 337
-- **Deleted Pages**: 6
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 349
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
 ## Classification Statistics
@@ -77,45 +78,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Changes
 
-### New Pages
-
-- [Cache data to improve performance](https://learn.microsoft.com/en-us/azure/postgresql/development/how-to-cache)
-
 ### Updated Pages
 
-- [Troubleshoot errors](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-azure-storage-extension)
-  - Updated: 2026-05-11T17:19:00.000Z → 2026-08-26T17:50:00.000Z
-- [Data encryption](https://learn.microsoft.com/en-us/azure/postgresql/security/security-data-encryption)
-  - Updated: 2026-07-14T08:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Supported versions](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-supported-versions)
-  - Updated: 2026-07-08T08:00:00.000Z → 2026-08-26T08:00:00.000Z
-- [Optimal performance planning](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-optimal-performance)
-  - Updated: 2026-07-08T08:00:00.000Z → 2026-08-21T08:00:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes)
-  - Updated: 2026-08-06T08:00:00.000Z → 2026-08-26T08:00:00.000Z
-- [August 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-august)
-  - Updated: 2026-08-05T06:05:00.000Z → 2026-08-28T22:09:00.000Z
-- [July 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-july)
-  - Updated: 2026-08-05T06:05:00.000Z → 2026-08-21T06:05:00.000Z
-- [June 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-june)
-  - Updated: 2026-07-01T17:11:00.000Z → 2026-08-21T06:05:00.000Z
-- [April 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-april)
-  - Updated: 2026-07-16T17:05:00.000Z → 2026-08-18T17:12:00.000Z
-- [March 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-march)
-  - Updated: 2026-03-04T23:13:00.000Z → 2026-08-18T17:12:00.000Z
-- [January 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-january)
-  - Updated: 2026-07-16T17:05:00.000Z → 2026-08-18T17:12:00.000Z
-- [October 2025](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2025-october)
-  - Updated: 2026-02-06T06:06:00.000Z → 2026-08-18T17:12:00.000Z
-
-### Deleted Pages
-
-- ~~Best practices~~ (https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/best-practices-oracle-to-postgresql)
-- ~~Premigration checklist~~ (https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/best-practices-oracle-to-postgresql-checklist)
-- ~~Migrating Oracle To Azure Database for PostgreSQL~~ (https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/concepts-oracle-migration)
-- ~~Migration stages~~ (https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/concepts-oracle-migration-stages)
-- ~~Migrate with Ora2Pg~~ (https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/how-to-migrate-oracle-ora2pg)
-- ~~Partners~~ (https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-migration/partners-migration-postgresql)
+- [Limitations](https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations)
+  - Updated: 2026-07-08T08:00:00.000Z → 2026-09-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -129,9 +95,9 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Restore a deleted server](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-deleted-server) | limits-quotas | 0.90 | Explicitly states backups for deleted servers are retained for five days and can only be restored from the original subscription; these are precise service limits and constraints. |
 | [Troubleshoot errors](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-azure-storage-extension) | troubleshooting | 0.90 | Page lists specific Azure Storage extension error messages, their causes (for example, missing data plane roles like Storage Blob Data Contributor), and resolution steps for Azure Database for PostgreSQL flexible server. This is product-specific symptom → cause → solution guidance with concrete role names and conditions. |
 | [Configure storage autogrow](https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-auto-grow-storage) | limits-quotas | 0.86 | Contains precise autogrow trigger thresholds (percent and GiB), differentiated by provisioned size (over/under 1 TiB), which are product-specific numeric limits not inferable from general knowledge. |
+| [Limitations](https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations) | limits-quotas | 0.86 | A limitations FAQ for elastic clusters is specifically about capacity and functional limits. For Azure database services these pages typically list concrete constraints (for example max nodes per cluster, max databases per server, storage caps, connection limits, feature restrictions unique to elastic clusters). Those product- and tier-specific limits are not generally known from training and match the limits-quotas criteria. |
 | [Troubleshoot autovacuum on elastic clusters](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-autovacuum-tuning-elastic-clusters) | troubleshooting | 0.86 | The page is a troubleshooting guide focused on autovacuum behavior in Azure Database for PostgreSQL elastic clusters. It discusses monitoring database bloat, identifying autovacuum blockers, and assessing proximity to emergency or wraparound situations—symptom → diagnosis → mitigation patterns that are product- and platform-specific. These operational details and diagnostic flows are unlikely to be fully captured in generic LLM training data and match the troubleshooting criteria. |
 | [Build an agent with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration) | integrations | 0.85 | Describes how to set up and configure the Azure PostgreSQL MCP server so Foundry agents can perform SQL operations, vector search, and schema discovery. This is a concrete integration pattern with product-specific configuration for MCP and Foundry. |
-| [Limitations](https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations) | limits-quotas | 0.85 | Explicitly described as capacity and functional limits for elastic clusters; such pages typically list numeric limits and constraints specific to the service, which are expert knowledge not known from training. |
 | [Load libraries](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-load-libraries) | configuration | 0.85 | Focuses on the shared_preload_libraries server parameter and steps to load libraries; this is a configuration article with specific parameter names and usage patterns unique to Azure’s managed service. |
 | [MCP server](https://learn.microsoft.com/en-us/azure/postgresql/development/vs-code-extension/reference/mcp-server) | integrations | 0.85 | Describes Model Context Protocol server definition providers registered by the extension. These are product-specific integration endpoints and configuration details for MCP, which qualify as integration patterns and expert knowledge. |
 | [Migrate from Premium SSD to Premium SSD v2 using PITR](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-migrate-ssd-to-ssd-v2) | limits-quotas | 0.85 | Migration article includes explicit numeric baselines (for example, 3,000 IOPS, 125 MB/s, 12,000 IOPS, 500 MB/s) tied to disk sizes; these are precise performance limits and quotas. |

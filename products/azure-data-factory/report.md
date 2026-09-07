@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
   configuration: 'Configuring ADF: integration runtimes, SSIS/SHIR, triggers, monitoring/logging,
     copy/data flows, formats/connectors, parameters/expressions, and pipeline/control
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: Guidance on cost planning, connector upgrades, integration runtime
     and compute choices, and migration/modernization of ADF, SSIS, Synapse, and pipelines
     to Fabric.
-  security: 'Securing Data Factory with network, identity, and encryption controls:
-    VNets, private endpoints, firewalls, managed identities, Key Vault, CMK, TLS,
-    and secure access to SQL, Purview, and SSIS IR.'
+  security: 'Securing Data Factory: auth, roles, encryption, Key Vault, managed identities,
+    VNets/private endpoints, firewall/Policy configs, and secure access to SQL, Purview,
+    and SSIS IR.'
   integrations: Patterns and how-tos for connecting ADF to many data sources (SAP,
     SaaS apps, DBs, files), using mapping data flow functions, running SSIS, Databricks/ML/Synapse
     jobs, and pipeline templates.
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building ADF pipelines with IR/SSIS, triggers, data flows, SAP/SaaS connectors,
-  or CI/CD deployments, and other Azure Data Factory related development tasks. Not
-  for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use
-  azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data
-  Explorer (use azure-data-explorer).
-use_when: Use when building ADF pipelines with IR/SSIS, triggers, data flows, SAP/SaaS
-  connectors, or CI/CD deployments, and other Azure Data Factory related development
+  building ADF pipelines, mapping data flows, SSIS IR/SHIR, CI/CD deployments, or
+  SAP/SaaS integrations, and other Azure Data Factory related development tasks. Not
+  for Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use
+  azure-stream-analytics).
+use_when: Use when building ADF pipelines, mapping data flows, SSIS IR/SHIR, CI/CD
+  deployments, or SAP/SaaS integrations, and other Azure Data Factory related development
   tasks.
-confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics),
-  Azure Data Explorer (use azure-data-explorer).
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Databricks
+  (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure
+  Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Data Factory Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 503
+- **Updated Pages**: 1
+- **Unchanged**: 504
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -78,10 +78,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Updated Pages
 
-- [Amazon Marketplace Web Service (Deprecated)](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-08-29T05:31:00.000Z
-- [Databricks Job activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-databricks-job)
-  - Updated: 2026-08-04T22:41:00.000Z → 2026-08-29T05:31:00.000Z
+- [Secure your Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/secure-your-azure-data-factory)
+  - Updated: 2025-07-08T17:24:00.000Z → 2026-09-02T22:13:00.000Z
 
 ## Classified Pages
 
@@ -181,7 +179,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Diagnostic tool for self-hosted integration runtime](https://learn.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-diagnostic-tool) | troubleshooting | 0.85 | Diagnostic tool article will map specific connectivity/OS issues to checks and outputs, and often include error messages and recommended fixes, fitting symptom→diagnosis→solution troubleshooting for SHIR. |
 | [Expression Language](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions) | configuration | 0.85 | Lists all supported functions, their signatures, and behaviors; this is a product-specific function reference with parameter names and semantics. |
 | [Overview and prerequisites](https://learn.microsoft.com/en-us/azure/data-factory/create-azure-ssis-integration-runtime) | configuration | 0.85 | Provisioning Azure-SSIS IR includes many IR-specific properties (edition, node size, number of nodes, catalog settings) with allowed values and defaults, which are core configuration details. |
-| [Secure your Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/secure-your-azure-data-factory) | security | 0.85 | Provides concrete security guidance including ADF-specific RBAC roles, network configuration, and data protection settings. |
 | [Store credentials in Azure Key Vault](https://learn.microsoft.com/en-us/azure/data-factory/store-credentials-in-key-vault) | security | 0.85 | The article describes how to configure linked services to use Key Vault references, including specific property names, secret URI formats, and access configuration, which are product-specific security configuration details. |
 | [System variables](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-system-variables) | configuration | 0.85 | System variables page lists variable names, meanings, and usage constraints in expressions (e.g., pipeline().RunId, activity().Output), which is a table-like catalog of configuration/expression parameters unique to ADF/Synapse. |
 | [Use Azure Key Vault secrets in pipeline activities](https://learn.microsoft.com/en-us/azure/data-factory/how-to-use-azure-key-vault-secrets-pipeline-activities) | security | 0.85 | This page explains how to reference Key Vault secrets in activity definitions, with concrete JSON fields, reference syntax, and permission requirements, which are detailed security and configuration patterns unique to ADF. |
@@ -405,6 +402,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Sample pre- and post-deployment script](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-sample-script) | deployment | 0.70 | Sample shows pre/post deployment scripts for Data Factory CI/CD. It typically includes concrete script commands, parameters, and ordering tied to ADF’s ARM deployment behavior, which are product-specific deployment details. |
 | [Schedule Azure-SSIS integration runtime](https://learn.microsoft.com/en-us/azure/data-factory/how-to-schedule-azure-ssis-integration-runtime) | configuration | 0.70 | Scheduling Azure-SSIS IR uses specific pipeline triggers, activity configurations, and possibly time-based settings that are concrete configuration patterns for this service. |
 | [Script activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-script) | integrations | 0.70 | Script activity documentation generally lists activity properties (script, scriptPath, parameters, timeout) and supported sources/targets, which are specific configuration and coding patterns for ADF/Synapse pipelines. |
+| [Secure your Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/secure-your-azure-data-factory) | security | 0.70 | The page focuses on securing Azure Data Factory with product-specific guidance across network security, identity and access management, data protection, logging, governance, and recovery. While the summary is high level, this type of article typically includes concrete Azure Data Factory security configurations (for example, specific RBAC roles, managed identity usage, private endpoints, key vault integration, and logging settings) that go beyond generic security concepts and are unique to the service. |
 | [Select](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-select) | configuration | 0.70 | Select transformation docs specify how to rename, drop, and reorder columns using particular UI fields and JSON properties. These are concrete configuration parameters and behaviors, which count as configuration expert knowledge. |
 | [Sort](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-sort) | configuration | 0.70 | Sort transformation docs describe sort keys, order, stable sort options, and related properties. These are specific configuration options and not generic sorting concepts, so they are configuration expert knowledge. |
 | [Source control](https://learn.microsoft.com/en-us/azure/data-factory/source-control) | configuration | 0.70 | Source control setup for ADF typically includes product-specific configuration options (e.g., Git repo settings, collaboration branches, publish branches, feature flags like 'Use Git', and how UX authoring mode switches between live and Git). These are concrete, named settings and behaviors unique to ADF rather than generic Git concepts, fitting the configuration category. |

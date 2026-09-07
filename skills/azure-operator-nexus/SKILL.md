@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing Nexus clusters, isolation domains, BGP/routing fabric, secure VM connectivity, or near-edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing Nexus clusters, network fabric (BGP/QoS), secure access/RBAC, AKS/ETCD, or near-edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Baremetal Infrastructure (use azure-baremetal-infrastructure), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Network (use azure-virtual-network), Azure Operator Service Manager (use azure-operator-service-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L99-L104 | Design patterns and reference architectures for resilient Nexus deployments, including rack-failure-tolerant control planes and near-edge storage topology and capacity planning. |
 | Limits & Quotas | L105-L116 | Nexus platform limits, quotas, supported versions, upgrade cadence, storage planning, node restarts/timeouts, isolation domain requirements, and log behavior after disconnection. |
 | Security | L117-L155 | Securing Nexus: identity/RBAC, ACLs, SSH and serial access, break-glass methods, key/cert/secret rotation, Defender/Policy, managed identities, and secure VM/cluster connectivity. |
-| Configuration | L156-L226 | Configuring and updating Nexus clusters, Kubernetes, and network fabric: templates/parameters, isolation domains, routing/BGP/QoS, security, monitoring, credentials, and staged commit workflows. |
-| Deployment | L227-L235 | Deploying and maintaining Nexus platform and fabric: prerequisites, image building, OS and fabric upgrades, and replacing or updating terminal servers in the network fabric. |
+| Configuration | L156-L227 | Configuring and operating Nexus clusters and network fabric: templates, isolation domains, routing/BGP/QoS, Kubernetes settings, monitoring, security, credentials, and staged/commit workflows. |
+| Deployment | L228-L236 | Deploying and maintaining Nexus platform and fabric: prerequisites, image building, OS and fabric upgrades, and replacing or updating terminal servers in the network fabric. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -182,6 +182,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure and manage Azure Operator Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster |
 | Configure diagnostic settings and config drift monitoring in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-diagnostic-settings-monitor-configuration-differences |
 | Configure L2 and L3 isolation domains in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-isolation-domain |
+| Configure Network Fabric Controller with Azure CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric-controller |
 | Configure Azure Operator Nexus network packet broker | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-packet-broker |
 | Configure VRF route prefix limits for IPv4/IPv6 on AON CE devices | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-virtual-routing-forwarding-route-prefix-limits-on-devices |
 | Delete Layer 3 isolation domains safely in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-delete-layer-3-isolation-domains |

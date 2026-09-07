@@ -40,9 +40,9 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 - **Unclassified**: 3
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 15
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-table-storage/azure-table-storage.csv`
 
@@ -59,10 +59,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 | *(Unclassified)* | 3 | 18.8% |
 
 ## Changes
-
-### New Pages
-
-- [Secure your Azure Table storage](https://learn.microsoft.com/en-us/azure/storage/tables/secure-tables)
 
 ## Classified Pages
 

@@ -43,9 +43,9 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 122
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 124
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
 ## Classification Statistics
@@ -62,17 +62,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 90 | 72.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops)
-  - Updated: 2026-07-23T21:03:00.000Z → 2026-08-24T22:05:00.000Z
-- [Work item form caching](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops)
-  - Updated: 2026-07-23T21:03:00.000Z → 2026-08-24T22:05:00.000Z
-
-### Deleted Pages
-
-- ~~Dependency Tracker~~ (https://learn.microsoft.com/en-us/azure/devops/boards/extensions/dependency-tracker?view=azure-devops)
 
 ## Classified Pages
 

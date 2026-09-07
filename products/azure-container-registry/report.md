@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 119
+- **Updated Pages**: 0
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -73,21 +73,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 34 | 27.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Lock container images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-lock)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-08-28T22:09:00.000Z
-- [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge)
-  - Updated: 2026-05-14T17:20:00.000Z → 2026-08-28T08:00:00.000Z
-- [Import container images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-import-images)
-  - Updated: 2026-06-18T22:21:00.000Z → 2026-08-26T08:00:00.000Z
-- [Enable artifact cache - CLI](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli)
-  - Updated: 2025-05-12T22:00:00.000Z → 2026-08-18T22:35:00.000Z
-- [Enable artifact cache - Portal](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-portal)
-  - Updated: 2025-05-12T22:00:00.000Z → 2026-08-18T22:35:00.000Z
-- [Geo-replication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-geo-replication)
-  - Updated: 2026-06-02T20:13:00.000Z → 2026-08-26T08:00:00.000Z
 
 ## Classified Pages
 

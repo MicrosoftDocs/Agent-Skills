@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 73
+- **Updated Pages**: 0
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -69,17 +69,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | *(Unclassified)* | 42 | 54.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Contract](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/contract?view=doc-intel-4.0.0)
-  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
-- [Credit card](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/credit-card?view=doc-intel-4.0.0)
-  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
-- [Invoice](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/invoice?view=doc-intel-4.0.0)
-  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
-- [Custom labeling tips](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-label-tips?view=doc-intel-4.0.0)
-  - Updated: 2026-08-14T22:13:00.000Z → 2026-08-15T08:00:00.000Z
 
 ## Classified Pages
 

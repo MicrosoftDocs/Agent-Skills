@@ -1,17 +1,18 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-06'
 category_descriptions:
-  security: 'Securing AKS Edge/Hybrid/Arc: auth (Entra, AD, gMSA, SSO), RBAC, SSH
-    hardening, cert and key management, workload identity, container image validation,
-    and security bulletins.'
+  security: Auth, RBAC, SSH, certs, key rotation, image signing, and container security
+    for AKS Edge/Hybrid/Arc/Windows Server, including Entra ID, AD, gMSA, and etcd
+    secret encryption.
   troubleshooting: 'Diagnosing and fixing AKS Edge/Hybrid/Arc issues: cluster creation/upgrade
-    failures, networking, storage, auth, encryption, logs, node health, and control
-    plane/etcd/kubelet problems.'
-  limits-quotas: Hardware, scale, IP capacity, Kubernetes version, and support limits
-    for AKS Edge/Hybrid, Azure Local, bare metal, and Windows Server deployments
+    failures, node/network/storage problems, encryption, logs, BGP/MetalLB, GPU, auth,
+    and Azure Local integration.'
+  limits-quotas: System requirements, scale limits, IP capacity planning, supported
+    versions, and support policies for AKS Edge Essentials, AKS on Azure Local, bare
+    metal, Windows Server, and Arc clusters.
   configuration: 'Configuring AKS Edge/Hybrid/Arc clusters: networking, storage, load
-    balancers, GPU, autoscaling, proxies, Arc connectivity, templates/Bicep, and update/installation
-    settings.'
+    balancers, autoscaling, GPU, proxies, Arc connectivity, templates (ARM/Bicep),
+    and install/update/uninstall settings.'
   integrations: Integrations, APIs, and PowerShell for connecting AKS Edge/Hybrid
     to Arc, IoT/OPC/ONVIF, TPM, storage/backup, metrics, AI models, CSI plugins, and
     Key Vault secrets.
@@ -30,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when deploying AKS Edge/Hybrid with Arc, Azure Local, Windows
-  Server nodes, IoT/OPC/ONVIF, or TPM workloads, and other Azure Kubernetes Service
-  Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps),
-  Azure Red Hat OpenShift (use azure-redhat-openshift), Azure Stack Edge (use azure-stack-edge).
-use_when: Use when deploying AKS Edge/Hybrid with Arc, Azure Local, Windows Server
-  nodes, IoT/OPC/ONVIF, or TPM workloads, and other Azure Kubernetes Service Edge
-  Essentials related development tasks.
+  and deployment. Use when managing AKS Edge/Arc on Azure Local, SDN VNets, BGP/MetalLB,
+  GPU workloads, or IoT/OPC integrations, and other Azure Kubernetes Service Edge
+  Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use
+  azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure
+  Red Hat OpenShift (use azure-redhat-openshift), Azure Stack Edge (use azure-stack-edge).
+use_when: Use when managing AKS Edge/Arc on Azure Local, SDN VNets, BGP/MetalLB, GPU
+  workloads, or IoT/OPC integrations, and other Azure Kubernetes Service Edge Essentials
+  related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Container Apps (use azure-container-apps), Azure Red Hat OpenShift (use azure-redhat-openshift),
   Azure Stack Edge (use azure-stack-edge).

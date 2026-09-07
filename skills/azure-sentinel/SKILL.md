@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring connectors, analytics rules, playbooks, data lake jobs, or SAP/Cloud integrations, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, ASIM schemas, analytics rules, Logic Apps playbooks, or data lake integrations, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-06"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L50 | Diagnosing and fixing ingestion, connector, KQL, notebook, automation, analytics rule, and solution issues in Microsoft Sentinel, plus monitoring rule/automation health. |
+| Troubleshooting | L37-L50 | Diagnosing and fixing ingestion, connector, KQL, notebook, MCP, SAP, and analytics rule issues, plus monitoring and troubleshooting scheduled rule execution in Microsoft Sentinel. |
 | Best Practices | L51-L73 | Best practices for designing and operating Microsoft Sentinel: automation/SOAR, playbooks, workspaces, data collection, analytics tuning, threat hunting, SOC operations, and solution quality. |
 | Decision Making | L74-L115 | Guidance for planning Sentinel deployments, migrations, integrations, and cost/retention strategies, including SIEM/SOAR migrations, data tiers, connectors, and analytics/detection choices. |
 | Architecture & Design Patterns | L116-L127 | Designing Microsoft Sentinel architectures: workspace/tenant layouts, SIEM coexistence, BCDR, solution components, and custom security graph/data lake patterns. |
@@ -45,7 +45,7 @@ This skill requires **network access** to fetch documentation content:
 | Best practices and troubleshooting for Sentinel MCP tools | https://learn.microsoft.com/en-us/azure/sentinel/datalake/troubleshoot-sentinel-mcp |
 | Troubleshoot Microsoft Sentinel solution issues | https://learn.microsoft.com/en-us/azure/sentinel/isv/troubleshoot-sentinel-solutions |
 | Monitor and troubleshoot Sentinel scheduled analytics rule execution | https://learn.microsoft.com/en-us/azure/sentinel/monitor-optimize-analytics-rule-execution |
-| Troubleshoot Sentinel SAP agentless connector issues | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot |
+| Troubleshoot Microsoft Sentinel SAP agentless connector | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot |
 | Troubleshoot Microsoft Sentinel analytics rule issues | https://learn.microsoft.com/en-us/azure/sentinel/troubleshoot-analytics-rules |
 
 ### Best Practices
