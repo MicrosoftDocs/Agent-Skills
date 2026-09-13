@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
-  security: 'Securing IoT Hub, DPS, and Device Update: auth (Entra ID/RBAC, SAS, X.509),
-    certificates and key rotation, TLS/ciphers, IP/network controls, private endpoints,
-    policies, and best practices.'
+  security: 'Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS,
+    X.509), certificates/keys, TLS/ciphers, network isolation (IP filters, private
+    endpoints, VNet), and policy/compliance best practices.'
   best-practices: 'Best practices for secure, scalable IoT Hub/DPS deployments: device
     provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection,
     auto device config, and IoT Hub hardening.'
@@ -30,12 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Hub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using IoT Hub/DPS for device twins, routing/enrichments, MQTT/AMQP/HTTPS, Device
-  Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not
-  for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure
-  IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
-use_when: Use when using IoT Hub/DPS for device twins, routing/enrichments, MQTT/AMQP/HTTPS,
-  Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks.
+  configuring IoT Hub/DPS twins and routing, MQTT/AMQP device connections, Device
+  Update, or Cosmos DB event storage, and other Azure IoT Hub related development
+  tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+use_when: Use when configuring IoT Hub/DPS twins and routing, MQTT/AMQP device connections,
+  Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development
+  tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
   Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 ---
@@ -51,8 +52,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 194
+- **Updated Pages**: 2
+- **Unchanged**: 193
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -75,8 +76,10 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Updated Pages
 
-- [Secure your Azure IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub/secure-azure-iot-hub)
-  - Updated: 2025-08-29T17:12:00.000Z → 2026-09-03T22:14:00.000Z
+- [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad)
+  - Updated: 2025-03-28T08:00:00.000Z → 2026-09-10T22:03:00.000Z
+- [Control access to DPS with Microsoft Entra ID (preview)](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-control-access-dps-azure-ad)
+  - Updated: 2023-10-11T22:21:00.000Z → 2026-09-10T22:03:00.000Z
 
 ## Classified Pages
 
@@ -108,7 +111,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Data encryption for Device Update for IoT Hub](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-data-encryption) | security | 0.80 | Details encryption at rest/in transit and customer-managed keys; includes product-specific key usage and configuration behavior. |
 | [Diagnostic features](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-diagnostics) | troubleshooting | 0.80 | Covers deployment error codes, remote log collection, and Agent Check; includes error code meanings and diagnostic flows. |
 | [Manage device identities](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-identity-registry) | security | 0.80 | Dev guide for identity registry; includes device/module identity properties, authentication credential handling, and bulk import/export operations—core IAM configuration for IoT Hub. |
-| [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad) | security | 0.80 | Details IoT Hub’s Entra ID auth flows and Azure RBAC roles/scopes for service APIs, which are concrete security configuration patterns. |
 | [Pricing examples](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-pricing) | decision-making | 0.80 | Explains how features are metered as messages with worked examples; supports SKU and usage planning decisions with quantified trade-offs. |
 | [Shared access signatures](https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-sas) | security | 0.80 | Covers SAS token formats, scopes, and key usage specific to IoT Hub devices and services, which are detailed security/auth configuration mechanics. |
 | [Troubleshoot device connectivity](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-troubleshoot-connectivity) | troubleshooting | 0.80 | Focused on monitoring and troubleshooting device connectivity issues. Such pages typically map specific connectivity symptoms to causes and resolutions, and reference IoT Hub–specific diagnostics (Azure Monitor, metrics, logs). This aligns with the troubleshooting sub-skill: symptom → diagnosis → solution with product-specific tools and guidance. |
@@ -119,9 +121,10 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Upgrade an IoT hub](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-upgrade) | decision-making | 0.80 | Explains basic vs standard tiers, sizes, and ways to scale with message limits per day; provides concrete tier selection and upgrade guidance with quantitative trade-offs. |
 | [Use HTTPS protocol with X.509 certificates](https://learn.microsoft.com/en-us/azure/iot-dps/iot-dps-https-x509-support) | integrations | 0.80 | Demonstrates DPS X.509 provisioning over HTTPS with cURL, including DPS-specific REST API parameters and certificate handling. |
 | [Use HTTPS protocol with symmetric keys](https://learn.microsoft.com/en-us/azure/iot-dps/iot-dps-https-sym-key-support) | integrations | 0.80 | Shows raw HTTPS calls (via cURL) to DPS using symmetric keys, including exact REST endpoints, headers, and body fields unique to DPS. |
+| [Control access to DPS with Microsoft Entra ID (preview)](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-control-access-dps-azure-ad) | security | 0.78 | Page focuses on securing Azure IoT Hub Device Provisioning Service using Microsoft Entra ID and Azure RBAC, likely listing specific roles, permissions, and scope configurations that are product-specific and not purely conceptual. |
 | [MQTT support](https://learn.microsoft.com/en-us/azure/iot-dps/iot-mqtt-connect-to-iot-dps) | integrations | 0.78 | The page gives product-specific MQTT connection details for Azure IoT DPS, including supported endpoints, TLS-only ports (no insecure 1883), protocol behaviors that differ from the MQTT 3.1.1 standard, and DPS-specific topic/connection requirements. These are concrete integration and protocol-usage details unique to this service, not just conceptual MQTT guidance. |
+| [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad) | security | 0.78 | Page is focused on how Azure IoT Hub uses Microsoft Entra ID and Azure RBAC to authenticate and authorize access. Such docs typically include specific RBAC role names, scope guidance, and product-specific authorization patterns (for example, which roles or permissions are required to create device identities or invoke direct methods). These are security-configuration details that go beyond generic concepts and qualify as expert knowledge for the 'security' sub-skill. |
 | [Configure verified CA certificates](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-verify-certificates) | security | 0.75 | Describes DPS-specific process for uploading and verifying CA certificates, including proof-of-possession steps and security behavior. |
-| [Control access to DPS with Microsoft Entra ID (preview)](https://learn.microsoft.com/en-us/azure/iot-dps/concepts-control-access-dps-azure-ad) | security | 0.75 | Covers using Entra ID and Azure RBAC with DPS APIs, including specific role-based access patterns and scopes unique to DPS. |
 | [Device configuration best practices](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-configuration-best-practices) | best-practices | 0.75 | Explicit best-practices article with product-specific guidance for roles and lifecycle operations; likely includes concrete patterns and gotchas for IoT Hub automatic configurations. |
 | [Find missing devices with Agent Check](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-check) | troubleshooting | 0.75 | Agent Check is a diagnostic feature to find and fix missing devices; article will map symptoms to causes and remediation steps. |
 | [Get started with device twins](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-device-twins) | integrations | 0.75 | Shows how to implement device and backend code for twins; includes SDK APIs and patterns unique to IoT Hub device twin integration. |

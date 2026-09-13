@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
   integrations: Guides for generating signed SBOMs for container images and scripting
     Microsoft Antimalware configuration in Azure using PowerShell.
@@ -9,9 +9,9 @@ category_descriptions:
   deployment: Guides for signing and verifying container images with Notation in Azure
     Pipelines/GitHub Actions, plus comparing security feature availability in Azure
     vs Azure Government.
-  security: 'Azure platform and workload security: threat modeling mitigations, AKS
-    image validation, hardware/firmware integrity, Customer Lockbox, CMKs, network/SQL
-    security, and operational controls.'
+  security: 'Security best practices for Azure: threat modeling mitigations, platform
+    and network hardening, access control, encryption/keys, infrastructure integrity,
+    and secure AKS/VM/SQL operations.'
   best-practices: 'End-to-end Azure security guidance: hardening IaaS/PaaS, identity
     and access, network and operational security, backups and ransomware resilience,
     secrets management, and service-specific checklists.'
@@ -20,13 +20,14 @@ category_descriptions:
     Vault, managed keys, BYOK).
 skill_description: Expert knowledge for Azure Security development including best
   practices, decision making, security, configuration, integrations & coding patterns,
-  and deployment. Use when securing AKS images, CMK/Key Vault keys, antimalware, Customer
-  Lockbox, or Gov cloud workloads, and other Azure Security related development tasks.
-  Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure DDoS Protection
-  (use azure-ddos-protection), Azure Firewall (use azure-firewall), Azure Web Application
-  Firewall (use azure-web-application-firewall).
-use_when: Use when securing AKS images, CMK/Key Vault keys, antimalware, Customer
-  Lockbox, or Gov cloud workloads, and other Azure Security related development tasks.
+  and deployment. Use when securing AKS/VM/SQL workloads, Notation-signed images,
+  CMK/Key Vault keys, antimalware, or Azure Gov features, and other Azure Security
+  related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure DDoS Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall),
+  Azure Web Application Firewall (use azure-web-application-firewall).
+use_when: Use when securing AKS/VM/SQL workloads, Notation-signed images, CMK/Key
+  Vault keys, antimalware, or Azure Gov features, and other Azure Security related
+  development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
   Azure DDoS Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall),
   Azure Web Application Firewall (use azure-web-application-firewall).
@@ -43,8 +44,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 127
+- **Updated Pages**: 1
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -62,11 +63,16 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ## Changes
 
+### Updated Pages
+
+- [Azure Certificate Authority details](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-certificate-authority-details)
+  - Updated: 2026-04-30T17:19:00.000Z → 2026-09-10T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Azure Certificate Authority details](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-certificate-authority-details) | security | 0.80 | Lists specific Azure root and subordinate CAs, minimum key/encryption requirements, and certificate download/revocation details; these are product-specific security configuration details that qualify as expert knowledge. |
+| [Azure Certificate Authority details](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-certificate-authority-details) | security | 0.86 | Page lists specific Azure root and subordinate CAs per cloud (including exact CA names and chains), minimum required public key and signature algorithms, and links to concrete certificate downloads and revocation lists. These are product-specific security details that change over time and are not inferable from general PKI knowledge, fitting the security sub-skill type. |
 | [Azure domains](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-domains) | configuration | 0.80 | Provides a reference list of Azure domains and wildcard subdomains (for example, *.blob.core.windows.net) used for endpoint and firewall planning. These concrete FQDN patterns are configuration-specific expert knowledge, matching configuration. |
 | [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose) | decision-making | 0.80 | Explicitly helps choose between Key Vault, Managed HSM, Cloud HSM, and Payment HSM; mentions flowchart and scenario-based selection, implying decision matrices and trade-offs. |
 | [Feature availability for US Government clouds](https://learn.microsoft.com/en-us/azure/security/fundamentals/feature-availability) | decision-making | 0.80 | Contains tables mapping specific security features to availability states (GA, Public Preview, Not Available) across Azure, Azure Government, and Microsoft 365 Government. This is expert, up-to-date guidance for deciding which environments can support required features, matching decision-making. |

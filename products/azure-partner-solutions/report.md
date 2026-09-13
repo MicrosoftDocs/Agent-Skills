@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 111
+- **Updated Pages**: 0
+- **Unchanged**: 113
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -66,18 +66,11 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### New Pages
 
-- [Everpure Cloud](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/)
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/faq)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-09-02T17:21:00.000Z
-- [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/create)
-  - Updated: 2026-08-27T17:12:00.000Z → 2026-09-02T17:21:00.000Z
+- [Dell PowerScale](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/)
 
 ### Deleted Pages
 
-- ~~Pure Storage Cloud~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/)
+- ~~Dell PowerScale Preview~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/dell/)
 
 ## Classified Pages
 
@@ -163,7 +156,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/create) | 0.20 | Quickstart for creating a Napster API resource in the Azure portal; likely step-by-step UI guidance without detailed configuration parameter tables or product-specific constraints. |
 | [Create an Apache Airflow deployment on Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/create) | 0.20 | Quickstart for creating an Astro resource in the Azure portal; likely step-by-step UI guidance without detailed configuration tables, limits, or product-specific troubleshooting. |
 | [Datadog](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/) | 0.20 | Entry page for Datadog Azure Native ISV Service; summary suggests general documentation hub, not a detailed limits/config/troubleshooting page. |
-| [Dell PowerScale Preview](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/) | 0.20 | Overview of Dell PowerScale as an Azure Native Integration; description is marketing/positioning, not detailed expert guidance. |
+| [Dell PowerScale](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/) | 0.20 | Page appears to be a high-level overview/marketing-style description of Dell PowerScale as an Azure Native Integration without detailed limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Dynatrace](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/) | 0.20 | Landing/overview for Azure Native Dynatrace Service; description focuses on experience and workflow, not expert configuration or limits. |
 | [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/) | 0.20 | Elastic with Azure documentation landing page; summary is conceptual (centralized analytics) without specific expert details. |
 | [F5](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/) | 0.20 | NGINXaaS Azure Native ISV Service overview; description mentions create/manage/support but no specific expert configuration or limits. |

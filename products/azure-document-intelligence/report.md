@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
   security: 'Securing Document Intelligence resources: creating SAS tokens, configuring
     data-at-rest encryption with customer-managed keys, and using managed identities
@@ -7,9 +7,9 @@ category_descriptions:
   best-practices: Guidance on designing, training, labeling, composing, and maintaining
     custom/classification/template models to maximize Document Intelligence accuracy
     and confidence
-  limits-quotas: Capacity limits, quotas, scaling with add-ons and batch analysis,
-    container image tags, and supported OCR languages/locales and prebuilt model language
-    coverage.
+  limits-quotas: Capacity limits, quotas, language/locale support, container image
+    tags, and how to scale/batch Document Intelligence workloads and add capacity
+    by pricing tier.
   integrations: Using Document Intelligence APIs/SDKs, interpreting AnalyzeDocument/Markdown
     outputs, and integrating with Azure Functions or Logic Apps for end-to-end document
     processing workflows
@@ -25,16 +25,16 @@ category_descriptions:
     tool, and setting up resilient, disaster‑ready deployments for models and services
 skill_description: Expert knowledge for Azure AI Document Intelligence development
   including troubleshooting, best practices, decision making, limits & quotas, security,
-  configuration, integrations & coding patterns, and deployment. Use when designing
-  custom models, calling AnalyzeDocument APIs, running containers/offline, or migrating
-  to v4.0, and other Azure AI Document Intelligence related development tasks. Not
-  for Azure AI Vision (use azure-ai-vision), Azure AI Search (use azure-cognitive-search),
-  Azure AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer).
-use_when: Use when designing custom models, calling AnalyzeDocument APIs, running
-  containers/offline, or migrating to v4.0, and other Azure AI Document Intelligence
+  configuration, integrations & coding patterns, and deployment. Use when using AnalyzeDocument
+  APIs, custom/classification models, containers, managed identities, or v4.0 migrations,
+  and other Azure AI Document Intelligence related development tasks. Not for Azure
+  AI Search (use azure-cognitive-search), Azure AI Vision (use azure-ai-vision), Azure
+  AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer).
+use_when: Use when using AnalyzeDocument APIs, custom/classification models, containers,
+  managed identities, or v4.0 migrations, and other Azure AI Document Intelligence
   related development tasks.
-confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Search
-  (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
+confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
+  Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
   Azure AI Video Indexer (use azure-video-indexer).
 ---
 # Azure AI Document Intelligence Crawl Report
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 77
+- **Updated Pages**: 2
+- **Unchanged**: 75
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -70,11 +70,18 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 
 ## Changes
 
+### Updated Pages
+
+- [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
+  - Updated: 2026-08-15T08:00:00.000Z → 2026-09-08T08:00:00.000Z
+- [Service limits and billing](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/service-limits?view=doc-intel-4.0.0)
+  - Updated: 2026-04-30T08:00:00.000Z → 2026-09-09T06:10:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Service limits and billing](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/service-limits?view=doc-intel-4.0.0) | limits-quotas | 0.95 | Explicitly described as quotas and limits for all pricing tiers; such pages contain numeric request, size, and rate limits plus tier-specific tables and timeout ranges. |
+| [Service limits and billing](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/service-limits?view=doc-intel-4.0.0) | limits-quotas | 0.95 | Explicitly described as a quotas and limits article for Azure Document Intelligence with pricing-tier-specific limits and best practices to avoid throttling; this is product-specific numerical data that LLMs are unlikely to know from training. |
 | [Error codes v4.0, v3.1, and v3.0](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/resolve-errors?view=doc-intel-4.0.0) | troubleshooting | 0.90 | Explicit error reference with unified error design, error codes, and details; maps errors to causes and likely resolutions, fitting troubleshooting. |
 | [Configure containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/configuration?view=doc-intel-4.0.0) | configuration | 0.85 | Explicitly about configuring containers; such pages include configuration parameter names, allowed values, and defaults for container behavior, which are detailed configuration options. |
 | [Accuracy and confidence scores](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/accuracy-confidence?view=doc-intel-4.0.0) | best-practices | 0.80 | Explicitly described as best practices for interpreting and improving accuracy/confidence; likely includes product-specific guidance and patterns beyond generic ML concepts. |
@@ -150,8 +157,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | [SDK targets: REST API 2023-7-31 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v3-1?view=doc-intel-3.1.0) | 0.20 | SDK overview for REST API v3.1; similar to v4.0 overview, lacks specific expert-level configuration or limits. |
 | [SDK targets: REST API v2.1 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/sdk-overview-v2-1?view=doc-intel-2.1.0) | 0.20 | SDK overview for REST API v2.1; general description of SDKs and capabilities, not configuration or troubleshooting specifics. |
 | [SDK targets: REST API v4.0 2024-11-30 latest (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v4-0?view=doc-intel-4.0.0) | 0.20 | SDK overview for REST API v4.0; describes languages and general capabilities, not detailed configuration or troubleshooting content. |
-| [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) | 0.20 | High-level overview of Azure Document Intelligence in Foundry Tools; no specific limits, configs, error codes, or detailed patterns. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0) | 0.20 | Release notes/what's new overview; likely feature descriptions and dates but not focused on limits, configs, or troubleshooting details. |
+| [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) | 0.10 | Overview page describing what Azure Document Intelligence in Foundry Tools is and high-level capabilities; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Document Intelligence Studio custom projects](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/studio-custom-project?view=doc-intel-4.0.0) | - | Quickstart for setting up a custom project in Studio; primarily step-by-step usage without detailed configs, limits, or error mappings. |
 | [Document Intelligence release history](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/reference/release-history?view=doc-intel-4.0.0) | - | Release history overview; likely high-level notes without detailed configuration, limits, or troubleshooting mappings in the summary. |
 | [Get started with Document Intelligence Studio](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-studio?view=doc-intel-4.0.0) | - | Getting-started quickstart for Studio; tutorial-style content without deep configuration tables or quotas. |

@@ -30,8 +30,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 10
+- **Updated Pages**: 0
+- **Unchanged**: 11
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-network/azure-application-network.csv`
 
@@ -44,11 +44,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 8 | 72.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Kubernetes Application Network?](https://learn.microsoft.com/en-us/azure/application-network/overview)
-  - Updated: 2026-04-17T22:07:00.000Z → 2026-09-02T06:03:00.000Z
 
 ## Classified Pages
 

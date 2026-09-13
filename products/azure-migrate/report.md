@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 - **Unclassified**: 108
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 5
-- **Unchanged**: 208
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 216
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -76,25 +76,6 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 | *(Unclassified)* | 108 | 50.0% |
 
 ## Changes
-
-### New Pages
-
-- [Plan Azure Network assessment](https://learn.microsoft.com/en-us/azure/migrate/network-assessment?view=migrate)
-- [Review Azure Network assessment](https://learn.microsoft.com/en-us/azure/migrate/review-network-assessment?view=migrate)
-- [Auto-wave-planning](https://learn.microsoft.com/en-us/azure/migrate/automatic-wave-planning-architecture?view=migrate)
-
-### Updated Pages
-
-- [Plan and create waves](https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-09-02T05:17:00.000Z
-- [Complete a wave plan](https://learn.microsoft.com/en-us/azure/migrate/how-to-complete-wave-plan?view=migrate)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-09-01T08:00:00.000Z
-- [Wave planning](https://learn.microsoft.com/en-us/azure/migrate/common-questions-wave-planning?view=migrate)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-09-02T05:17:00.000Z
-- [Supported Geographies](https://learn.microsoft.com/en-us/azure/migrate/supported-geographies?view=migrate)
-  - Updated: 2025-09-30T22:16:00.000Z → 2026-09-02T06:11:00.000Z
-- [Storage](https://learn.microsoft.com/en-us/azure/migration/migrate-storage-from-aws)
-  - Updated: 2026-07-01T18:57:00.000Z → 2026-09-02T05:17:00.000Z
 
 ## Classified Pages
 

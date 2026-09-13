@@ -38,9 +38,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 42
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 44
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
 ## Classification Statistics
@@ -56,17 +56,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | *(Unclassified)* | 13 | 29.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitor using metrics](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics)
-  - Updated: 2026-08-28T17:13:00.000Z → 2026-09-01T12:02:00.000Z
-- [Secure Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana)
-  - Updated: 2025-10-30T11:11:00.000Z → 2026-09-03T22:14:00.000Z
-
-### Deleted Pages
-
-- ~~Upgrade to Grafana 12~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12)
 
 ## Classified Pages
 

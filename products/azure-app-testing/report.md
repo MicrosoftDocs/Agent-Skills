@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-09-13'
 category_descriptions:
   architecture-patterns: Designing Azure Load Testing setups with virtual networks
     and private endpoints, including VNet-injected tests, network isolation, and testing
@@ -22,22 +22,22 @@ category_descriptions:
   integrations: Authoring and running load tests with JMeter, Locust, and Playwright,
     using CSV data and plugins, integrating with VS Code/Copilot, and testing local
     or private apps via Azure Load Testing.
-  limits-quotas: Configuring and understanding usage limits, quotas, and free trial
-    constraints for Azure Load Testing and Playwright Workspaces, including monthly
-    caps and workspace configuration options.
+  limits-quotas: Usage caps, quotas, and configuration for Azure Load Testing and
+    Playwright Workspaces, including monthly limits, free trial restrictions, and
+    how to adjust or review these limits.
   decision-making: Guides for deciding load test resource moves (regions, groups,
     subscriptions) and tuning performance settings like Azure Functions configs and
     Playwright parallelism.
 skill_description: Expert knowledge for Azure App Testing development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Azure Load Testing with VNets/private endpoints, JMeter/Locust, Playwright
-  Workspaces, CI/CD, or quotas, and other Azure App Testing related development tasks.
-  Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops),
+  configuring Azure Load Testing VNets/private endpoints, JMeter/Locust tests, Playwright
+  Workspaces, CI/CD runs, or quotas, and other Azure App Testing related development
+  tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops),
   Azure Pipelines (use azure-pipelines), Azure App Service (use azure-app-service).
-use_when: Use when using Azure Load Testing with VNets/private endpoints, JMeter/Locust,
-  Playwright Workspaces, CI/CD, or quotas, and other Azure App Testing related development
-  tasks.
+use_when: Use when configuring Azure Load Testing VNets/private endpoints, JMeter/Locust
+  tests, Playwright Workspaces, CI/CD runs, or quotas, and other Azure App Testing
+  related development tasks.
 confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOps
   (use azure-devops), Azure Pipelines (use azure-pipelines), Azure App Service (use
   azure-app-service).
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 - **Total Pages**: 73
 - **Fetched**: 73
 - **Fetch Failed**: 0
-- **Classified**: 58
-- **Unclassified**: 15
+- **Classified**: 57
+- **Unclassified**: 16
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 2
+- **Unchanged**: 71
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
@@ -65,23 +65,30 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 |------|-------|------------|
 | architecture-patterns | 2 | 2.7% |
 | best-practices | 5 | 6.8% |
-| configuration | 18 | 24.7% |
+| configuration | 17 | 23.3% |
 | decision-making | 4 | 5.5% |
 | deployment | 2 | 2.7% |
 | integrations | 7 | 9.6% |
 | limits-quotas | 4 | 5.5% |
 | security | 9 | 12.3% |
 | troubleshooting | 7 | 9.6% |
-| *(Unclassified)* | 15 | 20.5% |
+| *(Unclassified)* | 16 | 21.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Perform advanced diagnostics with Playwright Workspaces reporting](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-advanced-diagnostic-with-playwright-workspaces-reporting)
+  - Updated: 2026-01-07T06:10:00.000Z → 2026-09-08T11:41:00.000Z
+- [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity)
+  - Updated: 2026-07-07T11:40:00.000Z → 2026-09-08T11:41:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-limits-quotas-capacity) | limits-quotas | 0.95 | Explicit service limits article used for capacity planning; will contain numeric limits, quotas, and possibly tier-specific caps—canonical limits-quotas expert knowledge. |
-| [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity) | limits-quotas | 0.93 | The page is a limits and configuration reference for Playwright Workspaces, describing service limitations, quotas, and configuration settings. This matches the limits-quotas category, as it likely contains exact numerical limits, quotas, and capacity constraints that are specific to this Azure service and not generally known. |
+| [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity) | limits-quotas | 0.95 | Explicitly described as a limits, quotas, and configuration reference for Playwright Workspaces. Such pages typically list exact numerical limits, quotas, and configuration settings that are product- and tier-specific, which qualifies as expert knowledge under the limits-quotas sub-skill. |
 | [Test configuration YAML](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/reference-test-config-yaml) | configuration | 0.90 | Reference for load test configuration YAML; almost certainly contains parameter names, allowed values, defaults, and structure—classic configuration reference content. |
 | [Use service package options](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-use-service-config-file) | configuration | 0.90 | Reference for playwright.service.config.ts / PlaywrightServiceSetup.cs options; will contain option names, allowed values, and defaults—core configuration reference content. |
 | [Troubleshoot issues with browser recording extension](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for the Azure App Testing/Azure Load Testing browser recording extension. It focuses on specific symptoms when recording user scenarios, maps them to likely causes, and provides concrete resolution steps unique to this product and extension. This matches the troubleshooting criteria of symptom → cause → solution for a product-specific tool. |
@@ -127,7 +134,6 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Create a load test with a JMeter script](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-and-run-load-test-with-jmeter-script) | integrations | 0.65 | Product-specific guidance on using Apache JMeter scripts with Azure Load Testing, including supported JMeter functionality and Azure-specific integration behavior. |
 | [Move across resource groups or subscriptions](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-move-between-resource-groups-subscriptions) | decision-making | 0.65 | Explains when and how to move resources, including metadata-only nature of moves and impact on data and configuration. |
 | [Move between regions](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-move-between-regions) | decision-making | 0.65 | Provides guidance and constraints for recreating resources in another region, including implications for data and capacity planning. |
-| [Perform advanced diagnostics with Playwright Workspaces reporting](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-advanced-diagnostic-with-playwright-workspaces-reporting) | configuration | 0.65 | Reporting quickstart for saving reports to Azure Storage and viewing in portal; likely includes specific configuration options/parameters for the reporter and storage integration, which are product-specific configuration details. |
 | [Read data from a CSV file](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-read-csv-data) | integrations | 0.65 | Explains product-specific handling of CSV data for JMeter and Locust scripts within Azure Load Testing. |
 | [Schedule load tests](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-schedule-tests) | configuration | 0.65 | Describes how to configure multiple schedules per test and scheduling behavior—product-specific configuration details. |
 | [Test private endpoints](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-test-private-endpoint) | architecture-patterns | 0.65 | Describes architecture and flow for testing private endpoints via VNet injection, including when and how to use this pattern. |
@@ -144,6 +150,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Monitor Azure Load Testing](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/monitor-load-testing) | 0.40 | Monitoring overview/reference description but no clear indication of specific metric tables, config parameters, or error mappings; likely conceptual/use overview of Azure Monitor integration. |
+| [Perform advanced diagnostics with Playwright Workspaces reporting](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-advanced-diagnostic-with-playwright-workspaces-reporting) | 0.40 | Quickstart focused on using Playwright Workspaces reporting for diagnostics; described as a how-to/tutorial for saving and viewing reports. No indication of detailed limits, config tables, error-code mappings, or product-specific configuration references beyond generic tutorial steps. |
 | [Accelerate Playwright test run and troubleshoot efficiently](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/tutorial-run-end-to-end-tests) | 0.30 | Tutorial for integrating and running tests; primarily step-by-step without clear indication of detailed config matrices, limits, or troubleshooting mappings. |
 | [Create a URL-based load test](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-and-run-load-test) | 0.30 | Portal quickstart for URL-based tests; shows how to create a test but not detailed configuration matrices or quotas. |
 | [Create a test from a recording](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-run-load-tests-from-recording) | 0.30 | Quickstart workflow for recording tests; primarily step-by-step usage without deep config tables or limits. |

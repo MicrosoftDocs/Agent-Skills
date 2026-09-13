@@ -1,9 +1,9 @@
 ---
 name: azure-files
-description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure File Sync, SMB/NFS shares, Storage Mover/Data Box, Kerberos/AD auth, or RAG with Azure Files, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure File Sync, SMB/NFS shares, cloud tiering, Data Box/Storage Mover, or RAG over Azure Files, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Files Skill
@@ -27,8 +27,8 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L35-L50 | Best practices for Azure Files and File Sync: DR, server lifecycle and topology changes, cloud tiering, handling large NFS dirs, and tuning SMB/NFS performance for Linux and virtual desktops. |
 | Decision Making | L51-L71 | Guidance on planning Azure Files deployments: choosing share types, redundancy, billing/costs, capacity, sync/tiering, migration paths (Windows/Linux/SMB/NFS), and dev/management models. |
 | Limits & Quotas | L72-L79 | Azure Files and File Sync limits: capacity, IOPS, throughput, tiers, quotas, and API throttling behavior to plan scaling and troubleshoot performance issues. |
-| Security | L80-L111 | Securing Azure Files and File Sync: identity/Kerberos/AD auth, share/NTFS permissions, encryption (TLS, CMK), firewalls/proxies, network endpoints, and secure SMB/NFS mounting across OSes. |
-| Configuration | L112-L133 | Configuring Azure Files and File Sync: agent setup, tiering, monitoring, resource moves, share sizing, VPN connectivity, DNS/endpoints, and file copy between shares. |
+| Security | L80-L112 | Securing Azure Files and Azure File Sync: identity-based SMB/NFS auth, Kerberos/Entra/AD DS setup, encryption, firewalls, network endpoints, and permissions/ACL best practices. |
+| Configuration | L113-L133 | Configuring Azure Files and File Sync: agent setup, tiering, monitoring, resource moves, share sizing, VPN connectivity, DNS/endpoints, and file copy between shares. |
 | Integrations & Coding Patterns | L134-L156 | RAG integrations with Azure Files using Haystack, LangChain, LlamaIndex, Pinecone/Qdrant/Weaviate, plus code patterns for .NET, Java, and Python apps accessing Azure Files. |
 | Deployment | L157-L165 | Deploying Azure File Sync and migrating data to Azure Files from SMB/NFS shares, NAS, Linux servers, GlusterFS, using tools like Storage Mover, Data Box, Robocopy, portal, CLI, and PowerShell. |
 
@@ -107,6 +107,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Linux Kerberos auth to Azure Files with Entra Domain Services | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-entra-domain-services |
 | Configure NTFS ACL permissions for Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions |
 | Configure Azure Files AD DS auth across multiple forests | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-multiple-forests |
+| Configure secure network endpoints for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints |
 | Mount Azure SMB file shares securely on Linux | https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-linux |
 
 ### Configuration
@@ -129,7 +130,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Monitor metrics and logs for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring |
 | Reference monitoring metrics and logs for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference |
 | Configure DNS forwarding to Azure Files private endpoints | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-dns |
-| Configure public and private endpoints for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

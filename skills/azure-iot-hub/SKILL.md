@@ -1,9 +1,9 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using IoT Hub/DPS for device twins, routing/enrichments, MQTT/AMQP/HTTPS, Device Update, or Cosmos DB sinks, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Hub/DPS twins and routing, MQTT/AMQP device connections, Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L62-L74 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
 | Architecture & Design Patterns | L75-L81 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
 | Limits & Quotas | L82-L88 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
-| Security | L89-L127 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID/RBAC, SAS, X.509), certificates and key rotation, TLS/ciphers, IP/network controls, private endpoints, policies, and best practices. |
+| Security | L89-L127 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS, X.509), certificates/keys, TLS/ciphers, network isolation (IP filters, private endpoints, VNet), and policy/compliance best practices. |
 | Configuration | L128-L160 | Configuring IoT Hub and DPS behavior: device/module twins, jobs, messaging, routing, enrichments, protocols, IPs/endpoints, Device Update manifests, file upload, and monitoring settings. |
 | Integrations & Coding Patterns | L161-L185 | Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and message formats/endpoints. |
 | Deployment | L186-L200 | Deploying and updating IoT devices and IoT Hub: Device Update setup/agents, delta/image/package updates, failover, platform support, migrations, and job scheduling. |
@@ -89,7 +89,7 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Secure DPS APIs using Microsoft Entra ID and RBAC | https://learn.microsoft.com/en-us/azure/iot-dps/concepts-control-access-dps-azure-ad |
+| Configure Entra ID and RBAC for IoT DPS access | https://learn.microsoft.com/en-us/azure/iot-dps/concepts-control-access-dps-azure-ad |
 | Configure DPS access control with SAS tokens | https://learn.microsoft.com/en-us/azure/iot-dps/how-to-control-access |
 | Revoke or disenroll device access in DPS securely | https://learn.microsoft.com/en-us/azure/iot-dps/how-to-revoke-device-access-portal |
 | Roll and update X.509 certificates in DPS | https://learn.microsoft.com/en-us/azure/iot-dps/how-to-roll-certificates |
@@ -107,7 +107,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand end-to-end security in Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-security |
 | Configure TLS download security for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-tls-download |
 | Configure network security and private access for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/network-security |
-| Secure IoT Hub APIs with Microsoft Entra ID and RBAC | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad |
+| Configure Microsoft Entra ID and RBAC for Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad |
 | Control IoT Hub access with SAS tokens | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-sas |
 | Authenticate IoT Hub devices with X.509 certificates | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-x509 |
 | Manage IoT Hub device identities and connection strings | https://learn.microsoft.com/en-us/azure/iot-hub/create-connect-device |

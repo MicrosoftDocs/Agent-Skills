@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
-  best-practices: Guidance on sizing and deploying ARO infrastructure and large clusters,
-    optimizing OpenShift Virtualization VMs, and understanding ARO 4 support policies
-    and limits
+  best-practices: Guidance on sizing and deploying infra/VM nodes, scaling large ARO
+    clusters, optimizing OpenShift Virtualization, and understanding ARO 4 support
+    and lifecycle policies.
   configuration: 'Configuring ARO clusters: networking (DNS, proxy, MTU, subnets,
     Spot VMs), identities and pull secrets, storage (Azure Files, Prometheus), registry,
     alerts, and resource tagging.'
@@ -26,16 +26,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Red Hat OpenShift development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when creating ARO clusters,
-  configuring networking/storage, securing Entra auth & CMK, or integrating GPUs/NetApp
-  Files, and other Azure Red Hat OpenShift related development tasks. Not for Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use
-  azure-container-apps), Azure Container Instances (use azure-container-instances).
+  configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/ANF,
+  and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps),
+  Azure Virtual Machines (use azure-virtual-machines).
 use_when: Use when creating ARO clusters, configuring networking/storage, securing
-  Entra auth & CMK, or integrating GPUs/NetApp Files, and other Azure Red Hat OpenShift
+  with Entra/Key Vault, or integrating GPUs/ANF, and other Azure Red Hat OpenShift
   related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure Container Instances (use
-  azure-container-instances).
+  Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Red Hat OpenShift Crawl Report
 
@@ -72,10 +71,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Updated Pages
 
-- [Create cluster with managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-cluster)
-  - Updated: 2026-04-02T22:16:00.000Z → 2026-09-04T17:09:00.000Z
-- [Replace cluster identity](https://learn.microsoft.com/en-us/azure/openshift/howto-replace-cluster-identity)
-  - Updated: 2026-03-11T17:18:00.000Z → 2026-09-04T17:09:00.000Z
+- [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes)
+  - Updated: 2026-08-19T08:00:00.000Z → 2026-09-10T08:00:00.000Z
+- [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4)
+  - Updated: 2026-08-25T17:14:00.000Z → 2026-09-08T08:00:00.000Z
 
 ## Classified Pages
 
@@ -115,7 +114,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Replace cluster identity](https://learn.microsoft.com/en-us/azure/openshift/howto-replace-cluster-identity) | configuration | 0.70 | The article describes how to replace platform workload identities and the cluster identity for an existing Azure Red Hat OpenShift cluster. This operation is highly product-specific and likely includes exact commands, parameters, and required resource relationships (for example, identity resource groups, names, and bindings) that an LLM wouldn’t reliably know from training. The content is centered on changing configuration of identities rather than general security theory or troubleshooting, so configuration is the best fit. |
 | [Rotate service principal credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-service-principal-credential-rotation) | security | 0.70 | Contains product-specific steps and Azure CLI commands for rotating Microsoft Entra ID service principal credentials tied to Azure Red Hat OpenShift clusters, including required parameters and sequence of operations that are not generic knowledge. |
 | [Segregate worker nodes into subnets](https://learn.microsoft.com/en-us/azure/openshift/howto-segregate-machinesets) | configuration | 0.70 | Network-level configuration of worker machine sets into different private subnets with access control implications is product-specific configuration. |
-| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | A support policy page for ARO 4 will enumerate which cluster modifications are allowed or disallowed, including product-specific constraints and gotchas that affect supportability. These are concrete DO/DON'T guidelines unique to ARO, fitting the best-practices category. |
+| [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | A support policy page for ARO 4 describes which cluster modifications are supported vs unsupported, effectively giving product-specific DOs and DON'Ts that impact supportability. These are concrete, vendor-specific guidelines (for example, restrictions on modifying internal components or using Technology Preview features) that qualify as best practices for maintaining a supported cluster. |
 | [Tag resources using Azure Policy](https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources) | configuration | 0.70 | Involves creating JSON policy definitions/assignments and remediation for ARO-managed resource groups, with specific parameters and behavior. |
 | [Understand managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-understand-managed-identities) | security | 0.70 | An article on understanding managed identities in ARO is likely to include product-specific security configuration details: which managed identities are created, how they are scoped, required role assignments, and how ARO components use them to access Azure resources. These are concrete IAM patterns and role/scope configurations unique to ARO, fitting the security sub-skill. This goes beyond generic managed identity concepts. |
 | [Use Admin Kubeconfig](https://learn.microsoft.com/en-us/azure/openshift/howto-kubeconfig) | troubleshooting | 0.70 | Explicitly for regaining access when console/ingress/auth components fail; maps specific failure scenarios to using Admin Kubeconfig. |
@@ -146,10 +145,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Overview of egress lockdown](https://learn.microsoft.com/en-us/azure/openshift/concepts-egress-lockdown) | 0.30 | Described as an overview of egress lockdown; based on the summary it focuses on conceptual explanation of required access/URLs rather than detailed endpoint lists, configuration tables, or numeric constraints. |
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
 | [Upgrade an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade) | 0.30 | The summary indicates a procedural how-to for updating Azure Red Hat OpenShift clusters via console, CLI, or MUO. It reads as a lifecycle/update tutorial without mention of specific limits, configuration matrices, error-code troubleshooting, or policy-style best practices; likely standard step-by-step instructions rather than expert-only reference data. |
+| [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.30 | Release notes typically list version changes and features but not structured limits, configs, or decision matrices as defined by the sub-skill types. Without clear evidence of numeric limits, config tables, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any category. |
 | [Connect to an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/connect-cluster) | 0.20 | Basic connection instructions using kubeadmin; no indication of detailed configuration parameters or troubleshooting mappings. |
 | [Delete an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-cluster) | 0.20 | Quickstart for deleting a cluster; operational but not configuration/limits-focused and lacks expert-only details in summary. |
 | [About Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/intro-openshift) | 0.10 | High-level introduction and benefits overview without product-specific limits, configs, or detailed patterns. |
 | [Networking](https://learn.microsoft.com/en-us/azure/openshift/concepts-networking) | - | Networking article is an overview with diagrams and endpoint lists but no specific configuration tables, limits, or product-unique patterns with quantified guidance. |
 | [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization) | - | The page is a how-to/tutorial for using OpenShift Virtualization on ARO. Based on the summary, it focuses on capabilities and migration benefits, not on detailed configuration parameter tables, limits, or troubleshooting mappings required for the defined sub-skill types. |
 | [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle) | - | Support lifecycle page describes release cadence and support policy conceptually; it does not include detailed version matrices, dates, or constraints that would qualify as expert configuration, limits, or decision-making guidance. |
-| [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | - | Release notes typically list changes, fixes, and new features but not structured limits, configuration matrices, or troubleshooting mappings as defined. Without specific numeric limits, config tables, or error-code-based guidance, it doesn't meet any sub-skill criteria. |

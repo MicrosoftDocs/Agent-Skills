@@ -51,10 +51,10 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Unclassified**: 69
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 50
-- **Unchanged**: 264
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 315
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
 ## Classification Statistics
@@ -73,58 +73,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | *(Unclassified)* | 69 | 21.9% |
 
 ## Changes
-
-### New Pages
-
-- [Page through list results (preview)](https://learn.microsoft.com/en-us/azure/search/search-how-to-page-list-results)
-
-### Updated Pages
-
-- [Create a knowledge store](https://learn.microsoft.com/en-us/azure/search/knowledge-store-create-rest)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-09-01T17:22:00.000Z
-- [What is a collection filter?](https://learn.microsoft.com/en-us/azure/search/search-query-understand-collection-filters)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Troubleshoot a collection filter](https://learn.microsoft.com/en-us/azure/search/search-query-troubleshoot-collection-filters)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Page, sort, and shape results](https://learn.microsoft.com/en-us/azure/search/search-pagination-page-layout)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [What is hybrid search?](https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Tables](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-tables)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-cosmosdb-sql)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Azure Cosmos DB for MongoDB (preview)](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-cosmosdb-mongodb)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Azure Cosmos DB for Apache Gremlin (preview)](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-cosmosdb-gremlin)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Azure SQL Databases](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-database)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Content metadata properties](https://learn.microsoft.com/en-us/azure/search/search-blob-metadata-properties)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Index any data](https://learn.microsoft.com/en-us/azure/search/tutorial-optimize-indexing-push-api)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Index multiple Azure data sources](https://learn.microsoft.com/en-us/azure/search/tutorial-multiple-data-sources)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Create a custom analyzer](https://learn.microsoft.com/en-us/azure/search/tutorial-create-custom-analyzer)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Design tips](https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-troubleshooting)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-09-01T17:22:00.000Z
-- [Reference a skill output](https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-annotations-syntax)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Design a multilingual index](https://learn.microsoft.com/en-us/azure/search/search-language-support)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [Understand vector quotas and limits](https://learn.microsoft.com/en-us/azure/search/vector-search-index-size)
-  - Updated: 2026-07-21T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [ADLS Gen2](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-data-lake-storage)
-  - Updated: 2026-08-08T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new)
-  - Updated: 2026-08-05T08:00:00.000Z → 2026-08-31T22:12:00.000Z
-- *...and 30 more*
-
-### Deleted Pages
-
-- ~~Page list API results (preview)~~ (https://learn.microsoft.com/en-us/azure/search/search-how-to-page-list-results)
 
 ## Classified Pages
 

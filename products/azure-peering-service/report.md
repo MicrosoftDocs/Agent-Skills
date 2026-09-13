@@ -27,8 +27,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 8
+- **Updated Pages**: 0
+- **Unchanged**: 10
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-peering-service/azure-peering-service.csv`
 
@@ -40,13 +40,6 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | *(Unclassified)* | 9 | 90.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Peering service prefix requirements](https://learn.microsoft.com/en-us/azure/peering-service/peering-service-prefix-requirements)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-09-01T12:02:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/peering-service/azure-portal)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-09-01T12:02:00.000Z
 
 ## Classified Pages
 

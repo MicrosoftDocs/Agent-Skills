@@ -49,9 +49,9 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure C
 - **Unclassified**: 4
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 29
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -70,17 +70,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure C
 | *(Unclassified)* | 4 | 12.5% |
 
 ## Changes
-
-### New Pages
-
-- [MLPerf Storage v3.0 results](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/mlperf-storage-v3-results)
-
-### Updated Pages
-
-- [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal)
-  - Updated: 2026-03-12T08:00:00.000Z → 2026-09-01T22:13:00.000Z
-- [Create file system using Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-resource-manager)
-  - Updated: 2024-11-11T08:00:00.000Z → 2026-09-01T22:13:00.000Z
 
 ## Classified Pages
 

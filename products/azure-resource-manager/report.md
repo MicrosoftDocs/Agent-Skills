@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
   best-practices: Best practices for authoring, linting, validating, and testing Bicep/ARM
     templates and scripts, including locations, types, dependencies, resource IDs,
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: Using Bicep/ARM functions, operators, and CLI/SDK/REST integrations
     to programmatically deploy, manage, tag, and query Azure resources, including
     advanced patterns and tooling integration.
-  configuration: Configuring Bicep/ARM templates, scopes, tags, policies, custom providers,
-    portal form UI, monitoring, async ops, and EU data boundary for compliant, scalable
-    Azure deployments.
+  configuration: Configuring and deploying Azure resources with Bicep and ARM templates,
+    including scopes, parameters, tags, policies, custom providers, monitoring, and
+    Azure portal form-based deployment UI.
   troubleshooting: Diagnosing and fixing Azure Bicep/ARM deployment and template errors,
     including specific BCP codes, decorator and type issues, resource name/scope problems,
     and common Azure policy/SKU/region failures.
@@ -31,12 +31,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Resource Manager development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when authoring Bicep/ARM templates, stacks/registries, multi-scope deployments,
-  CI/CD, or cross-tenant auth, and other Azure Resource Manager related development
+  Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries,
+  or securing with Key Vault/RBAC, and other Azure Resource Manager related development
   tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph),
   Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
-use_when: Use when authoring Bicep/ARM templates, stacks/registries, multi-scope deployments,
-  CI/CD, or cross-tenant auth, and other Azure Resource Manager related development
+use_when: Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries,
+  or securing with Key Vault/RBAC, and other Azure Resource Manager related development
   tasks.
 confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Graph
   (use azure-resource-graph), Azure Portal (use azure-portal), Azure Role-based access
@@ -46,14 +46,14 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 
 ## Summary
 
-- **Total Pages**: 493
-- **Fetched**: 493
+- **Total Pages**: 494
+- **Fetched**: 494
 - **Fetch Failed**: 0
-- **Classified**: 375
+- **Classified**: 376
 - **Unclassified**: 118
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 493
 - **Deleted Pages**: 0
@@ -65,16 +65,20 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 |------|-------|------------|
 | architecture-patterns | 4 | 0.8% |
 | best-practices | 49 | 9.9% |
-| configuration | 55 | 11.2% |
+| configuration | 56 | 11.3% |
 | decision-making | 10 | 2.0% |
 | deployment | 50 | 10.1% |
-| integrations | 59 | 12.0% |
+| integrations | 59 | 11.9% |
 | limits-quotas | 26 | 5.3% |
 | security | 26 | 5.3% |
-| troubleshooting | 96 | 19.5% |
+| troubleshooting | 96 | 19.4% |
 | *(Unclassified)* | 118 | 23.9% |
 
 ## Changes
+
+### New Pages
+
+- [Bicep config inheritance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-inheritance)
 
 ## Classified Pages
 
@@ -183,6 +187,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [BCP292](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp292) | troubleshooting | 0.78 | Documents diagnostic BCP292 with the precise condition (decorator must be followed by param, output, or type declaration) and what omission triggers it. This is product-specific error handling content. |
 | [BCP401](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp401) | troubleshooting | 0.78 | Explains diagnostic BCP401, including the rule that the spread operator is not permitted in certain locations due to JSON conversion limitations. This is product-specific error behavior and workaround context. |
 | [BCP414](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp414) | troubleshooting | 0.78 | Describes BCP414 diagnostic for using the ^ operator on unsupported types (object, bool, int), a concrete error code with type-specific rules. |
+| [Bicep config inheritance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-inheritance) | configuration | 0.78 | Page describes the bicepconfig.json extends feature, including specific configuration settings (such as linter rules and module aliases) and how inheritance/overrides work across files. This is product-specific configuration behavior that an LLM is unlikely to fully know from training, and it focuses on concrete config options rather than conceptual overview. |
 | [Secure params in parameters file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-secure-params-in-parameters-file) | security | 0.78 | The page documents a specific Bicep linter security rule that detects when non-secure parameters in .bicepparam files are assigned values referencing @secure() parameters, explaining how this exposes secrets in deployment history and how to remediate. This is product-specific security guidance tied to concrete rule behavior and configuration, which qualifies as expert knowledge under the security sub-skill. |
 | [BCP055](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp055) | troubleshooting | 0.76 | Explains a particular Bicep error (BCP055) with its wording and context, mapping symptom to cause and fix, which is expert troubleshooting content. |
 | [BCP057](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp057) | troubleshooting | 0.76 | Documents the exact BCP057 diagnostic, its conditions, and relation to BCP082, providing specific error-handling guidance. |

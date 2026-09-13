@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 77
+- **Updated Pages**: 0
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
@@ -53,11 +53,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | *(Unclassified)* | 35 | 44.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Transparency note](https://learn.microsoft.com/en-us/azure/health-bot/transparency-note)
-  - Updated: 2024-10-20T15:42:00.000Z → 2026-09-02T10:35:00.000Z
 
 ## Classified Pages
 

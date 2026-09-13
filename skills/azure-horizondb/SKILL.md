@@ -3,7 +3,7 @@ name: azure-horizondb
 description: Expert knowledge for Azure Horizondb development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using azure_ai SQL/embeddings, pgvector tuning, Apache AGE graphs, hybrid BM25+vector search, or LangChain, and other Azure Horizondb related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Horizondb Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L44 | Diagnosing and fixing HorizonDB issues: extension management errors, TLS/cert rotation failures, autovacuum tuning, and transaction ID wraparound prevention. |
 | Best Practices | L45-L55 | Performance and operations guidance for HorizonDB: data prep for AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster maintenance best practices. |
 | Decision Making | L56-L61 | Guidance on choosing between vector, full-text, and hybrid search in HorizonDB, and selecting the optimal vector index type for your data, queries, and performance needs. |
-| Architecture & Design Patterns | L62-L67 | Patterns for building RAG with graph data in HorizonDB and implementing hybrid BM25+vector search, including design choices and query strategies. |
-| Limits & Quotas | L68-L73 | Managing HorizonDB replica counts, read-scale limits, and how to request quota or limit increases for HorizonDB resources. |
-| Security | L74-L88 | Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth, access control/roles, users/permissions, data-at-rest encryption, deletion protection, and admin password resets. |
-| Configuration | L89-L165 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance, logging, WAL, and resource tuning. |
-| Integrations & Coding Patterns | L166-L178 | Using HorizonDB with AI: azure_ai SQL/embedding/rerank functions, LangChain vector store, building knowledge graphs, and integrating/moving data via the Azure Storage extension. |
-| Deployment | L179-L182 | Guides for migrating data by dumping PostgreSQL databases and restoring them into HorizonDB, including required tools, commands, and compatibility considerations. |
+| Architecture & Design Patterns | L62-L66 | Patterns for building RAG with graph data in HorizonDB and implementing hybrid BM25+vector search, including design choices and query strategies. |
+| Limits & Quotas | L67-L72 | Managing HorizonDB replica counts, read-scale limits, and how to request quota or limit increases for HorizonDB resources. |
+| Security | L73-L87 | Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth, access control/roles, users/permissions, data-at-rest encryption, deletion protection, and admin password resets. |
+| Configuration | L88-L164 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance, logging, WAL, and resource tuning. |
+| Integrations & Coding Patterns | L165-L177 | Using HorizonDB with AI: azure_ai SQL/embedding/rerank functions, LangChain vector store, building knowledge graphs, and integrating/moving data via the Azure Storage extension. |
+| Deployment | L178-L181 | Guides for migrating data by dumping PostgreSQL databases and restoring them into HorizonDB, including required tools, commands, and compatibility considerations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -63,7 +63,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design graph-augmented RAG in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/ai/graph-rag |
-| Implement hybrid search with BM25 and vectors | https://learn.microsoft.com/en-us/azure/horizondb/ai/hybrid-search |
 
 ### Limits & Quotas
 | Topic | URL |

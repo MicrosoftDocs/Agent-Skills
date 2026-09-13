@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 200
+- **Updated Pages**: 0
+- **Unchanged**: 203
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
@@ -73,15 +73,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | *(Unclassified)* | 57 | 28.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability)
-  - Updated: 2026-04-16T06:12:00.000Z → 2026-09-02T11:41:00.000Z
-- [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
-  - Updated: 2026-08-17T22:15:00.000Z → 2026-09-04T17:12:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026)
-  - Updated: 2026-08-17T22:15:00.000Z → 2026-09-04T17:12:00.000Z
 
 ## Classified Pages
 

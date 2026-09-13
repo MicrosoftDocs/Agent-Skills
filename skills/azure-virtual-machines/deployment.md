@@ -8,6 +8,7 @@
 | Topic | URL |
 |-------|-----|
 | Customize Azure Linux images with Image Customizer | https://learn.microsoft.com/en-us/azure/azure-linux/customize-images |
+| Migrate AKS node pools to Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-migrate-azure-linux-aks |
 | Migrate Azure availability sets to VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-migrate-to-scale-sets |
 | Migrate ADE-encrypted VMs to encryption at host | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate |
 | Copy incremental managed disk snapshots across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-copy-incremental-snapshot-across-regions |
@@ -16,6 +17,7 @@
 | Upgrade Azure Disk Encryption on existing disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-upgrade |
 | Use Azure DevOps task to inject artifacts into VM images | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-devops-task |
 | Migrate Linux VMs to Azure Premium Storage with Site Recovery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/migrate-to-premium-storage-using-azure-site-recovery |
+| Deploy GPU-accelerated ThinLinc Linux VDI on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/thinlinc-linux-vdi |
 | Configure rolling deployments to Linux VMs with Azure Pipelines | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-devops-azure-pipelines-classic |
 | Run wave-based migration to Azure v6/v7 VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-migrate |
 | Move VM maintenance configurations between Azure regions | https://learn.microsoft.com/en-us/azure/virtual-machines/move-region-maintenance-configuration |

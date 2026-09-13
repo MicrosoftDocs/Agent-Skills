@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   configuration: 'Configuring and operating Nexus clusters and network fabric: templates,
     isolation domains, routing/BGP/QoS, Kubernetes settings, monitoring, security,
@@ -74,10 +74,10 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 
 ### Updated Pages
 
-- [Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric-controller)
-  - Updated: 2025-11-18T16:54:00.000Z → 2026-09-01T17:07:00.000Z
-- [Cluster management upgrade](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cluster-management-upgrade)
-  - Updated: 2026-01-20T23:02:00.000Z → 2026-09-03T22:05:00.000Z
+- [How to replace network devices in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-network-devices)
+  - Updated: 2026-06-11T17:12:00.000Z → 2026-09-10T17:03:00.000Z
+- [List of metrics collected](https://learn.microsoft.com/en-us/azure/operator-nexus/list-of-metrics-collected)
+  - Updated: 2026-08-04T22:02:00.000Z → 2026-09-10T17:03:00.000Z
 
 ## Classified Pages
 
@@ -271,8 +271,9 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 | [Before you start workload deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/quickstarts-tenant-workload-prerequisites) | 0.40 | Prerequisites quickstart; likely lists basic requirements but summary does not show detailed config tables or limits. |
 | [Cluster Upgrades](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-runtime-upgrade) | 0.40 | Primarily a procedural how-to for performing a runtime upgrade; likely step-by-step operations without detailed configuration matrices, limits, or product-specific troubleshooting mappings. Does not clearly match any expert-knowledge sub-skill type from the summary. |
 | [How to put a device into maintenance mode](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-put-device-in-maintenance-mode) | 0.40 | Procedural how-to for putting a Nexus Network Fabric device into maintenance mode; summary does not indicate specific configuration parameters, limits, error codes, or product-specific settings tables. Appears to be step-by-step operational guidance rather than expert reference data as defined. |
-| [How to replace network devices in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-network-devices) | 0.40 | Describes RMA-based replacement of network devices in Azure Operator Nexus Network Fabric. From the summary, it is a process guide without explicit limits, configuration tables, error codes, or decision matrices; thus it does not meet the expert-knowledge criteria for any sub-skill type. |
+| [How to replace network devices in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-network-devices) | 0.40 | The page describes an operational RMA/replacement process for specific network devices in Azure Operator Nexus Network Fabric, but based on the summary it does not expose detailed configuration parameters, limits, error codes, or decision matrices that match any defined sub-skill type. It appears to be a procedural how-to guide rather than expert-only numeric/configuration data. |
 | [How to update a Network-to-Network Interconnect (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-network-to-network-interconnect) | 0.40 | Explains how to update an NNI resource and mentions prerequisites and commit workflow, but the summary does not show concrete limits, configuration parameter tables, or troubleshooting mappings. It appears to be a procedural update guide rather than expert reference content per the defined categories. |
+| [List of metrics collected](https://learn.microsoft.com/en-us/azure/operator-nexus/list-of-metrics-collected) | 0.40 | Page appears to be a catalog of metrics emitted by Azure Operator Nexus resources and observable in Azure Monitor. While it likely lists metric names, dimensions, and descriptions, it does not clearly fall into any defined sub-skill types (no limits/quotas, configuration parameters, or troubleshooting mappings). Metric name lists are closer to reference/overview than the targeted expert-knowledge categories defined here. |
 | [Network Fabric OptionA and OptionB](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-optiona-optionb) | 0.40 | Option A/B article appears to be conceptual BGP peering models; summary lacks concrete decision matrices or numeric thresholds. |
 | [Network Packet Broker](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-network-packet-broker) | 0.40 | Network Packet Broker overview; summary mentions capabilities but not detailed config parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-kubernetes-cluster) | 0.40 | Nexus Kubernetes Cluster Service introduction; conceptual overview of managed AKS on Nexus. |
@@ -309,4 +310,3 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 | [Near-edge Compute](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-compute) | 0.20 | Described as an overview of near-edge compute SKUs and resources; sounds conceptual/architectural without explicit limits, configuration tables, or decision matrices. |
 | [Security](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-security) | 0.20 | High-level security concepts and posture; no concrete RBAC roles, config parameters, or error/limit details. |
 | [What is Azure Operator Nexus?](https://learn.microsoft.com/en-us/azure/operator-nexus/overview) | 0.20 | High-level product introduction without concrete limits, configs, or error details. |
-| [List of metrics collected](https://learn.microsoft.com/en-us/azure/operator-nexus/list-of-metrics-collected) | - | Likely a reference list of emitted metrics (names, dimensions, descriptions) without configuration parameters, limits, quotas, or decision/troubleshooting guidance. Metric catalogs are useful but don't match any defined sub-skill types that require specific limits, config tables, error mappings, or decision matrices. |

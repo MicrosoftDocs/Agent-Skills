@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, stacks/registries, multi-scope deployments, CI/CD, or cross-tenant auth, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries, or securing with Key Vault/RBAC, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L204-L211 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
 | Limits & Quotas | L212-L241 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
 | Security | L242-L271 | Securing ARM/Bicep deployments: secrets handling, secure parameters, cross-tenant auth, Private Link, RBAC, locks, policy/regulatory mapping, and Key Vault integration. |
-| Configuration | L272-L330 | Configuring Bicep/ARM templates, scopes, tags, policies, custom providers, portal form UI, monitoring, async ops, and EU data boundary for compliant, scalable Azure deployments. |
-| Integrations & Coding Patterns | L331-L393 | Using Bicep/ARM functions, operators, and CLI/SDK/REST integrations to programmatically deploy, manage, tag, and query Azure resources, including advanced patterns and tooling integration. |
-| Deployment | L394-L446 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
+| Configuration | L272-L331 | Configuring and deploying Azure resources with Bicep and ARM templates, including scopes, parameters, tags, policies, custom providers, monitoring, and Azure portal form-based deployment UI. |
+| Integrations & Coding Patterns | L332-L394 | Using Bicep/ARM functions, operators, and CLI/SDK/REST integrations to programmatically deploy, manage, tag, and query Azure resources, including advanced patterns and tooling integration. |
+| Deployment | L395-L447 | Deploying and moving Azure resources with ARM/Bicep: scripts, stacks, registries, multi-scope deployments, CI/CD, and region/subscription relocation for many Azure services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -273,6 +273,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure Bicep environment with bicepconfig.json | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config |
+| Configure Bicep config inheritance with extends | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-inheritance |
 | Configure Bicep linter settings in bicepconfig.json | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-linter |
 | Configure Bicep module aliases and credentials | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-modules |
 | Configure and use Bicep extensions for external resources | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-extension |

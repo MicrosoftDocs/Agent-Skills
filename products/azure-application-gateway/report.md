@@ -1,25 +1,25 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
-  integrations: Configuring header rewrites, integrating App Gateway (incl. containers)
-    with Key Vault, Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics
-    to autoscale AKS pods.
+  integrations: Patterns and scripts for integrating App Gateway with AKS, Key Vault,
+    Prometheus/Grafana, Sentinel/Defender, HTTP header rewrites, request mirroring,
+    and autoscaling pods via gateway metrics
   limits-quotas: Configuring autoscaling, zone redundancy, and multi-site hosting
     limits for Application Gateway v2, including capacity, scaling behavior, and site/hostname
     constraints.
+  troubleshooting: Diagnosing backend health and metrics, interpreting ALB Controller
+    status, and troubleshooting common connectivity, routing, and configuration issues
+    in Application Gateway for Containers.
+  security: Configuring TLS/SSL, certificates, mTLS, cipher suites, Key Vault, HSTS,
+    WAF, and private access for securing Azure Application Gateway and Application
+    Gateway for Containers.
   configuration: 'Configuring Application Gateway and Application Gateway for Containers:
-    listeners, routing, probes, health, headers/URL rewrites, WebSockets, mTLS, Private
-    Link, monitoring, alerts, and AKS/Ingress integration.'
-  security: Configuring TLS/SSL, certificates, mTLS, Key Vault, cipher suites, FIPS,
-    WAF, Private Link, and security headers for secure Azure Application Gateway and
-    Containers deployments
+    listeners, routing, probes, health, headers/URL rewrites, WebSockets, HTTP/3,
+    mTLS, Private Link, monitoring, and AKS/Ingress integration.'
   deployment: 'Deploying and scaling Application Gateway and AGIC: portal/ARM/PowerShell
     setup, IPv6 frontends, AKS add-on enable/disable, migrations, and Helm-based upgrades.'
   best-practices: Tuning health probes, understanding probe behavior, and planning
     Application Gateway capacity, scaling, and configuration for high-traffic workloads.
-  troubleshooting: Diagnosing and fixing common Application Gateway for Containers
-    issues using ALB Controller backend health, metrics, and troubleshooting guides
-    for connectivity, routing, and configuration errors.
   decision-making: Guidance on choosing networking and pricing for Application Gateway
     for Containers and planning/migrating between AGIC, v1/v2 gateways, and classic
     vs ARM VMs.
@@ -28,32 +28,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Application Gateway development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring listeners, WAF/TLS, AKS ingress/AGIC, autoscaling v2 gateways,
-  or App Gateway for Containers, and other Azure Application Gateway related development
+  Use when configuring App Gateway v2/Containers, WAF/TLS, AKS/AGIC ingress, Key Vault
+  certs, or HTTP routing rules, and other Azure Application Gateway related development
   tasks. Not for Azure Load Balancer (use azure-load-balancer), Azure Front Door (use
-  azure-front-door), Azure Firewall (use azure-firewall), Azure Web Application Firewall
-  (use azure-web-application-firewall).
-use_when: Use when configuring listeners, WAF/TLS, AKS ingress/AGIC, autoscaling v2
-  gateways, or App Gateway for Containers, and other Azure Application Gateway related
+  azure-front-door), Azure Virtual Network (use azure-virtual-network), Azure Web
+  Application Firewall (use azure-web-application-firewall).
+use_when: Use when configuring App Gateway v2/Containers, WAF/TLS, AKS/AGIC ingress,
+  Key Vault certs, or HTTP routing rules, and other Azure Application Gateway related
   development tasks.
 confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure Front
-  Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure Web Application
-  Firewall (use azure-web-application-firewall).
+  Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
+  Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Application Gateway Crawl Report
 
 ## Summary
 
-- **Total Pages**: 179
-- **Fetched**: 179
+- **Total Pages**: 181
+- **Fetched**: 181
 - **Fetch Failed**: 0
-- **Classified**: 126
+- **Classified**: 128
 - **Unclassified**: 53
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 179
+- **New Pages**: 2
+- **Updated Pages**: 15
+- **Unchanged**: 164
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -63,23 +63,63 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 |------|-------|------------|
 | architecture-patterns | 1 | 0.6% |
 | best-practices | 2 | 1.1% |
-| configuration | 59 | 33.0% |
+| configuration | 59 | 32.6% |
 | decision-making | 7 | 3.9% |
-| deployment | 10 | 5.6% |
-| integrations | 6 | 3.4% |
+| deployment | 10 | 5.5% |
+| integrations | 6 | 3.3% |
 | limits-quotas | 2 | 1.1% |
-| security | 37 | 20.7% |
-| troubleshooting | 2 | 1.1% |
-| *(Unclassified)* | 53 | 29.6% |
+| security | 38 | 21.0% |
+| troubleshooting | 3 | 1.7% |
+| *(Unclassified)* | 53 | 29.3% |
 
 ## Changes
+
+### New Pages
+
+- [HTTP/3 support in Azure Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/http3-quic-support)
+- [Request mirroring](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-request-mirroring-gateway-api)
+
+### Updated Pages
+
+- [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview)
+  - Updated: 2026-08-25T22:15:00.000Z → 2026-09-10T22:03:00.000Z
+- [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2)
+  - Updated: 2026-08-25T22:15:00.000Z → 2026-09-10T08:00:00.000Z
+- [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview)
+  - Updated: 2026-06-24T17:12:00.000Z → 2026-09-08T08:00:00.000Z
+- [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works)
+  - Updated: 2026-08-18T22:40:00.000Z → 2026-09-09T22:11:00.000Z
+- [Application Gateway components](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-components)
+  - Updated: 2026-08-26T17:11:00.000Z → 2026-09-04T08:00:00.000Z
+- [Listeners](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-listeners)
+  - Updated: 2026-08-26T17:11:00.000Z → 2026-09-10T22:03:00.000Z
+- [HTTP settings](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings)
+  - Updated: 2026-05-12T08:00:00.000Z → 2026-09-04T08:00:00.000Z
+- [Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link)
+  - Updated: 2026-08-27T09:10:00.000Z → 2026-09-09T22:11:00.000Z
+- [Backend health](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health)
+  - Updated: 2024-05-30T08:00:00.000Z → 2026-09-08T17:27:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference)
+  - Updated: 2026-07-13T08:00:00.000Z → 2026-08-28T08:00:00.000Z
+- [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm)
+  - Updated: 2026-07-16T08:00:00.000Z → 2026-09-09T08:00:00.000Z
+- [Service mesh integration](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration)
+  - Updated: 2026-07-16T08:00:00.000Z → 2026-09-09T08:00:00.000Z
+- [Troubleshoot](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/troubleshooting-guide)
+  - Updated: 2026-02-09T06:11:00.000Z → 2026-09-09T08:00:00.000Z
+- [API Specification](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/api-specification-kubernetes)
+  - Updated: 2026-04-22T08:00:00.000Z → 2026-09-11T08:00:00.000Z
+- [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes)
+  - Updated: 2026-08-20T08:00:00.000Z → 2026-09-09T22:11:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Troubleshoot](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/troubleshooting-guide) | troubleshooting | 0.90 | Explicit troubleshooting guide; such pages typically map specific error messages, controller/log outputs, and Kubernetes/Azure diagnostics to causes and resolutions, which are product-specific and not generally known. |
 | [ALB Controller Helm Chart](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-helm-chart) | configuration | 0.86 | A Helm chart reference page for the ALB Controller typically lists configuration parameters, their names, allowed values, and defaults. The summary explicitly states you can configure parameters during installation, which aligns with configuration: parameter tables and product-specific settings that an LLM wouldn't reliably know from training. |
 | [Ingress for AKS annotations](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-annotations) | configuration | 0.86 | Page documents AGIC-specific Kubernetes ingress annotations, which are configuration parameters (annotation keys, expected values, and their effects on HTTP settings, backend pools, and listeners). These are product-specific config options that LLMs are unlikely to know exhaustively from training, fitting the configuration sub-skill. |
+| [API Specification](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/api-specification-kubernetes) | configuration | 0.85 | API specification pages usually list CRD fields, allowed values, defaults, and constraints for Kubernetes resources used by Application Gateway for Containers, which fits configuration (parameter tables and allowed ranges) and is detailed expert knowledge. |
 | [Custom health probe](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/custom-health-probe) | configuration | 0.85 | Details probe properties, default behavior, and allowed values for custom health probes, which are specific configuration parameters. |
 | [ALB Service Mesh Helm Chart](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-helm-chart) | configuration | 0.84 | This Helm chart documentation for the ALB Service Mesh Extension will enumerate chart values and options, including parameter names and defaults, and constraints such as dependency on the ALB Controller being installed first. That is expert, product-specific configuration data matching the configuration sub-skill type. |
 | [Mutual authentication - Portal](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-portal) | security | 0.82 | Explains configuring mutual authentication, including uploading client certificates and binding them to listeners; this is detailed, product-specific security configuration. |
@@ -89,9 +129,8 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [SIEM integration with Sentinel](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/siem-integration-with-sentinel) | integrations | 0.80 | Describes specific data connectors, configuration steps, and log types for SIEM integration between AGC and Sentinel/Defender. |
 | [Session affinity](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/session-affinity) | configuration | 0.80 | Explains cookie behavior, configuration options, and constraints for sticky sessions in AGC, which are product-specific settings. |
 | [TLS policy](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/tls-policy) | security | 0.80 | Lists predefined TLS policies, protocol versions, and cipher suites, and how to select them to meet compliance requirements. |
-| [Troubleshoot](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/troubleshooting-guide) | troubleshooting | 0.80 | A troubleshooting guide will map specific symptoms and error messages to causes and resolutions, likely including product-specific error codes and diagnostic steps. |
-| [API Specification](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/api-specification-kubernetes) | configuration | 0.78 | An API specification page for Kubernetes custom resources typically lists detailed schema fields, allowed values, and defaults for the Application Gateway for Containers integration. These are product-specific configuration parameters (CRD fields, enums, constraints) that qualify as expert configuration knowledge beyond generic LLM training. |
 | [Add secure flag for cookies](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-secure-flag-session-affinity) | security | 0.78 | Shows how to configure Secure and HttpOnly flags on ApplicationGatewayAffinity cookie via rewrite set; product-specific security configuration with concrete setting names. |
+| [Backend health](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health) | troubleshooting | 0.78 | Page explains specific backend health states, how to interpret them, and how to use backend health reports via portal/CLI/REST/PowerShell to identify and resolve unhealthy or unknown backend servers. This is symptom → diagnosis → resolution guidance specific to Azure Application Gateway. |
 | [Certificates for the backend](https://learn.microsoft.com/en-us/azure/application-gateway/certificates-for-backend-authentication) | security | 0.78 | Details how to convert TLS certificates into authentication/trusted root certificates and explains v1 vs v2 requirements; this is nuanced, product-specific TLS security behavior. |
 | [TLS 1.0 and 1.1 retirement](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-tls-version-retirement) | security | 0.78 | Gives a concrete Azure-wide retirement date (31 August 2025) and product-specific guidance on handling TLS 1.0/1.1 deprecation for frontend and backend connections, which is time-sensitive expert configuration/operations knowledge. |
 | [Trusted client certificates](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-certificate-management) | security | 0.78 | Shows how to construct and export trusted client CA certificate chains for mutual authentication; this is detailed, product-specific certificate handling for security. |
@@ -124,19 +163,19 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Frontend IP address](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip) | configuration | 0.70 | Describes public/private IP configuration with zone requirements (frontend IP zones must be a superset of gateway zones), which is a product-specific configuration rule not generally known; likely includes concrete parameter options and constraints. |
 | [Frontend MTLS](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-frontend-mtls-gateway-api) | security | 0.70 | Frontend mutual TLS configuration requires concrete security settings (client cert requirements, TLS policy fields, Kubernetes resource fields) that are specific to this product and scenario. |
 | [Generate self-signed certificates for backend](https://learn.microsoft.com/en-us/azure/application-gateway/self-signed-certificates) | security | 0.70 | Page provides product-specific security configuration for Application Gateway v2 using trusted root certificates and custom root CAs, including exact certificate formats and how they are used for backend TLS trust. This is detailed, implementation-specific security guidance rather than generic TLS concepts. |
-| [HTTP settings](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings) | configuration | 0.70 | Backend Settings configuration articles for Application Gateway typically enumerate specific setting names (protocol, port, cookie-based affinity, connection draining, timeouts, host name override, etc.) with allowed values and sometimes defaults. This matches the configuration sub-skill definition of parameter-level settings rather than a generic tutorial. |
+| [HTTP settings](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings) | configuration | 0.70 | Backend Settings configuration article focuses on how to configure backend connections and associate them with routing rules, implying specific setting names and options; this is product-specific configuration knowledge. |
 | [Header rewrite](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-header-rewrite-gateway-api) | configuration | 0.70 | Header rewrite how-to will show concrete Gateway API/CRD fields, rule syntax, and allowed values for rewrite actions, which are product-specific configuration parameters rather than generic concepts. |
 | [High traffic support](https://learn.microsoft.com/en-us/azure/application-gateway/high-traffic-support) | best-practices | 0.70 | Provides guidance and suggested alert thresholds for high traffic; while thresholds are generic, they are product-specific operational recommendations and scaling practices. |
 | [Inference gateway](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-inference-gateway) | configuration | 0.70 | The article describes how to expose a self-hosted vLLM model server via Application Gateway for Containers using Kubernetes Gateway API Inference Extension resources, including specific resource types (InferencePool, Endpoint Picker extension) and configuration patterns unique to this product. These are product-specific configuration details and object names that go beyond generic knowledge, fitting the configuration sub-skill. |
 | [Ingress for AKS via Helm (Greenfield)](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-install-new) | deployment | 0.70 | Covers deploying the Application Gateway Ingress Controller in a fresh environment; typically includes Helm/manifest parameters and Azure resource relationships, which are product-specific deployment patterns. |
 | [Listener specific SSL policy](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-configure-listener-specific-ssl-policy) | security | 0.70 | Describes how to apply different SSL policies per listener in Application Gateway via the portal, including product-specific behavior (default vs listener-specific policy override) and configuration steps unique to this service. |
-| [Listeners](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-listeners) | configuration | 0.70 | Details listener configuration (port, protocol, host, IP, HTTP/2, WebSockets) with product-specific options and requirements, including how values must match incoming requests; this is concrete configuration guidance rather than generic theory. |
+| [Listeners](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-listeners) | configuration | 0.70 | Listener configuration article describes specific listener settings (port, protocol, host, IP, HTTP/2, WebSockets, certificates). These are concrete configuration parameters and patterns unique to Application Gateway, fitting the configuration sub-skill. |
 | [Managed certificates with cert-manager](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-cert-manager-lets-encrypt-gateway-api) | security | 0.70 | Describes exact integration settings between cert-manager, Let’s Encrypt, and Application Gateway for Containers (issuer kinds, annotations, secret names, TLS sections), which are detailed security and certificate configuration parameters. |
 | [Managed certificates with cert-manager](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-cert-manager-lets-encrypt-ingress-api) | security | 0.70 | Ingress-based cert-manager integration includes specific annotations, issuer references, and TLS configuration fields that are product- and integration-specific security settings. |
 | [Migrate from AGIC to Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/migrate-from-agic-to-agc) | decision-making | 0.70 | Migration overview between AGIC and Application Gateway for Containers; migration docs usually include scenario-based guidance and trade-offs for when and how to move, which fits decision-making and contains product-specific migration considerations. |
 | [Migrate from v1 to v2](https://learn.microsoft.com/en-us/azure/application-gateway/migrate-v1-v2) | decision-making | 0.70 | Migration article between V1 and V2 with staged configuration and traffic migration using specific scripts; this is explicit migration/upgrade guidance between SKUs, a form of decision-making and transition planning with product-specific steps and considerations. |
 | [Migration FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/retirement-faq) | decision-making | 0.70 | Includes detailed retirement timeline, what happens after retirement, and guidance on when and how to migrate to V2; these time-bound, product-specific details support concrete migration and planning decisions. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference) | configuration | 0.70 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, log categories, and diagnostic settings with exact names, units, and sometimes default behaviors. These are product-specific configuration details (e.g., metric names, log categories, diagnostic table names) that an LLM is unlikely to fully know from training and are needed to correctly configure monitoring and alerts, so this best fits the configuration sub-skill. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference) | configuration | 0.70 | A monitoring data reference typically lists specific metric names, dimensions, log categories, and fields unique to Azure Application Gateway. These are detailed configuration/telemetry parameters that an LLM is unlikely to know exactly and are used to configure monitoring and alerting. |
 | [Multi-site hosting](https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview) | limits-quotas | 0.70 | Mentions ability to add up to 100+ websites per gateway and describes rule priority and evaluation order; numeric site limits and rule behavior constitute product-specific limits/quotas and operational constraints. |
 | [Mutual authentication](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-overview) | security | 0.70 | Mutual authentication overview for Application Gateway is security-focused and likely includes product-specific TLS/mTLS configuration modes (strict vs passthrough), certificate requirements, and possibly specific parameters, which are concrete security configuration details. |
 | [Mutual authentication - Template](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-arm-template) | configuration | 0.70 | The page is an ARM template-based quickstart that defines specific resource properties and configuration fields for enabling mutual TLS passthrough on Azure Application Gateway using a particular API version. It includes product-specific configuration details (template schema, resource types, and property names/values) that go beyond generic knowledge and are needed to correctly configure mTLS behavior, fitting the configuration sub-skill. |
@@ -147,7 +186,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Renew certificates](https://learn.microsoft.com/en-us/azure/application-gateway/renew-certificates) | security | 0.70 | Explains renewal behavior for certificates in Key Vault vs uploaded to the gateway and notes no-downtime behavior; these are product-specific security/operational details. |
 | [Resource Manager PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-ps) | configuration | 0.70 | Shows how to define a custom probe via PowerShell for Application Gateway, typically including probe properties (path, interval, timeout, unhealthy threshold) as named settings/parameters with specific allowed values, which is product-specific configuration detail. |
 | [SSL policy overview](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview) | security | 0.70 | Covers TLS protocol versions, cipher suites, and ordering as a central policy; these are product-specific security settings and compliance-related configurations. |
-| [Service mesh integration](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration) | integrations | 0.70 | Describes a product-specific integration between Application Gateway for Containers and Istio service mesh, including how to configure secure ingress, mTLS handling, and certificate lifecycle management. This is an integration pattern with concrete configuration behavior unique to this product combination. |
 | [URL redirect](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-url-redirect-gateway-api) | configuration | 0.70 | URL redirect how-to will show exact redirect rule fields (status codes, target protocol/host/path) in the CRDs, which are product-specific configuration options. |
 | [URL redirect](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-url-redirect-ingress-api) | configuration | 0.70 | Ingress-based redirect configuration will show specific annotations/fields and allowed values for redirect status codes and targets, which are product-specific configuration details. |
 | [URL rewrite](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-url-rewrite-gateway-api) | configuration | 0.70 | URL rewrite requires specifying concrete configuration fields and patterns in Gateway API resources; these are detailed, product-specific configuration parameters. |
@@ -173,6 +211,7 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Configure Key Vault - Portal](https://learn.microsoft.com/en-us/azure/application-gateway/configure-key-vault-portal) | security | 0.65 | Describes product-specific security integration between Application Gateway v2 and Key Vault for TLS/SSL certificates, including concrete configuration steps and settings unique to this scenario (Key Vault integration model, certificate handling). |
 | [End-to-End TLS](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-end-to-end-tls-gateway-api) | security | 0.65 | End-to-end TLS setup with Gateway API will document exact configuration parameters for frontend and backend TLS, including resource fields and secret wiring that are product-specific security configurations. |
 | [End-to-End TLS](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-end-to-end-tls-ingress-api) | security | 0.65 | Ingress API variant of end-to-end TLS will document Ingress-specific TLS fields, secret wiring, and product-specific options, which are concrete security configuration parameters. |
+| [HTTP/3 support in Azure Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/http3-quic-support) | configuration | 0.65 | HTTP/3 support article describes how to enable HTTP/3 via HTTP/3-enabled listeners and how it interacts with backend HTTP/1.1; this involves specific feature flags/settings, making it configuration-focused expert knowledge. |
 | [Header rewrite](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-header-rewrite-ingress-api) | configuration | 0.65 | Shows exact Ingress annotations/fields and values for header rewrite, which are detailed configuration parameters unique to this controller. |
 | [Infrastructure](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-infrastructure) | configuration | 0.65 | Focuses on infrastructure configuration (VNets, subnets, NSGs, UDRs) for Application Gateway; likely includes specific setting names, required subnet arrangements, and product-specific constraints beyond generic networking knowledge. |
 | [Load balancing strategies](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/load-balancing-strategies) | architecture-patterns | 0.65 | Focuses on different load balancing algorithms and when to use them for performance and resilience; this is product-specific pattern selection guidance, aligning with architecture-patterns rather than generic theory. |
@@ -180,16 +219,17 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Multi-site hosting](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-multiple-site-hosting-gateway-api) | configuration | 0.65 | Multi-site hosting with Gateway API requires specific host/path routing configuration fields and examples that are unique to this product’s CRDs and not generic knowledge. |
 | [Multi-site hosting](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-multiple-site-hosting-ingress-api) | configuration | 0.65 | Multi-site hosting via Ingress requires concrete host/path rules and possibly annotations specific to this gateway implementation, which are expert configuration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-overview) | configuration | 0.65 | Configuration overview that describes how to configure multiple gateway components together; typically includes concrete setting names and relationships beyond a simple tutorial. |
-| [Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link) | security | 0.65 | Describes Private Link connectivity, private endpoints, and cross-VNet/subscription access; likely includes product-specific security and networking configuration parameters for private access. |
+| [Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link) | security | 0.65 | Private Link overview for Application Gateway covers configuring private endpoints in VNets and securing backend access over private connections; this is product-specific network security and access configuration, fitting the security sub-skill. |
+| [Request mirroring](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-request-mirroring-gateway-api) | integrations | 0.65 | How-to for configuring request mirroring via Gateway API; likely includes resource/route config fields, annotations, and parameter names specific to Application Gateway for Containers and Kubernetes Gateway API, which are product-specific integration patterns beyond generic knowledge. |
 | [Request routing rules](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-request-routing-rules) | configuration | 0.65 | Explains binding of listeners, backend pools, and HTTP settings via rules; contains product-specific rule configuration behavior and defaults. |
 | [Rewrite HTTP headers and URL](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url) | configuration | 0.65 | Explains rewrite feature availability limited to v2 SKU and conditional rewrite behavior; likely includes specific rule configuration parameters and conditions unique to this product. |
 | [SSL Offloading](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-ssl-offloading-gateway-api) | security | 0.65 | SSL offload configuration includes TLS sections, certificate references, and product-specific options for terminating TLS, which are concrete security configuration parameters. |
 | [SSL Offloading](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-ssl-offloading-ingress-api) | security | 0.65 | Documents Ingress TLS sections, secret references, and any gateway-specific options for SSL offload, which are detailed security configuration parameters. |
 | [SSL certificate management](https://learn.microsoft.com/en-us/azure/application-gateway/ssl-certificate-management) | security | 0.65 | Focuses on listener certificate management for TLS termination; product-specific security and certificate lifecycle configuration. |
+| [Service mesh integration](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration) | security | 0.65 | Page focuses on integrating Istio service mesh with Application Gateway for Containers for secure ingress, including mTLS handling and certificate lifecycle automation. This involves product-specific security configuration details for mTLS and ingress behavior that go beyond generic concepts. |
 | [Traffic Splitting / Weighted Round Robin](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-traffic-splitting-gateway-api) | configuration | 0.65 | Traffic splitting/weighted round robin requires specifying weight fields and backend references in Gateway API resources, which are detailed configuration parameters unique to this product. |
 | [WebSockets](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/websockets) | configuration | 0.65 | Covers how AGC handles WebSockets and any necessary configuration or limitations, which are product-specific. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-portal) | configuration | 0.64 | Describes configuring header rewrite on v2 SKU, including rule and action settings; product-specific configuration feature with named settings and constraints. |
-| [Backend health](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health) | configuration | 0.64 | Details how health probe results are represented and accessed via backend health report and APIs; product-specific monitoring/reporting configuration. |
 | [Schedule autoscaling](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-externally-managed-scheduled-autoscaling) | deployment | 0.64 | Introduces scheduled autoscaling for Standard_v2 and WAF_v2 SKUs with product-specific behavior and constraints for scaling operations. |
 | [Create and rewrite HTTP headers](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-http-header-rewrite-powershell) | configuration | 0.63 | Combines gateway creation with configuration of header rewrite rules on autoscaling, zone-redundant SKU; includes product-specific configuration parameters. |
 | [Custom error pages](https://learn.microsoft.com/en-us/azure/application-gateway/custom-error) | configuration | 0.63 | Shows how to configure custom error pages for specific HTTP response codes; product-specific configuration of error handling behavior. |
@@ -210,6 +250,7 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Cross-Origin Resource Sharing (CORS)](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/cross-origin-resource-sharing) | 0.50 | Explains CORS protocol and how Application Gateway for Containers can apply CORS policy at the gateway; summary is conceptual and doesn’t clearly indicate detailed configuration tables or parameter ranges, so it’s more of an overview than expert configuration guidance. |
+| [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes) | 0.40 | Release notes primarily describe version changes and high-level updates; while useful, they are not configuration, troubleshooting, or other defined sub-skill patterns and typically lack structured limits, configs, or decision matrices as defined. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/how-to-tcp-tls-proxy) | 0.40 | How-to for configuring TCP/TLS proxy with SQL backend; likely includes some config, but summary suggests a basic walkthrough rather than comprehensive parameter tables or unique troubleshooting. |
 | [Create Application Gateway for Containers - bring your own deployment](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-create-application-gateway-for-containers-byo-deployment) | 0.40 | Quickstart for bring-your-own deployment; likely high-level steps rather than detailed configuration matrices. |
 | [Create Application Gateway for Containers - managed by ALB Controller](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-create-application-gateway-for-containers-managed-by-alb-controller) | 0.40 | Quickstart for ALB-managed deployment; mostly tutorial content, not deep reference or troubleshooting. |
@@ -217,22 +258,23 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Inference gateway for AI workloads](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/inference-gateway) | 0.40 | Describes inference gateway behavior and integration with Gateway API Inference Extension conceptually; summary doesn’t indicate specific limits, configuration parameter tables, or decision matrices, so it’s primarily conceptual architecture/overview content. |
 | [Server-sent events](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/server-sent-events) | 0.40 | Explains how server-sent events interact with Application Gateway for Containers; summary suggests conceptual behavior and use cases, not detailed product-specific configuration values, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/application-gateway/tcp-tls-proxy-overview) | 0.35 | Overview of TCP/TLS proxy capability; likely conceptual without detailed parameter tables or limits in the summary provided. |
-| [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes) | 0.30 | Release notes typically list version changes, fixes, and compatibility information but not structured limits, configuration matrices, or troubleshooting mappings as defined by the sub-skill types. Without explicit evidence of numeric limits, config tables, or error-code-based troubleshooting, this is not classified as expert-knowledge per the given criteria. |
-| [Application Gateway components](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-components) | 0.30 | Describes components (backend pools, listeners, etc.) at a conceptual level; does not list detailed settings, limits, or troubleshooting mappings. |
+| [Application Gateway components](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-components) | 0.30 | Describes components of Application Gateway at a conceptual level; does not expose detailed configuration options, limits, or product-specific best-practice values. |
+| [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.30 | Conceptual overview of Application Gateway for Containers and its role with AKS; lacks detailed configuration tables, limits, or error-resolution content. |
+| [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2) | 0.30 | Overview of Application Gateway v2 and deprecation notice for v1; primarily conceptual and lifecycle information without detailed limits, configs, or troubleshooting mappings. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal) | 0.30 | Step-by-step portal tutorial to create an Application Gateway with IPv6 frontend; no configuration tables, limits, or product-specific edge cases beyond what a generic tutorial would include. |
 | [Create Application Gateway - Portal](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-portal) | 0.30 | Quickstart walkthrough for creating an Application Gateway via portal; primarily step-by-step creation and testing with no configuration parameter tables, limits, error codes, or product-specific best-practice guidance. |
 | [Create Application Gateway - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-powershell) | 0.30 | PowerShell quickstart for creating an Application Gateway; focuses on basic setup and testing, not on detailed configuration options, limits, troubleshooting mappings, or decision criteria. |
 | [Deploy Application Gateway for Containers ALB Controller - Add-on](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-addon) | 0.30 | Quickstart for enabling the Application Gateway for Containers ALB Controller as an AKS add-on; primarily a step-by-step provisioning guide without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It focuses on how to turn on the add-on rather than expert reference data. |
+| [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm) | 0.30 | Quickstart for deploying the ALB Controller with Helm is primarily a step-by-step tutorial. It likely shows commands and basic setup, but not structured configuration parameter tables, limits, or deep product-specific patterns beyond generic deployment steps. |
 | [Deploy Application Gateway with DDoS protection](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-protect-application-gateway-ddos) | 0.30 | DDoS protection tutorial mentions cost and overage conceptually but lacks detailed quotas tables, diagnostic error codes, or configuration parameter ranges specific enough to count as expert knowledge. |
-| [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works) | 0.30 | Explains request routing behavior conceptually; no numeric thresholds, configuration tables, or product-specific patterns with quantified trade-offs. |
+| [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works) | 0.30 | Explains how Application Gateway routes requests conceptually; no numeric limits, config parameter tables, or troubleshooting/error code mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-portal) | 0.30 | Portal walkthrough for creating a custom health probe; primarily step-by-step UI instructions without detailed configuration tables, numeric limits, or product-specific best-practice guidance beyond generic probe setup. |
 | [Secure with SSL](https://learn.microsoft.com/en-us/azure/application-gateway/create-ssl-portal) | 0.30 | Tutorial for configuring TLS termination on Application Gateway via portal; appears as a guided setup sharing base configuration with another tutorial, without detailed configuration matrices or expert-only specifics. |
 | [Understanding pricing](https://learn.microsoft.com/en-us/azure/application-gateway/understanding-pricing) | 0.30 | Pricing explanation is illustrative and defers to the main pricing page; does not provide authoritative numeric limits, tier matrices, or decision criteria beyond generic billing concepts. |
 | [WebSocket support](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-websocket) | 0.30 | Describes that WebSocket is natively supported and not configurable; appears to be a conceptual capability description without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Redirect web traffic using Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-url-redirect-powershell) | 0.22 | PowerShell tutorial for URL path-based redirection; despite mentioning 'production-ready', summary indicates a standard routing tutorial without explicit config matrices or limits. |
 | [Application Gateway features](https://learn.microsoft.com/en-us/azure/application-gateway/features) | 0.20 | Feature overview and general security recommendations; lacks specific configuration values, limits, or error mappings. |
-| [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.20 | Overview of Application Gateway for Containers features and architecture; no evidence of numeric limits, configuration tables, error codes, or other detailed expert-only data. |
-| [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2) | 0.20 | Version overview and deprecation notice; no detailed configuration parameters, limits, or troubleshooting content. |
+| [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview) | 0.20 | High-level overview of Azure Application Gateway; no specific limits, configs, error codes, or product-specific numeric thresholds. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-multiple-sites-cli) | 0.20 | CLI tutorial for hosting multiple sites; mostly procedural without expert-level configuration details. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-url-route-cli) | 0.20 | CLI tutorial for URL-based routing; primarily walkthrough commands without deep configuration matrices or limits. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-multiple-sites-powershell) | 0.20 | PowerShell tutorial for hosting multiple sites; focuses on basic setup rather than detailed configuration options or constraints. |
@@ -241,7 +283,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Create Application Gateway - Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-cli) | 0.20 | CLI quickstart focused on basic resource creation; does not expose detailed product-specific configuration options or limits. |
 | [Create Application Gateway - Bicep](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-bicep) | 0.20 | Bicep quickstart for a simple gateway deployment; no configuration parameter catalog, limits, or troubleshooting guidance. |
 | [Create Application Gateway - Terraform](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-terraform) | 0.20 | Terraform quickstart; focuses on basic deployment steps rather than exhaustive configuration or product-specific constraints. |
-| [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm) | 0.20 | Quickstart Helm deployment guide for ALB Controller; primarily step-by-step provisioning instructions without detailed configuration tables, limits, or product-specific best practices beyond generic deployment steps. |
 | [Frequently Asked Questions (FAQ)](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/faq) | 0.20 | FAQ pages often mix conceptual and practical content, but the summary does not indicate the presence of concrete limits, error codes, or configuration tables. Without clear evidence of numeric limits, specific error mappings, or parameter tables, it’s safer to treat this as general Q&A rather than expert-knowledge configuration, limits, or troubleshooting content. |
 | [Host multiple sites](https://learn.microsoft.com/en-us/azure/application-gateway/create-multiple-sites-portal) | 0.20 | Step-by-step portal tutorial for hosting multiple sites on Application Gateway; no tables of limits, specific config ranges, error codes, or product-specific gotchas beyond generic setup. |
 | [Ingress Controller add-on for AKS (Greenfield)](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ingress-controller-add-on-new) | 0.20 | Tutorial-style walkthrough for enabling AGIC on a new AKS cluster and deploying a sample app. It focuses on step-by-step commands rather than configuration reference tables, limits, error-code mappings, or decision matrices. No product-specific limits, quotas, RBAC role catalogs, or detailed config parameter tables are indicated, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
@@ -255,7 +296,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/redirect-http-to-https-powershell) | 0.18 | PowerShell tutorial for HTTP to HTTPS redirection; procedural content without deep product-specific configuration references. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/redirect-internal-site-powershell) | 0.18 | PowerShell tutorial for internal redirection; no detailed configuration tables or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/redirect-http-to-https-portal) | 0.18 | Portal tutorial for HTTP to HTTPS redirection; focuses on basic setup, not detailed configuration matrices or limits. |
-| [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview) | 0.10 | High-level overview of Application Gateway capabilities and use cases without numeric limits, configuration tables, or product-specific error/security details. |
 | [Autoscaling and zone redundant](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-autoscale-ps) | 0.10 | Autoscale and zone-redundant tutorial; mostly procedural creation steps, not a limits table, decision matrix, or detailed config reference. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-manage-web-traffic-cli) | 0.10 | CLI tutorial mirroring the PowerShell version; focuses on creation steps, not expert-level configuration or troubleshooting content. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-manage-web-traffic-powershell) | 0.10 | PowerShell tutorial to create gateway and VM scale set; generic provisioning steps without detailed limits, security roles, or config matrices. |

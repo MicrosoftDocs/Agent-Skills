@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 135
+- **Updated Pages**: 0
+- **Unchanged**: 138
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -68,15 +68,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 46 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate from the Azure VPN Client for Linux](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-linux-retirement)
-  - Updated: 2026-05-28T05:20:00.000Z → 2026-09-01T05:17:00.000Z
-- [Configure P2S - manually registered](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-azure-ad)
-  - Updated: 2026-05-26T08:00:00.000Z → 2026-07-01T23:48:00.000Z
-- [Azure VPN Client - Linux](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-linux)
-  - Updated: 2025-02-11T05:34:00.000Z → 2026-08-31T17:13:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with AI backends, VNet/domains, OAuth/Entra ID, self-hosted gateways, or Front Door/App Gateway, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring APIM/AI Gateway, self-hosted gateways, VNet/networking, Entra/OAuth auth, or autoscale deployments, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Service Bus (use azure-service-bus), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L55-L73 | Guidance for planning and migrating API Management: pricing and scaling, cost control, DevOps/CI/CD, VNet choices, workspace and portal changes, and moving from legacy or other platforms. |
 | Architecture & Design Patterns | L74-L79 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
 | Limits & Quotas | L80-L100 | Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket), including rate/usage caps, token limits, validation policies, and service/gateway constraints in Azure API Management. |
-| Security | L101-L143 | Securing APIs and gateways: authN/authZ (OAuth2, Entra ID, B2C, JWT, certs, managed identities), TLS/ciphers, content safety, DDoS/Defender, RBAC, and secure developer portal/self-hosted gateway. |
-| Configuration | L144-L242 | Configuring Azure API Management and AI Gateway: networking/VNet, domains, caching, policies, monitoring, backends, developer portal, self-hosted gateways, and infrastructure-as-code setup. |
-| Integrations & Coding Patterns | L243-L275 | Patterns and scripts for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph/GitHub, and importing/exporting APIs (OpenAPI, SAP, Web Apps, Postman, Power Platform). |
+| Security | L101-L143 | Securing Azure API Management and AI Gateway: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), TLS/certs, RBAC, managed identities, self-hosted gateway security, and DDoS/Defender protections. |
+| Configuration | L144-L242 | Configuring Azure API Management and AI Gateway: networking/VNet, domains, auth, caching, policies, backends, monitoring, self-hosted gateways, infrastructure-as-code, and LLM/MCP-specific settings. |
+| Integrations & Coding Patterns | L243-L275 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
 | Deployment | L276-L296 | Deploying and scaling API Management: autoscale, multi-region, backup/restore, vNet/external access, self-hosted gateways (AKS/K8s/Docker/Arc), portal automation, APIOps, and MCP versioning. |
 
 ### Troubleshooting
@@ -128,7 +128,7 @@ This skill requires **network access** to fetch documentation content:
 | Protect Azure API Management with DDoS Protection | https://learn.microsoft.com/en-us/azure/api-management/protect-with-ddos-protection |
 | Enable Defender for APIs protection in API Management | https://learn.microsoft.com/en-us/azure/api-management/protect-with-defender-for-apis |
 | Configure secure access to Azure API Management developer portal | https://learn.microsoft.com/en-us/azure/api-management/secure-developer-portal-access |
-| Secure inbound and outbound access to MCP servers in API Management | https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers |
+| Secure MCP server access with Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers |
 | Apply Azure Policy compliance controls to API Management | https://learn.microsoft.com/en-us/azure/api-management/security-controls-policy |
 | Configure authentication options for self-hosted gateway | https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-authentication-options |
 | Configure access token authentication for self-hosted gateway | https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-default-authentication |
@@ -167,7 +167,7 @@ This skill requires **network access** to fetch documentation content:
 | Update VNet settings for API Management RP source IP change (Mar 2023) | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-mar-2023 |
 | Update VNet settings for API Management RP source IP change (Sep 2023) | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-sep-2023 |
 | Replace trusted service connectivity for API Management gateways | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/trusted-service-connectivity-retirement-march-2026 |
-| Configure cache-lookup policy for response caching | https://learn.microsoft.com/en-us/azure/api-management/cache-lookup-policy |
+| Configure cache-lookup policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/cache-lookup-policy |
 | Use cache-lookup-value policy in API Management | https://learn.microsoft.com/en-us/azure/api-management/cache-lookup-value-policy |
 | Configure cache-remove-value policy in API Management | https://learn.microsoft.com/en-us/azure/api-management/cache-remove-value-policy |
 | Configure cache-store policy to cache API responses | https://learn.microsoft.com/en-us/azure/api-management/cache-store-policy |

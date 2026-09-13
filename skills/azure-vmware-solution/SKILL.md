@@ -1,9 +1,9 @@
 ---
 name: azure-vmware-solution
-description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AVS networking/HCX, vSAN/datastores, Horizon/VDI, JetStream DR, or SQL workloads on AVS, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Large Instances (use azure-large-instances), Azure Nutanix (use azure-nutanix), SAP HANA on Azure Large Instances (use azure-sap).
+description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AVS networking/storage, HCX migrations, Horizon/VDI, vSAN clusters, or Azure-integrated backups, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Nutanix (use azure-nutanix), Azure Red Hat OpenShift (use azure-redhat-openshift), SAP HANA on Azure Large Instances (use azure-sap).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VMware Solution Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L44 | Diagnosing and fixing AVS issues: deployment failures, DR/VM recovery problems, platform run command errors, and workarounds for common Azure VMware Solution faults. |
 | Best Practices | L45-L50 | Guidance on securing and safely operating AVS private clouds, plus tuning NSX/HCX scale and performance for efficient, reliable VMware workload migrations. |
-| Decision Making | L51-L63 | Guidance on choosing AVS migration, backup, storage, licensing, reserved instance, and API Management options, plus FAQs for planning and executing AVS workload moves. |
-| Architecture & Design Patterns | L64-L76 | Network, storage, and private cloud design for AVS: hub-spoke patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud Director networking, and Gen 2 architecture. |
-| Limits & Quotas | L77-L88 | Host, cluster, and routing limits for AVS; vSAN ESA settings; required ports; and how to request quota, deploy, and scale private clouds within platform constraints |
-| Security | L89-L106 | Securing AVS: identity/access control, Defender for Cloud, vSAN encryption, vCenter/NSX identity, VM trusted launch, network/IP security, ESU, credentials, licensing rules, and best practices. |
-| Configuration | L107-L145 | Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores, backup, monitoring/alerts, HCX/Cloud Director, Arc/Run Command, and performance/placement policies. |
-| Integrations & Coding Patterns | L146-L159 | Guides for integrating AVS with Azure services (storage, backup, monitoring, networking, HCX), configuring datastores, VPN/Virtual WAN, syslog flows, and performance/VMware Tools automation. |
-| Deployment | L160-L170 | Guides for planning and deploying AVS for production, including Horizon/Citrix VDI, JetStream DR, VMware Cloud Director, and migrating SQL (Always On, FCI, standalone) to Azure VMware Solution. |
+| Decision Making | L51-L64 | Guidance for choosing AVS-related options: API Management SKUs, backup and storage, migration and cross-region moves, licensing/retirement planning, and reserved instance purchasing. |
+| Architecture & Design Patterns | L65-L77 | Network, storage, and private cloud design for AVS: hub-spoke patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud Director networking, and Gen 2 architecture. |
+| Limits & Quotas | L78-L89 | Host, cluster, and routing limits for AVS; vSAN ESA settings; required ports; and how to request quota, deploy, and scale private clouds within platform constraints |
+| Security | L90-L107 | Securing AVS: identity/access control, Defender for Cloud, vSAN encryption, vCenter/NSX identity, VM trusted launch, network/IP security, ESU, credentials, licensing rules, and best practices. |
+| Configuration | L108-L146 | Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores, backup, monitoring/alerts, HCX/Cloud Director, Arc/Run Command, and performance/placement policies. |
+| Integrations & Coding Patterns | L147-L160 | Guides for integrating AVS with Azure services (storage, backup, monitoring, networking, HCX), configuring datastores, VPN/Virtual WAN, syslog flows, and performance/VMware Tools automation. |
+| Deployment | L161-L171 | Guides for planning and deploying AVS for production, including Horizon/Citrix VDI, JetStream DR, VMware Cloud Director, and migrating SQL (Always On, FCI, standalone) to Azure VMware Solution. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -56,6 +56,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose external storage options for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-external-storage-solutions |
 | Evaluate migration solutions for AVS virtual machines | https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-migration-vms |
 | Use Azure VMware Solution: FAQs and guidance | https://learn.microsoft.com/en-us/azure/azure-vmware/faq |
+| Plan for Azure VMware license-included retirement | https://learn.microsoft.com/en-us/azure/azure-vmware/license-included-service-retirement |
 | Choose and Apply Licensing for SQL and Windows on AVS | https://learn.microsoft.com/en-us/azure/azure-vmware/license-sql-windows-in-avs |
 | Plan and execute workload migration between AVS private clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-between-private-clouds |
 | Plan and migrate Azure VMware Solution across regions | https://learn.microsoft.com/en-us/azure/azure-vmware/move-azure-vmware-solution-across-regions |

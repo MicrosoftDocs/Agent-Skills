@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Enclave apps: DMZ-based
     public access, integrating with AVD/AKS, and secure data ingress design for enclave
     environments.'
-  security: Security policies, RBAC, access control, encryption, managed identities,
-    JIT/PIM, and service-specific guardrails for AKS, App Service, SQL, Storage, Key
-    Vault, Cosmos DB, PostgreSQL, ACR, Service Bus.
+  security: RBAC, identities, encryption, PIM/JIT, and security guardrails for AKS,
+    App Service, SQL, Storage, ACR, Cosmos DB, PostgreSQL, Key Vault, Service Bus,
+    plus monitoring and governance.
   deployment: 'Guides for deploying Enclave workloads: app installation on RemoteApp
     VMs, using Bicep/ARM/CLI templates, and setting up ExpressRoute/VPN connectivity
     and shared dependencies.'
@@ -25,13 +25,13 @@ category_descriptions:
     into an Enclave environment.
 skill_description: Expert knowledge for Azure Enclave development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when designing DMZ ingress, securing
-  AKS/App Service/SQL, configuring AVD enclave communities, or planning DR/migration,
+  security, configuration, and deployment. Use when designing DMZ/AVD/AKS enclave
+  apps, configuring RBAC/Key Vault, deploying via Bicep, or setting ExpressRoute/VPN,
   and other Azure Enclave related development tasks. Not for Azure Confidential Computing
   (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure
   Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
-use_when: Use when designing DMZ ingress, securing AKS/App Service/SQL, configuring
-  AVD enclave communities, or planning DR/migration, and other Azure Enclave related
+use_when: Use when designing DMZ/AVD/AKS enclave apps, configuring RBAC/Key Vault,
+  deploying via Bicep, or setting ExpressRoute/VPN, and other Azure Enclave related
   development tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
   Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm),
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 95
+- **Updated Pages**: 2
+- **Unchanged**: 93
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-enclave/azure-enclave.csv`
 
@@ -60,15 +60,22 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 |------|-------|------------|
 | architecture-patterns | 3 | 3.2% |
 | best-practices | 2 | 2.1% |
-| configuration | 11 | 11.6% |
+| configuration | 10 | 10.5% |
 | decision-making | 2 | 2.1% |
 | deployment | 6 | 6.3% |
 | limits-quotas | 3 | 3.2% |
-| security | 20 | 21.1% |
+| security | 21 | 22.1% |
 | troubleshooting | 2 | 2.1% |
 | *(Unclassified)* | 46 | 48.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Access controls in enclaves](https://learn.microsoft.com/en-us/azure/enclave/access-controls-enclaves)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-11T22:13:00.000Z
+- [Maintenance mode](https://learn.microsoft.com/en-us/azure/enclave/maintenance-mode)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-11T22:13:00.000Z
 
 ## Classified Pages
 
@@ -79,14 +86,13 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Built in RBAC roles](https://learn.microsoft.com/en-us/azure/enclave/built-in-rbac-roles) | security | 0.85 | The page describes built-in RBAC roles specific to Azure Enclave, including role names, scopes (communities, enclaves, workloads), and how they control access. These are concrete, product-specific security and identity configuration details. |
 | [Naming rules and restrictions](https://learn.microsoft.com/en-us/azure/enclave/name-rules-restrictions-azure-enclave-resources) | limits-quotas | 0.85 | Summarizes naming rules and restrictions per resource provider; likely includes exact character limits, allowed patterns, and constraints that are specific and numeric. |
 | [Role-based Access Controls (RBAC)](https://learn.microsoft.com/en-us/azure/enclave/role-based-access-controls) | security | 0.85 | Introduces Enclave-specific built-in roles and how RBAC is implemented across the hierarchy; includes concrete role names and permissions unique to Azure Enclave. |
-| [Access controls in enclaves](https://learn.microsoft.com/en-us/azure/enclave/access-controls-enclaves) | security | 0.80 | Access control overview for Enclave with isolated RBAC, deny assignments, and exclusions at community/enclave/workload levels; contains product-specific IAM patterns and role scope behavior not generally known. |
 | [App Service Enclaves Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/app-service-initiative) | security | 0.80 | Describes policy guardrails for secure App Service deployment; includes specific policy definitions and required settings tailored to Enclave. |
 | [Azure Kubernetes Service (AKS) Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/aks-initiative) | security | 0.80 | Describes policy initiatives for secure AKS deployment in Enclave; likely lists specific policies, required configurations, and guardrails unique to this environment. |
 | [Configure approvals](https://learn.microsoft.com/en-us/azure/enclave/configure-approvals) | configuration | 0.80 | How-to article for configuring Approvals; likely includes specific settings, scopes, and preview constraints unique to Enclave. |
 | [Configure community governance](https://learn.microsoft.com/en-us/azure/enclave/configure-community-governance) | configuration | 0.80 | Explains governance options applied at community/enclave scope overriding defaults; likely includes specific policy initiatives, settings, and inheritance behavior unique to Enclave. |
 | [Configure customer managed key encryption](https://learn.microsoft.com/en-us/azure/enclave/configure-customer-managed-key-encryption-within-enclave) | security | 0.80 | Details CMK setup to satisfy Enclave governance requirements; likely includes specific policy requirements, key vault integration, and encryption options tailored to Enclave workloads. |
 | [Create Domain Name Service forwarder](https://learn.microsoft.com/en-us/azure/enclave/create-domain-name-service-forwarder) | configuration | 0.80 | The page provides a concrete example DNS forwarder configuration, including specific IP addresses for domain controllers and enclave-specific setup steps. This is detailed, product-specific configuration guidance rather than conceptual DNS content. |
-| [Maintenance mode](https://learn.microsoft.com/en-us/azure/enclave/maintenance-mode) | configuration | 0.80 | Explains maintenance mode state, allowed changes, and interaction with deny assignments; contains Enclave-specific configuration behavior for isolation and network boundaries. |
+| [Access controls in enclaves](https://learn.microsoft.com/en-us/azure/enclave/access-controls-enclaves) | security | 0.78 | Page focuses on Azure Enclave-specific IAM behavior using RBAC role assignments, deny assignments, and deny assignment exclusions at community, enclave, and workload scopes. This is product-specific security configuration and access control behavior that goes beyond generic RBAC concepts. |
 | [Azure Key Vault Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/key-vault-initiative) | security | 0.75 | Key Vault initiative pages normally detail specific policies (for example, required firewall settings, private endpoints, RBAC requirements) and enforcement behavior. These are concrete, product-specific security configurations and guardrails. |
 | [Manage approvals](https://learn.microsoft.com/en-us/azure/enclave/manage-approvals) | configuration | 0.75 | Explains reviewing, approving, and rejecting requests with the Enclave Approver Role; includes product-specific workflow and UI/command details. |
 | [Migrate Azure resources into Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/migrate-azure-resources-azure-enclave) | decision-making | 0.75 | Covers considerations and constraints when moving resources into Enclave workloads; includes product-specific migration rules and planning guidance beyond generic resource group moves. |
@@ -104,6 +110,7 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Disaster recovery planning](https://learn.microsoft.com/en-us/azure/enclave/disaster-recovery-planning) | decision-making | 0.70 | Provides a guide for client-side DR planning using Azure multi-region support; likely includes Enclave-specific recommendations, patterns, and trade-offs for resilience and availability. |
 | [Get started with Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/onboard) | security | 0.70 | Onboarding for Azure Enclave will include product-specific RBAC roles, required resource provider registrations, and permission scopes unique to Enclave environments. These are concrete security configuration details (which providers to register, which roles/permissions are needed) that go beyond generic Azure knowledge. |
 | [Just-in-time access](https://learn.microsoft.com/en-us/azure/enclave/just-in-time-access) | security | 0.70 | The page describes configuring just-in-time access to Azure Enclave scopes using Microsoft Entra PIM and Azure RBAC. This involves product-specific security configuration: role assignments, scopes, and PIM settings for Enclave resources, which are detailed security patterns rather than generic concepts. |
+| [Maintenance mode](https://learn.microsoft.com/en-us/azure/enclave/maintenance-mode) | security | 0.70 | Describes how Azure Enclave uses deny assignments to protect managed resources and how maintenance mode interacts with RBAC permissions. This is product-specific security and access control behavior tied to a particular feature (maintenance mode), not just conceptual guidance. |
 | [Understand approvals](https://learn.microsoft.com/en-us/azure/enclave/understand-approvals) | configuration | 0.70 | Describes the Approvals feature, request queuing, and approver role; contains product-specific governance workflow and role behavior not generally known. |
 | [Understand creation and deletion logic](https://learn.microsoft.com/en-us/azure/enclave/create-and-delete-logic) | configuration | 0.70 | The page explains conditions, dependencies, and locks that must be satisfied before creating or deleting enclave resources and resource groups. These are detailed, product-specific operational and configuration rules not covered by generic Azure knowledge. |
 | [Azure Enclave FAQs](https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq) | troubleshooting | 0.65 | FAQ pages for a niche service typically include product-specific behaviors, constraints, and Q&A about billing, configuration, and connectivity that go beyond generic concepts. These often map symptoms or questions to specific answers and mitigations, which aligns closest with troubleshooting. Content is not just conceptual marketing but operational guidance. |

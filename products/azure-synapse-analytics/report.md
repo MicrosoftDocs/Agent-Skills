@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 447
+- **Updated Pages**: 0
+- **Unchanged**: 450
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | *(Unclassified)* | 172 | 38.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Runtime for Apache Spark overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-version-support)
-  - Updated: 2025-11-20T18:41:00.000Z → 2026-09-03T05:24:00.000Z
-- [Azure Synapse Apache Spark 3.5 runtime (GA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-35-runtime)
-  - Updated: 2025-08-25T22:10:00.000Z → 2026-09-03T05:24:00.000Z
-- [Azure Synapse Apache Spark 3.4 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
-  - Updated: 2026-07-13T22:21:00.000Z → 2026-09-03T05:24:00.000Z
 
 ## Classified Pages
 

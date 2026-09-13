@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   integrations: Coding patterns and samples for building, running, and attesting Intel
     SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools,
@@ -13,9 +13,9 @@ category_descriptions:
   architecture-patterns: Architectural patterns and design guidance for using Azure
     confidential VMs, SGX enclaves, AKS, and multi-party analytics to build secure
     AI and containerized workloads.
-  configuration: Configuring and deploying Azure confidential VMs and containers (AKS
-    SGX, VMMD blob, CMK rotation, ARM/CLI), plus Secure Key Release policies and Virtual
-    Machine Metablob Disk usage.
+  configuration: Configuring and deploying Azure confidential VMs and AKS (SGX, containers),
+    managing keys and secure key release policies, and using/opt-ing out of VMMD metablob
+    disks.
   deployment: How to deploy and migrate Azure confidential VMs/VMSS and AKS (SGX and
     confidential node pools), create custom images, and set up Fortanix CCM using
     CLI and ARM templates.
@@ -25,16 +25,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Confidential Computing development including
   decision making, architecture & design patterns, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when building SGX/SEV-SNP apps,
-  AKS confidential containers, SKR/Key Vault flows, vTPM/CVMs, or Fortanix CCM, and
-  other Azure Confidential Computing related development tasks. Not for Azure Virtual
-  Enclaves (use azure-virtual-enclaves), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm).
-use_when: Use when building SGX/SEV-SNP apps, AKS confidential containers, SKR/Key
-  Vault flows, vTPM/CVMs, or Fortanix CCM, and other Azure Confidential Computing
-  related development tasks.
-confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure
-  Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm),
-  Azure Payment Hsm (use azure-payment-hsm).
+  AKS confidential containers, vTPM/CVMs, Fortanix/Key Vault SKR, or clean rooms,
+  and other Azure Confidential Computing related development tasks. Not for Azure
+  Enclave (use azure-enclave), Azure Dedicated HSM (use azure-dedicated-hsm), Azure
+  Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm).
+use_when: Use when building SGX/SEV-SNP apps, AKS confidential containers, vTPM/CVMs,
+  Fortanix/Key Vault SKR, or clean rooms, and other Azure Confidential Computing related
+  development tasks.
+confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated HSM
+  (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment
+  Hsm (use azure-payment-hsm).
 ---
 # Azure Confidential Computing Crawl Report
 
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 69
+- **Updated Pages**: 2
+- **Unchanged**: 68
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -71,7 +71,9 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 ### Updated Pages
 
 - [SKR with Azure Confidential Computing Concept](https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation)
-  - Updated: 2023-08-22T21:55:00.000Z → 2026-09-03T22:14:00.000Z
+  - Updated: 2026-09-03T22:14:00.000Z → 2026-09-09T08:00:00.000Z
+- [SKR Policy Examples](https://learn.microsoft.com/en-us/azure/confidential-computing/skr-policy-examples)
+  - Updated: 2025-03-04T18:02:00.000Z → 2026-09-10T05:11:00.000Z
 
 ## Classified Pages
 
@@ -90,7 +92,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Create a Hardened Virtual Machine Scale Set (VMSS) via Azure CLI](https://learn.microsoft.com/en-us/azure/confidential-computing/vmss-deployment-from-hardened-linux-image) | deployment | 0.75 | Explains VMSS deployment implications when Azure guest agents are removed, including lost functionality; product-specific deployment constraints and patterns. |
 | [Fortanix Confidential Computing Manager Node Agent](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-fortanix-confidential-computing-manager-node-agent) | integrations | 0.75 | Shows how to convert and run container images with Fortanix CCM and Node Agent on Azure confidential computing, including product-specific parameters and integration patterns. |
 | [Harden a Linux image to remove sudo users](https://learn.microsoft.com/en-us/azure/confidential-computing/harden-the-linux-image-to-remove-sudo-users) | security | 0.75 | Provides concrete steps to create admin-less images and discusses security impact; product-specific hardening pattern for confidential VMs. |
-| [SKR Policy Examples](https://learn.microsoft.com/en-us/azure/confidential-computing/skr-policy-examples) | configuration | 0.75 | Provides SKR policy examples tied to MAA claims and policy grammar; product-specific configuration of SKR behavior. |
 | [How to disable Virtual Machine Metablob Disk](https://learn.microsoft.com/en-us/azure/confidential-computing/disable-confidential-vm-metadata-blob) | configuration | 0.72 | The article provides product-specific steps and settings to disable VMMD blob creation for Azure Confidential VMs. It describes how to opt out of a default platform behavior for a particular VM architecture (disk, VMGS, VMMD), which is configuration-focused and specific to this service. The content goes beyond conceptual explanation and includes concrete, Azure-specific configuration actions, but does not emphasize limits, security roles, or deployment matrices. |
 | [About Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview) | decision-making | 0.70 | Explains protection levels, key ownership options, and when to use confidential VMs for migrations; supports configuration and tier choice decisions. |
 | [App enclaves overview](https://learn.microsoft.com/en-us/azure/confidential-computing/application-development) | integrations | 0.70 | Discusses SDKs/frameworks and how to structure applications for SGX enclaves on Azure; product-specific coding and integration patterns. |
@@ -108,6 +109,7 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Guest attestation Design for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-virtual-machines-design) | architecture-patterns | 0.70 | Provides design-level details of guest attestation architecture for confidential VMs, including flows and components unique to this service. |
 | [How to migrate nested confidential VMs from one region to another](https://learn.microsoft.com/en-us/azure/confidential-computing/migrate-nested-confidential-vms) | deployment | 0.70 | Stepwise migration process for nested confidential VMs, including quota checks and image capture; product-specific deployment/migration pattern. |
 | [Open-source projects for development](https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-development-oss) | integrations | 0.70 | A development-focused article on Intel SGX enclaves that describes specific open-source toolchains and patterns for building enclave applications on Azure confidential computing. This is product- and platform-specific integration knowledge beyond generic concepts. |
+| [SKR Policy Examples](https://learn.microsoft.com/en-us/azure/confidential-computing/skr-policy-examples) | configuration | 0.70 | Page focuses on SKR policy examples tied to Microsoft Azure Attestation claims and references specific policy grammar; this implies detailed, product-specific configuration of SKR policies rather than just conceptual content. |
 | [Secret & key management](https://learn.microsoft.com/en-us/azure/confidential-computing/secret-key-management) | security | 0.70 | Describes how confidential computing-enabled services use hardware root-of-trust keys, attestation, and in-TEE encryption; contains product-specific security patterns beyond generic key management. |
 | [Use sample app with guest attestation](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-example) | integrations | 0.70 | Shows how to integrate workloads with guest attestation APIs using sample code; includes API usage patterns specific to this feature. |
 | [Use virtual TPMs in Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-leverage-virtual-tpms-in-azure-confidential-vms) | security | 0.70 | How-to for using vTPM benefits after establishing trust; includes product-specific secure usage patterns on Linux confidential VMs. |
@@ -134,6 +136,7 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Create a Confidential VM through the Azure portal](https://learn.microsoft.com/en-us/azure/confidential-computing/quick-create-portal) | 0.40 | Quickstart for creating Intel SGX VMs via portal; primarily step-by-step UI instructions without detailed configuration matrices or constraints. |
 | [Enclave development overview](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-enclaves) | 0.40 | Conceptual explanation of SGX enclaves and their properties; lacks detailed Azure-specific configuration or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/partner-pages-index) | 0.30 | Partner index/marketing-style overview of confidential computing partners; no clear technical limits, configs, or troubleshooting details indicated. |
+| [SKR with Azure Confidential Computing Concept](https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation) | 0.30 | Conceptual overview of Secure Key Release and attestation with Azure Key Vault and Confidential Computing; no clear evidence of detailed configuration parameters, limits, error codes, or policy tables from the provided summary. |
 | [About Fortanix](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/fortanix) | 0.20 | Partner solution marketing page for Fortanix; separate how-to articles cover technical details instead. |
 | [Acompany](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/acompany) | 0.20 | Partner solution marketing page; description suggests high-level product info without detailed Azure-specific configuration or limits. |
 | [Anjuna](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/anjuna) | 0.20 | Partner solution marketing page for Anjuna; likely conceptual and sales-focused rather than detailed technical guidance. |
@@ -146,7 +149,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Habu](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/habu) | 0.20 | Partner solution marketing page for Habu; summary indicates no detailed Azure configuration or troubleshooting content. |
 | [Mithril Security](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/mithril) | 0.20 | Partner solution marketing page for Mithril Security; appears conceptual rather than detailed technical guidance. |
 | [Opaque](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/opaque) | 0.20 | Partner solution marketing page for Opaque; no indication of specific Azure configuration or limits. |
-| [SKR with Azure Confidential Computing Concept](https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation) | 0.20 | From the summary, this is a conceptual guide explaining what Secure Key Release is and how it works with Azure Confidential Computing. It doesn't indicate presence of specific numeric limits, configuration parameter tables, RBAC role lists, error codes, or decision matrices. Without those concrete, product-specific details, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Scone](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/scone) | 0.20 | Partner solution marketing page for Scontain; likely high-level solution description without expert configuration details. |
 | [Trusted compute base (TCB)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-compute-base) | 0.20 | Conceptual explanation of Trusted Computing Base; no concrete Azure configuration, limits, or decision criteria. |
 | [Trusted execution environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment) | 0.20 | Explains what a TEE is conceptually; lacks product-specific configuration, limits, or decision matrices. |

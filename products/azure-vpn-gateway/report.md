@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 9
-- **Unchanged**: 112
-- **Deleted Pages**: 10
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 122
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
@@ -75,44 +75,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 28 | 23.0% |
 
 ## Changes
-
-### New Pages
-
-- [VPN client configuration](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate)
-
-### Updated Pages
-
-- [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-versions)
-  - Updated: 2026-05-28T05:20:00.000Z → 2026-07-01T23:48:00.000Z
-- [Download Azure VPN Client with Windows Package Manager (WinGet)](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-winget)
-  - Updated: 2026-08-19T22:10:00.000Z → 2026-09-01T05:17:00.000Z
-- [About point-to-site VPN](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about)
-  - Updated: 2026-06-11T22:20:00.000Z → 2026-07-01T23:48:00.000Z
-- [Migrate from Azure VPN Client for Linux](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-linux-retirement)
-  - Updated: 2026-05-28T05:20:00.000Z → 2026-09-02T11:41:00.000Z
-- [Linux - strongSwan](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux)
-  - Updated: 2025-02-26T18:03:00.000Z → 2026-09-01T05:17:00.000Z
-- [Install VPN client certificates](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert)
-  - Updated: 2025-02-13T23:04:00.000Z → 2026-09-01T05:17:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new)
-  - Updated: 2026-05-28T05:20:00.000Z → 2026-09-01T05:17:00.000Z
-- [Design & topology](https://learn.microsoft.com/en-us/azure/vpn-gateway/design)
-  - Updated: 2025-01-16T06:09:00.000Z → 2026-07-01T23:48:00.000Z
-- [Leveraging Azure VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/work-remotely-support)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-07-01T23:48:00.000Z
-
-### Deleted Pages
-
-- ~~Azure VPN client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-certificate-client-linux-azure-vpn-client)
-- ~~Native VPN client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-cert-mac)
-- ~~IKEv2 - strongSwan~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-ike-linux)
-- ~~OpenVPN client - iOS~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-openvpn-ios)
-- ~~OpenVPN client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-openvpn-linux)
-- ~~OpenVPN client - macOS~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-openvpn-mac)
-- ~~Azure VPN client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-azure-vpn-client)
-- ~~Native VPN client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-native)
-- ~~Version 2.x~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-openvpn-client)
-- ~~Version 3.x~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-openvpn-client-version-3)
 
 ## Classified Pages
 

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 126
+- **Updated Pages**: 0
+- **Unchanged**: 129
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -75,15 +75,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 31 | 24.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql)
-  - Updated: 2026-02-18T23:35:00.000Z → 2026-09-04T22:35:00.000Z
-- [With the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/manage-sql-vm-portal?view=azuresql)
-  - Updated: 2025-09-26T22:35:00.000Z → 2026-09-04T22:35:00.000Z
-- [Domain-independent (workgroup)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-clusterless-workgroup-configure?view=azuresql)
-  - Updated: 2025-09-26T22:35:00.000Z → 2026-09-04T22:35:00.000Z
 
 ## Classified Pages
 

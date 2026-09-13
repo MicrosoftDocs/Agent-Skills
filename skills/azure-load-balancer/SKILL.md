@@ -1,9 +1,9 @@
 ---
 name: azure-load-balancer
-description: Expert knowledge for Azure Load Balancer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring backend pools/NAT rules, SNAT/outbound, health probes, IPv4/IPv6, or IMDS/metrics APIs, and other Azure Load Balancer related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Load Balancer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring backend pools/rules, SNAT/outbound, dual-stack IPv4/IPv6, health probes, or LB metrics/APIs, and other Azure Load Balancer related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Load Balancer Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L58-L62 | Design patterns for traffic distribution and session affinity, plus guidance for configuring outbound internet connectivity and SNAT behavior with Azure Load Balancer. |
 | Limits & Quotas | L63-L70 | Limits, behaviors, and configuration of Load Balancer TCP idle timeouts, TCP resets, and outbound SNAT connection quotas for inbound and outbound traffic. |
 | Security | L71-L76 | Security guidance for Azure Load Balancer: hardening, access controls, and using Azure DDoS Protection to defend against volumetric and network attacks. |
-| Configuration | L77-L93 | Configuring Azure Load Balancer behavior: backend pools, cross-subscription backends, health probes, rules/NAT, traffic distribution, outbound/SNAT, IPv6 DHCP, portal settings, and monitoring. |
+| Configuration | L77-L93 | Configuring Azure Load Balancer behavior: backend pools (incl. cross-subscription), rules/NAT, health probes, SNAT outbound, IPv6 DHCPv6, portal settings, and monitoring/metrics/logs. |
 | Integrations & Coding Patterns | L94-L100 | Code samples and patterns for probing health, reading load balancer/VM metadata via IMDS, and retrieving Azure Load Balancer metrics using CLI and REST APIs |
 | Deployment | L101-L108 | Deploying and migrating Azure Load Balancers: dual-stack IPv4/IPv6 setups (internal/external), automating Basic→Standard upgrades, NAT rule v1→v2 migration, and cross-region config replication. |
 

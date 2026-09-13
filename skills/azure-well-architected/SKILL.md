@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs, or configuring AKS, App Service, and databases, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/AZs, or tuning core compute/data/networking services, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security best practices and identify gaps against Well-Architected guidance. |
 | Recommendations | L44-L117 | Guidance on cost, reliability, performance, security, and operational excellence best practices for Azure workloads, including optimization, monitoring, automation, and sustainable cloud operations. |
-| Design Principles | L118-L132 | Design patterns and best practices for cost, reliability, security, performance, operations, sustainability, and mission-critical design across AI, SaaS, AVD, HPC, and other Azure workloads. |
-| Tradeoffs | L133-L142 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
-| Service Guides | L143-L178 | WAF-aligned design and configuration guidance for specific Azure services (App Service, AKS, networking, databases, storage, messaging) to improve reliability, security, and performance. |
-| Workload Patterns | L179-L223 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
-| Assessment Questions | L224-L235 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
+| Design Principles | L118-L133 | High-level Azure design guidance: cost, performance, reliability, security/Zero Trust, sustainability, operational excellence, capacity resilience, and patterns for AI, HPC, and SaaS workloads. |
+| Tradeoffs | L134-L143 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
+| Service Guides | L144-L179 | Service-specific Azure Well-Architected (WAF) guidance: design, configure, secure, and optimize reliability, performance, and cost for core compute, data, and networking services. |
+| Workload Patterns | L180-L224 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
+| Assessment Questions | L225-L236 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -121,6 +121,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply WAF design principles to AI workloads | https://learn.microsoft.com/en-us/azure/well-architected/ai/design-principles |
 | Use architecture patterns that improve cost optimization | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/design-patterns |
 | Apply Cost Optimization design principles in Azure | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/principles |
+| Design for capacity resilience in Azure architectures | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/capacity-resilience |
 | Use WAF design principles for Azure HPC architectures | https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-principles |
 | Apply mission-critical design principles on Azure | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-design-principles |
 | Apply Operational Excellence design principles in Azure | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/principles |
@@ -161,7 +162,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Functions using WAF-aligned best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-functions |
 | Optimize AKS using Well-Architected guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service |
 | Design Azure Load Balancer deployments with WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-load-balancer |
-| Deploy Azure Local with WAF-aligned architecture patterns | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local |
+| Apply WAF best practices to Azure Local deployments | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local |
 | Apply Well-Architected practices to Azure Log Analytics | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics |
 | Apply WAF principles to Azure Machine Learning deployments | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-machine-learning |
 | Optimize Azure NetApp Files with WAF-aligned configurations | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-netapp-files |

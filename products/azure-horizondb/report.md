@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   best-practices: 'Performance and operations guidance for HorizonDB: data prep for
     AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster
@@ -42,13 +42,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 - **Total Pages**: 146
 - **Fetched**: 146
 - **Fetch Failed**: 0
-- **Classified**: 111
-- **Unclassified**: 35
+- **Classified**: 110
+- **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 0
-- **Unchanged**: 144
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 145
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
@@ -56,7 +56,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 1.4% |
+| architecture-patterns | 1 | 0.7% |
 | best-practices | 7 | 4.8% |
 | configuration | 73 | 50.0% |
 | decision-making | 2 | 1.4% |
@@ -65,14 +65,14 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | limits-quotas | 2 | 1.4% |
 | security | 11 | 7.5% |
 | troubleshooting | 4 | 2.7% |
-| *(Unclassified)* | 35 | 24.0% |
+| *(Unclassified)* | 36 | 24.7% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Monitor and tune autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-autovacuum-monitor-tune)
-- [Prevent and resolve transaction ID wraparound](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-prevent-resolve-wraparound)
+- [Hybrid search](https://learn.microsoft.com/en-us/azure/horizondb/ai/hybrid-search)
+  - Updated: 2026-07-07T08:00:00.000Z → 2026-09-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -137,7 +137,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | [Full-text search (pg_textsearch)](https://learn.microsoft.com/en-us/azure/horizondb/ai/full-text-search) | configuration | 0.70 | Describes pg_textsearch as a custom index access method, with BM25 ranking and hybrid search composition. Likely includes index creation syntax, configuration parameters, and usage patterns specific to HorizonDB’s extension. |
 | [Generate vector embeddings in SQL](https://learn.microsoft.com/en-us/azure/horizondb/ai/generate-vector-embeddings) | integrations | 0.70 | Describes the azure_openai.create_embeddings() function in the azure_ai extension. This will include function signature, parameters, supported models, and configuration patterns unique to HorizonDB’s in-database AI, which are product-specific API details. |
 | [GraphRAG for knowledge graph enhanced search](https://learn.microsoft.com/en-us/azure/horizondb/ai/graph-rag) | architecture-patterns | 0.70 | Shows how to combine knowledge graphs, vector search, semantic reranking, Cypher traversal, and fusion into a full RAG pipeline. This is a product-specific architecture pattern for building accurate RAG apps on HorizonDB. |
-| [Hybrid search](https://learn.microsoft.com/en-us/azure/horizondb/ai/hybrid-search) | architecture-patterns | 0.70 | Shows how to build hybrid search end-to-end in HorizonDB, combining BM25, pgvector, DiskANN, and Reciprocal Rank Fusion. This is a product-specific retrieval pattern with concrete guidance on when and how to combine these components. |
 | [Intelligent Tuning](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-intelligent-tuning) | configuration | 0.70 | Intelligent tuning parameters page; likely contains HorizonDB-specific tuning options and default values, which are expert configuration knowledge. |
 | [Lock Management](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-lock-management) | configuration | 0.70 | Lock management parameters page; expected to list configuration settings for locks with specific values and ranges. |
 | [Metrics](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-metrics) | configuration | 0.70 | Metrics parameters page; likely includes parameter names and defaults for metrics behavior, which are product-specific configuration details. |
@@ -224,6 +223,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | [Connection libraries](https://learn.microsoft.com/en-us/azure/horizondb/connectivity/concepts-connection-libraries) | 0.30 | Lists libraries and drivers; summary does not show product-specific configuration parameters or constraints. |
 | [Create a HorizonDB cluster](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/quickstart-create-cluster) | 0.30 | Quickstart for creating a cluster; description is procedural and high-level without detailed config tables or limits. |
 | [Extensions and modules](https://learn.microsoft.com/en-us/azure/horizondb/extensions/concepts-extensions) | 0.30 | Conceptual overview of extensions and modules; no product-specific parameters, limits, or detailed configuration beyond generic PostgreSQL extension concepts. |
+| [Hybrid search](https://learn.microsoft.com/en-us/azure/horizondb/ai/hybrid-search) | 0.30 | The page appears to be an end-to-end tutorial on implementing hybrid search (BM25 + pgvector + DiskANN) in Azure HorizonDB. It likely focuses on conceptual explanation and example queries rather than detailed configuration tables, limits, error-code-based troubleshooting, or tier comparison matrices. Without evidence of specific numeric limits, configuration parameter tables, or decision matrices, it does not meet the criteria for any expert-knowledge sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-agents) | 0.30 | High-level explanation of AI agents and why databases/PostgreSQL matter. The summary suggests conceptual content rather than detailed configuration, error codes, or decision matrices. |
 | [Query Store usage scenarios](https://learn.microsoft.com/en-us/azure/horizondb/monitor/concepts-query-store-scenarios) | 0.30 | Usage scenarios article for Query Store; appears conceptual and example-driven without detailed product-specific configuration or limits. |
 | [Samples](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-samples) | 0.30 | Catalog of use cases and sample applications. Primarily marketing/overview content listing scenarios rather than detailed technical configuration or decision guidance. |

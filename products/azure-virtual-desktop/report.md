@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   configuration: Configuring AVD session hosts, images, autoscale, networking, RDP
     features/redirection, licensing, app attach, Teams/Office, language packs, monitoring,
@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 152
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 157
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -74,22 +74,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ## Changes
 
-### New Pages
-
-- [Windows update management methodologies](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts)
-
 ### Updated Pages
 
-- [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint)
-  - Updated: 2026-07-31T04:58:00.000Z → 2026-09-02T17:31:00.000Z
-- [RemoteApp enhancements (preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements)
-  - Updated: 2026-05-06T18:12:00.000Z → 2026-09-02T05:35:00.000Z
-- [Azure Virtual Desktop Hybrid Overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview)
-  - Updated: 2026-06-26T22:51:00.000Z → 2026-09-01T20:35:00.000Z
-- [Deploy Azure Virtual Desktop Hybrid](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop-hybrid)
-  - Updated: 2026-06-26T22:51:00.000Z → 2026-09-01T20:35:00.000Z
-- [Configure Start VM on Connect](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-08-31T22:35:00.000Z
+- [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new)
+  - Updated: 2026-03-23T08:00:00.000Z → 2026-09-08T08:00:00.000Z
 
 ## Classified Pages
 
@@ -240,7 +228,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [WebRTC Redirector Service](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-webrtc) | 0.25 | WebRTC Redirector Service release notes; summary suggests version info, not reusable expert configuration or limits. |
 | [Add session hosts to a host pool](https://learn.microsoft.com/en-us/azure/virtual-desktop/add-session-hosts-host-pool) | 0.20 | Page appears to be a procedural how-to for adding session host VMs to an Azure Virtual Desktop host pool. From the summary, it does not clearly expose numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. It looks like a step-by-step task guide rather than expert reference content, so no sub-skill classification is assigned. |
 | [Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-agent) | 0.20 | A 'what's new' change log for the Azure Virtual Desktop Agent; summary indicates release/feature notes but no evidence of limits, configuration tables, error codes, or other structured expert details as defined by the sub-skill types. |
-| [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | A 'what's new' changelog-style page listing recent Azure Virtual Desktop updates; primarily release notes and marketing/overview of new features without structured limits, configuration tables, decision matrices, or troubleshooting mappings. |
+| [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | Release notes/what's-new page listing recent Azure Virtual Desktop features and updates; does not focus on numeric limits, configuration tables, error-code troubleshooting, or other structured expert details as defined by the sub-skill types. |
 | [Azure Virtual Desktop Hybrid Overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview) | 0.20 | Hybrid overview page is primarily conceptual, describing what Azure Virtual Desktop Hybrid is and high-level behavior of Arc-enabled session hosts, without concrete limits, configuration tables, error codes, or decision matrices. |
 | [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension) | 0.20 | Appears to be a 'what's new' changelog for the multimedia redirection browser extension. Summary suggests feature updates, not detailed limits, configuration tables, error codes, or decision matrices. Without evidence of specific numeric limits, config parameters, or troubleshooting mappings, it doesn't meet any expert-knowledge sub-skill criteria. |
 | [Deploy Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop) | 0.20 | The page is a deployment tutorial showing how to create host pools, workspaces, and session hosts using portal/CLI. It doesn’t present deployment matrices, tier-specific constraints, or other detailed limits/configuration tables; it’s primarily step-by-step guidance that a generic LLM could already approximate. |

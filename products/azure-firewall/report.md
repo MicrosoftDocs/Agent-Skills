@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 84
+- **Updated Pages**: 0
+- **Unchanged**: 87
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | *(Unclassified)* | 32 | 36.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [SNAT private ranges](https://learn.microsoft.com/en-us/azure/firewall/snat-private-range)
-  - Updated: 2026-03-28T08:00:00.000Z → 2026-08-31T22:26:00.000Z
-- [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-08-31T22:26:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
-  - Updated: 2026-06-16T22:28:00.000Z → 2026-08-31T22:26:00.000Z
 
 ## Classified Pages
 

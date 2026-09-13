@@ -3,7 +3,7 @@ name: azure-copilot
 description: Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when sizing VMs, generating Bicep/Terraform, configuring Cosmos DB chat storage, or designing Azure networks, and other Azure Copilot related development tasks. Not for Azure Portal (use azure-portal), Azure Machine Learning (use azure-machine-learning), Azure DevOps (use azure-devops), Microsoft Foundry (use microsoft-foundry).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-16"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Copilot Skill

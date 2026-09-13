@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning or operating SAP, Oracle, AKS, AVD/AVS, or Arc workloads and their Azure landing zones, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning Azure landing zones, AVD, AVS, SAP, Oracle, AKS, Arc, or Citrix workloads, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Strategy | L37-L59 | Strategic planning for cloud and AI: business cases, org-wide AI roadmap, unified data, hybrid/multicloud, SAP/Oracle/VDI, sovereign cloud, and cost, security, resiliency, sustainability. |
+| Strategy | L37-L59 | Strategic guidance for planning cloud and AI adoption: business cases, exec strategy, data and hybrid/multicloud plans, cost, security, resiliency, sustainability, and workload-specific roadmaps. |
 | Planning | L60-L88 | Planning Azure cloud and AI adoption: migration waves, workload readiness, data/tech architecture, cost, skills, and roadmaps for AVD, VMware, Oracle, SAP, and cloud modernization. |
 | Readiness & Landing Zones | L89-L204 | Designing and operating Azure landing zones: networking, identity, subscriptions, management, automation, multitenant setups, and workload-specific patterns (AI, AVS, SAP, AVD, Citrix, Oracle). |
 | Adoption Patterns | L205-L227 | Patterns and guidance for planning, migrating, modernizing, and operating Azure workloads (cloud‑native, AI, SAP, Oracle, AVD), including architecture choices, rollout, and post‑deployment tasks. |
@@ -48,7 +48,7 @@ This skill requires **network access** to fetch documentation content:
 | Define unified hybrid and multicloud operations strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Assess strategic impact of migrating Oracle workloads to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-strategy |
 | Define cloud strategy for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |
-| Evaluate and adopt Microsoft Sovereign Cloud strategically | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy |
+| Define executive strategy for Microsoft Sovereign Cloud adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy |
 | Develop a measurable cloud adoption strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ |
 | Establish and structure a cloud strategy team | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team |
 | Incorporate cost efficiency into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/cost-efficiency |

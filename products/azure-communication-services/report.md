@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   configuration: Configuring monitoring, logging, metrics, and insights for ACS (chat,
     voice/video, calls, SMS, email), plus setup for Teams interop, direct routing,
@@ -19,9 +19,9 @@ category_descriptions:
   best-practices: Best practices for ACS calling, SMS, email, IDs, auth, Teams interop,
     network/quality, spam/opt-out compliance, and production-ready virtual visit and
     meeting experiences.
-  integrations: End-to-end patterns for integrating ACS calling, chat, SMS, email,
-    Rooms, Job Router, WhatsApp, Teams, OpenAI/bots, and UI libraries, including media
-    control, events, push, and telephony interop.
+  integrations: Patterns and end-to-end integrations for ACS calling, chat, SMS, email,
+    Rooms, Job Router, Teams/Phone, WhatsApp, OpenAI/bots, push, UI library, and telephony/OS
+    frameworks.
   deployment: 'Infrastructure and deployment guidance for Azure Communication Services:
     direct routing requirements and automating ACS/Email resource provisioning with
     PowerShell.'
@@ -31,17 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Communication Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ACS calling/chat apps, SMS/email senders, Teams interop, Rooms/Job
-  Router, or WhatsApp flows, and other Azure Communication Services related development
-  tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure
-  SignalR Service (use azure-signalr-service).
-use_when: Use when building ACS calling/chat apps, SMS/email senders, Teams interop,
-  Rooms/Job Router, or WhatsApp flows, and other Azure Communication Services related
-  development tasks.
-confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure
-  SignalR Service (use azure-signalr-service).
+  Use when building ACS calling/chat, SMS, email, Teams interop, or Rooms/Job Router
+  solutions, and other Azure Communication Services related development tasks. Not
+  for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service
+  (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot
+  Service (use azure-bot-service).
+use_when: Use when building ACS calling/chat, SMS, email, Teams interop, or Rooms/Job
+  Router solutions, and other Azure Communication Services related development tasks.
+confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs),
+  Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub),
+  Azure AI Bot Service (use azure-bot-service).
 ---
 # Azure Communication Services Crawl Report
 
@@ -55,8 +54,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 516
+- **Updated Pages**: 1
+- **Unchanged**: 517
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -79,10 +78,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Updated Pages
 
-- [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq)
-  - Updated: 2025-09-03T17:13:00.000Z → 2026-09-01T17:13:00.000Z
-- [Finland](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-finland)
-  - Updated: 2025-06-27T22:11:00.000Z → 2026-09-01T22:21:00.000Z
+- [Place a server outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-server-outbound-call)
+  - Updated: 2025-12-23T18:13:00.000Z → 2026-09-07T17:14:00.000Z
 
 ## Classified Pages
 
@@ -226,7 +223,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Integrate Azure OpenAI with Job Router](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/router/job-router-azure-openai-integration) | integrations | 0.75 | Quickstart wiring Azure OpenAI and Job Router via an Azure Function and distribution policy; contains concrete configuration and API usage across services. |
 | [Music mode](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/music-mode) | limits-quotas | 0.75 | Explicitly states supported sampling rate (32 kHz) and bitrate range (128 kbps down to 48 kbps), which are concrete product limits/quotas for this feature. |
 | [Participant's speaker has a problem](https://learn.microsoft.com/en-us/azure/communication-services/resources/troubleshooting/voice-video-calling/audio-issues/speaker-issue) | troubleshooting | 0.75 | Maps symptom (user cannot hear audio) to cause (speaker problem) and provides troubleshooting guidance specific to ACS calling scenarios. |
-| [Place a server outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-server-outbound-call) | integrations | 0.75 | How-to for server-initiated outbound calls via Call Automation with specific API version (1.5.0‑beta.1) and CreateCallAsync usage; contains product-specific API parameters and patterns. |
 | [Set up call monitoring and alerting](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/set-up-call-monitoring) | configuration | 0.75 | Step-by-step configuration of monitoring and alerting for ACS calling; includes product-specific settings and wiring. |
 | [Speaking participant's microphone has a problem](https://learn.microsoft.com/en-us/azure/communication-services/resources/troubleshooting/voice-video-calling/audio-issues/microphone-issue) | troubleshooting | 0.75 | Describes one-way audio caused by microphone problems on speaking participant and guides diagnosis, which is symptom → cause mapping. |
 | [Teams license requirements](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/eligible-teams-licenses) | decision-making | 0.75 | Describes specific Teams service plans and license requirements for using ACS support for Teams users, guiding which licenses are needed; this is concrete SKU/tier selection guidance. |
@@ -348,6 +344,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Handle Advanced messaging events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) | integrations | 0.68 | The page describes how to wire Azure Communication Services Advanced Messaging for WhatsApp into Azure Event Grid, including product-specific event types and event subscription configuration. This is an integration-focused, code/configuration pattern for connecting ACS WhatsApp messaging with Event Grid, which goes beyond generic SDK usage. It does not focus on limits, security, or deployment, but on how to receive and handle specific ACS WhatsApp events. |
 | [Hydrating messageId using EmailClient](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-advanced/hydrate-email-client-with-message-id) | integrations | 0.68 | Quickstart focused on a specific EmailClient capability (hydrating messageId) with SDK usage patterns and parameters that are product-specific and not generic email knowledge. |
 | [Integrate with data loss prevention policies](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/chat-sdk/data-loss-prevention) | integrations | 0.68 | How-to for subscribing to real-time chat notifications to honor Teams DLP; includes event schemas and configuration specific to ACS–Teams integration. |
+| [Place a server outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-server-outbound-call) | integrations | 0.68 | The article is a how-to showing concrete, product-specific code and configuration for using the Azure Communication Services Call Automation .NET SDK to place server-initiated outbound PSTN calls via Teams Phone Extensibility. It includes specific SDK methods, parameters, and integration patterns unique to this service, which qualify as expert integration knowledge beyond generic calling concepts. |
 | [View email events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/handle-email-events) | integrations | 0.68 | Quickstart shows product-specific event types and payload handling for Azure Communication Services Email via Event Grid, including event schema details and configuration parameters for subscribing and processing delivery and engagement events. This is concrete integration knowledge (event names, structure, and wiring) that goes beyond generic LLM training. |
 | [Call client operations logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/call-client-operations-log-schema) | configuration | 0.67 | Describes client operations log fields and how they map to calling actions; schema-level configuration/telemetry details specific to ACS. |
 | [Enable volume indicator controls](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-volume-indicator) | integrations | 0.67 | Quickstart for volume indicators will expose specific SDK APIs, event names, and parameters for retrieving volume levels, which are product-specific integration details. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   integrations: Integrating Azure SRE Agent with DevOps, GitHub, observability, incident
     tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant
@@ -21,36 +21,39 @@ category_descriptions:
   best-practices: Best practices for integrating Azure Monitor, Application Insights,
     and related observability tools with SRE Agent to collect, analyze, and act on
     telemetry and alerts.
+  architecture-patterns: Designing cold-standby disaster recovery for Azure SRE Agent,
+    including architecture choices, failover strategy, RPO/RTO considerations, and
+    environment replication.
   limits-quotas: Details of the 30-day Azure SRE Agent trial limits, including usage
     caps, feature restrictions, and what happens when you reach or exceed those limits.
 skill_description: Expert knowledge for Azure Sre Agent development including troubleshooting,
-  best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when integrating SRE Agent with DevOps/GitHub,
-  configuring tools/telemetry, deploying via IaC, or managing trial limits, and other
-  Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Service Health (use azure-service-health), Azure Reliability (use azure-reliability),
-  Azure Resiliency (use azure-resiliency).
-use_when: Use when integrating SRE Agent with DevOps/GitHub, configuring tools/telemetry,
-  deploying via IaC, or managing trial limits, and other Azure Sre Agent related development
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  integrating SRE Agent with DevOps/GitHub, configuring KQL telemetry, AKS Java workloads,
+  IaC deployments, or DR, and other Azure Sre Agent related development tasks. Not
+  for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability),
+  Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+use_when: Use when integrating SRE Agent with DevOps/GitHub, configuring KQL telemetry,
+  AKS Java workloads, IaC deployments, or DR, and other Azure Sre Agent related development
   tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Health
-  (use azure-service-health), Azure Reliability (use azure-reliability), Azure Resiliency
-  (use azure-resiliency).
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
+  azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health
+  (use azure-service-health).
 ---
 # Azure Sre Agent Crawl Report
 
 ## Summary
 
-- **Total Pages**: 123
-- **Fetched**: 123
+- **Total Pages**: 124
+- **Fetched**: 124
 - **Fetch Failed**: 0
-- **Classified**: 53
+- **Classified**: 54
 - **Unclassified**: 70
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 122
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -58,22 +61,22 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 
 | Type | Count | Percentage |
 |------|-------|------------|
+| architecture-patterns | 1 | 0.8% |
 | best-practices | 1 | 0.8% |
-| configuration | 12 | 9.8% |
+| configuration | 12 | 9.7% |
 | decision-making | 2 | 1.6% |
 | deployment | 1 | 0.8% |
-| integrations | 17 | 13.8% |
+| integrations | 17 | 13.7% |
 | limits-quotas | 1 | 0.8% |
-| security | 15 | 12.2% |
-| troubleshooting | 4 | 3.3% |
-| *(Unclassified)* | 70 | 56.9% |
+| security | 15 | 12.1% |
+| troubleshooting | 4 | 3.2% |
+| *(Unclassified)* | 70 | 56.5% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy)
-  - Updated: 2026-05-08T06:13:00.000Z → 2026-09-03T22:14:00.000Z
+- [Disaster recovery](https://learn.microsoft.com/en-us/azure/sre-agent/disaster-recovery)
 
 ## Classified Pages
 
@@ -104,6 +107,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 | [Set up MCP connector](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-connector) | integrations | 0.70 | Tutorial for wiring Azure SRE Agent to MCP servers (GitHub, Datadog, Splunk, New Relic). Likely includes product-specific connector settings, endpoint formats, and configuration parameters unique to the SRE Agent–MCP integration, which qualify as integration-focused expert knowledge beyond generic SDK usage. |
 | [Set up Teams connector](https://learn.microsoft.com/en-us/azure/sre-agent/set-up-teams-connector) | integrations | 0.70 | The page describes a product-specific integration between Azure SRE Agent and Microsoft Teams using a legacy connector model (managed identity plus Teams channel URL). This is an integration pattern unique to this product, with specific connector behavior and configuration steps that go beyond generic Teams or identity usage. While the summary is tutorial-like, the legacy connector details and how the agent posts/replies/read messages in context are product-specific integration knowledge. |
 | [Tool access policies](https://learn.microsoft.com/en-us/azure/sre-agent/tool-access-policies) | security | 0.70 | Provides product-specific policy controls (allow/ask/deny) that govern which tools the agent can use and how, including interaction with run modes and connector governance. These are concrete authorization controls unique to this product, not generic concepts. |
+| [Disaster recovery](https://learn.microsoft.com/en-us/azure/sre-agent/disaster-recovery) | architecture-patterns | 0.68 | The page describes a product-specific disaster recovery pattern for Azure SRE Agent, including how to architect a cold-standby agent in a secondary region and the precise failover/failback procedure. This is expert, service-specific guidance on when and how to use a particular DR pattern for this regional service, beyond generic DR concepts. |
 | [Connect knowledge](https://learn.microsoft.com/en-us/azure/sre-agent/connect-knowledge) | configuration | 0.66 | Covers connecting runbooks, documentation, web pages, and repositories as knowledge sources. This implies specific configuration parameters and options for knowledge connectors, which are product-specific configuration details. |
 | [Azure DevOps connector](https://learn.microsoft.com/en-us/azure/sre-agent/ado-connector) | integrations | 0.65 | Azure DevOps connector with OAuth/managed identity; likely documents specific configuration parameters and auth settings for this integration. |
 | [Code interpreter](https://learn.microsoft.com/en-us/azure/sre-agent/code-interpreter) | configuration | 0.65 | Describes executing Python and shell commands in a sandbox; likely includes product-specific capabilities, constraints, and parameters for the interpreter environment. |

@@ -1,9 +1,9 @@
 ---
 name: azure-iot-edge
-description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring DPS/X.509 provisioning, EFLOW/VM installs, gateway topologies, nested Edge, or CI/CD deployments, and other Azure IoT Edge related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
+description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring EFLOW devices, DPS provisioning, nested Edge gateways, CI/CD deployments, or Private Link traffic, and other Azure IoT Edge related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT Operations (use azure-iot-operations), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Edge Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L61-L67 | Design patterns for IoT Edge topologies: gateway scenarios, offline/intermittent connectivity strategies, and configuring multi-level (nested) Edge hierarchies for complex deployments |
 | Limits & Quotas | L68-L72 | Azure IoT Edge resource limits and quotas, including module, deployment, message, and device constraints, plus scalability and performance-related restrictions. |
 | Security | L73-L86 | Securing IoT Edge: certificates and X.509 provisioning, dTPM/EFLOW security, confidential computing modules, EST server setup, downstream auth, and Private Link/endpoint traffic protection. |
-| Configuration | L87-L119 | Configuring IoT Edge devices, networking, gateways, provisioning (DPS, keys, X.509), EFLOW/VM integration, metrics/monitoring, storage, and module/container deployment settings. |
+| Configuration | L87-L119 | Configuring IoT Edge devices and EFLOW: networking, gateways, DPS provisioning, storage, proxies, metrics/monitoring, GPU, and module/container deployment settings. |
 | Integrations & Coding Patterns | L120-L127 | Remote management and troubleshooting of IoT Edge via direct methods, integrating custom modules with IoT Hub, and managing IoT Edge on EFLOW using PowerShell. |
 | Deployment | L128-L140 | Deploying and updating IoT Edge at scale: CI/CD pipelines, portal/CLI deployments, Kubernetes/VM installs, runtime updates, and supported platforms for devices and device groups. |
 
@@ -87,7 +87,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Azure IoT Edge device settings via config.toml | https://learn.microsoft.com/en-us/azure/iot-edge/configure-device |
+| Configure Azure IoT Edge device via config.toml | https://learn.microsoft.com/en-us/azure/iot-edge/configure-device |
 | Enable GPU acceleration for IoT Edge for Linux on Windows | https://learn.microsoft.com/en-us/azure/iot-edge/gpu-acceleration |
 | Configure and access Azure IoT Edge built-in metrics | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-built-in-metrics |
 | Configure IoT Edge modules to use host storage | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-host-storage-from-module |

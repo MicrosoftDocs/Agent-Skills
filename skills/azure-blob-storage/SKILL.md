@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, lifecycle/immutability, NFS/SFTP mounts, static sites, or SDK/CLI data workflows, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Blob tiers, NFS/SFTP or BlobFuse mounts, SAS/RBAC access, lifecycle policies, or static website hosting, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L48 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover errors/networking, support bundles, BlobFuse/BlobFuse2 mount & I/O problems, metrics/logging quirks, NFS 3.0, and SFTP limitations. |
 | Best Practices | L49-L84 | Performance, reliability, and cost-optimization guidance for Azure Blob/Data Lake: access tiers, lifecycle, hot partitions, NFS/SFTP, client tuning, retries, monitoring, and backup best practices. |
-| Decision Making | L85-L113 | Cost and pricing guidance for Blob Storage: choosing tiers, connectivity, migration tools, data protection, reserved capacity, and estimating end-to-end and feature-specific costs. |
-| Limits & Quotas | L114-L133 | Limits, quotas, performance, and known issues for Blob Storage features (tiers, lifecycle, replication, NFS/SFTP, static sites, premium accounts, tools like BlobFuse and Storage Mover). |
-| Security | L134-L194 | Securing Blob Storage: RBAC/ABAC access control, SAS tokens, SFTP auth, ACLs, encryption (CSE, CPK, scopes), WORM/immutability, private networking, and anonymous access remediation. |
-| Configuration | L195-L254 | Configuring monitoring, lifecycle, immutability, networking, mounts (BlobFuse/NFS), inventory, restore/versioning, and third‑party backup/migration tools for Azure Blob Storage. |
-| Integrations & Coding Patterns | L255-L380 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: connect, upload/download, copy, list, manage containers/blobs/leases/metadata/tags/tiers, events, SAS, mounts, and migration/inventory workflows. |
+| Decision Making | L85-L114 | Cost and pricing guidance for Azure Blob and related storage: choosing tiers, connectivity, migration tools, data protection, SFTP/BlobFuse options, and estimating transfer, archive, and multi-region costs. |
+| Limits & Quotas | L115-L134 | Limits, quotas, performance, and known issues for Blob Storage features (tiers, lifecycle, replication, NFS/SFTP, static sites, premium accounts, tools like BlobFuse and Storage Mover). |
+| Security | L135-L195 | Securing Blob Storage: RBAC/ABAC access control, SAS tokens, SFTP auth, ACLs, encryption (CSE, CPK, scopes), WORM/immutability, private networking, and anonymous access remediation. |
+| Configuration | L196-L255 | Configuring monitoring, lifecycle, immutability, networking, mounts (BlobFuse/NFS), inventory, restore/versioning, and third‑party backup/migration tools for Azure Blob Storage. |
+| Integrations & Coding Patterns | L256-L380 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: connect, upload/download, copy, list, manage containers/blobs/leases/metadata/tags/tiers, events, SAS, mounts, and migration/inventory workflows. |
 | Deployment | L381-L393 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
 
 ### Troubleshooting
@@ -95,7 +95,7 @@ This skill requires **network access** to fetch documentation content:
 | Calculate archive tier storage and retrieval costs | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-cost-estimation |
 | Estimate AzCopy data transfer costs for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/azcopy-cost-estimation |
 | Choose Azure Blob cost optimization capabilities | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-cost-optimization-services |
-| Estimate end-to-end costs for Azure Blob Storage usage | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-storage-estimate-costs |
+| Estimate and compare Azure Blob Storage costs | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-storage-estimate-costs |
 | Compare BlobFuse behavior to native Linux file systems | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-compare-linux-file-system |
 | Choose between BlobFuse streaming and caching modes | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-streaming-versus-caching |
 | Estimate costs to retrieve and analyze archived blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-archive-retrieval-copy-blob |
@@ -104,6 +104,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose a method to relocate Azure Data Lake Storage across regions | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-migrate-data |
 | Choose Azure Blob data protection and recovery options | https://learn.microsoft.com/en-us/azure/storage/blobs/data-protection-overview |
 | Map Blob Storage REST operations to billing categories | https://learn.microsoft.com/en-us/azure/storage/blobs/map-rest-apis-transaction-categories |
+| Choose between Azure Blob SFTP and self-hosted SFTP | https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-choose-solution |
 | Choose between Blob soft delete and versioning | https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-vs-versioning-options |
 | Decide when to use premium block blob storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-block-blob-premium |
 | Plan and purchase Blob Storage reserved capacity | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-reserved-capacity |
@@ -370,7 +371,6 @@ This skill requires **network access** to fetch documentation content:
 | Encrypt and decrypt blobs using Azure Key Vault keys | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-encrypt-decrypt-blobs-key-vault |
 | Use Azure CLI to upload and download blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-cli |
 | Use Go module to work with Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-go |
-| Connect to Azure Blob Storage with Java SDK | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java |
 | Use Quarkus extension to access Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java-quarkus |
 | Use JavaScript SDK to manage Azure blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-nodejs |
 | Use TypeScript SDK to manage Azure blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-nodejs-typescript |

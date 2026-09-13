@@ -1,9 +1,9 @@
 ---
 name: azure-backup
-description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs/disks, SQL/SAP HANA DBs, AKS workloads, Files/Blobs, or automating via CLI/PowerShell, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
+description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs, AKS, SQL/SAP HANA, Files/Blobs, or automating backups via CLI/PowerShell/REST, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Backup Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L72-L82 | Best practices for securing Azure Backup data and configuring reliable backups/restores for Azure VMs, Hyper-V, SQL Always On, DPM/MABS workloads, and vault-registered servers. |
 | Decision Making | L83-L91 | Guidance on planning Azure Backup costs, choosing storage/reserved capacity, supported VM SKUs, crash-consistent and offline backup options, and migrating classic alerts to Azure Monitor. |
 | Architecture & Design Patterns | L92-L96 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
-| Limits & Quotas | L97-L133 | Limits, support matrices, regions, retention, and behavior constraints for Azure Backup across VMs, disks, SQL/MySQL/PostgreSQL/Cosmos DB, AKS, Files, Blobs, MARS, MABS/DPM, and reporting. |
-| Security | L134-L171 | Securing Azure Backup: RBAC, managed identities, MUA/Resource Guard, CMK encryption, private endpoints, soft delete, ransomware protection, AKS/VM/SQL/HANA/MABS/MARS security and compliance. |
-| Configuration | L172-L265 | Configuring and managing Azure Backup: vaults, policies, diagnostics, monitoring, and workload-specific backup/restore (VMs, AKS, SQL, SAP HANA, Cosmos DB, Files, Blobs, disks, Windows Server). |
-| Integrations & Coding Patterns | L266-L321 | Automating Azure Backup and restore for VMs, SQL, PostgreSQL, Files, Blobs, Disks, and MARS using CLI, PowerShell, REST, Logic Apps, Defender, and ARM scripting patterns. |
+| Limits & Quotas | L97-L133 | Backup limits, regional support, behaviors, and support matrices for Azure workloads (VMs, SQL, PostgreSQL/MySQL, AKS, Files, Blobs, SAP, MARS/MABS/DPM), plus metrics, reports, and retention. |
+| Security | L134-L170 | Securing Azure Backup and AKS backups: RBAC and managed identities, CMK encryption, soft delete, private endpoints, MUA/Resource Guard, ransomware protection, and secure restore scenarios. |
+| Configuration | L171-L264 | Configuring, automating, and monitoring Azure Backup for VMs, AKS, SQL, SAP HANA, Files, Blobs, Cosmos DB, disks, and servers, including policies, diagnostics, reporting, and restore workflows. |
+| Integrations & Coding Patterns | L265-L321 | Scripts and API patterns for configuring, running, and restoring Azure Backup across VMs, disks, blobs, files, SQL/PostgreSQL, AKS, plus automation via CLI/PowerShell/REST/Logic Apps. |
 | Deployment | L322-L330 | Configuring and deploying Azure Blob backup via ARM/Bicep, plus MABS v3/v4 workload support matrices and guidance on stopping protection for specific workloads. |
 
 ### Troubleshooting
@@ -103,7 +103,7 @@ This skill requires **network access** to fetch documentation content:
 | Review Azure Files backup support limits and settings | https://learn.microsoft.com/en-us/azure/backup/azure-file-share-support-matrix |
 | Check AKS backup region support and limitations | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-support-matrix |
 | Azure Backup service limits, behaviors, and constraints | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-faq |
-| Understand Azure Cosmos DB vaulted backup limits | https://learn.microsoft.com/en-us/azure/backup/backup-azure-cosmos-db-support-matrix |
+| Azure Cosmos DB vaulted backup support matrix | https://learn.microsoft.com/en-us/azure/backup/backup-azure-cosmos-db-support-matrix |
 | PostgreSQL Flexible Server backup capabilities and retention | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-overview |
 | Support matrix for PostgreSQL Flexible Server backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-support-matrix |
 | Overview and retention limits for Azure PostgreSQL backups | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-overview |
@@ -137,7 +137,6 @@ This skill requires **network access** to fetch documentation content:
 | Meet AKS backup prerequisites and trusted access requirements | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-concept |
 | Enforce AKS backup compliance using Azure Policy | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-policy |
 | Configure and manage Azure Backup soft delete protection | https://learn.microsoft.com/en-us/azure/backup/backup-azure-enhanced-soft-delete-configure-manage |
-| Use private endpoints (v2) to secure Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-private-endpoints-concept |
 | Configure and manage Azure Backup private endpoints | https://learn.microsoft.com/en-us/azure/backup/backup-azure-private-endpoints-configure-manage |
 | Restore Key Vault keys and secrets for encrypted Azure VMs via Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-key-secret |
 | Secure hybrid backups with Azure Backup features | https://learn.microsoft.com/en-us/azure/backup/backup-azure-security-feature |
@@ -154,7 +153,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Resource Guard and MUA on Azure Backup vaults | https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-tutorial |
 | Secure MABS backups with Azure Backup private endpoints | https://learn.microsoft.com/en-us/azure/backup/private-endpoint-configure-vault-backup-server |
 | Create and use private endpoints for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/private-endpoints |
-| Understand private endpoints (v1) for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/private-endpoints-overview |
+| Secure Azure Backup with private endpoints | https://learn.microsoft.com/en-us/azure/backup/private-endpoints-overview |
 | Secure Azure Backup against ransomware and threats | https://learn.microsoft.com/en-us/azure/backup/protect-backups-from-ransomware-faq |
 | Re-register MABS vault access after removing private endpoints | https://learn.microsoft.com/en-us/azure/backup/register-public-access-vault-backup-server |
 | Restore Azure PostgreSQL backups with cross-subscription access | https://learn.microsoft.com/en-us/azure/backup/restore-azure-database-postgresql |
@@ -178,6 +177,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure and run AKS backups with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup |
 | Configure AKS backups with Azure Backup via CLI | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-using-cli |
 | Configure AKS backup extension and trusted access | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-manage-backups |
+| Restore AKS clusters using Azure Backup | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-restore |
 | Configure Azure Backup vault diagnostics via Azure Policy | https://learn.microsoft.com/en-us/azure/backup/azure-policy-configure-diagnostics |
 | Configure SQL Server instance snapshot backups on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/back-up-sql-server-instance-snapshot |
 | Auto-enable VM backups using Azure Policy | https://learn.microsoft.com/en-us/azure/backup/backup-azure-auto-enable-backup |
@@ -202,7 +202,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Backup Server for Exchange | https://learn.microsoft.com/en-us/azure/backup/backup-azure-exchange-mabs |
 | Configure Azure Files backups in Recovery Services vault | https://learn.microsoft.com/en-us/azure/backup/backup-azure-files |
 | Audit and enforce Azure Files backup using Azure Policy | https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-policy-automation |
-| Configure and manage Azure Backup immutable vaults | https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage |
 | Configure application-consistent backups for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/backup/backup-azure-linux-app-consistent |
 | Use enhanced prescript framework for database-consistent Linux VM backups | https://learn.microsoft.com/en-us/azure/backup/backup-azure-linux-database-consistent-enhanced-pre-post |
 | Manage and monitor MARS agent backup configurations | https://learn.microsoft.com/en-us/azure/backup/backup-azure-manage-mars |
@@ -266,6 +265,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Restore AKS with Azure Backup via PowerShell | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-restore-using-powershell |
 | Back up PostgreSQL Flexible Server using Azure CLI | https://learn.microsoft.com/en-us/azure/backup/back-up-azure-database-postgresql-flex-backup-cli |
 | Back up PostgreSQL Flexible Server using PowerShell | https://learn.microsoft.com/en-us/azure/backup/back-up-azure-database-postgresql-flex-backup-powershell |
 | Configure and run VM backups via REST API | https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-userestapi-backupazurevms |

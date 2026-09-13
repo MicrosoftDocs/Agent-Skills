@@ -1,9 +1,9 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with Azure/OpenAI, SAP/B2B, on-prem connectors, CI/CD deployments, or DR designs, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure API Management (use azure-api-management), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building B2B/EDI flows, SAP/IBM integrations, private/secured endpoints, CI/CD deployments, or DR architectures, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Data Factory (use azure-data-factory), Azure Integration Environments (use azure-integration-environments).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L86-L94 | Limits, quotas, and tuning for Logic Apps: JS inline code limits, SQL result/timeouts, connector pagination, large-message chunking, config limits, and metering/billing behavior. |
 | Security | L95-L111 | Securing Logic Apps with identities, private endpoints, certificates, OAuth/OBO, Easy Auth, and Azure Policy/Defender controls for governance and cross-tenant/connector restrictions. |
 | Configuration | L112-L147 | Configuring Logic Apps behavior: triggers, loops, branches, scopes, B2B/integration accounts, monitoring/logging, on-premises access, storage, telemetry, and workflow JSON/schema settings. |
-| Integrations & Coding Patterns | L148-L256 | Patterns and SDKs for integrating Logic Apps with AI agents, Azure/OpenAI, SAP, B2B/EDI, storage, messaging, on-prem systems, and for coding/testing workflows in C#, .NET, and Python |
-| Deployment | L257-L278 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep/DevOps, migrating/ cloning workflows, hybrid setups, deployment slots, and CI/CD via VS Code, DevOps, and Deployment Center. |
+| Integrations & Coding Patterns | L148-L256 | Patterns and code-first SDKs for integrating Logic Apps with Azure/IBM/SAP systems, AI/Foundry agents, B2B/EDI, storage, messaging, custom connectors, and automated workflow testing. |
+| Deployment | L257-L278 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep, DevOps/VS Code, deployment slots, hybrid setups, migration/cloning, and CI/CD automation across environments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -195,7 +195,7 @@ This skill requires **network access** to fetch documentation content:
 | Build SAP integration workflows with Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap-create-example-scenario-workflows |
 | Generate SAP IDoc and BAPI schemas via Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap-generate-schemas-for-artifacts |
 | Build custom built-in connectors for Logic Apps Standard | https://learn.microsoft.com/en-us/azure/logic-apps/create-custom-built-in-connector-standard |
-| Expose Logic Apps workflows as remote MCP servers | https://learn.microsoft.com/en-us/azure/logic-apps/create-model-context-protocol-server-standard |
+| Expose Logic Apps as MCP servers for AI agents | https://learn.microsoft.com/en-us/azure/logic-apps/create-model-context-protocol-server-standard |
 | Implement inline .NET custom functions in Logic Apps Standard | https://learn.microsoft.com/en-us/azure/logic-apps/create-run-custom-code-functions |
 | Use Workflow Definition Language expression functions | https://learn.microsoft.com/en-us/azure/logic-apps/expression-functions-reference |
 | Host and call web or REST APIs from Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-custom-api-host-deploy-call |

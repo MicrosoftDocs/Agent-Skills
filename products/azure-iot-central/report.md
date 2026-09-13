@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-05-17'
+generated_at: '2026-09-13'
 category_descriptions:
   architecture-patterns: Solution-level IoT Central architecture, using IoT Edge as
     a gateway, and designing data transformation flows from devices to downstream
@@ -10,9 +10,9 @@ category_descriptions:
   best-practices: Guidance on designing and implementing IoT devices for IoT Central,
     including connectivity, reliability, security, telemetry modeling, and lifecycle
     best practices.
-  configuration: 'Configuring IoT Central apps: device templates, connectivity, rules,
-    branding, data export (Blob, ADX, Event Hubs, Service Bus, webhooks), and managing
-    via portal, CLI, and REST APIs'
+  configuration: 'Configuring IoT Central apps: device templates, branding, connectivity,
+    telemetry mapping, data transforms, exports (ADX/Blob/Event Hubs/Service Bus),
+    file uploads, REST/CLI management, and migration.'
   limits-quotas: IoT Central limits (devices, throughput, API calls), quotas, and
     supported client environments, including browser support and network/connectivity
     requirements.
@@ -25,37 +25,36 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing IoT Central issues: common errors, device
     connectivity/data export problems, and using audit logs to investigate configuration
     or state changes.'
-  decision-making: Guidance for planning and executing migration of devices and workloads
-    from Azure IoT Central to Azure IoT Hub, including architecture, data, and operational
-    considerations.
+  decision-making: Guidance for planning and executing migration from IoT Central
+    to Azure-native IoT services (IoT Hub, DPS, Time Series Insights, etc.), including
+    architecture, mapping, and migration steps.
 skill_description: Expert knowledge for Azure IoT Central development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing device templates, data export, IoT Edge gateways, REST/CLI automation,
-  or IoT Central–to–IoT Hub migrations, and other Azure IoT Central related development
-  tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge),
-  Azure IoT Operations (use azure-iot-operations), Azure Digital Twins (use azure-digital-twins).
-use_when: Use when designing device templates, data export, IoT Edge gateways, REST/CLI
-  automation, or IoT Central–to–IoT Hub migrations, and other Azure IoT Central related
-  development tasks.
-confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use
-  azure-iot-edge), Azure IoT Operations (use azure-iot-operations), Azure Digital
-  Twins (use azure-digital-twins).
+  designing IoT Central templates, device auth, data exports, REST/CLI automation,
+  or IoT Edge gateways, and other Azure IoT Central related development tasks. Not
+  for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT Edge
+  (use azure-iot-edge), Azure Digital Twins (use azure-digital-twins).
+use_when: Use when designing IoT Central templates, device auth, data exports, REST/CLI
+  automation, or IoT Edge gateways, and other Azure IoT Central related development
+  tasks.
+confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot),
+  Azure IoT Edge (use azure-iot-edge), Azure Digital Twins (use azure-digital-twins).
 ---
 # Azure IoT Central Crawl Report
 
 ## Summary
 
-- **Total Pages**: 89
-- **Fetched**: 89
+- **Total Pages**: 90
+- **Fetched**: 90
 - **Fetch Failed**: 0
-- **Classified**: 56
+- **Classified**: 57
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 89
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 88
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
@@ -63,18 +62,27 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 3.4% |
+| architecture-patterns | 3 | 3.3% |
 | best-practices | 1 | 1.1% |
-| configuration | 17 | 19.1% |
+| configuration | 18 | 20.0% |
 | decision-making | 1 | 1.1% |
 | deployment | 5 | 5.6% |
-| integrations | 12 | 13.5% |
+| integrations | 12 | 13.3% |
 | limits-quotas | 2 | 2.2% |
-| security | 12 | 13.5% |
-| troubleshooting | 3 | 3.4% |
-| *(Unclassified)* | 33 | 37.1% |
+| security | 12 | 13.3% |
+| troubleshooting | 3 | 3.3% |
+| *(Unclassified)* | 33 | 36.7% |
 
 ## Changes
+
+### New Pages
+
+- [Migrate to native Azure IoT architecture](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-migrate-to-azure-native-iot)
+
+### Updated Pages
+
+- [Migrate devices to IoT Hub](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-migrate-to-iot-hub)
+  - Updated: 2025-08-06T08:00:00.000Z → 2026-09-10T05:11:00.000Z
 
 ## Classified Pages
 
@@ -116,7 +124,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 | [Manage jobs](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-jobs-with-rest-api) | deployment | 0.70 | Details scheduled vs nonscheduled jobs, recurrence, and /jobs/{job_id} usage, which are product-specific bulk operation mechanics. |
 | [Manage users and roles](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-users-roles) | security | 0.70 | Describes role-based access, permissions, and how roles control access to resources, including specific role names and capabilities. |
 | [Manage users and roles](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-users-roles-with-rest-api) | security | 0.70 | Covers REST operations for users and roles, including how access control is represented and audited, which are product-specific security/identity details. |
-| [Migrate devices to IoT Hub](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-migrate-to-iot-hub) | decision-making | 0.70 | Describes a specific migration tool, required DeviceMove command, and DPS ID scope payload, which are concrete migration mechanics and decisions unique to this scenario. |
+| [Migrate devices to IoT Hub](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-migrate-to-iot-hub) | configuration | 0.70 | Page describes a device-level migration tool and how to change device configuration from IoT Central to IoT Hub. This involves product-specific connection and configuration details for devices (such as how they are reprovisioned and reconfigured), which are not generic knowledge and qualify as expert, configuration-focused guidance rather than just conceptual migration advice. |
+| [Migrate to native Azure IoT architecture](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-migrate-to-azure-native-iot) | decision-making | 0.70 | Described as a migration playbook for moving from IoT Central to an Azure-native IoT architecture using IoT Hub, DPS, and Microsoft Fabric. Such a playbook typically includes scenario-based recommendations, architecture choices, and step-by-step guidance for when and how to choose specific Azure-native components, which is decision-focused migration guidance beyond generic conceptual content. |
 | [Monitor device connectivity using Azure CLI](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-monitor-devices-azure-cli) | integrations | 0.70 | Uses Azure CLI IoT extension with specific commands and options to monitor messages and twin changes, which are product-specific diagnostic commands. |
 | [Transform data internally for export](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-transform-data-internally) | configuration | 0.70 | Details internal transformation definitions within export configurations, including transformation syntax/structure unique to IoT Central. |
 | [Transform data internally on ingress](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-map-data) | configuration | 0.70 | Explains JSON path mappings to aliases and how mapped telemetry is used, which is a product-specific configuration mechanism. |

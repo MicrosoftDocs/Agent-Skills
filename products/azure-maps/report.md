@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
   integrations: 'Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK
     usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations
@@ -9,27 +9,25 @@ category_descriptions:
     copyright/attribution.'
   security: 'Securing Azure Maps access: auth methods (keys, SAS, Entra ID), SPA/daemon/device
     scenarios, Power BI visual governance, and network isolation with Private Link.'
-  limits-quotas: 'Coverage, limits, and capabilities of Azure Maps services: QPS rate
-    limits, and regional support for geocoding, rendering/tiles, routing, traffic,
-    and weather data.'
+  limits-quotas: Azure Maps service limits (QPS by tier) and global coverage details
+    for geocoding, rendering/tiles, routing, traffic, and weather data
   configuration: Configuring Azure Maps web maps, styles, layers, data sources, routing
     models, localization, browser support, and migrating or updating to newer Azure
     Maps APIs and services.
   architecture-patterns: Designing Azure architectures for elevation data services
     and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA
     cuOpt for scalable geospatial solutions
-  decision-making: Guidance on pricing, billing, and migrating maps apps to Azure
-    Maps from Bing, Google, Power BI visuals, and older Azure Maps APIs, including
-    routing, tiles, and search replacements
+  decision-making: Guidance on choosing Azure Maps pricing, understanding billing,
+    and planning migrations from Bing, Google Maps, Power BI, and older Azure Maps
+    APIs to current Azure Maps services.
 skill_description: Expert knowledge for Azure Maps development including best practices,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when using web/REST/Power BI SDKs, geocoding/routing/weather
-  APIs, tiles/rendering, or multi-stop route optimization, and other Azure Maps related
-  development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure IoT
-  (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
-  azure-iot-edge).
-use_when: Use when using web/REST/Power BI SDKs, geocoding/routing/weather APIs, tiles/rendering,
-  or multi-stop route optimization, and other Azure Maps related development tasks.
+  and integrations & coding patterns. Use when using Azure Maps web/REST SDKs, geocoding/routing,
+  tiles/weather, Spatial IO/WMS, or Bing/Google migrations, and other Azure Maps related
+  development tasks.
+use_when: Use when using Azure Maps web/REST SDKs, geocoding/routing, tiles/weather,
+  Spatial IO/WMS, or Bing/Google migrations, and other Azure Maps related development
+  tasks.
 confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure IoT
   (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
   azure-iot-edge).
@@ -38,16 +36,16 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ## Summary
 
-- **Total Pages**: 147
-- **Fetched**: 147
+- **Total Pages**: 148
+- **Fetched**: 148
 - **Fetch Failed**: 0
-- **Classified**: 113
-- **Unclassified**: 34
+- **Classified**: 111
+- **Unclassified**: 37
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 147
+- **New Pages**: 1
+- **Updated Pages**: 6
+- **Unchanged**: 141
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -56,15 +54,34 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.4% |
-| best-practices | 7 | 4.8% |
-| configuration | 21 | 14.3% |
-| decision-making | 8 | 5.4% |
-| integrations | 58 | 39.5% |
+| best-practices | 7 | 4.7% |
+| configuration | 21 | 14.2% |
+| decision-making | 9 | 6.1% |
+| integrations | 55 | 37.2% |
 | limits-quotas | 6 | 4.1% |
-| security | 11 | 7.5% |
-| *(Unclassified)* | 34 | 23.1% |
+| security | 11 | 7.4% |
+| *(Unclassified)* | 37 | 25.0% |
 
 ## Changes
+
+### New Pages
+
+- [Migrate Azure Maps Render 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-render-v1-api)
+
+### Updated Pages
+
+- [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps)
+  - Updated: 2026-08-18T22:40:00.000Z → 2026-09-11T17:13:00.000Z
+- [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps)
+  - Updated: 2025-10-22T17:11:00.000Z → 2026-09-10T08:00:00.000Z
+- [Render coverage](https://learn.microsoft.com/en-us/azure/azure-maps/render-coverage)
+  - Updated: 2023-09-22T17:08:00.000Z → 2026-09-11T17:13:00.000Z
+- [C# REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-csharp-sdk)
+  - Updated: 2024-08-27T11:14:00.000Z → 2026-09-11T17:13:00.000Z
+- [Python REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk)
+  - Updated: 2024-08-16T11:21:00.000Z → 2026-09-10T08:00:00.000Z
+- [Java REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-java-sdk)
+  - Updated: 2023-10-12T17:01:00.000Z → 2026-09-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -118,24 +135,22 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Authentication best practices](https://learn.microsoft.com/en-us/azure/azure-maps/authentication-best-practices) | best-practices | 0.70 | Article explicitly provides tips and practices to secure Azure Maps applications; likely includes product-specific DOs/DON’Ts and patterns for using auth methods. |
 | [Authentication with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication) | security | 0.70 | Describes specific Azure Maps authentication methods (Shared Key, Entra ID, SAS), account controls, and TLS version support; this is product-specific security configuration guidance. |
 | [Bing Maps migration overview](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-bing-maps-overview) | decision-making | 0.70 | Provides platform comparisons, migration guides, and best practices to decide how to move from Bing Maps to Azure Maps; this is explicit migration and selection guidance. |
-| [C# REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-csharp-sdk) | integrations | 0.70 | Provides C# SDK usage patterns for Search, Route, Geolocation, etc., with concrete API calls and parameters; these are product-specific integration patterns. |
 | [Cluster point data](https://learn.microsoft.com/en-us/azure/azure-maps/clustering-point-data-web-sdk) | integrations | 0.70 | Provides concrete clustering configuration and event-handling patterns using Azure Maps data sources and layers, which are product-specific coding details. |
 | [Geocoding coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geocoding-coverage) | limits-quotas | 0.70 | Provides detailed coverage levels (address points, house numbers, etc.) per country/region; effectively a capability matrix with region-specific support details that are not generic knowledge. |
 | [Get shape data](https://learn.microsoft.com/en-us/azure/azure-maps/map-get-shape-data) | integrations | 0.70 | Uses drawingManager.getSource() and related APIs to retrieve shape data, a concrete coding pattern specific to Azure Maps drawing tools. |
 | [How to use image templates](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-image-templates-web-sdk) | integrations | 0.70 | Lists built-in SVG templates, default preloaded marker images, and how they’re used via IconOptions and image sprites—SDK-specific configuration patterns. |
-| [Java REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-java-sdk) | integrations | 0.70 | Covers Java SDK usage for multiple Azure Maps services with concrete API calls and configuration; product-specific integration patterns. |
 | [JavaScript / TypeScript REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-js-sdk) | integrations | 0.70 | Shows how to use the JS/TS REST SDK for Search and related operations, with specific methods and parameters; this is detailed integration guidance. |
 | [Leverage core operations](https://learn.microsoft.com/en-us/azure/azure-maps/spatial-io-core-operations) | integrations | 0.70 | Documents atlas.io.core classes, their methods, and performance-focused usage for CSV/XML, which are specific low-level integration APIs. |
 | [Localization support](https://learn.microsoft.com/en-us/azure/azure-maps/supported-languages) | configuration | 0.70 | Lists supported languages and view parameters and explains how to set the view parameter; this is a product-specific configuration reference. |
 | [Manage authentication](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication) | security | 0.70 | Describes concrete Azure Maps authentication options (Microsoft Entra ID vs shared key), including account-specific identifiers and how they’re used; likely includes scopes and configuration parameters unique to Azure Maps. |
 | [Manage consent](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-consent) | configuration | 0.70 | Explains configuring global data processing settings via portal, REST APIs, and ARM templates to comply with residency laws; involves product-specific configuration options and parameters. |
 | [Manage pricing tier](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier) | decision-making | 0.70 | Discusses Gen1 vs Gen2 pricing tiers, retirement dates, and when/how to switch; includes concrete SKU guidance and migration implications, which is decision-making content with product-specific details. |
+| [Migrate Azure Maps Render 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-render-v1-api) | decision-making | 0.70 | Migration guide between specific API versions with retirement date and version-specific request changes; contains concrete, product-specific guidance for deciding and executing migration from Render 1.0 to 2024-04-01. |
 | [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api) | integrations | 0.70 | Migration guidance between Search API versions typically includes endpoint changes, parameter mappings, and behavior differences that are specific to Azure Maps and not generally known to LLMs. These are concrete, product-specific integration details rather than conceptual overview content. |
-| [Python REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk) | integrations | 0.70 | Similar to C# guide but for Python; includes concrete SDK methods and configuration for Search, Route, Render, Geolocation; product-specific integration details. |
 | [React to drawing events](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events) | integrations | 0.70 | Provides a table of DrawingManager events and how they fire during user interactions, which are product-specific event contracts. |
 | [Reacting to events](https://learn.microsoft.com/en-us/azure/azure-maps/map-events) | integrations | 0.70 | Provides a list of supported map events and how to subscribe to them using Azure Maps APIs, which are concrete, product-specific event integration details. |
 | [Read and write spatial data](https://learn.microsoft.com/en-us/azure/azure-maps/spatial-io-read-write-spatial-data) | configuration | 0.70 | Provides a table of supported spatial file formats for read/write operations, effectively a configuration matrix for what the module accepts and outputs. |
-| [Render coverage](https://learn.microsoft.com/en-us/azure/azure-maps/render-coverage) | limits-quotas | 0.70 | Coverage tables for road tiles by country/region and explicit tile resolution (e.g., 38 square meters at highest zoom) are specific quantitative constraints. |
+| [Render coverage](https://learn.microsoft.com/en-us/azure/azure-maps/render-coverage) | limits-quotas | 0.70 | Contains specific numerical constraints about tile resolution (world in one tile at lowest zoom, 38 square meters per tile at highest zoom), which are concrete service limits/characteristics not generally known from training. |
 | [Render custom data on static map](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-render-custom-data) | best-practices | 0.70 | Includes concrete guidance on using Get Map Static Image with image composition, and a cost-related tip comparing Web SDK vs static images; these are product-specific usage recommendations. |
 | [Routing coverage](https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage) | limits-quotas | 0.70 | Routing coverage article describes which regions support routing, routing with traffic, and truck routing; these are concrete service capability limits by geography. |
 | [Show traffic](https://learn.microsoft.com/en-us/azure/azure-maps/map-show-traffic) | integrations | 0.70 | Contains Azure Maps–specific traffic options (trafficflow values and behavior) and configuration patterns for incident and flow data layers. |
@@ -208,17 +223,20 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary) | 0.25 | Glossary of terms; definitional, not expert configuration, limits, or troubleshooting content. |
 | [Provide data feedback](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-feedback-tool) | 0.25 | Feedback tool article is about reporting map data issues; process-oriented, not about configuration, limits, or troubleshooting of the platform itself. |
 | [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer) | 0.20 | Page describes how to add and use a reference layer in the Azure Maps Power BI visual, but based on the summary it appears to be a feature-usage/how-to article without numeric limits, configuration parameter tables, error-code troubleshooting, or decision matrices. It does not match any expert-knowledge sub-skill criteria. |
+| [C# REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-csharp-sdk) | 0.20 | Developer guide for C# SDK appears to be general usage examples and getting-started content; no clear indication of configuration tables, limits, or product-specific troubleshooting details. |
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
 | [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module) | 0.20 | This is a release notes page for the Azure Maps Drawing Tools Module. It mainly describes feature additions and changes, not product-specific limits, configuration parameters, troubleshooting mappings, or decision criteria that match any sub-skill type. |
 | [Geocoding in Azure Maps Power BI Visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode) | 0.20 | Page appears to explain how geocoding works in the Azure Maps Power BI visual and how to use the Location field with address data. From the summary, it does not indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined in the sub-skill types. It is primarily conceptual/feature-usage guidance rather than expert-knowledge reference content. |
 | [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |
+| [Java REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-java-sdk) | 0.20 | Java SDK developer guide is described as an introduction with examples; no indication of expert-level configuration matrices, limits, or specialized troubleshooting content. |
 | [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.20 | Release notes typically list new features and changes without structured limits, configuration tables, error codes, or decision matrices. This page is a change log for the Azure Maps Web SDK Map Control, not a technical reference with expert-only details as defined by the sub-skill types. |
+| [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is primarily a navigation/overview listing links to Azure Maps REST APIs and high-level service descriptions; no detailed limits, configuration tables, error codes, or product-specific diagnostic/security/deployment guidance are evident. |
 | [Multiple routes by mode of travel](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes) | 0.20 | Tutorial for multiple travel modes; appears as example usage without detailed configuration matrices or limits. |
 | [On-object interaction](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-on-object-interaction) | 0.20 | On-object interaction article describes UI formatting interactions; no indication of detailed configuration parameters or expert constraints. |
+| [Python REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk) | 0.20 | Python SDK developer guide summary suggests generic how-to and examples; lacks evidence of detailed configuration parameters, limits, or error-code-based troubleshooting. |
 | [Route to a destination](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-route-location) | 0.20 | Routing tutorial showing how to call Route service; no indication of limits, configuration tables, or troubleshooting mappings. |
 | [Search for point of interest](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-search-location) | 0.20 | Tutorial on searching locations; focuses on example usage rather than product-specific limits, configuration options, or error codes. |
 | [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.20 | This Spatial IO Module release notes page is a change log for the Azure Maps Spatial IO Module. It does not present structured limits, configuration tables, error codes, or decision-making guidance required for classification into the defined sub-skill types. |
-| [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.20 | High-level product overview of Azure Maps services and capabilities without detailed limits, configuration tables, or error mappings. |
-| [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | - | Page is an overview and link hub for Azure Maps REST APIs, listing available services but not providing limits, configuration parameters, error codes, or other detailed expert knowledge. |
+| [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.10 | High-level overview of Azure Maps services and capabilities without product-specific limits, configuration tables, error codes, or detailed decision matrices. |
 | [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq) | - | FAQ-style page about Azure Maps Weather service; based on the description it likely covers general questions about data and features rather than detailed limits, configuration parameters, error codes, or decision matrices. Without evidence of specific numeric limits, config tables, or error-code mappings, it doesn't meet any sub-skill detection criteria. |
