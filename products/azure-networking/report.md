@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 51
+- **Updated Pages**: 0
+- **Unchanged**: 53
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
@@ -63,13 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 14 | 26.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Load balancing options](https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery)
-  - Updated: 2026-08-18T08:00:00.000Z → 2026-08-28T08:00:00.000Z
-- [Load balancing and content delivery overview](https://learn.microsoft.com/en-us/azure/networking/load-balancer-content-delivery/load-balancing-content-delivery-overview)
-  - Updated: 2026-08-19T17:11:00.000Z → 2026-08-28T08:00:00.000Z
 
 ## Classified Pages
 

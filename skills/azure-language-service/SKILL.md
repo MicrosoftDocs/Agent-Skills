@@ -1,9 +1,9 @@
 ---
 name: azure-language-service
-description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building CLU intents, custom NER, CQA, health text, sentiment/PII, or orchestration workflows, and other Azure AI Language related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure Speech in Foundry Tools (use azure-speech), Azure Translator (use azure-translator), Azure AI Document Intelligence (use azure-document-intelligence).
+description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using CLU, custom/health NER, CQA, sentiment/PII APIs, or Language/TA/health containers, and other Azure AI Language related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence), Azure Speech in Foundry Tools (use azure-speech), Azure Translator (use azure-translator).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Language Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L64-L71 | Designing and implementing regional failover and high-availability patterns for CLU, custom NER, custom text classification, and orchestration workflow models in Azure AI Language. |
 | Limits & Quotas | L72-L95 | Limits, quotas, languages, and model lifecycles for Azure Language features (CLU, NER, text classification, CQA, health), including data size, rate, throughput, and container constraints. |
 | Security | L96-L107 | Securing Azure Language and CQA: encryption at rest (including CMK), RBAC, managed identities, SAS tokens, network isolation/Private Link, and secure deployment/data access configuration. |
-| Configuration | L108-L125 | Configuring Azure AI Language features and runtime: CLU fine-tuning, NER formats/metadata, CQA behavior/telemetry, health/FHIR output, and container settings. |
-| Integrations & Coding Patterns | L126-L145 | How to call Azure Language/TA/health/CLU/CQA APIs and SDKs for NER, entity linking, key phrases, language detection, sentiment, PII redaction, relations, and orchestration workflows. |
-| Deployment | L146-L156 | Guides for deploying and running custom language/NER/CQA/sentiment/health models across regions, on-prem via Docker containers, and moving projects between environments. |
+| Configuration | L108-L124 | Configuring Azure AI Language features: CLU fine-tuning, containers, custom/health NER, orchestration None intent, CQA scoring/telemetry, FHIR output, and related project/skill settings. |
+| Integrations & Coding Patterns | L125-L144 | How to call Azure Language/TA/health/CLU/CQA APIs and SDKs for NER, entity linking, key phrases, language detection, sentiment, PII redaction, relations, and orchestration workflows. |
+| Deployment | L145-L155 | Guides for deploying and running custom language/NER/CQA/sentiment/health models across regions, on-prem via Docker containers, and moving projects between environments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -109,7 +109,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure Azure resources for CLU fine-tune models | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/configure-azure-resources |
-| Configure Azure Language service containers settings | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/configure-containers |
+| Configure Azure AI Language service containers | https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/configure-containers |
 | Use supported data formats for custom NER | https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/concepts/data-formats |
 | Use NER entity metadata and resolutions | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/entity-metadata |
 | Map NER API versions and entity tags/types | https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/ga-preview-mapping |
@@ -117,7 +117,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure the None intent behavior in orchestration workflow | https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/concepts/none-intent |
 | Interpret and configure CQA confidence scores | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/confidence-score |
 | Enable and query CQA analytics telemetry | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/analytics |
-| Configure default answer behavior in CQA | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/change-default-answer |
 | Manage CQA project settings and sources | https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/manage-knowledge-base |
 | Use assertion detection in Text Analytics for health | https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/concepts/assertion-detection |
 | Configure FHIR structuring in health analytics output | https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/concepts/fhir |

@@ -1,9 +1,8 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
-  security: 'Securing Azure bots: auth/SSO (OAuth, Web Chat, skills), Direct Line
-    security, network isolation/VNET, encryption, privacy, and configuring bot/connector
-    authentication.'
+  security: 'Securing bots: encryption, privacy, regional data residency, Direct Line
+    auth, VNET/network isolation, and configuring secure access for Azure AI Bot Service.'
   deployment: Guides for provisioning App Service, deploying Bot Framework bots to
     Azure, and setting up CI/CD pipelines for automated bot deployment.
   decision-making: Guidance on selecting the right Microsoft bot platform, choosing
@@ -23,92 +22,51 @@ category_descriptions:
     and skill/consumer problems.'
 skill_description: Expert knowledge for Azure AI Bot Service development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Direct Line 3.0, configuring bot
-  channels/endpoints, setting auth/SSO, or deploying to App Service, and other Azure
+  & coding patterns, and deployment. Use when using Direct Line 3.0, configuring Teams/Web
+  Chat channels, setting App Service bots, CI/CD, or App Insights, and other Azure
   AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot),
-  Azure Communication Services (use azure-communication-services), Azure App Service
-  (use azure-app-service), Azure Functions (use azure-functions).
-use_when: Use when using Direct Line 3.0, configuring bot channels/endpoints, setting
-  auth/SSO, or deploying to App Service, and other Azure AI Bot Service related development
-  tasks.
-confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Communication
-  Services (use azure-communication-services), Azure App Service (use azure-app-service),
-  Azure Functions (use azure-functions).
+  Azure Functions (use azure-functions), Azure App Service (use azure-app-service).
+use_when: Use when using Direct Line 3.0, configuring Teams/Web Chat channels, setting
+  App Service bots, CI/CD, or App Insights, and other Azure AI Bot Service related
+  development tasks.
+confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Functions
+  (use azure-functions), Azure App Service (use azure-app-service).
 ---
 # Azure AI Bot Service Crawl Report
 
 ## Summary
 
-- **Total Pages**: 65
-- **Fetched**: 65
+- **Total Pages**: 66
+- **Fetched**: 66
 - **Fetch Failed**: 0
-- **Classified**: 48
+- **Classified**: 49
 - **Unclassified**: 17
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 4
-- **Unchanged**: 56
-- **Deleted Pages**: 130
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 13 | 20.0% |
-| decision-making | 2 | 3.1% |
-| deployment | 2 | 3.1% |
-| integrations | 18 | 27.7% |
+| configuration | 13 | 19.7% |
+| decision-making | 2 | 3.0% |
+| deployment | 2 | 3.0% |
+| integrations | 18 | 27.3% |
 | limits-quotas | 1 | 1.5% |
-| security | 7 | 10.8% |
-| troubleshooting | 5 | 7.7% |
-| *(Unclassified)* | 17 | 26.2% |
+| security | 8 | 12.1% |
+| troubleshooting | 5 | 7.6% |
+| *(Unclassified)* | 17 | 25.8% |
 
 ## Changes
 
 ### New Pages
 
-- [Send an activity to the agent](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-send-activity?view=azure-bot-service-4.0)
-- [Receive activities from the agent](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-receive-activities?view=azure-bot-service-4.0)
-- [Application Insights keys](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0)
-- [Bot Service compliance](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-compliance?view=azure-bot-service-4.0)
-- [Microsoft 365 (preview)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-m365?view=azure-bot-service-4.0)
-
-### Updated Pages
-
-- [Channel reference](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0)
-  - Updated: 2024-10-30T08:00:00.000Z → 2026-09-01T01:03:00.000Z
-- [Azure Communication Services](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-azure-communication?view=azure-bot-service-4.0)
-  - Updated: 2024-12-17T01:00:00.000Z → 2026-09-01T01:03:00.000Z
-- [Omnichannel](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-omnichannel?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T08:00:00.000Z → 2026-09-01T01:03:00.000Z
-- [Connect to channels with Azure CLI](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-azure-cli?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T08:00:00.000Z → 2026-09-01T01:03:00.000Z
-
-### Deleted Pages
-
-- ~~Create an Azure Bot resource~~ (https://learn.microsoft.com/en-us/azure/bot-service/abs-quickstart?view=azure-bot-service-4.0)
-- ~~Actions~~ (https://learn.microsoft.com/en-us/azure/bot-service/adaptive-dialog/adaptive-dialog-prebuilt-actions?view=azure-bot-service-4.0)
-- ~~Inputs~~ (https://learn.microsoft.com/en-us/azure/bot-service/adaptive-dialog/adaptive-dialog-prebuilt-inputs?view=azure-bot-service-4.0)
-- ~~Memory scopes~~ (https://learn.microsoft.com/en-us/azure/bot-service/adaptive-dialog/adaptive-dialog-prebuilt-memory-states?view=azure-bot-service-4.0)
-- ~~Recognizers~~ (https://learn.microsoft.com/en-us/azure/bot-service/adaptive-dialog/adaptive-dialog-prebuilt-recognizers?view=azure-bot-service-4.0)
-- ~~Events and triggers~~ (https://learn.microsoft.com/en-us/azure/bot-service/adaptive-dialog/adaptive-dialog-prebuilt-triggers?view=azure-bot-service-4.0)
-- ~~API reference~~ (https://learn.microsoft.com/en-us/azure/bot-service/adaptive-expressions/adaptive-expressions-api-reference?view=azure-bot-service-4.0)
-- ~~Prebuilt functions~~ (https://learn.microsoft.com/en-us/azure/bot-service/adaptive-expressions/adaptive-expressions-prebuilt-functions?view=azure-bot-service-4.0)
-- ~~Bot Framework CLI tool~~ (https://learn.microsoft.com/en-us/azure/bot-service/bf-cli-overview?view=azure-bot-service-4.0)
-- ~~Event-driven conversations~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-activity-handler-concept?view=azure-bot-service-4.0)
-- ~~Authentication basics~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication-basics?view=azure-bot-service-4.0)
-- ~~Add authentication using federated credentials~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication-federated-credential?view=azure-bot-service-4.0)
-- ~~Add single sign-on to a bot~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication-sso?view=azure-bot-service-4.0)
-- ~~Add authentication to a bot~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0)
-- ~~How bots for Microsoft Teams work~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics-teams?view=azure-bot-service-4.0)
-- ~~How bots work~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
-- ~~Implement channel-specific functionality~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-channeldata?view=azure-bot-service-4.0)
-- ~~Manage dialog complexity~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-compositcontrol?view=azure-bot-service-4.0)
-- ~~Adaptive expressions~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0)
-- ~~Authentication types~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication-types?view=azure-bot-service-4.0)
-- *...and 110 more*
+- [Azure Bot Service security and privacy FAQ](https://learn.microsoft.com/en-us/azure/bot-service/security-faq?view=azure-bot-service-4.0)
 
 ## Classified Pages
 
@@ -137,6 +95,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Commu
 | [Twilio (SMS)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-twilio?view=azure-bot-service-4.0) | integrations | 0.75 | Twilio (SMS) integration via TwiML app and Azure channel requires Twilio-specific configuration and Bot Service settings. |
 | [About Direct Line](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0) | decision-making | 0.70 | Explicitly about selecting among multiple Direct Line offerings based on features and solution needs; provides product-specific comparison and guidance. |
 | [About network isolation](https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-concept?view=azure-bot-service-4.0) | security | 0.70 | Explains how to restrict access using VNET and service tags for Bot Service, including product-specific isolation mechanisms and requirements. |
+| [Azure Bot Service security and privacy FAQ](https://learn.microsoft.com/en-us/azure/bot-service/security-faq?view=azure-bot-service-4.0) | security | 0.70 | FAQ contains product-specific security and privacy details for Microsoft 365 Agents SDK agents connecting to Azure Bot Service, including how authentication, data handling, and compliance are managed. These are service-specific security behaviors and configurations that go beyond generic security concepts. |
 | [Bot Service encryption](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-encryption?view=azure-bot-service-4.0) | security | 0.70 | Describes Azure AI Bot Service encryption for data at rest, including how encryption keys are managed and applied; this is product-specific security behavior, even if high-level. |
 | [Connect a bot to channels](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) | configuration | 0.70 | Channel configuration for multiple platforms (Direct Line, custom adapters) involves channel-specific settings and endpoints unique to Bot Service. |
 | [General](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-4.0) | troubleshooting | 0.70 | Troubleshooting FAQ for development/operational issues; typically maps specific symptoms to causes and resolutions for this product, which is expert troubleshooting knowledge. |

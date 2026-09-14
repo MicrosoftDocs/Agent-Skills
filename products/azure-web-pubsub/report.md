@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   security: 'Securing Web PubSub: auth/authorization (keys, Entra ID, certs, roles),
     network controls (firewalls, private endpoints, tags), key rotation, compliance,
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring Web PubSub: storage/chat setup, routing and handlers,
     custom domains, geo-replication, client URLs, metrics/logs, monitoring, local
     tunnel, MQTT/Socket.IO, and OData filters.'
-  integrations: 'Client/server integration patterns for Web PubSub: SDK and REST usage,
-    chat rooms and messaging, WebSocket/MQTT, JSON/protobuf subprotocols, auth, CloudEvents,
-    Functions, and Socket.IO integration.'
+  integrations: 'Client and server integration patterns for Azure Web PubSub: SDK/REST
+    usage, WebSocket/MQTT, JSON/protobuf subprotocols, auth, events (HTTP/AMQP/Functions),
+    and Socket.IO integration.'
   troubleshooting: Diagnosing and fixing Web PubSub errors, event handler/debug issues,
     service and Socket.IO problems, using resource/diagnostic logs and error codes
     for troubleshooting.
@@ -29,14 +29,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building WebSocket/MQTT chat, using Socket.IO, configuring geo-replication/custom
-  domains, or Premium autoscale, and other Azure Web PubSub related development tasks.
-  Not for Azure SignalR Service (use azure-signalr-service), Azure Service Bus (use
-  azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
-use_when: Use when building WebSocket/MQTT chat, using Socket.IO, configuring geo-replication/custom
-  domains, or Premium autoscale, and other Azure Web PubSub related development tasks.
+  building WebSocket/MQTT apps, Socket.IO backends, geo-replicated chat, or serverless
+  event handlers, and other Azure Web PubSub related development tasks. Not for Azure
+  SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
+  Azure Service Bus (use azure-service-bus), Azure Relay (use azure-relay).
+use_when: Use when building WebSocket/MQTT apps, Socket.IO backends, geo-replicated
+  chat, or serverless event handlers, and other Azure Web PubSub related development
+  tasks.
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
-  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
+  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
   Relay (use azure-relay).
 ---
 # Azure Web PubSub Crawl Report
@@ -50,10 +51,10 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 - **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 114
-- **Deleted Pages**: 4
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 118
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
 ## Classification Statistics
@@ -73,29 +74,12 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ## Changes
 
-### New Pages
-
-- [Use server SDK with Azure Identity](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-use-azure-identity)
-
 ### Updated Pages
 
 - [REST API](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-data-plane)
-  - Updated: 2025-03-04T18:02:00.000Z → 2026-07-21T11:41:00.000Z
-- [Easily migrate a self-hosted Socket.IO app](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-migrate-from-self-hosted)
-  - Updated: 2024-12-11T23:02:00.000Z → 2025-10-08T05:12:00.000Z
-- [Generate client access URL](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-generate-client-access-url)
-  - Updated: 2026-04-01T08:46:00.000Z → 2026-08-31T11:40:00.000Z
-- [Authorize from an Azure application](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-authorize-from-application)
-  - Updated: 2025-03-16T11:10:00.000Z → 2026-08-31T11:40:00.000Z
-- [Authorize from a managed identity](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-authorize-from-managed-identity)
-  - Updated: 2025-03-16T11:10:00.000Z → 2026-08-31T11:40:00.000Z
-
-### Deleted Pages
-
-- ~~Use server SDK with Azure Identity and Java~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-java-and-azure-identity)
-- ~~Use server SDK with Azure Identity and JavaScript~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-javascript-and-azure-identity)
-- ~~Use server SDK with Azure Identity and .NET~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-net-and-azure-identity)
-- ~~Use server SDK with Azure Identity and Python~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-create-serviceclient-with-python-and-azure-identity)
+  - Updated: 2026-07-21T11:41:00.000Z → 2026-09-09T05:16:00.000Z
+- [About hubs, groups, and connections](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/key-concepts)
+  - Updated: 2024-07-15T11:17:00.000Z → 2026-09-09T05:16:00.000Z
 
 ## Classified Pages
 
@@ -129,7 +113,7 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Debug event handlers](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-local-debug-event-handler) | troubleshooting | 0.78 | Focused on troubleshooting/debugging event handlers; likely includes specific HTTP behaviors, headers, and diagnostic steps unique to Web PubSub CloudEvents handling. |
 | [JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-webpubsub-subprotocol) | integrations | 0.78 | A protocol reference page for the json.webpubsub.azure.v1 subprotocol will enumerate message schemas, operation names, required/optional fields, and exact JSON payload formats unique to Azure Web PubSub. These are product-specific wire-level integration details and API contracts that qualify as expert knowledge and fit the integrations & coding patterns category. |
 | [Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol) | integrations | 0.78 | A reference for protobuf.webpubsub.azure.v1 will define protobuf message types, field names, numeric tags, and frame formats required to interoperate with Azure Web PubSub. These protocol-level details are product-specific integration contracts, matching the integrations sub-skill and representing expert knowledge beyond generic LLM training. |
-| [REST API](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-data-plane) | integrations | 0.78 | REST API reference pages typically list endpoint paths, required headers, query parameters, and request/response schemas specific to Azure Web PubSub, including configuration-like details (e.g., hub names, connection IDs, message routing parameters). These are product-specific integration details that LLMs are unlikely to fully know from training and align best with the integrations & coding patterns sub-skill. |
+| [REST API](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-rest-api-data-plane) | integrations | 0.78 | REST API reference pages list product-specific endpoints, parameters, and behaviors for managing WebSocket connections and sending messages. These details (paths, required headers, query parameters, example payloads, and response schemas) are expert knowledge beyond generic LLM training and align best with the integrations & coding patterns category. |
 | [Socket.IO Serverless Mode Specification](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-protocol) | configuration | 0.78 | The page is a protocol/specification document for Web PubSub's Socket.IO serverless mode, describing detailed mappings and transformations between Socket.IO and Azure Web PubSub interfaces. This constitutes product-specific configuration and behavior knowledge (protocol-level settings, message formats, and mappings) that an LLM is unlikely to fully know from training. It is not primarily about limits, troubleshooting, or deployment, but about how to configure and interpret the serverless protocol and its bindings. |
 | [Unsupported Socket.IO server APIs](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-supported-server-apis) | limits-quotas | 0.78 | Lists which Socket.IO server APIs are partially or not supported; effectively a capability/behavior limit matrix specific to this service. |
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-disable-local-auth) | security | 0.76 | Covers turning off local access key authentication and enforcing Entra ID; such articles typically list exact portal/ARM settings and side effects, which are product-specific security configuration details. |
@@ -210,7 +194,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Tutorial](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-tutorial) | 0.30 | Step-by-step tutorial for building a chat flow; primarily procedural, not a reference for limits, configuration matrices, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socketio-overview) | 0.25 | High-level overview of Socket.IO on Azure; mostly conceptual and marketing-style description of managed support. |
 | [Serverless Mode Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-serverless-overview) | 0.25 | Overview of Socket.IO Serverless Mode; conceptual explanation without detailed configuration or troubleshooting content. |
-| [About hubs, groups, and connections](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/key-concepts) | 0.20 | Conceptual explanation of hubs, groups, and connections; no detailed configuration tables or product-specific thresholds. |
 | [Build a chat app](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-build-chat) | 0.20 | Chat app tutorial; focuses on building an example app, not on quotas, security roles, or diagnostic mappings. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-develop-create-instance) | 0.20 | Quickstart for creating a resource via portal/CLI/Bicep; mostly step-by-step, not configuration reference or limits. |
 | [Develop with Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-develop-with-visual-studio-code) | 0.20 | VS Code extension tutorial; mostly tooling workflow, not detailed configuration or troubleshooting reference. |
@@ -221,6 +204,7 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Publish and subscribe messages](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-pub-sub-messages) | 0.20 | Tutorial combining WebSocket API and SDK; step-by-step app build, not configuration or limits reference. |
 | [Push message from server](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-push-messages-from-server) | 0.20 | Tutorial on pushing messages from server; focuses on pattern demonstration, not detailed product-specific configs. |
 | [Use playground to explore](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/quickstarts-playground) | 0.20 | Quickstart/tutorial for using the Azure Web PubSub playground; focuses on trying capabilities without code and explaining concepts like connections, groups, and messages. It does not present numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
+| [About hubs, groups, and connections](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/key-concepts) | 0.10 | Page is a basic concepts overview (hubs, groups, connections) for Azure Web PubSub without numeric limits, configuration tables, error codes, or product-specific decision matrices; it does not meet any expert-knowledge criteria. |
 | [App scenarios](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/samples-app-scenarios) | 0.10 | Index of sample app scenarios; no indication of detailed limits, configs, or error mappings—primarily navigation/overview. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-overview) | 0.10 | High-level overview of Web PubSub chat; no numeric limits, configuration tables, or detailed patterns beyond what an LLM likely knows. |
 | [Platform and frameworks](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/samples-platforms-and-frameworks) | 0.10 | Index of samples by platforms/frameworks; appears to be a listing page without deep configuration or troubleshooting content. |

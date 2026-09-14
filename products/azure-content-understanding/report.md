@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   decision-making: Guidance on choosing tools, deployments, and analyzers, deciding
     between Studio vs Foundry, migrating preview to GA, and estimating/optimizing
@@ -47,13 +47,13 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 - **Total Pages**: 43
 - **Fetched**: 43
 - **Fetch Failed**: 0
-- **Classified**: 29
-- **Unclassified**: 14
+- **Classified**: 28
+- **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 42
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 41
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-understanding/azure-content-understanding.csv`
 
@@ -64,18 +64,21 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 | architecture-patterns | 3 | 7.0% |
 | best-practices | 2 | 4.7% |
 | configuration | 10 | 23.3% |
-| decision-making | 6 | 14.0% |
+| decision-making | 5 | 11.6% |
 | integrations | 4 | 9.3% |
 | limits-quotas | 2 | 4.7% |
 | security | 1 | 2.3% |
 | troubleshooting | 1 | 2.3% |
-| *(Unclassified)* | 14 | 32.6% |
+| *(Unclassified)* | 15 | 34.9% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Retrieve analysis diagnostics](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/retrieve-diagnostics)
+- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new)
+  - Updated: 2026-08-19T08:00:00.000Z → 2026-09-08T08:00:00.000Z
+- [Prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers)
+  - Updated: 2026-08-10T22:02:00.000Z → 2026-09-09T22:15:00.000Z
 
 ## Classified Pages
 
@@ -108,7 +111,6 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 | [Synchronous REST API (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-synchronous-rest-api) | limits-quotas | 0.70 | Describes synchronous operations for small documents; these pages typically specify maximum document sizes and constraints for sync vs async, which are numeric limits/quotas. |
 | [What are classifiers?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/classifier) | configuration | 0.70 | Classifier overview mentions analyzer concepts like contentCategories and enableSegment; such pages typically document specific configuration fields and their behavior. |
 | [Agentic mode (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/agentic-mode) | architecture-patterns | 0.65 | Agentic mode overview focuses on when to use this pattern for complex documents and its trade-offs vs standard extraction, which is a product-specific architecture/pattern decision. |
-| [Prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers) | decision-making | 0.65 | Explains different prebuilt analyzer types and how to use/customize them; likely includes guidance on when to choose each analyzer type for specific scenarios, aiding decision-making. |
 | [REST API and SDKs](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api) | integrations | 0.65 | Quickstart for REST API and SDK usage; such pages usually show request parameters, headers, and product-specific API options, which are integration-focused coding patterns. |
 
 ## Unclassified Pages
@@ -125,7 +127,8 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 | [Logic Apps](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/integrations/logic-apps) | 0.30 | Tutorial-style Logic Apps integration walkthrough; likely focuses on step-by-step workflow creation rather than detailed configuration tables, limits, or product-specific error/diagnostic references. Does not clearly match any expert-knowledge sub-skill types defined. |
 | [MarkItDown](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/integrations/markitdown) | 0.30 | Integration tutorial for configuring MarkItDown with Content Understanding; description suggests a how-to guide without explicit configuration parameter tables, limits, or error-code-based troubleshooting. Does not meet the thresholds for configuration, integrations, or other expert-knowledge categories. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.30 | Document overview; primarily conceptual description of capabilities without detailed configs, limits, or patterns in the summary. |
+| [Prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers) | 0.20 | Conceptual description of prebuilt analyzers and their use; no evidence of numeric limits, configuration tables, error codes, or other detailed product-specific parameters. |
 | [Studio and Foundry quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | 0.20 | Quickstart tutorial for trying analyzers; focuses on getting started rather than detailed configuration matrices or limits. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) | 0.20 | Release notes/what's new page; summary does not indicate specific limits, configs, error codes, or decision matrices—likely high-level feature updates without detailed expert parameters. |
+| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) | 0.20 | Release notes/what's-new summary with GA/preview info but no detailed limits, configs, error codes, or other product-specific technical parameters visible in the snippet. |
 | [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) | 0.10 | High-level overview of Azure Content Understanding capabilities and use cases without numeric limits, config tables, or detailed patterns. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/glossary) | - | Glossary of terms and definitions; conceptual reference without configuration, limits, or troubleshooting mappings. |

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
-  decision-making: Planning lifecycle, HA, and business continuity; choosing tiers,
-    storage, and reservations; and assessing, planning, and executing MySQL migrations
-    and major version upgrades.
+  decision-making: 'Guidance for planning MySQL on Azure: version policy, HA/DR and
+    business continuity, sizing and tiers, performance baselines, and choosing/migrating/
+    upgrading to Flexible Server.'
   deployment: Automating MySQL Flexible Server deployments and changes (Azure Pipelines,
     GitHub Actions, Automation), handling backups, geo-restore, version upgrades,
     and scheduled maintenance.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for MySQL development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when deploying MySQL Flexible Server, configuring HA/networking, backups/replicas,
-  migrations, or app integrations, and other Azure Database for MySQL related development
-  tasks. Not for Azure Database for PostgreSQL (use azure-database-postgresql), Azure
-  SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
-use_when: Use when deploying MySQL Flexible Server, configuring HA/networking, backups/replicas,
-  migrations, or app integrations, and other Azure Database for MySQL related development
-  tasks.
-confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-postgresql),
-  Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+  Use when deploying MySQL Flexible Server, configuring HA/replication, tuning performance,
+  securing access, or integrating apps, and other Azure Database for MySQL related
+  development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL
+  Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Database for PostgreSQL (use azure-database-postgresql).
+use_when: Use when deploying MySQL Flexible Server, configuring HA/replication, tuning
+  performance, securing access, or integrating apps, and other Azure Database for
+  MySQL related development tasks.
+confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
+  Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Database for PostgreSQL (use azure-database-postgresql).
 ---
 # Azure Database for MySQL Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-po
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 166
+- **Updated Pages**: 1
+- **Unchanged**: 167
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -79,10 +79,8 @@ confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-po
 
 ### Updated Pages
 
-- [Read replicas](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-read-replicas)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-09-01T22:20:00.000Z
-- [Configure Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-entra)
-  - Updated: 2026-08-10T22:14:00.000Z → 2026-08-31T13:05:00.000Z
+- [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy)
+  - Updated: 2026-07-18T06:02:00.000Z → 2026-09-11T22:12:00.000Z
 
 ## Classified Pages
 
@@ -153,7 +151,7 @@ confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-po
 | [Service tiers](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-service-tiers-storage) | decision-making | 0.70 | Service tiers article typically includes vCore/memory/storage characteristics per tier and guidance on when to choose Burstable, General Purpose, or Memory-Optimized, which is SKU/tier selection decision-making. |
 | [Troubleshooting best practices](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-troubleshooting-best-practices) | best-practices | 0.70 | Offers specific recommendations to keep databases running smoothly and design schemas for performance, tailored to Azure Database for MySQL Flexible Server. |
 | [Tune performance using the sys_schema](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-sys-schema) | best-practices | 0.70 | Provides concrete queries and patterns using sys_schema to find performance problems and maintain databases, which are actionable, product-specific practices. |
-| [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy) | decision-making | 0.70 | A version support policy page typically includes concrete timelines for version availability, deprecation, and end-of-support, plus rules for how and when Azure upgrades or blocks certain versions. These are product-specific lifecycle details and upgrade paths that help decide when to move between MySQL versions, fitting decision-making. |
+| [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy) | decision-making | 0.70 | Version support policies for a managed service are product-specific and not reliably inferable from general MySQL knowledge. This page likely includes concrete lifecycle details such as which MySQL major/minor versions are supported, how long they remain supported, timelines for end-of-support, and rules for upgrades. These are expert, provider-specific details that guide decisions about when to upgrade or migrate workloads based on version lifecycle, fitting the decision-making category better than others. |
 | [Connect using TLS/SSL](https://learn.microsoft.com/en-us/azure/mysql/security/security-tls-how-to-connect) | security | 0.68 | A how-to for encrypted connectivity typically includes connection string parameters, required TLS versions, certificate handling steps, and possibly client-specific options. These are product-specific security configuration details (e.g., exact connection options) that qualify as expert knowledge. |
 | [Data-in replication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-data-in-replication) | architecture-patterns | 0.68 | Covers Azure-specific replication pattern from external MySQL into Flexible Server, with configuration details and constraints. |
 | [Data-out replication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-data-out-replication) | architecture-patterns | 0.68 | Describes replication from Flexible Server to external MySQL; includes pattern-specific configuration and limitations. |

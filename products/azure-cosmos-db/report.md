@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 715
+- **Updated Pages**: 0
+- **Unchanged**: 718
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -75,15 +75,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | *(Unclassified)* | 197 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-09-01T17:24:00.000Z
-- [Develop with the emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-09-01T08:00:00.000Z
-- [Required outbound network rules](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/network-rules)
-  - Updated: 2026-08-25T18:30:00.000Z → 2026-09-02T15:23:00.000Z
 
 ## Classified Pages
 

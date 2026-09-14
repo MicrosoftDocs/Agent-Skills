@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS images, CMK/Key Vault keys, antimalware, Customer Lockbox, or Gov cloud workloads, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure DDoS Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS/VM/SQL workloads, Notation-signed images, CMK/Key Vault keys, antimalware, or Azure Gov features, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure DDoS Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L34-L58 | End-to-end Azure security guidance: hardening IaaS/PaaS, identity and access, network and operational security, backups and ransomware resilience, secrets management, and service-specific checklists. |
 | Decision Making | L59-L64 | Guidance on choosing Azure security options, including comparing security features in US Gov clouds and selecting appropriate key management (Key Vault, managed keys, BYOK). |
-| Security | L65-L97 | Azure platform and workload security: threat modeling mitigations, AKS image validation, hardware/firmware integrity, Customer Lockbox, CMKs, network/SQL security, and operational controls. |
+| Security | L65-L97 | Security best practices for Azure: threat modeling mitigations, platform and network hardening, access control, encryption/keys, infrastructure integrity, and secure AKS/VM/SQL operations. |
 | Configuration | L98-L108 | Configuring Azure security features: antimalware, container scanning (Dependabot/Copacetic), firewall rules, CMK encryption, logging/auditing, TLS changes, ransomware protections, and Customer Lockbox alerts. |
 | Integrations & Coding Patterns | L109-L114 | Guides for generating signed SBOMs for container images and scripting Microsoft Antimalware configuration in Azure using PowerShell. |
 | Deployment | L115-L120 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
@@ -77,7 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Protect sensitive data using Threat Modeling Tool mitigations | https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-sensitive-data |
 | Implement secure session management from Threat Modeling Tool | https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-session-management |
 | Apply Azure-specific security controls to AI workloads | https://learn.microsoft.com/en-us/azure/security/fundamentals/ai-security-best-practices |
-| Use Azure Certificate Authority roots and requirements | https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-certificate-authority-details |
+| Review Azure service certificate authorities and requirements | https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-certificate-authority-details |
 | Enforce platform code integrity in Azure production | https://learn.microsoft.com/en-us/azure/security/fundamentals/code-integrity |
 | Understand and configure Azure Customer Lockbox access | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-faq |
 | Control Microsoft engineer data access with Customer Lockbox | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-overview |

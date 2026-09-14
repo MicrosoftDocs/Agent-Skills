@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning DTU/vCore tiers, Hyperscale, geo-replication/DR, Data Sync/sharding, or CI/CD deployments, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Data Factory (use azure-data-factory).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore tiers, configuring Hyperscale/HA, setting geo-replication/Data Sync, or automating CI/CD, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L62 | Diagnosing and fixing Azure SQL issues: performance, deadlocks, blocking, CPU/memory, capacity, import/export, connectivity, geo-replication, Data Sync, serverless, and log-full errors. |
-| Best Practices | L63-L79 | Best practices for Azure SQL operations: monitoring, auditing, security, HA/DR, failover, read replicas, maintenance, elastic pool tuning, file space, Data Sync, and T-SQL adaptation. |
-| Decision Making | L80-L107 | Guidance for choosing Azure SQL deployment, tiers, pricing, Hyperscale options, DR/HA, automation, reservations, and migration paths (SQL Server, DTU↔vCore, Data Sync, elastic sharding). |
-| Architecture & Design Patterns | L108-L126 | Architectural patterns for Azure SQL apps: geo-replication, DR/BCP, connectivity/routing, sharding & elastic scale, multi-tenant SaaS models, Hyperscale internals, and upgrade/failover designs. |
-| Limits & Quotas | L127-L142 | Limits, quotas, and behaviors for Azure SQL: free tier and offers, DTU/vCore and serverless resource caps, backups immutability, maintenance windows, and billing rules. |
-| Security | L143-L209 | Securing Azure SQL: authentication (Entra, managed identity, MFA), network/firewall, auditing, threat protection, encryption/TDE, data masking, DR replicas, and compliance/policy configuration. |
-| Configuration | L210-L279 | Configuring Azure SQL databases and pools: backups, geo-replication, failover, scaling, maintenance windows, monitoring/alerts, security (TLS, Always Encrypted), Data Sync, and CLI/PowerShell setup. |
+| Best Practices | L63-L80 | Best practices for securing, monitoring, tuning, and operating Azure SQL: HA/DR, failover, read replicas, maintenance, auditing, TDE, Data Sync, and adapting T-SQL. |
+| Decision Making | L81-L108 | Guidance for choosing Azure SQL deployment, tiers, pricing, Hyperscale options, DR/HA, automation, reservations, and migration paths (SQL Server, DTU↔vCore, Data Sync, elastic sharding). |
+| Architecture & Design Patterns | L109-L127 | Architectural patterns for Azure SQL apps: geo-replication, DR/BCP, connectivity/routing, sharding & elastic scale, multi-tenant SaaS models, Hyperscale internals, and upgrade/failover designs. |
+| Limits & Quotas | L128-L143 | Limits, quotas, and behaviors for Azure SQL: free tier and offers, DTU/vCore and serverless resource caps, backups immutability, maintenance windows, and billing rules. |
+| Security | L144-L208 | Securing Azure SQL: auth with Entra/managed identities, auditing/Defender, network/firewall controls, Always Encrypted/TDE keys, masking, DR security, and secure import/export and backups. |
+| Configuration | L209-L279 | Configuring Azure SQL databases: backups, geo-replication, failover, security (encryption, TDE), monitoring, scaling (DTU/vCore/serverless), maintenance windows, Data Sync, and CLI/PowerShell automation. |
 | Integrations & Coding Patterns | L280-L309 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python, Go), plus PowerShell/CLI automation for auditing, scaling, geo-replication, data sync, and streaming/Spark integration. |
 | Deployment | L310-L322 | Deploying and migrating Azure SQL: CI/CD with GitHub/Terraform, scaling and tier changes (Hyperscale, elastic pools), region moves, zone redundancy, dev environments, and feature availability. |
 
@@ -76,6 +76,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply security best practices for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/security-best-practice?view=azuresql |
 | Apply best practices for Azure SQL Data Sync | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql |
 | Adapt SQL Server T-SQL for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/transact-sql-tsql-differences-sql-server?view=azuresql |
+| Implement customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
 
 ### Decision Making
 | Topic | URL |
@@ -197,12 +198,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure cross-tenant CMK TDE with user-assigned identity | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-create-server-cross-tenant?view=azuresql |
 | Create Azure SQL server with user-assigned identity and CMK TDE | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-create-server?view=azuresql |
 | Set up cross-tenant customer-managed keys for Azure SQL TDE | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-cross-tenant?view=azuresql |
-| Manage database-level customer-managed TDE keys in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-basic-actions?view=azuresql |
-| Configure geo-replication and restore for database-level CMK TDE | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-geo-replication-restore?view=azuresql |
+| Manage database-level TDE customer-managed keys | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-basic-actions?view=azuresql |
+| Configure geo-replication with TDE CMK in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-geo-replication-restore?view=azuresql |
 | Configure database-level TDE with customer-managed keys in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-overview?view=azuresql |
 | Configure TDE with user-assigned managed identity in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-identity?view=azuresql |
-| Rotate Azure SQL TDE protector with PowerShell and CLI | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation?view=azuresql |
-| Implement customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
 | Rotate and remove BYOK TDE protector via PowerShell/CLI | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-remove-tde-protector?view=azuresql |
 | Secure Azure SQL with virtual network service endpoints and rules | https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?view=azuresql |
 | Prepare for Azure SQL TLS root certificate rotation | https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql |
@@ -272,6 +271,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure scaling for single Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-scale?view=azuresql |
 | Install and configure Data Sync Agent for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-agent-overview?view=azuresql |
 | Set up Azure SQL Data Sync groups and schedules | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-sql-server-configure?view=azuresql |
+| Rotate Azure SQL TDE protector using BYOK | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation?view=azuresql |
 | Configure Extended Events differences in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-db-diff-from-svr?view=azuresql |
 | Configure maintenance windows for Azure SQL workloads | https://learn.microsoft.com/en-us/azure/azure-sql/maintenance-window-azure-sql?view=azuresql |
 | Identify modifiable vs immutable Azure SQL Managed Instance settings | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/modifiable-configuration-reference?view=azuresql |

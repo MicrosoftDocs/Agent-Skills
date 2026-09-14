@@ -1,9 +1,9 @@
 ---
 name: azure-app-service
-description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring App Service networking, auth, deployment slots, ASE, CI/CD, or Azure OpenAI/RAG chatbots, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Static Web Apps (use azure-static-web-apps).
+description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring App Service plans/ASEs, VNet and auth, CI/CD deployments, TLS/certs, or Azure OpenAI chatbots, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Static Web Apps (use azure-static-web-apps), Azure Spring Apps (use azure-spring-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Service Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L75-L80 | Patterns for scaling App Service apps: geo-distributed deployments with App Service Environments and designing RAG chatbots using Foundry on App Service. |
 | Limits & Quotas | L81-L85 | App Service resource limits (CPU, memory, connections), quota types, how they’re measured/monitored, and how to use metrics to detect and avoid hitting plan or app quotas. |
 | Security | L86-L133 | Securing App Service apps: auth (Entra, social, OIDC, MCP), certificates/TLS, IP/VNet/firewall, managed identities, Key Vault, storage/SQL/Graph access, and end‑to‑end network isolation. |
-| Configuration | L134-L189 | Configuring App Service apps: runtime and language settings, containers/sidecars, networking (VNet, NAT, private endpoints), domains/SSL, scaling, backups, health checks, and environment variables. |
+| Configuration | L134-L189 | Configuring App Service apps and environments: app settings, runtimes, containers/sidecars, networking/VNet, domains/SSL, storage, scaling, auth, health checks, and backups. |
 | Integrations & Coding Patterns | L190-L199 | Patterns for integrating App Service apps with APM tools, TLS/SSL certs, Application Gateway, MCP, Azure OpenAI chatbots (Node/Flask), and event-driven jobs via WebJobs bindings. |
 | Deployment | L200-L221 | Deploying and managing App Service apps: CI/CD (GitHub Actions, Azure Pipelines), ZIP/FTP/local Git deploy, deployment slots, ASE setup/scale, DNS migration, and maintenance/patch automation. |
 
@@ -145,7 +145,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom error pages in Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-error-pages |
 | Configure gateway-required VNet integration for App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-gateway-required-vnet-integration |
 | Configure gRPC applications on Azure App Service for Linux | https://learn.microsoft.com/en-us/azure/app-service/configure-grpc |
-| Configure Aspire applications on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-aspire |
+| Configure Aspire apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-aspire |
 | Configure ASP.NET apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-framework |
 | Configure ASP.NET Core apps on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnetcore |
 | Configure Java data sources on Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-data-sources |

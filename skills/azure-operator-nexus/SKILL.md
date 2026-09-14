@@ -3,7 +3,7 @@ name: azure-operator-nexus
 description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing Nexus clusters, network fabric (BGP/QoS), secure access/RBAC, AKS/ETCD, or near-edge storage, and other Azure Operator Nexus related development tasks. Not for Azure Baremetal Infrastructure (use azure-baremetal-infrastructure), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Network (use azure-virtual-network), Azure Operator Service Manager (use azure-operator-service-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill

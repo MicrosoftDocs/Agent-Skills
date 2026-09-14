@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   security: Roles, permissions, and security for accessing Azure cost, billing, EA,
     MCA, CSP, reservations, savings plans, credit balance, and tax documents across
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 269
+- **Updated Pages**: 1
+- **Unchanged**: 271
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -71,12 +71,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Updated Pages
 
-- [Organize costs with invoice sections](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-section-invoice)
-  - Updated: 2026-06-25T08:00:00.000Z → 2026-09-04T22:14:00.000Z
-- [EA roles in Azure](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles)
-  - Updated: 2026-04-21T08:00:00.000Z → 2026-08-31T11:40:00.000Z
-- [Changes to the reservation exchange policy](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-exchange-policy-changes)
-  - Updated: 2026-07-29T05:11:00.000Z → 2026-08-31T22:26:00.000Z
+- [Set up pay by wire transfer](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/pay-by-invoice)
+  - Updated: 2026-07-29T22:37:00.000Z → 2026-09-10T05:11:00.000Z
 
 ## Classified Pages
 
@@ -344,7 +340,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Review your Microsoft Customer Agreement bill](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/review-customer-agreement-bill) | 0.20 | Describes how to review Microsoft Customer Agreement invoices and usage; billing workflow guidance rather than technical limits, configuration, or error-resolution content. |
 | [Review your Microsoft Partner Agreement bill](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/review-partner-agreement-bill) | 0.20 | Covers reviewing Microsoft Partner Agreement invoices; focuses on billing profiles and invoice comparison, not on quotas, configuration parameters, or troubleshooting details. |
 | [Review your individual account bill](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/review-individual-bill) | 0.20 | Tutorial on understanding an individual Azure subscription bill; focuses on navigation and interpretation of invoices and usage files without product-specific limits, configuration parameters, or error-code-based troubleshooting. |
-| [Set up pay by wire transfer](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/pay-by-invoice) | 0.20 | Page describes how to set up and use wire transfer as a payment method for Azure subscriptions. It is procedural billing/account management guidance without product-specific limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices. Content is more policy/process oriented than technical expert knowledge as defined by the sub-skill types. |
+| [Set up pay by wire transfer](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/pay-by-invoice) | 0.20 | Billing/payment-method setup guidance without product-specific limits, configuration parameter tables, security roles, or troubleshooting error mappings. Primarily procedural instructions for enabling wire transfer, which an LLM can infer from general knowledge. |
 | [Transfer EA accounts](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-transfers) | 0.20 | The page is an overview of how Enterprise Agreement enrollment accounts and subscriptions are transferred. It describes the process conceptually but does not expose detailed limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices. It reads as procedural/overview guidance rather than expert reference content matching any of the specified sub-skill types. |
 | [Understand the billing and tenant relationship](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/understand-billing-tenant-relationship) | 0.20 | Conceptual explanation of billing–tenant relationships; no detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Update tax details](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-tax-information) | 0.20 | How-to guide for updating tax details and addresses for an Azure billing account; procedural portal steps without product-specific limits, configs, or error mappings. |

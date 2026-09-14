@@ -1,10 +1,10 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
   security: Configuring API auth schemes (keys, OAuth, etc.) in API Center and managing
     portal access/permissions via the VS Code extension
-  configuration: 'Configuring Azure API Center instances: deployment via ARM/Bicep/CLI,
-    backup/restore setup, plugin marketplace endpoints, and defining/customizing governance
+  configuration: 'Configuring and deploying Azure API Center: backup/restore, plugin
+    marketplace endpoints, ARM/Bicep/CLI provisioning, and defining/customizing governance
     metadata schemas.'
   deployment: Automating API linting and registration to Azure API Center (e.g., via
     GitHub Actions) and instructions for self-hosting the Azure API Center portal.
@@ -15,17 +15,15 @@ category_descriptions:
     Azure CLI and Logic Apps/Teams
 skill_description: Expert knowledge for Azure Api Center development including best
   practices, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring API Center instances, portal auth, GitHub-based lint/registration,
-  portal self-hosting, or API sync, and other Azure Api Center related development
-  tasks. Not for Azure API Management (use azure-api-management), Azure Resource Manager
-  (use azure-resource-manager), Azure Portal (use azure-portal), Azure Monitor (use
-  azure-monitor).
-use_when: Use when configuring API Center instances, portal auth, GitHub-based lint/registration,
-  portal self-hosting, or API sync, and other Azure Api Center related development
-  tasks.
+  Use when setting API auth, provisioning API Center, automating linting/registration,
+  self-hosting the portal, or syncing with API gateways, and other Azure Api Center
+  related development tasks. Not for Azure API Management (use azure-api-management),
+  Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+use_when: Use when setting API auth, provisioning API Center, automating linting/registration,
+  self-hosting the portal, or syncing with API gateways, and other Azure Api Center
+  related development tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
-  Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal),
-  Azure Monitor (use azure-monitor).
+  Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
 ---
 # Azure Api Center Crawl Report
 
@@ -39,8 +37,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 39
+- **Updated Pages**: 1
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -57,6 +55,11 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ## Changes
 
+### Updated Pages
+
+- [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace)
+  - Updated: 2026-08-17T08:00:00.000Z → 2026-09-10T22:03:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -65,10 +68,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Create an API center - ARM template](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-arm-template) | configuration | 0.70 | ARM template example exposes the schema for the API Center resource, including property names and allowed configurations. |
 | [Create an API center - Bicep](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-bicep) | configuration | 0.70 | Bicep quickstart will define resource types, properties, and allowed values for API Center, which are product-specific configuration details. |
 | [Enable API Center portal view - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-portal-vs-code-extension) | security | 0.70 | Uses Entra ID and RBAC to manage portal view access; includes role and permission configuration specific to this extension. |
-| [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace) | configuration | 0.70 | Page describes how to enable discovery of plugins via the API Center plugin marketplace endpoint for tools like GitHub Copilot and Claude Code, which likely includes product-specific endpoint configuration details and parameters not generally known from training. |
 | [Import APIs from API Management](https://learn.microsoft.com/en-us/azure/api-center/import-api-management-apis) | integrations | 0.70 | Shows CLI-based integration between API Management and API Center, including specific commands, parameters, and options. |
 | [Use metadata for governance](https://learn.microsoft.com/en-us/azure/api-center/metadata) | configuration | 0.70 | Goes beyond concepts to describe built-in vs custom metadata, schema structure, and how to enforce consistency—product-specific configuration behavior. |
 | [Backup and restore](https://learn.microsoft.com/en-us/azure/api-center/backup-restore) | configuration | 0.68 | The page describes product-specific backup and restore commands (apiops apic), including required parameters and how to restore to different instances/regions/tenants. These are concrete configuration operations and CLI flags unique to Azure API Center, which qualify as expert configuration knowledge rather than generic backup concepts. |
+| [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace) | configuration | 0.68 | Page describes how to enable and configure the API Center plugin marketplace endpoint so tools like GitHub Copilot and Claude Code can discover plugins. This involves product-specific endpoint configuration and parameters rather than generic concepts, fitting the configuration sub-skill. It does not focus on limits, troubleshooting, or architecture. |
 | [1 - Define custom metadata](https://learn.microsoft.com/en-us/azure/api-center/tutorials/add-metadata-properties) | configuration | 0.65 | Describes concrete metadata properties, types, and how to configure them for governance; product-specific configuration behavior. |
 | [API analysis - Microsoft managed](https://learn.microsoft.com/en-us/azure/api-center/enable-managed-api-analysis-linting) | best-practices | 0.65 | Describes Microsoft-managed linting and analysis for API definitions, including how to enable/disable built-in vs self-managed linting via a custom Azure Function. This is product-specific guidance on using a particular analysis mechanism and switching modes, which qualifies as best-practices-level operational detail rather than generic concepts, even though no numeric limits are mentioned. |
 | [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting) | deployment | 0.65 | Describes automated deployment of a linting engine and event subscription using Azure Developer CLI, which is product-specific deployment guidance beyond generic tutorials. While the summary is brief, it indicates concrete deployment procedures and configuration for the linting engine and triggers. |

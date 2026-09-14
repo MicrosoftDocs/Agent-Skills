@@ -1,9 +1,9 @@
 ---
 name: azure-video-indexer
-description: Expert knowledge for Azure AI Video Indexer development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring live camera analysis, custom insights, OpenAI summaries, APIs/widgets, or secure access, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Face (use azure-face), Azure AI Immersive Reader (use azure-immersive-reader).
+description: Expert knowledge for Azure AI Video Indexer development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when indexing live video, customizing AI insights, using Video Indexer APIs, redacting faces, or embedding widgets, and other Azure AI Video Indexer related development tasks. Not for Azure AI Vision (use azure-ai-vision).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Video Indexer Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L67-L76 | Securing Video Indexer: roles and access control, NSG service tags, private endpoints, security baselines, and protecting storage with firewalls. |
 | Configuration | L77-L91 | Configuring Video Indexer: camera and live analysis setup, custom AI insights, OpenAI-based summarization, indexing options, speaker identities, regions, and monitoring/diagnostics. |
 | Integrations & Coding Patterns | L92-L98 | Using Video Indexer APIs, widgets, and low-code tools to call the service, embed insights, automate workflows, and programmatically redact faces in videos |
-| Deployment | L99-L104 | Deploying Video Indexer via Arc or ARM, configuring real-time extensions, and managing on-prem/edge deployments and infrastructure setup. |
+| Deployment | L99-L104 | Deploying Azure AI Video Indexer via Arc extension or ARM templates, and creating/managing real-time extensions for live video processing and integration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -101,4 +101,4 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Deploy Azure Video Indexer as an Arc extension | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart |
 | Create and manage Video Indexer real-time extensions | https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/live-extension |
-| Deploy Azure Video Indexer with ARM templates | https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-arm-template |
+| Deploy Azure AI Video Indexer with ARM templates | https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-arm-template |

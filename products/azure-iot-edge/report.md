@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-09-13'
 category_descriptions:
-  configuration: Configuring IoT Edge devices, networking, gateways, provisioning
-    (DPS, keys, X.509), EFLOW/VM integration, metrics/monitoring, storage, and module/container
-    deployment settings.
+  configuration: 'Configuring IoT Edge devices and EFLOW: networking, gateways, DPS
+    provisioning, storage, proxies, metrics/monitoring, GPU, and module/container
+    deployment settings.'
   security: 'Securing IoT Edge: certificates and X.509 provisioning, dTPM/EFLOW security,
     confidential computing modules, EST server setup, downstream auth, and Private
     Link/endpoint traffic protection.'
@@ -30,15 +30,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Edge development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring DPS/X.509 provisioning, EFLOW/VM installs, gateway topologies, nested
-  Edge, or CI/CD deployments, and other Azure IoT Edge related development tasks.
-  Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT
-  Central (use azure-iot-central), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
-use_when: Use when configuring DPS/X.509 provisioning, EFLOW/VM installs, gateway
-  topologies, nested Edge, or CI/CD deployments, and other Azure IoT Edge related
-  development tasks.
+  configuring EFLOW devices, DPS provisioning, nested Edge gateways, CI/CD deployments,
+  or Private Link traffic, and other Azure IoT Edge related development tasks. Not
+  for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT Operations
+  (use azure-iot-operations), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
+use_when: Use when configuring EFLOW devices, DPS provisioning, nested Edge gateways,
+  CI/CD deployments, or Private Link traffic, and other Azure IoT Edge related development
+  tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot),
-  Azure IoT Central (use azure-iot-central), Azure Kubernetes Service Edge Essentials
+  Azure IoT Operations (use azure-iot-operations), Azure Kubernetes Service Edge Essentials
   (use azure-aks-edge-essentials).
 ---
 # Azure IoT Edge Crawl Report
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 98
+- **Updated Pages**: 2
+- **Unchanged**: 96
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -75,12 +75,19 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 
 ## Changes
 
+### Updated Pages
+
+- [Give modules access to a device's local storage](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-host-storage-from-module)
+  - Updated: 2026-07-16T22:11:00.000Z → 2026-09-11T05:12:00.000Z
+- [Configure device settings](https://learn.microsoft.com/en-us/azure/iot-edge/configure-device)
+  - Updated: 2026-07-16T08:00:00.000Z → 2026-09-11T05:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Configure device settings](https://learn.microsoft.com/en-us/azure/iot-edge/configure-device) | configuration | 0.92 | The article documents the IoT Edge /etc/aziot/config.toml file, including specific section names, option names, allowed values, and how they affect device behavior. This is product-specific configuration knowledge (parameter-level details) that an LLM is unlikely to fully know from training and fits the configuration sub-skill definition. |
 | [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions) | limits-quotas | 0.92 | A page explicitly about IoT Edge limits and restrictions will list concrete numerical limits (for modules, routes, message sizes, etc.) and constraints specific to IoT Edge. These are exact values and conditions that qualify as limits-quotas expert knowledge beyond generic conceptual information. |
-| [Configure device settings](https://learn.microsoft.com/en-us/azure/iot-edge/configure-device) | configuration | 0.90 | Explicitly documents config.toml sections and options; this is a configuration reference with specific parameter names, allowed values, and defaults for IoT Edge devices. |
 | [IoT Edge agent and hub properties](https://learn.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub) | configuration | 0.86 | The page documents the desired and reported properties for the Azure IoT Edge runtime modules (edgeAgent and edgeHub), including specific property names, allowed values, and their meanings. This is product-specific configuration reference information that an LLM is unlikely to know from training and matches the configuration sub-skill definition. |
 | [Diagnose virtual machine](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-iot-edge-for-linux-on-windows) | troubleshooting | 0.85 | Dedicated troubleshooting guide with EFLOW-specific diagnostic commands, log locations, and symptom-to-solution mappings that are unique to this product. |
 | [Diagnose virtual machine networking](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-iot-edge-for-linux-on-windows-networking) | troubleshooting | 0.85 | Focuses on EFLOW networking problems with specific diagnostics, commands, and resolutions for network-related symptoms, matching the troubleshooting criteria. |
@@ -116,7 +123,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [Configure nested virtualization for Windows VMs](https://learn.microsoft.com/en-us/azure/iot-edge/nested-virtualization) | decision-making | 0.70 | Compares three nested virtualization deployment options (local Hyper-V, VMware, Azure VM) and provides guidance on which to choose for different scenarios, which is product-specific decision-making content. |
 | [Connect a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device) | configuration | 0.70 | Covers detailed configuration steps and parameters to establish a trusted connection between downstream devices and an IoT Edge transparent gateway (cert trust, connection strings, gateway hostname, and client settings). These are specific configuration patterns unique to Azure IoT Edge. |
 | [Deployment manifest](https://learn.microsoft.com/en-us/azure/iot-edge/module-composition) | configuration | 0.70 | Covers deployment manifests, desired properties, and routing; these are configuration artifacts with specific setting names and structures unique to IoT Edge. |
-| [Give modules access to a device's local storage](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-host-storage-from-module) | configuration | 0.70 | Describes environment variables and createOptions needed for modules to access host storage, including IoT Edge–specific configuration names and patterns that qualify as detailed configuration knowledge. |
+| [Give modules access to a device's local storage](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-host-storage-from-module) | configuration | 0.70 | Page describes using environment variables and createOptions to mount host device storage into IoT Edge modules, including specific Docker/Edge configuration fields and patterns that are product-specific and not just conceptual. |
 | [IoT Edge device as a gateway](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway) | architecture-patterns | 0.70 | Describes transparent, opaque, and proxy gateway patterns specific to IoT Edge and when to use each. |
 | [PowerShell functions](https://learn.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions) | integrations | 0.70 | Reference for EFLOW-specific PowerShell functions to deploy, provision, and get status of the IoT Edge VM. This is expert knowledge of product-specific APIs/commands and their parameters, fitting the integrations & coding patterns category because it documents concrete function names and usage patterns unique to this product. |
 | [Run IoT Edge on Kubernetes](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-kubernetes) | deployment | 0.70 | Product-specific deployment method using KubeVirt and Kubernetes, including environment and runtime constraints. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   troubleshooting: Diagnosing and fixing common Cloud Shell errors, storage and connectivity
     issues, plus deployment and network problems when running Cloud Shell in private
@@ -7,20 +7,19 @@ category_descriptions:
   limits-quotas: Details on Cloud Shell session duration, resource and storage limits,
     quotas, and how these constraints affect usage and persistence of files and settings.
   security: 'Securing Cloud Shell storage: configuring shared storage safely, using
-    private endpoints, and assigning RBAC roles for secure VNet-based Cloud Shell
-    deployments.'
+    private endpoints, and setting RBAC for VNet-based Cloud Shell deployments.'
 skill_description: Expert knowledge for Azure Cloud Shell development including troubleshooting,
   limits & quotas, and security. Use when handling Cloud Shell storage mounts, session
-  persistence, private VNet access, RBAC roles, or private endpoints, and other Azure
-  Cloud Shell related development tasks. Not for Azure Portal (use azure-portal),
-  Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service),
-  Azure Functions (use azure-functions).
-use_when: Use when handling Cloud Shell storage mounts, session persistence, private
-  VNet access, RBAC roles, or private endpoints, and other Azure Cloud Shell related
-  development tasks.
+  limits, file persistence, private VNet access, or RBAC setup, and other Azure Cloud
+  Shell related development tasks. Not for Azure Portal (use azure-portal), Azure
+  Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
+  Azure DevOps (use azure-devops).
+use_when: Use when handling Cloud Shell storage mounts, session limits, file persistence,
+  private VNet access, or RBAC setup, and other Azure Cloud Shell related development
+  tasks.
 confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machines
-  (use azure-virtual-machines), Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions).
+  (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
+  Azure DevOps (use azure-devops).
 ---
 # Azure Cloud Shell Crawl Report
 
@@ -52,15 +51,15 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 
 ### Updated Pages
 
-- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
-  - Updated: 2026-08-07T08:00:00.000Z → 2026-09-03T17:13:00.000Z
+- [Assign necessary permissions to prepare for Network Profile deprecation](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/migrate-container-permissions)
+  - Updated: 2026-06-23T17:23:00.000Z → 2026-09-08T17:27:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Allow multiple users to use a single storage account and file share](https://learn.microsoft.com/en-us/azure/cloud-shell/security/how-to-support-multiple-users) | security | 0.80 | Describes non-default security configuration to allow multiple users to share a storage account/file share, including security implications and required changes—product-specific IAM/storage security guidance. |
-| [Assign necessary permissions to prepare for Network Profile deprecation](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/migrate-container-permissions) | security | 0.80 | Page gives product-specific RBAC guidance for Cloud Shell in private VNets, including the exact role name (Network Contributor) and how to assign it to Container Instances for the new infrastructure, which matches the security sub-skill criteria for role names and permission scopes. |
+| [Assign necessary permissions to prepare for Network Profile deprecation](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/migrate-container-permissions) | security | 0.78 | Page gives product-specific RBAC guidance for Azure Cloud Shell when Azure Container Instances network profiles are deprecated, including the exact role name (Network Contributor) that must be assigned to the Container Instances service and how to configure permissions for the new infrastructure. This is concrete, service-specific security configuration rather than a generic overview. |
 | [Troubleshoot Azure Cloud Shell in a virtual network](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/troubleshooting) | troubleshooting | 0.75 | Dedicated troubleshooting article for VNet-based Cloud Shell deployments; expected to map specific connectivity symptoms and misconfigurations to resolutions. |
 | [What is Azure Cloud Shell?](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) | limits-quotas | 0.75 | Overview page but includes concrete expert-only limits: session timeout of 20 minutes without interactive activity and a fixed 5-GB file share for $HOME persistence. These are specific numerical constraints unique to Cloud Shell that match the limits-quotas criteria. |
 | [FAQ & Troubleshooting](https://learn.microsoft.com/en-us/azure/cloud-shell/faq-troubleshooting) | troubleshooting | 0.70 | Explicitly an FAQ plus troubleshooting article; likely organized by common issues with causes and resolutions specific to Cloud Shell, matching symptom→solution guidance. |

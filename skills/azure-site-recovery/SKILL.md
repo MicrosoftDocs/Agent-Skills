@@ -1,9 +1,9 @@
 ---
 name: azure-site-recovery
-description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ASR for VMware/Hyper‑V, automating DR via ARM/PowerShell, or protecting SQL/AD multi‑tier apps, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning VMware/Hyper-V DR, configuring Mobility service/appliances, automating via ARM/Bicep/Terraform, securing NSG/TLS/RBAC, or designing DR for SQL/SAP/AD workloads, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Site Recovery Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L85-L94 | Designing Azure Site Recovery architectures for specific workloads (AD/DNS, SAP, Dynamics AX, SharePoint, IIS, SQL, VMware, file servers) and multi-tier app DR patterns. |
 | Limits & Quotas | L95-L105 | Limits, quotas, and scalability for Site Recovery: VM support constraints, high-churn limits, shared disks, safe use with Backup, planner limitations, VMware DR capacity/scale, and Mobility service overhead. |
 | Security | L106-L116 | Securing Azure Site Recovery: NSGs, TLS, encryption changes, secure replication (incl. VMware), RBAC access control, managed identities, and hardened replication appliance deployment. |
-| Configuration | L117-L174 | Configuring Azure Site Recovery for VMware, Hyper-V, and Azure VMs: replication setup, networking/IP, encryption, private endpoints, monitoring, failover/failback, and Mobility/agent management. |
+| Configuration | L117-L174 | Configuring Azure Site Recovery for VMware, Hyper-V, physical and Azure VMs: networking, encryption, policies, appliances, Mobility service, monitoring, and DR/failback setup and management. |
 | Integrations & Coding Patterns | L175-L191 | PowerShell, ARM/Bicep/Terraform patterns for automating Azure Site Recovery setup and DR for Azure VMs, Hyper‑V, VMware, shared disks, plus ExpressRoute/Traffic Manager and runbook integrations. |
-| Deployment | L192-L199 | Deployment and support details for ASR: supported VMware/Hyper-V/physical scenarios, shared disks, replication appliance matrix, and steps to migrate classic VMware DR to modernized. |
+| Deployment | L192-L199 | Planning and validating ASR deployments: support matrices and checks for VMware, Hyper-V, physical servers, shared disks, replication appliance, and migrating from classic to modernized VMware DR. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -129,7 +129,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable Site Recovery protection using Azure Policy assignments | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-policy |
 | Configure Site Recovery for ADE-encrypted Azure virtual machines | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-ade-vms |
 | Enable Site Recovery for VMs using CMK-encrypted managed disks | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-cmk-disks |
-| Configure private endpoint-based replication for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-private-endpoints |
+| Configure Azure Site Recovery with private endpoints | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-private-endpoints |
 | Configure Site Recovery for Storage Spaces Direct guest clusters | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-s2d-vms |
 | Reprotect Azure VMs back to primary region after failover | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-reprotect |
 | Configure virtual network mapping for Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-network-mapping |
@@ -196,4 +196,4 @@ This skill requires **network access** to fetch documentation content:
 | Verify Hyper-V to Azure Site Recovery support | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix |
 | Support matrix for Azure Site Recovery replication appliance | https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix |
 | Check shared disk support for Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/shared-disk-support-matrix |
-| Check VMware and physical DR support for Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix |
+| Check Azure Site Recovery support for VMware and physical servers | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix |

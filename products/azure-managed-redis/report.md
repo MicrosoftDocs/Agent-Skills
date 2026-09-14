@@ -45,9 +45,9 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 72
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 74
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | *(Unclassified)* | 6 | 8.1% |
 
 ## Changes
-
-### New Pages
-
-- [Advanced troubleshooting with Redis commands](https://learn.microsoft.com/en-us/azure/redis/common-redis-commands)
-
-### Updated Pages
-
-- [Troubleshoot Redis server](https://learn.microsoft.com/en-us/azure/redis/troubleshoot-server)
-  - Updated: 2026-08-18T17:12:00.000Z → 2026-09-01T22:26:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   planning: 'Planning Azure cloud and AI adoption: migration waves, workload readiness,
     data/tech architecture, cost, skills, and roadmaps for AVD, VMware, Oracle, SAP,
@@ -7,9 +7,9 @@ category_descriptions:
   adoption-patterns: Patterns and guidance for planning, migrating, modernizing, and
     operating Azure workloads (cloud‑native, AI, SAP, Oracle, AVD), including architecture
     choices, rollout, and post‑deployment tasks.
-  strategy: 'Strategic planning for cloud and AI: business cases, org-wide AI roadmap,
-    unified data, hybrid/multicloud, SAP/Oracle/VDI, sovereign cloud, and cost, security,
-    resiliency, sustainability.'
+  strategy: 'Strategic guidance for planning cloud and AI adoption: business cases,
+    exec strategy, data and hybrid/multicloud plans, cost, security, resiliency, sustainability,
+    and workload-specific roadmaps.'
   governance: Designing and enforcing Azure governance, security, compliance, cost,
     and tagging policies and guardrails across AI, data, landing zones, Arc, SAP,
     AVD, VMware, Citrix, and other workloads.
@@ -31,12 +31,12 @@ category_descriptions:
 skill_description: Expert guidance for planning and executing cloud adoption using
   Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones,
   adoption patterns, governance, security, operations & management, organization &
-  teams, and adoption scenarios. Use when planning or operating SAP, Oracle, AKS,
-  AVD/AVS, or Arc workloads and their Azure landing zones, and other Azure Cloud Adoption
-  Framework related development tasks.
-use_when: Use when planning or operating SAP, Oracle, AKS, AVD/AVS, or Arc workloads
-  and their Azure landing zones, and other Azure Cloud Adoption Framework related
-  development tasks.
+  teams, and adoption scenarios. Use when planning Azure landing zones, AVD, AVS,
+  SAP, Oracle, AKS, Arc, or Citrix workloads, and other Azure Cloud Adoption Framework
+  related development tasks.
+use_when: Use when planning Azure landing zones, AVD, AVS, SAP, Oracle, AKS, Arc,
+  or Citrix workloads, and other Azure Cloud Adoption Framework related development
+  tasks.
 ---
 # Azure Cloud Adoption Framework Crawl Report
 
@@ -49,10 +49,10 @@ use_when: Use when planning or operating SAP, Oracle, AKS, AVD/AVS, or Arc workl
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 2
-- **Unchanged**: 355
-- **Deleted Pages**: 4
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 361
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
 ## Classification Statistics
@@ -72,27 +72,10 @@ use_when: Use when planning or operating SAP, Oracle, AKS, AVD/AVS, or Arc workl
 
 ## Changes
 
-### New Pages
-
-- [Data platform](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform)
-- [AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy)
-- [Agents](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/)
-- [Sovereignty](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy)
-- [Azure VMware Solution](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/azure-vmware-solution/strategy)
-
 ### Updated Pages
 
-- [What is the Cloud Adoption Framework?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview)
-  - Updated: 2026-08-27T20:25:00.000Z → 2026-09-04T18:06:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new)
-  - Updated: 2026-07-06T20:03:00.000Z → 2026-09-01T17:39:00.000Z
-
-### Deleted Pages
-
-- ~~Agent adoption~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/)
-- ~~AI adoption~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy)
-- ~~Azure VMware Solution adoption~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/azure-vmware-solution/strategy)
-- ~~Data for AI and analytics~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform)
+- [Sovereignty](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy)
+  - Updated: 2026-09-04T18:06:00.000Z → 2026-09-10T14:08:00.000Z
 
 ## Classified Pages
 
@@ -439,11 +422,11 @@ use_when: Use when planning or operating SAP, Oracle, AKS, AVD/AVS, or Arc workl
 | [Resource selection](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/resource-selection) | adoption-patterns | 0.70 | Contains detailed resource selection criteria and comparison tables for Foundry tools, compute, and related PaaS options for AI workloads—this is specific implementation and deployment pattern guidance. |
 | [Security operations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-lza-security-operations) | security | 0.70 | Focuses on security operations for SAP in Microsoft Cloud, including protecting sensitive SAP data and applications—deep security operations guidance aligned with the security sub-skill. |
 | [Shared management operations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/shared-management-operating-model) | operations | 0.70 | Describes a shared management operating model, platform engineering approach, and responsibility distribution for ongoing cloud operations at scale. |
+| [Sovereignty](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy) | strategy | 0.70 | The page targets executives and decision makers, focusing on business drivers (sovereignty requirements, cost, responsibilities, deployment options, time to value) and how to align them with outcomes using Microsoft Sovereign Cloud. It provides decision-making guidance specific to digital sovereignty adoption rather than technical implementation. This is specialized, up-to-date content about Microsoft Sovereign Cloud strategy that goes beyond generic LLM training data, so it qualifies as expert knowledge and best fits the 'strategy' sub-skill. |
 | [Storage](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/storage) | readiness | 0.70 | Provides detailed storage selection guidance (throughput, latency, versioning, consistency) for AI training and inference on Azure infrastructure—this is foundational infrastructure design, fitting readiness. |
 | [Sustainability](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/sustainability) | strategy | 0.70 | The page is in the CAF Strategy/Inform section and provides concrete guidance on integrating sustainability into cloud strategy, mapping sustainability drivers to business outcomes and cloud usage. This aligns with the strategy sub-skill (business drivers, outcome definition, stakeholder considerations). It goes beyond generic marketing by giving prescriptive considerations and frameworks for including sustainability in cloud strategy, which qualifies as expert knowledge for the CAF domain. |
 | [Tailoring the Azure landing zones architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/tailoring-alz) | readiness | 0.70 | Explains how to adapt reference landing zone implementations to business requirements, including which implementation options to choose and how to adjust them. This is environment/landing zone preparation (readiness). |
 | [Well-architected](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/well-architected) | adoption-patterns | 0.70 | Provides detailed well-architected considerations (reliability, security, operations, cost, performance) specifically for AI solutions on Azure infrastructure—this is workload architecture and deployment pattern guidance. |
-| [Sovereignty](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy) | strategy | 0.69 | Executive-level guidance to understand digital sovereignty, assess business drivers (cost, responsibilities, deployment options, time to value), and make an informed adoption decision. It focuses on business motivation, trade-offs, and strategic alignment rather than technical implementation, fitting the strategy sub-skill. |
 | [Automation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/automation) | readiness | 0.68 | Gives concrete recommendations on moving from manual portal work to code-based provisioning and management for landing zones and platform services—expert automation design for environment readiness. |
 | [Resiliency](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/resiliency) | strategy | 0.68 | Focuses on resiliency as a strategic consideration in cloud adoption, linking business continuity and technology dependency to strategic planning. It provides structured guidance on incorporating resiliency into the overall cloud strategy. |
 | [Strategic impact](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/strategy) | strategy | 0.68 | Focuses on strategic benefits and business alignment for AVD, mapping drivers to outcomes for this specific scenario rather than generic marketing content. |

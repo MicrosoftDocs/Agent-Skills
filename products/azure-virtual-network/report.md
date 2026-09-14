@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
-  decision-making: 'Guidance on performance and cost trade-offs: MANA support, Accelerated
-    Networking, routing preference, public IP upgrades, VNet cost optimization, and
-    VNet integration for service isolation.'
-  configuration: 'Configuring Azure virtual networks: IPs, prefixes, DNS, MTU, DHCP,
-    monitoring, and adapters/CNI for VMs, Kubernetes, NVAs, gateways, firewalls, and
-    load balancers.'
+  decision-making: 'Guidance on choosing VNet-related options: MANA support for VM
+    sizes, upgrading Basic to Standard public IPs, routing preference and unmetered
+    CDN traffic, cost trade-offs, and VNet integration for isolation.'
+  configuration: 'Configuring Azure VNets: IPs (public/private, prefixes, IPv4/IPv6),
+    DNS, MTU, DHCP, subnet delegation/peering, monitoring, and CNI/MANA networking
+    for VMs, NVAs, Kubernetes, and PaaS.'
   limits-quotas: 'Network resource limits and behaviors for Azure VMs/VNets: accelerated
     networking support, public IP quotas, VM throughput caps, and Virtual Network
     scale/performance constraints.'
@@ -23,17 +23,18 @@ category_descriptions:
     and custom routing options.'
 skill_description: Expert knowledge for Azure Virtual Network development including
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when configuring VNets, NSGs, VNet
-  peering, service endpoints, public IP upgrades, or hybrid app routing, and other
-  Azure Virtual Network related development tasks. Not for Azure Virtual Network Manager
-  (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
-use_when: Use when configuring VNets, NSGs, VNet peering, service endpoints, public
-  IP upgrades, or hybrid app routing, and other Azure Virtual Network related development
+  security, configuration, and deployment. Use when configuring VNet peering, service
+  endpoints, NSGs, MANA/CNI networking, or upgrading Basic to Standard IPs, and other
+  Azure Virtual Network related development tasks. Not for Azure Application Network
+  (use azure-application-network), Azure Networking (use azure-networking), Azure
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
+  azure-virtual-wan).
+use_when: Use when configuring VNet peering, service endpoints, NSGs, MANA/CNI networking,
+  or upgrading Basic to Standard IPs, and other Azure Virtual Network related development
   tasks.
-confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
-  Azure ExpressRoute (use azure-expressroute).
+confusable_not_for: Not for Azure Application Network (use azure-application-network),
+  Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Virtual Network Crawl Report
 
@@ -47,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 131
+- **Updated Pages**: 3
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -57,8 +58,8 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 2.3% |
-| best-practices | 6 | 4.6% |
-| configuration | 31 | 23.7% |
+| best-practices | 5 | 3.8% |
+| configuration | 32 | 24.4% |
 | decision-making | 6 | 4.6% |
 | deployment | 1 | 0.8% |
 | limits-quotas | 4 | 3.1% |
@@ -66,6 +67,15 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | *(Unclassified)* | 75 | 57.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Manage public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-public-ip-address)
+  - Updated: 2025-01-08T08:00:00.000Z → 2026-09-05T08:00:00.000Z
+- [Default outbound access](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access)
+  - Updated: 2026-01-30T08:00:00.000Z → 2026-09-10T22:03:00.000Z
+- [Upgrade guidance for Basic SKU public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance)
+  - Updated: 2025-11-25T23:25:00.000Z → 2026-09-10T22:03:00.000Z
 
 ## Classified Pages
 
@@ -89,13 +99,14 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Linux VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux) | configuration | 0.70 | Page is a how-to for enabling and using MANA on Linux VMs, with product-specific configuration steps and options (adapter usage, VM/network requirements). It goes beyond conceptual overview into concrete setup details, but is focused on configuring the adapter rather than limits, architecture, or troubleshooting. |
 | [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out) | configuration | 0.70 | Describes how to use Azure Policy to manage MANA deployments and opt-out behavior for NVAs on existing VM series. This implies product-specific configuration options and policy parameters controlling whether NVAs run on MANA-capable hardware, which fits the configuration sub-skill (specific settings and policy-based controls). |
 | [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes) | decision-making | 0.70 | Targets customers on existing VM sizes and discusses differing benefits versus newer VM series. This kind of content typically includes SKU/series-specific guidance or matrices indicating which VM sizes support MANA and how they benefit, helping users choose VM series or plan migrations. That aligns best with decision-making (tier/SKU selection and migration considerations). |
+| [Manage public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-public-ip-address) | configuration | 0.70 | Page is a how-to for creating and managing Azure public IP resources and includes product-specific configurable settings (SKU, allocation method, association behavior, etc.). These are concrete configuration options unique to Azure Virtual Network public IPs rather than generic networking concepts. |
 | [Monitor data reference](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference) | configuration | 0.70 | Monitoring reference pages for Azure services usually enumerate all metrics, logs, dimensions, and categories with exact names, units, and sometimes value ranges (for example, metric names, log table names, and category identifiers) that an LLM is unlikely to know reliably from training. This is structured, product-specific reference data that fits configuration-like knowledge for monitoring/diagnostics. |
 | [Name resolution for resources](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) | configuration | 0.70 | Covers Azure-provided DNS, private DNS zones, and custom DNS; includes Azure-specific DNS configuration patterns and options. |
 | [Network virtual appliances](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-scenario-udr-gw-nva) | architecture-patterns | 0.70 | Scenario-based architecture using route tables, VPN gateway, and NVAs to build DMZ and protected networks; concrete Azure network pattern. |
 | [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) | best-practices | 0.70 | The article focuses on concrete, product-specific tuning guidance for Azure VM networking (e.g., congestion control algorithms, queue discipline, buffer sizes, NIC tuning) and emphasizes applying these settings consistently. These are actionable DO/DO-NOT style recommendations with specific configuration patterns for Windows and Linux VMs, which qualify as best-practices rather than generic networking theory. |
 | [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network) | security | 0.70 | Article provides concrete security recommendations for Azure Virtual Network, including product-specific controls (such as particular Azure networking security features and how to apply them) that go beyond generic security concepts. |
 | [TCP/IP performance tuning](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tcpip-performance-tuning) | best-practices | 0.70 | Provides Azure-specific TCP/IP tuning recommendations and considerations (e.g., window sizes, offloads) tailored to Azure VM networking behavior, which are product-specific best-practices rather than generic TCP advice. |
-| [Upgrade guidance for Basic SKU public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance) | decision-making | 0.70 | Retirement guidance plus SKU comparison and migration steps; helps decide when/how to upgrade Basic to Standard with scenario-focused recommendations. |
+| [Upgrade guidance for Basic SKU public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance) | decision-making | 0.70 | Provides migration guidance from Basic to Standard public IP SKUs, including SKU comparison and options after retirement. This is product-specific decision and migration content that helps choose and move between SKUs, fitting the decision-making category. |
 | [Use dynamic DNS to register hostnames](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-ddns) | configuration | 0.70 | Explains how to configure dynamic DNS with custom DNS servers hosted in Azure; includes specific configuration steps and parameters. |
 | [What is IP address 168.63.129.16?](https://learn.microsoft.com/en-us/azure/virtual-network/what-is-ip-address-168-63-129-16) | configuration | 0.70 | Details the special platform IP address and its roles; includes configuration and troubleshooting considerations unique to Azure. |
 | [NAT gateway](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-nat-gateway) | configuration | 0.68 | Details NAT Gateway requirements (standard SKU only, unsupported with basic SKU resources) and how public IPs/prefixes are used; includes product-specific constraints and configuration behavior. |
@@ -109,15 +120,14 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-cost-optimization) | decision-making | 0.65 | Cost optimization guidance for VNet design; likely includes concrete recommendations and trade-offs between connectivity, performance, and cost for different scenarios. |
 | [Create a virtual machine with static public IP](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-static-public-ip) | limits-quotas | 0.65 | Mentions there is a limit to the number of public IP addresses per subscription and references downloadable IP range lists; this is concrete limits/quotas information beyond generic concepts. |
 | [Create a virtual network with encryption](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-encryption) | configuration | 0.65 | How-to for creating an encrypted VNet; likely includes specific settings and parameters required to enable VNet encryption. |
+| [Default outbound access](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access) | configuration | 0.65 | Explains Azure’s default outbound access behavior and how explicit outbound methods (NAT gateway, load balancer, public IP) interact with it. Contains product-specific behavior and configuration guidance for outbound connectivity that goes beyond generic networking knowledge. |
 | [Plan virtual networks](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-vnet-plan-design-arm) | architecture-patterns | 0.65 | Planning guidance for multiple VNets and connectivity; likely includes Azure-specific design patterns and when to use them for different isolation and location requirements. |
 | [Service endpoint policies for Azure Storage](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview) | security | 0.65 | Describes endpoint policies to restrict data exfiltration to specific storage accounts; product-specific network security configuration. |
 | [Application gateway](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-application-gateway) | configuration | 0.64 | Covers how public IPs are used as frontends, SKU support, and interaction with HTTP routing; these are specific configuration patterns for Application Gateway. |
 | [Firewall](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-firewall) | configuration | 0.64 | Explains IP requirements (at least one static public IP) and how to attach/change IP configurations on Azure Firewall; product-specific configuration details. |
 | [Load balancer](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-load-balancer) | configuration | 0.64 | Explains how public IPs are used as frontends for load balancers, SKU relationships, and egress behavior; these are Azure-specific configuration patterns. |
-| [Manage public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-public-ip-address) | configuration | 0.64 | Management article for public IPs including SKU retirement note and configurable settings; likely includes specific properties, modes, and behaviors unique to Azure public IP resources. |
 | [VPN gateway](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-vpn-gateway) | configuration | 0.64 | Describes how public IPs are used with VPN gateways, SKU relationships, and encrypted traffic paths; Azure-specific configuration behavior. |
 | [Virtual machine](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-vm) | configuration | 0.64 | Describes how public IPs attach to VMs, SKU implications, and inbound/outbound behavior; these are Azure-specific configuration semantics. |
-| [Default outbound access](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access) | best-practices | 0.63 | Explains Azure’s automatic assignment of outbound public IPs and contrasts with explicit outbound methods; typically includes guidance on when to rely on or disable default access, which is Azure-specific behavior and recommendation. |
 | [Manage a custom IP address prefix (BYOIP)](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/manage-custom-ip-address-prefix) | configuration | 0.62 | Management article for custom IP prefixes including regional commissioning and migration steps; likely includes Azure-specific operations, states, and parameters for BYOIP ranges that are not generic knowledge. |
 | [Manage public IP prefix](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/manage-public-ip-address-prefix) | configuration | 0.62 | Covers creating, modifying, deleting prefixes and creating IPs from them; involves Azure-specific resource properties and relationships beyond generic networking concepts. |
 | [Routing preference Unmetered](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-unmetered) | decision-making | 0.62 | Explains a specialized routing option for CDN providers with billing implications; helps decide when to use unmetered routing based on topology and cost, which is product-specific. |

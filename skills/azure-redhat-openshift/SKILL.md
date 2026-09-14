@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing Entra auth & CMK, or integrating GPUs/NetApp Files, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/ANF, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L42 | Fixing common ARO cluster issues, restoring cluster access, and manually updating or troubleshooting cluster certificates and connectivity via CLI |
-| Best Practices | L43-L50 | Guidance on sizing and deploying ARO infrastructure and large clusters, optimizing OpenShift Virtualization VMs, and understanding ARO 4 support policies and limits |
+| Best Practices | L43-L50 | Guidance on sizing and deploying infra/VM nodes, scaling large ARO clusters, optimizing OpenShift Virtualization, and understanding ARO 4 support and lifecycle policies. |
 | Decision Making | L51-L55 | Roles and responsibilities for managing ARO clusters and guidance on ARO version lifecycle, support timelines, and upgrade planning. |
 | Limits & Quotas | L56-L61 | Scaling ARO clusters with multiple load balancer IPs, plus hard/soft service limits, quotas, and key terms that constrain cluster size and usage. |
 | Security | L62-L78 | Identity, encryption, and network security for ARO: Entra auth, service/managed identities, disk CMK, FIPS, egress control, Front Door, Lockbox, and support/credential rotation policies. |

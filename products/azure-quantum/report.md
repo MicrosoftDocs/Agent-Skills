@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   limits-quotas: Managing Azure Quantum API lifecycles, usage quotas, session limits/timeouts,
     and Rigetti hardware target constraints and capacity.
@@ -44,16 +44,16 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ## Summary
 
-- **Total Pages**: 138
-- **Fetched**: 138
+- **Total Pages**: 139
+- **Fetched**: 139
 - **Fetch Failed**: 0
 - **Classified**: 42
-- **Unclassified**: 96
+- **Unclassified**: 97
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 135
+- **Updated Pages**: 0
+- **Unchanged**: 138
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
@@ -68,22 +68,15 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | deployment | 2 | 1.4% |
 | integrations | 10 | 7.2% |
 | limits-quotas | 4 | 2.9% |
-| security | 7 | 5.1% |
+| security | 7 | 5.0% |
 | troubleshooting | 4 | 2.9% |
-| *(Unclassified)* | 96 | 69.6% |
+| *(Unclassified)* | 97 | 69.8% |
 
 ## Changes
 
 ### New Pages
 
-- [Azure Quantum preview API lifecycle](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-api-lifecycle)
-
-### Updated Pages
-
-- [Connect to your Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace)
-  - Updated: 2026-08-21T00:04:00.000Z → 2026-09-04T22:07:00.000Z
-- [Submit a job with the QDK extension for VS Code](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs-vscode)
-  - Updated: 2026-08-29T00:02:00.000Z → 2026-09-04T22:07:00.000Z
+- [The Bloch sphere visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-bloch-sphere-visualizer)
 
 ## Classified Pages
 
@@ -201,6 +194,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Specialization declarations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/specializationdeclarations) | 0.20 | Explains Q# specialization declarations conceptually; no numeric thresholds, configs, or troubleshooting mappings. |
 | [Statements in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/) | 0.20 | Overview of Q# statements; no product-specific limits, configs, or decision matrices. |
 | [Submit a job with the QDK extension for VS Code](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs-vscode) | 0.20 | Appears to be a how-to/tutorial for submitting quantum jobs via VS Code, without detailed limits, configuration tables, error-code mappings, or product-specific best-practice guidance. Likely focuses on basic usage rather than expert-only reference information. |
+| [The Bloch sphere visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-bloch-sphere-visualizer) | 0.20 | Page describes how to use the Bloch sphere visualizer in QDK/VS Code/Jupyter, focusing on conceptual visualization of single-qubit states and gate effects. It does not present product-specific limits, configuration parameter tables, error-code-based troubleshooting, security roles, deployment matrices, or quantified decision criteria. Content is more tutorial/usage guidance than expert reference data. |
 | [Variable declaration and reassignment](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/variabledeclarationsandreassignments) | 0.20 | Covers let/mutable and variable reassignment in Q#; no configuration tables or limits. |
 | [Ways to run Q# programs](https://learn.microsoft.com/en-us/azure/quantum/qsharp-ways-to-work) | 0.20 | Describes development environment options for Q#; conceptual/overview content without specific numeric thresholds, configuration matrices, or troubleshooting mappings. |
 | [Work with Q# projects](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-qsharp-projects) | 0.20 | Explains how to create and manage Q# projects and libraries; likely a structural/how-to guide without numeric limits, decision matrices, or product-specific configuration tables. |

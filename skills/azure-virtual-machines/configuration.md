@@ -37,6 +37,7 @@
 | Enable and configure Azure shared managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable |
 | Configure torn-write prevention on Linux managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention |
 | Check supported OS images for Azure NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface |
+| Configure and deploy Azure VMs with ephemeral OS disks | https://learn.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks-deploy |
 | Configure Azure Monitor Dependency agent extension for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-linux |
 | Configure Azure Monitor Dependency agent extension for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-windows |
 | Configure and manage Azure Linux VM Agent settings | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux |
@@ -76,9 +77,7 @@
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
 | Install AMD GPU drivers on Azure N-series Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
 | Create and upload CentOS-based VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
-| Prepare generic Linux systems for Azure imaging | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-generic |
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
-| Prepare Debian Linux VHD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/debian-create-upload-vhd |
 | Create and encrypt Linux VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart |
 | Encrypt Linux VM disks via Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-portal-quickstart |
 | Create and encrypt Linux VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-powershell-quickstart |
@@ -88,12 +87,9 @@
 | Author Bicep and ARM templates for Azure Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-json |
 | Configure networking for Azure VM Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-networking |
 | Configure NVIDIA GPU drivers on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup |
-| Create and upload Oracle Linux VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/oracle-create-upload-vhd |
 | Understand Linux VM provisioning parameters in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/provisioning |
-| Prepare and upload RHEL VHDs for Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/redhat-create-upload-vhd |
 | Use Run Command to execute scripts on Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command |
 | Configure managed Run Command for Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed |
-| Create and upload SUSE Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/suse-create-upload-vhd |
 | Configure time synchronization for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/time-sync |
 | Configure xrdp and desktop environment on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop |
 | Control Azure VM platform updates with Maintenance Configurations | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations |

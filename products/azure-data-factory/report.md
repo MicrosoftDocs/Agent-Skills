@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 504
+- **Updated Pages**: 0
+- **Unchanged**: 505
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 99 | 19.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure your Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/secure-your-azure-data-factory)
-  - Updated: 2025-07-08T17:24:00.000Z → 2026-09-02T22:13:00.000Z
 
 ## Classified Pages
 

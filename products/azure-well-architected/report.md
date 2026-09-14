@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
   workload-patterns: Design patterns, reference architectures, and end-to-end guidance
     for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including
@@ -7,9 +7,9 @@ category_descriptions:
   assessments: 'Guided assessments and maturity models to evaluate AI, SaaS, AVD,
     AVS, and other Azure workloads against WAF pillars: cost, reliability, security,
     performance, and operations.'
-  design-principles: Design patterns and best practices for cost, reliability, security,
-    performance, operations, sustainability, and mission-critical design across AI,
-    SaaS, AVD, HPC, and other Azure workloads.
+  design-principles: 'High-level Azure design guidance: cost, performance, reliability,
+    security/Zero Trust, sustainability, operational excellence, capacity resilience,
+    and patterns for AI, HPC, and SaaS workloads.'
   recommendations: Guidance on cost, reliability, performance, security, and operational
     excellence best practices for Azure workloads, including optimization, monitoring,
     automation, and sustainable cloud operations.
@@ -19,33 +19,33 @@ category_descriptions:
   tradeoffs: Guidance on weighing cost, reliability, performance, security, and operations
     tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar
     design decisions.
-  service-guides: WAF-aligned design and configuration guidance for specific Azure
-    services (App Service, AKS, networking, databases, storage, messaging) to improve
-    reliability, security, and performance.
+  service-guides: 'Service-specific Azure Well-Architected (WAF) guidance: design,
+    configure, secure, and optimize reliability, performance, and cost for core compute,
+    data, and networking services.'
 skill_description: Expert guidance for designing, assessing, and optimizing Azure
   workloads using Azure Well Architected. Covers design review checklists, recommendations,
   design principles, tradeoffs, service guides, workload patterns, and assessment
-  questions. Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
-  or configuring AKS, App Service, and databases, and other Azure Well Architected
+  questions. Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/AZs,
+  or tuning core compute/data/networking services, and other Azure Well Architected
   related development tasks.
-use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs, or
-  configuring AKS, App Service, and databases, and other Azure Well Architected related
-  development tasks.
+use_when: Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/AZs,
+  or tuning core compute/data/networking services, and other Azure Well Architected
+  related development tasks.
 ---
 # Azure Well Architected Crawl Report
 
 ## Summary
 
-- **Total Pages**: 212
-- **Fetched**: 212
+- **Total Pages**: 213
+- **Fetched**: 213
 - **Fetch Failed**: 0
-- **Classified**: 174
+- **Classified**: 175
 - **Unclassified**: 38
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 210
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 211
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -54,22 +54,24 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 | Type | Count | Percentage |
 |------|-------|------------|
 | assessments | 9 | 4.2% |
-| checklists | 5 | 2.4% |
-| design-principles | 11 | 5.2% |
-| recommendations | 70 | 33.0% |
-| service-guides | 32 | 15.1% |
+| checklists | 5 | 2.3% |
+| design-principles | 12 | 5.6% |
+| recommendations | 70 | 32.9% |
+| service-guides | 32 | 15.0% |
 | tradeoffs | 6 | 2.8% |
-| workload-patterns | 41 | 19.3% |
-| *(Unclassified)* | 38 | 17.9% |
+| workload-patterns | 41 | 19.2% |
+| *(Unclassified)* | 38 | 17.8% |
 
 ## Changes
 
+### New Pages
+
+- [Capacity resilience](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/capacity-resilience)
+
 ### Updated Pages
 
-- [CO:04 Spending guardrails](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/set-spending-guardrails)
-  - Updated: 2023-11-15T08:00:00.000Z → 2026-08-31T22:08:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new)
-  - Updated: 2026-06-18T08:00:00.000Z → 2026-08-31T17:12:00.000Z
+- [Azure Local](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local)
+  - Updated: 2025-07-18T08:00:00.000Z → 2026-09-08T17:05:00.000Z
 
 ## Classified Pages
 
@@ -155,7 +157,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 | [Azure Container Apps](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps) | service-guides | 0.86 | The page is a Well-Architected Framework guide focused on Azure Container Apps, providing service-specific design considerations and configuration recommendations across multiple pillars (for example, reliability, security, cost, performance, operations). This aligns with the definition of a service-guide. It goes beyond generic concepts and includes concrete, Azure-Container-Apps-specific guidance that an LLM is unlikely to fully infer from general training data. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql) | service-guides | 0.86 | The page is a Well-Architected Framework guide focused on Azure Database for MySQL, providing service-specific design considerations and configuration recommendations (for availability, backups, scaling, etc.). It maps WAF pillar guidance to this particular Azure service, which matches the definition of a service-guide. The content goes beyond generic concepts and includes concrete, service-specific configuration advice that an LLM is unlikely to infer without the documentation. |
 | [Azure Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-files) | service-guides | 0.86 | This is a Well-Architected service guide specifically for Azure Files and Azure File Sync. It provides WAF-aligned design considerations and configuration recommendations for this service across multiple pillars (for example, reliability, security, performance, cost). That combination of service-specific, pillar-based guidance and concrete configuration details qualifies as expert knowledge and matches the service-guides definition. |
-| [Azure Local](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local) | service-guides | 0.86 | Service-focused guidance for Azure Local/Arc deployments with WAF-related design and configuration considerations. |
 | [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-machine-learning) | service-guides | 0.86 | Azure ML–specific architectural recommendations and configuration options aligned to WAF pillars. |
 | [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-netapp-files) | service-guides | 0.86 | Service guide with NetApp Files–specific design and configuration recommendations across multiple pillars. |
 | [Azure Service Fabric](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-fabric) | service-guides | 0.86 | Service Fabric–focused architectural recommendations mapped to WAF pillars with implementation detail. |
@@ -186,6 +187,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 | [Tradeoffs](https://learn.microsoft.com/en-us/azure/well-architected/security/tradeoffs) | tradeoffs | 0.80 | Security tradeoffs page analyzes how security design decisions, based on security principles and checklist recommendations, influence other pillar goals, providing cross-pillar tradeoff guidance. |
 | [Transient faults](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/handle-transient-faults) | recommendations | 0.80 | Specific patterns and implementation recommendations for handling transient faults; detailed how-to content. |
 | [Assessment](https://learn.microsoft.com/en-us/azure/well-architected/ai/assessment) | assessments | 0.78 | Describes a structured AI workload assessment aligned to Well-Architected pillars, providing concrete self-assessment guidance and question-driven evaluation of an AI workload’s readiness. This matches the assessments category: it is a review tool to evaluate architecture against WAF best practices, organized by pillars, and focused on assessing current state rather than giving only conceptual guidance. |
+| [Azure Local](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local) | service-guides | 0.78 | Service-specific Well-Architected guidance for Azure Local, covering how to deploy and operate Azure Local (Arc-based, distributed infrastructure) with detailed, implementation-focused recommendations across pillars. This is a WAF-aligned service guide rather than generic service docs or high-level concepts. |
 | [CO:03 Cost data and reporting](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/collect-review-cost-data) | recommendations | 0.78 | The page is explicitly tied to a Cost Optimization checklist recommendation and provides detailed implementation guidance on how to collect and review cost data (billing, usage patterns, spending trends) to support that checklist item. This aligns with the 'recommendations' definition: it elaborates the 'how-to' behind a specific checklist recommendation rather than just listing items or giving high-level principles. |
 | [CO:09 Flow costs](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-flow-costs) | recommendations | 0.78 | The page is explicitly tied to a Cost Optimization checklist recommendation and provides detailed guidance on how to optimize the cost of each workload flow. This aligns with the 'recommendations' definition: it is the how-to behind a checklist item, with implementation-focused, prescriptive steps rather than just high-level principles. |
 | [Compute](https://learn.microsoft.com/en-us/azure/well-architected/saas/compute) | workload-patterns | 0.78 | Describes compute hosting models, isolation, scaling, and SLA implications specifically for SaaS architectures. |
@@ -204,6 +206,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD workloads, choosing regions/AZs,
 | [Incident management](https://learn.microsoft.com/en-us/azure/well-architected/saas/incident-management) | workload-patterns | 0.76 | Focuses on organizational setup, culture, and tooling for SaaS incident management, which is domain-specific operational guidance. |
 | [Resource organization](https://learn.microsoft.com/en-us/azure/well-architected/saas/resource-organization) | workload-patterns | 0.76 | Gives SaaS-specific region and resource organization strategies tied to multi-tenant operations, security, and compliance. |
 | [Billing and cost management](https://learn.microsoft.com/en-us/azure/well-architected/saas/billing-cost-management) | workload-patterns | 0.74 | Contains SaaS-specific guidance on customer billing models and internal cost optimization, tightly coupled to SaaS business and technical architecture. |
+| [Capacity resilience](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/capacity-resilience) | design-principles | 0.72 | Provides named, pillar-aligned design guidance for handling capacity constraints and allocation risks, with rationale and prescriptive patterns for proactive capacity planning and resilience. It goes beyond generic concepts into specific, experience-based practices, fitting the design-principles category. |
 | [Design with an AI mindset](https://learn.microsoft.com/en-us/azure/well-architected/saas/ai-strategy) | workload-patterns | 0.72 | Gives SaaS-specific AI strategy patterns (value proposition, risk, competitive urgency) that go beyond generic AI marketing content. |
 | [Governance](https://learn.microsoft.com/en-us/azure/well-architected/saas/governance) | workload-patterns | 0.72 | Provides SaaS-focused governance controls and practices (guardrails, compliance, access) beyond generic Azure governance descriptions. |
 | [AI](https://learn.microsoft.com/en-us/azure/well-architected/ai/) | workload-patterns | 0.70 | This is AI workload–specific architectural guidance, focusing on non-deterministic behavior, data and application design, and operations. It applies WAF thinking to a particular workload domain (AI), which aligns with the workload-patterns type rather than generic WAF content. |

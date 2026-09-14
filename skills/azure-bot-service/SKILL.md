@@ -1,9 +1,9 @@
 ---
 name: azure-bot-service
-description: Expert knowledge for Azure AI Bot Service development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Direct Line 3.0, configuring bot channels/endpoints, setting auth/SSO, or deploying to App Service, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Communication Services (use azure-communication-services), Azure App Service (use azure-app-service), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure AI Bot Service development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Direct Line 3.0, configuring Teams/Web Chat channels, setting App Service bots, CI/CD, or App Insights, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Functions (use azure-functions), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Bot Service Skill
@@ -27,10 +27,10 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L35-L43 | Debugging and troubleshooting bots: using Emulator, transcripts, Dev Tunnels, inspection middleware, fixing HTTP 500, auth, config/channel issues, and skill/consumer problems. |
 | Decision Making | L44-L49 | Guidance on selecting the right Microsoft bot platform, choosing Azure channels vs adapters, and picking the best Direct Line option based on integration, control, and hosting needs. |
 | Limits & Quotas | L50-L54 | Matrix of which bot features are supported on each Azure channel (Teams, Web Chat, Direct Line, etc.), including capabilities, limitations, and compatibility details. |
-| Security | L55-L65 | Securing Azure bots: auth/SSO (OAuth, Web Chat, skills), Direct Line security, network isolation/VNET, encryption, privacy, and configuring bot/connector authentication. |
-| Configuration | L66-L82 | Configuring bot channels, endpoints, hosting/registration, auth URLs, telemetry (App Insights), monitoring, and region-specific settings (China, Gov) for Azure AI Bot Service. |
-| Integrations & Coding Patterns | L83-L104 | Integrating bots with channels (Teams, email, SMS, web, social apps) and using Direct Line 3.0 APIs for messaging, tokens, reconnection, and conversation control. |
-| Deployment | L105-L109 | Guides for provisioning App Service, deploying Bot Framework bots to Azure, and setting up CI/CD pipelines for automated bot deployment. |
+| Security | L55-L66 | Securing bots: encryption, privacy, regional data residency, Direct Line auth, VNET/network isolation, and configuring secure access for Azure AI Bot Service. |
+| Configuration | L67-L83 | Configuring bot channels, endpoints, hosting/registration, auth URLs, telemetry (App Insights), monitoring, and region-specific settings (China, Gov) for Azure AI Bot Service. |
+| Integrations & Coding Patterns | L84-L105 | Integrating bots with channels (Teams, email, SMS, web, social apps) and using Direct Line 3.0 APIs for messaging, tokens, reconnection, and conversation control. |
+| Deployment | L106-L110 | Guides for provisioning App Service, deploying Bot Framework bots to Azure, and setting up CI/CD pipelines for automated bot deployment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -62,6 +62,7 @@ This skill requires **network access** to fetch documentation content:
 | Network isolation concepts for Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-concept?view=azure-bot-service-4.0 |
 | Configure network isolation for Direct Line bots | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-how-to?view=azure-bot-service-4.0 |
 | Authenticate clients to Direct Line API 3.0 with secrets and tokens | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0 |
+| Understand Azure Bot Service security and privacy | https://learn.microsoft.com/en-us/azure/bot-service/security-faq?view=azure-bot-service-4.0 |
 
 ### Configuration
 | Topic | URL |

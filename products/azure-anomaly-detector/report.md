@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-09-13'
 category_descriptions:
   configuration: How to configure and tune Anomaly Detector Docker containers, including
     environment variables, resource limits, logging, networking, and runtime behavior
@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 24
+- **Updated Pages**: 1
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anomaly-detector/azure-anomaly-detector.csv`
 
@@ -55,6 +55,11 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 | *(Unclassified)* | 17 | 70.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Anomaly Detector?](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview)
+  - Updated: 2025-06-12T08:00:00.000Z → 2026-09-09T22:15:00.000Z
 
 ## Classified Pages
 
@@ -87,5 +92,5 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 | [Identify anomalies in your data](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/identify-anomalies) | 0.20 | How-to usage guide for the API (batch vs streaming) without clear indication of numeric limits, config tables, or product-specific error mappings; primarily procedural/tutorial content. |
 | [More technical articles ...](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/whats-new) | 0.20 | Duplicate of the What's New page; release notes and links without detailed limits, configuration, or troubleshooting mappings. |
 | [Visualize anomalies as a batch using Power BI (univariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/tutorials/batch-anomaly-detection-powerbi) | 0.20 | Power BI visualization tutorial; focuses on preparing data and calling the API, not on numeric limits, config matrices, or troubleshooting mappings. |
-| [What is Anomaly Detector?](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview) | 0.20 | High-level service overview describing what Anomaly Detector is and general capabilities; no concrete limits, configs, or product-specific patterns. |
+| [What is Anomaly Detector?](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview) | 0.20 | Page is an overview of Azure Anomaly Detector with retirement/migration notice; it does not include numeric limits, configuration tables, error-code-based troubleshooting, or other detailed expert-only data. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/whats-new) | 0.20 | What's new / release notes and links; does not focus on limits, configuration tables, or troubleshooting mappings. |

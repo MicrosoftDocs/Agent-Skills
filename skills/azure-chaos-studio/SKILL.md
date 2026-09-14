@@ -1,14 +1,14 @@
 ---
 name: azure-chaos-studio
-description: Expert knowledge for Chaos Studio development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when designing AKS chaos experiments, configuring agents, using REST/CLI automation, or monitoring via Azure Monitor, and other Chaos Studio related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Chaos Studio development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Chaos agents/targets, AKS/VM faults, Workspaces vs Experiments, Logic Apps/CLI, or Azure Monitor, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Chaos Studio Skill
 
-This skill provides expert guidance for Chaos Studio. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Chaos Studio. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,85 +24,99 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L44 | Diagnosing and fixing Chaos Agent install/health/status issues, experiment/workspace/scenario failures, and using Azure Workbooks to measure and troubleshoot fault impact. |
-| Best Practices | L45-L49 | Guidance for designing and running Chaos Studio experiments to validate and improve Azure Kubernetes Service (AKS) workload resiliency under failure scenarios. |
-| Decision Making | L50-L56 | Guidance on planning Chaos Studio deployment regions, selecting experiment targets and scopes, and deciding when to use Workspaces vs standalone Experiments. |
-| Limits & Quotas | L57-L63 | Limits, quotas, and known issues for Chaos Studio experiments and workspaces, including supported scenarios, scale constraints, and current feature limitations. |
-| Security | L64-L76 | Security, identity, and permissions for Chaos Studio: agent auth, Entra setup, IP/network rules, RBAC roles, least-privilege access, CMK encryption, and workspace/experiment access control. |
-| Configuration | L77-L93 | Configuring Chaos Studio experiments and agents: templates (ARM/Bicep), targets/capabilities, faults/actions, networking (VNet, Private Link, relay), monitoring (App Insights, Azure Monitor), and compatibility. |
-| Integrations & Coding Patterns | L94-L108 | Configuring and automating Chaos Studio experiments via CLI, portal, REST, and Logic Apps, including templates (Entra ID, zone/DNS outages), agent-based/service-direct faults, and dynamic targeting. |
+| Troubleshooting | L37-L44 | Diagnosing and fixing Chaos Studio agent, workspace, scenario, experiment, and target issues, including status verification, run failures, and common configuration or connectivity problems. |
+| Best Practices | L45-L50 | Known issues, limitations, and workarounds for the Chaos Studio agent, plus guidance for using Chaos Studio Workspaces to test AKS node zone resilience and failure scenarios. |
+| Decision Making | L51-L55 | Guidance on when to use Chaos Studio Workspaces vs Experiments, comparing their capabilities, scenarios, and how to choose the right model for your chaos testing setup. |
+| Architecture & Design Patterns | L56-L60 | Guidance on choosing manual vs query-based targeting for chaos experiments, including tradeoffs, scenarios, and design considerations for experiment architecture. |
+| Limits & Quotas | L61-L67 | Limits, quotas, and preview constraints for Chaos Studio: experiment caps, workspace restrictions, supported scenarios, and known issues/limitations when running chaos experiments. |
+| Security | L68-L80 | Configuring Chaos Studio security: networking and identity, AKS auth/IPs, managed identities and roles, CMK encryption, workspace permissions, and least-privilege custom roles. |
+| Configuration | L81-L96 | Configuring Chaos Studio agents, targets, networks, and telemetry, including ARM/Bicep deployments, Private Link/VNet setup, relay containers, policies, and fault/action libraries. |
+| Integrations & Coding Patterns | L97-L116 | Patterns and scripts for building, automating, and integrating Chaos Studio experiments with CLI, REST, Logic Apps, AKS, Cosmos DB, Entra ID, VM/NSG targets, and Azure Monitor. |
+| Deployment | L117-L122 | Checking OS/fault support for the Chaos Studio agent, regional availability of chaos models, and version compatibility requirements for running Chaos Experiments. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Resolve known issues with Azure Chaos Agent | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues |
-| Troubleshoot Azure Chaos Agent installation and health | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-troubleshooting |
-| Verify and troubleshoot Chaos Agent status | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status |
-| Measure Chaos Studio fault impact with Azure Workbooks | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-metrics-and-dashboard |
-| Troubleshoot Chaos Studio workspaces and scenarios issues | https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshoot-workspaces-scenarios |
-| Troubleshoot Azure Chaos Studio Experiments issues | https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting |
+| Troubleshoot Azure Chaos Studio agent issues | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-troubleshooting |
+| Verify and diagnose Chaos Studio agent status | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status |
+| Troubleshoot Chaos Studio Workspaces and Scenario runs | https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshoot-workspaces-scenarios |
+| Troubleshoot Azure Chaos Studio experiments and targets | https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Test AKS workload resiliency with Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-guidance |
+| Review Chaos Studio agent known issues and workarounds | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues |
+| Test AKS node zone resilience with Chaos Studio Workspaces | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-guidance |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan Chaos Studio regional deployment and targeting | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-region-availability |
-| Select appropriate Chaos Studio experiment targets and scope | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-target-selection |
 | Choose between Chaos Studio Workspaces and Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-vs-experiments |
+
+### Architecture & Design Patterns
+| Topic | URL |
+|-------|-----|
+| Choose manual vs query-based targets for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-target-selection |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Review limitations and known issues in Chaos Studio Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations |
-| Understand service limits for Chaos Studio Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-service-limits |
-| Review Chaos Studio Workspaces limitations and known issues | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-limitations |
+| Review limitations and known issues for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations |
+| Understand Chaos Studio service limits and quotas | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-service-limits |
+| Review Chaos Studio Workspaces preview limitations | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-limitations |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Understand Chaos Agent identities and network requirements | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts |
-| Configure Microsoft Entra authentication for Chaos Studio AKS faults | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-authentication |
-| Authorize Chaos Studio IP ranges for AKS clusters | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-ip-ranges |
-| Assign experiment permissions in Azure Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions |
-| Configure customer-managed keys for Chaos experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys |
-| Assign roles for Chaos Studio supported resource types | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers |
-| Configure permissions and security for Chaos Studio Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-permissions-security |
-| Configure permissions and identity for Chaos Studio Workspaces | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspace-permissions |
-| Create least-privilege custom roles for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-least-privilege-roles |
+| Understand Chaos Studio agent networking and identity | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts |
+| Configure AKS authentication for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-authentication |
+| Authorize AKS API IP ranges for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-ip-ranges |
+| Assign managed identity roles to Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions |
+| Configure customer-managed keys for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys |
+| Review supported Chaos resources and role assignments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers |
+| Configure permissions and security for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-permissions-security |
+| Configure Chaos Studio Workspace permissions and identities | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspace-permissions |
+| Create least-privilege custom roles for Chaos Studio Workspaces | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-least-privilege-roles |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Pull and use Chaos Studio relay bridge container image | https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details |
-| Deploy Chaos Agent via ARM templates | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-arm-template |
-| Check OS compatibility for Azure Chaos Agent | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-os-support |
-| Create Chaos Studio experiments with Bicep templates | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep |
-| Configure faults and actions for Chaos Studio Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-library |
-| Configure Private Link for Chaos Agent experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service |
-| Configure virtual network injection for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-networking |
-| Integrate App Insights with Chaos Agent experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-app-insights |
-| Connect Azure Monitor to Chaos Studio experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor |
-| Review version compatibility for Azure Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions |
-| Use Azure Policy to register Chaos Studio targets | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets |
-| Define Chaos Studio experiments using ARM template samples | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-experiment |
-| Configure Chaos Studio targets and capabilities with ARM templates | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-targets |
+| Use Chaos Studio relay container for private faults | https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details |
+| Deploy Chaos Studio agent with ARM template | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-arm-template |
+| Deploy Chaos Experiments with Bicep sample | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep |
+| Use Chaos Studio fault and action library | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-library |
+| Configure Private Link for Chaos Studio agent | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service |
+| Set up virtual network injection for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-networking |
+| Send Chaos agent telemetry to Application Insights | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-app-insights |
+| Send Chaos experiment telemetry to Azure Monitor | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor |
+| Enable Chaos Studio targets and capabilities for Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-targets-capabilities |
+| Use Azure Policy to onboard Chaos Studio targets | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets |
+| Deploy Chaos Experiments with ARM template samples | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-experiment |
+| Deploy Chaos Studio targets with ARM templates | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-targets |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Measure Chaos Experiment impact with Azure Monitor Workbooks | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-metrics-and-dashboard |
 | Manage Chaos Studio Workspaces and Scenarios with Azure CLI | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-manage-cli |
-| Use Chaos Studio REST APIs to manage experiments and targets | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api |
-| Use Entra ID outage experiment template in Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aad-outage-portal |
-| Configure agent-based Chaos Studio faults with Azure CLI | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-cli |
-| Configure agent-based Chaos Studio faults using portal | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-portal |
-| Use VM Scale Set availability zone down template in Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-availability-zone-down-portal |
-| Simulate DNS outage using NSG rule faults in Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dns-outage |
-| Use Azure CLI to configure dynamic targeting in Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dynamic-target-cli |
-| Create dynamic-target Chaos Studio experiments via portal | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dynamic-target-portal |
-| Use Azure CLI to configure service-direct Chaos Studio faults | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-service-direct-cli |
-| Create Chaos Studio service-direct fault experiments via portal | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-service-direct-portal |
-| Schedule recurring Chaos Studio experiments with Logic Apps | https://learn.microsoft.com/en-us/azure/chaos-studio/tutorial-schedule |
+| Manage Chaos Experiments with REST API samples | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api |
+| Simulate Microsoft Entra ID connectivity outages in Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aad-outage-portal |
+| Define agent-based CPU pressure experiments with Azure CLI | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-cli |
+| Create agent-based CPU pressure faults in Chaos Studio portal | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-agent-based-portal |
+| Configure AKS Chaos Mesh faults with Azure CLI | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aks-cli |
+| Configure AKS Chaos Mesh faults in Chaos Studio portal | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aks-portal |
+| Simulate availability zone down on VM scale sets | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-availability-zone-down-portal |
+| Simulate DNS outages with NSG rules in Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dns-outage |
+| Configure dynamic VM targets with Azure CLI for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dynamic-target-cli |
+| Configure dynamic VM targets in Chaos Studio portal | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dynamic-target-portal |
+| Script Cosmos DB failover faults with Azure CLI and REST | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-service-direct-cli |
+| Configure Cosmos DB failover faults in Chaos Studio portal | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-service-direct-portal |
+| Adapt Chaos experiment examples for CLI and portal | https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples |
+| Schedule recurring Chaos Experiments with Azure Logic Apps | https://learn.microsoft.com/en-us/azure/chaos-studio/tutorial-schedule |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Check OS and fault support for Chaos Studio agent | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-os-support |
+| Check regional availability for Chaos Studio models | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-region-availability |
+| Check version compatibility for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions |

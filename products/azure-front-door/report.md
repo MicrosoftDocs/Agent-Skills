@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 98
+- **Updated Pages**: 0
+- **Unchanged**: 101
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 37 | 36.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Understanding billing](https://learn.microsoft.com/en-us/azure/frontdoor/billing)
-  - Updated: 2026-07-14T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
-  - Updated: 2026-04-24T08:00:00.000Z → 2026-08-28T08:00:00.000Z
-- [Origin selection](https://learn.microsoft.com/en-us/azure/frontdoor/routing-methods)
-  - Updated: 2026-08-24T22:12:00.000Z → 2026-08-28T08:00:00.000Z
 
 ## Classified Pages
 

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-13'
 category_descriptions:
-  configuration: 'Configuring Azure ML: AutoML jobs, designer components, compute,
-    networking, storage, deployments, monitoring, Prompt Flow, and full CLI/YAML schemas
-    for jobs, data, models, and feature stores.'
-  troubleshooting: Diagnosing and fixing Azure ML errors in pipelines, endpoints,
-    environments, networking, Kubernetes, AutoML, prompt flow, feature store, and
-    known platform issues.
+  configuration: Configuring Azure ML components, AutoML, compute, networking, monitoring,
+    and YAML/CLI schemas for training, deployment, data, feature stores, prompt flow,
+    and Responsible AI.
+  troubleshooting: Diagnosing and fixing Azure ML failures and errors across pipelines,
+    AutoML, endpoints, networking, Kubernetes, environments, data access/labeling,
+    prompt flow, and known platform issues.
   security: 'Securing Azure ML: encryption, keys, identity/RBAC, policies, network
     isolation/VNets, private endpoints, DNS, data exfil prevention, and secure access
     to endpoints, storage, Key Vault, and prompt flows.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Machine Learning development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when running AutoML jobs, Prompt Flow/RAG, online endpoints, feature stores,
-  or Azure ML CLI/YAML, and other Azure Machine Learning related development tasks.
-  Not for Azure Databricks (use azure-databricks), Azure HDInsight (use azure-hdinsight),
-  Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual
-  Machines (use azure-data-science-vm).
-use_when: Use when running AutoML jobs, Prompt Flow/RAG, online endpoints, feature
-  stores, or Azure ML CLI/YAML, and other Azure Machine Learning related development
-  tasks.
-confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDInsight
-  (use azure-hdinsight), Azure Synapse Analytics (use azure-synapse-analytics), Azure
-  Data Science Virtual Machines (use azure-data-science-vm).
+  Use when using Azure ML AutoML, online/batch endpoints, Prompt Flow/RAG, vector
+  stores, or MLflow/ONNX deployments, and other Azure Machine Learning related development
+  tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics
+  (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm),
+  Azure HDInsight (use azure-hdinsight).
+use_when: Use when using Azure ML AutoML, online/batch endpoints, Prompt Flow/RAG,
+  vector stores, or MLflow/ONNX deployments, and other Azure Machine Learning related
+  development tasks.
+confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use
+  azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
 ---
 # Azure Machine Learning Crawl Report
 
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 - **Total Pages**: 553
 - **Fetched**: 553
 - **Fetch Failed**: 0
-- **Classified**: 413
-- **Unclassified**: 140
+- **Classified**: 412
+- **Unclassified**: 141
 
 ### Incremental Update
 - **New Pages**: 0
@@ -64,48 +64,48 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 0.4% |
-| best-practices | 12 | 2.2% |
-| configuration | 231 | 41.8% |
+| best-practices | 11 | 2.0% |
+| configuration | 232 | 42.0% |
 | decision-making | 23 | 4.2% |
 | deployment | 27 | 4.9% |
-| integrations | 41 | 7.4% |
+| integrations | 40 | 7.2% |
 | limits-quotas | 6 | 1.1% |
 | security | 46 | 8.3% |
 | troubleshooting | 25 | 4.5% |
-| *(Unclassified)* | 140 | 25.3% |
+| *(Unclassified)* | 141 | 25.5% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Access and use batch deployments from Fabric](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-fabric?view=azureml-api-2)
-  - Updated: 2026-02-04T23:15:00.000Z → 2026-09-01T17:22:00.000Z
-- [Create a Datastore with the User Interface](https://learn.microsoft.com/en-us/azure/machine-learning/create-datastore-with-user-interface?view=azureml-api-2)
-  - Updated: 2026-03-24T06:06:00.000Z → 2026-09-01T17:22:00.000Z
-- [Responsible sourcing of human data](https://learn.microsoft.com/en-us/azure/machine-learning/concept-sourcing-human-data?view=azureml-api-2)
-  - Updated: 2026-07-01T11:04:00.000Z → 2026-08-31T08:00:00.000Z
-- [Manage compute sessions](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-compute-sessions?view=azureml-api-2)
-  - Updated: 2025-03-10T08:00:00.000Z → 2026-08-31T22:12:00.000Z
-- [Custom tool package creation and usage](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-custom-tool-package-creation-and-usage?view=azureml-api-2)
-  - Updated: 2026-07-01T11:04:00.000Z → 2026-09-01T06:04:00.000Z
-- [Advance your maturity level](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-llmops-maturity?view=azureml-api-2)
-  - Updated: 2026-05-24T22:07:00.000Z → 2026-08-28T08:00:00.000Z
-- [Monitor generative AI applications in production](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-monitor-generative-ai-applications?view=azureml-api-2)
-  - Updated: 2026-04-21T16:56:00.000Z → 2026-08-31T22:12:00.000Z
-- [What is a vector store](https://learn.microsoft.com/en-us/azure/machine-learning/concept-vector-stores?view=azureml-api-2)
-  - Updated: 2025-08-08T22:08:00.000Z → 2026-08-31T22:12:00.000Z
-- [How to use RAG in prompt flow](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-retrieval-augmented-generation?view=azureml-api-2)
-  - Updated: 2025-08-29T17:08:00.000Z → 2026-08-31T22:12:00.000Z
-- [Understand your datasets](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data-analysis?view=azureml-api-2)
-  - Updated: 2026-07-01T11:04:00.000Z → 2026-08-31T08:00:00.000Z
-- [Create ML pipelines using components (CLI v2)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-cli?view=azureml-api-2)
-  - Updated: 2026-07-01T19:18:00.000Z → 2026-08-31T08:00:00.000Z
-- [How to debug pipeline failure](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-failure?view=azureml-api-2)
-  - Updated: 2026-06-30T08:00:00.000Z → 2026-08-31T08:00:00.000Z
-- [How to debug pipeline performance](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-performance?view=azureml-api-2)
-  - Updated: 2026-06-30T08:00:00.000Z → 2026-09-01T06:04:00.000Z
-- [Deploy serverless API endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-models-serverless?view=azureml-api-2)
-  - Updated: 2025-08-08T22:08:00.000Z → 2026-08-27T08:00:00.000Z
+- [Understand charts and metrics](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml?view=azureml-api-2)
+  - Updated: 2025-09-16T08:00:00.000Z → 2026-09-11T06:06:00.000Z
+- [Tune Hyperparameters](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2)
+  - Updated: 2025-09-16T22:13:00.000Z → 2026-09-11T22:11:00.000Z
+- [Working with Tables (mltable)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-mltable?view=azureml-api-2)
+  - Updated: 2025-09-18T08:00:00.000Z → 2026-09-08T08:00:00.000Z
+- [What is Azure Machine Learning?](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-09-09T17:15:00.000Z
+- [Deploy a model](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2)
+  - Updated: 2025-09-10T08:00:00.000Z → 2026-09-10T08:00:00.000Z
+- [What is Responsible AI?](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai?view=azureml-api-2)
+  - Updated: 2025-09-09T22:12:00.000Z → 2026-09-07T08:00:00.000Z
+- [What is a pipeline](https://learn.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines?view=azureml-api-2)
+  - Updated: 2025-12-31T23:04:00.000Z → 2026-09-10T17:21:00.000Z
+- [Troubleshoot secure workspace connectivity](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-secure-connection-workspace?view=azureml-api-2)
+  - Updated: 2025-09-30T08:00:00.000Z → 2026-09-11T22:11:00.000Z
+- [Migration overview](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-09-09T17:15:00.000Z
+- [Migrate datasets](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-09-09T17:15:00.000Z
+- [Rebuild experiments](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-09-09T17:15:00.000Z
+- [Rebuild web services](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-09-09T17:15:00.000Z
+- [Migrate client applications](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-09-09T17:15:00.000Z
+- [Rebuild Execute R Script components](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)
+  - Updated: 2025-09-09T08:00:00.000Z → 2026-09-09T17:15:00.000Z
 
 ## Classified Pages
 
@@ -164,7 +164,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Troubleshoot batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-batch-endpoints?view=azureml-api-2) | troubleshooting | 0.90 | Explicit troubleshooting guide with common errors, log locations, and symptom→cause→solution mappings specific to AML batch endpoints. |
 | [Troubleshoot descriptor error](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-protobuf-descriptor-error?view=azureml-api-2) | troubleshooting | 0.90 | The article is centered on a specific error message ('descriptors cannot not be created directly'), its causes (often in AutoML scenarios), and steps to fix it. This is a clear symptom → cause → resolution troubleshooting guide with product-specific details. |
 | [Troubleshoot online endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-online-endpoints?view=azureml-api-2) | troubleshooting | 0.90 | Organized around HTTP status codes and common deployment/scoring issues with their causes and resolutions; includes product-specific error mappings and diagnostic steps. |
-| [Troubleshoot secure workspace connectivity](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-secure-connection-workspace?view=azureml-api-2) | troubleshooting | 0.90 | Explicit troubleshooting for 403/forbidden with private endpoints; likely includes diagnostic steps, DNS checks, and configuration fixes. |
 | [Troubleshoot validation for schema failed error](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-validation-for-schema-failed-error?view=azureml-api-2) | troubleshooting | 0.90 | Focused on a specific CLI error; likely includes error patterns, schema expectations, and how to correct YAML definitions. |
 | [Workspace](https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-workspace?view=azureml-api-2) | configuration | 0.90 | Workspace YAML schema reference; contains parameter names, types, and allowed values for configuring workspaces. |
 | [Feature entity](https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-feature-entity?view=azureml-api-2) | configuration | 0.88 | Feature entity YAML schema reference with detailed field names and constraints. |
@@ -187,6 +186,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Model](https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-model?view=azureml-api-2) | configuration | 0.86 | The model YAML schema reference describes exact configuration parameters, their types, and constraints for Azure ML models using CLI v2. These product-specific schema details qualify as configuration expert knowledge. |
 | [Parallel](https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-job-parallel?view=azureml-api-2) | configuration | 0.86 | Page is a detailed reference for the Azure ML CLI v2 parallel job YAML schema, listing valid keys, nested structures, and allowed values. It provides product-specific configuration parameters and schema fields that an LLM wouldn't fully know from training, matching the configuration sub-skill definition. |
 | [Troubleshoot managed virtual network](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-managed-network?view=azureml-api-2) | troubleshooting | 0.86 | Troubleshooting article for Azure ML managed virtual networks; likely includes specific error messages, portal indicators, and stepwise checks (e.g., private endpoint states, DNS resolution, NSG rules) that are product-specific symptom→cause→solution guidance beyond generic networking knowledge. |
+| [Troubleshoot secure workspace connectivity](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-secure-connection-workspace?view=azureml-api-2) | troubleshooting | 0.86 | Page focuses on diagnosing and fixing private endpoint connectivity issues (403/forbidden errors) for Azure Machine Learning workspaces, likely including specific error messages, diagnostic steps, and configuration checks unique to Azure ML networking and workspace diagnostics, which fits the troubleshooting criteria. |
 | [Automated ML NLP Multilabel Classification](https://learn.microsoft.com/en-us/azure/machine-learning/reference-automl-nlp-cli-multilabel-classification?view=azureml-api-2) | configuration | 0.85 | NLP multilabel text classification AutoML YAML schema reference containing product-specific fields. |
 | [Automated ML NLP NER](https://learn.microsoft.com/en-us/azure/machine-learning/reference-automl-nlp-cli-ner?view=azureml-api-2) | configuration | 0.85 | NER AutoML YAML schema reference with Azure ML–specific parameter names and constraints. |
 | [Automated ML NLP Text Classification](https://learn.microsoft.com/en-us/azure/machine-learning/reference-automl-nlp-cli-text-classification?view=azureml-api-2) | configuration | 0.85 | Automated ML text classification YAML schema reference with Azure ML–specific configuration options. |
@@ -234,7 +234,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Set up service authentication](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-identity-based-service-authentication?view=azureml-api-2) | security | 0.80 | Explains authentication methods between Azure ML and dependent Azure services; includes managed identity, service principal, and role configuration details. |
 | [Setup storage authentication](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-administrate-data-authentication?view=azureml-api-2) | security | 0.80 | Targeted at admins for managing data access and authentication. Likely includes RBAC roles, identity types, and auth configuration patterns specific to Azure ML. |
 | [Track Azure Databricks runs with MLflow](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-mlflow-azure-databricks?view=azureml-api-2) | integrations | 0.80 | Covers setting up MLflow with Azure Databricks and Azure ML. This is a cross-service integration and likely includes workspace URIs, configuration parameters, and code snippets specific to this integration. |
-| [Tune Hyperparameters](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2) | configuration | 0.80 | Explains defining search spaces, sampling algorithms, and early termination policies; includes specific configuration parameters for SweepJob. |
 | [Tutorial: Create a secure workspace in Azure portal](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-create-secure-workspace?view=azureml-api-2) | security | 0.80 | Walks through creating an Azure ML workspace inside a managed virtual network, including service dependencies and network security boundaries. Contains Azure ML–specific secure-by-default patterns and network security configuration steps. |
 | [Use Model Catalog collections with virtual network](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-isolation-model-catalog?view=azureml-api-2) | security | 0.80 | Explains using Model Catalog collections in an isolated network with workspace-managed VNet; includes product-specific network isolation requirements and settings, which are security configuration details. |
 | [Use ONNX model in .NET application](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-automl-onnx-model-dotnet?view=azureml-api-2) | integrations | 0.80 | Integration-focused article with ONNX model consumption in ML.NET; includes code and configuration patterns specific to this integration. |
@@ -432,6 +431,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Track experiments with MLflow](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-mlflow-cli-runs?view=azureml-api-2) | configuration | 0.70 | Shows how to use MLflow tracking in Azure ML, including supported/unsupported operations and possibly workspace-specific parameters. These are product-specific API/behavior details that go beyond generic MLflow knowledge. |
 | [Train PyTorch Model](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/train-pytorch-model?view=azureml-api-2) | configuration | 0.70 | Covers Azure ML’s Train PyTorch Model component, including configuration for single-node vs distributed training and component-specific parameters. |
 | [Train with MLflow Projects](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-mlflow-projects?view=azureml-api-2) | configuration | 0.70 | How-to for submitting MLflow Projects to Azure ML compute and tracking. Likely includes project file fields, CLI/SDK parameters, and Azure ML–specific configuration details. |
+| [Tune Hyperparameters](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2) | configuration | 0.70 | Page contains product-specific configuration details for Azure ML SweepJob, including concrete examples of defining search spaces, specifying sampling algorithms (random, grid, Bayesian), and configuring early termination policies with named parameters and allowed values. These are Azure ML–specific settings and patterns that go beyond generic hyperparameter tuning concepts, qualifying as expert configuration knowledge. |
 | [Tune Model Hyperparameters](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/tune-model-hyperparameters?view=azureml-api-2) | configuration | 0.70 | Describes the Tune Model Hyperparameters component with its parameter sweep settings, search options, and configuration fields unique to Azure ML. |
 | [Two Class Support Vector Machine](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/two-class-support-vector-machine?view=azureml-api-2) | configuration | 0.70 | Component reference for the Two-Class Support Vector Machine in Azure ML designer, with detailed configuration parameters and constraints. |
 | [Two-Class Averaged Perceptron](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/two-class-averaged-perceptron?view=azureml-api-2) | configuration | 0.70 | Component reference for a specific binary classifier in Azure ML, with detailed parameter settings and behavior, fits the configuration category. |
@@ -452,7 +452,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Using secrets in training](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-secrets-in-runs?view=azureml-api-2) | security | 0.70 | Describes product-specific security patterns for retrieving secrets from Azure Key Vault inside Azure ML training jobs using the Key Vault Secrets client library. Likely includes concrete code patterns, SDK usage, and configuration details (e.g., how secrets are passed into runs) that are specific to Azure Machine Learning and Key Vault integration, matching the security sub-skill criteria. |
 | [Web Service Input/Output](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/web-service-input-output?view=azureml-api-2) | configuration | 0.70 | Specifies port types (DataFrameDirectory) and how these components connect in pipelines, including any parameter fields for web service behavior, which are concrete configuration semantics for Azure ML designer. |
 | [What is Kubernetes compute target](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-attach-kubernetes-anywhere?view=azureml-api-2) | configuration | 0.70 | Same content as index 0; contains product-specific configuration details for Kubernetes compute in Azure ML. |
-| [Working with Tables (mltable)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-mltable?view=azureml-api-2) | integrations | 0.70 | Describes MLTable schema/blueprint, YAML definitions, and how Azure ML loads data into Pandas/Spark. Includes product-specific configuration fields and patterns that go beyond generic dataframes. |
+| [Working with Tables (mltable)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-mltable?view=azureml-api-2) | configuration | 0.70 | The page describes the MLTable (table) type in Azure Machine Learning with product-specific configuration details such as YAML schema fields, required/optional properties, and how to define data loading behavior into Pandas or Spark data frames. These are concrete configuration parameters and structures unique to AzureML, not just conceptual guidance, fitting the configuration sub-skill. |
 | [Workspace](https://learn.microsoft.com/en-us/azure/machine-learning/migrate-to-v2-resource-workspace?view=azureml-api-2) | decision-making | 0.70 | Migration article comparing workspace management scenarios between SDK v1 and v2, providing concrete, product-specific guidance on how to transition existing setups. This is expert, version-specific knowledge that helps decide how to upgrade, but does not focus on limits, configuration tables, or error troubleshooting. |
 | [Apply Transformation](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/apply-transformation?view=azureml-api-2) | configuration | 0.69 | Explains how to configure Apply Transformation, including how to connect transformation outputs and datasets in Azure ML designer, which is product-specific configuration. |
 | [Assign Data to Clusters](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/assign-data-to-clusters?view=azureml-api-2) | configuration | 0.69 | Component reference for Assign Data to Clusters, detailing its inputs, outputs, and options for scoring K-means models in Azure ML designer. |
@@ -509,7 +509,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Responsible AI dashboard overview](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2) | configuration | 0.65 | Dashboard concept article also explains how tools integrate and are configured within the dashboard, including component options and usage patterns. |
 | [Run batch endpoints from Event Grid events in storage](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid-batch?view=azureml-api-2) | integrations | 0.65 | Shows how to integrate batch endpoints with Event Grid and Logic Apps. Likely includes event schema details, subscription configuration, endpoint URLs, and payload/parameter mappings specific to Azure ML batch endpoints, which are product-specific integration patterns. |
 | [Submit batch run and evaluate a flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow?view=azureml-api-2) | configuration | 0.65 | Submitting batch runs and using evaluation methods at scale in Azure ML Prompt Flow will involve product-specific batch configuration options (dataset bindings, run settings, limits) that are configuration-focused rather than generic evaluation theory. |
-| [Understand charts and metrics](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml?view=azureml-api-2) | best-practices | 0.65 | Shows how to interpret charts/metrics and use responsible AI dashboard; contains Azure-specific evaluation workflows and recommendations. |
 | [Use REST to deploy a model as an online endpoint](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-with-rest?view=azureml-api-2) | integrations | 0.65 | Details Azure ML REST endpoints, payload schemas, and parameters for creating endpoints and deployments, which are product-specific API integration details. |
 | [Viewing managed online endpoint costs](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-view-online-endpoints-costs?view=azureml-api-2) | configuration | 0.65 | Shows how to use tags and portal views to attribute costs to endpoints; product-specific cost tracking configuration rather than generic billing info. |
 | [Work in VS Code remote](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-work-in-vs-code-remote?view=azureml-api-2) | configuration | 0.65 | Includes specific VS Code remote connection settings and Azure ML compute instance configuration details (e.g., how to attach, ports, Jupyter integration). These are concrete product-specific configuration steps and options beyond generic remote dev concepts. |
@@ -540,7 +539,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Create ML pipelines using components (Python SDK v2)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipeline-python?view=azureml-api-2) | 0.40 | End-to-end tutorial for building a pipeline; mostly step-by-step usage, not a catalog of configs, limits, or troubleshooting mappings. |
 | [Create ML pipelines using components (UI)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-ui?view=azureml-api-2) | 0.40 | UI-based tutorial for creating pipelines; primarily procedural without deep config catalogs or troubleshooting content. |
 | [Deep learning models](https://learn.microsoft.com/en-us/azure/machine-learning/concept-automl-forecasting-deep-learning?view=azureml-api-2) | 0.40 | Deep learning forecasting methods overview; primarily methodological, not focused on Azure ML–specific settings or limits. |
-| [Deploy a model](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2) | 0.40 | Model deployment tutorial; likely shows basic endpoint creation but not deployment matrices or tier-specific constraints. |
 | [Deploy a model to an online endpoint](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2) | 0.40 | Covers how to deploy models to online endpoints with CLI/SDK, including logs and SLA monitoring. The summary suggests a step-by-step deployment tutorial rather than detailed deployment matrices, tier-specific constraints, or configuration parameter tables, so it does not clearly meet any expert-knowledge category. |
 | [Deploy language models with batch model deployments](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-nlp-processing-batch?view=azureml-api-2) | 0.40 | Tutorial-style guidance on deploying and running language models on batch endpoints. Primarily a scenario walkthrough; summary does not indicate detailed config tables, limits, or product-specific error mappings beyond generic deployment and usage patterns. |
 | [Designer component reference](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/component-reference?view=azureml-api-2) | 0.40 | Appears to be an index/overview of designer components rather than detailed parameter references or limits; summary is high-level. |
@@ -600,7 +598,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Train a model](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-train-model?view=azureml-api-2) | 0.30 | Training tutorial using a sample dataset; no detailed product-specific configuration or limits. |
 | [Tune prompts using variants](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-tune-prompts-using-variants?view=azureml-api-2) | 0.30 | Tuning prompts using variants in prompt flow is primarily a workflow/tutorial-style document. Based on the summary, it likely explains how to create and compare prompt variants but doesn’t clearly indicate product-specific configuration tables, limits, or diagnostic mappings that qualify as expert knowledge under the defined categories. |
 | [What is RAG](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2) | 0.30 | Conceptual explanation of RAG pattern and its use with prompt flow; primarily overview without detailed configuration tables or numeric thresholds. |
-| [What is Responsible AI?](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai?view=azureml-api-2) | 0.30 | High-level Responsible AI overview; conceptual and policy-focused without detailed configuration or numeric thresholds. |
 | [What is managed feature store](https://learn.microsoft.com/en-us/azure/machine-learning/concept-what-is-managed-feature-store?view=azureml-api-2) | 0.30 | High-level conceptual overview of managed feature store; mostly descriptive without detailed config, limits, or troubleshooting. |
 | [MLflow models](https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2) | 0.25 | Explains MLflow artifacts and models conceptually and how Azure ML uses them. No indication of numeric limits, configuration tables, or troubleshooting mappings. |
 | [Tools](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-tools?view=azureml-api-2) | 0.25 | Defines tools as building blocks of flows with general description of their role; appears conceptual without product-specific configuration tables or error mappings. |
@@ -613,6 +610,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Create text labeling projects](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-text-labeling-projects?view=azureml-api-2) | 0.20 | Step-by-step instructions for setting up text labeling projects; lacks numeric limits, configuration parameter tables, or troubleshooting/error-code mappings. |
 | [Curated environments](https://learn.microsoft.com/en-us/azure/machine-learning/resource-curated-environments?view=azureml-api-2) | 0.20 | Page is an overview of curated environments in Azure Machine Learning, focusing on benefits and conceptual usage. The summary indicates no detailed configuration tables, limits, error codes, or product-specific numeric thresholds; it mainly explains what curated environments are and why they help, which does not meet any sub-skill expert-knowledge criteria. |
 | [Data concepts in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2) | 0.20 | Conceptual overview of data concepts in Azure ML. No indication of detailed configuration parameters, limits, or troubleshooting mappings. |
+| [Deploy a model](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2) | 0.20 | Step-by-step tutorial for deploying a model using the Python SDK; does not expose detailed configuration tables, limits, or troubleshooting mappings beyond generic deployment steps. |
 | [Deployment templates](https://learn.microsoft.com/en-us/azure/machine-learning/concept-deployment-template?view=azureml-api-2) | 0.20 | Conceptual explanation of Azure ML deployment templates and their purpose. Summary does not indicate presence of numeric limits, config parameter tables, error codes, or detailed YAML schema/fields beyond high-level description, so it lacks the product-specific expert details required for any sub-skill type. |
 | [Designer accessibility features](https://learn.microsoft.com/en-us/azure/machine-learning/designer-accessibility?view=azureml-api-2) | 0.20 | Accessibility and keyboard shortcut usage in the designer is largely generic UX guidance without product-specific limits, configuration tables, or diagnostic mappings. It does not match any expert-knowledge sub-skill types defined (no quotas, configs, error codes, or migration/tier decisions). |
 | [Develop a feature set with a custom source](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-develop-feature-set-with-custom-source?view=azureml-api-2) | 0.20 | Tutorial on developing a feature set with a custom source; focuses on conceptual and procedural guidance rather than detailed configuration parameters, limits, or error-code-based troubleshooting. |
@@ -639,11 +637,11 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Train Model](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/train-model?view=azureml-api-2) | 0.20 | Component reference for Train Model in Azure ML designer is primarily conceptual/how-to for using the component to train models. The description suggests usage guidance rather than detailed configuration tables, limits, or product-specific error mappings. Without evidence of numeric limits, config parameter tables, or error-code-based troubleshooting, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Training with UI](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-with-ui?view=azureml-api-2) | 0.20 | Primarily a step-by-step UI tutorial for submitting training jobs in Azure ML Studio. It does not focus on detailed configuration parameter tables, limits, quotas, or product-specific best-practice gotchas; it mainly shows how to use the guided experience in the portal, which is generic and not expert-only knowledge. |
 | [Transparency note](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/transparency-note?view=azureml-api-2) | 0.20 | Transparency note for auto-generated prompt variants is likely explanatory and policy-focused, not a configuration, limits, or troubleshooting reference; no indication of numeric limits, config tables, or error mappings. |
+| [Understand charts and metrics](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml?view=azureml-api-2) | 0.20 | Page focuses on interpreting AutoML experiment metrics and charts conceptually (model comparison, operating threshold selection, error analysis). It does not emphasize product-specific limits, configuration tables, error-code-based troubleshooting, or quantified decision matrices that go beyond general ML evaluation knowledge. |
 | [Understand your datasets](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data-analysis?view=azureml-api-2) | 0.20 | Explains conceptual data analysis and bias detection using the Responsible AI dashboard; no product-specific limits, configs, error codes, or detailed patterns beyond general ML concepts. |
 | [Use Visual Studio Code](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-train-deploy-image-classification-model-vscode?view=azureml-api-2) | 0.20 | Tutorial-style walkthrough for training and deploying an image classification model with VS Code; focuses on step-by-step usage rather than product-specific limits, configuration matrices, or troubleshooting details. |
 | [Use a terminal](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2) | 0.20 | How-to guide for using the compute instance terminal (Git, package install, kernels). It’s procedural usage content without product-specific limits, configuration matrices, error-code mappings, or other expert-only details. |
 | [Visualize training results (preview)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-visualize-jobs?view=azureml-api-2) | 0.20 | Describes using dashboards to visualize experiment results in Azure ML studio; primarily conceptual/UX guidance without numeric limits, configuration parameter tables, or troubleshooting mappings. |
-| [What is a pipeline](https://learn.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines?view=azureml-api-2) | 0.20 | Page is a conceptual overview of Azure Machine Learning pipelines, describing what they are and their benefits. It does not include numeric limits, configuration parameter tables, error-code-based troubleshooting, or product-specific decision matrices. Content is high-level and not focused on detailed expert configuration or constraints. |
 | [Workspaces](https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2) | 0.20 | Conceptual description of workspaces and access; no detailed RBAC role lists, limits, or configuration tables. |
 | [Advance your maturity level](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-llmops-maturity?view=azureml-api-2) | 0.10 | Describes GenAIOps maturity stages and conceptual advancement guidance; this is high-level operational/maturity content without product-specific configs, limits, or detailed patterns that meet the expert-knowledge criteria. |
 | [Assess errors in ML models](https://learn.microsoft.com/en-us/azure/machine-learning/concept-error-analysis?view=azureml-api-2) | 0.10 | Conceptual explanation of error analysis and assessing model errors across cohorts. Focuses on why error analysis is useful, not on specific configuration values, limits, or troubleshooting mappings. |
@@ -656,16 +654,18 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure HDIns
 | [Jupyter Notebooks](https://learn.microsoft.com/en-us/azure/machine-learning/samples-notebooks?view=azureml-api-2) | 0.10 | Page primarily explains how to access and browse example Jupyter notebooks for Azure ML SDK v2. It links to a repository and code samples but does not itself contain configuration tables, limits, error codes, or product-specific expert details; it's a navigation/overview to samples. |
 | [Responsible AI scorecard](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-scorecard?view=azureml-api-2) | 0.10 | Overview of the Responsible AI scorecard concept and its role in sharing insights. Primarily descriptive/marketing-style content without concrete configuration parameters, limits, or troubleshooting details. |
 | [Searching for Assets and Resources](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-search-assets?view=azureml-api-2) | 0.10 | How-to guidance for using search to find assets across workspaces; no specific limits, configuration parameter tables, or troubleshooting mappings. |
-| [What is Azure Machine Learning?](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | 0.10 | High-level product overview of Azure Machine Learning; no detailed limits, configs, or error mappings. |
+| [What is Azure Machine Learning?](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | 0.10 | High-level overview of Azure Machine Learning capabilities and lifecycle; no specific limits, configuration parameters, error codes, or product-specific decision matrices. |
+| [What is Responsible AI?](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai?view=azureml-api-2) | 0.10 | Page is a conceptual overview of Responsible AI in Azure Machine Learning without product-specific limits, configuration tables, error-code-based troubleshooting, or detailed decision matrices; it focuses on principles and high-level guidance rather than expert, configuration-level or numeric details. |
+| [What is a pipeline](https://learn.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines?view=azureml-api-2) | 0.10 | Conceptual overview of Azure Machine Learning pipelines; describes what pipelines are and their benefits without product-specific limits, configuration tables, error codes, or detailed decision matrices. |
 | [What is prompt flow?](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2) | 0.10 | High-level overview of Azure ML prompt flow, including retirement notice and conceptual description of what prompt flow is. No detailed configuration parameters, limits, or troubleshooting content evident from the summary. |
 | [Batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2) | - | Conceptual overview of Azure ML batch endpoints and inferencing; no specific limits, configuration tables, error codes, or product-specific expert details. |
 | [Bookmark your favorite data assets](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2) | - | Appears to be a how-to/tutorial on creating and managing data assets with CLI/SDK, without detailed configuration tables, limits, quotas, or product-specific error/diagnostic mappings. Likely general usage guidance rather than expert-only reference information. |
 | [Compute instance image release notes](https://learn.microsoft.com/en-us/azure/machine-learning/azure-machine-learning-ci-image-release-notes?view=azureml-api-2) | - | Release notes for compute instance images typically list version changes, package updates, and OS patches but not limits, configuration matrices, or troubleshooting mappings as defined in the sub-skill types. Without specific numeric limits, config tables, or error-resolution content, it doesn't match any expert-knowledge category. |
 | [Deploy models for scoring in batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-model-deployments?view=azureml-api-2) | - | How-to tutorial for deploying a model to batch endpoints; focuses on example workflow rather than detailed configuration matrices, limits, or troubleshooting data. |
 | [Manage compute sessions](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-compute-sessions?view=azureml-api-2) | - | Page describes how to use the session management pane conceptually and gives general performance advice, but does not list specific configuration parameters, limits/quotas, error codes, or product-specific settings with values. No expert-knowledge details per the defined categories. |
-| [Migrate client applications](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of the Azure Machine Learning overview page; conceptual description only. |
-| [Migrate datasets](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of the Azure Machine Learning overview page; conceptual description only. |
-| [Migration overview](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | High-level service overview/marketing content; no detailed limits, configuration tables, or error references indicated. |
-| [Rebuild Execute R Script components](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of the Azure Machine Learning overview page; conceptual description only. |
-| [Rebuild experiments](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of the Azure Machine Learning overview page; conceptual description only. |
-| [Rebuild web services](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of the Azure Machine Learning overview page; conceptual description only. |
+| [Migrate client applications](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of index 0; focuses on lifecycle description and general capabilities, not expert configuration or constraints. |
+| [Migrate datasets](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of index 0; conceptual overview only, no expert-level numeric limits, configuration parameters, or troubleshooting mappings. |
+| [Migration overview](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | High-level overview of Azure Machine Learning capabilities and use cases without product-specific limits, configuration tables, error codes, or detailed decision matrices. |
+| [Rebuild Execute R Script components](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of index 0; purely an introductory overview without detailed limits, configuration, or troubleshooting guidance. |
+| [Rebuild experiments](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of index 0; marketing/overview content describing what Azure Machine Learning is, not detailed technical guidance. |
+| [Rebuild web services](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of index 0; no specific limits, configuration options, or error-based troubleshooting content. |

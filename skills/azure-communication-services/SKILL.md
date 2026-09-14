@@ -1,9 +1,9 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat apps, SMS/email senders, Teams interop, Rooms/Job Router, or WhatsApp flows, and other Azure Communication Services related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
+description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat, SMS, email, Teams interop, or Rooms/Job Router solutions, and other Azure Communication Services related development tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot Service (use azure-bot-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-13"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Communication Services Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L161-L228 | Limits, quotas, and regional rules for ACS calling, phone numbers, SMS, email sending, Teams interop, media features, and emergency/toll‑free/direct routing constraints. |
 | Security | L229-L254 | Security, auth, and compliance for ACS: encryption, identities, HMAC, caller ID, email/SMTP, Teams interop, captions/transcription, emergency calling, and secure webhooks/Rooms. |
 | Configuration | L255-L332 | Configuring monitoring, logging, metrics, and insights for ACS (chat, voice/video, calls, SMS, email), plus setup for Teams interop, direct routing, UI Library options, and SMS/email domain/sender settings. |
-| Integrations & Coding Patterns | L333-L480 | End-to-end patterns for integrating ACS calling, chat, SMS, email, Rooms, Job Router, WhatsApp, Teams, OpenAI/bots, and UI libraries, including media control, events, push, and telephony interop. |
+| Integrations & Coding Patterns | L333-L480 | Patterns and end-to-end integrations for ACS calling, chat, SMS, email, Rooms, Job Router, Teams/Phone, WhatsApp, OpenAI/bots, push, UI library, and telephony/OS frameworks. |
 | Deployment | L481-L485 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
 
 ### Troubleshooting
@@ -434,7 +434,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Teams Phone extensibility with ACS calls | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-access-teams-phone |
 | Handle Teams Phone Extensibility calls with Call Automation | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-answer-teams-calls |
 | Call Teams Phone extensibility REST APIs | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-rest-api |
-| Place outbound TPE calls using Call Automation | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-server-outbound-call |
+| Place Teams Phone outbound calls with Call Automation | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-server-outbound-call |
 | Integrate Adaptive Cards into ACS chat UI | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/ui-library/get-started-chat-adaptive-card |
 | Integrate ACS chat UI Library composites into your app | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/ui-library/get-started-chat-ui-library |
 | Integrate ACS UI Library composites into applications | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/ui-library/get-started-composites |

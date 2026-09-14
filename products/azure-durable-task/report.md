@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-13'
 category_descriptions:
   decision-making: Guidance on when to use Durable Functions vs raw Durable Task SDK,
     and how to compare and choose durable storage providers/backends for orchestrations.
   deployment: Guidance on safely deploying Durable orchestrations using versioning
     strategies, handling breaking changes, and managing upgrades without disrupting
     running workflows.
-  best-practices: Guidance on writing robust orchestrator code, configuring retries
-    and error handling, using continue-as-new, handling external events, and building
-    singleton/eternal Durable Functions.
+  best-practices: Patterns and constraints for writing robust orchestrator code, including
+    retries and error handling, eternal/continue-as-new flows, external event handling,
+    and singleton orchestration patterns.
   limits-quotas: Configuring orchestration status size/retention limits, querying
     status, and monitoring Durable Task Scheduler action metrics, performance, and
     billing impacts.
@@ -22,17 +22,17 @@ category_descriptions:
     purging, and using instance management APIs for lifecycle control and monitoring'
 skill_description: Expert knowledge for Azure Durable Task development including best
   practices, decision making, architecture & design patterns, limits & quotas, configuration,
-  integrations & coding patterns, and deployment. Use when versioning Durable workflows,
-  using continue-as-new, managing instances via APIs, or fan-out/fan-in orchestration,
-  and other Azure Durable Task related development tasks. Not for Azure Functions
-  (use azure-functions), Azure Service Bus (use azure-service-bus), Azure Logic Apps
-  (use azure-logic-apps), Azure App Service (use azure-app-service).
-use_when: Use when versioning Durable workflows, using continue-as-new, managing instances
-  via APIs, or fan-out/fan-in orchestration, and other Azure Durable Task related
-  development tasks.
-confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service Bus
-  (use azure-service-bus), Azure Logic Apps (use azure-logic-apps), Azure App Service
-  (use azure-app-service).
+  integrations & coding patterns, and deployment. Use when choosing Durable storage
+  backends, versioning orchestrations, using fan-out/fan-in, human approvals, or instance
+  APIs, and other Azure Durable Task related development tasks. Not for Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure App Service
+  (use azure-app-service), Azure Service Fabric (use azure-service-fabric).
+use_when: Use when choosing Durable storage backends, versioning orchestrations, using
+  fan-out/fan-in, human approvals, or instance APIs, and other Azure Durable Task
+  related development tasks.
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
+  (use azure-logic-apps), Azure App Service (use azure-app-service), Azure Service
+  Fabric (use azure-service-fabric).
 ---
 # Azure Durable Task Crawl Report
 
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 22
+- **Updated Pages**: 1
+- **Unchanged**: 21
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-durable-task/azure-durable-task.csv`
 
@@ -66,14 +66,19 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 
 ## Changes
 
+### Updated Pages
+
+- [Error handling and retries](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-error-handling)
+  - Updated: 2026-07-24T18:54:00.000Z → 2026-09-08T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Custom orchestration status](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-custom-orchestration-status) | limits-quotas | 0.80 | Explicitly states a 16 KB UTF-16 JSON text limit for custom status payloads and suggests alternative patterns when exceeding it; this is a precise numeric limit unique to the product, matching limits-quotas. |
 | [Orchestrator code constraints](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-code-constraints) | best-practices | 0.78 | This page documents product-specific constraints and DO/DON'T guidance for Durable orchestrator functions (such as restrictions on I/O, random number generation, and non-deterministic operations due to orchestration replay). These are nuanced, implementation-specific behaviors and edge cases that go beyond generic programming knowledge and are critical for correctly using Azure Durable Functions and Durable Task SDKs. |
-| [Error handling and retries](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-error-handling) | best-practices | 0.75 | Focuses on handling errors, automatic retries, timeouts, retry policies, and compensation patterns specific to Durable Functions/Durable Task; these are concrete product-specific recommendations and behaviors, matching best-practices. |
 | [Storage providers overview](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-storage-providers) | decision-making | 0.75 | Explicitly compares multiple storage providers (Durable Task Scheduler, Azure Storage, etc.) for orchestrations, likely with feature/behavior differences and recommendations; matches decision-making for backend selection. |
+| [Error handling and retries](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-error-handling) | best-practices | 0.72 | Page provides product-specific guidance on configuring retries, timeouts, and compensation patterns for Durable Functions/Durable Task orchestrations, including how orchestration behaviors interact with language-level error handling. This is concrete, service-specific best-practices content rather than generic error handling theory. |
 | [Action metrics](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-metrics) | limits-quotas | 0.70 | Describes action metrics and billing model, including that the Consumption SKU is billed by number of actions while Dedicated SKU is billed by capacity units; these are quantified, SKU-specific limits/quotas and billing details. |
 | [Choose your hosting model](https://learn.microsoft.com/en-us/azure/durable-task/common/choose-orchestration-framework) | decision-making | 0.70 | Explicitly described as a comparison/choice article between hosting models, likely includes feature comparison tables, storage backend options, and guidance for different scenarios—fits decision-making criteria. |
 | [Instance management](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-instance-management) | integrations | 0.70 | Page focuses on concrete API usage for managing orchestration instances (start, query, terminate, suspend, resume, purge) with specific methods and code patterns for Durable Functions and Durable Task SDKs. This is product-specific integration/coding guidance rather than generic concepts. |

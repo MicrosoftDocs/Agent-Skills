@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 48
+- **Updated Pages**: 0
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -59,11 +59,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 57.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Impacted Resources from Azure Health Advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements)
-  - Updated: 2026-06-23T22:12:00.000Z → 2026-09-04T22:12:00.000Z
 
 ## Classified Pages
 
