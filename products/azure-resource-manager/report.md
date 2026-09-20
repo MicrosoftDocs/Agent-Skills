@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 - **Unclassified**: 118
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 493
+- **Unchanged**: 494
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -75,10 +75,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | *(Unclassified)* | 118 | 23.9% |
 
 ## Changes
-
-### New Pages
-
-- [Bicep config inheritance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-inheritance)
 
 ## Classified Pages
 

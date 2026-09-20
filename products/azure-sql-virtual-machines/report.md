@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-20'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL options and pricing, comparing
     SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices,
@@ -16,9 +16,9 @@ category_descriptions:
   configuration: 'Configuring SQL Server on Azure VMs: AG/FCI setup, listeners, load
     balancers, clustering, storage, backups, monitoring, IaaS Agent, and VM/SQL edition/version
     settings.'
-  best-practices: 'Best practices for SQL Server on Azure VMs: HA/DR clustering, DNN
-    listeners, backup/restore, performance tuning, storage and VM sizing, baselines,
-    and best practices assessments.'
+  best-practices: 'Best practices for SQL Server on Azure VMs: sizing, storage, tempdb,
+    performance tuning, baselines, HADR/FCI with DNN, backups/restores, and planned
+    maintenance preparation.'
   security: 'Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault/EKM,
     managed identities, Entra auth, Extended Security Updates, hardening guidance,
     and confidential VM deployment.'
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when configuring SQL Server AG/FCI on Azure VMs, DNN listeners,
-  Key Vault/EKM, Blob backups, or Confidential VMs, and other SQL Server on Azure
+  and deployment. Use when choosing SQL VM vs Managed Instance, configuring AG/FCI,
+  tuning storage/tempdb, or backing up to Blob with MI, and other SQL Server on Azure
   Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
   (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
-use_when: Use when configuring SQL Server AG/FCI on Azure VMs, DNN listeners, Key
-  Vault/EKM, Blob backups, or Confidential VMs, and other SQL Server on Azure Virtual
+use_when: Use when choosing SQL VM vs Managed Instance, configuring AG/FCI, tuning
+  storage/tempdb, or backing up to Blob with MI, and other SQL Server on Azure Virtual
   Machines related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 129
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 3
+- **Unchanged**: 125
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
 ## Classification Statistics
@@ -64,8 +64,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 3.9% |
-| best-practices | 10 | 7.8% |
-| configuration | 41 | 31.8% |
+| best-practices | 11 | 8.5% |
+| configuration | 40 | 31.0% |
 | decision-making | 8 | 6.2% |
 | deployment | 13 | 10.1% |
 | integrations | 2 | 1.6% |
@@ -75,6 +75,23 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 31 | 24.0% |
 
 ## Changes
+
+### New Pages
+
+- [Place tempdb on ephemeral storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/tempdb-ephemeral-storage?view=azuresql)
+
+### Updated Pages
+
+- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
+  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
+- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
+  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
+  - Updated: 2026-07-10T08:00:00.000Z → 2026-09-17T22:35:00.000Z
+
+### Deleted Pages
+
+- ~~Place tempdb to ephemeral disk~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/tempdb-ephemeral-storage?view=azuresql)
 
 ## Classified Pages
 
@@ -96,6 +113,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Focuses on out-of-memory errors with causes and remediation steps, including references to service objective limits. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.78 | A monitoring data reference page for Azure SQL Managed Instance typically enumerates all Azure Monitor metrics, diagnostic log categories, dimensions, and sometimes their units, aggregation types, and default collection behavior. This is product-specific reference information that an LLM is unlikely to fully memorize from training and is used to configure monitoring and alerting. It best fits the configuration sub-skill because it describes concrete monitoring configuration options and schema rather than general concepts. |
 | [Distributed network name (DNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql) | configuration | 0.78 | DNN setup for FCI requires specific cluster resource names and Azure networking parameters that are product-specific configuration details. |
+| [Place tempdb on ephemeral storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/tempdb-ephemeral-storage?view=azuresql) | best-practices | 0.78 | The article provides product-specific, actionable guidance on configuring SQL Server tempdb and buffer pool extension to use Azure VM local SSD ephemeral storage, including concrete configuration steps and patterns unique to SQL Server on Azure VMs. This is implementation-focused best-practices content rather than generic concepts, but it does not primarily focus on limits, deployment matrices, or security settings. |
 | [SSL root certificate expiring](https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql) | security | 0.78 | Details certificate authority changes and required client configuration updates to maintain secure connections, which are product-specific security settings. |
 | [Storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql) | best-practices | 0.78 | The page provides product-specific performance best practices for SQL Server on Azure VMs, including concrete recommendations on disk types, storage pool configurations, and caching strategies tailored to Azure infrastructure. These are actionable, implementation-focused guidelines rather than generic concepts, and include configuration details unique to SQL Server on Azure Virtual Machines. |
 | [VM vCore customization](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/vm-vcore-customization-for-sql?view=azuresql) | configuration | 0.78 | The article describes how to configure VM vCore customization (Configurable Constrained Cores and disabling SMT) specifically for SQL Server on Azure VMs, including product-specific settings and options that control how many vCores are exposed and how SMT is configured. These are concrete configuration parameters and behaviors unique to this Azure SQL VM scenario, rather than generic performance guidance. |
@@ -104,7 +122,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Bulk register multiple VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-vms-bulk?view=azuresql) | configuration | 0.75 | Uses a specific PowerShell cmdlet and describes bulk registration behavior and constraints for SQL VMs. |
 | [Collect baseline](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-collect-baseline?view=azuresql) | best-practices | 0.75 | Step-by-step, product-specific guidance on collecting performance baselines for SQL Server on Azure VMs; actionable best-practice procedures rather than conceptual performance theory. |
 | [Security](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/security-considerations-best-practices?view=azuresql) | security | 0.75 | Security-focused guidance for SQL VMs, likely including Azure-specific network, identity, and SQL configuration details. |
-| [Place tempdb to ephemeral disk](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/tempdb-ephemeral-storage?view=azuresql) | configuration | 0.74 | The article provides product-specific configuration steps and settings for placing SQL Server tempdb and buffer pool extensions on Azure VM ephemeral (local SSD) storage. It includes concrete configuration details (drive usage, SQL Server settings, and Azure VM-specific behavior) that go beyond generic knowledge, but does not focus on numeric limits/quotas, troubleshooting error codes, or architecture decision matrices. |
 | [Analyze I/O performance](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-performance-analysis?view=azuresql) | troubleshooting | 0.70 | Explicitly about identifying I/O performance issues from VM and disk limits; such content typically maps symptoms to causes and uses Azure-specific metrics and tools. |
 | [Application patterns](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/application-patterns-development-strategies?view=azuresql) | architecture-patterns | 0.70 | Covers application patterns and design strategies specific to SQL Server on Azure VMs, guiding architecture choices. |
 | [Automated backup (SQL 2014)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/automated-backup-sql-2014?view=azuresql) | configuration | 0.70 | Uses the IaaS Agent Extension and Managed Backup; includes extension settings and backup configuration parameters specific to SQL Server 2014 on Azure VMs. |
@@ -204,10 +221,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | 0.20 | Page focuses on the process for submitting a support request to increase quotas, not on listing specific numeric limits, tier-specific quotas, or timeout values. It lacks detailed configuration parameters, decision matrices, or error-code-based troubleshooting, so none of the expert-knowledge sub-skill types apply. |
 | [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql) | 0.20 | The page is an overview of the SQL Server IaaS Agent extension for Linux VMs and describes its purpose and high-level capabilities. Based on the summary, it doesn't expose specific configuration tables, numeric limits, error codes, or detailed troubleshooting/decision matrices. It appears to be conceptual/introductory rather than containing product-specific expert details that match any sub-skill type. |
 | [Unified inventory (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql) | 0.20 | Preview feature overview for unified inventory; describes the concept and resource type but no detailed configuration parameters, limits, or troubleshooting content. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes and documentation change log for SQL Server on Azure VMs; primarily a high-level 'what's new' overview without detailed limits, configuration tables, error codes, or product-specific decision matrices. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes / what's new summary for SQL Server on Azure VMs; primarily lists new features and documentation changes without detailed limits, configuration tables, error codes, or decision matrices that match any sub-skill category. |
 | [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql) | 0.10 | Described as an overview of SQL Server on Azure VMs for Linux; overviews are explicitly out of scope and typically lack detailed limits, configs, or decision matrices. |
-| [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes; primarily historical release-note navigation without detailed limits, configs, troubleshooting mappings, or decision matrices. |
-| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes for Managed Instance; functions as historical/navigation content rather than detailed technical guidance. |
+| [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' and documentation changes; release-note style summary without clear evidence of detailed limits, configs, error codes, or decision matrices. Functions primarily as historical/overview content rather than a focused expert-knowledge reference. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' and documentation changes for Azure SQL Managed Instance; appears to be high-level release-note navigation/summary, not a concentrated source of limits, configuration tables, troubleshooting mappings, or decision criteria. |
 | [Azure SQL glossary of terms](https://learn.microsoft.com/en-us/azure/azure-sql/glossary-terms?view=azuresql) | 0.10 | Glossary of terms is definitional, not configuration, troubleshooting, or limits content. |
 | [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/?view=azuresql) | 0.10 | Landing/navigation page listing concepts, quickstarts, and tutorials for SQL Server on Azure VMs without detailed limits, configuration tables, or decision matrices. |
 | [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql) | 0.10 | Navigation hub for migration guides; no concrete technical details on this page. |

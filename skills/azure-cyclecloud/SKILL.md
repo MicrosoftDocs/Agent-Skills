@@ -1,9 +1,9 @@
 ---
 name: azure-cyclecloud
-description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when automating CycleCloud via APIs/CLI/SDK, configuring Slurm HPC clusters, autoscaling nodearrays, or securing access, and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch), Azure Virtual Machines (use azure-virtual-machines), Azure HDInsight (use azure-hdinsight), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when automating CycleCloud via API/CLI/SDK, configuring Slurm clusters, tuning HB/HC VMs, or securing access, and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure CycleCloud Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L45 | Diagnosing and fixing CycleCloud setup, cluster/node startup, VM health, Slurm 4 issues, and locating/logging detailed diagnostics for common errors. |
 | Best Practices | L46-L51 | Security hardening guidance for CycleCloud (identity, networking, data) and performance tuning of HB/HC-series HPC clusters (sizing, configs, optimization). |
-| Decision Making | L52-L62 | Planning and sizing CycleCloud HPC/Slurm clusters, migrating from older versions/templates, choosing Spot VM usage, and understanding licensing, servicing, and support policies |
+| Decision Making | L52-L62 | Guidance on planning/sizing CycleCloud HPC clusters, Slurm workspace and migration, Spot VM usage, licensing terms, and servicing/support policies. |
 | Architecture & Design Patterns | L63-L69 | Designing secure, enterprise-grade Azure CycleCloud architectures: multi-region HPC clusters, VM placement strategies, and hub-spoke network/security patterns. |
 | Security | L70-L85 | Securing CycleCloud: auth (Entra, service principals, managed identities), SSL, SSH/Bastion access, network lockdown/SELinux, and telemetry/data usage policies. |
 | Configuration | L86-L134 | Designing and configuring CycleCloud clusters: templates, nodearrays, networking, storage, autoscaling, Slurm/Open OnDemand, deployment, CLI, proxies, monitoring, and customization. |

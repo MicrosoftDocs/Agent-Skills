@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-09-20'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), Entra
     auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security
     best practices.'
   configuration: Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid
-    Runbook Workers, schedules, modules/packages, alerts, policies, and integrations
-    (VS Code, source control, ARM, Azure Monitor).
+    Runbook Workers, alerts, schedules, modules/packages, policies, networking, and
+    deployment/integration settings.
   best-practices: 'Best practices for structuring and running Automation runbooks:
     modular parent-child design, execution patterns, error handling, stream/output
     usage, and avoiding context/locking issues.'
@@ -27,17 +27,17 @@ category_descriptions:
     and collecting logs for support.'
 skill_description: Expert knowledge for Azure Automation development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building runbooks, DSC/Hybrid Workers,
-  Entra/RBAC auth, webhooks/email integrations, or AMA-based tracking, and other Azure
+  & coding patterns, and deployment. Use when building runbooks, DSC configs, Hybrid
+  Runbook Workers, managed identities, or Automation deployments, and other Azure
   Automation related development tasks. Not for Azure Functions (use azure-functions),
   Azure Logic Apps (use azure-logic-apps), Azure DevOps (use azure-devops), Azure
-  Resource Manager (use azure-resource-manager).
-use_when: Use when building runbooks, DSC/Hybrid Workers, Entra/RBAC auth, webhooks/email
-  integrations, or AMA-based tracking, and other Azure Automation related development
+  DevTest Labs (use azure-devtest-labs).
+use_when: Use when building runbooks, DSC configs, Hybrid Runbook Workers, managed
+  identities, or Automation deployments, and other Azure Automation related development
   tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
-  (use azure-logic-apps), Azure DevOps (use azure-devops), Azure Resource Manager
-  (use azure-resource-manager).
+  (use azure-logic-apps), Azure DevOps (use azure-devops), Azure DevTest Labs (use
+  azure-devtest-labs).
 ---
 # Azure Automation Crawl Report
 
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 111
+- **Updated Pages**: 1
+- **Unchanged**: 110
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -71,6 +71,11 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 25 | 22.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Update Azure PowerShell modules](https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules)
+  - Updated: 2026-04-20T11:11:00.000Z → 2026-09-17T17:12:00.000Z
 
 ## Classified Pages
 
@@ -134,7 +139,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Send an email from a runbook](https://learn.microsoft.com/en-us/azure/automation/automation-send-email) | integrations | 0.70 | Shows how to integrate SendGrid with Automation runbooks; likely includes API keys, connection parameters, and PowerShell patterns specific to this integration. |
 | [Start a runbook](https://learn.microsoft.com/en-us/azure/automation/start-runbooks) | configuration | 0.70 | Includes a comparison table of start methods and lifecycle behavior; product-specific configuration of how runbooks are triggered. |
 | [Start a runbook from a webhook](https://learn.microsoft.com/en-us/azure/automation/automation-webhooks) | integrations | 0.70 | Describes starting runbooks via HTTP webhooks from external services and references TLS 1.2+ client requirements, implying specific endpoint, security, and payload patterns for this integration. |
-| [Update Azure PowerShell modules](https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules) | configuration | 0.70 | Describes managing default/global modules and the new runtime environment experience, implying specific module configuration behaviors and constraints unique to Azure Automation. |
+| [Update Azure PowerShell modules](https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules) | configuration | 0.70 | Page contains product-specific steps and details for managing and updating default Az PowerShell modules within Azure Automation accounts, including which modules are provided, how they are updated, and environment-specific behaviors. This is configuration-focused expert knowledge about module management in this service rather than generic PowerShell usage. |
 | [Use source control integration](https://learn.microsoft.com/en-us/azure/automation/source-control-integration) | configuration | 0.70 | Covers one-way sync setup with GitHub/Azure DevOps; likely includes specific configuration fields, connection settings, and schedules unique to Automation source control. |
 | [Work with State Configuration extension version history](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history) | limits-quotas | 0.70 | A version history page for the Azure Desired State Configuration extension typically contains expert knowledge such as specific extension versions, release dates, bug fixes, behavioral changes, and sometimes configuration or compatibility notes that are not generally known from training data. These are concrete, product-specific details organized by version, fitting best under limits-quotas as a reference-style page with precise version information, even though it may not focus on numeric resource limits. |
 | [Manage modules in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/shared-resources/modules) | configuration | 0.68 | Page describes detailed handling of PowerShell modules in Azure Automation (runbooks/DSC), including product-specific module management behavior and deprecation/migration details for AzureRM vs Az modules, which are not generic knowledge and map best to configuration of shared resources. |

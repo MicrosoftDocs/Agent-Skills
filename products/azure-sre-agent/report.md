@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   integrations: Integrating Azure SRE Agent with DevOps, GitHub, observability, incident
     tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 - **Unclassified**: 70
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
@@ -74,9 +74,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Disaster recovery](https://learn.microsoft.com/en-us/azure/sre-agent/disaster-recovery)
+- [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions)
+  - Updated: 2026-08-19T22:10:00.000Z → 2026-09-18T22:43:00.000Z
 
 ## Classified Pages
 
@@ -175,7 +176,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Set up PagerDuty indexing](https://learn.microsoft.com/en-us/azure/sre-agent/set-up-pagerduty-indexing) | 0.30 | PagerDuty indexing setup is described as a short connection tutorial; summary does not indicate presence of config parameter tables, limits, or error-code-based troubleshooting beyond generic integration steps. |
 | [Set up a managed connector](https://learn.microsoft.com/en-us/azure/sre-agent/setup-managed-connector) | 0.30 | Managed connector setup article for multiple services (Outlook, Teams, Gmail, etc.) is described as a general wizard-based connection guide with governance controls. Summary does not show detailed configuration tables, limits, or troubleshooting mappings; likely generic connector tutorial content. |
 | [Subagents](https://learn.microsoft.com/en-us/azure/sre-agent/sub-agents) | 0.30 | Conceptual explanation of custom agents and /agent command; no indication of expert-only configuration or limits. |
-| [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions) | 0.30 | Region availability lists are product-specific but typically just enumerate supported regions without configuration parameters, limits, or decision matrices. The summary suggests a reference list and general guidance on choosing a region, not quantified trade-offs, limits, or configuration details. |
+| [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions) | 0.30 | Page lists supported Azure regions and basic guidance on choosing a region; this is availability/coverage information, not one of the specified expert sub-skill types (no limits, configs, error codes, or decision matrices with quantified trade-offs). |
 | [Test a tool in the playground](https://learn.microsoft.com/en-us/azure/sre-agent/test-tool-playground) | 0.30 | Tool testing playground tutorial focuses on usage; unlikely to contain detailed configuration matrices or limits beyond generic testing steps. |
 | [Track incident value](https://learn.microsoft.com/en-us/azure/sre-agent/track-incident-value) | 0.30 | Incident value tracking is described at a conceptual level (analytics, dashboards, filters) without specific thresholds, formulas, or configuration parameters. |
 | [Troubleshoot App Service](https://learn.microsoft.com/en-us/azure/sre-agent/troubleshoot-azure-app-service) | 0.30 | Tutorial on troubleshooting an app with SRE Agent and App Service; appears procedural without detailed error-code mappings or configuration tables. |

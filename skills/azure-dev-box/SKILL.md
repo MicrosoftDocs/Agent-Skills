@@ -1,9 +1,9 @@
 ---
 name: azure-dev-box
-description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, region moves, or VS Code dev tunnels, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop), Azure Lab Services (use azure-lab-services).
+description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, configuring pools/catalogs, securing access (RBAC/SSO), managing quotas, or fixing connectivity, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Dev Box Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L45 | Diagnosing and fixing Dev Box connectivity issues, image validation errors, stale/inaccessible boxes, using Troubleshoot & Repair, and monitoring via Azure Monitor logs. |
 | Best Practices | L46-L51 | Guidance on building efficient Dev Box images, including structuring image definitions and pre-warming Visual Studio caches to speed up developer environments. |
-| Decision Making | L52-L57 | Guidance on planning Dev Box deployments (networking, images, capacity) and deciding or preparing to move from Dev Box to Windows 365, including design and transition considerations. |
+| Decision Making | L52-L57 | Planning Dev Box deployments (architecture, sizing, governance) and strategies for decommissioning/retiring Dev Box environments safely and efficiently. |
 | Limits & Quotas | L58-L63 | Managing Dev Box capacity: requesting quota/core limit increases and configuring per-user Dev Box limits to control usage and costs. |
 | Security | L64-L75 | Securing Dev Box access and sessions: RBAC roles, guest access, SSO, API auth, Key Vault/service principals, Intune Conditional Access and Endpoint Privilege Management. |
-| Configuration | L76-L102 | Configuring Dev Box infrastructure: networking, images, catalogs, policies, schedules (stop/hibernate/autodelete), pools/projects/dev centers, and monitoring/log schemas. |
-| Integrations & Coding Patterns | L103-L107 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
-| Deployment | L108-L111 | Planning and rolling out Dev Box environments, including architecture and configuration, plus guidance for moving Dev Box pools and individual boxes between Azure regions. |
+| Configuration | L76-L101 | Configuring Dev Box infrastructure: networking, images, catalogs, policies, schedules (stop/hibernate/autodelete), pools/projects/dev centers, and monitoring/log schemas. |
+| Integrations & Coding Patterns | L102-L106 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
+| Deployment | L107-L110 | Planning and rolling out Dev Box environments, including architecture and configuration, plus guidance for moving Dev Box pools and individual boxes between Azure regions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -53,7 +53,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Plan and design a Microsoft Dev Box deployment | https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-deployment-guide |
-| Plan transition from Dev Box to Windows 365 | https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap |
+| Plan and execute Microsoft Dev Box retirement | https://learn.microsoft.com/en-us/azure/dev-box/dev-box-retirement-guide |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -90,7 +90,6 @@ This skill requires **network access** to fetch documentation content:
 | Create and upload Dev Box user customization files | https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-user-customizations |
 | Configure virtual switches and networking in Dev Box | https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-dev-box-virtual-switch |
 | Build custom Dev Box images with Azure VM Image Builder | https://learn.microsoft.com/en-us/azure/dev-box/how-to-customize-devbox-azure-image-builder |
-| Define and manage Dev Box definitions | https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions |
 | Configure and manage Dev Box pools | https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-pools |
 | Manage Microsoft Dev Box projects and pools | https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-projects |
 | Create and manage Dev Box dev centers | https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-center |

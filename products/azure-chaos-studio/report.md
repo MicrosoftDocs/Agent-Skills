@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 - **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 61
-- **Updated Pages**: 4
-- **Unchanged**: 0
-- **Deleted Pages**: 61
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
 ## Classification Statistics
@@ -74,65 +74,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 14 | 21.5% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Policy target samples for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets)
-- [Agent overview for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-overview)
-- [Agent concepts for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts)
-- [Agent OS support for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-os-support)
-- [Agent ARM template for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-arm-template)
-- [Verify Chaos Studio agent status (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status)
-- [Configure agent Private Link for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service)
-- [Uninstall the Chaos Studio agent (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-uninstall)
-- [Troubleshoot the Chaos Studio agent (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-troubleshooting)
-- [Agent known issues for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues)
-- [Permissions and security for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-permissions-security)
-- [Assign permissions to Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions)
-- [Set up virtual network injection for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-networking)
-- [Relay container image for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details)
-- [Configure customer-managed keys for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys)
-- [Send experiment telemetry to Azure Monitor (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor)
-- [Send agent telemetry to Application Insights (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-app-insights)
-- [Troubleshoot Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting)
-- [Fault and action library for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-library)
-- [Experiment examples for the CLI and portal (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples)
-- *...and 41 more*
-
-### Updated Pages
-
-- [Chaos Studio Workspaces overview](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-overview)
-  - Updated: 2026-09-01T06:07:00.000Z → 2026-09-06T12:06:00.000Z
-- [Quickstart: Create a Workspace and run a Scenario](https://learn.microsoft.com/en-us/azure/chaos-studio/quickstart-create-workspace)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-05T08:00:00.000Z
-- [Manage Workspaces and Scenarios with the Azure CLI](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-manage-cli)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-06T12:06:00.000Z
-- [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview)
-  - Updated: 2026-07-14T12:03:00.000Z → 2026-09-06T12:06:00.000Z
-
-### Deleted Pages
-
-- ~~Container image details~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details)
-- ~~ARM template~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-arm-template)
-- ~~Concepts~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts)
-- ~~Known issues~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues)
-- ~~Supported operating systems~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-os-support)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-overview)
-- ~~Troubleshooting~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-troubleshooting)
-- ~~Uninstall the agent~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-uninstall)
-- ~~Verify agent status~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status)
-- ~~Use Microsoft Entra authentication with Chaos Mesh~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-authentication)
-- ~~Test workload resiliency on AKS (preview)~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-guidance)
-- ~~Authorize Chaos Studio IP addresses for an AKS cluster~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-ip-ranges)
-- ~~Assign experiment permissions~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions)
-- ~~Bicep~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep)
-- ~~Chaos engineering overview~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-engineering-overview)
-- ~~Chaos experiments~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-chaos-experiments)
-- ~~Configure customer-managed keys~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys)
-- ~~Fault library~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-library)
-- ~~Measure experiment impact with Azure Monitor~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-metrics-and-dashboard)
-- ~~Supported resource types~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)
-- *...and 41 more*
 
 ## Classified Pages
 

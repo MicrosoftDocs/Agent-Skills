@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-20'
 category_descriptions:
-  configuration: Configuring and managing Network Watcher agents, NSG/VNet flow logs,
-    schemas, filters, Traffic Analytics, and deployment/governance via Bicep, ARM
-    templates, and Azure Policy
+  configuration: Configuring and deploying Network Watcher/virtual network flow logs,
+    agents, filters, schemas, and Azure Policy/Bicep/ARM templates for monitoring
+    and Traffic Analytics.
   troubleshooting: Diagnosing and fixing outbound connectivity, NSG/admin rule issues,
-    and VPN gateway/on-prem VPN connection problems, plus automating VPN monitoring
-    with Azure Network Watcher.
+    and VPN gateway/on-prem VPN problems, plus automating VPN monitoring with Azure
+    Network Watcher.
   decision-making: 'Guidance for migrating network monitoring: moving from classic
     Connection Monitor and Network Performance Monitor tests, and switching NSG flow
     logs to VNet flow logs.'
@@ -21,14 +21,14 @@ category_descriptions:
     logs using managed identities.'
 skill_description: Expert knowledge for Azure Network Watcher development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
-  integrations & coding patterns. Use when configuring flow logs, Traffic Analytics,
-  packet capture, VPN monitoring, or KQL/Terraform integrations, and other Azure Network
-  Watcher related development tasks. Not for Azure Monitor (use azure-monitor), Azure
-  Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network),
+  integrations & coding patterns. Use when configuring VNet flow logs, Traffic Analytics,
+  packet capture, Connection Monitor migrations, or VPN monitoring, and other Azure
+  Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
+  Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network),
   Azure Firewall (use azure-firewall).
-use_when: Use when configuring flow logs, Traffic Analytics, packet capture, VPN monitoring,
-  or KQL/Terraform integrations, and other Azure Network Watcher related development
-  tasks.
+use_when: Use when configuring VNet flow logs, Traffic Analytics, packet capture,
+  Connection Monitor migrations, or VPN monitoring, and other Azure Network Watcher
+  related development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking (use
   azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Firewall
   (use azure-firewall).
@@ -37,32 +37,46 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 
 ## Summary
 
-- **Total Pages**: 65
-- **Fetched**: 65
+- **Total Pages**: 64
+- **Fetched**: 64
 - **Fetch Failed**: 0
-- **Classified**: 30
+- **Classified**: 29
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 65
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 62
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 12 | 18.5% |
-| decision-making | 3 | 4.6% |
-| integrations | 3 | 4.6% |
-| limits-quotas | 1 | 1.5% |
+| configuration | 11 | 17.2% |
+| decision-making | 3 | 4.7% |
+| integrations | 3 | 4.7% |
+| limits-quotas | 1 | 1.6% |
 | security | 4 | 6.2% |
-| troubleshooting | 7 | 10.8% |
-| *(Unclassified)* | 35 | 53.8% |
+| troubleshooting | 7 | 10.9% |
+| *(Unclassified)* | 35 | 54.7% |
 
 ## Changes
+
+### New Pages
+
+- [Network Watcher Agent](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-manage)
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-09-14T17:12:00.000Z
+
+### Deleted Pages
+
+- ~~Install and manage Network Watcher Agent~~ (https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-manage)
+- ~~Update Network Watcher Agent to latest version~~ (https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-update)
 
 ## Classified Pages
 
@@ -81,21 +95,20 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Create using Terraform](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-terraform) | integrations | 0.70 | The article provides concrete Terraform configuration for Azure Network Watcher VNet flow logs and a storage account, including resource types, required properties, and Azure-specific wiring between services. These are product-specific integration patterns and configuration details that go beyond generic knowledge, but it is primarily a code-based integration pattern rather than a pure configuration reference. |
 | [Create using an ARM template](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-template) | configuration | 0.70 | ARM template articles generally provide JSON schemas with resource types, property names, and required configuration values for Network Watcher flow logs and Storage accounts. These are concrete, product-specific configuration parameters that go beyond generic template usage and qualify as expert configuration knowledge. |
 | [Diagnose network security rules](https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-network-security-rules) | troubleshooting | 0.70 | Shows how to use NSG diagnostics to determine why traffic is allowed/denied, including a misconfigured NSG example; this is a symptom→cause→solution troubleshooting guide specific to Network Watcher. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions) | troubleshooting | 0.70 | FAQ pages for a specific Azure service typically include concrete error messages, feature-specific behaviors, and prescriptive answers (for example, why a feature doesn’t work in a region, required prerequisites, or specific limitations). These map symptoms or questions to causes and resolutions, which aligns with troubleshooting. This goes beyond generic concepts and provides product-specific diagnostic knowledge. |
 | [From Connection monitor (classic)](https://learn.microsoft.com/en-us/azure/network-watcher/migrate-to-connection-monitor-from-connection-monitor-classic) | decision-making | 0.70 | Migration article between classic and new versions; contains guidance on how and when to migrate with zero downtime, a product-specific decision/migration path. |
 | [From Network performance monitor](https://learn.microsoft.com/en-us/azure/network-watcher/migrate-to-connection-monitor-from-network-performance-monitor) | decision-making | 0.70 | Migration guidance between deprecated and new service; likely includes scenario-based recommendations and mapping of old tests to new constructs, which supports decision-making and migration choices. |
 | [Install Azure Monitor agent](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-install-azure-monitor-agent) | configuration | 0.70 | Covers installing, upgrading, and uninstalling Azure Monitor Agent on Arc-enabled servers; likely includes extension parameters and configuration options specific to this scenario. |
-| [Install and manage Network Watcher Agent](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-manage) | configuration | 0.70 | Page describes product-specific steps and parameters to install, view, and uninstall the Network Watcher Agent VM extension on Windows and Linux VMs. Managing a VM extension is configuration-focused and includes expert, service-specific operational details that go beyond generic knowledge, even if not presented in table form. |
 | [Manage NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-manage) | configuration | 0.70 | Page is a how-to for enabling, changing, disabling, and deleting NSG flow logs with product-specific options (storage accounts, retention, traffic analytics, versions). It likely includes concrete setting names and values for NSG flow log configuration rather than just conceptual guidance, which qualifies as configuration-focused expert knowledge. |
 | [Manage VNet flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-manage) | configuration | 0.70 | Management article for creating, enabling, disabling, and changing VNet flow logs via portal, PowerShell, and CLI; these typically include specific parameter names, flags, and settings unique to this feature. |
+| [Network Watcher Agent](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-manage) | configuration | 0.70 | The page describes how to install, update, and uninstall the Network Watcher Agent VM extension on Windows and Linux VMs. Such content typically includes extension names, required settings, parameters, and platform-specific behaviors (for example, how the extension is deployed by other Azure services, and constraints around installation). These are product-specific configuration details that qualify as expert knowledge. |
 | [Schema and data aggregation](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) | configuration | 0.70 | Schema and data aggregation documentation; such pages typically define field names, types, and aggregation rules for Traffic Analytics data, which are detailed configuration/schema references. |
 | [VNet flow logs managed identity](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-managed-identity) | security | 0.70 | Describes using user-assigned managed identities for VNet flow logs to access storage; likely includes specific role assignments, scopes, and identity configuration steps, which are product-specific security details. |
 | [VNet flow logs filtering](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-filtering) | configuration | 0.68 | The article describes product-specific filtering options for Azure Network Watcher virtual network flow logs (for example, filtering by flow state, action, IP ranges, ports, protocols, intra- vs inter-VNet traffic). These are concrete configuration capabilities and parameters unique to this service, not just conceptual logging guidance, fitting the configuration sub-skill best. |
 | [Audit and deploy using Azure Policy](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-policy) | configuration | 0.65 | Shows how to use built-in Azure Policy definitions to audit and deploy VNet flow logs; such content typically lists specific policy names, parameters, and effects, which are configuration-level details. |
 | [Enable traffic analytics using Azure policy](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-policy-portal) | configuration | 0.65 | Shows how to use three built-in Azure Policy definitions for Traffic Analytics; such content typically lists policy names, parameters, and configuration options, which are expert configuration details. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/network-watcher/frequently-asked-questions) | troubleshooting | 0.65 | FAQ pages for a specific Azure service often include concrete answers about known issues, behaviors, and constraints (for example, why a feature doesn’t work in a region, specific error behaviors, or service-specific caveats). These are typically symptom → cause → resolution style answers unique to Network Watcher, which aligns best with troubleshooting. |
 | [Monitor VPN gateway with Azure Automation](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-monitor-with-azure-automation) | troubleshooting | 0.65 | Describes using Automation runbooks with Network Watcher to detect outages and take corrective action; contains product-specific diagnostic patterns for VPN connectivity. |
 | [Proactive network monitoring with Azure Functions](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-alert-triggered) | integrations | 0.65 | Describes integration between Network Watcher, alerts, and Azure Functions to run packet captures; likely includes function trigger configuration and storage settings specific to this integration. |
-| [Update Network Watcher Agent to latest version](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-update) | configuration | 0.65 | Page focuses on updating the Network Watcher Agent VM extension to the latest version, with product-specific guidance on extension management and versioning. This is configuration/operations detail unique to Azure Network Watcher extensions, not generic conceptual content. |
 | [Migrate NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-migrate) | decision-making | 0.62 | Migration guide from NSG to VNet flow logs; likely covers mapping of capabilities, considerations, and stepwise migration decisions between the two logging options. |
 | [Apply Zero Trust principles to segment Azure network](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-zero-trust) | security | 0.60 | Uses Traffic Analytics to implement Zero Trust segmentation and detect risks; likely includes product-specific query patterns, configuration of analytics for security, and mappings to security controls. |
 

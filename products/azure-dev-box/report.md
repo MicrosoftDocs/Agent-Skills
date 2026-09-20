@@ -1,11 +1,10 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-09-20'
 category_descriptions:
   best-practices: Guidance on building efficient Dev Box images, including structuring
     image definitions and pre-warming Visual Studio caches to speed up developer environments.
-  decision-making: Guidance on planning Dev Box deployments (networking, images, capacity)
-    and deciding or preparing to move from Dev Box to Windows 365, including design
-    and transition considerations.
+  decision-making: Planning Dev Box deployments (architecture, sizing, governance)
+    and strategies for decommissioning/retiring Dev Box environments safely and efficiently.
   configuration: 'Configuring Dev Box infrastructure: networking, images, catalogs,
     policies, schedules (stop/hibernate/autodelete), pools/projects/dev centers, and
     monitoring/log schemas.'
@@ -24,16 +23,16 @@ category_descriptions:
     setup, authentication, and remote development workflow configuration.
 skill_description: Expert knowledge for Azure Dev Box development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when designing Dev Box images, catalogs/pools,
-  RBAC/SSO access, region moves, or VS Code dev tunnels, and other Azure Dev Box related
-  development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
-  Azure Lab Services (use azure-lab-services).
-use_when: Use when designing Dev Box images, catalogs/pools, RBAC/SSO access, region
-  moves, or VS Code dev tunnels, and other Azure Dev Box related development tasks.
+  & coding patterns, and deployment. Use when designing Dev Box images, configuring
+  pools/catalogs, securing access (RBAC/SSO), managing quotas, or fixing connectivity,
+  and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use
+  azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure
+  Virtual Desktop (use azure-virtual-desktop).
+use_when: Use when designing Dev Box images, configuring pools/catalogs, securing
+  access (RBAC/SSO), managing quotas, or fixing connectivity, and other Azure Dev
+  Box related development tasks.
 confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
-  Azure Lab Services (use azure-lab-services).
+  Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
 ---
 # Azure Dev Box Crawl Report
 
@@ -42,14 +41,14 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 - **Total Pages**: 65
 - **Fetched**: 65
 - **Fetch Failed**: 0
-- **Classified**: 45
-- **Unclassified**: 20
+- **Classified**: 44
+- **Unclassified**: 21
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 65
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 6
+- **Unchanged**: 58
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
 ## Classification Statistics
@@ -57,16 +56,39 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 3.1% |
-| configuration | 23 | 35.4% |
+| configuration | 22 | 33.8% |
 | decision-making | 2 | 3.1% |
 | deployment | 1 | 1.5% |
 | integrations | 1 | 1.5% |
 | limits-quotas | 2 | 3.1% |
 | security | 8 | 12.3% |
 | troubleshooting | 6 | 9.2% |
-| *(Unclassified)* | 20 | 30.8% |
+| *(Unclassified)* | 21 | 32.3% |
 
 ## Changes
+
+### New Pages
+
+- [Microsoft Dev Box retirement guide](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-retirement-guide)
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq)
+  - Updated: 2026-07-08T05:12:00.000Z → 2026-09-14T17:12:00.000Z
+- [Spin up a new dev box](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-create-dev-box)
+  - Updated: 2026-05-04T22:15:00.000Z → 2026-09-14T17:12:00.000Z
+- [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions)
+  - Updated: 2025-11-01T05:04:00.000Z → 2026-05-04T22:15:00.000Z
+- [Manage a dev box through developer portal](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal)
+  - Updated: 2026-05-04T22:15:00.000Z → 2026-07-08T05:12:00.000Z
+- [Connect to your dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal)
+  - Updated: 2026-05-04T22:15:00.000Z → 2026-07-08T05:12:00.000Z
+- [Use multiple monitors](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal)
+  - Updated: 2026-05-04T22:15:00.000Z → 2026-07-08T05:12:00.000Z
+
+### Deleted Pages
+
+- ~~Dev Box maintenance mode~~ (https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap)
 
 ## Classified Pages
 
@@ -105,11 +127,10 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [Configure virtual switch](https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-dev-box-virtual-switch) | configuration | 0.70 | Explains using nested virtualization and virtual switches, including the default switch and creating additional switches; product-specific networking configuration details. |
 | [Connect to a dev box with a dev tunnel](https://learn.microsoft.com/en-us/azure/dev-box/how-to-set-up-dev-tunnels) | integrations | 0.70 | Integration article between Dev Box and VS Code, including enabling tunnels and extension configuration—contains product-specific integration parameters and steps. |
 | [Delete unused dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-auto-delete-dev-box) | configuration | 0.70 | Describes enabling and configuring auto-delete with specific settings and behavior for unused Dev Boxes; product-specific lifecycle configuration. |
-| [Dev Box maintenance mode](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap) | decision-making | 0.70 | Roadmap/maintenance-mode article provides product-specific guidance for existing Dev Box customers to move to Windows 365, including recommendations on future usage and transition considerations, which supports technology selection and migration decisions. |
-| [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions) | configuration | 0.70 | Covers dev box definitions (image, compute, storage) with product-specific options and constraints. |
 | [Manage a dev box pool](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-pools) | configuration | 0.70 | Pool management article with settings for images, networks, and hosting; includes Dev Box–specific configuration parameters. |
 | [Manage a dev box project](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-projects) | configuration | 0.70 | Project management article with pool configuration and cost control; includes Dev Box–specific project and pool settings. |
 | [Manage a dev center](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-center) | configuration | 0.70 | How-to for managing dev centers, including settings and user assignments; contains product-specific configuration options. |
+| [Microsoft Dev Box retirement guide](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-retirement-guide) | decision-making | 0.70 | Retirement guide includes specific retirement dates/times, guidance to evaluate Windows 365, identify affected resources, and plan transition paths. This is product-specific decision guidance for migration/retirement, fitting decision-making. |
 | [Move dev box pools between regions](https://learn.microsoft.com/en-us/azure/dev-box/how-to-move-dev-box-pool-region) | deployment | 0.70 | Covers region move operations, alignment with pool regions, and network connection changes; includes Dev Box–specific deployment/migration behavior. |
 | [Network requirements](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-network-requirements) | configuration | 0.70 | Networking requirements article typically includes specific ports, protocols, DNS/endpoints, and region constraints—product-specific configuration details. |
 | [Provision a Custom Image with Azure Image Builder](https://learn.microsoft.com/en-us/azure/dev-box/how-to-customize-devbox-azure-image-builder) | configuration | 0.70 | Shows how to author an Image Builder template and publish to Compute Gallery for Dev Box; includes template parameters and Dev Box–specific image usage. |
@@ -133,12 +154,13 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | [Hibernate your Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-hibernate-your-dev-box) | 0.40 | Procedural how-to for hibernating Dev Boxes via portal/CLI; no specific limits, quotas, config tables, or product-unique edge cases beyond generic behavior. |
 | [Connect physical devices to a dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-devices-to-dev-box) | 0.35 | Step-by-step tutorial for connecting Android devices; likely generic device connection steps rather than product-specific configuration tables or limits. |
 | [Architecture and key concepts](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-architecture) | 0.30 | Conceptual architecture overview; describes components and relationships but not detailed decision matrices or numeric thresholds. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq) | 0.30 | FAQ content is typically high-level Q&A; summary does not indicate detailed limits, error codes, or configuration tables, so it likely lacks the required expert technical depth. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq) | 0.30 | FAQ page likely mixes conceptual and high-level operational Q&A without structured limits, configuration tables, or detailed error-to-solution mappings; not clearly focused on any single expert sub-skill type as defined. |
 | [Get support for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-get-help) | 0.30 | Support-channel guidance and escalation paths; process/contacts rather than technical configuration, limits, or troubleshooting details. |
 | [Set up Dev Box service (ARM template)](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-arm-template) | 0.30 | Quickstart using an ARM template is primarily step-by-step setup; summary does not indicate detailed configuration tables, parameter ranges, or other expert-only configuration references. |
 | [Tutorial: Get started with the Dev Box MCP Server](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-get-started-dev-box-mcp-server) | 0.30 | Tutorial-style usage of Dev Box MCP Server with natural language operations; likely step-by-step but not focused on configuration tables, limits, or error-code-based troubleshooting. |
-| [Connect to your dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.20 | Duplicate of index 4; same UI-focused portal usage instructions without expert-level configuration, limits, or troubleshooting details. |
-| [Manage a dev box through developer portal](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.20 | How-to for using the developer portal appears to be UI-driven guidance without detailed configuration parameter tables, limits, or error-code-based troubleshooting. |
-| [Spin up a new dev box](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-create-dev-box) | 0.20 | Quickstart for creating and accessing a Dev Box is a basic tutorial; no evidence of limits, quotas, detailed configuration matrices, or troubleshooting content. |
-| [Use multiple monitors](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.20 | Duplicate of index 4; portal usage article lacks product-specific configuration matrices, limits, or diagnostic mappings that would qualify as expert knowledge. |
+| [Connect to your dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.20 | Duplicate of index 3; same developer portal how-to content without clear expert-only details. |
+| [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions) | 0.20 | How-to for managing dev box definitions (image, compute, storage). Summary doesn’t show detailed config tables, limits, or best-practice specifics; appears as general procedural guidance. |
+| [Manage a dev box through developer portal](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.20 | Developer portal usage guide (create/connect/manage dev boxes). Summary suggests a basic how-to without detailed limits, configs, or troubleshooting mappings. |
+| [Spin up a new dev box](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-create-dev-box) | 0.20 | Quickstart for creating a Dev Box; primarily step-by-step tutorial. The only numeric details are retirement dates already captured in the retirement guide; no unique limits, configs, or decision matrices. |
+| [Use multiple monitors](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.20 | Duplicate of index 3; same developer portal how-to content without clear expert-only details. |
 | [What is Microsoft Dev Box?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box) | 0.20 | High-level overview of Microsoft Dev Box and its maintenance mode status; no detailed limits, configuration parameters, error codes, or decision matrices. |

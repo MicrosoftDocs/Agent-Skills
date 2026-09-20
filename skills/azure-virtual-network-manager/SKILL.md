@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-network-manager
-description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, and configuration. Use when managing AVNM network groups/topologies, IPAM pools, connectivity hubs, UDR automation, or security admin rules, and other Azure Virtual Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, and configuration. Use when managing AVNM network groups/topologies, IPAM pools, connectivity hubs, UDRs, or security admin rules, and other Azure Virtual Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Networking (use azure-networking), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Manager Skill
@@ -26,10 +26,10 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L34-L39 | Diagnosing and fixing common Azure Virtual Network Manager issues, including policy deployment, connectivity, and verifying that network configurations are correctly applied. |
 | Best Practices | L40-L45 | Deploying and updating AVNM configurations safely, and step-by-step guidance/checklists for cleanly removing or decommissioning AVNM components without breaking networks |
-| Architecture & Design Patterns | L46-L53 | Designing AVNM network topologies, IP address planning with IPAM, and automating user-defined route (UDR) creation and management across multiple hub-and-spoke environments |
-| Limits & Quotas | L54-L58 | Azure Virtual Network Manager resource limits, quotas, and scale constraints (e.g., max networks, connections, configurations) and guidance on planning deployments within those limits. |
-| Security | L59-L73 | Designing, simulating, and enforcing AVNM security admin rules (using network groups) to protect ports, block RDP/web traffic, and secure hub-and-spoke VNets with Azure Firewall and IPAM. |
-| Configuration | L74-L93 | Configuring AVNM: set up network groups/topologies, IPAM pools and cross-tenant IPAM, connectivity hubs, UDRs, logging, verification, and deploy via portal, CLI, PowerShell, ARM/Bicep. |
+| Architecture & Design Patterns | L46-L52 | Designing AVNM network topologies, IP address planning with IPAM, and automating user-defined route (UDR) creation and management across multiple hub-and-spoke environments |
+| Limits & Quotas | L53-L57 | Limits, quotas, and scale caps for Azure Virtual Network Manager resources (network groups, configurations, deployments), including supported scenarios and known feature limitations. |
+| Security | L58-L72 | Designing, simulating, and enforcing AVNM security admin rules (using network groups) to protect ports, block RDP/web traffic, and secure hub-and-spoke VNets with Azure Firewall and IPAM. |
+| Configuration | L73-L92 | Configuring AVNM: set up network groups/topologies, IPAM pools and cross-tenant IPAM, connectivity hubs, UDRs, logging, verification, and deploy via portal, CLI, PowerShell, ARM/Bicep. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -46,7 +46,6 @@ This skill requires **network access** to fetch documentation content:
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Design AVNM connectivity configurations and topologies | https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-connectivity-configuration |
 | Plan and manage IP addresses with AVNM IPAM | https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-ip-address-management |
 | Automate user-defined route management with AVNM | https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-user-defined-route |
 | Manage UDRs across multiple AVNM hub-and-spoke topologies | https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-manage-user-defined-routes-multiple-hub-spoke-topologies |
@@ -54,7 +53,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand Azure Virtual Network Manager limits and quotas | https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-limitations |
+| Review Azure Virtual Network Manager limitations and caps | https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-limitations |
 
 ### Security
 | Topic | URL |

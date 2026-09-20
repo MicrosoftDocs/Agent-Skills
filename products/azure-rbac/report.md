@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 102
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -65,13 +65,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | *(Unclassified)* | 9 | 8.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal)
-  - Updated: 2025-10-24T05:11:00.000Z → 2026-09-11T11:45:00.000Z
-- [Built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)
-  - Updated: 2026-07-01T08:00:00.000Z → 2026-09-10T08:00:00.000Z
 
 ## Classified Pages
 

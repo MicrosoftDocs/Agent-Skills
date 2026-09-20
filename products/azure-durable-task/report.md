@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 21
+- **Updated Pages**: 0
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-durable-task/azure-durable-task.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 6 | 27.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Error handling and retries](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-error-handling)
-  - Updated: 2026-07-24T18:54:00.000Z → 2026-09-08T08:00:00.000Z
 
 ## Classified Pages
 

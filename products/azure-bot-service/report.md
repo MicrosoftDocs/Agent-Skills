@@ -43,9 +43,9 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 - **Unclassified**: 17
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 65
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
@@ -63,10 +63,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 | *(Unclassified)* | 17 | 25.8% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Bot Service security and privacy FAQ](https://learn.microsoft.com/en-us/azure/bot-service/security-faq?view=azure-bot-service-4.0)
 
 ## Classified Pages
 

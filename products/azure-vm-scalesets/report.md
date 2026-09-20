@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 3
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 93
-- **Deleted Pages**: 1
+- **Unchanged**: 96
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
 ## Classification Statistics
@@ -76,16 +76,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 19 | 19.8% |
 
 ## Changes
-
-### New Pages
-
-- [Availability zone options](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones)
-- [Customer-selected availability zones](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-configure-customer-selected-zones)
-- [Automatic zone placement (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-zone-placement)
-
-### Deleted Pages
-
-- ~~Availability Zones~~ (https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones)
 
 ## Classified Pages
 

@@ -23,7 +23,6 @@
 | Use Scheduled Events on Linux Azure VMs via Metadata Service | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events |
 | Retrieve Azure VM maintenance notifications using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-cli |
 | Get Azure VM maintenance notifications with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-powershell |
-| Convert Azure VM disks from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/scsi-to-nvme-migration |
 | Query Azure VM availability data using Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-availability |
 | Query Azure VM resources with Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-samples |
 | Configure Azure VM scheduled events with Event Grid | https://learn.microsoft.com/en-us/azure/virtual-machines/scheduled-events-event-grid |
@@ -42,7 +41,6 @@
 | PowerShell script to create managed disks from snapshots | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-snapshot |
 | PowerShell script to create managed disks from VHDs | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-vhd |
 | PowerShell script to create snapshots from VHDs for multiple managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-snapshot-from-vhd |
-| Create Azure VM disk snapshots for backup and debugging | https://learn.microsoft.com/en-us/azure/virtual-machines/snapshot-copy-managed-disk |
 | Author ARM templates for Azure VM managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments |
 | Create Azure VM restore points using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-cli |
 | Azure Disk Encryption sample scripts for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts |

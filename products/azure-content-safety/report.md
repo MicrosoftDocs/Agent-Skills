@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-09-20'
 category_descriptions:
-  limits-quotas: Image/term list limits and quotas in Content Moderator, language
-    support for Content Safety, training custom categories, and detecting protected
-    code in generated outputs.
+  limits-quotas: Limits, quotas, and regional caps for Content Safety/Moderator (image
+    & term lists, custom categories, code protected-material checks) and how to configure
+    or stay within them.
   troubleshooting: Diagnosing and resolving Azure AI Content Safety API errors, including
     HTTP status codes, common failure causes, and recommended fixes or retries.
   deployment: How to install, configure, and run Azure AI Content Safety Docker containers
@@ -24,17 +24,17 @@ category_descriptions:
 skill_description: Expert knowledge for Content Safety in Foundry Control Plane development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using Content Moderator limits, Docker CS containers, blocklists,
-  media provenance, or groundedness APIs, and other Content Safety in Foundry Control
+  and deployment. Use when using Content Safety APIs, Docker containers, text blocklists,
+  media provenance, or groundedness checks, and other Content Safety in Foundry Control
   Plane related development tasks. Not for Azure Content Understanding in Foundry
-  Tools (use azure-content-understanding), Azure Speech in Foundry Tools (use azure-speech),
-  Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud).
-use_when: Use when using Content Moderator limits, Docker CS containers, blocklists,
-  media provenance, or groundedness APIs, and other Content Safety in Foundry Control
+  Tools (use azure-content-understanding), Azure Security (use azure-security), Azure
+  Sentinel (use azure-sentinel), Azure Defender For Cloud (use azure-defender-for-cloud).
+use_when: Use when using Content Safety APIs, Docker containers, text blocklists,
+  media provenance, or groundedness checks, and other Content Safety in Foundry Control
   Plane related development tasks.
 confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use azure-content-understanding),
-  Azure Speech in Foundry Tools (use azure-speech), Azure Security (use azure-security),
-  Azure Defender For Cloud (use azure-defender-for-cloud).
+  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure
+  Defender For Cloud (use azure-defender-for-cloud).
 ---
 # Content Safety in Foundry Control Plane Crawl Report
 
@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 50
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 5
+- **Unchanged**: 44
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
 ## Classification Statistics
@@ -70,17 +70,38 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 ## Changes
 
+### New Pages
+
+- [Region availability and service limits](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/region-availability)
+
+### Updated Pages
+
+- [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
+  - Updated: 2026-01-31T06:05:00.000Z → 2026-09-18T22:15:00.000Z
+- [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq)
+  - Updated: 2026-07-06T17:21:00.000Z → 2026-09-18T22:15:00.000Z
+- [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)
+  - Updated: 2026-01-31T06:05:00.000Z → 2026-09-18T22:15:00.000Z
+- [Protected material detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/protected-material)
+  - Updated: 2025-09-02T08:00:00.000Z → 2026-09-18T22:15:00.000Z
+- [Harm categories](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/harm-categories)
+  - Updated: 2025-11-21T08:00:00.000Z → 2026-09-18T22:15:00.000Z
+
+### Deleted Pages
+
+- ~~Language support~~ (https://learn.microsoft.com/en-us/azure/ai-services/content-safety/language-support)
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [.NET SDK samples](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-dotnet) | limits-quotas | 0.90 | Explicit numerical limits: maximum of 5 image lists and 5 term lists, each capped at 10,000 items. These are precise quotas unique to the service. |
 | [Check images against custom lists](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-lists-quickstart-dotnet) | limits-quotas | 0.90 | Contains explicit quota: maximum of 5 image lists, each not to exceed 10,000 images. This is precise, product-specific limit information. |
+| [Region availability and service limits](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/region-availability) | limits-quotas | 0.90 | Region availability and service limits pages typically list exact regional support, deployment processing locations, and numeric service limits (throughput, quotas, language coverage), which are product-specific and not generally known; matches limits-quotas criteria. |
 | [Response codes](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/response-codes) | troubleshooting | 0.90 | Explicitly lists Content Safety error codes and corresponding suggestions, providing symptom (error) → cause/meaning → resolution mappings unique to this service. |
 | [Mitigate false results](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/improve-performance) | best-practices | 0.75 | Focused on techniques to mitigate false positives/negatives for this specific service; likely includes concrete tuning strategies and patterns unique to Azure AI Content Safety behavior. |
 | [Encryption of data at rest](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/encrypt-data-at-rest) | security | 0.70 | Explains how Azure AI Content Safety encrypts data at rest; likely includes product-specific security behavior and possibly configuration/compliance details. |
 | [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/install-run-container) | configuration | 0.70 | Install/run articles for Azure AI service containers typically include container image names, required environment variables, configuration parameters, and command-line flags specific to the product. These are product-specific configuration details (e.g., keys, endpoint variables, port mappings, required settings) that qualify as expert knowledge beyond generic Docker usage. |
-| [Language support](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/language-support) | limits-quotas | 0.70 | Lists exactly which natural languages are supported by specific Content Safety models and which are English-only; this is product-specific capability data that changes over time and isn’t derivable from general knowledge. |
 | [Migrate from public preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/migrate-to-general-availability) | decision-making | 0.70 | Guides upgrading code from public preview to GA; involves product-specific migration steps and decisions about API/behavior changes. |
 | [Use Content Provenance Detection API](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection) | integrations | 0.70 | How-to guide for the Azure AI Content Safety Content Provenance Detection API that likely includes request/response schemas, endpoint URLs, supported media types, and specific parameters for detecting C2PA credentials and invisible watermarks. These are product-specific integration details (API usage patterns and parameters) that go beyond generic knowledge. |
 | [Use a blocklist](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/use-blocklist) | configuration | 0.70 | Describes using custom blocklistItems to extend classifiers; the full article typically includes specific API parameters and structures for blocklists, which are product-specific configuration details. |
@@ -97,15 +118,16 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Harm categories](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/harm-categories) | 0.50 | Describes harm categories and severity levels conceptually; while category definitions are detailed, they are taxonomy/semantics rather than limits, configs, or troubleshooting mappings per the defined sub-skills. |
+| [Harm categories](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/harm-categories) | 0.50 | Describes harm categories and severity levels conceptually; while it defines categories, the summary doesn’t indicate numeric thresholds, configuration tables, or detailed mappings beyond general classification, so it’s treated as conceptual rather than expert configuration/best-practices content. |
+| [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) | 0.50 | Conceptual explanation of prompt injection attacks and Prompt Shields; description doesn’t indicate numeric thresholds, configuration tables, or detailed error mappings; more of a conceptual safety feature overview. |
+| [Protected material detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/protected-material) | 0.50 | Explains what protected material detection does and types of content flagged; summary doesn’t show specific configuration parameters, numeric thresholds, or detailed mappings that would qualify as expert configuration or best-practices content. |
 | [Content Safety containers overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/container-overview) | 0.45 | Containers overview; conceptual explanation of using containers and hybrid architectures, but summary doesn’t show specific configuration parameters or deployment matrices. |
 | [Use custom categories (rapid) (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/custom-categories-rapid) | 0.45 | How-to for custom categories (rapid); summary notes region availability and incident definition but doesn’t clearly indicate detailed config tables or numeric limits. |
+| [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | 0.40 | FAQ likely mixes conceptual and support information but description/summary doesn’t indicate detailed error codes, configs, or numeric limits; without clear evidence of such specifics, it’s treated as non-expert overview/support content. |
 | [Content Moderator REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/api-reference) | 0.40 | API reference summary mentions available APIs but does not show specific parameter tables, limits, or error codes in the provided text. |
 | [Custom categories (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/custom-categories) | 0.40 | Conceptual overview of custom categories; summary doesn’t show specific configuration parameters or limits. |
 | [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness) | 0.40 | Conceptual description of groundedness detection; mentions embeddings and formatting but no specific parameter tables or numeric thresholds in summary. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/language-support) | 0.40 | Language support list likely contains ISO codes, but summary only mentions using ISO 639-3 codes conceptually without detailed tables or constraints. |
-| [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) | 0.40 | Conceptual explanation of Prompt Shields and prompt attacks; summary doesn’t show concrete config parameters, limits, or error mappings. |
-| [Protected material detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/protected-material) | 0.40 | Conceptual overview of protected material detection; summary doesn’t show concrete limits, configs, or error codes. |
 | [Task Adherence](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/task-adherence) | 0.40 | Conceptual description of Task Adherence feature and objectives; no explicit configuration tables or numeric thresholds indicated. |
 | [Blocklists](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-blocklist) | 0.35 | Quickstart for text blocklists; summary indicates basic usage, not detailed configuration matrices or limits. |
 | [Image moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-image) | 0.35 | Quickstart for image analysis; summary references harm categories and input limits elsewhere but doesn’t expose numeric limits or config tables itself. |
@@ -123,8 +145,7 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Text moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/text-moderation-api) | 0.30 | Text moderation overview; summary is conceptual and deprecation-focused, without detailed configs, limits, or troubleshooting mappings. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest) | 0.30 | Encryption at rest overview; summary is high-level and lacks specific encryption configuration options or key management details. |
 | [Use Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.25 | Portal overview (classic) for Content Safety; primarily an interface/feature overview without detailed limits, configs, or troubleshooting mappings in summary. |
-| [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | 0.20 | FAQ page likely contains general Q&A, conceptual clarifications, and support links rather than detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types. |
-| [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level service overview and marketing-style description without concrete limits, configs, or error details. |
+| [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level overview of Azure AI Content Safety; describes what the service does without specific limits, configs, or product-specific numeric details. |
 | [REST API samples in C#](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-rest) | 0.20 | Code samples via REST; summary does not show specific configuration parameters, limits, or error codes. |
 | [Using the client library or REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/client-libraries) | 0.20 | Client library quickstart; summary is conceptual and does not expose product-specific configuration tables or limits. |
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | High-level overview and deprecation notice for Content Moderator; no specific limits, configs, or error details. |

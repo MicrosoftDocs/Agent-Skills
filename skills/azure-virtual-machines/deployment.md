@@ -12,6 +12,7 @@
 | Migrate Azure availability sets to VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-migrate-to-scale-sets |
 | Migrate ADE-encrypted VMs to encryption at host | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate |
 | Copy incremental managed disk snapshots across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-copy-incremental-snapshot-across-regions |
+| Deploy Azure managed disks with ZRS redundancy | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-zrs |
 | Export ARM templates for resource groups with VM extensions | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/export-templates |
 | Migrate from Azure HBv2 virtual machines before retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-series-overview |
 | Upgrade Azure Disk Encryption on existing disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-upgrade |
@@ -19,7 +20,6 @@
 | Migrate Linux VMs to Azure Premium Storage with Site Recovery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/migrate-to-premium-storage-using-azure-site-recovery |
 | Deploy GPU-accelerated ThinLinc Linux VDI on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/thinlinc-linux-vdi |
 | Configure rolling deployments to Linux VMs with Azure Pipelines | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-devops-azure-pipelines-classic |
-| Run wave-based migration to Azure v6/v7 VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-migrate |
 | Move VM maintenance configurations between Azure regions | https://learn.microsoft.com/en-us/azure/virtual-machines/move-region-maintenance-configuration |
 | Move resources tied to VM maintenance configurations across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/move-region-maintenance-configuration-resources |
 | FAQ for moving Azure VMs from regional to zonal availability | https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-faq |

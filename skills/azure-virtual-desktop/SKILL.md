@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AVD host pools, autoscale, FSLogix profiles, MSIX App Attach, or Teams optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring host pools, autoscale, FSLogix profiles, MSIX App Attach, Teams optimization, or AVD SSO, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent updates, autoscale, connectivity, session host health, graphics/Teams performance, MSIX App Attach, and using logs/Insights for troubleshooting. |
 | Best Practices | L54-L65 | Best practices for scaling, validating, and updating AVD host pools; handling Advisor and Start VM on Connect, proxy usage, FAQs, and Windows Enterprise multi-session configuration. |
 | Decision Making | L66-L81 | Planning and choosing AVD deployment models, autoscale, regions, data locations, storage, licensing, management tools, and estimating/optimizing AVD and Insights costs |
-| Architecture & Design Patterns | L82-L89 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
-| Limits & Quotas | L90-L95 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L96-L117 | Securing Azure Virtual Desktop: SSO/auth (Entra, AD FS, Kerberos, WebAuthn, MFA, external IDs), RBAC/roles, clipboard/redirection policies, watermarking, screen capture, Purview, and security best practices. |
-| Configuration | L118-L177 | Configuring AVD session hosts, images, autoscale, networking, RDP features/redirection, licensing, app attach, Teams/Office, language packs, monitoring, and client connection settings. |
-| Integrations & Coding Patterns | L178-L184 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L185-L193 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/ConfigMgr. |
+| Architecture & Design Patterns | L82-L90 | Patterns for designing AVD deployments: stateless hosts with ephemeral disks, DR architectures, FSLogix profile design, RDP Multipath connectivity, and automated scaling with Logic Apps. |
+| Limits & Quotas | L91-L96 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
+| Security | L97-L118 | Securing Azure Virtual Desktop: SSO/auth (Entra, AD FS, Kerberos, WebAuthn, MFA, external IDs), RBAC/roles, clipboard/redirection policies, watermarking, screen capture, Purview, and security best practices. |
+| Configuration | L119-L178 | Configuring AVD environments: images, autoscale, networking, RDP/peripheral redirection, licensing, app attach, Teams/Office, language packs, monitoring, and client/host pool behavior. |
+| Integrations & Coding Patterns | L179-L185 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
+| Deployment | L186-L194 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/ConfigMgr. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -85,6 +85,7 @@ This skill requires **network access** to fetch documentation content:
 | Use ephemeral OS disks for stateless AVD workloads | https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy/session-hosts/ephemeral-os-disks |
 | Design disaster recovery architecture for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/disaster-recovery-concepts |
 | Design AVD user profile management with FSLogix containers | https://learn.microsoft.com/en-us/azure/virtual-desktop/fslogix-profile-containers |
+| Use RDP Multipath to optimize Azure Virtual Desktop connectivity | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath |
 | Use Automation and Logic Apps to scale AVD session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/scaling-automation-logic-apps |
 
 ### Limits & Quotas
@@ -148,7 +149,6 @@ This skill requires **network access** to fetch documentation content:
 | Publish applications with RemoteApp in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/publish-applications-stream-remoteapp |
 | Configure supported RDP properties for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-properties |
 | Configure QoS policies for Azure Virtual Desktop RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-quality-of-service-qos |
-| Understand and plan RDP Shortpath for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath |
 | Configure audio and video redirection over RDP for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-audio-video |
 | Configure RDP camera and video redirection | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-camera-webcam-video-capture |
 | Configure RDP clipboard redirection settings | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-clipboard |
@@ -156,10 +156,11 @@ This skill requires **network access** to fetch documentation content:
 | Configure RDP location redirection for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-location |
 | Configure MTP/PTP device redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-plug-play-mtp-ptp |
 | Configure RDP printer redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers |
+| Configure scanner redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-scanners |
 | Configure serial and COM port redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-serial-com-ports |
 | Configure smart card redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-smart-cards |
 | Configure USB redirection on Windows RDP clients | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-usb |
-| Configure peripheral and resource redirection over RDP for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-remote-desktop-protocol |
+| Configure RDP peripheral and resource redirection | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-remote-desktop-protocol |
 | Use advanced features of the Windows Remote Desktop client for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/client-features-windows-msrdc |
 | Connect to Azure Virtual Desktop using the Windows Remote Desktop client | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/connect-windows-cloud-services |
 | Enable enhanced RemoteApp windowing in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements |

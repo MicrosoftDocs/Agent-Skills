@@ -50,8 +50,8 @@ use_when: Use when planning Azure landing zones, AVD, AVS, SAP, Oracle, AKS, Arc
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 361
+- **Updated Pages**: 0
+- **Unchanged**: 362
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
@@ -71,11 +71,6 @@ use_when: Use when planning Azure landing zones, AVD, AVS, SAP, Oracle, AKS, Arc
 | *(Unclassified)* | 9 | 2.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Sovereignty](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy)
-  - Updated: 2026-09-04T18:06:00.000Z → 2026-09-10T14:08:00.000Z
 
 ## Classified Pages
 

@@ -25,17 +25,17 @@
 | Customize VM watch settings and collectors on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/configure-vm-watch |
 | Configure and create Azure Compute Galleries | https://learn.microsoft.com/en-us/azure/virtual-machines/create-gallery |
 | Configure custom data for Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/custom-data |
+| Convert Azure managed disks between storage types | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-convert-types |
 | Configure and deploy Azure Premium SSD v2 disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2 |
-| Deploy zone-redundant managed disks (ZRS) | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-zrs |
 | Enable on-demand bursting for Premium SSD disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-bursting |
-| Configure and deploy Azure Ultra SSD managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd |
-| Use Azure disk metrics and bursting metrics | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-metrics |
+| Configure and tune Azure Ultra Disks for VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd |
+| Use Azure disk performance and bursting metrics | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-metrics |
 | Convert managed disks from LRS to ZRS redundancy | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-migrate-lrs-zrs |
 | Configure per-disk resiliency behavior for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-per-disk-resiliency |
 | Enable and manage per-disk resiliency on managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-per-disk-resiliency-configure |
-| Change performance tiers for Azure Managed Disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-tiers |
-| Enable and configure Azure shared managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable |
-| Configure torn-write prevention on Linux managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention |
+| Change performance tiers for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-tiers |
+| Enable and configure Azure managed shared disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable |
+| Configure atomic writes to prevent torn writes on Azure disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention |
 | Check supported OS images for Azure NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface |
 | Configure and deploy Azure VMs with ephemeral OS disks | https://learn.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks-deploy |
 | Configure Azure Monitor Dependency agent extension for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-linux |
@@ -100,6 +100,7 @@
 | Manage and restore Azure VMs from restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/manage-restore-points |
 | Export Compute Gallery image versions to managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disk-from-image-version |
 | Configure Marketplace purchase plans for gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/marketplace-images |
+| Configure in-place SCSI to NVMe conversion for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/scsi-to-nvme-migration |
 | Reference monitoring metrics and logs for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
 | Convert Azure Linux VM disks from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
 | Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |

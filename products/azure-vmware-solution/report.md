@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   configuration: 'Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores,
     backup, monitoring/alerts, HCX/Cloud Director, Arc/Run Command, and performance/placement
@@ -16,9 +16,8 @@ category_descriptions:
   deployment: Guides for planning and deploying AVS for production, including Horizon/Citrix
     VDI, JetStream DR, VMware Cloud Director, and migrating SQL (Always On, FCI, standalone)
     to Azure VMware Solution.
-  troubleshooting: 'Diagnosing and fixing AVS issues: deployment failures, DR/VM recovery
-    problems, platform run command errors, and workarounds for common Azure VMware
-    Solution faults.'
+  troubleshooting: 'Diagnosing and fixing AVS issues: deployment failures, known platform
+    problems, DR/replication errors for VMs, and troubleshooting AVS Run Command execution.'
   best-practices: Guidance on securing and safely operating AVS private clouds, plus
     tuning NSX/HCX scale and performance for efficient, reliable VMware workload migrations.
   integrations: Guides for integrating AVS with Azure services (storage, backup, monitoring,
@@ -32,15 +31,15 @@ skill_description: Expert knowledge for Azure VMware Solution development includ
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when configuring AVS networking/storage, HCX migrations, Horizon/VDI, vSAN clusters,
   or Azure-integrated backups, and other Azure VMware Solution related development
-  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Nutanix
-  (use azure-nutanix), Azure Red Hat OpenShift (use azure-redhat-openshift), SAP HANA
-  on Azure Large Instances (use azure-sap).
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Stack
+  Edge (use azure-stack-edge), Azure Nutanix (use azure-nutanix), Azure Red Hat OpenShift
+  (use azure-redhat-openshift).
 use_when: Use when configuring AVS networking/storage, HCX migrations, Horizon/VDI,
   vSAN clusters, or Azure-integrated backups, and other Azure VMware Solution related
   development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Nutanix (use azure-nutanix), Azure Red Hat OpenShift (use azure-redhat-openshift),
-  SAP HANA on Azure Large Instances (use azure-sap).
+  Stack Edge (use azure-stack-edge), Azure Nutanix (use azure-nutanix), Azure Red
+  Hat OpenShift (use azure-redhat-openshift).
 ---
 # Azure VMware Solution Crawl Report
 
@@ -53,10 +52,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 142
-- **Deleted Pages**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
 ## Classification Statistics
@@ -76,13 +75,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Azure VMware Solution license-included service retirement, using portable VCF and other options](https://learn.microsoft.com/en-us/azure/azure-vmware/license-included-service-retirement)
-
-### Deleted Pages
-
-- ~~AVS License-included Service Retirement, using portable VCF and other options~~ (https://learn.microsoft.com/en-us/azure/azure-vmware/license-included-service-retirement)
+- [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues)
+  - Updated: 2026-08-11T08:00:00.000Z → 2026-09-14T08:00:00.000Z
 
 ## Classified Pages
 
@@ -103,6 +99,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Rotate cloudadmin credentials](https://learn.microsoft.com/en-us/azure/azure-vmware/rotate-cloudadmin-credentials) | security | 0.75 | Provides concrete operational security guidance for rotating vCenter Server and NSX cloud admin credentials in Azure VMware Solution, including side effects (connected services breaking, account lockout) and required steps. This is product-specific identity/credential management, fitting the security category. |
 | [Troubleshoot Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/troubleshoot-run-command) | troubleshooting | 0.75 | Explicitly focused on viewing status and troubleshooting Run Command executions in AVS. Such pages typically map specific Run Command errors and statuses to causes and resolutions, which fits the troubleshooting pattern (symptom → cause → solution) and contains product-specific diagnostic guidance not derivable from general knowledge. |
 | [Enable VMware HCX access over the internet](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-hcx-access-over-internet) | integrations | 0.72 | Describes configuring HCX over public IP, pairing HCX sites, and creating a service mesh between on-premises and AVS. This is a product-specific integration pattern with detailed configuration steps and parameters for HCX and AVS networking, which qualifies as an integration/coding pattern. |
+| [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues) | troubleshooting | 0.72 | Page is a catalog of current known issues with Azure VMware Solution, each with specific symptoms and workarounds/resolution guidance, fitting a symptom → workaround pattern that constitutes product-specific troubleshooting knowledge not inferable from general training. |
 | [Use VMware HCX Run Commands](https://learn.microsoft.com/en-us/azure/azure-vmware/use-hcx-run-commands) | configuration | 0.72 | Page documents the available VMware HCX Run Commands and how to use them via AVS-specific PowerShell cmdlets, which is product- and platform-specific configuration/integration detail not generally known from training. |
 | [Attach Azure Elastic SAN datastores to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-elastic-san) | integrations | 0.70 | Page describes product-specific steps and configuration details for using Azure Elastic SAN as backing storage for Azure VMware Solution via iSCSI/VMFS, including how to attach volumes as datastores to AVS clusters. This is an integration pattern between two Azure services with concrete configuration behavior rather than just conceptual guidance. |
 | [Attach Azure NetApp Files datastores to Azure VMware Solution hosts](https://learn.microsoft.com/en-us/azure/azure-vmware/attach-azure-netapp-files-to-azure-vmware-solution-hosts) | configuration | 0.70 | How-to for attaching Azure NetApp Files NFS datastores to Azure VMware Solution hosts; likely includes product-specific configuration parameters (volume properties, datastore settings, mount options) and constraints unique to AVS+ANF integration, which are not generic knowledge. |
@@ -134,7 +131,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Hub and spoke](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-hub-and-spoke) | architecture-patterns | 0.70 | Architecture guidance for integrating Azure VMware Solution into a hub-and-spoke topology in hybrid environments. Likely includes product-specific network patterns, routing considerations, and when to use particular connectivity options, which are detailed, service-specific design decisions beyond generic hub-and-spoke concepts. |
 | [Install Cloud Backup for Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-vmware/install-cloud-backup-virtual-machines) | integrations | 0.70 | Covers installing a specific Cloud Backup for Virtual Machines plug-in within Azure VMware Solution to back up Azure NetApp Files datastores and VMs. This is a product-specific integration pattern between AVS and NetApp, likely including configuration steps and parameters unique to this integration, which qualifies as integrations-focused expert knowledge. |
 | [Internet connectivity design considerations](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-design-public-internet-access) | architecture-patterns | 0.70 | Network design considerations and solutions for AVS-specific use cases constitute product-specific architecture patterns. |
-| [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues) | troubleshooting | 0.70 | A 'known issues' page typically lists concrete symptoms, affected features, and workarounds or resolutions for Azure VMware Solution. That structure aligns with troubleshooting (symptom → cause/workaround) and contains product-specific, time-bound expert knowledge that an LLM is unlikely to know from training. |
 | [License SQL Server, Windows Server and Linux in Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/license-sql-windows-in-avs) | decision-making | 0.70 | Provides detailed, product-specific licensing considerations for SQL Server, Windows Server, and Linux on Azure VMware Solution, including how Azure Hybrid Benefit applies and compliance implications. This is specialized decision guidance not derivable from generic knowledge. |
 | [Migrate](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-migrate) | configuration | 0.70 | Contains product-specific behavior (ICMP disabled, interaction with default routes) and configuration steps for Managed SNAT. |
 | [Migrate SQL Server failover cluster to Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/migrate-sql-server-failover-cluster) | deployment | 0.70 | Describes required use of VMware HCX due to lack of Hybrid Linked Mode support and HCX limitations for failover clusters; these are product-specific deployment constraints not generally known. |

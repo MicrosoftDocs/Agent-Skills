@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 165
+- **Updated Pages**: 0
+- **Unchanged**: 171
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -69,21 +69,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | *(Unclassified)* | 45 | 26.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter)
-  - Updated: 2026-06-30T05:18:00.000Z → 2026-09-10T22:03:00.000Z
-- [Associate with a network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-network-security-perimeter)
-  - Updated: 2026-06-30T05:18:00.000Z → 2026-09-10T22:03:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspire)
-  - Updated: 2025-12-31T06:11:00.000Z → 2026-09-09T22:11:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspire)
-  - Updated: 2026-01-18T18:12:00.000Z → 2026-09-09T22:11:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspire)
-  - Updated: 2025-12-31T06:11:00.000Z → 2026-09-09T22:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview)
-  - Updated: 2026-08-12T17:21:00.000Z → 2026-09-04T08:00:00.000Z
 
 ## Classified Pages
 

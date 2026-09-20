@@ -1,9 +1,9 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building runbooks, DSC/Hybrid Workers, Entra/RBAC auth, webhooks/email integrations, or AMA-based tracking, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure DevOps (use azure-devops), Azure Resource Manager (use azure-resource-manager).
+description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building runbooks, DSC configs, Hybrid Runbook Workers, managed identities, or Automation deployments, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure DevOps (use azure-devops), Azure DevTest Labs (use azure-devtest-labs).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Automation Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L56-L63 | Guidance on choosing runbook types and planning migrations: Orchestrator to Automation, Log Analytics to AMA, agent to extension workers, and Run As accounts to managed identities. |
 | Limits & Quotas | L64-L71 | Limits, quotas, and version details for Azure Automation: DSC extension history, Automation account capacity, job/runbook limits, and Change Tracking/Inventory support matrix with AMA. |
 | Security | L72-L92 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security best practices. |
-| Configuration | L93-L134 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, schedules, modules/packages, alerts, policies, and integrations (VS Code, source control, ARM, Azure Monitor). |
+| Configuration | L93-L134 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, alerts, schedules, modules/packages, policies, networking, and deployment/integration settings. |
 | Integrations & Coding Patterns | L135-L147 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks, email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with managed identities |
 | Deployment | L148-L152 | Guides for deploying Automation resources: setting up DSC continuous deployment with Chocolatey and installing/configuring Windows and Linux Hybrid Runbook Worker agents (agent- and extension-based). |
 
@@ -112,7 +112,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure network requirements for Azure Automation components | https://learn.microsoft.com/en-us/azure/automation/automation-network-configuration |
 | Author and manage Automation runbooks using VS Code | https://learn.microsoft.com/en-us/azure/automation/automation-runbook-authoring |
 | Create watcher tasks to track file updates in Automation | https://learn.microsoft.com/en-us/azure/automation/automation-scenario-using-watcher-task |
-| Configure and update Azure PowerShell modules in Automation | https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules |
+| Update Az PowerShell modules in Azure Automation | https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules |
 | Compose DSC configurations using composite resources | https://learn.microsoft.com/en-us/azure/automation/compose-configurationwithcompositeresources |
 | Enforce Hybrid Runbook Worker job execution via policy | https://learn.microsoft.com/en-us/azure/automation/enforce-job-execution-hybrid-worker |
 | Configure Azure Automation regional DNS records for firewalled networks | https://learn.microsoft.com/en-us/azure/automation/how-to/automation-region-dns-records |

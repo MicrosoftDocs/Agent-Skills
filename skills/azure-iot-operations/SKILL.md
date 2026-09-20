@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT/OPC UA data flows, WASM/ONNX transforms, ADX/ADLS sinks, Dapr endpoints, or HA brokers, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr endpoints, TLS/certs, or HA MQTT brokers, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure Digital Twins (use azure-digital-twins).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L66-L71 | Designing Azure IoT architectures using ISA-95 unified namespace concepts and planning layered, segmented networking topologies for secure, scalable IoT Operations deployments. |
 | Limits & Quotas | L72-L78 | Capacity planning for OPC UA sessions and HA, baseline resource usage estimates, and MQTT broker feature, packet, and throughput limits in Azure IoT Operations. |
 | Security | L79-L96 | Securing Azure IoT Operations: TLS and cert management, MQTT auth/authorization, OPC UA trust, private networking, RBAC/ABAC, secret handling, and image authenticity verification. |
-| Configuration | L97-L135 | Configuring IoT data flows end-to-end: sources, transforms (WASM, filters, maps), endpoints (MQTT, ADX, ADLS, OneLake, Kafka, HTTP, OPC UA, cameras), buffering, observability, and metrics. |
+| Configuration | L97-L135 | Configuring IoT data flows, endpoints, transforms, MQTT/OPC UA/connectors, storage, observability, and health/metrics for Azure IoT Operations deployments |
 | Integrations & Coding Patterns | L136-L158 | Patterns and code for integrating IoT data flows: MQTT/OPC UA/media connectors, routing/filters/aggregation, state store, WASM/ONNX, OpenTelemetry, and Dapr/Fabric Real-Time endpoints. |
 | Deployment | L159-L171 | Deploying, upgrading, cloning, and managing Azure IoT Operations instances (test/prod), including secure/private-network setups, image mirroring, Dapr MQTT components, version support, and cleanup. |
 
@@ -114,7 +114,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom WASM transforms in IoT data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graph-wasm |
 | Configure map transforms in Azure IoT data flow graphs | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-map |
 | Configure unified health status reporting to Azure | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/health-status-reporting |
-| Configure observability and dashboards for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-configure-observability |
+| Configure observability for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-configure-observability |
 | Configure advanced MQTT options for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/deployment-plan/deployment-planning-mqtt-options |
 | Configure container registry endpoints for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-registry-endpoint |
 | Configure WebAssembly graph definitions for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-wasm-graph-definitions |

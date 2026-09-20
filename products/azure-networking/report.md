@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-20'
 category_descriptions:
   decision-making: Guidance on choosing Azure network architectures and services (load
     balancing, DDoS, firewall/WAF, hybrid/multicloud, private access, egress/ingress)
     for specific deployment scenarios.
-  architecture-patterns: Designing secure Azure network topologies (hub-spoke, flat,
-    multi-region, Virtual WAN), planning IP addressing/subnets, and applying common
-    workload-specific networking patterns.
+  architecture-patterns: 'Designing secure Azure network topologies: Zero Trust, hub-spoke,
+    flat VNets, IP/subnet planning, multi-region and global transit (Virtual WAN),
+    and common workload network patterns.'
   security: 'Designing and enforcing network security in Azure: firewalls, WAF, NSGs/ASGs,
     secure DNS, DDoS protection, and applying Zero Trust and policy compliance to
     all network paths.'
@@ -21,13 +21,13 @@ category_descriptions:
     best practices.
 skill_description: Expert knowledge for Azure Networking development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, and configuration.
-  Use when designing VNets/VWAN, hub-spoke, Azure Firewall/WAF, DDoS/NSG policies,
-  or fixing Microsoft.Network issues, and other Azure Networking related development
+  Use when designing VNets/VWAN, load balancers, firewalls/WAF, DDoS protection, or
+  Virtual Network Manager policies, and other Azure Networking related development
   tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual
   Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
   Azure Network Watcher (use azure-network-watcher).
-use_when: Use when designing VNets/VWAN, hub-spoke, Azure Firewall/WAF, DDoS/NSG policies,
-  or fixing Microsoft.Network issues, and other Azure Networking related development
+use_when: Use when designing VNets/VWAN, load balancers, firewalls/WAF, DDoS protection,
+  or Virtual Network Manager policies, and other Azure Networking related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 53
+- **Updated Pages**: 1
+- **Unchanged**: 52
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
@@ -64,6 +64,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [Hub-and-spoke topology](https://learn.microsoft.com/en-us/azure/networking/design-guide/hub-spoke)
+  - Updated: 2026-07-01T13:16:00.000Z → 2026-09-16T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -71,7 +76,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Secure application delivery](https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery) | decision-making | 0.82 | The article uses a decision tree to help choose between secure application delivery options (for example, Azure Front Door at the edge vs. services within a virtual network) based on workload characteristics like global distribution and WAF usage. This is explicit technology selection guidance with scenario-based recommendations, fitting the decision-making sub-skill. |
 | [Azure Firewall](https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-firewall) | security | 0.80 | Explains Azure Firewall capabilities and compares Basic, Standard, and Premium tiers with product-specific security and inspection features. |
 | [DNS and private name resolution](https://learn.microsoft.com/en-us/azure/networking/design-guide/dns-security) | security | 0.80 | Provides Azure-specific DNS patterns using private DNS zones, DNS Private Resolver, hybrid forwarding, Private Endpoint integration, and DNS-layer threat protection. |
-| [Hub-and-spoke topology](https://learn.microsoft.com/en-us/azure/networking/design-guide/hub-spoke) | architecture-patterns | 0.80 | Provides detailed guidance on hub-and-spoke topology, shared services, spoke isolation, and routing patterns specific to Azure VNets. |
 | [Hybrid connectivity options](https://learn.microsoft.com/en-us/azure/networking/design-guide/hybrid-connectivity) | decision-making | 0.80 | Provides structured comparison of VPN Gateway vs ExpressRoute across bandwidth, latency, cost, and security to guide connectivity selection and planning. |
 | [Internet ingress](https://learn.microsoft.com/en-us/azure/networking/design-guide/internet-ingress) | decision-making | 0.80 | Compares Public IP, Load Balancer, Application Gateway, Front Door, and Traffic Manager with protocol, scale, and security criteria to guide choice. |
 | [Outbound egress](https://learn.microsoft.com/en-us/azure/networking/design-guide/outbound-egress) | decision-making | 0.80 | Compares NAT Gateway, Azure Firewall, and combined egress patterns with security and predictability considerations to guide outbound access design. |
@@ -80,6 +84,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Troubleshoot failed provisioning state](https://learn.microsoft.com/en-us/azure/networking/troubleshoot-failed-state) | troubleshooting | 0.80 | Article explains specific provisioning states for Microsoft.Network resources and how to troubleshoot when the state is Failed, mapping symptoms to causes and resolutions. |
 | [Web Application Firewall](https://learn.microsoft.com/en-us/azure/networking/design-guide/web-application-firewall) | security | 0.80 | Describes WAF behavior at HTTP layer and compares WAF on Application Gateway vs Front Door, providing Azure-specific web security design guidance. |
 | [Design a secure hub-spoke network](https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network) | architecture-patterns | 0.78 | The article describes a repeatable, product-specific network architecture pattern (minimal hub-spoke topology) for regional web applications, including when to use this pattern and how to combine Application Gateway, WAF, DDoS Protection, Bastion, NSGs, and peering. This is concrete design guidance for Azure networking rather than a generic overview, matching architecture-patterns. |
+| [Hub-and-spoke topology](https://learn.microsoft.com/en-us/azure/networking/design-guide/hub-spoke) | architecture-patterns | 0.78 | The page provides Azure-specific guidance on when to use a hub-and-spoke topology, how to place shared services and isolate spokes, and routing patterns unique to Azure Virtual Network. This is concrete architecture decision guidance (when and how to apply this pattern in Azure) rather than a generic conceptual overview, fitting the architecture-patterns sub-skill. |
 | [Load balancing options](https://learn.microsoft.com/en-us/azure/networking/design-guide/app-delivery) | decision-making | 0.78 | The article focuses on selecting between Azure Load Balancer, Application Gateway, and Front Door for different scenarios, including when to combine them. This is product-specific decision guidance comparing services and helping choose based on workload and traffic distribution needs, which fits the decision-making sub-skill. It goes beyond a generic overview by providing selection guidance, though likely without many hard numeric thresholds. |
 | [Application Gateway WAF](https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-application-gateway-waf) | security | 0.75 | Provides Azure Application Gateway WAF–specific Zero Trust recommendations and configuration checks, constituting detailed product security guidance. |
 | [Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-ddos-protection) | security | 0.75 | Contains Azure DDoS Protection–specific Zero Trust recommendations and verification steps, representing detailed security configuration guidance unique to the product. |

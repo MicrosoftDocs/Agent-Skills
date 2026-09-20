@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   architecture-patterns: Designing Azure Load Testing setups with virtual networks
     and private endpoints, including VNet-injected tests, network isolation, and testing
@@ -10,9 +10,9 @@ category_descriptions:
   configuration: 'Configuring and running Azure Load Testing and Playwright Workspaces:
     test definitions, HTTP/JMeter settings, secrets, monitoring, baselines, reporting/export,
     CI/CD YAML, scheduling, and multi-region load.'
-  troubleshooting: 'Diagnosing and fixing Azure Load Testing issues: failed or flaky
-    tests, debug-mode runs, AI-based insights, browser recorder problems, private
-    endpoint failures, and Playwright workspace/test run errors.'
+  troubleshooting: Diagnosing and fixing Azure Load Testing and Playwright Workspaces
+    issues, including failed or debug runs, browser recorder and private endpoint
+    problems, and remote MCP/test run errors.
   security: 'Securing Azure Load Testing and Playwright Workspaces: RBAC, auth for
     endpoints, managed identities, Key Vault, CMK encryption, certificates, access
     tokens, and Azure Policy controls.'
@@ -22,22 +22,22 @@ category_descriptions:
   integrations: Authoring and running load tests with JMeter, Locust, and Playwright,
     using CSV data and plugins, integrating with VS Code/Copilot, and testing local
     or private apps via Azure Load Testing.
-  limits-quotas: Usage caps, quotas, and configuration for Azure Load Testing and
-    Playwright Workspaces, including monthly limits, free trial restrictions, and
-    how to adjust or review these limits.
+  limits-quotas: Usage caps, service limits, and configuration for Azure Load Testing
+    and Playwright Workspaces, including monthly quotas, free trial restrictions,
+    and how to adjust or review these limits.
   decision-making: Guides for deciding load test resource moves (regions, groups,
     subscriptions) and tuning performance settings like Azure Functions configs and
     Playwright parallelism.
 skill_description: Expert knowledge for Azure App Testing development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Azure Load Testing VNets/private endpoints, JMeter/Locust tests, Playwright
-  Workspaces, CI/CD runs, or quotas, and other Azure App Testing related development
+  running Azure Load Testing, Playwright Workspaces, JMeter/Locust tests, private
+  endpoint/VNet tests, or CI/CD runs, and other Azure App Testing related development
   tasks. Not for Azure Test Plans (use azure-test-plans), Azure DevOps (use azure-devops),
   Azure Pipelines (use azure-pipelines), Azure App Service (use azure-app-service).
-use_when: Use when configuring Azure Load Testing VNets/private endpoints, JMeter/Locust
-  tests, Playwright Workspaces, CI/CD runs, or quotas, and other Azure App Testing
-  related development tasks.
+use_when: Use when running Azure Load Testing, Playwright Workspaces, JMeter/Locust
+  tests, private endpoint/VNet tests, or CI/CD runs, and other Azure App Testing related
+  development tasks.
 confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOps
   (use azure-devops), Azure Pipelines (use azure-pipelines), Azure App Service (use
   azure-app-service).
@@ -46,49 +46,62 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 
 ## Summary
 
-- **Total Pages**: 73
-- **Fetched**: 73
+- **Total Pages**: 78
+- **Fetched**: 78
 - **Fetch Failed**: 0
-- **Classified**: 57
-- **Unclassified**: 16
+- **Classified**: 58
+- **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 6
 - **Updated Pages**: 2
-- **Unchanged**: 71
-- **Deleted Pages**: 0
+- **Unchanged**: 70
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 2.7% |
-| best-practices | 5 | 6.8% |
-| configuration | 17 | 23.3% |
-| decision-making | 4 | 5.5% |
-| deployment | 2 | 2.7% |
-| integrations | 7 | 9.6% |
-| limits-quotas | 4 | 5.5% |
-| security | 9 | 12.3% |
-| troubleshooting | 7 | 9.6% |
-| *(Unclassified)* | 16 | 21.9% |
+| architecture-patterns | 2 | 2.6% |
+| best-practices | 5 | 6.4% |
+| configuration | 17 | 21.8% |
+| decision-making | 4 | 5.1% |
+| deployment | 2 | 2.6% |
+| integrations | 7 | 9.0% |
+| limits-quotas | 4 | 5.1% |
+| security | 9 | 11.5% |
+| troubleshooting | 8 | 10.3% |
+| *(Unclassified)* | 20 | 25.6% |
 
 ## Changes
 
+### New Pages
+
+- [Run Playwright tests at scale](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-run-playwright-tests-at-scale)
+- [Free trial](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-try-playwright-workspaces-free)
+- [Get started with the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp)
+- [Access privately hosted applications](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-access-private-websites)
+- [Remote MCP server for AI agents](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp)
+- [Troubleshoot the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server)
+
 ### Updated Pages
 
-- [Perform advanced diagnostics with Playwright Workspaces reporting](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-advanced-diagnostic-with-playwright-workspaces-reporting)
-  - Updated: 2026-01-07T06:10:00.000Z → 2026-09-08T11:41:00.000Z
+- [What is Playwright Workspaces?](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)
+  - Updated: 2025-08-29T22:11:00.000Z → 2026-09-15T11:42:00.000Z
 - [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity)
-  - Updated: 2026-07-07T11:40:00.000Z → 2026-09-08T11:41:00.000Z
+  - Updated: 2026-09-08T11:41:00.000Z → 2026-09-14T11:41:00.000Z
+
+### Deleted Pages
+
+- ~~Try Playwright Workspaces for free~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-try-playwright-workspaces-free)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-limits-quotas-capacity) | limits-quotas | 0.95 | Explicit service limits article used for capacity planning; will contain numeric limits, quotas, and possibly tier-specific caps—canonical limits-quotas expert knowledge. |
-| [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity) | limits-quotas | 0.95 | Explicitly described as a limits, quotas, and configuration reference for Playwright Workspaces. Such pages typically list exact numerical limits, quotas, and configuration settings that are product- and tier-specific, which qualifies as expert knowledge under the limits-quotas sub-skill. |
+| [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity) | limits-quotas | 0.90 | Described as a limits and configuration reference guide; such pages list numeric limits, quotas, and configuration settings, which are expert, product-specific values. |
 | [Test configuration YAML](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/reference-test-config-yaml) | configuration | 0.90 | Reference for load test configuration YAML; almost certainly contains parameter names, allowed values, defaults, and structure—classic configuration reference content. |
 | [Use service package options](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-use-service-config-file) | configuration | 0.90 | Reference for playwright.service.config.ts / PlaywrightServiceSetup.cs options; will contain option names, allowed values, and defaults—core configuration reference content. |
 | [Troubleshoot issues with browser recording extension](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/troubleshoot-browser-extension) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for the Azure App Testing/Azure Load Testing browser recording extension. It focuses on specific symptoms when recording user scenarios, maps them to likely causes, and provides concrete resolution steps unique to this product and extension. This matches the troubleshooting criteria of symptom → cause → solution for a product-specific tool. |
@@ -105,7 +118,6 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Manage usage limits](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-manage-usage-limits) | limits-quotas | 0.80 | Article is specifically about managing usage limits and monthly Virtual User Hours (VUH); likely includes concrete numeric limits, thresholds, and possibly tier-specific behaviors that qualify as limits/quotas expert knowledge. |
 | [Manage users and roles](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-assign-roles) | security | 0.80 | Uses Azure RBAC with specific role-based access patterns for load testing resources; product-specific security configuration. |
 | [Test secure endpoints](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-test-secured-endpoints) | security | 0.80 | Lists supported authentication options (tokens, credentials, managed identity, certificates) and how to configure them for tests. |
-| [Try Playwright Workspaces for free](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-try-playwright-workspaces-free) | limits-quotas | 0.80 | Free trial article explicitly mentions 30 days and 100 test minutes and likely details other trial-specific caps; numeric usage limits qualify as limits-quotas expert knowledge. |
 | [Use a managed identity](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-use-a-managed-identity) | security | 0.80 | Explains enabling managed identity on the load testing resource and using it to access Key Vault and simulate auth flows. |
 | [Use multiple certificates in tests](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-use-multiple-certificates) | security | 0.80 | Product-specific instructions for using multiple certificates via JKS and Azure Key Vault integration for secure test communication. |
 | [Configure server-side monitoring](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-monitor-server-side-metrics) | configuration | 0.75 | Describes how to add Azure app components and which metrics are collected automatically for server-side monitoring. |
@@ -119,6 +131,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Configure for high scale loads](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-high-scale-load) | best-practices | 0.70 | Provides product-specific recommendations on scaling engine instances and interpreting engine health metrics to optimize high-scale tests. |
 | [Customize tests with JMeter plugins](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-use-jmeter-plugins) | integrations | 0.70 | Covers how to upload and reference JMeter plugins on Azure test engines, including Azure-specific plugin deployment behavior. |
 | [Export test results](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-export-test-results) | configuration | 0.70 | Details export mechanisms (portal, CI artifacts, JMeter backend listener, Locust hooks, storage) specific to Azure Load Testing. |
+| [Free trial](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-try-playwright-workspaces-free) | limits-quotas | 0.70 | Explicitly states free trial duration and usage limits (30 days and 100 browser minutes), which are numeric quotas specific to this service. |
 | [Generate load from multiple regions](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-generate-load-from-multiple-regions) | configuration | 0.70 | Explains how to configure multiple Azure regions and load percentages per region—service-specific configuration details. |
 | [Monitor data reference](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/monitor-load-testing-reference) | configuration | 0.70 | Described as a data reference for what Azure Monitor collects from Azure Load Testing; likely includes tables of metric names, dimensions, and log categories, which are product-specific configuration/telemetry references. |
 | [Optimize Azure Functions](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-optimize-azure-functions) | decision-making | 0.70 | Focuses on optimizing performance and cost using the Flex Consumption plan and a performance optimizer tool; likely includes concrete configuration comparisons (memory size, scale-out settings) and guidance on selecting configurations, fitting decision-making with product-specific thresholds/trade-offs. |
@@ -137,6 +150,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Read data from a CSV file](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-read-csv-data) | integrations | 0.65 | Explains product-specific handling of CSV data for JMeter and Locust scripts within Azure Load Testing. |
 | [Schedule load tests](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-schedule-tests) | configuration | 0.65 | Describes how to configure multiple schedules per test and scheduling behavior—product-specific configuration details. |
 | [Test private endpoints](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-test-private-endpoint) | architecture-patterns | 0.65 | Describes architecture and flow for testing private endpoints via VNet injection, including when and how to use this pattern. |
+| [Troubleshoot the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server) | troubleshooting | 0.65 | Article is explicitly for troubleshooting the remote MCP server and mentions resolving errors and designing reliable flows, implying symptom-to-solution guidance with product-specific issues. |
 | [Create & manage test runs (Azure portal)](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-manage-test-runs) | configuration | 0.60 | Describes how test runs are created, associated, and managed, including Azure-specific run lifecycle behavior. |
 | [Create & manage tests (Azure portal)](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-manage-test) | configuration | 0.60 | Product-specific management operations and configuration options for test objects within an Azure Load Testing resource. |
 | [Create a load test with a Locust script](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-run-load-test-with-locust) | integrations | 0.60 | Describes using Locust Python test scripts with Azure Load Testing, a product-specific integration pattern beyond generic SDK usage. |
@@ -152,9 +166,12 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Monitor Azure Load Testing](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/monitor-load-testing) | 0.40 | Monitoring overview/reference description but no clear indication of specific metric tables, config parameters, or error mappings; likely conceptual/use overview of Azure Monitor integration. |
 | [Perform advanced diagnostics with Playwright Workspaces reporting](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-advanced-diagnostic-with-playwright-workspaces-reporting) | 0.40 | Quickstart focused on using Playwright Workspaces reporting for diagnostics; described as a how-to/tutorial for saving and viewing reports. No indication of detailed limits, config tables, error-code mappings, or product-specific configuration references beyond generic tutorial steps. |
 | [Accelerate Playwright test run and troubleshoot efficiently](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/tutorial-run-end-to-end-tests) | 0.30 | Tutorial for integrating and running tests; primarily step-by-step without clear indication of detailed config matrices, limits, or troubleshooting mappings. |
+| [Access privately hosted applications](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-access-private-websites) | 0.30 | How-to for accessing private websites; summary doesn’t indicate detailed config tables, limits, or error-code-based troubleshooting. |
 | [Create a URL-based load test](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-and-run-load-test) | 0.30 | Portal quickstart for URL-based tests; shows how to create a test but not detailed configuration matrices or quotas. |
 | [Create a test from a recording](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-run-load-tests-from-recording) | 0.30 | Quickstart workflow for recording tests; primarily step-by-step usage without deep config tables or limits. |
 | [Enable notifications](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-notification-rules) | 0.30 | How-to for configuring notifications; description doesn’t indicate detailed parameter tables, limits, or error mappings beyond standard tutorial content. |
+| [Get started with the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp) | 0.30 | Quickstart tutorial for connecting an AI agent to the remote MCP server; likely step-by-step usage, not configuration matrices or error mappings. |
+| [Remote MCP server for AI agents](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp) | 0.30 | Describes automating browsers with the remote MCP server; appears to be conceptual/how-to without explicit config parameter tables or limits. |
 | [Run end-to-end tests at scale](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-run-end-to-end-tests) | 0.30 | Quickstart for running tests at scale; mostly procedural without indication of detailed config matrices, limits, or troubleshooting mappings. |
 | [Set up continuous end-to-end testing](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-end-to-end-testing) | 0.30 | Quickstart for CI integration; likely step-by-step workflow setup rather than deep configuration reference or limits. |
 | [Test App Service web apps](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-load-test-app-service) | 0.30 | Tutorial-style guidance for creating a load test from App Service; no indication of numeric limits, config reference tables, or troubleshooting mappings. |
@@ -162,6 +179,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Key concepts](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/concept-load-testing-concepts) | 0.25 | Conceptual key concepts article; likely definitions and high-level behavior without numeric limits or detailed configs. |
 | [Manage workspaces](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-manage-playwright-workspace) | 0.25 | Portal-based management how-to (create/view/delete workspaces); mostly UI steps without detailed configuration parameter tables or limits. |
 | [Responsible AI FAQs](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/responsible-ai-faq) | 0.20 | Responsible AI FAQ is likely policy/usage/ethics oriented; not focused on technical limits, configuration, or troubleshooting details. |
+| [Run Playwright tests at scale](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-run-playwright-tests-at-scale) | 0.20 | Describes running tests at scale conceptually; no concrete limits, config tables, or troubleshooting mappings. |
 | [What is Azure App Testing?](https://learn.microsoft.com/en-us/azure/app-testing/overview-what-is-azure-app-testing) | 0.20 | High-level overview of Azure App Testing; no detailed limits, configs, or error mappings. |
 | [What is Azure Load Testing?](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/overview-what-is-azure-load-testing) | 0.20 | Conceptual overview of Azure Load Testing; lacks numeric limits, config tables, or troubleshooting details. |
-| [What is Playwright Workspaces?](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces) | 0.10 | Service overview/what-is page for Playwright Workspaces; primarily conceptual and marketing-style description. |
+| [What is Playwright Workspaces?](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces) | 0.20 | High-level overview of Playwright Workspaces; no specific limits, configs, or error details. |

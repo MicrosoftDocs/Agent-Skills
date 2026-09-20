@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-09-20'
 category_descriptions:
   security: Configuring Oracle Transparent Data Encryption (TDE) to use Azure Key
     Vault, including key management, integration steps, and security best practices.
@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 11
+- **Updated Pages**: 1
+- **Unchanged**: 10
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
 
@@ -50,6 +50,11 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 8 | 72.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/database-overview)
+  - Updated: 2026-04-15T22:11:00.000Z → 2026-09-15T05:12:00.000Z
 
 ## Classified Pages
 
@@ -70,4 +75,4 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Network planning](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-network-plan) | 0.30 | Summary only indicates high-level network planning and topology concepts for Oracle AI Database@Azure; no visible evidence of specific numeric limits, configuration parameter tables, or detailed error/decision matrices that would qualify as expert knowledge under the defined sub-skill types. |
 | [Support](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-support) | 0.20 | Support scope and procedures; no technical configuration parameters, limits, or troubleshooting mappings with error codes. |
 | [Overview](https://learn.microsoft.com/en-us/azure/oracle/oracle-azure-overview) | 0.10 | High-level overview of Oracle options on Azure; no concrete limits, configs, error codes, or decision matrices. |
-| [Overview](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/database-overview) | 0.10 | Service overview describing what Oracle AI Database@Azure is; no indication of numeric limits, configs, or decision criteria. |
+| [Overview](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/database-overview) | 0.10 | Page is an overview of Oracle AI Database@Azure describing what the service is and high-level positioning; no numeric limits, configuration tables, error codes, or detailed decision matrices are evident. |

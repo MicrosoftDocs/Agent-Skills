@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MI networking, backups/geo-replication, Entra/Kerberos auth, TDE/Key Vault, or Managed Instance link, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MI networking, backups, HA/geo-replication, Entra/TDE security, or app connectivity/Managed Instance link, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L57 | Diagnosing and fixing Azure SQL Managed Instance issues: capacity/scale errors, connectivity, performance, backups, logs, memory, geo-replication, operations, and Entra Kerberos auth. |
-| Best Practices | L58-L81 | Performance, HA/DR, and security best practices for Azure SQL Managed Instance, including monitoring, tuning, maintenance, failover/geo-replication, migration, and TDE with Key Vault. |
-| Decision Making | L82-L96 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, selecting tiers and subnet sizes, and planning migrations from SQL Server, Oracle, and Db2. |
-| Architecture & Design Patterns | L97-L102 | Connectivity architecture for Azure SQL DB and HA design for Managed Instance, including network topology, routing, failover behavior, and resilience patterns. |
-| Limits & Quotas | L103-L113 | Backup immutability, DTU benchmarks, free-tier caps, memory and In-memory OLTP limits, maintenance windows, operation durations, and overall resource quotas for Azure SQL Managed Instance |
-| Security | L114-L166 | Configuring security for Azure SQL Managed Instance: Entra auth and logins, Windows/Kerberos auth, TLS, TDE and Key Vault, Defender/ATP, auditing, policies, private endpoints, and access control. |
-| Configuration | L167-L217 | Configuring monitoring, backups, maintenance, networking, failover, and modifiable settings for Azure SQL Managed Instance and Database, including alerts, metrics, and connectivity options. |
-| Integrations & Coding Patterns | L218-L240 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
-| Deployment | L241-L256 | Deploying and scaling Managed Instance and Azure SQL DB, regional moves, DR and replication setup, cost control (stop/start), and required virtual network/subnet configuration. |
+| Troubleshooting | L37-L58 | Diagnosing and fixing Azure SQL Managed Instance issues: deployment/scale errors, performance, connectivity, backups, logs, memory, geo-replication, Kerberos auth, and known failures. |
+| Best Practices | L59-L80 | Performance, HA/DR, and security best practices for Azure SQL Managed Instance, including monitoring, tuning, maintenance, failover/geo-replication, migration, and TDE with Key Vault. |
+| Decision Making | L81-L95 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, selecting tiers and subnet sizes, and planning migrations from SQL Server, Oracle, and Db2. |
+| Architecture & Design Patterns | L96-L101 | Connectivity architecture for Azure SQL DB and HA design for Managed Instance, including network topology, routing, failover behavior, and resilience patterns. |
+| Limits & Quotas | L102-L112 | Backup immutability, DTU benchmarks, free-tier caps, memory and In-memory OLTP limits, maintenance windows, operation durations, and overall resource quotas for Azure SQL Managed Instance |
+| Security | L113-L167 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & customer-managed keys, auditing, threat protection, TLS, networking (Private Link), Windows/Kerberos auth, and security best practices. |
+| Configuration | L168-L218 | Configuring monitoring, backups, maintenance, networking, failover, and modifiable settings for Azure SQL Managed Instance and Database, including alerts, metrics, and connectivity options. |
+| Integrations & Coding Patterns | L219-L241 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
+| Deployment | L242-L257 | Deploying and scaling Managed Instance and Azure SQL DB, regional moves, DR and replication setup, cost control (stop/start), and required virtual network/subnet configuration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -51,6 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Monitor XTP in-memory storage and fix capacity error 41823 | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/in-memory-oltp-monitor-space?view=azuresql |
 | Diagnose and fix Managed Instance link issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql |
 | Cancel Azure SQL Managed Instance operations safely | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-cancel?view=azuresql |
+| Diagnose Azure SQL Managed Instance performance with DMVs | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-with-dmvs?view=azuresql |
 | Use Azure Resource Health to diagnose SQL Managed Instance issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-health-to-troubleshoot-connectivity?view=azuresql |
 | Resolve transaction log full errors in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi |
 | Troubleshoot Entra Kerberos Windows auth for SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-troubleshoot?view=azuresql |
@@ -63,7 +64,6 @@ This skill requires **network access** to fetch documentation content:
 | Plan for Azure SQL planned maintenance events | https://learn.microsoft.com/en-us/azure/azure-sql/database/planned-maintenance?view=azuresql |
 | Configure and use read scale-out replicas in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql |
 | Apply security best practices for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/security-best-practice?view=azuresql |
-| Implement customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
 | Identify and resolve Azure SQL query performance issues | https://learn.microsoft.com/en-us/azure/azure-sql/identify-query-performance-issues?view=azuresql |
 | Set up alerts and notifications for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/alerts-create?view=azuresql |
 | Run disaster recovery drills for SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/disaster-recovery-drills?view=azuresql |
@@ -74,7 +74,6 @@ This skill requires **network access** to fetch documentation content:
 | Identify and resolve query bottlenecks on Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/identify-query-performance-issues?view=azuresql |
 | Migrate to Azure SQL MI using Log Replay Service | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql |
 | Apply best practices for Managed Instance link replication | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-best-practices?view=azuresql |
-| Monitor Azure SQL Managed Instance performance using DMVs | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-with-dmvs?view=azuresql |
 | Tune Azure SQL Managed Instance performance for applications | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/performance-guidance?view=azuresql |
 | Apply T-SQL differences for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server?view=azuresql |
 | Use batching to improve Azure SQL application performance | https://learn.microsoft.com/en-us/azure/azure-sql/performance-improve-use-batching?view=azuresql |
@@ -134,11 +133,13 @@ This skill requires **network access** to fetch documentation content:
 | Configure Conditional Access policies for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/conditional-access-configure?view=azuresql |
 | Configure dynamic data masking in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql |
 | Use built-in Azure Policy definitions for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql |
+| Apply security best practices to Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql |
 | Use Azure Policy regulatory compliance controls for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/security-controls-policy?view=azuresql |
 | Configure Advanced Threat Protection for Azure SQL workloads | https://learn.microsoft.com/en-us/azure/azure-sql/database/threat-detection-overview?view=azuresql |
 | Enable TDE with Azure Key Vault for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-configure?view=azuresql |
 | Configure cross-tenant customer-managed keys for Azure SQL TDE | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-cross-tenant?view=azuresql |
 | Use user-assigned managed identities for TDE customer-managed keys | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-identity?view=azuresql |
+| Configure customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql |
 | Secure SQL Managed Instance with Microsoft Entra logins | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/aad-security-configure-tutorial?view=azuresql |
 | Configure SQL Server Audit on Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing?view=azuresql |
 | Create Azure SQL Managed Instance with user-assigned identity | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/authentication-azure-ad-user-assigned-managed-identity-create-managed-instance?view=azuresql |

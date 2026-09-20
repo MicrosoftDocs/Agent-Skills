@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 - **Unclassified**: 90
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 113
-- **Deleted Pages**: 1
+- **Unchanged**: 114
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
 ## Classification Statistics
@@ -63,14 +63,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 90 | 78.9% |
 
 ## Changes
-
-### New Pages
-
-- [Dell PowerScale](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/)
-
-### Deleted Pages
-
-- ~~Dell PowerScale Preview~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/dell/)
 
 ## Classified Pages
 

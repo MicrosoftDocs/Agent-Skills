@@ -1,9 +1,9 @@
 ---
 name: azure-maps
-description: Expert knowledge for Azure Maps development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Azure Maps web/REST SDKs, geocoding/routing, tiles/weather, Spatial IO/WMS, or Bing/Google migrations, and other Azure Maps related development tasks.
+description: Expert knowledge for Azure Maps development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building maps with layers/markers, routing, search/geocoding, weather, or migrating from Bing/Google Maps, and other Azure Maps related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Maps Skill
@@ -24,19 +24,18 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L45 | Best practices for Azure Maps apps: auth/security, routing and search usage, static image rendering, performance tuning, accessibility, and correct copyright/attribution. |
-| Decision Making | L46-L58 | Guidance on choosing Azure Maps pricing, understanding billing, and planning migrations from Bing, Google Maps, Power BI, and older Azure Maps APIs to current Azure Maps services. |
-| Architecture & Design Patterns | L59-L64 | Designing Azure architectures for elevation data services and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA cuOpt for scalable geospatial solutions |
-| Limits & Quotas | L65-L74 | Azure Maps service limits (QPS by tier) and global coverage details for geocoding, rendering/tiles, routing, traffic, and weather data |
-| Security | L75-L89 | Securing Azure Maps access: auth methods (keys, SAS, Entra ID), SPA/daemon/device scenarios, Power BI visual governance, and network isolation with Private Link. |
-| Configuration | L90-L114 | Configuring Azure Maps web maps, styles, layers, data sources, routing models, localization, browser support, and migrating or updating to newer Azure Maps APIs and services. |
-| Integrations & Coding Patterns | L115-L172 | Patterns and code for integrating Azure Maps: Web/REST/Power BI SDK usage, layers and drawing, geocoding/routing/weather, Spatial IO/WMS, and migrations from Bing/Google/legacy SDKs. |
+| Best Practices | L35-L44 | Security, copyright attribution, routing/search tuning, accessibility, and performance optimization guidance for building robust Azure Maps web applications. |
+| Decision Making | L45-L57 | Guidance on Azure Maps pricing, cost planning, and migration from Bing Maps, Google Maps, and Power BI visuals, including routing, imagery, tiles, and SDS replacement with Azure services. |
+| Architecture & Design Patterns | L58-L63 | Designing Azure architectures for elevation data services and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA cuOpt for scalable geospatial solutions |
+| Limits & Quotas | L64-L73 | Coverage limits, data availability, and QPS rate caps for Azure Maps services (geocoding, rendering, routing, traffic, weather), including regional support and tile resolution. |
+| Security | L74-L88 | Securing Azure Maps: auth methods (keys, Entra ID, SAS), SPA/web/daemon/device scenarios, Power BI visual access/residency, and private network access via Private Link. |
+| Configuration | L89-L112 | Configuring Azure Maps Web SDK behavior: map styles, layers, markers, popups, zoom/tiles, localization, routing models, spatial formats, browser support, and API/service migrations. |
+| Integrations & Coding Patterns | L113-L174 | Patterns and code samples for integrating Azure Maps into web, mobile, REST/SDK apps and Power BI, including layers, drawing, clustering, routing, search, weather, and migrations from Bing/Google. |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply authentication best practices for Azure Maps apps | https://learn.microsoft.com/en-us/azure/azure-maps/authentication-best-practices |
-| Render custom data on Azure Maps static raster images | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-render-custom-data |
+| Apply secure authentication best practices in Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/authentication-best-practices |
 | Show required Azure Maps copyright attribution correctly | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-show-attribution |
 | Apply best practices for Azure Maps Route service | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing |
 | Apply best practices for Azure Maps Search | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-search |
@@ -46,15 +45,15 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Select and manage Azure Maps pricing tiers | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier |
+| Choose and manage Azure Maps Gen2 pricing | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier |
 | Plan migration from Bing Maps Enterprise to Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/migrate-bing-maps-overview |
 | Migrate Bing Truck Route API to Azure Maps routing | https://learn.microsoft.com/en-us/azure/azure-maps/migrate-calculate-truck-route |
 | Decide how to migrate from Google Maps to Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps |
 | Migrate Bing Get Imagery Metadata to Azure Maps tiles | https://learn.microsoft.com/en-us/azure/azure-maps/migrate-get-imagery-metadata |
-| Migrate Azure Maps Render v1 to 2024-04-01 | https://learn.microsoft.com/en-us/azure/azure-maps/migrate-render-v1-api |
+| Migrate Azure Maps Render v1.0 to 2024-04-01 | https://learn.microsoft.com/en-us/azure/azure-maps/migrate-render-v1-api |
 | Choose Azure Maps and Azure services to replace Bing SDS | https://learn.microsoft.com/en-us/azure/azure-maps/migrate-sds-data-source-management |
 | Convert Power BI Map visuals to Azure Maps visual | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-conversion |
-| Interpret Azure Maps transaction billing and usage | https://learn.microsoft.com/en-us/azure/azure-maps/understanding-azure-maps-transactions |
+| Plan Azure Maps costs using transaction rules | https://learn.microsoft.com/en-us/azure/azure-maps/understanding-azure-maps-transactions |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -65,7 +64,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand Azure Maps QPS rate limits by pricing tier | https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits |
+| Apply Azure Maps QPS rate limits per service | https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits |
 | Check Azure Maps geocoding coverage by region | https://learn.microsoft.com/en-us/azure/azure-maps/geocoding-coverage |
 | Understand Azure Maps render coverage and tile resolution | https://learn.microsoft.com/en-us/azure/azure-maps/render-coverage |
 | Evaluate Azure Maps routing coverage and capabilities | https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage |
@@ -75,11 +74,11 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure Azure Maps authentication methods securely | https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication |
+| Configure Azure Maps authentication and access control | https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication |
 | Configure authentication methods for Azure Maps accounts | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication |
 | Secure Azure Maps daemon and background applications | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-daemon-app |
 | Secure input-constrained devices using Entra ID and Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-device-code |
-| Secure Azure Maps with SAS token authentication | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-sas-app |
+| Secure Azure Maps apps using SAS tokens | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-sas-app |
 | Secure non-interactive SPAs for Azure Maps with Entra ID | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-spa-app |
 | Secure Azure Maps SPA with interactive user sign-in | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-spa-users |
 | Secure Azure Maps web apps with interactive sign-in | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-webapp-users |
@@ -90,11 +89,10 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure map styles in Azure Maps Web Map Control | https://learn.microsoft.com/en-us/azure/azure-maps/choose-map-style |
+| Configure map styles in Azure Maps Web Control | https://learn.microsoft.com/en-us/azure/azure-maps/choose-map-style |
 | Configure vehicle consumption models in Azure Maps routing | https://learn.microsoft.com/en-us/azure/azure-maps/consumption-model |
 | Create and manage data sources in Azure Maps Web SDK | https://learn.microsoft.com/en-us/azure/azure-maps/create-data-source-web-sdk |
 | Use Azure Maps extended GeoJSON geometries | https://learn.microsoft.com/en-us/azure/azure-maps/extend-geojson |
-| Provision Azure Maps accounts using ARM templates | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-create-template |
 | Configure Azure Maps global data processing regions | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-consent |
 | Add and configure Bubble layers in Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/map-add-bubble-layer |
 | Configure controls on Azure Maps Web maps | https://learn.microsoft.com/en-us/azure/azure-maps/map-add-controls |
@@ -122,8 +120,12 @@ This skill requires **network access** to fetch documentation content:
 | Use data-driven style expressions in Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/data-driven-style-expressions-web-sdk |
 | Use Azure Maps drawing tools events | https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events |
 | Use drawing interactions and shortcuts in Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-interactions-keyboard-shortcuts |
+| Build Azure Maps apps using the C# REST SDK | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-csharp-sdk |
+| Build Azure Maps apps using the Java REST SDK | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-java-sdk |
 | Integrate Azure Maps using the JavaScript REST SDK | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-js-sdk |
-| Request real-time and forecast weather data with Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-request-weather-data |
+| Build Azure Maps apps using the Python REST SDK | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk |
+| Render custom data on Azure Maps static images | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-render-custom-data |
+| Request real-time and forecast weather with Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-request-weather-data |
 | Use Azure Maps Search APIs for geocoding and POI lookup | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-search-for-address |
 | Use image templates and fill patterns in Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-image-templates-web-sdk |
 | Use Azure Maps Web Map Control in web and mobile apps | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control |

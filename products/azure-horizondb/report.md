@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   best-practices: 'Performance and operations guidance for HorizonDB: data prep for
     AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster
@@ -17,9 +17,9 @@ category_descriptions:
     implementing hybrid BM25+vector search, including design choices and query strategies.
   limits-quotas: Managing HorizonDB replica counts, read-scale limits, and how to
     request quota or limit increases for HorizonDB resources.
-  security: 'Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth,
-    access control/roles, users/permissions, data-at-rest encryption, deletion protection,
-    and admin password resets.'
+  security: 'Securing HorizonDB: TLS/SSL setup, cert management, SCRAM auth, access
+    control/roles, user accounts, encryption at rest, deletion protection, password
+    resets, and security best practices.'
   troubleshooting: 'Diagnosing and fixing HorizonDB issues: extension management errors,
     TLS/cert rotation failures, autovacuum tuning, and transaction ID wraparound prevention.'
   deployment: Guides for migrating data by dumping PostgreSQL databases and restoring
@@ -27,13 +27,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Horizondb development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using azure_ai SQL/embeddings, pgvector tuning, Apache AGE graphs, hybrid BM25+vector
-  search, or LangChain, and other Azure Horizondb related development tasks. Not for
-  Azure Cosmos DB (use azure-cosmos-db).
-use_when: Use when using azure_ai SQL/embeddings, pgvector tuning, Apache AGE graphs,
-  hybrid BM25+vector search, or LangChain, and other Azure Horizondb related development
+  tuning pgvector, azure_ai SQL functions, LangChain vector stores, Apache AGE graphs,
+  or hybrid search, and other Azure Horizondb related development tasks. Not for Azure
+  Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure
+  Table Storage (use azure-table-storage).
+use_when: Use when tuning pgvector, azure_ai SQL functions, LangChain vector stores,
+  Apache AGE graphs, or hybrid search, and other Azure Horizondb related development
   tasks.
-confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
+confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database
+  (use azure-sql-database), Azure Table Storage (use azure-table-storage).
 ---
 # Azure Horizondb Crawl Report
 
@@ -42,13 +44,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 - **Total Pages**: 146
 - **Fetched**: 146
 - **Fetch Failed**: 0
-- **Classified**: 110
-- **Unclassified**: 36
+- **Classified**: 111
+- **Unclassified**: 35
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 145
+- **Updated Pages**: 7
+- **Unchanged**: 139
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
@@ -63,28 +65,41 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | deployment | 1 | 0.7% |
 | integrations | 9 | 6.2% |
 | limits-quotas | 2 | 1.4% |
-| security | 11 | 7.5% |
+| security | 12 | 8.2% |
 | troubleshooting | 4 | 2.7% |
-| *(Unclassified)* | 36 | 24.7% |
+| *(Unclassified)* | 35 | 24.0% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Hybrid search](https://learn.microsoft.com/en-us/azure/horizondb/ai/hybrid-search)
-  - Updated: 2026-07-07T08:00:00.000Z → 2026-09-04T08:00:00.000Z
+- [Security overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-overview)
+  - Updated: 2026-07-07T08:00:00.000Z → 2026-09-18T22:08:00.000Z
+- [Access control](https://learn.microsoft.com/en-us/azure/horizondb/security/security-access-control)
+  - Updated: 2026-07-07T08:00:00.000Z → 2026-09-11T08:00:00.000Z
+- [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users)
+  - Updated: 2026-08-12T06:06:00.000Z → 2026-09-11T08:00:00.000Z
+- [Connect with SCRAM authentication](https://learn.microsoft.com/en-us/azure/horizondb/security/security-connect-scram)
+  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-11T08:00:00.000Z
+- [Reset local administrator password](https://learn.microsoft.com/en-us/azure/horizondb/security/security-reset-admin-password)
+  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-11T08:00:00.000Z
+- [Update trusted root certificate for Java](https://learn.microsoft.com/en-us/azure/horizondb/security/security-update-trusted-root-java)
+  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-18T08:00:00.000Z
+- [Data encryption overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-data-encryption)
+  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-11T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Connect with SCRAM authentication](https://learn.microsoft.com/en-us/azure/horizondb/security/security-connect-scram) | security | 0.85 | SCRAM connectivity setup is security-focused and product-specific; likely includes exact configuration parameters, client requirements, and HorizonDB-specific authentication behavior, aligning with the security sub-skill. |
 | [Possible errors when managing extensions](https://learn.microsoft.com/en-us/azure/horizondb/extensions/errors-extensions) | troubleshooting | 0.85 | Explicitly about possible errors when managing extensions; likely lists specific error messages/codes and their resolutions unique to HorizonDB’s extension system. |
 | [Replication / Sending Servers](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-replication-sending-servers) | configuration | 0.85 | Provides specific default value (max_replication_slots=10) and concrete numeric guidance for HA scenarios (minimum 4 slots, example calculation for 5 read replicas and 12 logical slots → 21). This is detailed, product-specific configuration guidance. |
 | [Troubleshoot TLS connection failures](https://learn.microsoft.com/en-us/azure/horizondb/security/security-tls-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article for TLS issues, likely mapping specific error messages and misconfigurations to solutions in the HorizonDB context. |
 | [Prevent and resolve transaction ID wraparound](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-prevent-resolve-wraparound) | troubleshooting | 0.82 | The page provides incident-handling guidance for transaction ID wraparound in Azure HorizonDB, including how to respond to Azure Advisor warnings and PostgreSQL wraparound messages, and how to recover when the database starts refusing commands. It maps specific symptoms and warnings to causes and resolution steps, which is product-specific troubleshooting knowledge rather than generic conceptual content. |
+| [Access control](https://learn.microsoft.com/en-us/azure/horizondb/security/security-access-control) | security | 0.80 | Describes how to manage access using PostgreSQL roles plus Azure-specific features; likely includes concrete RBAC role names, permission scopes, and product-specific access patterns, matching the security sub-skill. |
 | [Add firewall rules](https://learn.microsoft.com/en-us/azure/horizondb/network/how-to-network-cluster-public-access-add-firewall) | configuration | 0.80 | Describes adding firewall rules with specific parameters (IP ranges, Azure services) and HorizonDB portal/CLI commands. |
 | [Connect clients with TLS](https://learn.microsoft.com/en-us/azure/horizondb/security/security-tls-how-to-connect) | security | 0.80 | How-to for configuring TLS connections, likely including specific connection parameters, SSL/TLS settings, and HorizonDB-specific requirements. |
-| [Connect with SCRAM authentication](https://learn.microsoft.com/en-us/azure/horizondb/security/security-connect-scram) | security | 0.80 | Details configuring and connecting via SCRAM in HorizonDB, including client requirements and cluster-side settings specific to the service. |
 | [Connections and Authentication / Connection Settings](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-connections-authentication-connection-settings) | configuration | 0.80 | Explicitly discusses the max_connections parameter behavior tied to compute product selection; this is product-specific configuration logic and likely includes a parameter table with defaults and ranges. |
 | [Customized Options](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-customized-options) | configuration | 0.80 | Describes azure_storage.blob_block_size_mb parameter behavior tied to compute product; this is a HorizonDB-specific configuration parameter with default logic not generally known. |
 | [Function reference](https://learn.microsoft.com/en-us/azure/horizondb/extensions/reference-azure-storage-extension) | integrations | 0.80 | Reference page listing functions of the azure_storage extension, including behavior like adding storage accounts and updating access keys without validation. These are product-specific API/function semantics and parameters, fitting integrations & coding patterns. |
@@ -95,6 +110,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | [Query Tuning / Planner Cost Constants](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-query-tuning-planner-cost-constants) | configuration | 0.80 | Contains product-specific guidance on effective_cache_size default calculation and how it depends on compute product selection, plus advice to adjust when changing products. This is detailed configuration behavior unique to HorizonDB. |
 | [Resource Usage / Memory](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-resource-usage-memory) | configuration | 0.80 | Provides specific details on huge pages (2 MB vs 4 KB), their use for shared memory and shared buffers, and behavior like preventing swapping of shared memory. This is product-specific memory configuration guidance. |
 | [Update firewall rules](https://learn.microsoft.com/en-us/azure/horizondb/network/how-to-network-cluster-public-access-update-firewall) | configuration | 0.80 | Describes updating firewall rules (name, start/end IP, description) with specific configuration fields and commands unique to HorizonDB. |
+| [Update trusted root certificate for Java](https://learn.microsoft.com/en-us/azure/horizondb/security/security-update-trusted-root-java) | security | 0.80 | Describes updating trusted root certificates for Java clients using TLS; likely includes certificate locations, keystore commands, and HorizonDB-specific certificate requirements, which are concrete security configuration details. |
 | [Write-Ahead Log / Checkpoints](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-write-ahead-log-checkpoints) | configuration | 0.80 | Provides product-specific behavior for max_wal_size default calculation based on compute product and guidance to adjust when disk size changes. This is detailed configuration guidance unique to HorizonDB. |
 | [Write-Ahead Log / Settings](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-write-ahead-log-settings) | configuration | 0.80 | Describes wal_buffers default calculation based on compute product and advises adjusting when product changes, referencing specific values tables. This is detailed, HorizonDB-specific configuration guidance. |
 | [Monitor and tune autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/troubleshoot/how-to-autovacuum-monitor-tune) | troubleshooting | 0.78 | The article is focused on diagnosing and correcting autovacuum issues specific to Azure HorizonDB/PostgreSQL. It describes how to detect when autovacuum is falling behind, how to interpret product-specific metrics and behaviors, and how to safely tune autovacuum settings. This is symptom → diagnosis → tuning guidance that goes beyond generic PostgreSQL knowledge and is tailored to Azure HorizonDB operations. |
@@ -103,18 +119,17 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | [Client Connection Defaults / Locale and Formatting](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-client-connection-defaults-locale-formatting) | configuration | 0.75 | Client connection defaults / locale and formatting parameters page; likely contains tables of parameters with default values and allowed settings, which are configuration-specific. |
 | [Configure](https://learn.microsoft.com/en-us/azure/horizondb/extensions/how-to-configure-azure-storage-extension) | configuration | 0.75 | Step-by-step configuration of the Azure Storage extension, including product-specific settings and parameters, qualifies as detailed configuration expert knowledge. |
 | [Configure high availability](https://learn.microsoft.com/en-us/azure/horizondb/high-availability/how-to-configure-high-availability) | configuration | 0.75 | How-to for enabling/disabling HA, with HorizonDB-specific settings for zone-resilient replicas and failover behavior. |
+| [Data encryption overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-data-encryption) | security | 0.75 | Explains how encryption at rest is implemented for HorizonDB, including which data types are encrypted and how Azure Disk Storage SSE is used; these are product-specific security implementation details. |
 | [Delete firewall rules](https://learn.microsoft.com/en-us/azure/horizondb/network/how-to-network-cluster-public-access-delete-firewall) | configuration | 0.75 | Explains deleting firewall rules, likely with exact resource names, commands, and constraints specific to HorizonDB. |
 | [List firewall rules](https://learn.microsoft.com/en-us/azure/horizondb/network/how-to-network-cluster-public-access-list-firewall) | configuration | 0.75 | Shows how to view configured firewall rules, likely via HorizonDB-specific CLI/portal operations and resource schema. |
+| [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users) | security | 0.75 | Covers creating and managing user accounts within HorizonDB clusters; likely includes specific SQL/role patterns and HorizonDB-specific constraints for user management, which are security/identity configuration details. |
 | [Optimize pgvector performance](https://learn.microsoft.com/en-us/azure/horizondb/ai/optimize-pgvector-performance) | best-practices | 0.75 | Explicitly labeled as exploring limitations and tradeoffs of pgvector and how to use partitioning, indexing, and search settings to improve performance. This is product-specific performance tuning guidance and best practices. |
 | [PgBouncer](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-pgbouncer) | configuration | 0.75 | PgBouncer parameter page describes product-specific configuration behavior (visibility tied to pgbouncer.enabled and tier support: General Purpose/Memory Optimized vs Burstable where PgBouncer is unavailable). This is detailed, HorizonDB-specific configuration knowledge rather than generic concepts. |
 | [Public access](https://learn.microsoft.com/en-us/azure/horizondb/network/concepts-network-public) | configuration | 0.75 | Networking overview for public access with details like automatic pg_hba.conf management and connectivity characteristics specific to HorizonDB. |
 | [Restore to a custom restore point](https://learn.microsoft.com/en-us/azure/horizondb/backup-restore/how-to-restore-custom-restore-point) | configuration | 0.75 | Explains PITR behavior (new server in same region, snapshot + WAL replay) with HorizonDB-specific restore process and retention-period constraints. |
-| [Update trusted root certificate for Java](https://learn.microsoft.com/en-us/azure/horizondb/security/security-update-trusted-root-java) | security | 0.75 | Guides updating Java client trusted roots for HorizonDB TLS, with product-specific certificate details and steps. |
 | [Use pg_partman](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-use-pg-partman) | best-practices | 0.75 | Shows how to enable and use pg_partman specifically on HorizonDB, with product-specific guidance and patterns for partitioning large tables to improve performance. |
-| [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users) | security | 0.72 | The page is focused on creating and managing user accounts within an Azure HorizonDB cluster, which is product-specific security/identity configuration. It likely includes concrete steps, role or permission mappings, and HorizonDB-specific security behaviors that go beyond generic RBAC concepts, fitting the 'security' sub-skill. While it references Azure RBAC, the core content is about database-level users, which is detailed, product-specific security configuration. |
 | [AI functions (azure_ai)](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-functions) | integrations | 0.70 | Overview of AI functions in the azure_ai extension; likely includes specific function names, parameters, and integration patterns with Foundry models unique to HorizonDB. |
 | [AI pipelines](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-pipelines) | configuration | 0.70 | AI pipelines are defined declaratively in SQL with durable execution semantics. The page likely documents specific pipeline catalog schema, state fields, retry/scheduling parameters, and configuration options for crash recovery and checkpoints—product-specific configuration details not known from general training. |
-| [Access control](https://learn.microsoft.com/en-us/azure/horizondb/security/security-access-control) | security | 0.70 | Explains using PostgreSQL roles and Azure features for permissions. Likely includes specific role names, permission scopes, and HorizonDB-specific access patterns. |
 | [Adaptive autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-adaptive-autovacuum) | configuration | 0.70 | Page is specifically about adaptive autovacuum parameters; such pages typically contain parameter names, allowed values, and defaults for HorizonDB, which are product-specific configuration details. |
 | [Add or remove replicas](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-add-remove-replica) | limits-quotas | 0.70 | States a specific numeric limit (up to 15 replicas per cluster) and discusses impact on high availability; this is a concrete quota not generally known from training. |
 | [Autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-autovacuum) | configuration | 0.70 | Dedicated autovacuum parameters page; expected to list HorizonDB-specific parameter names, defaults, and ranges, which are expert configuration details. |
@@ -126,7 +141,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | [Connections and Authentication / SSL](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-connections-authentication-ssl) | security | 0.70 | SSL parameters page under connections and authentication; expected to list SSL-related settings, modes, and defaults, which are product-specific security configuration details. |
 | [Connections and Authentication / TCP Settings](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-connections-authentication-tcp-settings) | configuration | 0.70 | TCP settings parameters page; likely contains configuration options (timeouts, keepalive, etc.) with specific values and ranges for HorizonDB. |
 | [Create extensions](https://learn.microsoft.com/en-us/azure/horizondb/extensions/how-to-create-extensions) | configuration | 0.70 | Procedural article on creating extensions after allowlisting. Likely includes specific SQL or HorizonDB commands and configuration steps unique to the service. |
-| [Data encryption overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-data-encryption) | security | 0.70 | Describes how HorizonDB encrypts data at rest using Azure Disk Storage server-side encryption, with product-specific behavior and scope. |
 | [Data preparation for AI](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-data-preparation) | best-practices | 0.70 | Guides cleaning, chunking, embedding, enrichment, and indexing with HorizonDB-supported mechanisms, providing product-specific patterns for AI workloads. |
 | [Develop with LangChain](https://learn.microsoft.com/en-us/azure/horizondb/ai/develop-with-langchain) | integrations | 0.70 | Explains HorizonDB integration with LangChain as a vector store, including similarity metrics and use of pgvector with DiskANN. This is a product-specific integration pattern with configuration and code-level details. |
 | [Developer Options](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-developer-options) | configuration | 0.70 | Developer options parameters page; expected to list HorizonDB-specific developer-related configuration settings and defaults. |
@@ -154,9 +168,10 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | [Quickstart](https://learn.microsoft.com/en-us/azure/horizondb/extensions/quickstart-azure-storage-extension) | integrations | 0.70 | Quickstart examples for the Azure Storage extension provide concrete usage patterns and likely function calls/parameters specific to this integration, which is expert integration knowledge. |
 | [Replication / Primary Server](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-replication-primary-server) | configuration | 0.70 | Explicitly states that Azure HorizonDB 17 has no parameters in this category. This is product/version-specific configuration information about parameter availability. |
 | [Request a quota increase](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-request-quota-increase) | limits-quotas | 0.70 | Discusses default quotas and limits and how to request increases. The full article likely includes specific quota values or resource types tied to HorizonDB. |
-| [Reset local administrator password](https://learn.microsoft.com/en-us/azure/horizondb/security/security-reset-admin-password) | security | 0.70 | Step-by-step instructions for resetting the admin password, likely involving HorizonDB-specific portal/CLI operations and constraints. |
+| [Reset local administrator password](https://learn.microsoft.com/en-us/azure/horizondb/security/security-reset-admin-password) | security | 0.70 | Step-by-step admin password reset for HorizonDB is a security operation; likely includes specific commands, portal paths, and constraints unique to this service, fitting the security sub-skill. |
 | [Scalable vector indexing with DiskANN](https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann) | configuration | 0.70 | Describes pg_diskann extension capabilities, including supported dimensions (up to 16,000), advanced filtering, and index behavior. This implies detailed configuration options and constraints unique to HorizonDB’s DiskANN implementation. |
 | [Scheduled maintenance](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/concepts-maintenance) | best-practices | 0.70 | Provides concrete DO/DON'T guidance (avoid cluster operations during maintenance due to unpredictable outcomes and performance/stability impact). This is product-specific operational best practice for HorizonDB maintenance behavior. |
+| [Security overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-overview) | security | 0.70 | Security overview for a new, niche service likely includes product-specific best practices and controls (network, identity, data protection, recovery) that go beyond generic concepts, fitting the security sub-skill. |
 | [Statistics / Cumulative Query and Index Statistics](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-statistics-cumulative-query-index-statistics) | configuration | 0.70 | Statistics / Cumulative Query and Index Statistics parameters page is a HorizonDB-specific parameter catalog for statistics collection, representing configuration expert knowledge. |
 | [Statistics / Query and Index Statistics Collector](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-statistics-query-index-statistics-collector) | configuration | 0.70 | States that HorizonDB 17 has no parameters in this statistics collector category, which is version-specific configuration information about parameter availability. |
 | [TLS](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-tls) | security | 0.70 | TLS parameters page documents product-specific TLS configuration options (cipher suites, protocol versions, etc.), which are security-focused configuration details. |
@@ -213,7 +228,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db).
 | [Query Store](https://learn.microsoft.com/en-us/azure/horizondb/monitor/concepts-query-store) | 0.40 | Conceptual description of Query Store and its purpose; summary doesn’t indicate specific configuration parameters, limits, or error codes. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/horizondb/development/vs-code-extension/vs-code-connect) | 0.40 | Quickstart for connecting and running queries via VS Code extension. Tutorial-style content, not a comprehensive configuration reference or decision guide. |
 | [Scale compute](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-scale-compute) | 0.40 | Step-by-step scaling instructions; summary mentions restart behavior but no detailed configuration matrices, limits, or parameters. |
-| [Security overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-overview) | 0.40 | Security overview and general best practices; description suggests conceptual guidance rather than specific roles, parameters, or configuration tables. |
 | [Tutorial - Build a semantic search application](https://learn.microsoft.com/en-us/azure/horizondb/ai/build-semantic-search-app) | 0.40 | Primarily a hands-on tutorial for building a semantic search app. While it uses HorizonDB features, tutorials generally show example usage rather than comprehensive configuration tables or decision matrices. |
 | [Identify parameter group connected to a cluster](https://learn.microsoft.com/en-us/azure/horizondb/parameters/how-to-parameter-groups-identify-connected-cluster) | 0.35 | Simple identification of which parameter group is connected; no expert-level configuration or numeric constraints shown. |
 | [Connect and query](https://learn.microsoft.com/en-us/azure/horizondb/connectivity/how-to-connect-query-guide) | 0.30 | Navigation/overview page linking to connection quickstarts; conceptual description of endpoints and compatibility only. |

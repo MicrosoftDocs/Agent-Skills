@@ -1,9 +1,9 @@
 ---
 name: azure-horizondb
-description: Expert knowledge for Azure Horizondb development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using azure_ai SQL/embeddings, pgvector tuning, Apache AGE graphs, hybrid BM25+vector search, or LangChain, and other Azure Horizondb related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db).
+description: Expert knowledge for Azure Horizondb development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when tuning pgvector, azure_ai SQL functions, LangChain vector stores, Apache AGE graphs, or hybrid search, and other Azure Horizondb related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Table Storage (use azure-table-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Horizondb Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L56-L61 | Guidance on choosing between vector, full-text, and hybrid search in HorizonDB, and selecting the optimal vector index type for your data, queries, and performance needs. |
 | Architecture & Design Patterns | L62-L66 | Patterns for building RAG with graph data in HorizonDB and implementing hybrid BM25+vector search, including design choices and query strategies. |
 | Limits & Quotas | L67-L72 | Managing HorizonDB replica counts, read-scale limits, and how to request quota or limit increases for HorizonDB resources. |
-| Security | L73-L87 | Configuring HorizonDB security: TLS/SSL and certificates, SCRAM auth, access control/roles, users/permissions, data-at-rest encryption, deletion protection, and admin password resets. |
-| Configuration | L88-L164 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance, logging, WAL, and resource tuning. |
-| Integrations & Coding Patterns | L165-L177 | Using HorizonDB with AI: azure_ai SQL/embedding/rerank functions, LangChain vector store, building knowledge graphs, and integrating/moving data via the Azure Storage extension. |
-| Deployment | L178-L181 | Guides for migrating data by dumping PostgreSQL databases and restoring them into HorizonDB, including required tools, commands, and compatibility considerations. |
+| Security | L73-L88 | Securing HorizonDB: TLS/SSL setup, cert management, SCRAM auth, access control/roles, user accounts, encryption at rest, deletion protection, password resets, and security best practices. |
+| Configuration | L89-L165 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance, logging, WAL, and resource tuning. |
+| Integrations & Coding Patterns | L166-L178 | Using HorizonDB with AI: azure_ai SQL/embedding/rerank functions, LangChain vector store, building knowledge graphs, and integrating/moving data via the Azure Storage extension. |
+| Deployment | L179-L182 | Guides for migrating data by dumping PostgreSQL databases and restoring them into HorizonDB, including required tools, commands, and compatibility considerations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -76,14 +76,15 @@ This skill requires **network access** to fetch documentation content:
 | Enable deletion protection for HorizonDB clusters | https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-enable-deletion-protection |
 | Manage SSL configuration parameters for HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-connections-authentication-ssl |
 | Configure TLS security parameters in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-tls |
-| Configure access control and roles in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-access-control |
-| Configure SCRAM authentication for HorizonDB connections | https://learn.microsoft.com/en-us/azure/horizondb/security/security-connect-scram |
-| Understand data-at-rest encryption in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-data-encryption |
-| Manage database users and permissions in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users |
-| Reset administrator password in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-reset-admin-password |
+| Configure access control and roles in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-access-control |
+| Configure SCRAM authentication for Azure HorizonDB connections | https://learn.microsoft.com/en-us/azure/horizondb/security/security-connect-scram |
+| Understand and configure data-at-rest encryption in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-data-encryption |
+| Manage database users and accounts in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users |
+| Apply security best practices for Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-overview |
+| Reset administrator passwords securely in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-reset-admin-password |
 | TLS requirements and encryption behavior in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-tls |
 | Configure TLS/SSL client connections to HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/security/security-tls-how-to-connect |
-| Update trusted root certificates for HorizonDB clients | https://learn.microsoft.com/en-us/azure/horizondb/security/security-update-trusted-root-java |
+| Update TLS client certificates for Azure HorizonDB Java apps | https://learn.microsoft.com/en-us/azure/horizondb/security/security-update-trusted-root-java |
 
 ### Configuration
 | Topic | URL |

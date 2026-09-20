@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-09-20'
 category_descriptions:
   integrations: Automating Azure DNS zone/record management and subdomain delegation
     with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure
@@ -39,17 +39,17 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ## Summary
 
-- **Total Pages**: 78
-- **Fetched**: 78
+- **Total Pages**: 77
+- **Fetched**: 77
 - **Fetch Failed**: 0
 - **Classified**: 27
-- **Unclassified**: 51
+- **Unclassified**: 50
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 78
-- **Deleted Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 76
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
 ## Classification Statistics
@@ -57,15 +57,24 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 2.6% |
-| configuration | 9 | 11.5% |
+| configuration | 9 | 11.7% |
 | decision-making | 1 | 1.3% |
-| integrations | 6 | 7.7% |
+| integrations | 6 | 7.8% |
 | limits-quotas | 1 | 1.3% |
-| security | 7 | 9.0% |
+| security | 7 | 9.1% |
 | troubleshooting | 1 | 1.3% |
-| *(Unclassified)* | 51 | 65.4% |
+| *(Unclassified)* | 50 | 64.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records)
+  - Updated: 2025-12-18T08:00:00.000Z → 2026-09-14T17:12:00.000Z
+
+### Deleted Pages
+
+- ~~Private DNS resiliency~~ (https://learn.microsoft.com/en-us/azure/dns/private-dns-resiliency)
 
 ## Classified Pages
 
@@ -138,11 +147,9 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Create a public zone - portal](https://learn.microsoft.com/en-us/azure/dns/dns-getstarted-portal) | 0.30 | Step-by-step portal quickstart; shows basic creation of zone and record without config matrices or product-specific edge cases. |
 | [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) | 0.30 | Step-by-step tutorial for creating an alias record; focuses on how-to flow without detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Host your domain in Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns) | 0.30 | Tutorial for hosting a domain in Azure DNS; step-by-step configuration without detailed parameter or limits reference. |
-| [Private DNS resiliency](https://learn.microsoft.com/en-us/azure/dns/private-dns-resiliency) | 0.30 | High-level resiliency description; summary mentions global replication but not specific numeric SLAs, limits, or configuration parameters. |
 | [Private DNS scenarios](https://learn.microsoft.com/en-us/azure/dns/private-dns-scenarios) | 0.30 | Scenario-based conceptual guidance; no indication of numeric thresholds, decision matrices, or config tables. |
 | [Traffic Manager linked records](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-manager-linked-records) | 0.30 | Traffic Manager Linked Records overview explains the feature and its behavior (removing CNAME redirects, preview status), but the summary shows no error codes, numeric limits, configuration matrices, or detailed settings; it reads as a conceptual/feature overview. |
 | [Create child DNS zones](https://learn.microsoft.com/en-us/azure/dns/tutorial-public-dns-zones-child) | 0.25 | Tutorial for creating child DNS zones; basic procedural content, no expert-level configuration tables. |
-| [Zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records) | 0.25 | Conceptual overview of DNS zones and records; no numeric limits or detailed configuration parameters. |
 | [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip) | 0.20 | Tutorial-style walkthrough for creating an Azure DNS alias record to a public IP; primarily step-by-step UI guidance without detailed configuration tables, limits, or product-specific best-practice nuances. |
 | [Custom domains for Azure resources](https://learn.microsoft.com/en-us/azure/dns/dns-custom-domain) | 0.20 | Walkthrough for integrating Azure DNS with Azure resources and configuring custom domains; focuses on general setup steps, not on numeric limits, configuration parameter matrices, or specialized troubleshooting guidance. |
 | [Delegation with Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-domain-delegation) | 0.20 | High-level explanation of domain delegation to Azure DNS; no numeric limits, config tables, or detailed troubleshooting content. |
@@ -154,3 +161,4 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [What is an Azure Private DNS zone?](https://learn.microsoft.com/en-us/azure/dns/private-dns-privatednszone) | 0.20 | Page is an overview of Azure Private DNS zones (what they are, high-level behavior). The description mentions setup, limits, and best practices, but the provided summary only shows conceptual information about resolution scope and linking to virtual networks. No concrete numeric limits, configuration parameter tables, error codes, or decision matrices are evident, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Azure DNS overview](https://learn.microsoft.com/en-us/azure/dns/dns-overview) | 0.10 | High-level overview of Azure DNS hosting and resolution without specific limits, configuration parameters, error codes, or decision matrices. |
 | [What is Azure DNS Private Resolver?](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) | 0.10 | Conceptual overview of Azure DNS Private Resolver features and benefits; lacks numeric limits, detailed configuration parameters, or troubleshooting mappings. |
+| [Zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records) | 0.10 | Page is an overview of DNS zones and records in Azure DNS with conceptual explanations; no specific numeric limits, configuration parameter tables, error codes, or decision matrices indicating expert-only operational details. |

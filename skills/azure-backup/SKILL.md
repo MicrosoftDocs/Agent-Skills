@@ -1,9 +1,9 @@
 ---
 name: azure-backup
-description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs, AKS, SQL/SAP HANA, Files/Blobs, or automating backups via CLI/PowerShell/REST, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when protecting Azure VMs, AKS, SQL/SAP HANA, Files/Blobs, or configuring backup via CLI/PowerShell/REST, and other Azure Backup related development tasks. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Backup Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L71 | Diagnosing and fixing backup/restore, agent, extension, and vault errors across Azure Backup workloads (VMs, disks, DBs, Kubernetes, Files, SAP, SQL, MABS/DPM), plus performance and status issues. |
+| Troubleshooting | L37-L71 | Diagnosing and fixing Azure Backup failures and restore issues across VMs, disks, databases (SQL, SAP, PostgreSQL, MySQL), files, blobs, AKS, and backup agents/extensions. |
 | Best Practices | L72-L82 | Best practices for securing Azure Backup data and configuring reliable backups/restores for Azure VMs, Hyper-V, SQL Always On, DPM/MABS workloads, and vault-registered servers. |
-| Decision Making | L83-L91 | Guidance on planning Azure Backup costs, choosing storage/reserved capacity, supported VM SKUs, crash-consistent and offline backup options, and migrating classic alerts to Azure Monitor. |
-| Architecture & Design Patterns | L92-L96 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
-| Limits & Quotas | L97-L133 | Backup limits, regional support, behaviors, and support matrices for Azure workloads (VMs, SQL, PostgreSQL/MySQL, AKS, Files, Blobs, SAP, MARS/MABS/DPM), plus metrics, reports, and retention. |
-| Security | L134-L170 | Securing Azure Backup and AKS backups: RBAC and managed identities, CMK encryption, soft delete, private endpoints, MUA/Resource Guard, ransomware protection, and secure restore scenarios. |
-| Configuration | L171-L264 | Configuring, automating, and monitoring Azure Backup for VMs, AKS, SQL, SAP HANA, Files, Blobs, Cosmos DB, disks, and servers, including policies, diagnostics, reporting, and restore workflows. |
-| Integrations & Coding Patterns | L265-L321 | Scripts and API patterns for configuring, running, and restoring Azure Backup across VMs, disks, blobs, files, SQL/PostgreSQL, AKS, plus automation via CLI/PowerShell/REST/Logic Apps. |
-| Deployment | L322-L330 | Configuring and deploying Azure Blob backup via ARM/Bicep, plus MABS v3/v4 workload support matrices and guidance on stopping protection for specific workloads. |
+| Decision Making | L83-L93 | Guidance on choosing Azure Backup options: MARS restore methods, supported VM SKUs, reserved capacity discounts, crash-consistent VM backups, offline backups, and migrating classic alerts to Azure Monitor. |
+| Architecture & Design Patterns | L94-L98 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
+| Limits & Quotas | L99-L135 | Backup limits, support matrices, regions, and behaviors for Azure workloads (VMs, databases, files, disks, blobs, AKS), including retention, metrics, and monitoring constraints. |
+| Security | L136-L172 | Securing Azure Backup and AKS backups: RBAC and managed identities, CMK encryption, soft delete, private endpoints, MUA/Resource Guard, ransomware protection, and secure restore scenarios. |
+| Configuration | L173-L266 | Configuring, automating, and monitoring Azure Backup for VMs, AKS, SQL, SAP HANA, Files, Blobs, Cosmos DB, disks, and servers, including policies, diagnostics, reporting, and restore workflows. |
+| Integrations & Coding Patterns | L267-L323 | Scripts and API patterns for configuring, running, and restoring Azure Backup across VMs, disks, blobs, files, SQL/PostgreSQL, AKS, plus automation via CLI/PowerShell/REST/Logic Apps. |
+| Deployment | L324-L332 | Configuring and deploying Azure Blob backup via ARM/Bicep, plus MABS v3/v4 workload support matrices and guidance on stopping protection for specific workloads. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -44,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve Azure PostgreSQL Flexible Server backup and restore issues | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-troubleshoot |
 | Troubleshoot Azure Database for PostgreSQL backups with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-troubleshoot |
 | Diagnose and fix encrypted Azure VM backup errors | https://learn.microsoft.com/en-us/azure/backup/backup-azure-encrypted-vm-troubleshoot |
-| Troubleshoot Azure Backup Server installation and workload protection | https://learn.microsoft.com/en-us/azure/backup/backup-azure-mabs-troubleshoot |
+| Troubleshoot Microsoft Azure Backup Server errors | https://learn.microsoft.com/en-us/azure/backup/backup-azure-mabs-troubleshoot |
 | Resolve Azure Backup (MARS) agent installation and backup issues | https://learn.microsoft.com/en-us/azure/backup/backup-azure-mars-troubleshoot |
 | Resolve Azure Backup monitoring and reporting issues | https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitor-alert-faq |
 | Fix Azure Backup monitoring and protection status issues | https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitor-troubleshoot |
@@ -83,8 +83,10 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Choose Azure MARS agent restore options | https://learn.microsoft.com/en-us/azure/backup/about-restore-microsoft-azure-recovery-services |
 | Check VM image SKUs supported by Azure Backup policies | https://learn.microsoft.com/en-us/azure/backup/backup-azure-policy-supported-skus |
 | Choose Azure Backup reserved capacity to reduce storage costs | https://learn.microsoft.com/en-us/azure/backup/backup-azure-reserved-pricing-optimize-cost |
+| Decide how Azure Backup reserved capacity discounts apply | https://learn.microsoft.com/en-us/azure/backup/backup-azure-reserved-pricing-overview |
 | Choose and configure crash-consistent Azure VM backups | https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-agentless-multi-disk-crash-consistent-overview |
 | Migrate Azure Backup classic alerts to Azure Monitor alerts | https://learn.microsoft.com/en-us/azure/backup/move-to-azure-monitor-alerts |
 | Choose offline backup options in Azure Backup | https://learn.microsoft.com/en-us/azure/backup/offline-backup-overview |
@@ -99,7 +101,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Azure Backup for AKS FAQs and constraints | https://learn.microsoft.com/en-us/azure/backup/aks-backup-faq |
 | Check Azure Data Lake vaulted backup support limits | https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-support-matrix |
-| Elastic SAN backup regional support and limitations | https://learn.microsoft.com/en-us/azure/backup/azure-elastic-san-backup-support-matrix |
+| Review Elastic SAN backup support matrix and limits | https://learn.microsoft.com/en-us/azure/backup/azure-elastic-san-backup-support-matrix |
 | Review Azure Files backup support limits and settings | https://learn.microsoft.com/en-us/azure/backup/azure-file-share-support-matrix |
 | Check AKS backup region support and limitations | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-support-matrix |
 | Azure Backup service limits, behaviors, and constraints | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-faq |
@@ -111,7 +113,7 @@ This skill requires **network access** to fetch documentation content:
 | Support matrix for PostgreSQL single server backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-support-matrix |
 | Review Azure Backup Server and DPM protection limits | https://learn.microsoft.com/en-us/azure/backup/backup-azure-dpm-azure-server-faq |
 | Understand MARS agent backup limits and behavior | https://learn.microsoft.com/en-us/azure/backup/backup-azure-file-folder-backup-faq |
-| Azure Files backup FAQs with limits and constraints | https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-faq |
+| Azure Files backup FAQs with limits and behaviors | https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-faq |
 | Support matrix for MySQL Flexible Server long-term backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-mysql-flexible-server-support-matrix |
 | Understand Azure VM Backup limits and behaviors | https://learn.microsoft.com/en-us/azure/backup/backup-azure-vm-backup-faq |
 | Check Backup center workload support and limitations | https://learn.microsoft.com/en-us/azure/backup/backup-center-support-matrix |
@@ -124,8 +126,8 @@ This skill requires **network access** to fetch documentation content:
 | Check Azure Disk Backup support and limitations | https://learn.microsoft.com/en-us/azure/backup/disk-backup-support-matrix |
 | Azure Backup limits for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/faq-backup-sql-server |
 | Use Azure Backup metrics and thresholds to monitor backup health | https://learn.microsoft.com/en-us/azure/backup/metrics-overview |
-| Review SAP ASE backup support limits on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/sap-ase-backup-support-matrix |
-| Review SAP HANA backup support matrix on Azure | https://learn.microsoft.com/en-us/azure/backup/sap-hana-backup-support-matrix |
+| Review Azure Backup support limits for SAP ASE | https://learn.microsoft.com/en-us/azure/backup/sap-ase-backup-support-matrix |
+| Check Azure Backup support limits for SAP HANA | https://learn.microsoft.com/en-us/azure/backup/sap-hana-backup-support-matrix |
 | Understand SAP HANA backup limits on Azure VMs | https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm |
 | Protect Azure file shares with soft delete | https://learn.microsoft.com/en-us/azure/backup/soft-delete-azure-file-share |
 | Azure Backup support limits for SQL Server on VMs | https://learn.microsoft.com/en-us/azure/backup/sql-support-matrix |

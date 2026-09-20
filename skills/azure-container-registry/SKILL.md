@@ -1,9 +1,9 @@
 ---
 name: azure-container-registry
-description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing ACR auth, image signing, geo-replication, connected registries, or ACR Tasks, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACR Tasks, geo-replication, connected registries, image signing/verification, or Defender scanning, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Registry Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L68-L73 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
 | Limits & Quotas | L74-L79 | Details on ACR SKUs (Basic/Standard/Premium) feature differences, performance and throughput limits, and how image storage capacity and quotas are calculated and enforced. |
 | Security | L80-L118 | Securing ACR access: auth methods (Entra, managed identity, tokens), RBAC/ABAC, network/firewall/VNet rules, policy/compliance, encryption keys, image signing/verification, and Defender scanning. |
-| Configuration | L119-L139 | Configuring ACR behavior: artifact caching, purge/retention/soft delete, locks, IPv6, tasks (YAML, timers, patching, agent pools), webhooks, and monitoring metrics/logs. |
+| Configuration | L119-L139 | Configuring ACR behavior: caching, retention/soft delete, purge, locks, IPv6, metrics/logs, webhooks, and setting up/automating ACR Tasks (YAML, timers, agent pools, patching). |
 | Integrations & Coding Patterns | L140-L157 | Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, Helm, and webhooks; configuring auth, caching, transfers, image builds, and Notation-based signing/verification. |
 | Deployment | L158-L162 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
 
@@ -133,7 +133,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure multi-step ACR Tasks for build workflows | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-multistep-task |
 | Webhook payload schema for Azure Container Registry events | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook-reference |
 | Configure continuous patching for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/how-to-continuous-patching |
-| Monitoring metrics and logs reference for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference |
+| Reference monitoring metrics and logs for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference |
 | Configure dedicated agent pools for ACR Tasks | https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools |
 | Configure wildcard rules for ACR artifact cache | https://learn.microsoft.com/en-us/azure/container-registry/wildcards-artifact-cache |
 

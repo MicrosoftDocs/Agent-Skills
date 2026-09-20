@@ -1,9 +1,9 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Hub/DPS twins and routing, MQTT/AMQP device connections, Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Hub/DPS routing, device twins, MQTT/AMQP clients, Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L53 | Diagnosing and fixing IoT Hub/DPS connectivity, routing, proxy, and storage issues; interpreting error codes and collecting/using Device Update and device diagnostic logs. |
+| Troubleshooting | L37-L53 | Diagnosing and fixing IoT Hub, DPS, and Device Update issues: connectivity, routing, provisioning errors, error codes, and collecting/using device and service diagnostic logs. |
 | Best Practices | L54-L61 | Best practices for secure, scalable IoT Hub/DPS deployments: device provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection, auto device config, and IoT Hub hardening. |
 | Decision Making | L62-L74 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
 | Architecture & Design Patterns | L75-L81 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Diagnose and fix common Azure DPS provisioning errors | https://learn.microsoft.com/en-us/azure/iot-dps/how-to-troubleshoot-dps |
 | Reference monitoring data for Azure IoT DPS | https://learn.microsoft.com/en-us/azure/iot-dps/monitor-iot-dps-reference |
-| Use Agent Check to diagnose missing Device Update devices | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-check |
+| Diagnose missing devices with Device Update agent check | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-check |
 | Use Device Update diagnostics, error codes, and logs | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-diagnostics |
 | Interpret Device Update for IoT Hub error codes | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-error-codes |
 | Collect and review Device Update diagnostic logs remotely | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-log-collection |

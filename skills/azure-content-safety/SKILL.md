@@ -1,9 +1,9 @@
 ---
 name: azure-content-safety
-description: Expert knowledge for Content Safety in Foundry Control Plane development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Moderator limits, Docker CS containers, blocklists, media provenance, or groundedness APIs, and other Content Safety in Foundry Control Plane related development tasks. Not for Azure Content Understanding in Foundry Tools (use azure-content-understanding), Azure Speech in Foundry Tools (use azure-speech), Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud).
+description: Expert knowledge for Content Safety in Foundry Control Plane development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Safety APIs, Docker containers, text blocklists, media provenance, or groundedness checks, and other Content Safety in Foundry Control Plane related development tasks. Not for Azure Content Understanding in Foundry Tools (use azure-content-understanding), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Content Safety in Foundry Control Plane Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L42-L46 | Tuning Content Safety thresholds, categories, and prompts to reduce misclassifications, plus strategies to balance safety, recall, and user experience. |
 | Decision Making | L47-L52 | Guidance on migrating apps from Content Safety preview to GA and deciding when and how to use limited-access Content Safety features and models. |
 | Architecture & Design Patterns | L53-L57 | Architectural guidance for combining cloud, hybrid, and on-device Azure AI Content Safety, including design patterns, deployment options, and integration strategies. |
-| Limits & Quotas | L58-L66 | Image/term list limits and quotas in Content Moderator, language support for Content Safety, training custom categories, and detecting protected code in generated outputs. |
+| Limits & Quotas | L58-L66 | Limits, quotas, and regional caps for Content Safety/Moderator (image & term lists, custom categories, code protected-material checks) and how to configure or stay within them. |
 | Security | L67-L71 | Details on how Azure AI Content Safety encrypts data at rest, including encryption models, key management options, and compliance/security considerations. |
 | Configuration | L72-L77 | Configuring Content Safety runtime via Docker containers and setting up/managing text blocklists to customize and enforce content filtering rules |
 | Integrations & Coding Patterns | L78-L83 | Using Content Safety APIs in code, including media provenance detection and groundedness checks, with request patterns, parameters, and integration examples. |
@@ -60,9 +60,9 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply image list quotas in Content Moderator | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-lists-quickstart-dotnet |
 | Understand Content Moderator image and term list limits | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-dotnet |
-| Check language support for Azure AI Content Safety | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/language-support |
 | Create and train custom categories with Content Safety | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-custom-categories |
 | Use protected material detection for code outputs | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-protected-material-code |
+| Review Azure AI Content Safety regional limits | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/region-availability |
 
 ### Security
 | Topic | URL |

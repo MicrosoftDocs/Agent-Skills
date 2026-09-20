@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 75
+- **Updated Pages**: 0
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -69,13 +69,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 42 | 54.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
-  - Updated: 2026-08-15T08:00:00.000Z → 2026-09-08T08:00:00.000Z
-- [Service limits and billing](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/service-limits?view=doc-intel-4.0.0)
-  - Updated: 2026-04-30T08:00:00.000Z → 2026-09-09T06:10:00.000Z
 
 ## Classified Pages
 

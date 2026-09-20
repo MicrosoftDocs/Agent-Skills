@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, vector search, multi-region HA, or CI/CD deployments, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Blob Storage (use azure-blob-storage).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using change feed, vector search, multi-region HA, NoSQL/Mongo/Cassandra/PostgreSQL APIs, or bulk SDK ops, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L218-L252 | Limits, quotas, and behaviors for Cosmos DB throughput, partitions, backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache, and PostgreSQL clusters. |
 | Security | L253-L318 | Securing Cosmos DB: encryption, keys, RBAC/Entra ID, network isolation (VNet, Private Link, firewalls), auditing, data masking, TLS, and security best practices across all APIs. |
 | Configuration | L319-L444 | Configuring Cosmos DB and its APIs: throughput, indexing, TTL, backup/restore, fleets, monitoring/logging, SDK tuning, emulators, Mongo/Cassandra/PostgreSQL features, HA, and performance settings. |
-| Integrations & Coding Patterns | L445-L566 | SDK usage, bulk import, change feed, vector search, Kafka/Spark/PostgreSQL/Mongo/Cassandra/Gremlin integrations, migration tools, and sample code for app and data connectivity. |
-| Deployment | L567-L592 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
+| Integrations & Coding Patterns | L445-L571 | SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo, Gremlin, and PostgreSQL APIs. |
+| Deployment | L572-L597 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -539,6 +539,11 @@ This skill requires **network access** to fetch documentation content:
 | Call distributed SQL functions in Azure Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-functions |
 | Use pg_azure_storage extension with Azure Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-pg-azure-storage |
 | Shard data using distributed tables in Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/tutorial-shard |
+| Create Cosmos DB vector index with .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-dotnet |
+| Create Cosmos DB vector index with Go SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-go |
+| Create Cosmos DB vector index with Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-java |
+| Create Cosmos DB vector index with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-python |
+| Create Cosmos DB vector index with TypeScript SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript |
 | Use Azure Cosmos DB with .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet |
 | Use Azure Cosmos DB with Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java |
 | Use Azure Cosmos DB with Node.js SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs |

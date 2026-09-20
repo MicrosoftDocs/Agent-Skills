@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 - **Unclassified**: 53
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 15
-- **Unchanged**: 164
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 181
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -73,44 +73,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | *(Unclassified)* | 53 | 29.3% |
 
 ## Changes
-
-### New Pages
-
-- [HTTP/3 support in Azure Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/http3-quic-support)
-- [Request mirroring](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-request-mirroring-gateway-api)
-
-### Updated Pages
-
-- [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview)
-  - Updated: 2026-08-25T22:15:00.000Z → 2026-09-10T22:03:00.000Z
-- [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2)
-  - Updated: 2026-08-25T22:15:00.000Z → 2026-09-10T08:00:00.000Z
-- [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview)
-  - Updated: 2026-06-24T17:12:00.000Z → 2026-09-08T08:00:00.000Z
-- [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works)
-  - Updated: 2026-08-18T22:40:00.000Z → 2026-09-09T22:11:00.000Z
-- [Application Gateway components](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-components)
-  - Updated: 2026-08-26T17:11:00.000Z → 2026-09-04T08:00:00.000Z
-- [Listeners](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-listeners)
-  - Updated: 2026-08-26T17:11:00.000Z → 2026-09-10T22:03:00.000Z
-- [HTTP settings](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings)
-  - Updated: 2026-05-12T08:00:00.000Z → 2026-09-04T08:00:00.000Z
-- [Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link)
-  - Updated: 2026-08-27T09:10:00.000Z → 2026-09-09T22:11:00.000Z
-- [Backend health](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health)
-  - Updated: 2024-05-30T08:00:00.000Z → 2026-09-08T17:27:00.000Z
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference)
-  - Updated: 2026-07-13T08:00:00.000Z → 2026-08-28T08:00:00.000Z
-- [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm)
-  - Updated: 2026-07-16T08:00:00.000Z → 2026-09-09T08:00:00.000Z
-- [Service mesh integration](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration)
-  - Updated: 2026-07-16T08:00:00.000Z → 2026-09-09T08:00:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/troubleshooting-guide)
-  - Updated: 2026-02-09T06:11:00.000Z → 2026-09-09T08:00:00.000Z
-- [API Specification](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/api-specification-kubernetes)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-09-11T08:00:00.000Z
-- [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes)
-  - Updated: 2026-08-20T08:00:00.000Z → 2026-09-09T22:11:00.000Z
 
 ## Classified Pages
 

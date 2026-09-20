@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   configuration: 'Configuring and monitoring Foundry classic/Agents/Models: hosts,
     compute, networking, storage, evaluators, RAG/vector indexes, Azure OpenAI, tracing,
@@ -48,17 +48,17 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ## Summary
 
-- **Total Pages**: 370
-- **Fetched**: 370
+- **Total Pages**: 369
+- **Fetched**: 369
 - **Fetch Failed**: 0
-- **Classified**: 262
-- **Unclassified**: 108
+- **Classified**: 260
+- **Unclassified**: 109
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 11
-- **Unchanged**: 358
-- **Deleted Pages**: 6
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 368
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-classic/microsoft-foundry-classic.csv`
 
 ## Classification Statistics
@@ -67,54 +67,25 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |------|-------|------------|
 | architecture-patterns | 4 | 1.1% |
 | best-practices | 11 | 3.0% |
-| configuration | 49 | 13.2% |
+| configuration | 48 | 13.0% |
 | decision-making | 23 | 6.2% |
 | deployment | 17 | 4.6% |
-| integrations | 98 | 26.5% |
+| integrations | 97 | 26.3% |
 | limits-quotas | 13 | 3.5% |
 | security | 41 | 11.1% |
 | troubleshooting | 6 | 1.6% |
-| *(Unclassified)* | 108 | 29.2% |
+| *(Unclassified)* | 109 | 29.5% |
 
 ## Changes
 
-### New Pages
-
-- [Quotas and rate limits](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/claude-models-quotas-limits)
-
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/whats-new)
-  - Updated: 2026-05-18T22:09:00.000Z → 2026-09-10T08:00:00.000Z
-- [Azure OpenAI FAQ](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/faq)
-  - Updated: 2026-08-04T22:17:00.000Z → 2026-09-11T22:11:00.000Z
-- [Migrate to OpenAI JavaScript v4.x](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/migration-javascript)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-09-11T22:11:00.000Z
-- [Network security perimeter (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/network-security-perimeter)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-09-10T08:00:00.000Z
-- [Role-based access control (Azure RBAC)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/role-based-access-control)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-09-10T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/whats-new)
-  - Updated: 2026-03-06T23:10:00.000Z → 2026-09-11T22:11:00.000Z
-- [Text data](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/use-your-data)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-09-10T08:00:00.000Z
-- [Migrate from hub-based to Foundry project](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/migrate-project)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-09-10T08:00:00.000Z
-- [Deploy your Azure OpenAI fine-tuned model](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-deploy)
-  - Updated: 2026-04-14T22:13:00.000Z → 2026-06-05T22:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/file-search)
-  - Updated: 2026-03-06T08:00:00.000Z → 2026-09-10T08:00:00.000Z
-- [How to use SharePoint](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/sharepoint-samples)
-  - Updated: 2026-03-06T23:10:00.000Z → 2026-09-11T22:11:00.000Z
+- [Prompt shields](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-prompt-shields)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-09-18T22:15:00.000Z
 
 ### Deleted Pages
 
-- ~~Assistants~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/assistants)
-- ~~Getting started with Assistants~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/assistant)
-- ~~Assistants function calling~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/assistant-functions)
-- ~~Function calling with Azure Logic Apps~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/assistants-logic-apps)
-- ~~Code Interpreter~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/code-interpreter)
-- ~~File search~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/file-search)
+- ~~Work with image models~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/use-image-models)
 
 ## Classified Pages
 
@@ -357,7 +328,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Performance & latency](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/latency) | best-practices | 0.65 | Performance and latency guidance for Azure OpenAI generally includes product-specific recommendations (such as concurrency settings, batching strategies, deployment sizing, and region choices) that go beyond generic advice and provide concrete, service-specific optimization patterns. |
 | [Plan and manage costs for hubs](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/costs-plan-manage) | decision-making | 0.65 | Cost planning article uses Azure pricing calculator and cost analysis; likely includes guidance on which resources drive cost and how to structure deployments for cost control. |
 | [Preference fine-tuning](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-direct-preference-optimization) | configuration | 0.65 | DPO technique as implemented in Foundry; likely includes dataset format, parameter settings, and training configuration specific to this service. |
-| [Prompt shields](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-prompt-shields) | configuration | 0.65 | Explains Prompt Shields, how to enable them in content filter configuration, and describes returned annotations (detected/filtered flags). These are product-specific configuration and response fields, fitting configuration/integrations more than generic concepts. |
 | [Protected material detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-protected-material) | integrations | 0.65 | Explains how the protected material detection filter scans LLM outputs for copyrighted text/code. Likely includes filter configuration options and behavior specific to Foundry’s Guardrails, which are integration/configuration details. |
 | [Rebuild and validate](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/how-to-migrate-prompt-flow-to-agent-framework) | integrations | 0.65 | Walkthrough of exporting Prompt Flow, re-implementing with WorkflowBuilder/Executor, and validating with Azure AI Evaluation SDK; likely includes concrete API/SDK usage and configuration patterns, matching integrations & coding patterns. |
 | [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/models-sold-directly-by-azure-region-availability) | deployment | 0.65 | Region availability and deployment-type matrices for specific models are product- and time-specific details that LLMs won't reliably know; these guide where and how models can be deployed, fitting deployment-focused constraints. |
@@ -369,7 +339,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Upgrade from Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/upgrade-azure-openai) | deployment | 0.65 | Upgrade guide between Azure OpenAI and Foundry resource types likely includes product-specific migration/upgrade constraints (what carries over, what changes, supported paths), which are deployment/migration details not inferable from general training data. |
 | [Vision fine-tuning](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-vision) | best-practices | 0.65 | The page covers dataset requirements, image formats, and best practices for vision fine-tuning of GPT-4o and GPT-4.1 in Azure/OpenAI via Foundry classic. Such guidance typically includes product-specific constraints (supported formats, size/ratio limits, labeling structure) and concrete recommendations unique to this service’s fine-tuning pipeline, which fits the best-practices category and constitutes expert knowledge beyond generic LLM training. |
 | [Vision-enabled chats](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/gpt-with-vision) | integrations | 0.65 | How-to for vision-enabled chat models typically documents request formats, image input parameters, and model-specific options for Azure OpenAI, which are concrete integration details not captured by generic LLM training. |
-| [Work with image models](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/use-image-models) | integrations | 0.65 | Describes how to send images and receive text outputs via Foundry image-to-text models, with product-specific API usage. |
 | [Create a hub using the Azure Machine Learning SDK and CLI](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/create-hub-project-sdk) | configuration | 0.64 | The article uses Azure ML SDK and CLI extensions to create Foundry hubs and related resources, which typically involves specific parameter names, CLI flags, and configuration objects unique to this integration. That aligns best with configuration (detailed command/parameter usage) rather than generic how-to content. |
 | [How to use Deep Research](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/deep-research-samples) | integrations | 0.64 | The article describes how to maintain workloads using the deprecated deep research tool with pinned packages and supported API samples, including specific model versions and preview API versions. This indicates detailed, product-specific integration and configuration patterns (model IDs, API versions, pinned package requirements) that qualify as expert knowledge. It is not just conceptual deprecation info but operational guidance for a specific tool integration, fitting the integrations sub-skill. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/browser-automation) | security | 0.64 | Browser Automation has significant security implications; article likely includes concrete security configuration, restrictions, and safe-use patterns specific to this tool. |
@@ -434,6 +403,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/overview) | 0.30 | Responsible AI overview; primarily conceptual practices and challenges without concrete configuration or limits indicated in the summary. |
 | [Priority processing](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/priority-processing) | 0.30 | Based on the summary, the page explains how to enable and verify priority processing and monitor costs, but there's no evidence of specific numerical limits, tier matrices, or detailed configuration parameter tables. It appears to be a conceptual/how-to article rather than containing expert-only limits, quotas, or product-specific configuration details. |
 | [Process images in a flow](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/flow-process-image) | 0.30 | Processing images in prompt flow sounds like a feature how-to; summary doesn’t show expert-level limits, configs, or troubleshooting patterns. |
+| [Prompt shields](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-prompt-shields) | 0.30 | The page appears to be a conceptual/safety overview of Prompt Shields (how they detect and block adversarial prompts) without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices. It primarily explains what Prompt Shields are and how they work conceptually, which an LLM is likely to approximate from training data. |
 | [Prompt tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/prompt-tool) | 0.30 | Prompt tool article is also an introduction; summary doesn’t indicate expert configuration details, limits, or troubleshooting mappings. |
 | [Prompt transformations](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/prompt-transformation) | 0.30 | Page is a conceptual explanation of prompt transformation for Azure OpenAI image generation; available snippet shows no numeric limits, configuration tables, error codes, or product-specific configuration parameters. It describes what prompt transformation is and why it's needed, not detailed settings, quotas, or troubleshooting mappings. |
 | [Python tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/python-tool) | 0.30 | Python tool article is an introductory how-to; no sign of configuration parameter tables, numeric ranges, or error-code-based troubleshooting. |

@@ -1,9 +1,9 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA auth, KEDA/Dapr scaling, CI/CD deployments, Java microservices, or GPU/AI workloads, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA ingress/scale, Dapr or Functions workloads, GitHub Actions CI/CD, private networking, or GPUs, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps (use azure-spring-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Apps Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L60-L81 | Guides for choosing Container Apps hosting, compute, GPUs, and billing models, plus migration and modernization paths from Functions, Heroku, Java/Spring/Tomcat, and organizing environments. |
 | Architecture & Design Patterns | L82-L87 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
 | Limits & Quotas | L88-L94 | Quotas, limits, and scaling caps for Container Apps, plus how they behave at those limits and how to request quota increases from Azure support. |
-| Security | L95-L133 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), secrets and identities, network controls (NSG, firewall, private endpoints), policies, and security best practices. |
+| Security | L95-L133 | Securing Container Apps: auth (Entra, social, OIDC, mTLS), secrets and certs, private networking, egress control, RBAC/Policy, and best practices for protecting apps and Functions. |
 | Configuration | L134-L170 | Configuring Container Apps environments, networking, ingress, revisions, scaling (KEDA/Dapr/Functions), workload profiles, storage mounts, Java features, and ARM/YAML schemas. |
 | Integrations & Coding Patterns | L171-L194 | Patterns for connecting Container Apps to each other and Azure services, integrating Dapr/Spring/OpenTelemetry, and using code interpreter and dynamic session features. |
 | Deployment | L195-L203 | Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose deployments, Arc-enabled Kubernetes, logging migration, and self-hosted runners/jobs. |
@@ -105,7 +105,7 @@ This skill requires **network access** to fetch documentation content:
 | Set up client certificate (mTLS) auth for Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization |
 | Configure CORS for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/cors |
 | Manage custom domains and TLS certificates in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates |
-| Configure custom domains and managed certificates in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates |
+| Configure custom domains and managed certificates for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates |
 | Use Dapr APP_API_TOKEN for Container Apps requests | https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token |
 | Secure Dapr component connections to Azure services | https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-connect-services |
 | Configure custom environment DNS suffix and TLS in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/environment-custom-dns-suffix |

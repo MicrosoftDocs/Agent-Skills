@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-20'
 category_descriptions:
   decision-making: Guidance on choosing Azure Government vs global, FedRAMP/DoD scope
     and ATO, CSP reseller options, marketplace and DoD regions, and sector-specific
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 39
+- **Updated Pages**: 1
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | *(Unclassified)* | 9 | 23.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
+  - Updated: 2026-09-03T08:00:00.000Z → 2026-09-17T08:00:00.000Z
 
 ## Classified Pages
 
@@ -109,6 +114,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Azure Government portal](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-portal) | 0.30 | Quickstart for connecting via portal; mostly step-by-step UI usage without detailed configuration matrices or product-specific constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-ps) | 0.30 | Quickstart for connecting with PowerShell; procedural steps rather than deep configuration options or expert-only details. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-connect-vs) | 0.30 | Quickstart for connecting with Visual Studio; focuses on basic connection steps, not advanced configuration or constraints. |
-| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/overview of Azure Government and Azure Government Secret product GA status by authorization level; does not list specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. Primarily high-level availability and compliance information rather than detailed expert configuration or troubleshooting guidance. |
+| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/GA overview by authorization level; primarily high-level availability and compliance positioning for Azure Government and Azure Government Secret, without detailed limits, configuration parameters, error codes, or decision matrices with quantified technical criteria. |
 | [What is Azure Government?](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome) | 0.10 | High-level overview of Azure Government capabilities and compliance positioning; no specific limits, configurations, error codes, or detailed technical guidance that meets the expert-knowledge criteria. |
 | [Export controls](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-overview-itar) | - | Content is primarily compliance and export-control overview and references a whitepaper and FAQ. It doesn’t expose product-specific configuration parameters, RBAC roles, or technical decision matrices; it’s high-level guidance about obligations and responsibilities. |

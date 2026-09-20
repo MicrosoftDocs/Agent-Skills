@@ -3,7 +3,7 @@ name: azure-translator
 description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using translate/detect/dictionary APIs, Custom Translator, glossaries, document jobs, or Docker containers, and other Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service), Azure Speech in Foundry Tools (use azure-speech), Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Immersive Reader (use azure-immersive-reader).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Translator Skill
@@ -27,11 +27,11 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L36-L41 | Diagnosing and fixing Azure Translator errors: container startup/runtime issues, usage/FAQ problems, known service bugs, and interpreting HTTP status/error codes for troubleshooting. |
 | Best Practices | L42-L51 | Best practices for preparing training data, training Custom Translator models, using glossaries, building reliable batch document workflows, and operational guidance/FAQs for Azure Translator. |
 | Decision Making | L52-L61 | Guides for choosing Translator models, regions, and infrastructure, and for planning and executing migrations/upgrades between Translator API versions and Custom Translator platforms. |
-| Limits & Quotas | L62-L68 | Language, locale, and feature availability for Azure Translator/Translator Pro, plus text and document size, rate, and usage limits and quotas. |
-| Security | L69-L80 | Securing Azure Translator: auth (keys, Entra ID, SAS, managed identities), firewall/VNet access, customer-managed keys, and secure deployments (incl. Foundry Tools). |
-| Configuration | L81-L102 | Configuring Azure Translator: resource setup, containers, Custom Translator projects, API parameters (translate/detect/dictionary), tagging, profanity filters, alignment, transliteration, and monitoring usage. |
-| Integrations & Coding Patterns | L103-L142 | How to call Translator REST/SDK APIs and containers for text, transliteration, and document translation, manage jobs/status, formats, glossaries, and integrate custom/adaptive models and Power Automate flows. |
-| Deployment | L143-L146 | Running Translator as a Docker container: setup, configuration, authentication, environment variables, and deployment best practices on local or on-prem infrastructure. |
+| Limits & Quotas | L62-L67 | Language, locale, and feature availability for Azure Translator/Translator Pro, plus text and document size, rate, and usage limits and quotas. |
+| Security | L68-L79 | Securing Azure Translator: auth (keys, Entra ID, SAS, managed identities), firewall/VNet access, customer-managed keys, and secure deployments (incl. Foundry Tools). |
+| Configuration | L80-L101 | Configuring Azure Translator: resource setup, containers, Custom Translator projects, API parameters (translate/detect/dictionary), tagging, profanity filters, alignment, transliteration, and monitoring usage. |
+| Integrations & Coding Patterns | L102-L141 | How to call Translator REST/SDK APIs and containers for text, transliteration, and document translation, manage jobs/status, formats, glossaries, and integrate custom/adaptive models and Power Automate flows. |
+| Deployment | L142-L145 | Running Translator as a Docker container: setup, configuration, authentication, environment variables, and deployment best practices on local or on-prem infrastructure. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -64,7 +64,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Check language and feature support in Azure Translator | https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support |
 | Azure Translator text and document service limits | https://learn.microsoft.com/en-us/azure/ai-services/translator/service-limits |
-| Check language and locale support in Translator Pro | https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/language-support |
 
 ### Security
 | Topic | URL |

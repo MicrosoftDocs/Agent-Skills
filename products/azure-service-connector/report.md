@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-20'
 category_descriptions:
   security: 'Managing Service Connector security: required permissions, Microsoft
     Entra role assignments, and configuring auth methods (managed identity, service
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 60
+- **Updated Pages**: 1
+- **Unchanged**: 59
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -62,6 +62,11 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 20 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli)
+  - Updated: 2026-04-17T11:12:00.000Z → 2026-09-14T11:41:00.000Z
 
 ## Classified Pages
 
@@ -128,7 +133,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-aks-connection) | 0.30 | AKS quickstart for Service Connector; focuses on how to create a connection via portal/CLI, not on detailed configuration options, limits, or error-resolution content. |
 | [Azure Spring Apps](https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-spring-cloud-connection) | 0.30 | Quickstart for Azure Spring Apps with Service Connector; mostly procedural steps, no deep configuration parameter tables, limits, or decision matrices. |
 | [High availability](https://learn.microsoft.com/en-us/azure/service-connector/concept-availability) | 0.30 | High availability overview for Service Connector; summary indicates conceptual description of zones, redundancy, and failover without explicit configuration parameters, limits, or decision matrices. |
-| [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli) | 0.30 | Primarily a step-by-step tutorial for deploying a Django app and wiring Service Connector; does not emphasize configuration tables, limits, or product-specific error mappings beyond generic tutorial usage. |
+| [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli) | 0.30 | Tutorial-style walkthrough for deploying a Django app and connecting via Service Connector; focuses on step-by-step usage rather than detailed configuration tables, limits, or product-specific error mappings. Does not emphasize numeric limits, configuration matrices, or specialized troubleshooting content beyond what an LLM likely knows from training. |
 | [Python function with Azure Table Storage as output](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-functions-storage-table-as-output) | 0.20 | This is a step-by-step tutorial for wiring a Python Azure Function to Azure Table Storage using Service Connector. It focuses on how to perform a single example configuration and deployment flow, not on enumerating configuration parameters, limits, error codes, or decision matrices. It lacks parameter tables, quotas, or structured troubleshooting content, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Service Connector internals](https://learn.microsoft.com/en-us/azure/service-connector/concept-service-connector-internals) | 0.20 | Page appears to be an architectural/conceptual explanation of Service Connector internals (architecture, network solutions, authentication) without clear evidence of numeric limits, detailed configuration tables, or troubleshooting mappings that meet the expert-knowledge criteria. |
 | [About Service Connector](https://learn.microsoft.com/en-us/azure/service-connector/overview) | 0.10 | High-level overview of Service Connector use cases and benefits without concrete limits, configuration tables, or error mappings. |

@@ -1,9 +1,9 @@
 ---
 name: azure-vpn-gateway
-description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring P2S/S2S tunnels, IPsec/IKE policies, BGP routing, ExpressRoute VPN, or Cisco/ASA integrations, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure NAT Gateway (use azure-nat-gateway).
+description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VPN topologies, choosing SKUs, configuring P2S/S2S, securing IPsec/IKE, or integrating BGP/ExpressRoute, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VPN Gateway Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L49-L58 | Guidance on choosing VPN Gateway SKUs and planning migrations: Linux VPN client, P2S protocols (SSTP to IKEv2/OpenVPN), client types, and Classic-to-Resource Manager gateways. |
 | Architecture & Design Patterns | L59-L65 | Designing Azure VPN Gateway architectures: choosing topologies, active-active setups, cross-region peering, and high-availability connectivity patterns. |
 | Limits & Quotas | L66-L70 | VPN Gateway client version history, SKU comparisons, and FAQs about gateway limits, scale, performance, and connection behavior |
-| Security | L71-L92 | Configuring secure Azure VPN Gateway connections: IPsec/IKE policies, forced tunneling, P2S/S2S auth (Entra ID, cert, RADIUS, MFA), client setup, access control, roles, and crypto requirements. |
-| Configuration | L93-L145 | Configuring Azure VPN Gateway: P2S/S2S setup, auth (cert, Entra, RADIUS), BGP, IPsec/NAT/routing, dual-stack, monitoring, maintenance, client profiles, and VNet/ExpressRoute connections. |
-| Integrations & Coding Patterns | L146-L154 | Configuring Azure VPN with external systems: NPS/RADIUS user groups, S2S certificate tunnels, VPN over ExpressRoute, Cisco ASA setups, and BGP connections with AWS. |
-| Deployment | L155-L165 | Deploying and upgrading Azure VPN Gateways (SKUs, zones, active/active), creating S2S VPNs via PowerShell/CLI, and distributing Azure VPN client profiles with Intune. |
+| Security | L71-L88 | Securing Azure VPN Gateway: IPsec/IKE crypto, forced tunneling, P2S auth (Entra ID, RADIUS, MFA, Device SSO), access control, cert migration, roles/permissions, and security best practices. |
+| Configuration | L89-L137 | Configuring Azure VPN Gateway and clients: P2S/S2S setup, auth (cert, Entra, RADIUS), routing/BGP, IPsec/NAT/traffic selectors, monitoring, and VNet/ExpressRoute connectivity. |
+| Integrations & Coding Patterns | L138-L145 | Configuring Azure VPN with external systems: NPS/RADIUS user groups, S2S certificate tunnels, VPN over ExpressRoute, Cisco ASA setups, and BGP connections with AWS. |
+| Deployment | L146-L155 | Deploying and upgrading Azure VPN Gateways (SKUs, zones, active/active), creating S2S VPNs via PowerShell/CLI, and distributing Azure VPN client profiles with Intune. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -79,15 +79,11 @@ This skill requires **network access** to fetch documentation content:
 | Manage VPN gateway root certificate migration for P2S | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about-gateway-certificate-migration |
 | Create custom audience app ID for P2S Entra VPN | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-register-custom-app |
 | Configure P2S access control by Entra users and groups | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-users-access |
-| Configure macOS Azure VPN Client for Entra ID P2S auth | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-mac |
-| Configure Device SSO with Azure VPN Client on Windows | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-windows-device-sso |
+| Enable Device SSO for Azure VPN Client with Entra ID | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-windows-device-sso |
 | Set up P2S RADIUS VPN with PowerShell for Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-radius-ps |
-| Configure P2S RADIUS authentication in Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-radius-gateway |
 | Understand roles and permissions for VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/roles-permissions |
 | Apply security best practices to Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/secure-vpn-gateway |
-| Understand Azure VPN site-to-site certificate authentication | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-about |
-| Configure S2S certificate authentication using PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-powershell |
-| Meet cryptographic requirements for Azure VPN gateways | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-compliance-crypto |
+| Configure cryptographic settings for Azure VPN gateways | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-compliance-crypto |
 | Integrate Azure P2S RADIUS with NPS for MFA | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-radius-mfa-nsp |
 
 ### Configuration
@@ -96,35 +92,31 @@ This skill requires **network access** to fetch documentation content:
 | Generate P2S VPN client profiles for Entra authentication | https://learn.microsoft.com/en-us/azure/vpn-gateway/about-vpn-profile-download |
 | Add or remove S2S connections on a VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/add-remove-site-to-site-connections |
 | Configure optional Azure VPN Client settings for P2S | https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-optional-configurations |
-| Configure BGP for Azure VPN Gateway using CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/bgp-how-to-cli |
-| Configure BGP for Azure VPN Gateway via portal | https://learn.microsoft.com/en-us/azure/vpn-gateway/bgp-howto |
+| Configure BGP settings for Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/configure-bgp |
 | Create custom IPsec policies for P2S VPN | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-custom-policies-p2s-ps |
 | Configure custom traffic selectors for VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/custom-traffic-selectors |
 | Configure customer-controlled maintenance windows for VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/customer-controlled-gateway-maintenance |
-| Configure IPv6 dual-stack for Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/ipv6-configuration |
+| Reconfigure Azure VPN gateways for active-active mode | https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-change-active-active |
 | Configure monitoring for Azure VPN Gateway with Azure Monitor | https://learn.microsoft.com/en-us/azure/vpn-gateway/monitor-vpn-gateway |
 | Reference monitoring metrics for Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/monitor-vpn-gateway-reference |
 | Configure NAT rules on Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/nat-howto |
 | Configure P2S certificate authentication on VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-certificate-gateway |
 | Generate P2S VPN certificates on Linux with OpenSSL | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-certificates-linux-openssl |
 | Configure P2S VPN gateway with Entra ID client | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-gateway |
-| Configure Azure VPN Client on Linux with Entra ID | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-linux |
-| Configure Azure VPN Client with Entra ID on Windows | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-windows |
+| Configure Azure VPN Client with Entra ID for P2S | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client |
 | Install client certificates for Azure P2S VPN | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert |
+| Configure Azure VPN Gateway for P2S RADIUS auth | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-radius-gateway |
 | Configure P2S VPN user groups and IP pools | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-about |
 | Configure P2S VPN user IP pools with Azure CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-create-cli |
 | Generate and update P2S VPN client profiles in Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-vpn-profile-update |
 | Configure P2S VPN clients with certificate auth | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate |
-| Configure VPN client for P2S RADIUS certificate auth | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-certificate |
-| Configure P2S VPN client for RADIUS other methods | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-other |
-| Configure VPN client for P2S RADIUS password auth | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-password |
+| Configure VPN clients for P2S RADIUS authentication | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius |
+| Configure certificate-authenticated site-to-site VPN gateways | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway |
 | Configure high-bandwidth S2S tunnels via ExpressRoute | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-high-bandwidth-tunnel |
-| Set up dual-stack site-to-site VPN with Azure CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-ipv6-azure-cli |
 | Configure forced tunneling for S2S VPN in Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-tunneling |
 | Understand Point-to-Site VPN routing behavior in Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing |
 | Supported VPN devices and IPsec parameters for Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices |
 | Azure VPN Gateway resource and connection settings | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings |
-| Configure BGP for VPN Gateway using PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-bgp-resource-manager-ps |
 | Generate P2S VPN certificates using Windows PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site |
 | Generate P2S VPN certificates on Linux strongSwan | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux |
 | Generate P2S VPN certificates using MakeCert | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-makecert |
@@ -147,7 +139,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure NPS RADIUS VSAs for P2S user groups | https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-radius |
-| Create Azure VPN S2S certificate tunnel with Azure CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-cli |
 | Configure S2S VPN over ExpressRoute private peering | https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-vpn-private-peering |
 | Sample Cisco ASA configuration for Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-3rdparty-device-config-cisco-asa |
 | Configure BGP VPN connection between Azure and AWS | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-aws-bgp |
@@ -159,7 +150,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate VPN Gateway public IP from Basic to Standard | https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto |
 | Create a Basic SKU VPN Gateway via PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-basic-sku-powershell |
 | Deploy zone-redundant VPN and ExpressRoute gateways | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-zone-redundant-vnet-gateway |
-| Change Azure VPN Gateway between active and active-active | https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-change-active-active |
 | Upgrade Azure VPN Gateway SKU with minimal downtime | https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-upgrade |
 | Create S2S VPN with shared key using PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell |
 | Create S2S VPN with shared key using Azure CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli |

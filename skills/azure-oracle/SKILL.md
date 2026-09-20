@@ -3,7 +3,7 @@ name: azure-oracle
 description: Expert knowledge for Azure Oracle development including troubleshooting, security, and integrations & coding patterns. Use when configuring Oracle TDE with Azure Key Vault, fixing Oracle@Azure issues, or exporting Exadata logs to Azure Monitor/Sentinel, and other Azure Oracle related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Oracle Skill

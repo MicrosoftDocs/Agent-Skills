@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS/VM/SQL workloads, Notation-signed images, CMK/Key Vault keys, antimalware, or Azure Gov features, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure DDoS Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure antimalware, container SBOM/signing, CMK encryption, AKS/VM hardening, or US Gov security options, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure DDoS Protection (use azure-ddos-protection), Azure Information Protection (use azure-information-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Best Practices | L34-L58 | End-to-end Azure security guidance: hardening IaaS/PaaS, identity and access, network and operational security, backups and ransomware resilience, secrets management, and service-specific checklists. |
-| Decision Making | L59-L64 | Guidance on choosing Azure security options, including comparing security features in US Gov clouds and selecting appropriate key management (Key Vault, managed keys, BYOK). |
+| Decision Making | L59-L64 | Guidance on choosing Azure security options: comparing feature availability in US Gov clouds and selecting appropriate key management (Key Vault, HSM, customer-managed keys). |
 | Security | L65-L97 | Security best practices for Azure: threat modeling mitigations, platform and network hardening, access control, encryption/keys, infrastructure integrity, and secure AKS/VM/SQL operations. |
 | Configuration | L98-L108 | Configuring Azure security features: antimalware, container scanning (Dependabot/Copacetic), firewall rules, CMK encryption, logging/auditing, TLS changes, ransomware protections, and Customer Lockbox alerts. |
 | Integrations & Coding Patterns | L109-L114 | Guides for generating signed SBOMs for container images and scripting Microsoft Antimalware configuration in Azure using PowerShell. |
