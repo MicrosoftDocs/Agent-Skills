@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 80
+- **Updated Pages**: 0
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
@@ -66,17 +66,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision).
 | *(Unclassified)* | 46 | 54.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure AI Video Indexer (VI)?](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview)
-  - Updated: 2026-07-13T08:00:00.000Z → 2026-09-12T06:02:00.000Z
-- [Deploy with Bicep](https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-bicep)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-09-12T06:02:00.000Z
-- [Deploy with ARM](https://learn.microsoft.com/en-us/azure/azure-video-indexer/deploy-with-arm-template)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-09-12T06:02:00.000Z
-- [Create account](https://learn.microsoft.com/en-us/azure/azure-video-indexer/create-account)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-09-12T06:02:00.000Z
 
 ## Classified Pages
 

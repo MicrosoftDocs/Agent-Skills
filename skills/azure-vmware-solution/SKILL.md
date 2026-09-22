@@ -1,9 +1,9 @@
 ---
 name: azure-vmware-solution
-description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AVS networking/storage, HCX migrations, Horizon/VDI, vSAN clusters, or Azure-integrated backups, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Nutanix (use azure-nutanix), Azure Red Hat OpenShift (use azure-redhat-openshift), SAP HANA on Azure Large Instances (use azure-sap).
+description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AVS networking/storage, HCX migrations, Horizon/VDI, vSAN clusters, or Azure-integrated backups, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Nutanix (use azure-nutanix), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VMware Solution Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L44 | Diagnosing and fixing AVS issues: deployment failures, DR/VM recovery problems, platform run command errors, and workarounds for common Azure VMware Solution faults. |
+| Troubleshooting | L37-L44 | Diagnosing and fixing AVS issues: deployment failures, known platform problems, DR/replication errors for VMs, and troubleshooting AVS Run Command execution. |
 | Best Practices | L45-L50 | Guidance on securing and safely operating AVS private clouds, plus tuning NSX/HCX scale and performance for efficient, reliable VMware workload migrations. |
 | Decision Making | L51-L64 | Guidance for choosing AVS-related options: API Management SKUs, backup and storage, migration and cross-region moves, licensing/retirement planning, and reserved instance purchasing. |
 | Architecture & Design Patterns | L65-L77 | Network, storage, and private cloud design for AVS: hub-spoke patterns, vSAN/stretched clusters, Horizon and GitHub Enterprise sizing, Cloud Director networking, and Gen 2 architecture. |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Diagnose and work around Azure VMware Solution issues | https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues |
+| Resolve known issues in Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues |
 | Resolve disaster recovery issues for AVS virtual machines | https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-disaster-recovery-vms |
 | Troubleshoot Azure VMware Solution deployment failures | https://learn.microsoft.com/en-us/azure/azure-vmware/fix-deployment-failures |
 | Troubleshoot Azure VMware Solution Run Commands | https://learn.microsoft.com/en-us/azure/azure-vmware/troubleshoot-run-command |

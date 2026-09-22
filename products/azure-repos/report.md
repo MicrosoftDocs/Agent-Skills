@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   limits-quotas: ELM migration timing, monitoring sync and read-only windows, plus
     hard limits and quotas for Git repositories (size, branches, files) in Azure Repos.
@@ -15,9 +15,9 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Git/TFVC issues in Azure Repos: migration
     errors, locks, merge conflicts, RPC failures, undo/recovery, and troubleshooting
     Copilot, CodeQL, dependency, and secret scanning.'
-  security: 'Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, credential
-    managers), branch/repo permissions and policies, secure imports, key management,
-    and GitHub Advanced Security setup.'
+  security: 'Securing Azure Repos and TFVC: auth (Entra, PAT, SSH, credential managers,
+    Xcode), permissions/ACLs, branch locks/policies, secure cloning/import, and GitHub
+    Advanced Security scanning.'
   best-practices: 'Best practices for Git/TFVC in Azure Repos: branching, merges,
     commit identity, .gitignore, performance, cross‑platform compatibility, large
     file cleanup, repo health, and workspace maintenance.'
@@ -26,16 +26,15 @@ category_descriptions:
     for DevOps workflows in Azure Repos.
 skill_description: Expert knowledge for Azure Repos development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when managing Git/TFVC
-  repos, branch/PR policies, TFVC/SVN migrations, SARIF scanners, or GitHub Advanced
-  Security, and other Azure Repos related development tasks. Not for Azure DevOps
-  (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines),
-  Azure Test Plans (use azure-test-plans).
-use_when: Use when managing Git/TFVC repos, branch/PR policies, TFVC/SVN migrations,
-  SARIF scanners, or GitHub Advanced Security, and other Azure Repos related development
-  tasks.
-confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
-  Azure Pipelines (use azure-pipelines), Azure Test Plans (use azure-test-plans).
+  security, configuration, and integrations & coding patterns. Use when managing Azure
+  Git/TFVC repos, branch/PR policies, migrations to GitHub, SARIF scanners, or CodeQL,
+  and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops),
+  Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts
+  (use azure-artifacts).
+use_when: Use when managing Azure Git/TFVC repos, branch/PR policies, migrations to
+  GitHub, SARIF scanners, or CodeQL, and other Azure Repos related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
+  azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
 ---
 # Azure Repos Crawl Report
 
@@ -49,8 +48,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 213
+- **Updated Pages**: 1
+- **Unchanged**: 219
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -60,11 +59,11 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 |------|-------|------------|
 | architecture-patterns | 5 | 2.3% |
 | best-practices | 11 | 5.0% |
-| configuration | 30 | 13.6% |
+| configuration | 29 | 13.2% |
 | decision-making | 6 | 2.7% |
 | integrations | 49 | 22.3% |
 | limits-quotas | 3 | 1.4% |
-| security | 23 | 10.5% |
+| security | 24 | 10.9% |
 | troubleshooting | 12 | 5.5% |
 | *(Unclassified)* | 81 | 36.8% |
 
@@ -72,20 +71,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Updated Pages
 
-- [Create pull requests](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
-  - Updated: 2026-07-06T08:00:00.000Z → 2026-09-10T08:00:00.000Z
-- [Review pull requests](https://learn.microsoft.com/en-us/azure/devops/repos/git/review-pull-requests?view=azure-devops)
-  - Updated: 2026-08-26T08:00:00.000Z → 2026-09-08T08:00:00.000Z
-- [1. Learn about Enterprise Live Migrations](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/overview?view=azure-devops)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-10T08:00:00.000Z
-- [2. Complete prerequisites](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/prerequisites?view=azure-devops)
-  - Updated: 2026-08-06T22:04:00.000Z → 2026-09-10T08:00:00.000Z
-- [6. Complete post-migration tasks](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/post-migration?view=azure-devops)
-  - Updated: 2026-07-08T17:05:00.000Z → 2026-09-11T00:04:00.000Z
-- [ELM CLI reference](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/elm-cli-reference?view=azure-devops)
-  - Updated: 2026-06-27T01:04:00.000Z → 2026-09-10T08:00:00.000Z
-- [Security Overview for GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-security-overview?view=azure-devops)
-  - Updated: 2026-05-26T21:06:00.000Z → 2026-09-09T22:03:00.000Z
+- [Secret scanning patterns](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops)
+  - Updated: 2025-02-21T04:40:00.000Z → 2025-10-27T22:02:00.000Z
 
 ## Classified Pages
 
@@ -93,6 +80,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 |-----------|------|------------|--------|
 | [Git limits](https://learn.microsoft.com/en-us/azure/devops/repos/git/limits?view=azure-devops) | limits-quotas | 0.95 | Page is dedicated to Git limits and mentions limits on repository size, push size, and path lengths; the full article contains concrete numeric limits and constraints that qualify as expert knowledge. |
 | [RPC failures & http.postBuffer](https://learn.microsoft.com/en-us/azure/devops/repos/git/rpc-failures-http-postbuffer?view=azure-devops) | troubleshooting | 0.90 | Centers on specific 'RPC failed' errors during git push and explains why not to blindly change http.postBuffer, providing Azure DevOps–specific diagnosis and remedies. |
+| [Secret scanning patterns](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops) | security | 0.86 | The page documents the exact secret scanning patterns used by GitHub Advanced Security for Azure DevOps, including specific pattern names, matching rules, and product-specific detection behavior. These are detailed, vendor-specific security configurations that an LLM wouldn't reliably infer from general training data, and they directly relate to how secrets are identified and protected in Azure DevOps. |
 | [Configure instructions](https://learn.microsoft.com/en-us/azure/devops/repos/git/configure-copilot-code-review-instructions?view=azure-devops) | configuration | 0.85 | The page focuses on custom and path-scoped instructions and agent skills to tailor Copilot feedback. This implies detailed, product-specific configuration options (organization/project/repo scopes, path filters, instruction fields) that match the configuration sub-skill: specific setting names, scopes, and behaviors for Copilot code review in Azure Repos. |
 | [4. Monitor the migration](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/monitor-migration?view=azure-devops) | limits-quotas | 0.80 | Explicitly states that periodic syncs run for up to 21 days and that cutover must occur within this window. This is a concrete time-bound limit unique to the service, matching the limits-quotas criteria. Also references specific CLI command (az devops migrations list) and stage field, but the standout expert detail is the 21-day limit. |
 | [5. Cutover to GitHub](https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/cut-over-to-github?view=azure-devops) | limits-quotas | 0.80 | Contains specific operational limits: cutover must complete within 21 days of initial sync and typically finishes in under 30 minutes during which the repository is read-only. These are precise time constraints and behavioral limits that qualify as limits-quotas. |
@@ -165,7 +153,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Resolve](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/resolve-command?view=azure-devops) | integrations | 0.70 | Command reference for tf resolve with conflict resolution modes specific to TFVC. |
 | [Rollback](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/rollback-command-team-foundation-version-control?view=azure-devops) | integrations | 0.70 | Explains tf rollback command semantics and how it creates pending changes, which is TFVC-specific behavior. |
 | [SSH passphrases](https://learn.microsoft.com/en-us/azure/devops/repos/git/gcm-ssh-passphrase?view=azure-devops) | security | 0.70 | Explains concrete security trade-offs and recommendations for SSH passphrases when using Azure Repos, including product-specific authentication context. |
-| [Secret scanning patterns](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops) | configuration | 0.70 | Documents concrete pattern sets and configuration for secret scanning, which are product-specific detection rules. |
 | [Secure repositories and pull requests](https://learn.microsoft.com/en-us/azure/devops/repos/git/secure-repositories-pull-requests?view=azure-devops) | security | 0.70 | Covers Azure Repos-specific repository and branch permissions, branch policies, and integration of GitHub Advanced Security checks; includes concrete security configuration patterns unique to Azure DevOps. |
 | [Set TFVC permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/set-tfvc-repository-permissions?view=azure-devops) | security | 0.70 | Explicitly about managing access to TFVC repository; likely lists specific permission names and scopes, fitting product-specific security configuration. |
 | [Shelve](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/shelve-command?view=azure-devops) | integrations | 0.70 | Details tf shelve command options and shelving behavior unique to TFVC. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-20'
 category_descriptions:
   configuration: 'Configuring Azure Managed Lustre setup: network/storage prerequisites,
     auto-mount via fstab, ARM template parameters, and monitoring/alerts with metrics
@@ -7,8 +7,9 @@ category_descriptions:
   architecture-patterns: Designing resilient Azure Managed Lustre deployments, including
     regional redundancy/failover strategies and tiered checkpoint architectures for
     performance and data protection.
-  integrations: Patterns for connecting AML to Linux, AKS, and Terraform, plus configuring
-    Blob import/export, auto-sync, and POSIX data migration via AzCopy.
+  integrations: Patterns for integrating Azure Managed Lustre with Blob Storage, Linux
+    clients, AKS (CSI), Terraform, and workflows for importing, exporting, and migrating
+    POSIX data.
   security: 'Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK-based
     encryption, root squash access controls, and virtual network encryption configuration
     and validation.'
@@ -26,17 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Lustre development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when deploying AML with AKS/Linux, Blob import/export, AzCopy POSIX migration, quotas,
-  or MLPerf-based sizing, and other Azure Managed Lustre related development tasks.
-  Not for Azure Blob Storage (use azure-blob-storage), Azure Container Storage (use
-  azure-container-storage), Azure Elastic SAN (use azure-elastic-san), Azure NetApp
-  Files (use azure-netapp-files).
-use_when: Use when deploying AML with AKS/Linux, Blob import/export, AzCopy POSIX
-  migration, quotas, or MLPerf-based sizing, and other Azure Managed Lustre related
-  development tasks.
-confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Container
-  Storage (use azure-container-storage), Azure Elastic SAN (use azure-elastic-san),
-  Azure NetApp Files (use azure-netapp-files).
+  when mounting AML filesystems, linking Blob, using AKS CSI, setting quotas, or tuning
+  Lustre performance, and other Azure Managed Lustre related development tasks. Not
+  for Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
+  (use azure-virtual-network-manager).
+use_when: Use when mounting AML filesystems, linking Blob, using AKS CSI, setting
+  quotas, or tuning Lustre performance, and other Azure Managed Lustre related development
+  tasks.
+confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Managed Lustre Crawl Report
 
@@ -50,8 +51,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure C
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 32
+- **Updated Pages**: 2
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -71,6 +72,13 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure C
 
 ## Changes
 
+### Updated Pages
+
+- [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade)
+  - Updated: 2026-06-19T08:00:00.000Z → 2026-09-15T17:03:00.000Z
+- [Use Azure Lustre CSI driver for Kubernetes](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes)
+  - Updated: 2025-11-11T08:00:00.000Z → 2026-09-14T17:04:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -85,7 +93,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure C
 | [Monitoring reference for metrics and logs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system-reference) | configuration | 0.78 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, and log categories with exact names, units, and sometimes default/aggregation behavior. These are product-specific configuration details that LLMs are unlikely to know from training and are needed to correctly configure monitoring, alerts, and dashboards. The content is not about limits/quotas or troubleshooting, but rather a catalog of monitoring configuration options (metric names, log categories, dimensions) for Azure Managed Lustre. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites) | configuration | 0.78 | A prerequisites page for a storage/networked file system service typically lists concrete, product-specific requirements such as supported VNets/subnets, required service endpoints, NSG rules/ports, DNS settings, and storage configuration constraints. These are configuration parameters and environmental requirements that are not generally known from training and are needed before creating an Azure Managed Lustre file system, fitting the configuration sub-skill. |
 | [Enable VNet encryption](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/vnet-encryption) | security | 0.75 | Covers enabling and testing VNet encryption for this service, including specific configuration steps and validation commands/logs. |
-| [Use Azure Lustre CSI driver for Kubernetes](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes) | integrations | 0.75 | CSI driver usage involves StorageClass, PV, and PVC specs with driver-specific parameters and options, which are detailed integration and configuration patterns. |
 | [Automount Lustre clients with fstab](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/automount-clients-fstab) | configuration | 0.70 | Provides specific fstab entry formats and options for Lustre mounts, which are concrete configuration details. |
 | [Configure root squash settings](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/root-squash-configure-settings) | security | 0.70 | Describes nodemap-based root squash options and how to set them via REST or other APIs; these are product-specific security configuration details. |
 | [Create file system using Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-resource-manager) | configuration | 0.70 | ARM template examples for creating a Managed Lustre file system typically include resource schema, property names, allowed values, and defaults (for example, capacity, throughput, SKU, and network settings). These are product-specific configuration parameters that an LLM wouldn’t reliably know from training, fitting the configuration sub-skill. |
@@ -95,6 +102,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure C
 | [Tiered checkpoints for AI training](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/tiered-checkpoints) | architecture-patterns | 0.70 | The article explains when to use a tiered checkpointing architecture for large-scale AI training, how Azure Managed Lustre and Azure Blob Storage are combined into Accelerator and Core Storage layers, and what performance characteristics to expect. This is product-specific architectural guidance for AI training workloads rather than a generic overview, matching the architecture-patterns sub-skill. |
 | [Use Azure Blob Storage with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration) | integrations | 0.70 | Page focuses on how Azure Managed Lustre integrates with Azure Blob Storage for import/export. This is a product-specific integration pattern describing how to use blob containers with the file system, which falls under integrations & coding patterns. It goes beyond conceptual overview by explaining concrete integration behavior and configuration requirements for compatible blob containers. |
 | [Use Azure Firewall with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-firewall) | security | 0.70 | Provides firewall rule and topology guidance specific to Managed Lustre traffic patterns, which are product-specific security/network configuration practices. |
+| [Use Azure Lustre CSI driver for Kubernetes](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes) | integrations | 0.70 | Kubernetes CSI driver usage typically includes product-specific StorageClass parameters, volume attributes, and configuration fields (e.g., driver name, mount options, required secrets) that are unique to Azure Managed Lustre and not generally known, fitting the integrations & coding patterns category. |
 | [Connect client to the file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients) | integrations | 0.65 | Explains how to prepare Linux clients and mount the Azure Managed Lustre file system, likely including mount options and parameters specific to this service, which are integration patterns between clients and AML. |
 | [Create file system using Terraform](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-aml-file-system-terraform) | integrations | 0.65 | Terraform article will define resource blocks and parameters specific to Azure Managed Lustre, including required/optional fields and defaults, which are product-specific integration patterns. |
 | [Export data using auto-export jobs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-export) | integrations | 0.65 | Auto-export configuration and synchronization behavior are product-specific integration details beyond generic knowledge. |
@@ -110,5 +118,5 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure C
 |-----------|------------|--------|
 | [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal) | 0.30 | Portal-based creation tutorial; likely step-by-step UI instructions without detailed configuration tables, limits, or product-specific best-practice guidance beyond generic deployment/creation steps. |
 | [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install) | 0.30 | Primarily a step-by-step client installation guide for Azure Managed Lustre with OS-specific instructions; no clear indication of configuration parameter tables, limits, quotas, or other structured expert details as defined by the sub-skill types. |
+| [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade) | 0.30 | Appears to be a procedural upgrade guide for Lustre client packages without clear indication of configuration tables, limits, or product-specific best-practice details beyond generic upgrade steps. |
 | [Introduction to Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-overview) | 0.20 | High-level service overview and benefits; no detailed limits, configs, or error mappings. |
-| [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade) | 0.20 | The summary indicates a procedural upgrade guide referencing other pages for matrices and installation choices, but does not itself mention specific limits, configuration tables, error codes, or decision matrices. It appears to be a straightforward how-to without the expert-knowledge patterns defined. |

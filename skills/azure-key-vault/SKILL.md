@@ -1,9 +1,9 @@
 ---
 name: azure-key-vault
-description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing vault/HSM keys & secrets, Private Link, RBAC access, key rotation/BYOK, or ARM/Bicep/Terraform deployments, and other Azure Key Vault related development tasks. Not for Azure Information Protection (use azure-information-protection), Azure Managed Redis (use azure-managed-redis), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm).
+description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing keys/secrets, Private Link, RBAC access, key rotation/BYOK, or Managed HSM workloads, and other Azure Key Vault related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Attestation (use azure-attestation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing Key Vault errors: REST/API error codes, Private Link and access policy issues, Azure Policy enforcement, and Managed HSM external key management problems. |
 | Best Practices | L47-L53 | Best practices for securing Key Vault keys, handling Managed HSM disaster recovery, and generating/importing BYOK HSM keys for compliant, resilient key management. |
-| Decision Making | L54-L64 | Guidance on planning and migrating key workloads, choosing RBAC vs access policies, using and retiring Managed HSM external keys, SLA/responsibility tradeoffs, and capacity/scaling decisions. |
-| Architecture & Design Patterns | L65-L70 | Architecture and workflows for using external key stores with Managed HSM, including key lifecycle management, integration patterns, and operational considerations. |
-| Limits & Quotas | L71-L82 | Limits, quotas, and behaviors for Key Vault and Managed HSM (certificates, secrets, throttling, logging latency, IP firewall/network rules, soft-delete/recovery, and capacity constraints). |
-| Security | L83-L113 | Securing Key Vault and Managed HSM: auth (RBAC/ABAC, access policies), networking/firewalls/mTLS, Zero Trust, soft delete, HSM key transfer, backup/restore, and security best practices. |
-| Configuration | L114-L139 | Configuring Key Vault and Managed HSM: monitoring, logging, alerts, policies, key types/algorithms, key/secret rotation, secure key release, BYOK, replication, and API/version settings. |
+| Decision Making | L54-L66 | Guidance on choosing Key Vault access models, safely updating APIs, planning key workload migrations, and designing, sizing, and operating Managed HSM and external key solutions. |
+| Architecture & Design Patterns | L67-L72 | Architecture and workflows for using external key stores with Managed HSM, including key lifecycle management, integration patterns, and operational considerations. |
+| Limits & Quotas | L73-L84 | Limits, quotas, and behaviors for Key Vault and Managed HSM (certificates, secrets, throttling, logging latency, IP firewall/network rules, soft-delete/recovery, and capacity constraints). |
+| Security | L85-L114 | Securing Key Vault and Managed HSM: auth (RBAC/ABAC, access policies), networking/firewalls/mTLS, Zero Trust, soft delete, HSM key transfer, backup/restore, and security best practices. |
+| Configuration | L115-L139 | Configuring Key Vault and Managed HSM: monitoring, logging, alerts, policies, key types/algorithms, key/secret rotation, secure key release, BYOK, replication, and API/version settings. |
 | Integrations & Coding Patterns | L140-L170 | Patterns for integrating Key Vault with apps and services (Event Grid, Logic Apps, Private Link, Databricks, DigiCert) and using keys/secrets from .NET, Node.js, Python, JavaScript, and Managed HSM. |
 | Deployment | L171-L174 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
 
@@ -54,6 +54,8 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Choose default access control model for Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default |
+| Update Azure Key Vault API versions safely | https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version |
 | Plan and execute migration of cryptographic key workloads | https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-key-workloads |
 | Migrate Azure Key Vault from access policies to RBAC | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-migration |
 | Answer common questions on Managed HSM external keys | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-faq |
@@ -85,7 +87,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply security best practices to Key Vault certificates | https://learn.microsoft.com/en-us/azure/key-vault/certificates/secure-certificates |
 | Allow Azure Key Vault access from clients behind firewalls | https://learn.microsoft.com/en-us/azure/key-vault/general/access-behind-firewall |
-| Prepare for Azure Key Vault RBAC default APIs | https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default |
 | Configure Azure Key Vault access policies with CLI | https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy |
 | Configure authentication to Azure Key Vault with Entra ID | https://learn.microsoft.com/en-us/azure/key-vault/general/authentication |
 | Add Azure ABAC conditions for Key Vault via CLI | https://learn.microsoft.com/en-us/azure/key-vault/general/howto-abac-conditions-cli |
@@ -118,7 +119,6 @@ This skill requires **network access** to fetch documentation content:
 | Formulate authenticated JSON requests to Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/authentication-requests-and-responses |
 | Apply Azure Policy to govern Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/azure-policy |
 | Enable and configure Azure Key Vault diagnostic logging | https://learn.microsoft.com/en-us/azure/key-vault/general/howto-logging |
-| Update Azure Key Vault API versions in apps | https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version |
 | Configure monitoring for Azure Key Vault with Azure Monitor | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault |
 | Reference monitoring metrics and logs for Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference |
 | Use Azure Key Vault key types and algorithms | https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details |

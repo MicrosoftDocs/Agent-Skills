@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 68
+- **Updated Pages**: 0
+- **Unchanged**: 70
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -67,13 +67,6 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 | *(Unclassified)* | 22 | 31.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [SKR with Azure Confidential Computing Concept](https://learn.microsoft.com/en-us/azure/confidential-computing/concept-skr-attestation)
-  - Updated: 2026-09-03T22:14:00.000Z → 2026-09-09T08:00:00.000Z
-- [SKR Policy Examples](https://learn.microsoft.com/en-us/azure/confidential-computing/skr-policy-examples)
-  - Updated: 2025-03-04T18:02:00.000Z → 2026-09-10T05:11:00.000Z
 
 ## Classified Pages
 

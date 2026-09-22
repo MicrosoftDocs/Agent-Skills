@@ -3,7 +3,7 @@ name: azure-service-connector
 description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to Redis, databases, storage, messaging, AI services, or third‑party endpoints, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure Connector Namespace (use azure-connector-namespace), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill

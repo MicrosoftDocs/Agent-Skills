@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring APIM/AI Gateway, self-hosted gateways, VNet/networking, Entra/OAuth auth, or autoscale deployments, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Service Bus (use azure-service-bus), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with AI backends, configuring VNets/domains, securing with Entra/OAuth/JWT, setting quotas, or deploying self-hosted gateways, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -27,11 +27,11 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L45 | Diagnosing and fixing API Management issues: request tracing, SNAT port exhaustion, custom domain/Key Vault cert errors, and developer portal problems using Diagnose and Solve tools. |
 | Best Practices | L46-L54 | Best practices for caching, throttling, security (OWASP API Top 10), SSE setup, and running the self-hosted gateway on Kubernetes in production for Azure API Management. |
 | Decision Making | L55-L73 | Guidance for planning and migrating API Management: pricing and scaling, cost control, DevOps/CI/CD, VNet choices, workspace and portal changes, and moving from legacy or other platforms. |
-| Architecture & Design Patterns | L74-L79 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
+| Architecture & Design Patterns | L74-L79 | Patterns for placing API Management in front of AKS microservices and Azure Front Door, including routing, security, scaling, and global API gateway architectures. |
 | Limits & Quotas | L80-L100 | Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket), including rate/usage caps, token limits, validation policies, and service/gateway constraints in Azure API Management. |
 | Security | L101-L143 | Securing Azure API Management and AI Gateway: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), TLS/certs, RBAC, managed identities, self-hosted gateway security, and DDoS/Defender protections. |
-| Configuration | L144-L242 | Configuring Azure API Management and AI Gateway: networking/VNet, domains, auth, caching, policies, backends, monitoring, self-hosted gateways, infrastructure-as-code, and LLM/MCP-specific settings. |
-| Integrations & Coding Patterns | L243-L275 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
+| Configuration | L144-L243 | Configuring Azure API Management and AI Gateway: networking, VNets, domains, policies, caching, monitoring, logging, backends, auth, developer portal, and infrastructure-as-code setup. |
+| Integrations & Coding Patterns | L244-L275 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
 | Deployment | L276-L296 | Deploying and scaling API Management: autoscale, multi-region, backup/restore, vNet/external access, self-hosted gateways (AKS/K8s/Docker/Arc), portal automation, APIOps, and MCP versioning. |
 
 ### Troubleshooting
@@ -147,6 +147,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure private networking for API Management AI Gateway | https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking |
 | Configure models and MCP tools in AI Gateway tier | https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-manage-models-tools |
 | Configure error handling policies in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-error-handling-policies |
+| Configure Azure API Management with Application Insights logging | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights |
 | Configure external Redis-compatible cache for API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache-external |
 | Configure custom domain names for self-hosted gateway | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-custom-domain-gateway |
 | Configure notifications and email templates in API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-notifications |
@@ -199,7 +200,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure IP filtering rules in API Management | https://learn.microsoft.com/en-us/azure/api-management/ip-filter-policy |
 | Configure json-to-xml policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/json-to-xml-policy |
 | Configure jsonp policy for cross-domain API calls | https://learn.microsoft.com/en-us/azure/api-management/jsonp-policy |
-| Configure llm-emit-token-metric policy for API Management | https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy |
+| Configure llm-emit-token-metric policy in API Management | https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy |
 | Use llm-semantic-cache-lookup policy for LLM caching | https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-lookup-policy |
 | Configure llm-semantic-cache-store policy for LLM caching | https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-store-policy |
 | Programmatically manage MCP servers in API Management | https://learn.microsoft.com/en-us/azure/api-management/manage-mcp-servers-rest-api |
@@ -245,7 +246,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Azure PowerShell sample scripts for Azure services | https://github.com/Azure/azure-docs-powershell-samples |
 | Import Amazon Bedrock LLM passthrough APIs into API Management | https://learn.microsoft.com/en-us/azure/api-management/amazon-bedrock-passthrough-llm-api |
-| Integrate Azure API Management with Application Insights logging | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights |
 | Send Azure API Management logs to Event Hubs | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-log-event-hubs |
 | Send messages to Azure Service Bus from API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-send-service-bus |
 | Log API Management traffic to Event Hubs and Moesif | https://learn.microsoft.com/en-us/azure/api-management/api-management-log-to-eventhub-sample |

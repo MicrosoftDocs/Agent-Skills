@@ -9,6 +9,7 @@
 |-------|-----|
 | Understand serverless compute DBU quotas in Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/serverless-quotas |
 | Handle long-running tasks with Supervisor Agent | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/multi-agent-supervisor-long-running-tasks |
+| Govern MCP services with policies and rate limits | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-mcp-service |
 | Apply and configure rate limits for Unity Gateway services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/rate-limits |
 | Configure high QPS limits for AI Search endpoints | https://learn.microsoft.com/en-us/azure/databricks/ai-search/high-qps |
 | Use Databricks online tables for real-time features | https://learn.microsoft.com/en-us/azure/databricks/archive/machine-learning/feature-store/online-tables |
@@ -18,15 +19,15 @@
 | Understand Lakehouse Real-Time beta pricing and SKUs | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/real-time-pricing |
 | Review requirements and limitations for standard compute | https://learn.microsoft.com/en-us/azure/databricks/compute/standard-limitations |
 | Understand Databricks AI/BI dashboard limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/dashboards/limits |
-| Understand ABAC row filter and mask quotas and limits | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements |
-| Unity Catalog requirements, supported formats, and limitations | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/requirements |
+| ABAC row filter and column mask limits in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements |
+| Review Unity Catalog requirements, limits, and constraints | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/requirements |
 | Manage Unity Catalog resource quotas using CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/resource-quotas-commands |
 | Understand Databricks Connect for Python limitations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/limitations |
 | Understand Databricks Connect usage requirements and constraints | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/requirements |
 | Understand Databricks Connect for Scala limitations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/limitations |
-| Create and manage Genie Agents with table and conversation limits | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/set-up |
+| Configure and manage Azure Databricks Genie Agents | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/set-up |
 | Tune Genie Agent quality with instructions and knowledge limits | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/tune-quality |
-| Use Genie Agents with Unity Catalog volumes | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/volumes |
+| Analyze Unity Catalog volume files with Genie Agents | https://learn.microsoft.com/en-us/azure/databricks/genie-agents/volumes |
 | Analyze Genie usage and free allowance in billing tables | https://learn.microsoft.com/en-us/azure/databricks/genie/monitor-cost |
 | Review Databricks Free Edition quotas and limits | https://learn.microsoft.com/en-us/azure/databricks/getting-started/free-edition-limitations |
 | Review limitations of the Aha! Databricks connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/aha-limits |
@@ -103,7 +104,6 @@
 | Foundation Model APIs rate limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/limits |
 | Azure Databricks model serving limits and regions | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-limits |
 | Understand and debug Databricks model serving timeouts | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-timeouts |
-| Tracing FAQ with latency impact and quotas | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/faq |
 | Notebook size and output limits in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebook-limitations |
 | Understand Lakebase Postgres compatibility limits and differences | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/compatibility |
 | Use Lakebase PgBouncer connection pooling at scale | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connection-pooling |
@@ -114,15 +114,16 @@
 | Use monotonically_increasing_id and understand ID layout | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/monotonically_increasing_id |
 | Updated Git folders and Repos asset limits | https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2024/september |
 | Azure Databricks Git folder limits and behaviors | https://learn.microsoft.com/en-us/azure/databricks/repos/limits |
-| Review Azure Databricks resource limits and API rate quotas | https://learn.microsoft.com/en-us/azure/databricks/resources/limits |
+| Review Azure Databricks resource and API limits | https://learn.microsoft.com/en-us/azure/databricks/resources/limits |
 | Monitor Unity Catalog resource quotas and usage | https://learn.microsoft.com/en-us/azure/databricks/resources/manage-resource-quotas |
 | Verify supported browsers for Azure Databricks UI | https://learn.microsoft.com/en-us/azure/databricks/resources/supported-browsers |
 | Check regional availability limits for Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/get-started/ |
 | Set SQL STATEMENT_TIMEOUT limits in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/parameters/statement_timeout |
-| Understand Databricks dropped tables recovery period | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-tables-dropped |
+| List recoverable dropped tables and recovery period in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-tables-dropped |
 | Drop Unity Catalog volumes and data retention behavior | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-drop-volume |
 | Recover dropped tables and views with UNDROP | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-undrop-table |
 | Apply and understand Databricks SQL query filter limitations | https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-filters |
 | Understand result export size limits in Databricks SQL editor | https://learn.microsoft.com/en-us/azure/databricks/sql/user/sql-editor/results |
 | Understand real-time mode feature limitations | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/limitations |
 | Use temporary tables and understand retention limits | https://learn.microsoft.com/en-us/azure/databricks/tables/temporary-tables |
+| Check Databricks metric view feature runtime requirements | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/feature-availability |

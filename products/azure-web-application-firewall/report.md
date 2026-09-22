@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 80
+- **Updated Pages**: 0
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 29 | 34.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Managed rules overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-drs)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-10T08:00:00.000Z
-- [Managed rules overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-09-10T08:00:00.000Z
-- [Request size limits](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-09-11T22:13:00.000Z
 
 ## Classified Pages
 

@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-20'
 category_descriptions:
-  integrations: SDK usage, bulk import, change feed, vector search, Kafka/Spark/PostgreSQL/Mongo/Cassandra/Gremlin
-    integrations, migration tools, and sample code for app and data connectivity.
+  integrations: SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka
+    Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo,
+    Gremlin, and PostgreSQL APIs.
   security: 'Securing Cosmos DB: encryption, keys, RBAC/Entra ID, network isolation
     (VNet, Private Link, firewalls), auditing, data masking, TLS, and security best
     practices across all APIs.'
@@ -30,51 +31,62 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, vector search, multi-region
-  HA, or CI/CD deployments, and other Azure Cosmos DB related development tasks. Not
+  using change feed, vector search, multi-region HA, NoSQL/Mongo/Cassandra/PostgreSQL
+  APIs, or bulk SDK ops, and other Azure Cosmos DB related development tasks. Not
   for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
-  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Blob Storage
-  (use azure-blob-storage).
-use_when: Use when using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, vector search,
-  multi-region HA, or CI/CD deployments, and other Azure Cosmos DB related development
-  tasks.
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer
+  (use azure-data-explorer).
+use_when: Use when using change feed, vector search, multi-region HA, NoSQL/Mongo/Cassandra/PostgreSQL
+  APIs, or bulk SDK ops, and other Azure Cosmos DB related development tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
   Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Blob Storage (use azure-blob-storage).
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Cosmos DB Crawl Report
 
 ## Summary
 
-- **Total Pages**: 718
-- **Fetched**: 718
+- **Total Pages**: 722
+- **Fetched**: 722
 - **Fetch Failed**: 0
-- **Classified**: 521
-- **Unclassified**: 197
+- **Classified**: 526
+- **Unclassified**: 196
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 5
 - **Updated Pages**: 0
-- **Unchanged**: 718
-- **Deleted Pages**: 0
+- **Unchanged**: 717
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 22 | 3.1% |
+| architecture-patterns | 22 | 3.0% |
 | best-practices | 49 | 6.8% |
-| configuration | 122 | 17.0% |
+| configuration | 122 | 16.9% |
 | decision-making | 47 | 6.5% |
 | deployment | 23 | 3.2% |
-| integrations | 118 | 16.4% |
+| integrations | 123 | 17.0% |
 | limits-quotas | 31 | 4.3% |
 | security | 62 | 8.6% |
 | troubleshooting | 47 | 6.5% |
-| *(Unclassified)* | 197 | 27.4% |
+| *(Unclassified)* | 196 | 27.1% |
 
 ## Changes
+
+### New Pages
+
+- [Create vector indexes with .NET](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-dotnet)
+- [Create vector indexes with Go](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-go)
+- [Create vector indexes with Java](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-java)
+- [Create vector indexes with Python](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-python)
+- [Create vector indexes with TypeScript](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript)
+
+### Deleted Pages
+
+- ~~Create a vector index with a Node.js app~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript)
 
 ## Classified Pages
 
@@ -494,6 +506,11 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Create a container](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-create-container) | integrations | 0.65 | Similar to the .NET version, this page is focused on using the Azure Cosmos DB Python SDK to create containers, which involves specific client methods, parameter names, and configuration options unique to this SDK. That makes it an integrations & coding patterns page rather than a generic tutorial or conceptual overview. |
 | [Create a database](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-create-database) | integrations | 0.65 | Provides specific .NET SDK calls and parameters for database creation (throughput options, consistency-related settings) unique to Cosmos DB. |
 | [Create a knowledge graph](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/cosmos-ai-graph) | architecture-patterns | 0.65 | Describes CosmosAIGraph patterns for modeling and querying relationships; includes product-specific graph-plus-vector design guidance. |
+| [Create vector indexes with .NET](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-dotnet) | integrations | 0.65 | Quickstart includes concrete, product-specific .NET SDK usage and configuration for creating DiskANN and QuantizedFlat vector indexes, loading data, and comparing distance functions—details that qualify as integration/coding patterns beyond generic knowledge. |
+| [Create vector indexes with Go](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-go) | integrations | 0.65 | Page provides Go-specific sample code and configuration for Cosmos DB vector indexes (DiskANN, QuantizedFlat) and distance function comparisons, representing concrete integration patterns with product-specific API usage. |
+| [Create vector indexes with Java](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-java) | integrations | 0.65 | Contains Java SDK sample and configuration details for creating and using Cosmos DB vector indexes and distance functions, which are product-specific integration patterns rather than generic concepts. |
+| [Create vector indexes with Python](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-python) | integrations | 0.65 | Provides Python-specific code and configuration for Cosmos DB vector indexing and distance comparisons, exposing concrete API parameters and patterns that count as expert integration knowledge. |
+| [Create vector indexes with TypeScript](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript) | integrations | 0.65 | Includes TypeScript/JavaScript SDK usage and configuration for DiskANN and QuantizedFlat vector indexes and distance functions, giving detailed integration patterns unique to Cosmos DB. |
 | [Create with the Azure portal](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-portal) | configuration | 0.65 | Portal quickstart that configures database and container settings (partition key, throughput, indexing) with concrete parameter names and options. |
 | [Customer-managed keys](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-customer-managed-keys) | security | 0.65 | CMK concepts for this product include key vault integration details, key scope, and rotation behavior specific to Cosmos DB for PostgreSQL. |
 | [Design a real-time dashboard](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/tutorial-design-database-realtime) | architecture-patterns | 0.65 | Real-time dashboard design includes product-specific parallel query and distribution strategies, which are architecture patterns for this platform. |
@@ -690,7 +707,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Concepts](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-concepts) | 0.30 | Fundamental concepts for scaling are likely conceptual (sharding, distribution) rather than detailed product-specific configs or limits. |
 | [Connect to local emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/vscode-extension/connect-local-emulator) | 0.30 | Connecting to the local emulator from VS Code is a connection tutorial; any connection string example is unlikely to be a full configuration reference with parameter tables. |
 | [Create a cluster - portal](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/create-cluster-portal) | 0.30 | Portal quickstart for creating a cluster; usually step-by-step UI guidance without comprehensive configuration matrices or limits. |
-| [Create a vector index with a Node.js app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript) | 0.30 | Quickstart for creating a vector index with TypeScript; describes end-to-end workflow and sample code but does not indicate detailed configuration parameter tables, limits, or decision matrices. |
 | [Create account](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-account) | 0.30 | Basic how-to for creating an account; mostly UI steps without detailed configuration tables, limits, or advanced patterns. |
 | [Deploy Spark Cluster with Databricks](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/deploy-cluster-databricks) | 0.30 | Databricks Spark cluster deployment quickstart; mainly portal steps, unlikely to contain detailed Azure Cassandra-specific configuration tables. |
 | [Distribute data globally](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-global-distribution) | 0.30 | Global distribution tutorial mainly walks through enabling multi-region replication via the portal and connecting to it. It is likely procedural guidance without detailed limits tables, decision matrices, or configuration parameter references, so it does not clearly match any expert-knowledge sub-skill type. |

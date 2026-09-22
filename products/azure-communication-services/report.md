@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 517
+- **Updated Pages**: 0
+- **Unchanged**: 518
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | *(Unclassified)* | 104 | 20.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Place a server outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-server-outbound-call)
-  - Updated: 2025-12-23T18:13:00.000Z → 2026-09-07T17:14:00.000Z
 
 ## Classified Pages
 

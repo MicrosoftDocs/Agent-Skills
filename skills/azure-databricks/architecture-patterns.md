@@ -16,7 +16,6 @@
 | Implement agent memory on Model Serving with Lakebase | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/stateful-agents-model-serving |
 | Build multi-agent orchestrators on Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/multi-agent-apps |
 | Choose and configure Databricks agent memory | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/stateful-agents |
-| Architect AI governance with Unity Gateway | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/ |
 | Choose data modeling options in Databricks AI/BI dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/ |
 | Design multi-fact models with Databricks dashboard relationships | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/dashboard-relationships/ |
 | Implement fan-in and fan-out in Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/data-engineering/fan-in-fan-out |
@@ -46,14 +45,11 @@
 | Choose API ingestion patterns for Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/api-ingestion |
 | Implement dimensional models in Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/best-practices/dimensional-modeling |
 | Organize datasets across Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/best-practices/organize-datasets |
-| Implement AUTO CDC patterns in Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc |
 | Replicate external RDBMS tables with AUTO CDC | https://learn.microsoft.com/en-us/azure/databricks/ldp/database-replication |
 | Use metaprogramming to generate Lakeflow flows | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/ldp-metaprogramming |
 | Design and use flows in Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/flow-examples |
 | Backfill historical data with Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/flows-backfill |
-| Apply REPLACE USING flows for partial snapshots | https://learn.microsoft.com/en-us/azure/databricks/ldp/flows-replace-using |
 | Use REPLACE WHERE flows for batch recomputes | https://learn.microsoft.com/en-us/azure/databricks/ldp/flows-replace-where |
-| Use incremental refresh for materialized views | https://learn.microsoft.com/en-us/azure/databricks/ldp/incremental-refresh |
 | Use real-time mode for low-latency pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/real-time |
 | Rewind and replay Lakeflow pipelines after errors | https://learn.microsoft.com/en-us/azure/databricks/ldp/rewind |
 | Design transformation patterns in Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/transform |
@@ -63,9 +59,6 @@
 | Design MLOps workflows on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/mlops-workflow |
 | Choose between single-node and distributed training on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/distributed-training/ |
 | Choose and train deep learning recommenders on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-recommender-models |
-| Apply MLflow 3 for GenAI evaluation and observability | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/ |
-| Reference architectures for PII redaction of OTel traces in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/redact-pii-otel-traces-reference |
-| Understand Lakebase autoscaling behavior and patterns | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/autoscaling |
 | Use Lakebase branches for safe data versioning | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/branches |
 | Design Lakebase computes and endpoints topology | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/computes-and-endpoints |
 | Plan Lakebase disaster recovery across regions | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/disaster-recovery |
@@ -79,7 +72,6 @@
 | Use point-in-time branches in Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/point-in-time-branching |
 | Scale Lakebase workloads with read replicas | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/read-replicas |
 | Store AI agent state in Lakebase Postgres | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/state-management |
-| Serve lakehouse data via Lakebase synced tables | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/sync-tables |
 | Connect Databricks Serverless Private Git to on-prem Git | https://learn.microsoft.com/en-us/azure/databricks/repos/connect-on-prem-git-server |
 | Architect Databricks Serverless Private Git connectivity | https://learn.microsoft.com/en-us/azure/databricks/repos/serverless-private-git |
 | Apply data exfiltration protection reference architectures | https://learn.microsoft.com/en-us/azure/databricks/security/network/data-exfiltration-protection/architecture |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-20'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -21,24 +21,24 @@ category_descriptions:
   security: 'Securing Azure Front Door: TLS/cipher suites, HTTPS certs, security headers,
     mTLS, origin auth, Private Link, log scrubbing, and protecting origins from direct
     access.'
-  limits-quotas: POP locations and regions, TLS/cipher support, FAQs on limits/behavior,
-    routing composite limits, and bandwidth throttling rules for Azure Front Door.
+  limits-quotas: POP locations and codes, supported TLS versions/ciphers, and Front
+    Door limits like routing composites, feature behaviors, and bandwidth throttling
+    per subscription.
   troubleshooting: Troubleshooting Azure Front Door tier migration issues, including
     common errors, configuration mismatches, and steps to resolve migration failures
     or unexpected behavior.
 skill_description: Expert knowledge for Azure Front Door development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring apex domains, rules engine, caching/streaming, Private Link origins,
-  or TLS/mTLS security, and other Azure Front Door related development tasks. Not
-  for Azure Application Gateway (use azure-application-gateway), Azure Load Balancer
-  (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure
+  configuring apex domains, rules engine, Private Link origins, TLS/WAF security,
+  or tier migrations, and other Azure Front Door related development tasks. Not for
+  Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager
+  (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure
   Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring apex domains, rules engine, caching/streaming, Private
-  Link origins, or TLS/mTLS security, and other Azure Front Door related development
-  tasks.
+use_when: Use when configuring apex domains, rules engine, Private Link origins, TLS/WAF
+  security, or tier migrations, and other Azure Front Door related development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager),
+  Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer),
   Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Front Door Crawl Report
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 101
+- **Updated Pages**: 1
+- **Unchanged**: 100
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -74,6 +74,11 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 37 | 36.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
+  - Updated: 2026-08-24T22:12:00.000Z → 2026-09-14T17:12:00.000Z
 
 ## Classified Pages
 
@@ -108,6 +113,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Cross-Origin Resource Sharing (CORS)](https://learn.microsoft.com/en-us/azure/frontdoor/cross-origin-resource-sharing) | configuration | 0.70 | The CORS article for Azure Front Door describes how the service handles wildcard, single-origin, and multiple-origin scenarios, which typically involves specific header names, allowed values, and behavior unique to this product’s CORS implementation. That aligns with configuration: product-specific settings and allowed values for CORS on Front Door. |
 | [DHE Cipher FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/diffie-hellman-ciphers) | security | 0.70 | Page lists specific DHE cipher suites that Azure Front Door/CDN will stop negotiating and the deprecation date, and explains how to stop using them. This is detailed, product-specific TLS/cipher configuration and security guidance, not just conceptual info. |
 | [End-to-end TLS encryption](https://learn.microsoft.com/en-us/azure/frontdoor/end-to-end-tls) | limits-quotas | 0.70 | TLS encryption article for Front Door that explicitly covers supported TLS versions and cipher suites. Supported protocol/cipher lists and version constraints are concrete capability limits that qualify as expert knowledge under limits-quotas. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq) | limits-quotas | 0.70 | FAQ pages for Azure Front Door typically include concrete, product-specific details such as maximum numbers of frontends/origins, supported protocol/port combinations, caching and routing constraints, and other numeric or tightly specified behavioral limits that aren't obvious from general training data. These align with limits-quotas expert knowledge rather than generic conceptual content. |
 | [Front Door monitoring data reference](https://learn.microsoft.com/en-us/azure/frontdoor/monitor-front-door-reference) | configuration | 0.70 | A monitoring data reference typically lists concrete metric names, dimensions, log categories, and schema fields specific to Azure Front Door and Azure Monitor, which are product-specific configuration/telemetry details not inferable from general training. |
 | [Migrate from Front Door (classic) - PowerShell](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier-powershell) | integrations | 0.70 | PowerShell-based migration documentation typically lists specific cmdlets, parameters, and required values unique to Azure Front Door migration (for example, migration tool commands, profile IDs, flags controlling behavior). These are product-specific API/SDK usage details that qualify as expert integration knowledge rather than generic scripting guidance. |
 | [Migration FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/migration-faq) | troubleshooting | 0.70 | A migration FAQ for Front Door and CDN Standard (classic) to Standard/Premium usually addresses specific symptoms and questions (for example, why certain profiles can’t migrate, what happens to certificates, domain ownership issues, or billing changes) with concrete explanations and resolutions. This maps migration-related problems to causes and solutions, fitting the troubleshooting category with product-specific expert details. |
@@ -127,7 +133,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Configure HTTPS on a custom domain](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain) | security | 0.65 | Covers configuring HTTPS with Azure-managed and customer-managed certificates for Front Door custom domains; such pages typically include certificate type options, validation methods, and specific TLS/security configuration parameters that are product-specific. |
 | [Create a Front Door - CLI](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-cli) | integrations | 0.65 | Quickstart using Azure CLI; contains specific CLI commands and parameters for Front Door and WAF policy creation, which are product-specific API/SDK usage details. |
 | [Edge actions](https://learn.microsoft.com/en-us/azure/frontdoor/edge-actions) | configuration | 0.65 | Edge Actions article describes creating, managing, and attaching JavaScript logic at PoPs. This feature typically has specific configuration objects, parameters, and attachment settings unique to Front Door, making it primarily configuration-focused expert knowledge. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq) | limits-quotas | 0.65 | FAQ pages for Azure Front Door typically include concrete, product-specific details such as maximum numbers of origins, domains, routing rules, header size limits, caching constraints, and other numeric behaviors that are not obvious from general training data. These are often expressed as exact values and sometimes differ by SKU, fitting the limits-quotas category better than generic FAQ, even though the page also covers broader questions. |
 | [Migrate from Front Door (classic) - Portal](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier) | deployment | 0.65 | Step-by-step migration guidance for moving a Front Door (classic) profile to Standard/Premium generally includes product-specific requirements, supported/unsupported configurations, and constraints on how and when you can migrate (for example, what must exist in the subscription, how endpoints/domains are mapped, and any downtime or sequencing requirements). This is expert deployment/migration knowledge beyond generic tutorials. |
 | [Connect to Azure API Management](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-enable-private-link-apim) | configuration | 0.64 | Shows detailed configuration for Front Door Premium to APIM via Private Link and notes unsupported APIM Premium v2 tier, which is product-specific behavior. |
 | [Upgrade from Standard to Premium tier - Portal](https://learn.microsoft.com/en-us/azure/frontdoor/tier-upgrade) | decision-making | 0.64 | Describes upgrade path, billing behavior, and irreversible nature of downgrade; informs SKU/tier selection and upgrade decisions. |

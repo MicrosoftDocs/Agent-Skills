@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
-  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), secrets
-    and identities, network controls (NSG, firewall, private endpoints), policies,
-    and security best practices.'
+  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS), secrets and
+    certs, private networking, egress control, RBAC/Policy, and best practices for
+    protecting apps and Functions.'
   deployment: 'Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure
     Pipelines, Docker Compose deployments, Arc-enabled Kubernetes, logging migration,
     and self-hosted runners/jobs.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ACA auth, KEDA/Dapr scaling, CI/CD deployments, Java microservices,
-  or GPU/AI workloads, and other Azure Container Apps related development tasks. Not
-  for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift
-  (use azure-redhat-openshift).
-use_when: Use when configuring ACA auth, KEDA/Dapr scaling, CI/CD deployments, Java
-  microservices, or GPU/AI workloads, and other Azure Container Apps related development
-  tasks.
+  Use when configuring ACA ingress/scale, Dapr or Functions workloads, GitHub Actions
+  CI/CD, private networking, or GPUs, and other Azure Container Apps related development
+  tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps
+  (use azure-spring-apps).
+use_when: Use when configuring ACA ingress/scale, Dapr or Functions workloads, GitHub
+  Actions CI/CD, private networking, or GPUs, and other Azure Container Apps related
+  development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
   (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Red Hat OpenShift (use azure-redhat-openshift).
+  Azure Spring Apps (use azure-spring-apps).
 ---
 # Azure Container Apps Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 12
-- **Unchanged**: 221
+- **Updated Pages**: 2
+- **Unchanged**: 231
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -78,30 +78,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Updated Pages
 
-- [With a job](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-event-driven-jobs)
-  - Updated: 2026-02-20T18:12:00.000Z → 2026-09-11T17:13:00.000Z
-- [Azure Developer CLI (azd) templates](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-cli-templates)
-  - Updated: 2026-03-24T22:22:00.000Z → 2026-09-04T08:00:00.000Z
-- [Aspire Dashboard](https://learn.microsoft.com/en-us/azure/container-apps/aspire-dashboard)
-  - Updated: 2025-07-31T17:19:00.000Z → 2026-09-09T22:11:00.000Z
-- [Secure your Azure Container Apps deployment](https://learn.microsoft.com/en-us/azure/container-apps/secure-deployment)
-  - Updated: 2026-09-03T22:14:00.000Z → 2026-09-11T17:13:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/security)
-  - Updated: 2026-06-04T22:19:00.000Z → 2026-09-11T17:13:00.000Z
-- [Manage secrets](https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets)
-  - Updated: 2026-04-03T17:16:00.000Z → 2026-09-11T17:13:00.000Z
-- [Relocate to another region](https://learn.microsoft.com/en-us/azure/container-apps/relocate-region)
-  - Updated: 2026-04-22T06:17:00.000Z → 2026-09-04T08:00:00.000Z
-- [Functions](https://learn.microsoft.com/en-us/azure/container-apps/functions-overview)
-  - Updated: 2026-07-31T17:12:00.000Z → 2026-09-04T08:00:00.000Z
+- [Custom domain with a free certificate](https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates)
+  - Updated: 2026-02-20T18:12:00.000Z → 2026-09-16T22:18:00.000Z
 - [Jobs](https://learn.microsoft.com/en-us/azure/container-apps/jobs)
-  - Updated: 2026-03-31T08:00:00.000Z → 2026-09-11T17:13:00.000Z
-- [Deploy self-hosted CI/CD runners with jobs](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs)
-  - Updated: 2025-11-24T23:17:00.000Z → 2026-09-04T08:00:00.000Z
-- [Connect to Azure or partner services](https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-connect-services)
-  - Updated: 2026-03-27T08:00:00.000Z → 2026-09-11T17:13:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview)
-  - Updated: 2025-11-07T23:24:00.000Z → 2026-09-04T08:00:00.000Z
+  - Updated: 2026-09-11T17:13:00.000Z → 2026-09-16T08:00:00.000Z
 
 ## Classified Pages
 
@@ -154,7 +134,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Deploy using the Dapr extension for Azure Functions](https://learn.microsoft.com/en-us/azure/container-apps/dapr-functions-extension) | integrations | 0.76 | Shows how to integrate Azure Functions with Dapr APIs via triggers/bindings in Container Apps, involving specific binding/trigger configuration parameters unique to this integration. |
 | [Billing](https://learn.microsoft.com/en-us/azure/container-apps/billing) | decision-making | 0.75 | Billing article will include plan-specific pricing dimensions, what is billed where, and how features like private endpoints incur charges—used for cost-based decision making between plans and features. |
 | [Create an Azure Files storage mount](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files) | configuration | 0.75 | Tutorial for Azure Files mounts with SMB/NFS; includes mount configuration parameters and supported protocols, which are configuration specifics. |
-| [Custom domain with a free certificate](https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates) | security | 0.75 | Covers binding custom domains and automatic managed certificates with constraints (e.g., DigiCert IP requirement, DNS suffix caveat); product-specific security configuration. |
 | [GitHub Actions](https://learn.microsoft.com/en-us/azure/container-apps/github-actions) | deployment | 0.75 | Describes GitHub Actions workflow that updates images and triggers new revisions; includes product-specific CI/CD workflow configuration. |
 | [GitHub Actions with Azure CLI](https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli) | deployment | 0.75 | Focuses on generating a GitHub Actions workflow tailored to Container Apps using CLI; contains specific workflow and deployment configuration. |
 | [Set up environment custom DNS suffix](https://learn.microsoft.com/en-us/azure/container-apps/environment-custom-dns-suffix) | security | 0.75 | Explains configuring environment-level DNS suffix and TLS certificates with specific routing behavior and constraints for Container Apps. |
@@ -220,6 +199,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Use storage mounts](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts) | configuration | 0.70 | Contains product-specific constraints and gotchas (for example, special characters like '.' in volume names causing deployment failures, and unsupported storage backends such as Azure NetApp Files and Azure Blob Storage). These are detailed behavioral nuances and configuration rules that go beyond generic knowledge, fitting best under configuration. |
 | [Virtual network configuration](https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks) | configuration | 0.70 | A VNet configuration article for Container Apps typically includes product-specific settings such as required subnets, address space constraints, delegated subnet requirements, and specific parameters for environment networking. These are configuration details (subnet names, integration modes, required ports, and NSG/route settings) that go beyond generic networking concepts and represent expert knowledge about how Container Apps environments must be wired into VNets. |
 | [X](https://learn.microsoft.com/en-us/azure/container-apps/authentication-twitter) | security | 0.70 | X/Twitter auth integration for Container Apps generally includes specific configuration fields, redirect URLs, and provider options unique to this product and provider. These are concrete, product-specific security configuration steps rather than generic OAuth guidance. |
+| [Custom domain with a free certificate](https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates) | security | 0.68 | Page describes product-specific configuration for binding custom domains and enabling free managed certificates in Azure Container Apps, including constraints such as requiring public accessibility from specific DigiCert IP addresses and restrictions when a custom environment DNS suffix is configured. These are detailed, service-specific security/SSL configuration behaviors that go beyond generic knowledge. |
 | [Migrate Java with GitHub Copilot app modernization](https://learn.microsoft.com/en-us/azure/container-apps/migrate-java-github-copilot-app-modernization) | decision-making | 0.68 | Describes using GitHub Copilot app modernization with Azure Container Apps, including supported Java versions and frameworks and how to approach upgrades and migration. This is specialized migration and tool-selection guidance with product-specific constraints (e.g., supported Java versions). |
 | [Blue/Green deployment](https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment) | best-practices | 0.66 | Applies blue-green deployment strategy specifically to Container Apps, including how to route traffic between environments/revisions, which is actionable product-specific practice beyond generic theory. |
 | [AutoGen](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-autogen) | integrations | 0.65 | Tutorial on wiring AutoGen agents to Azure Container Apps dynamic sessions as a code interpreter; likely includes product-specific configuration parameters, endpoint settings, and SDK usage patterns for this integration. |
@@ -299,7 +279,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Functions](https://learn.microsoft.com/en-us/azure/container-apps/functions-overview) | 0.30 | Overview of Azure Functions on Container Apps describing capabilities (autoscaling, Dapr, GPU, VNet, etc.) without detailed limits, configuration tables, error codes, or product-specific decision matrices. Primarily conceptual/marketing-style overview, not expert configuration or troubleshooting content. |
 | [Github repository](https://learn.microsoft.com/en-us/azure/container-apps/java-get-started-github-repository) | 0.30 | Tutorial deploying via GitHub repo; mostly workflow steps rather than configuration reference or quotas. |
 | [Java Quarkus app with Postgres DB](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-java-quarkus-connect-managed-identity-postgresql-database) | 0.30 | Step-by-step tutorial for using managed identity from a Java Quarkus app to access Azure Database for PostgreSQL; appears to be a guided example rather than a reference of specific RBAC roles, config parameter tables, or troubleshooting mappings. |
-| [Jobs](https://learn.microsoft.com/en-us/azure/container-apps/jobs) | 0.30 | Describes what Azure Container Apps jobs are and high-level scenarios (data processing, ML, on-demand tasks). No numeric limits, configuration parameter tables, error codes, or detailed best-practice guidance; mainly conceptual overview. |
+| [Jobs](https://learn.microsoft.com/en-us/azure/container-apps/jobs) | 0.30 | Summary indicates a conceptual overview of Azure Container Apps jobs (what they are and general scenarios). No evidence of numeric limits, configuration tables, error codes, or detailed patterns that meet the expert-knowledge criteria for any sub-skill type. |
 | [LlamaIndex](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex) | 0.30 | Tutorial on using code interpreter sessions in LlamaIndex with Azure Container Apps. Likely step-by-step guidance without detailed configuration tables, limits, or product-specific error mappings; primarily instructional, not expert reference content as defined. |
 | [Local testing](https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing) | 0.30 | Local development and testing guide for Container Apps express; describes how to build, run, and push images using Docker, which is generic tutorial content rather than product-specific expert configuration, limits, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/express-overview) | 0.30 | Overview of Azure Container Apps Express; summary is marketing/feature description (rapid provisioning, scale-from-zero) without detailed limits, configuration tables, or decision matrices. |

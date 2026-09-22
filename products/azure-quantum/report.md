@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   limits-quotas: Managing Azure Quantum API lifecycles, usage quotas, session limits/timeouts,
     and Rigetti hardware target constraints and capacity.
@@ -44,17 +44,17 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ## Summary
 
-- **Total Pages**: 139
-- **Fetched**: 139
+- **Total Pages**: 141
+- **Fetched**: 141
 - **Fetch Failed**: 0
 - **Classified**: 42
-- **Unclassified**: 97
+- **Unclassified**: 99
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 3
 - **Updated Pages**: 0
 - **Unchanged**: 138
-- **Deleted Pages**: 0
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -63,20 +63,26 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 |------|-------|------------|
 | architecture-patterns | 1 | 0.7% |
 | best-practices | 1 | 0.7% |
-| configuration | 9 | 6.5% |
-| decision-making | 4 | 2.9% |
+| configuration | 9 | 6.4% |
+| decision-making | 4 | 2.8% |
 | deployment | 2 | 1.4% |
-| integrations | 10 | 7.2% |
-| limits-quotas | 4 | 2.9% |
+| integrations | 10 | 7.1% |
+| limits-quotas | 4 | 2.8% |
 | security | 7 | 5.0% |
-| troubleshooting | 4 | 2.9% |
-| *(Unclassified)* | 97 | 69.8% |
+| troubleshooting | 4 | 2.8% |
+| *(Unclassified)* | 99 | 70.2% |
 
 ## Changes
 
 ### New Pages
 
-- [The Bloch sphere visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-bloch-sphere-visualizer)
+- [Develop your skills with QDK Learning](https://learn.microsoft.com/en-us/azure/quantum/qdk-learning-overview)
+- [Learn about quantum computing and Q# with the Quantum Katas](https://learn.microsoft.com/en-us/azure/quantum/qdk-learning-katas)
+- [Learn about quantum chemistry with QDK Learning](https://learn.microsoft.com/en-us/azure/quantum/qdk-learning-quantum-chemistry)
+
+### Deleted Pages
+
+- ~~Learn quantum computing and Q# with the Katas~~ (https://learn.microsoft.com/en-us/azure/quantum/katas-qdk-learning)
 
 ## Classified Pages
 
@@ -178,6 +184,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Grover's algorithm](https://learn.microsoft.com/en-us/azure/quantum/concepts-grovers) | 0.20 | Detailed theory of Grover’s algorithm; mathematical explanation rather than product-specific best practices, limits, or configuration details. |
 | [Grover's algorithm](https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-grovers-search) | 0.20 | Tutorial implementing Grover's algorithm in Q#; contains algorithmic and coding guidance but no Azure-specific quotas, configuration tables, security roles, or decision-making matrices that meet the expert-knowledge criteria. |
 | [Item access expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/itemaccessexpressions) | 0.20 | Item access and slicing semantics; standard language reference. |
+| [Learn about quantum chemistry with QDK Learning](https://learn.microsoft.com/en-us/azure/quantum/qdk-learning-quantum-chemistry) | 0.20 | Explains a QDK Learning course on quantum chemistry and QPE conceptually; does not expose detailed configuration parameters, limits, or error-resolution mappings. |
 | [List of quantum computing providers](https://learn.microsoft.com/en-us/azure/quantum/qc-target-list) | 0.20 | Primarily a catalog/overview listing available quantum providers and brief descriptions; no indication of numeric limits, configuration tables, error codes, or decision matrices. |
 | [Neutral atom device simulation in the QDK](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-neutral-atom-simulator) | 0.20 | Overview of neutral atom device simulation; focuses on conceptual description of noise and qubit processing without detailed configuration tables, limits, or error mappings. |
 | [Overview of QDK simulators](https://learn.microsoft.com/en-us/azure/quantum/simulators-overview-qdk) | 0.20 | Overview of QDK simulators; describes available simulators but does not expose numeric limits, configuration parameter tables, or decision matrices. |
@@ -207,9 +214,10 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Build state preparation circuits with sparse isometry](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-chem-sparse-isometry) | 0.10 | Conceptual overview of sparse isometry technique; no indication of product configuration, limits, or troubleshooting. |
 | [Comments](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/comments) | 0.10 | Basic syntax for comments in Q#; generic language knowledge. |
 | [Comparative expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/comparativeexpressions) | 0.10 | Equality comparison expressions; basic language reference content. |
+| [Develop your skills with QDK Learning](https://learn.microsoft.com/en-us/azure/quantum/qdk-learning-overview) | 0.10 | Overview of QDK Learning courses and usage in VS Code; no product-specific limits, configs, error codes, or detailed patterns that qualify as expert knowledge. |
 | [Dirac notation](https://learn.microsoft.com/en-us/azure/quantum/concepts-dirac-notation) | 0.10 | Explains Dirac notation and its use in quantum computing; purely mathematical/conceptual, not product-configuration or troubleshooting focused. |
 | [Install QDK for chemistry](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-chemistry) | 0.10 | Installation how-to for a Python library; likely step-by-step commands without detailed configuration matrices, limits, or specialized troubleshooting content. |
-| [Learn quantum computing and Q# with the Katas](https://learn.microsoft.com/en-us/azure/quantum/katas-qdk-learning) | 0.10 | Educational/learning overview of Quantum Katas and QDK Learning; no detailed configuration, limits, troubleshooting, or product-specific expert patterns. |
+| [Learn about quantum computing and Q# with the Quantum Katas](https://learn.microsoft.com/en-us/azure/quantum/qdk-learning-katas) | 0.10 | Describes Quantum Katas as a self-paced course and how to use them; focuses on learning flow rather than detailed configuration, limits, or troubleshooting content. |
 | [Microsoft's quantum machine](https://learn.microsoft.com/en-us/azure/quantum/overview-microsoft-quantum-machine) | 0.10 | High-level overview of Microsoft's quantum machine journey and research; no concrete configuration values, limits, error codes, or product-specific technical guidance. |
 | [Multiple qubits](https://learn.microsoft.com/en-us/azure/quantum/concepts-multiple-qubits) | 0.10 | Conceptual treatment of multi-qubit states and gates; no Azure- or QDK-specific parameters, limits, or decision guidance. |
 | [Q#](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview) | 0.10 | High-level introduction to Q# and program structure; conceptual overview without detailed configuration, limits, or troubleshooting content. |

@@ -1,9 +1,9 @@
 ---
 name: azure-artifacts
-description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, .npmrc auth, GitHub Actions CI/CD, or universal package publishing, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Artifact Signing (use azure-artifact-signing).
+description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, .npmrc auth, GitHub Actions CI/CD, or package retention limits, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifacts Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L49-L56 | Storage, size, count, and retention limits for Azure Artifacts packages, plus how to monitor usage, configure deletion/retention, and publish universal packages within quota constraints. |
 | Security | L57-L62 | Securing Azure Artifacts feeds: configuring upstream source protections against malicious packages and managing feed/view permissions and access control. |
 | Configuration | L63-L70 | Configuring Azure Artifacts feeds: views, upstream sources, npm .npmrc auth/settings, and .artifactignore for optimizing Azure Pipelines artifact behavior and performance. |
-| Integrations & Coding Patterns | L71-L111 | How to connect build tools (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources, and debug with symbols. |
-| Deployment | L112-L115 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
+| Integrations & Coding Patterns | L71-L110 | How to connect build tools (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources, and debug with symbols |
+| Deployment | L111-L114 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
 
 ### Best Practices
 | Topic | URL |
@@ -78,7 +78,6 @@ This skill requires **network access** to fetch documentation content:
 | Publish and restore Rust Cargo packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-cargo?view=azure-devops |
 | Publish and restore Maven packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-maven?view=azure-devops |
 | Publish and consume npm packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-npm?view=azure-devops |
-| Publish and consume NuGet packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-nuget?view=azure-devops |
 | Add Gradle Plugins repository as Azure Artifacts upstream | https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/gradle-plugins?view=azure-devops |
 | Configure Maven to restore packages from Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/install?view=azure-devops |
 | Configure JitPack as an Azure Artifacts upstream source | https://learn.microsoft.com/en-us/azure/devops/artifacts/maven/jitpack-upstream?view=azure-devops |
@@ -95,7 +94,7 @@ This skill requires **network access** to fetch documentation content:
 | Install NuGet packages from Azure Artifacts in Visual Studio | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/install-nuget-packages-with-visual-studio?view=azure-devops |
 | Authenticate to Azure Artifacts using NuGet.exe | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/nuget-exe?view=azure-devops |
 | Publish Azure Artifacts NuGet packages to NuGet.org | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish-to-nuget-org?view=azure-devops |
-| Publish NuGet packages with NuGet CLI to Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish?view=azure-devops |
+| Publish NuGet packages to Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish?view=azure-devops |
 | Restore NuGet packages with dotnet from Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/restore-nuget-packages-dotnet?view=azure-devops |
 | Restore NuGet packages with NuGet CLI from Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/restore-nuget-packages-nuget-exe?view=azure-devops |
 | Connect Python projects to Azure Artifacts feeds | https://learn.microsoft.com/en-us/azure/devops/artifacts/python/project-setup-python?view=azure-devops |

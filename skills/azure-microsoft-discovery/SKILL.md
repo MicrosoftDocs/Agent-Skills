@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery Engine shared sessions, Bookshelf indexes, Dockerized tools, REST jobs, or ACR deployments, and other Azure Microsoft Discovery related development tasks.
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery Engine shared sessions, Bookshelf indexes, Dockerized tools, REST jobs, or ACR deployments, and other Azure Microsoft Discovery related development tasks. Not for Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph), Azure Monitor (use azure-monitor), Azure Cost Management (use azure-cost-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill

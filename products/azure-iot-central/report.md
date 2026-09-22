@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 88
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 90
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | *(Unclassified)* | 33 | 36.7% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate to native Azure IoT architecture](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-migrate-to-azure-native-iot)
-
-### Updated Pages
-
-- [Migrate devices to IoT Hub](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-migrate-to-iot-hub)
-  - Updated: 2025-08-06T08:00:00.000Z → 2026-09-10T05:11:00.000Z
 
 ## Classified Pages
 

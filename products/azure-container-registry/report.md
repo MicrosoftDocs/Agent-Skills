@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-09-20'
 category_descriptions:
   security: 'Securing ACR access: auth methods (Entra, managed identity, tokens),
     RBAC/ABAC, network/firewall/VNet rules, policy/compliance, encryption keys, image
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, Helm,
     and webhooks; configuring auth, caching, transfers, image builds, and Notation-based
     signing/verification.
-  configuration: 'Configuring ACR behavior: artifact caching, purge/retention/soft
-    delete, locks, IPv6, tasks (YAML, timers, patching, agent pools), webhooks, and
-    monitoring metrics/logs.'
+  configuration: 'Configuring ACR behavior: caching, retention/soft delete, purge,
+    locks, IPv6, metrics/logs, webhooks, and setting up/automating ACR Tasks (YAML,
+    timers, agent pools, patching).'
   decision-making: Guidance on choosing Kubernetes auth methods for ACR, deciding
     geo-replication strategy, and migrating image signing from Docker Content Trust
     to Notary Project
@@ -29,13 +29,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Registry development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing ACR auth, image signing, geo-replication, connected registries,
-  or ACR Tasks, and other Azure Container Registry related development tasks. Not
-  for Azure Container Apps (use azure-container-apps), Azure Container Instances (use
-  azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Use when configuring ACR Tasks, geo-replication, connected registries, image signing/verification,
+  or Defender scanning, and other Azure Container Registry related development tasks.
+  Not for Azure Container Apps (use azure-container-apps), Azure Container Instances
+  (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Red Hat OpenShift (use azure-redhat-openshift).
-use_when: Use when managing ACR auth, image signing, geo-replication, connected registries,
-  or ACR Tasks, and other Azure Container Registry related development tasks.
+use_when: Use when configuring ACR Tasks, geo-replication, connected registries, image
+  signing/verification, or Defender scanning, and other Azure Container Registry related
+  development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
@@ -52,8 +53,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 125
+- **Updated Pages**: 1
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -73,6 +74,11 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 34 | 27.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-06-12T06:03:00.000Z
 
 ## Classified Pages
 
@@ -106,11 +112,11 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Detect common issues](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-check-health) | troubleshooting | 0.80 | Explains how to use az acr check-health, including command options and interpretation of results, which is product-specific diagnostic procedure. |
 | [Disable export](https://learn.microsoft.com/en-us/azure/container-registry/data-loss-prevention) | security | 0.80 | Covers exportPolicy property, its allowed values, and behavior for Premium registries; product-specific security configuration and compliance-related setting. |
 | [Enable unauthenticated anonymous pull access](https://learn.microsoft.com/en-us/azure/container-registry/anonymous-pull-access) | security | 0.80 | Describes enabling unauthenticated pull, tier constraints (Standard/Premium), and security implications; product-specific security setting. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference) | configuration | 0.80 | Reference article for ACR monitoring data, including metrics and log categories; provides detailed names and structures that are product-specific configuration/telemetry knowledge. |
 | [Restrict access using service endpoint (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-vnet) | security | 0.80 | Shows configuring VNet service endpoints for ACR; includes subnet/endpoint settings, a network security configuration scenario. |
 | [Tag and version images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-tag-version) | best-practices | 0.80 | Provides concrete DO/DON'T strategies for image tags and versions in ACR deployments; product-specific lifecycle guidance. |
 | [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-troubleshoot-performance) | troubleshooting | 0.80 | Describes performance symptoms, likely with causes (e.g., SKU, region, network) and recommended fixes specific to ACR, which is expert troubleshooting guidance. |
 | [Azure ABAC repository permissions](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions) | security | 0.78 | The page describes Azure ABAC usage specifically for Azure Container Registry repositories, including repository-level permission conditions and how they extend Azure RBAC. It contains product-specific security configuration details (role assignments with repository attributes and conditions) that go beyond generic security concepts. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference) | configuration | 0.78 | The page is a monitoring data reference for Azure Container Registry, listing specific metrics, diagnostic log categories, and activity log schemas. It provides product-specific field names, dimensions, and categories that an LLM is unlikely to fully know from training. This aligns best with configuration, as it documents concrete monitoring/diagnostic configuration options and data schemas rather than generic concepts. |
 | [RBAC overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-overview) | security | 0.78 | RBAC overview pages for Azure services typically list specific built-in role names and their exact permissions/scopes, which are product-specific security details not reliably known from training. This fits the security sub-skill because it focuses on Entra RBAC roles and role assignments for Azure Container Registry. |
 | [Cross-registry authentication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-cross-registry-authentication) | security | 0.75 | Product-specific pattern for using managed identity to pull from another private registry, including CLI parameters and identity usage, which is security-focused configuration. |
 | [Enable Customer managed key on your registry](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-enable-customer-managed-keys) | security | 0.75 | Shows concrete steps and parameters (CLI, portal, ARM) to enable CMK; contains product-specific security configuration values. |

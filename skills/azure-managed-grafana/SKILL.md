@@ -1,9 +1,9 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring private endpoints, Entra group sync, AKS/Prometheus data sources, SMTP alerts, or Enterprise plans, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring MCP/AI Foundry dashboards, Prometheus/AKS or ADX data sources, private endpoints, or Enterprise upgrades, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Grafana Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L40-L45 | Planning and executing Grafana decisions: choosing/activating Enterprise plans, migrating from self‑hosted or Azure Grafana Essential, and upgrading Azure Managed Grafana (incl. v12). |
 | Limits & Quotas | L46-L52 | Details on Managed Grafana regional availability, quotas and constraints, plus how to use features like reporting and image rendering within those limits. |
 | Security | L53-L66 | Securing Managed Grafana: encryption, auth (users, service accounts, tokens), roles/permissions, private endpoints, Entra group sync, dashboard sharing, and security best practices. |
-| Configuration | L67-L77 | Configuring Azure Managed Grafana: instance settings, private endpoints, outbound IPs, zone redundancy, plugins, metrics/diagnostics, and SMTP email alerts. |
-| Integrations & Coding Patterns | L78-L87 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
+| Configuration | L67-L78 | Configuring Managed Grafana instances: MCP endpoints, instance settings, plugins, private endpoints, deterministic outbound IPs, zone redundancy, diagnostics/logs, and SMTP email alerts. |
+| Integrations & Coding Patterns | L79-L88 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -67,6 +67,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Configure Azure Managed Grafana MCP server endpoint | https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server |
 | Configure Azure Managed Grafana instance settings | https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings |
 | Connect Managed Grafana to data sources via private endpoints | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-to-data-source-privately |
 | Configure deterministic outbound IPs for Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-deterministic-ip |

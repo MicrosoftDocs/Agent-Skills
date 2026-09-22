@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   troubleshooting: Diagnosing and fixing common Cloud Shell errors, storage and connectivity
     issues, plus deployment and network problems when running Cloud Shell in private
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 
 ### Updated Pages
 
-- [Assign necessary permissions to prepare for Network Profile deprecation](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/migrate-container-permissions)
-  - Updated: 2026-06-23T17:23:00.000Z → 2026-09-08T17:27:00.000Z
+- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
+  - Updated: 2026-09-03T17:13:00.000Z → 2026-09-18T08:00:00.000Z
 
 ## Classified Pages
 
@@ -78,6 +78,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 | [Predictive IntelliSense in Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/cloud-shell-predictive-intellisense) | 0.25 | Describes that Cloud Shell uses a specific PSReadLine version and Az.Tools.Predictor module with Predictive IntelliSense enabled by default. While product-specific, the summary doesn’t show detailed configuration options, parameter tables, or error codes; it’s mainly an informational overview. |
 | [Azure Cloud Shell pricing](https://learn.microsoft.com/en-us/azure/cloud-shell/pricing) | 0.20 | Pricing overview stating Cloud Shell is free; no detailed tier matrices, numeric cost comparisons, or decision criteria are shown. |
 | [Features & tools](https://learn.microsoft.com/en-us/azure/cloud-shell/features) | 0.20 | Feature overview without numeric limits, configuration tables, or product-specific troubleshooting; primarily conceptual description of capabilities. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.20 | Release notes summarize feature changes and updates but, based on the provided summary, do not expose specific limits, configuration tables, error codes, or detailed troubleshooting/decision matrices. Without concrete numeric constraints, config parameters, or structured guidance, it doesn't meet any sub-skill criteria for expert knowledge. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.20 | Release notes summarize feature and tool updates but the provided summary does not indicate detailed limits, configuration tables, error codes, or other structured expert data matching any sub-skill type; it appears as high-level change log content rather than a reference for limits, configuration, or troubleshooting. |
 | [Use the Cloud Shell editor](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor) | 0.20 | Overview of the integrated Cloud Shell editor (Monaco-based) and its features. The summary is feature-oriented and lacks specific configuration parameters, limits, or error codes; it’s not detailed enough to qualify as configuration, integrations, or best-practices expert content. |
 | [Use the window](https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window) | 0.20 | Explains how to use the Cloud Shell window and toolbar. From the summary, it appears to be UI usage guidance without detailed configuration tables, limits, or troubleshooting mappings, so it doesn’t meet any expert-knowledge sub-skill criteria. |

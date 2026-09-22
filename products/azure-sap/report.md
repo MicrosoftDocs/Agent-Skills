@@ -55,10 +55,10 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 - **Unclassified**: 39
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 224
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 227
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
 ## Classification Statistics
@@ -77,21 +77,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | *(Unclassified)* | 39 | 17.2% |
 
 ## Changes
-
-### New Pages
-
-- [SAP Joule and Microsoft Copilot](https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/joule/joule-copilot-overview)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/about-sap-with-microsoft-ai)
-  - Updated: 2026-05-21T19:52:00.000Z → 2026-09-11T22:13:00.000Z
-- [Copilot Studio overview](https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/copilot-studio/copilot-with-sap-overview)
-  - Updated: 2026-05-21T19:52:00.000Z → 2026-09-11T22:13:00.000Z
-
-### Deleted Pages
-
-- ~~SAP Joule and Microsoft 365 Copilot~~ (https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/joule/joule-copilot-overview)
 
 ## Classified Pages
 

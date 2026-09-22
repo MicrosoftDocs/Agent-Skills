@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-09-20'
 category_descriptions:
   integrations: Using the Carbon Service REST API and Python scripts to programmatically
     export Azure emissions data, authenticate, query, and integrate carbon metrics
@@ -34,8 +34,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 11
+- **Updated Pages**: 1
+- **Unchanged**: 10
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-carbon-optimization/azure-carbon-optimization.csv`
 
@@ -49,6 +49,11 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 7 | 63.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/carbon-optimization/overview)
+  - Updated: 2025-10-07T08:00:00.000Z → 2026-09-15T17:03:00.000Z
 
 ## Classified Pages
 
@@ -69,4 +74,4 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [View and analyze emissions data](https://learn.microsoft.com/en-us/azure/carbon-optimization/view-emissions) | 0.30 | Portal usage for viewing/analyzing data; summary suggests UI guidance rather than detailed configuration tables or limits. |
 | [View and analyze emission data](https://learn.microsoft.com/en-us/azure/carbon-optimization/quickstart-view-analyze-emission-data) | 0.20 | Quickstart walkthrough in portal; likely step-by-step UI usage without detailed configs, limits, or error mappings. |
 | [Emissions terminology](https://learn.microsoft.com/en-us/azure/carbon-optimization/emissions-terminology) | 0.10 | Terminology/definitions article; conceptual vocabulary without product-specific configs, limits, or patterns. |
-| [Overview](https://learn.microsoft.com/en-us/azure/carbon-optimization/overview) | 0.10 | High-level overview of Carbon optimization; no concrete limits, configs, or detailed patterns. |
+| [Overview](https://learn.microsoft.com/en-us/azure/carbon-optimization/overview) | 0.10 | High-level conceptual overview of Azure carbon optimization without specific limits, configuration parameters, error codes, or detailed decision matrices. |

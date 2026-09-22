@@ -1,9 +1,9 @@
 ---
 name: azure-networking
-description: Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when designing VNets/VWAN, hub-spoke, Azure Firewall/WAF, DDoS/NSG policies, or fixing Microsoft.Network issues, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when designing VNets/VWAN, load balancers, firewalls/WAF, DDoS protection, or Virtual Network Manager policies, and other Azure Networking related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Networking Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L34-L39 | Diagnosing and resolving Azure network resource issues, including monitoring, troubleshooting connectivity/performance, and fixing failed Microsoft.Network provisioning states. |
 | Best Practices | L40-L44 | Guidance on boosting Azure NVA/VM network throughput and latency using Accelerated Connections, including configuration steps and performance optimization best practices. |
 | Decision Making | L45-L62 | Guidance on choosing Azure network architectures and services (load balancing, DDoS, firewall/WAF, hybrid/multicloud, private access, egress/ingress) for specific deployment scenarios. |
-| Architecture & Design Patterns | L63-L75 | Designing secure Azure network topologies (hub-spoke, flat, multi-region, Virtual WAN), planning IP addressing/subnets, and applying common workload-specific networking patterns. |
+| Architecture & Design Patterns | L63-L75 | Designing secure Azure network topologies: Zero Trust, hub-spoke, flat VNets, IP/subnet planning, multi-region and global transit (Virtual WAN), and common workload network patterns. |
 | Security | L76-L90 | Designing and enforcing network security in Azure: firewalls, WAF, NSGs/ASGs, secure DNS, DDoS protection, and applying Zero Trust and policy compliance to all network paths. |
 | Configuration | L91-L95 | Configuring and centrally managing virtual networks with Virtual Network Manager, and enforcing/using built-in Azure Policy definitions for networking resources. |
 
@@ -66,7 +66,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy a Zero Trust virtual network for Azure web apps | https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps |
 | Design a secure hub-spoke network for Azure web apps | https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network |
 | Implement a single-workload flat VNet topology | https://learn.microsoft.com/en-us/azure/networking/design-guide/flat-network |
-| Design hub-and-spoke network topology in Azure | https://learn.microsoft.com/en-us/azure/networking/design-guide/hub-spoke |
+| Design hub-and-spoke virtual networks in Azure | https://learn.microsoft.com/en-us/azure/networking/design-guide/hub-spoke |
 | Plan IP addressing for Azure virtual networks | https://learn.microsoft.com/en-us/azure/networking/design-guide/ip-planning |
 | Design multi-region Azure network architectures | https://learn.microsoft.com/en-us/azure/networking/design-guide/multi-region |
 | Architect global transit networks with Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/networking/design-guide/virtual-wan |

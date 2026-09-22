@@ -1,9 +1,9 @@
 ---
 name: azure-enclave
-description: Expert knowledge for Azure Enclave development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when designing DMZ/AVD/AKS enclave apps, configuring RBAC/Key Vault, deploying via Bicep, or setting ExpressRoute/VPN, and other Azure Enclave related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
+description: Expert knowledge for Azure Enclave development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building DMZ-based enclave apps, securing AKS/AVD, wiring ExpressRoute/VPN, or configuring Key Vault/SQL, and other Azure Enclave related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Enclave Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L41 | Diagnosing and fixing common Azure Enclave setup, attestation, deployment, and runtime errors, plus answers to frequent operational issues and misconfigurations. |
-| Best Practices | L42-L47 | Design, security, and operational best practices for Azure Enclave, including secure architecture patterns and hardening/operating admin VMs safely. |
+| Best Practices | L42-L47 | Design, security, and operational best practices for Azure Enclave, including secure architecture patterns and how to harden and manage admin VMs safely. |
 | Decision Making | L48-L53 | Planning disaster recovery and business continuity for Azure Enclave, and strategies, steps, and considerations for migrating existing Azure workloads into an Enclave environment. |
 | Architecture & Design Patterns | L54-L60 | Architectural patterns for Azure Enclave apps: DMZ-based public access, integrating with AVD/AKS, and secure data ingress design for enclave environments. |
-| Limits & Quotas | L61-L67 | Pricing models and charges, resource naming rules/restrictions, and quota limits plus regional availability for Azure Enclave deployments. |
-| Security | L68-L92 | RBAC, identities, encryption, PIM/JIT, and security guardrails for AKS, App Service, SQL, Storage, ACR, Cosmos DB, PostgreSQL, Key Vault, Service Bus, plus monitoring and governance. |
-| Configuration | L93-L106 | Configuring enclave communities: approvals, governance, resource rules, AVD workloads, DNS, service catalog, maintenance mode, logging, and policy compliance/exemptions. |
-| Deployment | L107-L115 | Guides for deploying Enclave workloads: app installation on RemoteApp VMs, using Bicep/ARM/CLI templates, and setting up ExpressRoute/VPN connectivity and shared dependencies. |
+| Limits & Quotas | L61-L66 | Pricing models and charges, resource naming rules/restrictions, and quota limits plus regional availability for Azure Enclave deployments. |
+| Security | L67-L91 | RBAC, encryption, identities, policy guardrails, and governance for securely configuring Azure Enclave resources (AKS, App Service, SQL, Storage, Key Vault, Cosmos DB, ACR, PostgreSQL, Service Bus). |
+| Configuration | L92-L105 | Configuring Azure Enclave environments: approvals/governance workflows, resource lifecycle rules, AVD and DNS setup, service catalog use, observability, and policy exemptions. |
+| Deployment | L106-L114 | Guides for deploying Enclave workloads: app installation on RemoteApp VMs, using Bicep/ARM/CLI templates, and setting up ExpressRoute/VPN connectivity and shared dependencies. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -42,7 +42,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply design and security best practices in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/best-practices |
+| Apply design and security best practices for Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/best-practices |
 | Operate admin VMs securely in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/understand-admin-vm |
 
 ### Decision Making
@@ -61,7 +61,6 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand Azure Enclave pricing and resource charges | https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-pricing |
 | Apply naming rules and restrictions for Azure Enclave resources | https://learn.microsoft.com/en-us/azure/enclave/name-rules-restrictions-azure-enclave-resources |
 | Understand Azure Enclave quotas and regional availability | https://learn.microsoft.com/en-us/azure/enclave/quotas-region-availability |
 
@@ -71,8 +70,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Enclave RBAC and deny assignments | https://learn.microsoft.com/en-us/azure/enclave/access-controls-enclaves |
 | Apply AKS security policy guardrails in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/aks-initiative |
 | Apply App Service security policy guardrails in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/app-service-initiative |
-| Use built-in RBAC roles to control access in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/built-in-rbac-roles |
-| Set up customer-managed key encryption in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/configure-customer-managed-key-encryption-within-enclave |
+| Use built-in RBAC roles for Azure Enclave access | https://learn.microsoft.com/en-us/azure/enclave/built-in-rbac-roles |
+| Configure CMK encryption for Azure Enclave resources | https://learn.microsoft.com/en-us/azure/enclave/configure-customer-managed-key-encryption-within-enclave |
 | Apply secure policy guardrails to Azure Container Registry | https://learn.microsoft.com/en-us/azure/enclave/container-registry-initiative |
 | Enforce secure deployment policies for Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/enclave/cosmosdb-initiative |
 | Create user-assigned managed identities in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/create-user-managed-identity |
@@ -93,15 +92,15 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Azure Enclave approvals for critical operations | https://learn.microsoft.com/en-us/azure/enclave/configure-approvals |
+| Configure approvals workflow in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/configure-approvals |
 | Configure community-level governance in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/configure-community-governance |
 | Understand creation and deletion rules for Azure Enclave resources | https://learn.microsoft.com/en-us/azure/enclave/create-and-delete-logic |
 | Configure Azure Virtual Desktop workloads within an enclave | https://learn.microsoft.com/en-us/azure/enclave/create-azure-virtual-desktop-workloads |
 | Set up a DNS forwarder VM in an Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/create-domain-name-service-forwarder |
 | Use Azure Enclave service catalog templates for workloads | https://learn.microsoft.com/en-us/azure/enclave/list-service-catalog-templates |
-| Manage approval requests in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/manage-approvals |
-| Configure observability and logging for Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/observability |
-| Configure policy compliance exemptions in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/policy-compliance-exemptions |
+| Manage and process Azure Enclave approval requests | https://learn.microsoft.com/en-us/azure/enclave/manage-approvals |
+| Configure observability destinations for Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/observability |
+| Configure policy exemptions for Azure Enclave workloads | https://learn.microsoft.com/en-us/azure/enclave/policy-compliance-exemptions |
 | Understand and use approvals for Azure Enclave changes | https://learn.microsoft.com/en-us/azure/enclave/understand-approvals |
 
 ### Deployment

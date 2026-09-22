@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   decision-making: 'Cost and pricing guidance for Azure Blob and related storage:
     choosing tiers, connectivity, migration tools, data protection, SFTP/BlobFuse
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: Configuring monitoring, lifecycle, immutability, networking, mounts
     (BlobFuse/NFS), inventory, restore/versioning, and third‑party backup/migration
     tools for Azure Blob Storage.
-  security: 'Securing Blob Storage: RBAC/ABAC access control, SAS tokens, SFTP auth,
-    ACLs, encryption (CSE, CPK, scopes), WORM/immutability, private networking, and
-    anonymous access remediation.'
+  security: 'Securing Blob Storage: identity-based access (RBAC/ABAC, Entra ID), SAS
+    tokens, SFTP, encryption (CSE, CPK, scopes), ACLs, WORM, anonymous access controls,
+    and Storage Mover security.'
   best-practices: 'Performance, reliability, and cost-optimization guidance for Azure
     Blob/Data Lake: access tiers, lifecycle, hot partitions, NFS/SFTP, client tuning,
     retries, monitoring, and backup best practices.'
@@ -27,14 +27,14 @@ category_descriptions:
     events, SAS, mounts, and migration/inventory workflows.'
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Blob tiers, NFS/SFTP or BlobFuse
-  mounts, SAS/RBAC access, lifecycle policies, or static website hosting, and other
+  & coding patterns, and deployment. Use when choosing Blob tiers, configuring NFS/SFTP
+  or BlobFuse, securing with SAS/RBAC, tuning performance, or using SDK/CLI, and other
   Azure Blob Storage related development tasks. Not for Azure Files (use azure-files),
   Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage),
   Azure NetApp Files (use azure-netapp-files).
-use_when: Use when using Blob tiers, NFS/SFTP or BlobFuse mounts, SAS/RBAC access,
-  lifecycle policies, or static website hosting, and other Azure Blob Storage related
-  development tasks.
+use_when: Use when choosing Blob tiers, configuring NFS/SFTP or BlobFuse, securing
+  with SAS/RBAC, tuning performance, or using SDK/CLI, and other Azure Blob Storage
+  related development tasks.
 confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (use
   azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure NetApp
   Files (use azure-netapp-files).
@@ -43,16 +43,16 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 
 ## Summary
 
-- **Total Pages**: 426
-- **Fetched**: 426
+- **Total Pages**: 427
+- **Fetched**: 427
 - **Fetch Failed**: 0
-- **Classified**: 327
+- **Classified**: 328
 - **Unclassified**: 99
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 421
+- **Updated Pages**: 0
+- **Unchanged**: 426
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -64,9 +64,9 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | configuration | 56 | 13.1% |
 | decision-making | 26 | 6.1% |
 | deployment | 10 | 2.3% |
-| integrations | 121 | 28.4% |
-| limits-quotas | 16 | 3.8% |
-| security | 57 | 13.4% |
+| integrations | 121 | 28.3% |
+| limits-quotas | 16 | 3.7% |
+| security | 58 | 13.6% |
 | troubleshooting | 9 | 2.1% |
 | *(Unclassified)* | 99 | 23.2% |
 
@@ -74,18 +74,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 
 ### New Pages
 
-- [Blob SFTP versus a self-hosted server](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-choose-solution)
-
-### Updated Pages
-
-- [Connect from an SFTP client](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-connect)
-  - Updated: 2025-08-19T17:10:00.000Z → 2026-09-11T05:12:00.000Z
-- [Java SE](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java)
-  - Updated: 2024-09-13T08:00:00.000Z → 2026-09-11T05:12:00.000Z
-- [Object replication](https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview)
-  - Updated: 2025-11-09T12:14:00.000Z → 2026-09-10T08:00:00.000Z
-- [Estimate the cost of Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-storage-estimate-costs)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-09-11T05:12:00.000Z
+- [Migrate across Microsoft Entra tenants from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-cross-tenant-blob-migration)
 
 ## Classified Pages
 
@@ -349,6 +338,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | [Use blob index tags](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-index-how-to) | integrations | 0.70 | Shows concrete examples of setting and querying tags, including API/SDK parameters and request formats, which are integration details. |
 | [User delegation SAS](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-create-user-delegation-sas-javascript) | security | 0.70 | Shows JavaScript APIs and required permissions to obtain user delegation keys and sign SAS tokens; security-focused configuration. |
 | [Version-level policies](https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-version-level-worm-policies) | configuration | 0.70 | Describes version-scoped WORM policies at account/container/version levels; product-specific configuration semantics. |
+| [Migrate across Microsoft Entra tenants from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-cross-tenant-blob-migration) | security | 0.68 | The page describes configuring Azure Storage Mover for cross-tenant Blob migrations, including setting up Storage Mover resources and endpoints in each tenant and granting each endpoint appropriate access across Microsoft Entra tenants. This involves product-specific security and identity configuration (cross-tenant permissions, endpoint access between different directories), which qualifies as expert knowledge under the security sub-skill. It is not just a conceptual overview but a concrete configuration guide for cross-tenant access. |
 | [Migrate to another region](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-migrate-data) | decision-making | 0.68 | The article compares multiple Azure tools (AzCopy, Azure Storage Mover, account failover) for moving Data Lake Storage data to another region and explains when to use each approach. This is product-specific migration and tool selection guidance that helps users decide between options, fitting the decision-making sub-skill. |
 | [NetApp Data Migrator getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/netapp-data-migrator-guide) | deployment | 0.68 | The guide includes Azure-specific deployment steps, file-server configuration, and operational guidance for NetApp Data Migrator targeting Azure NetApp Files. This is product- and scenario-specific deployment knowledge (how to deploy and run NDM for ANF, including environment and platform requirements) that goes beyond generic migration concepts. |
 | [Snapshots](https://learn.microsoft.com/en-us/azure/storage/blobs/snapshots-overview) | configuration | 0.68 | Describes snapshot semantics and billing specifics for Blob Storage; product-specific feature behavior beyond generic snapshot concepts. |

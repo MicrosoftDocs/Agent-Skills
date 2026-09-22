@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   best-practices: 'Guidance on Agile/Scrum best practices in Azure Boards: work item
     management, scalable product and sprint planning, process customization, and querying
     for workflow/board changes.'
-  integrations: Connecting Azure Boards to Excel, GitHub, Copilot, Slack, Teams, and
-    using WIQL—covering bulk edits, status badges, artifact linking, and collaboration/work
-    item query patterns.
+  integrations: Connecting Azure Boards to Excel, GitHub, Copilot, Slack, and Teams,
+    plus using WIQL—covering bulk edits, status badges, artifact linking, chat integrations,
+    and query syntax.
   troubleshooting: Diagnosing and fixing Azure DevOps Office integration errors, backlog
     nesting/reordering issues, and common Azure Boards query problems.
   decision-making: Guidance on selecting Azure Boards migration/integration options,
@@ -22,12 +22,12 @@ category_descriptions:
     and best practices.
 skill_description: Expert knowledge for Azure Boards development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when managing work items, queries, Excel/Office integration,
-  GitHub/Teams links, or Boards security, and other Azure Boards related development
+  & coding patterns. Use when managing work items, Agile/Scrum processes, WIQL queries,
+  Excel/Office integrations, or GitHub links, and other Azure Boards related development
   tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines),
   Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
-use_when: Use when managing work items, queries, Excel/Office integration, GitHub/Teams
-  links, or Boards security, and other Azure Boards related development tasks.
+use_when: Use when managing work items, Agile/Scrum processes, WIQL queries, Excel/Office
+  integrations, or GitHub links, and other Azure Boards related development tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
   azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
@@ -38,13 +38,13 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Total Pages**: 124
 - **Fetched**: 124
 - **Fetch Failed**: 0
-- **Classified**: 33
-- **Unclassified**: 91
+- **Classified**: 34
+- **Unclassified**: 90
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 121
+- **Updated Pages**: 1
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -55,22 +55,18 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | best-practices | 7 | 5.6% |
 | configuration | 7 | 5.6% |
 | decision-making | 3 | 2.4% |
-| integrations | 7 | 5.6% |
+| integrations | 8 | 6.5% |
 | limits-quotas | 1 | 0.8% |
 | security | 3 | 2.4% |
 | troubleshooting | 5 | 4.0% |
-| *(Unclassified)* | 91 | 73.4% |
+| *(Unclassified)* | 90 | 72.6% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Add tags for work items](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops)
-  - Updated: 2026-05-08T17:05:00.000Z → 2026-09-10T08:00:00.000Z
-- [Query based on tags](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops)
-  - Updated: 2026-05-08T17:05:00.000Z → 2026-09-10T08:00:00.000Z
 - [Connect Azure Boards (cloud)](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops)
-  - Updated: 2026-08-06T18:03:00.000Z → 2026-09-10T08:00:00.000Z
+  - Updated: 2026-09-10T08:00:00.000Z → 2026-09-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -86,6 +82,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Azure Boards with Teams](https://learn.microsoft.com/en-us/azure/devops/boards/integrations/boards-teams?view=azure-devops) | integrations | 0.70 | Covers Azure Boards/Azure DevOps apps for Teams; includes product-specific integration behaviors and configuration steps beyond generic Teams usage. |
 | [Best practices for Agile project management](https://learn.microsoft.com/en-us/azure/devops/boards/best-practices-agile-project-management?view=azure-devops) | best-practices | 0.70 | Contains Azure Boards–specific recommendations on configuring teams, boards, backlogs, iterations, and Delivery Plans. Guidance is concrete and product-specific (how to structure work, use features effectively), going beyond generic Agile theory. |
 | [Bugs, issues, & risks fields](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?view=azure-devops) | configuration | 0.70 | Described as listing fields that track bugs, issues, and risks for the CMMI process template. This is a product-specific field reference (names, meanings, likely types) that functions as configuration metadata. |
+| [Connect Azure Boards (cloud)](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops) | integrations | 0.70 | Page provides product-specific integration details for connecting Azure Boards/Azure DevOps to GitHub, including required configuration steps and settings unique to this integration, which go beyond generic knowledge. |
 | [Fix reordering and nesting issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/resolve-backlog-reorder-issues?view=azure-devops) | troubleshooting | 0.70 | Article is explicitly about resolving specific reordering and nesting issues and error messages in Azure Boards, mapping symptoms (hierarchy issues, errors) to causes (invalid link types) and resolutions, which fits the troubleshooting sub-skill. |
 | [Office integration issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops) | troubleshooting | 0.70 | Page explicitly focuses on resolving common integration issues; such docs typically map specific Office/Azure DevOps integration errors and symptoms to causes and resolutions, which is product-specific troubleshooting knowledge. |
 | [Query FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-faqs?view=azure-devops) | troubleshooting | 0.70 | FAQ-style page for Azure Boards queries that typically includes specific error messages or behaviors, explanations of causes, and guidance on how to fix or work around them. This symptom→cause→solution structure with product-specific query behaviors fits the troubleshooting sub-skill. |
@@ -128,7 +125,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Bulk modify (web)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/bulk-modify-work-items?view=azure-devops) | 0.30 | Bulk edit guidance for work items; describes capabilities and tips but lacks numeric limits, configuration parameter tables, or error-code-based troubleshooting. |
 | [CMMI workflow](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/cmmi-process-workflow?view=azure-devops) | 0.30 | Describes CMMI work item types and workflow and how teams use them, but is primarily conceptual and procedural guidance without expert-only limits, configuration parameters, or decision matrices. |
 | [Change work item type, move work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/move-change-type?view=azure-devops) | 0.30 | How-to guide for moving/changing work items; lacks numeric limits, config parameter tables, or detailed troubleshooting mappings. |
-| [Connect Azure Boards (cloud)](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops) | 0.30 | Page explains how to connect Azure Boards to GitHub repositories. From the summary it is primarily integration setup guidance without detailed configuration parameter tables, limits, or error-code-based troubleshooting. It reads as a standard tutorial rather than expert configuration or decision-making content. |
 | [Customize a Taskboard](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/customize-taskboard?view=azure-devops) | 0.30 | Covers customizing sprint taskboard cards and columns; likely UI-driven customization without structured config tables, numeric ranges, or advanced patterns. |
 | [End of sprint activities](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/end-sprint-activities?view=azure-devops) | 0.30 | End-of-sprint hygiene and process steps; does not include numeric thresholds, configuration tables, or detailed troubleshooting content. |
 | [Excel FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/faqs?view=azure-devops) | 0.30 | Excel and Azure Boards FAQ is likely general guidance and deprecation notice; summary does not indicate specific error codes, config parameters, or limits. |

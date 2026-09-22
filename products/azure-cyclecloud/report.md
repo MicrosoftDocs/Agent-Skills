@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-20'
 category_descriptions:
   integrations: APIs, CLI, and Python SDK for automating CycleCloud, plus patterns
     to integrate schedulers, monitoring, storage, events, and remote desktop tools
@@ -10,9 +10,8 @@ category_descriptions:
   architecture-patterns: 'Designing secure, enterprise-grade Azure CycleCloud architectures:
     multi-region HPC clusters, VM placement strategies, and hub-spoke network/security
     patterns.'
-  decision-making: Planning and sizing CycleCloud HPC/Slurm clusters, migrating from
-    older versions/templates, choosing Spot VM usage, and understanding licensing,
-    servicing, and support policies
+  decision-making: Guidance on planning/sizing CycleCloud HPC clusters, Slurm workspace
+    and migration, Spot VM usage, licensing terms, and servicing/support policies.
   best-practices: Security hardening guidance for CycleCloud (identity, networking,
     data) and performance tuning of HB/HC-series HPC clusters (sizing, configs, optimization).
   security: 'Securing CycleCloud: auth (Entra, service principals, managed identities),
@@ -25,16 +24,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure CycleCloud development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
   integrations & coding patterns, and deployment. Use when automating CycleCloud via
-  APIs/CLI/SDK, configuring Slurm HPC clusters, autoscaling nodearrays, or securing
-  access, and other Azure CycleCloud related development tasks. Not for Azure Batch
-  (use azure-batch), Azure Virtual Machines (use azure-virtual-machines), Azure HDInsight
-  (use azure-hdinsight), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
-use_when: Use when automating CycleCloud via APIs/CLI/SDK, configuring Slurm HPC clusters,
-  autoscaling nodearrays, or securing access, and other Azure CycleCloud related development
+  API/CLI/SDK, configuring Slurm clusters, tuning HB/HC VMs, or securing access, and
+  other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch),
+  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+use_when: Use when automating CycleCloud via API/CLI/SDK, configuring Slurm clusters,
+  tuning HB/HC VMs, or securing access, and other Azure CycleCloud related development
   tasks.
-confusable_not_for: Not for Azure Batch (use azure-batch), Azure Virtual Machines
-  (use azure-virtual-machines), Azure HDInsight (use azure-hdinsight), Azure Kubernetes
-  Service (AKS) (use azure-kubernetes-service).
+confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use azure-hdinsight),
+  Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 ---
 # Azure CycleCloud Crawl Report
 
@@ -47,9 +45,9 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure Virtual Machine
 - **Unclassified**: 24
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 6
-- **Unchanged**: 113
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 120
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
@@ -69,27 +67,14 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure Virtual Machine
 
 ## Changes
 
-### New Pages
-
-- [Migrate a Slurm cluster to a newer template](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/migrate-slurm-cluster?view=cyclecloud-8)
-- [Plan an enterprise-secured CycleCloud deployment](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/plan-enterprise-secured-deployment?view=cyclecloud-8)
-- [Configure ThinLinc with Open OnDemand](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/configure-thinlinc?view=cyclecloud-8)
-- [Troubleshoot first-time setup issues](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/troubleshoot-first-time-setup?view=cyclecloud-8)
-
 ### Updated Pages
 
-- [Security Best Practices](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/security-best-practices?view=cyclecloud-8)
-  - Updated: 2026-06-25T22:12:00.000Z → 2026-08-10T08:00:00.000Z
-- [Prepare Your Azure Subscription](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/configuration?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-09-11T22:13:00.000Z
-- [Run in Locked Down Network](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/running-in-locked-down-network?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-09-11T22:13:00.000Z
-- [Cloud Bursting Using Azure CycleCloud and Slurm](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/bursting/slurm-cloud-bursting-setup?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-09-11T22:13:00.000Z
-- [Enable Return Proxy](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/return-proxy?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-09-11T22:13:00.000Z
-- [Configure Network Security](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/network-security?view=cyclecloud-8)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-09-11T22:13:00.000Z
+- [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8)
+  - Updated: 2026-07-09T08:00:00.000Z → 2026-09-18T05:11:00.000Z
+- [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8)
+  - Updated: 2026-07-09T08:00:00.000Z → 2026-09-18T05:11:00.000Z
+- [Plan and size HPC clusters](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/plan-and-size-hpc-clusters?view=cyclecloud-8)
+  - Updated: 2026-08-27T17:12:00.000Z → 2026-09-18T05:11:00.000Z
 
 ## Classified Pages
 
@@ -157,6 +142,7 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure Virtual Machine
 | [Move a Cluster to Another Resource Group](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/move-resource-group?view=cyclecloud-8) | deployment | 0.70 | Describes how to move cluster resources to another resource group and the requirements. This is a product-specific operational/deployment procedure, fitting deployment. |
 | [Multi-region Cluster Deployment](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/multi-region-cluster-deployment?view=cyclecloud-8) | architecture-patterns | 0.70 | End-to-end guidance for multi-region HPC clusters including architecture options, DR strategy, caveats, and operational guidance. This is product-specific architecture and deployment pattern guidance with scenario-based recommendations, fitting architecture-patterns. |
 | [Plan Your Production Deployment](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/plan-prod-deployment?view=cyclecloud-8) | deployment | 0.70 | Provides a checklist and guidance on key decisions and requirements for production deployment, including infrastructure, configuration, integration, and DR. This is product-specific deployment planning and constraints, fitting deployment. |
+| [Plan and size HPC clusters](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/plan-and-size-hpc-clusters?view=cyclecloud-8) | decision-making | 0.70 | Guides concrete planning decisions for HPC clusters in CycleCloud (scheduler choice, VM types, autoscaling, storage, networking, and cost). While summary text is high-level, this type of article typically includes product-specific decision criteria and trade-offs for capacity and cost planning, fitting the decision-making sub-skill. |
 | [Plan your CycleCloud Workspace for Slurm Deployment](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/plan-your-deployment?view=cyclecloud-8) | decision-making | 0.70 | Planning checklist for deployment options, required roles, and network topology (hub-spoke, VPN/Bastion); provides scenario-based guidance for choosing deployment patterns. |
 | [Python API Reference](https://learn.microsoft.com/en-us/azure/cyclecloud/python-api?view=cyclecloud-8) | integrations | 0.70 | Describes obtaining and installing a product-specific Python API package and how it wraps the REST API, which is concrete integration detail. |
 | [Run CycleCloud using ARM Template](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/install-arm?view=cyclecloud-8) | deployment | 0.70 | ARM-template-based installation with product-specific deployment requirements and resource definitions; contains deployment-focused expert configuration for CycleCloud. |
@@ -171,7 +157,6 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure Virtual Machine
 | [Use Storage Blobs](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/storage-blobs?view=cyclecloud-8) | configuration | 0.70 | Describes project blobs, user blobs, downloading behavior, and lockers; these are specific storage configuration mechanisms within CycleCloud. |
 | [Migrate a Slurm cluster to a newer template](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/migrate-slurm-cluster?view=cyclecloud-8) | decision-making | 0.68 | Covers how to move from an existing Slurm project/template to a newer one using side-by-side deployment, validation, and workload migration. It includes product-specific upgrade constraints (no in-place template upgrade/rollback) and prescriptive migration steps, helping users decide and plan migration paths, which aligns with decision-making. |
 | [Noderef](https://learn.microsoft.com/en-us/azure/cyclecloud/cluster-references/noderef-reference?view=cyclecloud-8) | configuration | 0.68 | The page is a 'Noderef reference' for templates, describing NodeRef as an internal reference to another node. As a reference page, it likely enumerates properties/fields of NodeRef, which are configuration parameters specific to CycleCloud templates. |
-| [Plan and size HPC clusters](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/plan-and-size-hpc-clusters?view=cyclecloud-8) | decision-making | 0.68 | The article focuses on concrete planning and sizing decisions for Azure CycleCloud HPC clusters (scheduler choice, VM types, autoscaling, storage, networking, and cost). It provides service-specific guidance to choose between options and design a cluster for particular workloads, which aligns with decision-making. It goes beyond generic concepts by structuring the main decisions and trade-offs for this product, but does not appear to list explicit numeric limits/quotas or detailed configuration parameter tables. |
 | [Service Policy](https://learn.microsoft.com/en-us/azure/cyclecloud/service-policy?view=cyclecloud-8) | decision-making | 0.68 | The page defines Azure CycleCloud servicing policy with product-specific details such as supported version windows, release cadence, and conditions for remaining in a supported state. These are expert, time-sensitive details not inferable from general training data and help users decide when to upgrade or which versions to run to stay supported, fitting the decision-making category best. |
 | [Cloud Bursting Using Azure CycleCloud and Slurm](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/bursting/slurm-cloud-bursting-setup?view=cyclecloud-8) | configuration | 0.65 | Describes how to configure cloud bursting between on-prem/private Slurm and Azure via CycleCloud. This is a concrete configuration scenario (bursting thresholds, integration settings) rather than a conceptual overview, so it best fits configuration/integrations; given the options, configuration is the closest match. |
 | [Configure Autoscaling](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/configure-autoscaling?view=cyclecloud-8) | configuration | 0.65 | Details how to set autoscaling behavior in CycleCloud, including scaling parameters and possibly thresholds in templates; these are product-specific scaling configuration options. |
@@ -218,8 +203,8 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure Virtual Machine
 | [Clusters & Nodes](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/clusters?view=cyclecloud-8) | 0.10 | Conceptual explanation of clusters, nodes, and templates; no indication of configuration tables, limits, or troubleshooting content. |
 | [Core](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/core?view=cyclecloud-8) | 0.10 | Conceptual architecture overview of HPC and CycleCloud core concepts without product-specific numeric thresholds, configs, or error mappings. |
 | [Scheduling](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/scheduling?view=cyclecloud-8) | 0.10 | Scheduling concepts and autoscaling overview; describes REST API and Python library at a high level, not detailed config or error handling. |
-| [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8) | 0.10 | Overview of CycleCloud Workspace for Slurm; describes capabilities and context but lacks detailed configuration parameters, limits, or troubleshooting content. |
-| [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8) | 0.10 | High-level product overview of Azure CycleCloud without specific limits, configuration tables, error codes, or decision matrices. |
+| [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8) | 0.10 | Overview of Azure CycleCloud Workspace for Slurm; describes what it is and why to use it, but lacks detailed configuration parameters, limits, or troubleshooting content. |
+| [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8) | 0.10 | High-level overview of Azure CycleCloud capabilities and scenarios; no specific limits, configuration tables, error codes, or decision matrices. |
 | [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8) | - | Navigation-style page indicating current release version only; no detailed technical guidance, limits, configuration, or troubleshooting information. |
 | [Current Release - 2026.09.02](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-09-02?view=cyclecloud-8) | - | Release notes summary; underlying content likely lists changes and issues but the provided snippet doesn't show specific limits, configs, error codes, or decision matrices required for any sub-skill type. |
 | [Previous Release - 2026.08.07](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-08-07?view=cyclecloud-8) | - | Release notes summary; snippet does not expose detailed technical data such as limits, configuration parameters, or troubleshooting mappings needed to classify as a sub-skill. |

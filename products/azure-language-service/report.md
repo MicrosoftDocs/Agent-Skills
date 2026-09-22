@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 177
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 96 | 53.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Bot Framework](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/tutorials/bot-framework)
-  - Updated: 2026-06-30T08:00:00.000Z → 2026-09-10T22:09:00.000Z
-- [Change default answer](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/change-default-answer)
-  - Updated: 2026-06-30T08:00:00.000Z → 2026-09-10T22:09:00.000Z
-- [Configure containers](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/configure-containers)
-  - Updated: 2026-06-21T08:00:00.000Z → 2026-09-02T08:00:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-managed-redis
-description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Redis SDKs, Entra ID auth, clustering/sharding, geo-replication, or ARM/Bicep deployments, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
+description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Redis tiers, Entra ID auth, clustering/sharding, persistence/geo-replication, or ARM/Bicep deployments, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Redis Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L46 | Diagnosing and fixing Redis issues: using diagnostic commands, handling common errors, client and connectivity problems, data loss, server performance, latency, and timeouts. |
 | Best Practices | L47-L63 | Best practices for connecting, scaling, monitoring, and optimizing Azure Managed Redis, including memory, performance, resiliency, Kubernetes hosting, and common FAQ patterns. |
-| Decision Making | L64-L76 | Guidance on when and how to migrate to Azure Managed Redis, comparing legacy/Redis Enterprise tiers, planning deployments, and optimizing costs with reservations. |
-| Architecture & Design Patterns | L77-L81 | Internal design of Azure Managed Redis: cluster topology, sharding, persistence, networking, and how architecture impacts performance, scaling, and reliability. |
-| Security | L82-L91 | Securing Azure Managed Redis: ACL data access, Entra ID auth, disk encryption with CMK, Zero Trust hardening, Azure Policy compliance, and TLS configuration. |
-| Configuration | L92-L111 | Configuring Azure Managed Redis instances: settings, scaling, persistence, modules, networking, geo-replication, maintenance, monitoring, alerts, metrics, logs, and admin via CLI/PowerShell. |
-| Integrations & Coding Patterns | L112-L125 | Client integration patterns for Azure Managed Redis: language SDKs (.NET, Go, Node, Python), Entra ID auth, ASP.NET caching, data import/export, tools, and semantic routing. |
-| Deployment | L126-L134 | Guides for migrating to Azure Managed Redis (self-service, tier upgrades, Redis Enterprise conversion) and deploying new instances using ARM templates or Bicep. |
+| Decision Making | L64-L81 | Guidance on choosing Azure Managed Redis tiers, capacity, clustering, modules, reliability, and cost options, plus planning and executing migrations from legacy Redis and Redis Enterprise. |
+| Architecture & Design Patterns | L82-L86 | Internal design of Azure Managed Redis: cluster topology, sharding, persistence, networking, and how architecture impacts performance, scaling, and reliability. |
+| Security | L87-L96 | Securing Azure Managed Redis: ACL data access, Entra ID auth, disk encryption with CMK, Zero Trust hardening, Azure Policy compliance, and TLS configuration. |
+| Configuration | L97-L116 | Configuring Azure Managed Redis instances: settings, scaling, persistence, modules, networking, geo-replication, maintenance, monitoring, alerts, metrics, logs, and admin via CLI/PowerShell. |
+| Integrations & Coding Patterns | L117-L130 | Client integration patterns for Azure Managed Redis: language SDKs (.NET, Go, Node, Python), Entra ID auth, ASP.NET caching, data import/export, tools, and semantic routing. |
+| Deployment | L131-L139 | Guides for migrating to Azure Managed Redis (self-service, tier upgrades, Redis Enterprise conversion) and deploying new instances using ARM templates or Bicep. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -64,6 +64,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Select clustering policy for Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/choose-clustering-policy |
 | Choose migration options to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-options |
 | Plan migration from Basic/Standard/Premium to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-overview |
 | Compare legacy Redis tiers with Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-understand |
@@ -71,6 +72,10 @@ This skill requires **network access** to fetch documentation content:
 | Plan migration from Redis Enterprise to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-overview |
 | Understand differences between Redis Enterprise and Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-understand |
 | Evaluate migration approaches to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migration-guide |
+| Plan Azure Managed Redis configuration choices | https://learn.microsoft.com/en-us/azure/redis/plan-configuration |
+| Plan Redis module selection in Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/plan-redis-modules |
+| Plan reliability and durability for Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/plan-reliability-and-durability |
+| Choose Azure Managed Redis tier and capacity | https://learn.microsoft.com/en-us/azure/redis/plan-tiers-and-capacity |
 | Plan Azure Managed Redis deployments with FAQs | https://learn.microsoft.com/en-us/azure/redis/planning-faq |
 | Optimize Azure Managed Redis costs with reservations | https://learn.microsoft.com/en-us/azure/redis/reserved-pricing |
 

@@ -9,7 +9,6 @@
 |-------|-----|
 | Configure Azure Databricks account-level settings | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/ |
 | Configure Azure Databricks audit log delivery | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery |
-| Reference Databricks diagnostic audit log events | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-logs |
 | Configure custom URL for Azure Databricks account | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/custom-url |
 | Configure account-level legacy feature disabling | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/legacy-features |
 | Configure admin protection for no isolation clusters | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/no-isolation-shared |
@@ -23,18 +22,17 @@
 | Track Databricks cost drivers in Governance Hub | https://learn.microsoft.com/en-us/azure/databricks/admin/governance-hub/cost |
 | Use Governance Hub data health metrics | https://learn.microsoft.com/en-us/azure/databricks/admin/governance-hub/data |
 | Monitor and fix tag coverage with Governance Hub | https://learn.microsoft.com/en-us/azure/databricks/admin/governance-hub/tags |
-| Automate governed tag assignment at scale | https://learn.microsoft.com/en-us/azure/databricks/admin/governed-tags/automate-tag-assignment |
+| Automate governed tag assignment in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/admin/governed-tags/automate-tag-assignment |
 | Create and manage Unity Catalog governed tags | https://learn.microsoft.com/en-us/azure/databricks/admin/governed-tags/manage-governed-tags |
-| Configure managed disaster recovery for Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/managed-disaster-recovery |
 | Configure SQL warehouse admin settings in Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/sql/ |
 | Configure SQL warehouse data access properties | https://learn.microsoft.com/en-us/azure/databricks/admin/sql/data-access-configuration |
 | Set up and manage serverless SQL warehouses | https://learn.microsoft.com/en-us/azure/databricks/admin/sql/serverless |
-| Use Databricks system tables for monitoring and auditing | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/ |
+| Use Azure Databricks system tables for operational monitoring | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/ |
 | Use alert system tables to audit Databricks alerts | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/alerts |
 | Track Genie Code usage with assistant events system table | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/assistant |
 | Use the audit log system table for Databricks observability | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs |
 | Query automatic upgrades history system table | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/automatic-upgrades |
-| Query the billable usage system table in Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/billing |
+| Query billable usage system table in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/billing |
 | Audit clean room activity with Databricks system tables | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/clean-rooms |
 | Monitor Databricks compute with system tables | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/compute |
 | Query Databricks data classification system table | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/data-classification |
@@ -49,7 +47,7 @@
 | Monitor Databricks model serving costs | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/model-serving-cost |
 | Use predictive optimization history system table | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/predictive-optimization |
 | Use Databricks pricing system table for SKU price history | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/pricing |
-| Use the query history system table in Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/query-history |
+| Use query history system table in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/query-history |
 | Use replication states system table for DR | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/replication |
 | Analyze serverless compute costs via system tables | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/serverless-billing |
 | Analyze warehouse events with Databricks system tables | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/warehouse-events |
@@ -59,12 +57,9 @@
 | Configure serverless usage policies for tagging | https://learn.microsoft.com/en-us/azure/databricks/admin/usage/budget-policies |
 | Monitor default storage costs with billing table | https://learn.microsoft.com/en-us/azure/databricks/admin/usage/default-storage |
 | Monitor Databricks costs with billing system table | https://learn.microsoft.com/en-us/azure/databricks/admin/usage/system-tables |
-| Enable automatic identity management from Entra ID | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/automatic-identity-management/ |
 | Use the automatic identity management readiness report | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/automatic-identity-management/readiness-report |
 | Create and manage Databricks account and workspace groups | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/manage-groups |
 | Manage service principals in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/manage-service-principals |
-| Configure SCIM user and group sync to Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/scim/ |
-| Set up SCIM provisioning with Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/scim/aad |
 | Manage Azure Databricks workspace users | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/users |
 | Manage legacy workspace-local groups in Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/workspace-local-groups |
 | Configure Databricks workspace appearance settings | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace-settings/appearance |
@@ -84,48 +79,34 @@
 | Purge Databricks workspace storage and deleted objects | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace-settings/storage |
 | Change Azure Databricks workspace storage redundancy | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/workspace-storage-redundancy |
 | Configure document classification with Agent Bricks | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/classification |
-| Configure legacy Information Extraction agents | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-bricks/key-info-extraction |
-| Customize and extend MLflow 2 AI judges | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-evaluation/advanced-agent-eval |
-| Define custom Agent Evaluation metrics | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-evaluation/custom-metrics |
-| MLflow 2 Agent Evaluation input schema | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-evaluation/evaluation-schema |
-| Configure built-in MLflow 2 LLM judges | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-evaluation/llm-judge-reference |
 | Configure managed agent memory in Databricks | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-memory/managed-memory |
 | Use Databricks managed memory REST API | https://learn.microsoft.com/en-us/azure/databricks/agents/agent-memory/memory-store-api |
 | Migrate from legacy agent input/output schemas | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/agent-legacy-schema |
-| Replace deprecated feedback model for agents | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/feedback-model |
-| Log and register agents with Model Serving | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/log-agent |
-| Migrate from deprecated agent inference tables | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/request-assessment-logs |
+| Handle deprecated Databricks agent feedback model | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/feedback-model |
+| Log and register agents on Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/log-agent |
+| Migrate from deprecated agent request and assessment logs | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/request-assessment-logs |
 | Configure AI Search MCP server for semantic retrieval | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/ai-search |
-| Use Databricks-provided MCP Services for tools | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/built-in-mcp-services |
 | Run AI-generated SQL via Databricks SQL MCP server | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/databricks-sql |
 | Query Genie Agents via MCP server | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/genie-agent |
 | Configure Genie One MCP server for data grounding | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/genie-mcp |
 | Use Azure Databricks managed MCP servers | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/managed-mcp |
 | Expose Unity Catalog functions as MCP tools | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/uc-functions |
-| Manage Unity Gateway Skills as governed assets | https://learn.microsoft.com/en-us/azure/databricks/agents/uc-skills/ |
 | Author and publish Unity Gateway Skills in UC | https://learn.microsoft.com/en-us/azure/databricks/agents/uc-skills/create-share-uc-skills |
 | Discover and consume Unity Gateway Skills | https://learn.microsoft.com/en-us/azure/databricks/agents/uc-skills/use-uc-skills |
 | Configure audit queries and alerts for Genie Agents | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/admin/audit |
 | Configure embedding options for Databricks dashboards and Genie | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/admin/embed |
 | Configure consumer access entitlements for Genie One | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/consumers/ |
-| Configure budgets to control Unity Gateway spend | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/budgets |
 | Configure AI Gateway governance on legacy endpoints | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/configure-ai-gateway-endpoints |
 | Configure traffic splitting and fallbacks for model services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/configure-traffic-splitting |
-| Analyze Unity Gateway AI cost and spending | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/cost-observability |
-| Create and configure model provider services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/create-model-provider-services |
-| Create and manage custom model services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/create-model-services |
-| Log Unity Gateway requests to inference tables | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/inference-tables |
-| Log legacy serving endpoint traffic to inference tables | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/inference-tables-serving-endpoints |
-| Understand and manage Unity Catalog model APIs | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/model-services |
+| Configure Unity Gateway inference tables for logging | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/inference-tables |
+| Configure inference tables for legacy serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/inference-tables-serving-endpoints |
 | Configure Unity Gateway observability and monitoring surfaces | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/observability |
 | Govern legacy model serving endpoints with AI Gateway | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/overview-serving-endpoints |
-| Register external MCP servers as MCP Services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/register-mcp-service |
-| Track foundation model spend with Unity Gateway | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/track-cost-tutorial |
-| Monitor AI activity using the unified trace table | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/unified-trace-table |
+| Set up unified trace table for AI activity monitoring | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/unified-trace-table |
 | Reference schema for the unified trace table | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/unified-trace-table-reference |
 | Track Unity Gateway model usage with system tables | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/usage-tracking |
 | Configure AI Search usage policies for cost tracking | https://learn.microsoft.com/en-us/azure/databricks/ai-search/budget-policies |
-| Configure Databricks AI Search endpoints and indexes | https://learn.microsoft.com/en-us/azure/databricks/ai-search/create-ai-search |
+| Create Databricks AI Search endpoints and indexes | https://learn.microsoft.com/en-us/azure/databricks/ai-search/create-ai-search |
 | Register custom embedding models for AI Search | https://learn.microsoft.com/en-us/azure/databricks/ai-search/custom-embedding-model |
 | Configure filters for Databricks AI Search queries | https://learn.microsoft.com/en-us/azure/databricks/ai-search/filtering-guide |
 | Finetune and deploy custom AI Search rerankers | https://learn.microsoft.com/en-us/azure/databricks/ai-search/reranker-finetuning |
@@ -164,21 +145,18 @@
 | Configure Delta Lake storage credentials on Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/storage/delta-storage-credentials |
 | Configure legacy WASB driver for Azure Blob in Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/storage/wasb-blob |
 | View table relationships with Catalog Explorer ERD | https://learn.microsoft.com/en-us/azure/databricks/catalog-explorer/entity-relationship-diagram |
-| Configure and create Azure Databricks clean rooms | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/create-clean-room |
 | View and interpret Databricks compute metrics | https://learn.microsoft.com/en-us/azure/databricks/compute/cluster-metrics |
 | Manage lifecycle and access for Databricks classic compute | https://learn.microsoft.com/en-us/azure/databricks/compute/clusters-manage |
 | Reference Databricks compute configuration settings | https://learn.microsoft.com/en-us/azure/databricks/compute/configure |
 | Configure Databricks Container Services for dedicated compute | https://learn.microsoft.com/en-us/azure/databricks/compute/custom-containers |
 | Configure custom containers for Databricks standard compute | https://learn.microsoft.com/en-us/azure/databricks/compute/custom-containers-standard |
-| Manage Databricks dependencies using environments mode | https://learn.microsoft.com/en-us/azure/databricks/compute/environments-mode |
+| Manage dependencies with environments on classic compute | https://learn.microsoft.com/en-us/azure/databricks/compute/environments-mode |
 | Migrate to token-based pagination for Databricks cluster events | https://learn.microsoft.com/en-us/azure/databricks/compute/events-api-updates |
-| Reference compatible instance groups for flexible nodes | https://learn.microsoft.com/en-us/azure/databricks/compute/flexible-node-type-instances |
 | Configure Databricks instance pools in the UI | https://learn.microsoft.com/en-us/azure/databricks/compute/pools |
 | Connect and configure Databricks serverless compute | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/ |
-| Configure Databricks serverless environments and policies | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/dependencies |
+| Configure Azure Databricks serverless environments and policies | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/dependencies |
 | Use serverless compute for Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/notebooks |
 | Configure Git Folder Serverless environments in Databricks | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/notebooks/git-folder-serverless |
-| Use Databricks Sandbox for SSH-based compute | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sandbox |
 | Create Databricks compute with the simple form | https://learn.microsoft.com/en-us/azure/databricks/compute/simple-form |
 | Create and configure SQL warehouses in Databricks | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/create |
 | Monitor SQL warehouses using Databricks UI | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/monitor/ |
@@ -198,33 +176,25 @@
 | Reference for Databricks custom calculation functions | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/custom-calculations/function-reference |
 | Use level of detail expressions in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/custom-calculations/level-of-detail |
 | Create and configure Databricks dashboard relationships | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/dashboard-relationships/create-relationships |
-| Configure local metric views in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/data-modeling/local-metric-views |
 | Choose Databricks dashboard filter types and options | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/filter-types |
-| Configure and use filters in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/filters/ |
-| Configure dashboard variables for dynamic fields in Databricks | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/filters/dashboard-variables |
 | Configure field-based filters in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/filters/field-filters |
 | Use dashboard parameters for interactive Databricks queries | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/filters/parameters |
 | Configure global dashboard settings and themes in Databricks | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/settings |
-| Configure visualization options in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/visualizations/ |
 | Build custom Vega-Lite visualizations in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/visualizations/custom-visualizations |
 | Configure image widgets in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/visualizations/image-widgets |
 | Configure map visualizations in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/visualizations/maps |
-| Customize table and pivot visualizations in Databricks | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/visualizations/tables |
 | Add and format text widgets in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/visualizations/text-widgets |
 | Use Databricks AI/BI visualization types effectively | https://learn.microsoft.com/en-us/azure/databricks/dashboards/manage/visualizations/types |
 | Configure scheduled updates and subscriptions for Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/share/schedule-subscribe |
 | Publish and share Databricks dashboards securely | https://learn.microsoft.com/en-us/azure/databricks/dashboards/share/share |
 | Configure query-based parameters in Databricks dashboards | https://learn.microsoft.com/en-us/azure/databricks/dashboards/tutorials/query-based-params |
-| Configure ABAC DENY policies for Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies |
-| Create and manage ABAC GRANT policies in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/grant-policies |
 | Configure Unity Catalog ABAC via Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/tutorial |
 | Author ABAC policies with SQL in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/tutorial-sql |
 | Track model API and provider lineage in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ai-gateway-service-lineage |
 | Apply certification and deprecation tags in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/certify-deprecate-data |
 | Create and link Unity Catalog metastores to workspaces | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/create-metastore |
-| Configure Databricks Data Classification in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-classification |
 | Define and manage custom data classifiers | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-classification-custom-classifiers |
-| Reference supported data classification tags | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-classification-tags |
+| Use supported data classification tags in Databricks | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-classification-tags |
 | Configure anomaly detection for Unity Catalog tables | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-quality-monitoring/anomaly-detection/ |
 | Create alerts for data quality anomalies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-quality-monitoring/anomaly-detection/alerts |
 | Access and interpret anomaly detection results | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-quality-monitoring/anomaly-detection/results |
@@ -237,7 +207,6 @@
 | Enable existing workspaces for Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/enable-workspaces |
 | Use legacy Hive metastore alongside Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/hive-metastore |
 | Manage Unity Catalog metastores in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-metastore |
-| Configure Sensitive Data Detection service policy | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/detect-sensitive-data |
 | Reference Unity Catalog service policy function syntax | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/policy-function-reference |
 | Set up Unity Catalog in a new Azure Databricks workspace | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/setup-uc |
 | Manage partner-powered AI feature settings lifecycle | https://learn.microsoft.com/en-us/azure/databricks/databricks-ai/partner-powered |
@@ -245,7 +214,6 @@
 | Configure and manage DBFS mounts to cloud storage | https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts |
 | Identify special root directories in Databricks DBFS | https://learn.microsoft.com/en-us/azure/databricks/dbfs/root-locations |
 | Configure Delta tables for Iceberg client reads | https://learn.microsoft.com/en-us/azure/databricks/delta/iceberg-reads |
-| Configure built-in operators in Lakeflow Designer | https://learn.microsoft.com/en-us/azure/databricks/designer/built-in-operators |
 | YAML schema reference for Designer user-defined operators | https://learn.microsoft.com/en-us/azure/databricks/designer/operators-yaml-ref |
 | Use all UI widgets in Designer user-defined operators | https://learn.microsoft.com/en-us/azure/databricks/designer/tutorial-all-ui-widgets |
 | Create and manage Databricks authentication profiles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/config-profiles |
@@ -259,13 +227,13 @@
 | Migrate existing Databricks resources to bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/migrate-resources |
 | Override bundle settings with target configurations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/overrides |
 | Configure Databricks bundles with Python | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/python/ |
-| Reference for databricks.yml bundle configuration | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/reference |
-| Configure resources in Databricks bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/resources |
+| Configure databricks.yml for Declarative Automation Bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/reference |
+| Define resources in Declarative Automation Bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/resources |
 | Understand Databricks bundle configuration syntax | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/settings |
 | Share configuration across Databricks bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/sharing |
 | Create custom Databricks bundle templates | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/template-tutorial |
 | Use Databricks bundle project templates | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/templates |
-| Use substitutions and variables in bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/variables |
+| Use substitutions and variables in Databricks bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/variables |
 | Develop and manage Databricks bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/work-tasks |
 | Collaborate on Databricks bundles in workspace | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/workspace |
 | Author Declarative Automation Bundles in workspace | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/workspace-author |
@@ -274,15 +242,23 @@
 | Install and configure Azure Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/install |
 | Use Databricks CLI configuration profiles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/profiles |
 | Download Databricks billable usage logs with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-billable-usage-commands |
+| Use Databricks CLI to manage account budget policies | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-budget-policy-commands |
+| Configure Databricks account budgets with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-budgets-commands |
 | Manage Databricks account resources via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-commands |
 | Configure Databricks account credentials with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-credentials-commands |
 | Configure Databricks disaster recovery via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-disaster-recovery-commands |
 | Configure Databricks account endpoints with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-endpoints-commands |
+| Manage Databricks account federation policies via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-federation-policy-commands |
 | Configure Databricks account log delivery via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-log-delivery-commands |
 | Manage Databricks metastore assignments via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-metastore-assignments-commands |
 | Manage Databricks Unity Catalog metastores via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-metastores-commands |
-| Configure Databricks network connectivity for serverless | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-network-connectivity-commands |
+| Configure Databricks account network connectivity with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-network-connectivity-commands |
+| Manage Databricks account network policies using CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-network-policies-commands |
 | Configure Databricks account networks (VPCs) via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-networks-commands |
+| List Databricks published OAuth apps with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-o-auth-published-apps-commands |
+| Manage Databricks published OAuth app integrations via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-published-app-integration-commands |
+| Configure service principal federation policies with Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-service-principal-federation-policy-commands |
+| Manage Databricks service principal secrets using CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-service-principal-secrets-commands |
 | Manage Databricks account settings via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-settings-commands |
 | Use Databricks account settings-v2 CLI commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-settings-v2-commands |
 | Configure Databricks workspace storage via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-storage-commands |
@@ -297,10 +273,8 @@
 | Use deprecated alerts-legacy Databricks CLI commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/alerts-legacy-commands |
 | Manage SQL alerts using alerts-v2 CLI commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/alerts-v2-commands |
 | Call Databricks REST APIs using CLI api command | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/api-commands |
-| Manage Databricks Apps with CLI commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/apps-commands |
 | Manage Unity Catalog artifact allowlists via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/artifact-allowlists-commands |
 | Manage Databricks CLI local cache settings | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/cache-commands |
-| Manage Unity Catalog catalogs using CLI commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/catalogs-commands |
 | Manage clean room asset revisions via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/clean-room-asset-revisions-commands |
 | Manage clean room assets with Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/clean-room-assets-commands |
 | Configure clean room auto-approval rules via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/clean-room-auto-approval-rules-commands |
@@ -309,7 +283,6 @@
 | Configure Databricks cluster policies using CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/cluster-policies-commands |
 | Create and manage Databricks clusters via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/clusters-commands |
 | Enable Databricks CLI shell autocompletion | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/completion-commands |
-| Manage external data connections via Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/connections-commands |
 | Manage consumer fulfillments in Marketplace via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/consumer-fulfillments-commands |
 | Manage consumer installations for Marketplace via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/consumer-installations-commands |
 | Manage Marketplace consumer listings using CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/consumer-listings-commands |
@@ -323,6 +296,10 @@
 | Assign and manage Unity Catalog tags via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/entity-tag-assignments-commands |
 | Manage Databricks environment resources via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/environments-commands |
 | Manage MLflow experiments using Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/experiments-commands |
+| Use Databricks CLI external-locations commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/external-locations-commands |
+| Manage Unity Catalog functions via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/functions-commands |
+| Administer Unity Catalog metastores with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/metastores-commands |
+| Manage model versions in Unity Catalog CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/model-versions-commands |
 | Create and configure Databricks Sandbox environments via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/sandbox-commands |
 | Configure workspace-level settings with Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/settings-commands |
 | Manage Databricks Supervisor Agents with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/supervisor-agents-commands |
@@ -348,7 +325,7 @@
 | Use and configure Databricks Connect for Scala | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/ |
 | Install and configure Databricks Connect for Scala | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/install |
 | Use Databricks Utilities (dbutils) modules and commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-utils |
-| Configure SSH tunnels from IDEs to Databricks compute | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ssh-tunnel |
+| Configure SSH tunnels from IDEs to Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ssh-tunnel |
 | Install and connect the Databricks IDE extension | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/ |
 | Use Command Palette commands for the Databricks IDE extension | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/command-palette |
 | Configure Databricks projects in the IDE extension | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/configure |
@@ -357,7 +334,6 @@
 | Explore Unity Catalog database objects with SQL and UI | https://learn.microsoft.com/en-us/azure/databricks/discover/database-objects |
 | Explore Unity Catalog volumes and storage paths | https://learn.microsoft.com/en-us/azure/databricks/discover/files |
 | View table usage insights and popularity in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/discover/table-insights |
-| Use Compatibility Mode for external reads of Unity Catalog tables | https://learn.microsoft.com/en-us/azure/databricks/external-access/compatibility-mode |
 | Configure and use file access options in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/files/ |
 | Understand default working directories for Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/files/cwd-dbr-14 |
 | Run and manage Python unit tests in Databricks workspace | https://learn.microsoft.com/en-us/azure/databricks/files/python-unit-tests |
@@ -369,7 +345,6 @@
 | Measure Genie Code adoption and productivity impact | https://learn.microsoft.com/en-us/azure/databricks/genie-code/impact |
 | Configure Genie Code with custom user and workspace instructions | https://learn.microsoft.com/en-us/azure/databricks/genie-code/instructions |
 | Customize Genie One homepage branding and content | https://learn.microsoft.com/en-us/azure/databricks/genie-one/customize-genie-homepage |
-| Deep clone managed Iceberg tables in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/iceberg/clone |
 | Enable and use Apache Iceberg v3 features | https://learn.microsoft.com/en-us/azure/databricks/iceberg/iceberg-v3 |
 | Create managed tables from external locations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/add-data-external-locations |
 | Configure Auto Loader clean source behavior | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/clean-source |
@@ -468,7 +443,7 @@
 | Configure PostgreSQL ingestion pipelines in Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-pipeline |
 | Use PostgreSQL connector reference and type mappings | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-reference |
 | Configure PostgreSQL sources for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-source-setup |
-| Configure query-based connectors and cursor columns | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/query-based-reference |
+| Configure query-based connectors in Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/query-based-reference |
 | Create RabbitMQ connections in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/rabbitmq-connection |
 | Use RabbitMQ connector reference options | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/rabbitmq-reference |
 | Configure Unity Catalog connections to RabbitMQ | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/rabbitmq-source-setup |
@@ -538,7 +513,7 @@
 | Configure cluster-scoped init scripts in Databricks | https://learn.microsoft.com/en-us/azure/databricks/init-scripts/cluster-scoped |
 | Set environment variables with Databricks init scripts | https://learn.microsoft.com/en-us/azure/databricks/init-scripts/environment-variables |
 | Manage global init scripts for all Databricks clusters | https://learn.microsoft.com/en-us/azure/databricks/init-scripts/global |
-| Set up and deploy the Databricks Excel Add-in | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-setup |
+| Configure and deploy Azure Databricks Excel Add-in | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-setup |
 | Set up Databricks–Google Sheets connection | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/connect |
 | Schedule Databricks data refreshes in Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/schedule-refresh |
 | Configure Databricks JDBC Driver connections (v3+) | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/configure |
@@ -552,6 +527,7 @@
 | Create Databricks ODBC DSNs on each OS | https://learn.microsoft.com/en-us/azure/databricks/integrations/odbc/dsn |
 | Build DSN-less ODBC connection strings for Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/odbc/dsn-less |
 | Run backfill operations for Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/backfill-jobs |
+| Configure serverless and classic compute for Databricks jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/compute |
 | Configure Azure Databricks Lakeflow Jobs in UI | https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job |
 | Configure and edit tasks in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task |
 | Configure continuous mode for Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/continuous |
@@ -561,7 +537,6 @@
 | Trigger Lakeflow Jobs on file arrivals | https://learn.microsoft.com/en-us/azure/databricks/jobs/file-arrival-triggers |
 | Configure job-level parameters in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/job-parameters |
 | Trigger Lakeflow Jobs on Unity Catalog model updates | https://learn.microsoft.com/en-us/azure/databricks/jobs/model-update-triggers |
-| Configure Lakeflow Jobs notifications and alerts | https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications |
 | Parameterize Lakeflow Jobs and tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/parameters |
 | Configure Run if task dependencies in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/run-if |
 | Configure scheduled triggers for Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/scheduled |
@@ -573,7 +548,6 @@
 | Run Genie Code AI agents as Lakeflow Job tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/genie-code |
 | Add If/else branching logic to Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/if-else |
 | Configure JAR tasks for Databricks Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/jar |
-| Create Databricks-compatible JARs for Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/jar-create |
 | Configure notebook tasks in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/notebook |
 | Configure pipeline tasks in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/pipeline |
 | Configure Python script tasks in Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/python-script |
@@ -583,10 +557,10 @@
 | Configure SQL tasks for Databricks Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/sql |
 | Trigger Lakeflow Jobs on table updates | https://learn.microsoft.com/en-us/azure/databricks/jobs/trigger-table-update |
 | Configure triggers and schedules for Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers |
-| Use Databricks AI Functions for data transformation | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/ai-functions |
 | Configure and use the ai_query function | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/ai-query |
 | Configure Databricks foundation model fine-tune runs | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/foundation-model-training/create-fine-tune-run |
 | Prepare datasets for Databricks foundation fine-tuning | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/foundation-model-training/data-preparation |
+| Configure and run Databricks foundation model fine-tuning | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/foundation-model-training/fine-tune-run-tutorial |
 | Set up Databricks fine-tune runs in UI | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/foundation-model-training/ui |
 | Manage and inspect Databricks fine-tune runs | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/foundation-model-training/view-manage-runs |
 | Configure and query system.ai LLM model services | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/llm-serving-intro |
@@ -599,10 +573,13 @@
 | Configure environment versions for Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/environment-versions |
 | Manage Python dependencies for Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/external-dependencies |
 | Configure REFRESH POLICY for materialized views | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/ldp-sql-ref-create-materialized-view-refresh-policy |
+| Define pipeline views with Lakeflow CREATE VIEW | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/ldp-sql-ref-create-view |
 | Reference Lakeflow pipelines Python API | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/python-ref |
 | Reference Lakeflow pipelines SQL statements | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/sql-ref |
 | Configure data quality expectations in pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations |
+| Order Lakeflow pipeline flows with depends_on | https://learn.microsoft.com/en-us/azure/databricks/ldp/flows-depends-on |
 | Configure pipelines with legacy Hive metastore | https://learn.microsoft.com/en-us/azure/databricks/ldp/hive-metastore |
+| Configure maintenance windows for continuous pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows |
 | Understand Lakeflow pipeline event log schema | https://learn.microsoft.com/en-us/azure/databricks/ldp/monitor-event-log-schema |
 | Query and use Lakeflow pipeline event logs | https://learn.microsoft.com/en-us/azure/databricks/ldp/monitor-event-logs |
 | Move streaming tables between Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/move-table |
@@ -624,22 +601,25 @@
 | Install Databricks libraries from Unity Catalog volumes | https://learn.microsoft.com/en-us/azure/databricks/libraries/volume-libraries |
 | Install Databricks libraries from workspace files | https://learn.microsoft.com/en-us/azure/databricks/libraries/workspace-files-libraries |
 | AI Runtime CLI command reference | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/command-reference |
-| Configure custom Docker images for AI Runtime CLI | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/docker-images |
-| Install and authenticate the AI Runtime CLI | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/installation |
+| Use custom Docker images with AI Runtime CLI | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/docker-images |
 | Map AI Runtime CLI runs to MLflow and Jobs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/track-runs |
-| Configure AI Runtime workloads with YAML | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/yaml-config |
-| Load training data into AI Runtime via Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/dataloading |
-| Configure AI Runtime Python environments | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/environment |
-| Track AI Runtime experiments and GPU metrics | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/tracking-observability |
+| Configure AI Runtime CLI workload YAML settings | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/cli/yaml-config |
+| Connect Databricks notebooks to AI Runtime GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/connecting |
+| Load training data into Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/dataloading |
+| Configure distributed training in Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/distributed-training |
+| Choose and configure AI Runtime environments | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/environment |
+| Get started with H100 serverless GPUs on AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-api-h100-starter |
+| Run Ray workloads on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/ray |
+| Track experiments and monitor GPUs on AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/tracking-observability |
 | Understand Hyperopt concepts for Databricks ML workflows | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl-hyperparam-tuning/hyperopt-concepts |
 | Configure Databricks AutoML Python API runs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl/automl-api-reference |
 | Configure AutoML classification data preparation options | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl/classification-data-prep |
 | Configure AutoML forecasting data preparation options | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl/forecasting-data-prep |
 | Configure AutoML regression data preparation options | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/automl/regression-data-prep |
 | Configure Databricks Runtime for Machine Learning clusters | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/databricks-runtime-ml |
-| Define Databricks Feature Views for ML features | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/feature-views |
-| Use Databricks Feature Views API for feature definitions | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/feature-views-api-reference |
-| Configure Databricks Streams for external Kafka sources | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/streams |
+| Define and manage Databricks Feature Views | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/feature-views |
+| Materialize Databricks Feature Views to stores | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/materialized-features |
+| Configure Databricks Streams for external sources | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/streams |
 | Create and manage Unity Catalog feature tables | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/uc/feature-tables-uc |
 | Manage feature tables in Workspace Feature Store | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/workspace-feature-store/feature-tables |
 | Configure priority pay-per-token for Foundation Model APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/priority-mode |
@@ -655,58 +635,38 @@
 | Enable route optimization on Databricks serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/route-optimization |
 | Configure multiple models and traffic splits on Databricks endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/serve-multiple-models-to-serving-endpoint |
 | Create and configure Ray clusters on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/ray-create |
-| Create Databricks Marketplace listings and shares | https://learn.microsoft.com/en-us/azure/databricks/marketplace/create-listing |
 | Access Databricks Marketplace data in Unity Catalog workspaces | https://learn.microsoft.com/en-us/azure/databricks/marketplace/get-started-consumer |
 | Edit and revoke Databricks listings | https://learn.microsoft.com/en-us/azure/databricks/marketplace/manage-listings |
 | Manage Databricks Marketplace data products and requests | https://learn.microsoft.com/en-us/azure/databricks/marketplace/manage-requests-consumer |
 | Configure Databricks Autologging with MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow/databricks-autologging |
 | Organize Databricks MLflow runs with experiments | https://learn.microsoft.com/en-us/azure/databricks/mlflow/experiments |
 | Use MLflow Logged Models to track model lifecycle | https://learn.microsoft.com/en-us/azure/databricks/mlflow/logged-model |
-| Install and configure MLflow 3 for model development on Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow/mlflow-3-install |
 | Use MLflow 3 Model Registry in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/mlflow/model-registry-3 |
 | View and manage MLflow runs on Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow/runs |
 | Configure MLflow tracking for Databricks experiments | https://learn.microsoft.com/en-us/azure/databricks/mlflow/tracking |
 | Configure MLflow tracking server storage locations | https://learn.microsoft.com/en-us/azure/databricks/mlflow/tracking-server-configuration |
 | Visualize and compare MLflow runs and models | https://learn.microsoft.com/en-us/azure/databricks/mlflow/visualize-runs |
-| Archive MLflow traces to Unity Catalog Delta | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/archive-traces |
 | Backfill MLflow scorers on historical traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/backfill-scorers |
-| MLflow evaluation dataset schema reference | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/eval-datasets |
-| Understand MLflow evaluation run structure | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/evaluation-runs |
-| Use built-in LLM judges for GenAI quality | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/ |
-| Create guidelines-based LLM judges in MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/guidelines |
-| Configure relevance judges for RAG context | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/is_context_relevant |
-| Configure RetrievalSufficiency judge for context coverage | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/is_context_sufficient |
-| Use the Correctness judge for factual accuracy | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/is_correct |
-| Configure RetrievalGroundedness judge for RAG apps | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/is_grounded |
-| Use the Safety judge to detect harmful content | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/is_safe |
-| MLflow scorer lifecycle management API reference | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/production-quality-monitoring |
-| Configure scorers and LLM judges in MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/scorers |
-| Build custom LLM judges with make_judge() | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-judge/ |
-| Reference for MLflow code-based scorer definitions | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-scorer-reference |
-| Manage MLflow production scorers lifecycle | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/manage-production-scorers |
-| Configure MLflow production quality monitoring | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/production-monitoring |
-| Configure serverless budget policy for MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/serverless-budget-policy |
-| Configure environments to connect with MLflow GenAI | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/getting-started/connect-environment |
-| Capture and use human feedback in MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/human-feedback/ |
-| Define MLflow labeling schemas for review | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/human-feedback/concepts/labeling-schemas |
-| Configure MLflow labeling sessions for experts | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/human-feedback/concepts/labeling-sessions |
-| Set up MLflow review queues for human feedback | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/human-feedback/expert-feedback/review-queues |
-| Track prompt and app versions with MLflow LoggedModels | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/prompt-registry/track-prompts-app-versions |
-| Track GenAI application versions with MLflow LoggedModels | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/version-tracking/track-application-versions-with-mlflow |
-| Configure MLflow LoggedModel version tracking for GenAI | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/version-tracking/version-concepts |
-| Configure MLflow Tracing for GenAI observability in Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/ |
-| Add contextual metadata to MLflow traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/add-context-to-traces |
-| Attach and manage tags and metadata on traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/attach-tags/ |
-| Log and analyze user feedback on traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/collect-user-feedback/ |
-| Export MLflow traces using OpenTelemetry | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/integrations/open-telemetry |
-| Access MLflow trace metadata, spans, and assessments | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/access-trace-data |
-| Build custom MLflow trace views with Genie | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/custom-trace-view |
-| Query OpenTelemetry traces in Unity Catalog with SQL | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/query-dbsql |
-| Search MLflow traces programmatically with Python SDK | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/query-via-sdk |
-| View and inspect traces in Databricks MLflow UI | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/ui-traces |
-| Configure Langfuse to export traces to MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/third-party/langfuse |
-| Set OpenTelemetry span attributes for MLflow UI | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/third-party/otel-span-attributes |
-| Configure Unity Catalog storage for OpenTelemetry traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/trace-unity-catalog |
+| Build MLflow evaluation datasets for GenAI agents | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/build-eval-dataset |
+| Reference schema for MLflow evaluation datasets | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/eval-datasets |
+| Use built-in MLflow LLM judges for evaluation | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/judges/ |
+| Configure MLflow scorers and LLM judges | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/scorers |
+| Create custom LLM judges with MLflow make_judge | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-judge/ |
+| Reference for MLflow custom code-based scorers | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-scorer-reference |
+| Implement custom code-based scorers in MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/custom-scorers |
+| Evaluate multi-turn conversations with MLflow scorers | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/evaluate-conversations |
+| Manage lifecycle of MLflow production scorers | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/manage-production-scorers |
+| Configure MLflow production monitoring scorers | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/production-monitoring |
+| Configure MLflow serverless budget policies for experiments | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/serverless-budget-policy |
+| Create and manage MLflow labeling schemas | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/human-feedback/concepts/labeling-schemas |
+| Create and manage MLflow labeling sessions | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/human-feedback/concepts/labeling-sessions |
+| Collect structured feedback with MLflow review queues | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/human-feedback/expert-feedback/review-queues |
+| Track MLflow prompt and app versions together | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/prompt-registry/track-prompts-app-versions |
+| Set up MLflow skills for coding agents | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/recipes/set-up-coding-agent |
+| Configure the MLflow MCP server for coding agents | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/recipes/set-up-mcp-server |
+| Use MLflow traces to observe and debug agents | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/ |
+| Build custom trace views in Databricks MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/custom-trace-view |
+| View and debug traces in Databricks MLflow UI | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/ui-traces |
 | Migrate from legacy ${param} notebook widgets | https://learn.microsoft.com/en-us/azure/databricks/notebooks/legacy-widgets |
 | Import and export Databricks notebooks in multiple formats | https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebook-export-import |
 | Configure Databricks notebook file formats | https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebook-format |
@@ -717,10 +677,6 @@
 | Configure and use Databricks notebook widgets | https://learn.microsoft.com/en-us/azure/databricks/notebooks/widgets |
 | Configure Lakebase Postgres connection strings | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connection-strings |
 | Configure and install supported Lakebase Postgres extensions | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/extensions |
-| Enable and configure Lakebase Search features | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/lakebase-search |
-| Configure lakebase_text for BM25 full-text search | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/lakebase-text |
-| Configure lakebase_vector for ANN search | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/lakebase-vector |
-| Configure and optimize Lakebase Postgres computes | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-computes |
 | Create and configure Lakebase projects | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-projects |
 | Monitor Lakebase projects with metrics dashboard | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/metrics |
 | Use and customize Lakebase observability dashboards | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/observability-dashboards |
@@ -731,12 +687,10 @@
 | Configure Lakebase Postgres update windows | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/updates |
 | Audit and monitor OpenSharing activity with logs | https://learn.microsoft.com/en-us/azure/databricks/opensharing/audit-logs |
 | Create OpenSharing recipients on Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/opensharing/create-recipient |
-| Create OpenSharing shares in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/opensharing/create-share |
 | Manage OpenSharing provider objects for recipients | https://learn.microsoft.com/en-us/azure/databricks/opensharing/manage-provider |
 | Manage OpenSharing recipient objects in Databricks | https://learn.microsoft.com/en-us/azure/databricks/opensharing/manage-recipients |
 | Manage existing OpenSharing shares in Databricks | https://learn.microsoft.com/en-us/azure/databricks/opensharing/manage-share |
 | Mount shared Genie Agents in Databricks | https://learn.microsoft.com/en-us/azure/databricks/opensharing/mount-genie-agent |
-| Read Databricks-to-Databricks OpenSharing data | https://learn.microsoft.com/en-us/azure/databricks/opensharing/read-data-databricks |
 | Read OpenSharing data using bearer-token credentials | https://learn.microsoft.com/en-us/azure/databricks/opensharing/read-data-open |
 | Import open providers and read shared data | https://learn.microsoft.com/en-us/azure/databricks/opensharing/read-data-open-databricks |
 | Access OpenSharing data as a recipient | https://learn.microsoft.com/en-us/azure/databricks/opensharing/recipient |
@@ -798,12 +752,9 @@
 | Configure data format options in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/query/formats/ |
 | Configure Parquet read and write in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/query/formats/parquet |
 | Reference serverless environment version 5 details | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/five |
-| Use Serverless GPU environment version 5 | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/five-gpu |
 | Reference serverless environment version 4 details | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/four |
 | Use Serverless GPU environment version 4 | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/four-gpu |
 | Reference serverless environment version 1 details | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/one |
-| Reference serverless environment version 6 details | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/six |
-| Use Serverless GPU environment version 6 | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/six-gpu |
 | Reference serverless environment version 3 details | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/three |
 | Use Serverless GPU environment version 3 | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/three-gpu |
 | Reference serverless environment version 2 details | https://learn.microsoft.com/en-us/azure/databricks/release-notes/serverless/environment-version/two |
@@ -812,26 +763,24 @@
 | Configure Databricks Git server proxy for private Git | https://learn.microsoft.com/en-us/azure/databricks/repos/git-proxy |
 | Configure Git integration and security for Databricks Git folders | https://learn.microsoft.com/en-us/azure/databricks/repos/repos-setup |
 | Configure domain-based firewall rules for Databricks | https://learn.microsoft.com/en-us/azure/databricks/resources/firewall-rules |
-| Configure network rules using Databricks IPs and domains | https://learn.microsoft.com/en-us/azure/databricks/resources/ip-domain-region |
-| Configure just-in-time user provisioning in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/auth/jit |
+| Configure IPs and domains for Azure Databricks networking | https://learn.microsoft.com/en-us/azure/databricks/resources/ip-domain-region |
 | Connect Azure Databricks to on-premises networks | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/on-prem-network |
 | Configure Private Link for Databricks classic compute plane | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/private-link-standard |
 | Configure user-defined routes for Azure Databricks VNets | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/udr |
 | Configure VNet peering for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/vnet-peering |
-| Configure inbound Private Link to Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/front-end-private-connect |
 | Configure inbound Private Link for Databricks account resources | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/front-end-private-connect-account |
+| Configure Azure Databricks workspace IP access lists | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/ip-access-list-workspace |
+| Migrate Databricks IP access lists to context-based ingress | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/migrate-to-context-based-ingress |
 | Configure Private Link for Databricks performance services | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/service-direct-privatelink |
 | Manage serverless private endpoint rules for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/manage-private-endpoint-rules |
 | Configure serverless Private Link to VNets for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/pl-to-internal-network |
 | Configure Databricks private network gateway via REST API | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/private-network-gateway/configure-private-network-gateway |
 | Configure Private Link from Databricks serverless to Azure services | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/serverless-private-link |
-| Configure SSH reverse tunnels for Databricks connectivity | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/ssh-reverse-tunnel |
 | ARM template configuration for Databricks workspace storage firewall | https://learn.microsoft.com/en-us/azure/databricks/security/network/storage/firewall-support-arm-template |
 | Export Azure Databricks workspace data and configuration | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/export-workspace-data |
 | Query VARIANT semi-structured data in Databricks | https://learn.microsoft.com/en-us/azure/databricks/semi-structured/variant |
-| Reference Spark reader and writer options on Databricks | https://learn.microsoft.com/en-us/azure/databricks/spark/api-options |
 | Set and manage Spark configuration on Databricks | https://learn.microsoft.com/en-us/azure/databricks/spark/conf |
-| Use FILE type for unstructured data in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/data-types/file-type |
+| Use FILE data type in Azure Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/data-types/file-type |
 | Work with GEOGRAPHY type in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/data-types/geography-type |
 | Use GEOMETRY type for planar geospatial data | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/data-types/geometry-type |
 | Handle OBJECT type within VARIANT in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/data-types/object-type |
@@ -861,6 +810,7 @@
 | Convert Databricks spatial data to GeoJSON | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_asgeojson |
 | Export Databricks spatial data as WKT | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_astext |
 | Export Databricks spatial data as WKB with endianness | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_aswkb |
+| Query ABAC policy definitions via Databricks information schema | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/information-schema/abac_policy_definitions |
 | Query RECIPIENT_TOKENS information schema in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/information-schema/recipient_tokens |
 | Query RECIPIENTS information schema in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/information-schema/recipients |
 | Use REFERENTIAL_CONSTRAINTS information schema in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/information-schema/referential_constraints |
@@ -901,9 +851,10 @@
 | Configure Databricks SQL session time zone | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-conf-mgmt-set-timezone |
 | Set CURRENT_RECIPIENT for Databricks sharing sessions | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-set-recipient |
 | Modify Databricks SQL temporary variables | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-set-variable |
+| Configure ALTER CATALOG options in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-catalog |
 | Alter external locations in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-location |
 | Alter Databricks materialized view metadata and schedule | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-materialized-view |
-| Alter schema ownership and storage settings | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-schema |
+| Configure and alter Databricks SQL schemas | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-schema |
 | Set managed locations for foreign schemas | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-schema-set-managed-location |
 | Alter streaming table schedules and properties | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-streaming-table |
 | Alter Databricks tables and properties with SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-table |
@@ -915,16 +866,17 @@
 | Convert foreign views to managed Unity views | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-view-set-managed |
 | Rename and reassign ownership of volumes | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-alter-volume |
 | Set comments on Unity Catalog objects | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-comment |
+| Create and configure Databricks Unity Catalogs | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-catalog |
 | Create federated connections with CREATE CONNECTION | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-connection |
 | Create schemas using CREATE DATABASE alias | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-database |
 | Create external functions in Databricks Runtime | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-function |
 | Create external locations for cloud storage | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-location |
-| Create and manage materialized views in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-materialized-view |
+| Create Databricks SQL materialized views | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-materialized-view |
 | Configure materialized view refresh policies | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-materialized-view-refresh-policy |
 | Create Unity Catalog stored procedures | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-procedure |
-| Create schemas with CREATE SCHEMA in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-schema |
+| Create and configure Databricks SQL schemas | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-schema |
 | Create servers using CREATE SERVER alias | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-server |
-| Create SQL and language UDFs in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function |
+| Define Databricks SQL and language UDFs | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function |
 | Create streaming tables for Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-streaming-table |
 | Use AUTO CDC FLOW for streaming tables | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-streaming-table-auto-cdc |
 | Choose and use Databricks CREATE TABLE variants | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-table |
@@ -960,7 +912,7 @@
 | Configure parameter widgets in Databricks SQL editor | https://learn.microsoft.com/en-us/azure/databricks/sql/user/sql-editor/parameter-widgets |
 | Handle schema evolution in transformWithState state store | https://learn.microsoft.com/en-us/azure/databricks/stateful-applications/schema-evolution |
 | Use and configure default storage in Databricks | https://learn.microsoft.com/en-us/azure/databricks/storage/default-storage |
-| Configure Structured Streaming batch size controls | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/batch-size |
+| Configure Structured Streaming batch size in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/batch-size |
 | Read and inspect Structured Streaming state data | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/read-state |
 | Reference supported features for real-time mode | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/reference |
 | Configure and size real-time mode streaming queries | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time/setup |
@@ -972,7 +924,6 @@
 | Convert foreign tables to external Unity Catalog tables | https://learn.microsoft.com/en-us/azure/databricks/tables/convert-foreign-external |
 | Convert external or foreign tables to managed | https://learn.microsoft.com/en-us/azure/databricks/tables/convert-to-managed |
 | Configure and manage Unity Catalog external tables | https://learn.microsoft.com/en-us/azure/databricks/tables/external |
-| Configure and use change data feed in Databricks | https://learn.microsoft.com/en-us/azure/databricks/tables/features/change-data-feed |
 | Use Checkpoint V2 for high-concurrency Delta tables | https://learn.microsoft.com/en-us/azure/databricks/tables/features/checkpoint-v2 |
 | Rename and drop columns with Delta column mapping | https://learn.microsoft.com/en-us/azure/databricks/tables/features/column-mapping |
 | Use deletion vectors to speed up DML operations | https://learn.microsoft.com/en-us/azure/databricks/tables/features/deletion-vectors |
@@ -985,22 +936,19 @@
 | Configure auto time-to-live for managed tables | https://learn.microsoft.com/en-us/azure/databricks/tables/operations/auto-ttl |
 | Clone Delta and Iceberg tables on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/tables/operations/clone |
 | Configure shallow clone for Unity Catalog tables | https://learn.microsoft.com/en-us/azure/databricks/tables/operations/clone-unity-catalog |
-| Drop or replace tables safely in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/tables/operations/drop-table |
 | Inspect table metadata with DESCRIBE DETAIL | https://learn.microsoft.com/en-us/azure/databricks/tables/operations/table-details |
 | Configure Delta and Iceberg table properties | https://learn.microsoft.com/en-us/azure/databricks/tables/table-properties |
 | Configure transaction modes on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/transactions/transaction-modes |
 | Configure agent metadata for metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/agent-metadata |
 | Define business metrics with Unity Catalog metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/ |
-| Apply advanced techniques in metric view definitions | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/advanced-techniques |
 | Model sources, fields, and measures in metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/basic-modeling |
 | Create Unity Catalog metric views in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/create |
 | Configure joins in Unity Catalog metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/joins |
-| Use level of detail expressions in metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/level-of-detail |
 | Manage Unity Catalog metric view permissions and lifecycle | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/manage |
 | Configure materialization for Unity Catalog metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/materialization |
 | Build a sales analytics metric view with joins | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/tpch-example |
 | Use parameters in Unity Catalog metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/use-parameters |
-| Use YAML syntax to define Unity Catalog metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/yaml-reference |
+| Author metric view YAML definitions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/yaml-reference |
 | Implement batch Python UDFs in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/udf/python-batch-udf |
 | Create and register Scala/Java UDFs in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/udf/scala-java-uc |
 | Register Python UDTFs in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/udf/udtf-unity-catalog |

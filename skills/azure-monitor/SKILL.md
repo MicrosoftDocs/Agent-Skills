@@ -1,9 +1,9 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Log Analytics, Application Insights, DCRs/agents, alerts/autoscale, or Prometheus/Grafana monitoring, and other Azure Monitor related development tasks. Not for Azure Managed Grafana (use azure-managed-grafana), Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud).
+description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Log Analytics, Application Insights, DCRs/agents, autoscale alerts, or Prometheus/Grafana monitoring, and other Azure Monitor related development tasks. Not for Azure Managed Grafana (use azure-managed-grafana), Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-09-20"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Monitor Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L149-L186 | Guides for choosing Azure Monitor agents, alerts, metrics/logs options, cost planning, and migration paths from legacy tools (MMA, WAD/LAD, SCOM, Splunk, Prometheus, SDKs) to modern Azure Monitor. |
 | Architecture & Design Patterns | L187-L192 | Designing end-to-end Azure Monitor architectures, including enterprise-scale layouts, data flows, and secure network topologies using Private Link for monitoring traffic. |
 | Limits & Quotas | L193-L220 | Limits, quotas, performance, and scale behavior for Azure Monitor alerts, logs, metrics, Prometheus, Container Insights, Application Insights, Workbooks, and supported regions/resources. |
-| Security | L221-L290 | Securing Azure Monitor and related services: auth, RBAC, network/TLS, policy, private link, secure ingestion, and querying/auditing security and compliance logs across many Azure products. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts, autoscale, health models, logs/metrics schemas, resource-specific logging, and workbook dashboards for monitoring and observability. |
+| Security | L221-L290 | Securing Azure Monitor and its data: auth, TLS, networking, RBAC, policies, private access, plus auditing/logging for Databricks, MDE, healthcare, Synapse, and threat intel. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts, logs/metrics schemas, autoscale, workbooks, and per‑service monitoring for VMs, AKS, apps, networks, and SaaS. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Integrating Azure Monitor with apps and tools: agents, REST/CLI, webhooks, ITSM, Prometheus/Grafana, and KQL patterns for querying many Azure/third‑party log tables. |
 | Deployment | [deployment.md](deployment.md) | Deploying and configuring Azure Monitor agents, VM insights, policies, and .NET profiling/snapshot debugging tools across VMs, App Service, Functions, containers, and Service Fabric. |
 
@@ -226,7 +226,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure for Secure Webhook ITSM integrations | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration |
 | Use Application Insights smart detection to identify security issues | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-application-security-detection-pack |
 | Enable Microsoft Entra authentication for Application Insights ingestion | https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication |
-| Configure IP collection and geolocation in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection |
+| Configure IP handling and geolocation in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection |
 | Configure legacy authentication for Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-authentication |
 | Configure secure access to Live Data in Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-setup |
 | Choose TLS options for Azure Monitor pipeline ingestion | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls |
