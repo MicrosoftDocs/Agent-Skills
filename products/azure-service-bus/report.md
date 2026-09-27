@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   security: 'Securing Service Bus: identity-based auth, SAS, keys and encryption,
     TLS, network isolation (VNet, Private Link, firewalls), Azure Policy, and compliance
@@ -10,9 +10,9 @@ category_descriptions:
   integrations: Patterns and code for integrating Service Bus with JMS (1.1/2.0),
     RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication
     tasks, and batch message deletion.
-  architecture-patterns: Patterns for designing resilient, geo-replicated, multi-namespace
-    Service Bus systems, including partitioning, autoforwarding chains, federation,
-    and message replication with tools like NServiceBus.
+  architecture-patterns: Patterns for resilient, geo-replicated, multi-namespace Service
+    Bus architectures, including partitioning, autoforwarding chains, federation,
+    and message replication with NServiceBus.
   decision-making: Guidance on choosing Service Bus vs other messaging options, configuring
     geo-disaster recovery/replication, Java/JMS client choices, and migrating from
     Standard to Premium.
@@ -29,15 +29,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using queues/topics, sessions, filters/actions, geo-replication, or JMS/RabbitMQ
-  integrations, and other Azure Service Bus related development tasks. Not for Azure
-  Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure
-  Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
-use_when: Use when using queues/topics, sessions, filters/actions, geo-replication,
-  or JMS/RabbitMQ integrations, and other Azure Service Bus related development tasks.
-confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid
-  (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay
-  (use azure-relay).
+  using queues/topics, sessions, autoforwarding chains, geo-replication, or JMS/Java
+  clients, and other Azure Service Bus related development tasks. Not for Azure Event
+  Hubs (use azure-event-hubs), Azure Queue Storage (use azure-queue-storage), Azure
+  Notification Hubs (use azure-notification-hubs), Azure Relay (use azure-relay).
+use_when: Use when using queues/topics, sessions, autoforwarding chains, geo-replication,
+  or JMS/Java clients, and other Azure Service Bus related development tasks.
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue Storage
+  (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs),
+  Azure Relay (use azure-relay).
 ---
 # Azure Service Bus Crawl Report
 
@@ -46,13 +46,13 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 - **Total Pages**: 127
 - **Fetched**: 127
 - **Fetch Failed**: 0
-- **Classified**: 90
-- **Unclassified**: 37
+- **Classified**: 89
+- **Unclassified**: 38
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 122
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -65,28 +65,20 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 | configuration | 21 | 16.5% |
 | decision-making | 5 | 3.9% |
 | deployment | 7 | 5.5% |
-| integrations | 12 | 9.4% |
+| integrations | 11 | 8.7% |
 | limits-quotas | 4 | 3.1% |
 | security | 20 | 15.7% |
 | troubleshooting | 6 | 4.7% |
-| *(Unclassified)* | 37 | 29.1% |
+| *(Unclassified)* | 38 | 29.9% |
 
 ## Changes
 
-### New Pages
-
-- [Secure your Service Bus deployment](https://learn.microsoft.com/en-us/azure/service-bus-messaging/secure-service-bus)
-
 ### Updated Pages
 
-- [Quotas](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas)
-  - Updated: 2026-02-12T23:11:00.000Z → 2026-09-19T05:13:00.000Z
-- [Overview of Service Bus emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/overview-emulator)
-  - Updated: 2026-02-06T06:10:00.000Z → 2026-09-19T05:13:00.000Z
-- [Chain entities with auto-forwarding](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-auto-forwarding)
-  - Updated: 2026-07-28T22:10:00.000Z → 2026-09-15T08:00:00.000Z
-- [Authenticate from an application](https://learn.microsoft.com/en-us/azure/service-bus-messaging/authenticate-application)
-  - Updated: 2026-04-23T06:20:00.000Z → 2026-09-15T08:00:00.000Z
+- [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication)
+  - Updated: 2026-08-24T08:00:00.000Z → 2026-09-26T05:12:00.000Z
+- [Message replication tasks and applications](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-replicator-functions)
+  - Updated: 2021-09-28T22:03:00.000Z → 2026-09-23T05:11:00.000Z
 
 ## Classified Pages
 
@@ -158,7 +150,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 | [Java Message Service (JMS) Developer guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/jms-developer-guide) | integrations | 0.70 | JMS 2.0 developer guide for Service Bus includes API usage patterns, configuration details, and Service Bus–specific integration behavior for the JMS client. These are concrete coding and integration patterns beyond generic JMS knowledge. |
 | [Message browsing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-browsing) | configuration | 0.70 | Explains peek operation behavior and message types returned, including a table; provides product-specific operational semantics. |
 | [Message replication and cross-region federation](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-overview) | architecture-patterns | 0.70 | Covers cross-region federation and replication patterns using autoforwarding and routing topologies, which are Service Bus–specific architecture patterns. |
-| [Message replication tasks and applications](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-replicator-functions) | integrations | 0.70 | Details how to implement replication tasks using Azure Functions, including bindings and configuration patterns unique to this integration. |
 | [Message sequencing and timestamps](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sequencing) | best-practices | 0.70 | Details how sequence numbers and EnqueuedTimeUtc behave, including partitioned entity nuances—product-specific behavior and usage guidance. |
 | [Migrate from ActiveMQ to Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/migrate-jms-activemq-to-servicebus) | integrations | 0.70 | Migration guide with product-specific JMS/AMQP configuration patterns and code-level changes unique to Azure Service Bus versus ActiveMQ/Amazon MQ. |
 | [Monitor Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/monitor-service-bus) | configuration | 0.70 | Explains how to wire Service Bus to Azure Monitor with specific metric/log categories and configuration steps beyond generic monitoring concepts. |
@@ -171,7 +162,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 | [Use Azure PowerShell to provision entities](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-manage-with-ps) | configuration | 0.70 | Contains concrete cmdlets, parameters, and patterns for creating/managing namespaces, queues, topics, and subscriptions via PowerShell. |
 | [Use Service Bus with Java Message Service (JMS) 2.0](https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20) | integrations | 0.70 | How-to for using JMS 2.0 over AMQP with Azure Service Bus; likely includes product-specific API usage, configuration parameters, and integration patterns beyond generic JMS knowledge. |
 | [Duplicate message detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection) | best-practices | 0.68 | A duplicate detection article for Service Bus typically includes product-specific guidance such as how to set the DuplicateDetectionHistoryTimeWindow, how message IDs are used, and how to configure or use this feature to avoid duplicate processing in concrete failure scenarios. The summary already describes specific failure patterns (acknowledgment not returned, client retries) and how the system handles duplicates, which are product-specific gotchas and usage recommendations rather than just conceptual theory, fitting best-practices. |
-| [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication) | architecture-patterns | 0.68 | Geo-replication for Service Bus is a product-specific resiliency pattern. The page describes how metadata and data are replicated from primary to secondary regions, when and how to enable it on namespaces, and how it behaves during outages. This is detailed, service-specific architecture guidance that goes beyond generic concepts, fitting the architecture-patterns sub-skill. |
+| [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication) | architecture-patterns | 0.68 | Describes a product-specific geo-replication pattern for Service Bus namespaces, including how metadata and data are replicated from primary to secondary regions and when to use this feature for outage/disaster insulation. This is an architecture/design pattern unique to Azure Service Bus rather than a generic concept. |
 | [Prefetch messages](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch) | best-practices | 0.68 | Page gives product-specific guidance on configuring the Service Bus prefetch feature (setting prefetch count > 0, behavior when set to 0, how the local prefetch buffer is filled and drained). This is concrete, implementation-focused behavior unique to Azure Service Bus rather than generic messaging theory, fitting best-practices rather than limits-quotas (no explicit numeric limits table) or configuration (not a full parameter reference). |
 | [Bicep](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-queue-bicep) | deployment | 0.65 | Shows a reusable Bicep template with parameters and resource definitions; while a quickstart, it exposes concrete deployment resource schema and parameterization useful for production deployments. |
 | [Delete messages in Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/batch-delete) | integrations | 0.65 | Shows how to delete messages via code, likely including SDK methods, parameters, and constraints specific to Service Bus batch deletion. |
@@ -214,6 +205,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 | [Build a multi-tier Service Bus application](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-multi-tier-app-using-service-bus-queues) | 0.30 | Tutorial for building a multi-tier app; primarily step-by-step development guidance rather than reusable expert configuration or limits. |
 | [Dead-letter queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues) | 0.30 | Describes what dead-letter queues are and how they relate to main entities. The summary does not show numeric limits, configuration parameter tables, or error-code-based troubleshooting; it appears to be a conceptual explanation rather than expert configuration or limits content. |
 | [Enable partitions for queues or topics in premium tier](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-premium) | 0.30 | How-to article for enabling partitioning via portal/CLI/SDKs; summary does not indicate specific limits, quotas, or detailed configuration tables with defaults/ranges. Appears to be procedural/tutorial content rather than expert reference data. |
+| [Message replication tasks and applications](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-replicator-functions) | 0.30 | Appears to be a conceptual overview of using Azure Functions for message replication and federation tasks, without clear evidence of detailed configuration tables, limits, or error-code-based troubleshooting. Lacks strong signals of product-specific expert knowledge as defined by the sub-skill criteria. |
 | [Message sessions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sessions) | 0.30 | Primarily explains how to use Service Bus sessions for FIFO and request-response patterns. From the summary, it appears conceptual and pattern-focused without specific numeric limits, configuration tables, error codes, or tier-specific constraints beyond a basic note that sessions aren't supported in the Basic tier. Lacks the detailed, product-specific parameters or thresholds required for the defined sub-skill types. |
 | [Overview of Service Bus emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/overview-emulator) | 0.30 | The page is described as an overview of the Azure Service Bus emulator, covering benefits, features, and limitations at a high level. There is no evidence of detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. It appears to be conceptual/overview content rather than expert knowledge. |
 | [Topic filters and actions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/topic-filters) | 0.30 | Describes how topic filters and subscription rules work conceptually (filters, actions, OR combination, message copies). The summary doesn't indicate presence of numeric limits, configuration parameter tables, error codes, or decision matrices. It reads as a conceptual overview of filtering behavior rather than detailed expert configuration or troubleshooting guidance. |

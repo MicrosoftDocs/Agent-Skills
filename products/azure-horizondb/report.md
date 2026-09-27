@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 139
+- **Updated Pages**: 0
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
@@ -70,23 +70,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | *(Unclassified)* | 35 | 24.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Security overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-overview)
-  - Updated: 2026-07-07T08:00:00.000Z → 2026-09-18T22:08:00.000Z
-- [Access control](https://learn.microsoft.com/en-us/azure/horizondb/security/security-access-control)
-  - Updated: 2026-07-07T08:00:00.000Z → 2026-09-11T08:00:00.000Z
-- [Manage database users](https://learn.microsoft.com/en-us/azure/horizondb/security/security-manage-database-users)
-  - Updated: 2026-08-12T06:06:00.000Z → 2026-09-11T08:00:00.000Z
-- [Connect with SCRAM authentication](https://learn.microsoft.com/en-us/azure/horizondb/security/security-connect-scram)
-  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-11T08:00:00.000Z
-- [Reset local administrator password](https://learn.microsoft.com/en-us/azure/horizondb/security/security-reset-admin-password)
-  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-11T08:00:00.000Z
-- [Update trusted root certificate for Java](https://learn.microsoft.com/en-us/azure/horizondb/security/security-update-trusted-root-java)
-  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-18T08:00:00.000Z
-- [Data encryption overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-data-encryption)
-  - Updated: 2026-07-07T22:12:00.000Z → 2026-09-11T08:00:00.000Z
 
 ## Classified Pages
 

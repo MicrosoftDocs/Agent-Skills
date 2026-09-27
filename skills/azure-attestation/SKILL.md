@@ -3,7 +3,7 @@ name: azure-attestation
 description: Expert knowledge for Azure Attestation development including troubleshooting, best practices, security, configuration, and deployment. Use when validating attestation tokens, authoring policies, enforcing SGX/TPM baselines, or configuring private endpoints, and other Azure Attestation related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Attestation Skill

@@ -25,7 +25,9 @@ skill_description: Expert knowledge for Azure Maps development including best pr
   decision making, architecture & design patterns, limits & quotas, security, configuration,
   and integrations & coding patterns. Use when building maps with layers/markers,
   routing, search/geocoding, weather, or migrating from Bing/Google Maps, and other
-  Azure Maps related development tasks.
+  Azure Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search),
+  Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT
+  Edge (use azure-iot-edge).
 use_when: Use when building maps with layers/markers, routing, search/geocoding, weather,
   or migrating from Bing/Google Maps, and other Azure Maps related development tasks.
 confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure IoT
@@ -43,10 +45,10 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 18
-- **Unchanged**: 129
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 148
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
 ## Classification Statistics
@@ -63,53 +65,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 35 | 23.6% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Maps account pricing](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier)
-
-### Updated Pages
-
-- [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps)
-  - Updated: 2026-09-11T17:13:00.000Z → 2026-09-17T22:12:00.000Z
-- [Azure Maps QPS Rate Limits](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits)
-  - Updated: 2026-03-03T18:22:00.000Z → 2026-09-15T22:13:00.000Z
-- [Understanding Azure Maps Transactions](https://learn.microsoft.com/en-us/azure/azure-maps/understanding-azure-maps-transactions)
-  - Updated: 2025-10-01T22:16:00.000Z → 2026-09-15T22:13:00.000Z
-- [Migrate Azure Maps Render 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-render-v1-api)
-  - Updated: 2026-09-11T17:13:00.000Z → 2026-09-17T08:00:00.000Z
-- [Create account with ARM template](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-create-template)
-  - Updated: 2024-03-07T12:20:00.000Z → 2026-09-15T22:13:00.000Z
-- [Manage accounts](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)
-  - Updated: 2023-04-14T17:00:00.000Z → 2026-09-15T22:13:00.000Z
-- [How to secure account with a SAS token](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-sas-app)
-  - Updated: 2024-08-14T17:05:00.000Z → 2026-09-15T22:13:00.000Z
-- [Render custom data on static map](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-render-custom-data)
-  - Updated: 2024-06-21T17:04:00.000Z → 2026-09-15T22:13:00.000Z
-- [Request real-time and forecasted weather data](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-request-weather-data)
-  - Updated: 2024-08-09T05:35:00.000Z → 2026-09-15T22:13:00.000Z
-- [C# REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-csharp-sdk)
-  - Updated: 2026-09-11T17:13:00.000Z → 2026-09-17T08:00:00.000Z
-- [Python REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk)
-  - Updated: 2026-09-10T08:00:00.000Z → 2026-09-17T08:00:00.000Z
-- [Java REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-java-sdk)
-  - Updated: 2026-09-10T08:00:00.000Z → 2026-09-17T08:00:00.000Z
-- [Change the style of the map](https://learn.microsoft.com/en-us/azure/azure-maps/choose-map-style)
-  - Updated: 2025-02-28T18:05:00.000Z → 2026-09-15T22:13:00.000Z
-- [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps)
-  - Updated: 2026-09-10T08:00:00.000Z → 2026-09-17T08:00:00.000Z
-- [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app)
-  - Updated: 2025-02-11T18:03:00.000Z → 2026-08-28T08:00:00.000Z
-- [Authentication with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication)
-  - Updated: 2023-10-12T17:01:00.000Z → 2026-08-28T08:00:00.000Z
-- [Authentication best practices](https://learn.microsoft.com/en-us/azure/azure-maps/authentication-best-practices)
-  - Updated: 2025-05-02T22:46:00.000Z → 2026-08-28T08:00:00.000Z
-- [Render coverage](https://learn.microsoft.com/en-us/azure/azure-maps/render-coverage)
-  - Updated: 2026-09-11T17:13:00.000Z → 2026-09-17T22:12:00.000Z
-
-### Deleted Pages
-
-- ~~Manage pricing tier~~ (https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier)
 
 ## Classified Pages
 

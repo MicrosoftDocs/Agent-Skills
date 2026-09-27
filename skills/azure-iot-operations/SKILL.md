@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr endpoints, TLS/certs, or HA MQTT brokers, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure Digital Twins (use azure-digital-twins).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr endpoints, Arc deployments, or MQTT HA, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L55-L65 | Guidance for planning and choosing Azure IoT Operations architectures: data flows vs graphs, deployment topology/sizing, MQTT broker diagnostics, buffering and persistence, and OPC UA asset discovery modes. |
 | Architecture & Design Patterns | L66-L71 | Designing Azure IoT architectures using ISA-95 unified namespace concepts and planning layered, segmented networking topologies for secure, scalable IoT Operations deployments. |
 | Limits & Quotas | L72-L78 | Capacity planning for OPC UA sessions and HA, baseline resource usage estimates, and MQTT broker feature, packet, and throughput limits in Azure IoT Operations. |
-| Security | L79-L96 | Securing Azure IoT Operations: TLS and cert management, MQTT auth/authorization, OPC UA trust, private networking, RBAC/ABAC, secret handling, and image authenticity verification. |
+| Security | L79-L96 | Securing Azure IoT Operations: TLS and certificates, MQTT auth/authorization, OPC UA trust, private networking, RBAC/ABAC roles, secret management, and image authenticity. |
 | Configuration | L97-L135 | Configuring IoT data flows, endpoints, transforms, MQTT/OPC UA/connectors, storage, observability, and health/metrics for Azure IoT Operations deployments |
 | Integrations & Coding Patterns | L136-L158 | Patterns and code for integrating IoT data flows: MQTT/OPC UA/media connectors, routing/filters/aggregation, state store, WASM/ONNX, OpenTelemetry, and Dapr/Fabric Real-Time endpoints. |
-| Deployment | L159-L171 | Deploying, upgrading, cloning, and managing Azure IoT Operations instances (test/prod), including secure/private-network setups, image mirroring, Dapr MQTT components, version support, and cleanup. |
+| Deployment | L159-L172 | Deploying, upgrading, cloning, and removing Azure IoT Operations on Arc-enabled Kubernetes, including secure/prod setups, private networks/registries, and Dapr MQTT components. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -88,7 +88,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure MQTT broker authorization in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-authorization |
 | Secure MQTT broker endpoints with BrokerListener configuration | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-brokerlistener |
 | Configure TLS, X.509 auth, and ABAC for IoT MQTT | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/tutorial-tls-x509 |
-| Define custom RBAC roles for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/reference/custom-rbac |
+| Define custom RBAC roles for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/reference/custom-rbac |
 | Enable secure settings and identities in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-enable-secure-settings |
 | Manage TLS certificates for external IoT Operations communications | https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-manage-certificates |
 | Manage secrets for Arc-enabled IoT Operations clusters | https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-manage-secrets |
@@ -162,6 +162,7 @@ This skill requires **network access** to fetch documentation content:
 | Clean up Azure IoT Operations observability resources | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-clean-up-observability-resources |
 | Deploy Azure IoT Operations securely to production clusters | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-operations |
 | Deploy Azure IoT Operations to a test cluster | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-test-operations |
+| Prepare Azure Arc Kubernetes clusters for IoT Operations deployment | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster |
 | Deploy Dapr pluggable components with MQTT broker | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-dapr |
 | Deploy Azure IoT Operations in layered private networks | https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-layered-network-private-connectivity |
 | Clone Azure IoT Operations instances using Azure CLI | https://learn.microsoft.com/en-us/azure/iot-operations/manage-iot-ops/howto-clone-instance |

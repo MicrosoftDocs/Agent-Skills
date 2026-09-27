@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-09-27'
 category_descriptions:
   configuration: Configuring hosted MCP servers in Connector Namespace, including
     setup steps, connection settings, and runtime options for managing MCP server
@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 7
+- **Updated Pages**: 3
+- **Unchanged**: 4
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-connector-namespace/azure-connector-namespace.csv`
 
@@ -42,6 +42,15 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 | *(Unclassified)* | 6 | 85.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [About Connector Namespace](https://learn.microsoft.com/en-us/azure/connector-namespace/connector-namespace-overview)
+  - Updated: 2026-07-13T22:21:00.000Z → 2026-09-04T08:00:00.000Z
+- [Create connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace)
+  - Updated: 2026-07-13T22:21:00.000Z → 2026-09-24T22:17:00.000Z
+- [Create connections for connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace-connection)
+  - Updated: 2026-07-13T22:21:00.000Z → 2026-09-21T22:12:00.000Z
 
 ## Classified Pages
 
@@ -55,7 +64,7 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 |-----------|------------|--------|
 | [Create hosted MCP servers](https://learn.microsoft.com/en-us/azure/connector-namespace/hosted-mcp-quickstart) | 0.40 | Quickstart for creating a hosted MCP server; while it mentions preview regions, it is primarily a tutorial. The region list alone is not sufficient to classify under limits-quotas or deployment, and quickstarts typically lack the detailed matrices or configuration tables required for expert knowledge classification. |
 | [Create MCP connectors for agents and Azure integrations](https://learn.microsoft.com/en-us/azure/connector-namespace/create-mcp-server-connectors) | 0.30 | Based on the summary, the page is an overview of creating MCP connectors via connector namespaces for agents and Azure integrations. It does not indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Without evidence of such specific expert details, it appears to be conceptual/introductory content rather than expert-knowledge documentation. |
-| [Create connections for connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace-connection) | 0.30 | Focuses on creating reusable connections conceptually and as a how-to; summary does not indicate detailed configuration parameter tables, limits, or troubleshooting mappings that would constitute expert product-specific knowledge. |
-| [Create connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace) | 0.30 | Page is about creating and managing connector namespaces, likely a conceptual/step-by-step management guide; summary does not show tables of settings, limits, or error codes that would qualify as expert configuration or troubleshooting knowledge. |
-| [About Connector Namespace](https://learn.microsoft.com/en-us/azure/connector-namespace/connector-namespace-overview) | 0.20 | Overview of Connector Namespace capabilities and concepts; no detailed limits, configuration tables, error codes, or product-specific settings with exact values. |
+| [Create connections for connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace-connection) | 0.30 | Focuses on creating reusable connections conceptually; summary does not indicate specific configuration parameters, limits, or error-code-based troubleshooting content. |
+| [Create connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace) | 0.30 | Page appears to be a how-to/create guide for connector namespaces without clear indication of detailed configuration parameter tables, limits, or troubleshooting mappings. |
+| [About Connector Namespace](https://learn.microsoft.com/en-us/azure/connector-namespace/connector-namespace-overview) | 0.20 | Overview of Connector Namespace capabilities and concepts; no evidence of numeric limits, configuration tables, error codes, or product-specific configuration/security details. |
 | [Hosted MCP servers](https://learn.microsoft.com/en-us/azure/connector-namespace/connector-namespace-hosted-mcp) | 0.20 | High-level overview of hosted MCP servers in Connector Namespace; summary does not indicate specific configuration parameters, limits, or troubleshooting details. |

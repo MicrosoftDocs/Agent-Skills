@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure V
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -71,13 +71,6 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure V
 | *(Unclassified)* | 4 | 12.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade)
-  - Updated: 2026-06-19T08:00:00.000Z → 2026-09-15T17:03:00.000Z
-- [Use Azure Lustre CSI driver for Kubernetes](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes)
-  - Updated: 2025-11-11T08:00:00.000Z → 2026-09-14T17:04:00.000Z
 
 ## Classified Pages
 

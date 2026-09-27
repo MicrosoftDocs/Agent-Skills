@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   limits-quotas: Limits, quotas, and behaviors for Private Link/Endpoints, how to
     check service availability per resource, and how to request increases to VNet
     Private Endpoint limits.
-  configuration: 'Configuring Azure Private Link and service endpoints: NSP perimeters,
-    subnet policies, DNS, SNAT/NVA, IPv6, monitoring/logs, and setup via portal, CLI,
-    PowerShell, and Terraform.'
+  configuration: Configuring Private Link, endpoints, DNS, IPv6, SNAT, and network
+    security perimeters (NSPs) using portal, CLI, PowerShell, Terraform, plus monitoring
+    and diagnostic logging setup.
   security: RBAC setup for Private Link and Network Security Perimeters, security
     best practices, and inspecting/controlling Private Endpoint traffic with Azure
     Firewall.
@@ -21,17 +21,17 @@ category_descriptions:
     with on-premises or hybrid networks
 skill_description: Expert knowledge for Azure Private Link development including best
   practices, decision making, architecture & design patterns, limits & quotas, security,
-  and configuration. Use when configuring Private Endpoints, NSP perimeters, DNS/Private
-  Resolver, Azure Firewall traffic, or Terraform setups, and other Azure Private Link
-  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
-  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway).
-use_when: Use when configuring Private Endpoints, NSP perimeters, DNS/Private Resolver,
-  Azure Firewall traffic, or Terraform setups, and other Azure Private Link related
+  and configuration. Use when configuring Private Endpoints, DNS/Private Resolver,
+  IPv6/SNAT, NSPs/RBAC, or Azure Firewall traffic controls, and other Azure Private
+  Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Application
+  Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door).
+use_when: Use when configuring Private Endpoints, DNS/Private Resolver, IPv6/SNAT,
+  NSPs/RBAC, or Azure Firewall traffic controls, and other Azure Private Link related
   development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
-  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Application Gateway
+  (use azure-application-gateway), Azure Front Door (use azure-front-door).
 ---
 # Azure Private Link Crawl Report
 
@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Total Pages**: 57
 - **Fetched**: 57
 - **Fetch Failed**: 0
-- **Classified**: 26
-- **Unclassified**: 31
+- **Classified**: 27
+- **Unclassified**: 30
 
 ### Incremental Update
 - **New Pages**: 0
@@ -56,18 +56,18 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |------|-------|------------|
 | architecture-patterns | 1 | 1.8% |
 | best-practices | 1 | 1.8% |
-| configuration | 15 | 26.3% |
+| configuration | 16 | 28.1% |
 | decision-making | 2 | 3.5% |
 | limits-quotas | 3 | 5.3% |
 | security | 4 | 7.0% |
-| *(Unclassified)* | 31 | 54.4% |
+| *(Unclassified)* | 30 | 52.6% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Standard service endpoint](https://learn.microsoft.com/en-us/azure/private-link/service-endpoint-standard-overview)
-  - Updated: 2026-07-22T12:23:00.000Z → 2026-09-14T08:00:00.000Z
+- [Configure Private Link service Direct Connect](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect)
+  - Updated: 2026-08-10T08:00:00.000Z → 2026-09-26T05:12:00.000Z
 
 ## Classified Pages
 
@@ -93,6 +93,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Manage private endpoints](https://learn.microsoft.com/en-us/azure/private-link/manage-private-endpoint) | configuration | 0.70 | Describes managing Azure private endpoints with product-specific properties such as GroupId, MemberName, static IP address, and network interface name, including how to obtain and set them. These are concrete configuration parameters unique to Azure Private Link. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/private-link/monitor-private-link-reference) | configuration | 0.70 | A monitoring data reference typically lists specific metric and log names, dimensions, and categories for Azure Private Link; these are detailed configuration/reference values not generally known from training. |
 | [Private endpoint DNS integration](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns-integration) | best-practices | 0.70 | Explicitly mentions scenarios and best practices for DNS integration across VNets and on-premises, which are product-specific configuration recommendations. |
+| [Configure Private Link service Direct Connect](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect) | configuration | 0.68 | Configuration-focused page for Private Link service Direct Connect, likely detailing specific settings (such as destination IP configuration, routing behaviors, and required parameters) that are product-specific and not purely conceptual. These configuration details constitute expert knowledge beyond generic understanding. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli) | configuration | 0.65 | Quickstart for creating a network security perimeter and configuring associations and access rules via Azure CLI. Involves specific resource types and CLI parameters for network security perimeter profiles and rules, which are product-specific configuration details rather than generic concepts. |
 | [Create a network security perimeter - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-portal) | configuration | 0.65 | Quickstart that walks through creating a network security perimeter, associating PaaS resources, and configuring access rules; likely includes specific setting names and values unique to this feature. |
 | [Diagnostic logs](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-diagnostic-logs) | configuration | 0.65 | Describes diagnostic log categories for Network Security Perimeter and options for storing logs, with portal-based configuration steps; log category names and enablement options are product-specific configuration details. |
@@ -108,7 +109,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Connect to a SQL server - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-powershell) | 0.35 | PowerShell tutorial; step-by-step creation of SQL with private endpoint, not a detailed configuration or limits document. |
 | [Connect to a storage account](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-storage-portal) | 0.35 | Storage + Private Endpoint tutorial; scenario-based, not a reference for limits, configuration matrices, or troubleshooting. |
 | [Approve private link connections across subscriptions](https://learn.microsoft.com/en-us/azure/private-link/how-to-approve-private-link-cross-subscription) | 0.30 | How-to for approving private endpoint connections across subscriptions; procedural guidance without detailed RBAC role tables, limits, or error-code mappings. |
-| [Configure Private Link service Direct Connect](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect) | 0.30 | Explains Direct Connect capability conceptually; likely scenario-focused without detailed limits, config parameter tables, or decision matrices. |
 | [Configure an application security group](https://learn.microsoft.com/en-us/azure/private-link/configure-asg-private-endpoint) | 0.30 | Appears to be a how-to guide for associating application security groups with private endpoints. Likely focuses on step-by-step configuration rather than detailed limits, configuration parameter tables, security role definitions, or troubleshooting error codes. No evidence from the summary of numeric limits, RBAC role names, or specialized configuration matrices that would qualify as expert knowledge under the defined categories. |
 | [Create a Private Link service - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-powershell) | 0.30 | Quickstart tutorial for creating a Private Link service with PowerShell; step-by-step but not a configuration reference, limits table, or troubleshooting guide. |
 | [Create a private endpoint - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-template) | 0.30 | ARM template quickstart; example template but not a parameter reference or decision/troubleshooting guide. |

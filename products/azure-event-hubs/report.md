@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   integrations: Patterns and code for integrating Event Hubs with .NET, Kafka (clients,
     Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding
@@ -20,21 +20,22 @@ category_descriptions:
   architecture-patterns: 'Patterns and guidance for Event Hubs reliability: availability/consistency
     design, geo-disaster recovery, and building/operating replication tasks (often
     with Azure Functions).'
-  best-practices: Guidance on routing events between AMQP, Kafka, and HTTPS, and on
-    designing/scaling Event Hubs with partitions and throughput units for performance
-    and capacity.
+  best-practices: Best practices for integrating Event Hubs via AMQP/Kafka/HTTPS,
+    building stateless replication with Functions, and scaling with partitions and
+    throughput units.
   deployment: Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2),
     setting up geo-replication, and running/local-testing Event Hubs apps using the
     emulator.
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Kafka clients, .NET SDKs, Flink/Spark, geo-replication, or Event Hubs Capture/Avro,
-  and other Azure Event Hubs related development tasks. Not for Azure Service Bus
-  (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
-use_when: Use when using Kafka clients, .NET SDKs, Flink/Spark, geo-replication, or
-  Event Hubs Capture/Avro, and other Azure Event Hubs related development tasks.
+  using Kafka-compatible clients, Flink/Spark, geo-replication, Avro capture, or the
+  Event Hubs emulator, and other Azure Event Hubs related development tasks. Not for
+  Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
+  Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
+use_when: Use when using Kafka-compatible clients, Flink/Spark, geo-replication, Avro
+  capture, or the Event Hubs emulator, and other Azure Event Hubs related development
+  tasks.
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
   Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
   Azure Web PubSub (use azure-web-pubsub).
@@ -60,8 +61,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 2.6% |
-| best-practices | 2 | 1.7% |
+| architecture-patterns | 2 | 1.7% |
+| best-practices | 3 | 2.6% |
 | configuration | 9 | 7.8% |
 | decision-making | 3 | 2.6% |
 | deployment | 3 | 2.6% |
@@ -75,8 +76,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Updated Pages
 
-- [Monitor data reference](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference)
-  - Updated: 2025-07-16T05:10:00.000Z → 2026-09-15T06:18:00.000Z
+- [Event replication tasks and applications](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-replicator-functions)
+  - Updated: 2021-09-28T22:03:00.000Z → 2024-06-17T22:05:00.000Z
 
 ## Classified Pages
 
@@ -141,6 +142,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Using Apache Kafka Mirror Maker 1](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirror-maker-tutorial) | deployment | 0.70 | Shows how to configure MirrorMaker 1 to mirror Kafka into Event Hubs; includes product-specific deployment and configuration details. |
 | [Using Apache Kafka Mirror Maker 2](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-mirrormaker-2-tutorial) | deployment | 0.70 | Tutorial for using MirrorMaker 2 with Event Hubs; includes concrete configuration parameters and constraints for this replication deployment. |
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/event-hubs/confidential-computing) | security | 0.68 | Page is focused on configuring confidential computing for Event Hubs Dedicated namespaces, which is a product-specific security feature. It likely includes concrete enablement steps, specific configuration options, and constraints tied to this capability (for example, which SKUs support it, how to turn it on, and any required settings). This is security-focused configuration rather than a generic overview, so it best fits the security sub-skill. |
+| [Event replication tasks and applications](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-replicator-functions) | best-practices | 0.68 | The article gives product-specific guidance on when to use Azure Functions vs Azure Stream Analytics for event replication, focusing on stateless vs stateful replication tasks and cross-region federation patterns. This is actionable, service-specific advice (DO/USE Functions for stateless replication, USE Stream Analytics for stateful transformations) rather than a generic overview, but it does not primarily focus on limits, configuration tables, or deployment matrices. |
 | [Geo-replication](https://learn.microsoft.com/en-us/azure/event-hubs/geo-replication) | decision-making | 0.68 | The page compares synchronous vs asynchronous geo-replication modes for Event Hubs, explains trade-offs (for example, data loss risk vs latency/throughput), and provides guidance on when to use each mode and how to manage secondary regions. This is product-specific decision guidance rather than just conceptual replication theory, so it fits the decision-making sub-skill. |
 | [Add custom data to events](https://learn.microsoft.com/en-us/azure/event-hubs/add-custom-data-event) | integrations | 0.65 | Explains how to attach key-value metadata to EventData objects and how consumers use it; includes product-specific event structure and coding patterns. |
 | [Application groups](https://learn.microsoft.com/en-us/azure/event-hubs/resource-governance-overview) | limits-quotas | 0.65 | Resource governance with application groups implies applying quotas and access policies per group; this page likely includes group-level quota settings and constraints specific to Premium/Dedicated tiers. |
@@ -154,7 +156,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Use log compaction](https://learn.microsoft.com/en-us/azure/event-hubs/use-log-compaction) | configuration | 0.65 | How-to for log compaction generally includes specific cleanup policy names, allowed values, and tier constraints (for example, unsupported in Basic), which are product-specific configuration details. |
 | [Availability and consistency](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-availability-and-consistency) | architecture-patterns | 0.60 | Discusses how partitions affect availability and consistency in Event Hubs with product-specific behavior; offers architecture guidance beyond generic theory. |
 | [Event Hubs management libraries](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-management-libraries) | integrations | 0.60 | Management library docs usually list API/SDK operations and parameters specific to Event Hubs resource management, which are integration/coding patterns beyond generic SDK usage. |
-| [Event replication tasks and applications](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-replicator-functions) | architecture-patterns | 0.60 | Gives product-specific guidance on when to use Azure Functions vs Stream Analytics for replication tasks and how to structure stateless replication; contains concrete pattern guidance beyond generic concepts. |
 | [Use geo-replication](https://learn.microsoft.com/en-us/azure/event-hubs/use-geo-replication) | deployment | 0.60 | Geo-replication how-to typically includes constraints (supported tiers, region pairing rules, failover behavior) that are deployment-specific expert details. |
 
 ## Unclassified Pages

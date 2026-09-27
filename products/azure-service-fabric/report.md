@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   architecture-patterns: 'Designing Service Fabric cluster architecture: cross-AZ
     replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation,
     metrics balancing, networking, and API gateway patterns.'
-  configuration: 'Configuring and operating Service Fabric: cluster/network settings,
-    scaling, backups, monitoring/telemetry, manifests, containers, actors, reverse
-    proxy, and test/fault tools.'
+  configuration: Configuring Service Fabric clusters, apps, networking, scaling, monitoring,
+    backups, manifests, actors, containers, and tooling (CLI/IDE) across Azure managed
+    and standalone environments.
   decision-making: 'Guidance on planning Service Fabric clusters: choosing OS and
     versions, disk and node types, capacity and reliability sizing, and migration
     targets for Cloud Services workloads.'
@@ -31,32 +31,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Fabric development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy,
-  backups, or CI/CD upgrades, and other Azure Service Fabric related development tasks.
-  Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container
-  Apps (use azure-container-apps), Azure App Service (use azure-app-service), Azure
-  Functions (use azure-functions).
+  Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API
+  gateways, CI/CD upgrades, or sfctl automation, and other Azure Service Fabric related
+  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
+  Azure Virtual Machines (use azure-virtual-machines).
 use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, reverse
-  proxy, backups, or CI/CD upgrades, and other Azure Service Fabric related development
-  tasks.
+  proxy/API gateways, CI/CD upgrades, or sfctl automation, and other Azure Service
+  Fabric related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
-  Azure Functions (use azure-functions).
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Service Fabric Crawl Report
 
 ## Summary
 
-- **Total Pages**: 405
-- **Fetched**: 405
+- **Total Pages**: 406
+- **Fetched**: 406
 - **Fetch Failed**: 0
-- **Classified**: 330
+- **Classified**: 331
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 404
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 405
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -65,10 +65,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 10 | 2.5% |
-| best-practices | 31 | 7.7% |
-| configuration | 116 | 28.6% |
+| best-practices | 31 | 7.6% |
+| configuration | 117 | 28.8% |
 | decision-making | 8 | 2.0% |
-| deployment | 59 | 14.6% |
+| deployment | 59 | 14.5% |
 | integrations | 33 | 8.1% |
 | limits-quotas | 1 | 0.2% |
 | security | 53 | 13.1% |
@@ -77,10 +77,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
-  - Updated: 2026-08-19T08:00:00.000Z → 2026-09-17T08:00:00.000Z
+- [Inbound NAT rules v2](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-inbound-nat-rules-v2)
 
 ## Classified Pages
 
@@ -239,6 +238,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [sfctl is](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-sfctl-is) | integrations | 0.75 | Reference for sfctl infrastructure service commands; exposes specific command names and behaviors. |
 | [sfctl rpm](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-sfctl-rpm) | integrations | 0.75 | Documents repair manager service commands; specific to Service Fabric CLI integration. |
 | [sfctl settings](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-sfctl-settings) | configuration | 0.75 | Describes local sfctl configuration options; likely includes specific setting names and allowed values for the CLI. |
+| [Inbound NAT rules v2](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-inbound-nat-rules-v2) | configuration | 0.74 | Page describes how to configure Inbound NAT Rules V2 specifically for Azure Service Fabric managed clusters, including product-specific settings and parameters for load balancer/NAT rule configuration. This is detailed configuration guidance rather than generic networking concepts, and includes concrete configuration steps and values unique to this feature. |
 | [Migrate old Java Application to support Maven](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-migrate-old-javaapp-to-use-maven) | integrations | 0.74 | Gives concrete Maven coordinates and build configuration changes needed to consume Service Fabric Java dependencies from Maven Central; integration-specific config. |
 | [Monitoring and diagnostics](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-best-practices-monitoring) | best-practices | 0.74 | The page provides product-specific monitoring and diagnostics recommendations for Azure Service Fabric clusters and applications (for example, concrete guidance on what telemetry to collect, how to structure monitoring, and platform-specific considerations like deprecation of Application Insights for the Service Fabric SDK). These are actionable DO/DON'T style guidelines tailored to Service Fabric rather than generic monitoring theory, fitting the best-practices sub-skill. |
 | [Unit test stateful services](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-how-to-unit-test-stateful-services) | best-practices | 0.74 | Provides Service Fabric–specific testing considerations and patterns for stateful services that go beyond generic unit testing advice. |

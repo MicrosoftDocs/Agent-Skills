@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VWAN hubs, P2S VPN, BGP/NVA routing, ExpressRoute/SD-WAN, or Azure Firewall integration, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, ExpressRoute/SD-WAN, or Private Link, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual WAN Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L50-L77 | Designing Virtual WAN hub-and-spoke routing, isolation, DR, and global transit patterns, including routing intent, static/BGP routes, firewalls/NVAs, SD-WAN, ExpressRoute, and Microsoft 365 connectivity. |
 | Limits & Quotas | L78-L84 | Limits and design guidance for Virtual WAN: P2S client pool sizing, hub routing/throughput caps, and using Private Link endpoints within scale and quota constraints. |
 | Security | L85-L94 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions. |
-| Configuration | L95-L147 | Configuring Virtual WAN hubs, routing, BGP/NVA integration, P2S VPN (certs, Entra ID, IPsec, client profiles), Azure Firewall/NGFW, and monitoring/metrics for connectivity scenarios. |
+| Configuration | L95-L147 | Configuring Azure Virtual WAN hubs, routing, NVAs, BGP, IPsec, and P2S/Always On VPN (cert- and Entra-based), including policies, route-maps, client profiles, and monitoring/logging. |
 | Integrations & Coding Patterns | L148-L154 | PowerShell and automation patterns for integrating Virtual WAN with ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure Private Link |
 | Deployment | L155-L158 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
 
@@ -138,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure user groups and IP pools for Virtual WAN P2S | https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-about |
 | Configure P2S VPN user groups and IP pools in Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-create |
 | Set custom IPsec policies in Azure Virtual WAN portal | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-custom-ipsec-portal |
-| Configure supported IPsec policy combinations for Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-ipsec |
+| Configure IPsec policy combinations for Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-ipsec |
 | Configure Entra ID auth for Virtual WAN P2S VPN | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-azure-ad |
 | Create virtual hub route tables to NVAs via PowerShell | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva |
 | Create virtual hub route tables to NVAs via portal | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva-portal |

@@ -1,9 +1,9 @@
 ---
 name: azure-netapp-files
-description: Expert knowledge for Azure NetApp Files development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ANF for SAP HANA/Oracle AVGs, AVS datastores, cross-region replication, AzAcSnap, or REST/PowerShell APIs, and other Azure NetApp Files related development tasks. Not for Azure Files (use azure-files), Azure Blob Storage (use azure-blob-storage), Azure Managed Lustre (use azure-managed-lustre), Azure Elastic SAN (use azure-elastic-san).
+description: Expert knowledge for Azure NetApp Files development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ANF for SAP HANA/Oracle, AVS datastores, AzAcSnap, REST/PowerShell APIs, or cross-region replication, and other Azure NetApp Files related development tasks. Not for Azure Files (use azure-files), Azure Virtual Machines (use azure-virtual-machines), Azure Managed Lustre (use azure-managed-lustre), Azure Elastic SAN (use azure-elastic-san).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure NetApp Files Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L58 | Diagnosing and fixing Azure NetApp Files issues: networking, NFS/SMB auth and locks, latency, capacity pools, snapshots, CMK encryption, app volume groups, and provider/volume errors. |
-| Best Practices | L59-L79 | Performance and configuration best practices for Azure NetApp Files: tuning Linux/SMB/NFS, VM and AVS choices, Oracle/AVD setups, quotas, cloning, AzAcSnap, Terraform, and benchmarking. |
-| Decision Making | L80-L93 | Cost, performance, and protection design for Azure NetApp Files: choosing service levels, volume types, replication and backup options, reservations, SMB CA, cool access, and SQL Server TCO. |
-| Architecture & Design Patterns | L94-L102 | Designing and deploying Azure NetApp Files for SAP HANA/Oracle, AVS datastores, VNet and AD topology, and high‑performance, multi-volume application architectures. |
-| Limits & Quotas | L103-L129 | Limits, quotas, and performance of Azure NetApp Files: volume size/throughput, cache limits, inodes/maxfiles, user/group quotas, directory metadata, file/path limits, and benchmark-based tuning. |
-| Security | L130-L167 | Security, encryption, and access control for Azure NetApp Files: keys (CMK/HSM/double), Kerberos/LDAP/AD, NFS/SMB permissions, ransomware protection, and secure API/control-plane configuration. |
-| Configuration | L168-L209 | Configuring Azure NetApp Files: accounts, pools, volumes (NFS/SMB/dual-protocol), networking, AD/LDAP, backups, caching, replication, logging, QoS, and AzAcSnap for SAP/Oracle. |
-| Integrations & Coding Patterns | L210-L224 | Using azacsnap with Azure NetApp Files, REST API and PowerShell operations, and integrating ANF with SAP HANA/Oracle AVGs, S3 clients, Databricks, and OneLake via object REST API. |
-| Deployment | L225-L238 | Deploying and configuring Azure NetApp Files for SAP HANA and Oracle (AVGs, HSR, DR, backups), managing cross-region replication, zone changes, ONTAP migration, and regional access. |
+| Troubleshooting | L37-L59 | Diagnosing and fixing Azure NetApp Files issues: networking, NFS/SMB/LDAP/auth, capacity pools, snapshots, replication, latency, volume/provider errors, and encryption or AzAcSnap problems. |
+| Best Practices | L60-L80 | Performance and configuration best practices for Azure NetApp Files: tuning Linux/SMB/NFS, VM and AVS choices, Oracle/AVD setups, quotas, cloning, AzAcSnap, Terraform, and benchmarking. |
+| Decision Making | L81-L94 | Cost, performance, and protection design for Azure NetApp Files: choosing service levels, volume types, replication and backup options, reservations, SMB CA, cool access, and SQL Server TCO. |
+| Architecture & Design Patterns | L95-L103 | Designing and deploying Azure NetApp Files for SAP HANA/Oracle, AVS datastores, VNet and AD topology, and high‑performance, multi-volume application architectures. |
+| Limits & Quotas | L104-L130 | Limits, quotas, and performance of Azure NetApp Files: volume size/throughput, cache limits, maxfiles, quotas (user/group/LDAP), directory and path limits, and performance benchmarks for SAP, Oracle, Linux, and AVS. |
+| Security | L131-L170 | Securing Azure NetApp Files: encryption (CMK/HSM/double), Kerberos/LDAP/AD/Entra auth, NFS/SMB ACLs and permissions, ransomware protection, and policy/control-plane hardening. |
+| Configuration | L171-L212 | Configuring Azure NetApp Files: accounts, pools, volumes (NFS/SMB/dual-protocol), networking, AD/LDAP, backups, caching, replication, logging, QoS, and AzAcSnap for SAP/Oracle. |
+| Integrations & Coding Patterns | L213-L227 | Using azacsnap with Azure NetApp Files, REST API and PowerShell operations, and integrating ANF with SAP HANA/Oracle AVGs, S3 clients, Databricks, and OneLake via object REST API. |
+| Deployment | L228-L241 | Deploying and configuring Azure NetApp Files for SAP HANA and Oracle (AVGs, HSR, DR, backups), managing cross-region replication, zone changes, ONTAP migration, and regional access. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -50,6 +50,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure NetApp Files cross-region replication issues | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-cross-region-replication |
 | Fix customer-managed key encryption issues in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-customer-managed-keys |
 | Troubleshoot Azure NetApp Files with Diagnose and Solve | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-diagnose-solve-problems |
+| Diagnose Azure NetApp Files Entra Kerberos issues | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-entra-kerberos-authentication |
 | Clear stale file locks on Azure NetApp Files NFS and SMB volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-file-locks |
 | Diagnose and fix Azure NetApp Files latency | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-latency-issues |
 | Resolve Azure NetApp Files snapshot policy management errors | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-snapshot-policies |
@@ -112,13 +113,13 @@ This skill requires **network access** to fetch documentation content:
 | Configure user and group quotas on Azure NetApp Files volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/default-individual-user-group-quotas-introduction |
 | Understand directory size growth and metadata overhead in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/directory-sizes-concept |
 | Understand Azure NetApp Files performance limits | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-performance |
-| Review Azure NetApp Files large volume limits | https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes |
+| Use large Azure NetApp Files volumes and limits | https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes |
 | Understand size limits for Azure NetApp Files large volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations |
 | Manage user and group quotas on Azure NetApp Files volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/manage-default-individual-user-group-quotas |
-| Manage maxfiles limits and inode quotas in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept |
+| Understand and manage maxfiles limits in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept |
 | Use Azure NetApp Files AVS datastore performance benchmarks | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-benchmarks-azure-vmware-solution |
 | Review Azure NetApp Files Linux performance benchmarks | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-benchmarks-linux |
-| Review breakthrough mode performance limits for Azure NetApp Files large volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volume-breakthrough-mode-linux |
+| Benchmark performance limits for Azure NetApp Files large volumes on Linux | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volume-breakthrough-mode-linux |
 | Understand large volume performance limits on Azure NetApp Files for Linux | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volumes-linux |
 | Assess Oracle performance on a single Azure NetApp Files volume | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-oracle-single-volumes |
 | Understand Azure NetApp Files regional capacity quotas | https://learn.microsoft.com/en-us/azure/azure-netapp-files/regional-capacity-quota |
@@ -134,6 +135,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure NFSv4.1 access control lists in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-access-control-lists |
 | Configure customer-managed encryption keys for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-customer-managed-keys |
 | Secure Azure NetApp Files with HSM-backed customer-managed keys | https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-customer-managed-keys-hardware |
+| Configure Entra Kerberos authentication for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-entra-kerberos-authentication-for-hybrid-cloud-identities |
 | Configure NFSv4.1 Kerberos encryption for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-kerberos-encryption |
 | Secure Azure NetApp Files with AD DS LDAP over TLS | https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-ldap-over-tls |
 | Manage Azure NetApp Files control plane security and access | https://learn.microsoft.com/en-us/azure/azure-netapp-files/control-plane-security |
@@ -164,6 +166,7 @@ This skill requires **network access** to fetch documentation content:
 | Meet requirements for Azure NetApp Files ransomware protection | https://learn.microsoft.com/en-us/azure/azure-netapp-files/ransomware-protection-requirements |
 | Configure AES-based Kerberos encryption for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-advanced-encryption-standard |
 | Configure data encryption for Azure NetApp Files at rest and in transit | https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-data-encryption |
+| Plan Entra Kerberos identity strategy for Azure NetApp Files SMB | https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-entra-id |
 
 ### Configuration
 | Topic | URL |

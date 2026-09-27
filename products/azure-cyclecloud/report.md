@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 120
+- **Updated Pages**: 0
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use 
 | *(Unclassified)* | 24 | 19.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8)
-  - Updated: 2026-07-09T08:00:00.000Z → 2026-09-18T05:11:00.000Z
-- [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8)
-  - Updated: 2026-07-09T08:00:00.000Z → 2026-09-18T05:11:00.000Z
-- [Plan and size HPC clusters](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/plan-and-size-hpc-clusters?view=cyclecloud-8)
-  - Updated: 2026-08-27T17:12:00.000Z → 2026-09-18T05:11:00.000Z
 
 ## Classified Pages
 

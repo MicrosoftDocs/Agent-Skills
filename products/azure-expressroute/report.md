@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 92
+- **Updated Pages**: 0
+- **Unchanged**: 96
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -74,17 +74,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 31 | 32.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Providers by location](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers)
-  - Updated: 2026-08-18T17:35:00.000Z → 2026-09-16T08:00:00.000Z
-- [Locations by provider](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations)
-  - Updated: 2026-04-28T08:00:00.000Z → 2026-09-16T08:00:00.000Z
-- [Resiliency Insights](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-insights)
-  - Updated: 2025-11-05T12:23:00.000Z → 2026-09-14T22:37:00.000Z
-- [Resiliency Validation](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-validation)
-  - Updated: 2025-11-05T12:23:00.000Z → 2026-09-14T22:37:00.000Z
 
 ## Classified Pages
 

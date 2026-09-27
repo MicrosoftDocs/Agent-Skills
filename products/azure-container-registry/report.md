@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 124
+- **Updated Pages**: 0
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 34 | 27.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-06-12T06:03:00.000Z
 
 ## Classified Pages
 

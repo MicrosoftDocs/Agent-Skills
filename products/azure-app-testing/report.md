@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 2
-- **Unchanged**: 70
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 78
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
 ## Classification Statistics
@@ -75,26 +75,6 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | *(Unclassified)* | 20 | 25.6% |
 
 ## Changes
-
-### New Pages
-
-- [Run Playwright tests at scale](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-run-playwright-tests-at-scale)
-- [Free trial](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-try-playwright-workspaces-free)
-- [Get started with the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp)
-- [Access privately hosted applications](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-access-private-websites)
-- [Remote MCP server for AI agents](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp)
-- [Troubleshoot the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server)
-
-### Updated Pages
-
-- [What is Playwright Workspaces?](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)
-  - Updated: 2025-08-29T22:11:00.000Z → 2026-09-15T11:42:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/resource-limits-quotas-capacity)
-  - Updated: 2026-09-08T11:41:00.000Z → 2026-09-14T11:41:00.000Z
-
-### Deleted Pages
-
-- ~~Try Playwright Workspaces for free~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-try-playwright-workspaces-free)
 
 ## Classified Pages
 

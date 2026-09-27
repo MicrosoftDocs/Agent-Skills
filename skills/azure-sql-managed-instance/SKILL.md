@@ -3,7 +3,7 @@ name: azure-sql-managed-instance
 description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MI networking, backups, HA/geo-replication, Entra/TDE security, or app connectivity/Managed Instance link, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L102-L112 | Backup immutability, DTU benchmarks, free-tier caps, memory and In-memory OLTP limits, maintenance windows, operation durations, and overall resource quotas for Azure SQL Managed Instance |
 | Security | L113-L167 | Configuring Azure SQL Managed Instance security: Entra auth, identities, TDE & customer-managed keys, auditing, threat protection, TLS, networking (Private Link), Windows/Kerberos auth, and security best practices. |
 | Configuration | L168-L218 | Configuring monitoring, backups, maintenance, networking, failover, and modifiable settings for Azure SQL Managed Instance and Database, including alerts, metrics, and connectivity options. |
-| Integrations & Coding Patterns | L219-L241 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
-| Deployment | L242-L257 | Deploying and scaling Managed Instance and Azure SQL DB, regional moves, DR and replication setup, cost control (stop/start), and required virtual network/subnet configuration. |
+| Integrations & Coding Patterns | L219-L240 | Client app connectivity, drivers, and code samples for multiple languages, plus automation, networking, DTC, XEvents, backups, and Managed Instance link/Agent usage on SQL Managed Instance. |
+| Deployment | L241-L256 | Deploying and scaling Managed Instance and Azure SQL DB, regional moves, DR and replication setup, cost control (stop/start), and required virtual network/subnet configuration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -226,7 +226,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Node.js to connect and query Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-nodejs?view=azuresql |
 | Use PHP to connect and query Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-php?view=azuresql |
 | Connect and query Azure SQL using Python | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-python?view=azuresql |
-| Use Ruby to connect and query Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql |
 | Configure and use Spark connector with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/spark-connector?view=azuresql |
 | Create Azure SQL XEvent sessions with event_file | https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-code-event-file?view=azuresql |
 | Import CSV data into Azure SQL using bcp | https://learn.microsoft.com/en-us/azure/azure-sql/load-from-csv-with-bcp?view=azuresql |

@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 - **Unclassified**: 99
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 426
+- **Unchanged**: 427
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -71,10 +71,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Queue Storage (
 | *(Unclassified)* | 99 | 23.2% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate across Microsoft Entra tenants from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-cross-tenant-blob-migration)
 
 ## Classified Pages
 

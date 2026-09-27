@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
-  security: 'Securing AKS Edge/Hybrid/Arc: auth with Entra ID/AD/RBAC, SSH hardening,
-    cert and key management, workload identity, container image validation, and security
+  security: 'Securing AKS Edge/Hybrid/Arc clusters: auth (Entra, AD, gMSA, SSO), RBAC,
+    SSH hardening, cert/key management, image validation, etcd encryption, and security
     bulletins/mitigations.'
-  troubleshooting: 'Diagnosing and fixing AKS Edge/Hybrid/Arc issues: cluster creation/upgrade
-    failures, networking, storage, auth, encryption, logs, node health, and control
-    plane problems.'
-  limits-quotas: System requirements, scale and IP limits, supported versions, and
-    support policies for AKS Edge Essentials, AKS on Azure Local/bare metal, AKS Arc,
-    and AKS on Windows Server.
-  configuration: 'Configuring AKS Edge/Hybrid/Arc clusters: networking, storage (CSI,
-    NFS), load balancers, GPUs, proxies, autoscaling, GitOps, metrics/monitoring,
-    offline/online updates, and install/uninstall.'
+  troubleshooting: 'Diagnosing and fixing AKS Edge/Hybrid/Arc issues: cluster creation
+    and upgrades, networking, storage, auth, encryption, logs, node health, and Azure
+    Local/MetalLB/BGP-specific errors.'
+  limits-quotas: System requirements, scale limits, IP capacity planning, supported
+    versions, and support policies for AKS Edge Essentials, AKS on Azure Local, AKS
+    on bare metal, and AKS on Windows Server.
+  configuration: 'Configuring AKS Edge/Hybrid/Arc clusters: networking, storage, load
+    balancers, GPUs, proxies, autoscaling, GitOps, offline/online updates, and cluster/node
+    lifecycle settings.'
   integrations: Integrations, APIs, and PowerShell for connecting AKS Edge/Hybrid
     to Arc, IoT/OPC/ONVIF, TPM, storage/backup, metrics, AI models, CSI plugins, and
     Key Vault secrets.
@@ -20,8 +20,8 @@ category_descriptions:
     trials, monitoring/logging options, and planning/operating disconnected or on-premises
     AKS environments.
   deployment: Deploying, upgrading, and managing AKS Arc/AKS on Azure Local clusters
-    on Windows (Terraform/ARM), including node pools, OS/Kubernetes upgrades, migration,
-    and safe uninstall/reinstall.
+    on Windows/Windows Server, including Terraform/ARM deployments, node pools, OS/Kubernetes
+    upgrades, and safe migration/uninstall steps.
   best-practices: 'Guidance on resilient AKS Edge Essentials setups: availability
     sets, Azure Policy on Windows Server, restoring AKS Arc after VM failure, and
     upgrading AKS Arc clusters/Kubernetes versions.'
@@ -31,13 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when managing AKS Edge/Arc clusters, Entra ID/AD auth, GitOps,
-  IoT/OPC/ONVIF workloads, or Azure Local deployments, and other Azure Kubernetes
-  Service Edge Essentials related development tasks. Not for Azure Kubernetes Service
-  (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure
-  Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
-use_when: Use when managing AKS Edge/Arc clusters, Entra ID/AD auth, GitOps, IoT/OPC/ONVIF
-  workloads, or Azure Local deployments, and other Azure Kubernetes Service Edge Essentials
+  and deployment. Use when deploying AKS Edge/Arc on Azure Local or bare metal, with
+  MetalLB/BGP, GitOps, IoT/OPC, or Key Vault secrets, and other Azure Kubernetes Service
+  Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack
+  Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
+use_when: Use when deploying AKS Edge/Arc on Azure Local or bare metal, with MetalLB/BGP,
+  GitOps, IoT/OPC, or Key Vault secrets, and other Azure Kubernetes Service Edge Essentials
   related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure

@@ -1,14 +1,14 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when designing region/zone deployments, region pairs, multi-region failover, Queue Storage, or Web PubSub apps, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when choosing regions/pairs, using availability zones, multiregion deployments, Queue Storage limits, or Web PubSub, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
 
-This skill provides expert guidance for Azure Reliability. Covers best practices, decision making, architecture & design patterns, and limits & quotas. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Reliability. Covers best practices, decision making, architecture & design patterns, limits & quotas, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,10 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L74 | Patterns and guidance for designing, configuring, and hardening highly available, resilient, and disaster‑ready architectures across core Azure services (compute, data, networking, and messaging). |
-| Decision Making | L75-L82 | Guidance on choosing Azure regions and services (regional, zonal, multiregion, nonregional), using region pairs, and designing multi-region architectures for higher reliability. |
-| Architecture & Design Patterns | L83-L89 | Designing Azure architectures for high availability: zone-resilient and zonal deployments, and multiregion patterns (including nonpaired regions) for resilient, hardened workloads |
-| Limits & Quotas | L90-L94 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
+| Best Practices | L33-L66 | Patterns and guidance for designing, configuring, and hardening highly available, resilient, and disaster‑ready architectures across core Azure services (compute, data, networking, and messaging). |
+| Decision Making | L67-L74 | Guidance on choosing Azure regions and services for reliability, including region types, geography/pairing, built-in multiregion services, and nonregional service behavior. |
+| Architecture & Design Patterns | L75-L81 | Designing Azure apps for high availability using availability zones and multiple regions, including zonal vs zone-redundant deployments, hardening patterns, and multiregion strategies in nonpaired regions. |
+| Limits & Quotas | L82-L87 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
+| Deployment | L88-L91 | Which Azure services support availability zones in each region, how to check zone support, and guidance for deploying zone-redundant, highly available workloads. |
 
 ### Best Practices
 | Topic | URL |
@@ -35,32 +36,23 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient clusters in Azure Kubernetes Service | https://learn.microsoft.com/en-us/azure/reliability/reliability-aks |
 | Configure reliability for Azure API Center | https://learn.microsoft.com/en-us/azure/reliability/reliability-api-center |
 | Build resilient configurations with Azure App Configuration | https://learn.microsoft.com/en-us/azure/reliability/reliability-app-configuration |
-| Build resilient configurations with Azure App Configuration | https://learn.microsoft.com/en-us/azure/reliability/reliability-app-configuration |
 | Harden Azure App Service Environment reliability | https://learn.microsoft.com/en-us/azure/reliability/reliability-app-service-environment |
 | Architect highly available Azure Application Gateway v2 | https://learn.microsoft.com/en-us/azure/reliability/reliability-application-gateway-v2 |
 | Design resilient Azure Automation runbooks and recovery | https://learn.microsoft.com/en-us/azure/reliability/reliability-automation |
 | Design resilient backup strategies with Azure Backup | https://learn.microsoft.com/en-us/azure/reliability/reliability-backup |
-| Design resilient backup strategies with Azure Backup | https://learn.microsoft.com/en-us/azure/reliability/reliability-backup |
 | Plan reliability for Azure Bot Service | https://learn.microsoft.com/en-us/azure/reliability/reliability-bot |
-| Design resilient Azure Container Apps Sandboxes | https://learn.microsoft.com/en-us/azure/reliability/reliability-container-apps-sandboxes |
-| Design resilient Azure Cosmos DB deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db |
 | Design resilient Azure Cosmos DB deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db |
 | Harden Azure Data Factory for outages | https://learn.microsoft.com/en-us/azure/reliability/reliability-data-factory |
-| Design resilient Azure Database for MySQL deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
 | Design resilient Azure Database for MySQL deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
 | Implement resiliency for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-postgresql |
 | Implement resilient architectures in Azure Databricks | https://learn.microsoft.com/en-us/azure/reliability/reliability-databricks |
 | Improve reliability of Azure DNS private zones | https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-private |
 | Design resilient architectures for Azure DNS Private Resolver | https://learn.microsoft.com/en-us/azure/reliability/reliability-dns-private-resolver |
-| Design high availability for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/reliability/reliability-documentdb |
-| Implement resilient architectures with Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san |
 | Implement resilient architectures with Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san |
 | Build resilient architectures with Azure Event Grid | https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid |
 | Increase reliability of Azure Event Hubs streaming | https://learn.microsoft.com/en-us/azure/reliability/reliability-event-hubs |
 | Design reliable and resilient Azure Functions workloads | https://learn.microsoft.com/en-us/azure/reliability/reliability-functions |
-| Design reliable and resilient Azure Functions workloads | https://learn.microsoft.com/en-us/azure/reliability/reliability-functions |
 | Implement disaster recovery for Azure Image Builder | https://learn.microsoft.com/en-us/azure/reliability/reliability-image-builder |
-| Design resilient architectures with Azure Load Balancer | https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer |
 | Design resilient architectures with Azure Load Balancer | https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer |
 | Design resilient workflows with Azure Logic Apps | https://learn.microsoft.com/en-us/azure/reliability/reliability-logic-apps |
 | Improve reliability of Azure Managed Grafana workspaces | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-grafana |
@@ -76,14 +68,14 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Choose Azure services by region type and category | https://learn.microsoft.com/en-us/azure/reliability/availability-service-by-category |
-| Choose Azure services with availability zone support | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |
+| Select Azure regions by geography and pairing | https://learn.microsoft.com/en-us/azure/reliability/regions-list |
 | Select Azure services with built-in multiregion support | https://learn.microsoft.com/en-us/azure/reliability/regions-multiregion-support |
 | Select and understand Azure nonregional services | https://learn.microsoft.com/en-us/azure/reliability/regions-nonregional-services |
 
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Enable and plan zone-resilient Azure workloads | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency |
+| Design Azure workloads for zone resiliency | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency |
 | Design and harden zonal Azure resource deployments | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-zonal-resource-resiliency |
 | Design multiregion solutions in nonpaired Azure regions | https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired |
 
@@ -92,3 +84,8 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand Azure Queue Storage message size limits | https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-queue |
 | Plan reliability and scale for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/reliability/reliability-web-pubsub |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Check Azure service support for availability zones | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |

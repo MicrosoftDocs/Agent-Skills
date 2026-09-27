@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 59
+- **Updated Pages**: 0
+- **Unchanged**: 60
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 20 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli)
-  - Updated: 2026-04-17T11:12:00.000Z → 2026-09-14T11:41:00.000Z
 
 ## Classified Pages
 

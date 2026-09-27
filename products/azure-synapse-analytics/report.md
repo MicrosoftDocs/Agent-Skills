@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-27'
 category_descriptions:
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network and private
     endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities,
@@ -13,9 +13,9 @@ category_descriptions:
   best-practices: Best practices for Synapse performance, SQL/T-SQL patterns, Spark
     optimization, indexing/statistics, data loading, and migrating/modernizing from
     Netezza, Oracle, and Teradata.
-  decision-making: Guidance for choosing Synapse components, sizing and cost models,
-    and planning/migrating data warehouses (Netezza, Oracle, Teradata, SQL DW) and
-    Spark runtimes for optimal architectures.
+  decision-making: Guidance for choosing Synapse components, migration tools, cost
+    and capacity models, Spark runtimes, and SQL pool generations to design, migrate,
+    and optimize Synapse solutions.
   architecture-patterns: Architecture and design guidance for Synapse workspaces,
     SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition
     strategies, ELT/PolyBase loading, and workload management.
@@ -31,28 +31,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using Synapse SQL pools, Spark pools, Synapse Link, PolyBase ELT, or Delta
-  Lake features, and other Azure Synapse Analytics related development tasks. Not
-  for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
-  Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
-use_when: Use when using Synapse SQL pools, Spark pools, Synapse Link, PolyBase ELT,
-  or Delta Lake features, and other Azure Synapse Analytics related development tasks.
+  Use when designing Synapse workspaces, SQL/dedicated pools, serverless SQL, Spark
+  pools, or Synapse Link for Cosmos DB, and other Azure Synapse Analytics related
+  development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data
+  Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
+  HDInsight (use azure-hdinsight).
+use_when: Use when designing Synapse workspaces, SQL/dedicated pools, serverless SQL,
+  Spark pools, or Synapse Link for Cosmos DB, and other Azure Synapse Analytics related
+  development tasks.
 confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
   Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
-  Stream Analytics (use azure-stream-analytics).
+  HDInsight (use azure-hdinsight).
 ---
 # Azure Synapse Analytics Crawl Report
 
 ## Summary
 
-- **Total Pages**: 450
-- **Fetched**: 450
+- **Total Pages**: 451
+- **Fetched**: 451
 - **Fetch Failed**: 0
-- **Classified**: 278
+- **Classified**: 279
 - **Unclassified**: 172
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 450
 - **Deleted Pages**: 0
@@ -62,18 +64,22 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 16 | 3.6% |
+| architecture-patterns | 16 | 3.5% |
 | best-practices | 58 | 12.9% |
-| configuration | 43 | 9.6% |
-| decision-making | 18 | 4.0% |
+| configuration | 43 | 9.5% |
+| decision-making | 19 | 4.2% |
 | deployment | 5 | 1.1% |
 | integrations | 46 | 10.2% |
 | limits-quotas | 9 | 2.0% |
-| security | 57 | 12.7% |
+| security | 57 | 12.6% |
 | troubleshooting | 26 | 5.8% |
-| *(Unclassified)* | 172 | 38.2% |
+| *(Unclassified)* | 172 | 38.1% |
 
 ## Changes
+
+### New Pages
+
+- [Runtime release channels](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-runtime-release-channels)
 
 ## Classified Pages
 
@@ -286,6 +292,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Conditional Access](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/workspace-conditional-access) | security | 0.68 | Shows how Synapse integrates with Entra Conditional Access; contains product-specific scope and configuration details. |
 | [Create DNS alias with PowerShell or Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/dns-alias-powershell-create) | integrations | 0.68 | The page provides concrete Azure PowerShell Az and Azure CLI scripts and cmdlets for managing DNS aliases for Azure Synapse dedicated SQL pools. It includes product-specific command names, parameters, and usage patterns that go beyond generic knowledge of DNS or scripting, fitting the integrations & coding patterns category best. |
 | [Multifactor authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication) | security | 0.68 | Page is about using Microsoft Entra multifactor authentication with Synapse SQL from SSMS, which typically includes product-specific authentication modes, connection options, and possibly required permissions or configuration flags. These are concrete security configuration details (e.g., specific auth type selections in SSMS, Entra auth options) that qualify as expert, product-specific security knowledge rather than generic concepts. |
+| [Runtime release channels](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-runtime-release-channels) | decision-making | 0.68 | The page provides product-specific guidance on when to use different Synapse Spark runtime release channels (stable, early access, compliance-focused) for production vs. testing scenarios. This is decision guidance about update paths and risk management rather than just conceptual description, fitting the decision-making sub-skill. It does not primarily list numeric limits, configs, or error codes. |
 | [What's the difference between Azure Synapse (formerly SQL DW) and Azure Synapse Analytics workspaces?](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-difference-between-formerly-sql-dw-workspace) | decision-making | 0.68 | Page explains history and concrete differences between Azure Synapse (formerly SQL DW) and Synapse Analytics workspaces, including upgrade guidance and when to use each option, which is product-specific decision guidance beyond generic concepts. |
 | [4 Visualization and reporting](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/netezza/4-visualization-reporting) | best-practices | 0.65 | Guides use of Microsoft and third-party BI tools with Synapse vs Netezza; practical reporting and visualization patterns. |
 | [4 Visualization and reporting](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/oracle/4-visualization-reporting) | best-practices | 0.65 | Guides use of BI tools for reporting in Synapse compared to Oracle; practical visualization and reporting patterns. |

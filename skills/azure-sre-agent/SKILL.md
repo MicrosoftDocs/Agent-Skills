@@ -1,14 +1,14 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating SRE Agent with DevOps/GitHub, configuring KQL telemetry, AKS Java workloads, IaC deployments, or DR, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/GitHub, KQL telemetry, AKS Java apps, IaC deployments, or DR architectures, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
 
-This skill provides expert guidance for Azure Sre Agent. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Sre Agent. Covers troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,15 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L44 | Diagnosing and fixing SRE Agent issues: querying telemetry with KQL, filing Azure support tickets, resolving deployment/operation failures, and debugging Java performance on AKS. |
-| Best Practices | L45-L49 | Best practices for integrating Azure Monitor, Application Insights, and related observability tools with SRE Agent to collect, analyze, and act on telemetry and alerts. |
-| Decision Making | L50-L55 | Guidance on when to run deep investigations, when to use Log Analytics vs App Insights, how to estimate/control SRE Agent costs, and which Azure regions you can deploy in. |
-| Architecture & Design Patterns | L56-L60 | Designing cold-standby disaster recovery for Azure SRE Agent, including architecture choices, failover strategy, RPO/RTO considerations, and environment replication. |
-| Limits & Quotas | L61-L65 | Details of the 30-day Azure SRE Agent trial limits, including usage caps, feature restrictions, and what happens when you reach or exceed those limits. |
-| Security | L66-L84 | Securing Azure SRE Agent: identities, RBAC and roles, network/firewall, data privacy, GitHub/ADO access, subscription visibility, tool access policies, and approval/run-mode controls. |
-| Configuration | L85-L100 | Configuring SRE Agent capabilities: code interpreter, knowledge sources, tools/skills, governance hooks, subagents, incident plans, connectors, network/VNet, GitHub auth, MCP/IDE, and REST hooks. |
-| Integrations & Coding Patterns | L101-L121 | Integrating Azure SRE Agent with DevOps, GitHub, observability, incident tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant access configuration |
-| Deployment | L122-L125 | How to deploy Azure SRE Agent using Infrastructure-as-Code templates, including required resources, parameters, and environment configuration steps. |
+| Troubleshooting | L36-L43 | Diagnosing and fixing SRE Agent issues: querying telemetry with KQL, filing Azure support tickets, resolving deployment/operation failures, and debugging Java performance on AKS. |
+| Best Practices | L44-L48 | Best practices for integrating Azure Monitor, Application Insights, and related observability tools with SRE Agent to collect, analyze, and act on telemetry and alerts. |
+| Decision Making | L49-L54 | Guidance on when to run deep investigations, when to use Log Analytics vs App Insights, how to estimate/control SRE Agent costs, and which Azure regions you can deploy in. |
+| Architecture & Design Patterns | L55-L59 | Designing cold-standby disaster recovery for Azure SRE Agent, including architecture choices, failover strategy, RPO/RTO considerations, and environment replication. |
+| Security | L60-L78 | Securing Azure SRE Agent: identities, RBAC and roles, network/firewall, data privacy, GitHub/ADO access, subscription visibility, tool access policies, and approval/run-mode controls. |
+| Configuration | L79-L92 | Configuring SRE Agent capabilities: code interpreter, knowledge sources, tools/skills, governance hooks, subagents, incident plans, connectors, network/VNet, GitHub auth, MCP/IDE, and REST hooks. |
+| Integrations & Coding Patterns | L93-L113 | Integrating Azure SRE Agent with DevOps, GitHub, observability, incident tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant access configuration |
+| Deployment | L114-L117 | How to deploy Azure SRE Agent using Infrastructure-as-Code templates, including required resources, parameters, and environment configuration steps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -57,11 +56,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design cold-standby disaster recovery for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/disaster-recovery |
-
-### Limits & Quotas
-| Topic | URL |
-|-------|-----|
-| Understand Azure SRE Agent 30-day trial limits | https://learn.microsoft.com/en-us/azure/sre-agent/evaluate |
 
 ### Security
 | Topic | URL |
@@ -88,8 +82,6 @@ This skill requires **network access** to fetch documentation content:
 | Use SRE Agent code interpreter for Python and shell | https://learn.microsoft.com/en-us/azure/sre-agent/code-interpreter |
 | Connect knowledge sources to Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/connect-knowledge |
 | Create and manage governance hooks in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/create-manage-hooks-ui |
-| Create custom skills with tools and files in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/create-skill |
-| Configure specialized subagents in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/create-subagent |
 | Configure incident response plans in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/incident-response-plans |
 | Configure managed connectors for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/managed-connectors |
 | Configure VNet network integration for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/network-integration |

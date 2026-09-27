@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring host pools, autoscale, FSLogix profiles, MSIX App Attach, Teams optimization, or AVD SSO, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring host pools, FSLogix profiles, MSIX App Attach, Teams optimization, or WebRTC redirection, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L66-L81 | Planning and choosing AVD deployment models, autoscale, regions, data locations, storage, licensing, management tools, and estimating/optimizing AVD and Insights costs |
 | Architecture & Design Patterns | L82-L90 | Patterns for designing AVD deployments: stateless hosts with ephemeral disks, DR architectures, FSLogix profile design, RDP Multipath connectivity, and automated scaling with Logic Apps. |
 | Limits & Quotas | L91-L96 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L97-L118 | Securing Azure Virtual Desktop: SSO/auth (Entra, AD FS, Kerberos, WebAuthn, MFA, external IDs), RBAC/roles, clipboard/redirection policies, watermarking, screen capture, Purview, and security best practices. |
-| Configuration | L119-L178 | Configuring AVD environments: images, autoscale, networking, RDP/peripheral redirection, licensing, app attach, Teams/Office, language packs, monitoring, and client/host pool behavior. |
+| Security | L97-L118 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), Conditional Access/MFA, RBAC and delegated admin, external identities, session protections (watermarking, screen capture, WebAuthn), and security best practices. |
+| Configuration | L119-L178 | Configuring AVD environments: images, autoscale, networking, RDP/peripheral redirection, licensing, Teams/OneDrive, language packs, monitoring, and client/RemoteApp behavior. |
 | Integrations & Coding Patterns | L179-L185 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
 | Deployment | L186-L194 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/ConfigMgr. |
 
@@ -99,7 +99,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Control clipboard direction and data types in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/clipboard-transfer-direction-data-types |
 | Configure AD FS single sign-on for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso |
-| Configure managed identities and permissions for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity |
+| Configure managed identities and RBAC for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity |
 | Configure Microsoft Entra ID SSO for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on |
 | Configure context-based redirection policies in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd |
 | Implement delegated administrative access in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/delegated-access-virtual-desktop |
@@ -119,7 +119,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Add Azure Virtual Desktop administrative template to Group Policy and Intune | https://learn.microsoft.com/en-us/azure/virtual-desktop/administrative-template |
+| Add and use Azure Virtual Desktop ADMX in Group Policy | https://learn.microsoft.com/en-us/azure/virtual-desktop/administrative-template |
 | Create MSIX images for Azure Virtual Desktop App Attach | https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-create-msix-image |
 | Add and manage App Attach apps in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup |
 | Apply Windows licensing to Azure Virtual Desktop session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/apply-windows-license |

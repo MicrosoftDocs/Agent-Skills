@@ -3,7 +3,7 @@ name: azure-confidential-ledger
 description: Expert knowledge for Azure Confidential Ledger development including troubleshooting, decision making, security, integrations & coding patterns, and deployment. Use when configuring ACL auth/attestation, integrating with Blob/Cosmos, using MST payloads, or deploying via ARM/Terraform, and other Azure Confidential Ledger related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Confidential Ledger Skill

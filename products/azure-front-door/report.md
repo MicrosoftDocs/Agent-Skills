@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 100
+- **Updated Pages**: 0
+- **Unchanged**: 101
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 37 | 36.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
-  - Updated: 2026-08-24T22:12:00.000Z → 2026-09-14T17:12:00.000Z
 
 ## Classified Pages
 

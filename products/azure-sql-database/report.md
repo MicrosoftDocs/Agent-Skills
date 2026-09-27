@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   limits-quotas: 'Limits, quotas, and behaviors for Azure SQL: free tier and offers,
     DTU/vCore and serverless resource caps, backups immutability, maintenance windows,
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 - **Unclassified**: 119
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 13
-- **Unchanged**: 357
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 370
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
@@ -77,42 +77,10 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 
 ## Changes
 
-### New Pages
-
-- [Secure your Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql)
-
 ### Updated Pages
 
-- [Transparent data encryption (TDE) in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql)
-  - Updated: 2025-11-25T18:34:00.000Z → 2026-09-16T08:00:00.000Z
-- [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql)
-  - Updated: 2026-09-07T08:00:00.000Z → 2026-09-15T08:00:00.000Z
-- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
-  - Updated: 2026-06-05T17:38:00.000Z → 2026-09-17T22:35:00.000Z
-- [Always Encrypted with secure enclaves using SGX](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-getting-started-sgx?view=azuresql)
-  - Updated: 2026-06-17T08:00:00.000Z → 2026-09-15T08:00:00.000Z
-- [Always Encrypted with secure enclaves using VBS](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-getting-started-vbs?view=azuresql)
-  - Updated: 2026-06-17T08:00:00.000Z → 2026-09-15T08:00:00.000Z
-- [Local development experience](https://learn.microsoft.com/en-us/azure/azure-sql/database/local-dev-experience-overview?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-09-17T22:35:00.000Z
-- [Dev Container templates for Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/local-dev-experience-dev-containers?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-09-17T22:35:00.000Z
-- [Set up a Dev Container template for Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/local-dev-experience-dev-containers-quickstart?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-09-17T22:35:00.000Z
-- [Create a database project](https://learn.microsoft.com/en-us/azure/azure-sql/database/local-dev-experience-create-database-project?view=azuresql)
-  - Updated: 2026-01-27T18:35:00.000Z → 2026-09-17T22:35:00.000Z
-- [Auditing overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql)
-  - Updated: 2026-04-15T22:37:00.000Z → 2026-09-17T22:35:00.000Z
-- [Analyze audit logs and reports](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-analyze-audit-logs?view=azuresql)
-  - Updated: 2026-03-04T23:36:00.000Z → 2026-09-17T08:00:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Secure Azure SQL Database~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql)
+- [Ruby](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql)
+  - Updated: 2025-06-13T08:00:00.000Z → 2025-06-17T22:32:00.000Z
 
 ## Classified Pages
 
@@ -448,6 +416,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Private Link](https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql) | 0.20 | Page is an overview of Azure Private Link and private endpoints for Azure SQL Database and Synapse; based on the summary it focuses on conceptual description and applicability, without detailed limits, configuration parameter tables, error codes, or decision matrices that would qualify as expert knowledge under the defined sub-skill types. |
 | [Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor-classic?view=azuresql) | 0.20 | Describes the classic Azure portal query editor experience and how to run T-SQL in the browser. It is a tool/UX overview without detailed configuration tables, limits, error-code mappings, or other expert-only specifics. |
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | 0.20 | Page focuses on the process for submitting a support request to increase quotas, not on listing specific numeric limits, tier-specific quotas, or timeout values. It lacks detailed configuration parameters, decision matrices, or error-code-based troubleshooting, so none of the expert-knowledge sub-skill types apply. |
+| [Ruby](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql) | 0.20 | Quickstart tutorial showing how to connect and query Azure SQL using Ruby; primarily step-by-step code sample without product-specific configuration tables, limits, or detailed integration parameter references beyond generic connection usage. |
 | [SQL Data Sync Overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database?view=azuresql) | 0.20 | Content is an overview of SQL Data Sync, its purpose, and retirement notice. It does not expose detailed limits, configuration tables, error codes, or other expert-level specifics. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/az-cli-script-samples-content-guide?view=azuresql) | 0.20 | Navigation/collection page for Azure CLI samples; no detailed technical content itself. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql) | 0.20 | High-level security overview describing defense-in-depth and general concepts for Azure SQL; no specific RBAC role names, configuration parameters, or detailed settings tables that would qualify as product-specific security configuration guidance. |
@@ -490,7 +459,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Node.js](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-nodejs?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [PHP](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-php?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Ring buffer walkthrough](https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-code-ring-buffer?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
-| [Ruby](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [SSMS](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ssms?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-troubleshoot-performance?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Use the Intelligent Insights performance diagnostics log](https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-use-diagnostics-log?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-27'
 category_descriptions:
   configuration: 'Configuring ADF: integration runtimes, SSIS/SHIR, triggers, monitoring/logging,
     copy/data flows, formats/connectors, parameters/expressions, and pipeline/control
     activities.'
-  decision-making: Guidance on cost planning, connector upgrades, integration runtime
-    and compute choices, and migration/modernization of ADF, SSIS, Synapse, and pipelines
-    to Fabric.
+  decision-making: 'Guidance for cost, architecture, and migration decisions: choosing
+    IR and compute, managing connector upgrades, planning ADF/Synapse→Fabric or SSIS→ADF
+    moves, and optimizing pricing/capacity.'
   security: 'Securing Data Factory: auth, roles, encryption, Key Vault, managed identities,
     VNets/private endpoints, firewall/Policy configs, and secure access to SQL, Purview,
     and SSIS IR.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building ADF pipelines, mapping data flows, SSIS IR/SHIR, CI/CD deployments, or
-  SAP/SaaS integrations, and other Azure Data Factory related development tasks. Not
-  for Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks),
-  Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use
-  azure-stream-analytics).
-use_when: Use when building ADF pipelines, mapping data flows, SSIS IR/SHIR, CI/CD
-  deployments, or SAP/SaaS integrations, and other Azure Data Factory related development
-  tasks.
-confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Databricks
-  (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure
-  Stream Analytics (use azure-stream-analytics).
+  configuring IR/SSIS/SHIR, mapping data flows, SAP/SaaS connectors, CI/CD deployments,
+  or secure VNets/Key Vault, and other Azure Data Factory related development tasks.
+  Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use
+  azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure
+  Databricks (use azure-databricks).
+use_when: Use when configuring IR/SSIS/SHIR, mapping data flows, SAP/SaaS connectors,
+  CI/CD deployments, or secure VNets/Key Vault, and other Azure Data Factory related
+  development tasks.
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics),
+  Azure Databricks (use azure-databricks).
 ---
 # Azure Data Factory Crawl Report
 
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Unclassified**: 99
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 505
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 503
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
 ## Classification Statistics
@@ -75,6 +75,19 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 99 | 19.6% |
 
 ## Changes
+
+### New Pages
+
+- [Synapse pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-synapse-pipelines-for-upgrade)
+
+### Updated Pages
+
+- [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
+  - Updated: 2026-06-11T08:00:00.000Z → 2026-09-22T17:11:00.000Z
+
+### Deleted Pages
+
+- ~~Pipeline assessment tool~~ (https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration)
 
 ## Classified Pages
 
@@ -409,7 +422,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Transformation with Azure Databricks](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-databricks-notebook) | integrations | 0.70 | Shows a template that orchestrates Validation, Copy, and Notebook activities, including Databricks-linked service and notebook activity configuration. This is a detailed ADF–Databricks integration pattern. |
 | [Union](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-union) | configuration | 0.70 | Union transformation docs describe how to map columns, handle schema mismatches, and configure union behavior using specific options. These product-specific settings align with the configuration sub-skill. |
 | [Unpivot](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-unpivot) | configuration | 0.70 | Unpivot transformation documentation specifies which columns to unpivot, key/value column names, and related options. These are detailed configuration parameters, not generic concepts, so they fit configuration. |
-| [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory) | decision-making | 0.70 | The article walks through assessing and upgrading Azure Data Factory pipelines to Fabric Data Factory using the built-in migration experience, including an assessment-first approach, validating results, and switching production workloads at your own pace. This is expert migration and upgrade guidance that helps decide how and when to move pipelines, aligning with decision-making around migration strategy and upgrade paths rather than generic tutorial content. |
+| [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory) | decision-making | 0.70 | Page focuses on how and when to upgrade Azure Data Factory pipelines to Fabric Data Factory, describing a staged migration path and guidance on assessing readiness and moving pipelines 'only when it adds value'. This is migration/upgrade decision guidance rather than just conceptual marketing. It provides scenario-based recommendations for controlling the upgrade journey, which fits the decision-making sub-skill. |
 | [Upgrade Azure Synapse Analytics pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-synapse-analytics-pipelines-to-fabric-data-factory) | decision-making | 0.70 | The page focuses on assessing and upgrading Azure Synapse Analytics pipelines to Fabric Data Factory, including evaluating pipeline readiness, understanding compatibility gaps, and migrating supported pipelines in a controlled, low-risk way. This provides product-specific migration decision guidance and criteria for modernizing existing workflows, fitting the decision-making sub-skill for migration and upgrade planning. |
 | [Use custom parameters with a Resource Manager template](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-resource-manager-custom-parameters) | configuration | 0.70 | Page describes how to override default Resource Manager template parameters for Azure Data Factory when using CI/CD. This is product-specific configuration guidance around ARM parameter names/usage rather than generic deployment; it focuses on how to structure and use custom parameters, which is configuration-oriented expert knowledge. |
 | [Using Azure Data Factory UI](https://learn.microsoft.com/en-us/azure/data-factory/join-azure-ssis-integration-runtime-virtual-network-ui) | security | 0.70 | Joining IR to a VNet via portal involves selecting specific subnets and understanding required network/security settings, which are concrete security-related configuration steps. |
@@ -459,11 +472,11 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [New branch](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-new-branch) | configuration | 0.65 | Multiple branches article likely details how to configure branch creation, sink behavior, and shared transformations, which are concrete configuration patterns specific to ADF/Synapse data flows. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-factory/join-azure-ssis-integration-runtime-virtual-network) | architecture-patterns | 0.65 | Explains scenarios where vNet-joining Azure-SSIS IR is required and likely compares patterns (on-prem access, private endpoints) with trade-offs, providing product-specific architectural guidance. |
 | [Parse](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-parse) | configuration | 0.65 | Parse transformation documentation typically details supported formats (JSON, XML), column mapping, error handling, and expression syntax for parsing embedded documents, which are specific configuration options in ADF mapping data flows. |
-| [Pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration) | decision-making | 0.65 | The page describes a built-in upgrade assessment that evaluates Azure Data Factory and Synapse pipelines for migration readiness to Fabric, including identifying activity compatibility issues and categorizing pipelines by readiness. This is migration-focused decision guidance with product-specific criteria for which pipelines can or should be migrated, fitting the decision-making sub-skill. It goes beyond a conceptual overview by providing concrete guidance on assessing and deciding migration paths. |
 | [Schema drift](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-schema-drift) | best-practices | 0.65 | Discusses building resilient data flows under changing schemas; likely includes product-specific recommendations and patterns (e.g., how to configure drift options and transformations) that go beyond generic ETL theory. |
 | [Set Pipeline Return Value](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-pipeline-return-value) | configuration | 0.65 | Tutorial but includes specific pattern and configuration for using Set Variable and pipeline return values between parent/child pipelines; product-specific configuration pattern. |
 | [Set Variable activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-set-variable-activity) | configuration | 0.65 | Set Variable activity docs usually specify allowed variable types, scoping rules, and how to set pipeline return values, which are detailed configuration behaviors unique to ADF/Synapse. |
 | [Supported functions](https://learn.microsoft.com/en-us/azure/data-factory/wrangling-functions) | integrations | 0.65 | Catalog of data wrangling functions with names and usage specific to ADF; function set and signatures are product-specific API details. |
+| [Synapse pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-synapse-pipelines-for-upgrade) | decision-making | 0.65 | Page describes using a built-in upgrade assessment to determine which Azure Synapse Analytics pipelines are ready to move to Fabric Data Factory and to identify compatibility issues. This is migration decision guidance (what to upgrade, when, and based on which assessment results), aligning with the decision-making sub-skill rather than generic tutorial content. |
 | [Using a hotfix production environment](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-hotfix-environment) | deployment | 0.65 | Covers how to manage a hotfix production environment in Data Factory CI/CD. This is a deployment pattern with environment-specific flows and constraints unique to ADF’s publish model, beyond generic CI/CD theory. |
 | [Using data flows in pipelines](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-performance-pipelines) | architecture-patterns | 0.65 | Discusses how pipeline architecture (logical flow, multiple data flows) impacts timing and cost; provides architecture strategy guidance specific to Data Factory pipelines. |
 | [Why Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-overview) | decision-making | 0.65 | Provides migration guidance for data lakes/EDWs to Azure using ADF, including scenario-based recommendations and service selection patterns. It focuses on how to use ADF in migration decisions rather than just concepts. |

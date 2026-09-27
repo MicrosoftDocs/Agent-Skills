@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with AI/LLM backends,
     logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs
@@ -48,13 +48,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Total Pages**: 284
 - **Fetched**: 284
 - **Fetch Failed**: 0
-- **Classified**: 225
-- **Unclassified**: 59
+- **Classified**: 224
+- **Unclassified**: 60
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 278
+- **Updated Pages**: 2
+- **Unchanged**: 282
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -64,31 +64,23 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 |------|-------|------------|
 | architecture-patterns | 2 | 0.7% |
 | best-practices | 5 | 1.8% |
-| configuration | 96 | 33.8% |
+| configuration | 95 | 33.5% |
 | decision-making | 15 | 5.3% |
 | deployment | 18 | 6.3% |
 | integrations | 28 | 9.9% |
 | limits-quotas | 17 | 6.0% |
 | security | 39 | 13.7% |
 | troubleshooting | 5 | 1.8% |
-| *(Unclassified)* | 59 | 20.8% |
+| *(Unclassified)* | 60 | 21.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Observability overview](https://learn.microsoft.com/en-us/azure/api-management/observability)
-  - Updated: 2026-07-01T05:18:00.000Z → 2026-09-17T17:12:00.000Z
-- [Log requests with Azure Application Insights](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights)
-  - Updated: 2026-03-09T22:17:00.000Z → 2026-09-17T17:12:00.000Z
-- [Retrieve IP addresses](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-ip-addresses)
-  - Updated: 2025-06-02T17:26:00.000Z → 2026-09-14T17:12:00.000Z
-- [Add an API manually](https://learn.microsoft.com/en-us/azure/api-management/add-api-manually)
-  - Updated: 2025-06-02T22:13:00.000Z → 2026-09-11T08:00:00.000Z
-- [Manage microservices deployed in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes)
-  - Updated: 2025-06-02T17:26:00.000Z → 2026-09-14T17:12:00.000Z
-- [llm-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy)
-  - Updated: 2026-06-26T05:22:00.000Z → 2026-09-15T08:00:00.000Z
+- [Enable availability zones](https://learn.microsoft.com/en-us/azure/api-management/enable-availability-zone-support)
+  - Updated: 2026-08-26T08:00:00.000Z → 2026-09-21T22:12:00.000Z
+- [Workspaces overview](https://learn.microsoft.com/en-us/azure/api-management/workspaces-overview)
+  - Updated: 2026-06-12T08:00:00.000Z → 2026-09-16T08:00:00.000Z
 
 ## Classified Pages
 
@@ -229,7 +221,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Email notifications and templates](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-notifications) | configuration | 0.70 | The page describes product-specific notification events and email template configuration for Azure API Management, including concrete settings and options that go beyond generic knowledge. It focuses on how to configure which events trigger notifications and how templates are structured, which fits the configuration category best. |
 | [Enable Cross-Origin Resource Sharing (CORS) for interactive console](https://learn.microsoft.com/en-us/azure/api-management/enable-cors-developer-portal) | security | 0.70 | Shows how to configure CORS policy for APIM APIs to support the portal console; includes policy syntax and settings specific to APIM. |
 | [Enable Dapr support on self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-enable-dapr) | integrations | 0.70 | Dapr support article; includes configuration for exposing Dapr services as APIs, with APIM- and Dapr-specific parameters. |
-| [Enable availability zones](https://learn.microsoft.com/en-us/azure/api-management/enable-availability-zone-support) | configuration | 0.70 | The article describes enabling and configuring availability zones on Premium/Standard v2/Premium v2 instances, which involves specific portal or ARM/Bicep settings and constraints per tier and region. These are concrete configuration options and requirements, fitting the configuration sub-skill. |
 | [Enable console OAuth support](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-oauth2) | security | 0.70 | Contains product-specific OAuth 2.0 configuration steps and parameter values (authorization endpoints, client IDs/secrets, scopes, callback URLs) required to integrate external identity providers with the Azure API Management developer portal test console. These are concrete security/auth configuration details beyond generic OAuth concepts. |
 | [Export APIs to Postman for API development](https://learn.microsoft.com/en-us/azure/api-management/export-api-postman) | integrations | 0.70 | Describes how to export API definitions as Postman collections with product-specific options and constraints (e.g., what is exported vs not). |
 | [Extend portal with custom functionality](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-extend-custom-functionality) | configuration | 0.70 | Covers adding custom widgets and functionality; likely includes specific extension points, configuration options, and code patterns unique to the APIM portal. |
@@ -346,6 +337,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Create and debug policies in Visual Studio Code (VS Code)](https://learn.microsoft.com/en-us/azure/api-management/api-management-debug-policies) | 0.30 | Primarily a how-to/tutorial for using the VS Code extension and Copilot to create and debug policies; it doesn’t emphasize structured configuration tables, limits, or product-specific error mappings that would qualify as expert knowledge under the defined categories. |
 | [Customize developer portal on WordPress](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-wordpress-plugin) | 0.30 | Primarily a customization/tutorial guide for using a WordPress plugin with the API Management developer portal. It does not emphasize detailed configuration parameter tables, limits, security roles, or troubleshooting mappings that would constitute expert knowledge under the defined categories. |
 | [Deploy a self-hosted gateway to Kubernetes (Helm)](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes-helm) | 0.30 | The article is a step-by-step tutorial on deploying the self-hosted gateway to Kubernetes using Helm. From the summary, it appears to focus on procedural deployment steps without exposing tier-specific deployment matrices, constraints, or detailed configuration parameter tables. It reads as a standard deployment tutorial rather than a reference of expert configuration or limits. |
+| [Enable availability zones](https://learn.microsoft.com/en-us/azure/api-management/enable-availability-zone-support) | 0.30 | The page appears to be a how-to guide for enabling availability zones on API Management instances, likely focused on step-by-step configuration and general reliability guidance. From the provided summary, there is no evidence of specific numeric limits, configuration parameter tables, tier-specific matrices, or detailed error/symptom mappings. It reads as a feature enablement tutorial rather than a limits, configuration, deployment, or decision-making reference, so it does not meet the expert-knowledge criteria. |
 | [Import Open Data Protocol (OData) API](https://learn.microsoft.com/en-us/azure/api-management/import-api-from-odata) | 0.30 | Covers importing an OData-compliant service as an API; appears to be a how-to article without detailed numeric limits, configuration parameter tables, or troubleshooting mappings. |
 | [Import a Container App web API](https://learn.microsoft.com/en-us/azure/api-management/import-container-app-with-oas) | 0.30 | Tutorial-style guide for importing an Azure Container App into API Management via the portal; no indication of numeric limits, configuration parameter tables, error-code mappings, or other expert-only details. |
 | [Import a Function App web API](https://learn.microsoft.com/en-us/azure/api-management/import-function-app-as-api) | 0.30 | Describes how to import a Function App as an API and notes automatic host key generation, but appears to be a step-by-step tutorial without detailed configuration tables, limits, or troubleshooting mappings. |
@@ -377,7 +369,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Observability overview](https://learn.microsoft.com/en-us/azure/api-management/observability) | 0.20 | Page is an overview of observability options in Azure API Management without specific limits, configuration tables, or detailed error/diagnostic mappings; primarily conceptual guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-overview) | 0.20 | Overview of AI Gateway tier capabilities and preview status; summary indicates conceptual/marketing-style description without specific limits, configuration tables, or error/code details. |
 | [Policy reference index](https://learn.microsoft.com/en-us/azure/api-management/api-management-policies) | 0.20 | This is an index/reference listing all API Management policies with brief descriptions and links. It doesn’t itself contain detailed configuration tables, limits, or error mappings; the expert knowledge is in the linked articles, not this overview. |
-| [Workspaces overview](https://learn.microsoft.com/en-us/azure/api-management/workspaces-overview) | 0.20 | High-level overview of Azure API Management workspaces without specific limits, configuration parameters, error codes, or decision matrices; primarily conceptual description of what workspaces are and their purpose. |
+| [Workspaces overview](https://learn.microsoft.com/en-us/azure/api-management/workspaces-overview) | 0.20 | Page is an overview of Azure API Management workspaces for Premium tiers; description indicates conceptual explanation of what workspaces are and their purpose, without evidence of numeric limits, configuration tables, error codes, or other detailed expert-only data. |
 | [About API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts) | 0.10 | High-level overview of Azure API Management concepts and scenarios without numeric limits, configuration tables, or product-specific troubleshooting or security details. |
 | [Create an instance - Portal](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance) | 0.10 | Quickstart for creating an API Management instance via the portal; primarily step-by-step UI guidance without detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/api-management/policy-reference) | - | This is an index of built-in Azure Policy definitions for API Management, primarily navigational. It doesn’t itself expose detailed limits, configuration tables, or troubleshooting mappings; those are in the linked definitions. |

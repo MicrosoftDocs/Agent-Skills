@@ -3,7 +3,7 @@ name: azure-managed-grafana
 description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring MCP/AI Foundry dashboards, Prometheus/AKS or ADX data sources, private endpoints, or Enterprise upgrades, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Grafana Skill

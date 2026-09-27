@@ -3,7 +3,7 @@ name: azure-api-management
 description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with AI backends, configuring VNets/domains, securing with Entra/OAuth/JWT, setting quotas, or deploying self-hosted gateways, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L74-L79 | Patterns for placing API Management in front of AKS microservices and Azure Front Door, including routing, security, scaling, and global API gateway architectures. |
 | Limits & Quotas | L80-L100 | Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket), including rate/usage caps, token limits, validation policies, and service/gateway constraints in Azure API Management. |
 | Security | L101-L143 | Securing Azure API Management and AI Gateway: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, basic), TLS/certs, RBAC, managed identities, self-hosted gateway security, and DDoS/Defender protections. |
-| Configuration | L144-L243 | Configuring Azure API Management and AI Gateway: networking, VNets, domains, policies, caching, monitoring, logging, backends, auth, developer portal, and infrastructure-as-code setup. |
-| Integrations & Coding Patterns | L244-L275 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
-| Deployment | L276-L296 | Deploying and scaling API Management: autoscale, multi-region, backup/restore, vNet/external access, self-hosted gateways (AKS/K8s/Docker/Arc), portal automation, APIOps, and MCP versioning. |
+| Configuration | L144-L242 | Configuring Azure API Management and AI Gateway: networking, VNets, domains, policies, caching, monitoring, logging, backends, auth, developer portal, and infrastructure-as-code setup. |
+| Integrations & Coding Patterns | L243-L274 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
+| Deployment | L275-L295 | Deploying and scaling API Management: autoscale, multi-region, backup/restore, vNet/external access, self-hosted gateways (AKS/K8s/Docker/Arc), portal automation, APIOps, and MCP versioning. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -186,7 +186,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Application Insights for API Management developer portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-integrate-application-insights |
 | Integrate Google Tag Manager with API Management portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-integrate-google-tag-manager |
 | Configure emit-metric policy for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/emit-metric-policy |
-| Enable availability zones for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/enable-availability-zone-support |
 | Configure CORS for API Management custom connectors in Power Platform | https://learn.microsoft.com/en-us/azure/api-management/enable-cors-power-platform |
 | Configure find-and-replace policy for API Management | https://learn.microsoft.com/en-us/azure/api-management/find-and-replace-policy |
 | Configure forward-request policy to call backends | https://learn.microsoft.com/en-us/azure/api-management/forward-request-policy |

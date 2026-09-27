@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-12'
+generated_at: '2026-09-27'
 category_descriptions:
   security: 'Auth, attestation, identity, and access control for Confidential Ledger:
     Entra ID setup, app registration, RBAC, cert-based users, client certs, node quote
@@ -33,14 +33,14 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ## Summary
 
-- **Total Pages**: 37
-- **Fetched**: 37
+- **Total Pages**: 38
+- **Fetched**: 38
 - **Fetch Failed**: 0
 - **Classified**: 21
-- **Unclassified**: 16
+- **Unclassified**: 17
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 37
 - **Deleted Pages**: 0
@@ -50,14 +50,18 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| decision-making | 2 | 5.4% |
-| deployment | 2 | 5.4% |
-| integrations | 6 | 16.2% |
-| security | 9 | 24.3% |
-| troubleshooting | 2 | 5.4% |
-| *(Unclassified)* | 16 | 43.2% |
+| decision-making | 2 | 5.3% |
+| deployment | 2 | 5.3% |
+| integrations | 6 | 15.8% |
+| security | 9 | 23.7% |
+| troubleshooting | 2 | 5.3% |
+| *(Unclassified)* | 17 | 44.7% |
 
 ## Changes
+
+### New Pages
+
+- [Ensure end-to-end confidentiality of ledger data](https://learn.microsoft.com/en-us/azure/confidential-ledger/end-to-end-confidentiality)
 
 ## Classified Pages
 
@@ -98,6 +102,7 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Architecture](https://learn.microsoft.com/en-us/azure/confidential-ledger/architecture) | 0.30 | Architecture description is conceptual (REST API, enclaves, replicas) without decision matrices, thresholds, or product-specific configuration tables. |
 | [CLI](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-cli) | 0.30 | CLI quickstart for creating and managing a ledger; no detailed configuration matrices or limits. |
 | [Data residency](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-residency) | 0.30 | Describes data residency and resiliency behavior at a high level; typically policy/behavioral description without configuration parameters, limits, or decision matrices. |
+| [Ensure end-to-end confidentiality of ledger data](https://learn.microsoft.com/en-us/azure/confidential-ledger/end-to-end-confidentiality) | 0.30 | The page appears to be an architectural/conceptual guidance article about ensuring end-to-end confidentiality using Azure confidential ledger and related confidential services. From the summary, it does not show concrete numeric limits, configuration parameter tables, RBAC role lists, or detailed error/diagnostic mappings. It focuses on describing needs of critical workloads and high-level architecture (microservices, multiple components) rather than product-specific configuration values or quantified trade-offs, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Inspect ledger data with Ledger Explorer (Offline)](https://learn.microsoft.com/en-us/azure/confidential-ledger/ledger-explorer-offline) | 0.30 | How-to for using Ledger Explorer (Offline) to inspect data; summary indicates procedural steps, not configuration parameter tables, limits, or error-resolution mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-portal) | 0.30 | Portal quickstart focused on basic creation steps; lacks detailed settings tables or product-specific constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-powershell) | 0.30 | PowerShell quickstart for basic CRUD on ledger; no expert-only configuration or limits. |

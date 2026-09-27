@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   security: 'Security and compliance for Azure Local: standards mapping (FedRAMP,
     HIPAA, PCI, ISO), identity/RBAC, firewalls/NSGs, certificates/PKI, Trusted Launch/CVMs,
@@ -16,9 +16,9 @@ category_descriptions:
   best-practices: Guidance on networking and SDN tuning, drift detection, supported
     VM operations (Arc-enabled and multi-rack), and best practices for planning and
     managing Azure Local updates.
-  architecture-patterns: 'Designing resilient Azure Local topologies: rack/room networking,
-    SDN and multi-rack patterns, availability zones, DR/backup strategies, and disconnected/management
-    cluster designs'
+  architecture-patterns: 'Network and resiliency design for Azure Local: reference
+    topologies, SDN, multi-rack/room, disconnected ops, availability zones, DR, and
+    VM/storage network patterns.'
   deployment: Deploying, expanding, updating, and decommissioning Azure Local/Stack
     HCI environments, including rack-aware, disaggregated, SDN, disconnected, and
     small form factor deployments.
@@ -31,15 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Local development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  planning Azure Local racks, SDN networking, Arc/PE integration, disconnected ops,
-  or multi-rack clusters, and other Azure Local related development tasks. Not for
-  Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry (use microsoft-foundry),
-  Microsoft Foundry Classic (use microsoft-foundry-classic).
-use_when: Use when planning Azure Local racks, SDN networking, Arc/PE integration,
-  disconnected ops, or multi-rack clusters, and other Azure Local related development
+  planning Azure Local clusters, SDN networking, multi‑rack/disconnected deployments,
+  Arc/PE, or GPU workloads, and other Azure Local related development tasks. Not for
+  Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry (use microsoft-foundry).
+use_when: Use when planning Azure Local clusters, SDN networking, multi‑rack/disconnected
+  deployments, Arc/PE, or GPU workloads, and other Azure Local related development
   tasks.
 confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local),
-  Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic).
+  Microsoft Foundry (use microsoft-foundry).
 ---
 # Azure Local Crawl Report
 
@@ -53,8 +52,8 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 392
+- **Updated Pages**: 1
+- **Unchanged**: 399
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-local/azure-local.csv`
 
@@ -77,22 +76,8 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2609)
-  - Updated: 2026-09-11T22:04:00.000Z → 2026-09-16T08:00:00.000Z
-- [Update via PowerShell with limited connectivity](https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2609)
-  - Updated: 2026-09-02T17:03:00.000Z → 2026-09-11T08:00:00.000Z
-- [6A. Deploy via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-via-portal?view=azloc-2609)
-  - Updated: 2026-06-17T17:06:00.000Z → 2026-09-15T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-cli?view=azloc-2609)
-  - Updated: 2026-06-24T17:05:00.000Z → 2026-09-15T17:03:00.000Z
-- [What is Trusted launch for Azure Local VMs?](https://learn.microsoft.com/en-us/azure/azure-local/manage/trusted-launch-vm-overview?view=azloc-2609)
-  - Updated: 2026-04-22T22:07:00.000Z → 2026-09-16T22:03:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-whats-new?view=azloc-2609)
-  - Updated: 2026-09-11T22:04:00.000Z → 2026-09-15T17:03:00.000Z
-- [Acquire disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-acquire?view=azloc-2609)
-  - Updated: 2026-09-04T17:47:00.000Z → 2026-09-15T17:03:00.000Z
-- [Prepare Azure Local nodes (disconnected)](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-prepare?view=azloc-2609)
-  - Updated: 2026-06-04T17:03:00.000Z → 2026-09-15T17:03:00.000Z
+- [Hardware](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-control-plane-appliance?view=azloc-2609)
+  - Updated: 2026-06-23T22:03:00.000Z → 2026-09-25T22:03:00.000Z
 
 ## Classified Pages
 
@@ -273,7 +258,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [FedRAMP guidance](https://learn.microsoft.com/en-us/azure/azure-local/assurance/azure-stack-fedramp-guidance?view=azloc-2609) | security | 0.70 | Explains Azure Local’s relationship to FedRAMP and how to stay compliant; specialized security/compliance guidance. |
 | [Get cluster performance history](https://learn.microsoft.com/en-us/azure/azure-local/manage/health-service-cluster-performance-history?view=azloc-2609) | configuration | 0.70 | Explains how to retrieve curated performance metrics via a specific cmdlet and how they are aggregated; these are product-specific monitoring details. |
 | [HIPAA guidance](https://learn.microsoft.com/en-us/azure/azure-local/assurance/azure-stack-hipaa-guidance?view=azloc-2609) | security | 0.70 | Provides Azure Local–specific guidance for HIPAA compliance, which is specialized security/compliance configuration and process knowledge. |
-| [Hardware](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-control-plane-appliance?view=azloc-2609) | architecture-patterns | 0.70 | Covers architecture, hardware, and configuration concepts for a dedicated management cluster; likely includes capacity planning thresholds and topology patterns. |
+| [Hardware](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-control-plane-appliance?view=azloc-2609) | architecture-patterns | 0.70 | The page focuses on architecture, hardware, topology, and capacity planning for a dedicated management cluster in disconnected Azure Local scenarios. It provides product-specific architectural guidance and patterns (how to structure management vs workload clusters, how to plan capacity and topology for disconnected operations). This is specialized design guidance beyond generic concepts, fitting the architecture-patterns sub-skill. It does not primarily list numeric limits/quotas or configuration parameter tables, so other categories are less appropriate. |
 | [Health alerts](https://learn.microsoft.com/en-us/azure/azure-local/manage/health-alerts-via-azure-monitor-alerts?view=azloc-2609) | configuration | 0.70 | Describes mapping OS health service issues to Azure Monitor alerts, including specific health issue types and alert configuration steps. |
 | [ISO/IEC 27001 guidance](https://learn.microsoft.com/en-us/azure/azure-local/assurance/azure-stack-iso27001-guidance?view=azloc-2609) | security | 0.70 | Explains how Azure Local satisfies ISO/IEC 27001:2022 controls; product-specific compliance and control mapping is specialized security knowledge. |
 | [Identity](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-identity?view=azloc-2609) | security | 0.70 | Identity planning with operator roles; likely includes specific role definitions, identity flows, and security configuration guidance. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   configuration: 'Configuring Azure AI Search: data sources, index schemas, analyzers,
     skillsets, enrichment, vectorization, semantic ranker, monitoring, and agentic
@@ -50,10 +50,10 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Unclassified**: 68
 
 ### Incremental Update
-- **New Pages**: 12
-- **Updated Pages**: 46
-- **Unchanged**: 257
-- **Deleted Pages**: 12
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 314
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
 ## Classification Statistics
@@ -73,79 +73,10 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 
 ## Changes
 
-### New Pages
-
-- [Use embedding models from Microsoft Foundry (preview)](https://learn.microsoft.com/en-us/azure/search/vector-search-integrated-vectorization-ai-studio)
-- [Indexer execution on Serverless and S3 HD (preview)](https://learn.microsoft.com/en-us/azure/search/search-indexer-high-density-serverless-overview)
-- [Configure an enrichment cache (preview)](https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-configure)
-- [Manage an enrichment cache (preview)](https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-manage)
-- [Add spell check (preview)](https://learn.microsoft.com/en-us/azure/search/speller-how-to-add)
-- [Use a multi-vector field (preview)](https://learn.microsoft.com/en-us/azure/search/vector-search-multi-vector-fields)
-- [Azure Vision multimodal embeddings (preview)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-vision-vectorize)
-- [Microsoft Foundry model catalog (preview)](https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-azure-machine-learning-ai-studio-catalog)
-- [Azure Vision (preview)](https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-ai-services-vision)
-- [moreLikeThis (preview)](https://learn.microsoft.com/en-us/azure/search/search-more-like-this)
-- [Rewrite queries with semantic ranker (preview)](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-query-rewrite)
-- [Troubleshoot SharePoint permission filtering (preview)](https://learn.microsoft.com/en-us/azure/search/troubleshoot-sharepoint-query-permission-filtering)
-
 ### Updated Pages
 
-- [Chunk and vectorize with Content Understanding](https://learn.microsoft.com/en-us/azure/search/search-how-to-semantic-chunking-content-understanding)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-09-17T22:12:00.000Z
-- [Azure DB for MySQL (preview)](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-mysql)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-09-17T22:12:00.000Z
-- [Azure SQL Managed Instances](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sql-managed-instance)
-  - Updated: 2026-07-02T22:13:00.000Z → 2026-09-17T22:12:00.000Z
-- [Index CSV](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-csv)
-  - Updated: 2026-07-02T22:13:00.000Z → 2026-09-17T22:12:00.000Z
-- [Troubleshoot an indexer](https://learn.microsoft.com/en-us/azure/search/search-indexer-troubleshooting)
-  - Updated: 2026-07-08T11:03:00.000Z → 2026-09-17T08:00:00.000Z
-- [Sample facets](https://learn.microsoft.com/en-us/azure/search/search-faceted-navigation-examples)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-09-17T22:12:00.000Z
-- [What's Azure AI Search?](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
-  - Updated: 2026-08-06T17:13:00.000Z → 2026-09-17T22:12:00.000Z
-- [Preview terms](https://learn.microsoft.com/en-us/azure/search/search-preview-terms)
-  - Updated: 2026-08-12T22:14:00.000Z → 2026-09-17T22:12:00.000Z
-- [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-agentic-retrieval)
-  - Updated: 2026-07-20T08:00:00.000Z → 2026-09-17T22:12:00.000Z
-- [Optimize costs with Serverless pricing](https://learn.microsoft.com/en-us/azure/search/serverless-cost-optimization)
-  - Updated: 2026-08-13T22:15:00.000Z → 2026-09-14T22:14:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/search/search-limits-quotas-capacity)
-  - Updated: 2026-09-04T08:00:00.000Z → 2026-09-16T08:00:00.000Z
-- [Handling regional capacity constraints](https://learn.microsoft.com/en-us/azure/search/search-region-capacity)
-  - Updated: 2026-08-05T06:03:00.000Z → 2026-09-16T22:13:00.000Z
-- [Page through list results (preview)](https://learn.microsoft.com/en-us/azure/search/search-how-to-page-list-results)
-  - Updated: 2026-08-31T22:12:00.000Z → 2026-09-17T22:12:00.000Z
-- [Azure Machine Learning (AML)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-aml-skill)
-  - Updated: 2026-07-02T22:13:00.000Z → 2026-09-17T22:12:00.000Z
-- [Text Split](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-textsplit)
-  - Updated: 2026-01-07T08:00:00.000Z → 2026-09-17T22:12:00.000Z
-- [Configure semantic ranker](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-configure)
-  - Updated: 2026-08-31T22:12:00.000Z → 2026-09-17T22:12:00.000Z
-- [What is agentic retrieval?](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-overview)
-  - Updated: 2026-06-12T22:16:00.000Z → 2026-09-17T22:12:00.000Z
-- [What is a knowledge source?](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-overview)
-  - Updated: 2026-09-01T08:00:00.000Z → 2026-09-17T22:12:00.000Z
-- [Create an index for agentic retrieval](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-index)
-  - Updated: 2026-08-31T22:12:00.000Z → 2026-09-17T22:12:00.000Z
-- [Search index](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-search-index)
-  - Updated: 2026-08-31T22:12:00.000Z → 2026-09-17T22:12:00.000Z
-- *...and 26 more*
-
-### Deleted Pages
-
-- ~~Azure Vision multimodal embeddings~~ (https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-vision-vectorize)
-- ~~Configure an enrichment cache~~ (https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-configure)
-- ~~Manage an enrichment cache~~ (https://learn.microsoft.com/en-us/azure/search/enrichment-cache-how-to-manage)
-- ~~Indexer execution on Serverless and S3 HD~~ (https://learn.microsoft.com/en-us/azure/search/search-indexer-high-density-serverless-overview)
-- ~~moreLikeThis~~ (https://learn.microsoft.com/en-us/azure/search/search-more-like-this)
-- ~~Rewrite queries with semantic ranker~~ (https://learn.microsoft.com/en-us/azure/search/semantic-how-to-query-rewrite)
-- ~~Add spell check~~ (https://learn.microsoft.com/en-us/azure/search/speller-how-to-add)
-- ~~Troubleshoot SharePoint permission filtering~~ (https://learn.microsoft.com/en-us/azure/search/troubleshoot-sharepoint-query-permission-filtering)
-- ~~Use embedding models from Microsoft Foundry~~ (https://learn.microsoft.com/en-us/azure/search/vector-search-integrated-vectorization-ai-studio)
-- ~~Use a multi-vector field~~ (https://learn.microsoft.com/en-us/azure/search/vector-search-multi-vector-fields)
-- ~~Azure Vision~~ (https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-ai-services-vision)
-- ~~Microsoft Foundry model catalog~~ (https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-azure-machine-learning-ai-studio-catalog)
+- [Overview](https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-overview)
+  - Updated: 2026-08-07T22:12:00.000Z → 2026-09-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -448,7 +379,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Create a skillset (tutorial)](https://learn.microsoft.com/en-us/azure/search/tutorial-skillset) | 0.20 | Tutorial-style content showing how to create a skillset with the Azure SDK for .NET. It is primarily a step-by-step example of using built-in skills, without detailed configuration tables, limits, or product-specific error mappings that would qualify as expert knowledge under the defined categories. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/search/search-faq-frequently-asked-questions) | 0.20 | FAQ summary is generic; no evidence of specific error codes, limits tables, or config parameters in the provided description. |
 | [Other query types](https://learn.microsoft.com/en-us/azure/search/search-query-overview) | 0.20 | Query types overview; no specific limits, configs, error codes, or decision matrices—mostly conceptual description of full-text, vector, hybrid, and filter queries. |
-| [Overview](https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-overview) | 0.20 | A tutorial for adding search to a C# web app and deploying it to Azure Container Apps is primarily step-by-step instructional content. The summary doesn’t indicate tables of configuration options, limits, or product-specific gotchas; it’s a general walkthrough that an LLM can already approximate, so it doesn’t meet the expert-knowledge criteria. |
+| [Overview](https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-overview) | 0.20 | Tutorial-style overview for adding Azure AI Search to a C# web app and deploying via Azure Container Apps using azd and managed identity. It appears to be a step-by-step how-to without detailed configuration tables, limits, error-code mappings, or product-specific best-practice guidance with quantified impact. Content is primarily procedural and conceptual, not expert reference material. |
 | [Preview terms](https://learn.microsoft.com/en-us/azure/search/search-preview-terms) | 0.20 | Preview terms and legal/usage notes; lacks technical limits, configuration parameters, or troubleshooting mappings. |
 | [Python samples](https://learn.microsoft.com/en-us/azure/search/samples-python) | 0.20 | Page is a navigation/index for Python sample code using the Azure AI Search client library. It primarily links to demos and does not contain specific limits, configuration matrices, troubleshooting mappings, or other expert-only details. |
 | [Query with Search Explorer](https://learn.microsoft.com/en-us/azure/search/search-explorer) | 0.20 | Quickstart for using Search Explorer; primarily a step-by-step portal tutorial without detailed configuration tables, limits, or product-specific troubleshooting mappings. |

@@ -34,8 +34,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 10
+- **Updated Pages**: 0
+- **Unchanged**: 11
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-carbon-optimization/azure-carbon-optimization.csv`
 
@@ -49,11 +49,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | *(Unclassified)* | 7 | 63.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/carbon-optimization/overview)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-09-15T17:03:00.000Z
 
 ## Classified Pages
 

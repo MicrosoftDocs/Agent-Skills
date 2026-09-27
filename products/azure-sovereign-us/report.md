@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   decision-making: Guidance on choosing Azure Government vs global, FedRAMP/DoD scope
     and ATO, CSP reseller options, marketplace and DoD regions, and sector-specific
     compliance (NERC CIP, public safety, worldwide public sector).
-  security: 'Security and compliance guidance for Azure Government: isolation, IL5,
-    FedRAMP Rev5, TIC, secure naming, and identity/auth architecture with Microsoft
-    Entra.'
+  security: 'Security and compliance for Azure Government: FedRAMP/DoD scope, TIC,
+    IL5 isolation, secure configuration, identity/Entra integration, and implementing
+    security controls.'
   architecture-patterns: Guidance on applying Secure Azure Computing Architecture
     (SACA) patterns to design compliant, secure, and resilient solutions in Azure
     Sovereign Cloud environments.
@@ -21,17 +21,16 @@ category_descriptions:
     US regions.'
 skill_description: Expert knowledge for Azure US Government development including
   decision making, architecture & design patterns, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Azure Gov IL5/FedRAMP, SACA patterns,
-  Gov App Service/ASE, Gov Marketplace, or sovereign storage/SQL APIs, and other Azure
-  US Government related development tasks. Not for Azure Networking (use azure-networking),
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure ExpressRoute (use azure-expressroute).
-use_when: Use when using Azure Gov IL5/FedRAMP, SACA patterns, Gov App Service/ASE,
-  Gov Marketplace, or sovereign storage/SQL APIs, and other Azure US Government related
+  & coding patterns, and deployment. Use when choosing Azure Gov vs global, meeting
+  FedRAMP/DoD needs, using SACA patterns, Gov CI/CD, or Gov marketplace, and other
+  Azure US Government related development tasks. Not for Azure Local (use azure-local),
+  Azure Networking (use azure-networking), Azure Security (use azure-security), Azure
+  Policy (use azure-policy).
+use_when: Use when choosing Azure Gov vs global, meeting FedRAMP/DoD needs, using
+  SACA patterns, Gov CI/CD, or Gov marketplace, and other Azure US Government related
   development tasks.
-confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
-  Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure ExpressRoute (use azure-expressroute).
+confusable_not_for: Not for Azure Local (use azure-local), Azure Networking (use azure-networking),
+  Azure Security (use azure-security), Azure Policy (use azure-policy).
 ---
 # Azure US Government Crawl Report
 
@@ -66,8 +65,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Updated Pages
 
-- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
-  - Updated: 2026-09-03T08:00:00.000Z → 2026-09-17T08:00:00.000Z
+- [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-09-21T08:00:00.000Z
 
 ## Classified Pages
 
@@ -77,7 +76,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Compare Azure Government and global Azure](https://learn.microsoft.com/en-us/azure/azure-government/compare-azure-government-global-azure) | decision-making | 0.75 | Provides feature and compliance differences between Azure Government and global Azure, including environment-specific capabilities and constraints to guide cloud selection decisions. |
 | [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/azure-government/connect-with-azure-pipelines) | deployment | 0.75 | How-to for configuring Azure Pipelines to deploy to Azure Government App Service, including environment-specific endpoints and constraints for CI/CD. |
 | [Authorized reseller list](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-list) | decision-making | 0.70 | Provides authoritative list of authorized CSPs and resellers for Azure Government, used to select appropriate partners—data not inferable from training alone. |
-| [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope) | security | 0.70 | Page details which Azure, Azure Government, and Azure Government Secret services and regions fall within specific FedRAMP and DoD authorization scopes. This is product- and environment-specific compliance and security information (which environments are authorized for which impact levels), which an LLM is unlikely to know reliably from training. It maps cloud environments to concrete compliance authorizations, fitting the security category best. |
+| [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope) | security | 0.70 | Page details which Azure, Azure Government, and related Microsoft cloud environments hold specific FedRAMP/DoD authorizations and which regions/offerings are in audit scope. These are product- and region-specific compliance details (security posture and authorization scope) that change over time and are not inferable from general training data, fitting the security sub-skill. |
 | [Considerations for naming Azure resources](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-concept-naming-resources) | security | 0.70 | Provides concrete guidance on avoiding sensitive data in resource names, with examples tied to specific Azure services and compliance boundaries—product-specific security practice. |
 | [Identity](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-identity) | security | 0.70 | Provides planning guidance on using Microsoft Entra Public vs Government tenants and identity placement for Azure Government applications—product-specific identity/security configuration decisions. |
 | [Integrate Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-aad-auth-qs) | security | 0.70 | Quickstart for integrating Microsoft Entra authentication in Azure Government with environment-specific exceptions and configuration details. |

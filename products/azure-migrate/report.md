@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   configuration: Configuring Azure Migrate appliances, Arc/agents, assessment settings
     (VM, SQL, PostgreSQL, .NET), private endpoints, landing zones, and Resource Mover
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 214
+- **Updated Pages**: 1
+- **Unchanged**: 215
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -79,10 +79,8 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 
 ### Updated Pages
 
-- [Create a file share assessment](https://learn.microsoft.com/en-us/azure/migrate/create-file-share-assessment?view=migrate)
-  - Updated: 2026-04-02T18:15:00.000Z → 2026-09-16T11:51:00.000Z
-- [Overview of Web App Migration and Modernization](https://learn.microsoft.com/en-us/azure/migrate/web-app-migration-modernization?view=migrate)
-  - Updated: 2025-11-05T12:23:00.000Z → 2026-09-14T17:12:00.000Z
+- [Enable application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat/?view=migrate)
+  - Updated: 2026-08-21T17:12:00Z → 2026-09-24T11:41:00Z
 
 ## Classified Pages
 
@@ -260,7 +258,7 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 | [Discover Virtual Machines](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-vmware?view=migrate) | 0.30 | This is a step-by-step tutorial for discovering VMware servers with Azure Migrate. It focuses on procedural steps and general usage of the discovery appliance rather than detailed configuration tables, limits, or product-specific error/diagnostic mappings. It does not meet the thresholds for the defined expert-knowledge sub-skill types. |
 | [Discover and assess using Azure Private Link](https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate) | 0.30 | The page is a procedural guide for creating an Azure Migrate project and appliance using Private Link. From the summary, it focuses on how to set up discovery and assessment over Private Link/ExpressRoute/VPN, but doesn't clearly indicate tables of configuration parameters, numeric limits, or detailed security role/permission matrices. It appears more like a step-by-step tutorial than a reference of expert-only limits, quotas, or configuration matrices. |
 | [Discovery using collector](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate) | 0.30 | How-to article on using Azure Migrate Collector to discover VMware servers; primarily workflow and usage guidance, not focused on explicit limits, configuration parameter tables, security roles, or structured troubleshooting content required by the sub-skill categories. |
-| [Enable application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat/?view=migrate) | 0.30 | Appears to be an overview of Azure Migrate application and code assessment tooling and concepts, not a limits, configuration, or troubleshooting reference with product-specific parameters, error codes, or quantified decision criteria. |
+| [Enable application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat/?view=migrate) | 0.30 | Page is primarily an overview of Azure Migrate application and code assessment capabilities and workflow; it does not present numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs. Content is conceptual and descriptive rather than containing product-specific expert details that meet the defined sub-skill criteria. |
 | [Getting started](https://learn.microsoft.com/en-us/azure/migration/migrate-from-google-cloud) | 0.30 | High-level resource page for migrating from GCP to Azure. While it mentions service comparisons and example scenarios, the summary does not show concrete tables, thresholds, or configuration details on this page itself. |
 | [How to automate VMware migration](https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-migration?view=migrate) | 0.30 | Covers automation scripts for agentless VMware migrations; summary doesn’t show detailed config parameters, limits, or troubleshooting content. |
 | [Migrate to Azure Cloud](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-hyper-v?view=migrate) | 0.30 | Hyper-V VM migration tutorial using Azure Migrate; described as a simple deployment path using defaults. No indication of detailed limits, quotas, configuration option tables, or error-code mappings that would qualify as expert knowledge. |

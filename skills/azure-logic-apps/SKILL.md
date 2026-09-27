@@ -1,9 +1,9 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating with SAP/IBM/AI, tuning connector limits, securing with private endpoints, or deploying via ARM/Bicep, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Service Bus (use azure-service-bus), Azure Data Factory (use azure-data-factory).
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with AI/OpenAI, SAP/B2B, private endpoints, DevOps deployments, or DR/multi-region designs, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Service Bus (use azure-service-bus), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L60-L72 | Guidance on when and how to use Logic Apps vs other platforms, choose Standard vs Consumption, estimate and manage costs, and plan BizTalk/Power Automate migrations and B2B disaster recovery. |
 | Architecture & Design Patterns | L73-L85 | Patterns and architectures for Logic Apps: batching, API calling, DR/multi-region design, ordered messaging, rules engine behavior, and multi-agent/prompt-chaining workflows. |
 | Limits & Quotas | L86-L94 | Limits, quotas, and tuning for Logic Apps: JS inline code limits, SQL result/timeouts, connector pagination, large-message chunking, config limits, and metering/billing behavior. |
-| Security | L95-L111 | Securing Logic Apps with identities, OAuth/Easy Auth, private endpoints, certificates, and Azure Policy/Defender controls for access, connector usage, data protection, and cross-tenant governance. |
+| Security | L95-L111 | Securing Logic Apps: managed identities, OAuth/Entra auth, Easy Auth, private endpoints, certificates, data protection, and Azure Policy/Defender-based governance and connector controls. |
 | Configuration | L112-L148 | Configuring Logic Apps runtime, triggers, storage, monitoring, B2B (EDI/AS2/X12), schemas/maps, branching/scopes, on-premises access, and local .NET/PowerShell execution. |
 | Integrations & Coding Patterns | L149-L256 | Patterns and SDKs for integrating Logic Apps with AI agents, Azure/OpenAI, SAP, IBM, storage, messaging, B2B/EDI, and for building, testing, and coding workflows in C#/Python. |
-| Deployment | L257-L277 | Deploying Logic Apps (Standard & Consumption) with ARM/Bicep, DevOps/Deployment Center, hybrid setups, migration/cloning, slots, and cross-subscription/region moves. |
+| Deployment | L257-L276 | Deploying Logic Apps (Standard & Consumption) with DevOps, ARM/Bicep, VS Code, migration tools, deployment slots, and hybrid setups across subscriptions, regions, and environments |
 
 ### Troubleshooting
 | Topic | URL |
@@ -105,7 +105,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Policy built-ins for Logic Apps governance | https://learn.microsoft.com/en-us/azure/logic-apps/policy-reference |
 | Secure Logic Apps Standard workflows with private endpoints | https://learn.microsoft.com/en-us/azure/logic-apps/secure-single-tenant-workflow-virtual-network-private-endpoint |
 | Apply Azure Policy compliance controls to Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/security-controls-policy |
-| Secure agentic Logic Apps workflows with Easy Auth | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-authentication-agent-workflows |
+| Configure Easy Auth security for Logic Apps agentic workflows | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-authentication-agent-workflows |
 | Set up OAuth OBO flow for agent tools in Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-on-behalf-of-user-flow |
 | Configure secure access and data protection in Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/set-up-security-permissions |
 
@@ -259,7 +259,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Automate build and release for Standard Logic Apps with Azure DevOps | https://learn.microsoft.com/en-us/azure/logic-apps/automate-build-deployment-standard |
 | Clone Consumption Logic Apps to Standard workflows | https://learn.microsoft.com/en-us/azure/logic-apps/clone-consumption-logic-app-to-standard-workflow |
-| Deploy Logic Apps Standard workflows in hybrid environments | https://learn.microsoft.com/en-us/azure/logic-apps/create-standard-workflows-hybrid-deployment |
 | Develop and deploy Standard Logic Apps with VS Code | https://learn.microsoft.com/en-us/azure/logic-apps/create-standard-workflows-visual-studio-code |
 | Develop and deploy Standard Logic Apps with VS Code | https://learn.microsoft.com/en-us/azure/logic-apps/create-standard-workflows-visual-studio-code |
 | Implement DevOps deployment for Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/devops-deployment-single-tenant-azure-logic-apps |

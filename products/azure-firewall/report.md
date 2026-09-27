@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 77
+- **Updated Pages**: 0
+- **Unchanged**: 87
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -72,29 +72,6 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 | *(Unclassified)* | 32 | 36.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring Azure Firewall reference](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall-reference)
-  - Updated: 2026-06-16T22:28:00.000Z → 2026-09-15T22:13:00.000Z
-- [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview)
-  - Updated: 2026-08-31T22:26:00.000Z → 2026-09-17T11:41:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
-  - Updated: 2026-08-31T22:26:00.000Z → 2026-09-15T17:13:00.000Z
-- [Routing in hub and spoke](https://learn.microsoft.com/en-us/azure/firewall/firewall-multi-hub-spoke)
-  - Updated: 2025-09-29T22:15:00.000Z → 2026-09-17T08:00:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal-policy)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-09-14T22:37:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-hybrid-portal-policy)
-  - Updated: 2026-06-23T05:11:00.000Z → 2026-09-14T22:37:00.000Z
-- [Scale outbound SNAT ports](https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway)
-  - Updated: 2026-06-16T22:28:00.000Z → 2026-09-14T22:37:00.000Z
-- [Secure firewall deployment](https://learn.microsoft.com/en-us/azure/firewall/secure-firewall)
-  - Updated: 2026-08-13T22:14:00.000Z → 2026-08-19T08:00:00.000Z
-- [Change Azure Firewall SKU](https://learn.microsoft.com/en-us/azure/firewall/change-sku)
-  - Updated: 2026-08-27T08:00:00.000Z → 2026-09-14T11:41:00.000Z
-- [Logs and metrics](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall)
-  - Updated: 2026-03-28T08:00:00.000Z → 2026-08-19T08:00:00.000Z
 
 ## Classified Pages
 

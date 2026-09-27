@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 162
+- **Updated Pages**: 0
+- **Unchanged**: 168
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -76,21 +76,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 55 | 32.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Troubleshoot CLI errors](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-cli-errors)
-  - Updated: 2024-12-02T23:02:00.000Z → 2026-09-17T22:08:00.000Z
-- [2026](https://learn.microsoft.com/en-us/azure/mysql/release-notes/release-notes-2026)
-  - Updated: 2026-07-16T06:04:00.000Z → 2026-09-15T17:06:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-cli)
-  - Updated: 2026-01-05T08:00:00.000Z → 2026-09-15T08:00:00.000Z
-- [Troubleshoot high CPU utilization](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-high-cpu-utilization)
-  - Updated: 2024-12-02T23:02:00.000Z → 2026-09-17T22:08:00.000Z
-- [Service maintenance](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-maintenance)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-09-17T22:08:00.000Z
-- [Secure your Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/mysql/security/security-overview)
-  - Updated: 2026-07-18T06:02:00.000Z → 2026-09-18T22:08:00.000Z
 
 ## Classified Pages
 

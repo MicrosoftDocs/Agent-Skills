@@ -1,9 +1,9 @@
 ---
 name: azure-anyscale-on-azure
-description: Expert knowledge for Azure Anyscale On Azure development including limits & quotas, security, configuration, and deployment. Use when authoring ARM templates, hardening images, configuring RBAC, setting up Private Link, or checking regional support, and other Azure Anyscale On Azure related development tasks. Not for Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Anyscale On Azure development including limits & quotas, security, configuration, and deployment. Use when authoring ARM templates, hardening images, configuring Private Link, securing egress, or checking regional support, and other Azure Anyscale On Azure related development tasks. Not for Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Machine Learning (use azure-machine-learning), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Anyscale On Azure Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Limits & Quotas | L32-L36 | Supported Azure regions for deploying and running Anyscale on Azure, including how to check regional availability and constraints. |
 | Security | L37-L42 | Securing Anyscale on Azure: container image build hardening, identity setup, and RBAC configuration for safe, least-privilege access to Anyscale resources. |
-| Configuration | L43-L48 | Configuring networking for Anyscale on Azure, including setting up Azure Private Link, secure connectivity, and network topology for clusters and deployments. |
+| Configuration | L43-L48 | Configuring Anyscale networking on Azure, including Private Link setup, secure cluster connectivity, and controlling outbound/egress traffic paths. |
 | Deployment | L49-L52 | Using ARM templates to provision and manage Anyscale cloud resources on Azure, including template structure, parameters, and deployment steps. |
 
 ### Limits & Quotas
@@ -44,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Set up Azure Private Link for Anyscale clusters | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-private-link |
-| Configure networking for Anyscale on Azure deployments | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking |
+| Configure networking and egress for Anyscale on Azure | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking |
 
 ### Deployment
 | Topic | URL |

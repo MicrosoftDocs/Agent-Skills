@@ -1,9 +1,9 @@
 ---
 name: azure-databricks
-description: Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with Unity Catalog, Lakehouse/Lakeflow pipelines, Delta tables, SQL warehouses, or ML/LLM serving, and other Azure Databricks related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Machine Learning (use azure-machine-learning), Azure Data Factory (use azure-data-factory).
+description: Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with Unity Catalog, Delta Lake/Lakehouse, Lakeflow pipelines, ML/LLM serving, or external connectors, and other Azure Databricks related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Machine Learning (use azure-machine-learning), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Databricks Skill
@@ -24,20 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Location | Description |
 |----------|----------|-------------|
-| Troubleshooting | L37-L179 | Diagnosing and fixing Azure Databricks issues: logs, Spark/SQL errors, CLI/IDE, init scripts, Auto Loader, Lakeflow, connectors (DBs, SaaS, ads), model serving, Feature Store, and performance. |
-| Best Practices | L180-L388 | End-to-end Databricks best practices for cost, governance, security, performance, reliability, streaming, RAG/LLM apps, Lakehouse data modeling, Lakeflow pipelines, and production ML/serving. |
-| Decision Making | [decision-making.md](decision-making.md) | Guides for architectural and cost decisions in Azure Databricks: choosing runtimes, compute, storage, ingestion, AI/ML, governance, networking, and planning migrations between major features. |
+| Troubleshooting | L37-L179 | Diagnosing and fixing Databricks errors and performance issues across SQL, Spark, Auto Loader, Lakeflow, connectors, model serving, Feature Store, CLI/IDE, and audit/log-based troubleshooting. |
+| Best Practices | L180-L388 | End-to-end Databricks best practices: cost, governance, security, compute, streaming, Lakehouse/Delta design, BI, ML/LLM, RAG, Apps, Lakeflow, and performance tuning across workloads. |
+| Decision Making | [decision-making.md](decision-making.md) | Guidance for architectural and cost decisions: choosing compute, runtimes, connectors, governance, AI/GenAI options, and planning migrations (workloads, pipelines, models, Unity Catalog, Lakebase). |
 | Architecture & Design Patterns | [architecture-patterns.md](architecture-patterns.md) | Patterns and reference architectures for Databricks: DR/HA, networking, storage, Lakehouse/medallion, Lakeflow ETL/CDC, Lakebase, AI agents, Feature Store, MLOps, and dashboard data modeling. |
-| Limits & Quotas | [limits-quotas.md](limits-quotas.md) | Limits, quotas, and constraints for Databricks compute, AI/Genie, Lakeflow pipelines, connectors, Unity Catalog, model serving, SQL/editor features, and related resource usage. |
-| Security | [security.md](security.md) | Identity, access control, encryption, networking, compliance, and governance for Azure Databricks and Unity Catalog, including OAuth/SCIM, RBAC/ABAC, secrets, keys, and secure external connections. |
-| Configuration | [configuration.md](configuration.md) | Configuring and managing Azure Databricks: accounts, workspaces, networking, security, storage, compute, jobs, AI/ML, Unity Catalog, Lakeflow, connectors, SQL, and CLI/bundles. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and examples for integrating Databricks with apps, agents, AI/ML, Lakeflow, Lakehouse Federation, external DBs/BI tools, and using SDKs/CLI, SQL, and PySpark APIs for advanced data and AI workflows. |
+| Limits & Quotas | [limits-quotas.md](limits-quotas.md) | Limits, quotas, and constraints for Databricks compute, AI/GenAI, Lakehouse/Lakeflow, Unity Catalog, connectors, SQL/model serving, and related resource governance and rate limits. |
+| Security | [security.md](security.md) | Identity, access control, encryption, networking, compliance, and governance for Azure Databricks, including Unity Catalog, OAuth/SCIM, serverless/network policies, secrets, and secure external connections. |
+| Configuration | [configuration.md](configuration.md) | Configuring every aspect of Azure Databricks: accounts, networking, security/governance, compute, storage, SQL, ML/AI, Lakeflow, connectors, CLI, bundles, apps, and observability/cost controls. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and how-tos for integrating Databricks with external systems, tools, and models, plus detailed APIs, connectors, and code patterns for agents, ML, SQL, streaming, and Lakehouse Federation. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Azure Databricks workspaces, apps, ML/AI workloads, and Lakehouse/Lakebase resources using ARM/CLI/Terraform/Bundles, plus CI/CD, networking, Unity Catalog, and model serving. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Interpret Azure Databricks diagnostic and audit logs | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-logs |
+| Interpret Azure Databricks diagnostic audit log events | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-logs |
 | Debug custom code agents on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/debug-agent |
 | Detect and clean up unused AI Search endpoints | https://learn.microsoft.com/en-us/azure/databricks/ai-search/unused-endpoints |
 | Resolve Databricks classic compute termination error codes | https://learn.microsoft.com/en-us/azure/databricks/compute/troubleshooting/cluster-error-codes |
@@ -221,8 +221,8 @@ This skill requires **network access** to fetch documentation content:
 | Implement observability for Databricks streaming workloads | https://learn.microsoft.com/en-us/azure/databricks/data-engineering/observability-best-practices |
 | Handle schema evolution in Azure Databricks pipelines | https://learn.microsoft.com/en-us/azure/databricks/data-engineering/schema-evolution |
 | Apply best practices for Unity Catalog ABAC policies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/best-practices |
-| Use common ABAC row filtering and masking patterns | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/common-patterns |
-| Optimize performance of ABAC row filters and masks | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/performance |
+| Apply common ABAC row filtering and column masking patterns in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/common-patterns |
+| Optimize performance of ABAC row filters and column masks in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/performance |
 | Apply Unity Catalog governance best practices | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices |
 | Manage Unity Catalog object storage lifecycle and recovery | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/object-storage-lifecycle |
 | Author Unity Catalog service policies with examples | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/policy-examples |

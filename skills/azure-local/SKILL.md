@@ -1,9 +1,9 @@
 ---
 name: azure-local
-description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning Azure Local racks, SDN networking, Arc/PE integration, disconnected ops, or multi-rack clusters, and other Azure Local related development tasks. Not for Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic).
+description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning Azure Local clusters, SDN networking, multi‑rack/disconnected deployments, Arc/PE, or GPU workloads, and other Azure Local related development tasks. Not for Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry (use microsoft-foundry).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Local Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L73 | Diagnosing and fixing Azure Local issues: provisioning, SDN/NSG, SLB, Arc VMs, multi‑rack/SFF, disconnected ops, upgrades, and collecting logs/health data for support. |
 | Best Practices | L74-L83 | Guidance on networking and SDN tuning, drift detection, supported VM operations (Arc-enabled and multi-rack), and best practices for planning and managing Azure Local updates. |
 | Decision Making | L84-L104 | Guidance for planning and choosing Azure Local deployments: billing, licensing, storage, networking, identity, migration options, deployment scale/types, and container orchestrator selection. |
-| Architecture & Design Patterns | L105-L141 | Designing resilient Azure Local topologies: rack/room networking, SDN and multi-rack patterns, availability zones, DR/backup strategies, and disconnected/management cluster designs |
+| Architecture & Design Patterns | L105-L141 | Network and resiliency design for Azure Local: reference topologies, SDN, multi-rack/room, disconnected ops, availability zones, DR, and VM/storage network patterns. |
 | Limits & Quotas | L142-L150 | Hardware, network, and lifecycle requirements/limits for Azure Local disaggregated and multi-rack clusters, including host/physical networking and update/support constraints. |
 | Security | L151-L208 | Security and compliance for Azure Local: standards mapping (FedRAMP, HIPAA, PCI, ISO), identity/RBAC, firewalls/NSGs, certificates/PKI, Trusted Launch/CVMs, Defender, logging, and secure operations. |
 | Configuration | L209-L353 | Configuring Azure Local infrastructure: networking, storage, GPUs, SDN, monitoring, disconnected ops, VM images/management, multi-rack, small form factor, and Arc/private endpoint integration. |
@@ -115,7 +115,7 @@ This skill requires **network access** to fetch documentation content:
 | Design disaster recovery strategy for Azure Local VMs | https://learn.microsoft.com/en-us/azure/azure-local/manage/disaster-recovery-overview?view=azloc-2609 |
 | Design resilient virtual machines on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disaster-recovery-vm-resiliency?view=azloc-2609 |
 | Plan workload-level disaster recovery on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disaster-recovery-workloads-resiliency?view=azloc-2609 |
-| Design a dedicated management cluster for Azure Local disconnected operations | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-control-plane-appliance?view=azloc-2609 |
+| Plan dedicated management clusters for disconnected Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-control-plane-appliance?view=azloc-2609 |
 | Plan networking for Azure Local disconnected operations | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-network?view=azloc-2609 |
 | Plan post-restore rehydration for disconnected Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-post-restore-overview?view=azloc-2609 |
 | Load balance multiple logical networks in Azure Local SDN | https://learn.microsoft.com/en-us/azure/azure-local/manage/load-balance-multiple-networks?view=azloc-2609 |

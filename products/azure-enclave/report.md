@@ -1,38 +1,37 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
+  configuration: Configuring enclaves, governance, approvals, DNS/AVD setup, observability,
+    policy exemptions, and using service catalog templates for Azure Enclave workloads.
   architecture-patterns: 'Architectural patterns for Azure Enclave apps: DMZ-based
     public access, integrating with AVD/AKS, and secure data ingress design for enclave
     environments.'
-  security: RBAC, encryption, identities, policy guardrails, and governance for securely
-    configuring Azure Enclave resources (AKS, App Service, SQL, Storage, Key Vault,
-    Cosmos DB, ACR, PostgreSQL, Service Bus).
+  security: 'Configuring Azure Enclave security: RBAC, managed identities, CMK encryption,
+    policy/guardrails for AKS, App Service, SQL, Storage, ACR, Cosmos DB, Key Vault,
+    and governance/JIT access.'
   deployment: 'Guides for deploying Enclave workloads: app installation on RemoteApp
     VMs, using Bicep/ARM/CLI templates, and setting up ExpressRoute/VPN connectivity
     and shared dependencies.'
-  troubleshooting: Diagnosing and fixing common Azure Enclave setup, attestation,
-    deployment, and runtime errors, plus answers to frequent operational issues and
-    misconfigurations.
+  troubleshooting: Diagnosing and fixing common Azure Enclave issues, including setup/attestation
+    failures, runtime errors, connectivity problems, and frequently asked troubleshooting
+    questions.
   best-practices: Design, security, and operational best practices for Azure Enclave,
     including secure architecture patterns and how to harden and manage admin VMs
     safely.
-  configuration: 'Configuring Azure Enclave environments: approvals/governance workflows,
-    resource lifecycle rules, AVD and DNS setup, service catalog use, observability,
-    and policy exemptions.'
   decision-making: Planning disaster recovery and business continuity for Azure Enclave,
     and strategies, steps, and considerations for migrating existing Azure workloads
     into an Enclave environment.
-  limits-quotas: Pricing models and charges, resource naming rules/restrictions, and
-    quota limits plus regional availability for Azure Enclave deployments.
+  limits-quotas: Naming rules for Azure Enclave resources plus service limits, quotas,
+    and regional availability to plan compliant deployments and capacity.
 skill_description: Expert knowledge for Azure Enclave development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when building DMZ-based enclave apps,
-  securing AKS/AVD, wiring ExpressRoute/VPN, or configuring Key Vault/SQL, and other
-  Azure Enclave related development tasks. Not for Azure Confidential Computing (use
-  azure-confidential-computing), Azure Attestation (use azure-attestation), Azure
+  security, configuration, and deployment. Use when configuring enclave apps with
+  AVD/AKS, RBAC/MI/CMK, Bicep/ARM deploys, ExpressRoute/VPN, or DR/migration, and
+  other Azure Enclave related development tasks. Not for Azure Confidential Computing
+  (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure
   Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
-use_when: Use when building DMZ-based enclave apps, securing AKS/AVD, wiring ExpressRoute/VPN,
-  or configuring Key Vault/SQL, and other Azure Enclave related development tasks.
+use_when: Use when configuring enclave apps with AVD/AKS, RBAC/MI/CMK, Bicep/ARM deploys,
+  ExpressRoute/VPN, or DR/migration, and other Azure Enclave related development tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
   Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm),
   Azure Cloud Hsm (use azure-cloud-hsm).
@@ -44,13 +43,13 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Total Pages**: 95
 - **Fetched**: 95
 - **Fetch Failed**: 0
-- **Classified**: 48
-- **Unclassified**: 47
+- **Classified**: 49
+- **Unclassified**: 46
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 19
-- **Unchanged**: 76
+- **Updated Pages**: 5
+- **Unchanged**: 90
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-enclave/azure-enclave.csv`
 
@@ -60,62 +59,34 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 |------|-------|------------|
 | architecture-patterns | 3 | 3.2% |
 | best-practices | 2 | 2.1% |
-| configuration | 10 | 10.5% |
+| configuration | 11 | 11.6% |
 | decision-making | 2 | 2.1% |
 | deployment | 6 | 6.3% |
 | limits-quotas | 2 | 2.1% |
 | security | 21 | 22.1% |
 | troubleshooting | 2 | 2.1% |
-| *(Unclassified)* | 47 | 49.5% |
+| *(Unclassified)* | 46 | 48.4% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Built in RBAC roles](https://learn.microsoft.com/en-us/azure/enclave/built-in-rbac-roles)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-15T22:13:00.000Z
-- [What is Azure Enclave?](https://learn.microsoft.com/en-us/azure/enclave/what-azure-enclave)
-  - Updated: 2026-08-06T22:11:00.000Z → 2026-09-02T08:00:00.000Z
-- [Azure Enclave Pricing](https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-pricing)
-  - Updated: 2026-08-06T22:11:00.000Z → 2026-09-07T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/enclave/whats-new)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-18T22:43:00.000Z
-- [Create a community](https://learn.microsoft.com/en-us/azure/enclave/create-community-portal)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-18T22:43:00.000Z
-- [Create an enclave](https://learn.microsoft.com/en-us/azure/enclave/create-enclave-portal)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-10T08:00:00.000Z
-- [Create a workload](https://learn.microsoft.com/en-us/azure/enclave/create-workload-portal)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-18T22:43:00.000Z
-- [Create a community endpoint](https://learn.microsoft.com/en-us/azure/enclave/create-community-endpoint-portal)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-16T22:18:00.000Z
-- [Create an enclave endpoint](https://learn.microsoft.com/en-us/azure/enclave/create-enclave-endpoint-portal)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-18T22:43:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/enclave/best-practices)
-  - Updated: 2026-08-27T09:10:00.000Z → 2026-09-16T08:00:00.000Z
-- [Create a community](https://learn.microsoft.com/en-us/azure/enclave/1-1-create-community)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-31T08:00:00.000Z
-- [Create enclaves inside a community](https://learn.microsoft.com/en-us/azure/enclave/1-2-create-enclaves-inside-community)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-03T08:00:00.000Z
-- [Create workloads inside an enclave](https://learn.microsoft.com/en-us/azure/enclave/1-3-create-workloads-inside-enclave)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-08T08:00:00.000Z
-- [Observability](https://learn.microsoft.com/en-us/azure/enclave/observability)
-  - Updated: 2026-08-27T22:11:00.000Z → 2026-09-15T22:13:00.000Z
-- [Role-based Access Controls (RBAC)](https://learn.microsoft.com/en-us/azure/enclave/role-based-access-controls)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-19T08:00:00.000Z
-- [Policy compliance exemptions](https://learn.microsoft.com/en-us/azure/enclave/policy-compliance-exemptions)
-  - Updated: 2026-08-06T22:11:00.000Z → 2026-09-15T22:13:00.000Z
-- [Configure customer managed key encryption](https://learn.microsoft.com/en-us/azure/enclave/configure-customer-managed-key-encryption-within-enclave)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-15T22:13:00.000Z
-- [Configure approvals](https://learn.microsoft.com/en-us/azure/enclave/configure-approvals)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-08-25T08:00:00.000Z
-- [Manage approvals](https://learn.microsoft.com/en-us/azure/enclave/manage-approvals)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-15T17:13:00.000Z
+- [Azure Enclave FAQs](https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq)
+  - Updated: 2026-08-11T08:00:00.000Z → 2026-09-22T17:11:00.000Z
+- [Get started with Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/onboard)
+  - Updated: 2026-08-27T09:10:00.000Z → 2026-09-22T17:11:00.000Z
+- [Create an enclave connection](https://learn.microsoft.com/en-us/azure/enclave/create-enclave-connection-portal)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-22T17:11:00.000Z
+- [Create an enclave endpoint and connection](https://learn.microsoft.com/en-us/azure/enclave/1-5-create-enclave-endpoint-connections)
+  - Updated: 2026-07-14T15:48:00.000Z → 2026-09-23T17:12:00.000Z
+- [Quotas and region availability](https://learn.microsoft.com/en-us/azure/enclave/quotas-region-availability)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-22T17:11:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Quotas and region availability](https://learn.microsoft.com/en-us/azure/enclave/quotas-region-availability) | limits-quotas | 0.90 | Explicitly documents default resource limits and region availability; includes tables with VM series examples and numeric quotas unique to Azure Enclave. |
+| [Quotas and region availability](https://learn.microsoft.com/en-us/azure/enclave/quotas-region-availability) | limits-quotas | 0.95 | The page documents Azure Enclave default resource limits and quotas, including specific numerical limits for VM sizes and regional availability details, which are product- and time-specific values not reliably known from training. |
 | [Troubleshoot guide](https://learn.microsoft.com/en-us/azure/enclave/troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting article with example errors and solutions; likely includes specific error messages, causes, and resolutions unique to Azure Enclave. |
 | [Naming rules and restrictions](https://learn.microsoft.com/en-us/azure/enclave/name-rules-restrictions-azure-enclave-resources) | limits-quotas | 0.85 | Summarizes naming rules and restrictions per resource provider; likely includes exact character limits, allowed patterns, and constraints that are specific and numeric. |
 | [Configure customer managed key encryption](https://learn.microsoft.com/en-us/azure/enclave/configure-customer-managed-key-encryption-within-enclave) | security | 0.82 | CMK configuration article details how to deploy customer-managed keys via a specific service catalog template and comply with Enclave’s default governance posture requiring CMK for all resources. It involves encryption modes, policy requirements, and product-specific security configuration, aligning with the security category. |
@@ -140,16 +111,17 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Create a user-assigned managed identity](https://learn.microsoft.com/en-us/azure/enclave/create-user-managed-identity) | security | 0.70 | Focuses on creating user-managed identities for enclave scenarios like encryption at rest; likely includes enclave-specific scope, role assignment, and least-privilege patterns. |
 | [Deploy VPN Connection from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-vpn-connection-service-catalog) | deployment | 0.70 | Describes site-to-site VPN from transit hub gateway to on-premises and optional customer-side VPN; likely includes Enclave-specific requirements (matching IPsec settings, pre-shared key) and connection resource constraints. |
 | [Disaster recovery planning](https://learn.microsoft.com/en-us/azure/enclave/disaster-recovery-planning) | decision-making | 0.70 | Provides a guide for client-side DR planning using Azure multi-region support; likely includes Enclave-specific recommendations, patterns, and trade-offs for resilience and availability. |
-| [Get started with Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/onboard) | security | 0.70 | Onboarding for Azure Enclave will include product-specific RBAC roles, required resource provider registrations, and permission scopes unique to Enclave environments. These are concrete security configuration details (which providers to register, which roles/permissions are needed) that go beyond generic Azure knowledge. |
+| [Get started with Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/onboard) | security | 0.70 | Onboarding Azure Enclave by 'registering required resource providers and configuring permissions' implies detailed RBAC and provider registration steps, including specific role names, scopes, and required permissions unique to Azure Enclave. This fits security-focused configuration of access and identity rather than generic setup. |
 | [Just-in-time access](https://learn.microsoft.com/en-us/azure/enclave/just-in-time-access) | security | 0.70 | The page describes configuring just-in-time access to Azure Enclave scopes using Microsoft Entra PIM and Azure RBAC. This involves product-specific security configuration: role assignments, scopes, and PIM settings for Enclave resources, which are detailed security patterns rather than generic concepts. |
 | [Maintenance mode](https://learn.microsoft.com/en-us/azure/enclave/maintenance-mode) | security | 0.70 | Describes how Azure Enclave uses deny assignments to protect managed resources and how maintenance mode interacts with RBAC permissions. This is product-specific security and access control behavior tied to a particular feature (maintenance mode), not just conceptual guidance. |
 | [Understand approvals](https://learn.microsoft.com/en-us/azure/enclave/understand-approvals) | configuration | 0.70 | Describes the Approvals feature, request queuing, and approver role; contains product-specific governance workflow and role behavior not generally known. |
 | [Understand creation and deletion logic](https://learn.microsoft.com/en-us/azure/enclave/create-and-delete-logic) | configuration | 0.70 | The page explains conditions, dependencies, and locks that must be satisfied before creating or deleting enclave resources and resource groups. These are detailed, product-specific operational and configuration rules not covered by generic Azure knowledge. |
 | [Observability](https://learn.microsoft.com/en-us/azure/enclave/observability) | configuration | 0.68 | Observability article describes specific logging destinations (Log Analytics, storage accounts), how they affect diagnostic settings and flow logs, and preparation of the NetworkWatcherRG resource group. This is product-specific configuration knowledge (what destinations are supported, how they interact) that goes beyond generic monitoring concepts, fitting the configuration category best. |
 | [Manage approvals](https://learn.microsoft.com/en-us/azure/enclave/manage-approvals) | configuration | 0.66 | Managing approvals article describes how users with the Enclave Approver Role review, approve, and reject requests, including role-specific capabilities and workflow behavior. These are product-specific operational and configuration details for the approvals feature, best mapped to configuration. |
-| [Azure Enclave FAQs](https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq) | troubleshooting | 0.65 | FAQ pages for a niche service typically include product-specific behaviors, constraints, and Q&A about billing, configuration, and connectivity that go beyond generic concepts. These often map symptoms or questions to specific answers and mitigations, which aligns closest with troubleshooting. Content is not just conceptual marketing but operational guidance. |
+| [Azure Enclave FAQs](https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq) | troubleshooting | 0.65 | FAQ pages for new Azure services typically include product-specific behaviors, constraints, and Q&A about symptoms and resolutions (for example, why connections fail, how billing behaves in edge cases, or what happens in specific configurations). These are organized around questions and answers that map to troubleshooting and operational nuances not obvious from general knowledge. |
 | [Azure Monitor Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/monitor-initiative) | security | 0.65 | Monitoring initiative documentation typically lists concrete Azure Policy definitions and required configurations for Azure Monitor components (logs, metrics, diagnostics) within an enclave, which are product-specific security and compliance guardrails. |
 | [Create Azure Virtual Desktop workloads](https://learn.microsoft.com/en-us/azure/enclave/create-azure-virtual-desktop-workloads) | configuration | 0.65 | The page discusses non-default access patterns, constraints around Azure Bastion, and how to set up AVD workloads in an enclave. This implies specific configuration steps and patterns unique to Azure Enclave and AVD rather than generic remote access guidance. |
+| [Create an enclave endpoint and connection](https://learn.microsoft.com/en-us/azure/enclave/1-5-create-enclave-endpoint-connections) | configuration | 0.65 | Creating enclave and community endpoint resources involves defining how inbound and outbound traffic is allowed, which typically includes endpoint configuration parameters (types of endpoints, allowed destinations, connection properties). These are product-specific settings that govern connectivity and are best categorized as configuration. |
 | [Deploy ExpressRoute Connection from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-express-route-connection-service-catalog) | deployment | 0.65 | Describes connecting transit hub ExpressRoute gateway to customer circuits; likely includes Enclave-specific requirements (existing circuit, private peering) and constraints for connection objects. |
 | [List of service catalog Templates](https://learn.microsoft.com/en-us/azure/enclave/list-service-catalog-templates) | configuration | 0.65 | A list of service catalog templates for specific Azure services implies detailed, product-specific deployment configurations (template names, parameters) that are not generally known; fits configuration-focused expert knowledge. |
 | [Move data inside an enclave](https://learn.microsoft.com/en-us/azure/enclave/move-data-inside-enclave) | architecture-patterns | 0.65 | Discusses default intra-enclave traffic behavior and strategies for initial data migration; likely includes Enclave-specific network patterns and trade-offs for moving data into isolated environments. |
@@ -169,7 +141,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Create Azure Enclave environment for workloads](https://learn.microsoft.com/en-us/azure/enclave/2-2-create-azure-enclave-environment) | 0.50 | Environment creation tutorial; summary mentions properly sized subnets and DNS zones but doesn’t clearly indicate numeric thresholds or configuration tables. |
-| [Create an enclave endpoint and connection](https://learn.microsoft.com/en-us/azure/enclave/1-5-create-enclave-endpoint-connections) | 0.50 | Tutorial for creating endpoint resources; summary is scenario-focused and doesn’t clearly expose detailed configuration parameters or numeric constraints. |
 | [Deploy Azure Virtual Desktop workload](https://learn.microsoft.com/en-us/azure/enclave/2-3-deploy-virtual-desktop-workload) | 0.50 | Tutorial for deploying AVD workload; summary is procedural and doesn’t explicitly show expert-only configuration parameters or limits. |
 | [Require approvals with Azure Enclave resources](https://learn.microsoft.com/en-us/azure/enclave/3-1-approvals-azure-enclave) | 0.50 | Approvals tutorial; summary focuses on workflow rather than detailed approval configuration parameters or RBAC roles. |
 | [Understand Domain Name Service](https://learn.microsoft.com/en-us/azure/enclave/understand-domain-name-service) | 0.50 | Describes DNS behavior when creating communities; summary is conceptual and doesn’t show specific DNS configuration parameters or ranges. |
@@ -177,7 +148,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Deploy Azure Container Registry from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-container-registry-service-catalog) | 0.45 | ACR deployment quickstart; warning about AKS template ordering is a minor gotcha but overall article is sample deployment without detailed configuration tables or quotas. |
 | [Deploy Virtual Machine from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-virtual-machine-service-catalog) | 0.45 | VM template with optional domain join and RemoteApp; while it mentions Azure Virtual Desktop RemoteApp, article is framed as demo deployment and likely lacks deep configuration tables or quotas. |
 | [Create a transit hub](https://learn.microsoft.com/en-us/azure/enclave/create-transit-hub-portal) | 0.40 | Transit hub creation tutorial; summary explains purpose and association but not detailed configuration parameters or constraints. |
-| [Create an enclave connection](https://learn.microsoft.com/en-us/azure/enclave/create-enclave-connection-portal) | 0.40 | Tutorial for creating enclave connections; summary is conceptual and procedural without specific numeric limits or config tables. |
 | [Deploy App Service Function App from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-app-service-function-app-service-catalog) | 0.40 | Function App deployment quickstart; sample/demo instructions without detailed product-specific configuration parameters beyond standard App Service knowledge. |
 | [Deploy App Service Web App from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-app-service-web-app-service-catalog) | 0.40 | Web App deployment quickstart; similar to other service catalog articles, focused on basic deployment steps rather than expert-level configuration or limits. |
 | [Deploy Azure Cosmos DB from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-cosmos-db-service-catalog) | 0.40 | Cosmos DB deployment quickstart; demo-focused and unlikely to include detailed Enclave-specific configuration or limits beyond standard Cosmos DB usage. |
@@ -197,6 +167,7 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Create a community endpoint](https://learn.microsoft.com/en-us/azure/enclave/create-community-endpoint-portal) | 0.30 | How-to for creating a community endpoint; appears to be procedural with minimal product-specific configuration details or numeric constraints. |
 | [Create a workload](https://learn.microsoft.com/en-us/azure/enclave/create-workload-portal) | 0.30 | Tutorial for creating workloads in portal; focuses on logical grouping and basic creation steps, not on configuration parameter tables or expert patterns. |
 | [Create an enclave](https://learn.microsoft.com/en-us/azure/enclave/create-enclave-portal) | 0.30 | Portal how-to for creating an enclave; summary suggests procedural guidance rather than detailed limits, configs, or troubleshooting content. |
+| [Create an enclave connection](https://learn.microsoft.com/en-us/azure/enclave/create-enclave-connection-portal) | 0.30 | Described as a how-to for creating an enclave connection in the Azure portal; likely a step-by-step UI tutorial without detailed configuration parameter tables, limits, or error-code-based troubleshooting. It focuses on basic creation rather than expert-only configuration details. |
 | [Create an enclave endpoint](https://learn.microsoft.com/en-us/azure/enclave/create-enclave-endpoint-portal) | 0.30 | Portal how-to for enclave endpoints; likely basic creation steps without detailed configuration matrices or expert troubleshooting mappings. |
 | [Create enclaves inside a community](https://learn.microsoft.com/en-us/azure/enclave/1-2-create-enclaves-inside-community) | 0.30 | Tutorial for creating enclaves inside a community; focuses on basic topology and creation steps, not on expert-only limits, configs, or decision matrices. |
 | [Create new Enclave Subnet](https://learn.microsoft.com/en-us/azure/enclave/create-new-enclave-subnet) | 0.30 | Page appears to be a procedural guide for replacing and creating subnets in an Azure Enclave virtual network. The summary indicates step-by-step instructions and a general constraint that subnets with attached resources can't be deleted, but does not suggest presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |

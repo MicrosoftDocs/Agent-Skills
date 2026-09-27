@@ -33,8 +33,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 17
+- **Updated Pages**: 0
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
 
@@ -48,11 +48,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 | *(Unclassified)* | 12 | 66.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
-  - Updated: 2026-09-03T17:13:00.000Z → 2026-09-18T08:00:00.000Z
 
 ## Classified Pages
 

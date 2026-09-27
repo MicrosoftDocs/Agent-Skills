@@ -3,7 +3,7 @@ name: azure-sentinel
 description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, analytics rules, playbooks, ASIM/UEBA, or Sentinel data lake jobs, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L119-L130 | Designing Microsoft Sentinel architectures: workspace/tenant layouts, SIEM patterns, BCDR/resiliency, data lake/graph designs, and coexisting with or migrating from other SIEMs. |
 | Limits & Quotas | L131-L143 | Limits, quotas, pricing, and availability of Sentinel features (rules, data lake, MCP), plus constraints and safe management of search jobs and watchlists, and removal implications. |
 | Security | L144-L163 | Configuring secure access, permissions, encryption, and RBAC for Microsoft Sentinel, including playbooks, data lake, storage connectors, SAP integration, and automated attack disruption across clouds. |
-| Configuration | L164-L298 | Configuring Microsoft Sentinel: data connectors and ASIM schemas, analytics rules, automation/playbooks, TI and SAP integrations, data lake jobs, health/auditing, and solution/workbook setup. |
-| Integrations & Coding Patterns | L299-L344 | Patterns and APIs for integrating Sentinel with logs, threat intel, MCP/AI tools, Logic Apps playbooks, data lake, connectors, and external platforms like AWS, Entra ID, Purview. |
-| Deployment | L345-L358 | Deploying and customizing Microsoft Sentinel content and solutions (rules, automation, notebooks, SAP, Copilot agents) via CI/CD, ARM templates, data lakes, and hybrid/on-prem onboarding. |
+| Configuration | L164-L297 | Configuring Microsoft Sentinel: data connectors and ASIM schemas, analytics rules, automation/playbooks, TI and SAP integrations, data lake jobs, health/auditing, and solution/workbook setup. |
+| Integrations & Coding Patterns | L298-L343 | Patterns and APIs for integrating Sentinel with logs, threat intel, MCP/AI tools, Logic Apps playbooks, data lake, connectors, and external platforms like AWS, Entra ID, Purview. |
+| Deployment | L344-L357 | Deploying and customizing Microsoft Sentinel content and solutions (rules, automation, notebooks, SAP, Copilot agents) via CI/CD, ARM templates, data lakes, and hybrid/on-prem onboarding. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -293,7 +293,6 @@ This skill requires **network access** to fetch documentation content:
 | Use watchlists in KQL queries and detection rules | https://learn.microsoft.com/en-us/azure/sentinel/watchlists-queries |
 | Select Windows security event sets for Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/windows-security-event-id-reference |
 | Query STIX objects and migrate to new TI tables in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators |
-| Manage and visualize threat intelligence in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/work-with-threat-indicators |
 | Provision and operate Sentinel workspace manager at scale | https://learn.microsoft.com/en-us/azure/sentinel/workspace-manager |
 
 ### Integrations & Coding Patterns

@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 121
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 122
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-documentdb/azure-documentdb.csv`
 
 ## Classification Statistics
@@ -72,15 +72,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | *(Unclassified)* | 30 | 24.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migration options](https://learn.microsoft.com/en-us/azure/documentdb/migration-options)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-09-15T17:13:00.000Z
-
-### Deleted Pages
-
-- ~~Online migration tools~~ (https://learn.microsoft.com/en-us/azure/documentdb/migration-options)
 
 ## Classified Pages
 

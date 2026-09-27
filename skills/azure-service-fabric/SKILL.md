@@ -1,9 +1,9 @@
 ---
 name: azure-service-fabric
-description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy, backups, or CI/CD upgrades, and other Azure Service Fabric related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API gateways, CI/CD upgrades, or sfctl automation, and other Azure Service Fabric related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Fabric Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L107-L120 | Designing Service Fabric cluster architecture: cross-AZ replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation, metrics balancing, networking, and API gateway patterns. |
 | Limits & Quotas | L121-L125 | Configuring Service Fabric app upgrade settings: health policies, rolling upgrade behavior, monitoring, and timeout parameters to control safe, reliable deployments. |
 | Security | L126-L182 | Securing Service Fabric clusters and apps: certificates, Microsoft Entra auth, managed identities, secrets, disk encryption, policies, remoting/WCF/HTTPS security, and production best practices. |
-| Configuration | L183-L302 | Configuring and operating Service Fabric: cluster/network settings, scaling, backups, monitoring/telemetry, manifests, containers, actors, reverse proxy, and test/fault tools. |
-| Integrations & Coding Patterns | L303-L339 | Patterns and tools for integrating Service Fabric apps with Azure services, APIs, containers, remoting stacks, and managing clusters/apps via sfctl, PowerShell, and EventStore APIs |
-| Deployment | L340-L401 | Deploying, upgrading, scaling, and migrating Service Fabric clusters and applications (managed, classic, standalone), including CI/CD, identities, networking, zones, and maintenance controls. |
+| Configuration | L183-L303 | Configuring Service Fabric clusters, apps, networking, scaling, monitoring, backups, manifests, actors, containers, and tooling (CLI/IDE) across Azure managed and standalone environments. |
+| Integrations & Coding Patterns | L304-L340 | Patterns and tools for integrating Service Fabric apps with Azure services, APIs, containers, remoting stacks, and managing clusters/apps via sfctl, PowerShell, and EventStore APIs |
+| Deployment | L341-L402 | Deploying, upgrading, scaling, and migrating Service Fabric clusters and applications (managed, classic, standalone), including CI/CD, identities, networking, zones, and maintenance controls. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -193,6 +193,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure autoscaling policies for Service Fabric managed clusters | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-autoscale |
 | Configure Azure Service Fabric managed cluster settings | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-configuration |
 | Deploy Service Fabric managed clusters with a subnet per node type | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-deploy-with-subnet-per-nodetype |
+| Configure inbound NAT Rules V2 for Service Fabric managed clusters | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-inbound-nat-rules-v2 |
 | Configure large VM scale sets for Service Fabric secondary node types | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-large-virtual-machine-scale-sets |
 | Modify node type configuration in Service Fabric managed clusters | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-modify-node-type |
 | Configure NAT gateway for Service Fabric managed clusters | https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-nat-gateway |

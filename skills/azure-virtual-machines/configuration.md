@@ -70,18 +70,16 @@
 | Configure VM Snapshot Windows extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-windows |
 | Use Azure FPGA Attestation service for NP-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/field-programmable-gate-arrays-attestation |
 | Configure Azure Monitor VM availability metric with Flash | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
-| Enable and configure Azure Write Accelerator | https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator |
-| Understand HX-series VM architecture and topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview |
 | Identify Azure-hosted VMs via SMBIOS asset tag | https://learn.microsoft.com/en-us/azure/virtual-machines/identify-azure-vm-from-guest |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
-| Install AMD GPU drivers on Azure N-series Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
 | Create and upload CentOS-based VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
 | Create and encrypt Linux VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart |
 | Encrypt Linux VM disks via Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-portal-quickstart |
 | Create and encrypt Linux VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-powershell-quickstart |
 | Configure direct upload and cross-region copy for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-upload-vhd-to-managed-disk-cli |
+| Expand and resize Linux VM disks in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks |
 | Use Flatcar Container Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd |
 | Configure Azure VM Image Builder with Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder |
 | Author Bicep and ARM templates for Azure Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-json |
@@ -100,13 +98,11 @@
 | Manage and restore Azure VMs from restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/manage-restore-points |
 | Export Compute Gallery image versions to managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disk-from-image-version |
 | Configure Marketplace purchase plans for gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/marketplace-images |
-| Configure in-place SCSI to NVMe conversion for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/scsi-to-nvme-migration |
+| Configure and run Azure NVMe conversion script | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/scsi-to-nvme-migration |
 | Reference monitoring metrics and logs for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
 | Convert Azure Linux VM disks from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
 | Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |
 | Configure InfiniBand networking on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-infiniband |
-| Configure MPI for RDMA-enabled Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |
-| Configure MPI for RDMA-capable Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |
 | Create and store SSH keys with Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-azure-cli |
 | Configure and manage SSH keys in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-portal |
 | List, update, and delete Compute Gallery resources | https://learn.microsoft.com/en-us/azure/virtual-machines/update-image-resources |
@@ -116,6 +112,7 @@
 | Configure Maintenance control for VM scale set OS upgrades in the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-portal |
 | Use PowerShell to manage Maintenance control for VM scale set OS upgrades | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-powershell |
 | Define Maintenance control for VM scale sets using ARM templates | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-template |
+| Configure and use Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points |
 | Create Azure VM restore points using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-powershell |
 | Configure cross-region copy of Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-copy |
 | Configure VM Snapshot extension for restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-vm-snapshot-extension |
@@ -126,9 +123,9 @@
 | Create and encrypt Windows VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-cli-quickstart |
 | Encrypt Windows VM disks via Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-portal-quickstart |
 | Create and encrypt Windows VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-powershell-quickstart |
+| Expand OS and data disks on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/expand-disks |
 | Configure Azure Diagnostics Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/extensions-diagnostics |
 | Set up time sync for AD domain Windows VMs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/external-ntpsource-configuration |
-| Configure AMD GPU drivers on Azure N-series Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-amd-driver-setup |
 | Configure NVIDIA GPU drivers on Azure N-series Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
 | Use Run Command to execute scripts on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command |
 | Configure managed Run Command for Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command-managed |

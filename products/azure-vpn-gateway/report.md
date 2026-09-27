@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 5
-- **Unchanged**: 101
-- **Deleted Pages**: 16
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 112
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
@@ -75,47 +75,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 28 | 25.0% |
 
 ## Changes
-
-### New Pages
-
-- [IPv6 dual stack connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-ipv6-azure)
-- [Configure BGP for a VPN gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/configure-bgp)
-- [Certificate authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway)
-- [Configure Azure VPN Client](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client)
-- [Configure device SSO for Windows](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-windows-device-sso)
-- [VPN client configuration](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius)
-
-### Updated Pages
-
-- [About cryptographic requirements](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-compliance-crypto)
-  - Updated: 2024-01-28T12:21:00.000Z → 2026-08-19T08:00:00.000Z
-- [About site-to-site VPN connections with certificate authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-about)
-  - Updated: 2026-07-15T22:16:00.000Z → 2026-09-17T17:12:00.000Z
-- [Change a gateway to active-active or active-standby](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-change-active-active)
-  - Updated: 2024-12-06T18:02:00.000Z → 2026-09-16T11:51:00.000Z
-- [About point-to-site VPN](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about)
-  - Updated: 2026-07-01T23:48:00.000Z → 2026-08-17T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-radius-gateway)
-  - Updated: 2026-06-08T08:00:00.000Z → 2026-09-17T04:41:00.000Z
-
-### Deleted Pages
-
-- ~~Azure CLI~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/bgp-how-to-cli)
-- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/bgp-howto)
-- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/ipv6-configuration)
-- ~~Azure VPN Client - Linux~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-linux)
-- ~~Azure VPN Client - macOS~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-mac)
-- ~~Microsoft-registered authentication~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-windows)
-- ~~Configure Device SSO~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-vpn-client-windows-device-sso)
-- ~~Certificate authentication clients~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-certificate)
-- ~~Other authentication protocols~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-other)
-- ~~Password authentication clients~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius-password)
-- ~~Azure CLI~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-cli)
-- ~~Certificate authentication~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-portal)
-- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-powershell)
-- ~~Azure CLI~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-ipv6-azure-cli)
-- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-ipv6-azure-powershell)
-- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-bgp-resource-manager-ps)
 
 ## Classified Pages
 

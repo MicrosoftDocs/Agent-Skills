@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 142
+- **Updated Pages**: 0
+- **Unchanged**: 143
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 43 | 30.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues)
-  - Updated: 2026-08-11T08:00:00.000Z → 2026-09-14T08:00:00.000Z
 
 ## Classified Pages
 

@@ -47,9 +47,9 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 76
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 77
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
 ## Classification Statistics
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | *(Unclassified)* | 50 | 64.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records)
-  - Updated: 2025-12-18T08:00:00.000Z → 2026-09-14T17:12:00.000Z
-
-### Deleted Pages
-
-- ~~Private DNS resiliency~~ (https://learn.microsoft.com/en-us/azure/dns/private-dns-resiliency)
 
 ## Classified Pages
 

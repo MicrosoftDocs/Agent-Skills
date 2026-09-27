@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-09-27'
 category_descriptions:
   decision-making: Guidance on choosing NC2 on Azure regions and VM SKUs, including
     capacity, performance, availability, and cost considerations for deployment planning.
@@ -28,8 +28,8 @@ confusable_not_for: Not for Azure VMware Solution (use azure-vmware-solution), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 5
+- **Updated Pages**: 1
+- **Unchanged**: 4
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nutanix/azure-nutanix.csv`
 
@@ -41,6 +41,11 @@ confusable_not_for: Not for Azure VMware Solution (use azure-vmware-solution), A
 | *(Unclassified)* | 4 | 80.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Get started](https://learn.microsoft.com/en-us/azure/nutanix/get-started)
+  - Updated: 2026-05-26T22:16:00.000Z → 2026-09-24T22:17:00.000Z
 
 ## Classified Pages
 
@@ -54,5 +59,5 @@ confusable_not_for: Not for Azure VMware Solution (use azure-vmware-solution), A
 |-----------|------------|--------|
 | [FAQ](https://learn.microsoft.com/en-us/azure/nutanix/faq) | 0.30 | FAQ likely mixes general questions and answers; summary doesn’t show presence of specific error codes, configuration tables, or numeric limits. Without clear evidence of such details, it’s treated as non-expert overview/support content. |
 | [Architecture](https://learn.microsoft.com/en-us/azure/nutanix/architecture) | 0.20 | Architecture description of BareMetal infrastructure is primarily conceptual; summary doesn’t indicate decision matrices, numeric thresholds, or detailed configuration tables unique to deployment choices. |
+| [Get started](https://learn.microsoft.com/en-us/azure/nutanix/get-started) | 0.20 | Page is a getting-started guide for NC2 on Azure (sign-up, setup, free trial). Based on description, it is likely an introductory/tutorial-style document without detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
 | [About Nutanix Cloud Clusters on Azure](https://learn.microsoft.com/en-us/azure/nutanix/about-nc2-on-azure) | 0.10 | High-level overview of NC2 on Azure features and benefits; no specific limits, configuration tables, error codes, or product-specific numeric thresholds. |
-| [Get started](https://learn.microsoft.com/en-us/azure/nutanix/get-started) | 0.10 | Get-started guide focused on sign-up and initial use; summary suggests tutorial/onboarding content without detailed limits, configuration parameters, or troubleshooting mappings. |
