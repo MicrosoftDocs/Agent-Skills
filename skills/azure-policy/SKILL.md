@@ -1,9 +1,9 @@
 ---
 name: azure-policy
-description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when authoring JSON policies, deploying guest configs, enforcing security baselines, or using policy-as-code, and other Azure Policy related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure Security (use azure-security).
+description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when authoring Azure Policy JSON, deploying via ARM/Bicep/Terraform, enforcing security baselines, automating CI/CD, or using Machine Configuration, and other Azure Policy related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Policy Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L50 | Best practices for safely testing and deploying Azure Policy and Machine/Guest Configuration, including PSDSC behavior changes, impact evaluation, and safe rollout strategies. |
 | Decision Making | L51-L58 | Guidance on planning migrations from DSC/Automanage to Machine Configuration/Azure Policy and choosing recommended policy definitions for managing and securing VMs. |
 | Architecture & Design Patterns | L59-L63 | Designing Azure Policy-as-Code workflows, integrating with CI/CD, GitOps, and approvals, and structuring policy repos, environments, and automation for scalable governance. |
-| Security | L64-L168 | Using Azure Policy and Machine Configuration for security baselines, OS/CIS hardening, MFA enforcement, and mapping/regulatory compliance for many standards (NIST, ISO, PCI, HIPAA, FedRAMP, etc.). |
+| Security | L64-L168 | Using Azure Policy for security/compliance: deploying security baselines, mapping to standards (CIS, NIST, ISO, PCI, FedRAMP, etc.), and enforcing regulatory and MFA requirements. |
 | Configuration | L169-L208 | Designing, assigning, and managing Azure Policy and Machine Configuration: JSON structures, effects, guest config packages, compliance data, remediation, tags, identities, and exemptions. |
 | Integrations & Coding Patterns | L209-L238 | Patterns for writing reusable Azure Policy definitions (operators, fields, effects, tags, initiatives) and integrating/automating them via Terraform, Kubernetes/Gatekeeper, VS Code, Event Grid, and Resource Graph |
 | Deployment | L239-L249 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish them to storage, export policy for policy-as-code, and enforce Azure Policy in DevOps pipelines |
@@ -83,14 +83,14 @@ This skill requires **network access** to fetch documentation content:
 | Align CIS Azure 1.4.0 controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-4-0 |
 | Align CIS Azure 2.0.0 controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0 |
 | Align CIS Azure 2.0.0 controls with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0 |
-| Apply CIS benchmarks to AlmaLinux via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/alma-ado |
+| Enforce CIS benchmarks on AlmaLinux via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/alma-ado |
 | Apply CIS benchmarks to AKS Optimized Azure Linux | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/azure-linux-ado |
-| Apply CIS benchmarks to Debian via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/debian-ado |
-| Apply CIS benchmarks to Oracle Linux via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/oracle-ado |
+| Configure CIS benchmarks for Debian via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/debian-ado |
+| Enforce CIS benchmarks on Oracle Linux with Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/oracle-ado |
 | Apply CIS benchmarks to RHEL via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rhel-ado |
-| Apply CIS benchmarks to Rocky Linux via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rocky-ado |
+| Configure CIS benchmarks for Rocky Linux in Azure | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/rocky-ado |
 | Apply CIS benchmarks to SUSE Linux Enterprise | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/suse-ado |
-| Apply CIS benchmarks to Ubuntu via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/ubuntu-ado |
+| Enforce CIS benchmarks on Ubuntu via Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-linux/ubuntu-ado |
 | Map CMMC Level 3 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3 |
 | Map CMMC Level 3 controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3 |
 | Map FedRAMP High controls to Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/fedramp-high |
@@ -121,7 +121,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Policy to meet NIST SP 800-53 R5 in Azure Government | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5 |
 | Map SOC 2 controls to Azure Policy initiatives in Azure Government | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2 |
 | Map SOC 2 controls to Azure Policy initiatives in Azure Government | https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2 |
-| Apply CIS Linux security benchmarks via Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-cis-linux |
+| Apply CIS Linux security baselines with Azure Policy | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-cis-linux |
 | Use Docker security baseline with Azure Policy guest configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-docker |
 | Use Linux security baseline with Azure Policy guest configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-linux |
 | Apply Windows Server security baseline via guest configuration | https://learn.microsoft.com/en-us/azure/governance/policy/samples/guest-configuration-baseline-windows |

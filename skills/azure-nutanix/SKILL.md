@@ -3,7 +3,7 @@ name: azure-nutanix
 description: Expert knowledge for Azure Nutanix development including decision making. Use when selecting NC2 on Azure regions, VM SKUs, and planning capacity, performance, availability, or cost, and other Azure Nutanix related development tasks. Not for Azure VMware Solution (use azure-vmware-solution), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Nutanix Skill

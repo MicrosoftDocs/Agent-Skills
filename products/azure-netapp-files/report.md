@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   limits-quotas: 'Limits, quotas, and performance of Azure NetApp Files: volume size/throughput,
-    cache limits, inodes/maxfiles, user/group quotas, directory metadata, file/path
-    limits, and benchmark-based tuning.'
+    cache limits, maxfiles, quotas (user/group/LDAP), directory and path limits, and
+    performance benchmarks for SAP, Oracle, Linux, and AVS.'
   deployment: Deploying and configuring Azure NetApp Files for SAP HANA and Oracle
     (AVGs, HSR, DR, backups), managing cross-region replication, zone changes, ONTAP
     migration, and regional access.
@@ -19,43 +19,43 @@ category_descriptions:
   best-practices: 'Performance and configuration best practices for Azure NetApp Files:
     tuning Linux/SMB/NFS, VM and AVS choices, Oracle/AVD setups, quotas, cloning,
     AzAcSnap, Terraform, and benchmarking.'
-  troubleshooting: 'Diagnosing and fixing Azure NetApp Files issues: networking, NFS/SMB
-    auth and locks, latency, capacity pools, snapshots, CMK encryption, app volume
-    groups, and provider/volume errors.'
+  troubleshooting: 'Diagnosing and fixing Azure NetApp Files issues: networking, NFS/SMB/LDAP/auth,
+    capacity pools, snapshots, replication, latency, volume/provider errors, and encryption
+    or AzAcSnap problems.'
   decision-making: 'Cost, performance, and protection design for Azure NetApp Files:
     choosing service levels, volume types, replication and backup options, reservations,
     SMB CA, cool access, and SQL Server TCO.'
-  security: 'Security, encryption, and access control for Azure NetApp Files: keys
-    (CMK/HSM/double), Kerberos/LDAP/AD, NFS/SMB permissions, ransomware protection,
-    and secure API/control-plane configuration.'
+  security: 'Securing Azure NetApp Files: encryption (CMK/HSM/double), Kerberos/LDAP/AD/Entra
+    auth, NFS/SMB ACLs and permissions, ransomware protection, and policy/control-plane
+    hardening.'
 skill_description: Expert knowledge for Azure NetApp Files development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  deploying ANF for SAP HANA/Oracle AVGs, AVS datastores, cross-region replication,
-  AzAcSnap, or REST/PowerShell APIs, and other Azure NetApp Files related development
-  tasks. Not for Azure Files (use azure-files), Azure Blob Storage (use azure-blob-storage),
+  deploying ANF for SAP HANA/Oracle, AVS datastores, AzAcSnap, REST/PowerShell APIs,
+  or cross-region replication, and other Azure NetApp Files related development tasks.
+  Not for Azure Files (use azure-files), Azure Virtual Machines (use azure-virtual-machines),
   Azure Managed Lustre (use azure-managed-lustre), Azure Elastic SAN (use azure-elastic-san).
-use_when: Use when deploying ANF for SAP HANA/Oracle AVGs, AVS datastores, cross-region
-  replication, AzAcSnap, or REST/PowerShell APIs, and other Azure NetApp Files related
-  development tasks.
-confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (use
-  azure-blob-storage), Azure Managed Lustre (use azure-managed-lustre), Azure Elastic
-  SAN (use azure-elastic-san).
+use_when: Use when deploying ANF for SAP HANA/Oracle, AVS datastores, AzAcSnap, REST/PowerShell
+  APIs, or cross-region replication, and other Azure NetApp Files related development
+  tasks.
+confusable_not_for: Not for Azure Files (use azure-files), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Managed Lustre (use azure-managed-lustre), Azure
+  Elastic SAN (use azure-elastic-san).
 ---
 # Azure NetApp Files Crawl Report
 
 ## Summary
 
-- **Total Pages**: 237
-- **Fetched**: 237
+- **Total Pages**: 241
+- **Fetched**: 241
 - **Fetch Failed**: 0
-- **Classified**: 167
-- **Unclassified**: 70
+- **Classified**: 170
+- **Unclassified**: 71
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 233
+- **New Pages**: 4
+- **Updated Pages**: 6
+- **Unchanged**: 231
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -64,36 +64,48 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 2.1% |
-| best-practices | 17 | 7.2% |
-| configuration | 38 | 16.0% |
-| decision-making | 10 | 4.2% |
+| best-practices | 17 | 7.1% |
+| configuration | 38 | 15.8% |
+| decision-making | 10 | 4.1% |
 | deployment | 11 | 4.6% |
 | integrations | 11 | 4.6% |
-| limits-quotas | 23 | 9.7% |
-| security | 34 | 14.3% |
-| troubleshooting | 18 | 7.6% |
-| *(Unclassified)* | 70 | 29.5% |
+| limits-quotas | 23 | 9.5% |
+| security | 36 | 14.9% |
+| troubleshooting | 19 | 7.9% |
+| *(Unclassified)* | 71 | 29.5% |
 
 ## Changes
 
+### New Pages
+
+- [Manage Microsoft Entra Kerberos authentication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-entra-kerberos-authentication-for-hybrid-cloud-identities)
+- [Understand Microsoft Entra ID hybrid and cloud-only identities](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-entra-id)
+- [Troubleshoot Microsoft Entra Kerberos authentication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-entra-kerberos-authentication)
+- [Manage data restores](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-manage-data-restores)
+
 ### Updated Pages
 
-- [Requirements and considerations for large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations)
-  - Updated: 2026-09-01T05:17:00.000Z → 2026-09-17T05:34:00.000Z
-- [Dynamically change the service level of a volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/dynamic-change-volume-service-level)
-  - Updated: 2025-09-03T17:13:00.000Z → 2026-09-15T05:12:00.000Z
-- [Requirements and considerations for Azure NetApp Files cache volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cache-requirements)
-  - Updated: 2026-07-21T06:10:00.000Z → 2026-09-17T05:34:00.000Z
-- [Networking FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-networking)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-09-17T11:41:00.000Z
+- [Resource limits for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits)
+  - Updated: 2026-04-14T08:00:00.000Z → 2026-09-24T17:11:00.000Z
+- [Understand large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes)
+  - Updated: 2026-06-03T11:36:00.000Z → 2026-09-24T17:11:00.000Z
+- [Understand maxfiles](https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept)
+  - Updated: 2026-01-29T18:11:00.000Z → 2026-09-25T08:00:00.000Z
+- [Benefits of using Azure NetApp Files for Electronic Design Automation (EDA)](https://learn.microsoft.com/en-us/azure/azure-netapp-files/solutions-benefits-azure-netapp-files-electronic-design-automation)
+  - Updated: 2026-06-26T11:45:00.000Z → 2026-09-24T17:11:00.000Z
+- [Large volume breakthrough mode performance benchmarks for Linux](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volume-breakthrough-mode-linux)
+  - Updated: 2025-11-06T20:01:00.000Z → 2026-09-24T17:11:00.000Z
+- [Restore a backup to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-restore-new-volume)
+  - Updated: 2026-01-29T18:11:00.000Z → 2026-09-22T17:11:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Resource limits for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits) | limits-quotas | 0.95 | Page explicitly describes Azure NetApp Files resource limits and how to request increases; this is product-specific numeric quota information that changes over time and is unlikely to be known from training. |
+| [Resource limits for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits) | limits-quotas | 0.95 | Resource limits page for Azure NetApp Files will list concrete numeric limits (capacity, volumes per subscription, throughput, etc.) and how to request increases. These exact values and procedures are not generally known and match the limits-quotas criteria. |
 | [Requirements and considerations for large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations) | limits-quotas | 0.90 | Page provides precise numerical size ranges (for standard and breakthrough modes, plus cool access up to 7.2 PiB) and feature requirements that are product-specific limits not inferable from general training data. |
 | [Troubleshoot AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting article for AzAcSnap; will map specific errors and symptoms (communication failures, test failures) to causes and resolutions. |
+| [Troubleshoot Microsoft Entra Kerberos authentication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-entra-kerberos-authentication) | troubleshooting | 0.90 | Page is organized around specific Microsoft Entra Kerberos authentication errors for Azure NetApp Files, with concrete error messages and corresponding causes and resolutions, matching the troubleshooting criteria of symptom → diagnosis → solution. |
 | [Troubleshoot Resource Provider errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-troubleshoot-resource-provider-errors) | troubleshooting | 0.90 | Lists common Resource Provider errors with causes, solutions, and workarounds, clearly fitting the troubleshooting category. |
 | [Troubleshoot SMB authentication and CIFS password reset failures](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-authentication-password-reset-failure) | troubleshooting | 0.90 | Explicitly a troubleshooting article organized by symptoms, causes, and resolutions for SMB authentication and CIFS password reset failures. It will contain Azure NetApp Files–specific error messages, diagnostic steps, and remediation actions that are not generic debugging advice. |
 | [Troubleshoot application volume group errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-application-volume-groups) | troubleshooting | 0.90 | Explicitly organized around specific application volume group error/warning conditions and their resolutions, which are product-specific symptom→cause→solution mappings. |
@@ -102,8 +114,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | [Troubleshoot snapshot policy errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-snapshot-policies) | troubleshooting | 0.90 | Focuses on concrete snapshot policy error messages and how to resolve them, matching the troubleshooting pattern of error→diagnosis→fix for this specific service. |
 | [Troubleshoot volume errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-volumes) | troubleshooting | 0.90 | The page is organized around specific Azure NetApp Files volume error messages and their resolutions, including product-specific behaviors (for example, CRUD operations failing when a volume isn't in a terminal state) and guidance on how to check states before subsequent operations. This matches the troubleshooting criteria of symptom → cause → solution with service-specific details. |
 | [Understand auxiliary/supplemental groups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/auxiliary-groups) | limits-quotas | 0.90 | Contains explicit numeric limits (16, 32, 1,024 auxiliary groups) and how Azure NetApp Files extends protocol limits; classic limits-quotas content. |
-| [Understand large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes) | limits-quotas | 0.90 | The page explicitly contrasts regular and large Azure NetApp Files volumes and lists their specific limits (capacity, file counts, and other numeric constraints). These are product-specific numerical limits and quotas that an LLM would not reliably know from training, matching the limits-quotas criteria. |
-| [Understand maxfiles](https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept) | limits-quotas | 0.90 | Describes maxfiles as a limit tied to volume size and provides guidelines for dynamic adjustment; numeric quota behavior and out-of-space implications. |
+| [Understand large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes) | limits-quotas | 0.90 | The article explicitly contrasts regular vs large volume limits and describes requirements and constraints for large volumes. It contains specific numeric limits for each volume type, which are expert, product-specific quota details. |
+| [Understand maxfiles](https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept) | limits-quotas | 0.90 | The page explains how the maxfiles value is derived from volume size and provides concrete guidelines mapping quota to maxfiles. These are specific numeric limits and behaviors (quota → inode count) that qualify as limits-quotas expert knowledge. |
 | [Understand resizing guidelines for Azure NetApp Files cache volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cache-volumes-resize-guidelines) | limits-quotas | 0.90 | Explicitly mentions a table showing constituent volume count, minimum and maximum cache volume size, and resize ranges per service level. These are precise numerical limits and ranges tied to tiers, matching the limits-quotas criteria. |
 | [Troubleshoot latency issues](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-latency-issues) | troubleshooting | 0.86 | The article is organized as a step-by-step workflow for diagnosing elevated latency on Azure NetApp Files volumes, mapping symptoms (high latency, throughput issues, cool-tier retrieval delays) to likely causes (throughput limits, tier behavior, client/network/app configuration) and remediation actions. It contains product-specific troubleshooting guidance and patterns unique to Azure NetApp Files rather than generic debugging advice. |
 | [Understand regional capacity quota](https://learn.microsoft.com/en-us/azure/azure-netapp-files/regional-capacity-quota) | limits-quotas | 0.86 | A page specifically about 'regional capacity quota' for Azure NetApp Files is very likely to list concrete regional capacity limits, quota values, and possibly per-region or per-subscription caps. These are numeric, service-specific constraints that change over time and are not reliably known from pretraining, matching the limits-quotas category. |
@@ -127,6 +139,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | [Configure AD DS LDAP authentication for NFS volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-ldap-over-tls) | security | 0.78 | The page describes detailed, product-specific steps and configuration requirements to enable LDAP over TLS between Azure NetApp Files volumes and AD DS, including certificate handling and security-related settings. These are concrete security configuration patterns unique to Azure NetApp Files rather than generic LDAP/TLS concepts. |
 | [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-customer-managed-keys) | security | 0.78 | The page provides product-specific security configuration details for using customer-managed keys with Azure NetApp Files, including how managed identities are granted permissions to keys, required Azure Key Vault setup, and specific role/permission relationships. These are concrete, service-specific security patterns rather than generic concepts. |
 | [Create and manage Active Directory connections](https://learn.microsoft.com/en-us/azure/azure-netapp-files/create-active-directory-connections) | configuration | 0.78 | An article on creating/managing AD connections for Azure NetApp Files will contain product-specific configuration parameters (domain names, OU paths, service accounts, required ports, Kerberos options, SMB/NFS-specific settings). These are detailed configuration options unique to this service and qualify as expert knowledge beyond generic AD integration concepts. |
+| [Large volume breakthrough mode performance benchmarks for Linux](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volume-breakthrough-mode-linux) | limits-quotas | 0.78 | The page documents tested performance capabilities (throughput, IOPS, latency) for a single Azure NetApp Files large volume in breakthrough mode on Linux, providing concrete numeric performance envelopes that are effectively product-specific limits for sizing and planning. These detailed benchmark numbers and envelopes are not generally known from training data and align best with limits-quotas, as they define practical upper bounds and constraints for the service. |
+| [Manage Microsoft Entra Kerberos authentication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-entra-kerberos-authentication-for-hybrid-cloud-identities) | security | 0.78 | The page provides product-specific security configuration steps for enabling Microsoft Entra Kerberos authentication with Azure NetApp Files, including detailed settings for hybrid and cloud-only identities (e.g., required identity types, directory sync requirements, and service-specific configuration values). These are concrete, implementation-focused security details that go beyond generic Kerberos or Entra ID knowledge. |
 | [Performance FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-performance) | limits-quotas | 0.78 | A performance FAQ for a storage service typically documents concrete throughput, IOPS, latency expectations, and per-volume or per-capacity-pool limits (for example, MB/s per TiB, max IOPS per volume, or performance caps by service level). These are numeric, product-specific constraints that an LLM is unlikely to know precisely from training, fitting the limits-quotas category. |
 | [Understand Azure NetApp Files control plane security](https://learn.microsoft.com/en-us/azure/azure-netapp-files/control-plane-security) | security | 0.78 | Control-plane security documentation for Azure NetApp Files is likely to include specific RBAC roles, permission scopes, and possibly required Azure AD configurations that govern who can create, modify, or delete NetApp resources. These are product-specific security settings and role names that an LLM would not reliably know from training, so this is expert security configuration knowledge. |
 | [--runbefore or --runafter](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-cmd-ref-runbefore-runafter) | integrations | 0.75 | Documents the --runbefore and --runafter options of azacsnap, which are specific integration parameters and patterns for coordinating snapshots with workloads. |
@@ -134,7 +148,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | [Access volumes with an S3-compatible client](https://learn.microsoft.com/en-us/azure/azure-netapp-files/object-rest-api-browser) | integrations | 0.75 | Details using S3 Browser and AWS CLI with ANF object REST API, including certificate installation and likely endpoint/parameter specifics. |
 | [Configure NFSv4.1 Kerberos encryption](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-kerberos-encryption) | security | 0.75 | Covers Kerberos modes (krb5, krb5i, krb5p), AES-256 support, and required ANF-specific configuration steps; security-focused with concrete mode values. |
 | [Connect to Azure Databricks](https://learn.microsoft.com/en-us/azure/azure-netapp-files/object-rest-api-databricks) | integrations | 0.75 | Describes Databricks init script configuration to load SSL certificates for ANF object REST API; includes integration-specific parameters and patterns. |
-| [Large volume breakthrough mode performance benchmarks for Linux](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volume-breakthrough-mode-linux) | limits-quotas | 0.75 | Breakthrough mode benchmarks define concrete performance ceilings and behavior under specific configurations, representing detailed service limits. |
 | [Large volume performance benchmarks for Linux](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volumes-linux) | limits-quotas | 0.75 | Large volume benchmark documentation provides specific maximum throughput/IOPS and scaling behavior, which are numeric performance limits unique to the service. |
 | [SMB performance best practices](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-smb-performance) | best-practices | 0.75 | SMB performance tuning for this service will include specific client/server settings, registry or mount options, and patterns unique to Azure NetApp Files SMB workloads. |
 | [Understand the allow local NFS users with LDAP option](https://learn.microsoft.com/en-us/azure/azure-netapp-files/lightweight-directory-access-protocol-local-users) | security | 0.75 | Details how Azure NetApp Files resolves NFS user IDs via LDAP and the impact of extended group memberships; product-specific authentication behavior and options. |
@@ -211,6 +224,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | [Understand Azure NetApp Files backup](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-introduction) | decision-making | 0.70 | Backup intro for this service includes supported regions, cost model, and feature behavior, helping decide when and how to use the backup service versus snapshots. |
 | [Understand Azure NetApp Files replication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/replication) | decision-making | 0.70 | Page is explicitly about understanding cross-zone, cross-region, and cross-zone-region replication options to decide which fits a reliability plan. This is product-specific decision guidance between options, likely with scenario-based recommendations and trade-offs, but not primarily limits tables or configuration parameters. |
 | [Understand Kerberos](https://learn.microsoft.com/en-us/azure/azure-netapp-files/kerberos) | security | 0.70 | Product-specific description of how Kerberos is applied, including KDC interactions and protocol behavior for Azure NetApp Files. |
+| [Understand Microsoft Entra ID hybrid and cloud-only identities](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-entra-id) | security | 0.70 | Page provides product-specific guidance on using Microsoft Entra Kerberos with Azure NetApp Files SMB volumes, including recommendations for hybrid vs cloud-only identities and deployment strategy. This is detailed security/identity configuration guidance specific to this service, beyond generic concepts. |
 | [Understand NAS file permissions](https://learn.microsoft.com/en-us/azure/azure-netapp-files/network-attached-file-permissions) | security | 0.70 | Explains product-specific interaction between file/folder and share permissions, including precedence rules; directly tied to access control configuration. |
 | [Understand NFSv4.x access control lists](https://learn.microsoft.com/en-us/azure/azure-netapp-files/nfs-access-control-lists) | security | 0.70 | Product-specific explanation of NFSv4.x ACL format and usage (type:flags:principal:permissions) for access control; clearly security configuration. |
 | [Understand SMB file permissions](https://learn.microsoft.com/en-us/azure/azure-netapp-files/network-attached-file-permissions-smb) | security | 0.70 | Details use of NTFS ACLs and ACEs for SMB volumes; product-specific security configuration behavior beyond generic NTFS concepts. |
@@ -305,8 +319,9 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | [Introduction to AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-introduction) | 0.30 | Introductory overview of AzAcSnap; no indication of detailed parameters, limits, or error mappings. |
 | [Manage a backup vault](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-vault-manage) | 0.30 | From the summary, the page appears to be a how-to guide for managing backup vaults (create, migrate, manage) without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. It mainly describes that backup vaults store backups, recommends a single vault, and notes that existing backups must be migrated before operations, which is procedural rather than expert configuration or limits content. |
 | [Manage billing by using tags](https://learn.microsoft.com/en-us/azure/azure-netapp-files/manage-billing-tags) | 0.30 | Billing tags usage is generic Azure functionality; summary shows no product-specific limits, configs, or error mappings. |
+| [Manage data restores](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-manage-data-restores) | 0.30 | Appears to be a conceptual/operational guide for using Azure NetApp Files snapshot-based restores; summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
 | [Re-establish volume replication relationships](https://learn.microsoft.com/en-us/azure/azure-netapp-files/reestablish-deleted-volume-relationships) | 0.30 | Appears to be a procedural how-to for re-establishing Azure NetApp Files replication relationships after deletion. From the summary, it doesn't clearly indicate presence of specific limits, configuration tables, error codes, or product-specific parameters; more likely a step-by-step recovery guide without detailed expert-only constraints. |
-| [Restore a backup to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-restore-new-volume) | 0.30 | Restore backup to new volume; summary suggests straightforward procedure without expert-level configuration or limits. |
+| [Restore a backup to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-restore-new-volume) | 0.30 | Describes how to restore a backup to a new Azure NetApp Files volume; from the summary it looks like a procedural tutorial without explicit limits, configuration matrices, or detailed troubleshooting content required for expert-knowledge classification. |
 | [Restore a snapshot to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-restore-new-volume) | 0.30 | Basic restore-from-snapshot how-to; likely procedural without expert-only numeric limits or configuration matrices. |
 | [Security FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-security) | 0.30 | Security FAQ is summarized generically; without explicit RBAC role lists, parameter tables, or detailed security configs in the description, it’s treated as high-level FAQ content. |
 | [Understand Azure NetApp Files Volumes as a Service](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-volumes-as-service) | 0.30 | High-level explanation of Azure NetApp Files volumes as a service and business benefits; no concrete limits, configuration tables, or product-specific numeric thresholds. |
@@ -314,6 +329,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept) | 0.30 | Primarily a conceptual explanation of the Elastic zone-redundant storage service level and its high-availability characteristics. The summary indicates descriptive content (synchronous replication across zones, zero data loss) without clear evidence of numeric limits, configuration parameters, or decision matrices. |
 | [Understand volume quota](https://learn.microsoft.com/en-us/azure/azure-netapp-files/volume-quota-introduction) | 0.30 | Described as an overview of volume quotas and monitoring; likely conceptual without specific numeric limits or config tables. |
 | [Azure NetApp Files tools](https://learn.microsoft.com/en-us/azure/azure-netapp-files/tools-reference) | 0.20 | Overview of tools (price estimator, monitoring, etc.) is primarily descriptive/marketing; summary doesn’t indicate detailed configuration parameters or limits. |
+| [Benefits of using Azure NetApp Files for Electronic Design Automation (EDA)](https://learn.microsoft.com/en-us/azure/azure-netapp-files/solutions-benefits-azure-netapp-files-electronic-design-automation) | 0.20 | Page appears to be a solution/benefits and benchmark overview for using Azure NetApp Files with EDA workloads; description suggests marketing/solution narrative and high-level benchmark discussion without clear evidence of numeric limits, configuration tables, error codes, or product-specific configuration parameters that would qualify as expert knowledge under the defined sub-skill types. |
 | [Data migration and protection FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-data-migration-protection) | 0.20 | FAQ page on data migration and protection; based on the description it likely contains general Q&A and conceptual guidance rather than structured limits, configuration parameter tables, or error-code-based troubleshooting. Insufficient evidence of detailed numeric limits, config parameters, or diagnostic mappings required for expert-knowledge classification. |
 | [Enable backup by default for new volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/protect-volumes) | 0.20 | From the summary, this appears to be a feature/how-to page about enabling backup protection for new Azure NetApp Files volumes. There’s no indication of specific limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. Likely a conceptual/step-by-step enablement guide rather than expert-knowledge details as defined. |
 | [Migrating data into Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/migrate-data) | 0.20 | Describes migration options and strategies conceptually; no evidence of numeric limits, configuration parameter tables, or detailed troubleshooting content. |
@@ -331,5 +347,4 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | [Understand object REST API](https://learn.microsoft.com/en-us/azure/azure-netapp-files/object-rest-api-introduction) | 0.20 | Introductory overview of Azure NetApp Files object REST API and unified file/object access; no specific limits, configuration parameter tables, error codes, or detailed access management settings are evident from the summary. |
 | [What is Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction) | 0.20 | High-level product introduction without numeric limits, configuration tables, or detailed patterns; primarily conceptual overview. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-netapp-files/whats-new) | 0.20 | A 'what's new' changelog-style page summarizing recent features and enhancements; it typically lists updates at a high level without detailed limits, configuration tables, error codes, or decision matrices that match any expert-knowledge sub-skill type. |
-| [Benefits of using Azure NetApp Files for Electronic Design Automation (EDA)](https://learn.microsoft.com/en-us/azure/azure-netapp-files/solutions-benefits-azure-netapp-files-electronic-design-automation) | 0.10 | Content describes benefits and solution positioning of Azure NetApp Files for EDA workloads and references benchmark scenarios, but is primarily marketing/solution overview. It does not clearly indicate the presence of detailed limits, configuration parameters, error codes, or other product-specific expert knowledge as defined by the sub-skill types. |
 | [Videos](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-videos) | 0.10 | Video reference page is purely navigational, pointing to external videos; it doesn’t itself contain technical details, configs, or troubleshooting content. |

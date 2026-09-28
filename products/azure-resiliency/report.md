@@ -1,27 +1,27 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-09-27'
 category_descriptions:
   deployment: Guidance on testing zone-down drills, understanding regional failover
     scenarios, and using the resiliency support matrix to see which workloads and
     services are covered.
-  configuration: Configuring and managing Azure Backup/Site Recovery vaults and protection
-    policies, including creation, updates, lifecycle operations, and settings for
-    backup and replication.
-  security: 'RBAC, identity, and security configuration for Azure Resiliency: role
-    requirements for Recovery Plans, security levels, limits, and how to review and
-    adjust security posture.'
+  configuration: 'Configuring and managing Azure Backup/Site Recovery: creating protection
+    policies, setting up Recovery Services/Backup vaults, and handling vault lifecycle
+    for resilient backups and replication.'
+  security: 'RBAC, identity, and security-level guidance for Azure Resiliency: configuring
+    roles, limits, recovery plan requirements, and choosing/reviewing security levels
+    for protection.'
 skill_description: Expert knowledge for Azure Resiliency development including security,
-  configuration, and deployment. Use when testing zone-down drills, regional failover,
-  Backup/Site Recovery vaults, protection policies, or RBAC for Recovery Plans, and
-  other Azure Resiliency related development tasks. Not for Azure Reliability (use
-  azure-reliability), Azure Site Recovery (use azure-site-recovery), Azure Backup
-  (use azure-backup), Azure Monitor (use azure-monitor).
-use_when: Use when testing zone-down drills, regional failover, Backup/Site Recovery
-  vaults, protection policies, or RBAC for Recovery Plans, and other Azure Resiliency
-  related development tasks.
-confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Site
-  Recovery (use azure-site-recovery), Azure Backup (use azure-backup), Azure Monitor
-  (use azure-monitor).
+  configuration, and deployment. Use when planning zone-down drills, regional failover,
+  Azure Backup, Site Recovery vaults, or RBAC-based recovery plans, and other Azure
+  Resiliency related development tasks. Not for Azure Reliability (use azure-reliability),
+  Azure Service Health (use azure-service-health), Azure Monitor (use azure-monitor),
+  Azure Site Recovery (use azure-site-recovery).
+use_when: Use when planning zone-down drills, regional failover, Azure Backup, Site
+  Recovery vaults, or RBAC-based recovery plans, and other Azure Resiliency related
+  development tasks.
+confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Service
+  Health (use azure-service-health), Azure Monitor (use azure-monitor), Azure Site
+  Recovery (use azure-site-recovery).
 ---
 # Azure Resiliency Crawl Report
 
@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 35
+- **Updated Pages**: 3
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
@@ -51,20 +51,29 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 
 ## Changes
 
+### Updated Pages
+
+- [Recover item](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-recover-deleted-item)
+  - Updated: 2025-11-19T08:00:00.000Z → 2025-11-19T06:12:00.000Z
+- [Review security posture](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-review-security-posture)
+  - Updated: 2025-11-19T08:00:00.000Z → 2025-11-19T06:12:00.000Z
+- [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-vaults)
+  - Updated: 2025-11-19T08:00:00.000Z → 2025-11-19T06:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-protection-policy) | configuration | 0.75 | Defines backup and replication policies, including default settings (e.g., 24-hour retention, snapshot frequency); contains concrete policy parameters and default values. |
 | [Availability zone down drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-support-matrix) | deployment | 0.70 | Support matrix for Availability Zone Down Drills lists regional availability, supported scenarios, and limitations; this is a product-specific support/deployment matrix with detailed constraints by region and scenario. |
-| [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-vaults) | configuration | 0.70 | Describes creating Recovery Services/Backup vaults; such articles typically include vault configuration options (regions, redundancy, settings) that are product-specific configuration knowledge. |
+| [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-vaults) | configuration | 0.70 | Article describes how to create and configure Recovery Services and Backup vaults, which usually includes specific configuration options (vault types, regions, redundancy settings, backup storage configuration) and possibly parameter choices unique to Azure Backup/Site Recovery. This aligns with configuration-type expert knowledge rather than generic conceptual content. |
 | [Goals and recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-support-matrix) | security | 0.70 | Support matrix for goals and recommendations explicitly includes Azure RBAC roles alongside supported scenarios and limitations; RBAC role names and scope requirements are product-specific security configuration knowledge. |
 | [Manage](https://learn.microsoft.com/en-us/azure/resiliency/manage-protection-policy) | configuration | 0.70 | Describes viewing and managing protection policies; likely includes specific policy fields and options, which are product-specific configuration details. |
 | [Manage](https://learn.microsoft.com/en-us/azure/resiliency/manage-vault) | configuration | 0.70 | Guides managing vault lifecycle; likely details specific vault states, operations, and settings that constitute product-specific configuration knowledge. |
 | [Recovery orchestration plan](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-support-matrix) | security | 0.70 | Support matrix for Recovery Orchestration Plan includes role requirements and managed identity requirements, which are specific security and access configuration details for this feature. |
 | [Resiliency support matrix](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-support-matrix) | deployment | 0.70 | Support matrix pages enumerate supported scenarios and limitations per workload type, effectively acting as a capability/deployment support matrix across solutions and environments; this is product-specific, structured knowledge not generally known from training. |
 | [Security levels](https://learn.microsoft.com/en-us/azure/resiliency/security-levels-concept) | security | 0.70 | Concept article on security levels in Resiliency; likely defines specific security level names, behaviors, and requirements unique to the product. |
-| [Review security posture](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-review-security-posture) | security | 0.65 | Describes reviewing and modifying security levels for protected items; likely includes product-specific security level settings and options beyond generic concepts. |
+| [Review security posture](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-review-security-posture) | security | 0.65 | Article is specifically about reviewing and modifying security posture for protected items in Resiliency in Azure and Azure Backup. Such pages typically include concrete security settings (e.g., soft delete, MFA for critical operations, security PIN, role-based access requirements) and product-specific security configuration options, which qualify as expert security configuration knowledge. |
 
 ## Unclassified Pages
 
@@ -85,7 +94,7 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 | [Goals and recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-about) | 0.30 | Conceptual description of goals and recommendations in Infrastructure Resiliency Manager; no indication of numeric thresholds, config tables, or specific RBAC role details in the summary. |
 | [Manage the Business Continuity and Disaster Recovery estate using Copilot](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-manage-data-using-copilot) | 0.30 | Tutorial on using Resiliency Copilot; describes interactions and experience rather than concrete configuration, limits, or troubleshooting mappings. |
 | [Reconfigure Backup in an alternate vault](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-reconfigure-backup-alternate-vault) | 0.30 | Tutorial on reconfiguring backup to an alternate vault; scenario-based steps but no detailed configuration matrices, limits, or error mappings. |
-| [Recover item](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-recover-deleted-item) | 0.30 | Tutorial for recovering deleted items; focuses on how-to actions in the portal, not on error codes, limits, or configuration references. |
+| [Recover item](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-recover-deleted-item) | 0.30 | Tutorial focuses on the process of recovering deleted items in Resiliency in Azure; based on the summary it appears to be a step-by-step UI/workflow guide without explicit limits, configuration tables, error-code mappings, or other product-specific numeric/configuration details. |
 | [Recovery orchestration plan](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-about) | 0.30 | Overview of Azure Recovery Orchestration Plan and its purpose; summary focuses on what it does, not on detailed configuration options, limits, or troubleshooting specifics. |
 | [Review recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-review-recommendations) | 0.30 | Describes reviewing and acting on recommendations; appears to be workflow guidance without explicit mention of numeric thresholds, config parameters, or error-code-based troubleshooting. |
 | [Understand the protection estate](https://learn.microsoft.com/en-us/azure/resiliency/quick-understand-protection-estate) | 0.30 | Quickstart UI walkthrough to identify protected/unprotected resources; lacks detailed configuration tables, limits, or troubleshooting mappings. |

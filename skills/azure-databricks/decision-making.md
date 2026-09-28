@@ -29,11 +29,9 @@
 | Assess Unity Catalog ABAC beta to preview transition | https://learn.microsoft.com/en-us/azure/databricks/archive/unity-catalog/abac-public-preview-transition |
 | Select and configure the default Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/catalogs/default |
 | Select appropriate Azure Databricks compute types | https://learn.microsoft.com/en-us/azure/databricks/compute/choose-compute |
-| Select compatible flexible node types in Databricks | https://learn.microsoft.com/en-us/azure/databricks/compute/flexible-node-type-instances |
 | Plan and configure GPU-enabled Databricks compute | https://learn.microsoft.com/en-us/azure/databricks/compute/gpu |
 | Migrate Databricks workloads to serverless compute | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/migration |
 | Choose serverless options for Databricks streaming | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/streaming |
-| Use Lakehouse Real-Time for low-latency SQL workloads | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/real-time |
 | Choose and tune Databricks SQL warehouse sizing and queuing | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/warehouse-behavior |
 | Compare Databricks SQL warehouse types and features | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/warehouse-types |
 | Choose connection options for Azure Databricks data sources | https://learn.microsoft.com/en-us/azure/databricks/connect/ |
@@ -116,6 +114,7 @@
 | Plan migration from Lakebase Provisioned to Autoscaling | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/ |
 | Choose Lakebase backup and restore methods | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/backup-methods |
 | Select application patterns with Lakebase Postgres | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/build-applications |
+| Choose and manage Postgres versions in Azure Databricks Lakehouse | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/postgres-version-support |
 | Choose Lakebase patterns for your use case | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/use-cases |
 | Decide and plan upgrade to Lakebase Autoscaling | https://learn.microsoft.com/en-us/azure/databricks/oltp/upgrade-to-autoscaling |
 | Optimize OpenSharing egress costs across regions | https://learn.microsoft.com/en-us/azure/databricks/opensharing/manage-egress |

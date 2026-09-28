@@ -75,7 +75,6 @@
 | Create and configure custom model serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/create-manage-serving-endpoints |
 | Use express deployments for faster model serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/express-deployments |
 | Deploy and query custom models with Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-intro |
-| Deploy custom LLMs with vLLM on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/serve-custom-llms |
 | Start Ray clusters using Databricks Spark jobs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/start-ray |
 | Use MLflow 3 deployment jobs on Databricks | https://learn.microsoft.com/en-us/azure/databricks/mlflow/deployment-job |
 | Use MLflow Prompt Registry prompts in production | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/prompt-version-mgmt/prompt-registry/use-prompts-in-deployed-apps |

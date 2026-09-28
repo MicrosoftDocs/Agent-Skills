@@ -55,10 +55,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 126
 
 ### Incremental Update
-- **New Pages**: 10
-- **Updated Pages**: 13
-- **Unchanged**: 336
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 359
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
 ## Classification Statistics
@@ -77,53 +77,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 126 | 35.1% |
 
 ## Changes
-
-### New Pages
-
-- [Ultra Disk](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-ultra-disk)
-- [What are the troubleshooting guides?](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/concepts-troubleshooting-guides)
-- [How to use the troubleshooting guides](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-troubleshooting-guides)
-- [Troubleshoot high CPU](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-high-cpu)
-- [Troubleshoot high memory](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-high-memory)
-- [Troubleshoot high IOPS](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-high-iops)
-- [Troubleshoot high temporary files](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-high-temporary-files)
-- [Monitor autovacuum](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-autovacuum-monitoring)
-- [Troubleshoot autovacuum blockers](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/troubleshoot-autovacuum-blockers)
-- [Telemetry reference](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/reference-troubleshooting-guides-telemetry)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/concepts-business-continuity)
-  - Updated: 2026-07-10T11:04:00.000Z → 2026-09-15T08:00:00.000Z
-- [Configure high availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-configure-high-availability)
-  - Updated: 2026-07-13T08:00:00.000Z → 2026-09-15T08:00:00.000Z
-- [Version policy](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy)
-  - Updated: 2026-07-10T11:04:00.000Z → 2026-09-16T22:10:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes)
-  - Updated: 2026-08-26T08:00:00.000Z → 2026-09-14T08:00:00.000Z
-- [September 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-september)
-  - Updated: 2026-09-10T22:09:00.000Z → 2026-09-15T17:06:00.000Z
-- [Data encryption](https://learn.microsoft.com/en-us/azure/postgresql/security/security-data-encryption)
-  - Updated: 2026-09-30T08:00:00.000Z → 2026-09-19T06:04:00.000Z
-- [Stop compute of a server](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-stop-server)
-  - Updated: 2026-07-10T11:04:00.000Z → 2026-09-16T22:10:00.000Z
-- [Restart PostgreSQL engine](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-restart-server)
-  - Updated: 2026-07-10T11:04:00.000Z → 2026-09-16T22:10:00.000Z
-- [Build an agent with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration)
-  - Updated: 2026-06-08T08:00:00.000Z → 2026-09-16T08:00:00.000Z
-- [How to set up the network](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/how-to-network-setup-migration-service)
-  - Updated: 2026-02-03T23:09:00.000Z → 2026-09-15T08:00:00.000Z
-- [How to migrate vnet private endpoint capable server](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server)
-  - Updated: 2026-07-13T08:00:00.000Z → 2026-09-16T22:10:00.000Z
-- [Secure your Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/security/security-overview)
-  - Updated: 2026-07-14T08:00:00.000Z → 2026-09-18T22:08:00.000Z
-- [Reset local administrator password](https://learn.microsoft.com/en-us/azure/postgresql/security/security-reset-admin-password)
-  - Updated: 2026-07-14T08:00:00.000Z → 2026-09-11T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Troubleshooting guides~~ (https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/concepts-troubleshooting-guides)
-- ~~Troubleshooting guides~~ (https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-troubleshooting-guides)
 
 ## Classified Pages
 

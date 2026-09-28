@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-27'
 category_descriptions:
   integrations: Patterns and setup guides for connecting Azure services to external
     data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
@@ -7,28 +7,23 @@ category_descriptions:
   security: Managing security for Azure partner services, including Confluent Cloud
     RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure
     resources.
-  troubleshooting: Diagnosing and fixing setup, integration, and runtime issues for
-    Confluent Kafka/Flink, Datadog, Dynatrace, Elastic Cloud, and New Relic (incl.
-    log forwarding) on Azure
+  troubleshooting: Diagnosing and fixing integration, configuration, and runtime issues
+    for Azure partner services (Confluent, Datadog, Dynatrace, Elastic, New Relic),
+    including log forwarding and Azure-native setups.
   configuration: Configuring and managing Azure-integrated partner resources (Datadog,
     Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINXaaS, etc.), including prerequisites,
     settings, and integrations.
-  decision-making: Guidance on evaluating Dynatrace APM on Azure, starting a free
-    trial from the portal/Marketplace, setup steps, and considerations before adopting
-    it for monitoring.
   architecture-patterns: Architectural guidance for integrating Palo Alto Cloud NGFW
     with Azure Application Gateway, including network design, routing, security, and
     deployment patterns.
 skill_description: Expert knowledge for Azure Partner Solutions development including
-  troubleshooting, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when using Service Connector to Confluent/MongoDB/Neon,
-  Dynatrace/Datadog/Elastic/New Relic on Azure, or Palo Alto Cloud NGFW with App Gateway,
-  and other Azure Partner Solutions related development tasks. Not for Azure Industry
-  (use azure-industry), Azure Managed Applications (use azure-managed-applications),
-  Azure Lighthouse (use azure-lighthouse), Azure Oracle (use azure-oracle).
-use_when: Use when using Service Connector to Confluent/MongoDB/Neon, Dynatrace/Datadog/Elastic/New
-  Relic on Azure, or Palo Alto Cloud NGFW with App Gateway, and other Azure Partner
-  Solutions related development tasks.
+  troubleshooting, architecture & design patterns, security, configuration, and integrations
+  & coding patterns. Use when connecting Confluent/MongoDB/Neon via Service Connector,
+  configuring Datadog/Dynatrace/Elastic, or designing Palo Alto NGFW with App Gateway,
+  and other Azure Partner Solutions related development tasks.
+use_when: Use when connecting Confluent/MongoDB/Neon via Service Connector, configuring
+  Datadog/Dynatrace/Elastic, or designing Palo Alto NGFW with App Gateway, and other
+  Azure Partner Solutions related development tasks.
 confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed Applications
   (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure
   Oracle (use azure-oracle).
@@ -40,13 +35,13 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
-- **Classified**: 24
-- **Unclassified**: 90
+- **Classified**: 23
+- **Unclassified**: 91
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 2
+- **Unchanged**: 112
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -56,13 +51,19 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
 | configuration | 10 | 8.8% |
-| decision-making | 1 | 0.9% |
 | integrations | 2 | 1.8% |
 | security | 2 | 1.8% |
 | troubleshooting | 8 | 7.0% |
-| *(Unclassified)* | 90 | 78.9% |
+| *(Unclassified)* | 91 | 79.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-09-22T22:21:00.000Z
+- [Start a free trial](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/free-trial)
+  - Updated: 2025-10-20T22:18:00.000Z → 2026-09-22T22:21:00.000Z
 
 ## Classified Pages
 
@@ -76,13 +77,13 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Manage your NGINXaaS resource](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/manage) | configuration | 0.80 | Managing NGINXaaS includes configuring managed identities, certificates, and metrics export; these involve specific setting names, scopes, and Azure Monitor integration parameters that are product-specific configuration knowledge. |
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/manage) | configuration | 0.80 | Managing networking, NAT, rulestack, logging, DNS proxy, and billing plans implies detailed product-specific configuration options and parameter values unique to this Azure Native integration. |
 | [Troubleshoot log forwarding with Copilot](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot-logs-copilot) | troubleshooting | 0.78 | The page focuses on diagnosing and resolving log forwarding issues for Azure Native New Relic Service using Microsoft Copilot in Azure. It is organized around specific symptoms and how to use Copilot to identify causes and remediation steps, which is product- and integration-specific troubleshooting guidance that goes beyond generic debugging advice. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq) | troubleshooting | 0.75 | FAQ explicitly lists troubleshooting among topics (onboarding, linking environments, configuring metrics/logs, SSO, billing, data residency, free trial); such content typically includes specific error messages, configuration pitfalls, and resolution steps unique to Azure Native Dynatrace, fitting the troubleshooting sub-skill. |
 | [Configure prerequisites](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/configure-prerequisites) | configuration | 0.70 | Pre-deployment prerequisites for Dynatrace in Azure/Entra ID will include specific roles, permissions, and configuration steps unique to this integration, fitting configuration expert knowledge. |
 | [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents) | integrations | 0.70 | The page describes a product-specific integration between Microsoft Foundry Agents and MongoDB Atlas via the MongoDB MCP Server, including concrete connection details and configuration patterns that are unique to this integration rather than generic tutorial content. |
 | [Deploy Cloud NGFW by Palo Alto Networks with the Application Gateway](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/application-gateway) | architecture-patterns | 0.70 | Describes a recommended deployment architecture for Cloud NGFW behind Application Gateway; likely includes product-specific topology guidance, traffic flow patterns, and when to use this pattern for securing web apps. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq) | troubleshooting | 0.70 | Datadog on Azure FAQ explicitly mentions troubleshooting; such FAQs typically map Azure-specific onboarding/metrics/logs issues to causes and resolutions, including product-specific error messages and diagnostic steps that qualify as expert troubleshooting knowledge. |
 | [Manage your Informatica IDMC organization](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/manage) | security | 0.70 | The article focuses on managing single sign-on for an Informatica IDMC organization, which typically involves specific identity configuration (SSO settings, possibly Azure AD app configuration, roles, or scopes). These are product-specific security/identity configuration details, fitting the security sub-skill. |
 | [Connect to compute services](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-connectors) | integrations | 0.65 | Describes using Service Connector to wire Confluent Cloud to Azure compute services; likely includes product-specific connection settings and authentication/network parameters. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq) | troubleshooting | 0.65 | FAQ includes product-specific troubleshooting guidance and configuration details (for SSO, metrics/logs, OneAgent, billing, and data residency) that map symptoms and questions to concrete resolutions and settings, which qualify as expert, product-specific troubleshooting knowledge. |
 | [Manage Dynatrace](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/manage) | configuration | 0.65 | Managing settings, metrics, and logs for Dynatrace via Azure portal implies product-specific configuration options and toggles that qualify as configuration expert knowledge. |
 | [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/manage) | configuration | 0.65 | Managing MongoDB Atlas resource settings in Azure portal implies product-specific configuration options and mappings between Azure and Atlas. |
 | [Manage access](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/manage-access) | security | 0.65 | Describes adding/removing users and roles and managing permissions for Confluent organizations; this is product-specific IAM configuration and likely includes role names and permission scopes. |
@@ -91,7 +92,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Manage resources](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/manage) | configuration | 0.62 | A 'manage settings' article for Azure Native Qumulo is likely to enumerate specific resource settings, their names, allowed values, and possibly defaults (for example, capacity, performance tiers, networking or access parameters) rather than just walking through the UI. That aligns with the configuration sub-skill, which focuses on concrete configuration options and their valid ranges for this product. |
 | [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/manage) | configuration | 0.60 | Managing service settings usually involves product-specific configuration options (for example, plan settings, data collection toggles, integration flags) that go beyond generic portal usage and are unique to this integration. |
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/manage) | configuration | 0.60 | Managing settings for LambdaTest - HyperExecute resources suggests product-specific configuration options and toggles in the Azure portal. |
-| [Start a free trial](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/free-trial) | decision-making | 0.60 | Free trial article likely includes trial duration, plan details, and upgrade paths with specific constraints (30-day trial, plan types), which support decision-making about trial vs paid usage. |
 
 ## Unclassified Pages
 
@@ -162,6 +162,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/) | 0.20 | MongoDB Atlas integration overview; description highlights capabilities (managed document DB, vector search) without expert numeric/config details. |
 | [New Relic](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/) | 0.20 | Overview for Azure Native New Relic Service; description indicates a general integrated experience, not detailed limits/config/troubleshooting. |
 | [Qumulo](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/) | 0.20 | Landing page for Azure Native Qumulo Scalable File Service; focuses on portal experience, not detailed limits/config/troubleshooting. |
+| [Start a free trial](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/free-trial) | 0.20 | Free trial page primarily describes how to start a 30-day trial and upgrade paths; it appears marketing/onboarding oriented without detailed limits tables, configuration parameters, or troubleshooting/error mappings, so it lacks the required expert-level technical specifics. |
 | [What is Datadog?](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/overview) | 0.20 | High-level overview of Datadog and its Azure Native Integration; no specific limits, configuration tables, error codes, or decision matrices. |
 | [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview) | 0.20 | Overview of Elastic on Azure Native Integrations; marketing/positioning style description without detailed technical limits, configs, or troubleshooting. |
 | [What is Informatica Intelligent Data Management Cloud (IDMC)](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/overview) | 0.15 | Informatica IDMC overview is descriptive; no clear indication of detailed configuration, limits, or troubleshooting content. |

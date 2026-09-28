@@ -45,10 +45,10 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 - **Unclassified**: 21
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 58
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
 ## Classification Statistics
@@ -66,29 +66,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | *(Unclassified)* | 21 | 32.3% |
 
 ## Changes
-
-### New Pages
-
-- [Microsoft Dev Box retirement guide](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-retirement-guide)
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq)
-  - Updated: 2026-07-08T05:12:00.000Z → 2026-09-14T17:12:00.000Z
-- [Spin up a new dev box](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-create-dev-box)
-  - Updated: 2026-05-04T22:15:00.000Z → 2026-09-14T17:12:00.000Z
-- [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions)
-  - Updated: 2025-11-01T05:04:00.000Z → 2026-05-04T22:15:00.000Z
-- [Manage a dev box through developer portal](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal)
-  - Updated: 2026-05-04T22:15:00.000Z → 2026-07-08T05:12:00.000Z
-- [Connect to your dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal)
-  - Updated: 2026-05-04T22:15:00.000Z → 2026-07-08T05:12:00.000Z
-- [Use multiple monitors](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal)
-  - Updated: 2026-05-04T22:15:00.000Z → 2026-07-08T05:12:00.000Z
-
-### Deleted Pages
-
-- ~~Dev Box maintenance mode~~ (https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap)
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing Nexus fabric ACLs/BGP, cluster templates, secure access/identity, storage topology, or upgrades, and other Azure Operator Nexus related development tasks. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring Nexus fabric ACLs/BGP, securing RBAC/SSH, planning cluster placement, or diagnosing fabric/K8s issues, and other Azure Operator Nexus related development tasks. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L84-L89 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
 | Decision Making | L90-L97 | Guidance for planning Nexus cluster placement, choosing Nexus and Kubernetes VM SKUs/versions, and mapping Nexus releases to supported storage software. |
 | Architecture & Design Patterns | L98-L103 | Design patterns and reference architectures for resilient Nexus deployments, including rack-failure-tolerant control planes and near-edge storage topology and capacity planning. |
-| Limits & Quotas | L104-L116 | Limits, capacity planning, supported versions, and operational guidance for Nexus appliances and Kubernetes (storage classes, isolation domains, upgrades, restarts, and log behavior on disconnection). |
+| Limits & Quotas | L104-L116 | Limits, capacity planning, supported versions, upgrade cadence, and operational guidance (storage expansion, node restarts, isolation domains, log behavior) for Azure Operator Nexus. |
 | Security | L117-L154 | Securing Nexus: identity/RBAC, ACLs, SSH and serial access, break-glass methods, key/cert/secret rotation, Defender/Policy, managed identities, and secure VM/cluster connectivity. |
 | Configuration | L155-L227 | Configuring and operating Azure Operator Nexus: cluster templates/parameters, fabric ACLs and route policies, BGP/VRF limits, isolation domains, Kubernetes settings, monitoring, security, and upgrade workflows. |
 | Deployment | L228-L235 | Deploying and maintaining Nexus platform and fabric: prerequisites, image building, OS and fabric upgrades, and replacing or updating terminal servers in the network fabric. |
@@ -104,8 +104,8 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Use Nexus Kubernetes persistent storage classes effectively | https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage-kubernetes |
 | Plan storage capacity with multiple Nexus appliances | https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage-multiple-appliances |
+| Expand nexus-shared storage capacity in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-expand-csn-shared-storage |
 | Restart Nexus Kubernetes nodes and handle timeouts | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-action-restart |
 | Meet technical requirements for Nexus isolation domains | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-isolation-domain-technical-requirements |
 | Review Azure Operator Nexus limits and quotas | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-limits-and-quotas |

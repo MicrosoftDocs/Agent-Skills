@@ -1,9 +1,9 @@
 ---
 name: azure-cost-management
-description: Expert knowledge for Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Azure billing APIs, cost exports, budgets/alerts, reservations/savings plans, or subscription ownership, and other Cost Management related development tasks. Not for Azure Advisor (use azure-advisor), Azure Carbon Optimization (use azure-carbon-optimization), Azure Impact Reporting (use azure-impact-reporting), Azure Quotas (use azure-quotas).
+description: Expert knowledge for Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring cost exports, budgets/alerts, tags/views, billing APIs, or reservations/savings plans, and other Cost Management related development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Impact Reporting (use azure-impact-reporting), Azure Carbon Optimization (use azure-carbon-optimization).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Cost Management Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L66-L78 | Best practices for analyzing and optimizing Azure costs, using Advisor, managing subscriptions and agreements, leveraging savings plans and SQL licensing, and setting up cost governance processes. |
 | Decision Making | L79-L114 | Guidance for choosing and configuring Azure billing, cost allocation, reservations, savings plans, EA→MCA migrations, account/offer changes, and partner/CSP billing to optimize costs. |
 | Limits & Quotas | L115-L127 | Limits, quotas, and timing for Cost Management data; free account and credit limits; subscription spending limits; savings plan exclusions/utilization; multi-sub limits; dormant billing accounts. |
-| Security | L128-L149 | Managing secure access, roles, and permissions for Azure billing, subscriptions, reservations, savings plans, and tax documents, including RBAC, admin elevation, and compliance (e.g., PSD2 SCA). |
-| Configuration | L150-L173 | Configuring Cost Management: tags, views, filters, exports, budgets, alerts, reservations/savings plans, SQL licensing, and subscription/billing ownership and policies. |
+| Security | L128-L150 | Managing secure access to cost, billing, subscriptions, reservations, and savings plans using RBAC and billing roles, including admin elevation, directory transfers, and compliance (e.g., PSD2, tax docs). |
+| Configuration | L151-L173 | Configuring Cost Management: tags, views, filters, exports, budgets, alerts, reservations/savings plans, SQL licensing, and subscription/billing ownership and policies. |
 | Integrations & Coding Patterns | L174-L191 | APIs, scripts, and PowerShell patterns to automate cost analysis, billing data retrieval, and programmatic creation/migration of Azure subscriptions and reservations. |
 | Deployment | L192-L195 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
 
@@ -128,10 +128,11 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Check Azure credit balance and required roles | https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/credits/mca-check-azure-credits-balance |
+| Check Azure credit balance using portal and APIs | https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/credits/mca-check-azure-credits-balance |
 | Assign RBAC access to Azure Cost Management data | https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/assign-access-acm-data |
 | Assign and change Azure subscription admin roles with RBAC | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/add-change-subscription-administrator |
 | Migrate from Azure classic admins to RBAC roles | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/classic-administrator-retire |
+| Administer EA billing roles and access in Azure portal | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration |
 | Elevate Global Administrator access to billing accounts | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/elevate-access-global-admin |
 | Grant RBAC permissions to create Azure EA subscriptions | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/grant-access-to-create-subscription |
 | Configure Azure subscription transfer policies between directories | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-azure-subscription-policy |
@@ -161,7 +162,6 @@ This skill requires **network access** to fetch documentation content:
 | Set up Azure reservation utilization alerts | https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/reservation-utilization-alerts |
 | Create and manage Azure Cost Management budgets | https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets |
 | Transfer billing ownership of MOSP Azure subscriptions | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/billing-subscription-transfer |
-| Configure EA billing administration in Azure portal | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration |
 | Configure Azure Marketplace and private offer purchase policies | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/enable-marketplace-purchases |
 | Configure Partner Admin Link for Power Platform with Azure credentials | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/link-partner-id-power-apps-accounts |
 | Configure markup rules in Azure 21Vianet Cost Management | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/markup-china |

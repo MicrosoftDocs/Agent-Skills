@@ -1,9 +1,9 @@
 ---
 name: azure-sovereign-us
-description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Gov IL5/FedRAMP, SACA patterns, Gov App Service/ASE, Gov Marketplace, or sovereign storage/SQL APIs, and other Azure US Government related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute).
+description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when choosing Azure Gov vs global, meeting FedRAMP/DoD needs, using SACA patterns, Gov CI/CD, or Gov marketplace, and other Azure US Government related development tasks. Not for Azure Local (use azure-local), Azure Networking (use azure-networking), Azure Security (use azure-security), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure US Government Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Decision Making | L34-L46 | Guidance on choosing Azure Government vs global, FedRAMP/DoD scope and ATO, CSP reseller options, marketplace and DoD regions, and sector-specific compliance (NERC CIP, public safety, worldwide public sector). |
 | Architecture & Design Patterns | L47-L51 | Guidance on applying Secure Azure Computing Architecture (SACA) patterns to design compliant, secure, and resilient solutions in Azure Sovereign Cloud environments. |
-| Security | L52-L63 | Security and compliance guidance for Azure Government: isolation, IL5, FedRAMP Rev5, TIC, secure naming, and identity/auth architecture with Microsoft Entra. |
+| Security | L52-L63 | Security and compliance for Azure Government: FedRAMP/DoD scope, TIC, IL5 isolation, secure configuration, identity/Entra integration, and implementing security controls. |
 | Configuration | L64-L72 | Guidance for configuring and operating Azure Government: app deployment, VM extensions, EA billing, marketplace images, and Azure Monitor logs in sovereign US regions. |
 | Integrations & Coding Patterns | L73-L79 | Coding patterns and connection guidance for Azure Government: building Foundry Tools apps, connecting SSMS to Gov SQL, and using Azure Storage APIs in sovereign clouds. |
 | Deployment | L80-L86 | Guides for deploying apps and solutions to Azure Government: CI/CD with Azure Pipelines, ASE baseline with DISA CAP, App Service deployment, and publishing to Gov Marketplace. |
@@ -52,7 +52,7 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Understand FedRAMP and DoD compliance scope for Azure clouds | https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope |
+| Determine FedRAMP and DoD compliance scope for Azure | https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope |
 | Meet Trusted Internet Connections using Azure | https://learn.microsoft.com/en-us/azure/azure-government/compliance/compliance-tic |
 | Configure Azure securely for FedRAMP Rev5 | https://learn.microsoft.com/en-us/azure/azure-government/compliance/recommended-secure-configuration |
 | Integrate Microsoft Entra auth on Azure Government | https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-aad-auth-qs |

@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 27
+- **Updated Pages**: 0
+- **Unchanged**: 28
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | *(Unclassified)* | 10 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Payment HSM overview](https://learn.microsoft.com/en-us/azure/payment-hsm/overview)
-  - Updated: 2025-04-10T08:00:00.000Z → 2026-09-17T07:37:00.000Z
 
 ## Classified Pages
 

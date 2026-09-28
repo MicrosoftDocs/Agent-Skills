@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-09-27'
 category_descriptions:
   architecture-patterns: Solution-level IoT Central architecture, using IoT Edge as
     a gateway, and designing data transformation flows from devices to downstream
@@ -25,34 +25,34 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing IoT Central issues: common errors, device
     connectivity/data export problems, and using audit logs to investigate configuration
     or state changes.'
-  decision-making: Guidance for planning and executing migration from IoT Central
-    to Azure-native IoT services (IoT Hub, DPS, Time Series Insights, etc.), including
-    architecture, mapping, and migration steps.
+  decision-making: Planning and executing migrations from Azure IoT Central to Azure-native
+    IoT solutions (IoT Hub, Fabric), including architecture choices, mapping resources,
+    and migration steps.
 skill_description: Expert knowledge for Azure IoT Central development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing IoT Central templates, device auth, data exports, REST/CLI automation,
-  or IoT Edge gateways, and other Azure IoT Central related development tasks. Not
-  for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT Edge
-  (use azure-iot-edge), Azure Digital Twins (use azure-digital-twins).
-use_when: Use when designing IoT Central templates, device auth, data exports, REST/CLI
-  automation, or IoT Edge gateways, and other Azure IoT Central related development
+  designing device templates, data exports, IoT Edge gateways, REST/CLI automation,
+  or IoT Central migrations, and other Azure IoT Central related development tasks.
+  Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT
+  Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+use_when: Use when designing device templates, data exports, IoT Edge gateways, REST/CLI
+  automation, or IoT Central migrations, and other Azure IoT Central related development
   tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot),
-  Azure IoT Edge (use azure-iot-edge), Azure Digital Twins (use azure-digital-twins).
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 ---
 # Azure IoT Central Crawl Report
 
 ## Summary
 
-- **Total Pages**: 90
-- **Fetched**: 90
+- **Total Pages**: 91
+- **Fetched**: 91
 - **Fetch Failed**: 0
-- **Classified**: 57
+- **Classified**: 58
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 90
 - **Deleted Pages**: 0
@@ -64,16 +64,20 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 |------|-------|------------|
 | architecture-patterns | 3 | 3.3% |
 | best-practices | 1 | 1.1% |
-| configuration | 18 | 20.0% |
-| decision-making | 1 | 1.1% |
-| deployment | 5 | 5.6% |
-| integrations | 12 | 13.3% |
+| configuration | 18 | 19.8% |
+| decision-making | 2 | 2.2% |
+| deployment | 5 | 5.5% |
+| integrations | 12 | 13.2% |
 | limits-quotas | 2 | 2.2% |
-| security | 12 | 13.3% |
+| security | 12 | 13.2% |
 | troubleshooting | 3 | 3.3% |
-| *(Unclassified)* | 33 | 36.7% |
+| *(Unclassified)* | 33 | 36.3% |
 
 ## Changes
+
+### New Pages
+
+- [Azure IoT Central evolution](https://learn.microsoft.com/en-us/azure/iot-central/core/iot-central-evolution)
 
 ## Classified Pages
 
@@ -96,6 +100,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [Manage device templates](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-device-templates-with-rest-api) | configuration | 0.75 | Explains REST-based management of device templates, including schema and payload structures that are specific configuration artifacts. |
 | [Manage devices](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-devices-with-rest-api) | integrations | 0.75 | Covers REST endpoints and payloads for adding, updating, and deleting devices, which are concrete integration patterns. |
 | [Use rules and workflows to integrate with other services](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-configure-rules-advanced) | integrations | 0.75 | Uses the IoT Central V3 connector with specific triggers/actions and configuration patterns for external workflow services, which are integration-specific details. |
+| [Azure IoT Central evolution](https://learn.microsoft.com/en-us/azure/iot-central/core/iot-central-evolution) | decision-making | 0.74 | Page provides product-specific transition guidance with concrete key dates and lifecycle timelines (for example, last date to use existing IoT Central solutions and when to move to the new IoT Hub/Fabric-based architecture). These deprecation and migration timelines are not generally known from training data and are critical for planning decisions, fitting the decision-making category. |
 | [Export to Azure Data Explorer](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-export-to-azure-data-explorer) | configuration | 0.72 | Shows how to configure Azure Data Explorer as an export target with product-specific export configuration and behavior. |
 | [Export to Blob Storage](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-export-to-blob-storage) | configuration | 0.72 | Covers configuring continuous export with destination-specific settings and behavior (near real-time, start-time semantics) that are product-specific. |
 | [Export to Event Hubs](https://learn.microsoft.com/en-us/azure/iot-central/core/howto-export-to-event-hubs) | configuration | 0.72 | Explains how to set up Event Hubs as an export destination with IoT Central-specific configuration and export semantics. |

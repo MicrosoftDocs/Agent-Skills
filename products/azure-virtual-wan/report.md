@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-09-27'
 category_descriptions:
   limits-quotas: 'Limits and design guidance for Virtual WAN: P2S client pool sizing,
     hub routing/throughput caps, and using Private Link endpoints within scale and
@@ -7,9 +7,9 @@ category_descriptions:
   architecture-patterns: Designing Virtual WAN hub-and-spoke routing, isolation, DR,
     and global transit patterns, including routing intent, static/BGP routes, firewalls/NVAs,
     SD-WAN, ExpressRoute, and Microsoft 365 connectivity.
-  configuration: Configuring Virtual WAN hubs, routing, BGP/NVA integration, P2S VPN
-    (certs, Entra ID, IPsec, client profiles), Azure Firewall/NGFW, and monitoring/metrics
-    for connectivity scenarios.
+  configuration: Configuring Azure Virtual WAN hubs, routing, NVAs, BGP, IPsec, and
+    P2S/Always On VPN (cert- and Entra-based), including policies, route-maps, client
+    profiles, and monitoring/logging.
   decision-making: 'Guidance on planning Virtual WAN changes: migrating Linux/P2S
     VPN clients, switching to Microsoft Entra apps, upgrading Basic→Standard VWAN,
     and choosing partners/hub locations.'
@@ -25,16 +25,16 @@ category_descriptions:
     ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions.
 skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when designing VWAN hubs, P2S
-  VPN, BGP/NVA routing, ExpressRoute/SD-WAN, or Azure Firewall integration, and other
-  Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use
-  azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
-use_when: Use when designing VWAN hubs, P2S VPN, BGP/NVA routing, ExpressRoute/SD-WAN,
-  or Azure Firewall integration, and other Azure Virtual WAN related development tasks.
+  integrations & coding patterns, and deployment. Use when configuring VWAN hubs,
+  P2S/Always On VPN, BGP/IPsec routing, ExpressRoute/SD-WAN, or Private Link, and
+  other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
+  (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute
+  (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
+use_when: Use when configuring VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, ExpressRoute/SD-WAN,
+  or Private Link, and other Azure Virtual WAN related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
-  azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+  VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Traffic Manager (use azure-traffic-manager).
 ---
 # Azure Virtual WAN Crawl Report
 
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 138
+- **Updated Pages**: 1
+- **Unchanged**: 137
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -69,17 +69,22 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [About S2S IPsec policies](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-ipsec)
+  - Updated: 2026-07-01T23:48:00.000Z → 2026-09-21T22:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [About client address pools](https://learn.microsoft.com/en-us/azure/virtual-wan/about-client-address-pools) | limits-quotas | 0.95 | Explicitly states numeric limits: each P2S gateway instance supports up to 10,000 concurrent connections and describes scale-unit thresholds for adding instances. |
 | [About IPsec policies](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-ipsec) | configuration | 0.80 | Lists supported IPsec policy combinations for point-to-site connectivity, which is product-specific configuration (which algorithms/modes are allowed together). Fits configuration due to enumerating valid parameter combinations. |
-| [About S2S IPsec policies](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-ipsec) | configuration | 0.80 | Describes supported IPsec policy combinations for Virtual WAN, including specific parameter names and allowed combinations for IKE/IPsec. This is product-specific configuration knowledge (which ciphers/algorithms/modes are allowed together), fitting the configuration category. |
 | [Combining Azure Firewall and spoke NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/hybrid-firewall-spoke-static) | architecture-patterns | 0.80 | Provides an advanced design pattern that combines Azure Firewall in the hub with spoke NVAs, defining different inspection paths and how static routes are arranged. This is clearly a product-specific architecture pattern with concrete routing behavior, so architecture-patterns applies. |
 | [Configure optional settings](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-optional-configurations) | configuration | 0.80 | Details optional client-side parameters (DNS suffixes, custom DNS servers, custom routes, forced tunneling) with specific setting names and usage unique to Azure VPN Client. |
 | [RADIUS - Configure NPS and user groups](https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-radius) | integrations | 0.80 | Shows how to configure Windows NPS/RADIUS with specific Vendor Specific Attributes for Virtual WAN user group support; includes attribute names/values unique to this integration. |
 | [Routing intent with static routes](https://learn.microsoft.com/en-us/azure/virtual-wan/routing-intent-static-route) | architecture-patterns | 0.80 | Details how to combine routing intent and routing policies with static routes, including specific configuration options (e.g., using static route configuration option 1 and that option 2 is unsupported with routing intent) and compatibility with different next-hop security solutions. This is a concrete design pattern and constraint set for Azure Virtual WAN routing, fitting architecture-patterns. |
+| [About S2S IPsec policies](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-ipsec) | configuration | 0.78 | The page documents the exact supported IPsec/IKE policy combinations (e.g., specific encryption/authentication algorithms, DH groups, PFS settings) for Azure Virtual WAN site-to-site connections. These are product-specific configuration constraints and valid parameter sets that an LLM would not reliably infer from general training data, fitting the configuration sub-skill type. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing-powershell) | configuration | 0.75 | PowerShell cmdlets and parameters for virtual hub routing; product-specific configuration surface. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva) | configuration | 0.75 | PowerShell-based configuration of hub route tables to NVAs with specific cmdlets and parameters. |
 | [Azure VPN Client - Windows](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-windows) | security | 0.75 | Details Azure VPN Client setup for Entra ID authentication, including protocol constraints (OpenVPN only) and possibly specific client configuration fields; this is product-specific security configuration. |

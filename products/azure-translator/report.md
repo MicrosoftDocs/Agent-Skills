@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 112
+- **Updated Pages**: 0
+- **Unchanged**: 116
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -69,17 +69,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 37 | 31.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [What are Azure Translator solutions?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/overview)
-  - Updated: 2026-07-26T08:00:00.000Z → 2026-09-15T17:18:00.000Z
-- [What is Microsoft Translator Pro?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/overview)
-  - Updated: 2026-08-14T08:00:00.000Z → 2026-09-15T17:18:00.000Z
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/language-support)
-  - Updated: 2026-06-14T08:00:00.000Z → 2026-09-15T17:18:00.000Z
-- [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq)
-  - Updated: 2026-08-19T22:12:00.000Z → 2026-09-15T17:18:00.000Z
 
 ## Classified Pages
 

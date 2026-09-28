@@ -1,9 +1,9 @@
 ---
 name: azure-content-understanding
-description: Expert knowledge for Azure Content Understanding in Foundry Tools development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when designing Content Understanding analyzers, RAG document flows, audiovisual analysis, Markdown outputs, or REST/SDK calls, and other Azure Content Understanding in Foundry Tools related development tasks. Not for Azure Speech in Foundry Tools (use azure-speech), Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Video Indexer (use azure-video-indexer).
+description: Expert knowledge for Azure Content Understanding in Foundry Tools development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building Content Understanding analyzers, RAG document flows, agentic workflows, REST/SDK calls, or GA migrations, and other Azure Content Understanding in Foundry Tools related development tasks. Not for Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech), Azure AI Vision (use azure-ai-vision), Azure AI Document Intelligence (use azure-document-intelligence).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Content Understanding in Foundry Tools Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L40 | Using diagnostics from the Content Understanding REST API to investigate failures, interpret error codes, and troubleshoot processing or configuration issues. |
 | Best Practices | L41-L46 | Improving Content Understanding accuracy using layout, labels, and feedback, plus using confidence scores and grounding to validate and refine document analysis results. |
-| Decision Making | L47-L55 | Guidance on choosing tools, deployments, and analyzers, deciding between Studio vs Foundry, migrating preview to GA, and estimating/optimizing Content Understanding costs |
+| Decision Making | L47-L55 | Guidance on choosing Azure AI/Foundry tools, model deployments, and Studio vs Foundry; migrating Content Understanding from preview to GA; and estimating/optimizing pricing. |
 | Architecture & Design Patterns | L56-L62 | Guidance on when to use agentic mode, how to design RAG-based document solutions, and how to build RPA workflows using Azure Content Understanding. |
 | Limits & Quotas | L63-L68 | Guidance on safe use of synchronous Content Understanding calls plus detailed quotas, rate limits, and throughput constraints for Foundry Tools. |
-| Security | L69-L73 | Securing Content Understanding analyzers and data: encryption, access control, network isolation, compliance, and best practices for protecting customer content and telemetry. |
-| Configuration | L74-L87 | Configuring and managing Content Understanding: analyzers, classifiers, splitting, workflows, capacity, audiovisual analysis, Markdown outputs, and creating/customizing analyzers via Studio or REST. |
-| Integrations & Coding Patterns | L88-L93 | Patterns and code samples for calling Content Understanding via REST/SDKs, integrating with Microsoft Agent Framework/LangChain, and implementing agentic workflows. |
+| Security | L69-L74 | Configuring security for Content Understanding: setting guardrails on analyzer outputs, securing analyzers and data, access control, and safe handling of sensitive content. |
+| Configuration | L75-L88 | Configuring and customizing Content Understanding analyzers, classifiers, workflows, and audiovisual/Markdown outputs, including creating, copying, and managing custom analyzers and Foundry resources. |
+| Integrations & Coding Patterns | L89-L94 | Patterns and code samples for calling Content Understanding via REST/SDKs, integrating with Microsoft Agent Framework/LangChain, and implementing agentic workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -48,7 +48,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Choose Azure AI tools for document processing | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool |
-| Choose and map Foundry model deployments for analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments |
+| Choose model deployments for Content Understanding analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments |
 | Choose between Content Understanding Studio and Foundry | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio |
 | Migrate Content Understanding from preview to GA | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga |
 | Estimate and optimize Content Understanding pricing | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer |
@@ -69,12 +69,13 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
+| Configure guardrails for Content Understanding results | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/guardrails |
 | Secure Content Understanding analyzers and data | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Content Understanding analyzers and parameters | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference |
+| Configure and customize Content Understanding analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference |
 | Configure Content Understanding classifier and splitting | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/classifier |
 | Interpret Content Understanding Markdown document output | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/markdown |
 | Configure classification and routing workflows in Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/classification-content-understanding-studio |

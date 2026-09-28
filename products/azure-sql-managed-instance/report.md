@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   limits-quotas: Backup immutability, DTU benchmarks, free-tier caps, memory and In-memory
     OLTP limits, maintenance windows, operation durations, and overall resource quotas
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 - **Total Pages**: 245
 - **Fetched**: 245
 - **Fetch Failed**: 0
-- **Classified**: 186
-- **Unclassified**: 59
+- **Classified**: 185
+- **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 238
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 244
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
@@ -69,32 +69,18 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | configuration | 47 | 19.2% |
 | decision-making | 11 | 4.5% |
 | deployment | 13 | 5.3% |
-| integrations | 19 | 7.8% |
+| integrations | 18 | 7.3% |
 | limits-quotas | 7 | 2.9% |
 | security | 51 | 20.8% |
 | troubleshooting | 18 | 7.3% |
-| *(Unclassified)* | 59 | 24.1% |
+| *(Unclassified)* | 60 | 24.5% |
 
 ## Changes
 
-### New Pages
-
-- [Secure your Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql)
-
 ### Updated Pages
 
-- [Transparent data encryption (TDE) in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql)
-  - Updated: 2025-11-25T18:34:00.000Z → 2026-09-16T08:00:00.000Z
-- [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql)
-  - Updated: 2026-09-07T08:00:00.000Z → 2026-09-15T08:00:00.000Z
-- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
-  - Updated: 2026-06-05T17:38:00.000Z → 2026-09-17T22:35:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
-- [Use DMVs to monitor performance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-with-dmvs?view=azuresql)
-  - Updated: 2025-08-26T08:00:00.000Z → 2026-09-17T22:35:00.000Z
+- [Ruby](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql)
+  - Updated: 2025-06-13T08:00:00.000Z → 2025-06-17T22:32:00.000Z
 
 ## Classified Pages
 
@@ -233,7 +219,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Restore database to SQL Server](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/restore-database-to-sql-server?view=azuresql) | integrations | 0.70 | Details cross-product restore from Managed Instance to SQL Server, including compatibility and backup/restore parameters unique to this integration. |
 | [Restore to a point in time](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/point-in-time-restore?view=azuresql) | configuration | 0.70 | Describes how to configure and execute point-in-time restore operations, including time selection and constraints specific to Managed Instance. |
 | [Ring buffer walkthrough](https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-code-ring-buffer?view=azuresql) | configuration | 0.70 | Shows concrete T-SQL and options for ring_buffer target in Azure SQL Extended Events; focuses on specific session/target settings rather than generic concepts. |
-| [Ruby](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql) | integrations | 0.70 | Provides Ruby sample code and connection string details for Azure SQL; these are concrete integration/SDK patterns. |
 | [Run a trace using Windows Auth](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-run-trace-managed-instance?view=azuresql) | integrations | 0.70 | Shows how to connect and run traces via SSMS using Windows Authentication; likely includes connection options, trace configuration, and product-specific integration patterns with tooling. |
 | [SQL Server Audit in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing?view=azuresql) | security | 0.70 | Covers SQL Server Audit specifically for Azure SQL Managed Instance. Such pages usually include audit configuration options, T-SQL or portal parameters, and product-specific settings (audit action groups, targets, retention), which are detailed security configuration knowledge rather than generic concepts. |
 | [Scale up / down](https://learn.microsoft.com/en-us/azure/azure-sql/database/scale-resources?view=azuresql) | deployment | 0.70 | Scaling guidance for Azure SQL typically includes SKU- and tier-specific behaviors (downtime characteristics, supported scale operations, constraints between DTU/vCore models, and online vs offline scaling) that are product-specific and not just generic SQL knowledge. While the summary is high level, this article is part of operational guidance for changing compute/storage characteristics in production and usually documents concrete constraints and behaviors that an LLM would not reliably know from training. |
@@ -334,6 +319,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | 0.20 | Page focuses on the process for submitting a support request to increase quotas, not on listing specific numeric limits, tier-specific quotas, or timeout values. It lacks detailed configuration parameters, decision matrices, or error-code-based troubleshooting, so none of the expert-knowledge sub-skill types apply. |
 | [Reservations](https://learn.microsoft.com/en-us/azure/azure-sql/database/reservations-discount-overview?view=azuresql) | 0.20 | Overview of reservations discount; billing concept without technical limits or configuration parameters. |
 | [Restore sample database](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/restore-sample-database-quickstart?view=azuresql) | 0.20 | Step-by-step quickstart showing how to restore a sample database using SSMS; procedural tutorial without product-specific limits, configuration option tables, or troubleshooting mappings. |
+| [Ruby](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql) | 0.20 | Quickstart tutorial showing how to connect and query Azure SQL using Ruby; primarily step-by-step code sample without product-specific configuration tables, limits, or detailed integration parameter references beyond generic connection usage. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/az-cli-script-samples-content-guide?view=azuresql) | 0.20 | High-level index of CLI samples; does not itself list parameters, limits, or detailed configs. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/powershell-script-content-guide?view=azuresql) | 0.20 | Index page for PowerShell scripts; lacks detailed configuration tables or error mappings itself. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql) | 0.20 | High-level security overview describing defense-in-depth and general concepts for Azure SQL; no specific RBAC role names, configuration parameters, or detailed settings tables that would qualify as product-specific security configuration guidance. |

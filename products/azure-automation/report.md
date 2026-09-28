@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 110
+- **Updated Pages**: 0
+- **Unchanged**: 111
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -71,11 +71,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 25 | 22.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Update Azure PowerShell modules](https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules)
-  - Updated: 2026-04-20T11:11:00.000Z → 2026-09-17T17:12:00.000Z
 
 ## Classified Pages
 

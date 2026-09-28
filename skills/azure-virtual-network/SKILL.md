@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Azure Virtual Network development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNet peering, subnet delegation, NSGs/service tags, Basic-to-Standard IP upgrades, or hybrid VNets, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Route Server (use azure-route-server).
+description: Expert knowledge for Azure Virtual Network development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNet peering, subnet delegation, NSGs, service endpoints, or upgrading Basic to Standard public IPs, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L43 | Designing secure, high-performance VNets: outbound VM access control, NSG rules/flows, VM throughput tuning, TCP/IP optimization, and secure use of VNet service endpoints. |
+| Best Practices | L35-L43 | Designing secure, high-performance VNets: NSG rule patterns, traffic flow, VM throughput tuning, TCP/IP optimization, and secure use of VNet service endpoints. |
 | Decision Making | L44-L53 | Guidance on choosing VNet-related options: MANA support for VM sizes, upgrading Basic to Standard public IPs, routing preference and unmetered CDN traffic, cost trade-offs, and VNet integration for isolation. |
 | Architecture & Design Patterns | L54-L60 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
 | Limits & Quotas | L61-L68 | Network resource limits and behaviors for Azure VMs/VNets: accelerated networking support, public IP quotas, VM throughput caps, and Virtual Network scale/performance constraints. |

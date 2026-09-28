@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-hsm
-description: Expert knowledge for Azure Cloud Hsm development including troubleshooting, best practices, limits & quotas, security, and integrations & coding patterns. Use when configuring Cloud HSM auth/network, PKCS#11 cert storage, key lifecycle, quotas, or cluster sync issues, and other Azure Cloud Hsm related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Attestation (use azure-attestation).
+description: Expert knowledge for Azure Cloud Hsm development including troubleshooting, best practices, limits & quotas, security, and integrations & coding patterns. Use when configuring Cloud HSM auth/networking, PKCS#11 apps, X.509 cert storage, capacity limits, or cluster issues, and other Azure Cloud Hsm related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Attestation (use azure-attestation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-12"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Hsm Skill
@@ -27,8 +27,8 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L33-L38 | Diagnosing and fixing Azure Cloud HSM cluster issues, including user/key synchronization problems, common error codes, connectivity failures, and operational faults. |
 | Best Practices | L39-L43 | Guidance on secure key lifecycle management, HSM partition/role design, access control, network and operational hardening, and compliance-oriented security practices for Azure Cloud HSM deployments. |
 | Limits & Quotas | L44-L49 | Service capacity limits (objects, transactions), quotas, and which cryptographic algorithms and key sizes are supported by Azure Cloud HSM |
-| Security | L50-L60 | Security setup for Cloud HSM: auth methods, compliance, network hardening, user management, and configuring/streaming operation logs to Event Hubs. |
-| Integrations & Coding Patterns | L61-L65 | Using PKCS#11 with Azure Cloud HSM to store, access, and manage X.509 certificates, including configuring certificate storage and integration patterns for apps and services. |
+| Security | L50-L61 | Security configuration for Cloud HSM: auth methods, network and Private Link setup, user management, logging to Event Hubs, and security/compliance best practices. |
+| Integrations & Coding Patterns | L62-L66 | Using PKCS#11 with Azure Cloud HSM to store, access, and manage X.509 certificates, including configuring certificate storage and integration patterns for apps and services. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,8 +52,9 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure authentication methods for Azure Cloud HSM | https://learn.microsoft.com/en-us/azure/cloud-hsm/authentication |
 | Understand security, compliance, and usage for Azure Cloud HSM | https://learn.microsoft.com/en-us/azure/cloud-hsm/faq |
-| Secure Azure Cloud HSM network with endpoints, DNS, and NSGs | https://learn.microsoft.com/en-us/azure/cloud-hsm/network-security |
-| Apply security best practices to Azure Cloud HSM deployments | https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm |
+| Integrate Azure Cloud HSM with Azure Private Link | https://learn.microsoft.com/en-us/azure/cloud-hsm/integrate-with-private-link |
+| Configure network security for Azure Cloud HSM | https://learn.microsoft.com/en-us/azure/cloud-hsm/network-security |
+| Apply security best practices to Azure Cloud HSM | https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm |
 | Route Azure Cloud HSM logs to Event Hubs | https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-configure-event-hub |
 | Configure and query Azure Cloud HSM operation logs | https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-operation-event-logging |
 | Implement secure user management in Azure Cloud HSM | https://learn.microsoft.com/en-us/azure/cloud-hsm/user-management |

@@ -1,9 +1,9 @@
 ---
 name: azure-event-hubs
-description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka clients, .NET SDKs, Flink/Spark, geo-replication, or Event Hubs Capture/Avro, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
+description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka-compatible clients, Flink/Spark, geo-replication, Avro capture, or the Event Hubs emulator, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Hubs Skill
@@ -25,9 +25,9 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L49 | Diagnosing and fixing Event Hubs runtime issues: Kafka/AMQP errors, .NET/legacy exceptions, ARM failures, auth problems, connectivity, and Blob Storage checkpoint store errors. |
-| Best Practices | L50-L55 | Guidance on routing events between AMQP, Kafka, and HTTPS, and on designing/scaling Event Hubs with partitions and throughput units for performance and capacity. |
-| Decision Making | L56-L62 | Guidance on choosing Event Hubs tiers, auto-inflate settings, geo-replication modes, and planning migrations from Apache Kafka to Event Hubs. |
-| Architecture & Design Patterns | L63-L69 | Patterns and guidance for Event Hubs reliability: availability/consistency design, geo-disaster recovery, and building/operating replication tasks (often with Azure Functions). |
+| Best Practices | L50-L56 | Best practices for integrating Event Hubs via AMQP/Kafka/HTTPS, building stateless replication with Functions, and scaling with partitions and throughput units. |
+| Decision Making | L57-L63 | Guidance on choosing Event Hubs tiers, auto-inflate settings, geo-replication modes, and planning migrations from Apache Kafka to Event Hubs. |
+| Architecture & Design Patterns | L64-L69 | Patterns and guidance for Event Hubs reliability: availability/consistency design, geo-disaster recovery, and building/operating replication tasks (often with Azure Functions). |
 | Limits & Quotas | L70-L79 | Event Hubs limits, quotas, and tier differences; max message sizes, capture intervals, platform behaviors, and governance via application groups. |
 | Security | L80-L108 | Securing Event Hubs: auth (Entra ID, SAS, RBAC, managed identities), encryption/CMK, confidential computing, TLS, and network access (NSP, VNet, firewall, Private Link, Azure Policy compliance). |
 | Configuration | L109-L121 | Configuring Event Hubs behavior: partitions, retention, cleanup, geo-DR, replication, log compaction, Avro capture, monitoring, app groups, and using the local emulator. |
@@ -51,6 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Exchange Event Hubs events across AMQP, Kafka, and HTTPS | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-exchange-events-different-protocols |
+| Design stateless event replication with Azure Functions | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-replicator-functions |
 | Scale Azure Event Hubs with partitions and throughput units | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-scalability |
 
 ### Decision Making
@@ -65,7 +66,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Design for availability and consistency in Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-availability-and-consistency |
 | Apply Event Hubs event replication task patterns | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-patterns |
-| Design Event Hubs replication tasks with Azure Functions | https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-replicator-functions |
 
 ### Limits & Quotas
 | Topic | URL |

@@ -44,8 +44,8 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 211
+- **Updated Pages**: 0
+- **Unchanged**: 213
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -63,13 +63,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads a
 | *(Unclassified)* | 38 | 17.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new)
-  - Updated: 2026-08-31T17:12:00.000Z → 2026-09-11T08:00:00.000Z
-- [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service)
-  - Updated: 2026-08-19T08:00:00.000Z → 2026-09-14T17:09:00.000Z
 
 ## Classified Pages
 

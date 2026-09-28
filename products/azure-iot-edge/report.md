@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 - **Unclassified**: 27
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 8
-- **Unchanged**: 90
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 99
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -73,29 +73,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | *(Unclassified)* | 27 | 27.3% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate to Metrics Collector 2.0](https://learn.microsoft.com/en-us/azure/iot-edge/migrate-metrics-collector)
-
-### Updated Pages
-
-- [End-to-end observability for IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-observability)
-  - Updated: 2025-06-06T22:07:00.000Z → 2026-09-16T05:14:00.000Z
-- [Access built-in metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-built-in-metrics)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-09-11T08:00:00.000Z
-- [Collect and transport metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-collect-and-transport-metrics)
-  - Updated: 2026-02-27T23:17:00.000Z → 2026-09-16T05:14:00.000Z
-- [Explore curated visualizations](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-explore-curated-visualizations)
-  - Updated: 2026-03-03T23:37:00.000Z → 2026-09-16T05:14:00.000Z
-- [Create alert rules](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-alerts)
-  - Updated: 2025-08-08T08:00:00.000Z → 2026-09-16T05:14:00.000Z
-- [Add custom metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-add-custom-metrics)
-  - Updated: 2025-08-21T05:12:00.000Z → 2026-09-16T05:14:00.000Z
-- [FAQ and troubleshooting](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-troubleshoot-monitoring-and-faq)
-  - Updated: 2025-08-08T08:00:00.000Z → 2026-09-16T05:14:00.000Z
-- [Monitor devices and modules](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-monitor-with-workbooks)
-  - Updated: 2025-06-04T22:03:00.000Z → 2026-09-16T05:14:00.000Z
 
 ## Classified Pages
 

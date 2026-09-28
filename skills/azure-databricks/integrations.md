@@ -19,6 +19,7 @@
 | Connect Databricks agents to structured data sources | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/structured-retrieval-tools |
 | Build custom Databricks Apps agents with Supervisor API | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/supervisor-api-app |
 | Integrate Databricks custom agents with Microsoft Teams | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/teams-agent |
+| Connect AI assistants to Databricks MCP tools | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/connect-clients |
 | Proxy external REST APIs via Unity Catalog connections | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/rest-api-proxy |
 | Use MCP servers from Custom Agents with databricks-mcp | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/use-mcp-in-agents |
 | Configure Slack subscriptions for Databricks AI/BI dashboards | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/admin/slack-subscriptions |
@@ -196,7 +197,7 @@
 | Use Databricks SQL CLI to query warehouses | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-sql-cli |
 | Configure JetBrains DataGrip to work with Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/datagrip |
 | Configure DBeaver connections to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/dbeaver |
-| Use Databricks SQL Driver for Go | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/go-sql-driver |
+| Use Databricks SQL Driver for Go with Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/go-sql-driver |
 | Use Databricks SQL Driver for Node.js | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/nodejs-sql-driver |
 | Connect Python pyodbc to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/pyodbc |
 | Use Databricks SQL Connector for Python | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/python-sql-connector |
@@ -222,6 +223,7 @@
 | Incrementally clone Parquet and Iceberg to Delta | https://learn.microsoft.com/en-us/azure/databricks/ingestion/data-migration/clone-parquet |
 | Convert Parquet and Iceberg tables to Delta Lake | https://learn.microsoft.com/en-us/azure/databricks/ingestion/data-migration/convert-to-delta |
 | Ingest Google Drive files with Spark and SQL APIs | https://learn.microsoft.com/en-us/azure/databricks/ingestion/google-drive |
+| Use Databricks Lakeflow Connect SQL Server connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sql-server-reference |
 | Ingest OneDrive for Business files into Delta tables | https://learn.microsoft.com/en-us/azure/databricks/ingestion/onedrive |
 | Ingest OpenTelemetry data via Zerobus OTLP | https://learn.microsoft.com/en-us/azure/databricks/ingestion/opentelemetry/ |
 | Ingest SFTP files using Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/sftp |
@@ -229,7 +231,6 @@
 | Ingest Arrow Flight batches into Zerobus Ingest | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-arrow-flight |
 | Use Kafka producer APIs with Zerobus Ingest | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-kafka |
 | Connect Microsoft Excel to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel |
-| Import and query Databricks data in Excel | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-query |
 | Write Excel data back to Databricks tables | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-write-back |
 | Use Databricks Connector for Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/ |
 | Use Genie One with Databricks data in Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/genie |
@@ -1165,15 +1166,14 @@
 | Compute inner products with vector_inner_product | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_inner_product |
 | Compute Euclidean distance with vector_l2_distance | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_l2_distance |
 | Compute vector norms with vector_norm in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/vector_norm |
-| Configure Lakehouse Federation for Google BigQuery | https://learn.microsoft.com/en-us/azure/databricks/query-federation/bigquery |
-| Federate queries across Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/query-federation/databricks |
+| Enable federated queries on Google BigQuery data | https://learn.microsoft.com/en-us/azure/databricks/query-federation/bigquery |
 | Create HTTP connections and call external REST APIs | https://learn.microsoft.com/en-us/azure/databricks/query-federation/http |
-| Configure Lakehouse Federation for MySQL databases | https://learn.microsoft.com/en-us/azure/databricks/query-federation/mysql |
-| Configure Lakehouse Federation for Oracle databases | https://learn.microsoft.com/en-us/azure/databricks/query-federation/oracle |
+| Configure Lakehouse Federation for MySQL integration | https://learn.microsoft.com/en-us/azure/databricks/query-federation/mysql |
+| Set up Oracle federated queries in Lakehouse Federation | https://learn.microsoft.com/en-us/azure/databricks/query-federation/oracle |
 | Configure Lakehouse Federation for PostgreSQL databases | https://learn.microsoft.com/en-us/azure/databricks/query-federation/postgresql |
 | Configure Amazon Redshift federation in Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/redshift |
 | Use remote_query to run native external SQL | https://learn.microsoft.com/en-us/azure/databricks/query-federation/remote-queries |
-| Configure Lakehouse Federation for Salesforce Data 360 | https://learn.microsoft.com/en-us/azure/databricks/query-federation/salesforce-data-cloud |
+| Run Salesforce Data 360 queries via Lakehouse Federation | https://learn.microsoft.com/en-us/azure/databricks/query-federation/salesforce-data-cloud |
 | Access Salesforce Data 360 via Databricks file sharing | https://learn.microsoft.com/en-us/azure/databricks/query-federation/salesforce-data-cloud-file-sharing |
 | Configure Snowflake OAuth federation in Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake |
 | Use basic authentication for Snowflake federation | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-basic-auth |
@@ -1184,7 +1184,7 @@
 | Configure SQL Server federation in Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sql-server |
 | Use Microsoft Entra ID for SQL Server federation | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sql-server-entra |
 | Configure Lakehouse Federation for Azure Synapse | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sqldw |
-| Configure Lakehouse Federation for Teradata databases | https://learn.microsoft.com/en-us/azure/databricks/query-federation/teradata |
+| Configure Teradata integration with Lakehouse Federation | https://learn.microsoft.com/en-us/azure/databricks/query-federation/teradata |
 | Use Avro format with Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/query/formats/avro |
 | Read binary files with Databricks binaryFile source | https://learn.microsoft.com/en-us/azure/databricks/query/formats/binary |
 | Read and write CSV files in Databricks | https://learn.microsoft.com/en-us/azure/databricks/query/formats/csv |

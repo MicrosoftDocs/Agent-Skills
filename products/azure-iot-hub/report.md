@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 193
+- **Updated Pages**: 0
+- **Unchanged**: 195
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -73,13 +73,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | *(Unclassified)* | 66 | 33.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage device groups](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/create-update-group)
-  - Updated: 2025-01-26T12:15:00.000Z → 2026-09-17T22:12:00.000Z
-- [Find missing devices with Agent Check](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-agent-check)
-  - Updated: 2023-01-20T23:03:00.000Z → 2026-09-17T22:12:00.000Z
 
 ## Classified Pages
 

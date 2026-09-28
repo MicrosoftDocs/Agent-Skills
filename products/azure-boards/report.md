@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 123
+- **Updated Pages**: 0
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 90 | 72.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Connect Azure Boards (cloud)](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops)
-  - Updated: 2026-09-10T08:00:00.000Z → 2026-09-15T08:00:00.000Z
 
 ## Classified Pages
 

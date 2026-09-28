@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 70
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -61,15 +61,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 20 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [NuGet](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-nuget?view=azure-devops)
-  - Updated: 2026-08-31T22:06:00.000Z → 2026-09-17T22:04:00.000Z
-- [Key concepts](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops)
-  - Updated: 2025-10-30T14:05:00.000Z → 2026-09-14T22:04:00.000Z
-- [Publish NuGet packages (NuGet.exe)](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish?view=azure-devops)
-  - Updated: 2026-05-12T17:04:00.000Z → 2026-09-14T22:04:00.000Z
 
 ## Classified Pages
 

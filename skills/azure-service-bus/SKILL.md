@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, filters/actions, geo-replication, or JMS/RabbitMQ integrations, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, autoforwarding chains, geo-replication, or JMS/Java clients, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Queue Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs), Azure Relay (use azure-relay).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-09-27"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L46 | Diagnosing and resolving Azure Service Bus errors and exceptions (AMQP, .NET, Resource Manager), configuring tracing, and fixing common messaging and connectivity issues. |
 | Best Practices | L47-L58 | Guidance on reliable, high-throughput messaging: duplicate detection, ordering/sessions, timestamps, maintenance prep, loss/duplicate prevention, serialization, prefetch, timeouts, and retries. |
 | Decision Making | L59-L67 | Guidance on choosing Service Bus vs other messaging options, configuring geo-disaster recovery/replication, Java/JMS client choices, and migrating from Standard to Premium. |
-| Architecture & Design Patterns | L68-L78 | Patterns for designing resilient, geo-replicated, multi-namespace Service Bus systems, including partitioning, autoforwarding chains, federation, and message replication with tools like NServiceBus. |
+| Architecture & Design Patterns | L68-L78 | Patterns for resilient, geo-replicated, multi-namespace Service Bus architectures, including partitioning, autoforwarding chains, federation, and message replication with NServiceBus. |
 | Limits & Quotas | L79-L86 | Service Bus limits, quotas, throttling behavior, FAQs, and guidance on handling large messages (especially with Premium tier). |
 | Security | L87-L110 | Securing Service Bus: identity-based auth, SAS, keys and encryption, TLS, network isolation (VNet, Private Link, firewalls), Azure Policy, and compliance best practices. |
 | Configuration | L111-L135 | Configuring Service Bus behavior: scaling, partitions, sessions, forwarding, TTL/dead-lettering, filters/actions, monitoring/metrics, geo-replication, and management via ARM, PowerShell, and emulator. |
-| Integrations & Coding Patterns | L136-L151 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication tasks, and batch message deletion. |
-| Deployment | L152-L161 | Deploying Service Bus namespaces and entities (queues, topics, subscriptions, rules) using ARM/Bicep templates, and moving namespaces across Azure regions. |
+| Integrations & Coding Patterns | L136-L150 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication tasks, and batch message deletion. |
+| Deployment | L151-L160 | Deploying Service Bus namespaces and entities (queues, topics, subscriptions, rules) using ARM/Bicep templates, and moving namespaces across Azure regions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -72,7 +72,7 @@ This skill requires **network access** to fetch documentation content:
 | Design chained Azure Service Bus entities with autoforwarding | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-auto-forwarding |
 | Design Service Bus federation and replication topologies | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-overview |
 | Implement Service Bus message replication patterns | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-patterns |
-| Design and use Azure Service Bus geo-replication | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication |
+| Design geo-replication for Azure Service Bus namespaces | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication |
 | Design multi-namespace Service Bus for resilience | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-outages-disasters |
 | Design and create partitioned Service Bus queues and topics | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning |
 
@@ -141,7 +141,6 @@ This skill requires **network access** to fetch documentation content:
 | Develop Azure Service Bus clients using JMS 2.0 | https://learn.microsoft.com/en-us/azure/service-bus-messaging/jms-developer-guide |
 | Migrate JMS apps from ActiveMQ to Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/migrate-jms-activemq-to-servicebus |
 | Use legacy .NET Service Bus library with AMQP | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-dotnet |
-| Build Service Bus replication tasks with Azure Functions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-replicator-functions |
 | Define Azure Service Bus subscription filters and actions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-filter-examples |
 | Integrate RabbitMQ with Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-integrate-with-rabbitmq |
 | Use JMS 1.1 with AMQP on Service Bus Standard | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp |

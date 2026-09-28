@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-09-20 02:02:40
-**Total Duration**: 0m 15s
+**Generated**: 2026-09-27 02:02:31
+**Total Duration**: 0m 8s
 
 ## Product Crawl Summary
 
@@ -9,7 +9,7 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Well Architected | 213 | 175 | 0 | 2 | 0 | OK |
+| 1 | Azure Well Architected | 213 | 175 | 0 | 0 | 0 | OK |
 
 ### Totals
 
@@ -17,7 +17,7 @@ Quick overview for reviewers. See individual product reports for details.
 - **Total Pages**: 213
 - **Total Classified**: 175
 - **Total New Pages**: 0
-- **Total Updated Pages**: 2
+- **Total Updated Pages**: 0
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)

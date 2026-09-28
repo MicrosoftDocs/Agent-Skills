@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 27
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 32
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-deployment-environments/azure-deployment-environments.csv`
 
 ## Classification Statistics
@@ -75,25 +75,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 | *(Unclassified)* | 10 | 31.2% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Deployment Environments retirement guide](https://learn.microsoft.com/en-us/azure/deployment-environments/deployment-environments-retirement-guide)
-
-### Updated Pages
-
-- [What is Azure Deployment Environments?](https://learn.microsoft.com/en-us/azure/deployment-environments/overview-what-is-azure-deployment-environments)
-  - Updated: 2026-05-19T08:00:00.000Z → 2026-09-14T17:12:00.000Z
-- [Configure Azure Deployment Environments](https://learn.microsoft.com/en-us/azure/deployment-environments/quickstart-create-and-configure-devcenter)
-  - Updated: 2026-05-19T08:00:00.000Z → 2026-09-14T17:12:00.000Z
-- [Create dev center and project by using ARM](https://learn.microsoft.com/en-us/azure/deployment-environments/quickstart-create-dev-center-project-azure-resource-manager)
-  - Updated: 2026-05-22T22:13:00.000Z → 2026-09-14T17:12:00.000Z
-- [Create and access an environment](https://learn.microsoft.com/en-us/azure/deployment-environments/quickstart-create-access-environments)
-  - Updated: 2026-05-19T08:00:00.000Z → 2026-09-14T17:12:00.000Z
-
-### Deleted Pages
-
-- ~~Maintenance mode for Azure Deployment Environments~~ (https://learn.microsoft.com/en-us/azure/deployment-environments/maintenance-mode)
 
 ## Classified Pages
 

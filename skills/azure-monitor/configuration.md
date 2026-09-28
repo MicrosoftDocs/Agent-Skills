@@ -7,8 +7,9 @@
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Azure Monitor Agent settings via DCR | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/agent-settings |
+| Configure Azure Monitor Agent settings on VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/agent-settings |
 | Migrate custom text log tables to AMA DCR-based logs | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-custom-text-log-migration |
+| Track Azure Monitor Agent VM extension versions | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-extension-versions |
 | Configure Azure Monitor Agent network connectivity | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-network-configuration |
 | Manage Azure Monitor Agent deployment with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy |
 | Check Azure Monitor Agent platform and OS requirements | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-requirements |
@@ -94,15 +95,20 @@
 | Configure Azure Monitor data transformations in DCRs | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations |
 | Create and attach transformation queries in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-create |
 | Use supported KQL features in Azure Monitor transformations | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-kql |
+| Create custom Azure Policy for diagnostic settings | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/diagnostic-settings-policy |
+| Configure built-in policies for diagnostic settings | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/diagnostic-settings-policy-built-in |
 | Create DCRs to export Azure platform metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/metrics-export-create |
 | Author DCR JSON for Azure Monitor metrics export | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/metrics-export-structure |
-| Configure Azure Monitor pipeline on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure |
-| Configure Azure Monitor pipeline with CLI and ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure-cli |
+| Configure Azure Monitor pipeline on Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure |
+| Automate Azure Monitor pipeline with CLI and ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure-cli |
 | Configure Azure Monitor pipeline via Azure portal | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure-portal |
 | Configure Kubernetes gateway for Azure Monitor pipeline | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-kubernetes-gateway |
 | Configure pod placement for Azure Monitor pipeline instances | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-pod-placement |
 | Configure Azure Monitor pipeline log transformations | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-transformations |
 | Configure DCRs to collect Azure platform logs | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/platform-logs-collect |
+| Configure Azure Monitor diagnostic settings via ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/resource-manager-diagnostic-settings |
+| Configure and export Azure Monitor activity logs | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/activity-log |
+| Use Azure Activity Log event schemas by category | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/activity-log-schema |
 | Configure monitoring coverage and recommended settings in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/monitoring-coverage |
 | Use private endpoints for Azure Monitor workspace queries | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/private-link-azure-monitor-workspace |
 | Configure Azure Monitor Private Link Scope and endpoints | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/private-link-configure |
@@ -113,7 +119,7 @@
 | Configure Azure Monitor health models with Designer | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/designer |
 | Configure discovery rules for Azure Monitor health models | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/discoveries |
 | Configure monitoring and alerts for Azure health models | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/monitoring |
-| Configure and tune signals in Azure Monitor health models | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/signals |
+| Configure and tune Azure Monitor health signals | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/signals |
 | Query Azure resource logs directly with Logs API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/azure-resource-queries |
 | Use batch queries with Azure Monitor Logs API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/batch-queries |
 | Configure Azure Monitor Logs API Prefer header options | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/prefer-options |
@@ -121,28 +127,20 @@
 | Change pricing tiers for Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/change-pricing-tier |
 | Configure and use computer groups in log queries | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/computer-groups |
 | Configure custom log tables and schemas in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/create-custom-table |
-| Run cross-resource queries in Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/cross-workspace-query |
 | Configure data retention for Log Analytics tables | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure |
 | Delete and recover Azure Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-workspace |
 | Configure on-demand export jobs for Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/export-job |
 | Set up Log Analytics data export rules to storage and Event Hubs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-data-export |
 | Configure Azure Monitor Logs Ingestion API settings | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview |
 | Configure customer-managed storage for Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/private-storage |
+| Understand Azure resource log schemas and services | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/resource-logs-schema |
 | Create Azure Monitor log queries with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/resource-manager-log-queries |
 | Restore archived Azure Monitor log data for querying | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/restore |
 | Configure and run Azure Monitor log search jobs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/search-jobs |
 | Configure Prometheus rule groups in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-rule-groups |
-| Understand Azure Activity Log event schema fields | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-schema |
-| Configure Azure Monitor diagnostic settings and destinations | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings |
-| Configure Azure Policy for diagnostic settings at scale | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings-policy |
-| Configure Azure resource logs and destinations in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs |
-| Azure resource logs services and event schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs-schema |
-| Configure Azure Monitor diagnostic settings via ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-manager-diagnostic-settings |
 | Configure BYOS storage for Profiler and Snapshot Debugger | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-bring-your-own-storage |
 | Configure .NET Profiler settings in Azure portal | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-settings |
-| Reference Azure Monitor resource log categories | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
-| Reference Azure Monitor metrics by resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
-| Reference Azure Monitor metrics by resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
+| Identify and configure Azure Monitor resource log categories | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
 | Configure Azure Monitor logs for AAD Domain Services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-aad-domainservices-logs |
 | Enable Azure Monitor logs for FarmBeats resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-agfoodplatform-farmbeats-logs |
 | Configure Azure Monitor logs for Analysis Services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-analysisservices-servers-logs |
@@ -213,6 +211,8 @@
 | Configure Azure Monitor logs for Discovery supercomputers | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-discovery-supercomputers-logs |
 | Configure Azure Monitor logs for Discovery workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-discovery-workspaces-logs |
 | Configure Azure Monitor logs for Cosmos DB accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-documentdb-databaseaccounts-logs |
+| Understand Azure Monitor logs for Event Grid namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-eventgrid-namespaces-logs |
+| Interpret Microsoft.NetworkSecurity agentFabrics log categories | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-networksecurity-agentfabrics-logs |
 | Use Azure Monitor log categories for Resource Builder workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-resourcebuilder-workspaces-logs |
 | Oracle GoldenGate deployment log categories in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/oracle-database-goldengatedeployments-logs |
 | Use Microsoft.App/sessionpools metrics in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-app-sessionpools-metrics |
@@ -1251,6 +1251,7 @@
 | Analyze Azure VM monitoring data using Azure Monitor features | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-analyze |
 | Configure Azure Monitor Agent DCRs for Fabric and ADX | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-fabric-destination |
 | Disable or adjust Azure Monitor VM data collection | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vm-disable-monitoring |
+| Configure Azure Monitor for VMs at scale | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vm-enable-monitoring |
 | Meet requirements and manage VM Insights Dependency Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent |
 | Uninstall Dependency Agent from Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent-uninstall |
 | Enable VM Insights on intermittently connected Windows clients | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-client |

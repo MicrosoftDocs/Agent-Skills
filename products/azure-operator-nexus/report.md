@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   configuration: 'Configuring and operating Azure Operator Nexus: cluster templates/parameters,
     fabric ACLs and route policies, BGP/VRF limits, isolation domains, Kubernetes
@@ -15,9 +15,9 @@ category_descriptions:
   architecture-patterns: Design patterns and reference architectures for resilient
     Nexus deployments, including rack-failure-tolerant control planes and near-edge
     storage topology and capacity planning.
-  limits-quotas: Limits, capacity planning, supported versions, and operational guidance
-    for Nexus appliances and Kubernetes (storage classes, isolation domains, upgrades,
-    restarts, and log behavior on disconnection).
+  limits-quotas: Limits, capacity planning, supported versions, upgrade cadence, and
+    operational guidance (storage expansion, node restarts, isolation domains, log
+    behavior) for Azure Operator Nexus.
   best-practices: Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in
     Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance
     components.
@@ -26,15 +26,15 @@ category_descriptions:
     in the network fabric.'
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and deployment. Use when managing Nexus
-  fabric ACLs/BGP, cluster templates, secure access/identity, storage topology, or
-  upgrades, and other Azure Operator Nexus related development tasks. Not for Azure
+  limits & quotas, security, configuration, and deployment. Use when configuring Nexus
+  fabric ACLs/BGP, securing RBAC/SSH, planning cluster placement, or diagnosing fabric/K8s
+  issues, and other Azure Operator Nexus related development tasks. Not for Azure
   Operator Insights (use azure-operator-insights), Azure Operator Service Manager
   (use azure-operator-service-manager), Azure Networking (use azure-networking), Azure
   Virtual Network (use azure-virtual-network).
-use_when: Use when managing Nexus fabric ACLs/BGP, cluster templates, secure access/identity,
-  storage topology, or upgrades, and other Azure Operator Nexus related development
-  tasks.
+use_when: Use when configuring Nexus fabric ACLs/BGP, securing RBAC/SSH, planning
+  cluster placement, or diagnosing fabric/K8s issues, and other Azure Operator Nexus
+  related development tasks.
 confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights),
   Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking
   (use azure-networking), Azure Virtual Network (use azure-virtual-network).
@@ -43,16 +43,16 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 
 ## Summary
 
-- **Total Pages**: 222
-- **Fetched**: 222
+- **Total Pages**: 223
+- **Fetched**: 223
 - **Fetch Failed**: 0
 - **Classified**: 169
-- **Unclassified**: 53
+- **Unclassified**: 54
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 215
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 221
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -62,32 +62,24 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 |------|-------|------------|
 | architecture-patterns | 2 | 0.9% |
 | best-practices | 2 | 0.9% |
-| configuration | 69 | 31.1% |
+| configuration | 69 | 30.9% |
 | decision-making | 4 | 1.8% |
-| deployment | 5 | 2.3% |
-| limits-quotas | 9 | 4.1% |
-| security | 34 | 15.3% |
-| troubleshooting | 44 | 19.8% |
-| *(Unclassified)* | 53 | 23.9% |
+| deployment | 5 | 2.2% |
+| limits-quotas | 9 | 4.0% |
+| security | 34 | 15.2% |
+| troubleshooting | 44 | 19.7% |
+| *(Unclassified)* | 54 | 24.2% |
 
 ## Changes
 
+### New Pages
+
+- [Expand CSN shared storage](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-expand-csn-shared-storage)
+
 ### Updated Pages
 
-- [Isolation Domain](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-isolation-domain)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-09-16T17:04:00.000Z
-- [How to upgrade os of terminal server](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-os-of-terminal-server)
-  - Updated: 2026-04-08T22:04:00.000Z → 2026-09-16T08:00:00.000Z
-- [How to disable internal/external networks in an enabled layer 3 isolation domain](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-disable-internal-external-networks-enabled-layer-3-isolation-domain)
-  - Updated: 2026-03-05T18:05:00.000Z → 2026-09-18T17:05:00.000Z
-- [Supported Software Versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-supported-software-versions)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-09-14T22:03:00.000Z
-- [Supported Storage Appliance Versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-storage-supported-versions)
-  - Updated: 2026-05-08T08:00:00.000Z → 2026-09-14T08:00:00.000Z
-- [Access Control List configuration](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-acl-configuration)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-09-16T17:04:00.000Z
-- [Troubleshoot Warning status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-warning)
-  - Updated: 2026-06-29T22:08:00.000Z → 2026-09-15T17:03:00.000Z
+- [Storage for Nexus Kubernetes](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage-kubernetes)
+  - Updated: 2025-09-17T16:51:00.000Z → 2026-09-24T22:09:00.000Z
 
 ## Classified Pages
 
@@ -117,6 +109,7 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Troubleshoot Degraded status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-degraded) | troubleshooting | 0.86 | The page is a product-specific troubleshooting guide for Azure Operator Nexus Bare Metal Machines in a Degraded state. It focuses on specific status messages and detailed status fields, mapping symptoms to likely causes and resolution steps. This is unique operational knowledge not generally known from training and fits the troubleshooting pattern of symptom → diagnosis → solution. |
 | [Troubleshoot Warning status](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-bare-metal-machine-warning) | troubleshooting | 0.86 | Page is a troubleshooting guide organized around Bare Metal Machine warning status messages, mapping specific warning conditions and detailed status messages to likely causes and resolution steps unique to Azure Operator Nexus. |
 | [Configure role-based access control](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-aad-rbac) | security | 0.85 | Provides concrete RBAC role mappings, scope definitions, and Entra ID integration specifics for Nexus clusters that are product-specific. |
+| [Expand CSN shared storage](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-expand-csn-shared-storage) | limits-quotas | 0.85 | Contains explicit numeric capacity limits for the CSN-backed NFS storage pool (1 TiB default, 20 TiB maximum) and describes online expansion behavior. These are product-specific limits and operational constraints that qualify as expert knowledge under limits-quotas. |
 | [Isolation Domain configuration](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-isolation-domain-configuration) | configuration | 0.85 | Explicitly a configuration reference; likely includes parameters, allowed values, and examples for isolation domain resources. |
 | [Troubleshoot DNS Issues](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-dns-issues) | troubleshooting | 0.85 | Covers Envoy DNS Proxy behavior in NNF and specific steps to diagnose DNS failures impacting Nexus resource deployment and management. |
 | [Troubleshoot Internet host virtual machine](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-internet-host-virtual-machine) | troubleshooting | 0.85 | Covers Nexus-specific networking and DNS paths when accessing CSN-connected internet hostnames from AKS hybrid clusters. |
@@ -231,7 +224,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Route Policy Configuration Examples](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-route-policy-config-examples) | configuration | 0.70 | Provides concrete configuration examples for route policies, including property names and values. These examples encode product-specific configuration patterns beyond generic routing concepts. |
 | [Running BareMetal actions directly with nexusctl](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-nexusctl) | troubleshooting | 0.70 | Break-glass tool with specific bare metal commands, flags, and constraints unique to Operator Nexus; includes operational caveats and likely command syntax not generally known. |
 | [Storage Appliance Component Repair](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-storage-device-repair) | best-practices | 0.70 | Describes Nexus-specific process and constraints for OEM-led component replacement (drives, controllers) without platform intervention. |
-| [Storage for Nexus Kubernetes](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage-kubernetes) | limits-quotas | 0.70 | Defines specific storage classes (nexus-volume, nexus-shared) and states Nexus requires one and supports up to two storage appliances; this is product-specific limit information. |
 | [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-kubernetes-cluster-supported-versions) | decision-making | 0.70 | Version support and lifecycle details for Azure Operator Nexus Kubernetes service are product-specific and include guidance on when and how to upgrade, and what to expect from the upgrade experience. These are concrete, service-specific decision criteria for choosing and planning Kubernetes versions, which an LLM is unlikely to know from training. |
 | [Supported VM sizes](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-kubernetes-cluster-sku) | decision-making | 0.70 | A SKU reference page for Operator Nexus Kubernetes clusters is typically a detailed, product-specific list of supported VM SKUs and their characteristics, used to choose appropriate node pool sizes. This is expert knowledge not derivable from general training data and directly supports capacity and SKU selection decisions, fitting the decision-making category better than others. |
 | [Tracking asynchronous operations](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-track-async-operations-cli) | configuration | 0.70 | Documents use of operationStatuses resource, headers (Azure-AsyncOperation, Location), and example URLs specific to Nexus providers. |
@@ -307,6 +299,7 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | [Network-to-Network Interconnect (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-to-network-interconnect) | 0.30 | Explains what Network-to-Network Interconnect is and its role in Nexus Network Fabric, but does not expose numeric limits, configuration tables, or detailed integration parameters. |
 | [PKI implementation](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-pki-implementation) | 0.30 | Describes PKI architecture conceptually; no specific certificate parameters, config tables, or role mappings. |
 | [Resource Types](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-resource-types) | 0.30 | Conceptual overview of resource types; no detailed configuration tables or limits. |
+| [Storage for Nexus Kubernetes](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage-kubernetes) | 0.30 | Conceptual overview of storage classes (nexus-volume and nexus-shared) without detailed numeric limits, configuration parameter tables, or troubleshooting/error mappings. Primarily describes what storage types exist rather than specific constraints or configurations. |
 | [Storage overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage) | 0.30 | Storage appliance overview; no explicit limits, config tables, or error mappings in summary. |
 | [Telco Input Template](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-telco-input-template) | 0.30 | Concept article about representing a Nexus instance in a template; summary suggests conceptual only. |
 | [Terminal Server as an Azure Operator Nexus Resource](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-terminal-server-as-resource) | 0.30 | The summary indicates a conceptual explanation of how terminal servers are modeled as ARM resources and their child resources, but does not clearly show specific configuration tables, limits, error codes, or other detailed expert-only data that match any sub-skill type. It appears to be a modeling/concept overview rather than detailed configuration, troubleshooting, or limits content. |

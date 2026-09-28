@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 125
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 129
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
 ## Classification Statistics
@@ -75,23 +75,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 31 | 24.0% |
 
 ## Changes
-
-### New Pages
-
-- [Place tempdb on ephemeral storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/tempdb-ephemeral-storage?view=azuresql)
-
-### Updated Pages
-
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-03-03T18:40:00.000Z → 2026-09-15T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-07-10T08:00:00.000Z → 2026-09-17T22:35:00.000Z
-
-### Deleted Pages
-
-- ~~Place tempdb to ephemeral disk~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/tempdb-ephemeral-storage?view=azuresql)
 
 ## Classified Pages
 

@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 44
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 50
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
 ## Classification Statistics
@@ -69,27 +69,6 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | *(Unclassified)* | 32 | 64.0% |
 
 ## Changes
-
-### New Pages
-
-- [Region availability and service limits](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/region-availability)
-
-### Updated Pages
-
-- [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-09-18T22:15:00.000Z
-- [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq)
-  - Updated: 2026-07-06T17:21:00.000Z → 2026-09-18T22:15:00.000Z
-- [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-09-18T22:15:00.000Z
-- [Protected material detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/protected-material)
-  - Updated: 2025-09-02T08:00:00.000Z → 2026-09-18T22:15:00.000Z
-- [Harm categories](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/harm-categories)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-09-18T22:15:00.000Z
-
-### Deleted Pages
-
-- ~~Language support~~ (https://learn.microsoft.com/en-us/azure/ai-services/content-safety/language-support)
 
 ## Classified Pages
 

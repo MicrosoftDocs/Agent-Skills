@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-09-27'
 category_descriptions:
   integrations: 'Integrating Grafana with Azure AI agents and monitoring tools: MCP
     setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer
@@ -61,8 +61,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ### Updated Pages
 
-- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
-  - Updated: 2026-07-21T11:41:00.000Z → 2026-09-15T08:00:00.000Z
+- [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal)
+  - Updated: 2025-09-29T08:00:00.000Z → 2026-09-21T17:13:00.000Z
 
 ## Classified Pages
 
@@ -112,8 +112,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | [Grafana UI](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-app-ui) | 0.30 | Reference for Grafana UI components linking to upstream Grafana docs; mostly conceptual UI overview without Azure-specific expert configuration or limits. |
 | [Agent Framework dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-dashboard) | 0.20 | From the summary, the page is a how-to guide for creating and customizing an Agent Framework dashboard in Azure Managed Grafana. It describes using a prebuilt dashboard to visualize performance, token usage, costs, and errors, but there is no indication of specific limits, configuration parameter tables, error-code mappings, or other product-specific expert details as defined in the sub-skill types. It appears to be primarily tutorial/usage content rather than expert reference material. |
 | [Create a dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-create-dashboard) | 0.20 | Dashboard creation tutorial for Azure Managed Grafana; primarily UI-driven instructions. No indication of numeric limits, configuration matrices, or specialized best-practice guidance beyond generic dashboard creation concepts. |
+| [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal) | 0.20 | Quickstart for creating an Azure Managed Grafana workspace via the portal; primarily step-by-step UI guidance without detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
 | [Monitor using metrics](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics) | 0.20 | Appears to be a how-to/tutorial on viewing Azure Managed Grafana metrics in Azure Monitor. Summary suggests conceptual and procedural guidance without mention of specific limits, configuration tables, error codes, or product-specific parameter details. |
 | [About Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview) | 0.10 | High-level overview of Azure Managed Grafana and its benefits; no specific limits, configuration parameters, error codes, or decision matrices. |
 | [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli) | 0.10 | Quickstart for creating a workspace via CLI; procedural tutorial, not configuration reference or limits. |
-| [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal) | 0.10 | Quickstart for creating a workspace via portal; step-by-step tutorial without detailed limits, configs, or troubleshooting matrices. |
 | [Support](https://learn.microsoft.com/en-us/azure/managed-grafana/find-help-open-support-ticket) | - | Support/help navigation content for Azure Managed Grafana; does not include technical limits, configuration parameters, error codes, or product-specific expert details. |

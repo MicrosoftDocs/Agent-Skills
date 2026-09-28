@@ -15,6 +15,7 @@
 | Use Databricks online tables for real-time features | https://learn.microsoft.com/en-us/azure/databricks/archive/machine-learning/feature-store/online-tables |
 | Collaborate in Databricks clean rooms as invited users | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/clean-room-collaborator |
 | Review requirements and limitations for dedicated compute | https://learn.microsoft.com/en-us/azure/databricks/compute/dedicated-limitations |
+| Reference compatible instance groups for Databricks flexible nodes | https://learn.microsoft.com/en-us/azure/databricks/compute/flexible-node-type-instances |
 | Understand Databricks serverless compute limitations | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/limitations |
 | Understand Lakehouse Real-Time beta pricing and SKUs | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/real-time-pricing |
 | Review requirements and limitations for standard compute | https://learn.microsoft.com/en-us/azure/databricks/compute/standard-limitations |

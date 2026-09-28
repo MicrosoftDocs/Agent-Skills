@@ -39,6 +39,7 @@
 | Configure Kafka monitoring with Azure Managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-kafka-integration |
 | Configure Prometheus scrape CRDs for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-crd |
 | Configure Prometheus remote write with Entra auth | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-active-directory |
+| Stream Azure Monitor data to Event Hubs and SIEMs | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/stream-monitoring-data-event-hubs |
 | Mirror Azure Monitor Logs into Microsoft Fabric | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/monitor-cross-domain-fabric |
 | Query Azure Monitor resources with Resource Graph | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-graph-samples |
 | Use Azure CLI health-models extension for health models | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/cli |
@@ -46,6 +47,7 @@
 | Authenticate and access Azure Monitor Logs API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/access-api |
 | Format Azure Monitor Logs query API requests | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/request-format |
 | Correlate Azure Data Explorer and Resource Graph with logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/azure-monitor-data-explorer-proxy |
+| Query Azure Monitor logs across multiple workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/cross-workspace-query |
 | Use Delete Data API for Log Analytics workspace cleanup | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/delete-log-data |
 | Ingest Azure Event Hubs data into Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/ingest-logs-event-hub |
 | Apply KQL machine learning for anomalies in Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/kql-machine-learning-azure-monitor |
@@ -61,9 +63,8 @@
 | Configure Prometheus remote-write to Azure Monitor managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-remote-write |
 | Run PromQL resource-scoped queries in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-resource-scoped-queries |
 | Query Prometheus metrics using Azure Workbooks | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-workbooks |
+| Use Azure Monitor metrics via REST API | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/rest-api-walkthrough |
 | Assign Code Optimizations work items to GitHub Copilot | https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-github-copilot |
-| Use Azure Monitor REST API for metrics and logs | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/rest-api-walkthrough |
-| Stream Azure Monitor data to Event Hubs | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/stream-monitoring-data-event-hubs |
 | Write .NET request tracking code for Application Insights Profiler | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests |
 | Run Kusto queries on AACAudit App Config logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/aacaudit |
 | Query AACHttpRequest logs for throttling and errors | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/aachttprequest |

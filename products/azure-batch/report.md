@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 120
+- **Updated Pages**: 0
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -74,17 +74,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 38 | 30.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Azure Spot VMs](https://learn.microsoft.com/en-us/azure/batch/batch-spot-vms)
-  - Updated: 2026-05-20T08:00:00.000Z → 2026-09-18T05:11:00.000Z
-- [What is Azure Batch?](https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview)
-  - Updated: 2026-07-09T08:00:00.000Z → 2026-09-18T05:11:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/batch/best-practices)
-  - Updated: 2026-09-01T08:00:00.000Z → 2026-09-16T08:00:00.000Z
-- [Capacity planning](https://learn.microsoft.com/en-us/azure/batch/batch-capacity-planning)
-  - Updated: 2026-06-19T05:17:00.000Z → 2026-09-18T05:11:00.000Z
 
 ## Classified Pages
 
