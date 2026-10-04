@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
-  configuration: 'Configuring Azure AI Search: data sources, index schemas, analyzers,
-    skillsets, enrichment, vectorization, semantic ranker, monitoring, and agentic
-    retrieval/knowledge base setup.'
+  configuration: 'Configuring Azure AI Search: data sources, indexers, skillsets,
+    analyzers, vectorization, semantic ranking, monitoring, and agentic retrieval/knowledge
+    bases for RAG and answer synthesis.'
   security: 'Securing Azure AI Search: RBAC/Entra ID, keys, encryption, network isolation,
     indexer auth to data sources (SQL, Storage, SharePoint, Cosmos, Functions), and
     document-level/label-based access control.'
-  decision-making: Guidance on choosing regions, tiers, pricing, capacity, connectors,
-    and SDK/API versions, plus how to plan costs and migrate Azure AI Search services
-    and apps to newer APIs.
+  decision-making: Guidance on choosing regions, tiers, pricing, capacity, and connectors,
+    plus migration/upgrade paths for APIs and SDKs to plan, scale, and modernize Azure
+    AI Search solutions.
   integrations: 'Patterns and code for integrating Azure AI Search: indexers, skills,
     vectorization, query syntax (Lucene/OData), semantic ranking, filters, pagination,
     and app/Power BI integrations.'
@@ -30,14 +30,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building indexes, skillsets, vector/semantic search, secure indexers, or multi-region
-  search apps, and other Azure AI Search related development tasks. Not for Azure
-  Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure
-  Table Storage (use azure-table-storage).
-use_when: Use when building indexes, skillsets, vector/semantic search, secure indexers,
-  or multi-region search apps, and other Azure AI Search related development tasks.
-confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database
-  (use azure-sql-database), Azure Table Storage (use azure-table-storage).
+  building indexes, skillsets, indexers, vector/semantic search, or RAG knowledge
+  bases with Azure AI Search, and other Azure AI Search related development tasks.
+  Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use
+  azure-synapse-analytics), Azure Cosmos DB (use azure-cosmos-db).
+use_when: Use when building indexes, skillsets, indexers, vector/semantic search,
+  or RAG knowledge bases with Azure AI Search, and other Azure AI Search related development
+  tasks.
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Cosmos DB (use azure-cosmos-db).
 ---
 # Azure AI Search Crawl Report
 
@@ -46,13 +47,13 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Total Pages**: 315
 - **Fetched**: 315
 - **Fetch Failed**: 0
-- **Classified**: 247
-- **Unclassified**: 68
+- **Classified**: 248
+- **Unclassified**: 67
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 314
+- **Updated Pages**: 2
+- **Unchanged**: 313
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -63,20 +64,22 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | architecture-patterns | 2 | 0.6% |
 | best-practices | 14 | 4.4% |
 | configuration | 89 | 28.3% |
-| decision-making | 12 | 3.8% |
+| decision-making | 13 | 4.1% |
 | deployment | 5 | 1.6% |
 | integrations | 72 | 22.9% |
 | limits-quotas | 6 | 1.9% |
 | security | 39 | 12.4% |
 | troubleshooting | 8 | 2.5% |
-| *(Unclassified)* | 68 | 21.6% |
+| *(Unclassified)* | 67 | 21.3% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-overview)
-  - Updated: 2026-08-07T22:12:00.000Z → 2026-09-21T08:00:00.000Z
+- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
+  - Updated: 2026-08-26T06:04:00.000Z → 2026-10-01T22:15:00.000Z
+- [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote)
+  - Updated: 2026-09-17T22:12:00.000Z → 2026-10-01T08:00:00.000Z
 
 ## Classified Pages
 
@@ -162,7 +165,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Sentiment (v2)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-sentiment) | integrations | 0.78 | Sentiment v2 skill reference includes numeric score outputs, parameter options, and skill JSON schema, representing product-specific integration details. |
 | [Sentiment (v3)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-sentiment-v3) | integrations | 0.78 | Sentiment v3 skill reference with specific sentiment label outputs, confidence scores, and skill configuration schema, representing detailed integration with Azure Language sentiment models. |
 | [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed) | configuration | 0.78 | An 'indexed SharePoint knowledge source' how-to will document configuration options like site URLs, authentication settings, and index mappings, which are detailed configuration parameters. |
-| [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote) | configuration | 0.78 | A remote SharePoint knowledge source requires configuration of direct query endpoints, auth, and retrieval options, which are expressed as specific configuration settings. |
 | [Text Split](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-textsplit) | configuration | 0.78 | Text Split skill docs usually specify parameters like maximumPageLength, pageOverlap, input/output field names, and behavior for different settings. This is a configuration reference with specific setting names and allowed ranges, which qualifies as expert configuration knowledge. |
 | [Text Translation](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-text-translation) | integrations | 0.78 | Text Translation skill reference; includes Translator Text API v3.0-specific parameters, target language codes, and skill JSON schema, which are concrete integration details. |
 | [Tips for better performance](https://learn.microsoft.com/en-us/azure/search/search-performance-tips) | best-practices | 0.78 | Performance tips/best practices page for a specific service; typically includes concrete, product-specific recommendations (e.g., index design, query options, batching patterns) that go beyond generic search theory. |
@@ -275,7 +277,9 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Search over blobs](https://learn.microsoft.com/en-us/azure/search/search-blob-storage-integration) | integrations | 0.70 | Provides detailed, product-specific instructions and configuration for integrating Azure Blob Storage with Azure AI Search, including indexer setup and data source parameters, which are concrete integration patterns rather than generic concepts. |
 | [Secure access to external data](https://learn.microsoft.com/en-us/azure/search/search-indexer-securing-resources) | security | 0.70 | Covers indexer outbound traffic patterns and execution environments for accessing VNet-protected resources; this typically includes product-specific network/security configuration details and requirements that qualify as expert security knowledge. |
 | [Shaper](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-shaper) | configuration | 0.70 | Shaper skill documentation provides detailed configuration for reshaping the enrichment tree and mapping to index/knowledge store structures, which is product-specific configuration. |
+| [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote) | configuration | 0.70 | Page describes detailed, product-specific configuration for setting up a SharePoint (Remote) knowledge source in Azure AI Search/agentic retrieval, including specific parameters and options unique to this integration, which go beyond generic tutorial content. |
 | [Simple query syntax](https://learn.microsoft.com/en-us/azure/search/query-simple-syntax) | integrations | 0.70 | Reference for a product-specific query language; includes operators, parameters, and syntax rules that function like an API surface for queries. |
+| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | decision-making | 0.70 | Page contains a region-by-region matrix of Azure AI Search availability and which premium features are supported in each region. This is expert, product-specific data that changes over time and isn't reliably known from training. The matrix helps users decide which region to deploy in based on feature support, fitting the decision-making sub-skill. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform) | deployment | 0.70 | Terraform quickstart should include provider/resource blocks, arguments, and constraints unique to Azure AI Search infrastructure. |
 | [Upgrade .NET client libraries](https://learn.microsoft.com/en-us/azure/search/search-dotnet-sdk-migration-version-11) | decision-making | 0.70 | A version-to-version SDK migration article for Azure AI Search .NET will contain specific API changes, renamed classes/methods, altered configuration patterns, and guidance on how to update existing code. These are detailed, product-specific upgrade paths and trade-offs (for example, how to replace older client types or options with new ones) that go beyond generic SDK usage and are not captured in general training data, fitting the migration/upgrade decision-making category. |
 | [Upgrade a service](https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade) | decision-making | 0.70 | Service upgrade guidance typically explains when and why to upgrade, mapping existing SKUs to new capacities and describing trade-offs and constraints. This is decision guidance about capacity and upgrade paths specific to Azure AI Search. |
@@ -383,7 +387,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Preview terms](https://learn.microsoft.com/en-us/azure/search/search-preview-terms) | 0.20 | Preview terms and legal/usage notes; lacks technical limits, configuration parameters, or troubleshooting mappings. |
 | [Python samples](https://learn.microsoft.com/en-us/azure/search/samples-python) | 0.20 | Page is a navigation/index for Python sample code using the Azure AI Search client library. It primarily links to demos and does not contain specific limits, configuration matrices, troubleshooting mappings, or other expert-only details. |
 | [Query with Search Explorer](https://learn.microsoft.com/en-us/azure/search/search-explorer) | 0.20 | Quickstart for using Search Explorer; primarily a step-by-step portal tutorial without detailed configuration tables, limits, or product-specific troubleshooting mappings. |
-| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | 0.20 | Region support pages typically list which regions offer the service and feature availability, but not configuration parameters, limits, or decision matrices with quantified trade-offs. This is more catalog/availability information than expert configuration or limits knowledge. |
 | [Tools and accelerators](https://learn.microsoft.com/en-us/azure/search/resource-tools) | 0.20 | Productivity tools overview listing external tools; primarily navigational/marketing without detailed configuration tables or error mappings. |
 | [What is BM25 ranking?](https://learn.microsoft.com/en-us/azure/search/index-similarity-and-scoring) | 0.20 | Explains BM25 relevance conceptually and how it’s used; primarily algorithm overview and high-level customization, not detailed product-specific configuration tables or limits. |
 | [What is a knowledge store projection?](https://learn.microsoft.com/en-us/azure/search/knowledge-store-projection-overview) | 0.20 | Conceptual overview of projections and high-level best practices; no concrete numeric thresholds, configs, or error codes. |

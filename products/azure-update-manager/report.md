@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
     VMs/Arc servers, upgrading profiles, cross-region moves, tenant repairs, Azure
@@ -7,9 +7,9 @@ category_descriptions:
   best-practices: Best practices for configuring Automanage and guest patching on
     Windows/Linux/Arc VMs, handling SQL Server and Ubuntu/Ubuntu Pro updates, and
     managing SMB over QUIC in Update Manager.
-  troubleshooting: Diagnosing and fixing onboarding, extension, and update deployment
-    failures in Azure Update Manager/Automanage, including common error codes, causes,
-    and step-by-step remediation.
+  troubleshooting: Diagnosing and fixing onboarding failures, extension issues, and
+    common errors in Azure Update Manager, Automanage, and Change Tracking (including
+    logs, error codes, and remediation steps).
   security: Configuring disk encryption for Automanaged VMs and setting up RBAC roles/permissions
     to securely manage and control access to Azure Update Manager.
   integrations: Using SDKs (Go/Java/JS/Python) and REST APIs to assign Automanage
@@ -26,15 +26,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Update Manager development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers,
-  configuring guest patching, using SDK/REST APIs, ESU, or pre/post maintenance events,
+  configuring patch schedules/ESU, using SDK/REST APIs, or integrating runbooks/webhooks,
   and other Azure Update Manager related development tasks. Not for Azure Automation
-  (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy),
+  (use azure-automation), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor),
   Azure Site Recovery (use azure-site-recovery).
-use_when: Use when onboarding VMs/Arc servers, configuring guest patching, using SDK/REST
-  APIs, ESU, or pre/post maintenance events, and other Azure Update Manager related
-  development tasks.
-confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monitor
-  (use azure-monitor), Azure Policy (use azure-policy), Azure Site Recovery (use azure-site-recovery).
+use_when: Use when onboarding VMs/Arc servers, configuring patch schedules/ESU, using
+  SDK/REST APIs, or integrating runbooks/webhooks, and other Azure Update Manager
+  related development tasks.
+confusable_not_for: Not for Azure Automation (use azure-automation), Azure Policy
+  (use azure-policy), Azure Monitor (use azure-monitor), Azure Site Recovery (use
+  azure-site-recovery).
 ---
 # Azure Update Manager Crawl Report
 
@@ -72,7 +73,7 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 ### Updated Pages
 
 - [Azure Change Tracking and Inventory release notes](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details)
-  - Updated: 2026-06-18T17:32:00.000Z → 2026-09-24T05:13:00.000Z
+  - Updated: 2026-09-24T05:13:00.000Z → 2026-09-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -82,6 +83,7 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [Troubleshoot onboarding errors](https://learn.microsoft.com/en-us/azure/automanage/common-errors) | troubleshooting | 0.85 | Explicit troubleshooting article for onboarding; will map specific errors and causes to mitigation steps, matching troubleshooting criteria. |
 | [Roles and Permissions](https://learn.microsoft.com/en-us/azure/update-manager/roles-permissions) | security | 0.80 | Roles and permissions article will list specific Azure RBAC role names and required actions/scopes for Update Manager, which is product-specific security configuration. |
 | [Support matrix for Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix) | limits-quotas | 0.80 | Support matrix and limitations article will list supported regions, OS versions, and specific constraints, matching limits-quotas criteria. |
+| [Azure Change Tracking and Inventory release notes](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details) | troubleshooting | 0.78 | The page is a release-notes/known-issues document for the Azure Change Tracking and Inventory extensions. Such pages typically list specific extension versions, known issues, and their workarounds or fixes, which map symptoms to causes and resolutions. This is product- and version-specific expert knowledge that an LLM would not know from training and fits the troubleshooting category best. |
 | [Create Data Collection Rule](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/create-data-collection-rule) | configuration | 0.75 | Creating DCRs includes parameter names, formats, and allowed values for Change Tracking, which are detailed configuration options. |
 | [Manage updates for Arc-enabled servers using REST API](https://learn.microsoft.com/en-us/azure/update-manager/manage-arc-enabled-servers-programmatically) | integrations | 0.75 | Covers REST API usage for Arc-enabled servers with Update Manager, including product-specific endpoints and parameters. |
 | [Manage updates for Azure VMs using REST API](https://learn.microsoft.com/en-us/azure/update-manager/manage-vms-programmatically) | integrations | 0.75 | Shows how to call Update Manager via REST for Azure VMs, including specific API endpoints, parameters, and request/response schemas unique to this service. |
@@ -89,7 +91,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | [ARG queries to access Azure Update Manager operations data](https://learn.microsoft.com/en-us/azure/update-manager/sample-query-logs) | configuration | 0.70 | Provides concrete sample queries and result structures for Update Manager logs, which are product-specific query patterns and schema details. |
 | [Access Azure Update Manager operations data using Azure Resource Graph](https://learn.microsoft.com/en-us/azure/update-manager/query-logs) | configuration | 0.70 | Explains how operations data is stored and accessed in Resource Graph, likely including specific resource types, properties, and query patterns unique to Update Manager. |
 | [Automate assessment at scale using Policy](https://learn.microsoft.com/en-us/azure/update-manager/periodic-assessment-at-scale) | configuration | 0.70 | Describes a specific machine setting and its behavior (fetches updates every 24 hours) and how to configure it at scale via policy—product-specific configuration detail. |
-| [Azure Change Tracking and Inventory release notes](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details) | troubleshooting | 0.70 | Release notes and known issues for specific extension versions typically include product-specific bugs, error behaviors, and workarounds that are not inferable from general knowledge. These map symptoms and version-specific issues to causes and resolutions, fitting the troubleshooting category. |
 | [Change a workspace and configure Data Collection Rule](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/tutorial-change-workspace-configure-data-collection-rule) | configuration | 0.70 | Changing workspace and configuring DCRs involves specific rule settings and parameters, fitting configuration criteria. |
 | [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates) | deployment | 0.70 | Support matrix pages list exactly which OS versions, environments, and features (one-time updates, periodic assessments, scheduled patching) are supported or unsupported. This is product- and version-specific expert knowledge that changes over time and is not reliably known from training. It functions as a deployment/supportability matrix for where Update Manager can be used. |
 | [Create alerts (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-alerts) | configuration | 0.70 | Explains how to enable alerts (preview) based on updates data; likely includes specific alert rules, conditions, and configuration parameters. |

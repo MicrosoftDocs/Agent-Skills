@@ -40,9 +40,9 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 17
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 37
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
@@ -58,10 +58,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 17 | 44.7% |
 
 ## Changes
-
-### New Pages
-
-- [Ensure end-to-end confidentiality of ledger data](https://learn.microsoft.com/en-us/azure/confidential-ledger/end-to-end-confidentiality)
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA auth/egress, KEDA/Dapr scaling, CI/CD deployments, Java microservices, or quotas, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps (use azure-spring-apps).
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using ACA auth, private networking, KEDA/Dapr scaling, GitHub Actions CI/CD, or Java microservices, and other Azure Container Apps related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps (use azure-spring-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Apps Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L53 | Diagnosing and fixing Container Apps issues: deploy/start/image pull failures, health probes, ports, storage mounts, runtime/OCI errors, Arc dependencies, debug console, and Java log-level tuning. |
 | Best Practices | L54-L60 | Deployment, cold-start, and runtime tuning guidance: blue-green rollouts, reducing scale-out latency, and optimizing Java memory usage in Azure Container Apps. |
-| Decision Making | L61-L81 | Guidance for choosing Container Apps plans, capacity, GPUs, and cost models, plus migration and modernization paths from Functions, Heroku, Java/Spring/Tomcat, and other Azure container hosting options. |
+| Decision Making | L61-L81 | Guidance for planning and cost-optimizing Azure Container Apps: capacity, plans, workload profiles, GPUs, hosting options, and migrations from Heroku, Functions, Java/Spring/Tomcat, and MCP servers. |
 | Architecture & Design Patterns | L82-L87 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
 | Limits & Quotas | L88-L94 | Quota types, default and max limits, scaling and behavior constraints, and how to review, request, and increase Azure Container Apps quotas. |
 | Security | L95-L133 | Securing Container Apps: auth (Entra, social, OIDC, mTLS), secrets and certs, private networking, egress control, RBAC/Policy, and best practices for protecting apps and Functions. |
@@ -69,7 +69,7 @@ This skill requires **network access** to fetch documentation content:
 | Evaluate legacy Consumption-only Container Apps environments | https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only |
 | Select appropriate GPU type for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/gpu-types |
 | Select Azure hosting service for MCP servers | https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service |
-| Migrate from Functions v1 to v2 on Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions |
+| Migrate Azure Container Apps Functions v1 to v2 | https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions |
 | Plan migration from Heroku to Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview |
 | Modernize Java apps to Azure Container Apps with GitHub Copilot | https://learn.microsoft.com/en-us/azure/container-apps/migrate-java-github-copilot-app-modernization |
 | Assess and migrate Spring Boot apps to Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-boot |

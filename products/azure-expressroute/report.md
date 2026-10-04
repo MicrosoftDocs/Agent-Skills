@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-04'
 category_descriptions:
   limits-quotas: ExpressRoute limits on bandwidth, routes, gateways, FastPath, provider
     rate limiting, plus monitoring and FAQs to avoid hitting connectivity and quota
     constraints.
-  best-practices: 'Best practices for ExpressRoute performance and reliability: bandwidth
-    upgrades, BGP community design, QoS for Skype voice, gateway hardware migration,
-    resiliency insights, and failover testing.'
+  best-practices: Best practices for ExpressRoute capacity planning, QoS, BGP communities,
+    gateway hardware migration, and validating resiliency via gateway and circuit
+    failover testing.
   deployment: Guides for deploying and migrating ExpressRoute circuits/gateways, including
     Direct SKUs, zone/AZ-enabled gateways, and ARM/Terraform-based provisioning and
     traffic migration.
@@ -30,13 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure ExpressRoute development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing ExpressRoute circuits/gateways, BGP routing, VPN coexistence, Global Reach,
-  or MACsec/IPsec, and other Azure ExpressRoute related development tasks. Not for
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure Internet Peering (use azure-internet-peering).
-use_when: Use when designing ExpressRoute circuits/gateways, BGP routing, VPN coexistence,
+  configuring ExpressRoute circuits/gateways, BGP routing (incl. IPv6), FastPath,
   Global Reach, or MACsec/IPsec, and other Azure ExpressRoute related development
-  tasks.
+  tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual
+  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Internet
+  Peering (use azure-internet-peering).
+use_when: Use when configuring ExpressRoute circuits/gateways, BGP routing (incl.
+  IPv6), FastPath, Global Reach, or MACsec/IPsec, and other Azure ExpressRoute related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
   Azure Internet Peering (use azure-internet-peering).
@@ -45,14 +46,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 96
-- **Fetched**: 96
+- **Total Pages**: 97
+- **Fetched**: 97
 - **Fetch Failed**: 0
-- **Classified**: 65
+- **Classified**: 66
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 96
 - **Deleted Pages**: 0
@@ -62,18 +63,22 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 8 | 8.3% |
-| best-practices | 6 | 6.2% |
-| configuration | 25 | 26.0% |
+| architecture-patterns | 8 | 8.2% |
+| best-practices | 7 | 7.2% |
+| configuration | 25 | 25.8% |
 | decision-making | 5 | 5.2% |
 | deployment | 5 | 5.2% |
-| integrations | 4 | 4.2% |
+| integrations | 4 | 4.1% |
 | limits-quotas | 5 | 5.2% |
 | security | 5 | 5.2% |
 | troubleshooting | 2 | 2.1% |
-| *(Unclassified)* | 31 | 32.3% |
+| *(Unclassified)* | 31 | 32.0% |
 
 ## Changes
+
+### New Pages
+
+- [Test link failover](https://learn.microsoft.com/en-us/azure/expressroute/test-link-failover)
 
 ## Classified Pages
 
@@ -126,6 +131,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/expressroute/roles-permissions) | security | 0.70 | Explains required permissions across circuits, gateways, VNets, and IPs; likely lists specific RBAC roles and scopes. |
 | [Router configuration samples for NAT](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-nat) | integrations | 0.70 | Router configuration samples for Cisco ASA and Juniper SRX in the context of ExpressRoute NAT are concrete, product-specific integration patterns. They typically show exact commands, configuration blocks, and parameter names/values required to integrate on-premises routers with Azure ExpressRoute, which qualifies as expert integration and coding patterns rather than generic tutorial content. |
 | [Secure ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/secure-expressroute) | security | 0.70 | Provides ExpressRoute-specific security recommendations for routing, management access, connected VNets, monitoring data, and recovery paths; this is product-specific security guidance beyond generic concepts. |
+| [Test link failover](https://learn.microsoft.com/en-us/azure/expressroute/test-link-failover) | best-practices | 0.70 | Page describes a product-specific procedure for simulating BGP session failures on primary/secondary ExpressRoute links to validate failover behavior, including how to interpret routing/traffic outcomes and identify gaps. This is actionable, service-specific guidance on how to safely test DR/failover for ExpressRoute rather than generic networking theory. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-gateway-migration-portal) | deployment | 0.68 | The article describes how to migrate from legacy Standard/HighPerf/UltraPerf ExpressRoute gateway SKUs to the ErGw1/2/3AZ SKUs, which is a product-specific migration/deployment path between tiers. It contains SKU-specific guidance and constraints for moving to availability zone-enabled gateways, which falls under deployment/migration patterns rather than generic how-to content. |
 | [Resiliency Insights](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-insights) | best-practices | 0.68 | Page describes how to interpret and act on the Resiliency Insights resiliency index for ExpressRoute gateways, including product-specific recommendations (for example, using zone-redundant gateways, improving route resilience, and following advisory recommendations). These are concrete, service-specific reliability practices rather than generic concepts, but it does not focus on numeric limits/quotas or configuration parameter tables. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/expressroute/howto-circuit-cli) | integrations | 0.65 | Duplicate of index 11; CLI commands and parameters for ExpressRoute circuits are product-specific integration patterns. |

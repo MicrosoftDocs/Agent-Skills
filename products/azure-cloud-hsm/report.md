@@ -39,9 +39,9 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 17
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 21
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
 
@@ -57,19 +57,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 6 | 28.6% |
 
 ## Changes
-
-### New Pages
-
-- [Integrate with Azure Private Link](https://learn.microsoft.com/en-us/azure/cloud-hsm/integrate-with-private-link)
-
-### Updated Pages
-
-- [About Azure Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/overview)
-  - Updated: 2026-07-06T08:00:00.000Z → 2026-09-23T22:33:00.000Z
-- [Secure your Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm)
-  - Updated: 2026-07-10T22:34:00.000Z → 2026-09-23T08:00:00.000Z
-- [Network Security](https://learn.microsoft.com/en-us/azure/cloud-hsm/network-security)
-  - Updated: 2026-07-07T07:36:00.000Z → 2026-09-23T08:00:00.000Z
 
 ## Classified Pages
 

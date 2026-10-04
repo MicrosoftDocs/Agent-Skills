@@ -1,9 +1,9 @@
 ---
 name: azure-update-manager
-description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers, configuring guest patching, using SDK/REST APIs, ESU, or pre/post maintenance events, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers, configuring patch schedules/ESU, using SDK/REST APIs, or integrating runbooks/webhooks, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Update Manager Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L42 | Diagnosing and fixing onboarding, extension, and update deployment failures in Azure Update Manager/Automanage, including common error codes, causes, and step-by-step remediation. |
+| Troubleshooting | L36-L42 | Diagnosing and fixing onboarding failures, extension issues, and common errors in Azure Update Manager, Automanage, and Change Tracking (including logs, error codes, and remediation steps). |
 | Best Practices | L43-L53 | Best practices for configuring Automanage and guest patching on Windows/Linux/Arc VMs, handling SQL Server and Ubuntu/Ubuntu Pro updates, and managing SMB over QUIC in Update Manager. |
 | Decision Making | L54-L59 | Planning patch strategies across subscriptions and guidance for migrating patch management from Configuration Manager to Azure Update Manager |
 | Limits & Quotas | L60-L67 | OS, region, image, and workload support limits for Update Manager, including supported update sources/types, change tracking matrix, and unsupported scenarios. |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Azure Automanage onboarding failures and errors | https://learn.microsoft.com/en-us/azure/automanage/common-errors |
-| Resolve Azure Change Tracking extension issues | https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details |
+| Diagnose Azure Change Tracking extension issues | https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/extension-version-details |
 | Troubleshoot errors and issues in Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/troubleshoot |
 
 ### Best Practices

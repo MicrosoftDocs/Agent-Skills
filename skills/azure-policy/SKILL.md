@@ -1,9 +1,9 @@
 ---
 name: azure-policy
-description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when authoring Azure Policy JSON, deploying via ARM/Bicep/Terraform, enforcing security baselines, automating CI/CD, or using Machine Configuration, and other Azure Policy related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure Security (use azure-security).
+description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when authoring JSON policies, deploying via ARM/Bicep/Terraform, enforcing security baselines, automating with Gatekeeper, or running policy-as-code in CI/CD, and other Azure Policy related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Policy Skill
@@ -24,19 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L42 | Diagnosing and fixing Azure Policy non-compliance, Machine Configuration deployment issues, and common policy/SDK errors (evaluation failures, assignment problems, and API/CLI issues). |
-| Best Practices | L43-L50 | Best practices for safely testing and deploying Azure Policy and Machine/Guest Configuration, including PSDSC behavior changes, impact evaluation, and safe rollout strategies. |
-| Decision Making | L51-L58 | Guidance on planning migrations from DSC/Automanage to Machine Configuration/Azure Policy and choosing recommended policy definitions for managing and securing VMs. |
-| Architecture & Design Patterns | L59-L63 | Designing Azure Policy-as-Code workflows, integrating with CI/CD, GitOps, and approvals, and structuring policy repos, environments, and automation for scalable governance. |
-| Security | L64-L168 | Using Azure Policy for security/compliance: deploying security baselines, mapping to standards (CIS, NIST, ISO, PCI, FedRAMP, etc.), and enforcing regulatory and MFA requirements. |
-| Configuration | L169-L208 | Designing, assigning, and managing Azure Policy and Machine Configuration: JSON structures, effects, guest config packages, compliance data, remediation, tags, identities, and exemptions. |
-| Integrations & Coding Patterns | L209-L238 | Patterns for writing reusable Azure Policy definitions (operators, fields, effects, tags, initiatives) and integrating/automating them via Terraform, Kubernetes/Gatekeeper, VS Code, Event Grid, and Resource Graph |
-| Deployment | L239-L249 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish them to storage, export policy for policy-as-code, and enforce Azure Policy in DevOps pipelines |
+| Troubleshooting | L36-L44 | Diagnosing and fixing Azure Policy non-compliance and common errors, plus troubleshooting Azure Machine Configuration deployments and Linux/Windows guest configuration agents. |
+| Best Practices | L45-L52 | Best practices for safely testing and deploying Azure Policy and Machine/Guest Configuration, including PSDSC behavior changes, impact evaluation, and safe rollout strategies. |
+| Decision Making | L53-L60 | Guidance on planning migrations from DSC/Automanage to Machine Configuration/Azure Policy and choosing recommended policy definitions for managing and securing VMs. |
+| Architecture & Design Patterns | L61-L65 | Designing Azure Policy-as-Code workflows, integrating with CI/CD, GitOps, and approvals, and structuring policy repos, environments, and automation for scalable governance. |
+| Security | L66-L170 | Using Azure Policy for security/compliance: deploying security baselines, mapping to standards (CIS, NIST, ISO, PCI, FedRAMP, etc.), and enforcing regulatory and MFA requirements. |
+| Configuration | L171-L210 | Designing, assigning, and managing Azure Policy and Machine Configuration: JSON structures, effects, guest config packages, compliance data, remediation, tags, identities, and exemptions. |
+| Integrations & Coding Patterns | L211-L240 | Patterns for writing reusable Azure Policy definitions (operators, fields, effects, tags, initiatives) and integrating/automating them via Terraform, Kubernetes/Gatekeeper, VS Code, Event Grid, and Resource Graph |
+| Deployment | L241-L251 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish them to storage, export policy for policy-as-code, and enforce Azure Policy in DevOps pipelines |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Azure Machine Configuration deployments | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview/04-operations-troubleshooting |
+| Troubleshoot Azure machine configuration Linux agent problems | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/linux |
+| Diagnose and resolve Azure machine configuration Windows agent issues | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/windows |
 | Diagnose causes of Azure Policy non-compliance | https://learn.microsoft.com/en-us/azure/governance/policy/how-to/determine-non-compliance |
 | Troubleshoot common Azure Policy errors and SDK issues | https://learn.microsoft.com/en-us/azure/governance/policy/troubleshoot/general |
 

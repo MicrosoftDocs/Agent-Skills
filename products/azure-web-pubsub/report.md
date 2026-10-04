@@ -49,9 +49,9 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 - **Unclassified**: 40
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 121
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -71,16 +71,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 40 | 32.3% |
 
 ## Changes
-
-### New Pages
-
-- [Run an app with Web PubSub Chat](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-build-chat-client)
-- [Deploy a serverless app with Web PubSub Chat](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/tutorial-serverless-chat)
-
-### Updated Pages
-
-- [Configure storage and enable Chat](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-howto-enable-chat)
-  - Updated: 2026-07-20T11:41:00.000Z → 2026-09-23T11:43:00.000Z
 
 ## Classified Pages
 

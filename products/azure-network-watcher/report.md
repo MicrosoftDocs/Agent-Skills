@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
-  configuration: Configuring and deploying Network Watcher/virtual network flow logs,
-    agents, filters, schemas, and Azure Policy/Bicep/ARM templates for monitoring
-    and Traffic Analytics.
+  configuration: Configuring and managing Network Watcher agents and VNet/NSG flow
+    logs, including schemas, filtering, Traffic Analytics, AKS monitoring, and deployment
+    via ARM, Bicep, and Azure Policy
   troubleshooting: Diagnosing and fixing outbound connectivity, NSG/admin rule issues,
     and VPN gateway/on-prem VPN problems, plus automating VPN monitoring with Azure
     Network Watcher.
@@ -21,32 +21,32 @@ category_descriptions:
     VNet flow logs with managed identities.'
 skill_description: Expert knowledge for Azure Network Watcher development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
-  integrations & coding patterns. Use when configuring flow logs, Traffic Analytics,
-  Connection Monitor migrations, packet captures, or KQL-based investigations, and
+  integrations & coding patterns. Use when configuring VNet/NSG flow logs, Traffic
+  Analytics, packet capture, Connection Monitor migration, or VPN monitoring, and
   other Azure Network Watcher related development tasks. Not for Azure Monitor (use
-  azure-monitor), Azure Networking (use azure-networking), Azure Virtual Network (use
-  azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
-use_when: Use when configuring flow logs, Traffic Analytics, Connection Monitor migrations,
-  packet captures, or KQL-based investigations, and other Azure Network Watcher related
-  development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking (use
-  azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual
-  Network Manager (use azure-virtual-network-manager).
+  azure-monitor), Azure Virtual Network (use azure-virtual-network), Azure Networking
+  (use azure-networking), Azure Firewall (use azure-firewall).
+use_when: Use when configuring VNet/NSG flow logs, Traffic Analytics, packet capture,
+  Connection Monitor migration, or VPN monitoring, and other Azure Network Watcher
+  related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Network
+  (use azure-virtual-network), Azure Networking (use azure-networking), Azure Firewall
+  (use azure-firewall).
 ---
 # Azure Network Watcher Crawl Report
 
 ## Summary
 
-- **Total Pages**: 65
-- **Fetched**: 65
+- **Total Pages**: 66
+- **Fetched**: 66
 - **Fetch Failed**: 0
-- **Classified**: 30
+- **Classified**: 31
 - **Unclassified**: 35
 
 ### Incremental Update
 - **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 64
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -54,19 +54,19 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 11 | 16.9% |
-| decision-making | 3 | 4.6% |
-| integrations | 3 | 4.6% |
+| configuration | 12 | 18.2% |
+| decision-making | 3 | 4.5% |
+| integrations | 3 | 4.5% |
 | limits-quotas | 1 | 1.5% |
-| security | 5 | 7.7% |
-| troubleshooting | 7 | 10.8% |
-| *(Unclassified)* | 35 | 53.8% |
+| security | 5 | 7.6% |
+| troubleshooting | 7 | 10.6% |
+| *(Unclassified)* | 35 | 53.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Enhance traffic analytics insights with AI agent usage](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-insights)
+- [Monitor AKS traffic flows](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-aks-scenarios)
 
 ## Classified Pages
 
@@ -94,6 +94,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Network Watcher Agent](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-manage) | configuration | 0.70 | The page describes how to install, update, and uninstall the Network Watcher Agent VM extension on Windows and Linux VMs. Such content typically includes extension names, required settings, parameters, and platform-specific behaviors (for example, how the extension is deployed by other Azure services, and constraints around installation). These are product-specific configuration details that qualify as expert knowledge. |
 | [Schema and data aggregation](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) | configuration | 0.70 | Schema and data aggregation documentation; such pages typically define field names, types, and aggregation rules for Traffic Analytics data, which are detailed configuration/schema references. |
 | [VNet flow logs managed identity](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-managed-identity) | security | 0.70 | Describes using user-assigned managed identities for VNet flow logs to access storage; likely includes specific role assignments, scopes, and identity configuration steps, which are product-specific security details. |
+| [Monitor AKS traffic flows](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-aks-scenarios) | configuration | 0.68 | Page provides product-specific guidance on how AKS networking models map to virtual network flow logs, including which traffic types (pod-to-pod, pod-to-service, node-level, external) are or aren't captured and under what conditions. This is detailed, scenario-specific behavior for Network Watcher and AKS that goes beyond generic concepts and is effectively configuration/behavioral knowledge unique to this integration. |
 | [VNet flow logs filtering](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-filtering) | configuration | 0.68 | The article describes product-specific filtering options for Azure Network Watcher virtual network flow logs (for example, filtering by flow state, action, IP ranges, ports, protocols, intra- vs inter-VNet traffic). These are concrete configuration capabilities and parameters unique to this service, not just conceptual logging guidance, fitting the configuration sub-skill best. |
 | [Audit and deploy using Azure Policy](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-policy) | configuration | 0.65 | Shows how to use built-in Azure Policy definitions to audit and deploy VNet flow logs; such content typically lists specific policy names, parameters, and effects, which are configuration-level details. |
 | [Enable traffic analytics using Azure policy](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-policy-portal) | configuration | 0.65 | Shows how to use three built-in Azure Policy definitions for Traffic Analytics; such content typically lists policy names, parameters, and configuration options, which are expert configuration details. |

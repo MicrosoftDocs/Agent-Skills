@@ -1,9 +1,9 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email/WhatsApp, Teams interop, or Job Router flows, and other Azure Communication Services related development tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot Service (use azure-bot-service).
+description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling, chat, SMS, email, Teams interop, or PSTN/Direct Routing solutions, and other Azure Communication Services related development tasks. Not for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot Service (use azure-bot-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Communication Services Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L170-L235 | Limits, quotas, eligibility rules, and regional restrictions for ACS calling, phone numbers, email, Teams interop, metrics, SDK support, and direct routing features. |
 | Security | L236-L263 | Security, auth, and compliance for ACS: identity and API auth, Teams/Rooms interop security, email/sender auth, encryption, data residency/privacy, telephony/emergency calling, and secure webhooks. |
 | Configuration | L264-L334 | Configuring logging, metrics, monitoring, routing, and domain/sender settings for ACS calling, chat, SMS, email, Rooms, Job Router, and Teams interoperability. |
-| Integrations & Coding Patterns | L335-L467 | Patterns and code samples for integrating ACS calling, chat, SMS, email, WhatsApp, Teams, Job Router, and UI libraries with other Azure/third‑party services, bots, AI, and telephony systems |
+| Integrations & Coding Patterns | L335-L467 | Patterns and code samples for integrating ACS calling, chat, SMS, email, WhatsApp, Job Router, and UI libraries with Teams, OpenAI, bots, telephony, push/events, and advanced media/AI features. |
 | Deployment | L468-L473 | Guides for deploying ACS: infrastructure needs for Direct Routing, porting phone numbers, and automating ACS/Email resource setup with PowerShell. |
 
 ### Troubleshooting
@@ -289,7 +289,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure and interpret Azure Communication Services Rooms logs | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/rooms-logs |
 | Enable and interpret Azure SMS diagnostic logs | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/sms-logs |
 | Configure and interpret ACS voice and video call logs | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/voice-and-video-logs |
-| Query ACS call logs with Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
+| Query ACS call logs with Azure Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
 | Query ACS call logs with Azure Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
 | Use Azure Communication Services Rooms metrics definitions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/rooms-metrics |
 | Configure Azure Communication Services call monitoring | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/set-up-call-monitoring |
@@ -450,7 +450,7 @@ This skill requires **network access** to fetch documentation content:
 | Use ACS web calling sample for browser-based calls | https://learn.microsoft.com/en-us/azure/communication-services/samples/web-calling-sample |
 | Configure ACS chat push notifications on iOS | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-chat-push-notifications |
 | Integrate augmented reality filters into video calls | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-video-augmented-reality-tutorial |
-| Send ACS VOIP push notifications via Event Grid | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-voip-push-notifications-event-grid |
+| Integrate ACS calling push with Event Grid and Notification Hubs | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-voip-push-notifications-event-grid |
 | Enable ACS audio noise suppression and echo removal | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/audio-quality-enhancements/add-noise-supression |
 | Embed ACS Chat inside a custom Microsoft Teams app | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/chat-app-teams-embed |
 | Enable file attachment interoperability in ACS chat | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/chat-interop/meeting-interop-features-file-attachment |

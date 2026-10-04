@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   decision-making: 'Guidance on choosing VNet-related options: MANA support for VM
     sizes, upgrading Basic to Standard public IPs, routing preference and unmetered
@@ -15,25 +15,25 @@ category_descriptions:
     endpoints.'
   deployment: Guidance for upgrading Azure Basic public IP addresses to Standard SKU,
     including requirements, steps, and considerations for network resources and downtime.
-  security: 'Securing virtual networks: Kubernetes network policies, NSG/service tag
-    rules, encryption, storage egress restrictions, and enforcing security/compliance
-    via Azure Policy.'
+  security: 'Securing Virtual Networks: network policies, encryption, service tags,
+    service endpoint policies, and applying Azure Policy/security controls to VNets
+    and Kubernetes traffic.'
   architecture-patterns: 'Designing VNet architectures: subnet extension for migrations,
     VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning,
     and custom routing options.'
 skill_description: Expert knowledge for Azure Virtual Network development including
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when configuring VNet peering, subnet
-  delegation, NSGs, service endpoints, or upgrading Basic to Standard public IPs,
+  security, configuration, and deployment. Use when configuring VNet IP/DNS, peering
+  and routing, NSGs/service endpoints, MANA/CNI networking, or hybrid connectivity,
   and other Azure Virtual Network related development tasks. Not for Azure Networking
   (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
-use_when: Use when configuring VNet peering, subnet delegation, NSGs, service endpoints,
-  or upgrading Basic to Standard public IPs, and other Azure Virtual Network related
+  Azure Virtual WAN (use azure-virtual-wan), Azure Route Server (use azure-route-server).
+use_when: Use when configuring VNet IP/DNS, peering and routing, NSGs/service endpoints,
+  MANA/CNI networking, or hybrid connectivity, and other Azure Virtual Network related
   development tasks.
 confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
   Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
-  Azure VPN Gateway (use azure-vpn-gateway).
+  Azure Route Server (use azure-route-server).
 ---
 # Azure Virtual Network Crawl Report
 
@@ -69,8 +69,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Updated Pages
 
-- [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth)
-  - Updated: 2026-07-29T22:37:00.000Z → 2026-09-24T22:17:00.000Z
+- [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network)
+  - Updated: 2026-08-13T17:14:00.000Z → 2026-09-28T08:00:00.000Z
 
 ## Classified Pages
 
@@ -99,7 +99,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Monitor data reference](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference) | configuration | 0.70 | Monitoring reference pages for Azure services usually enumerate all metrics, logs, dimensions, and categories with exact names, units, and sometimes value ranges (for example, metric names, log table names, and category identifiers) that an LLM is unlikely to know reliably from training. This is structured, product-specific reference data that fits configuration-like knowledge for monitoring/diagnostics. |
 | [Name resolution for resources](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) | configuration | 0.70 | Covers Azure-provided DNS, private DNS zones, and custom DNS; includes Azure-specific DNS configuration patterns and options. |
 | [Network virtual appliances](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-scenario-udr-gw-nva) | architecture-patterns | 0.70 | Scenario-based architecture using route tables, VPN gateway, and NVAs to build DMZ and protected networks; concrete Azure network pattern. |
-| [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network) | security | 0.70 | Article provides concrete security recommendations for Azure Virtual Network, including product-specific controls (such as particular Azure networking security features and how to apply them) that go beyond generic security concepts. |
+| [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network) | security | 0.70 | The page provides product-specific security recommendations for Azure Virtual Network, including concrete guidance on network isolation, segmentation, access control, monitoring, and threat protection. It goes beyond generic security concepts with Azure-specific controls and configurations, fitting the security sub-skill type. |
 | [Service tags](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview) | security | 0.70 | Page describes concrete, product-specific use of service tags in NSGs, Azure Firewall, and UDRs, including how to apply them for secure network access control. This is detailed security configuration guidance rather than just conceptual networking content. |
 | [TCP/IP performance tuning](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tcpip-performance-tuning) | best-practices | 0.70 | Provides Azure-specific TCP/IP tuning recommendations and considerations (e.g., window sizes, offloads) tailored to Azure VM networking behavior, which are product-specific best-practices rather than generic TCP advice. |
 | [Upgrade guidance for Basic SKU public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance) | decision-making | 0.70 | Provides migration guidance from Basic to Standard public IP SKUs, including SKU comparison and options after retirement. This is product-specific decision and migration content that helps choose and move between SKUs, fitting the decision-making category. |

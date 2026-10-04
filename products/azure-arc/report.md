@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
-  configuration: 'Configuring Azure Arc environments: networking, security, agents,
-    storage, monitoring, GitOps, data services, and Agentic Retrieval data/model settings
-    across Kubernetes, servers, and edge.'
+  configuration: 'Configuring Azure Arc and Arc-enabled services: networking, storage,
+    security, monitoring, data services, Kubernetes extensions, Agentic Retrieval
+    data sources, and operational policies.'
   best-practices: Best practices for Arc Agentic Retrieval (doc prep, evaluation,
     metrics) plus Arc storage/Edge Volumes behavior, capacity planning, and SCVMM/namespace-scoped
     validator administration.
@@ -31,32 +31,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Arc development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing Arc-enabled Kubernetes, resource bridge, Arc SQL MI/SQL Server, Agentic
-  Retrieval, or Arc Edge Volumes, and other Azure Arc related development tasks. Not
-  for Azure Local (use azure-local), Azure Stack Edge (use azure-stack-edge), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines).
-use_when: Use when managing Arc-enabled Kubernetes, resource bridge, Arc SQL MI/SQL
-  Server, Agentic Retrieval, or Arc Edge Volumes, and other Azure Arc related development
-  tasks.
-confusable_not_for: Not for Azure Local (use azure-local), Azure Stack Edge (use azure-stack-edge),
+  using Arc-enabled Kubernetes, Arc SQL/data services, Agentic Retrieval APIs, resource
+  bridge, or Edge Volumes, and other Azure Arc related development tasks. Not for
   Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines).
+  (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network),
+  Azure Policy (use azure-policy).
+use_when: Use when using Arc-enabled Kubernetes, Arc SQL/data services, Agentic Retrieval
+  APIs, resource bridge, or Edge Volumes, and other Azure Arc related development
+  tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
+  azure-virtual-network), Azure Policy (use azure-policy).
 ---
 # Azure Arc Crawl Report
 
 ## Summary
 
-- **Total Pages**: 443
-- **Fetched**: 443
+- **Total Pages**: 446
+- **Fetched**: 446
 - **Fetch Failed**: 0
-- **Classified**: 288
-- **Unclassified**: 155
+- **Classified**: 289
+- **Unclassified**: 157
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 22
-- **Unchanged**: 420
+- **New Pages**: 3
+- **Updated Pages**: 0
+- **Unchanged**: 443
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -66,64 +66,22 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Stack Edge (use
 |------|-------|------------|
 | architecture-patterns | 4 | 0.9% |
 | best-practices | 8 | 1.8% |
-| configuration | 104 | 23.5% |
+| configuration | 105 | 23.5% |
 | decision-making | 19 | 4.3% |
-| deployment | 26 | 5.9% |
+| deployment | 26 | 5.8% |
 | integrations | 27 | 6.1% |
 | limits-quotas | 7 | 1.6% |
 | security | 56 | 12.6% |
-| troubleshooting | 37 | 8.4% |
-| *(Unclassified)* | 155 | 35.0% |
+| troubleshooting | 37 | 8.3% |
+| *(Unclassified)* | 157 | 35.2% |
 
 ## Changes
 
 ### New Pages
 
-- [Retirement guidance](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/transition-guidance)
-
-### Updated Pages
-
-- [Azure Arc-enabled System Center Virtual Machine Manager >](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/overview)
-  - Updated: 2026-02-09T08:00:00.000Z → 2026-09-24T08:00:00.000Z
-- [Manage proxy settings](https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent-proxy-settings)
-  - Updated: 2026-04-28T22:11:00.000Z → 2026-09-25T17:06:00.000Z
-- [What's new with Connected Machine agent?](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
-  - Updated: 2026-09-15T22:11:00.000Z → 2026-09-25T22:08:00.000Z
-- [Plan for deployment](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/support-matrix-for-system-center-virtual-machine-manager)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T08:00:00.000Z
-- [Connect an SCVMM server to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/quickstart-connect-system-center-virtual-machine-manager-to-arc)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-09-24T08:00:00.000Z
-- [Terraform based VM management (AzAPI provider)](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/terraform-vm-management)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T08:00:00.000Z
-- [Enable SCVMM resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/enable-scvmm-inventory-resources)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Link Arc-enabled server machines to SCVMM](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/enable-virtual-hardware-scvmm)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Built-in roles](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/built-in-roles)
-  - Updated: 2026-02-09T08:00:00.000Z → 2026-09-24T08:00:00.000Z
-- [Create custom roles](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles)
-  - Updated: 2026-03-02T18:20:00.000Z → 2026-09-24T17:04:00.000Z
-- [Set up and manage self-service access](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/set-up-and-manage-self-service-access-scvmm)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Create a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-virtual-machine)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Perform VM powercycle operations](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/perform-powercycle-operations)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Apply Azure tags on resources](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/apply-azure-tags)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Update configuration and resize a VM](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/update-configuration-and-resize-vm)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Delete a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/delete-virtual-machine)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/enable-guest-management-at-scale)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T08:00:00.000Z
-- [Upgrade Azure Arc resource bridge](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/upgrade-azure-arc-resource-bridge)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T08:00:00.000Z
-- [Administer Arc-enabled SCVMM](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/administer-arc-scvmm)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T17:04:00.000Z
-- [Remove your SCVMM environment from Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/remove-scvmm-from-azure-arc)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-09-24T08:00:00.000Z
-- *...and 2 more*
+- [How to manage Argo CD extension](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/how-to-manage-gitops-argo-cd-extension)
+- [GitOps Overview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/gitops-overview)
+- [Deploy a simple application using Argo CD extension](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/quickstart-deploy-gitops-argo-cd)
 
 ## Classified Pages
 
@@ -355,6 +313,7 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Stack Edge (use
 | [Choosing the right Azure Arc service](https://learn.microsoft.com/en-us/azure/azure-arc/choose-service) | decision-making | 0.68 | The page focuses on how to choose between different Azure Arc services for machines based on existing infrastructure and management needs. It provides service-selection guidance rather than just describing features, helping users decide which Arc offering to use for specific scenarios. This aligns with the decision-making sub-skill. While it may not have many numeric thresholds, it is clearly oriented around service choice and trade-offs rather than being a generic overview. |
 | [Configure NFS server](https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/configure-nfs-server) | configuration | 0.68 | Installing NFS server packages and creating shared directories for use as a data source is concrete configuration for this product’s ingestion pipeline. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq) | troubleshooting | 0.68 | As an FAQ for a niche preview feature, this page is likely to contain product-specific questions with concrete answers such as known limitations, error behaviors, and how to resolve or work around them. FAQ entries for preview Azure services commonly include expert details like unsupported scenarios, specific configuration caveats, and symptom→cause→resolution guidance that aren't generic knowledge. This aligns best with the troubleshooting sub-skill, even though it's in FAQ format rather than a formal troubleshooting guide. |
+| [How to manage Argo CD extension](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/how-to-manage-gitops-argo-cd-extension) | configuration | 0.68 | How-to article for managing the Argo CD extension on AKS and Azure Arc-enabled Kubernetes typically includes product-specific extension settings, parameter names, and configuration options (for example, extension instance properties, update/upgrade parameters, and configuration flags) that go beyond generic GitOps or Argo CD knowledge and are unique to Azure’s extension model. |
 | [Onboard Amazon EKS clusters to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc) | configuration | 0.68 | The page describes a specific onboarding solution for Amazon EKS clusters into Azure Arc via the multicloud connector, which typically includes product-specific configuration steps, required parameters (such as cloud account connection details, permissions, and connector settings), and Azure-side setup unique to this integration. These are concrete, product-specific configuration details that go beyond generic knowledge. It is not primarily a conceptual overview, marketing, or navigation page, and it focuses on how to enable and configure the EKS Arc onboarding solution rather than general Kubernetes concepts. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-data-controller-direct-prerequisites) | deployment | 0.68 | Prerequisites for direct-connect deployment; likely includes specific Kubernetes, Azure, and resource requirements that are product- and mode-specific for deployment. |
 | [Remove your SCVMM environment from Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/remove-scvmm-from-azure-arc) | deployment | 0.68 | Describes the exact steps and ordering to decommission SCVMM from Arc and delete related resources. These teardown/deployment lifecycle requirements are product-specific and important for correct environment management. |
@@ -503,6 +462,7 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Stack Edge (use
 | [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/delete-resources) | 0.30 | Deleting resources and understanding cascading impacts is likely a procedural guide. The summary does not indicate presence of configuration tables, limits, or error-code-based troubleshooting; it appears to be a standard how-to. |
 | [Deploy Marketplace applications](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/deploy-marketplace) | 0.30 | Appears to be a how-to/tutorial for deploying Marketplace applications to Arc-enabled Kubernetes, without indication of detailed configuration tables, limits, or product-specific error mappings. |
 | [Deploy a basic solution](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/solution-without-common-configuration) | 0.30 | Basic solution creation guide; summary suggests a tutorial flow without explicit mention of detailed configuration tables, limits, or troubleshooting content. |
+| [Deploy a simple application using Argo CD extension](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/quickstart-deploy-gitops-argo-cd) | 0.30 | Quickstart focuses on installing the Argo CD extension and deploying a sample app. It is primarily a step-by-step tutorial and does not emphasize configuration parameter matrices, limits, error-code-based troubleshooting, or other detailed expert references as defined by the sub-skill types. |
 | [Deploy applications using GitOps (Argo CD)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-argocd) | 0.30 | Tutorial-style GitOps/Argo CD walkthrough for Azure Arc/AKS without clear evidence of detailed limits, configuration parameter tables, or product-specific error/diagnostic mappings; appears to be procedural guidance rather than expert reference content. |
 | [Deploy applications using GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2) | 0.30 | Tutorial-style GitOps/Flux v2 walkthrough for Azure Arc/AKS without clear evidence of detailed configuration tables, limits, or product-specific error/diagnostic mappings; primarily procedural guidance rather than expert reference content. |
 | [Enable VMware vCenter resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure) | 0.30 | Portal-based browsing/enabling of vCenter resources; navigation and basic enablement steps, no detailed configuration parameters, limits, or troubleshooting mappings. |
@@ -547,6 +507,7 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Stack Edge (use
 | [Data collection and reporting](https://learn.microsoft.com/en-us/azure/azure-arc/data/privacy-data-collection-and-reporting) | 0.20 | Describes telemetry/data collection behavior; policy/behavioral info rather than configuration parameters, limits, or troubleshooting mappings. |
 | [Data exchange between cluster and Azure](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-data-exchange) | 0.20 | Appears to be a conceptual description of data exchanged and connectivity behavior for Arc-enabled Kubernetes; no clear evidence of numeric limits, config tables, error codes, or other detailed expert-only data. |
 | [Explore multi-cluster workload management](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/workload-management) | 0.20 | Described as exploring typical use cases and challenges for multi-cluster Kubernetes workload management with GitOps; appears to be conceptual/overview guidance without mention of concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. |
+| [GitOps Overview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/gitops-overview) | 0.20 | Page is an overview of GitOps-based deployment for AKS and Azure Arc-enabled Kubernetes. It describes concepts and benefits but, based on the summary, does not expose specific limits, configuration parameter tables, error codes, or product-specific decision matrices. |
 | [Identity and access overview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/identity-access-overview) | 0.20 | Identity and access overview focuses on conceptual options (cluster connect, Azure RBAC) without specific RBAC role lists, permission scopes, or configuration parameter details. |
 | [Inner loop developer experience](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-inner-loop-gitops) | 0.20 | Inner loop developer experience is process/practice oriented; unlikely to contain product-specific configuration or limits. |
 | [Multicloud connector enabled by Azure Arc >](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/overview) | 0.20 | Page is an overview of Azure Arc Multicloud connector capabilities (supported clouds, high-level features like inventory and governance). It does not list numeric limits, configuration parameter tables, error codes, or detailed decision matrices. Content is conceptual/marketing-style rather than expert configuration, troubleshooting, or limits-focused guidance. |

@@ -28,8 +28,8 @@ confusable_not_for: Not for Azure VMware Solution (use azure-vmware-solution), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 4
+- **Updated Pages**: 0
+- **Unchanged**: 5
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nutanix/azure-nutanix.csv`
 
@@ -41,11 +41,6 @@ confusable_not_for: Not for Azure VMware Solution (use azure-vmware-solution), A
 | *(Unclassified)* | 4 | 80.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get started](https://learn.microsoft.com/en-us/azure/nutanix/get-started)
-  - Updated: 2026-05-26T22:16:00.000Z → 2026-09-24T22:17:00.000Z
 
 ## Classified Pages
 

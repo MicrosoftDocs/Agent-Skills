@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 44
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 | *(Unclassified)* | 15 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Guest OS release news](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-update-matrix)
-  - Updated: 2026-09-16T08:00:00.000Z → 2026-09-22T08:00:00.000Z
 
 ## Classified Pages
 

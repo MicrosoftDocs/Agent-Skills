@@ -68,7 +68,6 @@
 | Use VMAccess extension to reset Windows VM access | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmaccess-windows |
 | Configure VM Snapshot Linux extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-linux |
 | Configure VM Snapshot Windows extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-windows |
-| Use Azure FPGA Attestation service for NP-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/field-programmable-gate-arrays-attestation |
 | Configure Azure Monitor VM availability metric with Flash | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
 | Identify Azure-hosted VMs via SMBIOS asset tag | https://learn.microsoft.com/en-us/azure/virtual-machines/identify-azure-vm-from-guest |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
@@ -90,7 +89,6 @@
 | Configure managed Run Command for Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed |
 | Configure time synchronization for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/time-sync |
 | Configure xrdp and desktop environment on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop |
-| Control Azure VM platform updates with Maintenance Configurations | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations |
 | Define Maintenance Configurations for Azure VMs using Bicep | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-bicep |
 | Manage Azure VM Maintenance Configurations using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-cli |
 | Configure Azure VM Maintenance Configurations in the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-portal |
@@ -102,7 +100,8 @@
 | Reference monitoring metrics and logs for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
 | Convert Azure Linux VM disks from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
 | Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |
-| Configure InfiniBand networking on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-infiniband |
+| Select and use Azure HPC/AI VM images | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/azure-hpc-vm-images |
+| Configure InfiniBand and RDMA on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/setup-infiniband |
 | Create and store SSH keys with Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-azure-cli |
 | Configure and manage SSH keys in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-portal |
 | List, update, and delete Compute Gallery resources | https://learn.microsoft.com/en-us/azure/virtual-machines/update-image-resources |
@@ -126,7 +125,7 @@
 | Expand OS and data disks on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/expand-disks |
 | Configure Azure Diagnostics Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/extensions-diagnostics |
 | Set up time sync for AD domain Windows VMs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/external-ntpsource-configuration |
-| Configure NVIDIA GPU drivers on Azure N-series Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
+| Install NVIDIA GPU drivers on Windows N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
 | Use Run Command to execute scripts on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command |
 | Configure managed Run Command for Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command-managed |
 | Define Azure VM resources in ARM templates | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/template-description |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   configuration: Configuring IoT data flows, endpoints, transforms, MQTT/OPC UA/connectors,
     storage, observability, and health/metrics for Azure IoT Operations deployments
@@ -17,9 +17,9 @@ category_descriptions:
   deployment: Deploying, upgrading, cloning, and removing Azure IoT Operations on
     Arc-enabled Kubernetes, including secure/prod setups, private networks/registries,
     and Dapr MQTT components.
-  troubleshooting: 'Diagnosing and fixing Azure IoT Operations issues: connectivity
-    and health codes, known component problems, debugging WASM modules, and using
-    tools to troubleshoot deployments.'
+  troubleshooting: 'Diagnosing and fixing Azure IoT Operations issues: health reason
+    codes, private connectivity problems, known component bugs, debugging WASM modules,
+    and using tools for troubleshooting.'
   architecture-patterns: Designing Azure IoT architectures using ISA-95 unified namespace
     concepts and planning layered, segmented networking topologies for secure, scalable
     IoT Operations deployments.
@@ -29,13 +29,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Operations development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr endpoints,
-  Arc deployments, or MQTT HA, and other Azure IoT Operations related development
-  tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure
-  IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
-use_when: Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr
-  endpoints, Arc deployments, or MQTT HA, and other Azure IoT Operations related development
-  tasks.
+  Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr/Fabric RT
+  endpoints, or Arc Kubernetes deployments, and other Azure IoT Operations related
+  development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub),
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+use_when: Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr/Fabric
+  RT endpoints, or Arc Kubernetes deployments, and other Azure IoT Operations related
+  development tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub),
   Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
 ---
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 129
+- **Updated Pages**: 1
+- **Unchanged**: 132
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -75,23 +75,17 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 
 ### Updated Pages
 
-- [Custom RBAC](https://learn.microsoft.com/en-us/azure/iot-operations/reference/custom-rbac)
-  - Updated: 2025-07-31T17:19:00.000Z → 2026-09-23T05:11:00.000Z
-- [Prepare a cluster](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-09-25T22:14:00.000Z
-- [Authentication](https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-authentication)
-  - Updated: 2026-07-30T08:00:00.000Z → 2026-09-22T08:00:00.000Z
-- [Start developing with the SDKs](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/quickstart-get-started-sdks)
-  - Updated: 2026-08-04T17:21:00.000Z → 2026-09-22T17:11:00.000Z
+- [Known issues](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues)
+  - Updated: 2026-08-21T17:12:00.000Z → 2026-10-02T17:19:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Health status reason codes](https://learn.microsoft.com/en-us/azure/iot-operations/reference/health-status-reason-codes) | troubleshooting | 0.90 | The page is a reference of product-specific health status reason codes used by Azure IoT Operations, mapping each code to its meaning and recommended actions. This is organized symptom → cause → resolution and includes identifiers and guidance that aren't derivable from general knowledge, fitting the troubleshooting category. |
+| [Known issues](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues) | troubleshooting | 0.86 | Page is a product-specific known issues list for Azure IoT Operations (MQTT broker, OPC UA connector, OPC PLC simulator, data flows, web UI) with concrete symptoms and workarounds. This matches troubleshooting: symptom → cause → workaround mappings that are not generally known from training. |
 | [Troubleshoot private connectivity](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity) | troubleshooting | 0.85 | The article explicitly focuses on diagnosing and resolving DNS, Private Endpoint, RBAC, and connectivity issues for Azure IoT Operations in private network deployments. It is organized around specific symptoms (DNS, Private Endpoint, RBAC problems) and their resolution, which matches the troubleshooting sub-skill definition with product-specific error/diagnosis guidance. |
 | [Expressions reference](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-graphs-expressions) | integrations | 0.80 | Expression reference with positional variables, functions, operators, and metadata is a detailed API-like spec; this is core to coding patterns for transforms and includes product-specific functions and syntax. |
-| [Known issues](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues) | troubleshooting | 0.80 | The page enumerates product-specific known issues for Azure IoT Operations components (MQTT broker, OPC UA connector, PLC simulator, data flows, web UI) and provides guidance and workarounds. This is organized around concrete symptoms and resolutions unique to the service, matching the troubleshooting sub-skill definition. |
 | [Listener](https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-brokerlistener) | security | 0.80 | Describes securing MQTT broker communication using BrokerListener, BrokerAuthentication, and BrokerAuthorization resources; this is product-specific security configuration with named resources and likely parameter details. |
 | [Manage certificates](https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-manage-certificates) | security | 0.80 | Explains managing certificates for external communications (OPC UA authentication, trust lists), which involves specific certificate handling and configuration unique to this product. |
 | [Manage secrets](https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-manage-secrets) | security | 0.80 | Describes using Azure Key Vault and the secret store extension to sync secrets to Kubernetes, including how edge resources consume them. This is product-specific secrets and identity configuration. |

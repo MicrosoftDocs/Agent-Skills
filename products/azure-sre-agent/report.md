@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 119
+- **Updated Pages**: 0
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -70,19 +70,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 73 | 58.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Evaluate SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/evaluate)
-  - Updated: 2026-08-25T02:03:00.000Z → 2026-09-25T22:14:00.000Z
-- [Complete setup](https://learn.microsoft.com/en-us/azure/sre-agent/complete-setup)
-  - Updated: 2026-08-25T22:15:00.000Z → 2026-09-25T22:14:00.000Z
-- [Automate workflows](https://learn.microsoft.com/en-us/azure/sre-agent/automate-workflows)
-  - Updated: 2026-08-25T22:15:00.000Z → 2026-09-25T22:14:00.000Z
-- [Create a subagent](https://learn.microsoft.com/en-us/azure/sre-agent/create-subagent)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-09-25T22:14:00.000Z
-- [Create a skill](https://learn.microsoft.com/en-us/azure/sre-agent/create-skill)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-09-25T22:14:00.000Z
 
 ## Classified Pages
 

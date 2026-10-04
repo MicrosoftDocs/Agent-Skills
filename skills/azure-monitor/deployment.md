@@ -7,9 +7,10 @@
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Migrate custom text logs to Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-custom-text-log-migration |
 | Migrate Application Insights smart detection to alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-smart-detections-migration |
 | Azure Monitor pipeline extension versions and releases | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-extension-versions |
-| Configure and operate Log Analytics workspace replication | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-replication |
+| Configure cross-region replication for Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-replication |
 | Enable .NET Profiler for apps on Azure App Service | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler |
 | Enable OpenTelemetry Profiler for .NET on Linux App Service | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-aspnetcore-linux |
 | Enable .NET Profiler for Azure Functions apps | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-azure-functions |

@@ -17,7 +17,9 @@ skill_description: Expert knowledge for Azure Firmware Analysis development incl
   configuring RBAC/service principals, uploading firmware via CLI/PowerShell/Python,
   mapping results to Device Registry, reading SBOM paths, or deploying workspaces
   with ARM/Bicep/Terraform, and other Azure Firmware Analysis related development
-  tasks.
+  tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure IoT Edge
+  (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential Computing
+  (use azure-confidential-computing).
 use_when: Use when configuring RBAC/service principals, uploading firmware via CLI/PowerShell/Python,
   mapping results to Device Registry, reading SBOM paths, or deploying workspaces
   with ARM/Bicep/Terraform, and other Azure Firmware Analysis related development
@@ -37,9 +39,9 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 - **Unclassified**: 5
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 10
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 17
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -54,25 +56,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 5 | 29.4% |
 
 ## Changes
-
-### New Pages
-
-- [Understanding unsafe function call data](https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-unsafe-function-calls)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/firmware-analysis/overview-firmware-analysis)
-  - Updated: 2025-09-26T05:10:00.000Z → 2026-09-23T22:40:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq)
-  - Updated: 2026-07-29T08:00:00.000Z → 2026-09-23T22:40:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
-  - Updated: 2026-08-04T08:00:00.000Z → 2026-09-21T08:00:00.000Z
-- [Analyze firmware images using Azure CLI](https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-upload-firmware-using-azure-command-line-interface)
-  - Updated: 2025-09-26T05:10:00.000Z → 2026-09-04T08:00:00.000Z
-- [Tutorial using firmware analysis with the Azure portal](https://learn.microsoft.com/en-us/azure/firmware-analysis/tutorial-analyze-firmware)
-  - Updated: 2025-09-26T05:10:00.000Z → 2026-09-23T22:40:00.000Z
-- [Firmware analysis integration with Azure Device Registry](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry)
-  - Updated: 2026-04-14T22:21:00.000Z → 2026-09-23T17:12:00.000Z
 
 ## Classified Pages
 

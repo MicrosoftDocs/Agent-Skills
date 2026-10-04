@@ -1,14 +1,14 @@
 ---
 name: azure-dedicated-hsm
-description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, and deployment. Use when sizing HSM clusters, configuring ExpressRoute IP SKUs, securing VNets, or planning HSM retirement/migration, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, integrations & coding patterns, and deployment. Use when configuring ExpressRoute IP SKUs, migrating Dedicated HSMs, securing HSM networks, or scripting HSM provisioning, and other Azure Dedicated HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Dedicated HSM Skill
 
-This skill provides expert guidance for Azure Dedicated HSM. Covers troubleshooting, decision making, architecture & design patterns, security, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Dedicated HSM. Covers troubleshooting, decision making, architecture & design patterns, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,23 +24,22 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and fixing Azure Dedicated HSM deployment, configuration, usage, and support issues, including common errors and steps to resolve failed or misconfigured HSM instances. |
-| Decision Making | L39-L44 | Guidance on Dedicated HSM retirement, choosing successors (Managed/Cloud HSM), and planning/migrating ExpressRoute IPs and HSM workloads to new SKUs or services. |
-| Architecture & Design Patterns | L45-L51 | Guidance on designing Dedicated HSM deployments: sizing and topology, high availability and failover patterns, and secure networking (VNet, subnets, routing, and connectivity). |
-| Security | L52-L57 | Physical security controls for Dedicated HSM devices and recommended security configurations, policies, and operational best practices for protecting keys and access. |
-| Deployment | L58-L61 | Guidance for migrating the ExpressRoute gateway IP SKU used with Azure Dedicated HSM, including steps, prerequisites, and configuration considerations. |
+| Troubleshooting | L34-L38 | Diagnosing and resolving Azure Dedicated HSM deployment, configuration, connectivity, and usage issues, including common failures and recommended troubleshooting steps. |
+| Decision Making | L39-L43 | Guidance on Dedicated HSM retirement, choosing successors (Managed/Cloud HSM), and planning/migrating ExpressRoute IPs and HSM workloads to new SKUs or services. |
+| Architecture & Design Patterns | L44-L50 | Guidance on designing Dedicated HSM deployments: sizing and topology, high availability and failover patterns, and secure networking (VNet, subnets, routing, and connectivity). |
+| Security | L51-L56 | Physical security controls for Dedicated HSM hardware and best‑practice configuration guidance (networking, access, policies) to securely deploy and operate HSMs. |
+| Integrations & Coding Patterns | L57-L64 | Scripts and step-by-step guidance for provisioning and deploying Azure Dedicated HSM instances using PowerShell and Azure CLI. |
+| Deployment | L65-L68 | Guidance for migrating the ExpressRoute gateway IP SKU used with Azure Dedicated HSM, including steps, prerequisites, and configuration considerations. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Resolve common Azure Dedicated HSM usage and support questions | https://learn.microsoft.com/en-us/azure/dedicated-hsm/faq |
-| Troubleshoot Azure Dedicated HSM deployment and configuration issues | https://learn.microsoft.com/en-us/azure/dedicated-hsm/troubleshoot |
+| Troubleshoot Azure Dedicated HSM deployments and usage | https://learn.microsoft.com/en-us/azure/dedicated-hsm/troubleshoot |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
 | Plan migration from Azure Dedicated HSM to Managed or Cloud HSM | https://learn.microsoft.com/en-us/azure/dedicated-hsm/migration-guide |
-| Understand Azure Dedicated HSM retirement and successors | https://learn.microsoft.com/en-us/azure/dedicated-hsm/overview |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -53,7 +52,15 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand physical security of Azure Dedicated HSM devices | https://learn.microsoft.com/en-us/azure/dedicated-hsm/physical-security |
-| Apply security best practices for Azure Dedicated HSM | https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm |
+| Secure configuration for Azure Dedicated HSM | https://learn.microsoft.com/en-us/azure/dedicated-hsm/secure-dedicated-hsm |
+
+### Integrations & Coding Patterns
+| Topic | URL |
+|-------|-----|
+| Create Azure Dedicated HSM using PowerShell | https://learn.microsoft.com/en-us/azure/dedicated-hsm/quickstart-create-hsm-powershell |
+| Create Azure Dedicated HSM using Azure CLI | https://learn.microsoft.com/en-us/azure/dedicated-hsm/quickstart-hsm-azure-cli |
+| Deploy Azure Dedicated HSM with Azure CLI | https://learn.microsoft.com/en-us/azure/dedicated-hsm/tutorial-deploy-hsm-cli |
+| Deploy Azure Dedicated HSM with PowerShell | https://learn.microsoft.com/en-us/azure/dedicated-hsm/tutorial-deploy-hsm-powershell |
 
 ### Deployment
 | Topic | URL |

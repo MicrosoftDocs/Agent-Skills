@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   best-practices: Best practices for sizing and deploying ARO clusters and infra nodes,
     optimizing OpenShift Virtualization VMs, and staying within supported configurations
@@ -45,16 +45,16 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Summary
 
-- **Total Pages**: 85
-- **Fetched**: 85
+- **Total Pages**: 86
+- **Fetched**: 86
 - **Fetch Failed**: 0
 - **Classified**: 68
-- **Unclassified**: 17
+- **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 82
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -64,25 +64,25 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 |------|-------|------------|
 | architecture-patterns | 1 | 1.2% |
 | best-practices | 4 | 4.7% |
-| configuration | 24 | 28.2% |
+| configuration | 24 | 27.9% |
 | decision-making | 3 | 3.5% |
-| deployment | 9 | 10.6% |
-| integrations | 6 | 7.1% |
-| limits-quotas | 2 | 2.4% |
-| security | 16 | 18.8% |
+| deployment | 9 | 10.5% |
+| integrations | 6 | 7.0% |
+| limits-quotas | 2 | 2.3% |
+| security | 16 | 18.6% |
 | troubleshooting | 3 | 3.5% |
-| *(Unclassified)* | 17 | 20.0% |
+| *(Unclassified)* | 18 | 20.9% |
 
 ## Changes
 
+### New Pages
+
+- [Quickstart - Create a default cluster](https://learn.microsoft.com/en-us/azure/openshift/quickstart-create-default-hosted-cluster)
+
 ### Updated Pages
 
-- [Plan your cluster network](https://learn.microsoft.com/en-us/azure/openshift/howto-plan-cluster-network)
-  - Updated: 2026-09-15T16:59:00.000Z → 2026-09-22T17:09:00.000Z
-- [Create a cluster with customizations](https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster)
-  - Updated: 2026-09-15T16:59:00.000Z → 2026-09-21T08:00:00.000Z
-- [Create a node pool](https://learn.microsoft.com/en-us/azure/openshift/howto-create-hosted-node-pool)
-  - Updated: 2026-09-15T16:59:00.000Z → 2026-09-22T17:09:00.000Z
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq)
+  - Updated: 2026-09-15T16:59:00.000Z → 2026-09-29T22:21:00.000Z
 
 ## Classified Pages
 
@@ -170,11 +170,12 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Delete a cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-cluster) | 0.30 | Quickstart for deleting a cluster; mostly procedural steps, no clear indication of detailed constraints or configuration references. |
 | [Delete a cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-hosted-control-planes-cluster) | 0.30 | From the summary, this is a quickstart showing how to delete an ARO HCP cluster via Azure CLI and what resources are or aren’t deleted automatically. It appears to be a straightforward procedural tutorial without detailed configuration matrices, limits, or product-specific edge-case behavior; thus it likely lacks the kind of expert-only knowledge targeted here. |
 | [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app) | 0.30 | Quickstart/tutorial for deploying JBoss EAP on Azure Red Hat OpenShift via the portal. It focuses on step-by-step setup using a Marketplace offer, not on limits, configuration matrices, error codes, or product-specific parameter tables. No clear expert-only limits, quotas, or specialized configuration references are indicated. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq) | 0.30 | FAQ summary only; likely mixed high-level Q&A without clear focus on detailed limits, configs, or troubleshooting mappings. |
 | [Overview of egress lockdown](https://learn.microsoft.com/en-us/azure/openshift/concepts-egress-lockdown) | 0.30 | Described as an overview of egress lockdown; based on the summary it focuses on conceptual explanation of required access/URLs rather than detailed endpoint lists, configuration tables, or numeric constraints. |
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
 | [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.30 | Release notes typically list version changes and features but not structured limits, configs, or decision matrices as defined by the sub-skill types. Without clear evidence of numeric limits, config tables, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any category. |
 | [About Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/intro-openshift) | 0.20 | Introductory overview of Azure Red Hat OpenShift features and benefits without detailed limits, configs, or product-specific patterns. |
+| [Quickstart - Create a default cluster](https://learn.microsoft.com/en-us/azure/openshift/quickstart-create-default-hosted-cluster) | 0.20 | Quickstart for creating an Azure Red Hat OpenShift HCP cluster using default settings via CLI/Bicep; primarily a step-by-step tutorial without detailed configuration tables, limits, quotas, or product-specific troubleshooting/decision matrices. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq) | - | FAQ page is primarily conceptual and explanatory; it doesn't focus on detailed limits, configuration tables, error-code troubleshooting, or other expert-only data as defined by the sub-skill types. |
 | [Networking](https://learn.microsoft.com/en-us/azure/openshift/concepts-networking) | - | Networking article is an overview with diagrams and endpoint lists but no specific configuration tables, limits, or product-unique patterns with quantified guidance. |
 | [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization) | - | The page is a how-to/tutorial for using OpenShift Virtualization on ARO. Based on the summary, it focuses on capabilities and migration benefits, not on detailed configuration parameter tables, limits, or troubleshooting mappings required for the defined sub-skill types. |
 | [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle) | - | Support lifecycle page describes release cadence and support policy conceptually; it does not include detailed version matrices, dates, or constraints that would qualify as expert configuration, limits, or decision-making guidance. |

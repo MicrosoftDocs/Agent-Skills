@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-04'
 category_descriptions:
   best-practices: 'Performance and operations guidance for HorizonDB: data prep for
     AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster
@@ -8,8 +8,8 @@ category_descriptions:
     LangChain vector store, building knowledge graphs, and integrating/moving data
     via the Azure Storage extension.'
   configuration: 'Configuring HorizonDB clusters: AI models/pipelines, search/vector
-    indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance,
-    logging, WAL, and resource tuning.'
+    indexing, extensions, networking/firewalls, HA/replication, autovacuum, connections,
+    logging, WAL, and detailed PostgreSQL parameter tuning.'
   decision-making: Guidance on choosing between vector, full-text, and hybrid search
     in HorizonDB, and selecting the optimal vector index type for your data, queries,
     and performance needs.
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 146
+- **Updated Pages**: 1
+- **Unchanged**: 145
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
@@ -70,6 +70,11 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | *(Unclassified)* | 35 | 24.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Scalable vector indexing with DiskANN](https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann)
+  - Updated: 2026-07-08T11:04:00.000Z → 2026-09-29T11:08:00.000Z
 
 ## Classified Pages
 
@@ -152,7 +157,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Replication / Primary Server](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-replication-primary-server) | configuration | 0.70 | Explicitly states that Azure HorizonDB 17 has no parameters in this category. This is product/version-specific configuration information about parameter availability. |
 | [Request a quota increase](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-request-quota-increase) | limits-quotas | 0.70 | Discusses default quotas and limits and how to request increases. The full article likely includes specific quota values or resource types tied to HorizonDB. |
 | [Reset local administrator password](https://learn.microsoft.com/en-us/azure/horizondb/security/security-reset-admin-password) | security | 0.70 | Step-by-step admin password reset for HorizonDB is a security operation; likely includes specific commands, portal paths, and constraints unique to this service, fitting the security sub-skill. |
-| [Scalable vector indexing with DiskANN](https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann) | configuration | 0.70 | Describes pg_diskann extension capabilities, including supported dimensions (up to 16,000), advanced filtering, and index behavior. This implies detailed configuration options and constraints unique to HorizonDB’s DiskANN implementation. |
 | [Scheduled maintenance](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/concepts-maintenance) | best-practices | 0.70 | Provides concrete DO/DON'T guidance (avoid cluster operations during maintenance due to unpredictable outcomes and performance/stability impact). This is product-specific operational best practice for HorizonDB maintenance behavior. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/horizondb/security/security-overview) | security | 0.70 | Security overview for a new, niche service likely includes product-specific best practices and controls (network, identity, data protection, recovery) that go beyond generic concepts, fitting the security sub-skill. |
 | [Statistics / Cumulative Query and Index Statistics](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-statistics-cumulative-query-index-statistics) | configuration | 0.70 | Statistics / Cumulative Query and Index Statistics parameters page is a HorizonDB-specific parameter catalog for statistics collection, representing configuration expert knowledge. |
@@ -162,6 +166,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Update extensions](https://learn.microsoft.com/en-us/azure/horizondb/extensions/how-to-update-extensions) | configuration | 0.70 | Describes how to update extensions, which typically involves product-specific commands or configuration changes not known generically. |
 | [Version and Platform Compatibility / Previous PostgreSQL Versions](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-version-platform-compatibility-postgresql-versions) | configuration | 0.70 | Previous PostgreSQL Versions parameters page documents HorizonDB-specific configuration options for version compatibility, representing expert configuration knowledge. |
 | [View installed extensions](https://learn.microsoft.com/en-us/azure/horizondb/extensions/how-to-view-installed-extensions) | configuration | 0.70 | Explains how to view installed extensions and their versions, likely via HorizonDB-specific queries or portal/CLI commands. |
+| [Scalable vector indexing with DiskANN](https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann) | configuration | 0.68 | Page describes product-specific DiskANN capabilities and constraints (for example, support for up to 16,000 dimensions, in-place inserts/updates, and scalable vector counts) tied to the pg_diskann extension. These are concrete configuration and capability details unique to HorizonDB’s vector indexing rather than generic vector search concepts, fitting the configuration sub-skill best. |
 | [Integrate with LLM orchestration frameworks](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-frameworks) | integrations | 0.65 | Describes integration with Microsoft Agent Framework, Semantic Kernel, LangChain, LlamaIndex, and CrewAI. The full article likely includes HorizonDB-specific connection patterns, configuration parameters, and SDK usage details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-search-overview) | decision-making | 0.65 | The article explains when and why to use vector, full-text, and hybrid search in HorizonDB and how they fit into a retrieval strategy. This is product-specific decision guidance with scenario-based recommendations for search mode selection. |
 | [Process Title](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-process-title) | configuration | 0.65 | Although content is gated, the page is clearly a parameter reference for 'Process Title' settings in HorizonDB, which are product-specific configuration parameters not generally known to LLMs. |

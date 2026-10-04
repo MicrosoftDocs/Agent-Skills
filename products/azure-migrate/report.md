@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   configuration: Configuring Azure Migrate appliances, Arc/agents, assessment settings
     (VM, SQL, PostgreSQL, .NET), private endpoints, landing zones, and Resource Mover
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 
 ## Summary
 
-- **Total Pages**: 216
-- **Fetched**: 216
+- **Total Pages**: 217
+- **Fetched**: 217
 - **Fetch Failed**: 0
 - **Classified**: 108
-- **Unclassified**: 108
+- **Unclassified**: 109
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 1
 - **Unchanged**: 215
 - **Deleted Pages**: 0
@@ -67,20 +67,24 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 | architecture-patterns | 2 | 0.9% |
 | best-practices | 7 | 3.2% |
 | configuration | 21 | 9.7% |
-| decision-making | 36 | 16.7% |
+| decision-making | 36 | 16.6% |
 | deployment | 8 | 3.7% |
 | integrations | 2 | 0.9% |
-| limits-quotas | 9 | 4.2% |
+| limits-quotas | 9 | 4.1% |
 | security | 8 | 3.7% |
 | troubleshooting | 15 | 6.9% |
-| *(Unclassified)* | 108 | 50.0% |
+| *(Unclassified)* | 109 | 50.2% |
 
 ## Changes
 
+### New Pages
+
+- [Containerize Java web apps and migrate to Azure Container Apps](https://learn.microsoft.com/en-us/azure/migrate/tutorial-app-containerization-java-container-apps?view=migrate)
+
 ### Updated Pages
 
-- [Enable application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat/?view=migrate)
-  - Updated: 2026-08-21T17:12:00Z → 2026-09-24T11:41:00Z
+- [Overview of Web App Migration and Modernization](https://learn.microsoft.com/en-us/azure/migrate/web-app-migration-modernization?view=migrate)
+  - Updated: 2026-09-14T17:12:00.000Z → 2026-09-28T11:48:00.000Z
 
 ## Classified Pages
 
@@ -246,6 +250,7 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 | [Automate migration of large number of VMs](https://learn.microsoft.com/en-us/azure/migrate/how-to-migrate-at-scale?view=migrate) | 0.30 | Describes using scripts and Site Recovery to migrate at scale; summary doesn’t indicate product-specific limits, config tables, or error mappings. |
 | [Build a report](https://learn.microsoft.com/en-us/azure/migrate/how-to-build-a-report?view=migrate) | 0.30 | Step-by-step instructions to build a report; likely includes UI steps and options but not detailed configuration parameter tables, limits, or error-code-based troubleshooting. |
 | [Common questions](https://learn.microsoft.com/en-us/azure/resource-mover/common-questions) | 0.30 | FAQ page; summary doesn’t indicate detailed error codes, config tables, or limits. Likely general Q&A rather than structured troubleshooting or configuration reference. |
+| [Containerize Java web apps and migrate to Azure Container Apps](https://learn.microsoft.com/en-us/azure/migrate/tutorial-app-containerization-java-container-apps?view=migrate) | 0.30 | Step-by-step tutorial for containerizing a Java web app and deploying to Azure Container Apps; lacks detailed configuration parameter tables, limits, or troubleshooting mappings that would qualify as expert knowledge. |
 | [Cost and savings calculations](https://learn.microsoft.com/en-us/azure/migrate/cost-estimation?view=migrate) | 0.30 | Explains cost estimation behavior in assessments; summary suggests conceptual description of how costs are derived rather than concrete limits, parameter tables, or decision matrices with thresholds. |
 | [Create a MongoDB assessment](https://learn.microsoft.com/en-us/azure/migrate/tutorial-assess-mongodb?view=migrate) | 0.30 | Tutorial for assessing MongoDB with Azure Migrate; primarily workflow guidance, not detailed limits, configuration reference, or decision matrices with quantified trade-offs. |
 | [Create a file share assessment](https://learn.microsoft.com/en-us/azure/migrate/create-file-share-assessment?view=migrate) | 0.30 | Task-focused how-to for creating an Azure Files assessment in Azure Migrate; based on the summary it describes workflow steps and planning concepts, but there's no indication of detailed limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices. |
@@ -284,6 +289,7 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 | [Migrate AWS EC2 to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-aws-virtual-machines?view=migrate) | 0.20 | Tutorial-style migration walkthrough for AWS EC2 to Azure using Azure Migrate. From the summary it appears to be step-by-step guidance without explicit limits, decision matrices, or detailed configuration parameter tables; more of a procedural how-to than expert reference content. |
 | [Migrate Physical servers to Azure](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines?view=migrate) | 0.20 | Tutorial-style walkthrough for migrating physical machines using Azure Migrate; primarily step-by-step instructions without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Content is more procedural than expert reference, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/migrate/concepts-overview?view=migrate) | 0.20 | An overview of Azure Migrate assessments; overviews generally describe types and concepts without detailed limits, configuration tables, or decision matrices. No indication of specific numeric thresholds or product-specific patterns. |
+| [Overview of Web App Migration and Modernization](https://learn.microsoft.com/en-us/azure/migrate/web-app-migration-modernization?view=migrate) | 0.20 | High-level overview of web app migration and modernization with conceptual descriptions; no concrete limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Overview reports](https://learn.microsoft.com/en-us/azure/migrate/reports-overview?view=migrate) | 0.20 | Overview of Azure Migrate reports and their purpose; lacks concrete numeric limits, configuration tables, or detailed decision criteria beyond high-level descriptions. |
 | [Plan and create waves](https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate) | 0.20 | Primarily planning guidance for organizing migration waves; no product-specific limits, configuration tables, error codes, or quantified decision criteria beyond general migration strategy concepts. |
 | [Responsible AI FAQ for Azure Copilot Migration Agent](https://learn.microsoft.com/en-us/azure/migrate/common-questions-azure-copilot-migration-agent?view=migrate) | 0.20 | Common questions about Azure Copilot migration agent, with emphasis on Responsible AI principles. The summary suggests high-level FAQ/assurance content rather than concrete limits, configuration parameters, or troubleshooting mappings. Lacks the specific numeric limits, config tables, or error-code-based guidance required for expert-knowledge classification. |
@@ -300,7 +306,6 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 | [What's new](https://learn.microsoft.com/en-us/azure/resource-mover/whats-new) | 0.20 | What's new / release notes style content; describes new features and capabilities but not in the structured, parameterized way required for these sub-skill types. |
 | [Create a project](https://learn.microsoft.com/en-us/azure/migrate/quickstart-create-project?view=migrate) | 0.10 | Quickstart for creating an Azure Migrate project via the portal; primarily step-by-step UI guidance without detailed limits, configuration parameter tables, error codes, or decision matrices. Does not meet criteria for any expert-knowledge sub-skill type. |
 | [Manage projects](https://learn.microsoft.com/en-us/azure/migrate/quickstart-create-project?view=migrate) | 0.10 | Quickstart for creating an Azure Migrate project via the portal; primarily step-by-step UI guidance without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Does not meet criteria for any expert-knowledge sub-skill type. |
-| [Overview of Web App Migration and Modernization](https://learn.microsoft.com/en-us/azure/migrate/web-app-migration-modernization?view=migrate) | 0.10 | High-level conceptual overview of web app migration and modernization; content is descriptive and marketing/overview oriented without product-specific limits, configuration tables, or detailed decision matrices. |
 | [What's new](https://learn.microsoft.com/en-us/azure/migrate/whats-new?view=migrate) | 0.10 | Release notes / what's new summary for Azure Migrate; primarily high-level feature announcements and updates without detailed limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Work with previous version of Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate) | 0.10 | High-level overview of Azure Migrate capabilities and supported scenarios without specific limits, configuration parameters, error codes, or decision matrices; primarily conceptual service description. |
 | [Auto-wave-planning](https://learn.microsoft.com/en-us/azure/migrate/automatic-wave-planning-architecture?view=migrate) | - | Describes concepts and technical details of automatic wave planning (how the engine groups workloads, evaluates conditions, and scores risk/priority). Based on the summary, it appears to be an architectural/conceptual explanation without concrete numeric thresholds, configuration tables, or product-specific limits/quotas, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |

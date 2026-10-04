@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Unclassified**: 99
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 503
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 505
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
 ## Classification Statistics
@@ -75,19 +75,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 99 | 19.6% |
 
 ## Changes
-
-### New Pages
-
-- [Synapse pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-synapse-pipelines-for-upgrade)
-
-### Updated Pages
-
-- [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
-  - Updated: 2026-06-11T08:00:00.000Z → 2026-09-22T17:11:00.000Z
-
-### Deleted Pages
-
-- ~~Pipeline assessment tool~~ (https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration)
 
 ## Classified Pages
 

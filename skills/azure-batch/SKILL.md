@@ -1,9 +1,9 @@
 ---
 name: azure-batch
-description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools, autoscale, containers, MPI jobs, storage mounts, or Private Link networking, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools, autoscale, private networking, CMK encryption, or CI/CD for HPC/render jobs, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Batch Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L44-L55 | Guidance on optimizing Azure Batch workloads: efficient queries, job/task setup, concurrency, rendering and financial workloads, security, and scaling jobs with many tasks. |
 | Decision Making | L56-L69 | Guidance on choosing VM sizes, images, disks, Spot/GPU usage, capacity and quotas, cost planning, and migration strategies for Azure Batch pools and large-scale simulations. |
 | Architecture & Design Patterns | L70-L75 | Architectural guidance for burst rendering with Azure Batch, including choosing batch/topology patterns and designing storage, caching, and data movement for large render workloads. |
-| Limits & Quotas | L76-L83 | Planning Batch capacity, understanding service limits/quotas, managing quotas via .NET, and using metrics/logs to monitor and stay within Azure Batch limits. |
-| Security | L84-L100 | Securing Batch accounts and pools: key rotation, Entra ID auth/RBAC, CMK and disk encryption, private endpoints/Private Link, network perimeters, and Azure Policy-based governance. |
-| Configuration | L101-L135 | Configuring Batch pools and tasks: autoscale, OS/cert rotation, networking, disks, extensions, monitoring, events/logs, task env, containers, resource files, and node/user security. |
-| Integrations & Coding Patterns | L136-L152 | Patterns and code samples for integrating Azure Batch with CLI, SDKs, containers, MPI, storage/file mounts, Key Vault, telemetry, and automating jobs/tasks across languages. |
-| Deployment | L153-L157 | Guides for moving Azure Batch accounts across regions with ARM templates and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines. |
+| Limits & Quotas | L76-L82 | Planning Batch capacity, understanding service limits/quotas, managing quotas via .NET, and using metrics/logs to monitor and stay within Azure Batch limits. |
+| Security | L83-L99 | Securing Batch accounts and pools: key rotation, Entra ID auth/RBAC, CMK and disk encryption, private endpoints/Private Link, network perimeters, and Azure Policy-based governance. |
+| Configuration | L100-L136 | Configuring Azure Batch pools, nodes, networking, monitoring, autoscale, OS/cert rotation, events/logs, containers, disks, and task runtime/user settings for secure, optimized operation. |
+| Integrations & Coding Patterns | L137-L153 | Patterns and code samples for integrating Azure Batch with CLI, SDKs, containers, MPI, storage/file mounts, Key Vault, telemetry, and automating jobs/tasks across languages. |
+| Deployment | L154-L158 | Guides for moving Azure Batch accounts across regions with ARM templates and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -79,7 +79,6 @@ This skill requires **network access** to fetch documentation content:
 | Plan Azure Batch capacity and quotas effectively | https://learn.microsoft.com/en-us/azure/batch/batch-capacity-planning |
 | Manage Azure Batch accounts and quotas with .NET | https://learn.microsoft.com/en-us/azure/batch/batch-management-dotnet |
 | Review Azure Batch service quotas and limits | https://learn.microsoft.com/en-us/azure/batch/batch-quota-limit |
-| Reference metrics and logs for Azure Batch monitoring | https://learn.microsoft.com/en-us/azure/batch/monitor-batch-reference |
 
 ### Security
 | Topic | URL |
@@ -127,7 +126,9 @@ This skill requires **network access** to fetch documentation content:
 | Configure and monitor Azure Batch pool extensions | https://learn.microsoft.com/en-us/azure/batch/create-pool-extensions |
 | Create Azure Batch pools with static public IP addresses | https://learn.microsoft.com/en-us/azure/batch/create-pool-public-ip |
 | Configure Azure Batch pool tag to disable hyper-threading | https://learn.microsoft.com/en-us/azure/batch/how-to-disable-hyper-threading-using-pool-tag |
+| Configure and use monitoring for Azure Batch | https://learn.microsoft.com/en-us/azure/batch/monitor-batch |
 | Configure Azure Monitor Agent on Batch pool nodes | https://learn.microsoft.com/en-us/azure/batch/monitor-batch-pool-nodes |
+| Reference monitoring metrics and logs for Azure Batch | https://learn.microsoft.com/en-us/azure/batch/monitor-batch-reference |
 | Configure external node endpoints for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration |
 | Configure and use Azure Batch task resource files | https://learn.microsoft.com/en-us/azure/batch/resource-files |
 | Configure simplified compute node communication in Azure Batch | https://learn.microsoft.com/en-us/azure/batch/simplified-compute-node-communication |

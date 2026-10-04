@@ -1,9 +1,9 @@
 ---
 name: azure-database-mysql
-description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MySQL Flexible Server tiers, HA/DR, backups/geo-restore, read replicas, or AKS integrations, and other Azure Database for MySQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MySQL Flexible Server tiers, HA/DR, automated deployments, backups/replication, or secure app connectivity, and other Azure Database for MySQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for MySQL Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L74-L90 | Guidance for planning MySQL on Azure: version policy, HA/DR and business continuity, sizing and tiers, performance baselines, and choosing/migrating/ upgrading to Flexible Server. |
 | Architecture & Design Patterns | L91-L97 | Patterns for connecting AKS to MySQL Flexible Server, designing backup/restore, data-in/out replication, high availability (zone-redundant), and read-replica-based scaling. |
 | Limits & Quotas | L98-L106 | Limits, quotas, and performance caps for MySQL Flexible Server: max connections/cores/IOPS, storage IOPS behavior, quota increase requests, restart/stop limits, and delete/restore time limits. |
-| Security | L107-L132 | Securing Azure Database for MySQL: network isolation (Private Link, firewalls), auth (Entra, users), encryption, TLS, auditing, and post-migration security best practices. |
+| Security | L107-L132 | Network, auth, and encryption security for Azure MySQL: private/public access, firewalls, TLS, cert rotation, audit logging, CMK/data-at-rest encryption, Entra auth, and secure user/migration setup |
 | Configuration | L133-L163 | Configuring Azure Database for MySQL Flexible Server: parameters, HA, networking, logging, monitoring, alerts, maintenance windows, replication, scaling, backups, and read replicas. |
 | Integrations & Coding Patterns | L164-L175 | Connecting apps and tools to MySQL Flexible Server (CLI, JDBC, Power BI), managing connection strings, and migrating MySQL data from RDS, on-prem/VM, or large databases using various tools. |
 | Deployment | L176-L184 | Automating MySQL Flexible Server deployments and changes (Azure Pipelines, GitHub Actions, Automation), handling backups, geo-restore, version upgrades, and scheduled maintenance. |
@@ -122,7 +122,7 @@ This skill requires **network access** to fetch documentation content:
 | Create and manage MySQL users securely in Azure | https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-create-users |
 | Configure data encryption for Azure MySQL using CLI | https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-data-encryption-cli |
 | Configure data-at-rest encryption in Azure MySQL portal | https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-data-encryption-portal |
-| Configure Microsoft Entra authentication for Azure MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-entra |
+| Configure Microsoft Entra authentication for Azure MySQL | https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-entra |
 | Configure Azure MySQL firewall rules with CLI | https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-manage-firewall-cli |
 | Manage Azure MySQL firewall rules in portal | https://learn.microsoft.com/en-us/azure/mysql/security/security-how-to-manage-firewall-portal |
 | Apply security configurations for Azure Database for MySQL | https://learn.microsoft.com/en-us/azure/mysql/security/security-overview |

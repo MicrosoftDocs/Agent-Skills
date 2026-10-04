@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Static 
 - **Unclassified**: 93
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 242
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 245
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -75,17 +75,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Static 
 | *(Unclassified)* | 93 | 38.0% |
 
 ## Changes
-
-### New Pages
-
-- [Managed connectors](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-connectors)
-
-### Updated Pages
-
-- [Buy and manage App Service certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-09-24T17:11:00.000Z
-- [Connectivity scenarios overview](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-overview)
-  - Updated: 2026-03-12T08:00:00.000Z → 2026-09-24T22:17:00.000Z
 
 ## Classified Pages
 

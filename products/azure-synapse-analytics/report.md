@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 - **Unclassified**: 172
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 450
+- **Unchanged**: 451
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -76,10 +76,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | *(Unclassified)* | 172 | 38.1% |
 
 ## Changes
-
-### New Pages
-
-- [Runtime release channels](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-runtime-release-channels)
 
 ## Classified Pages
 

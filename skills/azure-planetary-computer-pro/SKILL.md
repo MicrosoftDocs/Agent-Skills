@@ -3,7 +3,7 @@ name: azure-planetary-computer-pro
 description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using GeoCatalog/STAC APIs, configuring collections/tiles, securing access, integrating QGIS/ArcGIS, or troubleshooting ingestion, and other Microsoft Planetary Computer Pro related development tasks. Not for Azure Maps (use azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-07-19"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Planetary Computer Pro Skill

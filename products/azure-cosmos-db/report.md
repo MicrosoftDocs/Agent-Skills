@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   integrations: SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka
     Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo,
     Gremlin, and PostgreSQL APIs.
-  security: 'Securing Cosmos DB: encryption, keys, RBAC/Entra ID, network isolation
-    (VNet, Private Link, firewalls), auditing, data masking, TLS, and security best
-    practices across all APIs.'
+  security: 'Securing Cosmos DB across APIs (NoSQL, MongoDB, Cassandra, Gremlin, Table,
+    PostgreSQL): identity/RBAC, networking, encryption/CMK, auditing, policies, TLS,
+    data masking, and Defender protections.'
   architecture-patterns: Patterns and reference architectures for AI agents, change
     feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and
     vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL.
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using NoSQL/Mongo/Cassandra/Gremlin/PostgreSQL APIs, change feed, vector search,
-  multi-region HA, or CI/CD deployments, and other Azure Cosmos DB related development
-  tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database
-  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Data Explorer (use azure-data-explorer).
-use_when: Use when using NoSQL/Mongo/Cassandra/Gremlin/PostgreSQL APIs, change feed,
-  vector search, multi-region HA, or CI/CD deployments, and other Azure Cosmos DB
-  related development tasks.
+  using NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or
+  Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks. Not
+  for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer
+  (use azure-data-explorer).
+use_when: Use when using NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA,
+  vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development
+  tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
   Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   Azure Data Explorer (use azure-data-explorer).
@@ -47,16 +47,16 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ## Summary
 
-- **Total Pages**: 722
-- **Fetched**: 722
+- **Total Pages**: 723
+- **Fetched**: 723
 - **Fetch Failed**: 0
-- **Classified**: 527
+- **Classified**: 528
 - **Unclassified**: 195
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 721
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 722
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -71,16 +71,15 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | deployment | 23 | 3.2% |
 | integrations | 123 | 17.0% |
 | limits-quotas | 31 | 4.3% |
-| security | 62 | 8.6% |
+| security | 63 | 8.7% |
 | troubleshooting | 47 | 6.5% |
 | *(Unclassified)* | 195 | 27.0% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [How to soft delete (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-soft-delete)
-  - Updated: 2026-06-03T22:17:00.000Z → 2026-09-25T22:13:00.000Z
+- [Secure your deployment](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/secure-managed-instance-apache-cassandra)
 
 ## Classified Pages
 
@@ -427,6 +426,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [SQL functions](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-functions) | integrations | 0.70 | SQL functions reference will list function names, parameters, and behaviors specific to the distributed SQL API, which are product-specific API details. |
 | [Scale an API for Apache Cassandra account](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/scale-account-throughput) | decision-making | 0.70 | Described as covering 'options available to scale' and their 'advantages and disadvantages', which is explicit decision guidance. Cosmos DB Cassandra scaling options (per-partition throughput, autoscale behavior, account-level vs table-level scaling) are product-specific and typically include trade-offs and scenario-based recommendations that go beyond generic knowledge. |
 | [Scale cluster](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-scale-grow) | configuration | 0.70 | Cluster configuration docs usually list specific scaling parameters (vCores, memory, disk) and HA toggles/constraints unique to this service. |
+| [Secure your deployment](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/secure-managed-instance-apache-cassandra) | security | 0.70 | The article focuses on securing Azure Managed Instance for Apache Cassandra and is described as providing security recommendations and best practices specific to this service. These are product-specific security configurations and guidance (for example, around networking, identity, and data protection) that go beyond generic security concepts, fitting the 'security' sub-skill. It is not just a conceptual overview but a prescriptive best-practices style security guide. |
 | [Security](https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/security) | security | 0.70 | Security-focused page for Azure Cosmos DB for Apache Gremlin that likely includes product-specific security configurations (for example, RBAC roles, keys, network restrictions, and authentication options) beyond generic security concepts, matching the security sub-skill criteria. |
 | [Security](https://learn.microsoft.com/en-us/azure/cosmos-db/table/security) | security | 0.70 | Security fundamentals page for this service will describe specific security features, configuration options, and possibly network/security settings unique to Cosmos DB for Table. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/cosmos-db/security) | security | 0.70 | Security guidance for Cosmos DB for NoSQL; full article is likely to include product-specific security features and recommendations beyond generic security concepts. |

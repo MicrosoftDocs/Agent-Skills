@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 182
+- **Updated Pages**: 0
+- **Unchanged**: 184
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -73,13 +73,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | *(Unclassified)* | 80 | 43.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Integrate Managed HSM with Azure Policy](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/azure-policy)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-09-23T08:00:00.000Z
-- [About Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview)
-  - Updated: 2025-12-03T08:00:00.000Z → 2026-09-22T08:00:00.000Z
 
 ## Classified Pages
 
