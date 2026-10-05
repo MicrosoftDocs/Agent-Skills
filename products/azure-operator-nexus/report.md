@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 - **Unclassified**: 54
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 221
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 223
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -71,15 +71,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | *(Unclassified)* | 54 | 24.2% |
 
 ## Changes
-
-### New Pages
-
-- [Expand CSN shared storage](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-expand-csn-shared-storage)
-
-### Updated Pages
-
-- [Storage for Nexus Kubernetes](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage-kubernetes)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-09-24T22:09:00.000Z
 
 ## Classified Pages
 

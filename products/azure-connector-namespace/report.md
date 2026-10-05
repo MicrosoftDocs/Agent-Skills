@@ -29,8 +29,8 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 4
+- **Updated Pages**: 0
+- **Unchanged**: 7
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-connector-namespace/azure-connector-namespace.csv`
 
@@ -42,15 +42,6 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 | *(Unclassified)* | 6 | 85.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Connector Namespace](https://learn.microsoft.com/en-us/azure/connector-namespace/connector-namespace-overview)
-  - Updated: 2026-07-13T22:21:00.000Z → 2026-09-04T08:00:00.000Z
-- [Create connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace)
-  - Updated: 2026-07-13T22:21:00.000Z → 2026-09-24T22:17:00.000Z
-- [Create connections for connector namespaces](https://learn.microsoft.com/en-us/azure/connector-namespace/create-connector-namespace-connection)
-  - Updated: 2026-07-13T22:21:00.000Z → 2026-09-21T22:12:00.000Z
 
 ## Classified Pages
 

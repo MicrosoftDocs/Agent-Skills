@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   decision-making: Planning and decision guides for migrating ACS chat/calling/telephony,
     integrating with Teams/Teams Phone, choosing PSTN/number options, and understanding
@@ -19,8 +19,8 @@ category_descriptions:
     IDs, spam/reputation, network/VDI tuning, UX design, logging, and job routing
     to build reliable, production-ready apps
   integrations: Patterns and code samples for integrating ACS calling, chat, SMS,
-    email, WhatsApp, Teams, Job Router, and UI libraries with other Azure/third‑party
-    services, bots, AI, and telephony systems
+    email, WhatsApp, Job Router, and UI libraries with Teams, OpenAI, bots, telephony,
+    push/events, and advanced media/AI features.
   architecture-patterns: Architectural guidance and patterns for integrating ACS with
     Teams via Call Automation, building contact centers, and using ExpressRoute for
     private, secure connectivity.
@@ -29,14 +29,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Communication Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email/WhatsApp,
-  Teams interop, or Job Router flows, and other Azure Communication Services related
-  development tasks. Not for Azure Notification Hubs (use azure-notification-hubs),
-  Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub),
-  Azure AI Bot Service (use azure-bot-service).
-use_when: Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email/WhatsApp,
-  Teams interop, or Job Router flows, and other Azure Communication Services related
-  development tasks.
+  Use when building ACS calling, chat, SMS, email, Teams interop, or PSTN/Direct Routing
+  solutions, and other Azure Communication Services related development tasks. Not
+  for Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service
+  (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub), Azure AI Bot
+  Service (use azure-bot-service).
+use_when: Use when building ACS calling, chat, SMS, email, Teams interop, or PSTN/Direct
+  Routing solutions, and other Azure Communication Services related development tasks.
 confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs),
   Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub),
   Azure AI Bot Service (use azure-bot-service).
@@ -52,9 +51,9 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 - **Unclassified**: 121
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 301
-- **Unchanged**: 217
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 522
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -75,57 +74,10 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ## Changes
 
-### New Pages
-
-- [Retirement and breaking changes guide](https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide)
-- [Migrate Chat to Microsoft Graph chat](https://learn.microsoft.com/en-us/azure/communication-services/acs-chat-to-graph-chat-migration-guide)
-- [Migration to Teams Phone numbers](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/migrate-to-teams-phone)
-- [Migration to Teams Phone Direct Routing](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/migrate-to-teams-direct-routing)
-- [Lowest Latency Best Practices](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-optimize-latency)
-
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/communication-services/whats-new)
-  - Updated: 2025-06-26T05:14:00.000Z → 2026-09-15T08:00:00.000Z
-- [Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/services)
-  - Updated: 2025-04-03T22:05:00.000Z → 2026-09-23T17:12:00.000Z
-- [Managed applications](https://learn.microsoft.com/en-us/azure/communication-services/concepts/managed-apps)
-  - Updated: 2025-05-05T11:12:00.000Z → 2026-09-23T17:12:00.000Z
-- [Data residency and user privacy](https://learn.microsoft.com/en-us/azure/communication-services/concepts/privacy)
-  - Updated: 2025-06-04T22:03:00.000Z → 2026-09-23T17:12:00.000Z
-- [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government)
-  - Updated: 2026-05-22T17:10:00.000Z → 2026-09-23T17:12:00.000Z
-- [Authenticate services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/authentication)
-  - Updated: 2024-09-12T17:07:00.000Z → 2026-09-23T17:12:00.000Z
-- [Credentials best practices](https://learn.microsoft.com/en-us/azure/communication-services/concepts/credentials-best-practices)
-  - Updated: 2025-04-03T22:05:00.000Z → 2026-09-23T17:12:00.000Z
-- [Chat SDK overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/sdk-features)
-  - Updated: 2025-04-03T22:05:00.000Z → 2026-09-23T17:12:00.000Z
-- [Archive chats](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/chat-sdk/archive-chat-threads)
-  - Updated: 2023-04-18T11:16:00.000Z → 2026-09-23T17:12:00.000Z
-- [Government clouds](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/government-cloud)
-  - Updated: 2025-04-03T22:05:00.000Z → 2026-09-23T17:12:00.000Z
-- [Translate chats](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/chat-sdk/translating-chats)
-  - Updated: 2025-04-03T22:05:00.000Z → 2026-09-23T17:12:00.000Z
-- [Enable logging with Azure Monitor](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/enable-logging)
-  - Updated: 2025-04-17T05:15:00.000Z → 2026-09-23T17:12:00.000Z
-- [Chat metrics](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/chat-metrics)
-  - Updated: 2025-04-03T22:05:00.000Z → 2026-09-23T17:12:00.000Z
-- [Chat logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/chat-logs)
-  - Updated: 2023-04-18T11:16:00.000Z → 2026-09-23T17:12:00.000Z
-- [Chat insights](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/insights/chat-insights)
-  - Updated: 2025-04-03T22:05:00.000Z → 2026-09-23T17:12:00.000Z
-- [Throw an exception when sending tier limit is reached](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-advanced/throw-exception-when-tier-limit-reached)
-  - Updated: 2025-04-17T05:15:00.000Z → 2026-09-23T17:12:00.000Z
-- [Manage domain suppression lists in the Azure portal](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/manage-suppression-lists)
-  - Updated: 2025-04-17T05:15:00.000Z → 2026-09-23T17:12:00.000Z
-- [Email domains and sender authentication](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-domain-and-sender-authentication)
-  - Updated: 2025-04-17T05:15:00.000Z → 2026-09-23T17:12:00.000Z
-- [Enable user engagement tracking](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/enable-user-engagement-tracking)
-  - Updated: 2025-04-17T05:15:00.000Z → 2026-09-23T17:12:00.000Z
-- [Email metrics](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email-metrics)
-  - Updated: 2023-07-14T21:54:00.000Z → 2026-09-23T17:12:00.000Z
-- *...and 281 more*
+- [Use Event Grid to send calling push notifications](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-voip-push-notifications-event-grid)
+  - Updated: 2025-07-01T11:22:00.000Z → 2026-09-28T22:12:00.000Z
 
 ## Classified Pages
 
@@ -280,7 +232,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Benefits of migrating chat from Twilio Conversations Chat to Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/migrating-to-azure-communication-services-chat) | decision-making | 0.72 | Tutorial compares Twilio Conversations and ACS Chat SDK, outlining differences and migration steps, which is explicit decision and migration guidance. |
 | [How to migrate voice and video from Twilio Video to Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/migrating-to-azure-communication-services-calling) | decision-making | 0.72 | Tutorial compares Twilio Video and ACS Calling with concrete differences and code changes, guiding migration decisions and paths. |
 | [Set up SMTP authentication](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-smtp/smtp-authentication) | security | 0.72 | Explains using a Microsoft Entra application/service principal to create SMTP auth credentials; includes specific identity and permission configuration. |
-| [Use Event Grid to send calling push notifications](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-voip-push-notifications-event-grid) | integrations | 0.72 | Tutorial wiring ACS Calling events through Event Grid, Functions/webhooks, and Notification Hubs; includes event schemas, configuration values, and code specific to ACS. |
 | [Add a bot to your chat app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/quickstart-botframework-integration) | integrations | 0.70 | Quickstart for connecting Bot Framework bots via ACS chat channel; includes ACS channel configuration and SDK integration details unique to this product. |
 | [Add real-time transcription](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/real-time-transcription-tutorial) | integrations | 0.70 | How-to includes concrete configuration and API usage for enabling transcription, including parameters and event handling unique to this feature. |
 | [Advanced Messaging logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/logs) | configuration | 0.70 | Logging capabilities and diagnostic settings for Advanced Messaging, likely including specific log categories and configuration options unique to the service. |
@@ -344,7 +295,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Prevent phone numbers from being flagged as spam](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/prevent-spam-flag) | best-practices | 0.70 | Provides concrete behavioral and configuration guidance to prevent spam flagging; product- and carrier-specific gotchas. |
 | [Pricing](https://learn.microsoft.com/en-us/azure/communication-services/concepts/pricing/teams-interop-pricing) | decision-making | 0.70 | Pricing concept doc for Teams interop; likely includes scenario-based cost breakdowns and criteria that help decide how to structure usage, which is decision-making guidance. |
 | [Proxy your calling traffic](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/proxy-calling-support-tutorial) | configuration | 0.70 | Describes configuring custom proxy/TURN servers for ACS media and signaling; will include specific configuration properties, URLs, and behavior differences from defaults. |
-| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Describes using Log Analytics for call summary and diagnostic logs; likely includes specific query patterns, table names, and fields, which are configuration/usage details. |
 | [REST API for Teams Phone extensibility](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-rest-api) | integrations | 0.70 | Describes the REST API structure for Teams Phone Extensibility, which implies endpoint paths, request/response schemas, required parameters, and headers unique to this product. These are concrete API integration details (configuration parameters and structures) that qualify as expert knowledge beyond generic REST usage. |
 | [Receive an SMS message](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/receive-sms) | integrations | 0.70 | Shows how to wire SMS received events into Azure Functions via Event Grid, including event schema and trigger configuration unique to this product. |
 | [Record a call automatically](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/record-every-call) | integrations | 0.70 | How-to wires Call Automation events via Event Grid to an Azure Function to start recording; includes event types, payload fields, and API calls that are product-specific integration details. |
@@ -379,6 +329,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Enable closed captions for Teams interop](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/calling-sdk/closed-captions-teams-interop-how-to) | integrations | 0.68 | How-to for Teams interoperability captions will include ACS and Teams-specific configuration steps and constraints that are unique to this integration. |
 | [Hydrating messageId using EmailClient](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-advanced/hydrate-email-client-with-message-id) | integrations | 0.68 | Quickstart focused on a specific EmailClient capability (hydrating messageId) with SDK usage patterns and parameters that are product-specific and not generic email knowledge. |
 | [Place a server outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-server-outbound-call) | integrations | 0.68 | The article is a how-to showing concrete, product-specific code and configuration for using the Azure Communication Services Call Automation .NET SDK to place server-initiated outbound PSTN calls via Teams Phone Extensibility. It includes specific SDK methods, parameters, and integration patterns unique to this service, which qualify as expert integration knowledge beyond generic calling concepts. |
+| [Use Event Grid to send calling push notifications](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-voip-push-notifications-event-grid) | integrations | 0.68 | Tutorial shows product-specific integration of Azure Communication Services calling events with Event Grid and Azure Notification Hubs, including event types, payload usage, and configuration steps unique to this scenario. This is concrete integration knowledge beyond generic concepts, but not focused on limits, security, or deployment matrices. |
 | [View email events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/handle-email-events) | integrations | 0.68 | Quickstart shows product-specific event types and payload handling for Azure Communication Services Email via Event Grid, including event schema details and configuration parameters for subscribing and processing delivery and engagement events. This is concrete integration knowledge (event names, structure, and wiring) that goes beyond generic LLM training. |
 | [Automate email resource management](https://learn.microsoft.com/en-us/azure/communication-services/samples/email-resource-management) | deployment | 0.66 | Automation sample for creating ACS and Email resources, managing domains, DNS, and verification; focuses on deployment and provisioning patterns. |
 | [Enable inline image interop in your chat app](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/chat-interop/meeting-interop-features-inline-image) | integrations | 0.66 | Tutorial for enabling inline image send/receive with Teams via ACS Chat SDK; includes ACS/Teams-specific behaviors and SDK parameters. |
@@ -513,6 +464,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Plan user experience](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/virtual-visits/plan-user-experience) | best-practices | 0.60 | Provides concrete UX recommendations and constraints when ACS users join Teams meetings, including product-specific behaviors and gotchas. |
 | [Port a phone number into Azure](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/telephony/port-phone-number) | deployment | 0.60 | Phone number porting into ACS is a deployment/onboarding process with product-specific requirements (eligibility, region constraints, steps and statuses) that are not generic and affect how numbers are brought into production. |
 | [Pre-call](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/virtual-visits/extend-teams/precall) | best-practices | 0.60 | Describes specific tools and steps in ACS to validate device prerequisites before calls, which are product-specific recommendations for ensuring call quality. |
+| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.60 | Explains how to use Log Analytics for call summary and diagnostic logs; likely includes specific table names, fields, and query patterns unique to ACS logging. |
 | [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.60 | Explains how to use Log Analytics for call summary and diagnostic logs; likely includes specific table names, fields, and query patterns unique to ACS logging. |
 | [Raise Hand](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/calling-sdk/raise-hand) | integrations | 0.60 | How-to for implementing raised hand state via ACS SDKs, including specific APIs and event handling unique to this feature. |
 | [React Native calling sample](https://learn.microsoft.com/en-us/azure/communication-services/samples/ui-library-cross-platform) | integrations | 0.60 | Sample overview for using ACS UI library with .NET MAUI and React Native; contains product-specific UI integration patterns and configuration details. |

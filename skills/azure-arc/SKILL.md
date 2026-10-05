@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, resource bridge, Arc SQL MI/SQL Server, Agentic Retrieval, or Arc Edge Volumes, and other Azure Arc related development tasks. Not for Azure Local (use azure-local), Azure Stack Edge (use azure-stack-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Arc-enabled Kubernetes, Arc SQL/data services, Agentic Retrieval APIs, resource bridge, or Edge Volumes, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L113-L120 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
 | Limits & Quotas | L121-L131 | Limits, constraints, billing rules, and offline behavior for Azure Arc features like Agentic Retrieval, Arc-enabled Kubernetes, resource bridge, container storage, ESU, and pay-as-you-go Windows Server. |
 | Security | L132-L191 | Securing Azure Arc resources: identity/RBAC, AD and Entra auth, keytabs, TDE, TLS, workload identity, network/Private Link, policies, and protecting data/secrets across servers, Kubernetes, and Arc SQL. |
-| Configuration | L192-L299 | Configuring Azure Arc environments: networking, security, agents, storage, monitoring, GitOps, data services, and Agentic Retrieval data/model settings across Kubernetes, servers, and edge. |
-| Integrations & Coding Patterns | L300-L330 | REST/CLI/APIs for Arc: agentic retrieval REST & MCP, inference queries, ingestion/KB mgmt, Arc server/Kubernetes onboarding, VM extensions, ESU licensing, Event Grid, Terraform, Ansible, Sentinel. |
-| Deployment | L331-L359 | Deploying, upgrading, and removing Azure Arc components (data controllers, agents, bridges, extensions) and orchestrating workloads across Kubernetes, VMs, SCVMM, and VMware environments. |
+| Configuration | L192-L300 | Configuring Azure Arc and Arc-enabled services: networking, storage, security, monitoring, data services, Kubernetes extensions, Agentic Retrieval data sources, and operational policies. |
+| Integrations & Coding Patterns | L301-L331 | REST/CLI/APIs for Arc: agentic retrieval REST & MCP, inference queries, ingestion/KB mgmt, Arc server/Kubernetes onboarding, VM extensions, ESU licensing, Event Grid, Terraform, Ansible, Sentinel. |
+| Deployment | L332-L360 | Deploying, upgrading, and removing Azure Arc components (data controllers, agents, bridges, extensions) and orchestrating workloads across Kubernetes, VMs, SCVMM, and VMware environments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -250,6 +250,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom locations for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-locations |
 | Configure and manage Azure Arc Kubernetes extensions | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions |
 | Configure Flux v2 GitOps parameters for Arc and AKS | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/gitops-flux2-parameters |
+| Configure and manage Argo CD extension on Azure Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/how-to-manage-gitops-argo-cd-extension |
 | Use Azure portal Kubernetes resource view for Arc-enabled clusters | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/kubernetes-resource-view |
 | Use version-managed extensions on Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/managed-extensions |
 | Monitor Flux v2 GitOps status on Arc and AKS | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/monitor-gitops-flux-2 |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-04'
 category_descriptions:
   configuration: 'Configuring ADME operations: monitoring metrics, data partitioning,
     CORS, audit logging, and milestone upgrade settings for secure, scalable data
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
     each tier.
-  integrations: Patterns and examples for integrating Azure Energy Data Services with
-    analytics platforms, external data sources, DDMS APIs, logs/monitoring, and large
-    file workflows.
+  integrations: Patterns and examples for integrating Azure Energy data (ACZ/ADME/DDMS)
+    with Databricks, Fabric, Snowflake, external sources, logs/monitoring, and domain
+    APIs (seismic, wells, reservoirs).
   security: 'Securing Azure Data Manager for Energy: auth tokens, ACLs, encryption,
     legal tags, user/group entitlements, managed identities, private endpoints, and
     API Management access control.'
@@ -24,30 +24,31 @@ category_descriptions:
     error patterns.
 skill_description: Expert knowledge for Azure Energy Data Services development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when configuring ADME metrics/partitioning,
-  choosing tiers, securing auth/ACLs, deploying AKS geospatial, or fixing ingestion
-  logs, and other Azure Energy Data Services related development tasks. Not for Azure
-  Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
-use_when: Use when configuring ADME metrics/partitioning, choosing tiers, securing
-  auth/ACLs, deploying AKS geospatial, or fixing ingestion logs, and other Azure Energy
-  Data Services related development tasks.
+  integrations & coding patterns, and deployment. Use when configuring ADME metrics/partitions,
+  choosing tiers, securing auth/ACLs/legal tags, or integrating ACZ/DDMS with Databricks/Fabric,
+  and other Azure Energy Data Services related development tasks. Not for Azure Data
+  Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Data Factory (use azure-data-factory), Azure Data Manager for Agriculture
+  (use azure-data-manager-for-agri).
+use_when: Use when configuring ADME metrics/partitions, choosing tiers, securing auth/ACLs/legal
+  tags, or integrating ACZ/DDMS with Databricks/Fabric, and other Azure Energy Data
+  Services related development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory),
-  Azure Databricks (use azure-databricks).
+  Azure Data Manager for Agriculture (use azure-data-manager-for-agri).
 ---
 # Azure Energy Data Services Crawl Report
 
 ## Summary
 
-- **Total Pages**: 60
-- **Fetched**: 60
+- **Total Pages**: 61
+- **Fetched**: 61
 - **Fetch Failed**: 0
-- **Classified**: 38
+- **Classified**: 39
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 60
 - **Deleted Pages**: 0
@@ -57,16 +58,20 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 1.7% |
-| configuration | 5 | 8.3% |
+| architecture-patterns | 1 | 1.6% |
+| configuration | 5 | 8.2% |
 | decision-making | 2 | 3.3% |
-| deployment | 1 | 1.7% |
-| integrations | 17 | 28.3% |
-| security | 11 | 18.3% |
-| troubleshooting | 1 | 1.7% |
-| *(Unclassified)* | 22 | 36.7% |
+| deployment | 1 | 1.6% |
+| integrations | 18 | 29.5% |
+| security | 11 | 18.0% |
+| troubleshooting | 1 | 1.6% |
+| *(Unclassified)* | 22 | 36.1% |
 
 ## Changes
+
+### New Pages
+
+- [Connect Analytics Consumption Zone (ACZ) to Snowflake](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-snowflake)
 
 ## Classified Pages
 
@@ -99,6 +104,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Use Rock and Fluid Samples DDMS APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-rock-and-fluid-samples-ddms) | integrations | 0.70 | End-to-end cURL interactions with RAFS DDMS endpoints; includes concrete API paths and request/response structures. |
 | [Use Seismic Store DDMS sdutil](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-ddms-sdutil) | integrations | 0.70 | Command-line tool usage for Seismic Store is product-specific integration; likely includes concrete CLI parameters, options, and patterns unique to this service. |
 | [Connect Analytics Consumption Zone (ACZ) to Microsoft Fabric](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-fabric) | integrations | 0.68 | How-to guide for wiring Analytics Consumption Zone (ACZ) data in ADLS Gen2 into Microsoft Fabric via OneLake shortcuts. Likely includes product-specific connection settings, path formats, and Fabric/OneLake configuration details that go beyond generic integration knowledge, fitting the integrations sub-skill. |
+| [Connect Analytics Consumption Zone (ACZ) to Snowflake](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-snowflake) | integrations | 0.68 | The page describes a product-specific integration between Azure Data Manager for Energy's Analytics Consumption Zone (Delta Lake on ADLS Gen2) and Snowflake using Delta Direct and Iceberg tables. This is a concrete, service-specific integration pattern that likely includes configuration steps and parameters unique to this integration, which qualifies as expert knowledge under the integrations sub-skill type. |
 | [Manage data partitions](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-add-more-data-partitions) | configuration | 0.65 | How-to for managing data partitions; likely includes specific partition configuration fields and constraints. |
 | [Set up Resource sharing (CORS)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-cors) | configuration | 0.65 | CORS setup guides typically include specific configuration parameters (allowed origins, methods, headers) and how to apply them for this product. This is product-specific configuration detail beyond generic CORS concepts. |
 | [Set up audit logs](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-audit-logs) | configuration | 0.65 | Managing audit logs usually involves product-specific settings (log categories, destinations, schemas, enabling/disabling options). These are concrete configuration details unique to this service rather than generic logging concepts. |

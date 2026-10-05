@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
-  integrations: Patterns and setup guides for connecting Azure services to external
-    data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector
-    and Foundry Agents.
+  integrations: Patterns and steps for wiring Azure compute and Foundry agents to
+    external services like Confluent Cloud and MongoDB Atlas using Service Connector
+    and integration best practices.
   security: Managing security for Azure partner services, including Confluent Cloud
     RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure
     resources.
@@ -18,12 +18,12 @@ category_descriptions:
     deployment patterns.
 skill_description: Expert knowledge for Azure Partner Solutions development including
   troubleshooting, architecture & design patterns, security, configuration, and integrations
-  & coding patterns. Use when connecting Confluent/MongoDB/Neon via Service Connector,
-  configuring Datadog/Dynatrace/Elastic, or designing Palo Alto NGFW with App Gateway,
-  and other Azure Partner Solutions related development tasks.
-use_when: Use when connecting Confluent/MongoDB/Neon via Service Connector, configuring
-  Datadog/Dynatrace/Elastic, or designing Palo Alto NGFW with App Gateway, and other
+  & coding patterns. Use when integrating Confluent/MongoDB via Service Connector,
+  managing Datadog/Dynatrace/Elastic/New Relic, or Palo Alto Cloud NGFW, and other
   Azure Partner Solutions related development tasks.
+use_when: Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic/New
+  Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development
+  tasks.
 confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed Applications
   (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure
   Oracle (use azure-oracle).
@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 112
+- **Updated Pages**: 1
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -60,10 +60,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-09-22T22:21:00.000Z
-- [Start a free trial](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/free-trial)
-  - Updated: 2025-10-20T22:18:00.000Z → 2026-09-22T22:21:00.000Z
+- [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents)
+  - Updated: 2026-03-25T22:12:00.000Z → 2026-09-28T22:12:00.000Z
 
 ## Classified Pages
 
@@ -78,7 +76,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/manage) | configuration | 0.80 | Managing networking, NAT, rulestack, logging, DNS proxy, and billing plans implies detailed product-specific configuration options and parameter values unique to this Azure Native integration. |
 | [Troubleshoot log forwarding with Copilot](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot-logs-copilot) | troubleshooting | 0.78 | The page focuses on diagnosing and resolving log forwarding issues for Azure Native New Relic Service using Microsoft Copilot in Azure. It is organized around specific symptoms and how to use Copilot to identify causes and remediation steps, which is product- and integration-specific troubleshooting guidance that goes beyond generic debugging advice. |
 | [Configure prerequisites](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/configure-prerequisites) | configuration | 0.70 | Pre-deployment prerequisites for Dynatrace in Azure/Entra ID will include specific roles, permissions, and configuration steps unique to this integration, fitting configuration expert knowledge. |
-| [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents) | integrations | 0.70 | The page describes a product-specific integration between Microsoft Foundry Agents and MongoDB Atlas via the MongoDB MCP Server, including concrete connection details and configuration patterns that are unique to this integration rather than generic tutorial content. |
+| [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents) | integrations | 0.70 | The page describes a product-specific integration between Microsoft Foundry Agents and MongoDB Atlas via the MongoDB MCP Server, likely including concrete configuration parameters, connection details, and code/integration patterns that go beyond generic knowledge. |
 | [Deploy Cloud NGFW by Palo Alto Networks with the Application Gateway](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/application-gateway) | architecture-patterns | 0.70 | Describes a recommended deployment architecture for Cloud NGFW behind Application Gateway; likely includes product-specific topology guidance, traffic flow patterns, and when to use this pattern for securing web apps. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq) | troubleshooting | 0.70 | Datadog on Azure FAQ explicitly mentions troubleshooting; such FAQs typically map Azure-specific onboarding/metrics/logs issues to causes and resolutions, including product-specific error messages and diagnostic steps that qualify as expert troubleshooting knowledge. |
 | [Manage your Informatica IDMC organization](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/manage) | security | 0.70 | The article focuses on managing single sign-on for an Informatica IDMC organization, which typically involves specific identity configuration (SSO settings, possibly Azure AD app configuration, roles, or scopes). These are product-specific security/identity configuration details, fitting the security sub-skill. |

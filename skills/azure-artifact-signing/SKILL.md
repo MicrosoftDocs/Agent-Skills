@@ -1,9 +1,9 @@
 ---
 name: azure-artifact-signing
-description: Expert knowledge for Azure Artifact Signing development including decision making, security, configuration, and integrations & coding patterns. Use when managing cert storage/rotation, RBAC for signing, DGSSv2 migration, diagnostic logs, or CI/CD signing integration, and other Azure Artifact Signing related development tasks.
+description: Expert knowledge for Azure Artifact Signing development including decision making, security, configuration, and integrations & coding patterns. Use when handling cert lifecycles, RBAC for signers, DGSSv2 migration, diagnostic logs, or CI/CD signing integration, and other Azure Artifact Signing related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifact Signing Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Decision Making | L32-L37 | Pricing and SKU selection for Azure Artifact Signing and guidance to migrate from DGSSv2, including plan changes and transition steps. |
-| Security | L38-L46 | Managing Artifact Signing security: cert storage/rotation, identity validation lifecycle, RBAC roles/assignments, and secure signing of Windows code integrity policies. |
+| Security | L38-L46 | Managing Artifact Signing security: cert handling, identity validation lifecycle, RBAC roles/assignments, and signing Windows code integrity policies securely. |
 | Configuration | L47-L51 | Configuring diagnostic settings for Artifact Signing, enabling and routing logs to destinations like Log Analytics, Storage, and Event Hubs for monitoring and analysis. |
 | Integrations & Coding Patterns | L52-L55 | Configuring Artifact Signing with supported tools and workflows (e.g., CI/CD systems, package managers), including setup steps and patterns for integrating signing into build and release pipelines. |
 

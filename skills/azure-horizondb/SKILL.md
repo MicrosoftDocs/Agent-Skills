@@ -3,7 +3,7 @@ name: azure-horizondb
 description: Expert knowledge for Azure Horizondb development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when tuning pgvector, azure_ai SQL functions, LangChain vector stores, Apache AGE graphs, or hybrid search, and other Azure Horizondb related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Table Storage (use azure-table-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Horizondb Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L62-L66 | Patterns for building RAG with graph data in HorizonDB and implementing hybrid BM25+vector search, including design choices and query strategies. |
 | Limits & Quotas | L67-L72 | Managing HorizonDB replica counts, read-scale limits, and how to request quota or limit increases for HorizonDB resources. |
 | Security | L73-L88 | Securing HorizonDB: TLS/SSL setup, cert management, SCRAM auth, access control/roles, user accounts, encryption at rest, deletion protection, password resets, and security best practices. |
-| Configuration | L89-L165 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexes, extensions, networking/firewalls, HA/replication, connection/auth, performance, logging, WAL, and resource tuning. |
+| Configuration | L89-L165 | Configuring HorizonDB clusters: AI models/pipelines, search/vector indexing, extensions, networking/firewalls, HA/replication, autovacuum, connections, logging, WAL, and detailed PostgreSQL parameter tuning. |
 | Integrations & Coding Patterns | L166-L178 | Using HorizonDB with AI: azure_ai SQL/embedding/rerank functions, LangChain vector store, building knowledge graphs, and integrating/moving data via the Azure Storage extension. |
 | Deployment | L179-L182 | Guides for migrating data by dumping PostgreSQL databases and restoring them into HorizonDB, including required tools, commands, and compatibility considerations. |
 
@@ -92,7 +92,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure AI Model Management (AIMM) in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-model-management |
 | Define and run AI pipelines in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-pipelines |
 | Configure pg_textsearch BM25 search in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/ai/full-text-search |
-| Configure DiskANN vector indexing in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann |
+| Configure DiskANN vector indexing in Azure HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann |
 | Enable and configure pgvector in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-search-pgvector |
 | Use point-in-time restore for HorizonDB clusters | https://learn.microsoft.com/en-us/azure/horizondb/backup-restore/how-to-restore-custom-restore-point |
 | Configure pg_durable workflows in HorizonDB | https://learn.microsoft.com/en-us/azure/horizondb/development/durable-functions |

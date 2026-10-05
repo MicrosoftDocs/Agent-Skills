@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-04'
 category_descriptions:
   workload-patterns: Design patterns, reference architectures, and end-to-end guidance
     for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including
@@ -19,33 +19,33 @@ category_descriptions:
   tradeoffs: Guidance on weighing cost, reliability, performance, security, and operations
     tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar
     design decisions.
-  service-guides: 'Service-specific Azure Well-Architected (WAF) guidance: design,
-    configure, secure, and optimize individual services (compute, data, networking)
-    using WAF pillars and best practices.'
+  service-guides: Service-specific Azure Well-Architected and WAF best practices for
+    designing, configuring, and operating core services (compute, networking, storage,
+    data, and integration) for reliability, security, and performance.
 skill_description: Expert guidance for designing, assessing, and optimizing Azure
   workloads using Azure Well Architected. Covers design review checklists, recommendations,
   design principles, tradeoffs, service guides, workload patterns, and assessment
-  questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads
-  and optimizing Azure services by WAF pillars, and other Azure Well Architected related
-  development tasks.
-use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads and
-  optimizing Azure services by WAF pillars, and other Azure Well Architected related
-  development tasks.
+  questions. Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/AZs,
+  or configuring core Azure services, and other Azure Well Architected related development
+  tasks.
+use_when: Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/AZs,
+  or configuring core Azure services, and other Azure Well Architected related development
+  tasks.
 ---
 # Azure Well Architected Crawl Report
 
 ## Summary
 
-- **Total Pages**: 213
-- **Fetched**: 213
+- **Total Pages**: 214
+- **Fetched**: 214
 - **Fetch Failed**: 0
-- **Classified**: 175
+- **Classified**: 176
 - **Unclassified**: 38
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 213
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 212
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -56,13 +56,22 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads a
 | assessments | 9 | 4.2% |
 | checklists | 5 | 2.3% |
 | design-principles | 12 | 5.6% |
-| recommendations | 70 | 32.9% |
-| service-guides | 32 | 15.0% |
+| recommendations | 70 | 32.7% |
+| service-guides | 33 | 15.4% |
 | tradeoffs | 6 | 2.8% |
 | workload-patterns | 41 | 19.2% |
 | *(Unclassified)* | 38 | 17.8% |
 
 ## Changes
+
+### New Pages
+
+- [Azure Managed Redis](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-managed-redis)
+
+### Updated Pages
+
+- [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/)
+  - Updated: 2026-03-04T18:02:00Z → 2026-10-01T22:02:00Z
 
 ## Classified Pages
 
@@ -149,6 +158,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads a
 | [Azure Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-files) | service-guides | 0.86 | This is a Well-Architected service guide specifically for Azure Files and Azure File Sync. It provides WAF-aligned design considerations and configuration recommendations for this service across multiple pillars (for example, reliability, security, performance, cost). That combination of service-specific, pillar-based guidance and concrete configuration details qualifies as expert knowledge and matches the service-guides definition. |
 | [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-kubernetes-service) | service-guides | 0.86 | The page is a Well-Architected Framework guide specifically for Azure Kubernetes Service (AKS). It provides service-specific architectural recommendations across multiple pillars (reliability, security, scalability, operations, cost) and maps AKS features and configurations to WAF goals. This is not a generic AKS overview but detailed guidance on how to configure and operate AKS in line with WAF, which qualifies as expert knowledge and fits the 'service-guides' category. |
 | [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-machine-learning) | service-guides | 0.86 | Azure ML–specific architectural recommendations and configuration options aligned to WAF pillars. |
+| [Azure Managed Redis](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-managed-redis) | service-guides | 0.86 | The page is a Well-Architected Framework guide focused on Azure Managed Redis, providing service-specific design considerations and configuration recommendations across multiple pillars (for example, availability, performance, and security). This aligns with the service-guides definition, and the content includes detailed, implementation-oriented guidance that goes beyond generic Redis knowledge, qualifying as expert knowledge. |
 | [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-netapp-files) | service-guides | 0.86 | Service guide with NetApp Files–specific design and configuration recommendations across multiple pillars. |
 | [Azure Service Fabric](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-fabric) | service-guides | 0.86 | Service Fabric–focused architectural recommendations mapped to WAF pillars with implementation detail. |
 | [CO:04 Spending guardrails](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/set-spending-guardrails) | recommendations | 0.86 | The page is explicitly tied to a Cost Optimization checklist recommendation and provides detailed, prescriptive guidance on how to implement spending guardrails (controls, configuration steps, and practices) to manage costs within a defined budget. It goes beyond high-level principles and offers concrete implementation advice aligned with a specific checklist item, which matches the 'recommendations' sub-skill type. |
@@ -275,7 +285,7 @@ use_when: Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads a
 | [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/) | 0.20 | Quick links/overview page for the Operational Excellence pillar; primarily navigation and high-level guidance without checklist IDs, detailed implementation steps, or pillar-specific principles with rationale. |
 | [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/) | 0.20 | Page is a quick-links/overview hub for performance efficiency resources, not containing detailed implementation guidance, checklists, or pillar tradeoff analysis itself. |
 | [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/reliability/) | 0.20 | Page is a reliability landing/quick-links page that aggregates resources and high-level guidance. It does not itself contain detailed checklist items, implementation steps, or pillar-specific principles with rationale; it primarily links out to other content, so it lacks the expert, implementation-level knowledge required. |
-| [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/) | 0.20 | This is a navigation/get-started page for service guidance mapped to the Well-Architected Framework, not the detailed service-specific guidance itself. It does not contain implementation details, checklists, or pillar-specific expert content. |
+| [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/) | 0.20 | Page is a high-level entry/navigation page for Azure service guidance mapped to the Well-Architected Framework, not a detailed service-specific guide. It does not itself contain implementation details, pillar-specific configurations, or expert-level WAF guidance for a particular service, so it does not meet the criteria for service-guides or other sub-skill types. |
 | [What is the Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework) | 0.20 | High-level overview of the Azure Well-Architected Framework and its pillars; conceptual and introductory without pillar-specific named principles, checklist IDs, or detailed implementation guidance. |
 | [Microsoft Fabric](https://learn.microsoft.com/en-us/azure/well-architected/microsoft-fabric/) | 0.10 | This is a landing/overview page for Microsoft Fabric Well-Architected documentation, describing applying the five pillars in general. It does not indicate numbered checklist items, pillar-specific principles with rationale, or detailed implementation guidance. It’s primarily conceptual/navigation content, so it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
 | [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/security/) | 0.10 | Security quick links page is primarily navigation to other resources; it does not itself present checklists, recommendations, or detailed security design principles. |

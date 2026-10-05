@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS), secrets and
     certs, private networking, egress control, RBAC/Policy, and best practices for
     protecting apps and Functions.'
-  decision-making: Guidance for choosing Container Apps plans, capacity, GPUs, and
-    cost models, plus migration and modernization paths from Functions, Heroku, Java/Spring/Tomcat,
-    and other Azure container hosting options.
+  decision-making: 'Guidance for planning and cost-optimizing Azure Container Apps:
+    capacity, plans, workload profiles, GPUs, hosting options, and migrations from
+    Heroku, Functions, Java/Spring/Tomcat, and MCP servers.'
   troubleshooting: 'Diagnosing and fixing Container Apps issues: deploy/start/image
     pull failures, health probes, ports, storage mounts, runtime/OCI errors, Arc dependencies,
     debug console, and Java log-level tuning.'
@@ -30,16 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ACA auth/egress, KEDA/Dapr scaling, CI/CD deployments, Java
-  microservices, or quotas, and other Azure Container Apps related development tasks.
-  Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps
-  (use azure-spring-apps).
-use_when: Use when configuring ACA auth/egress, KEDA/Dapr scaling, CI/CD deployments,
-  Java microservices, or quotas, and other Azure Container Apps related development
+  Use when using ACA auth, private networking, KEDA/Dapr scaling, GitHub Actions CI/CD,
+  or Java microservices, and other Azure Container Apps related development tasks.
+  Not for Azure Container Instances (use azure-container-instances), Azure App Service
+  (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Spring Apps (use azure-spring-apps).
+use_when: Use when using ACA auth, private networking, KEDA/Dapr scaling, GitHub Actions
+  CI/CD, or Java microservices, and other Azure Container Apps related development
   tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
+  Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Spring Apps (use azure-spring-apps).
 ---
 # Azure Container Apps Crawl Report
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 12
-- **Unchanged**: 217
-- **Deleted Pages**: 4
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 234
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
 ## Classification Statistics
@@ -78,46 +78,11 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### New Pages
 
-- [Lifecycle (preview)](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-snapshots-state-management)
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-overview)
-- [Plan deployment](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-plan)
-- [Set up cluster](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-enable-cluster)
-- [Create first app](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-create-container-app)
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-troubleshoot)
-
-### Updated Pages
-
-- [Azure portal](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-quickstart-portal)
-  - Updated: 2026-08-25T02:03:00.000Z → 2026-09-22T22:21:00.000Z
-- [Agent skills](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-quickstart-agent-skills)
-  - Updated: 2026-08-28T05:12:00.000Z → 2026-09-22T22:21:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-quickstart-cli)
-  - Updated: 2026-08-27T22:11:00.000Z → 2026-09-22T22:21:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-quickstart-bicep)
-  - Updated: 2026-08-27T09:10:00.000Z → 2026-09-22T22:21:00.000Z
-- [Python SDK](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-quickstart-python-sdk)
-  - Updated: 2026-08-27T09:10:00.000Z → 2026-09-22T22:21:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/express-overview)
-  - Updated: 2026-08-27T22:11:00.000Z → 2026-09-23T05:11:00.000Z
-- [Deploy with the CLI](https://learn.microsoft.com/en-us/azure/container-apps/deploy-express-cli)
-  - Updated: 2026-05-13T17:28:00.000Z → 2026-09-23T05:11:00.000Z
-- [Local testing](https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing)
-  - Updated: 2026-05-22T17:10:00.000Z → 2026-09-21T08:00:00.000Z
-- [Serverless GPUs](https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview)
-  - Updated: 2026-05-02T06:17:00.000Z → 2026-09-24T22:17:00.000Z
-- [Quotas](https://learn.microsoft.com/en-us/azure/container-apps/quotas)
-  - Updated: 2025-10-31T11:10:00.000Z → 2026-09-24T22:17:00.000Z
-- [Make quota requests](https://learn.microsoft.com/en-us/azure/container-apps/quota-requests)
-  - Updated: 2025-09-19T05:15:00.000Z → 2026-09-24T22:17:00.000Z
-- [Express frequently asked questions](https://learn.microsoft.com/en-us/azure/container-apps/express-faq)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-09-23T05:11:00.000Z
+- [Migrate from Functions on Azure Container Apps V1 to Functions on Azure Container Apps V2](https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions)
 
 ### Deleted Pages
 
-- ~~2 - Create container app~~ (https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-create-container-app)
-- ~~1 - Set up Azure Arc-enabled Kubernetes clusters~~ (https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-enable-cluster)
-- ~~Azure Arc-enabled Kubernetes clusters~~ (https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-overview)
-- ~~Snapshots and state management~~ (https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-snapshots-state-management)
+- ~~Migrate from Functions v1 to v2~~ (https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions)
 
 ## Classified Pages
 
@@ -154,7 +119,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Heroku migration overview](https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview) | decision-making | 0.80 | Provides concept mapping, service equivalents, cost comparison, and pitfalls to guide migration decisions between Heroku and Container Apps. |
 | [KEDA scaling mappings reference](https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings) | configuration | 0.80 | Explains how Azure Functions trigger parameters map to KEDA scaling parameters when running on Azure Container Apps. This is a product-specific mapping of configuration parameters (Functions trigger settings to KEDA scaler settings), which is expert configuration knowledge not obvious from general training data. Fits configuration because it defines how specific parameters translate and should be set for autoscaling. |
 | [Manage secrets](https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets) | security | 0.80 | Secrets management is a security configuration topic. Such a page typically includes specific secret-related settings, how secrets are scoped to apps and revisions, and product-specific behaviors (for example, how updates affect revisions and scale rules). These are detailed, product-specific security behaviors that qualify as expert knowledge. |
-| [Migrate from Functions v1 to v2](https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions) | decision-making | 0.80 | Migration guide comparing v1 vs v2 models, why to migrate, and how; includes decision and migration path guidance specific to this platform. |
 | [Choose a hosting option](https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service) | decision-making | 0.78 | The page compares Azure Container Apps, App Service, Functions, and AKS specifically for hosting MCP servers and guides which to choose based on workload and operational needs. This is product- and scenario-specific decision guidance that helps select between services, fitting the decision-making sub-skill. It goes beyond generic concepts by mapping MCP server requirements to concrete Azure service choices. |
 | [Custom OpenID Connect](https://learn.microsoft.com/en-us/azure/container-apps/authentication-openid) | security | 0.78 | Page describes concrete configuration of Azure Container Apps built-in auth with a custom OpenID Connect provider, including provider naming rules and app configuration details. This is product-specific authentication configuration rather than generic OIDC theory, fitting the security category. |
 | [Export to Datadog](https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog) | integrations | 0.78 | Step-by-step configuration for forwarding logs, traces, and metrics to Datadog using the managed OpenTelemetry agent; this is a concrete integration pattern with product-specific settings and parameters for Datadog export. |
@@ -211,6 +175,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Migrate Spring Boot applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-boot) | decision-making | 0.70 | Migration guide for Spring Boot to Azure Container Apps that covers pre-migration assessment and post-migration optimization. This typically includes Azure-specific considerations, trade-offs, and recommendations for how/when to migrate, which are decision-making and migration-path guidance beyond generic concepts. |
 | [Migrate Spring Cloud applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-cloud) | decision-making | 0.70 | Explains what to be aware of when migrating Spring Cloud applications to Azure Container Apps, implying Azure- and Spring-Cloud-specific considerations and trade-offs. This is migration decision guidance rather than a simple tutorial, fitting decision-making with product-specific nuances. |
 | [Migrate Tomcat applications](https://learn.microsoft.com/en-us/azure/container-apps/migrate-tomcat) | decision-making | 0.70 | Walks through assessing, containerizing, and deploying Tomcat apps to Azure Container Apps. Contains migration-specific guidance and likely Tomcat/Azure-specific considerations and patterns, which are expert migration/decision knowledge rather than generic containerization advice. |
+| [Migrate from Functions on Azure Container Apps V1 to Functions on Azure Container Apps V2](https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions) | decision-making | 0.70 | The page provides product-specific migration guidance between Functions on Azure Container Apps v1 and v2 hosting models, including why to migrate, what changes between models, and how to execute the transition with minimal risk. This is expert decision guidance about when and how to move between hosting models (a migration/upgrade path), which fits the decision-making sub-skill. It goes beyond conceptual overview by giving concrete migration considerations unique to this product. |
 | [Override auto-generated KEDA scale rules](https://learn.microsoft.com/en-us/azure/container-apps/functions-scale-rule-override) | configuration | 0.70 | Page describes the specific configuration property template.scale.allowScalingRuleOverride and how to replace platform-generated KEDA triggers with custom rules in template.scale.rules. This is product-specific configuration detail (exact setting names and behavior) that an LLM is unlikely to infer from general knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-tutorial) | security | 0.70 | Page is focused on how to handle two categories of secrets (app-level secrets and access keys) specifically for Azure Functions running on Azure Container Apps, including how they differ and how to choose storage approaches. This is product-specific security/secret-management guidance rather than generic concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents) | integrations | 0.70 | Describes using a managed OpenTelemetry data agent with Azure Container Apps and routing data to various endpoints; likely includes product-specific configuration options, endpoint parameters, and integration patterns for OTLP-compatible backends. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-04'
 category_descriptions:
   architecture-patterns: Designing Azure Load Testing setups with virtual networks
     and private endpoints, including VNet-injected tests, network isolation, and testing
@@ -10,18 +10,18 @@ category_descriptions:
   configuration: 'Configuring and running Azure Load Testing and Playwright Workspaces:
     test definitions, HTTP/JMeter settings, secrets, monitoring, baselines, reporting/export,
     CI/CD YAML, scheduling, and multi-region load.'
-  troubleshooting: Diagnosing and fixing Azure Load Testing and Playwright Workspaces
-    issues, including failed or debug runs, browser recorder and private endpoint
-    problems, and remote MCP/test run errors.
+  troubleshooting: Diagnosing and fixing Azure Load Testing issues, including AI-driven
+    insights, debug mode, browser recorder, private endpoints, and Playwright Workspaces
+    (remote MCP, reporting, and test run errors).
   security: 'Securing Azure Load Testing and Playwright Workspaces: RBAC, auth for
     endpoints, managed identities, Key Vault, CMK encryption, certificates, access
     tokens, and Azure Policy controls.'
   deployment: Setting up and automating CI/CD for Azure Load Testing, including manual
     pipeline configuration and integration with Azure Pipelines for automated test
     runs.
-  integrations: Authoring and running load tests with JMeter, Locust, and Playwright,
-    using CSV data and plugins, integrating with VS Code/Copilot, and testing local
-    or private apps via Azure Load Testing.
+  integrations: Patterns and tools for integrating Azure Load Testing with JMeter,
+    Locust, VS Code/Copilot, CSV data, plugins, and Playwright (including MCP and
+    local/private app testing).
   limits-quotas: Usage caps, service limits, and configuration for Azure Load Testing
     and Playwright Workspaces, including monthly quotas, free trial restrictions,
     and how to adjust or review these limits.
@@ -49,14 +49,14 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 - **Total Pages**: 78
 - **Fetched**: 78
 - **Fetch Failed**: 0
-- **Classified**: 58
-- **Unclassified**: 20
+- **Classified**: 59
+- **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 3
 - **Updated Pages**: 0
-- **Unchanged**: 78
-- **Deleted Pages**: 0
+- **Unchanged**: 75
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
 ## Classification Statistics
@@ -68,13 +68,25 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | configuration | 17 | 21.8% |
 | decision-making | 4 | 5.1% |
 | deployment | 2 | 2.6% |
-| integrations | 7 | 9.0% |
+| integrations | 8 | 10.3% |
 | limits-quotas | 4 | 5.1% |
 | security | 9 | 11.5% |
 | troubleshooting | 8 | 10.3% |
-| *(Unclassified)* | 20 | 25.6% |
+| *(Unclassified)* | 19 | 24.4% |
 
 ## Changes
+
+### New Pages
+
+- [Remote MCP server for AI agents](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/how-to-playwright-workspaces-remote-mcp)
+- [Get started with the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/quickstart-automate-browser-tasks-remote-mcp)
+- [Troubleshoot the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/troubleshoot-remote-mcp-server)
+
+### Deleted Pages
+
+- ~~Remote MCP server for AI agents~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp)
+- ~~Get started with the remote MCP server~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp)
+- ~~Troubleshoot the remote MCP server~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server)
 
 ## Classified Pages
 
@@ -98,6 +110,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Manage usage limits](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-manage-usage-limits) | limits-quotas | 0.80 | Article is specifically about managing usage limits and monthly Virtual User Hours (VUH); likely includes concrete numeric limits, thresholds, and possibly tier-specific behaviors that qualify as limits/quotas expert knowledge. |
 | [Manage users and roles](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-assign-roles) | security | 0.80 | Uses Azure RBAC with specific role-based access patterns for load testing resources; product-specific security configuration. |
 | [Test secure endpoints](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-test-secured-endpoints) | security | 0.80 | Lists supported authentication options (tokens, credentials, managed identity, certificates) and how to configure them for tests. |
+| [Troubleshoot the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/troubleshoot-remote-mcp-server) | troubleshooting | 0.80 | Explicitly a troubleshooting article for the remote MCP server; likely includes concrete error conditions, causes, and resolutions for browser automation flows, which are product-specific diagnostic and remediation details. |
 | [Use a managed identity](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-use-a-managed-identity) | security | 0.80 | Explains enabling managed identity on the load testing resource and using it to access Key Vault and simulate auth flows. |
 | [Use multiple certificates in tests](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-use-multiple-certificates) | security | 0.80 | Product-specific instructions for using multiple certificates via JKS and Azure Key Vault integration for secure test communication. |
 | [Configure server-side monitoring](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-monitor-server-side-metrics) | configuration | 0.75 | Describes how to add Azure app components and which metrics are collected automatically for server-side monitoring. |
@@ -122,6 +135,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Secure Azure Load Testing with Azure Policy](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-use-azure-policy) | security | 0.70 | Shows how to apply Azure Policy definitions to enforce security and compliance on Load Testing resources. |
 | [Supported Azure resource types](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/resource-supported-azure-resource-types) | configuration | 0.70 | The page enumerates exactly which Azure resource types are supported for server-side monitoring in Azure Load Testing and how metrics can be selected per resource. This is product-specific configuration knowledge (what can be configured and monitored) that an LLM is unlikely to know from training. It is not about limits, troubleshooting, or architecture, but about supported resource-type configuration options. |
 | [Use JMeter user properties](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-configure-user-properties) | configuration | 0.70 | Describes how to upload and use JMeter user properties files and environment variables in Azure Load Testing, including supported behavior. |
+| [Remote MCP server for AI agents](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/how-to-playwright-workspaces-remote-mcp) | integrations | 0.68 | How-to article for connecting AI agents to the Playwright Workspaces remote MCP server, including MCP-specific tools, capabilities, and interaction patterns that are product- and protocol-specific integration knowledge beyond generic browser automation. |
 | [Automate load tests with Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-add-load-test-cicd) | deployment | 0.65 | Shows how to wire Azure Load Testing into Azure Pipelines directly from the portal; product-specific CI/CD integration and constraints. |
 | [Compare test runs](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-compare-multiple-test-runs) | configuration | 0.65 | Explains how to select runs, mark baselines, and interpret trends metrics—product-specific analysis workflow. |
 | [Create a load test with a JMeter script](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-and-run-load-test-with-jmeter-script) | integrations | 0.65 | Product-specific guidance on using Apache JMeter scripts with Azure Load Testing, including supported JMeter functionality and Azure-specific integration behavior. |
@@ -130,7 +144,6 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Read data from a CSV file](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-read-csv-data) | integrations | 0.65 | Explains product-specific handling of CSV data for JMeter and Locust scripts within Azure Load Testing. |
 | [Schedule load tests](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-schedule-tests) | configuration | 0.65 | Describes how to configure multiple schedules per test and scheduling behavior—product-specific configuration details. |
 | [Test private endpoints](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-test-private-endpoint) | architecture-patterns | 0.65 | Describes architecture and flow for testing private endpoints via VNet injection, including when and how to use this pattern. |
-| [Troubleshoot the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server) | troubleshooting | 0.65 | Article is explicitly for troubleshooting the remote MCP server and mentions resolving errors and designing reliable flows, implying symptom-to-solution guidance with product-specific issues. |
 | [Create & manage test runs (Azure portal)](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-manage-test-runs) | configuration | 0.60 | Describes how test runs are created, associated, and managed, including Azure-specific run lifecycle behavior. |
 | [Create & manage tests (Azure portal)](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-manage-test) | configuration | 0.60 | Product-specific management operations and configuration options for test objects within an Azure Load Testing resource. |
 | [Create a load test with a Locust script](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-run-load-test-with-locust) | integrations | 0.60 | Describes using Locust Python test scripts with Azure Load Testing, a product-specific integration pattern beyond generic SDK usage. |
@@ -150,8 +163,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | [Create a URL-based load test](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-and-run-load-test) | 0.30 | Portal quickstart for URL-based tests; shows how to create a test but not detailed configuration matrices or quotas. |
 | [Create a test from a recording](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/quickstart-create-run-load-tests-from-recording) | 0.30 | Quickstart workflow for recording tests; primarily step-by-step usage without deep config tables or limits. |
 | [Enable notifications](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-notification-rules) | 0.30 | How-to for configuring notifications; description doesn’t indicate detailed parameter tables, limits, or error mappings beyond standard tutorial content. |
-| [Get started with the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp) | 0.30 | Quickstart tutorial for connecting an AI agent to the remote MCP server; likely step-by-step usage, not configuration matrices or error mappings. |
-| [Remote MCP server for AI agents](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp) | 0.30 | Describes automating browsers with the remote MCP server; appears to be conceptual/how-to without explicit config parameter tables or limits. |
+| [Get started with the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/quickstart-automate-browser-tasks-remote-mcp) | 0.30 | Quickstart focuses on a basic end-to-end example of connecting an AI agent to the remote MCP server and running a simple task; it’s primarily tutorial content without detailed configuration tables, error mappings, or other expert-only specifics. |
 | [Run end-to-end tests at scale](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-run-end-to-end-tests) | 0.30 | Quickstart for running tests at scale; mostly procedural without indication of detailed config matrices, limits, or troubleshooting mappings. |
 | [Set up continuous end-to-end testing](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-end-to-end-testing) | 0.30 | Quickstart for CI integration; likely step-by-step workflow setup rather than deep configuration reference or limits. |
 | [Test App Service web apps](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/how-to-create-load-test-app-service) | 0.30 | Tutorial-style guidance for creating a load test from App Service; no indication of numeric limits, config reference tables, or troubleshooting mappings. |

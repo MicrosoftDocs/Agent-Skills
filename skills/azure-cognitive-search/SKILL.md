@@ -1,9 +1,9 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building indexes, skillsets, vector/semantic search, secure indexers, or multi-region search apps, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Table Storage (use azure-table-storage).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building indexes, skillsets, indexers, vector/semantic search, or RAG knowledge bases with Azure AI Search, and other Azure AI Search related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L48 | Diagnosing and fixing Azure AI Search indexer/skillset errors, filter and metric issues, permission-filtered results, and private link or storage discrepancies. |
 | Best Practices | L49-L66 | Best practices for designing, scaling, and troubleshooting enrichment/indexing pipelines, optimizing vector search, performance, and costs, and safely updating Azure AI Search resources. |
-| Decision Making | L67-L82 | Guidance on choosing regions, tiers, pricing, capacity, connectors, and SDK/API versions, plus how to plan costs and migrate Azure AI Search services and apps to newer APIs. |
-| Architecture & Design Patterns | L83-L88 | Architectural patterns for Azure AI Search: combining vector and keyword search, designing multitenant or isolated indexes, and building resilient multi-region search deployments. |
-| Limits & Quotas | L89-L98 | Limits, quotas, and capacity planning for Azure AI Search: billing/free enrichment, indexer schedules/concurrency/runtime, service capacity limits, and vector index size/throughput constraints. |
-| Security | L99-L141 | Securing Azure AI Search: RBAC/Entra ID, keys, encryption, network isolation, indexer auth to data sources (SQL, Storage, SharePoint, Cosmos, Functions), and document-level/label-based access control. |
-| Configuration | L142-L234 | Configuring Azure AI Search: data sources, index schemas, analyzers, skillsets, enrichment, vectorization, semantic ranker, monitoring, and agentic retrieval/knowledge base setup. |
-| Integrations & Coding Patterns | L235-L310 | Patterns and code for integrating Azure AI Search: indexers, skills, vectorization, query syntax (Lucene/OData), semantic ranking, filters, pagination, and app/Power BI integrations. |
-| Deployment | L311-L318 | Deploying and moving Azure AI Search: ARM/Bicep/Terraform provisioning, cross-region migration, and deploying C# search apps to Azure Container Apps. |
+| Decision Making | L67-L83 | Guidance on choosing regions, tiers, pricing, capacity, and connectors, plus migration/upgrade paths for APIs and SDKs to plan, scale, and modernize Azure AI Search solutions. |
+| Architecture & Design Patterns | L84-L89 | Architectural patterns for Azure AI Search: combining vector and keyword search, designing multitenant or isolated indexes, and building resilient multi-region search deployments. |
+| Limits & Quotas | L90-L99 | Limits, quotas, and capacity planning for Azure AI Search: billing/free enrichment, indexer schedules/concurrency/runtime, service capacity limits, and vector index size/throughput constraints. |
+| Security | L100-L142 | Securing Azure AI Search: RBAC/Entra ID, keys, encryption, network isolation, indexer auth to data sources (SQL, Storage, SharePoint, Cosmos, Functions), and document-level/label-based access control. |
+| Configuration | L143-L235 | Configuring Azure AI Search: data sources, indexers, skillsets, analyzers, vectorization, semantic ranking, monitoring, and agentic retrieval/knowledge bases for RAG and answer synthesis. |
+| Integrations & Coding Patterns | L236-L311 | Patterns and code for integrating Azure AI Search: indexers, skills, vectorization, query syntax (Lucene/OData), semantic ranking, filters, pagination, and app/Power BI integrations. |
+| Deployment | L312-L319 | Deploying and moving Azure AI Search: ARM/Bicep/Terraform provisioning, cross-region migration, and deploying C# search apps to Azure Container Apps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -77,6 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Azure AI Search .NET apps to SDK v11 | https://learn.microsoft.com/en-us/azure/search/search-dotnet-sdk-migration-version-11 |
 | Upgrade Azure AI Search to higher capacity | https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade |
 | Choose Azure AI Search regions under high demand | https://learn.microsoft.com/en-us/azure/search/search-region-capacity |
+| Choose Azure AI Search regions and feature availability | https://learn.microsoft.com/en-us/azure/search/search-region-support |
 | Plan and manage Azure AI Search costs | https://learn.microsoft.com/en-us/azure/search/search-sku-manage-costs |
 | Choose Azure AI Search pricing model and tier | https://learn.microsoft.com/en-us/azure/search/search-sku-tier |
 
@@ -151,7 +152,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure OneLake knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-onelake |
 | Configure search index knowledge sources in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-search-index |
 | Configure indexed SharePoint knowledge sources in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed |
-| Configure remote SharePoint knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote |
+| Configure remote SharePoint knowledge source for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote |
 | Configure web knowledge sources for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-web |
 | Configure Work IQ knowledge sources for organizational intelligence | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-work-iq |
 | Define knowledge source objects for agentic retrieval | https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-overview |

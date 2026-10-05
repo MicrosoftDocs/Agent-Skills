@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   integrations: Patterns and how-tos for wiring Functions to external systems (HTTP,
     storage, messaging, databases, AI/OpenAI, Dapr, MCP, SignalR/Web PubSub) via triggers,
@@ -42,17 +42,17 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ## Summary
 
-- **Total Pages**: 310
-- **Fetched**: 310
+- **Total Pages**: 311
+- **Fetched**: 311
 - **Fetch Failed**: 0
-- **Classified**: 247
-- **Unclassified**: 63
+- **Classified**: 246
+- **Unclassified**: 65
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 14
-- **Unchanged**: 291
-- **Deleted Pages**: 2
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 309
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
 ## Classification Statistics
@@ -60,60 +60,25 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 13 | 4.2% |
-| configuration | 43 | 13.9% |
+| configuration | 42 | 13.5% |
 | decision-making | 21 | 6.8% |
-| deployment | 25 | 8.1% |
-| integrations | 99 | 31.9% |
+| deployment | 25 | 8.0% |
+| integrations | 99 | 31.8% |
 | limits-quotas | 4 | 1.3% |
 | security | 9 | 2.9% |
 | troubleshooting | 33 | 10.6% |
-| *(Unclassified)* | 63 | 20.3% |
+| *(Unclassified)* | 65 | 20.9% |
 
 ## Changes
 
 ### New Pages
 
-- [Agent bindings in Python](https://learn.microsoft.com/en-us/azure/azure-functions/functions-agent-bindings)
-- [Agent binding with Microsoft Agent Framework](https://learn.microsoft.com/en-us/azure/azure-functions/functions-agent-bindings-agent-framework)
-- [Agent binding with Durable Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-agent-bindings-agent-framework-durable)
-- [Dynamic workflows overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-dynamic-workflows)
-- [Dynamic workflows quickstart](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-dynamic-workflows-how-to)
+- [Canvas quickstart](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-canvas)
 
 ### Updated Pages
 
-- [Developer reference guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python)
-  - Updated: 2026-08-27T08:00:00.000Z → 2026-09-10T08:00:00.000Z
-- [Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview)
-  - Updated: 2026-09-18T05:11:00.000Z → 2026-09-21T22:12:00.000Z
-- [AI-enabled functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-ai-enabled-apps)
-  - Updated: 2026-09-18T05:11:00.000Z → 2026-09-23T22:40:00.000Z
-- [Command line](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-cli)
-  - Updated: 2024-12-29T08:00:00.000Z → 2026-09-25T11:40:00.000Z
-- [Host MCP servers for AI-enabled functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-mcp-tutorial)
-  - Updated: 2026-06-03T22:23:00.000Z → 2026-08-19T08:00:00.000Z
-- [Debug Event Grid trigger locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-event-grid-blob-trigger)
-  - Updated: 2025-11-01T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Low-latency Blob trigger using Event Grid](https://learn.microsoft.com/en-us/azure/azure-functions/functions-event-grid-blob-trigger)
-  - Updated: 2025-11-01T08:00:00.000Z → 2026-08-19T08:00:00.000Z
-- [Host MCP servers](https://learn.microsoft.com/en-us/azure/azure-functions/self-hosted-mcp-servers)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-08-19T08:00:00.000Z
-- [Event-driven scaling](https://learn.microsoft.com/en-us/azure/azure-functions/event-driven-scaling)
-  - Updated: 2026-08-07T22:20:00.000Z → 2026-09-23T11:43:00.000Z
-- [About triggers and bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
-  - Updated: 2026-07-23T22:13:00.000Z → 2026-09-23T22:40:00.000Z
-- [Managed connectors](https://learn.microsoft.com/en-us/azure/azure-functions/functions-connectors-overview)
-  - Updated: 2026-08-18T11:40:00.000Z → 2026-09-24T08:00:00.000Z
-- [Update language versions](https://learn.microsoft.com/en-us/azure/azure-functions/update-language-versions)
-  - Updated: 2026-08-25T08:00:00.000Z → 2026-09-21T08:00:00.000Z
-- [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-trigger)
-  - Updated: 2026-09-18T05:11:00.000Z → 2026-09-23T08:00:00.000Z
-- [Migrate version 4.x to 5.x](https://learn.microsoft.com/en-us/azure/azure-functions/migrate-service-bus-version-4-version-5)
-  - Updated: 2026-09-09T08:00:00.000Z → 2026-09-25T11:40:00.000Z
-
-### Deleted Pages
-
-- ~~Dynamic workflows~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-dynamic-workflows)
-- ~~Create and run dynamic workflows~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-dynamic-workflows-how-to)
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills)
+  - Updated: 2026-09-08T08:00:00.000Z → 2026-10-02T22:12:00.000Z
 
 ## Classified Pages
 
@@ -352,7 +317,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Migrate Linux apps to Flex Consumption using Copilot](https://learn.microsoft.com/en-us/azure/azure-functions/migration/scenario-migrate-linux-consumption-to-flex) | decision-making | 0.65 | Migration scenario between specific Azure Functions plans typically includes plan-specific constraints, required configuration changes, and step ordering that are not generic knowledge. Even though it’s framed as a Copilot quickstart, such migration docs usually encode concrete prerequisites, supported/unsupported features, and required settings for Flex Consumption vs Linux Consumption, which directly guide when and how to move between plans (a decision-making scenario). |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka-output) | configuration | 0.65 | Kafka output binding docs generally provide specific configuration options (topic, partition, key, connection settings) and plan/runtime support constraints (Flex Consumption, Elastic Premium, Dedicated, Functions runtime 4.x). These binding parameters and support details are product-specific configuration knowledge, fitting the configuration sub-skill. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-data-explorer) | integrations | 0.65 | Overview of Azure Data Explorer input/output bindings; includes extension-specific integration behavior and configuration entry points. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills) | configuration | 0.65 | Describes how to define behavior, triggers, and tool bindings in an agent.md file for hosted skills, which is a product-specific configuration mechanism for AI-driven function apps. |
 | [Prompt trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mcp-prompt-trigger) | integrations | 0.65 | Page is about a product-specific trigger that exposes Azure Functions as Model Context Protocol server prompts. This is a concrete integration surface between Azure Functions and MCP, likely including trigger binding parameters and usage patterns that are not generally known. It’s not about limits, security, or deployment, but about how to wire up this specific integration. |
 | [Runtime v1.x legacy reference](https://learn.microsoft.com/en-us/azure/azure-functions/functions-runtime-1x-legacy) | configuration | 0.65 | Legacy reference for runtime 1.x that preserves historical behavior and links to detailed references. Such content typically documents specific runtime behaviors, configuration switches, and compatibility details that are no longer current and thus not widely known, making it expert configuration/behavior reference. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka-trigger) | configuration | 0.65 | Kafka trigger binding docs typically include product-specific configuration parameters (topic names, consumer group, broker addresses, authentication settings) and plan/runtime support constraints (Flex Consumption, Elastic Premium, Dedicated, Functions runtime 4.x). These concrete binding settings and support details are not generic knowledge and match the configuration sub-skill definition. |
@@ -422,6 +386,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-samples) | 0.20 | Index page linking to Azure CLI sample scripts; does not itself contain detailed configuration tables, limits, or troubleshooting content. |
 | [Azure Functions CLI (v5)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-develop-local) | 0.20 | The page describes using the Azure Functions CLI v5 for local development and notes preview limitations and language support. From the summary, it appears to be a conceptual/how-to overview of the CLI rather than a detailed configuration reference, limits table, or troubleshooting guide with error codes or specific parameters. It likely lacks the kind of expert, product-specific numeric limits, configuration matrices, or error mappings required by the sub-skill types. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) | 0.20 | Step-by-step portal tutorial for creating a function app; does not list specific limits, quotas, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. Primarily a basic creation guide rather than expert, product-specific reference content. |
+| [Canvas quickstart](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-canvas) | 0.20 | Quickstart/tutorial for using the Azure Functions hosted skills canvas in GitHub Copilot; focuses on creating and running a sample hosted skill. It does not present detailed limits, configuration tables, error-code-based troubleshooting, or other product-specific expert reference information. |
 | [Create functions in containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-container-registry) | 0.20 | Tutorial-style get-started article for creating and publishing an Azure Functions Linux container image using Core Tools and a container registry. It focuses on step-by-step commands and workflow, without configuration parameter tables, limits/quotas, error-code-based troubleshooting, or product-specific decision matrices. The content is generic deployment/how-to guidance that an LLM can already approximate from training, not expert-only reference details. |
 | [Debug Event Grid trigger locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-event-grid-blob-trigger) | 0.20 | Tutorial-style walkthrough for wiring Event Grid to Blob-triggered Azure Functions; likely focuses on step-by-step creation and not on limits, configuration matrices, or product-specific error mappings. |
 | [Debug local PowerShell functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-debug-powershell-local) | 0.20 | Local debugging guidance for PowerShell Functions using standard tools; no product-specific error codes, config matrices, or limits. |
@@ -429,6 +394,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Event-driven AI-enabled app](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-hosted-skills) | 0.20 | Quickstart/tutorial for deploying an event-driven AI app with Azure Functions hosted skills. The summary mentions file names and basic configuration concepts but doesn't indicate detailed limits, configuration tables, error codes, or product-specific decision matrices. Content appears instructional rather than containing expert-only reference details. |
 | [Linux container (Premium)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deploy-container) | 0.20 | Primarily a getting-started deployment tutorial for containerized Azure Functions. It mentions required plans (Premium or Dedicated) and a general cost note, but does not provide plan-specific limits, configuration parameter tables, deployment matrices, or other detailed expert knowledge as defined by the sub-skill types. |
 | [Monitor Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions) | 0.20 | Page appears to be a general overview of monitoring Azure Functions with Azure Monitor, without clear evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills) | 0.20 | Summary describes a conceptual overview of Azure Functions hosted skills and basic workflow (agent.md instructions, triggers, tools, deployment like any function app) without exposing concrete limits, configuration tables, error codes, or product-specific parameter details that meet any sub-skill detection criteria. |
 | [Process file uploads](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-blob-storage-events) | 0.20 | Quickstart/tutorial for responding to Blob Storage events with Azure Functions and azd. No evidence of numeric limits, configuration tables, error-code-based troubleshooting, or product-specific best-practice details beyond generic deployment guidance. |
 | [Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) | 0.10 | High-level overview of Azure Functions; describes what the service is and general concepts without specific limits, configuration tables, error codes, or product-specific best-practice details. |
 | [Get started](https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started) | 0.10 | Getting-started navigation article pointing to other content; no indication of specific limits, configs, or troubleshooting details. |

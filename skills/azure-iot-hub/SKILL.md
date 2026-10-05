@@ -3,7 +3,7 @@ name: azure-iot-hub
 description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Hub/DPS routing, device twins, MQTT/AMQP clients, Device Update, or Cosmos DB event storage, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L62-L74 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
 | Architecture & Design Patterns | L75-L81 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
 | Limits & Quotas | L82-L88 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
-| Security | L89-L127 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS, X.509), certificates/keys, TLS/ciphers, network isolation (IP filters, private endpoints, VNet), and policy/compliance best practices. |
-| Configuration | L128-L160 | Configuring IoT Hub and DPS behavior: device/module twins, jobs, messaging, routing, enrichments, protocols, IPs/endpoints, Device Update manifests, file upload, and monitoring settings. |
-| Integrations & Coding Patterns | L161-L185 | Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and message formats/endpoints. |
-| Deployment | L186-L200 | Deploying and updating IoT devices and IoT Hub: Device Update setup/agents, delta/image/package updates, failover, platform support, migrations, and job scheduling. |
+| Security | L89-L126 | Securing IoT Hub, DPS, and Device Update: auth (Entra ID, RBAC, SAS, X.509), certificates/keys, TLS/ciphers, network isolation (IP filters, private endpoints, VNet), and policy/compliance best practices. |
+| Configuration | L127-L158 | Configuring IoT Hub and DPS behavior: device/module twins, jobs, messaging, routing, enrichments, protocols, IPs/endpoints, Device Update manifests, file upload, and monitoring settings. |
+| Integrations & Coding Patterns | L159-L183 | Patterns and code samples for connecting devices/DPUs to IoT Hub/DPS (MQTT/HTTPS/AMQP), managing identities, twins, methods, jobs, file upload, and message formats/endpoints. |
+| Deployment | L184-L198 | Deploying and updating IoT devices and IoT Hub: Device Update setup/agents, delta/image/package updates, failover, platform support, migrations, and job scheduling. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -110,7 +110,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Microsoft Entra ID and RBAC for Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-azure-ad |
 | Control IoT Hub access with SAS tokens | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-sas |
 | Authenticate IoT Hub devices with X.509 certificates | https://learn.microsoft.com/en-us/azure/iot-hub/authenticate-authorize-x509 |
-| Manage IoT Hub device identities and connection strings | https://learn.microsoft.com/en-us/azure/iot-hub/create-connect-device |
 | Use Azure IoT Hub identity registry for device management | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-identity-registry |
 | Configure IP filtering rules for Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ip-filtering |
 | Use managed identities with Azure IoT Hub egress | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-managed-identity |
@@ -153,7 +152,6 @@ This skill requires **network access** to fetch documentation content:
 | Non-telemetry event schemas for Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-non-telemetry-event-schema |
 | Configure IoT Hub private endpoints for TLS 1.3 hostnames | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-tls-1-3-update-private-endpoint |
 | Understand and manage Azure IoT Hub IP addresses | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-understand-ip-address |
-| Manage IoT Hub device and module twins via portal and CLI | https://learn.microsoft.com/en-us/azure/iot-hub/manage-device-twins |
 | Reference metrics and logs for monitoring Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/monitor-iot-hub-reference |
 | Use the Azure IoT Hub VS Code extension | https://learn.microsoft.com/en-us/azure/iot-hub/reference-iot-hub-extension |
 | Set up and use IoT Hub message enrichments | https://learn.microsoft.com/en-us/azure/iot-hub/tutorial-message-enrichments |

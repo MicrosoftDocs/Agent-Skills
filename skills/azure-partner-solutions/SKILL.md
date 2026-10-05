@@ -1,9 +1,9 @@
 ---
 name: azure-partner-solutions
-description: Expert knowledge for Azure Partner Solutions development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when connecting Confluent/MongoDB/Neon via Service Connector, configuring Datadog/Dynatrace/Elastic, or designing Palo Alto NGFW with App Gateway, and other Azure Partner Solutions related development tasks.
+description: Expert knowledge for Azure Partner Solutions development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic/New Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Partner Solutions Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L45-L49 | Architectural guidance for integrating Palo Alto Cloud NGFW with Azure Application Gateway, including network design, routing, security, and deployment patterns. |
 | Security | L50-L55 | Managing security for Azure partner services, including Confluent Cloud RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure resources. |
 | Configuration | L56-L69 | Configuring and managing Azure-integrated partner resources (Datadog, Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINXaaS, etc.), including prerequisites, settings, and integrations. |
-| Integrations & Coding Patterns | L70-L74 | Patterns and setup guides for connecting Azure services to external data platforms (Confluent Cloud, MongoDB Atlas, Neon Postgres) using Service Connector and Foundry Agents. |
+| Integrations & Coding Patterns | L70-L74 | Patterns and steps for wiring Azure compute and Foundry agents to external services like Confluent Cloud and MongoDB Atlas using Service Connector and integration best practices. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 43
+- **Updated Pages**: 0
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -58,11 +58,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | *(Unclassified)* | 12 | 27.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal)
-  - Updated: 2025-09-29T08:00:00.000Z → 2026-09-21T17:13:00.000Z
 
 ## Classified Pages
 

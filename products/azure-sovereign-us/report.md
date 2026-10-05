@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Networking (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 38
+- **Updated Pages**: 0
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Networking (use
 | *(Unclassified)* | 9 | 23.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-09-21T08:00:00.000Z
 
 ## Classified Pages
 

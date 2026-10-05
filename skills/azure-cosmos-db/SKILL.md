@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using NoSQL/Mongo/Cassandra/Gremlin/PostgreSQL APIs, change feed, vector search, multi-region HA, or CI/CD deployments, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L141-L191 | Guides for choosing Cosmos DB deployment, scaling, consistency, backup, pricing, and migration options across SQL, MongoDB, Cassandra, Table, and PostgreSQL APIs. |
 | Architecture & Design Patterns | L192-L217 | Patterns and reference architectures for AI agents, change feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL. |
 | Limits & Quotas | L218-L252 | Limits, quotas, and behaviors for Cosmos DB throughput, partitions, backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache, and PostgreSQL clusters. |
-| Security | L253-L318 | Securing Cosmos DB: encryption, keys, RBAC/Entra ID, network isolation (VNet, Private Link, firewalls), auditing, data masking, TLS, and security best practices across all APIs. |
-| Configuration | L319-L445 | Configuring and tuning Azure Cosmos DB and its APIs (NoSQL, Mongo, Cassandra, Gremlin, Table, PostgreSQL): throughput, indexing, backup/restore, monitoring, SDK performance, fleets, emulators, and HA. |
-| Integrations & Coding Patterns | L446-L572 | SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo, Gremlin, and PostgreSQL APIs. |
-| Deployment | L573-L598 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
+| Security | L253-L319 | Securing Cosmos DB across APIs (NoSQL, MongoDB, Cassandra, Gremlin, Table, PostgreSQL): identity/RBAC, networking, encryption/CMK, auditing, policies, TLS, data masking, and Defender protections. |
+| Configuration | L320-L446 | Configuring and tuning Azure Cosmos DB and its APIs (NoSQL, Mongo, Cassandra, Gremlin, Table, PostgreSQL): throughput, indexing, backup/restore, monitoring, SDK performance, fleets, emulators, and HA. |
+| Integrations & Coding Patterns | L447-L573 | SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo, Gremlin, and PostgreSQL APIs. |
+| Deployment | L574-L599 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -314,6 +314,7 @@ This skill requires **network access** to fetch documentation content:
 | Assign Cosmos DB service principal for Cassandra | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/add-service-principal |
 | Configure customer-managed keys for Cassandra | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/customer-managed-keys |
 | Enable LDAP authentication for Cassandra clusters | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/ldap |
+| Apply security best practices to Azure Managed Instance for Apache Cassandra | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/secure-managed-instance-apache-cassandra |
 | Secure Cassandra managed instance access via VPN | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/use-vpn |
 
 ### Configuration

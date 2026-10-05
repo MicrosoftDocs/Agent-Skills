@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
-  security: 'Managing Artifact Signing security: cert storage/rotation, identity validation
-    lifecycle, RBAC roles/assignments, and secure signing of Windows code integrity
-    policies.'
+  security: 'Managing Artifact Signing security: cert handling, identity validation
+    lifecycle, RBAC roles/assignments, and signing Windows code integrity policies
+    securely.'
   decision-making: Pricing and SKU selection for Azure Artifact Signing and guidance
     to migrate from DGSSv2, including plan changes and transition steps.
   configuration: Configuring diagnostic settings for Artifact Signing, enabling and
@@ -14,12 +14,12 @@ category_descriptions:
     signing into build and release pipelines.
 skill_description: Expert knowledge for Azure Artifact Signing development including
   decision making, security, configuration, and integrations & coding patterns. Use
-  when managing cert storage/rotation, RBAC for signing, DGSSv2 migration, diagnostic
+  when handling cert lifecycles, RBAC for signers, DGSSv2 migration, diagnostic logs,
+  or CI/CD signing integration, and other Azure Artifact Signing related development
+  tasks.
+use_when: Use when handling cert lifecycles, RBAC for signers, DGSSv2 migration, diagnostic
   logs, or CI/CD signing integration, and other Azure Artifact Signing related development
   tasks.
-use_when: Use when managing cert storage/rotation, RBAC for signing, DGSSv2 migration,
-  diagnostic logs, or CI/CD signing integration, and other Azure Artifact Signing
-  related development tasks.
 confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifacts
   (use azure-artifacts), Azure Information Protection (use azure-information-protection).
 ---
@@ -55,7 +55,7 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 ### Updated Pages
 
 - [Artifact Signing certificate management](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-certificate-management)
-  - Updated: 2026-01-08T18:12:00.000Z → 2026-09-25T05:12:00.000Z
+  - Updated: 2026-09-25T05:12:00.000Z → 2026-10-01T11:42:00.000Z
 
 ## Classified Pages
 
@@ -66,7 +66,7 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 | [Device Guard Signing Service Migration](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-device-guard-signing-service-migration) | decision-making | 0.70 | Migration-focused article with concrete requirements (Azure tenant ID, subscription ID, new EKU) and steps; fits migration/upgrade decision and planning guidance. |
 | [Renew or delete Artifact Signing identity validation](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-renew-identity-validation) | security | 0.70 | How-to guidance for renewing and deleting Artifact Signing Identity Validations, likely including product-specific roles (Artifact Signing Identity Verifier) and permission requirements that are not generic knowledge. |
 | [Sign a CI policy by using Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-sign-ci-policy) | security | 0.70 | The article is a how-to for signing CI (code integrity) policies using Azure Artifact Signing. It contains product-specific security configuration steps and parameters (e.g., how to prepare and submit CI policy files, required signing operations, and service-specific options) that are unique to this service and not just conceptual security guidance, fitting the security sub-skill. |
-| [Artifact Signing certificate management](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-certificate-management) | security | 0.68 | The page describes product-specific certificate behavior for Azure Artifact Signing, including short-lived certificates, certificate profile–specific EKU values, zero-touch lifecycle management, timestamp countersignatures, and Microsoft’s revocation actions. These are concrete, service-specific security and certificate management details that go beyond generic X.509 knowledge and map to security configuration/behavior for this service. |
+| [Artifact Signing certificate management](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-certificate-management) | security | 0.68 | Describes product-specific certificate attributes (short-lived certs, profile-specific EKUs, timestamp countersignatures), zero-touch lifecycle behavior, and Microsoft’s revocation/threat monitoring actions for Artifact Signing, which are detailed security configuration/behavior patterns unique to this service rather than generic certificate concepts. |
 | [Artifact Signing resources and roles](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-resources-roles) | security | 0.65 | Introduces Artifact Signing-specific resources and roles, including the Identity Verifier role; contains product-specific role semantics and access patterns. |
 | [Set up signing integrations to use Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-signing-integrations) | integrations | 0.65 | How-to article focused on setting up specific signing integrations. Likely includes integration-specific configuration steps, parameter names, and possibly settings unique to Artifact Signing integrations, which qualify as product-specific integration patterns beyond generic tutorials. |
 | [Change the account SKU (pricing tier)](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-change-sku) | decision-making | 0.60 | Discusses changing between Basic and Premium tiers; SKU selection and change behavior are product-specific decision details, even if pricing is external. |

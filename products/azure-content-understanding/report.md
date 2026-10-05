@@ -50,9 +50,9 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 40
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-understanding/azure-content-understanding.csv`
 
@@ -71,19 +71,6 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 | *(Unclassified)* | 16 | 36.4% |
 
 ## Changes
-
-### New Pages
-
-- [Guardrails](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/guardrails)
-
-### Updated Pages
-
-- [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview)
-  - Updated: 2026-08-10T22:02:00.000Z → 2026-09-24T22:18:00.000Z
-- [What are analyzers?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference)
-  - Updated: 2026-08-10T22:02:00.000Z → 2026-09-24T22:18:00.000Z
-- [Foundry model deployments](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments)
-  - Updated: 2026-08-10T22:02:00.000Z → 2026-09-24T22:18:00.000Z
 
 ## Classified Pages
 

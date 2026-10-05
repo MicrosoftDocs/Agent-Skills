@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-04'
 category_descriptions:
   limits-quotas: Limits, quotas, and regional caps for Content Safety/Moderator (image
     & term lists, custom categories, code protected-material checks) and how to configure
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 50
+- **Updated Pages**: 1
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | *(Unclassified)* | 32 | 64.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
+  - Updated: 2026-09-18T22:15:00.000Z → 2026-10-01T17:21:00.000Z
 
 ## Classified Pages
 
@@ -124,8 +129,8 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Text moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/text-moderation-api) | 0.30 | Text moderation overview; summary is conceptual and deprecation-focused, without detailed configs, limits, or troubleshooting mappings. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest) | 0.30 | Encryption at rest overview; summary is high-level and lacks specific encryption configuration options or key management details. |
 | [Use Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.25 | Portal overview (classic) for Content Safety; primarily an interface/feature overview without detailed limits, configs, or troubleshooting mappings in summary. |
-| [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level overview of Azure AI Content Safety; describes what the service does without specific limits, configs, or product-specific numeric details. |
 | [REST API samples in C#](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-rest) | 0.20 | Code samples via REST; summary does not show specific configuration parameters, limits, or error codes. |
 | [Using the client library or REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/client-libraries) | 0.20 | Client library quickstart; summary is conceptual and does not expose product-specific configuration tables or limits. |
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | High-level overview and deprecation notice for Content Moderator; no specific limits, configs, or error details. |
+| [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.10 | Page is a high-level overview of Azure AI Content Safety describing what the service does and its capabilities, without specific limits, configuration parameters, error codes, or detailed decision matrices. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.10 | Release notes/what’s new index without detailed technical tables or configs in the summary; treated as navigation/update listing. |

@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 114
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
@@ -73,11 +73,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 41 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Event replication tasks and applications](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-replicator-functions)
-  - Updated: 2021-09-28T22:03:00.000Z → 2024-06-17T22:05:00.000Z
 
 ## Classified Pages
 

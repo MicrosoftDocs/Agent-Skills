@@ -32,7 +32,9 @@ skill_description: Expert knowledge for Azure Microsoft Discovery development in
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building Discovery shared sessions, Bookshelf indexes, secure RBAC/CMK
   setups, REST jobs, or Docker-based tools, and other Azure Microsoft Discovery related
-  development tasks.
+  development tasks. Not for Azure Portal (use azure-portal), Azure Resource Graph
+  (use azure-resource-graph), Azure Monitor (use azure-monitor), Azure Cost Management
+  (use azure-cost-management).
 use_when: Use when building Discovery shared sessions, Bookshelf indexes, secure RBAC/CMK
   setups, REST jobs, or Docker-based tools, and other Azure Microsoft Discovery related
   development tasks.
@@ -51,9 +53,9 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 1
-- **Unchanged**: 85
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 90
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
 
@@ -73,18 +75,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 | *(Unclassified)* | 31 | 34.4% |
 
 ## Changes
-
-### New Pages
-
-- [Troubleshoot - General issues](https://learn.microsoft.com/en-us/azure/microsoft-discovery/troubleshoot-microsoft-discovery)
-- [Error codes](https://learn.microsoft.com/en-us/azure/microsoft-discovery/troubleshooting-error-code)
-- [Known issues](https://learn.microsoft.com/en-us/azure/microsoft-discovery/known-issues)
-- [Deploy Discovery resources across multiple regions](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-across-regions)
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/microsoft-discovery/faq)
-  - Updated: 2026-09-04T22:14:00.000Z → 2026-09-24T11:41:00.000Z
 
 ## Classified Pages
 

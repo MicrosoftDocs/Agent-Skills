@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 90
+- **Unchanged**: 91
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
@@ -74,10 +74,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | *(Unclassified)* | 33 | 36.3% |
 
 ## Changes
-
-### New Pages
-
-- [Azure IoT Central evolution](https://learn.microsoft.com/en-us/azure/iot-central/core/iot-central-evolution)
 
 ## Classified Pages
 

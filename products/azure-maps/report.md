@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-04'
 category_descriptions:
-  integrations: Patterns and code samples for integrating Azure Maps into web, mobile,
-    REST/SDK apps and Power BI, including layers, drawing, clustering, routing, search,
-    weather, and migrations from Bing/Google.
-  best-practices: Security, copyright attribution, routing/search tuning, accessibility,
-    and performance optimization guidance for building robust Azure Maps web applications.
+  integrations: Patterns and code samples for integrating Azure Maps via Web/REST
+    SDKs, migrating from Bing/Google, rendering and styling data (layers, drawing,
+    clustering, heatmaps), and using Power BI/Spatial IO.
+  best-practices: Guidance on secure auth, required attribution, routing and search
+    tuning, accessibility, and performance optimization when building Azure Maps web
+    apps.
   security: 'Securing Azure Maps: auth methods (keys, Entra ID, SAS), SPA/web/daemon/device
     scenarios, Power BI visual access/residency, and private network access via Private
     Link.'
@@ -14,22 +15,21 @@ category_descriptions:
     support and tile resolution.
   configuration: 'Configuring Azure Maps Web SDK behavior: map styles, layers, markers,
     popups, zoom/tiles, localization, routing models, spatial formats, browser support,
-    and API/service migrations.'
+    and API version migrations.'
   architecture-patterns: Designing Azure architectures for elevation data services
     and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA
     cuOpt for scalable geospatial solutions
-  decision-making: Guidance on Azure Maps pricing, cost planning, and migration from
-    Bing Maps, Google Maps, and Power BI visuals, including routing, imagery, tiles,
-    and SDS replacement with Azure services.
+  decision-making: Guidance on Azure Maps pricing, cost planning, coverage, and how
+    to migrate or replace Bing/Google Maps, Bing SDS, and Power BI maps with Azure
+    Maps services.
 skill_description: Expert knowledge for Azure Maps development including best practices,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when building maps with layers/markers,
-  routing, search/geocoding, weather, or migrating from Bing/Google Maps, and other
-  Azure Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search),
-  Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT
-  Edge (use azure-iot-edge).
-use_when: Use when building maps with layers/markers, routing, search/geocoding, weather,
-  or migrating from Bing/Google Maps, and other Azure Maps related development tasks.
+  and integrations & coding patterns. Use when using Azure Maps Web/REST SDKs, geocoding,
+  routing, traffic, weather tiles, or Power BI visual integrations, and other Azure
+  Maps related development tasks.
+use_when: Use when using Azure Maps Web/REST SDKs, geocoding, routing, traffic, weather
+  tiles, or Power BI visual integrations, and other Azure Maps related development
+  tasks.
 confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure IoT
   (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
   azure-iot-edge).
@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 148
+- **Updated Pages**: 14
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -57,14 +57,45 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 |------|-------|------------|
 | architecture-patterns | 2 | 1.4% |
 | best-practices | 6 | 4.1% |
-| configuration | 20 | 13.5% |
-| decision-making | 9 | 6.1% |
-| integrations | 59 | 39.9% |
-| limits-quotas | 6 | 4.1% |
+| configuration | 24 | 16.2% |
+| decision-making | 11 | 7.4% |
+| integrations | 55 | 37.2% |
+| limits-quotas | 4 | 2.7% |
 | security | 11 | 7.4% |
 | *(Unclassified)* | 35 | 23.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Reacting to events](https://learn.microsoft.com/en-us/azure/azure-maps/map-events)
+  - Updated: 2024-08-30T08:00:00.000Z → 2026-09-30T08:00:00.000Z
+- [Use the drawing tools module](https://learn.microsoft.com/en-us/azure/azure-maps/set-drawing-options)
+  - Updated: 2023-06-30T11:20:00.000Z → 2026-09-30T08:00:00.000Z
+- [React to drawing events](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events)
+  - Updated: 2024-09-05T17:04:00.000Z → 2026-09-30T17:21:00.000Z
+- [Web SDK supported browsers](https://learn.microsoft.com/en-us/azure/azure-maps/supported-browsers)
+  - Updated: 2025-03-31T22:05:00.000Z → 2026-09-30T17:21:00.000Z
+- [Migrate a web app](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-app)
+  - Updated: 2023-09-28T08:00:00.000Z → 2026-09-30T08:00:00.000Z
+- [Migrate a web service](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-services)
+  - Updated: 2023-09-29T17:09:00.000Z → 2026-09-30T08:00:00.000Z
+- [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api)
+  - Updated: 2026-03-28T08:00:00.000Z → 2026-09-30T08:00:00.000Z
+- [Best Practices using Route Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing)
+  - Updated: 2023-03-22T00:00:00.000Z → 2026-09-30T08:00:00.000Z
+- [Web SDK migration guide](https://learn.microsoft.com/en-us/azure/azure-maps/web-sdk-migration-guide)
+  - Updated: 2024-03-05T12:15:00.000Z → 2026-09-30T17:21:00.000Z
+- [Use the Azure Maps map control](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control)
+  - Updated: 2025-02-11T08:00:00.000Z → 2026-09-30T08:00:00.000Z
+- [Use the Azure Maps npm package](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-npm-package)
+  - Updated: 2025-10-01T22:16:00.000Z → 2026-09-30T17:21:00.000Z
+- [Traffic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage)
+  - Updated: 2025-07-02T05:25:00.000Z → 2026-10-02T22:12:00.000Z
+- [Routing coverage](https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage)
+  - Updated: 2025-07-21T22:12:00.000Z → 2026-10-02T22:12:00.000Z
+- [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq)
+  - Updated: 2026-08-06T22:11:00.000Z → 2026-09-30T17:21:00.000Z
 
 ## Classified Pages
 
@@ -72,7 +103,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 |-----------|------|------------|--------|
 | [Azure Maps QPS Rate Limits](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits) | limits-quotas | 0.95 | Explicitly documents per-service QPS limits in tables, describes HTTP 429 behavior when limits are hit, and explains support process for limit increases; these numeric limits and behaviors are product-specific and not generally known from training. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-maps/web-sdk-best-practices) | best-practices | 0.85 | Provides concrete, product-specific recommendations (e.g., which layer types to use for large datasets, configuration choices) that impact performance and behavior. |
-| [Best Practices using Route Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing) | best-practices | 0.82 | Provides concrete guidance on using Route Directions and Route Matrix APIs, including specialized routing options and likely configuration recommendations; clearly a product-specific best-practices guide. |
+| [Best Practices using Route Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing) | best-practices | 0.80 | Explicitly a best practices article for Azure Maps Route service; such content usually includes product-specific recommendations, configuration options, and edge cases for routing and ETA calculations. |
 | [Best Practices using Search Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-search) | best-practices | 0.80 | Explicitly a best-practices article for Azure Maps Search with product-specific DOs/DON’Ts and recommended usage patterns for search endpoints. These are actionable, service-specific recommendations beyond generic search or API usage concepts. |
 | [Connect to a WFS service](https://learn.microsoft.com/en-us/azure/azure-maps/spatial-io-connect-wfs-service) | integrations | 0.80 | Lists supported WFS versions, filter operators, HTTP method constraints, and operations for WfsClient—detailed integration contract information. |
 | [Get information from a coordinate](https://learn.microsoft.com/en-us/azure/azure-maps/map-get-information-from-coordinate) | integrations | 0.80 | Demonstrates calling Reverse Address Search via @azure-rest/maps-search and Fetch, including endpoint usage and parameter patterns unique to Azure Maps. |
@@ -99,10 +130,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Get Traffic Incidents](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-get-traffic-incidents) | integrations | 0.75 | Maps Bing Get Traffic Incidents API to Azure Maps Get Traffic Incident Detail API; includes specific API usage and parameter mapping. |
 | [Get a Static Map](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-get-static-map) | integrations | 0.75 | Explains how to translate Bing Get a Static Map API calls to Azure Maps Get Map Static Image API; includes API-specific parameters and patterns. |
 | [Supported data format details](https://learn.microsoft.com/en-us/azure/azure-maps/spatial-io-supported-data-format-details) | configuration | 0.75 | Details how specific XML tags and WKT geometry types are parsed and written, including format-specific behavior—effectively configuration/contract details. |
-| [Traffic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage) | limits-quotas | 0.75 | Contains tables of which traffic data types (flow, incidents) are available per country/region; these are concrete service capability limits by geography. |
 | [Use data-driven style expressions](https://learn.microsoft.com/en-us/azure/azure-maps/data-driven-style-expressions-web-sdk) | integrations | 0.75 | Documents Azure Maps expression syntax and usage for styling and filtering, including operators and patterns unique to this SDK. |
 | [Use the REST SDK](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-ts-rest-sdk) | integrations | 0.75 | Describes Azure Maps REST client modules, how to load them, and call REST services with product-specific configuration and usage patterns. |
-| [Use the drawing tools module](https://learn.microsoft.com/en-us/azure/azure-maps/set-drawing-options) | integrations | 0.75 | Documents DrawingManager options, behaviors, and integration with DrawingToolbar—product-specific classes and configuration patterns. |
 | [How to secure a daemon application](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-daemon-app) | security | 0.74 | Covers how to host daemon apps securely with Azure Maps, including specific authentication flows, identity configuration, and possibly RBAC roles; this is product-specific security configuration guidance. |
 | [Use private endpoints with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/private-endpoints) | security | 0.72 | Private endpoints and Azure Private Link configuration for Azure Maps typically include product-specific network and security settings (subresource names, DNS patterns, required permissions, and stepwise configuration). This is concrete security configuration guidance rather than a conceptual overview. |
 | [Add a WebGL layer](https://learn.microsoft.com/en-us/azure/azure-maps/webgl-custom-layer) | integrations | 0.70 | Shows how to access the Azure Maps WebGL context and integrate with libraries like three.js/deck.gl using product-specific APIs and lifecycle hooks. |
@@ -128,15 +157,17 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Manage authentication](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication) | security | 0.70 | Describes concrete Azure Maps authentication options (Microsoft Entra ID vs shared key), including account-specific identifiers and how they’re used; likely includes scopes and configuration parameters unique to Azure Maps. |
 | [Manage consent](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-consent) | configuration | 0.70 | Explains configuring global data processing settings via portal, REST APIs, and ARM templates to comply with residency laws; involves product-specific configuration options and parameters. |
 | [Migrate Azure Maps Render 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-render-v1-api) | decision-making | 0.70 | Migration article with a specific retirement date and guidance on moving from Render 1.0 to 2024-04-01; this is product- and version-specific knowledge that affects which API version to choose and when, fitting decision-making around migration paths. |
-| [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api) | integrations | 0.70 | Migration guidance between Search API versions typically includes endpoint changes, parameter mappings, and behavior differences that are specific to Azure Maps and not generally known to LLMs. These are concrete, product-specific integration details rather than conceptual overview content. |
-| [React to drawing events](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events) | integrations | 0.70 | Provides a table of DrawingManager events and how they fire during user interactions, which are product-specific event contracts. |
-| [Reacting to events](https://learn.microsoft.com/en-us/azure/azure-maps/map-events) | integrations | 0.70 | Provides a list of supported map events and how to subscribe to them using Azure Maps APIs, which are concrete, product-specific event integration details. |
+| [Migrate a web service](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-services) | integrations | 0.70 | Described as a mapping between Google Maps service APIs and Azure Maps service APIs, including a table of equivalent APIs and noting unavailable services; this is product-specific integration guidance with concrete API correspondences. |
+| [React to drawing events](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events) | integrations | 0.70 | Provides a table of all DrawingManager events and how to react to them, including event identifiers and usage patterns that are specific to the Azure Maps Web SDK integration. |
+| [Reacting to events](https://learn.microsoft.com/en-us/azure/azure-maps/map-events) | integrations | 0.70 | Lists all supported Azure Maps map events and shows how to wire them via the Web SDK, including event names and handler patterns that are product-specific integration details. |
 | [Read and write spatial data](https://learn.microsoft.com/en-us/azure/azure-maps/spatial-io-read-write-spatial-data) | configuration | 0.70 | Provides a table of supported spatial file formats for read/write operations, effectively a configuration matrix for what the module accepts and outputs. |
-| [Routing coverage](https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage) | limits-quotas | 0.70 | Routing coverage article describes which regions support routing, routing with traffic, and truck routing; these are concrete service capability limits by geography. |
+| [Routing coverage](https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage) | decision-making | 0.70 | Page contains region-specific coverage information for routing, routing with traffic, and truck routing, which is product-specific data used to decide if and how to use Azure Maps Route service in particular markets. |
 | [Show traffic](https://learn.microsoft.com/en-us/azure/azure-maps/map-show-traffic) | integrations | 0.70 | Contains Azure Maps–specific traffic options (trafficflow values and behavior) and configuration patterns for incident and flow data layers. |
 | [The Azure Maps Power BI visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-get-started) | integrations | 0.70 | Explains how to configure and use the Azure Maps Power BI visual with service-specific options and requirements (e.g., license, environment). |
+| [Traffic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage) | decision-making | 0.70 | Page provides detailed, region-specific coverage tables indicating where traffic flow and incident data is available or unavailable. This is expert, product-specific knowledge used to decide whether Azure Maps traffic features can be used in a given country/region. |
 | [Understanding layers](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-understanding-layers) | integrations | 0.70 | Details available layer types and their behaviors within the Azure Maps visual, which are specific configuration and usage patterns. |
-| [Web SDK supported browsers](https://learn.microsoft.com/en-us/azure/azure-maps/supported-browsers) | configuration | 0.70 | Lists supported browsers and explains atlas.isSupported behavior, which is a product-specific capability matrix and detection configuration. |
+| [Use the drawing tools module](https://learn.microsoft.com/en-us/azure/azure-maps/set-drawing-options) | configuration | 0.70 | Describes drawing manager and DrawingToolbar options for Azure Maps Web SDK, including specific option names and behaviors, which are product-specific configuration details. |
+| [Web SDK migration guide](https://learn.microsoft.com/en-us/azure/azure-maps/web-sdk-migration-guide) | configuration | 0.70 | Version migration guide for a specific SDK typically details breaking changes, new configuration options, and code adjustments unique to Azure Maps Web SDK Map Control versions. |
 | [Zoom levels and tile grid](https://learn.microsoft.com/en-us/azure/azure-maps/zoom-levels-and-tile-grid) | configuration | 0.70 | Explains zoom levels, tile grid, and coordinate conversions with code samples; includes product-specific behavior and parameters for tile addressing. |
 | [Add HTML markers](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-custom-html) | configuration | 0.68 | Explains HTML markers, their performance implications, and how they differ from WebGL layers; includes specific APIs and a key gotcha about DOM overhead, which is product-specific configuration and behavior knowledge. |
 | [Calculate a Truck Route](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-calculate-truck-route) | decision-making | 0.68 | The migration article will map Bing Maps truck routing parameters and behaviors to Azure Maps Route Directions, including how to represent vehicle dimensions, cargo types, and constraints. This is expert, product-specific migration and selection guidance rather than generic routing theory. |
@@ -146,8 +177,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Add a bubble layer](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-bubble-layer) | configuration | 0.66 | Shows how to render point data as bubble layers and use filters like geometry-type; includes specific configuration expressions and options unique to Azure Maps. |
 | [Add a symbol layer](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-pin) | configuration | 0.66 | Provides detailed usage of symbol layers, including data source binding and performance considerations; product-specific configuration and behavior details. |
 | [Create a data source](https://learn.microsoft.com/en-us/azure/azure-maps/create-data-source-web-sdk) | configuration | 0.66 | Explains GeoJSON and vector tile data sources with concrete API usage and options; these are specific configuration patterns for data handling. |
-| [Use the Azure Maps npm package](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-npm-package) | integrations | 0.66 | Describes using the azure-maps-control npm package with specific configuration and usage patterns; this is product-specific integration guidance. |
-| [Web SDK migration guide](https://learn.microsoft.com/en-us/azure/azure-maps/web-sdk-migration-guide) | configuration | 0.66 | Migration guide between Web SDK versions with API and behavior changes; includes mapping of old to new APIs and configuration options, which is version-specific configuration knowledge. |
 | [Add a line layer](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-line-layer) | integrations | 0.65 | Contains product-specific layer properties, filter expression patterns, and configuration details for rendering LineString and Polygon geometries that go beyond generic mapping concepts. |
 | [Add a polygon extrusion layer](https://learn.microsoft.com/en-us/azure/azure-maps/map-extruded-polygon) | integrations | 0.65 | Describes Azure Maps–specific polygon extrusion layer behavior and how Circle geometries are transformed, including SDK class usage patterns not generally known. |
 | [Add a polygon layer](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-shape) | integrations | 0.65 | Provides concrete Azure Maps Web SDK usage patterns, including Polygon/MultiPolygon handling and circle-to-polygon rendering behavior, which are product-specific coding details. |
@@ -160,16 +189,18 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Java REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-java-sdk) | integrations | 0.65 | Java SDK developer guide with supported APIs and Java version baselines; includes SDK-specific methods and configuration details for integrating Azure Maps into Java apps. |
 | [Make your app accessible](https://learn.microsoft.com/en-us/azure/azure-maps/map-accessibility) | best-practices | 0.65 | Contains Azure Maps–specific accessibility features and actionable tips (keyboard navigation, screen reader behavior) that go beyond generic accessibility theory. |
 | [Manage access](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-manage-access) | security | 0.65 | Covers how designers and tenant admins manage use of the Azure Maps visual; likely includes product-specific access controls and admin settings, fitting security/management configuration. |
+| [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api) | configuration | 0.65 | Migration guide between specific API versions typically includes endpoint names, parameters, and behavior changes unique to Azure Maps Search, which are configuration/integration details not generally known. |
+| [Migrate a web app](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-app) | integrations | 0.65 | Tutorial likely includes concrete API-to-API mappings, parameter names, and code patterns specific to migrating from Google Maps v3 JavaScript SDK to Azure Maps Web SDK, which are product-specific integration details beyond generic knowledge. |
 | [Power BI Azure Maps Visual Data Residency](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-data-residency) | security | 0.65 | Contains product-specific behavior about how the Azure Maps Power BI visual automatically routes requests based on the Power BI tenant location to meet data residency requirements, which is detailed implementation knowledge not obvious from general training data. It focuses on security/compliance (data residency) configuration/behavior, though without numeric limits. |
 | [Python REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk) | integrations | 0.65 | Python SDK developer guide listing supported APIs (Search, Route, Render, Geolocation) and how to call them; contains SDK-specific classes and methods that are integration patterns unique to this product. |
 | [Render coverage](https://learn.microsoft.com/en-us/azure/azure-maps/render-coverage) | limits-quotas | 0.65 | Includes specific numeric details about tile coverage and resolution (for example, highest resolution tile size in square meters), which are service-specific constraints not generally known. |
 | [Show right attribution](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-show-attribution) | best-practices | 0.65 | Specifies where and how attribution must be displayed when using the Render API (e.g., lower right corner, per-tile updates); these are product-specific compliance requirements and DO/DON'T guidance. |
 | [Supported map styles](https://learn.microsoft.com/en-us/azure/azure-maps/supported-map-styles) | configuration | 0.65 | Describes supported map style identifiers (road, satellite_road_labels, etc.); these are specific configuration values for the service. |
 | [Understanding Azure Maps Transactions](https://learn.microsoft.com/en-us/azure/azure-maps/understanding-azure-maps-transactions) | decision-making | 0.65 | Explains which Azure Maps API calls generate billable vs non-billable transactions and how they’re calculated for cost planning; this is product-specific billing/usage guidance that informs service usage decisions and is unlikely to be fully known from training. |
+| [Use the Azure Maps map control](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control) | configuration | 0.65 | How-to for using the web map control likely includes specific initialization options, parameters, and configuration patterns (including deprecation timelines) unique to Azure Maps Web SDK. |
+| [Use the Azure Maps npm package](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-npm-package) | configuration | 0.65 | Describes using the azure-maps-control npm package, which typically involves specific package names, import patterns, and configuration options unique to this library. |
 | [Weather coverage](https://learn.microsoft.com/en-us/azure/azure-maps/weather-coverage) | limits-quotas | 0.65 | Weather coverage page defines where weather data is available; region-by-region capability is a form of service limit not inferable generically. |
-| [Migrate a web app](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-app) | integrations | 0.64 | Focuses on migrating Google Maps JS v3 apps to Azure Maps Web SDK with comparative code samples and API usage patterns; contains product-specific integration details that go beyond generic SDK usage. |
-| [Migrate a web service](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-services) | integrations | 0.64 | Provides a mapping table between Google Maps service APIs and Azure Maps REST APIs, including which Google APIs lack Azure equivalents; this is concrete integration and migration knowledge specific to these products. |
-| [Use the Azure Maps map control](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control) | integrations | 0.64 | Shows concrete usage of the Map Control, including initialization options, camera, styles, and service integration; contains product-specific API configuration details. |
+| [Web SDK supported browsers](https://learn.microsoft.com/en-us/azure/azure-maps/supported-browsers) | configuration | 0.65 | Documents the atlas.isSupported helper and lists supported browsers and WebGL requirements, which are product-specific capability and environment configuration details. |
 | [Android SDK migration guide](https://learn.microsoft.com/en-us/azure/azure-maps/android-sdk-migration-guide) | integrations | 0.63 | Gives product-specific code and feature migration patterns from the retired native Android SDK to the Web SDK in a WebView, which is detailed integration guidance not derivable from generic knowledge. |
 | [iOS SDK migration guide](https://learn.microsoft.com/en-us/azure/azure-maps/ios-sdk-migration-guide) | integrations | 0.63 | Similar to Android guide, contains concrete patterns for replacing native iOS SDK usage with Web SDK in a WebView, including API and feature mapping; this is specific integration guidance. |
 | [Add a popup](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-popup) | configuration | 0.62 | Describes popup templates, events, and reuse patterns with concrete API usage; product-specific configuration details for UI behavior. |
@@ -203,6 +234,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Analyze trip data using Snap to Roads](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-snap-to-road) | 0.30 | Snap to Roads tutorial; example of using the API with Fabric notebooks, not a reference of parameters, limits, or troubleshooting. |
 | [Analyze weather data using Jupyter Notebooks](https://learn.microsoft.com/en-us/azure/azure-maps/weather-service-tutorial) | 0.30 | Tutorial joining sensor and weather data; focused on ML scenario and example API usage, not expert configuration or limits. |
 | [EV routing using Jupyter Notebooks](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-ev-routing) | 0.30 | EV routing tutorial in Jupyter; primarily example code and workflow, not structured configuration references or limits. |
+| [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq) | 0.30 | Only described as a general FAQ about Azure Maps Weather service data and features; no clear indication of numeric limits, configuration tables, error codes, or decision matrices. Without evidence of such specifics, it’s treated as conceptual/support content rather than expert configuration or troubleshooting knowledge. |
 | [Weather service concepts](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-concepts) | 0.30 | Conceptual introduction to weather service; likely high-level concepts rather than detailed configuration or limits. |
 | [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary) | 0.25 | Glossary of terms; definitional, not expert configuration, limits, or troubleshooting content. |
 | [Provide data feedback](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-feedback-tool) | 0.25 | Feedback tool article is about reporting map data issues; process-oriented, not about configuration, limits, or troubleshooting of the platform itself. |
@@ -222,4 +254,3 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.10 | Quickstart tutorial showing how to build an interactive map; focuses on step-by-step usage rather than detailed configuration parameters, limits, or troubleshooting matrices. |
 | [Manage accounts](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys) | 0.10 | Portal how-to for creating and deleting Azure Maps accounts; appears procedural without deep configuration or constraints. |
 | [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.10 | High-level overview of Azure Maps services and capabilities without detailed limits, configuration tables, or product-specific numeric constraints. |
-| [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq) | - | FAQ-style page about Azure Maps Weather service; based on the description it likely covers general questions about data and features rather than detailed limits, configuration parameters, error codes, or decision matrices. Without evidence of specific numeric limits, config tables, or error-code mappings, it doesn't meet any sub-skill detection criteria. |

@@ -1,9 +1,9 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK with Python/Q#, OpenQASM or hybrid jobs, Rigetti/IonQ targets, QIR jobs, or Bicep/CLI workspace deploys, and other Azure Quantum related development tasks.
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK with Python/Q#, OpenQASM or hybrid jobs, Rigetti/IonQ targets, QIR jobs, or Bicep/CLI workspace deploys, and other Azure Quantum related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L58-L62 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
 | Limits & Quotas | L63-L70 | Managing Azure Quantum API lifecycles, usage quotas, session limits/timeouts, and Rigetti hardware target constraints and capacity. |
 | Security | L71-L81 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
-| Configuration | L82-L96 | Configuring Azure Quantum tools and targets: CLI workspaces, VS Code/QDK setup, simulators, hardware/error models, resource estimator, and IonQ/neutral atom device integration. |
-| Integrations & Coding Patterns | L97-L110 | Using the Azure Quantum QDK with Python/Q#, including connecting workspaces, submitting and visualizing circuits, running OpenQASM and hybrid jobs, and configuring simulator/noise and resource models. |
-| Deployment | L111-L115 | Deploying Azure Quantum workspaces via Bicep templates and submitting QIR-based quantum jobs using Azure CLI, including setup, configuration, and command workflows. |
+| Configuration | L82-L95 | Configuring Azure Quantum tools and targets: CLI workspaces, VS Code/QDK setup, simulators, hardware/error models, resource estimator, and IonQ/neutral atom device integration. |
+| Integrations & Coding Patterns | L96-L109 | Using the Azure Quantum QDK with Python/Q#, including connecting workspaces, submitting and visualizing circuits, running OpenQASM and hybrid jobs, and configuring simulator/noise and resource models. |
+| Deployment | L110-L114 | Deploying Azure Quantum workspaces via Bicep templates and submitting QIR-based quantum jobs using Azure CLI, including setup, configuration, and command workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -92,7 +92,6 @@ This skill requires **network access** to fetch documentation content:
 | Define error correction and magic state models for resource estimation | https://learn.microsoft.com/en-us/azure/quantum/qre-build-error-correction-models |
 | Build custom application models for the Quantum resource estimator | https://learn.microsoft.com/en-us/azure/quantum/qre-custom-applications |
 | Access and customize Quantum resource estimator output | https://learn.microsoft.com/en-us/azure/quantum/qre-estimation-results |
-| Use QDK commands and features in VS Code | https://learn.microsoft.com/en-us/azure/quantum/vscode-qdk-reference |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

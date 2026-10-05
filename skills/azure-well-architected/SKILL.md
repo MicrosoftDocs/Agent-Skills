@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD, or mission-critical workloads and optimizing Azure services by WAF pillars, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/AZs, or configuring core Azure services, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Recommendations | L44-L117 | Guidance on cost, reliability, performance, security, and operational excellence best practices for Azure workloads, including optimization, monitoring, automation, and sustainable cloud operations. |
 | Design Principles | L118-L133 | High-level Azure design guidance: cost, performance, reliability, security/Zero Trust, sustainability, operational excellence, capacity resilience, and patterns for AI, HPC, and SaaS workloads. |
 | Tradeoffs | L134-L143 | Guidance on weighing cost, reliability, performance, security, and operations tradeoffs in Azure architectures, including regions/AZ choices and cross-pillar design decisions. |
-| Service Guides | L144-L179 | Service-specific Azure Well-Architected (WAF) guidance: design, configure, secure, and optimize individual services (compute, data, networking) using WAF pillars and best practices. |
-| Workload Patterns | L180-L224 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
-| Assessment Questions | L225-L236 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
+| Service Guides | L144-L180 | Service-specific Azure Well-Architected and WAF best practices for designing, configuring, and operating core services (compute, networking, storage, data, and integration) for reliability, security, and performance. |
+| Workload Patterns | L181-L225 | Design patterns, reference architectures, and end-to-end guidance for AI, HPC, mission-critical, SaaS, and sustainable workloads on Azure, including platforms, data, ops, security, and governance. |
+| Assessment Questions | L226-L237 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -165,6 +165,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply WAF best practices to Azure Local deployments | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local |
 | Apply Well-Architected practices to Azure Log Analytics | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics |
 | Apply WAF principles to Azure Machine Learning deployments | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-machine-learning |
+| Apply WAF best practices to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-managed-redis |
 | Optimize Azure NetApp Files with WAF-aligned configurations | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-netapp-files |
 | Implement Azure Service Bus messaging with WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-bus |
 | Design Azure Service Fabric clusters using WAF principles | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-fabric |

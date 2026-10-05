@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   configuration: Configuring Azure ML components, compute, networking, AutoML, YAML
     schemas, monitoring, and Prompt Flow so you can build, train, deploy, and manage
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 549
+- **Updated Pages**: 1
+- **Unchanged**: 552
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -78,14 +78,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Updated Pages
 
-- [Add users](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-add-users?view=azureml-api-2)
-  - Updated: 2025-03-06T23:17:00.000Z → 2026-09-21T17:09:00.000Z
-- [Troubleshoot data labeling projects](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-data-labeling?view=azureml-api-2)
-  - Updated: 2025-03-10T08:00:00.000Z → 2026-09-21T17:09:00.000Z
-- [Label images and text](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-label-data?view=azureml-api-2)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-09-21T17:09:00.000Z
-- [Outsource labeling tasks](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-outsource-data-labeling?view=azureml-api-2)
-  - Updated: 2026-03-26T22:23:00.000Z → 2026-09-21T17:09:00.000Z
+- [Compute instance image release notes](https://learn.microsoft.com/en-us/azure/machine-learning/azure-machine-learning-ci-image-release-notes?view=azureml-api-2)
+  - Updated: 2026-06-30T17:08:00.000Z → 2026-10-01T08:00:00.000Z
 
 ## Classified Pages
 
@@ -640,7 +634,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [What is prompt flow?](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2) | 0.10 | High-level overview of Azure ML prompt flow, including retirement notice and conceptual description of what prompt flow is. No detailed configuration parameters, limits, or troubleshooting content evident from the summary. |
 | [Batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2) | - | Conceptual overview of Azure ML batch endpoints and inferencing; no specific limits, configuration tables, error codes, or product-specific expert details. |
 | [Bookmark your favorite data assets](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2) | - | Appears to be a how-to/tutorial on creating and managing data assets with CLI/SDK, without detailed configuration tables, limits, quotas, or product-specific error/diagnostic mappings. Likely general usage guidance rather than expert-only reference information. |
-| [Compute instance image release notes](https://learn.microsoft.com/en-us/azure/machine-learning/azure-machine-learning-ci-image-release-notes?view=azureml-api-2) | - | Release notes for compute instance images typically list version changes, package updates, and OS patches but not limits, configuration matrices, or troubleshooting mappings as defined in the sub-skill types. Without specific numeric limits, config tables, or error-resolution content, it doesn't match any expert-knowledge category. |
+| [Compute instance image release notes](https://learn.microsoft.com/en-us/azure/machine-learning/azure-machine-learning-ci-image-release-notes?view=azureml-api-2) | - | Release notes for compute instance images typically list version changes, package updates, and OS patches, but not the kinds of structured limits, configuration parameter tables, error-code troubleshooting, or decision matrices defined in the sub-skill types. Without evidence of such structured expert data (limits, configs, RBAC roles, etc.), this page is treated as non-expert for the purposes of this classification. |
 | [Deploy models for scoring in batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-model-deployments?view=azureml-api-2) | - | How-to tutorial for deploying a model to batch endpoints; focuses on example workflow rather than detailed configuration matrices, limits, or troubleshooting data. |
 | [Manage compute sessions](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-compute-sessions?view=azureml-api-2) | - | Page describes how to use the session management pane conceptually and gives general performance advice, but does not list specific configuration parameters, limits/quotas, error codes, or product-specific settings with values. No expert-knowledge details per the defined categories. |
 | [Migrate client applications](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2) | - | Duplicate of index 0; focuses on lifecycle description and general capabilities, not expert configuration or constraints. |

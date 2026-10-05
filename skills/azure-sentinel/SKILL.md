@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, analytics rules, playbooks, ASIM/UEBA, or Sentinel data lake jobs, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, KQL analytics rules, Logic Apps playbooks, data lake jobs, or SAP integration, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L50 | Diagnosing and fixing Microsoft Sentinel ingestion, connector, KQL, notebook, MCP, SAP, and analytics rule errors, plus monitoring and troubleshooting scheduled rule execution. |
 | Best Practices | L51-L74 | Best practices for designing, tuning, and operating Microsoft Sentinel: automation, playbooks, KQL hunting, analytics rules, UEBA, ASIM, watchlists, SOC metrics, and solution quality. |
-| Decision Making | L75-L118 | Guidance for planning Sentinel deployments, costs, data tiers, and connectors, plus detailed strategies to migrate from legacy SIEMs (Splunk, QRadar, ArcSight) and optimize detections and automation. |
-| Architecture & Design Patterns | L119-L130 | Designing Microsoft Sentinel architectures: workspace/tenant layouts, SIEM patterns, BCDR/resiliency, data lake/graph designs, and coexisting with or migrating from other SIEMs. |
-| Limits & Quotas | L131-L143 | Limits, quotas, pricing, and availability of Sentinel features (rules, data lake, MCP), plus constraints and safe management of search jobs and watchlists, and removal implications. |
-| Security | L144-L163 | Configuring secure access, permissions, encryption, and RBAC for Microsoft Sentinel, including playbooks, data lake, storage connectors, SAP integration, and automated attack disruption across clouds. |
-| Configuration | L164-L297 | Configuring Microsoft Sentinel: data connectors and ASIM schemas, analytics rules, automation/playbooks, TI and SAP integrations, data lake jobs, health/auditing, and solution/workbook setup. |
-| Integrations & Coding Patterns | L298-L343 | Patterns and APIs for integrating Sentinel with logs, threat intel, MCP/AI tools, Logic Apps playbooks, data lake, connectors, and external platforms like AWS, Entra ID, Purview. |
-| Deployment | L344-L357 | Deploying and customizing Microsoft Sentinel content and solutions (rules, automation, notebooks, SAP, Copilot agents) via CI/CD, ARM templates, data lakes, and hybrid/on-prem onboarding. |
+| Decision Making | L75-L117 | Guidance for planning Sentinel deployments, costs, data tiers, and connectors, plus detailed strategies to migrate from legacy SIEMs (Splunk, QRadar, ArcSight) and optimize detections and automation. |
+| Architecture & Design Patterns | L118-L129 | Designing Microsoft Sentinel architectures: workspace/tenant layouts, SIEM patterns, BCDR/resiliency, data lake/graph designs, and coexisting with or migrating from other SIEMs. |
+| Limits & Quotas | L130-L142 | Limits, quotas, pricing, and availability of Sentinel features (rules, data lake, MCP), plus constraints and safe management of search jobs and watchlists, and removal implications. |
+| Security | L143-L162 | Configuring secure access, permissions, encryption, and RBAC for Microsoft Sentinel, including playbooks, data lake, storage connectors, SAP integration, and automated attack disruption across clouds. |
+| Configuration | L163-L296 | Configuring Microsoft Sentinel: data connectors and ASIM schemas, analytics rules, automation/playbooks, TI and SAP integrations, data lake jobs, health/auditing, and solution/workbook setup. |
+| Integrations & Coding Patterns | L297-L342 | Patterns and APIs for integrating Sentinel with logs, threat intel, MCP/AI tools, Logic Apps playbooks, data lake, connectors, and external platforms like AWS, Entra ID, Purview. |
+| Deployment | L343-L357 | Deploying and customizing Sentinel solutions and content (rules, automation, notebooks, SAP, Copilot agents) via CI/CD, ARM, data lake, and multi-cloud/Stack Hub onboarding. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -89,7 +89,6 @@ This skill requires **network access** to fetch documentation content:
 | Choose which logs to ingest into Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-log-ingestion-guidance |
 | Choose detection lifecycle management options in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/detection-lifecycle-management-recommendations |
 | Enroll workspaces in Sentinel simplified pricing tiers | https://learn.microsoft.com/en-us/azure/sentinel/enroll-simplified-pricing-tier |
-| Select Microsoft Sentinel features by Azure cloud | https://learn.microsoft.com/en-us/azure/sentinel/feature-availability |
 | Plan Microsoft Sentinel deployment for data residency | https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency |
 | Choose Sentinel platform components for ISV solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/which-platform-components-to-build |
 | Choose Microsoft Sentinel log retention tiers | https://learn.microsoft.com/en-us/azure/sentinel/log-plans |
@@ -348,6 +347,7 @@ This skill requires **network access** to fetch documentation content:
 | Customize repository-based content deployments in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/ci-cd-custom-deploy |
 | Onboard Azure Stack Hub virtual machines to Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/connect-azure-stack |
 | Deploy Sentinel data lake from Microsoft Defender portal | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboard-defender |
+| Check Microsoft Sentinel feature availability by cloud | https://learn.microsoft.com/en-us/azure/sentinel/feature-availability |
 | Deploy Sentinel analytics rules via ARM templates | https://learn.microsoft.com/en-us/azure/sentinel/import-export-analytics-rules |
 | Deploy Sentinel automation rules via ARM templates | https://learn.microsoft.com/en-us/azure/sentinel/import-export-automation-rules |
 | Package and deploy Sentinel graph/notebook solutions | https://learn.microsoft.com/en-us/azure/sentinel/isv/package-publish-notebook-graph-solutions |

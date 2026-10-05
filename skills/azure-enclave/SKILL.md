@@ -1,9 +1,9 @@
 ---
 name: azure-enclave
-description: Expert knowledge for Azure Enclave development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring enclave apps with AVD/AKS, RBAC/MI/CMK, Bicep/ARM deploys, ExpressRoute/VPN, or DR/migration, and other Azure Enclave related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
+description: Expert knowledge for Azure Enclave development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building DMZ/AVD/AKS enclave apps, configuring RBAC/CMK, deploying via Bicep/ARM, or setting up ExpressRoute/VPN, and other Azure Enclave related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Enclave Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L41 | Diagnosing and fixing common Azure Enclave issues, including setup/attestation failures, runtime errors, connectivity problems, and frequently asked troubleshooting questions. |
+| Troubleshooting | L36-L41 | Diagnosing and resolving common Azure Enclave issues, including error codes, configuration problems, deployment failures, and runtime/attestation troubleshooting. |
 | Best Practices | L42-L47 | Design, security, and operational best practices for Azure Enclave, including secure architecture patterns and how to harden and manage admin VMs safely. |
 | Decision Making | L48-L53 | Planning disaster recovery and business continuity for Azure Enclave, and strategies, steps, and considerations for migrating existing Azure workloads into an Enclave environment. |
 | Architecture & Design Patterns | L54-L60 | Architectural patterns for Azure Enclave apps: DMZ-based public access, integrating with AVD/AKS, and secure data ingress design for enclave environments. |
@@ -37,7 +37,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Resolve common questions and issues in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq |
-| Troubleshoot common Azure Enclave errors and issues | https://learn.microsoft.com/en-us/azure/enclave/troubleshoot |
+| Diagnose and fix common Azure Enclave errors | https://learn.microsoft.com/en-us/azure/enclave/troubleshoot |
 
 ### Best Practices
 | Topic | URL |

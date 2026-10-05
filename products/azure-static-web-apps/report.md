@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-10-04'
 category_descriptions:
   integrations: How to connect Static Web Apps APIs to Azure databases (Cosmos DB,
     SQL, MySQL, PostgreSQL), including Mongoose usage, connection strings, and typical
@@ -10,29 +10,31 @@ category_descriptions:
   decision-making: 'Guidance on key architecture choices: Functions hosting model,
     using Front Door/CDN edge, Next.js deployment options, and comparing Free vs Standard
     Static Web Apps plans.'
-  security: 'Configuring auth, roles, secrets, and access: Entra ID/Graph roles, auth
-    providers, user info, deployment tokens, Key Vault/managed identity, password
-    protection, and private endpoints.'
+  security: Configuring auth, roles, and user info; securing apps with Entra ID, custom
+    auth, passwords, private endpoints, Key Vault, and managing deployment tokens
+    for Static Web Apps.
   deployment: Deploying Static Web Apps via GitHub/GitLab/Bitbucket/CLI/ARM/Bicep,
     configuring CI/CD, preview environments, traffic splitting, and optional Azure
     Front Door CDN setup
-  limits-quotas: Details on Static Web Apps plan quotas, resource and behavior limits,
-    supported languages/frameworks, and available runtime versions across tiers.
+  limits-quotas: Details on plan quotas, resource and file size limits, supported
+    languages/runtimes, and behavioral constraints for Azure Static Web Apps across
+    tiers.
   troubleshooting: Diagnosing and fixing common Static Web Apps deployment and runtime
     issues, including build failures, configuration problems, and troubleshooting
     tools/logs.
 skill_description: Expert knowledge for Azure Static Web Apps development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when wiring SWA APIs to Azure DBs, configuring
-  custom domains/DNS, auth/roles, CI/CD, or plan limits, and other Azure Static Web
-  Apps related development tasks. Not for Azure App Service (use azure-app-service),
+  custom domains/backends, Entra auth, CI/CD, or plan limits, and other Azure Static
+  Web Apps related development tasks. Not for Azure App Service (use azure-app-service),
   Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
-  Azure Web PubSub (use azure-web-pubsub).
-use_when: Use when wiring SWA APIs to Azure DBs, configuring custom domains/DNS, auth/roles,
-  CI/CD, or plan limits, and other Azure Static Web Apps related development tasks.
+  Azure Logic Apps (use azure-logic-apps).
+use_when: Use when wiring SWA APIs to Azure DBs, configuring custom domains/backends,
+  Entra auth, CI/CD, or plan limits, and other Azure Static Web Apps related development
+  tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Web
-  PubSub (use azure-web-pubsub).
+  (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Logic
+  Apps (use azure-logic-apps).
 ---
 # Azure Static Web Apps Crawl Report
 
@@ -46,8 +48,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 79
+- **Updated Pages**: 2
+- **Unchanged**: 77
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
 
@@ -66,6 +68,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ## Changes
 
+### Updated Pages
+
+- [Custom authentication](https://learn.microsoft.com/en-us/azure/static-web-apps/authentication-custom)
+  - Updated: 2024-07-08T22:33:00.000Z → 2026-09-30T05:12:00.000Z
+- [Supported languages and runtimes](https://learn.microsoft.com/en-us/azure/static-web-apps/languages-runtimes)
+  - Updated: 2025-02-28T18:05:00.000Z → 2026-10-02T22:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -78,7 +87,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [About custom domains](https://learn.microsoft.com/en-us/azure/static-web-apps/custom-domain) | configuration | 0.80 | Custom domain setup with TXT token requirement and options; involves DNS record types and service-specific behaviors, which are concrete configuration details. |
 | [Authentication and authorization](https://learn.microsoft.com/en-us/azure/static-web-apps/authentication-authorization) | security | 0.80 | Details Static Web Apps auth behavior, provider setup, and auth-related configuration unique to the service; includes provider-specific settings and flows. |
 | [Build configuration](https://learn.microsoft.com/en-us/azure/static-web-apps/build-configuration) | deployment | 0.80 | Explains YAML configuration structure and options for GitHub Actions/Azure Pipelines; includes tables of settings and constraints specific to Static Web Apps deployment. |
-| [Custom authentication](https://learn.microsoft.com/en-us/azure/static-web-apps/authentication-custom) | security | 0.80 | Covers custom OpenID Connect provider registration, configuration fields, and behavior when overriding managed auth; highly product-specific security configuration. |
 | [Publish with a Bicep file](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-bicep) | deployment | 0.80 | Provides Bicep definitions and parameters for Static Web Apps and optional Functions linkage; product-specific IaC deployment details. |
 | [Publish with an ARM template](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-azure-resource-manager) | deployment | 0.80 | Shows ARM schema and parameters for provisioning Static Web Apps; includes resource types and properties unique to this service. |
 | [Set up a custom domain](https://learn.microsoft.com/en-us/azure/static-web-apps/custom-domain-azure-dns) | configuration | 0.80 | Shows how to configure Azure DNS records (CNAME, TXT, etc.) to map domains to Static Web Apps; DNS record values and steps are product-specific configuration. |
@@ -93,6 +101,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Configuration](https://learn.microsoft.com/en-us/azure/static-web-apps/database-configuration) | configuration | 0.75 | Covers firewall configuration (allow Azure resources, not specific IPs) and managed identity setup; these are concrete, product-specific configuration requirements. |
 | [Deploy to Azure](https://learn.microsoft.com/en-us/azure/static-web-apps/static-web-apps-cli-deploy) | deployment | 0.75 | Documents the SWA CLI deploy command and scenarios; includes product-specific deployment behavior and constraints. |
 | [GitLab](https://learn.microsoft.com/en-us/azure/static-web-apps/gitlab) | deployment | 0.75 | Shows GitLab CI configuration for deploying to Static Web Apps; product- and provider-specific deployment patterns. |
+| [Custom authentication](https://learn.microsoft.com/en-us/azure/static-web-apps/authentication-custom) | security | 0.72 | Page describes product-specific authentication configuration for Azure Static Web Apps, including how to override managed authentication with custom registrations, support for OpenID Connect providers, behavior when multiple external providers are registered, and the constraint that enabling custom registrations disables preconfigured providers and is only available in certain environments. These are concrete, product-specific security/auth details that go beyond generic knowledge. |
 | [About preview environments](https://learn.microsoft.com/en-us/azure/static-web-apps/preview-environments) | deployment | 0.70 | Documents behavior of PR-based preview environments and URL patterns; includes environment lifecycle and naming specifics. |
 | [Add a CDN](https://learn.microsoft.com/en-us/azure/static-web-apps/front-door-manual) | deployment | 0.70 | Tutorial for integrating Azure Front Door as CDN, including comparison with managed enterprise-edge integration; contains product-specific deployment configuration. |
 | [Azure API Management](https://learn.microsoft.com/en-us/azure/static-web-apps/apis-api-management) | configuration | 0.70 | Details how routes starting with /api are proxied, how products are created per app, and multi-app linkage; these are concrete integration behaviors and settings. |
@@ -122,12 +131,12 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Start the emulator](https://learn.microsoft.com/en-us/azure/static-web-apps/static-web-apps-cli-emulator) | configuration | 0.70 | Describes emulator behavior and configuration for mimicking Static Web Apps in local development; includes service-specific CLI usage patterns. |
 | [Supported metrics](https://learn.microsoft.com/en-us/azure/static-web-apps/metrics) | configuration | 0.70 | Lists specific metrics available for managed Functions and how to query them; product-specific observability surface. |
 | [Use external providers](https://learn.microsoft.com/en-us/azure/static-web-apps/external-providers) | deployment | 0.70 | Guides configuring Static Web Apps deployments with non-native CI/CD systems; includes provider-specific pipeline configuration patterns. |
+| [Supported languages and runtimes](https://learn.microsoft.com/en-us/azure/static-web-apps/languages-runtimes) | limits-quotas | 0.68 | A 'supported languages and runtimes' page for a specific service typically lists exact runtime versions, language versions, and sometimes environment constraints for both front-end and API, often in table form. These are precise compatibility limits (which versions are supported vs. not) that function as service-specific constraints and are not reliably inferable from training data, fitting the limits-quotas category. |
 | [Install](https://learn.microsoft.com/en-us/azure/static-web-apps/static-web-apps-cli-install) | deployment | 0.65 | Lists specific installation methods, prerequisites, and version requirements (including a dated breaking change) for SWA CLI; product-specific deployment tooling details. |
 | [Next.js](https://learn.microsoft.com/en-us/azure/static-web-apps/nextjs) | decision-making | 0.65 | Explains hybrid vs static deployment models; likely includes feature comparison and guidance on when to choose each model, which is decision-focused. |
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/monitor) | configuration | 0.65 | Explains how to connect Application Insights to Static Web Apps APIs and notes separate pricing; includes service-specific monitoring configuration. |
 | [Set up password protection](https://learn.microsoft.com/en-us/azure/static-web-apps/password-protection) | security | 0.65 | Describes Static Web Apps–specific password protection feature, its scope, and configuration behavior; security feature unique to this service. |
 | [Enterprise-grade edge](https://learn.microsoft.com/en-us/azure/static-web-apps/enterprise-edge) | decision-making | 0.60 | Explains enterprise-grade edge capabilities, global footprint, and security/performance benefits; helps decide when to enable this SKU-level feature with quantified edge locations. |
-| [Supported languages and runtimes](https://learn.microsoft.com/en-us/azure/static-web-apps/languages-runtimes) | limits-quotas | 0.60 | Documents which languages and runtime versions are supported for front-end and API; effectively a capability matrix with version constraints. |
 
 ## Unclassified Pages
 

@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 32
+- **Updated Pages**: 0
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-attestation/azure-attestation.csv`
 
@@ -57,11 +57,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 11 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [TPM attestation overview](https://learn.microsoft.com/en-us/azure/attestation/tpm-attestation-concepts)
-  - Updated: 2024-08-07T16:44:00.000Z → 2026-09-24T17:36:00.000Z
 
 ## Classified Pages
 

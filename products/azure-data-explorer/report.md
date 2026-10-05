@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-10-04'
 category_descriptions:
   security: 'Securing Azure Data Explorer: authn/z (RBAC, principals, Entra apps,
     Conditional Access), encryption, managed identities, network isolation, policies,
@@ -21,26 +21,26 @@ category_descriptions:
   decision-making: Guidance on ADX capacity planning, SKU and compute choices, scaling,
     cost optimization, reservations, business continuity, confidential compute, streaming
     ingestion, and Elasticsearch migration.
-  troubleshooting: Diagnosing and fixing ADX cluster health, creation, connection,
-    private endpoint, ingestion, and DB/table operation errors, including interpreting
-    ingestion error codes and using Resource Health.
+  troubleshooting: Diagnosing and fixing ADX cluster health, connection, creation,
+    ingestion, dashboard, DB/table, private endpoint, and resource health issues,
+    including error codes and common failure patterns.
   configuration: 'Configuring ADX environments: database/table policies, retention/cache,
     cross-tenant Event Hubs, Kusto emulator, plugins, monitoring, schema sync, T-SQL,
     and web UI settings/shortcuts.'
 skill_description: Expert knowledge for Azure Data Explorer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing ADX (RBAC, managed identities), automating cluster/schema deployment,
-  integrating via ODBC/JDBC, tuning ingestion, or designing DR/multitenant architectures,
-  and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics
-  (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics),
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks).
-use_when: Use when securing ADX (RBAC, managed identities), automating cluster/schema
-  deployment, integrating via ODBC/JDBC, tuning ingestion, or designing DR/multitenant
-  architectures, and other Azure Data Explorer related development tasks.
+  Use when securing ADX (RBAC/MI), automating cluster/schema deploys, tuning ingestion/queries,
+  or integrating via ODBC/JDBC/Power BI, and other Azure Data Explorer related development
+  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight
+  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
+  (use azure-stream-analytics).
+use_when: Use when securing ADX (RBAC/MI), automating cluster/schema deploys, tuning
+  ingestion/queries, or integrating via ODBC/JDBC/Power BI, and other Azure Data Explorer
+  related development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Stream Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight),
-  Azure Databricks (use azure-databricks).
+  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
+  Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Data Explorer Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 199
+- **Updated Pages**: 1
+- **Unchanged**: 198
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -76,11 +76,16 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ## Changes
 
+### Updated Pages
+
+- [Ingestion error codes](https://learn.microsoft.com/en-us/azure/data-explorer/error-codes)
+  - Updated: 2023-12-21T08:00:00.000Z → 2026-09-30T11:03:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Ingestion error codes](https://learn.microsoft.com/en-us/azure/data-explorer/error-codes) | troubleshooting | 0.90 | Explicitly a list of ingestion error codes with meanings; this is classic troubleshooting content mapping error codes to causes and likely resolutions. |
+| [Ingestion error codes](https://learn.microsoft.com/en-us/azure/data-explorer/error-codes) | troubleshooting | 0.90 | Page lists specific Azure Data Explorer ingestion error codes, their meanings, and how to use product-specific diagnostic commands (.show ingestion failures, diagnostic logs) to investigate failures, which matches symptom → cause → solution troubleshooting guidance. |
 | [Troubleshoot dashboard tile errors](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-troubleshoot-tile-errors) | troubleshooting | 0.86 | The page is organized by dashboard tile error types and explains, for each error category, the likely cause and specific next steps to resolve it. This is symptom → cause → solution guidance with product-specific behaviors and error conditions, which fits the troubleshooting sub-skill. |
 | [Automatic stop of inactive clusters](https://learn.microsoft.com/en-us/azure/data-explorer/auto-stop-clusters) | limits-quotas | 0.85 | Defines inactivity as no ingestion or queries for 5 days and states the interval is fixed and non-configurable, plus exceptions. This is a concrete time-based limit/behavior unique to the service. |
 | [Manage cluster permissions](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-permissions) | security | 0.85 | Describes RBAC roles like AllDatabasesAdmin/Viewer/Monitor and their scopes. This is product-specific security configuration with named roles and access semantics. |

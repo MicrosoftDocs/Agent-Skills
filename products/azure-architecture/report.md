@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   solution-ideas: End-to-end solution patterns for AI, data, security, and infrastructure
     on Azure—covering MLOps, multi-agent AI, analytics, IoT, mainframe migration,
     and layered security architectures.
-  reference-architectures: End-to-end Azure reference solutions for ML, data platforms,
+  reference-architectures: End-to-end Azure solution blueprints for ML, data platforms,
     networking, hybrid/Arc, AKS/microservices, SAP, security, and mission-critical,
     highly available enterprise architectures.
   example-workloads: 'End-to-end reference architectures for real-world Azure workloads:
-    data/analytics, AI, IoT, AKS, networking, security, mainframe/SAP migrations,
-    VDI, and enterprise app deployments.'
+    data/analytics, AKS and networking, hybrid/VM/VDI, mainframe and SAP migrations,
+    IoT/Edge, security, BCDR, and governance patterns.'
   best-practices: Best practices for designing, securing, monitoring, scaling, and
     operating Azure solutions, including RAG/AI, APIs, AKS, networking, DR, multitenancy,
     SAP, IoT, and Event Hubs/Functions.
@@ -22,37 +22,37 @@ category_descriptions:
   migration-guides: Mapping and migrating from AWS/Google Cloud/on-prem (incl. Oracle,
     Kafka, EKS) to Azure, comparing services, architectures, security, governance,
     and cost/ops equivalents
-  design-patterns: 'Patterns for resilient, scalable, secure cloud apps: messaging,
-    integration, data access, API gateways, identity, network, and migration designs
-    using Azure services.'
+  design-patterns: Design and implementation guidance for cloud design patterns (messaging,
+    resiliency, integration, security, data, and networking) using Azure services
+    and reference architectures
   architecture-styles: Guidance on choosing and designing Azure app architectures
     (big compute, big data, event-driven, microservices, N-tier, web-queue-worker)
     with patterns, components, and best practices.
 skill_description: Expert guidance for designing Azure solutions using Azure Architecture.
   Covers reference architectures, solution ideas, design patterns, technology choices,
   architecture styles, best practices, anti-patterns, example workloads, and migration
-  guides. Use when designing Azure AI/RAG, AKS microservices, data/analytics, IoT,
-  or SAP/mainframe migration solutions, and other Azure Architecture related development
+  guides. Use when designing AKS/microservices, hybrid/Arc, SAP or mainframe migrations,
+  IoT/Edge, or mission-critical BCDR, and other Azure Architecture related development
   tasks.
-use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, IoT,
-  or SAP/mainframe migration solutions, and other Azure Architecture related development
+use_when: Use when designing AKS/microservices, hybrid/Arc, SAP or mainframe migrations,
+  IoT/Edge, or mission-critical BCDR, and other Azure Architecture related development
   tasks.
 ---
 # Azure Architecture Crawl Report
 
 ## Summary
 
-- **Total Pages**: 497
-- **Fetched**: 497
+- **Total Pages**: 499
+- **Fetched**: 499
 - **Fetch Failed**: 0
-- **Classified**: 345
-- **Unclassified**: 152
+- **Classified**: 346
+- **Unclassified**: 153
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 17
-- **Unchanged**: 478
-- **Deleted Pages**: 7
+- **New Pages**: 4
+- **Updated Pages**: 5
+- **Unchanged**: 490
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
 ## Classification Statistics
@@ -61,68 +61,41 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 |------|-------|------------|
 | anti-patterns | 11 | 2.2% |
 | architecture-styles | 8 | 1.6% |
-| best-practices | 53 | 10.7% |
-| design-patterns | 47 | 9.5% |
-| example-workloads | 82 | 16.5% |
+| best-practices | 53 | 10.6% |
+| design-patterns | 47 | 9.4% |
+| example-workloads | 83 | 16.6% |
 | migration-guides | 28 | 5.6% |
-| reference-architectures | 49 | 9.9% |
+| reference-architectures | 49 | 9.8% |
 | solution-ideas | 36 | 7.2% |
 | technology-choices | 31 | 6.2% |
-| *(Unclassified)* | 152 | 30.6% |
+| *(Unclassified)* | 153 | 30.7% |
 
 ## Changes
 
 ### New Pages
 
-- [Deploy apps with AKS Hybrid and Edge using GitOps](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/aks-hybrid-azure-local)
-- [Baseline Azure Machine Learning inference reference architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-azure-machine-learning-inference)
+- [Agentic systems](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/considerations/agentic-systems)
+- [Event-driven cache updates with Azure Managed Redis and Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/event-driven-cache-updates-azure-managed-redis-cosmos-db)
+- [Azure Local hyperconverged baseline](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-baseline)
+- [Azure Local hyperconverged storage switchless](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-switchless)
 
 ### Updated Pages
 
-- [Gateway Offloading](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)
-  - Updated: 2025-12-09T06:03:00Z → 2026-09-25T05:03:00.000Z
-- [Health Endpoint Monitoring](https://learn.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring)
-  - Updated: 2025-12-09T06:03:00Z → 2026-09-26T05:03:00.000Z
-- [Index Table](https://learn.microsoft.com/en-us/azure/architecture/patterns/index-table)
-  - Updated: 2025-12-09T06:03:00Z → 2026-09-25T05:03:00.000Z
-- [Materialized View](https://learn.microsoft.com/en-us/azure/architecture/patterns/materialized-view)
-  - Updated: 2025-12-09T06:03:00Z → 2026-09-25T05:03:00.000Z
 - [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-09-14T17:35:00.000Z → 2026-09-21T17:41:00.000Z
-- [Claim Check](https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check)
-  - Updated: 2025-12-09T06:03:00Z → 2026-09-25T05:03:00.000Z
-- [Migrate AIX workloads with Skytap](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/migrate-aix-workloads-to-azure-with-skytap)
-  - Updated: 2025-09-20T05:02:00Z → 2026-09-24T05:03:00Z
-- [Migrate IBM i series to Azure with Skytap](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/migrate-ibm-i-series-to-azure-with-skytap)
-  - Updated: 2025-09-20T05:02:00Z → 2026-09-24T05:03:00Z
-- [Refactor mainframe with Raincode](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/app-modernization/raincode-reference-architecture)
-  - Updated: 2026-08-18T17:35:00Z → 2026-09-24T05:03:00Z
-- [High-performance computing](https://learn.microsoft.com/en-us/azure/architecture/guide/compute/high-performance-computing)
-  - Updated: 2026-03-12T17:42:00.000Z → 2026-09-25T05:03:00.000Z
-- [AKS on Azure Local baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/aks-baseline)
-  - Updated: 2026-08-18T17:35:00Z → 2026-09-25T05:03:00Z
-- [Troubleshoot networking](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/troubleshoot-network-aks)
-  - Updated: 2024-03-12T17:27:00.000Z → 2026-09-24T05:03:00.000Z
-- [Vector search](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/vector-search)
-  - Updated: 2026-08-05T05:02:00.000Z → 2026-09-21T17:41:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ai-get-started)
-  - Updated: 2026-08-25T17:32:00.000Z → 2026-09-25T17:43:00.000Z
-- [Messaging](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging)
-  - Updated: 2026-09-17T05:02:00.000Z → 2026-09-24T17:35:00.000Z
-- [Multilayered protection for Azure VMs](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/multilayered-protection-azure-vm)
-  - Updated: 2026-08-18T17:35:00Z → 2026-09-21T17:41:00Z
-- [Azure Sandbox](https://learn.microsoft.com/en-us/azure/architecture/guide/azure-sandbox/azure-sandbox)
-  - Updated: 2026-04-24T17:33:00.000Z → 2026-09-25T05:03:00.000Z
+  - Updated: 2026-09-21T17:41:00.000Z → 2026-09-28T17:33:00.000Z
+- [Scheduler Agent Supervisor](https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor)
+  - Updated: 2025-12-09T06:03:00Z → 2026-09-29T05:02:00.000Z
+- [Application Insights](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/application-insights)
+  - Updated: 2025-08-29T17:33:00.000Z → 2026-10-02T05:04:00.000Z
+- [Azure Key Vault](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/key-vault)
+  - Updated: 2026-09-14T17:35:00.000Z → 2026-10-02T05:04:00.000Z
+- [Mainframe data replication with Connect](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/mainframe-replication-precisely-connect)
+  - Updated: 2025-11-21T18:42:00Z → 2026-10-01T17:32:00Z
 
 ### Deleted Pages
 
-- ~~Deploy apps with AKS enabled by Azure Arc on Azure Local~~ (https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/aks-hybrid-azure-local)
-- ~~IBM z/OS migration with Avanade AMT~~ (https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/avanade-amt-zos-migration)
-- ~~Extend mainframes to digital channels by using standards-based REST APIs~~ (https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/extend-mainframes-rest-apis)
-- ~~Refactor Adabas & Natural systems~~ (https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/refactor-adabas-aks)
-- ~~Rehost Adabas & Natural applications~~ (https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/rehost-adabas-software-ag)
-- ~~Unisys ClearPath MCP virtualization on Azure~~ (https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/unisys-clearpath-forward-mainframe-rehost)
-- ~~Unisys ClearPath Forward OS 2200 enterprise server virtualization on Azure~~ (https://learn.microsoft.com/en-us/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure)
+- ~~Azure Local baseline~~ (https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-baseline)
+- ~~Azure Local storage switchless~~ (https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-switchless)
 
 ## Classified Pages
 
@@ -168,6 +141,7 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Retry](https://learn.microsoft.com/en-us/azure/architecture/patterns/retry) | design-patterns | 0.95 | Retry is a classic cloud design pattern; page under /patterns/ with context/problem, solution, and implementation guidance for transient failures. |
 | [Retry Storm](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/retry-storm/) | anti-patterns | 0.95 | Named Retry Storm antipattern with detection and remediation (smart retries, circuit breakers, telemetry). |
 | [Saga](https://learn.microsoft.com/en-us/azure/architecture/patterns/saga) | design-patterns | 0.95 | URL contains patterns/, describes the named Saga design pattern with context/problem, solution, when to use, and implementation considerations for data consistency in microservices. This is detailed, reusable expert guidance beyond generic LLM knowledge. |
+| [Scheduler Agent Supervisor](https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor) | design-patterns | 0.95 | The page is under the patterns/ path and describes a named design pattern (Scheduler Agent Supervisor) with context/problem, solution, and usage guidance. It provides implementation considerations for coordinating distributed actions as a single logical operation, which are not purely conceptual and qualify as expert pattern knowledge. |
 | [Sequential Convoy](https://learn.microsoft.com/en-us/azure/architecture/patterns/sequential-convoy) | design-patterns | 0.95 | The page is in the patterns/ path and describes a named design pattern (Sequential Convoy) with structured sections like context/problem and solution, guidance on when to use it, and trade-offs for processing ordered message groups in distributed systems. This is reusable, implementation-focused expert guidance beyond generic conceptual content. |
 | [Sharding](https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding) | design-patterns | 0.95 | This is a named design pattern page (Sharding) under /patterns/. It follows the standard pattern structure with context/problem, solution, when to use, and trade-offs, and includes Azure-oriented implementation considerations. That makes it a design-patterns page with expert, reusable guidance beyond generic conceptual info. |
 | [Sidecar](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar) | design-patterns | 0.95 | This page presents the Sidecar (Sidekick) pattern as a named design pattern, including context/problem, solution, when to use, and trade-offs for isolating cross-cutting concerns in separate processes or containers. It matches the design-patterns URL and structure and provides detailed implementation guidance, qualifying as expert knowledge. |
@@ -180,6 +154,7 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Federated Identity](https://learn.microsoft.com/en-us/azure/architecture/patterns/federated-identity) | design-patterns | 0.94 | The page is in the patterns/ path and describes the Federated Identity design pattern with structured sections like context/problem, solution, and when to use, including implementation considerations and trade-offs for delegating authentication to external IdPs. This is specialized architectural guidance beyond generic conceptual content, fitting the design-patterns category. |
 | [Gatekeeper](https://learn.microsoft.com/en-us/azure/architecture/patterns/gatekeeper) | design-patterns | 0.94 | URL is under patterns/, describes the named Gatekeeper pattern with context/problem, solution, when to use, and implementation considerations. It provides concrete guidance on using a dedicated broker component to validate and sanitize requests, which is specialized design-pattern knowledge. |
 | [Gateway Aggregation](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation) | design-patterns | 0.94 | URL is under patterns/, describes the named Gateway Aggregation pattern with context/problem, solution, when to use, and trade-offs. It includes implementation considerations for aggregating multiple backend requests via a gateway, which is expert-level design-pattern guidance. |
+| [Azure Local hyperconverged baseline](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-baseline) | reference-architectures | 0.93 | Reference architecture (baseline, reference-architectures/hybrid) for Azure Local with detailed guidance on node counts, connectivity, storage-switched networking, and HA considerations. Intended as a production-ready baseline with specific topology and configuration recommendations. |
 | [Improper Instantiation](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/improper-instantiation/) | anti-patterns | 0.92 | Page is under antipatterns/, describes the named 'Improper Instantiation' antipattern with problem context, symptoms, and remediation guidance. It focuses on what not to do and how to fix it, which aligns directly with the anti-patterns sub-skill definition. |
 | [Microservices architecture on AKS](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices) | reference-architectures | 0.92 | URL contains reference-architectures/containers/aks-microservices and the article describes a deployable microservices architecture on AKS, including infrastructure and DevOps considerations, recommended networking (Azure CNI with Cilium), and production configuration guidance. This fits the reference-architectures criteria. |
 | [AKS baseline for multi-region clusters](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-multi-region/aks-multi-cluster) | reference-architectures | 0.90 | URL is under reference-architectures/containers and describes a multiregion AKS baseline implementation. These AKS baseline pages typically include detailed architecture diagrams, specific Azure services (AKS, networking, identity), configuration guidance, and production-ready recommendations for multi-region active/active deployments, which constitute expert deployment knowledge. |
@@ -190,7 +165,7 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Automate SAP workloads by using SUSE on Azure](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/sap-workload-automation-suse) | solution-ideas | 0.90 | URL contains solution-ideas/articles and the article is explicitly labeled a solution idea. It presents a conceptual architecture for using SUSE SAP automation on Azure, describing major components and scenario-specific guidance without deep deployment details, matching solution-ideas. |
 | [Autoscaling](https://learn.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling) | best-practices | 0.90 | Focused best-practices article (URL contains best-practices/auto-scaling) with specific DOs/DON’Ts and implementation guidance for autoscaling in Azure environments, which is detailed operational expertise rather than high-level concepts. |
 | [Azure Data Factory mission critical architecture](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/azure-data-factory-mission-critical) | reference-architectures | 0.90 | URL contains mission-critical; provides specific changes and recommendations for mission-critical workloads aligned with CAF guidance. |
-| [Azure Local baseline](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-baseline) | reference-architectures | 0.90 | Baseline reference architecture URL with detailed cluster design, component breakdown, and production-ready recommendations for Azure Local infrastructure. |
+| [Azure Local hyperconverged storage switchless](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-switchless) | reference-architectures | 0.90 | Extends the Azure Local baseline reference architecture with a specific switchless storage topology for 3–4 node deployments. Contains detailed deployment and networking guidance for a production-ready configuration, matching the reference-architectures category. |
 | [Backends for Frontends](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends) | design-patterns | 0.90 | patterns/backends-for-frontends describes the Backends for Frontends pattern with context, solution, and usage guidance—canonical design pattern content. |
 | [Background jobs](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs) | best-practices | 0.90 | Located under best-practices and provides concrete DOs/DON’Ts and implementation guidance for background jobs (hosting options, reliability, scaling, event-driven vs scheduled). This is cross-cutting architectural guidance with actionable recommendations, fitting best-practices and containing detailed, Azure-specific implementation advice. |
 | [Baseline Azure Machine Learning inference reference architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-azure-machine-learning-inference) | reference-architectures | 0.90 | Described explicitly as a baseline reference architecture for Azure Machine Learning online inference with dev/stage/prod environments, private networking, and separation of responsibilities. As a baseline- prefixed architecture article, it typically includes detailed component diagrams, specific Azure services and configurations, and production-ready deployment guidance, matching the reference-architectures criteria. |
@@ -206,7 +181,6 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Dynamic AI agents at scale pattern](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ai-agents-at-scale) | solution-ideas | 0.90 | URL path contains /solution-ideas/, article is labeled as a solution idea and describes the 'Dynamic AI Agents at Scale Pattern' for selecting and orchestrating agents using Microsoft Foundry, Azure AI Search, and Azure OpenAI. It provides scenario-specific architecture and guidance without full production deployment details, fitting the solution-ideas category. |
 | [Geode](https://learn.microsoft.com/en-us/azure/architecture/patterns/geodes) | design-patterns | 0.90 | patterns/geodes describes the Geode pattern for geographically distributed active-active backend nodes, with latency and availability trade-offs—design-patterns. |
 | [Implement a secure hybrid network](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) | reference-architectures | 0.90 | DMZ reference architecture with Azure Firewall and hybrid connectivity, including detailed network layout and security configuration guidance. |
-| [Mainframe data replication with Connect](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/mainframe-replication-precisely-connect) | example-workloads | 0.90 | URL contains example-scenario/mainframe and the article focuses on a specific product (Precisely Connect) for real-time CDC-based replication to Azure targets, providing a concrete workload implementation, which fits example-workloads. |
 | [Mainframe data replication with RDRS](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/mainframe-data-replication-azure-rdrs) | example-workloads | 0.90 | URL contains example-scenario/mainframe and the article details using Rocket Data Replicate and Sync for mainframe data replication and CDC into Azure data platform services, which is a concrete workload scenario matching example-workloads. |
 | [Migrate a web app by using API Management](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/apim-api-scenario) | example-workloads | 0.90 | Example scenario (example-scenario/apps) for an e-commerce travel company; gives concrete implementation details for migrating a legacy web app with API Management and PaaS hosting, fitting the example-workloads category. |
 | [Modern data warehouse for small business](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/small-medium-data-warehouse) | example-workloads | 0.90 | Under /example-scenario/data/, focuses on SMB-specific modernization paths with concrete services and progressive implementation details. |
@@ -224,7 +198,6 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Refactor mainframe with Raincode](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/app-modernization/raincode-reference-architecture) | reference-architectures | 0.90 | URL contains reference-architectures/, describes a production-ready rehosting architecture for mainframe COBOL using Raincode on Azure with detailed components and deployment guidance, fitting the reference architecture criteria rather than a generic pattern or overview. |
 | [SAP BW/4HANA in Linux on Azure](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines) | reference-architectures | 0.90 | URL contains reference-architectures/sap and the article focuses on a high-availability, small-scale production SAP BW/4HANA application tier on Azure, with proven practices and HA configuration guidance. This is a production-ready SAP reference architecture with Azure-specific implementation details. |
 | [SAP HANA scale-up on Linux](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-hana-for-linux-virtual-machines) | reference-architectures | 0.90 | URL contains reference-architectures/sap and the article provides proven practices for SAP HANA in a highly available, scale-up environment with disaster recovery on Azure, focusing on the database layer. This is a detailed, production-ready reference architecture with specific HA/DR guidance. |
-| [Scheduler Agent Supervisor](https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor) | design-patterns | 0.90 | Named Scheduler Agent Supervisor pattern under /patterns/ with problem/solution structure and resiliency-focused implementation guidance. |
 | [Static Content Hosting](https://learn.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting) | design-patterns | 0.90 | Static Content Hosting is presented as a named pattern under /patterns/ with solution description and implementation guidance for cloud storage delivery. |
 | [Storage](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/storage) | migration-guides | 0.90 | URL path contains aws-professional/, article targets organizations migrating from AWS to Azure or using multicloud and compares Azure Storage to S3, EBS, EFS, Glacier. This is explicit cross-cloud service mapping and migration guidance, matching migration-guides. |
 | [Stream processing](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/stream-processing) | technology-choices | 0.90 | Explicitly compares stream processing options with selection criteria and capability matrix, under technology-choices/. |
@@ -248,7 +221,6 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Analytics](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/analytics) | migration-guides | 0.86 | AWS-professional path and content focuses on detailed service mapping between AWS and Azure analytics (data ingestion, lakes, warehouses, streaming, BI). This is a cross-cloud comparison used during migration/transition, with concrete equivalence guidance that LLMs are unlikely to fully know from training. |
 | [Azure Data Factory baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/azure-data-factory-on-azure-landing-zones-baseline) | reference-architectures | 0.86 | URL path includes 'architecture/azure-data-factory-...-baseline', and the summary explicitly calls out a baseline implementation aligned with Azure landing zone guidance. This kind of baseline architecture article typically includes detailed diagrams, specific Azure services (Data Factory, Databricks, SQL Server, Power BI), network topology (hub-and-spoke), and deployment guidance with an example implementation repo. That combination matches the reference-architectures criteria rather than a high-level solution idea. |
 | [Azure Data Factory enterprise hardened architecture](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/azure-data-factory-enterprise-hardened) | reference-architectures | 0.86 | Builds on baseline with explicit NFRs, enterprise capabilities, and hardened configuration; production-focused architecture with detailed recommendations. |
-| [Azure Local storage switchless](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-switchless) | reference-architectures | 0.86 | Builds on Azure Local baseline reference architecture with specific design changes for storage switchless deployments and deployment-focused guidance. |
 | [Azure files secured by AD DS](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/azure-files-on-premises-authentication) | example-workloads | 0.86 | Example-scenario URL and detailed hybrid storage setup (Azure Files via private endpoints secured by on-prem AD DS) imply concrete implementation guidance, including network, identity, and share configuration that goes beyond high-level concepts. |
 | [Baseline Microsoft Foundry chat architecture in an Azure landing zone](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-landing-zone) | reference-architectures | 0.86 | Builds directly on the baseline Foundry chat reference architecture and describes how to deploy that generative AI workload in an Azure landing zone with centrally managed platform resources. This is deployment-focused, production-oriented architecture guidance with environment and resource-scoping details, fitting the reference-architectures category. |
 | [Baseline web application with zone redundancy](https://learn.microsoft.com/en-us/azure/architecture/web-apps/app-service/architectures/baseline-zone-redundant) | reference-architectures | 0.86 | Baseline reference architecture with Application Gateway, WAF, Private Link, and PaaS integration; production-ready with detailed network/security design. |
@@ -260,6 +232,7 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Host name preservation](https://learn.microsoft.com/en-us/azure/architecture/best-practices/host-name-preservation) | best-practices | 0.86 | The page is under best-practices/, gives concrete DO/DON'T guidance for preserving the original HTTP host name when using reverse proxies with Azure services, and discusses specific implementation behaviors (cookies, redirects, authentication issues). This is actionable, service-specific guidance that goes beyond generic concepts and fits the best-practices category. |
 | [Hub-spoke topology with Virtual WAN](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke-virtual-wan-architecture) | reference-architectures | 0.86 | Describes a production-ready hub-spoke topology using Azure Virtual WAN with hub VNETs, spoke VNETs, branches, and remote users. As part of the Architecture Center networking section, it includes detailed architecture, specific Azure services and configurations, and deployment-focused guidance, matching the reference-architectures criteria. |
 | [IoT Hub analytics with Azure Data Explorer](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/iot-azure-data-explorer) | solution-ideas | 0.86 | URL path contains solution-ideas/, and the page describes a scenario-specific architecture using Azure Data Explorer and IoT Hub with a conceptual diagram and guidance on how the services work together. It goes beyond pure marketing/overview by giving concrete architectural composition for near real-time IoT analytics, which qualifies as expert, scenario-specific solution guidance but not as a full reference architecture with deployment details. |
+| [Mainframe data replication with Connect](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/mainframe-replication-precisely-connect) | example-workloads | 0.86 | Example scenario (example-scenario/ path) with detailed, vendor-specific implementation of real-time CDC replication from mainframe and midrange systems into Azure data stores. Includes concrete architecture, service wiring, and operational guidance that goes beyond generic concepts. |
 | [Messaging](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | migration-guides | 0.86 | The page is part of the aws-professional path and provides detailed, service-level comparisons between AWS and Azure messaging options (email, queues, pub/sub, event routing, streaming). It includes Azure equivalents for specific AWS services and guidance on choosing Azure services based on message type, delivery guarantees, ordering, throughput, and consumer model. This is expert, migration-focused knowledge that fits the migration-guides category. |
 | [Migrate AIX workloads with Skytap](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/migrate-aix-workloads-to-azure-with-skytap) | example-workloads | 0.86 | URL contains example-scenario/, focuses on a concrete AIX-to-Skytap-on-Azure migration with detailed architecture and implementation specifics (LPARs, integration with Azure web app, Skytap usage patterns), going beyond high-level concepts and reflecting real customer best practices. |
 | [Migrate EKS workloads to AKS](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/migrate) | migration-guides | 0.86 | URL path contains aws-professional/eks-to-aks/migrate, and the page focuses on concrete migration strategies and considerations for moving stateless and stateful workloads from Amazon EKS to Azure AKS. This is a cross-cloud migration guide with platform-specific steps and gotchas that go beyond generic conceptual content, matching the migration-guides criteria. |
@@ -358,6 +331,7 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [Deploy an Azure Arc-enabled SQL managed instance for DR](https://learn.microsoft.com/en-us/azure/architecture/hybrid/arc-sql-managed-instance-disaster-recovery) | example-workloads | 0.78 | Scenario-specific Arc-enabled SQL MI disaster recovery architecture across two non-Azure sites with implementation guidance based on ArcBox for DataOps. |
 | [DevSecOps for infrastructure as code](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/devsecops-infrastructure-as-code) | solution-ideas | 0.78 | URL path contains solution-ideas and the description explicitly calls it a solution idea with an architecture for a DevSecOps pipeline using GitHub and IaC. It shows how multiple Azure services integrate in this scenario and provides scenario-specific implementation guidance, which goes beyond generic concepts and into expert architectural know-how, but does not appear to include full deployment scripts or sizing like a reference architecture. |
 | [Enhanced-security hybrid: web access](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-web) | example-workloads | 0.78 | Example-scenario URL and hybrid messaging focus indicate a concrete implementation for securing Outlook on the web/Exchange Control Panel with Microsoft Entra MFA and hybrid Exchange; these pages typically include detailed topology, identity flows, and configuration specifics beyond generic concepts. |
+| [Event-driven cache updates with Azure Managed Redis and Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/event-driven-cache-updates-azure-managed-redis-cosmos-db) | example-workloads | 0.78 | Describes a concrete implementation for asynchronously updating Azure Managed Redis from Cosmos DB change feed using Azure Functions and App Service. Provides specific architecture and flow details for this workload, more detailed than a solution idea but not a generic reference architecture. |
 | [First layer of defense: Azure security](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense) | solution-ideas | 0.78 | URL path contains solution-ideas/, and the description states it is a solution idea used to visualize major components for a typical implementation. It describes how multiple Azure security services work together as part of a layered security architecture. This goes beyond generic marketing and provides scenario-specific architectural guidance, but remains higher-level than a full reference architecture (no explicit mention of SKUs, deployment repos, or sizing tables). |
 | [High availability for multitier AKS apps](https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-high-availability) | best-practices | 0.78 | The page provides concrete HA implementation guidance for AKS multitier apps, including a checklist to identify and remove single points of failure and specific Kubernetes HA constructs. This is cross-cutting, prescriptive guidance with actionable recommendations (DOs/mitigation steps) rather than a generic overview, fitting the best-practices category more than any other. It is not a reference architecture, solution idea, or pattern, and focuses on implementation details for reliability. |
 | [High-availability deployment](https://learn.microsoft.com/en-us/azure/architecture/web-apps/app-service-environment/architectures/app-service-environment-high-availability-deployment) | reference-architectures | 0.78 | Azure Architecture Center page for an enterprise deployment using App Service Environment in multiple availability zones. It describes a recommended, production-ready architecture focused on resiliency, with zone-redundant deployment guidance and ASE-specific configuration details. The URL path is under architectures/ and app-service-environment-high-availability-deployment, indicating a concrete implementation rather than a conceptual solution idea. |
@@ -491,7 +465,6 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [SAP S/4HANA in Linux on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana) | 0.50 | SAP S/4HANA on Azure HA/DR guidance is highly specialized, but this page is a proven practices guide rather than a reference architecture, solution idea, pattern, or other defined sub-skill type. The URL path (guide/sap) does not match any required category patterns (reference-architectures, solution-ideas, patterns, best-practices, etc.), so it cannot be reliably mapped to a defined sub-skill type. |
 | [Securing access to multitenant web apps from on-premises](https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/networking/access-multitenant-web-app-from-on-premises) | 0.50 | Service-specific networking/how-to guide for App Service private connectivity; falls outside the defined architecture-centric sub-skill types and is more of a configuration article. |
 | [App Service and Functions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/app-service) | 0.45 | App Service and Functions multitenancy features are summarized; detailed configs and limits are in their own service docs. |
-| [Application Insights](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/application-insights) | 0.45 | Application Insights tenancy models and features are summarized; detailed telemetry configuration is in core service docs. |
 | [Azure API Management](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/api-management) | 0.45 | API Management multitenancy features (routing, caching, rate limiting) are summarized; detailed policy configs are elsewhere. |
 | [Azure Container Apps](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/container-apps) | 0.45 | Container Apps multitenancy guidance is planning-level; no concrete cluster sizing, SKUs, or deployable reference architecture. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/cosmos-db) | 0.45 | Cosmos DB multitenancy features and models are summarized; no unique throughput, partitioning, or SKU tables beyond standard docs. |
@@ -515,8 +488,10 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [API gateways](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/gateway) | 0.40 | API gateway article explains concept and considerations; not a patterns/ article, not a solution-idea or reference architecture, and not a technology-choice comparison across Azure services. |
 | [Access an AKS API server](https://learn.microsoft.com/en-us/azure/architecture/security/access-azure-kubernetes-service-cluster-api-server) | 0.40 | The page is a service-specific security/connectivity guide for accessing an AKS API server using options like Bastion, ExpressRoute, and Cloud Shell. It does not match any defined sub-skill URL patterns (reference-architectures, solution-ideas, patterns, technology-choices, architecture-styles, best-practices, antipatterns, example-scenario, migration). While it likely contains practical configuration guidance, it is not a reference architecture, pattern, solution idea, or other defined type, so no classification is assigned under the given taxonomy. |
 | [Agentic AI for the reference solution](https://learn.microsoft.com/en-us/azure/architecture/guide/iot/agentic-ai-for-the-solution) | 0.40 | Article under /guide/iot/ describing how to augment an existing OPC UA reference solution with agentic AI. It references a separate OPC UA reference solution but itself appears to be an extension/how-to guide rather than a full reference architecture or pattern. URL path does not match reference-architectures/, solution-ideas/, patterns/, or other defined categories, and the summary does not indicate detailed SKUs, deployment scripts, or formal pattern structure. Classified as general guidance without a matching sub-skill type. |
+| [Agentic systems](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/considerations/agentic-systems) | 0.40 | Multitenant agentic systems considerations article appears to be conceptual guidance (tenant isolation, identity, tool governance) without concrete deployment architecture, patterns structure, or detailed implementation specifics that match any defined sub-skill type. |
+| [Application Insights](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/application-insights) | 0.40 | Multitenancy and Application Insights article focuses on tenancy models and useful features; it is service-specific guidance but not framed as best-practices, patterns, or architectures per the defined categories, and likely lacks the deep, non-obvious expert details required. |
 | [Azure App Configuration](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/app-configuration) | 0.40 | Page is a service-specific guidance article about using Azure App Configuration in multitenant systems, not a reference architecture, solution idea, pattern, technology choice, best practice collection, anti-pattern, example workload, or migration guide as defined. It focuses on features and usage rather than deployable architectures, named patterns, or cross-cutting best practices, so it does not fit any sub-skill type and is unlikely to contain unique expert-only deployment details. |
-| [Azure Key Vault](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/key-vault) | 0.40 | Guidance on using Azure Key Vault in multitenant solutions, but framed as service-specific usage guidance rather than one of the defined architecture sub-skill types (no patterns/, solution-ideas/, reference-architectures/, etc. in URL and no clear pattern/best-practices structure). Likely useful, but does not clearly match the required categories for classification. |
+| [Azure Key Vault](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/key-vault) | 0.40 | Using Azure Key Vault in multitenant solutions describes isolation models and features; it is service-specific configuration guidance rather than a reference architecture, pattern, or best-practices document as defined, and likely does not contain the level of expert-only deployment detail required. |
 | [Azure Sandbox](https://learn.microsoft.com/en-us/azure/architecture/guide/azure-sandbox/azure-sandbox) | 0.40 | Azure Sandbox appears to be a Terraform-based deployment guide for a sandbox environment, but the provided summary does not clearly indicate detailed production reference architecture characteristics (such as SKUs, sizing guidance, or mission-critical/baseline paths), nor does it match other defined sub-skill categories. With limited evidence of unique expert-only details per the given hints, it is not classified. |
 | [Azure Virtual Desktop design guide](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-virtual-desktop/design-guide) | 0.40 | Landing zone design guide is broad guidance without concrete SKUs, deployment repos, or production-ready configuration details; more conceptual than a deployable reference architecture. |
 | [Backup and recovery for AKS](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-backup-and-recovery) | 0.40 | Operational guidance for AKS backup and recovery but framed as general practices; not structured as a reference architecture, pattern, best-practices page, or other defined sub-skill type, and likely lacks highly specific SKUs/config tables or GitHub deployment artifacts. |
@@ -615,12 +590,12 @@ use_when: Use when designing Azure AI/RAG, AKS microservices, data/analytics, Io
 | [OLTP solutions](https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/online-transaction-processing) | 0.20 | Conceptual explanation of OLTP characteristics (atomicity, consistency, etc.); lacks Azure-specific expert configuration guidance or pattern/anti-pattern structure. |
 | [Overview](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/service/overview) | 0.20 | Overview page introducing service-specific guidance; primarily navigational with links, not deep technical content itself. |
 | [Overview](https://learn.microsoft.com/en-us/azure/architecture/patterns/) | 0.20 | This is the top-level Cloud Design Patterns index page. It’s primarily a conceptual/navigation overview of patterns, not a specific pattern with detailed implementation guidance, so it doesn’t meet the expert-knowledge bar for any sub-skill type. |
-| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | 0.20 | Changelog / what's new listing for Azure Architecture Center; primarily navigation and update summaries without deep implementation, configuration, or pattern-specific expert guidance. |
 | [AI technology overview](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ai-overview) | 0.10 | High-level AI technology overview describing concepts and patterns; lacks concrete implementation details, configurations, or scenario-specific expert guidance. |
 | [Data lakes](https://learn.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake) | 0.10 | Conceptual explanation of what a data lake is and its advantages; does not match any specific architecture sub-skill type with detailed implementation or decision guidance. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/integration/integration-get-started) | 0.10 | Get Started with Integration Architecture Design is a conceptual introduction to integration scenarios (APIs, messaging, events, orchestration). The summary indicates high-level explanation of integration concepts, not detailed deployment guidance, service comparisons, or named patterns with trade-offs. The /integration/integration-get-started path further suggests a general overview rather than expert-level implementation content. |
 | [Microsoft SaaS stories](https://learn.microsoft.com/en-us/azure/architecture/guide/saas/case-studies/saas-stories) | 0.10 | Collection of SaaS partner interviews; marketing/case-story content rather than detailed technical guidance or patterns. |
 | [Related resources](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/related-resources) | 0.10 | Purely a related-resources link collection; navigational, not technical content. |
+| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | 0.10 | Changelog/navigation page listing new and updated Azure Architecture Center articles; does not itself contain detailed architectural guidance, patterns, or implementation specifics. |
 | [Architecture icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) | - | Icon download and diagram assets page; no architecture, patterns, decisions, or implementation guidance that fits any sub-skill type. |
 | [Connect Azure Managed Grafana to the reference solution](https://learn.microsoft.com/en-us/azure/architecture/guide/iot/how-to-connect-grafana-to-solution) | - | How-to guide for wiring Azure Managed Grafana to an existing OPC UA reference solution. Focuses on service-specific setup and dashboard creation, not on architecture, patterns, or cross-cutting best practices. Does not match any defined sub-skill category. |
 | [Cross-tenant secure access to apps](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/cross-tenant-secure-access-private-endpoints) | - | Networking implementation guide for cross-tenant private endpoint access; URL path is /networking/guide/ and does not match any of the specified skill-type paths (reference-architectures, solution-ideas, patterns, technology-choices, architecture-styles, best-practices, antipatterns, example-scenario, industries, migration). While it likely contains detailed configuration guidance, it does not fit any defined sub-skill category. |

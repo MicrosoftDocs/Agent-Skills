@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 222
+- **Updated Pages**: 0
+- **Unchanged**: 227
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -76,19 +76,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | *(Unclassified)* | 40 | 17.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure SAP source system with SAP Datasphere](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-source-system-with-datasphere)
-  - Updated: 2026-06-24T11:45:00.000Z → 2026-09-22T11:41:00.000Z
-- [Run extraction and data processing](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/run-extraction-data-processing)
-  - Updated: 2026-06-24T11:45:00.000Z → 2026-09-22T17:11:00.000Z
-- [Post processing](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/post-processing)
-  - Updated: 2026-05-05T17:29:00.000Z → 2026-09-22T17:11:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/release-notes)
-  - Updated: 2026-06-23T11:39:00.000Z → 2026-09-22T11:41:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/about-business-process-solutions)
-  - Updated: 2026-05-01T06:12:00.000Z → 2026-09-22T17:11:00.000Z
 
 ## Classified Pages
 

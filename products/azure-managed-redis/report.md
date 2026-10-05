@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   integrations: 'Client integration patterns for Azure Managed Redis: language SDKs
     (.NET, Go, Node, Python), Entra ID auth, ASP.NET caching, data import/export,
@@ -19,8 +19,9 @@ category_descriptions:
   configuration: 'Configuring Azure Managed Redis instances: settings, scaling, persistence,
     modules, networking, geo-replication, maintenance, monitoring, alerts, metrics,
     logs, and admin via CLI/PowerShell.'
-  security: 'Securing Azure Managed Redis: ACL data access, Entra ID auth, disk encryption
-    with CMK, Zero Trust hardening, Azure Policy compliance, and TLS configuration.'
+  security: 'Securing Azure Managed Redis: ACL-based access, Entra ID auth, disk encryption
+    with CMK, TLS configuration, security best practices, and enforcing compliance
+    via Azure Policy.'
   deployment: Guides for migrating to Azure Managed Redis (self-service, tier upgrades,
     Redis Enterprise conversion) and deploying new instances using ARM templates or
     Bicep.
@@ -45,9 +46,9 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 79
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -67,14 +68,10 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ## Changes
 
-### New Pages
-
-- [Agent memory](https://learn.microsoft.com/en-us/azure/redis/tutorial-agent-memory)
-
 ### Updated Pages
 
-- [Plan reliability and durability](https://learn.microsoft.com/en-us/azure/redis/plan-reliability-and-durability)
-  - Updated: 2026-09-14T17:18:00.000Z → 2026-09-24T08:00:00.000Z
+- [Secure your Azure Managed Redis deployment](https://learn.microsoft.com/en-us/azure/redis/secure-azure-managed-redis)
+  - Updated: 2026-08-18T17:12:00.000Z → 2026-09-28T22:11:00.000Z
 
 ## Classified Pages
 
@@ -102,12 +99,12 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Overview](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-overview) | decision-making | 0.80 | Migration overview guides include phase-based planning, trade-offs, and recommendations for when/how to move between tiers, helping users make migration decisions with product-specific criteria. |
 | [Overview](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-overview) | decision-making | 0.80 | Migration guide from Enterprise to Managed Redis includes phases and planning considerations, helping users decide how to migrate with product-specific context. |
 | [Persist your cache with Redis data persistence](https://learn.microsoft.com/en-us/azure/redis/how-to-persistence) | configuration | 0.80 | Persistence configuration for Azure Managed Redis will detail specific persistence modes, settings, and constraints (RDB/AOF options, intervals, durability trade-offs) that are product-specific configuration knowledge. |
-| [Secure your Azure Managed Redis deployment](https://learn.microsoft.com/en-us/azure/redis/secure-azure-managed-redis) | security | 0.80 | Security best-practices article includes product-specific configuration steps, RBAC guidance, and network/security settings. |
 | [Use ASP.NET core output cache](https://learn.microsoft.com/en-us/azure/redis/aspnet-core-output-cache-provider) | integrations | 0.80 | This article explains configuration of Redis output caching middleware, including specific ASP.NET Core options and Azure Cache for Redis settings, which are concrete integration and coding patterns. |
 | [Advanced troubleshooting with Redis commands](https://learn.microsoft.com/en-us/azure/redis/common-redis-commands) | troubleshooting | 0.78 | The page focuses on using Redis commands like SLOWLOG, INFO, MONITOR, and command statistics specifically in the context of Azure Managed Redis to diagnose performance and behavior issues. It describes how these commands behave on the managed service and how to interpret them for troubleshooting, which is product-specific symptom→diagnosis guidance rather than generic Redis theory. |
 | [Plan Redis modules](https://learn.microsoft.com/en-us/azure/redis/plan-redis-modules) | decision-making | 0.78 | The page explains how module choices constrain tier, clustering, eviction, geo-replication, and client libraries, and is explicitly about planning module selection before deployment. This is guidance on choosing among modules and related configurations, fitting decision-making. |
 | [Plan reliability and durability](https://learn.microsoft.com/en-us/azure/redis/plan-reliability-and-durability) | decision-making | 0.78 | The article compares multiple Azure Managed Redis reliability features (high availability, AZ distribution, persistence, geo-replication, app-level backup) and explains how to combine them for production workloads. It provides product-specific guidance on when to use each capability and how they complement each other, which is decision-making content rather than generic concepts. While the summary doesn’t expose exact numbers, the page’s purpose is clearly to guide selection and combination of options for different failure scopes, fitting the decision-making sub-skill. |
 | [Plan your configuration](https://learn.microsoft.com/en-us/azure/redis/plan-configuration) | decision-making | 0.78 | The article is described as a decision map that sequences configuration questions (tier, reservations, clustering, modules, reliability, security) before provisioning. It provides product-specific guidance on which options to choose and when, helping users make configuration decisions rather than just explaining concepts. |
+| [Secure your Azure Managed Redis deployment](https://learn.microsoft.com/en-us/azure/redis/secure-azure-managed-redis) | security | 0.78 | The page focuses on concrete security recommendations for Azure Managed Redis (for example, specific RBAC/identity patterns, network and access configurations, and product-specific secure-by-default guidance). These are actionable, service-specific security configurations rather than generic concepts, fitting the 'security' sub-skill. It goes beyond high-level theory and provides detailed, product-focused security practices that an LLM is unlikely to infer purely from training. |
 | [Enable Redis keyspace notifications](https://learn.microsoft.com/en-us/azure/redis/enable-redis-keyspace-notifications) | configuration | 0.75 | Article covers enabling feature, specific configuration flags, channels, and commands for keyspace notifications in this service. |
 | [List of Redis metrics](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference) | configuration | 0.75 | Monitoring data reference is a detailed catalog of metrics and logs, including names, units, and semantics unique to this product. |
 | [Memory management best practice](https://learn.microsoft.com/en-us/azure/redis/best-practices-memory-management) | best-practices | 0.75 | Memory management best-practices will include product-specific behaviors, configuration options, and edge cases. |

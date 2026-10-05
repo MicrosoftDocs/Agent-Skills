@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 80
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 83
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
 ## Classification Statistics
@@ -68,19 +68,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 | *(Unclassified)* | 46 | 55.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Upload and index media](https://learn.microsoft.com/en-us/azure/azure-video-indexer/upload-index-media)
-  - Updated: 2026-07-13T22:11:00.000Z → 2026-09-21T22:08:00.000Z
-- [Limited access features](https://learn.microsoft.com/en-us/azure/azure-video-indexer/limited-access-features)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-09-21T22:08:00.000Z
-- [Start on Azure Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart)
-  - Updated: 2026-08-17T08:00:00.000Z → 2026-09-22T17:04:00.000Z
-
-### Deleted Pages
-
-- ~~Account types~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/accounts-overview)
 
 ## Classified Pages
 

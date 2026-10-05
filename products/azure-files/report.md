@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 128
+- **Updated Pages**: 0
+- **Unchanged**: 131
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | *(Unclassified)* | 27 | 20.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [AD DS overview](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-overview)
-  - Updated: 2026-04-30T06:12:00.000Z → 2026-09-22T05:11:00.000Z
-- [Enable Microsoft Entra Domain Services](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable)
-  - Updated: 2026-07-23T05:11:00.000Z → 2026-09-22T05:11:00.000Z
-- [Overview of identity-based authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview)
-  - Updated: 2026-07-22T22:29:00.000Z → 2026-09-21T17:13:00.000Z
 
 ## Classified Pages
 

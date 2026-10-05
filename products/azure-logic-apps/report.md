@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure App Ser
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 266
+- **Updated Pages**: 0
+- **Unchanged**: 269
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -75,15 +75,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure App Ser
 | *(Unclassified)* | 64 | 23.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up requirements for hybrid deployment](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-standard-workflows-hybrid-deployment-requirements)
-  - Updated: 2026-09-11T08:00:00.000Z → 2026-09-22T08:00:00.000Z
-- [Create Standard workflows for hybrid deployment](https://learn.microsoft.com/en-us/azure/logic-apps/create-standard-workflows-hybrid-deployment)
-  - Updated: 2026-07-09T08:00:00.000Z → 2026-09-23T05:11:00.000Z
-- [Secure agentic workflows with Easy Auth](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-authentication-agent-workflows)
-  - Updated: 2026-03-10T08:00:00.000Z → 2026-09-22T08:00:00.000Z
 
 ## Classified Pages
 

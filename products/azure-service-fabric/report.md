@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   architecture-patterns: 'Designing Service Fabric cluster architecture: cross-AZ
     replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation,
     metrics balancing, networking, and API gateway patterns.'
-  configuration: Configuring Service Fabric clusters, apps, networking, scaling, monitoring,
-    backups, manifests, actors, containers, and tooling (CLI/IDE) across Azure managed
-    and standalone environments.
+  configuration: 'Configuring Service Fabric clusters, apps, and networking: backups,
+    scaling, manifests, actors, containers, monitoring/telemetry, reverse proxy, ARM/managed
+    clusters, and Cluster Resource Manager settings.'
   decision-making: 'Guidance on planning Service Fabric clusters: choosing OS and
     versions, disk and node types, capacity and reliability sizing, and migration
     targets for Cloud Services workloads.'
@@ -32,12 +32,12 @@ skill_description: Expert knowledge for Azure Service Fabric development includi
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API
-  gateways, CI/CD upgrades, or sfctl automation, and other Azure Service Fabric related
-  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  gateways, CRP/CRM settings, or sfctl automation, and other Azure Service Fabric
+  related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
   Azure Virtual Machines (use azure-virtual-machines).
 use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, reverse
-  proxy/API gateways, CI/CD upgrades, or sfctl automation, and other Azure Service
+  proxy/API gateways, CRP/CRM settings, or sfctl automation, and other Azure Service
   Fabric related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 405
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
@@ -66,9 +66,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 |------|-------|------------|
 | architecture-patterns | 10 | 2.5% |
 | best-practices | 31 | 7.6% |
-| configuration | 117 | 28.8% |
+| configuration | 118 | 29.1% |
 | decision-making | 8 | 2.0% |
-| deployment | 59 | 14.5% |
+| deployment | 58 | 14.3% |
 | integrations | 33 | 8.1% |
 | limits-quotas | 1 | 0.2% |
 | security | 53 | 13.1% |
@@ -77,9 +77,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Inbound NAT rules v2](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-inbound-nat-rules-v2)
+- [Use Dedicated Hosts with managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-dedicated-hosts)
+  - Updated: 2026-03-22T08:00:00.000Z → 2026-09-25T08:00:00.000Z
 
 ## Classified Pages
 
@@ -349,6 +350,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Upgrading standalone clusters](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-upgrade-standalone) | deployment | 0.70 | Explains what can be upgraded/updated in standalone clusters; likely includes product-specific upgrade paths, constraints, and configuration fields. |
 | [Use Azure Application Gateway in a Service Fabric managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-application-gateway) | configuration | 0.70 | Describes connecting node types to Application Gateway and passing resource IDs in ARM templates—product-specific integration and configuration parameters. |
 | [Use Azure DDoS Protection in a managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-ddos-protection) | security | 0.70 | Shows how to associate VM scale sets/virtual networks with Azure DDoS Network Protection for clusters—product-specific security configuration. |
+| [Use Dedicated Hosts with managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-dedicated-hosts) | configuration | 0.70 | Page describes how to add Azure Dedicated Hosts to Service Fabric managed clusters with product-specific configuration steps and settings (host groups, zones, fault domains, and cluster integration), which are not generic knowledge and map best to configuration. |
 | [Use IP tags](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-ip-tags) | security | 0.70 | Describes using Azure IP tags with Service Fabric managed clusters to control network access; likely includes specific property names (IpTag, service tag usage) and NSG/Firewall configuration details unique to this product. |
 | [Use Managed Identity with Service Fabric application code](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-identity-service-fabric-app-code) | integrations | 0.70 | Shows how Service Fabric app code acquires and uses managed identity access tokens to call other Azure services; contains product-specific identity usage patterns and API/token handling details beyond generic concepts. |
 | [Use NAT gateways](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-nat-gateway) | configuration | 0.70 | Details how to route outbound traffic via NAT gateway while protecting private resources, including ARM template wiring—network configuration specific to this service. |
@@ -401,7 +403,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Set up the Service Fabric CLI](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cli) | configuration | 0.65 | CLI reference-style getting started; typically includes specific command names, parameters, and options unique to Service Fabric CLI, which are configuration/integration details beyond generic knowledge. |
 | [Subclustering](https://learn.microsoft.com/en-us/azure/service-fabric/cluster-resource-manager-subclustering) | architecture-patterns | 0.65 | Focuses on effect of placement constraints on balancing and how to handle it; provides nuanced pattern guidance for subcluster scenarios. |
 | [Testing apps with fault analysis](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-testability-overview) | configuration | 0.65 | Details actions and scenarios to induce faults via the Fault Analysis Service; typically includes specific APIs/commands and configuration for test scenarios, which are product-specific. |
-| [Use Dedicated Hosts with managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-dedicated-hosts) | deployment | 0.65 | Shows how to provision and attach dedicated hosts to cluster node types with specific configuration steps—deployment pattern unique to Service Fabric managed clusters. |
 | [Use Ephemeral OS disks for node types in managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-ephemeral-os-disks) | decision-making | 0.65 | Explains when ephemeral OS disks are appropriate (stateless/tolerant workloads) and how to configure them—product-specific trade-offs and configuration. |
 | [View container logs](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-containers-view-logs) | troubleshooting | 0.65 | Explains how to access logs for running and dead containers via Service Fabric Explorer to diagnose issues; includes product-specific log access patterns. |
 | [Visualize using Service Fabric Explorer](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-visualizing-your-cluster) | configuration | 0.65 | Describes accessing SFX via HTTP management endpoint (e.g., port 19080) and desktop app; includes product-specific endpoint details and management capabilities. |

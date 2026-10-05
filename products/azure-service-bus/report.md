@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 125
+- **Updated Pages**: 0
+- **Unchanged**: 127
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -72,13 +72,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue
 | *(Unclassified)* | 38 | 29.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication)
-  - Updated: 2026-08-24T08:00:00.000Z → 2026-09-26T05:12:00.000Z
-- [Message replication tasks and applications](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-replicator-functions)
-  - Updated: 2021-09-28T22:03:00.000Z → 2026-09-23T05:11:00.000Z
 
 ## Classified Pages
 

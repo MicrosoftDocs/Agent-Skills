@@ -1,27 +1,25 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   deployment: Using ARM templates to provision and manage Anyscale cloud resources
     on Azure, including template structure, parameters, and deployment steps.
   security: 'Securing Anyscale on Azure: container image build hardening, identity
-    setup, and RBAC configuration for safe, least-privilege access to Anyscale resources.'
+    and access configuration, RBAC, regions, and data residency/compliance behavior.'
   configuration: Configuring Anyscale networking on Azure, including Private Link
     setup, secure cluster connectivity, and controlling outbound/egress traffic paths.
   limits-quotas: Supported Azure regions for deploying and running Anyscale on Azure,
     including how to check regional availability and constraints.
 skill_description: Expert knowledge for Azure Anyscale On Azure development including
   limits & quotas, security, configuration, and deployment. Use when authoring ARM
-  templates, hardening images, configuring Private Link, securing egress, or checking
-  regional support, and other Azure Anyscale On Azure related development tasks. Not
-  for Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use
-  azure-kubernetes-service), Azure Machine Learning (use azure-machine-learning),
-  Azure Virtual Machines (use azure-virtual-machines).
+  templates, hardening images, configuring Private Link, or checking Anyscale regional
+  availability, and other Azure Anyscale On Azure related development tasks. Not for
+  Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning),
+  Azure HDInsight (use azure-hdinsight).
 use_when: Use when authoring ARM templates, hardening images, configuring Private
-  Link, securing egress, or checking regional support, and other Azure Anyscale On
-  Azure related development tasks.
-confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Kubernetes
-  Service (AKS) (use azure-kubernetes-service), Azure Machine Learning (use azure-machine-learning),
-  Azure Virtual Machines (use azure-virtual-machines).
+  Link, or checking Anyscale regional availability, and other Azure Anyscale On Azure
+  related development tasks.
+confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Machine
+  Learning (use azure-machine-learning), Azure HDInsight (use azure-hdinsight).
 ---
 # Azure Anyscale On Azure Crawl Report
 
@@ -30,13 +28,13 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Kuber
 - **Total Pages**: 13
 - **Fetched**: 13
 - **Fetch Failed**: 0
-- **Classified**: 6
-- **Unclassified**: 7
+- **Classified**: 7
+- **Unclassified**: 6
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 9
+- **Updated Pages**: 1
+- **Unchanged**: 12
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anyscale-on-azure/azure-anyscale-on-azure.csv`
 
@@ -47,21 +45,15 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Kuber
 | configuration | 2 | 15.4% |
 | deployment | 1 | 7.7% |
 | limits-quotas | 1 | 7.7% |
-| security | 2 | 15.4% |
-| *(Unclassified)* | 7 | 53.8% |
+| security | 3 | 23.1% |
+| *(Unclassified)* | 6 | 46.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/overview)
-  - Updated: 2026-06-24T08:00:00.000Z → 2026-09-22T17:11:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/quickstart-azure-cli)
-  - Updated: 2026-09-15T08:00:00.000Z → 2026-09-22T17:11:00.000Z
-- [Architecture overview](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/architecture)
-  - Updated: 2026-07-23T08:00:00.000Z → 2026-09-22T17:11:00.000Z
-- [Networking](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking)
-  - Updated: 2026-09-18T08:00:00.000Z → 2026-09-22T17:11:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/faq)
+  - Updated: 2026-09-18T22:09:00.000Z → 2026-09-28T22:12:00.000Z
 
 ## Classified Pages
 
@@ -73,12 +65,12 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Kuber
 | [Networking](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking) | configuration | 0.70 | Networking page describes required egress domains and Kubernetes ingress configuration, which are product-specific settings; likely includes concrete hostnames/domains and ingress configuration details that function as configuration parameters. |
 | [Supported regions](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/supported-regions) | limits-quotas | 0.70 | Lists specific Azure regions where Anyscale on Azure is available and links to GPU/compute SKU availability. Regional availability is a concrete constraint/limit that is not generally known and fits limits-quotas best among the categories. |
 | [Add a cloud resource](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/add-cloud-resource) | deployment | 0.65 | Shows how to add a Kubernetes cluster as a new cloud resource via ARM templates. Likely includes ARM parameters and constraints specific to Anyscale on Azure, which are deployment-time configuration details beyond generic ARM usage. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/faq) | security | 0.65 | FAQ content for a specific preview service typically includes expert details such as which Azure regions are supported, how identity is handled, and data residency behavior. These are product-specific security and compliance details (for example, region lists, identity integration specifics, and residency guarantees) that go beyond generic knowledge and are unlikely to be fully known from pretraining. While framed as FAQ, the focus on identity and data residency aligns most closely with the security sub-skill. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [FAQ](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/faq) | 0.50 | FAQ for preview service; likely high-level answers about availability, regions, identity, and support. Without clear evidence of detailed error codes, limits tables, or configuration parameters, it is treated as non-expert overview content. |
 | [Architecture overview](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/architecture) | 0.40 | Architecture overview describing control plane, data plane, and operator model; appears conceptual without decision matrices, quantified thresholds, or detailed configuration options. |
 | [Cloud resources](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/cloud-resources-overview) | 0.40 | Conceptual overview of what a cloud resource is in Anyscale on Azure. Describes relationships between clouds and Kubernetes clusters but does not emphasize numeric limits, configuration tables, or detailed patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/overview) | 0.30 | Overview/marketing-style description of Anyscale on Azure and preview disclaimers; no detailed limits, configuration tables, or product-specific patterns with quantified guidance. |

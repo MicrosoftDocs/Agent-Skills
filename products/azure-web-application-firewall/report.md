@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-04'
 category_descriptions:
   configuration: 'Configuring Azure WAF (Front Door & App Gateway): custom/managed
     rules, geo/ASN/bot/JA4 filters, rate limiting, exclusions, logging/metrics, custom
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: 'Using WAF with other Azure services: integrating logs with Sentinel/Log
     Analytics, automating incident response, investigating events, and protecting
     APIM/Azure OpenAI via Front Door WAF.'
-  security: 'Configuring WAF security: IP restrictions, rule sets (CRS/DRS, default),
-    exclusions/exceptions, log scrubbing and sensitive data masking, governance and
-    hardening (incl. Azure OpenAI via Front Door).'
+  security: 'Configuring Azure WAF/Front Door/App Gateway security: IP/geo rules,
+    default/CRS/DRS rule sets, exclusions/exceptions, log scrubbing for sensitive
+    data, governance, and securing Azure OpenAI APIs.'
   best-practices: Best practices for configuring and tuning WAF on Azure Front Door
     and Application Gateway, including rule tuning, reducing false positives, and
     using geomatch rules for stronger security.
@@ -22,32 +22,33 @@ category_descriptions:
     templates, Terraform, and upgrade existing WAF configurations to WAF policies.
 skill_description: Expert knowledge for Azure Web Application Firewall development
   including best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when tuning Front Door/App Gateway
-  WAF rules, rate limits, geo/bot filters, Sentinel logs, or IaC deployments, and
-  other Azure Web Application Firewall related development tasks. Not for Azure Application
-  Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door),
-  Azure Firewall (use azure-firewall), Azure DDoS Protection (use azure-ddos-protection).
-use_when: Use when tuning Front Door/App Gateway WAF rules, rate limits, geo/bot filters,
-  Sentinel logs, or IaC deployments, and other Azure Web Application Firewall related
-  development tasks.
+  integrations & coding patterns, and deployment. Use when configuring Front Door/App
+  Gateway WAF rules, geo/bot filters, rate limits, Sentinel logging, or APIM/Azure
+  OpenAI protection, and other Azure Web Application Firewall related development
+  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
+  Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure Firewall
+  Manager (use azure-firewall-manager).
+use_when: Use when configuring Front Door/App Gateway WAF rules, geo/bot filters,
+  rate limits, Sentinel logging, or APIM/Azure OpenAI protection, and other Azure
+  Web Application Firewall related development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure
-  DDoS Protection (use azure-ddos-protection).
+  Firewall Manager (use azure-firewall-manager).
 ---
 # Azure Web Application Firewall Crawl Report
 
 ## Summary
 
-- **Total Pages**: 83
-- **Fetched**: 83
+- **Total Pages**: 84
+- **Fetched**: 84
 - **Fetch Failed**: 0
-- **Classified**: 55
+- **Classified**: 56
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 82
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -56,20 +57,19 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 4 | 4.8% |
-| configuration | 26 | 31.3% |
+| configuration | 26 | 31.0% |
 | decision-making | 2 | 2.4% |
 | deployment | 3 | 3.6% |
-| integrations | 6 | 7.2% |
+| integrations | 6 | 7.1% |
 | limits-quotas | 2 | 2.4% |
-| security | 12 | 14.5% |
-| *(Unclassified)* | 28 | 33.7% |
+| security | 13 | 15.5% |
+| *(Unclassified)* | 28 | 33.3% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq)
-  - Updated: 2026-08-21T22:10:00.000Z → 2026-09-24T17:11:00.000Z
+- [IPv6 geo-based custom rules (preview)](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-rules-geo-based-ipv6)
 
 ## Classified Pages
 
@@ -106,6 +106,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Exception lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-exceptions) | security | 0.70 | Describes product-specific WAF exception list behavior and configuration for Azure Application Gateway, including how to safely bypass certain rules. This is concrete, security-focused configuration guidance rather than a generic overview. |
 | [Exclusion lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-exclusion) | security | 0.70 | Page describes detailed, product-specific WAF exclusion configuration for Azure Front Door (e.g., which request attributes/fields can be excluded, how to tune rules for specific scenarios like Entra ID tokens). This is concrete security configuration guidance with specific setting names and behaviors that go beyond generic WAF concepts. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq) | limits-quotas | 0.70 | FAQ includes concrete, product-specific constraints such as maximum number of sites per WAF policy, rule limits, size limits, and other numeric behaviors that are not obvious from general knowledge, fitting the limits-quotas category. |
+| [IPv6 geo-based custom rules (preview)](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-rules-geo-based-ipv6) | security | 0.70 | Page describes product-specific WAF behavior for IPv6 geo-based custom rules, including preview feature registration, dual-stack requirements, and validation behavior. These are concrete, configuration-level security details (how geomatch works with IPv6, prerequisites, and behavior) that go beyond generic concepts and would not be reliably known from training data. |
 | [JavaScript challenge](https://learn.microsoft.com/en-us/azure/web-application-firewall/waf-javascript-challenge) | configuration | 0.70 | Explains JS challenge feature, availability by platform/tier, and how it is configured as an action; includes product-specific settings and constraints. |
 | [Log Analytics](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/log-analytics) | integrations | 0.70 | Shows how to use Log Analytics with WAF logs, including workspace setup and queries; integration-specific patterns and query usage. |
 | [Managed rules overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules) | security | 0.70 | Lists specific Azure-managed WAF rule sets, rule groups, and individual rules (CRS/DRS) with product-specific identifiers and configuration behavior, which are detailed security configuration references beyond generic WAF knowledge. |
