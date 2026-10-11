@@ -1,9 +1,9 @@
 ---
 name: azure-netapp-files
-description: Expert knowledge for Azure NetApp Files development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ANF for SAP HANA/Oracle, AVS datastores, AzAcSnap, cross-region replication, or object REST API, and other Azure NetApp Files related development tasks. Not for Azure Files (use azure-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san), Azure Managed Lustre (use azure-managed-lustre).
+description: Expert knowledge for Azure NetApp Files development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ANF for SAP HANA/Oracle, AVS datastores, cross-region replication, AzAcSnap, or object REST API, and other Azure NetApp Files related development tasks. Not for Azure Files (use azure-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san), Azure Managed Lustre (use azure-managed-lustre).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure NetApp Files Skill
@@ -24,8 +24,8 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L59 | Diagnosing and fixing ANF issues: networking, NFS/SMB/LDAP/Kerberos auth, locks, latency, capacity pools, snapshots, replication, CMK encryption, and volume/provider errors. |
-| Best Practices | L60-L80 | Performance and configuration best practices for Azure NetApp Files: tuning Linux/SMB/NFS, VM and AVS choices, Oracle/AVD setups, quotas, cloning, AzAcSnap, Terraform, and benchmarking. |
+| Troubleshooting | L37-L59 | Diagnosing and fixing Azure NetApp Files issues: networking, NFS/SMB/LDAP/Kerberos auth, locks/latency/replication, capacity pools, snapshots, CMK encryption, and volume/provider errors. |
+| Best Practices | L60-L80 | Performance and configuration best practices for Azure NetApp Files: tuning Linux/SMB/NFS, VM and Oracle settings, benchmarking, cloning, quotas, AD DS, AVS/AVD, and Terraform-managed resources. |
 | Decision Making | L81-L94 | Cost, performance, and protection design for Azure NetApp Files: choosing service levels, volume types, replication and backup options, reservations, SMB CA, cool access, and SQL Server TCO. |
 | Architecture & Design Patterns | L95-L103 | Designing and deploying Azure NetApp Files for SAP HANA/Oracle, AVS datastores, VNet and AD topology, and high‑performance, multi-volume application architectures. |
 | Limits & Quotas | L104-L131 | Limits, quotas, and performance behavior of Azure NetApp Files volumes: size/throughput caps, maxfiles, quotas, directory and path limits, LDAP/NFS group limits, and benchmark guidance. |
@@ -41,8 +41,8 @@ This skill requires **network access** to fetch documentation content:
 | Diagnose Azure NetApp Files Resource Provider errors and workarounds | https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-troubleshoot-resource-provider-errors |
 | Resolve stale file locks on ANF cache volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/break-file-locks-cache-volume |
 | Troubleshoot Azure NetApp Files networking issues | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-networking |
-| Resolve Azure NetApp Files NFS protocol issues | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-nfs |
-| Resolve common Azure NetApp Files SMB issues | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-smb |
+| Resolve NFS protocol issues in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-nfs |
+| Troubleshoot SMB protocol behavior on Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-smb |
 | Reset SMB computer account password for NetApp cache volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/reset-password-cache-volumes |
 | Diagnose and fix Azure NetApp Files application volume group errors | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-application-volume-groups |
 | Resolve SMB authentication and CIFS password reset failures in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-authentication-password-reset-failure |
@@ -68,7 +68,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize Linux NFS concurrency on Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-concurrency-session-slots |
 | Tune Linux direct I/O for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-direct-io |
 | Optimize Linux filesystem cache for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-filesystem-cache |
-| Configure Linux NFS mount options for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-mount-options |
+| Optimize Linux NFS mount options for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-mount-options |
 | Adjust Linux NFS read-ahead for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-nfs-read-ahead |
 | Select Azure VM SKUs for Azure NetApp Files performance | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-virtual-machine-sku |
 | Optimize Oracle dNFS with Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/solutions-benefits-azure-netapp-files-oracle-database |

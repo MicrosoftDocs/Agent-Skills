@@ -26,7 +26,9 @@ skill_description: Expert knowledge for Azure Maps development including best pr
   decision making, architecture & design patterns, limits & quotas, security, configuration,
   and integrations & coding patterns. Use when using Azure Maps Web/REST SDKs, geocoding,
   routing, traffic, weather tiles, or Power BI visual integrations, and other Azure
-  Maps related development tasks.
+  Maps related development tasks. Not for Azure AI Search (use azure-cognitive-search),
+  Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT
+  Edge (use azure-iot-edge).
 use_when: Use when using Azure Maps Web/REST SDKs, geocoding, routing, traffic, weather
   tiles, or Power BI visual integrations, and other Azure Maps related development
   tasks.
@@ -46,8 +48,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 14
-- **Unchanged**: 134
+- **Updated Pages**: 0
+- **Unchanged**: 148
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -65,37 +67,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 35 | 23.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Reacting to events](https://learn.microsoft.com/en-us/azure/azure-maps/map-events)
-  - Updated: 2024-08-30T08:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Use the drawing tools module](https://learn.microsoft.com/en-us/azure/azure-maps/set-drawing-options)
-  - Updated: 2023-06-30T11:20:00.000Z → 2026-09-30T08:00:00.000Z
-- [React to drawing events](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events)
-  - Updated: 2024-09-05T17:04:00.000Z → 2026-09-30T17:21:00.000Z
-- [Web SDK supported browsers](https://learn.microsoft.com/en-us/azure/azure-maps/supported-browsers)
-  - Updated: 2025-03-31T22:05:00.000Z → 2026-09-30T17:21:00.000Z
-- [Migrate a web app](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-app)
-  - Updated: 2023-09-28T08:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Migrate a web service](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-google-maps-web-services)
-  - Updated: 2023-09-29T17:09:00.000Z → 2026-09-30T08:00:00.000Z
-- [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api)
-  - Updated: 2026-03-28T08:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Best Practices using Route Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing)
-  - Updated: 2023-03-22T00:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Web SDK migration guide](https://learn.microsoft.com/en-us/azure/azure-maps/web-sdk-migration-guide)
-  - Updated: 2024-03-05T12:15:00.000Z → 2026-09-30T17:21:00.000Z
-- [Use the Azure Maps map control](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control)
-  - Updated: 2025-02-11T08:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Use the Azure Maps npm package](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-npm-package)
-  - Updated: 2025-10-01T22:16:00.000Z → 2026-09-30T17:21:00.000Z
-- [Traffic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage)
-  - Updated: 2025-07-02T05:25:00.000Z → 2026-10-02T22:12:00.000Z
-- [Routing coverage](https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage)
-  - Updated: 2025-07-21T22:12:00.000Z → 2026-10-02T22:12:00.000Z
-- [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq)
-  - Updated: 2026-08-06T22:11:00.000Z → 2026-09-30T17:21:00.000Z
 
 ## Classified Pages
 

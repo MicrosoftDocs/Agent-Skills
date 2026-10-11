@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-11'
 category_descriptions:
   architecture-patterns: 'Designing Azure VPN Gateway architectures: choosing topologies,
     active-active setups, cross-region peering, and high-availability connectivity
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 112
+- **Updated Pages**: 1
+- **Unchanged**: 111
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
@@ -75,6 +75,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 28 | 25.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new)
+  - Updated: 2026-09-01T05:17:00.000Z → 2026-09-17T17:12:00.000Z
 
 ## Classified Pages
 
@@ -195,5 +200,5 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Overview of parter VPN device configurations](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-3rdparty-device-config-overview) | 0.20 | Described as an overview of partner VPN device configurations using a sample setup; likely high-level guidance without detailed parameter tables or device-specific config matrices in this summary, so it doesn’t clearly meet the configuration or integrations criteria. |
 | [Shared key](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal) | 0.20 | Step-by-step tutorial for creating a site-to-site VPN via the portal; primarily procedural guidance without indication of detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [What is VPN Gateway?](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways) | 0.20 | High-level overview of Azure VPN Gateway capabilities (site-to-site, VNet-to-VNet, point-to-site). The summary does not indicate specific numeric limits, configuration parameter tables, error codes, or decision matrices; it is primarily conceptual service description. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new) | 0.20 | Release notes and what's-new content typically list changes, fixes, and deprecations at a high level without structured limits, config tables, or troubleshooting mappings. The summary does not indicate presence of specific numerical limits, configuration parameters, or error-code-based diagnostics. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-support-help) | 0.10 | Support/help options page; does not contain product-specific limits, configuration parameters, error-code troubleshooting, or other expert technical details. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new) | - | Release notes and 'what's new' content typically list changes, fixes, and announcements without structured limits, configuration tables, error-code mappings, or decision matrices. Based on the description, it’s a high-level update page rather than detailed technical guidance that fits any sub-skill type. |

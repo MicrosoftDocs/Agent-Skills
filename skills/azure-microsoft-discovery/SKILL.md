@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-discovery
-description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery shared sessions, Bookshelf indexes, secure RBAC/CMK setups, REST jobs, or Docker-based tools, and other Azure Microsoft Discovery related development tasks. Not for Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph), Azure Monitor (use azure-monitor), Azure Cost Management (use azure-cost-management).
+description: Expert knowledge for Azure Microsoft Discovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Discovery shared sessions, securing CMK/RBAC, integrating SDK/REST jobs, or deploying tools/containers, and other Azure Microsoft Discovery related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Microsoft Discovery Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L61-L65 | Designing and implementing advanced shared session patterns in Discovery Engine, including multi-user session management, data sharing, and scalable architecture best practices. |
 | Limits & Quotas | L66-L71 | Planning capacity and quota limits for Microsoft Discovery deployments, plus required naming conventions and patterns for Discovery resources in Azure. |
 | Security | L72-L93 | Security, compliance, and access control for Discovery: encryption, CMK, RBAC, managed identities, network hardening/NSGs, audit logs, and answering SIG/security posture questions. |
-| Configuration | L94-L112 | Configuring Discovery resources: storage, files, tools, data handling, Bookshelf/indexes, and querying logs (Kusto, Log Analytics, activity) for monitoring and troubleshooting |
+| Configuration | L94-L112 | Configuring Discovery environments: storage and containers, resource provider setup, tool YAML and registration, data handling, and querying logs/workspaces for monitoring and troubleshooting. |
 | Integrations & Coding Patterns | L113-L123 | Integrating Discovery tools/models into workflows, containerizing with Docker, running jobs via REST, and using .NET, Java, and JavaScript SDKs and action scripts. |
-| Deployment | L124-L130 | Deploying Discovery across regions, provisioning supercomputer infra via REST, registering/publishing tools and container images, and managing deployment workflows in Azure. |
+| Deployment | L124-L129 | Deploying Discovery across regions, provisioning supercomputer infra via REST, registering/publishing tools and container images, and managing deployment workflows in Azure. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -101,7 +101,7 @@ This skill requires **network access** to fetch documentation content:
 | Access Log Analytics workspaces for Discovery resources | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-access-resource-logs |
 | Author tool definition YAML for Discovery tools | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-create-tool-definition |
 | Configure data handling for tools and agents in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents |
-| Configure Bookshelf and index knowledgebases in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-index-bookshelf-knowledgebase |
+| Register and configure tools in Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery |
 | Configure storage containers and assets in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-storage-containers |
 | Query bookshelf indexing logs in Discovery supercomputers | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-query-bookshelf-indexing-logs |
 | Query bookshelf knowledgebase query logs in Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-query-bookshelf-logs |
@@ -125,6 +125,5 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Deploy Microsoft Discovery across Azure regions | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-across-regions |
-| Deploy and register tools to Microsoft Discovery | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery |
 | Provision Discovery Supercomputer infrastructure via REST API | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-supercomputers-rest-api |
 | Publish Discovery tool images to Azure Container Registry | https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-publish-tool-to-acr |

@@ -1,9 +1,9 @@
 ---
 name: azure-container-registry
-description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACR Tasks, geo-replication, connected registries, image signing/verification, or Defender scanning, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using ACR Tasks, geo-replication, connected registries, Kubernetes pulls, or image signing/verification, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Container Storage (use azure-container-storage), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Registry Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L53-L60 | Best practices for ACR operations: managing public image dependencies, safe image deletion and storage cleanup, and robust image tagging/versioning strategies. |
 | Decision Making | L61-L67 | Guidance on choosing Kubernetes auth methods for ACR, deciding geo-replication strategy, and migrating image signing from Docker Content Trust to Notary Project |
 | Architecture & Design Patterns | L68-L73 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
-| Limits & Quotas | L74-L79 | Details on ACR SKUs (Basic/Standard/Premium) feature differences, performance and throughput limits, and how image storage capacity and quotas are calculated and enforced. |
-| Security | L80-L118 | Securing ACR access: auth methods (Entra, managed identity, tokens), RBAC/ABAC, network/firewall/VNet rules, policy/compliance, encryption keys, image signing/verification, and Defender scanning. |
-| Configuration | L119-L139 | Configuring ACR behavior: caching, retention/soft delete, purge, locks, IPv6, metrics/logs, webhooks, and setting up/automating ACR Tasks (YAML, timers, agent pools, patching). |
-| Integrations & Coding Patterns | L140-L157 | Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, Helm, and webhooks; configuring auth, caching, transfers, image builds, and Notation-based signing/verification. |
-| Deployment | L158-L162 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
+| Limits & Quotas | L74-L79 | SKU feature comparisons and image storage limits for Azure Container Registry, including capacity, performance, and quota constraints across different tiers. |
+| Security | L80-L119 | Securing ACR: auth methods (Entra, managed identity, tokens), RBAC/ABAC, network/IP/VNet/firewall rules, encryption keys, image signing/verification, policy/compliance, and Defender scanning. |
+| Configuration | L120-L140 | Configuring ACR behavior: caching, retention/soft delete, purge, locks, IPv6, metrics/logs, webhooks, and setting up/automating ACR Tasks (YAML, timers, agent pools, patching). |
+| Integrations & Coding Patterns | L141-L158 | Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, Helm, and webhooks; configuring auth, caching, transfers, image builds, and Notation-based signing/verification. |
+| Deployment | L159-L163 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
 
 ### Troubleshooting
 | Topic | URL |
@@ -74,7 +74,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Compare Azure Container Registry SKU features and limits | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus |
+| Compare Azure Container Registry SKU limits and features | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus |
 | Review Azure Container Registry image storage limits | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-storage |
 
 ### Security
@@ -110,6 +110,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference of built-in Azure Policy definitions for ACR | https://learn.microsoft.com/en-us/azure/container-registry/policy-reference |
 | Configure client tokens to pull from connected registries | https://learn.microsoft.com/en-us/azure/container-registry/pull-images-from-connected-registry |
 | Scan ACR images with Microsoft Defender for Cloud | https://learn.microsoft.com/en-us/azure/container-registry/scan-images-defender |
+| Apply security best practices to Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/secure-container-registry |
 | Apply Azure Policy compliance controls to ACR | https://learn.microsoft.com/en-us/azure/container-registry/security-controls-policy |
 | Secure connected registry Arc extension deployments | https://learn.microsoft.com/en-us/azure/container-registry/tutorial-connected-registry-arc |
 | Configure customer-managed encryption keys for ACR | https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys |

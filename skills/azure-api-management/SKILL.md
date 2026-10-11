@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring APIM gateways, policies, VNets, self-hosted gateways, or AI/LLM-backed APIs, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating APIM with AI backends, OAuth/Graph, Event Hubs/Service Bus, VNets/domains, or self-hosted gateways, and other Azure API Management related development tasks. Not for Azure Api Center (use azure-api-center), Azure Application Gateway (use azure-application-gateway), Azure Web Application Firewall (use azure-web-application-firewall), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L55-L73 | Guidance for planning and migrating API Management: pricing and scaling, cost control, DevOps/CI/CD, VNet choices, workspace and portal changes, and moving from legacy or other platforms. |
 | Architecture & Design Patterns | L74-L79 | Patterns for placing API Management in front of AKS microservices and Azure Front Door, including routing, security, scaling, and global API gateway architectures. |
 | Limits & Quotas | L80-L100 | Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket), including rate/usage caps, token limits, validation policies, and service/gateway constraints in Azure API Management. |
-| Security | L101-L144 | Securing Azure API Management and gateways: auth (Entra ID, OAuth2, mTLS, JWT), certificates/TLS, RBAC and identities, portal security, policies (content safety, validation), and DDoS/Defender protections. |
-| Configuration | L145-L243 | Configuring Azure API Management and AI Gateway: networking, VNets, domains, policies, caching, monitoring, logging, backends, auth, developer portal, and infrastructure-as-code setup. |
-| Integrations & Coding Patterns | L244-L275 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
-| Deployment | L276-L296 | Deploying and scaling APIM: autoscale, multi-region, backup/restore, region migration, vNet/external access, self-hosted gateways (K8s/AKS/Docker/Arc), portal automation, and MCP rollout. |
+| Security | L101-L145 | Securing Azure API Management and AI Gateway: auth (OAuth2, Entra ID, B2C, certs, managed identities), TLS, RBAC, policies, DDoS/Defender, and developer portal/self-hosted gateway security. |
+| Configuration | L146-L244 | Configuring Azure API Management and AI Gateway: networking, VNets, domains, policies, caching, monitoring, logging, backends, auth, developer portal, and infrastructure-as-code setup. |
+| Integrations & Coding Patterns | L245-L276 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
+| Deployment | L277-L297 | Deploying and scaling APIM: autoscale, multi-region, backup/restore, region migration, vNet/external access, self-hosted gateways (K8s/AKS/Docker/Arc), portal automation, and MCP rollout. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -102,6 +102,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure governance and security for AI Gateway tier | https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-govern-secure-assets |
+| Configure tool threat protection in AI Gateway tier | https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-policy-tool-threat |
 | Configure authentication and authorization for LLM APIs in API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-ai-apis |
 | Authorize API Management developer portal with Microsoft Entra ID | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-aad |
 | Configure API Management developer portal with Azure AD B2C | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-aad-b2c |

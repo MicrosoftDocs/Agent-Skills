@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
-  security: Managing secure access, roles, permissions, and compliance for Azure billing,
-    subscriptions, reservations, and savings plans, including RBAC setup, admin roles,
-    and secure tax/credit information access.
+  security: Managing secure access, roles, permissions, and policies for Azure billing,
+    EA/CSP/MCA accounts, reservations, savings plans, tax docs, and subscription admin/RBAC
+    configuration.
   limits-quotas: Limits, quotas, and timing for Cost Management data; free account
     and credit limits; subscription spending limits; savings plan exclusions/utilization;
     multi-sub limits; dormant billing accounts.
@@ -27,14 +27,13 @@ category_descriptions:
     ongoing cost analysis.
 skill_description: Expert knowledge for Cost Management development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when managing Azure budgets/alerts, cost
-  exports, tags/views, billing APIs, or reservations/savings plans, and other Cost
+  & coding patterns, and deployment. Use when managing Azure billing accounts, Cost
+  Management exports, budgets/alerts, reservations, or savings plans, and other Cost
   Management related development tasks. Not for Azure Advisor (use azure-advisor),
   Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas), Azure Policy
   (use azure-policy).
-use_when: Use when managing Azure budgets/alerts, cost exports, tags/views, billing
-  APIs, or reservations/savings plans, and other Cost Management related development
-  tasks.
+use_when: Use when managing Azure billing accounts, Cost Management exports, budgets/alerts,
+  reservations, or savings plans, and other Cost Management related development tasks.
 confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (use
   azure-monitor), Azure Quotas (use azure-quotas), Azure Policy (use azure-policy).
 ---
@@ -50,8 +49,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 268
+- **Updated Pages**: 4
+- **Unchanged**: 269
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -73,16 +72,14 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 
 ### Updated Pages
 
-- [Manage a Microsoft Azure Consumption Commitment](https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/macc/manage-consumption-commitment)
-  - Updated: 2026-03-20T22:11:00.000Z → 2026-09-30T08:00:00.000Z
-- [Manage a Conditional Azure Credit Offer](https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/caco/manage-conditional-credit-offer)
-  - Updated: 2026-03-20T22:11:00.000Z → 2026-09-30T08:00:00.000Z
-- [Microsoft Agent Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/agent-pre-purchase)
-  - Updated: 2026-07-17T08:00:00.000Z → 2026-09-29T08:00:00.000Z
-- [Microsoft Fabric](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/fabric-capacity)
-  - Updated: 2026-06-09T08:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Grant RBAC access to Azure Reservations using PowerShell](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/manage-reservations-rbac-powershell)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-09-30T08:00:00.000Z
+- [Microsoft Entra ID Free](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/microsoft-entra-id-free)
+  - Updated: 2026-04-01T22:41:00.000Z → 2026-10-07T17:13:00.000Z
+- [Create an EA subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-enterprise-subscription)
+  - Updated: 2026-06-07T08:00:00.000Z → 2026-10-08T11:43:00.000Z
+- [EA roles in Azure](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles)
+  - Updated: 2026-09-18T08:00:00.000Z → 2026-10-08T08:00:00.000Z
+- [EA billing administration](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration)
+  - Updated: 2026-09-21T08:00:00.000Z → 2026-10-08T08:00:00.000Z
 
 ## Classified Pages
 
@@ -144,8 +141,8 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Create subscriptions programmatically - legacy APIs](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/programmatically-create-subscription-preview) | integrations | 0.70 | The article describes using legacy Azure Resource Manager APIs, Azure CLI, and PowerShell to programmatically create subscriptions for specific billing agreement types. It necessarily includes API versions, request payload structures, parameter names, and possibly CLI/PowerShell command patterns that are specific to this legacy preview API surface. Those are detailed integration patterns and configuration parameters unique to this product/API, which aligns with the integrations sub-skill. |
 | [Data transfer fees](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/data-transfer-fees) | decision-making | 0.70 | Describes specific regional billing rules (for Europe and UK), conditions for at-cost transfer, and scenario-based applicability, which are concrete, policy-level details used to decide how to architect or route data transfers. |
 | [Declined card](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-declined-card) | troubleshooting | 0.70 | Troubleshooting guide for declined cards at Azure sign-up or during subscription use; organized by error scenarios and resolutions, likely including specific error messages and causes, fitting the troubleshooting criteria. |
-| [EA billing administration](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration) | security | 0.70 | Page focuses on EA billing administration tasks and role assignments in the Azure portal, including specific guidance on identity types (Work or School accounts vs personal Microsoft accounts) and role-based access behavior. This is product-specific security/identity configuration knowledge rather than generic billing concepts. |
-| [EA roles in Azure](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles) | security | 0.70 | Page defines specific Enterprise Agreement administrative roles, their exact permissions, and how they map to Azure billing scopes. It includes product-specific role names and access behaviors, which are security/authorization details not generally known from training. |
+| [EA billing administration](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration) | security | 0.70 | Page describes EA billing administration tasks in the Azure portal, including a dated change requiring Work or School accounts for new billing role assignments. This is specific, product-focused IAM and role-handling guidance, qualifying as expert security-related configuration for EA billing. |
+| [EA roles in Azure](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles) | security | 0.70 | Page focuses on administrative roles for Azure Enterprise Agreements, including permissions and how to assign them. This is product-specific identity and access management guidance (RBAC-like roles and their scopes) that an LLM is unlikely to know in detail from training, fitting the security sub-skill type. |
 | [Enterprise Agreement (EA) FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/enterprise-agreement-faq) | decision-making | 0.70 | The EA FAQ contains product-specific, contract-bound details about how Enterprise Agreement billing, enrollment, account structures, and cost management behave, including when to use specific constructs and how they impact billing and reporting. These are decision-oriented details that are not generic cloud knowledge and help users choose and manage EA constructs; they fit best under decision-making rather than generic FAQ or limits. |
 | [Exchange and refund reservations](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations) | decision-making | 0.70 | Page contains product-specific rules and constraints for when and how Azure Reservations can be exchanged or refunded, including ownership requirements and distinctions between reservations and savings plans. This is specialized decision guidance on managing reservation commitments rather than generic billing concepts. |
 | [Export cost data with a Storage SAS key](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/export-cost-data-storage-account-sas-key) | configuration | 0.70 | Explains how partners export cost data to a storage account in another tenant using a SAS key. Involves product-specific configuration of SAS-based exports and billing account roles. |
@@ -264,7 +261,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Cost reporting and analytics overview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/reporting-get-started) | 0.40 | Intro to reporting components; largely conceptual and navigational, not focused on detailed configuration parameters or limits. |
 | [Create EA support request](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/how-to-create-azure-support-request-ea) | 0.40 | How-to for creating Azure support requests; no specific error codes, diagnostic mappings, or product-specific configuration details are evident in the summary. |
 | [Create a subscription for a partner's customer](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-customer-subscription) | 0.40 | Explains how a Microsoft Partner creates a customer subscription; includes a note about not provisioning resources in B2B/B2C tenants but otherwise appears as a procedural guide without detailed config tables or numeric constraints. |
-| [Create an EA subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-enterprise-subscription) | 0.40 | Portal walkthrough for creating an Enterprise Agreement subscription; focused on steps and forms, not on numeric limits, configuration options, or troubleshooting mappings. |
 | [Create an MCA subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription) | 0.40 | Step-by-step portal tutorial to create an MCA subscription; mostly procedural UI guidance without detailed configuration parameter tables or numeric limits. |
 | [Create an MCA subscription request](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription-request) | 0.40 | How-to for creating a Microsoft Customer Agreement subscription request in the portal; primarily procedural UI steps without configuration parameter tables, limits, or decision matrices. |
 | [Databricks](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-discount-databricks) | 0.40 | Explains how prepurchased Databricks commit units work and differ from hourly reservations; summary does not show numeric limits, configuration tables, or troubleshooting content. |
@@ -336,13 +332,14 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Account administrator tasks](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/account-admin-tasks) | 0.20 | Task-oriented billing UI instructions (manage, replace, edit, delete payment methods, switch to wire transfer) without product-specific limits, quotas, configuration parameter tables, error-code-based troubleshooting, or quantified decision criteria. Mostly procedural portal guidance that a generic LLM can infer. |
 | [Changes to your updated pay-as-you-go billing account](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mosp-new-customer-experience) | 0.20 | Overview of updated Azure billing account experience; largely conceptual and UI-oriented, not focused on numeric limits, configuration settings, or troubleshooting. |
 | [Check usage](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/check-free-service-usage) | 0.20 | Page explains how to view free service usage in the Azure portal and mentions that usage data is delayed by 1–2 days, but does not list specific numerical limits, quotas, configuration parameters, or decision matrices. Content is procedural/overview rather than detailed expert reference. |
+| [Create an EA subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-enterprise-subscription) | 0.20 | Page is a how-to for creating EA subscriptions in the Azure portal. The summary mentions subscription quota limits conceptually but does not indicate specific numeric limits, configuration tables, or product-specific parameters. It’s primarily procedural, not expert reference content. |
 | [Download your invoice](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date) | 0.20 | Content focuses on how to download or view Azure billing invoices and mentions roles that can access invoices; it lacks detailed configuration parameters, limits, or troubleshooting mappings that would qualify as expert knowledge under the defined categories. |
 | [EA tasks in Microsoft Customer Agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-enterprise-operations) | 0.20 | Page describes how to perform EA-related billing tasks in a Microsoft Customer Agreement; it appears to be procedural/account-management guidance without product-specific limits, configuration tables, error-code troubleshooting, or quantified decision matrices. |
 | [Enable preview features](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs) | 0.20 | Explains how to explore preview features; mostly portal navigation and feature list, not deep configuration or troubleshooting content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/microsoft-customer-agreement-faq) | 0.20 | FAQ about Microsoft Customer Agreement and billing; primarily conceptual and procedural information about agreements, billing relationships, and enrollment, without product-specific limits, configuration parameters, error-code-based troubleshooting, or quantified decision matrices. |
 | [Find tenant ID and primary domain name](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/find-tenant-id-domain) | 0.20 | Shows how to find tenant ID and primary domain in the portal; straightforward navigation steps without advanced security configuration, limits, or troubleshooting mappings. |
 | [Get started with EA billing in the Azure portal](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-direct-portal-get-started) | 0.20 | Guidance for EA customers using the Azure portal for billing; focuses on getting started and high-level administration, not on limits, configuration tables, or troubleshooting codes. |
-| [Microsoft Entra ID Free](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/microsoft-entra-id-free) | 0.20 | High-level description of Microsoft Entra ID Free as part of billing; no concrete limits, configuration parameters, roles list, or other detailed expert data. |
+| [Microsoft Entra ID Free](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/microsoft-entra-id-free) | 0.20 | Based on the summary, the page is a conceptual/overview description of Microsoft Entra ID Free as a billing record and its relationship to the billing account. It does not indicate presence of specific limits, quotas, configuration tables, RBAC role lists, error codes, or decision matrices. Without detailed technical parameters or constraints, it does not meet any sub-skill expert-knowledge criteria. |
 | [Organize costs with invoice sections](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-section-invoice) | 0.20 | The page describes how to organize costs and invoices using billing profiles and invoice sections in the Azure portal. It appears to be a conceptual/usage guide without specific numeric limits, configuration parameter tables, error codes, or decision matrices. No product-specific expert details that match any sub-skill type criteria are evident from the summary. |
 | [Region optimization](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/region-optimization) | 0.20 | Describes Azure region optimization policy conceptually and its impact when creating resources; summary does not indicate presence of numeric limits, configuration parameters, or detailed troubleshooting mappings. |
 | [Request Withholding Tax credit - India](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/withholding-tax-credit-india) | 0.20 | Page describes procedural/administrative steps to request a withholding tax credit for Azure/Microsoft 365 invoices; it does not contain product-specific technical limits, configuration parameters, error codes, or other expert technical knowledge as defined by the sub-skill types. |

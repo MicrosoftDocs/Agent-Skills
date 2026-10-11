@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-11'
 category_descriptions:
   best-practices: Best practices for authoring, linting, validating, and testing Bicep/ARM
     templates and scripts, including locations, types, dependencies, resource IDs,
@@ -46,16 +46,16 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 
 ## Summary
 
-- **Total Pages**: 494
-- **Fetched**: 494
+- **Total Pages**: 495
+- **Fetched**: 495
 - **Fetch Failed**: 0
 - **Classified**: 376
-- **Unclassified**: 118
+- **Unclassified**: 119
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 494
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 493
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -72,9 +72,18 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | limits-quotas | 26 | 5.3% |
 | security | 26 | 5.3% |
 | troubleshooting | 96 | 19.4% |
-| *(Unclassified)* | 118 | 23.9% |
+| *(Unclassified)* | 119 | 24.0% |
 
 ## Changes
+
+### New Pages
+
+- [Noise reduction](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if-noise-reduction)
+
+### Updated Pages
+
+- [What-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if)
+  - Updated: 2026-08-14T05:11:00.000Z → 2026-10-07T17:13:00.000Z
 
 ## Classified Pages
 
@@ -525,6 +534,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Get started with custom resource providers](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/tutorial-get-started-with-custom-providers) | 0.30 | Tutorial on creating custom actions/resources; conceptual and procedural, not focused on limits, configs, or error diagnostics. |
 | [Import (import)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-import) | 0.30 | Describes how to export/import shared functionality and namespaces in Bicep; focuses on syntax and concepts, not on numeric limits, configuration matrices, security roles, or troubleshooting mappings. |
 | [Manage service groups and members](https://learn.microsoft.com/en-us/azure/governance/service-groups/manage-service-groups) | 0.30 | Management article for creating, updating, reading, and deleting Service Groups and members; appears to be procedural guidance without detailed configuration tables, limits, or structured troubleshooting or decision matrices. |
+| [Noise reduction](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if-noise-reduction) | 0.30 | Page explains how deployment stacks reduce noise in what-if results by comparing evaluations against a baseline. The summary indicates conceptual behavior (noise filtering, comparison to baseline) but does not mention specific configuration parameters, numeric thresholds, error codes, or tables with values. This is behavioral/conceptual guidance rather than expert-level limits, configuration, or troubleshooting data. |
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/export-bicep-portal) | 0.30 | Explains how to export Bicep/ARM templates from the portal; primarily procedural guidance without detailed configuration matrices, limits, or specialized patterns. |
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-portal) | 0.30 | Portal tagging walkthrough; primarily UI steps referencing another article for recommendations and limits; no detailed config tables or numeric constraints. |
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/export-template-portal) | 0.30 | How-to guide for exporting ARM templates via Azure portal; focuses on workflow steps without product-specific limits, configuration matrices, or troubleshooting mappings. |
@@ -537,6 +547,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Using (using/using none)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-using) | 0.30 | Explains Bicep `using` and `using none` syntax and behavior for parameter files; this is language usage/tutorial content without limits, quotas, configuration tables, error-code troubleshooting, or product-specific decision matrices. |
 | [Variables](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/variables) | 0.30 | Covers how to use variables in ARM templates; focuses on syntax and concepts without unique limits, configs, or troubleshooting data. |
 | [What are Azure Custom Resource Providers?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/overview) | 0.30 | High-level overview and preview/deprecation notice for custom resource providers; no detailed limits, configs, or error mappings. |
+| [What-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if) | 0.30 | Page describes how to use the what-if operation with deployment stacks conceptually (previewing created/updated/unchanged resources). From the summary, there are no specific limits, configuration tables, error codes, or product-specific parameters with values. It appears to be a usage/tutorial-style explanation rather than detailed expert configuration, limits, or troubleshooting content. |
 | [What-if check](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if) | 0.30 | Primarily explains the what-if and snapshot operations conceptually and how to use them; does not focus on numeric limits, detailed configuration matrices, or product-specific error codes. |
 | [1 - Deploy a local template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-tutorial-local-template) | 0.25 | Tutorial on deploying a local template; early in a series, mostly step-by-step deployment, not deep deployment constraints. |
 | [10 - Use parameter file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-parameter-file) | 0.25 | Tutorial on using parameter files; standard deployment pattern, no extensive configuration matrices or quotas. |
@@ -567,7 +578,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code) | 0.20 | How-to article for using Visual Studio Code with Bicep; focuses on editor usage and basic workflow without product-specific limits, configuration tables, error-code troubleshooting, or decision matrices. |
 | [What are ARM templates?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | 0.20 | High-level overview of ARM templates benefits and concepts; no detailed limits, configs, or product-specific best practices. |
 | [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview) | 0.20 | Overview of Azure Service Groups describing conceptual usage and benefits; no detailed limits, configuration tables, error codes, or product-specific numeric thresholds or decision matrices. |
-| [What-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if) | 0.20 | Page is a how-to/tutorial style guide on using the what-if operation with deployment stacks to preview changes. It focuses on workflow steps and conceptual behavior (previewing created/updated/unchanged resources) rather than detailed configuration tables, limits, error codes, or decision matrices. It does not meet the thresholds for limits, configuration, troubleshooting, or other expert-knowledge categories. |
 | [1 - Create first template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-first-template) | 0.15 | Introductory tutorial on creating and deploying a first ARM template; mostly syntax and basic deployment steps. |
 | [2 - Add resource](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-add-resource) | 0.15 | Tutorial on adding a storage account resource; standard example without product-specific expert patterns or limits. |
 | [3 - Add parameters](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-add-parameters) | 0.15 | Tutorial on adding parameters to make templates reusable; generic pattern, no special limits or config tables. |

@@ -3,7 +3,7 @@ name: azure-resource-manager
 description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries, or securing with Key Vault/RBAC, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill

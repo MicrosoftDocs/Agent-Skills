@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-11'
 category_descriptions:
   limits-quotas: Storage, size, count, and retention limits for Azure Artifacts packages,
     plus how to monitor usage, configure deletion/retention, and publish universal
@@ -19,14 +19,17 @@ category_descriptions:
     behavior and performance.'
   deployment: Using GitHub Actions to build and push packages (NuGet, npm, etc.) to
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
-skill_description: Expert knowledge for Azure Artifacts development including best
-  practices, decision making, limits & quotas, security, configuration, integrations
+  troubleshooting: Diagnosing and resolving common Azure Artifacts problems, including
+    feed access, authentication, package publishing/restore issues, and typical error
+    messages.
+skill_description: Expert knowledge for Azure Artifacts development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when managing feeds, upstream sources, .npmrc
-  auth, GitHub Actions CI/CD, or package retention limits, and other Azure Artifacts
+  auth, GitHub Actions CI/CD, or universal package quotas, and other Azure Artifacts
   related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines
   (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
 use_when: Use when managing feeds, upstream sources, .npmrc auth, GitHub Actions CI/CD,
-  or package retention limits, and other Azure Artifacts related development tasks.
+  or universal package quotas, and other Azure Artifacts related development tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
   azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
 ---
@@ -34,14 +37,14 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ## Summary
 
-- **Total Pages**: 73
-- **Fetched**: 73
+- **Total Pages**: 74
+- **Fetched**: 74
 - **Fetch Failed**: 0
-- **Classified**: 53
+- **Classified**: 54
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 73
 - **Deleted Pages**: 0
@@ -52,21 +55,27 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 3 | 4.1% |
-| configuration | 4 | 5.5% |
+| configuration | 4 | 5.4% |
 | decision-making | 3 | 4.1% |
 | deployment | 1 | 1.4% |
-| integrations | 36 | 49.3% |
-| limits-quotas | 4 | 5.5% |
+| integrations | 36 | 48.6% |
+| limits-quotas | 4 | 5.4% |
 | security | 2 | 2.7% |
-| *(Unclassified)* | 20 | 27.4% |
+| troubleshooting | 1 | 1.4% |
+| *(Unclassified)* | 20 | 27.0% |
 
 ## Changes
+
+### New Pages
+
+- [Troubleshoot Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/troubleshooting?view=azure-devops)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops) | limits-quotas | 0.95 | Explicitly documents size and count limits per package type for Azure Artifacts; this is a canonical limits page with concrete numerical constraints that qualify as expert quota knowledge. |
+| [Troubleshoot Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/troubleshooting?view=azure-devops) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Artifacts across multiple package types. Such pages typically contain product-specific error messages, causes, and resolutions (e.g., feed access issues, publishing/restore failures, upstream and storage problems) that go beyond generic debugging knowledge. It is organized by scenario (common feed checks, then package-specific pivots), matching the symptom → cause → solution pattern unique to Azure Artifacts. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/project-setup-universal-packages?view=azure-devops) | integrations | 0.80 | Universal Packages setup with Azure CLI; includes max size (4 TiB) and CLI parameters specific to Azure Artifacts. |
 | [Use the .artifactignore file](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/artifactignore?view=azure-devops) | configuration | 0.80 | Documents the .artifactignore file syntax and behavior; includes pattern rules, precedence, and product-specific behavior for artifact publishing. |
 | [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops) | limits-quotas | 0.78 | Page describes Azure Artifacts’ consumption-based storage with a specific free-tier limit (2 GiB) and what happens when that limit is exceeded, which is product- and tier-specific quota information not derivable from general knowledge. |

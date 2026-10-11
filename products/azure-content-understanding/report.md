@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-11'
 category_descriptions:
-  decision-making: Guidance on choosing Azure AI/Foundry tools, model deployments,
-    and Studio vs Foundry; migrating Content Understanding from preview to GA; and
-    estimating/optimizing pricing.
+  decision-making: Guides for choosing tools, deployments, and environments, migrating
+    from preview to GA, and estimating/pricing Azure Content Understanding document
+    processing.
   architecture-patterns: Guidance on when to use agentic mode, how to design RAG-based
     document solutions, and how to build RPA workflows using Azure Content Understanding.
   configuration: Configuring and customizing Content Understanding analyzers, classifiers,
@@ -26,17 +26,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Content Understanding in Foundry Tools
   development including troubleshooting, best practices, decision making, architecture
   & design patterns, limits & quotas, security, configuration, and integrations &
-  coding patterns. Use when building Content Understanding analyzers, RAG document
-  flows, agentic workflows, REST/SDK calls, or GA migrations, and other Azure Content
-  Understanding in Foundry Tools related development tasks. Not for Content Safety
-  in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools
-  (use azure-speech), Azure AI Vision (use azure-ai-vision), Azure AI Document Intelligence
-  (use azure-document-intelligence).
-use_when: Use when building Content Understanding analyzers, RAG document flows, agentic
-  workflows, REST/SDK calls, or GA migrations, and other Azure Content Understanding
-  in Foundry Tools related development tasks.
-confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-content-safety),
-  Azure Speech in Foundry Tools (use azure-speech), Azure AI Vision (use azure-ai-vision),
+  coding patterns. Use when designing Content Understanding analyzers, RAG/RPA workflows,
+  REST/SDK calls, quotas, or agentic mode, and other Azure Content Understanding in
+  Foundry Tools related development tasks. Not for Azure Speech in Foundry Tools (use
+  azure-speech), Azure AI Language (use azure-language-service), Azure AI Search (use
+  azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence).
+use_when: Use when designing Content Understanding analyzers, RAG/RPA workflows, REST/SDK
+  calls, quotas, or agentic mode, and other Azure Content Understanding in Foundry
+  Tools related development tasks.
+confusable_not_for: Not for Azure Speech in Foundry Tools (use azure-speech), Azure
+  AI Language (use azure-language-service), Azure AI Search (use azure-cognitive-search),
   Azure AI Document Intelligence (use azure-document-intelligence).
 ---
 # Azure Content Understanding in Foundry Tools Crawl Report
@@ -51,8 +50,8 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 44
+- **Updated Pages**: 1
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-understanding/azure-content-understanding.csv`
 
@@ -72,6 +71,11 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 
 ## Changes
 
+### Updated Pages
+
+- [Pricing model details and examples](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer)
+  - Updated: 2026-08-10T22:02:00.000Z → 2026-10-07T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -83,7 +87,6 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 | [Markdown](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/markdown) | configuration | 0.85 | Describes how audiovisual elements are represented in Markdown, including temporal relationships—product-specific output schema details. |
 | [Microsoft Agent Framework](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/integrations/agent-framework) | integrations | 0.85 | Describes using Content Understanding as a context provider in Agent Framework; likely includes configuration parameters and integration-specific behaviors. |
 | [Migration from CU Preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga) | decision-making | 0.85 | Migration guide between preview and GA APIs; typically includes comparison tables, breaking changes, and recommended migration paths, supporting decision-making and upgrade planning. |
-| [Pricing model details and examples](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer) | decision-making | 0.85 | Explains pricing model and how to estimate costs; such pages typically include concrete billing meters, units, and scenario-based cost guidance, supporting cost-related decision-making. |
 | [Create a Microsoft Foundry resource](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/create-multi-service-resource) | configuration | 0.80 | Resource creation guide for using Content Understanding via REST API; includes specific settings and options for Foundry resources. |
 | [Markdown](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/markdown) | configuration | 0.80 | Describes how each content/layout element is represented in GitHub Flavored Markdown; likely includes detailed mappings and structures that are product-specific output configuration knowledge. |
 | [Security features](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/secure-communications) | security | 0.80 | Covers customer-managed keys, managed identities, and other product-specific security configurations for Content Understanding. |
@@ -95,6 +98,7 @@ confusable_not_for: Not for Content Safety in Foundry Control Plane (use azure-c
 | [Classifier tutorial - Split and route](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/classification-content-understanding-studio) | configuration | 0.70 | How-to for classification workflows and routing; likely documents workflow configuration options and parameters across Studio, REST, and SDKs. |
 | [Create a custom analyzer](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer) | configuration | 0.70 | Tutorial for creating custom analyzers using REST; typically includes request bodies with configuration fields and allowed values, fitting configuration knowledge. |
 | [Create a custom analyzer with Content Understanding Studio](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/customize-analyzer-content-understanding-studio) | configuration | 0.70 | How-to for creating and improving custom analyzers; likely includes specific configuration steps and options in Studio, which are product-specific configuration patterns. |
+| [Pricing model details and examples](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer) | decision-making | 0.70 | Pricing explainer pages typically include product-specific cost drivers, units, and guidance on how to estimate workload costs and choose usage patterns. While exact per-unit prices are offloaded to the separate pricing page, this kind of article usually contains decision-focused details (for example, which operations are billable, how different modes or API versions affect cost, and how to model scenarios) that go beyond generic knowledge and help users make cost-related choices. That aligns best with the decision-making sub-skill. |
 | [Retrieve analysis diagnostics](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/retrieve-diagnostics) | troubleshooting | 0.70 | The page describes how to retrieve and interpret diagnostic information from Azure Content Understanding analysis results via the REST API. It focuses on product-specific diagnostics for completion and embedding calls, including how to access and use these details to investigate latency and model calls. This is organized around understanding issues in operations and uses service-specific response fields and patterns, which aligns best with troubleshooting. |
 | [Studio and Foundry](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio) | decision-making | 0.70 | Comparison page between Studio and Foundry experiences; likely includes feature comparison tables and guidance on when to use each, which fits decision-making for tooling selection. |
 | [Synchronous REST API (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-synchronous-rest-api) | limits-quotas | 0.70 | Describes synchronous operations for small documents; these pages typically specify maximum document sizes and constraints for sync vs async, which are numeric limits/quotas. |

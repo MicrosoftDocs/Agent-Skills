@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery for DR: choosing tools
     (ASR vs Azure Migrate), VM sizes, failback types, managed disk and DR costs, and
@@ -22,25 +22,26 @@ category_descriptions:
   integrations: Automating and integrating Azure Site Recovery using PowerShell, ARM/Bicep/Terraform,
     ExpressRoute, Traffic Manager, and runbooks, including Hyper-V, VMware, shared
     disk, and Azure VM DR setups.
-  limits-quotas: Limits, support matrices, and constraints for Azure Site Recovery
-    (Azure-to-Azure, Hyper-V, VMware/physical), high-churn VMs, shared disks, Backup
-    coexistence, planner limits, and Mobility service impact.
+  limits-quotas: Limits, support matrices, and resource constraints for Azure Site
+    Recovery scenarios (Azure VMs, Hyper-V, VMware/physical), including churn limits,
+    shared disks, Backup coexistence, and Mobility service impact.
   best-practices: 'Guidance on tuning Azure Site Recovery performance: analyzing high
     data churn on VMs, and monitoring/troubleshooting process server health, capacity,
     and throughput.'
 skill_description: Expert knowledge for Azure Site Recovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when planning ASR for VMware/Hyper-V, Azure-to-Azure DR, SAP/SQL apps, ADE/CMK
-  encryption, or Terraform automation, and other Azure Site Recovery related development
-  tasks. Not for Azure Backup (use azure-backup), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
-use_when: Use when planning ASR for VMware/Hyper-V, Azure-to-Azure DR, SAP/SQL apps,
-  ADE/CMK encryption, or Terraform automation, and other Azure Site Recovery related
-  development tasks.
+  Use when planning ASR DR for VMware/Hyper-V, Azure VM replication/failover, SAP/SQL
+  app protection, ADE/CMK, or automation via PowerShell/Terraform, and other Azure
+  Site Recovery related development tasks. Not for Azure Backup (use azure-backup),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use
+  azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when planning ASR DR for VMware/Hyper-V, Azure VM replication/failover,
+  SAP/SQL app protection, ADE/CMK, or automation via PowerShell/Terraform, and other
+  Azure Site Recovery related development tasks.
 confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machines
   (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual WAN (use azure-virtual-wan).
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure Site Recovery Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 177
+- **Updated Pages**: 1
+- **Unchanged**: 178
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -78,10 +79,8 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machi
 
 ### Updated Pages
 
-- [About role-based access control with Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control)
-  - Updated: 2026-09-22T17:11:00.000Z → 2026-10-01T17:22:00.000Z
-- [Overview and prerequisites](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-overview)
-  - Updated: 2025-12-18T08:00:00.000Z → 2026-09-28T17:14:00.000Z
+- [On-premises Hyper-V VMs to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix)
+  - Updated: 2026-09-17T11:41:00.000Z → 2026-10-07T08:00:00.000Z
 
 ## Classified Pages
 
@@ -113,7 +112,7 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machi
 | [Using Site Recovery with Azure Backup](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-backup-interoperability) | limits-quotas | 0.80 | Interoperability matrix between Site Recovery and Backup includes specific supported/unsupported combinations and constraints (e.g., scenarios where MARS agents can’t co-exist). |
 | [About role-based access control with Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control) | security | 0.78 | Page is specifically about applying Azure RBAC to Site Recovery, including product-specific built-in roles and how they control Site Recovery management operations. This is security-focused expert configuration knowledge (RBAC roles and permissions) tied to this service, which fits the 'security' sub-skill type. |
 | [Azure to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix) | limits-quotas | 0.78 | Support matrices for Azure VM to Azure DR typically list exact supported/unsupported OS versions, disk types, region pairings, and configuration constraints in table form. These are product-specific limits and compatibility details that function as de facto quotas/support constraints and are unlikely to be fully known from training. |
-| [On-premises Hyper-V VMs to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix) | limits-quotas | 0.78 | Hyper-V to Azure support matrices list supported Hyper-V versions, OS versions, integration components, and configuration constraints in tables. These detailed support limits and prerequisites are expert knowledge not derivable from general training. |
+| [On-premises Hyper-V VMs to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix) | limits-quotas | 0.78 | Support matrix pages for Azure Site Recovery typically list exact supported/unsupported versions, configurations, and constraints (for example, specific Hyper-V host OS versions, VM generation support, disk types, network setups, and feature limitations). These are product-specific compatibility and constraint details that an LLM would not reliably know from training and are critical for planning disaster recovery. While framed as 'supported components and settings', such matrices usually include precise limits and requirements that align best with the limits-quotas category. |
 | [Support requirements for Azure Site Recovery replication appliance](https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix) | configuration | 0.78 | Describes support and requirements for deploying the replication appliance, which usually includes specific configuration requirements (CPU, RAM, OS versions, ports, component settings) in table or parameter form. These are product-specific configuration details not generally known, fitting the configuration sub-skill. |
 | [For an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk) | configuration | 0.75 | Explains behavior when adding disks to already-protected VMs and how to enable replication; includes Site Recovery-specific state transitions and options. |
 | [For an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-enable-replication-added-disk) | configuration | 0.75 | Explains behavior and steps when adding disks to already-protected VMware VMs; product-specific replication state and configuration details. |

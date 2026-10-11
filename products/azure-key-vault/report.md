@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-11'
 category_descriptions:
   limits-quotas: Limits, quotas, and behaviors for Key Vault and Managed HSM (certificates,
     secrets, throttling, logging latency, IP firewall/network rules, soft-delete/recovery,
@@ -10,9 +10,9 @@ category_descriptions:
   security: 'Securing Key Vault and Managed HSM: auth (Entra ID, RBAC/ABAC, access
     policies), networking/firewalls/private endpoints, Zero Trust, soft-delete, HSM/BYOK
     key handling, backup/restore, and best practices.'
-  decision-making: Guidance on choosing Key Vault access models, safely updating APIs,
-    planning key workload migrations, and designing, sizing, and operating Managed
-    HSM and external key solutions.
+  decision-making: Guidance on choosing access control models, planning safe API and
+    key migrations, using or leaving Managed HSM external keys, and sizing/scaling
+    Managed HSM capacity.
   configuration: 'Configuring Key Vault and Managed HSM: monitoring, logging, alerts,
     policies, key types/algorithms, key/secret rotation, secure key release, BYOK,
     replication, and API/version settings.'
@@ -30,15 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Key Vault development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing secrets/keys, Managed HSM, Private Link, Entra ID auth, or key rotation/backup,
-  and other Azure Key Vault related development tasks. Not for Azure Cloud Hsm (use
-  azure-cloud-hsm), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm
-  (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
-use_when: Use when managing secrets/keys, Managed HSM, Private Link, Entra ID auth,
-  or key rotation/backup, and other Azure Key Vault related development tasks.
-confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated
-  HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure
-  Information Protection (use azure-information-protection).
+  using Key Vault/Managed HSM with Entra ID auth, Private Link, Event Grid, BYOK,
+  or secure key rotation, and other Azure Key Vault related development tasks. Not
+  for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm),
+  Azure Payment Hsm (use azure-payment-hsm), Azure Attestation (use azure-attestation).
+use_when: Use when using Key Vault/Managed HSM with Entra ID auth, Private Link, Event
+  Grid, BYOK, or secure key rotation, and other Azure Key Vault related development
+  tasks.
+confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud
+  Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Attestation
+  (use azure-attestation).
 ---
 # Azure Key Vault Crawl Report
 
@@ -52,8 +53,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 184
+- **Updated Pages**: 1
+- **Unchanged**: 183
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -73,6 +74,11 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | *(Unclassified)* | 80 | 43.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-faq)
+  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-06T17:34:00.000Z
 
 ## Classified Pages
 
@@ -133,6 +139,7 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | [Delete, recover, purge secret](https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-delete-secret) | integrations | 0.70 | JavaScript developer guide for deleting, restoring, and purging secrets via SecretClient. Contains product-specific SDK methods, parameters, and usage patterns for Azure Key Vault secrets, which qualify as integration/coding patterns beyond generic knowledge. |
 | [Enable Multi-Region Replication on Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/multi-region-replication) | configuration | 0.70 | Describes product-specific behavior and constraints for enabling multi-region replication (only one additional region, both regions active, replication behavior and routing). These are concrete, service-specific configuration details that go beyond generic concepts, but it doesn't focus on numeric limits or security roles. |
 | [Encrypt and decrypt key](https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-encrypt-decrypt-key) | integrations | 0.70 | Shows how to use CryptographyClient and encryption parameters in the JS SDK, which are product-specific integration details. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-faq) | decision-making | 0.70 | FAQ content for a preview feature typically includes product-specific details such as supported HSM vendors, SLA coverage, and differences versus standard Managed HSM keys. These are concrete, service-specific criteria that help users decide whether and how to adopt external key management, which aligns best with the decision-making sub-skill. While it’s an FAQ, the focus is on comparisons, supported vendors, and SLA implications rather than generic concepts. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/key-vault/certificates/faq) | limits-quotas | 0.70 | FAQ pages for Azure Key Vault certificates typically include concrete, product-specific details such as maximum certificate sizes, renewal and rotation timing constraints, supported key types and key sizes, and other numeric or tightly specified behavioral limits that are not obvious from general training data. These constitute expert knowledge about limits/quotas and operational constraints rather than just conceptual explanations. |
 | [Get Started](https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-get-started) | integrations | 0.70 | Shows how to connect to Key Vault using the JavaScript secrets client library, including SDK usage and authentication setup. This is an integration-focused developer guide with product-specific API patterns and configuration details, fitting the integrations category. |
 | [Import HSM-protected keys (BYOK)](https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys-byok) | security | 0.70 | This BYOK-focused article contains detailed, product-specific procedures and command usage for generating and importing HSM-protected keys into Azure Key Vault, which are not generic concepts. It is centered on secure key lifecycle and HSM handling, so security is the closest matching sub-skill. |
@@ -180,7 +187,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | [Add, update, rotate secret](https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-set-update-rotate-secret) | integrations | 0.60 | Demonstrates programmatic patterns for secret lifecycle operations using the JavaScript client, including rotation, which are SDK-specific integration details. |
 | [Create your first external key (Azure portal)](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-quickstart-portal) | integrations | 0.60 | Portal quickstart walks through configuring an EKM Proxy connection and key reference for external HSMs; contains product-specific integration steps and options beyond generic portal usage. |
 | [Enable and disable secret](https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-enable-disable-secret) | integrations | 0.60 | Covers programmatic enable/disable operations via the JavaScript client, which are concrete SDK integration patterns. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-faq) | decision-making | 0.60 | FAQ covers how external key management differs from Managed HSM keys, SLA coverage, and supported vendors, giving practical comparison and selection guidance for this preview feature. |
 | [Get secret](https://learn.microsoft.com/en-us/azure/key-vault/secrets/javascript-developer-guide-get-secret) | integrations | 0.60 | Shows how to get current or versioned secrets using the JavaScript client, including specific API usage patterns. |
 
 ## Unclassified Pages

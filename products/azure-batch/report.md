@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
-  security: 'Securing Batch accounts and pools: key rotation, Entra ID auth/RBAC,
-    CMK and disk encryption, private endpoints/Private Link, network perimeters, and
-    Azure Policy-based governance.'
+  security: 'Securing Batch accounts: auth with Entra ID/managed identities, keys
+    & CMK encryption, RBAC, private endpoints/network perimeters, public access, policies,
+    and best‑practice hardening.'
   deployment: Guides for moving Azure Batch accounts across regions with ARM templates
     and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines.
-  configuration: Configuring Azure Batch pools, nodes, networking, monitoring, autoscale,
-    OS/cert rotation, events/logs, containers, disks, and task runtime/user settings
-    for secure, optimized operation.
+  configuration: 'Configuring Azure Batch pools and tasks: autoscale, OS/cert rotation,
+    networking, security, monitoring/analytics, events/log schemas, containers, disks,
+    and node/task runtime settings.'
   limits-quotas: Planning Batch capacity, understanding service limits/quotas, managing
     quotas via .NET, and using metrics/logs to monitor and stay within Azure Batch
     limits.
@@ -30,16 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Batch development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Batch pools, autoscale, private networking, CMK encryption, or CI/CD
-  for HPC/render jobs, and other Azure Batch related development tasks. Not for Azure
-  Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure Virtual
-  Machines (use azure-virtual-machines).
-use_when: Use when configuring Batch pools, autoscale, private networking, CMK encryption,
-  or CI/CD for HPC/render jobs, and other Azure Batch related development tasks.
+  configuring Batch pools/jobs, autoscale, containers/MPI, storage mounts/Key Vault,
+  or large render/HPC workloads, and other Azure Batch related development tasks.
+  Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines),
+  Azure HDInsight (use azure-hdinsight).
+use_when: Use when configuring Batch pools/jobs, autoscale, containers/MPI, storage
+  mounts/Key Vault, or large render/HPC workloads, and other Azure Batch related development
+  tasks.
 confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use
-  azure-functions), Azure Virtual Machines (use azure-virtual-machines).
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
+  (use azure-virtual-machines), Azure HDInsight (use azure-hdinsight).
 ---
 # Azure Batch Crawl Report
 
@@ -53,8 +54,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 122
+- **Updated Pages**: 3
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -63,8 +64,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.6% |
-| best-practices | 8 | 6.5% |
-| configuration | 33 | 26.6% |
+| best-practices | 7 | 5.6% |
+| configuration | 34 | 27.4% |
 | decision-making | 10 | 8.1% |
 | deployment | 2 | 1.6% |
 | integrations | 13 | 10.5% |
@@ -77,10 +78,12 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Updated Pages
 
-- [Monitor Azure Batch](https://learn.microsoft.com/en-us/azure/batch/monitor-batch)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-30T08:00:00.000Z
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/batch/monitor-batch-reference)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-30T22:11:00.000Z
+- [Update pool properties](https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties)
+  - Updated: 2026-01-06T06:10:00.000Z → 2026-10-05T22:13:00.000Z
+- [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption)
+  - Updated: 2026-07-29T18:02:00.000Z → 2026-10-05T22:13:00.000Z
+- [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices)
+  - Updated: 2026-01-12T08:00:00.000Z → 2026-10-05T08:00:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +98,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/batch/monitor-batch-reference) | configuration | 0.80 | A monitoring data reference for a specific service almost always lists the exact metrics, dimensions, log categories, and schema fields exposed by that service. These are detailed, product-specific configuration/parameter references that an LLM wouldn't reliably know from training, matching the configuration sub-skill. |
 | [Pool autoscale event](https://learn.microsoft.com/en-us/azure/batch/batch-pool-autoscale-event) | configuration | 0.80 | A reference for a specific event type with an example body implies detailed schema (fields, meanings, possibly values) for the autoscale event. This is expert, product-specific event/log configuration information. |
 | [Role-based access control for Azure Batch service](https://learn.microsoft.com/en-us/azure/batch/batch-role-based-access-control) | security | 0.80 | Details built-in Azure roles for Batch, their permissions, and how to assign custom roles; includes specific RBAC role names and scope usage unique to Batch. |
-| [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices) | best-practices | 0.80 | Security-focused best-practices article with concrete guidance on securing Batch accounts, pools, and networking; product-specific recommendations. |
 | [Special task event](https://learn.microsoft.com/en-us/azure/batch/batch-special-task-event) | configuration | 0.80 | Describes special task events (job prep, release, start) with example payload and notes about fields like retryCount and requeueCount. This is detailed, product-specific event/log configuration knowledge. |
 | [Task complete event](https://learn.microsoft.com/en-us/azure/batch/batch-task-complete-event) | configuration | 0.80 | Reference for task complete event with example body and explanation of how to derive duration, node, retries, etc. This is detailed event schema/field knowledge, fitting configuration of monitoring/diagnostics. |
 | [Task fail event](https://learn.microsoft.com/en-us/azure/batch/batch-task-fail-event) | configuration | 0.80 | Describes the task fail event, emitted alongside task complete, with semantics around nonzero exit codes and example payload. These are specific event/log schema and behavior details. |
@@ -104,6 +106,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Task start event](https://learn.microsoft.com/en-us/azure/batch/batch-task-start-event) | configuration | 0.80 | Provides reference for the task start event including payload example and fields like retry count and system task version. These event schema details are specific configuration/telemetry knowledge. |
 | [Disable hyper-threading on pool nodes](https://learn.microsoft.com/en-us/azure/batch/how-to-disable-hyper-threading-using-pool-tag) | configuration | 0.78 | The article describes a product-specific way to disable hyper-threading on Azure Batch pool nodes using a reserved pool tag that is propagated to the underlying VM scale set. This is a concrete configuration mechanism unique to Azure Batch, with specific tag usage and behavior that isn't generic knowledge. |
 | [Error handling and detection](https://learn.microsoft.com/en-us/azure/batch/error-handling) | troubleshooting | 0.78 | The page focuses on different Azure Batch error types and how to resolve common problems, likely including specific error messages/codes and symptom→cause→resolution guidance that is product-specific and not purely conceptual. |
+| [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices) | security | 0.78 | Page is explicitly about security best practices for Azure Batch, likely including product-specific guidance such as network configuration, identity/RBAC usage, and secure defaults for Batch accounts and pools. This aligns with the 'security' sub-skill type, as it focuses on secure configuration patterns rather than generic concepts. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/batch/best-practices) | best-practices | 0.75 | Explicitly a best practices article for Azure Batch; such pages typically include concrete, product-specific recommendations and gotchas for performance and design that go beyond generic advice, matching the best-practices criteria. |
 | [Configure managed identities](https://learn.microsoft.com/en-us/azure/batch/managed-identity-pools) | security | 0.75 | Page contains product-specific security and identity configuration details for Azure Batch pools, including the need to set the Identity property correctly to link a user-assigned managed identity to the pool so nodes can access Azure resources. This is concrete Entra ID/RBAC-related configuration rather than conceptual identity theory. |
 | [Container workloads](https://learn.microsoft.com/en-us/azure/batch/batch-docker-container-workloads) | integrations | 0.75 | Explains how to configure Batch pools for container tasks with SDK-specific parameters and examples (e.g., container configuration on nodes, image references). These are detailed integration and configuration patterns for Docker-compatible containers on Azure Batch. |
@@ -113,6 +116,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Microsoft Entra ID with Batch Management](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth-management) | security | 0.72 | Describes how to authenticate applications that call the Azure Batch Management service using Microsoft Entra ID and Azure Identity, in combination with Azure.ResourceManager.Batch. This is product-specific identity and access configuration for management-plane APIs, which aligns with the security sub-skill. |
 | [Microsoft Entra ID with Batch service](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth) | security | 0.72 | Page is focused on configuring Microsoft Entra ID authentication for Azure Batch service applications using Azure Identity credentials (DefaultAzureCredential, ManagedIdentityCredential, ClientSecretCredential, etc.). This is product-specific security/auth configuration with concrete guidance on which auth flows/credentials to use and how, which fits the security sub-skill. |
 | [Mount a virtual file system](https://learn.microsoft.com/en-us/azure/batch/virtual-file-mount) | integrations | 0.72 | The page covers how to mount various virtual file systems on Azure Batch pool nodes using the Azure.ResourceManager.Batch client library, including product-specific mounting configuration and troubleshooting guidance. This is an integration pattern between Batch and external storage/file systems with concrete configuration details beyond generic SDK usage. |
+| [Update pool properties](https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties) | configuration | 0.72 | The article focuses on which Azure Batch pool properties can be updated after creation and how to do so. This is product-specific configuration behavior (what is mutable vs immutable, and how to patch properties) that is not generic knowledge. It describes concrete pool settings such as VM size, image, virtual network, and encryption configuration in the context of update operations, which aligns best with the configuration sub-skill. |
 | [Automate runs with .NET](https://learn.microsoft.com/en-us/azure/batch/tutorials/financial-risk-simulations/automate-with-dotnet) | integrations | 0.70 | Describes using specific Azure SDKs (Azure.Compute.Batch, Azure.ResourceManager.Batch, Azure.Storage.Blobs, Azure.Identity) together in a workflow, which is a product-specific integration pattern. Likely includes concrete API usage and configuration details unique to this combination of services. |
 | [Autoscale compute nodes](https://learn.microsoft.com/en-us/azure/batch/batch-automatic-scaling) | configuration | 0.70 | Covers Azure Batch autoscale formulas and parameters that control node counts. These are product-specific configuration expressions and properties, beyond generic scaling concepts, but not primarily limits/quotas or decision matrices. |
 | [Capacity planning](https://learn.microsoft.com/en-us/azure/batch/batch-capacity-planning) | limits-quotas | 0.70 | Capacity planning article focused on quotas and allocation; summary references default and maximum values for quotas, which are specific numerical limits not generally known from training, fitting the limits-quotas category. |
@@ -120,7 +124,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Checking for pool and node errors](https://learn.microsoft.com/en-us/azure/batch/batch-pool-node-error-checking) | troubleshooting | 0.70 | Page focuses on detecting and avoiding failures in Azure Batch pool and node background operations, distinguishing immediate vs asynchronous operations and describing how to check for and handle these failures. This is symptom/cause-oriented guidance specific to Azure Batch behavior, fitting troubleshooting. |
 | [Create a CI/CD pipeline for Batch](https://learn.microsoft.com/en-us/azure/batch/batch-ci-cd) | deployment | 0.70 | Shows how to use Azure Pipelines to build and deploy ARM templates for Batch HPC solutions, including product-specific deployment pipeline configuration. |
 | [Create a pool in a virtual network](https://learn.microsoft.com/en-us/azure/batch/batch-virtual-network) | configuration | 0.70 | Explains configuring a Batch pool in a VNet subnet, including required settings and parameters for network configuration that are specific to Batch pools. |
-| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.70 | Page describes product-specific security configuration for Azure Batch pools, including how to specify disk encryption configuration when using Virtual Machine Configuration and platform-managed keys. This is concrete security setup guidance rather than a conceptual overview. |
 | [Create a simplified node communication pool without public IP addresses](https://learn.microsoft.com/en-us/azure/batch/simplified-node-communication-pool-no-public-ip) | configuration | 0.70 | Explains how to configure an Azure Batch pool without public IPs using simplified node communication, including region availability constraints and required network settings. This is product-specific configuration guidance with concrete requirements, not just conceptual content. |
 | [Create efficient query lists](https://learn.microsoft.com/en-us/azure/batch/batch-efficient-list-queries) | best-practices | 0.70 | Provides concrete, Batch-specific recommendations for using filters, select clauses, and query patterns to reduce payload size and improve performance. These are actionable DO/DON'T patterns tied to the Batch API rather than generic querying advice. |
 | [Create resource files](https://learn.microsoft.com/en-us/azure/batch/resource-files) | configuration | 0.70 | Describes concrete, product-specific ways to define and attach resource files to Batch tasks and how they appear on VMs. While mostly procedural, it includes Batch-specific properties/fields and path behaviors that are configuration details rather than generic tutorial content. |
@@ -144,7 +147,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Rotate Batch account keys](https://learn.microsoft.com/en-us/azure/batch/account-key-rotation) | security | 0.70 | Covers rotating Batch account shared keys, allowedAuthenticationModes, and how to disable shared key auth in favor of Entra ID; includes product-specific authentication configuration and security recommendations. |
 | [Securely access Key Vault with Batch](https://learn.microsoft.com/en-us/azure/batch/credential-access-key-vault) | integrations | 0.70 | Describes programmatic access to Key Vault from Batch using pool managed identities and VM extensions, including product-specific identity, certificate, and Key Vault integration patterns. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/batch/security-controls-policy) | security | 0.70 | Lists specific Azure Policy built-in definitions and compliance controls for Batch, which are product-specific security configuration artifacts. |
-| [Update pool properties](https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties) | configuration | 0.70 | Details which Batch pool properties are mutable vs immutable and how to patch them, which is product-specific configuration knowledge. |
 | [Use extensions with pools](https://learn.microsoft.com/en-us/azure/batch/create-pool-extensions) | configuration | 0.70 | Page describes product-specific use of Azure Batch pool extensions, including how to select allowable extensions, configure them during node provisioning, and retrieve live status and returned information for diagnostics. This is concrete, configuration-focused guidance specific to Azure Batch rather than a generic overview. |
 | [Use private endpoints with Batch accounts](https://learn.microsoft.com/en-us/azure/batch/private-connectivity) | security | 0.70 | Describes product-specific network security configuration for Batch using Private Link and private endpoints, including required subnet and access behavior details. |
 | [Use simplified compute node communication](https://learn.microsoft.com/en-us/azure/batch/simplified-compute-node-communication) | configuration | 0.70 | Describes the simplified compute node communication mode and its specific network configuration requirements (service mode selection, required ports/endpoints, and Azure networking settings). These are product-specific configuration details that an LLM is unlikely to know from training, and they go beyond conceptual explanation into concrete setup guidance. |
@@ -154,6 +156,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Associate Batch accounts with network security perimeter (preview)](https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter) | security | 0.68 | Page is about associating Azure Batch accounts with a network security perimeter, which is a product-specific security configuration. Such docs typically include exact configuration steps, scope definitions, and possibly required roles or permissions unique to this feature, qualifying as security-focused expert knowledge rather than a generic overview. |
 | [Classic compute node communication model](https://learn.microsoft.com/en-us/azure/batch/batch-pools-to-simplified-compute-node-communication-model-migration-guide) | decision-making | 0.68 | Migration guide for retiring the classic compute node communication model with a fixed end-of-support date, including product-specific guidance on how and when to move to the simplified model and how to plan the transition. This is concrete, time-bound, service-specific decision and migration guidance rather than a generic overview. |
 | [Concurrent node tasks](https://learn.microsoft.com/en-us/azure/batch/batch-parallel-node-tasks) | best-practices | 0.68 | Focuses on maximizing resource usage and lowering costs by running multiple tasks concurrently per node, with scenario-based guidance on when to share node resources vs dedicate them. This is concrete, product-specific guidance on tuning parallelism and node utilization, fitting best-practices. |
+| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | configuration | 0.68 | The page explains how to enable disk encryption for Azure Batch pools using disk encryption configuration and platform-managed keys, including migration guidance away from Azure Disk Encryption to encryption at host. This is product-specific configuration guidance with concrete settings and deprecation details, fitting the configuration sub-skill rather than generic conceptual content. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/batch/policy-reference) | security | 0.65 | Indexes Batch-specific Azure Policy built-in definitions, which are concrete governance/security controls and policy names unique to this service. |
 | [Batch analytics](https://learn.microsoft.com/en-us/azure/batch/batch-analytics) | configuration | 0.65 | Described as reference information for events and alerts for Batch resources. Such pages usually enumerate event types, fields, and alert schemas, which are product-specific telemetry configurations and not generic concepts. |
 | [Create a pool across Availability Zones](https://learn.microsoft.com/en-us/azure/batch/create-pool-availability-zones) | configuration | 0.65 | Shows how to set zonal policy for Batch pools using VM configuration; includes product-specific pool configuration options for availability zones. |

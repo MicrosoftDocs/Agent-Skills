@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   integrations: Patterns and steps for wiring Azure compute and Foundry agents to
     external services like Confluent Cloud and MongoDB Atlas using Service Connector
@@ -20,7 +20,9 @@ skill_description: Expert knowledge for Azure Partner Solutions development incl
   troubleshooting, architecture & design patterns, security, configuration, and integrations
   & coding patterns. Use when integrating Confluent/MongoDB via Service Connector,
   managing Datadog/Dynatrace/Elastic/New Relic, or Palo Alto Cloud NGFW, and other
-  Azure Partner Solutions related development tasks.
+  Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry),
+  Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use
+  azure-lighthouse), Azure Oracle (use azure-oracle).
 use_when: Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic/New
   Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development
   tasks.
@@ -40,8 +42,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 113
+- **Updated Pages**: 5
+- **Unchanged**: 109
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -60,8 +62,16 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Updated Pages
 
-- [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents)
-  - Updated: 2026-03-25T22:12:00.000Z → 2026-09-28T22:12:00.000Z
+- [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview)
+  - Updated: 2026-06-03T11:36:00.000Z → 2026-10-09T17:23:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-10-09T17:23:00.000Z
+- [Create an Elastic resource](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/create)
+  - Updated: 2026-06-03T11:36:00.000Z → 2026-10-09T17:23:00.000Z
+- [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/manage)
+  - Updated: 2026-06-03T11:36:00.000Z → 2026-10-09T17:23:00.000Z
+- [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/)
+  - Updated: 2026-05-26T17:19:00Z → 2026-10-09T17:23:00Z
 
 ## Classified Pages
 
@@ -99,11 +109,9 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources) | 0.40 | How to create Confluent environments/clusters/topics in Azure; appears procedural without explicit config parameter tables or limits. |
 | [Create a connector to Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-cosmos-db-connector) | 0.40 | Tutorial for creating a Cosmos DB connector; similar to index 26, focused on walkthrough rather than config matrices. |
 | [Create a connector to Blob Storage](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-confluent-connectors) | 0.40 | Tutorial for creating a Blob Storage connector; likely shows steps and some fields but not a full configuration reference with defaults/ranges. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq) | 0.40 | Elastic integration with Azure FAQ description focuses on general questions about Elastic Cloud, Observability, and Security; no explicit indication of numeric limits, detailed configuration parameter tables, or structured troubleshooting with error codes, so it likely lacks the required expert-knowledge depth. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/faq) | 0.40 | Informatica Intelligent Data Management Cloud FAQ is described as answering common questions about using the Azure Native ISV service; absent mention of limits, configuration matrices, or error-code-based troubleshooting, it is likely high-level usage guidance rather than expert configuration or troubleshooting content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/faq) | 0.40 | LambdaTest HyperExecute FAQ focuses on resource creation and management; the description does not indicate detailed numeric limits, configuration parameter tables, or structured troubleshooting content, so it likely does not meet the expert-knowledge criteria. |
 | [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/manage) | 0.40 | Covers day-to-day management of Datadog integration (metrics, logs, agents, multi-subscription); summary suggests general management guidance rather than explicit config parameter tables or quantified best practices. |
-| [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/manage) | 0.40 | Management article for Elastic integration (log forwarding, agents, OpenAI connection, network access); summary suggests general how-to steps rather than structured config tables or quantified best practices. |
 | [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/manage) | 0.40 | Managing Confluent Cloud resource settings; summary does not indicate detailed parameter tables or limits. |
 | [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/manage) | 0.40 | Managing Arize AI settings; summary does not show detailed parameter tables or limits. |
 | [Manage confluent connectors](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/manage-confluent-connectors) | 0.40 | Managing Azure Confluent Connectors; summary mentions filtering and statuses but not detailed config parameters or limits. |
@@ -115,7 +123,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Create a resource - Azure CLI](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-cli) | 0.30 | Quickstart for creating Confluent resource via CLI; focuses on basic creation flow, not full configuration matrices. |
 | [Create a resource - Azure PowerShell](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-powershell) | 0.30 | Quickstart for creating Confluent resource via PowerShell; basic example usage rather than exhaustive config. |
 | [Create a resource - Azure portal](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create) | 0.30 | Quickstart for creating Confluent resource via portal; step-by-step tutorial, not a comprehensive config reference. |
-| [Create an Elastic resource](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/create) | 0.30 | Quickstart for creating an Elastic resource and collecting logs; primarily procedural and unlikely to contain detailed configuration matrices or product-specific edge cases. |
 | [Create an Informatica IDMC advanced serverless runtime](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/create-advanced-serverless) | 0.30 | Quickstart for creating an advanced serverless deployment with Informatica IDMC via the portal. The description suggests a guided setup rather than a catalog of configuration parameters or limits; likely tutorial-style without structured expert configuration tables. |
 | [Create an NGINXaaS deployment](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/create) | 0.30 | Quickstart for creating NGINXaaS via Marketplace; likely basic provisioning steps without deep configuration tables or expert-only parameters. |
 | [Create new Datadog organization](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/create) | 0.30 | Quickstart for creating a Datadog resource; primarily step-by-step portal instructions without detailed configuration parameter tables or product-specific edge cases. |
@@ -148,12 +155,14 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Datadog](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/) | 0.20 | Entry page for Datadog Azure Native ISV Service; summary suggests general documentation hub, not a detailed limits/config/troubleshooting page. |
 | [Dell PowerScale](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/) | 0.20 | Page appears to be a high-level overview/marketing-style description of Dell PowerScale as an Azure Native Integration without detailed limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Dynatrace](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/) | 0.20 | Landing/overview for Azure Native Dynatrace Service; description focuses on experience and workflow, not expert configuration or limits. |
-| [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/) | 0.20 | Elastic with Azure documentation landing page; summary is conceptual (centralized analytics) without specific expert details. |
+| [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/) | 0.20 | Page is a high-level overview of Elastic’s native integrations with Azure, describing capabilities (search, vector DB, observability, security) without specific limits, configuration parameters, error codes, or decision matrices. Content is primarily conceptual/marketing and does not meet any sub-skill detection criteria. |
 | [F5](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/) | 0.20 | NGINXaaS Azure Native ISV Service overview; description mentions create/manage/support but no specific expert configuration or limits. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq) | 0.20 | FAQ-style content but description suggests general Q&A about using Elastic on Azure, not detailed error codes, configuration tables, or tier-specific limits. Lacks clear expert-only technical details per the defined categories. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/faq) | 0.20 | FAQ content about Everpure Cloud Azure Native developer resources is likely high-level guidance and common questions, without detailed limits, configuration tables, error-code mappings, or other product-specific expert details. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/partner-solutions/faq) | 0.20 | FAQ summary only; likely conceptual and billing/usage questions without specific limits, configs, or error mappings in the provided description. |
 | [Get support](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/get-support) | 0.20 | Support-contact article; typically procedural with no technical limits, configs, or troubleshooting mappings. |
 | [Informatica](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/) | 0.20 | Informatica Azure Native ISV Service overview; summary mentions create/manage/support but no specific configuration tables or limits. |
+| [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/manage) | 0.20 | Describes managing Elastic resources and workflows from Azure portal. Summary indicates navigation and usage guidance, not detailed configuration tables, limits, or troubleshooting mappings. |
 | [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/manage) | 0.20 | Explains how to manage a Napster API resource (overview, SSO, deletion) in the portal; no indication of expert-level limits, security role definitions, or configuration ranges. |
 | [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage) | 0.20 | Management article for Astro resources appears to be general portal operations; no indication of detailed configuration parameters, limits, or error mappings. |
 | [Metrics and logs](https://learn.microsoft.com/en-us/azure/partner-solutions/metrics-logs) | 0.20 | Page is described as an overview of metrics and logs for Azure Native Integrations with key operational considerations, but no evidence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices. It appears to be conceptual monitoring/observability guidance rather than expert, product-specific reference data. |
@@ -162,12 +171,12 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Qumulo](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/) | 0.20 | Landing page for Azure Native Qumulo Scalable File Service; focuses on portal experience, not detailed limits/config/troubleshooting. |
 | [Start a free trial](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/free-trial) | 0.20 | Free trial page primarily describes how to start a 30-day trial and upgrade paths; it appears marketing/onboarding oriented without detailed limits tables, configuration parameters, or troubleshooting/error mappings, so it lacks the required expert-level technical specifics. |
 | [What is Datadog?](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/overview) | 0.20 | High-level overview of Datadog and its Azure Native Integration; no specific limits, configuration tables, error codes, or decision matrices. |
-| [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview) | 0.20 | Overview of Elastic on Azure Native Integrations; marketing/positioning style description without detailed technical limits, configs, or troubleshooting. |
 | [What is Informatica Intelligent Data Management Cloud (IDMC)](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/overview) | 0.15 | Informatica IDMC overview is descriptive; no clear indication of detailed configuration, limits, or troubleshooting content. |
 | [What is MongoDB Atlas?](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/overview) | 0.15 | MongoDB Atlas overview is conceptual; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [Arize AI](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/) | 0.10 | Marketing-style integration overview for Arize AI; no indication of numeric limits, configuration tables, or troubleshooting details. |
 | [Commvault](https://learn.microsoft.com/en-us/azure/partner-solutions/commvault/) | 0.10 | Conceptual overview of Azure Native Commvault Cloud; lacks specific technical limits, configuration tables, troubleshooting mappings, or decision matrices. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/create) | 0.10 | Quickstart for creating an Everpure Cloud Azure Native resource via the Azure portal is primarily a step-by-step tutorial, not a reference of limits, configuration matrices, or troubleshooting mappings. |
+| [Create an Elastic resource](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/create) | 0.10 | Quickstart for creating Elastic resources via Azure portal. Likely step-by-step tutorial without detailed configuration matrices, limits, or product-specific best-practice guidance. |
 | [Everpure Cloud](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/) | 0.10 | Appears to be a high-level overview/marketing-style description of Everpure Cloud Azure Native integrations with Azure, without specific limits, configuration parameters, error codes, or decision matrices. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/napster/faq) | 0.10 | FAQ focused on subscription, billing, and general usage; summary does not indicate presence of specific error codes, limits, or configuration details. |
 | [LambdaTest - HyperExecute](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/) | 0.10 | Marketing/overview description of LambdaTest HyperExecute integration; lacks evidence of expert-level configuration or limits. |
@@ -181,6 +190,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [What is Azure Native Qumulo Scalable File Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/overview) | 0.10 | Overview of Azure Native Qumulo; descriptive explanation of the service and its capabilities without detailed configuration or numeric thresholds indicated. |
 | [What is Cloud NGFW by Palo Alto Networks?](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/overview) | 0.10 | Overview of Cloud NGFW by Palo Alto Networks; descriptive content about the service and its capabilities without detailed technical configuration or limits indicated. |
 | [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview) | 0.10 | Page is an overview/marketing-style description of Dell PowerScale Azure Native Integration without detailed limits, configuration parameters, error codes, or decision matrices; no product-specific numeric limits, settings tables, or troubleshooting content are evident. |
+| [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview) | 0.10 | High-level overview of Elastic integrations on Azure without specific limits, configuration parameters, error codes, or decision matrices. Primarily conceptual/marketing content. |
 | [What is Everpure Cloud Azure Native?](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/overview) | 0.10 | Overview of Everpure Cloud Azure Native block storage; marketing/positioning content without specific limits, quotas, or configuration matrices. |
 | [What is LambdaTest - HyperExecute?](https://learn.microsoft.com/en-us/azure/partner-solutions/lambda-test/overview) | 0.10 | LambdaTest - HyperExecute overview is marketing/feature description; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [What is NGINXaaS – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/overview) | 0.10 | Overview of NGINXaaS integration; primarily descriptive and marketing-style capabilities summary without detailed configuration or limits. |

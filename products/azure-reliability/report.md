@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 84
+- **Updated Pages**: 0
+- **Unchanged**: 91
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -56,23 +56,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 52 | 57.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable zone resiliency](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-09-28T22:10:00.000Z
-- [Service availability by category](https://learn.microsoft.com/en-us/azure/reliability/availability-service-by-category)
-  - Updated: 2026-06-11T22:24:00.000Z → 2026-09-28T22:10:00.000Z
-- [Azure Bastion](https://learn.microsoft.com/en-us/azure/reliability/reliability-bastion)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-09-24T08:00:00.000Z
-- [Azure Elastic SAN](https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san)
-  - Updated: 2026-04-28T08:00:00.000Z → 2026-09-30T22:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview-reliability-guidance)
-  - Updated: 2026-06-11T22:24:00.000Z → 2026-09-28T22:10:00.000Z
-- [Azure Chaos Studio](https://learn.microsoft.com/en-us/azure/reliability/reliability-chaos-studio)
-  - Updated: 2026-04-14T22:12:00.000Z → 2026-09-30T22:12:00.000Z
-- [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-machines)
-  - Updated: 2026-01-23T06:04:00.000Z → 2026-09-30T22:12:00.000Z
 
 ## Classified Pages
 

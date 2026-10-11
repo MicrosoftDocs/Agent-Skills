@@ -3,7 +3,7 @@ name: azure-vpn-gateway
 description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing VPN topologies, choosing SKUs, configuring P2S/S2S, securing IPsec/IKE, or integrating BGP/ExpressRoute, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VPN Gateway Skill

@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 49
+- **Updated Pages**: 0
+- **Unchanged**: 50
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | *(Unclassified)* | 32 | 64.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
-  - Updated: 2026-09-18T22:15:00.000Z → 2026-10-01T17:21:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-11'
 category_descriptions:
   configuration: 'Configuring and operating SAP on Azure: automation (Terraform, SDAF),
     networking, storage, HA/DR clusters, monitoring (Azure Monitor, BPS, Datasphere),
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ## Summary
 
-- **Total Pages**: 227
-- **Fetched**: 227
+- **Total Pages**: 228
+- **Fetched**: 228
 - **Fetch Failed**: 0
 - **Classified**: 187
-- **Unclassified**: 40
+- **Unclassified**: 41
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 227
 - **Deleted Pages**: 0
@@ -64,18 +64,22 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 32 | 14.1% |
+| architecture-patterns | 32 | 14.0% |
 | best-practices | 7 | 3.1% |
-| configuration | 76 | 33.5% |
+| configuration | 76 | 33.3% |
 | decision-making | 11 | 4.8% |
 | deployment | 28 | 12.3% |
 | integrations | 10 | 4.4% |
 | limits-quotas | 1 | 0.4% |
 | security | 11 | 4.8% |
 | troubleshooting | 11 | 4.8% |
-| *(Unclassified)* | 40 | 17.6% |
+| *(Unclassified)* | 41 | 18.0% |
 
 ## Changes
+
+### New Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/faq)
 
 ## Classified Pages
 
@@ -303,6 +307,7 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [View cost analysis for SAP system](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/view-cost-analysis) | 0.30 | Cost analysis viewing guide; likely UI navigation and conceptual usage of VIS cost view without numeric limits, config matrices, or troubleshooting mappings. |
 | [Business Templates](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/business-templates) | 0.20 | Introduces prebuilt templates, Power BI reports, and Copilot agents with high-level capabilities; lacks specific configuration parameters, limits, or error-resolution mappings. |
 | [Download and prepare software media](https://learn.microsoft.com/en-us/azure/sap/automation/software) | 0.20 | Focuses on downloading SAP software using Ansible playbooks and preparing storage; from the summary it looks like a step-by-step tutorial without explicit configuration tables, limits, or troubleshooting mappings. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/faq) | 0.20 | FAQ pages are often high-level and Q&A oriented. Based on the description, this appears to cover general deployment, setup, and configuration questions for SAP Business Process Solutions on Azure without clear indication of specific limits, configuration tables, error codes, or detailed decision matrices. Lacking evidence of product-specific numeric limits, config parameter tables, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [How to onboard SAP Edge Integration Cell with Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-edge-integration-cell-with-azure) | 0.20 | From the summary, the page appears to be an onboarding/overview guide for running SAP Edge Integration Cell on AKS and Azure Arc. It likely focuses on conceptual deployment steps and hybrid scenario description rather than detailed configuration tables, limits, quotas, or troubleshooting with specific error codes or parameters. Without evidence of numeric limits, config matrices, or product-specific error mappings, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/automation/deployment-framework) | 0.20 | High-level overview of SAP Deployment Automation Framework; conceptual description of what it is and does. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/about-sap-with-microsoft-ai) | 0.20 | High-level overview of SAP with Microsoft AI and getting started; no concrete limits, configuration tables, error codes, or product-specific numeric guidance. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   configuration: 'Configuring AVD environments: images, autoscale, licensing, networking,
     RDP/redirection, Teams/OneDrive, GPU, language packs, monitoring, and client/RemoteApp
@@ -19,9 +19,9 @@ category_descriptions:
   integrations: Managing AVD via CLI/PowerShell, integrating partner App Attach delivery,
     enabling WebRTC multimedia redirection, and launching resources using custom URI
     schemes.
-  security: 'Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), Conditional Access/MFA,
-    RBAC and delegated admin, external identities, clipboard/screen controls, watermarking,
-    WebAuthn, and security best practices'
+  security: 'Securing AVD access and sessions: SSO (AD FS/Entra), RBAC/managed identities,
+    Conditional Access/MFA, external identities, Kerberos, clipboard/screen/watermark
+    controls, and forensic/Purview setup.'
   architecture-patterns: Designing resilient AVD architectures, including DR strategies,
     FSLogix profile management, RDP Multipath connectivity, and automated scaling
     with Automation/Logic Apps.
@@ -31,15 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring host pools/FSLogix, autoscale, MSIX App Attach, Teams optimization,
-  or AVD security/SSO, and other Azure Virtual Desktop related development tasks.
-  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
-  azure-dev-box).
-use_when: Use when configuring host pools/FSLogix, autoscale, MSIX App Attach, Teams
-  optimization, or AVD security/SSO, and other Azure Virtual Desktop related development
+  Use when configuring autoscale, FSLogix profiles, MSIX App Attach, Teams optimization,
+  or WebRTC redirection, and other Azure Virtual Desktop related development tasks.
+  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine
+  Scale Sets (use azure-vm-scalesets), Azure Dev Box (use azure-dev-box), Azure Lab
+  Services (use azure-lab-services).
+use_when: Use when configuring autoscale, FSLogix profiles, MSIX App Attach, Teams
+  optimization, or WebRTC redirection, and other Azure Virtual Desktop related development
   tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Dev Box (use azure-dev-box).
+  Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Dev Box (use azure-dev-box),
+  Azure Lab Services (use azure-lab-services).
 ---
 # Azure Virtual Desktop Crawl Report
 
@@ -53,8 +55,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 154
+- **Updated Pages**: 1
+- **Unchanged**: 158
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -77,16 +79,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Updated Pages
 
-- [Service architecture and resilience](https://learn.microsoft.com/en-us/azure/virtual-desktop/service-architecture-resilience)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-09-30T17:48:00.000Z
-- [Data locations](https://learn.microsoft.com/en-us/azure/virtual-desktop/data-locations)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-09-30T16:13:00.000Z
-- [Deploy Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-virtual-desktop)
-  - Updated: 2026-07-02T08:00:00.000Z → 2026-09-30T23:34:00.000Z
-- [Require single sign-on using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/virtual-desktop/require-authentication-using-microsoft-entra-id)
-  - Updated: 2026-06-12T21:07:00.000Z → 2026-10-02T23:38:00.000Z
-- [Ephemeral OS disks](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy/session-hosts/ephemeral-os-disks)
-  - Updated: 2025-10-15T14:44:00.000Z → 2026-09-30T16:13:00.000Z
+- [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection)
+  - Updated: 2026-08-07T17:50:00.000Z → 2026-10-08T02:50:00.000Z
 
 ## Classified Pages
 
@@ -139,6 +133,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Ephemeral OS disks](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy/session-hosts/ephemeral-os-disks) | configuration | 0.74 | Page describes how to configure Azure Virtual Desktop session hosts with ephemeral OS disks, including product-specific settings such as where the OS disk can be placed (VM cache vs. temp disk), supported VM types/constraints, and configuration details unique to AVD ephemeral disks. This is concrete configuration guidance rather than just conceptual overview. |
 | [Launch OneDrive with RemoteApp](https://learn.microsoft.com/en-us/azure/virtual-desktop/onedrive-remoteapp) | configuration | 0.72 | Describes a workaround for the standard OneDrive autostart setting not working with RemoteApp, implying specific script/configuration steps unique to AVD. |
 | [Microsoft Entra joined session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts) | configuration | 0.72 | Entra-joined host deployment typically requires specific identity settings, enrollment options, and conditional access-related parameters that are product-specific configuration details. |
+| [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.72 | The page describes a product-specific security feature (screen capture protection) for Azure Virtual Desktop and Windows 365, including how it interacts with OS-level APIs and client behavior. This is configuration-level security guidance unique to these services rather than generic security concepts. |
 | [Add and manage App Attach applications](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup) | configuration | 0.70 | Operational guide for adding and managing App Attach applications via Azure portal and PowerShell. Contains product-specific settings, resource types, and parameter names for configuring App Attach, which are configuration details not generally known from training. |
 | [Azure Virtual Desktop FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/faq) | best-practices | 0.70 | FAQ pages for Azure Virtual Desktop typically include concrete, product-specific recommendations (for example around host pool sizing, image management, FSLogix usage, and connection behavior) and gotchas that go beyond generic concepts. While labeled as FAQ, these answers often encode actionable DO/DON'T guidance specific to the service rather than just conceptual explanations. |
 | [Bandwidth considerations](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth) | limits-quotas | 0.70 | Bandwidth requirement article typically includes concrete kbps/Mbps figures for scenarios and possibly thresholds, which are numeric limits unknown to generic models. |
@@ -173,7 +168,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Proxy support guidelines](https://learn.microsoft.com/en-us/azure/virtual-desktop/proxy-server-support) | best-practices | 0.70 | Proxy guidance for AVD typically includes concrete recommendations such as which URLs/ports to bypass, supported authentication methods, and configuration gotchas specific to AVD agents and clients. |
 | [RemoteApp enhancements (preview)](https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements) | configuration | 0.70 | The page describes how to enable specific preview enhancements for RemoteApps, which likely involves product-specific configuration steps or settings unique to Azure Virtual Desktop. While the summary doesn't show numeric limits or error codes, it indicates detailed enablement instructions for a preview feature, which qualifies as expert configuration knowledge beyond generic concepts. |
 | [Schedule Agent updates](https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates) | configuration | 0.70 | Explains Scheduled Agent Updates feature and how to set maintenance windows; likely includes specific configuration options and parameters for update timing. |
-| [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.70 | The page describes a product-specific security feature (Screen Capture Protection) for Azure Virtual Desktop and Windows 365, including how it interacts with OS-level APIs and client behavior (screenshots, screen sharing). This is detailed, implementation-specific security guidance that goes beyond generic concepts, but doesn't focus on limits, quotas, or other categories. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations) | security | 0.70 | Security-focused guidance for Azure Virtual Desktop. While the summary is high-level, this type of page typically includes product-specific recommendations, RBAC roles, and configuration details (for example, use of Reverse Connect, network and identity settings). These are concrete, Azure Virtual Desktop–specific security patterns rather than generic security concepts, so it fits the security sub-skill. |
 | [Service architecture and resilience](https://learn.microsoft.com/en-us/azure/virtual-desktop/service-architecture-resilience) | architecture-patterns | 0.70 | Page describes detailed Azure Virtual Desktop service architecture components and how resilience is achieved across Microsoft-managed and customer-managed layers. This is product-specific architectural guidance beyond generic concepts, helping understand when and how the platform provides resiliency, which fits architecture-patterns best. |
 | [Set up diagnostics for Autoscale](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-diagnostics) | configuration | 0.70 | Describes sending autoscale logs to Storage or Event Hubs and region constraints; includes specific diagnostic settings and configuration options. |

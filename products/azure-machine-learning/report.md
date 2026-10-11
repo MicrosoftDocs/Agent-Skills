@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 552
+- **Updated Pages**: 0
+- **Unchanged**: 553
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 143 | 25.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Compute instance image release notes](https://learn.microsoft.com/en-us/azure/machine-learning/azure-machine-learning-ci-image-release-notes?view=azureml-api-2)
-  - Updated: 2026-06-30T17:08:00.000Z → 2026-10-01T08:00:00.000Z
 
 ## Classified Pages
 

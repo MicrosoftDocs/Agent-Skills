@@ -1,9 +1,9 @@
 ---
 name: azure-key-vault
-description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing secrets/keys, Managed HSM, Private Link, Entra ID auth, or key rotation/backup, and other Azure Key Vault related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Information Protection (use azure-information-protection).
+description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Key Vault/Managed HSM with Entra ID auth, Private Link, Event Grid, BYOK, or secure key rotation, and other Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Attestation (use azure-attestation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing Key Vault errors: REST/API error codes, Private Link and access policy issues, Azure Policy enforcement, and Managed HSM external key management problems. |
 | Best Practices | L47-L53 | Best practices for securing Key Vault keys, handling Managed HSM disaster recovery, and generating/importing BYOK HSM keys for compliant, resilient key management. |
-| Decision Making | L54-L66 | Guidance on choosing Key Vault access models, safely updating APIs, planning key workload migrations, and designing, sizing, and operating Managed HSM and external key solutions. |
+| Decision Making | L54-L66 | Guidance on choosing access control models, planning safe API and key migrations, using or leaving Managed HSM external keys, and sizing/scaling Managed HSM capacity. |
 | Architecture & Design Patterns | L67-L72 | Architecture and workflows for using external key stores with Managed HSM, including key lifecycle management, integration patterns, and operational considerations. |
 | Limits & Quotas | L73-L84 | Limits, quotas, and behaviors for Key Vault and Managed HSM (certificates, secrets, throttling, logging latency, IP firewall/network rules, soft-delete/recovery, and capacity constraints). |
 | Security | L85-L115 | Securing Key Vault and Managed HSM: auth (Entra ID, RBAC/ABAC, access policies), networking/firewalls/private endpoints, Zero Trust, soft-delete, HSM/BYOK key handling, backup/restore, and best practices. |
@@ -58,7 +58,7 @@ This skill requires **network access** to fetch documentation content:
 | Update Azure Key Vault API versions safely | https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version |
 | Plan and execute migration of cryptographic key workloads | https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-key-workloads |
 | Migrate Azure Key Vault from access policies to RBAC | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-migration |
-| Answer common questions on Managed HSM external keys | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-faq |
+| Decide when to use Managed HSM external key management | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-faq |
 | Migrate workloads off Managed HSM external keys | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-migration |
 | Decide when to use Managed HSM external key management | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-overview |
 | Evaluate SLA and responsibilities for Managed HSM external keys | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-shared-responsibility |

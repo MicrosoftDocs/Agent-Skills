@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   integrations: Patterns and how-tos for wiring Functions to external systems (HTTP,
     storage, messaging, databases, AI/OpenAI, Dapr, MCP, SignalR/Web PubSub) via triggers,
@@ -7,9 +7,9 @@ category_descriptions:
   security: 'Guides for securing Functions: encryption at rest, secure storage and
     keys, private access (VNet/private endpoints), managed identity for SQL, and App
     Service security features.'
-  configuration: Configuring Azure Functions runtime, bindings, triggers, networking,
-    monitoring, app settings, hosted skills, and language/runtime versions, including
-    local development and OpenTelemetry setup.
+  configuration: Configuring Azure Functions runtime, bindings, triggers, monitoring,
+    networking, app settings, MCP/OpenAI extensions, and language/runtime versions
+    for correct behavior and integrations.
   decision-making: Guidance on choosing Functions hosting/runtime options, cost and
     networking tradeoffs, and planning/migrating between plans, runtimes, and platforms
     (incl. AWS Lambda and Cosmos/Service Bus upgrades).
@@ -27,13 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Functions development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues,
-  securing with VNets/MI, tuning scaling, or deploying via CI/CD, and other Azure
+  securing via VNet/MI, configuring bindings, or deploying with CI/CD, and other Azure
   Functions related development tasks. Not for Azure App Service (use azure-app-service),
   Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps),
   Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
-use_when: Use when wiring Functions to HTTP/storage/queues, securing with VNets/MI,
-  tuning scaling, or deploying via CI/CD, and other Azure Functions related development
-  tasks.
+use_when: Use when wiring Functions to HTTP/storage/queues, securing via VNet/MI,
+  configuring bindings, or deploying with CI/CD, and other Azure Functions related
+  development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Logic
   Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service).
@@ -49,9 +49,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 - **Unclassified**: 65
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 309
+- **Unchanged**: 310
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -71,14 +71,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ## Changes
 
-### New Pages
-
-- [Canvas quickstart](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills-canvas)
-
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-hosted-skills)
-  - Updated: 2026-09-08T08:00:00.000Z → 2026-10-02T22:12:00.000Z
+- [Local runtime/tools (func.exe)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference)
+  - Updated: 2026-06-02T19:32:00.000Z → 2026-08-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -162,7 +158,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Flex Consumption update strategies](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-site-updates) | deployment | 0.78 | Page describes the SiteUpdateStrategy configuration for Azure Functions Flex Consumption, including how different strategy values affect downtime and in-progress executions during deployments. This is product-specific deployment behavior and configuration that an LLM is unlikely to know from training, and it directly governs zero-downtime deployment patterns for this specific plan. |
 | [General best practices](https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices) | best-practices | 0.78 | A 'best practices' page for a specific service typically includes concrete, product-specific DOs and DON'Ts (for example, guidance on function app structure, cold start mitigation, connection reuse, logging patterns, and configuration choices) that go beyond generic programming advice and reflect internal platform behavior; these are expert details not easily inferred from general training data. |
 | [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service-input) | integrations | 0.78 | SignalRConnectionInfo input binding documentation includes binding properties (hubName, userId, idToken, connection string setting) and token behavior details. These are concrete, product-specific integration settings and patterns. |
-| [Local runtime/tools (func.exe)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference) | configuration | 0.78 | CLI/core tools reference pages typically list detailed command options, flags, and environment variables (for example, func init, func start, func settings) with specific parameter names, defaults, and constraints. This is product-specific configuration knowledge for the Azure Functions local runtime and tools, not just a tutorial, and qualifies as configuration expert knowledge. |
+| [Local runtime/tools (func.exe)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference) | configuration | 0.78 | Reference page for the Azure Functions Core Tools/CLI includes detailed command syntax, flags, and options that are specific to this product (for example, function runtime commands, project management commands, and local execution options). These are product-specific configuration and command parameters that go beyond generic CLI knowledge and qualify as expert knowledge. The content is primarily about configuration/command reference rather than limits, architecture, or deployment matrices. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference) | configuration | 0.78 | The page is a monitoring data reference for Azure Functions, detailing which metrics, logs, and dimensions are emitted and how they map into Azure Monitor/Application Insights. This is product-specific reference material (tables of fields, categories, and meanings) that an LLM is unlikely to fully know from training. It focuses on configuration/interpretation of monitoring data rather than generic concepts, but does not primarily describe limits/quotas, troubleshooting flows, or architecture patterns. |
 | [Notification Hubs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-notification-hubs) | integrations | 0.78 | Binding reference pages for Functions typically include binding attribute names, configuration properties, and parameter schemas specific to Notification Hubs, which are product-specific integration details not derivable from general training. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-output) | configuration | 0.78 | An output binding reference for Cosmos DB in Functions 2.x+ will document binding configuration properties, parameter names, and usage patterns (e.g., partition keys, create vs upsert). These are product-specific configuration details and code patterns. |

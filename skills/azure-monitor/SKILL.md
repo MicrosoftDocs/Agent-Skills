@@ -1,9 +1,9 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AMA/DCRs, Log Analytics workspaces, Application Insights, alerts, or Kusto (KQL) queries, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Resource Graph (use azure-resource-graph), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud).
+description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Log Analytics workspaces, AMA/VM insights, Application Insights, autoscale alerts, or KQL queries, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sre Agent (use azure-sre-agent).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Monitor Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Location | Description |
 |----------|----------|-------------|
 | Troubleshooting | L37-L110 | Diagnosing and fixing Azure Monitor data collection, agents, alerts, pipelines, and workspace issues across VMs, containers, DevCenter, ITSM, and Application Insights logs. |
-| Best Practices | L111-L148 | Best practices for configuring, optimizing, and scaling Azure Monitor (logs, metrics, alerts, autoscale, AKS, VMs, multicloud) for performance, reliability, and cost efficiency. |
-| Decision Making | L149-L187 | Guidance for planning, choosing, and migrating Azure Monitor monitoring/ingestion options (agents, OTEL, metrics/logs, alerts, costs, workspaces, pipelines, and third‑party/tool integrations). |
+| Best Practices | L111-L148 | Best practices for configuring, scaling, alerting, querying, and cost-optimizing Azure Monitor (logs, metrics, autoscale, AKS/Kubernetes, VMs, Prometheus/OpenTelemetry). |
+| Decision Making | L149-L187 | Guidance for choosing Azure Monitor agents, alerts, data collection, costs, workspaces, and migration paths from legacy tools (MMA, SCOM, WAD/LAD, Splunk, Prometheus, App Insights SDKs) |
 | Architecture & Design Patterns | L188-L193 | Designing end-to-end Azure Monitor architectures, including enterprise-scale layouts, data flows, and secure network topologies using Private Link for monitoring traffic. |
-| Limits & Quotas | L194-L224 | Limits, quotas, scale and performance planning for Azure Monitor: ingestion caps, retention, query limits, alert/log rules, Container Insights, Prometheus, metrics/log support, and Workbooks. |
-| Security | L225-L294 | Securing Azure Monitor and related services: auth, RBAC, TLS, networking, policies, private access, and querying security/audit logs from Databricks, MDE, healthcare, and other workloads. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor: agents, data collection rules, diagnostics, logs/metrics schemas, alerts, pipelines, workbooks, and per‑service monitoring for VMs, AKS, apps, and Azure/SaaS resources. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | Integrating Azure Monitor with apps and tools: agents, APIs, webhooks, ITSM, Prometheus/Grafana, and KQL patterns for querying and analyzing many Azure/third‑party logs and metrics. |
+| Limits & Quotas | L194-L223 | Limits, quotas, scale and performance planning for Azure Monitor: ingestion caps, retention, query limits, alert/log rules, Container Insights, Prometheus, metrics/log support, and Workbooks. |
+| Security | L224-L293 | Securing Azure Monitor and related services: auth, RBAC, TLS, networking, policies, private access, and querying security/audit logs from Databricks, MDE, healthcare, and other workloads. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end-to-end: agents, DCRs, pipelines, alerts, autoscale, workbooks, and detailed log/metric schemas for VMs, Kubernetes, apps, databases, and many Azure services. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and code for integrating Azure Monitor with agents, webhooks, ITSM, Prometheus/Grafana, REST/Logs APIs, and KQL queries for many Azure/third‑party log tables. |
 | Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure Monitor components: AMA/VM insights, text logs, smart detection, and enabling .NET profiling and Snapshot Debugger across App Service, Functions, VMs, containers, and Service Fabric. |
 
 ### Troubleshooting
@@ -156,7 +156,7 @@ This skill requires **network access** to fetch documentation content:
 | Decide and migrate from WAD/LAD to Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration-wad-lad |
 | Plan and manage costs for Observability Agent usage | https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing |
 | Choose appropriate Azure Monitor alert types | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-types |
-| Migrate from Application Insights SDKs to OpenTelemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/app/migrate-to-opentelemetry |
+| Choose migration paths from Application Insights Classic SDKs to OpenTelemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/app/migrate-to-opentelemetry |
 | Transition from Container Monitoring Solution to Container Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transition-solution |
 | Choose OpenTelemetry integration options with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-options |
 | Choose Azure Monitor OTLP ingestion approach | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-summary |
@@ -217,7 +217,6 @@ This skill requires **network access** to fetch documentation content:
 | Review Azure Monitor resource log categories and schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
 | Discover Azure Monitor metrics by resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
 | Discover Azure Monitor metrics by resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
-| Reference supported AKS managed cluster metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-containerservice-managedclusters-metrics |
 | Check feature support for Azure Monitor Logs tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-features |
 | Azure Workbooks data source and parameter limits | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-limits |
 | Use Azure Workbooks visualization types effectively | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-visualizations |

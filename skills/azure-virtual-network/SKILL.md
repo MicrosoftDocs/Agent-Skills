@@ -3,7 +3,7 @@ name: azure-virtual-network
 description: Expert knowledge for Azure Virtual Network development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNet IP/DNS, peering and routing, NSGs/service endpoints, MANA/CNI networking, or hybrid connectivity, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Route Server (use azure-route-server).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill

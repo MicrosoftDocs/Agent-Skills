@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   decision-making: 'Guidance on choosing VNet-related options: MANA support for VM
     sizes, upgrading Basic to Standard public IPs, routing preference and unmetered
@@ -69,8 +69,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Updated Pages
 
-- [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network)
-  - Updated: 2026-08-13T17:14:00.000Z → 2026-09-28T08:00:00.000Z
+- [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works)
+  - Updated: 2026-06-24T22:11:00.000Z → 2026-10-08T22:13:00.000Z
 
 ## Classified Pages
 
@@ -188,7 +188,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Create public IP address - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-powershell) | 0.30 | Quickstart using PowerShell to create public IP; focuses on basic creation commands rather than exhaustive configuration or troubleshooting. |
 | [Dissociate public IP address from a VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/remove-public-ip-address-vm) | 0.30 | Simple dissociation procedure; lacks product-specific limits, config parameter tables, or error-code-based troubleshooting. |
 | [Filter network traffic](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic) | 0.30 | NSG tutorial focused on basic rule creation; lacks detailed product-specific limits, error codes, or configuration reference tables. |
-| [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works) | 0.30 | Page explains internal mechanics of Accelerated Networking (synthetic vs SR-IOV interfaces, data path through virtual switch and host) but is primarily conceptual architecture/behavior without configuration tables, numeric limits, error codes, or decision matrices. It doesn’t match the specific patterns for limits, configuration, best practices, troubleshooting, or other defined sub-skill types. |
 | [Manage a virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering) | 0.30 | Management article for creating/changing/deleting VNet peering; mostly operational steps without detailed limits or troubleshooting mappings. |
 | [Manage route tables](https://learn.microsoft.com/en-us/azure/virtual-network/manage-route-table) | 0.30 | Basic route table management article; generic operations without detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-overview) | 0.30 | Overview of MANA performance and capabilities; likely conceptual and marketing-style without detailed limits, configuration tables, or error codes. No clear evidence of numeric limits, config parameters, or troubleshooting mappings from the summary. |
@@ -206,6 +205,7 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Create public IP prefix - Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-cli) | 0.20 | Azure CLI quickstart for creating a public IP prefix; similar to the PowerShell version, it is a procedural tutorial and the summary does not indicate detailed limits, quotas, configuration parameter tables, or specialized troubleshooting content that would qualify as expert knowledge. |
 | [Create public IP prefix - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-powershell) | 0.20 | Quickstart focused on creating a public IP prefix with PowerShell; it appears to be a step-by-step tutorial without tables of limits, quotas, configuration matrices, or product-specific error codes. No clear expert-only numeric constraints or specialized troubleshooting/decision guidance are indicated in the summary. |
 | [Create public IP prefix - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP prefix; focuses on basic creation/change/delete workflow without detailed configuration parameter tables, limits, or troubleshooting content. |
+| [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works) | 0.20 | The page explains the mechanism of Accelerated Networking (synthetic vs SR-IOV interfaces, VMbus, virtual switch path) at a conceptual/architectural level. From the available summary, it does not show specific numeric limits, configuration parameter tables, error codes, or tier-based constraints. It’s primarily a technical overview of how the feature works rather than detailed configuration, limits, or troubleshooting content that would qualify as expert knowledge under the defined categories. |
 | [Virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview) | 0.20 | Content is an overview of virtual network peering concepts and benefits without detailed limits, configuration tables, or decision matrices; it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | Primarily a conceptual/marketing-style overview of routing appliances with no detailed limits, configuration tables, error codes, or decision matrices. It describes what the feature is and its benefits, but not product-specific parameters, quotas, or troubleshooting mappings. |
 | [What is Azure Virtual Network IP Services?](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ip-services-overview) | 0.20 | High-level overview of IP services; no indication of numeric limits, detailed settings tables, or troubleshooting content. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   configuration: 'Configuring ADME operations: monitoring metrics, data partitioning,
     CORS, audit logging, and milestone upgrade settings for secure, scalable data
@@ -41,16 +41,16 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ## Summary
 
-- **Total Pages**: 61
-- **Fetched**: 61
+- **Total Pages**: 62
+- **Fetched**: 62
 - **Fetch Failed**: 0
 - **Classified**: 39
-- **Unclassified**: 22
+- **Unclassified**: 23
 
 ### Incremental Update
 - **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 60
+- **Unchanged**: 61
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -59,19 +59,19 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.6% |
-| configuration | 5 | 8.2% |
-| decision-making | 2 | 3.3% |
+| configuration | 5 | 8.1% |
+| decision-making | 2 | 3.2% |
 | deployment | 1 | 1.6% |
-| integrations | 18 | 29.5% |
-| security | 11 | 18.0% |
+| integrations | 18 | 29.0% |
+| security | 11 | 17.7% |
 | troubleshooting | 1 | 1.6% |
-| *(Unclassified)* | 22 | 36.1% |
+| *(Unclassified)* | 23 | 37.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Connect Analytics Consumption Zone (ACZ) to Snowflake](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-connect-analytics-consumption-zone-to-snowflake)
+- [Schedule seismic analytics reports](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-analytics)
 
 ## Classified Pages
 
@@ -140,6 +140,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier) | 0.20 | Tutorial-style guidance on changing storage tiers (Hot/Cool/Cold) for seismic datasets; no evidence of numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. Content appears conceptual/operational rather than detailed expert reference. |
 | [Deploy OSDU Admin UI](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-osdu-admin-ui) | 0.20 | Appears to be a how-to deployment guide for the OSDU Admin UI on Azure Data Manager for Energy. Based on the summary, it likely focuses on step-by-step deployment instructions without detailed tier matrices, limits, configuration parameter tables, or error-code-based troubleshooting. Without evidence of specific numeric limits, config tables, or decision matrices, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes) | 0.20 | Release notes summary page; description indicates high-level information about releases, improvements, bug fixes, and known issues without clear evidence of detailed limits, configuration tables, error-code mappings, or other structured expert data as defined by the sub-skill types. |
+| [Schedule seismic analytics reports](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-analytics) | 0.20 | Tutorial-style page focused on using the Seismic DDMS Analytics API to create schedules and download reports. Based on the summary, it appears to be a step-by-step usage guide without tables of configuration parameters, limits/quotas, error-code mappings, or product-specific decision matrices. No clear evidence of expert-only numeric limits, configuration ranges, or troubleshooting content. |
 | [Partners](https://learn.microsoft.com/en-us/azure/energy-data-services/resources-partner-solutions) | 0.10 | Partner solutions listing is marketing/ecosystem content, not technical configuration, limits, or troubleshooting guidance. |
 | [Syncing reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values) | 0.10 | Described as an overview of reference data values and synchronization; no indication of detailed configuration tables, limits, or error mappings. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services) | - | FAQ content is high-level Q&A about Azure Data Manager for Energy without specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It doesn't meet any of the expert-knowledge detection criteria. |

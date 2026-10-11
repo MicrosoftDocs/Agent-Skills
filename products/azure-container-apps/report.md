@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 - **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 234
-- **Deleted Pages**: 1
+- **Unchanged**: 235
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
 ## Classification Statistics
@@ -75,14 +75,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 102 | 43.4% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate from Functions on Azure Container Apps V1 to Functions on Azure Container Apps V2](https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions)
-
-### Deleted Pages
-
-- ~~Migrate from Functions v1 to v2~~ (https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions)
 
 ## Classified Pages
 

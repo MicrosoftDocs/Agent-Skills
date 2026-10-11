@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when sizing and migrating VMs/SQL/PostgreSQL, configuring appliances/Arc, using AppCAT/CAST, or Private Link, and other Azure Migrate related development tasks. Not for Azure Database Migration Service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning Azure Migrate/AppCAT assessments, Arc/SQL discovery, VMware agentless replication, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration Service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L56-L66 | Best practices for preparing on-prem/VMware machines and appliances, configuring VM hydration, running test migrations, and creating custom/AppCAT/PostgreSQL assessment rules for Azure Migrate. |
 | Decision Making | L67-L106 | Deciding migration strategies with Azure Migrate/AppCAT: interpreting assessment reports, sizing and readiness, choosing tools/targets, and planning end-to-end migrations from on-prem, AWS, GCP, and VMware. |
 | Architecture & Design Patterns | L107-L112 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
-| Limits & Quotas | L113-L125 | Support matrices, prerequisites, limits, regions, and scaling guidance for Azure Migrate appliances and migrations from VMware, Hyper-V, and physical servers. |
+| Limits & Quotas | L113-L125 | Limits, prerequisites, and support matrices for Azure Migrate appliances and scenarios (VMware, Hyper-V, physical), including scaling, unsupported regions, and discovery/replication quotas. |
 | Security | L126-L137 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, encrypted VM moves, Trusted Launch, RBAC, and Entra ID app registration. |
-| Configuration | L138-L162 | Configuring Azure Migrate appliances, Arc/agents, assessment settings (VM, SQL, PostgreSQL, .NET), private endpoints, landing zones, and Resource Mover destination/resource settings. |
-| Integrations & Coding Patterns | L163-L168 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
-| Deployment | L169-L179 | Guides for deploying Azure Migrate appliances, preparing legacy servers, configuring DevOps pipelines, and planning/executing cross-region VM and SQL moves with supported resource types. |
+| Configuration | L138-L164 | Configuring Azure Migrate and AppCAT: appliance setup, credentials, Private Link/endpoints, Arc/SQL/PostgreSQL discovery, assessment properties, landing zone, and Resource Mover destination settings. |
+| Integrations & Coding Patterns | L165-L170 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
+| Deployment | L171-L181 | Guides for deploying Azure Migrate appliances, preparing legacy servers, configuring DevOps pipelines, and planning/executing cross-region VM and SQL moves with supported resource types. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -114,7 +114,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use Azure Migrate in unsupported regions | https://learn.microsoft.com/en-us/azure/migrate/azure-migrate-unsupported-regions?view=migrate |
-| Scale out Azure Migrate appliance for large VMware moves | https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate |
+| Scale Azure Migrate appliance for VMware replication | https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate |
 | Review Azure Migrate appliance prerequisites and support | https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance?view=migrate |
 | Hyper-V to Azure migration support matrix | https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v-migration?view=migrate |
 | Review Hyper-V discovery and assessment support matrix in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v?view=migrate |
@@ -143,6 +143,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure AppCAT for .NET application migration assessments | https://learn.microsoft.com/en-us/azure/migrate/appcat/dotnet?view=migrate |
 | Meet Azure Migrate assessment prerequisites and settings | https://learn.microsoft.com/en-us/azure/migrate/assessment-prerequisites?view=migrate |
 | Migrate dependency analysis from MMA to Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/migrate/azure-monitor-agent-migration?view=migrate |
+| Configure Azure Migrate discovery via Private Link | https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate |
+| Configure Azure Migrate appliance with Private Link | https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate |
 | Understand Azure Migrate discovered metadata fields | https://learn.microsoft.com/en-us/azure/migrate/discovered-metadata?view=migrate |
 | Enable Azure Arc for servers discovered by Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/how-to-arc-enable-inventory?view=migrate |
 | Discover SQL Server instances in existing Migrate projects | https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-sql-existing-project?view=migrate |

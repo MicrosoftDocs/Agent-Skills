@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   security: 'Managing Artifact Signing security: cert handling, identity validation
     lifecycle, RBAC roles/assignments, and signing Windows code integrity policies
@@ -16,7 +16,8 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
   decision making, security, configuration, and integrations & coding patterns. Use
   when handling cert lifecycles, RBAC for signers, DGSSv2 migration, diagnostic logs,
   or CI/CD signing integration, and other Azure Artifact Signing related development
-  tasks.
+  tasks. Not for Azure Key Vault (use azure-key-vault), Azure Artifacts (use azure-artifacts),
+  Azure Information Protection (use azure-information-protection).
 use_when: Use when handling cert lifecycles, RBAC for signers, DGSSv2 migration, diagnostic
   logs, or CI/CD signing integration, and other Azure Artifact Signing related development
   tasks.
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 
 ### Updated Pages
 
-- [Artifact Signing certificate management](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-certificate-management)
-  - Updated: 2026-09-25T05:12:00.000Z → 2026-10-01T11:42:00.000Z
+- [Frequently asked questions about Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/faq)
+  - Updated: 2026-08-14T22:12:00.000Z → 2026-10-06T05:11:00.000Z
 
 ## Classified Pages
 
@@ -77,6 +78,6 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Artifac
 |-----------|------------|--------|
 | [Revoke a certificate profile in Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-cert-revocation) | 0.45 | Covers revoking certificate profiles and implications; mainly procedural and conceptual without detailed config tables or error-code-based troubleshooting. |
 | [Artifact Signing trust models](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-trust-models) | 0.30 | Conceptual explanation of trust models and scenarios; appears architectural/conceptual without quantified thresholds, matrices, or config tables. |
-| [Frequently asked questions about Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/faq) | 0.30 | FAQ page appears to provide general Q&A about Artifact Signing without clear evidence of detailed limits, configuration tables, error-code-based troubleshooting, or other product-specific numeric/configuration data described in the sub-skill definitions. |
 | [Set up Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/quickstart) | 0.20 | Quickstart for setting up Artifact Signing focuses on step-by-step creation of resources via portal/CLI; description indicates a basic getting-started guide without detailed limits, configuration parameter tables, security role lists, or troubleshooting error mappings. |
 | [What is the Artifact Signing service?](https://learn.microsoft.com/en-us/azure/artifact-signing/overview) | 0.20 | High-level overview of Artifact Signing; describes purpose and benefits but does not include concrete limits, configuration parameters, roles, or other product-specific technical details. |
+| [Frequently asked questions about Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/faq) | - | FAQ pages are typically high-level Q&A without detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined. The description suggests general questions and answers about Artifact Signing, not numeric limits, configuration parameters, or troubleshooting matrices. |

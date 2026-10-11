@@ -72,6 +72,7 @@
 | Identify Azure-hosted VMs via SMBIOS asset tag | https://learn.microsoft.com/en-us/azure/virtual-machines/identify-azure-vm-from-guest |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
+| Install and configure AMD GPU drivers on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
 | Create and upload CentOS-based VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
 | Create and encrypt Linux VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart |

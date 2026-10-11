@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Relia
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 44
-- **Unchanged**: 21
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -69,54 +69,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Relia
 | *(Unclassified)* | 13 | 19.7% |
 
 ## Changes
-
-### New Pages
-
-- [Move from Experiments (classic) to Workspaces](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-migrate-from-classic)
-
-### Updated Pages
-
-- [Bicep experiment sample for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Azure Policy target samples for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Agent overview for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-overview)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Agent concepts for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-concepts)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Agent OS support for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-os-support)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Agent ARM template for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-arm-template)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Verify Chaos Studio agent status (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-verify-status)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Configure agent Private Link for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Uninstall the Chaos Studio agent (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-uninstall)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Agent known issues for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-agent-known-issues)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Assign permissions to Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Relay container image for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Configure customer-managed keys for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Send experiment telemetry to Azure Monitor (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Send agent telemetry to Application Insights (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-app-insights)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Troubleshoot Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting)
-  - Updated: 2026-09-05T08:00:00.000Z → 2026-09-25T08:00:00.000Z
-- [Experiment examples for the CLI and portal (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Supported resources for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Version compatibility for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-09-27T12:03:00.000Z
-- [Service limits for Experiments (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-service-limits)
-  - Updated: 2026-09-05T08:00:00.000Z → 2026-09-27T12:03:00.000Z
-- *...and 24 more*
 
 ## Classified Pages
 

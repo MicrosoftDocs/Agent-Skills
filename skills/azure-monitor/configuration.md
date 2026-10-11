@@ -8,7 +8,6 @@
 | Topic | URL |
 |-------|-----|
 | Configure Azure Monitor Agent settings on VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/agent-settings |
-| Track Azure Monitor Agent VM extension versions | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-extension-versions |
 | Configure Azure Monitor Agent network connectivity | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-network-configuration |
 | Manage Azure Monitor Agent deployment with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy |
 | Check Azure Monitor Agent platform and OS requirements | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-requirements |
@@ -48,14 +47,14 @@
 | Configure Application Insights Profiler for Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-profiler |
 | Configure Application Insights JavaScript SDK options | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk-configuration |
 | Configure Application Insights managed workspaces in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/app/managed-workspaces |
-| Configure OpenTelemetry settings for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration |
-| Enable OpenTelemetry data collection in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable |
-| Configure OpenTelemetry filtering in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-filter |
+| Configure OpenTelemetry data collection and resource detection in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-collect-detect |
+| Configure OpenTelemetry settings for Azure Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration |
+| Enable Microsoft OpenTelemetry Distro for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable |
+| Configure OpenTelemetry data filtering and privacy in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-filter |
 | Customize the Application Insights overview dashboard | https://learn.microsoft.com/en-us/azure/azure-monitor/app/overview-dashboard |
 | Configure autoscale using Application Insights custom metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-custom-metric |
 | Enable and route Azure autoscale diagnostics logs | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-diagnostics |
 | Configure Azure Monitor autoscale for App Service | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-get-started |
-| Configure VM Scale Set autoscale using PowerShell | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-using-powershell |
 | Set up autoscale email and webhook notifications | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-webhook-email |
 | Onboard and analyze OpenTelemetry data in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/collect-use-observability-data |
 | Understand deployment and HPA metrics collected by Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-deployment-hpa-metrics |
@@ -65,7 +64,7 @@
 | View real-time Kubernetes metrics with Container Insights Live Data | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-metrics |
 | Create log-based alerts for AKS CPU, memory, and disk | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-log-alerts |
 | Run Azure Monitor log queries for container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-log-query |
-| Configure ContainerLogV2 schema in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-logs-schema |
+| Configure ContainerLogV2 schema for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-logs-schema |
 | Manage and upgrade the Container Insights agent | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-manage-agent |
 | Configure multitenant logging in Container Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-multitenant |
 | Configure persistent volume monitoring with Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-persistent-volumes |
@@ -73,12 +72,13 @@
 | Configure throttling parameters and monitor log loss in Container Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-throttling |
 | Configure DCR transformations for Kubernetes container logs | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transformations |
 | Configure workspace transformations for AKS control plane logs | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/control-plane-transformations |
+| Enable codeless Application Insights on AKS | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-codeless |
 | Configure AKS autoinstrumentation for Python and .NET | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-codeless-python-net |
 | Configure Kubernetes ConfigMap for Azure Monitor log collection | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-data-collection-configmap |
 | Customize and filter Azure Monitor data collection for Kubernetes | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-data-collection-configure |
 | Configure monitoring for Arc-enabled Kubernetes with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-enable-arc |
 | Configure firewall and proxy for Kubernetes monitoring agents | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-firewall |
-| Configure OTLP monitoring for AKS applications | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-open-protocol |
+| Configure OTLP-based monitoring for AKS apps | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-open-protocol |
 | Configure OTLP ingestion to Azure Monitor with AMA | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/opentelemetry-ingest-agent |
 | Route Prometheus metrics to multiple Azure Monitor workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-multiple-workspaces |
 | Create custom Prometheus scrape jobs with ConfigMap | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configmap |
@@ -103,7 +103,7 @@
 | Configure pod placement for Azure Monitor pipeline instances | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-pod-placement |
 | Configure Azure Monitor pipeline log transformations | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-transformations |
 | Configure DCRs to collect Azure platform logs | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/platform-logs-collect |
-| Configure Azure Monitor diagnostic settings via ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/resource-manager-diagnostic-settings |
+| Configure Azure Monitor diagnostic settings via ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/resource-manager-diagnostic-settings |
 | Configure and export Azure Monitor activity logs | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/activity-log |
 | Use Azure Activity Log event schemas by category | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/activity-log-schema |
 | Configure monitoring coverage and recommended settings in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/monitoring-coverage |
@@ -246,6 +246,7 @@
 | Monitor Connected Vehicle platform accounts with metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-connectedvehicle-platformaccounts-metrics |
 | Monitor Container Instances with Azure metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-containerinstance-containergroups-metrics |
 | Monitor container scale sets using Azure metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-containerinstance-containerscalesets-metrics |
+| Reference metrics for AKS managed clusters in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-containerservice-managedclusters-metrics |
 | Monitor Custom Providers resource providers with metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-customproviders-resourceproviders-metrics |
 | Reference Azure Monitor metrics for Cosmos DB accounts | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-databaseaccounts-metrics |
 | Use Azure Monitor metrics for Azure File Shares | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-fileshares-fileshares-metrics |
@@ -266,7 +267,7 @@
 | Reference Azure Monitor metrics for Key Vault HSMs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-keyvault-managedhsms-metrics |
 | Use metrics for Azure Key Vault monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-keyvault-vaults-metrics |
 | Reference Azure Monitor metrics for connected Kubernetes clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-kubernetes-connectedclusters-metrics |
-| Monitor Kubernetes configuration extensions metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-kubernetesconfiguration-extensions-metrics |
+| Reference metrics for Kubernetes configuration extensions in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-kubernetesconfiguration-extensions-metrics |
 | Use Azure Monitor metrics for Kusto clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-kusto-clusters-metrics |
 | Reference Azure Monitor metrics for Logic automation applications | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-logic-automationprojects-applications-metrics |
 | Reference Azure Monitor metrics for Logic automationProjects | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-logic-automationprojects-metrics |

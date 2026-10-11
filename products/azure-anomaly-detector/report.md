@@ -30,62 +30,59 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ## Summary
 
-- **Total Pages**: 24
-- **Fetched**: 24
+- **Total Pages**: 1
+- **Fetched**: 1
 - **Fetch Failed**: 0
-- **Classified**: 7
-- **Unclassified**: 17
+- **Classified**: 0
+- **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 24
-- **Deleted Pages**: 0
+- **Unchanged**: 0
+- **Deleted Pages**: 24
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anomaly-detector/azure-anomaly-detector.csv`
 
 ## Classification Statistics
 
-| Type | Count | Percentage |
-|------|-------|------------|
-| best-practices | 2 | 8.3% |
-| configuration | 1 | 4.2% |
-| deployment | 1 | 4.2% |
-| limits-quotas | 1 | 4.2% |
-| troubleshooting | 2 | 8.3% |
-| *(Unclassified)* | 17 | 70.8% |
+*No classified pages*
 
 ## Changes
 
+### New Pages
+
+- [More technical articles ...](https://learn.microsoft.com/en-us/previous-versions/azure/ai-services/anomaly-detector/whats-new)
+
+### Deleted Pages
+
+- ~~Configure containers~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/anomaly-detector-container-configuration)
+- ~~Install and run containers~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/anomaly-detector-container-howto)
+- ~~Anomaly Detector API best practices (univariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices)
+- ~~Anomaly Detector API best practices (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/best-practices-multivariate)
+- ~~Predictive maintenance architecture (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/multivariate-architecture)
+- ~~Error codes (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/troubleshoot)
+- ~~FAQ~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/faq)
+- ~~Batch inference~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/batch-inference)
+- ~~Create an Anomaly Detector Resource~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/create-resource)
+- ~~Use container instances~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-container-instances)
+- ~~Deploy to IoT Edge~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge)
+- ~~Identify anomalies in your data~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/identify-anomalies)
+- ~~Prepare and upload your data~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/prepare-data)
+- ~~Streaming inference~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/streaming-inference)
+- ~~Train a model~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/train-model)
+- ~~What is Anomaly Detector?~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview)
+- ~~Client libraries (univariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/quickstarts/client-libraries)
+- ~~Client libraries (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/quickstarts/client-libraries-multivariate)
+- ~~Region support details~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/regions)
+- ~~Service limits~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/service-limits)
+- *...and 4 more*
+
 ## Classified Pages
 
-| TOC Title | Type | Confidence | Reason |
-|-----------|------|------------|--------|
-| [Configure containers](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/anomaly-detector-container-configuration) | configuration | 0.95 | Explicitly about configuring the container via docker run arguments; includes required and optional settings and container-specific billing parameters—classic configuration table content. |
-| [Error codes (multivariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/troubleshoot) | troubleshooting | 0.95 | Explicit troubleshooting article mapping common error messages to remediation steps for the multivariate API—classic symptom → cause → solution content. |
-| [Service limits](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/service-limits) | limits-quotas | 0.95 | Explicitly described as a quotas and limits article for all pricing tiers; these numeric limits and tier-specific constraints are expert knowledge not reliably known from training. |
-| [Anomaly Detector API best practices (multivariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/best-practices-multivariate) | best-practices | 0.90 | Best-practices guidance for multivariate APIs; includes recommended practices and likely product-specific gotchas and configuration guidance. |
-| [Anomaly Detector API best practices (univariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices) | best-practices | 0.90 | Explicit best-practices article for the univariate API; contains product-specific DOs/DON’Ts and guidance to improve accuracy and performance. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/faq) | troubleshooting | 0.78 | The FAQ is described as containing answers to frequently asked troubleshooting questions for the Anomaly Detector service, which typically includes symptom-to-solution mappings and product-specific guidance beyond generic concepts. |
-| [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/anomaly-detector-container-howto) | deployment | 0.70 | Covers installing and running Anomaly Detector as Docker containers on-premises; includes container image locations and runtime requirements, which are deployment-specific. |
+*No classified pages*
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Region support details](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/regions) | 0.40 | Lists available regions and endpoints; while specific, this is more of a location/endpoint catalog than a configuration, limits, or decision-making guide as defined by the sub-skill types. |
-| [Batch inference](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/batch-inference) | 0.30 | How-to for triggering batch inference; primarily procedural usage instructions rather than expert configuration, limits, or troubleshooting mappings. |
-| [Client libraries (multivariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/quickstarts/client-libraries-multivariate) | 0.30 | Multivariate quickstart for client library; focuses on getting started, not on expert configuration, limits, or troubleshooting matrices. |
-| [Client libraries (univariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/quickstarts/client-libraries) | 0.30 | Quickstart showing basic client library usage; primarily tutorial code, not configuration tables, limits, or detailed troubleshooting. |
-| [Deploy to IoT Edge](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge) | 0.30 | Deployment to IoT Edge appears as a step-by-step tutorial; summary does not indicate tier matrices, deployment constraints, or detailed config tables beyond generic module deployment. |
-| [Predictive maintenance architecture (multivariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/multivariate-architecture) | 0.30 | Reference architecture for predictive maintenance; likely conceptual architecture guidance without quantified thresholds, decision matrices, or product-specific config details required by the categories. |
-| [Train a model](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/train-model) | 0.30 | Tutorial-style training guide; describes how to train a model and run notebooks, but not detailed limits, configs, or troubleshooting tables. |
-| [Use container instances](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-container-instances) | 0.30 | Tutorial for running the container in Azure Container Instances; description suggests basic deployment flow, not detailed deployment constraints, limits, or config matrices. |
-| [Prepare and upload your data](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/prepare-data) | 0.25 | Data preparation and upload tutorial; summary does not indicate numeric thresholds, config tables, or product-specific error/limit details, just that training requires a storage account. |
-| [Streaming inference](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/streaming-inference) | 0.25 | Explains using streaming vs batch inference; appears to be a usage how-to without explicit limits, config parameter tables, or troubleshooting mappings. |
-| [Azure Data Explorer integration](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/tutorials/azure-data-explorer) | 0.20 | Tutorial integrating Univariate Anomaly Detector with Azure Data Explorer; summary suggests step-by-step usage, not detailed configuration tables or limits. |
-| [Create an Anomaly Detector Resource](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/create-resource) | 0.20 | Page is primarily a how-to for creating an Anomaly Detector resource and includes retirement/migration notice. It does not expose detailed limits, configuration parameter tables, error codes, or other product-specific expert knowledge as defined by the sub-skill types. |
-| [Identify anomalies in your data](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/identify-anomalies) | 0.20 | How-to usage guide for the API (batch vs streaming) without clear indication of numeric limits, config tables, or product-specific error mappings; primarily procedural/tutorial content. |
-| [More technical articles ...](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/whats-new) | 0.20 | Duplicate of the What's New page; release notes and links without detailed limits, configuration, or troubleshooting mappings. |
-| [Visualize anomalies as a batch using Power BI (univariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/tutorials/batch-anomaly-detection-powerbi) | 0.20 | Power BI visualization tutorial; focuses on preparing data and calling the API, not on numeric limits, config matrices, or troubleshooting mappings. |
-| [What is Anomaly Detector?](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview) | 0.20 | Page is an overview of Azure Anomaly Detector with retirement/migration notice; it does not include numeric limits, configuration tables, error-code-based troubleshooting, or other detailed expert-only data. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/whats-new) | 0.20 | What's new / release notes and links; does not focus on limits, configuration tables, or troubleshooting mappings. |
+| [More technical articles ...](https://learn.microsoft.com/en-us/previous-versions/azure/ai-services/anomaly-detector/whats-new) | 0.10 | Release notes/what's new page with retirement notice and high-level updates; no detailed limits, configuration parameters, error codes, or product-specific technical guidance that fits any sub-skill type. |

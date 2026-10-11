@@ -15,7 +15,6 @@
 | Monitor Azure VM availability with Project Flash via Resource Health | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-health |
 | Monitor Azure VM availability with Project Flash via Event Grid | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-event-grid-system-topic |
 | Use Azure Instance Metadata Service for VM configuration and maintenance info | https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service |
-| Install AMD GPU drivers on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
 | Use Azure CLI commands to manage Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage |
 | Find and use Azure Marketplace VM image plans via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage |
 | Azure Disk Encryption sample scripts for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-sample-scripts |

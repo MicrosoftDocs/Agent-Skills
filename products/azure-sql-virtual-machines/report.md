@@ -22,12 +22,12 @@ category_descriptions:
   security: 'Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault/EKM,
     managed identities, Entra auth, Extended Security Updates, hardening guidance,
     and confidential VM deployment.'
-  integrations: Querying SQL performance telemetry with KQL and configuring backups
-    from SQL Server on Azure VMs to Blob Storage, including setups that use managed
-    identities.
   deployment: Deploying and migrating SQL Server on Azure VMs, including Always On/FCI
     availability groups (single/multi-subnet, cross-region), regional moves, Ultra
     Disk, and Confidential VM setups.
+  integrations: Querying SQL performance telemetry with KQL and configuring backups
+    from SQL Server on Azure VMs to Blob Storage, including setups that use managed
+    identities.
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
@@ -48,16 +48,16 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Summary
 
-- **Total Pages**: 131
-- **Fetched**: 131
+- **Total Pages**: 130
+- **Fetched**: 130
 - **Fetch Failed**: 0
-- **Classified**: 102
+- **Classified**: 101
 - **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 10
-- **Unchanged**: 118
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 130
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -66,50 +66,21 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 3.8% |
-| best-practices | 11 | 8.4% |
-| configuration | 43 | 32.8% |
-| decision-making | 7 | 5.3% |
-| deployment | 14 | 10.7% |
-| integrations | 3 | 2.3% |
+| best-practices | 11 | 8.5% |
+| configuration | 43 | 33.1% |
+| decision-making | 7 | 5.4% |
+| deployment | 14 | 10.8% |
+| integrations | 2 | 1.5% |
 | limits-quotas | 1 | 0.8% |
 | security | 6 | 4.6% |
 | troubleshooting | 12 | 9.2% |
-| *(Unclassified)* | 29 | 22.1% |
+| *(Unclassified)* | 29 | 22.3% |
 
 ## Changes
 
-### New Pages
-
-- [Performance monitoring telemetry (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-performance-monitoring-telemetry?view=azuresql)
-- [Enable performance monitoring (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/enable-performance-monitoring-sql-vm?view=azuresql-vm)
-- [Unified inventory (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql-vm)
-
-### Updated Pages
-
-- [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql)
-  - Updated: 2026-07-16T17:38:00.000Z → 2026-09-29T05:53:00.000Z
-- [Create SQL VM - Portal](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-vm-create-portal-quickstart?view=azuresql)
-  - Updated: 2026-07-16T17:38:00.000Z → 2026-09-29T05:53:00.000Z
-- [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql)
-  - Updated: 2026-09-04T22:35:00.000Z → 2026-09-29T05:53:00.000Z
-- [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql)
-  - Updated: 2026-03-09T17:32:00.000Z → 2026-09-29T05:53:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-07-16T17:38:00.000Z → 2026-09-29T05:53:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-10-01T22:38:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql)
-  - Updated: 2026-08-10T08:00:00.000Z → 2026-09-29T05:53:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/modifiable-configuration-reference?view=azuresql)
-  - Updated: 2026-07-28T22:37:00.000Z → 2026-09-14T08:00:00.000Z
-- [Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor-classic?view=azuresql)
-  - Updated: 2026-03-18T11:48:00.000Z → 2026-09-01T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-09-17T22:35:00.000Z → 2026-09-29T05:53:00.000Z
-
 ### Deleted Pages
 
-- ~~Unified inventory (preview)~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql)
+- ~~Performance monitoring telemetry (preview)~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/query-performance-monitoring-telemetry?view=azuresql)
 
 ## Classified Pages
 
@@ -128,7 +99,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.80 | The article explicitly focuses on preventing, diagnosing, and mitigating connection and transient errors, and will include specific error patterns, connection string options, retry logic settings, and symptom→cause→solution guidance unique to Azure SQL, which fits the troubleshooting category. |
 | [HADR configuration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/hadr-cluster-best-practices?view=azuresql) | best-practices | 0.80 | Provides supported cluster configurations and best practices for AGs and FCIs on Azure VMs, including Azure-specific settings. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/configure-azure-ad-authentication-for-sql-vm?view=azuresql) | security | 0.80 | Configuring Entra ID auth for SQL VMs requires specific roles, connection strings, and configuration steps that are product-specific security settings. |
-| [Performance monitoring telemetry (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-performance-monitoring-telemetry?view=azuresql) | integrations | 0.80 | Describes connecting to a telemetry endpoint, ArcSqlTelemetry schema, and ready-to-run KQL queries; includes schema details and endpoint specifics, which are integration and coding-pattern oriented. |
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Focuses on out-of-memory errors with causes and remediation steps, including references to service objective limits. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | configuration | 0.78 | A monitoring data reference page for Azure SQL Managed Instance typically enumerates all Azure Monitor metrics, diagnostic log categories, dimensions, and sometimes their units, aggregation types, and default collection behavior. This is product-specific reference information that an LLM is unlikely to fully memorize from training and is used to configure monitoring and alerting. It best fits the configuration sub-skill because it describes concrete monitoring configuration options and schema rather than general concepts. |
 | [Distributed network name (DNN)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-distributed-network-name-dnn-configure?view=azuresql) | configuration | 0.78 | DNN setup for FCI requires specific cluster resource names and Azure networking parameters that are product-specific configuration details. |

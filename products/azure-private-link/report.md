@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 56
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 59
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -63,16 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 30 | 50.8% |
 
 ## Changes
-
-### New Pages
-
-- [Metrics](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-metrics)
-- [Configure service tag access on inbound rules](https://learn.microsoft.com/en-us/azure/private-link/configure-network-security-perimeter-service-tag)
-
-### Updated Pages
-
-- [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts)
-  - Updated: 2026-07-08T08:00:00.000Z → 2026-10-02T08:00:00.000Z
 
 ## Classified Pages
 

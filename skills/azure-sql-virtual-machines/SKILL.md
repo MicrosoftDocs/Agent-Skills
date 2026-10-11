@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L88-L92 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
 | Security | L93-L102 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault/EKM, managed identities, Entra auth, Extended Security Updates, hardening guidance, and confidential VM deployment. |
 | Configuration | L103-L149 | Configuring SQL Server/Managed Instance on Azure VMs: HA/DR (AGs, FCIs, listeners, load balancers), storage and backup layout, IaaS Agent, performance/monitoring, and deployment options. |
-| Integrations & Coding Patterns | L150-L156 | Querying SQL performance telemetry with KQL and configuring backups from SQL Server on Azure VMs to Blob Storage, including setups that use managed identities. |
-| Deployment | L157-L173 | Deploying and migrating SQL Server on Azure VMs, including Always On/FCI availability groups (single/multi-subnet, cross-region), regional moves, Ultra Disk, and Confidential VM setups. |
+| Integrations & Coding Patterns | L150-L155 | Querying SQL performance telemetry with KQL and configuring backups from SQL Server on Azure VMs to Blob Storage, including setups that use managed identities. |
+| Deployment | L156-L172 | Deploying and migrating SQL Server on Azure VMs, including Always On/FCI availability groups (single/multi-subnet, cross-region), regional moves, Ultra Disk, and Confidential VM setups. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -150,7 +150,6 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Query Azure SQL performance telemetry with KQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/query-performance-monitoring-telemetry?view=azuresql |
 | Back up SQL Server on Azure VMs to Azure Blob Storage | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/azure-storage-sql-server-backup-restore-use?view=azuresql |
 | Back up SQL Server VM databases to Blob using managed identity | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/backup-restore-to-url-using-managed-identities?view=azuresql |
 

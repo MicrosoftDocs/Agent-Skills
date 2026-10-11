@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 145
+- **Updated Pages**: 0
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
@@ -70,11 +70,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | *(Unclassified)* | 35 | 24.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Scalable vector indexing with DiskANN](https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann)
-  - Updated: 2026-07-08T11:04:00.000Z → 2026-09-29T11:08:00.000Z
 
 ## Classified Pages
 

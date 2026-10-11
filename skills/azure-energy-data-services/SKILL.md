@@ -3,7 +3,7 @@ name: azure-energy-data-services
 description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME metrics/partitions, choosing tiers, securing auth/ACLs/legal tags, or integrating ACZ/DDMS with Databricks/Fabric, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Data Manager for Agriculture (use azure-data-manager-for-agri).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill

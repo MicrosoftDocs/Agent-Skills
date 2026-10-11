@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-11'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with AI/LLM backends,
     logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring Azure API Management and AI Gateway: networking, VNets,
     domains, policies, caching, monitoring, logging, backends, auth, developer portal,
     and infrastructure-as-code setup.'
-  security: 'Securing Azure API Management and gateways: auth (Entra ID, OAuth2, mTLS,
-    JWT), certificates/TLS, RBAC and identities, portal security, policies (content
-    safety, validation), and DDoS/Defender protections.'
+  security: 'Securing Azure API Management and AI Gateway: auth (OAuth2, Entra ID,
+    B2C, certs, managed identities), TLS, RBAC, policies, DDoS/Defender, and developer
+    portal/self-hosted gateway security.'
   limits-quotas: Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket),
     including rate/usage caps, token limits, validation policies, and service/gateway
     constraints in Azure API Management.
@@ -31,30 +31,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring APIM gateways, policies, VNets, self-hosted gateways, or AI/LLM-backed
-  APIs, and other Azure API Management related development tasks. Not for Azure App
-  Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic
-  Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
-use_when: Use when configuring APIM gateways, policies, VNets, self-hosted gateways,
-  or AI/LLM-backed APIs, and other Azure API Management related development tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus
-  (use azure-service-bus).
+  Use when integrating APIM with AI backends, OAuth/Graph, Event Hubs/Service Bus,
+  VNets/domains, or self-hosted gateways, and other Azure API Management related development
+  tasks. Not for Azure Api Center (use azure-api-center), Azure Application Gateway
+  (use azure-application-gateway), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Functions (use azure-functions).
+use_when: Use when integrating APIM with AI backends, OAuth/Graph, Event Hubs/Service
+  Bus, VNets/domains, or self-hosted gateways, and other Azure API Management related
+  development tasks.
+confusable_not_for: Not for Azure Api Center (use azure-api-center), Azure Application
+  Gateway (use azure-application-gateway), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure Functions (use azure-functions).
 ---
 # Azure API Management Crawl Report
 
 ## Summary
 
-- **Total Pages**: 285
-- **Fetched**: 285
+- **Total Pages**: 287
+- **Fetched**: 287
 - **Fetch Failed**: 0
-- **Classified**: 225
-- **Unclassified**: 60
+- **Classified**: 226
+- **Unclassified**: 61
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 283
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 285
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -63,26 +65,22 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 0.7% |
-| best-practices | 5 | 1.8% |
-| configuration | 95 | 33.3% |
-| decision-making | 15 | 5.3% |
+| best-practices | 5 | 1.7% |
+| configuration | 95 | 33.1% |
+| decision-making | 15 | 5.2% |
 | deployment | 18 | 6.3% |
 | integrations | 28 | 9.8% |
-| limits-quotas | 17 | 6.0% |
-| security | 40 | 14.0% |
-| troubleshooting | 5 | 1.8% |
-| *(Unclassified)* | 60 | 21.1% |
+| limits-quotas | 17 | 5.9% |
+| security | 41 | 14.3% |
+| troubleshooting | 5 | 1.7% |
+| *(Unclassified)* | 61 | 21.3% |
 
 ## Changes
 
 ### New Pages
 
-- [Secure your API Management deployment](https://learn.microsoft.com/en-us/azure/api-management/secure-api-management)
-
-### Updated Pages
-
-- [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability)
-  - Updated: 2026-08-27T09:10:00.000Z → 2026-09-28T22:12:00.000Z
+- [Tool threat protection](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-policy-tool-threat)
+- [Govern tools with Agent 365](https://learn.microsoft.com/en-us/azure/api-management/agent-365)
 
 ## Classified Pages
 
@@ -260,6 +258,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/api-management/security-controls-policy) | security | 0.70 | Lists Azure Policy regulatory compliance controls and built-in policy definitions specific to Azure API Management. These are concrete, product-specific security/compliance configuration artifacts rather than conceptual security guidance. |
 | [Self-hosted gateway support policy](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies) | limits-quotas | 0.70 | Support policies article typically lists explicit limitations, supported versions, and constraints (for tiers, environments) that function as product-specific limits/quotas. |
 | [Set or edit policies](https://learn.microsoft.com/en-us/azure/api-management/set-edit-policies) | configuration | 0.70 | Explains how to configure policies via XML policy definitions and the policy editor. Policy configuration in API Management is highly product-specific and typically includes concrete policy names, XML elements, and allowed settings, which qualifies as expert configuration knowledge. |
+| [Tool threat protection](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-policy-tool-threat) | security | 0.70 | The page describes a specific security policy in Azure API Management AI Gateway tier that uses Microsoft Defender and Purview to evaluate MCP/OpenAPI tool calls for threats, prompt injection, and sensitive data exposure. It contains product-specific security behavior and configuration guidance for protecting tool calls, which is not generic security theory and is unique to this integration. |
 | [Upgrade and scale](https://learn.microsoft.com/en-us/azure/api-management/upgrade-and-scale) | decision-making | 0.70 | Covers tier-specific scaling behavior, unit-based capacity guidance, and how to choose scale units/tiers for load, which is concrete decision guidance beyond generic knowledge. |
 | [Use capacity for scaling decisions](https://learn.microsoft.com/en-us/azure/api-management/api-management-capacity) | decision-making | 0.70 | Describes specific Azure Monitor capacity metrics for API Management and how they behave, and uses them to decide when to scale or upgrade an instance. This is product-specific decision guidance using concrete metrics rather than generic concepts. |
 | [Virtual network changes (March 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-mar-2023) | configuration | 0.70 | Describes specific new source IP addresses per region and required network configuration updates, which are concrete, product-specific configuration details. |
@@ -366,6 +365,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Expose REST API as MCP server](https://learn.microsoft.com/en-us/azure/api-management/export-rest-mcp-server) | 0.20 | Appears to be a how-to/tutorial on exposing a REST API as an MCP server. The summary does not indicate configuration parameter tables, limits, error-code mappings, or SKU matrices. It mainly describes the capability and scenarios, so it likely lacks the structured expert-knowledge patterns required for the listed sub-skill types. |
 | [Expose existing MCP server](https://learn.microsoft.com/en-us/azure/api-management/expose-existing-mcp-server) | 0.20 | Describes how to expose and govern an existing MCP server via API Management. From the summary it looks like a scenario/tutorial article without explicit configuration tables, limits, or troubleshooting mappings. It likely does not contain the structured expert knowledge required for any sub-skill category. |
 | [Govern MCP servers with products](https://learn.microsoft.com/en-us/azure/api-management/govern-mcp-server-products) | 0.20 | Summary indicates conceptual guidance on packaging MCP servers into products and using existing subscription/approval/quota workflows, but does not mention specific limits, configuration parameters, or error codes. Likely a conceptual/governance overview rather than detailed expert configuration or troubleshooting content. |
+| [Govern tools with Agent 365](https://learn.microsoft.com/en-us/azure/api-management/agent-365) | 0.20 | The page is primarily an overview of how Microsoft Agent 365 integrates with Azure API Management AI Gateway for governance. The summary indicates conceptual integration and governance benefits without exposing detailed configuration parameters, RBAC roles, limits, or error codes, so it lacks the kind of expert, product-specific technical details required for classification. |
 | [GraphQL API options](https://learn.microsoft.com/en-us/azure/api-management/graphql-apis-overview) | 0.20 | GraphQL overview and capabilities; conceptual description of models without detailed config tables or numeric thresholds. |
 | [Manage API versions](https://learn.microsoft.com/en-us/azure/api-management/api-management-versions) | 0.20 | Page appears to be a conceptual explanation of API versions and versioning schemes in Azure API Management without specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It describes what versions are and how they are used, which is general product knowledge rather than expert-only details. |
 | [Model Context Protocol (MCP) server capabilities](https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview) | 0.20 | Page is an overview of MCP server support in Azure API Management; summary indicates conceptual/architectural introduction without specific limits, configs, or error mappings that meet any sub-skill detection criteria. |

@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 522
+- **Updated Pages**: 0
+- **Unchanged**: 523
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -73,11 +73,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | *(Unclassified)* | 121 | 23.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Event Grid to send calling push notifications](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-voip-push-notifications-event-grid)
-  - Updated: 2025-07-01T11:22:00.000Z → 2026-09-28T22:12:00.000Z
 
 ## Classified Pages
 

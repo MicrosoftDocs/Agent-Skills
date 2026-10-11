@@ -43,9 +43,9 @@ use_when: Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/
 - **Unclassified**: 38
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 212
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 214
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -63,15 +63,6 @@ use_when: Use when designing AI, HPC, SaaS, AVD/AVS workloads, choosing regions/
 | *(Unclassified)* | 38 | 17.8% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Managed Redis](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-managed-redis)
-
-### Updated Pages
-
-- [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/)
-  - Updated: 2026-03-04T18:02:00Z → 2026-10-01T22:02:00Z
 
 ## Classified Pages
 

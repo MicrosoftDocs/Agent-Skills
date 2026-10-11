@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-11'
 category_descriptions:
   limits-quotas: 'Limits and design guidance for Virtual WAN: P2S client pool sizing,
     hub routing/throughput caps, and using Private Link endpoints within scale and
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 138
+- **Updated Pages**: 1
+- **Unchanged**: 137
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -68,6 +68,11 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 46 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-versions)
+  - Updated: 2026-05-28T05:20:00.000Z → 2026-07-01T23:48:00.000Z
 
 ## Classified Pages
 
@@ -196,7 +201,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Any-to-any routing](https://learn.microsoft.com/en-us/azure/virtual-wan/quickstart-any-to-any-template) | 0.30 | ARM template quickstart; summary indicates a single deployment example, not a catalog of configuration options or limits. |
 | [Azure VPN Client](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-azure-vpn-client-certificate-linux) | 0.30 | Linux Azure VPN Client configuration article focused on step-by-step setup; aside from the retirement note (covered in the dedicated retirement page), it appears to be a procedural tutorial without detailed config matrices, limits, or troubleshooting mappings. |
 | [Azure VPN Client](https://learn.microsoft.com/en-us/azure/virtual-wan/vpn-client-certificate-windows) | 0.30 | Primarily a step-by-step client configuration tutorial for Windows Azure VPN Client with certificate auth; no clear indication of detailed config parameter tables, limits, or product-specific best-practice caveats beyond generic how-to steps. |
-| [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-versions) | 0.30 | Version history and feature listing for the Azure VPN Client; likely a changelog without numeric limits, configuration matrices, or troubleshooting mappings. Does not clearly match any expert-knowledge sub-skill type defined. |
+| [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-versions) | 0.30 | Likely a version and feature listing for the Azure VPN Client without detailed limits, configuration parameters, or troubleshooting mappings. Describes client versions and how to view them, but no indication of numeric limits, config tables, error codes, or decision matrices that would qualify as expert knowledge under the defined sub-skill types. |
 | [BGP dashboard](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-bgp-dashboard) | 0.30 | How-to for using the BGP dashboard to view peers and routes; likely step-by-step UI usage without product-specific error codes, config tables, or numeric thresholds. |
 | [Connect a VNet to a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub) | 0.30 | Task-focused how-to for connecting a VNet to a Virtual WAN hub via portal/PowerShell. From the description it appears to be a step-by-step tutorial without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacks the specific numeric limits, RBAC role lists, or config option tables required for expert-knowledge classification. |
 | [Connection policy](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-connection-policy) | 0.30 | The summary indicates a how-to for using Virtual WAN connection policy and notes preview/SLA status, but does not clearly show specific limits, configuration parameter tables, error codes, or decision matrices. Without evidence of detailed numeric limits, config tables, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |

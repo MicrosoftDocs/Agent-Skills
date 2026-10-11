@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues, securing with VNets/MI, tuning scaling, or deploying via CI/CD, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues, securing via VNet/MI, configuring bindings, or deploying with CI/CD, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L90-L114 | Guidance on choosing Functions hosting/runtime options, cost and networking tradeoffs, and planning/migrating between plans, runtimes, and platforms (incl. AWS Lambda and Cosmos/Service Bus upgrades). |
 | Limits & Quotas | L115-L122 | Scaling limits, concurrency settings, target-based trigger scaling, and language/runtime support lifecycles for Azure Functions. |
 | Security | L123-L135 | Guides for securing Functions: encryption at rest, secure storage and keys, private access (VNet/private endpoints), managed identity for SQL, and App Service security features. |
-| Configuration | L136-L181 | Configuring Azure Functions runtime, bindings, triggers, networking, monitoring, app settings, hosted skills, and language/runtime versions, including local development and OpenTelemetry setup. |
+| Configuration | L136-L181 | Configuring Azure Functions runtime, bindings, triggers, monitoring, networking, app settings, MCP/OpenAI extensions, and language/runtime versions for correct behavior and integrations. |
 | Integrations & Coding Patterns | L182-L284 | Patterns and how-tos for wiring Functions to external systems (HTTP, storage, messaging, databases, AI/OpenAI, Dapr, MCP, SignalR/Web PubSub) via triggers, input/output bindings, and worker extensions. |
 | Deployment | L285-L312 | Deploying Azure Functions: provisioning hosting (Bicep/ARM/Terraform/PowerShell), CI/CD (GitHub Actions, Azure Pipelines), slots, containers/Kubernetes, language‑specific builds, and rollback/migration. |
 
@@ -154,7 +154,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure and register Azure Functions binding extensions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-register |
 | Configure timer trigger schedules in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer |
 | Configure and use Azure Functions warmup trigger | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup |
-| Use Azure Functions Core Tools CLI locally | https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference |
+| Use Azure Functions Core Tools CLI commands | https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference |
 | Configure Azure Functions custom handlers for any runtime | https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers |
 | Configure and run Azure Functions locally | https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local |
 | Configure host.json settings for Azure Functions v2+ | https://learn.microsoft.com/en-us/azure/azure-functions/functions-host-json |

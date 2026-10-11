@@ -34,8 +34,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
@@ -49,19 +49,6 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Sit
 | *(Unclassified)* | 25 | 71.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Recover item](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-recover-deleted-item)
-  - Updated: 2025-11-19T06:12:00.000Z → 2025-11-19T08:00:00.000Z
-- [Review security posture](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-review-security-posture)
-  - Updated: 2025-11-19T06:12:00.000Z → 2025-11-19T08:00:00.000Z
-- [Availability zone down drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-support-matrix)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-09-28T08:00:00.000Z
-- [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-vaults)
-  - Updated: 2025-11-19T06:12:00.000Z → 2025-11-19T08:00:00.000Z
-- [Define](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-09-28T08:00:00.000Z
 
 ## Classified Pages
 

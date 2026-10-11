@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-11'
 category_descriptions:
-  integrations: Coding patterns and samples for building, running, and attesting Intel
-    SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools,
-    and Fortanix/Key Vault integrations.
-  security: 'Security, attestation, and key/secrets management for Azure confidential
-    workloads: SGX enclaves, CVMs, vTPM, AKS confidential containers, clean rooms,
-    and hardening Linux images.'
+  integrations: 'Coding patterns and integration guides for Intel SGX/AMD SEV-SNP:
+    enclave dev tools, confidential containers/VMs, attestation (IMA, dm-verity),
+    Fortanix CCM, and secure key release (SKR) from Key Vault.'
+  security: Attestation, vTPM, and hardening guidance for confidential VMs, AKS confidential
+    containers, and SGX enclaves, including guest attestation setup, security models,
+    and secure key/secret management.
   decision-making: 'Guidance on choosing Azure confidential computing options: VMs
     (AMD/Intel), containers, GPUs, deployment models, capabilities, products, and
     use cases for secure workloads.'
@@ -22,34 +22,37 @@ category_descriptions:
   limits-quotas: 'Intel SGX capacity, quotas, and sizing for Azure confidential computing:
     AKS confidential node limits, SGX VM sizing guidance, and FAQ on SGX resource
     constraints.'
+  troubleshooting: Diagnosing and fixing common issues with Azure confidential VMs,
+    including deployment failures, attestation problems, guest OS/driver errors, and
+    performance or compatibility troubleshooting.
 skill_description: Expert knowledge for Azure Confidential Computing development including
-  decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building SGX/SEV-SNP apps,
-  AKS confidential containers, vTPM/CVMs, Fortanix/Key Vault SKR, or clean rooms,
-  and other Azure Confidential Computing related development tasks. Not for Azure
-  Enclave (use azure-enclave), Azure Dedicated HSM (use azure-dedicated-hsm), Azure
-  Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm).
-use_when: Use when building SGX/SEV-SNP apps, AKS confidential containers, vTPM/CVMs,
-  Fortanix/Key Vault SKR, or clean rooms, and other Azure Confidential Computing related
+  troubleshooting, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  using SGX/SEV VMs, AKS confidential containers, attestation/SKR, Fortanix CCM, or
+  VMMD metablob disks, and other Azure Confidential Computing related development
+  tasks. Not for Azure Enclave (use azure-enclave), Azure Attestation (use azure-attestation),
+  Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
+use_when: Use when using SGX/SEV VMs, AKS confidential containers, attestation/SKR,
+  Fortanix CCM, or VMMD metablob disks, and other Azure Confidential Computing related
   development tasks.
-confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated HSM
-  (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment
-  Hsm (use azure-payment-hsm).
+confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Attestation (use
+  azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm
+  (use azure-cloud-hsm).
 ---
 # Azure Confidential Computing Crawl Report
 
 ## Summary
 
-- **Total Pages**: 70
-- **Fetched**: 70
+- **Total Pages**: 71
+- **Fetched**: 71
 - **Fetch Failed**: 0
-- **Classified**: 48
+- **Classified**: 49
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 70
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 68
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -57,22 +60,36 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 8.6% |
-| configuration | 8 | 11.4% |
-| decision-making | 8 | 11.4% |
-| deployment | 6 | 8.6% |
-| integrations | 7 | 10.0% |
-| limits-quotas | 2 | 2.9% |
-| security | 11 | 15.7% |
-| *(Unclassified)* | 22 | 31.4% |
+| architecture-patterns | 5 | 7.0% |
+| configuration | 8 | 11.3% |
+| decision-making | 8 | 11.3% |
+| deployment | 6 | 8.5% |
+| integrations | 8 | 11.3% |
+| limits-quotas | 2 | 2.8% |
+| security | 11 | 15.5% |
+| troubleshooting | 1 | 1.4% |
+| *(Unclassified)* | 22 | 31.0% |
 
 ## Changes
+
+### New Pages
+
+- [Attest a Linux workload with dm-verity and IMA](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-attest-linux-workload)
+
+### Updated Pages
+
+- [FAQ for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq)
+  - Updated: 2026-05-25T05:26:00.000Z → 2026-10-09T22:12:00.000Z
+- [Guest attestation Design for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-virtual-machines-design)
+  - Updated: 2025-02-07T23:03:00.000Z → 2026-10-04T11:43:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [AKS Add-on](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-addon) | configuration | 0.80 | Describes the AKS plugin (confcom) as a daemon set for Intel SGX confidential VMs, including how to enable and use it. This is detailed, product-specific configuration of cluster components. |
+| [Attest a Linux workload with dm-verity and IMA](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-attest-linux-workload) | integrations | 0.80 | This how-to combines dm-verity, Linux IMA, and Azure confidential VM attestation with vTPM, which is a concrete integration pattern between Linux kernel features and Azure’s attestation service. It likely includes specific configuration steps, measurement handling, and parameter usage unique to this scenario, making it expert integration knowledge rather than generic security or configuration guidance. |
+| [Guest attestation Design for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-virtual-machines-design) | security | 0.80 | A design-detail document for guest attestation in confidential VMs will describe attestation flows, vTPM usage, measurement formats, and trust decisions specific to Azure’s confidential computing platform. These are product-specific security and attestation mechanisms (identity, trust anchors, measurement validation) that an LLM wouldn’t know from training, fitting best under the security sub-skill. |
 | [Guest attestation for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-vms) | security | 0.80 | Describes how to use guest attestation, including Intel TDX-specific notes and registration requirements; product-specific security configuration. |
 | [Harden a Linux image to remove Azure guest agent](https://learn.microsoft.com/en-us/azure/confidential-computing/harden-a-linux-image-to-remove-azure-guest-agent) | security | 0.80 | Details consequences and steps for removing Azure Linux Agent, including lost capabilities; Azure-specific security and hardening configuration. |
 | [Key rotation for Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/key-rotation-offline) | configuration | 0.80 | Describes how to configure and rotate customer-managed keys via Disk Encryption Sets and managed HSM/Key Vault; includes Azure-specific configuration steps. |
@@ -97,9 +114,8 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 | [Deploy application enclave nodes on AKS](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-enclave-nodes-aks-get-started) | deployment | 0.70 | Quickstart that uses Azure CLI to deploy AKS clusters with specific enclave-aware VM series (DCsv2/DCSv3) and run enclave workloads, which is a product-specific deployment pattern. |
 | [Deploying Intel Software Guard Extensions (SGX) VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-solutions-sgx) | limits-quotas | 0.70 | Includes concrete VM size behavior such as which SGX VM SKUs occupy the full host and how they affect tenancy. These are deployment-time capacity constraints and limits specific to Azure SGX VMs. |
 | [Deploying solutions on confidential computing](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-deployment-models) | decision-making | 0.70 | Explicitly focused on selecting between deployment models based on security requirements; provides decision guidance rather than just how-to steps. |
-| [FAQ for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq) | security | 0.70 | FAQ for Azure confidential VMs typically includes product-specific security details such as supported attestation models, hardware/TEE types, supported OS images, limitations on extensions/agents, and specific RBAC or policy implications. These are nuanced, service-specific behaviors and constraints that go beyond generic conceptual knowledge and are important for correctly configuring and operating confidential VMs, fitting the security sub-skill best. |
+| [FAQ for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq) | troubleshooting | 0.70 | FAQ pages for specialized services typically include product-specific behaviors, constraints, and answers to concrete issues (for example, supported SKUs, feature interactions, and limitations) that go beyond generic concepts. For confidential VMs, such an FAQ is likely to reference specific error scenarios, support boundaries, and configuration nuances unique to Azure Confidential Computing, which qualify as expert knowledge aligned closest with troubleshooting. |
 | [Fortanix Confidential Computing Manager](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-fortanix-confidential-computing-manager) | deployment | 0.70 | Step-by-step deployment of Fortanix Confidential Computing Manager as a managed application in Azure, including Azure- and product-specific deployment requirements and wiring. |
-| [Guest attestation Design for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-virtual-machines-design) | architecture-patterns | 0.70 | Provides design-level details of guest attestation architecture for confidential VMs, including flows and components unique to this service. |
 | [How to migrate nested confidential VMs from one region to another](https://learn.microsoft.com/en-us/azure/confidential-computing/migrate-nested-confidential-vms) | deployment | 0.70 | Stepwise migration process for nested confidential VMs, including quota checks and image capture; product-specific deployment/migration pattern. |
 | [Open-source projects for development](https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-development-oss) | integrations | 0.70 | A development-focused article on Intel SGX enclaves that describes specific open-source toolchains and patterns for building enclave applications on Azure confidential computing. This is product- and platform-specific integration knowledge beyond generic concepts. |
 | [SKR Policy Examples](https://learn.microsoft.com/en-us/azure/confidential-computing/skr-policy-examples) | configuration | 0.70 | Page focuses on SKR policy examples tied to Microsoft Azure Attestation claims and references specific policy grammar; this implies detailed, product-specific configuration of SKR policies rather than just conceptual content. |

@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 47
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 93
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 96
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-enclave/azure-enclave.csv`
 
@@ -69,17 +69,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 47 | 49.0% |
 
 ## Changes
-
-### New Pages
-
-- [Connect Azure Enclave to an existing Azure landing zone](https://learn.microsoft.com/en-us/azure/enclave/connect-enclave-existing-landing-zone-transit-hub)
-
-### Updated Pages
-
-- [Why use Azure Enclave?](https://learn.microsoft.com/en-us/azure/enclave/why-azure-enclave)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-01T22:10:00.000Z
-- [Troubleshoot guide](https://learn.microsoft.com/en-us/azure/enclave/troubleshoot)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-01T22:10:00.000Z
 
 ## Classified Pages
 

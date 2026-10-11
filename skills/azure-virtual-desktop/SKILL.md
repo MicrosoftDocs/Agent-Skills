@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring host pools/FSLogix, autoscale, MSIX App Attach, Teams optimization, or AVD security/SSO, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring autoscale, FSLogix profiles, MSIX App Attach, Teams optimization, or WebRTC redirection, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-11"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L66-L81 | Planning and design guidance for AVD: autoscale, regions/zones, data location, host pool and deployment models, storage/FSLogix, licensing, management tools, and cost estimation. |
 | Architecture & Design Patterns | L82-L90 | Designing resilient AVD architectures, including DR strategies, FSLogix profile management, RDP Multipath connectivity, and automated scaling with Automation/Logic Apps. |
 | Limits & Quotas | L91-L96 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L97-L118 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), Conditional Access/MFA, RBAC and delegated admin, external identities, clipboard/screen controls, watermarking, WebAuthn, and security best practices |
+| Security | L97-L118 | Securing AVD access and sessions: SSO (AD FS/Entra), RBAC/managed identities, Conditional Access/MFA, external identities, Kerberos, clipboard/screen/watermark controls, and forensic/Purview setup. |
 | Configuration | L119-L179 | Configuring AVD environments: images, autoscale, licensing, networking, RDP/redirection, Teams/OneDrive, GPU, language packs, monitoring, and client/RemoteApp behavior. |
 | Integrations & Coding Patterns | L180-L186 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
 | Deployment | L187-L195 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/ConfigMgr. |
@@ -109,7 +109,7 @@ This skill requires **network access** to fetch documentation content:
 | Use built-in Azure RBAC roles for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/rbac |
 | Configure WebAuthn redirection for passwordless AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-webauthn |
 | Configure Entra ID authentication for Azure Virtual Desktop RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/require-authentication-using-microsoft-entra-id |
-| Configure screen capture protection in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection |
+| Configure screen capture protection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection |
 | Apply security recommendations for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations |
 | Assign RBAC and Entra roles to AVD service principals | https://learn.microsoft.com/en-us/azure/virtual-desktop/service-principal-assign-roles |
 | Configure Conditional Access MFA for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa |

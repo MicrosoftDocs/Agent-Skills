@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 313
+- **Updated Pages**: 0
+- **Unchanged**: 315
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -73,13 +73,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 67 | 21.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2026-08-26T06:04:00.000Z → 2026-10-01T22:15:00.000Z
-- [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote)
-  - Updated: 2026-09-17T22:12:00.000Z → 2026-10-01T08:00:00.000Z
 
 ## Classified Pages
 
