@@ -1,24 +1,22 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-18'
 category_descriptions:
   security: Configuring Oracle Transparent Data Encryption (TDE) to use Azure Key
     Vault, including key management, integration steps, and security best practices.
-  troubleshooting: Operational FAQs and fixes for common Oracle Database@Azure issues,
-    including connectivity, performance, deployment, configuration, and known platform
-    limitations.
+  troubleshooting: Diagnosing and fixing common Oracle Database@Azure issues and configuring
+    proximity placement groups for optimal performance and low-latency deployments.
   integrations: Configuring Oracle Exadata log export to Azure Monitor and Microsoft
     Sentinel, including pipelines, data formats, and setup for monitoring and security
     analytics.
 skill_description: Expert knowledge for Azure Oracle development including troubleshooting,
   security, and integrations & coding patterns. Use when configuring Oracle TDE with
-  Azure Key Vault, fixing Oracle@Azure issues, or exporting Exadata logs to Azure
-  Monitor/Sentinel, and other Azure Oracle related development tasks. Not for Azure
-  SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), SAP HANA
-  on Azure Large Instances (use azure-sap).
-use_when: Use when configuring Oracle TDE with Azure Key Vault, fixing Oracle@Azure
-  issues, or exporting Exadata logs to Azure Monitor/Sentinel, and other Azure Oracle
-  related development tasks.
+  Azure Key Vault, Exadata log export, Azure Monitor, Sentinel, or PPGs, and other
+  Azure Oracle related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure
+  Virtual Machines (use azure-sql-virtual-machines), SAP HANA on Azure Large Instances
+  (use azure-sap).
+use_when: Use when configuring Oracle TDE with Azure Key Vault, Exadata log export,
+  Azure Monitor, Sentinel, or PPGs, and other Azure Oracle related development tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
   (use azure-sql-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
@@ -27,14 +25,14 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Summary
 
-- **Total Pages**: 11
-- **Fetched**: 11
+- **Total Pages**: 12
+- **Fetched**: 12
 - **Fetch Failed**: 0
-- **Classified**: 3
+- **Classified**: 4
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 11
 - **Deleted Pages**: 0
@@ -44,12 +42,16 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| integrations | 1 | 9.1% |
-| security | 1 | 9.1% |
-| troubleshooting | 1 | 9.1% |
-| *(Unclassified)* | 8 | 72.7% |
+| integrations | 1 | 8.3% |
+| security | 1 | 8.3% |
+| troubleshooting | 2 | 16.7% |
+| *(Unclassified)* | 8 | 66.7% |
 
 ## Changes
+
+### New Pages
+
+- [Azure proximity placement groups with Oracle AI Database@Azure](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/proximity-placement-groups-with-oracle)
 
 ## Classified Pages
 
@@ -58,6 +60,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Manage Oracle TDE with Azure Key Vault](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/manage-oracle-transparent-data-encryption-azure-key-vault) | security | 0.85 | Step-by-step integration of Oracle TDE with Azure Key Vault will include specific Key Vault tiers, access policies, and security configuration parameters unique to this integration. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-known-issues) | troubleshooting | 0.80 | Known-issues article will map specific symptoms and issues to causes and resolutions, often with product-specific behaviors and workarounds. |
 | [Oracle Exadata Database on Dedicated Infrastructure Logs on Azure for Enhanced Observability](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-exadata-database-dedicated-infrastructure-logs) | integrations | 0.70 | Explains how to send Oracle Exadata Database Service@Azure logs to Log Analytics, Azure Monitor, and Sentinel; likely includes workspace configuration, data types, and product-specific logging parameters. |
+| [Azure proximity placement groups with Oracle AI Database@Azure](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/proximity-placement-groups-with-oracle) | troubleshooting | 0.68 | The article focuses on PPG-specific requirements, resource relationships, Azure design considerations, validation checks, and common troubleshooting actions for Exadata Database Service on Dedicated Infrastructure. These are product- and scenario-specific details (including validation steps and troubleshooting flows) that go beyond generic knowledge. The presence of structured troubleshooting guidance (symptom → checks → actions) for this specific Oracle-on-Azure configuration aligns best with the troubleshooting sub-skill. |
 
 ## Unclassified Pages
 

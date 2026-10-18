@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, KQL analytics rules, Logic Apps playbooks, data lake jobs, or SAP integration, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, ASIM/analytics rules, KQL automation, data lake integrations, or CI/CD deployments, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L50 | Diagnosing and fixing Microsoft Sentinel ingestion, connector, KQL, notebook, MCP, SAP, and analytics rule errors, plus monitoring and troubleshooting scheduled rule execution. |
 | Best Practices | L51-L74 | Best practices for designing, tuning, and operating Microsoft Sentinel: automation, playbooks, KQL hunting, analytics rules, UEBA, ASIM, watchlists, SOC metrics, and solution quality. |
-| Decision Making | L75-L117 | Guidance for planning Sentinel deployments, costs, data tiers, and connectors, plus detailed strategies to migrate from legacy SIEMs (Splunk, QRadar, ArcSight) and optimize detections and automation. |
+| Decision Making | L75-L117 | Guidance for planning Sentinel deployments, pricing and data tiers, and making migration, integration, connector, and detection design decisions (including from legacy SIEMs and SOAR tools). |
 | Architecture & Design Patterns | L118-L129 | Designing Microsoft Sentinel architectures: workspace/tenant layouts, SIEM patterns, BCDR/resiliency, data lake/graph designs, and coexisting with or migrating from other SIEMs. |
 | Limits & Quotas | L130-L142 | Limits, quotas, pricing, and availability of Sentinel features (rules, data lake, MCP), plus constraints and safe management of search jobs and watchlists, and removal implications. |
 | Security | L143-L162 | Configuring secure access, permissions, encryption, and RBAC for Microsoft Sentinel, including playbooks, data lake, storage connectors, SAP integration, and automated attack disruption across clouds. |
-| Configuration | L163-L296 | Configuring Microsoft Sentinel: data connectors and ASIM schemas, analytics rules, automation/playbooks, TI and SAP integrations, data lake jobs, health/auditing, and solution/workbook setup. |
-| Integrations & Coding Patterns | L297-L342 | Patterns and APIs for integrating Sentinel with logs, threat intel, MCP/AI tools, Logic Apps playbooks, data lake, connectors, and external platforms like AWS, Entra ID, Purview. |
-| Deployment | L343-L357 | Deploying and customizing Sentinel solutions and content (rules, automation, notebooks, SAP, Copilot agents) via CI/CD, ARM, data lake, and multi-cloud/Stack Hub onboarding. |
+| Configuration | L163-L299 | Configuring Microsoft Sentinel: data connectors, ASIM schemas, analytics rules, automation/playbooks, data lake, SAP/Power Platform solutions, health/auditing, and threat intelligence integration. |
+| Integrations & Coding Patterns | L300-L345 | Patterns and examples for integrating Microsoft Sentinel with external data, APIs, Logic Apps, MCP tools, threat intel feeds, and for querying/automating via KQL, REST, graphs, and data lake. |
+| Deployment | L346-L360 | Deploying and customizing Sentinel solutions and content (rules, automation, notebooks, SAP, Copilot agents) via CI/CD, ARM, data lake, and multi-cloud/Stack Hub onboarding. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -170,6 +170,7 @@ This skill requires **network access** to fetch documentation content:
 | Use SentinelAudit tables for user activity auditing | https://learn.microsoft.com/en-us/azure/sentinel/audit-table-reference |
 | Configure Microsoft Sentinel automation rule properties and conditions | https://learn.microsoft.com/en-us/azure/sentinel/automation-rule-reference |
 | Configure Sentinel playbooks for automated threat response | https://learn.microsoft.com/en-us/azure/sentinel/automation/automate-responses-with-playbooks |
+| Configure and manage Microsoft Sentinel playbooks | https://learn.microsoft.com/en-us/azure/sentinel/automation/create-playbooks |
 | Deploy Business Apps Sentinel solution for Power Platform | https://learn.microsoft.com/en-us/azure/sentinel/business-applications/deploy-power-platform-solution |
 | Map CEF keys to Microsoft Sentinel CommonSecurityLog fields | https://learn.microsoft.com/en-us/azure/sentinel/cef-name-mapping |
 | Understand Syslog and CEF AMA connectors for Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/cef-syslog-ama-overview |
@@ -245,11 +246,12 @@ This skill requires **network access** to fetch documentation content:
 | Onboard and manage multiple Sentinel tenants via Lighthouse | https://learn.microsoft.com/en-us/azure/sentinel/multiple-tenants-service-providers |
 | Configure multi-workspace incident views in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/multiple-workspace-view |
 | Configure near-real-time analytics rules for fast detection | https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules |
-| Manage workspace-deployed ASIM parsers in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-workspace-parsers |
+| Configure and manage ASIM workspace parsers in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-workspace-parsers |
 | Use ASIM common schema fields in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-common-fields |
 | Implement ASIM Application Entity schema in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-entity-application |
 | Implement ASIM Device Entity schema in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-entity-device |
 | Implement ASIM User Entity schema in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-entity-user |
+| Manage and customize ASIM parsers in Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-manage-parsers |
 | Convert Sentinel analytics rules to ASIM schemas | https://learn.microsoft.com/en-us/azure/sentinel/normalization-modify-content |
 | Map AI agent telemetry to ASIM Agent schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-agent |
 | Normalize security alerts with ASIM Alert schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-alert |
@@ -258,9 +260,10 @@ This skill requires **network access** to fetch documentation content:
 | Normalize authentication logs with ASIM schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-authentication |
 | Map DHCP server events to ASIM DHCP schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-dhcp |
 | Normalize DNS logs using ASIM DNS schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-dns |
+| Use Microsoft Sentinel ASIM Email Event schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-email |
 | Map file activity logs to ASIM File Event schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-file-event |
 | Normalize network sessions with ASIM Network schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-network |
-| Map process activity to ASIM Process Event schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-process-event |
+| Apply ASIM Process Event normalization schema in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-process-event |
 | Normalize Windows registry events with ASIM schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-registry-event |
 | Map user management activity to ASIM schema | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-user-management |
 | Use legacy Microsoft Sentinel network normalization schema v0.1 | https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-v1 |

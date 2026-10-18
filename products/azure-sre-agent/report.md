@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-18'
 category_descriptions:
   integrations: Integrating Azure SRE Agent with DevOps, GitHub, observability, incident
     tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant
     access configuration
-  security: 'Securing Azure SRE Agent: identities, RBAC and roles, network/firewall,
-    data privacy, GitHub/ADO access, subscription visibility, tool access policies,
-    and approval/run-mode controls.'
+  security: 'Security, identity, and access control for SRE Agent: auth models, RBAC/roles,
+    network/firewall, GitHub/ADO access, Key Vault/IP allowlists, approvals, data
+    residency, and tool access policies.'
   troubleshooting: 'Diagnosing and fixing SRE Agent issues: querying telemetry with
     KQL, filing Azure support tickets, resolving deployment/operation failures, and
     debugging Java performance on AKS.'
@@ -26,17 +26,17 @@ category_descriptions:
     environment replication.
 skill_description: Expert knowledge for Azure Sre Agent development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/GitHub,
-  KQL telemetry, AKS Java apps, IaC deployments, or DR architectures, and other Azure
-  Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency),
-  Azure Service Health (use azure-service-health).
-use_when: Use when wiring SRE Agent to DevOps/GitHub, KQL telemetry, AKS Java apps,
-  IaC deployments, or DR architectures, and other Azure Sre Agent related development
-  tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
-  azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health
-  (use azure-service-health).
+  integrations & coding patterns, and deployment. Use when integrating SRE Agent with
+  DevOps/GitHub, Log Analytics/App Insights, AKS Java workloads, IaC deployments,
+  or DR setups, and other Azure Sre Agent related development tasks. Not for Azure
+  Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure
+  Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency).
+use_when: Use when integrating SRE Agent with DevOps/GitHub, Log Analytics/App Insights,
+  AKS Java workloads, IaC deployments, or DR setups, and other Azure Sre Agent related
+  development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Health
+  (use azure-service-health), Azure Reliability (use azure-reliability), Azure Resiliency
+  (use azure-resiliency).
 ---
 # Azure Sre Agent Crawl Report
 
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 124
+- **Updated Pages**: 1
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -71,6 +71,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ## Changes
 
+### Updated Pages
+
+- [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy)
+  - Updated: 2026-09-03T22:14:00.000Z → 2026-10-13T05:17:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -88,7 +93,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Allow list Key Vault firewall](https://learn.microsoft.com/en-us/azure/sre-agent/allow-list-key-vault-firewall) | security | 0.70 | The page describes how to add the agent’s outbound IP addresses to Azure Key Vault firewall so certificate-based connectors can retrieve certificates. This is a product-specific security configuration pattern involving firewall rules and outbound IPs, which qualifies as security expert knowledge rather than a generic concept. |
 | [Azure DevOps Wiki knowledge](https://learn.microsoft.com/en-us/azure/sre-agent/azure-devops-wiki-knowledge) | integrations | 0.70 | Explains connecting Azure DevOps wikis with support for managed identity and PAT; this is a concrete integration with authentication configuration details. |
 | [Configure agent hooks](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-agent-hooks) | configuration | 0.70 | REST API v2 tutorial for Stop and PostToolUse hooks will include JSON schema, field names, and allowed values for hook configuration, fitting configuration. |
-| [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy) | security | 0.70 | The page contains product-specific privacy and data handling details for Azure SRE Agent, including how data is processed and stored when using Anthropic as a non-Microsoft provider under Microsoft's oversight. These are service-specific security/privacy behaviors and controls that go beyond generic concepts, but the summary doesn't indicate numeric limits or configuration tables, so 'security' is the best fit. |
+| [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy) | security | 0.70 | Page contains product-specific privacy and data residency behavior, including how Anthropic is used as a non-Microsoft provider, where data can be processed, and which data is or isn't covered by specific privacy commitments. These are concrete, service-specific security/compliance details that go beyond generic concepts. |
 | [Kusto tools](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-tools) | integrations | 0.70 | Kusto tools are deterministic query tools with parameterization; page likely documents tool schema, parameter names, and constraints specific to Azure Data Explorer integration, matching integrations. |
 | [MCP server](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-server) | integrations | 0.70 | Describes the Azure SRE Agent MCP server and how it integrates with MCP-compatible clients like VS Code, Copilot CLI, and Claude Desktop. This is a product-specific integration pattern exposing the agent’s capabilities into external tools. |
 | [Manage permissions](https://learn.microsoft.com/en-us/azure/sre-agent/manage-permissions) | security | 0.70 | Managing permissions and access levels to resource groups and subscriptions is security/IAM; page likely lists specific permission levels, scopes, and possibly RBAC roles. |

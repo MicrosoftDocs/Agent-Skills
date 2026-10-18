@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-18'
 category_descriptions:
   configuration: 'Configuring and operating SAP on Azure: automation (Terraform, SDAF),
     networking, storage, HA/DR clusters, monitoring (Azure Monitor, BPS, Datasphere),
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ## Summary
 
-- **Total Pages**: 227
-- **Fetched**: 227
+- **Total Pages**: 228
+- **Fetched**: 228
 - **Fetch Failed**: 0
 - **Classified**: 187
-- **Unclassified**: 40
+- **Unclassified**: 41
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 227
 - **Deleted Pages**: 0
@@ -64,18 +64,22 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 32 | 14.1% |
+| architecture-patterns | 32 | 14.0% |
 | best-practices | 7 | 3.1% |
-| configuration | 76 | 33.5% |
+| configuration | 76 | 33.3% |
 | decision-making | 11 | 4.8% |
 | deployment | 28 | 12.3% |
 | integrations | 10 | 4.4% |
 | limits-quotas | 1 | 0.4% |
 | security | 11 | 4.8% |
 | troubleshooting | 11 | 4.8% |
-| *(Unclassified)* | 40 | 17.6% |
+| *(Unclassified)* | 41 | 18.0% |
 
 ## Changes
+
+### New Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/faq)
 
 ## Classified Pages
 
@@ -289,6 +293,7 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | [Deploy S/4 HANA infrastructure - Azure PowerShell](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-create-distributed-non-high-availability) | 0.30 | Quickstart for deploying a non-HA SAP system via Azure PowerShell. Primarily a procedural tutorial without detailed configuration tables, limits, or product-specific troubleshooting/decision matrices beyond what an LLM would generally know. |
 | [Enable Dedicated Hosting Plan in Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/enable-dedicated-hosting-plan) | 0.30 | How-to guide for switching Azure Monitor for SAP solutions from Elastic Premium to a dedicated hosting plan. Summary suggests step-by-step portal actions without exposing detailed configuration parameter tables, limits, or product-specific deployment matrices beyond generic hosting-plan change instructions. |
 | [Foundry AI and SAP Overview](https://learn.microsoft.com/en-us/azure/sap/microsoft-ai/foundry/foundry-ai-sap) | 0.30 | The page is described as an overview of how Microsoft Foundry integrates with SAP to enable agentic AI scenarios. Based on the summary, it focuses on conceptual explanation and benefits rather than specific configuration parameters, limits, error codes, or detailed decision matrices. It appears more like a high-level integration overview without the concrete expert details required by the sub-skill types. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/faq) | 0.30 | FAQ page about Business Process Solutions for SAP on Azure; description suggests general Q&A on deployment, setup, and configuration without clear evidence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely high-level and mixed content rather than focused expert-knowledge patterns defined in the sub-skill types. |
 | [Get started with Azure Monitor for SAP solutions - Azure portal](https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal) | 0.30 | Quickstart for deploying Azure Monitor for SAP solutions via the portal; likely a step-by-step tutorial without detailed limits, configuration matrices, or product-specific troubleshooting/error-code mappings. |
 | [Install SAP software - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-install-high-availability-namecustom-cli) | 0.30 | Quickstart for installing a distributed HA SAP system with custom resource names via Azure CLI; focuses on procedural steps rather than limits, configuration matrices, troubleshooting mappings, or quantified best practices. |
 | [Install SAP software - Azure PowerShell](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-install-distributed-non-high-availability) | 0.30 | Quickstart for installing SAP software on Azure using PowerShell; primarily a step-by-step deployment/tutorial flow without configuration tables, limits, error-code mappings, or product-specific decision matrices. |

@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 3
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 75
-- **Deleted Pages**: 3
+- **Unchanged**: 78
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
 ## Classification Statistics
@@ -75,18 +75,6 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 | *(Unclassified)* | 19 | 24.4% |
 
 ## Changes
-
-### New Pages
-
-- [Remote MCP server for AI agents](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/how-to-playwright-workspaces-remote-mcp)
-- [Get started with the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/quickstart-automate-browser-tasks-remote-mcp)
-- [Troubleshoot the remote MCP server](https://learn.microsoft.com/en-us/azure/app-testing/playwright-cloud-browsers/troubleshoot-remote-mcp-server)
-
-### Deleted Pages
-
-- ~~Remote MCP server for AI agents~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp)
-- ~~Get started with the remote MCP server~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp)
-- ~~Troubleshoot the remote MCP server~~ (https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server)
 
 ## Classified Pages
 

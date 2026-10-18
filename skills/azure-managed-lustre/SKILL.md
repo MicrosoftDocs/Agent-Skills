@@ -1,9 +1,9 @@
 ---
 name: azure-managed-lustre
-description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when mounting AML filesystems, linking Blob, using AKS CSI, setting quotas, or tuning Lustre performance, and other Azure Managed Lustre related development tasks. Not for Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
+description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when sizing AMLustre, integrating Blob, using AKS CSI, setting quotas, or tuning high‑throughput HPC/AI I/O, and other Azure Managed Lustre related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Files (use azure-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Lustre Skill
@@ -27,11 +27,11 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L36-L41 | Diagnosing and resolving Azure Managed Lustre cluster deployment failures and performance issues, including common error causes, metrics analysis, and tuning/optimization steps. |
 | Best Practices | L42-L47 | Guidance on tuning Azure Managed Lustre performance via optimal file/directory layout, client striping, and network setup (NICs, throughput, latency, and scaling). |
 | Decision Making | L48-L52 | Guidance on using MLPerf Storage benchmarks to estimate performance needs and choose appropriate Azure Managed Lustre configurations and capacity. |
-| Architecture & Design Patterns | L53-L58 | Designing resilient Azure Managed Lustre deployments, including regional redundancy/failover strategies and tiered checkpoint architectures for performance and data protection. |
-| Limits & Quotas | L59-L63 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
-| Security | L64-L73 | Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK-based encryption, root squash access controls, and virtual network encryption configuration and validation. |
-| Configuration | L74-L82 | Configuring Azure Managed Lustre setup: network/storage prerequisites, auto-mount via fstab, ARM template parameters, and monitoring/alerts with metrics and logs via Azure Monitor. |
-| Integrations & Coding Patterns | L83-L94 | Patterns for integrating Azure Managed Lustre with Blob Storage, Linux clients, AKS (CSI), Terraform, and workflows for importing, exporting, and migrating POSIX data. |
+| Architecture & Design Patterns | L53-L59 | Design patterns for Azure Managed Lustre: regional redundancy and failover, tiered checkpoint architectures, and AKS networking/CSI integration planning. |
+| Limits & Quotas | L60-L64 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
+| Security | L65-L75 | Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK encryption, root squash, CSI image integrity, and virtual network encryption configuration and validation. |
+| Configuration | L76-L85 | Configuring AMLustre: prerequisites, auto-mount (fstab), ARM template parameters, scaling capacity/throughput, and setting up/understanding monitoring, metrics, and alerts. |
+| Integrations & Coding Patterns | L86-L98 | Patterns for mounting Azure Managed Lustre, integrating with Blob Storage, migrating/importing/exporting data, Terraform provisioning, and using the CSI driver with AKS (static/dynamic). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -55,6 +55,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Design regional redundancy and failover recovery for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-region-recovery |
 | Design tiered checkpoint architecture with Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/tiered-checkpoints |
+| Plan AKS networking for Azure Managed Lustre CSI | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-network-planning |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -69,26 +70,29 @@ This skill requires **network access** to fetch documentation content:
 | Configure NSG rules for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group |
 | Use customer-managed keys to encrypt Azure Managed Lustre data | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/customer-managed-encryption-keys |
 | Configure root squash security settings for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/root-squash-configure-settings |
+| Verify Azure Lustre CSI driver image integrity | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-image-security |
 | Enable and validate virtual network encryption for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/vnet-encryption |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure network and storage prerequisites for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites |
+| Configure prerequisites for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites |
 | Configure fstab for automatic Azure Managed Lustre mounts | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/automount-clients-fstab |
 | Define ARM template parameters for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-resource-manager |
+| Expand Azure Managed Lustre capacity and throughput | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/expand-file-system-portal |
 | Configure monitoring and alerts for Azure Managed Lustre with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system |
 | Reference metrics and logs for Azure Managed Lustre monitoring | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system-reference |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Set up Azure Managed Lustre auto-export to Blob Storage | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-export |
-| Configure Azure Managed Lustre auto-import from Blob Storage | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-import |
-| Integrate Azure Blob Storage with Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration |
+| Integrate Azure Managed Lustre with Blob Storage | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration |
 | Connect Linux clients to Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients |
 | Provision Azure Managed Lustre with Terraform configuration | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-aml-file-system-terraform |
-| Create Azure Blob import jobs for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-import-job |
-| Configure export jobs from Azure Managed Lustre to Blob Storage | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/export-with-archive-jobs |
+| Export Azure Managed Lustre data to Blob Storage | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/export-data |
+| Import data from Blob to Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/import-data |
 | Migrate POSIX data to Azure Managed Lustre via AzCopy and Blob | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/migrate-data-from-linux |
-| Integrate Azure Managed Lustre with AKS via CSI driver | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes |
+| Restore Blob data into Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/restore-data |
+| Use dynamic provisioning with Azure Lustre CSI | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-dynamic-provisioning |
+| Use static provisioning with Azure Lustre CSI | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-static-provisioning |
+| Use Azure Managed Lustre with AKS via CSI driver | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes |

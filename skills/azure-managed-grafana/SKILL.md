@@ -1,9 +1,9 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring MCP/AI Foundry dashboards, Prometheus/AKS or ADX data sources, private endpoints, or Enterprise upgrades, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring MCP/AI Foundry dashboards, Entra auth/RBAC, private endpoints, plugins, or Enterprise upgrades, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor), Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Grafana Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L34-L39 | Diagnosing and resolving common Azure Managed Grafana issues, including access, configuration, and private endpoint connectivity and DNS problems. |
 | Decision Making | L40-L45 | Planning and executing Grafana decisions: choosing/activating Enterprise plans, migrating from self‑hosted or Azure Grafana Essential, and upgrading Azure Managed Grafana (incl. v12). |
 | Limits & Quotas | L46-L52 | Details on Managed Grafana regional availability, quotas and constraints, plus how to use features like reporting and image rendering within those limits. |
-| Security | L53-L66 | Securing Managed Grafana: encryption, auth (users, service accounts, tokens), roles/permissions, private endpoints, Entra group sync, dashboard sharing, and security best practices. |
+| Security | L53-L66 | Securing Managed Grafana: encryption, auth (Entra, identities, tokens), RBAC and dashboard permissions, private endpoints, Azure Monitor access, group sync, and security best practices. |
 | Configuration | L67-L78 | Configuring Managed Grafana instances: MCP endpoints, instance settings, plugins, private endpoints, deterministic outbound IPs, zone redundancy, diagnostics/logs, and SMTP email alerts. |
 | Integrations & Coding Patterns | L79-L88 | Integrating Grafana with Azure AI agents and monitoring tools: MCP setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer data sources. |
 
@@ -55,14 +55,14 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand data encryption in Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/encryption |
 | Authenticate to Azure Managed Grafana data plane APIs | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api |
-| Configure authentication and permissions for Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions |
-| Manage Azure Managed Grafana roles and access | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities |
-| Grant Azure Monitor access to Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions |
+| Configure Azure Managed Grafana authentication identities | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions |
+| Grant user and identity access to Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities |
+| Authorize Azure Monitor access for Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions |
 | Use service accounts and tokens in Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-service-accounts |
 | Configure private access and endpoints for Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-set-up-private-access |
 | Configure dashboard sharing and permissions in Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-share-dashboard |
 | Configure Entra group-based team sync in Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups |
-| Apply security best practices to Azure Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana |
+| Apply security best practices to Managed Grafana | https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana |
 
 ### Configuration
 | Topic | URL |

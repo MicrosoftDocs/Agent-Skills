@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
-  limits-quotas: ExpressRoute limits on bandwidth, routes, gateways, FastPath, provider
-    rate limiting, plus monitoring and FAQs to avoid hitting connectivity and quota
-    constraints.
+  limits-quotas: ExpressRoute bandwidth, route, and gateway limits; FastPath usage;
+    provider rate limiting; monitoring advertised routes; and FAQs on staying within
+    connectivity quotas.
   best-practices: Best practices for ExpressRoute capacity planning, QoS, BGP communities,
     gateway hardware migration, and validating resiliency via gateway and circuit
     failover testing.
@@ -30,14 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure ExpressRoute development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring ExpressRoute circuits/gateways, BGP routing (incl. IPv6), FastPath,
-  Global Reach, or MACsec/IPsec, and other Azure ExpressRoute related development
-  tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual
-  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Internet
-  Peering (use azure-internet-peering).
-use_when: Use when configuring ExpressRoute circuits/gateways, BGP routing (incl.
-  IPv6), FastPath, Global Reach, or MACsec/IPsec, and other Azure ExpressRoute related
-  development tasks.
+  planning ExpressRoute bandwidth/gateways, configuring BGP/NAT, deploying circuits
+  via ARM/Terraform, or automating CLI-based management, and other Azure ExpressRoute
+  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure Internet Peering (use azure-internet-peering).
+use_when: Use when planning ExpressRoute bandwidth/gateways, configuring BGP/NAT,
+  deploying circuits via ARM/Terraform, or automating CLI-based management, and other
+  Azure ExpressRoute related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
   Azure Internet Peering (use azure-internet-peering).
@@ -46,16 +46,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 97
-- **Fetched**: 97
+- **Total Pages**: 98
+- **Fetched**: 98
 - **Fetch Failed**: 0
-- **Classified**: 66
+- **Classified**: 67
 - **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 96
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -64,26 +64,27 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 8 | 8.2% |
-| best-practices | 7 | 7.2% |
-| configuration | 25 | 25.8% |
-| decision-making | 5 | 5.2% |
-| deployment | 5 | 5.2% |
+| best-practices | 7 | 7.1% |
+| configuration | 25 | 25.5% |
+| decision-making | 5 | 5.1% |
+| deployment | 5 | 5.1% |
 | integrations | 4 | 4.1% |
-| limits-quotas | 5 | 5.2% |
-| security | 5 | 5.2% |
-| troubleshooting | 2 | 2.1% |
-| *(Unclassified)* | 31 | 32.0% |
+| limits-quotas | 6 | 6.1% |
+| security | 5 | 5.1% |
+| troubleshooting | 2 | 2.0% |
+| *(Unclassified)* | 31 | 31.6% |
 
 ## Changes
 
 ### New Pages
 
-- [Test link failover](https://learn.microsoft.com/en-us/azure/expressroute/test-link-failover)
+- [Manage advertised route scale](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connection-manage-advertised-routes)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Manage advertised route scale](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connection-manage-advertised-routes) | limits-quotas | 0.90 | Page explicitly states concrete ExpressRoute private peering limits (for example, maximum 1,000 IPv4 prefixes and 100 IPv6 prefixes advertised from Azure to on-premises per connection) and provides guidance on managing advertised routes to stay within those numeric limits. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-custom-bgp-communities) | configuration | 0.80 | Explains how to set custom BGP community values for VNets using PowerShell, including specific property names and allowed values, which is detailed configuration knowledge. |
 | [QoS requirements](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-qos) | best-practices | 0.80 | Provides DSCP markings and QoS requirements for Skype for Business/voice over ExpressRoute with specific values and guidance, representing product-specific best practices with quantified settings. |
 | [BFD over ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd) | configuration | 0.78 | A BFD configuration guide for ExpressRoute private peering will include product-specific router commands, parameter names (e.g., detection intervals, multiplier), and required settings unique to Azure ExpressRoute edge devices and partner equipment. These are detailed configuration values and patterns that go beyond generic BFD concepts, fitting the configuration sub-skill. |

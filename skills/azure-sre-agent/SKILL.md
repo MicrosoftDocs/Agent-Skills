@@ -1,9 +1,9 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when wiring SRE Agent to DevOps/GitHub, KQL telemetry, AKS Java apps, IaC deployments, or DR architectures, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when integrating SRE Agent with DevOps/GitHub, Log Analytics/App Insights, AKS Java workloads, IaC deployments, or DR setups, and other Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L44-L48 | Best practices for integrating Azure Monitor, Application Insights, and related observability tools with SRE Agent to collect, analyze, and act on telemetry and alerts. |
 | Decision Making | L49-L54 | Guidance on when to run deep investigations, when to use Log Analytics vs App Insights, how to estimate/control SRE Agent costs, and which Azure regions you can deploy in. |
 | Architecture & Design Patterns | L55-L59 | Designing cold-standby disaster recovery for Azure SRE Agent, including architecture choices, failover strategy, RPO/RTO considerations, and environment replication. |
-| Security | L60-L78 | Securing Azure SRE Agent: identities, RBAC and roles, network/firewall, data privacy, GitHub/ADO access, subscription visibility, tool access policies, and approval/run-mode controls. |
+| Security | L60-L78 | Security, identity, and access control for SRE Agent: auth models, RBAC/roles, network/firewall, GitHub/ADO access, Key Vault/IP allowlists, approvals, data residency, and tool access policies. |
 | Configuration | L79-L92 | Configuring SRE Agent capabilities: code interpreter, knowledge sources, tools/skills, governance hooks, subagents, incident plans, connectors, network/VNet, GitHub auth, MCP/IDE, and REST hooks. |
 | Integrations & Coding Patterns | L93-L113 | Integrating Azure SRE Agent with DevOps, GitHub, observability, incident tools, MCP servers, and Python/Kusto tools, plus secure API use and cross-tenant access configuration |
 | Deployment | L114-L117 | How to deploy Azure SRE Agent using Infrastructure-as-Code templates, including required resources, parameters, and environment configuration steps. |

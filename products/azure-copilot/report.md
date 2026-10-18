@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-18'
 category_descriptions:
   decision-making: 'Using Copilot to compare options and make cost‑efficient Azure
     decisions: VM sizing, workload templates, Marketplace offers, storage estate insights,
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 36
+- **Updated Pages**: 1
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 | *(Unclassified)* | 20 | 55.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Deployment](https://learn.microsoft.com/en-us/azure/copilot/deployment-agent)
+  - Updated: 2026-08-10T21:58:00.000Z → 2026-10-15T22:12:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +100,7 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 | [Work smarter with Azure Local](https://learn.microsoft.com/en-us/azure/copilot/work-smarter-edge) | 0.30 | Hybrid/edge scenarios overview; no explicit expert-level configuration or limits indicated. |
 | [Get resource information](https://learn.microsoft.com/en-us/azure/copilot/get-information-resource-graph) | 0.25 | Describes scenarios where Copilot helps with Azure Resource Graph; appears scenario-focused without detailed config tables or limits. |
 | [Understand service health](https://learn.microsoft.com/en-us/azure/copilot/understand-service-health) | 0.25 | Service health usage scenarios; no indication of specific configuration parameters, limits, or troubleshooting mappings. |
-| [Deployment](https://learn.microsoft.com/en-us/azure/copilot/deployment-agent) | 0.20 | Describes the Deployment Agent conceptually and how to invoke it; summary does not show concrete configuration tables, limits, or decision matrices. |
+| [Deployment](https://learn.microsoft.com/en-us/azure/copilot/deployment-agent) | 0.20 | Page describes what the Azure Copilot Deployment Agent is and how it helps with planning and deployment, but the summary shows no concrete limits, configuration parameter tables, error codes, or product-specific numeric thresholds. It appears to be a conceptual/overview description of capabilities and use cases rather than detailed expert knowledge in any of the defined sub-skill categories. |
 | [Execute commands](https://learn.microsoft.com/en-us/azure/copilot/execute-commands) | 0.20 | Scenario/overview page describing how Azure Copilot can execute commands via natural language; no detailed limits, configuration tables, error codes, or product-specific parameters. |
 | [Generate Azure CLI scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-cli-scripts) | 0.20 | High-level description of using Azure Copilot to generate Azure CLI scripts with sample prompts; lacks numeric limits, configuration matrices, or detailed troubleshooting or security content. |
 | [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts) | 0.20 | Similar to the CLI page but for PowerShell; focuses on scenarios and sample prompts without expert-level configuration details, limits, or diagnostic guidance. |

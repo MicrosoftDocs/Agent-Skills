@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 198
+- **Updated Pages**: 0
+- **Unchanged**: 199
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 92 | 46.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Ingestion error codes](https://learn.microsoft.com/en-us/azure/data-explorer/error-codes)
-  - Updated: 2023-12-21T08:00:00.000Z → 2026-09-30T11:03:00.000Z
 
 ## Classified Pages
 

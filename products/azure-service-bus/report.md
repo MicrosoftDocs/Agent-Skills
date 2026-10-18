@@ -1,106 +1,163 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-18'
 category_descriptions:
-  security: 'Securing Service Bus: identity-based auth, SAS, keys and encryption,
-    TLS, network isolation (VNet, Private Link, firewalls), Azure Policy, and compliance
-    best practices.'
-  configuration: 'Configuring Service Bus behavior: scaling, partitions, sessions,
-    forwarding, TTL/dead-lettering, filters/actions, monitoring/metrics, geo-replication,
-    and management via ARM, PowerShell, and emulator.'
+  security: 'Configuring Service Bus security: Entra ID auth, managed identities,
+    SAS, encryption/CMK, network isolation (VNet, Private Link, firewalls), TLS policies,
+    and compliance/Azure Policy.'
+  configuration: 'Configuring and managing Service Bus entities: scaling, sessions,
+    partitioning, forwarding, TTL/dead-lettering, filters/actions, AMQP/HTTP settings,
+    monitoring, automation, and local emulation.'
   integrations: Patterns and code for integrating Service Bus with JMS (1.1/2.0),
-    RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication
-    tasks, and batch message deletion.
+    ActiveMQ, RabbitMQ, Event Grid, Logic Apps, Functions, plus batch message deletion
+    and interoperability over AMQP.
   architecture-patterns: Patterns for resilient, geo-replicated, multi-namespace Service
     Bus architectures, including partitioning, autoforwarding chains, federation,
     and message replication with NServiceBus.
-  decision-making: Guidance on choosing Service Bus vs other messaging options, configuring
-    geo-disaster recovery/replication, Java/JMS client choices, and migrating from
-    Standard to Premium.
-  best-practices: 'Guidance on reliable, high-throughput messaging: duplicate detection,
-    ordering/sessions, timestamps, maintenance prep, loss/duplicate prevention, serialization,
-    prefetch, timeouts, and retries.'
+  decision-making: Guidance for choosing Service Bus vs other messaging options, selecting
+    tiers and SDKs, and planning geo-disaster recovery and migrations (Standard→Premium)
+    for your workloads.
+  best-practices: 'Designing reliable, high-performance Service Bus messaging: message
+    design, filters, locks/settlement, duplicate detection, prefetch, timeouts/retries,
+    metrics, and maintenance to avoid loss/duplicates.'
   deployment: Deploying Service Bus namespaces and entities (queues, topics, subscriptions,
     rules) using ARM/Bicep templates, and moving namespaces across Azure regions.
-  troubleshooting: Diagnosing and resolving Azure Service Bus errors and exceptions
-    (AMQP, .NET, Resource Manager), configuring tracing, and fixing common messaging
-    and connectivity issues.
-  limits-quotas: Service Bus limits, quotas, throttling behavior, FAQs, and guidance
-    on handling large messages (especially with Premium tier).
+  troubleshooting: 'Diagnosing and fixing Service Bus issues: AMQP errors, SDK/Resource
+    Manager exceptions, legacy error codes, and tracing end-to-end operations for
+    debugging.'
+  limits-quotas: Service Bus entity size, connection, and throughput limits, quota
+    behaviors, and how throttling works (including common throttling scenarios and
+    mitigation guidance).
 skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using queues/topics, sessions, autoforwarding chains, geo-replication, or JMS/Java
-  clients, and other Azure Service Bus related development tasks. Not for Azure Event
-  Hubs (use azure-event-hubs), Azure Queue Storage (use azure-queue-storage), Azure
-  Notification Hubs (use azure-notification-hubs), Azure Relay (use azure-relay).
-use_when: Use when using queues/topics, sessions, autoforwarding chains, geo-replication,
-  or JMS/Java clients, and other Azure Service Bus related development tasks.
-confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue Storage
-  (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs),
-  Azure Relay (use azure-relay).
+  using queues/topics with sessions, partitioning, autoforwarding, JMS/AMQP integrations,
+  or geo-disaster recovery, and other Azure Service Bus related development tasks.
+  Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay),
+  Azure Queue Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
+use_when: Use when using queues/topics with sessions, partitioning, autoforwarding,
+  JMS/AMQP integrations, or geo-disaster recovery, and other Azure Service Bus related
+  development tasks.
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use
+  azure-relay), Azure Queue Storage (use azure-queue-storage), Azure Notification
+  Hubs (use azure-notification-hubs).
 ---
 # Azure Service Bus Crawl Report
 
 ## Summary
 
-- **Total Pages**: 127
-- **Fetched**: 127
+- **Total Pages**: 131
+- **Fetched**: 131
 - **Fetch Failed**: 0
-- **Classified**: 89
-- **Unclassified**: 38
+- **Classified**: 92
+- **Unclassified**: 39
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 127
-- **Deleted Pages**: 0
+- **New Pages**: 5
+- **Updated Pages**: 27
+- **Unchanged**: 99
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 7 | 5.5% |
-| best-practices | 8 | 6.3% |
-| configuration | 21 | 16.5% |
-| decision-making | 5 | 3.9% |
-| deployment | 7 | 5.5% |
-| integrations | 11 | 8.7% |
-| limits-quotas | 4 | 3.1% |
-| security | 20 | 15.7% |
-| troubleshooting | 6 | 4.7% |
-| *(Unclassified)* | 38 | 29.9% |
+| architecture-patterns | 7 | 5.3% |
+| best-practices | 11 | 8.4% |
+| configuration | 22 | 16.8% |
+| decision-making | 6 | 4.6% |
+| deployment | 7 | 5.3% |
+| integrations | 9 | 6.9% |
+| limits-quotas | 3 | 2.3% |
+| security | 21 | 16.0% |
+| troubleshooting | 6 | 4.6% |
+| *(Unclassified)* | 39 | 29.8% |
 
 ## Changes
+
+### New Pages
+
+- [Service Bus exceptions (retired libraries)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions)
+- [REST APIs and client libraries](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-overview)
+- [Namespace addressing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-namespace-access)
+- [HTTP message headers and properties](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-message-properties)
+- [Send a message with Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-send-entra-token-how-to)
+
+### Updated Pages
+
+- [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-troubleshooting-guide)
+  - Updated: 2026-08-07T08:00:00.000Z → 2026-10-06T08:00:00.000Z
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/service-bus-messaging/monitor-service-bus-reference)
+  - Updated: 2026-07-28T08:00:00.000Z → 2026-10-13T08:00:00.000Z
+- [Quotas](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas)
+  - Updated: 2026-09-19T05:13:00.000Z → 2026-10-14T05:17:00.000Z
+- [Subscription Rule SQL filter syntax](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter)
+  - Updated: 2023-08-16T08:00:00.000Z → 2026-10-14T05:17:00.000Z
+- [AMQP overview](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-overview)
+  - Updated: 2024-12-02T08:00:00.000Z → 2024-12-02T23:02:00.000Z
+- [.NET](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-dotnet)
+  - Updated: 2023-10-16T22:16:00.000Z → 2026-10-13T22:18:00.000Z
+- [Java Message Service (JMS) and AMQP](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp)
+  - Updated: 2022-12-08T18:03:00.000Z → 2026-10-13T22:18:00.000Z
+- [End-to-end tracing and diagnostics](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-end-to-end-tracing)
+  - Updated: 2024-12-19T08:00:00.000Z → 2026-10-06T08:00:00.000Z
+- [Enable sessions for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-message-sessions)
+  - Updated: 2023-10-16T22:16:00.000Z → 2026-10-13T22:18:00.000Z
+- [Enable duplicate detection for a queue or topic](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-duplicate-detection)
+  - Updated: 2026-04-22T17:34:00.000Z → 2026-10-13T22:18:00.000Z
+- [Enable partitions (basic / standard)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-basic-standard)
+  - Updated: 2026-04-22T17:34:00.000Z → 2026-10-13T22:18:00.000Z
+- [Enable auto forwarding for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-auto-forward)
+  - Updated: 2023-10-16T22:16:00.000Z → 2026-10-13T22:18:00.000Z
+- [Enable dead lettering for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-dead-letter)
+  - Updated: 2026-02-24T23:11:00.000Z → 2026-10-13T22:18:00.000Z
+- [Get message counters](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-counters)
+  - Updated: 2024-09-16T17:37:00.000Z → 2026-10-13T22:18:00.000Z
+- [Service Bus management libraries](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-management-libraries)
+  - Updated: 2025-12-04T23:11:00.000Z → 2026-10-13T22:18:00.000Z
+- [Service Bus samples](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-samples)
+  - Updated: 2026-02-10T08:00:00.000Z → 2026-10-13T22:18:00.000Z
+- [Queues, topics, and subscriptions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)
+  - Updated: 2026-05-26T22:16:00.000Z → 2026-10-13T22:18:00.000Z
+- [Premium messaging](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-premium-messaging)
+  - Updated: 2026-07-27T08:00:00.000Z → 2026-10-06T08:00:00.000Z
+- [Duplicate message detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection)
+  - Updated: 2026-06-03T08:00:00.000Z → 2026-10-13T22:18:00.000Z
+- [Message browsing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-browsing)
+  - Updated: 2024-07-25T08:00:00.000Z → 2026-10-13T22:18:00.000Z
+- *...and 7 more*
+
+### Deleted Pages
+
+- ~~Service Bus exceptions (deprecated)~~ (https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Quotas](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas) | limits-quotas | 0.98 | The page explicitly lists Azure Service Bus quotas and throttling thresholds with concrete numeric values (for example, maximum namespaces per subscription and other service-specific limits), which are product- and tier-specific details that qualify as expert knowledge and fit the limits-quotas sub-skill. |
+| [Quotas](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas) | limits-quotas | 0.96 | Explicitly lists quotas and throttling thresholds (for example, maximum namespaces per subscription) with concrete numeric limits, which are product-specific limits and quotas not reliably known from training. |
 | [AMQP errors](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting guide listing specific AMQP error codes/messages, causes, and how to resolve them by recreating connections/links. |
 | [Service Bus exceptions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions-latest) | troubleshooting | 0.90 | Provides a catalog of Service Bus .NET client exceptions with meanings and recommended handling, including transient vs non-transient guidance. |
-| [Service Bus exceptions (deprecated)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions) | troubleshooting | 0.90 | The page lists specific Azure Service Bus .NET exception types, their causes, and recommended resolutions, including product-specific error behaviors and migration guidance for deprecated SDKs. This is organized as symptom (exception) → cause → solution, which matches the troubleshooting criteria and contains expert, product-specific diagnostic knowledge. |
-| [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-troubleshooting-guide) | troubleshooting | 0.90 | The page is a troubleshooting guide organized around specific Service Bus problems, including concrete error messages and codes (for example, messaging exceptions, connection issues, and lock/token errors), their likely causes, and recommended resolutions. It provides product-specific guidance such as which logs to check, configuration changes to make, and how to interpret particular Service Bus behaviors, which qualifies as expert troubleshooting knowledge beyond generic debugging advice. |
+| [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-troubleshooting-guide) | troubleshooting | 0.90 | A dedicated troubleshooting guide with concrete symptoms, likely specific error messages, and step-by-step resolutions for Azure Service Bus, matching the symptom → cause → solution pattern. |
+| [Service Bus exceptions (retired libraries)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions) | troubleshooting | 0.86 | Preserves detailed exception and error code information for retired Service Bus .NET libraries, mapping specific error codes/messages to meanings and guidance, which is product- and version-specific troubleshooting knowledge. |
 | [Throttling](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-throttling) | limits-quotas | 0.86 | A throttling article for Service Bus standard and premium tiers typically documents concrete throughput and resource limits, how and when throttling is applied, and tier-specific behaviors. These are exact, product-specific limits and behaviors that qualify as expert knowledge under limits-quotas. |
-| [Authenticate from an application](https://learn.microsoft.com/en-us/azure/service-bus-messaging/authenticate-application) | security | 0.85 | Covers product-specific authentication and authorization details for Service Bus using Microsoft Entra ID and Azure RBAC, including how to grant access to queues/topics via roles and identities, which is security-configuration knowledge. |
-| [Enforce minimum required TLS version](https://learn.microsoft.com/en-us/azure/service-bus-messaging/transport-layer-security-enforce-minimum-version) | security | 0.85 | Explains how to configure minimum TLS version, including supported versions and namespace-level settings—product-specific security configuration. |
+| [Authenticate from an application](https://learn.microsoft.com/en-us/azure/service-bus-messaging/authenticate-application) | security | 0.85 | Provides product-specific security configuration using Microsoft Entra ID and Azure RBAC, including how to authorize access to queues/topics with specific principal types and roles. |
+| [Optimize performance](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements) | best-practices | 0.85 | Contains detailed, product-specific performance recommendations (client reuse, batching, prefetch tuning, protocol choices) that go beyond generic messaging advice and include concrete configuration guidance. |
 | [Resource Manager exceptions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-exceptions) | troubleshooting | 0.85 | Explicitly described as a list of Service Bus exceptions surfaced via Azure Resource Manager with suggested actions. This is symptom (exception) → cause/meaning → action mapping, which is product-specific troubleshooting knowledge not reliably known from training. |
 | [Authenticate with managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity) | security | 0.82 | Shows how to configure managed identities with Service Bus, including Entra ID integration and Service Bus–specific role/permission wiring. This is product-specific identity and access configuration, not just conceptual guidance. |
 | [Allow access from specific virtual networks](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-service-endpoints) | security | 0.80 | Explains how to bind namespaces to VNet subnets with service endpoints, including specific configuration properties and access behavior. |
 | [Authentication with Shared Access Signatures](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-sas) | security | 0.80 | Explains Service Bus–specific SAS behavior, rule structure, rights, and token usage. Includes concrete details on authorization rules, key handling, and token generation that are specific to Service Bus and qualify as product-specific security configuration. |
 | [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/service-bus-messaging/configure-customer-managed-key) | security | 0.80 | Describes how to set up CMK/BYOK with Key Vault, including key identifiers and namespace settings specific to Service Bus encryption at rest. |
+| [Enforce minimum required TLS version](https://learn.microsoft.com/en-us/azure/service-bus-messaging/transport-layer-security-enforce-minimum-version) | security | 0.80 | Gives concrete security configuration for TLS versions on Service Bus namespaces, including default behavior (TLS 1.3 public endpoints, TLS 1.2 support) and how to enforce minimum versions. |
+| [HTTP message headers and properties](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-message-properties) | configuration | 0.80 | Explains how broker properties, custom properties, and message bodies map to HTTP headers and body; this is a detailed mapping of property names and formats, including legacy SBMP mappings, which is product-specific configuration/serialization knowledge. |
 | [Handle timeouts and configure retries](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-timeouts-retries) | best-practices | 0.80 | The page focuses on handling timeouts and configuring retries for Azure Service Bus client libraries, including product-specific recommendations, configuration options, and patterns to avoid. These are concrete, Service Bus–specific best practices (such as recommended try-timeout values, retry policies, and client-side usage patterns that cause timeouts) that qualify as expert knowledge rather than generic guidance. |
 | [Integrate with RabbitMQ](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-integrate-with-rabbitmq) | integrations | 0.80 | Step-by-step integration guide with concrete connection parameters, routing patterns, and configuration details for bridging RabbitMQ to Service Bus. |
 | [Migrate from Standard to Premium namespaces](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-migrate-standard-premium) | decision-making | 0.80 | Describes migration steps and trade-offs between Standard and Premium tiers, including throughput, latency, and feature differences—tier selection and migration guidance. |
 | [Migrate to Passwordless Connections](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-migrate-azure-credentials) | security | 0.80 | Provides concrete steps and configuration details for replacing connection strings with Entra ID and RBAC, including roles and auth patterns specific to Service Bus. |
 | [Secure your Service Bus deployment](https://learn.microsoft.com/en-us/azure/service-bus-messaging/secure-service-bus) | security | 0.80 | Provides Service Bus–specific security recommendations and best practices (Zero Trust aligned) for securing namespaces, entities, and data, which go beyond generic security concepts and include product-specific guidance. |
 | [Subscription Rule SQL action syntax](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-rule-action) | configuration | 0.80 | Reference for SQL action expressions with exact syntax and capabilities, which are product-specific configuration rules. |
-| [Subscription Rule SQL filter syntax](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter) | configuration | 0.80 | Provides full grammar and allowed expressions for SQL filters, including property names and operators specific to Service Bus. |
 | [Authentication and authorization](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-authentication-and-authorization) | security | 0.78 | Deep, product-specific security guidance on Service Bus auth models (SAS vs Microsoft Entra ID), including how each mechanism works and how to choose the appropriate model. Contains concrete configuration patterns and security-specific behavior that go beyond generic auth concepts. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-faq) | limits-quotas | 0.78 | FAQ includes concrete Service Bus-specific behaviors and numeric constraints (for example, message size, connection and entity limits, lock durations, and other operational limits) that qualify as expert knowledge beyond generic conceptual information. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/service-bus-messaging/monitor-service-bus-reference) | configuration | 0.78 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, log categories, and their exact names/units as used by Azure Monitor. These are product-specific configuration details (metric names, dimensions, log table names, categories) that LLMs are unlikely to know precisely from training. The content is not about limits/quotas or troubleshooting, but about how to configure and consume monitoring data using specific parameter names and structures, which aligns best with the configuration sub-skill. |
-| [Optimize performance](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements) | best-practices | 0.78 | The page provides concrete, product-specific performance tuning recommendations for Azure Service Bus (for example, guidance on client reuse, batching, prefetching, protocol selection, and resource planning) that go beyond generic messaging best practices. These are actionable DO/DON'T style guidelines tailored to Service Bus behavior and constraints, fitting the best-practices category. |
 | [Prevent message loss and duplicates](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-message-loss-and-duplicates) | best-practices | 0.78 | The article explains concrete, product-specific patterns and DO/DON'T guidance for receive/settle modes, entity configuration, and processing patterns to avoid message loss and duplicate processing. This is actionable best-practices content tied to Azure Service Bus semantics rather than generic messaging theory. |
 | [Choose between JMS and native SDK (Java)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-jms-versus-native-sdk) | decision-making | 0.77 | Explicitly compares JMS vs native Java SDK for Service Bus with feature coverage, tier requirements, and programming model differences to help select the right library. This is product-specific technology selection guidance with concrete criteria. |
 | [Network security](https://learn.microsoft.com/en-us/azure/service-bus-messaging/network-security) | security | 0.76 | Network security article covers Service Bus–specific use of service tags, IP firewall rules, service endpoints, and private endpoints, which are concrete security settings and configurations. |
@@ -109,15 +166,10 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/confidential-computing) | security | 0.75 | Explains how to enable confidential computing on Premium namespaces and its security implications—service-specific security configuration. |
 | [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/service-bus-messaging/transport-layer-security-configure-minimum-version) | security | 0.75 | Provides ARM properties and allowed TLS version values to enforce minimum TLS, which are concrete security configuration parameters. |
 | [Create an authorization rule for namespace and queue](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-auth-rule) | security | 0.75 | Shows how to define authorization rules in templates, including rights and scopes, which are security configuration parameters. |
-| [Enable auto forwarding for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-auto-forward) | configuration | 0.75 | Details the auto-forwarding property names and how to set them via portal, CLI, PowerShell, and SDKs, which are specific configuration parameters. |
-| [Enable dead lettering for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-dead-letter) | configuration | 0.75 | Shows how to configure DLQ behavior with specific flags and settings across management surfaces, which are product-specific configuration details. |
-| [Enable sessions for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-message-sessions) | configuration | 0.75 | Shows exact settings and API calls in portal, CLI, PowerShell, and SDKs to enable sessions, which are product-specific configuration parameters. |
-| [Java Message Service (JMS) and AMQP](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp) | integrations | 0.75 | Explains how to use JMS 1.1 over AMQP with Service Bus Standard, including configuration, connection strings, and feature limitations unique to this scenario. |
 | [Message replication task patterns](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-patterns) | architecture-patterns | 0.75 | Provides detailed guidance for specific replication task patterns, which are product-specific architecture patterns with concrete implementation advice. |
-| [Messages, payloads, and serialization](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads) | best-practices | 0.75 | Explains message structure, properties, routing, and serialization with Service Bus-specific best practices and edge cases. |
 | [Partitioned queues and topics](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning) | architecture-patterns | 0.75 | Explains partitioning behavior, throughput and availability implications, and when to use partitioned entities—Service Bus–specific architecture guidance. |
-| [Premium messaging](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-premium-messaging) | limits-quotas | 0.72 | Page includes a specific maximum message size limit (large messages up to 100 MB) tied to the Premium tier, which is an exact numerical constraint and tier-specific capability that qualifies as limits-quotas expert knowledge. |
-| [.NET](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-dotnet) | integrations | 0.70 | Describes how to configure the WindowsAzure.ServiceBus library for AMQP, including connection settings and constraints specific to this legacy integration. |
+| [Send a message with Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-send-entra-token-how-to) | security | 0.75 | Walkthrough for obtaining Entra ID access tokens and using them in REST calls; likely includes specific OAuth scopes, token acquisition parameters, and HTTP authorization header usage, which are product-specific security configuration details. |
+| [.NET](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-dotnet) | configuration | 0.70 | Migration-focused article describing AMQP configuration and serialization differences between WindowsAzure.ServiceBus and Azure.Messaging.ServiceBus; likely includes specific configuration parameters and behavior differences that are product- and version-specific. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-queue) | deployment | 0.70 | Page is a quickstart showing an Azure Resource Manager template defining a Service Bus namespace and queue, including specific ARM resource types, properties, and parameter structures that are product-specific deployment details rather than generic concepts. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-topic) | deployment | 0.70 | Page provides an ARM template for deploying a Service Bus namespace with topic and subscription, including concrete JSON schema, resource definitions, and parameters that represent product-specific deployment configuration patterns. |
 | [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-ip-filtering) | security | 0.70 | IP firewall configuration for Service Bus generally includes portal/API setting names, rule ordering/precedence, allowed value formats (IPv4, CIDR), and sometimes interaction with other Service Bus network access settings. These are product-specific security configuration details, not just conceptual guidance. |
@@ -135,46 +187,54 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue
 | [Create a namespace](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace) | deployment | 0.70 | Includes a concrete ARM template and parameter definitions for namespace creation, which are deployment configuration details. |
 | [Create a namespace with topic, subscription, and rule](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-topic-with-rule) | deployment | 0.70 | Provides a full ARM template with topic, subscription, and rule resources and parameters, which are deployment-specific configurations. |
 | [Disable local or SAS authentication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/disable-local-authentication) | security | 0.70 | Page is focused on configuring authentication for Azure Service Bus by disabling local/SAS key auth in favor of Microsoft Entra ID. This is product-specific security configuration, likely including exact setting names, portal/ARM options, and required permissions. It does not fit limits, deployment, or generic best practices as closely as security. |
-| [Enable duplicate detection for a queue or topic](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-duplicate-detection) | configuration | 0.70 | Page focuses on how to enable duplicate detection via portal, CLI, PowerShell, and SDKs, which typically includes entity-specific property names (e.g., RequiresDuplicateDetection, DuplicateDetectionHistoryTimeWindow) and configuration patterns unique to Azure Service Bus rather than just conceptual description. |
-| [Enable partitions (basic / standard)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-basic-standard) | configuration | 0.70 | Page explains enabling partitioning using portal, CLI, PowerShell, and SDKs, which implies detailed configuration properties and flags specific to Service Bus entities (e.g., EnablePartitioning) and how to set them, going beyond generic concepts. |
+| [Duplicate message detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection) | best-practices | 0.70 | Explains product-specific behavior and configuration for duplicate detection (e.g., how Service Bus identifies and drops duplicates, likely including settings like duplicate detection windows and ID handling), which are concrete, implementation-focused recommendations. |
+| [Enable auto forwarding for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-auto-forward) | configuration | 0.70 | Describes enabling auto forwarding between queues/subscriptions and destination entities; includes specific configuration properties and constraints (same namespace, etc.), which are product-specific configuration details. |
+| [Enable dead lettering for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-dead-letter) | configuration | 0.70 | How-to for enabling dead lettering via portal, CLI, PowerShell, and SDKs; includes specific settings and flags controlling dead-letter behavior, which are configuration details. |
+| [Enable duplicate detection for a queue or topic](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-duplicate-detection) | configuration | 0.70 | Explains enabling duplicate detection and configuring its time window; includes specific property names and likely allowed ranges for the history time window, which are configuration-level expert details. |
+| [Enable partitions (basic / standard)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-basic-standard) | configuration | 0.70 | Shows how to enable partitioning using various tools and SDKs; includes specific entity properties and possibly constraints per tier, which are configuration details unique to Service Bus. |
+| [Enable sessions for a queue or subscription](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-message-sessions) | configuration | 0.70 | How-to article for enabling sessions via portal, CLI, PowerShell, and SDKs; necessarily includes specific property names, flags, and configuration options for queues/subscriptions, which are configuration details. |
 | [Geo-Disaster Recovery (metadata only)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr) | decision-making | 0.70 | Provides product-specific guidance on configuring Geo-DR, including Premium-only availability and namespace pairing behavior, which drives DR design decisions. |
-| [Get message counters](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-counters) | configuration | 0.70 | Provides exact API/ARM property names and patterns to query message counters, including performance considerations specific to Service Bus. |
 | [Handling outages and disasters](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-outages-disasters) | architecture-patterns | 0.70 | Describes patterns for using multiple namespaces to handle outages/disasters, including when to use Geo-DR/Geo-Replication versus multi-namespace patterns—architecture-specific guidance. |
 | [Java Message Service (JMS) Developer guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/jms-developer-guide) | integrations | 0.70 | JMS 2.0 developer guide for Service Bus includes API usage patterns, configuration details, and Service Bus–specific integration behavior for the JMS client. These are concrete coding and integration patterns beyond generic JMS knowledge. |
-| [Message browsing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-browsing) | configuration | 0.70 | Explains peek operation behavior and message types returned, including a table; provides product-specific operational semantics. |
+| [Java Message Service (JMS) and AMQP](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp) | integrations | 0.70 | Shows how to use Apache Qpid JMS with Service Bus over AMQP; likely includes concrete connection URLs, configuration properties, and code patterns specific to this integration, which qualify as integration-focused expert knowledge. |
 | [Message replication and cross-region federation](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-overview) | architecture-patterns | 0.70 | Covers cross-region federation and replication patterns using autoforwarding and routing topologies, which are Service Bus–specific architecture patterns. |
 | [Message sequencing and timestamps](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sequencing) | best-practices | 0.70 | Details how sequence numbers and EnqueuedTimeUtc behave, including partitioned entity nuances—product-specific behavior and usage guidance. |
+| [Message transfers, locks, and settlement](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement) | best-practices | 0.70 | Details Service Bus-specific semantics for message transfers, locks, acknowledgments, and settlement patterns, including how send/receive and positive/negative acknowledgments work; these are concrete, product-specific processing patterns. |
+| [Messages, payloads, and serialization](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads) | best-practices | 0.70 | Explains detailed, product-specific message structure, metadata handling, routing, and serialization patterns, including recommended ways to structure payloads and properties for Service Bus. |
 | [Migrate from ActiveMQ to Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/migrate-jms-activemq-to-servicebus) | integrations | 0.70 | Migration guide with product-specific JMS/AMQP configuration patterns and code-level changes unique to Azure Service Bus versus ActiveMQ/Amazon MQ. |
 | [Monitor Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/monitor-service-bus) | configuration | 0.70 | Explains how to wire Service Bus to Azure Monitor with specific metric/log categories and configuration steps beyond generic monitoring concepts. |
 | [Network security perimeter](https://learn.microsoft.com/en-us/azure/service-bus-messaging/network-security-perimeter) | security | 0.70 | The page explains how to associate a Service Bus namespace with a network security perimeter, including product-specific integration behavior between Service Bus and other PaaS services like Key Vault. It focuses on securing traffic within the perimeter and blocking unauthorized access, which is concrete, service-specific security configuration guidance rather than a generic overview. |
+| [Prefetch messages](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch) | best-practices | 0.70 | Describes product-specific behavior of the prefetch buffer, how messages are fetched and served, and how turning prefetch on/off interacts with buffered messages—concrete, implementation-specific guidance beyond generic concepts. |
+| [Premium messaging](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-premium-messaging) | decision-making | 0.70 | Describes when to choose the Premium tier for predictable throughput, latency, and large messages (up to 100 MB); provides tier-specific capabilities and guidance for production workloads, fitting decision-making criteria. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/service-bus-messaging/security-controls-policy) | security | 0.70 | Lists Azure Policy built-ins and compliance controls for Service Bus, which are security/compliance configurations specific to the service. |
-| [Set subscription filters and actions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-filter-examples) | integrations | 0.70 | The page provides concrete, product-specific examples of defining filters and actions on Service Bus topic subscriptions, including exact SQL-like filter syntax, property names, and usage patterns that are unique to Azure Service Bus. These are detailed coding/configuration patterns for integrating with Service Bus topics rather than conceptual explanations, fitting the integrations sub-skill. |
+| [Set subscription filters and actions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-filter-examples) | best-practices | 0.70 | Shows concrete, product-specific filter and action examples for topic subscriptions, including exact filter syntax and patterns that are unique to Azure Service Bus. |
+| [Subscription Rule SQL filter syntax](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter) | configuration | 0.70 | Details the SQL filter grammar and allowed expressions for Service Bus subscription rules, including specific syntax and parameter usage for ARM templates, CLI, and SDKs—product-specific configuration semantics rather than generic SQL knowledge. |
 | [Suspend and reactivate messaging entities](https://learn.microsoft.com/en-us/azure/service-bus-messaging/entity-suspend) | configuration | 0.70 | Explains how to disable/enable queues, topics, and subscriptions with specific state flags and management operations unique to Service Bus. |
 | [Test locally with Service Bus emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/test-locally-with-service-bus-emulator) | configuration | 0.70 | A local emulator article typically includes container image names from MCR, required ports, connection string formats, and environment variables/flags specific to the Service Bus emulator. These are product-specific configuration parameters and values that qualify as expert knowledge beyond generic emulator usage. |
 | [Use ARM templates](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-overview) | deployment | 0.70 | Gives template structure, resource types, and parameterization details for deploying Service Bus via ARM, which are deployment-specific configurations. |
 | [Use Azure PowerShell to provision entities](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-manage-with-ps) | configuration | 0.70 | Contains concrete cmdlets, parameters, and patterns for creating/managing namespaces, queues, topics, and subscriptions via PowerShell. |
 | [Use Service Bus with Java Message Service (JMS) 2.0](https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20) | integrations | 0.70 | How-to for using JMS 2.0 over AMQP with Azure Service Bus; likely includes product-specific API usage, configuration parameters, and integration patterns beyond generic JMS knowledge. |
-| [Duplicate message detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection) | best-practices | 0.68 | A duplicate detection article for Service Bus typically includes product-specific guidance such as how to set the DuplicateDetectionHistoryTimeWindow, how message IDs are used, and how to configure or use this feature to avoid duplicate processing in concrete failure scenarios. The summary already describes specific failure patterns (acknowledgment not returned, client retries) and how the system handles duplicates, which are product-specific gotchas and usage recommendations rather than just conceptual theory, fitting best-practices. |
 | [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication) | architecture-patterns | 0.68 | Describes a product-specific geo-replication pattern for Service Bus namespaces, including how metadata and data are replicated from primary to secondary regions and when to use this feature for outage/disaster insulation. This is an architecture/design pattern unique to Azure Service Bus rather than a generic concept. |
-| [Prefetch messages](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch) | best-practices | 0.68 | Page gives product-specific guidance on configuring the Service Bus prefetch feature (setting prefetch count > 0, behavior when set to 0, how the local prefetch buffer is filled and drained). This is concrete, implementation-focused behavior unique to Azure Service Bus rather than generic messaging theory, fitting best-practices rather than limits-quotas (no explicit numeric limits table) or configuration (not a full parameter reference). |
 | [Bicep](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-queue-bicep) | deployment | 0.65 | Shows a reusable Bicep template with parameters and resource definitions; while a quickstart, it exposes concrete deployment resource schema and parameterization useful for production deployments. |
 | [Delete messages in Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/batch-delete) | integrations | 0.65 | Shows how to delete messages via code, likely including SDK methods, parameters, and constraints specific to Service Bus batch deletion. |
-| [End-to-end tracing and diagnostics](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-end-to-end-tracing) | troubleshooting | 0.65 | Diagnostics article with product-specific tracing configuration, correlation patterns, and likely concrete settings for Service Bus client libraries and Azure Monitor. |
+| [Get message counters](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-counters) | best-practices | 0.65 | Shows how to get message counts and discusses performance impact of frequent retrieval; includes product-specific guidance about cost/latency of counter acquisition and recommended pacing, which is actionable best-practices knowledge. |
+| [Message browsing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-browsing) | configuration | 0.65 | Describes the Peek operation behavior, including constraints such as returning at most the requested number of messages and which message types are returned; this is specific operational/config behavior for the service. |
 | [Message expiration (Time to Live)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-expiration) | configuration | 0.65 | Explains detailed, product-specific behavior of message expiration and TTL in Service Bus (how and when messages expire, how they are removed, and how TTL interacts with queues/topics). These are configuration semantics unique to the service, beyond generic messaging concepts. |
 | [Migrate from Azure Service Manager (classic) APIs to Resource Manager APIs](https://learn.microsoft.com/en-us/azure/service-bus-messaging/deprecate-service-bus-management) | configuration | 0.65 | Contains detailed mapping tables from deprecated Service Manager REST/PowerShell operations to specific Resource Manager APIs and cmdlets, which are product-specific configuration/management references. |
 | [Move across regions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/move-across-regions) | deployment | 0.65 | Describes concrete steps and constraints for cross-region namespace moves, including required tooling and sequencing unique to Service Bus deployment. |
+| [Namespace addressing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-namespace-access) | configuration | 0.65 | Describes how to address entities over HTTPS and use AtomPub descriptions; likely includes specific URL formats, path patterns, and parameterized addressing schemes that are configuration-level details unique to Service Bus REST. |
 | [Prepare for planned maintenance](https://learn.microsoft.com/en-us/azure/service-bus-messaging/prepare-for-planned-maintenance) | best-practices | 0.65 | Provides concrete operational guidance and patterns (such as failover or draining) specific to Service Bus maintenance events. |
-| [Service Bus management libraries](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-management-libraries) | configuration | 0.65 | Describes specific management libraries, classes, and methods for dynamic creation of Service Bus resources, which are product-specific APIs. |
 | [Build message-driven business applications with NServiceBus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/build-message-driven-apps-nservicebus) | architecture-patterns | 0.60 | Shows patterns for distributed systems using NServiceBus on Service Bus, including retries and hosting options; contains product-specific architectural guidance and trade-offs. |
+| [End-to-end tracing and diagnostics](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-end-to-end-tracing) | troubleshooting | 0.60 | Diagnostics and tracing article for Service Bus clients; typically includes specific tracing headers, correlation IDs, logging configuration, and possibly diagnostic event names, which are product-specific troubleshooting patterns. |
+| [Service Bus management libraries](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-management-libraries) | configuration | 0.60 | Explains using management libraries to create namespaces and entities; likely includes specific API/SDK methods, parameters, and entity configuration options, which are configuration/integration details beyond generic knowledge. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Overview of advanced features](https://learn.microsoft.com/en-us/azure/service-bus-messaging/advanced-features-overview) | 0.45 | High-level overview of advanced features (sessions, scheduled delivery, etc.); does not appear to include detailed limits or config matrices. |
-| [AMQP overview](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-overview) | 0.40 | High-level overview of AMQP 1.0 usage; likely conceptual without detailed config tables or error mappings. |
 | [Java message service (JMS) 2.0 entities](https://learn.microsoft.com/en-us/azure/service-bus-messaging/java-message-service-20-entities) | 0.40 | Described as an overview of JMS entities; likely conceptual without detailed configuration tables or limits. |
-| [Service Bus samples](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-samples) | 0.40 | Sample index and SDK retirement notice; mostly navigation and lifecycle info, not detailed config, limits, or troubleshooting mappings. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/service-bus-messaging/monitor-service-bus-reference) | 0.40 | Monitoring reference focuses on metrics and signals; the summary does not indicate explicit configuration tables, limits, or error mappings that meet any sub-skill criteria. Likely metric names and descriptions, which are closer to reference/overview than the targeted expert categories. |
 | [Transaction processing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-transactions) | 0.40 | Described as an overview of transactions and send-via; likely conceptual without detailed limits, config tables, or error mappings. |
 | [Update inventory](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-tutorial-topics-subscriptions-portal) | 0.40 | Scenario tutorial using topics/subscriptions and filters; likely shows example rules but as a guided scenario rather than a comprehensive configuration reference. |
 | [What's new with Service Bus emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-emulator-whats-new) | 0.40 | What's new/change log for emulator versions; version notes rather than reusable expert configuration or troubleshooting knowledge. |
@@ -201,11 +261,13 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue
 | [Message replication tasks and applications](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-replicator-functions) | 0.30 | Appears to be a conceptual overview of using Azure Functions for message replication and federation tasks, without clear evidence of detailed configuration tables, limits, or error-code-based troubleshooting. Lacks strong signals of product-specific expert knowledge as defined by the sub-skill criteria. |
 | [Message sessions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sessions) | 0.30 | Primarily explains how to use Service Bus sessions for FIFO and request-response patterns. From the summary, it appears conceptual and pattern-focused without specific numeric limits, configuration tables, error codes, or tier-specific constraints beyond a basic note that sessions aren't supported in the Basic tier. Lacks the detailed, product-specific parameters or thresholds required for the defined sub-skill types. |
 | [Overview of Service Bus emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/overview-emulator) | 0.30 | The page is described as an overview of the Azure Service Bus emulator, covering benefits, features, and limitations at a high level. There is no evidence of detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. It appears to be conceptual/overview content rather than expert knowledge. |
+| [REST APIs and client libraries](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-overview) | 0.30 | Overview of REST APIs and client libraries with selection guidance but no clear evidence of detailed comparison tables, limits, or configuration parameters; mostly navigational/overview. |
 | [Topic filters and actions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/topic-filters) | 0.30 | Describes how topic filters and subscription rules work conceptually (filters, actions, OR combination, message copies). The summary doesn't indicate presence of numeric limits, configuration parameter tables, error codes, or decision matrices. It reads as a conceptual overview of filtering behavior rather than detailed expert configuration or troubleshooting guidance. |
 | [Use Service Bus Explorer](https://learn.microsoft.com/en-us/azure/service-bus-messaging/explorer) | 0.30 | Portal usage guide for Service Bus Explorer data operations; summary does not indicate numeric limits, config tables, error-code mappings, or other product-specific expert details—primarily a how-to UI/tutorial. |
+| [AMQP overview](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-overview) | 0.20 | High-level overview of AMQP 1.0 support in Service Bus; primarily conceptual and standards-focused without product-specific limits, configs, or detailed patterns. |
 | [AMQP protocol guide](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-protocol-guide) | 0.20 | Appears to be a protocol support/behavior description for AMQP 1.0 in Service Bus and Event Hubs, likely more conceptual/protocol-level than configuration tables, limits, or troubleshooting mappings. No clear indication of numeric limits, config parameter tables, or error-code-based troubleshooting from the summary. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-tutorial-topics-subscriptions-powershell) | 0.20 | Primarily a step-by-step PowerShell quickstart for creating Service Bus topics, subscriptions, and filters. It shows example commands and basic usage but does not present configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice guidance beyond generic tutorial content. |
 | [Message deferral](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-deferral) | 0.20 | Primarily a conceptual explanation of message deferral behavior in Azure Service Bus; summary does not indicate specific limits, configuration parameters, error codes, or product-specific numeric thresholds. |
-| [Message transfers, locks, and settlement](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement) | 0.20 | Primarily explains conceptual behavior of sends, receives, locks, and settlement. The summary does not indicate specific numeric lock durations, timeout ranges, or configuration tables; it reads as a behavioral overview rather than a limits, configuration, or troubleshooting reference. |
-| [Queues, topics, and subscriptions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) | 0.10 | Described as an overview of queues, topics, and subscriptions and when to use each; this is conceptual architecture/overview content without detailed numeric limits, configuration tables, or product-specific error/diagnostic data. |
+| [Service Bus samples](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-samples) | 0.20 | Sample index/links page; no detailed limits, configs, error mappings, or product-specific parameter tables are described in the summary. |
+| [Queues, topics, and subscriptions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) | 0.10 | Conceptual overview of queues, topics, and subscriptions; focuses on what/when conceptually without numeric limits, configs, or decision matrices. |
 | [What is Service Bus Messaging?](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) | 0.10 | High-level introduction to Azure Service Bus messaging; no specific limits, configuration tables, error codes, or product-specific decision matrices. |

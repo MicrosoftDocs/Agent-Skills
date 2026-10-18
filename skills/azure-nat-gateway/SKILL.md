@@ -1,9 +1,9 @@
 ---
 name: azure-nat-gateway
-description: Expert knowledge for Azure NAT Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when planning SNAT port capacity, using flow logs, deploying NAT Gateway V2, integrating Azure Firewall, or securing outbound IPs, and other Azure NAT Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure NAT Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing NAT Gateway V2, flow logs, SNAT ports, outbound IPs, or Azure Firewall egress patterns, and other Azure NAT Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure NAT Gateway Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L41-L45 | Guidance on reducing SNAT port exhaustion and optimizing outbound connectivity patterns when using Azure NAT Gateway. |
 | Decision Making | L46-L50 | Guidance on selecting the right Azure NAT Gateway Standard SKU, comparing features, limits, performance, and cost tradeoffs for different workloads. |
 | Architecture & Design Patterns | L51-L55 | Designing VNETs with NAT Gateway, choosing patterns for outbound connectivity, and scaling/combining NAT Gateway with Azure Firewall for secure, high-throughput egress traffic. |
-| Limits & Quotas | L56-L61 | SNAT port limits, scaling behavior, and how to plan/size NAT Gateway and Azure Firewall SNAT capacity to avoid port exhaustion and connectivity issues. |
-| Security | L62-L66 | Security best practices for NAT Gateway: hardening design, minimizing exposure, managing outbound IPs, monitoring traffic, and integrating with NSGs, firewalls, and other Azure security controls. |
-| Configuration | L67-L74 | Monitoring and configuring NAT Gateway V2: metrics, alerts, flow logs, and deployment via ARM, Bicep, or Terraform. |
-| Deployment | L75-L80 | Guides for deploying and updating NAT Gateway: migrating Standard→StandardV2, redeploying after cross-region moves, and rerouting VM outbound traffic from public IPs to NAT Gateway. |
+| Limits & Quotas | L56-L60 | Planning NAT Gateway with Azure Firewall, including SNAT port capacity, scaling limits, and how to size and configure outbound connectivity for high-volume workloads. |
+| Security | L61-L65 | Security best practices for NAT Gateway: hardening design, minimizing exposure, managing outbound IPs, monitoring traffic, and integrating with NSGs, firewalls, and other Azure security controls. |
+| Configuration | L66-L73 | Monitoring and configuring NAT Gateway V2: metrics, alerts, flow logs, and deployment via ARM, Bicep, or Terraform. |
+| Deployment | L74-L79 | Guides for deploying and updating NAT Gateway: migrating Standard→StandardV2, redeploying after cross-region moves, and rerouting VM outbound traffic from public IPs to NAT Gateway. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -56,8 +56,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure NAT Gateway FAQs on limits and behavior | https://learn.microsoft.com/en-us/azure/nat-gateway/faq |
-| Plan SNAT port capacity for Azure Firewall with NAT Gateway | https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-firewall |
+| Plan NAT Gateway with Azure Firewall SNAT capacity | https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-firewall |
 
 ### Security
 | Topic | URL |

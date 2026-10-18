@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-18'
 category_descriptions:
   architecture-patterns: Designing and implementing advanced shared session patterns
     in Discovery Engine, including multi-user session management, data sharing, and
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: Guidance on selecting agent types, models, container registries,
     and understanding billing so you can design, size, and cost-optimize Microsoft
     Discovery solutions.
-  security: 'Security, compliance, and access control for Discovery: encryption, CMK,
-    RBAC, managed identities, network hardening/NSGs, audit logs, and answering SIG/security
-    posture questions.'
+  security: Security, encryption, RBAC, managed identities, network hardening, audit
+    logging, and compliance mappings for securing Microsoft Discovery deployments
+    and supercomputers.
   configuration: 'Configuring Discovery resources: storage, files, tools, data handling,
     Bookshelf/indexes, and querying logs (Kusto, Log Analytics, activity) for monitoring
     and troubleshooting'
@@ -18,25 +18,23 @@ category_descriptions:
     Microsoft Discovery.
   limits-quotas: Planning capacity and quota limits for Microsoft Discovery deployments,
     plus required naming conventions and patterns for Discovery resources in Azure.
+  deployment: Deploying and upgrading Discovery Supercomputer on AKS, provisioning
+    its infrastructure via REST, publishing Discovery tool images to ACR, and deploying
+    across multiple Azure regions.
   integrations: Integrating Discovery tools/models into workflows, containerizing
     with Docker, running jobs via REST, and using .NET, Java, and JavaScript SDKs
     and action scripts.
   troubleshooting: Diagnosing and fixing Microsoft Discovery deployment/runtime failures,
     task execution issues, known bugs, and specific error codes using logs and correlation
     IDs.
-  deployment: Deploying Discovery across regions, provisioning supercomputer infra
-    via REST, registering/publishing tools and container images, and managing deployment
-    workflows in Azure.
 skill_description: Expert knowledge for Azure Microsoft Discovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building Discovery shared sessions, Bookshelf indexes, secure RBAC/CMK
-  setups, REST jobs, or Docker-based tools, and other Azure Microsoft Discovery related
-  development tasks. Not for Azure Portal (use azure-portal), Azure Resource Graph
-  (use azure-resource-graph), Azure Monitor (use azure-monitor), Azure Cost Management
-  (use azure-cost-management).
-use_when: Use when building Discovery shared sessions, Bookshelf indexes, secure RBAC/CMK
-  setups, REST jobs, or Docker-based tools, and other Azure Microsoft Discovery related
+  Use when building Discovery shared sessions, AKS supercomputers, ACR tool images,
+  Bookshelf indexes, or REST jobs, and other Azure Microsoft Discovery related development
+  tasks.
+use_when: Use when building Discovery shared sessions, AKS supercomputers, ACR tool
+  images, Bookshelf indexes, or REST jobs, and other Azure Microsoft Discovery related
   development tasks.
 confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Graph
   (use azure-resource-graph), Azure Monitor (use azure-monitor), Azure Cost Management
@@ -46,16 +44,16 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 
 ## Summary
 
-- **Total Pages**: 90
-- **Fetched**: 90
+- **Total Pages**: 98
+- **Fetched**: 98
 - **Fetch Failed**: 0
-- **Classified**: 59
-- **Unclassified**: 31
+- **Classified**: 58
+- **Unclassified**: 40
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 90
+- **New Pages**: 8
+- **Updated Pages**: 8
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
 
@@ -63,18 +61,48 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 1.1% |
-| best-practices | 3 | 3.3% |
-| configuration | 15 | 16.7% |
-| decision-making | 4 | 4.4% |
-| deployment | 4 | 4.4% |
-| integrations | 7 | 7.8% |
-| limits-quotas | 2 | 2.2% |
-| security | 18 | 20.0% |
-| troubleshooting | 5 | 5.6% |
-| *(Unclassified)* | 31 | 34.4% |
+| architecture-patterns | 1 | 1.0% |
+| best-practices | 3 | 3.1% |
+| configuration | 14 | 14.3% |
+| decision-making | 4 | 4.1% |
+| deployment | 4 | 4.1% |
+| integrations | 7 | 7.1% |
+| limits-quotas | 2 | 2.0% |
+| security | 18 | 18.4% |
+| troubleshooting | 5 | 5.1% |
+| *(Unclassified)* | 40 | 40.8% |
 
 ## Changes
+
+### New Pages
+
+- [Chemistry and drug discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
+- [Engineering and hardware](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
+- [Genomics and systems biology](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
+- [Materials and simulation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
+- [Proteins and structure](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
+- [Research and data](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
+- [Spectroscopy and metabolomics](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
+- [AKS upgrades for Discovery Supercomputer](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer-aks-upgrades)
+
+### Updated Pages
+
+- [Tutorial: Discovery Mode](https://learn.microsoft.com/en-us/azure/microsoft-discovery/tutorial-discovery-mode)
+  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-06T22:16:00.000Z
+- [Configure secure networking for Supercomputer](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-supercomputer-network-security)
+  - Updated: 2026-08-14T11:42:00.000Z → 2026-10-12T22:13:00.000Z
+- [Create agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-agent-creation)
+  - Updated: 2026-06-24T05:15:00.000Z → 2026-10-06T22:16:00.000Z
+- [Create Bookshelf and index a Knowledgebase](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-index-bookshelf-knowledgebase)
+  - Updated: 2026-04-20T15:52:00.000Z → 2026-10-06T22:16:00.000Z
+- [Deploy a tool to Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery)
+  - Updated: 2026-05-03T22:14:00.000Z → 2026-10-06T22:16:00.000Z
+- [Microsoft Discovery Studio](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-studio)
+  - Updated: 2026-06-02T20:30:00.000Z → 2026-10-06T22:16:00.000Z
+- [Quickstart - Deploy infrastructure (portal or Bicep)](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure)
+  - Updated: 2026-09-04T08:00:00.000Z → 2026-10-01T08:00:00.000Z
+- [Quickstart - First set of Agent and investigation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-agents-studio)
+  - Updated: 2026-09-17T22:12:00.000Z → 2026-10-06T22:16:00.000Z
 
 ## Classified Pages
 
@@ -93,7 +121,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 | [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/microsoft-discovery/howto-data-encryption-at-rest) | security | 0.80 | Shows how to wire CMK from Key Vault to Discovery workspaces, bookshelves, and supercomputers, including resource-specific encryption settings and identity usage. These are concrete security configuration details. |
 | [Configure managed identities](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-managed-identity) | security | 0.80 | How-to for creating and configuring user-assigned managed identities and assigning required Azure roles for Discovery workspaces and supercomputers. This implies specific RBAC role names and scope requirements unique to the product, which are security configuration details. |
 | [Configure project-level access](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-project-rbac) | security | 0.80 | Shows how to assign Microsoft Discovery project roles and supplementary resource roles via portal/CLI/PowerShell, focusing on least-privilege access—detailed RBAC configuration unique to the service. |
-| [Configure secure networking for Supercomputer](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-supercomputer-network-security) | security | 0.80 | The summary already exposes product-specific security behavior: default unrestricted outbound access, dependency on specific FQDNs (MAR/MCR), and limitations of Network Security Groups for egress control. The full article is likely to include concrete network security configurations (VNet/subnet setup, required FQDNs, allowed ports, and specific constraints) that are unique to this service, matching the security sub-skill criteria. |
 | [Query Bookshelf indexing logs](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-query-bookshelf-indexing-logs) | configuration | 0.80 | Explains the DiscoveryBookshelfLogs_CL table, its location in the supercomputer MRG, and how to query indexing job stdout/stderr. This is precise log-location and schema knowledge specific to Discovery. |
 | [Query Bookshelf query logs](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-query-bookshelf-logs) | configuration | 0.80 | Describes how bookshelf query logs are stored in DiscoveryLogs_CL within the bookshelf’s MRG and how to query them. This is product-specific log schema and placement information. |
 | [Role assignments](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-role-assignments) | security | 0.80 | Describes platform, project, and resource-specific Microsoft Discovery roles and commonly required Azure roles, which implies specific RBAC role names and scope requirements unique to the product. |
@@ -110,7 +137,7 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 | [Azure Blob Storage Account](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-storage-account) | configuration | 0.70 | Explains required networking, CORS, and identity access settings for storage accounts used by Discovery; product-specific configuration parameters. |
 | [Compliance guidance](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-compliance-framework-mappings) | security | 0.70 | The page explains which controls are implemented by Discovery versus inherited from Azure and references authoritative framework mappings. This is product-specific compliance and control-scoping guidance, which falls under security, and represents expert knowledge about how to assess and document compliance for this particular service. |
 | [Configure network security](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-network-security) | security | 0.70 | The page describes product-specific network security configuration for Microsoft Discovery, including NSP role assignment, subnet configuration, private endpoints, and DNS setup. These are concrete, service-specific security settings and patterns that go beyond generic concepts, fitting the security sub-skill. |
-| [Create Bookshelf and index a Knowledgebase](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-index-bookshelf-knowledgebase) | configuration | 0.70 | Details how to create a Bookshelf resource, wire it to storage, and index documents into a knowledgebase for graph-enabled RAG. These are Discovery-specific configuration steps and resource relationships. |
+| [Configure secure networking for Supercomputer](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-supercomputer-network-security) | security | 0.70 | Describes product-specific secure networking behavior and constraints (default unrestricted egress, FQDN-based outbound dependencies, NSG limitations) that are unique to Microsoft Discovery Supercomputer and not generic networking knowledge. |
 | [Data encryption at rest](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-data-encryption-at-rest) | security | 0.70 | Explains key management models, default Microsoft-managed keys, and when customer-managed keys are available; product-specific encryption configuration. |
 | [Debug task execution](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-debug-task-execution) | troubleshooting | 0.70 | Explicitly a debugging guide for task execution issues (stuck tasks, validation failures, agent errors, cognition behavior). Such content typically maps symptoms to causes and resolutions, often with product-specific diagnostics, fitting troubleshooting. |
 | [Enable audit logging](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-enable-audit-logging) | security | 0.70 | Shows how to configure Azure Monitor diagnostic settings for Discovery resources, including which audit/platform logs are available and where they can be exported for compliance. This is concrete, product-specific security/audit configuration. |
@@ -127,12 +154,12 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 | [Storage containers and storage assets](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-storage-containers-assets) | configuration | 0.70 | Explains how storage containers map to Blob Storage or NetApp and how assets reference paths; product-specific data organization configuration. |
 | [Tools and model integration](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-tools-model-integration) | integrations | 0.70 | Covers tool types, deployment, and integration patterns for models; likely includes product-specific integration patterns and parameters. |
 | [Deploy Discovery resources across multiple regions](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-across-regions) | deployment | 0.68 | Describes a specific, product-focused deployment pattern for Microsoft Discovery where control-plane resources must be deployed in a supported home region and data-plane/compute resources in a separate target region. This is a deployment topology constraint unique to the service, tied to regional support and capacity/quota usage, which an LLM is unlikely to infer without the documentation. While it may not include full matrices, it provides concrete guidance on how to structure cross-region deployments for this product. |
+| [AKS upgrades for Discovery Supercomputer](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer-aks-upgrades) | deployment | 0.65 | Explains how AKS upgrades are managed for Discovery Supercomputer clusters, including automatic upgrade behavior, impact on running workloads, and guidance for tool authors. This is product-specific deployment/operations behavior that affects how and when workloads are upgraded, which is not generic AKS knowledge. |
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-azure-container-registry) | decision-making | 0.65 | Discusses ACR SKU and networking options for Discovery and how to configure them; provides product-specific selection and configuration guidance. |
 | [Billing overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-billing) | decision-making | 0.65 | Billing overview for Discovery services vs app, including what counts as a user message and which operations are billable. This is specialized decision guidance for cost planning and usage, aligning with decision-making around pricing and consumption trade-offs. |
 | [Code of conduct](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-code-of-conduct) | security | 0.65 | Defines product-specific acceptable use and restrictions tied to high-risk use classifications; while policy-focused, it is part of security/compliance configuration for how the service must be used. |
 | [Create a Dockerfile for a tool](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-create-tool-docker-file) | integrations | 0.65 | Although Docker is generic, this article tailors Dockerfile structure and project layout to Discovery’s tool runtime and compute pools. It likely includes Discovery-specific entrypoints or environment expectations, making it an integration/coding pattern. |
 | [Data handling with tools and agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-data-handling-with-tools-agents) | configuration | 0.65 | Article describes a resource-based data model, how agents manage files/directories/datasets, and how to set up tools to work with data, including controlling outputs and storage asset promotion. This is product-specific configuration of data handling and tools, likely including concrete settings (resource URIs, workspace resource behaviors, API version constraints). That fits the configuration sub-skill, as it describes how to configure agents and tools to manage storage assets in Microsoft Discovery. |
-| [Deploy a tool to Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery) | deployment | 0.65 | The article describes how to deploy a tool as a Microsoft.Discovery/tools Azure resource, including converting YAML to JSON and using the Azure portal or REST API. This is product-specific deployment guidance for a particular resource type rather than a generic tutorial, so it fits the deployment sub-skill. It does not emphasize limits, security, or troubleshooting details. |
 | [Discovery Agent types](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-agent-types) | decision-making | 0.65 | Article explicitly aims to help choose between prompt agents and custom agents across Discovery and Discovery app; this is product-specific selection guidance and trade-off analysis. |
 | [End-to-end network-hardened deployment](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-network-hardened-stack) | security | 0.65 | The page covers end-to-end deployment of a network-hardened Microsoft Discovery environment where all traffic stays within a virtual network and is exposed only via private endpoints. This is a product-specific secure deployment pattern and configuration, aligning best with the security sub-skill. |
 | [Security and compliance overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-security-overview) | security | 0.65 | A security and compliance overview for a specific product, aimed at reviewers and architects, typically includes product-specific security responsibilities, mappings to frameworks, and possibly concrete RBAC or control details. This is specialized security posture information tied to Microsoft Discovery and Azure that goes beyond generic security concepts. |
@@ -149,29 +176,38 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 | [Manage Supercomputer & Nodepools](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-supercomputers) | 0.40 | Portal-based management guide for supercomputers and node pools; summary indicates general CRUD instructions without explicit configuration tables, limits, or product-specific best-practice guidance. |
 | [Manage Workspaces](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-manage-workspaces) | 0.40 | Workspace management via portal (create, update, delete, networking config) appears to be general CRUD/tutorial content without explicit configuration parameter tables, limits, or specialized best practices. |
 | [Task addition and execution](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-task-addition-execution) | 0.40 | Covers how to add and manage tasks in shared sessions. Description suggests a how-to workflow, not detailed configuration tables, limits, or decision matrices. Lacks clear expert-knowledge signals per categories. |
-| [Tutorial: Discovery Mode](https://learn.microsoft.com/en-us/azure/microsoft-discovery/tutorial-discovery-mode) | 0.35 | Tutorial for running a first shared session is an end-to-end walkthrough. Description does not indicate detailed configuration tables, limits, or troubleshooting mappings; primarily procedural learning content. |
 | [Business continuity and disaster recovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-business-continuity-disaster-recovery) | 0.30 | Business continuity and DR overview for Discovery; summary suggests conceptual architecture and resilience description without specific numeric limits, configuration parameters, or decision matrices. |
-| [Create agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-agent-creation) | 0.30 | Article is a how-to for creating agents in Microsoft Discovery/Discovery app. From the summary it appears to be workflow and UI guidance without specific limits, configuration parameter tables, security roles, or troubleshooting error mappings. Lacks the kind of product-specific numeric limits, config matrices, or error-code-based diagnosis that qualify as expert knowledge under the defined sub-skill types. |
+| [Create Bookshelf and index a Knowledgebase](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-index-bookshelf-knowledgebase) | 0.30 | Walkthrough for creating a Bookshelf resource and indexing documents; summary suggests procedural guidance without explicit configuration parameter tables, limits, or troubleshooting mappings. |
+| [Deploy a tool to Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery) | 0.30 | Covers registering a tool resource after publishing a container image; from the summary it appears to be a deployment/registration tutorial without detailed config matrices, limits, or error-code-based troubleshooting. |
 | [Discovery Agent concepts](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-agent) | 0.30 | Conceptual explanation of Discovery agents and their capabilities; summary suggests no detailed config, limits, or troubleshooting content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/microsoft-discovery/faq) | 0.30 | FAQ with high-level answers about product choices, architecture, deployment, security, and operations; description suggests it links out to other articles for changing specifications rather than containing detailed error codes, configs, or limits itself. |
 | [Observability overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-observability) | 0.30 | High-level observability overview; from the summary it doesn’t appear to include detailed table schemas, constraints, or configuration matrices beyond conceptual description. |
 | [Plan tool requirements](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-plan-tool-requirements) | 0.30 | Planning-focused guidance on identifying functionality, compute needs, tool type, and dependencies for Microsoft Discovery tools; description suggests conceptual and process-oriented content without explicit numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed security/decision matrices that would qualify as expert knowledge under the defined categories. |
 | [Platform card](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-platform-card) | 0.30 | Platform card describes intended uses, capabilities, limitations, and responsible use best practices at a conceptual level; summary does not indicate concrete numeric limits, configuration parameters, or detailed security/decision matrices. |
 | [Python SDKs](https://learn.microsoft.com/en-us/azure/microsoft-discovery/reference-python-sdks) | 0.30 | The page is a reference overview of available Python SDK packages for Microsoft Discovery on PyPI. Based on the description, it likely lists package names and basic usage but not detailed configuration tables, parameter constraints, or troubleshooting mappings. Without evidence of product-specific settings or error handling details, it doesn’t qualify for the expert-knowledge sub-skill types. |
-| [Quickstart - Deploy infrastructure (portal or Bicep)](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure) | 0.30 | Quickstart deployment guide likely focuses on step-by-step setup, not on tier matrices, limits, or detailed configuration parameters. |
 | [Tasks and investigations](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-tasks-investigations) | 0.30 | Explains task structure and lifecycle conceptually; summary does not indicate detailed configuration tables or numeric thresholds. |
 | [Write effective prompts for agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-prompt-engineering) | 0.30 | Prompt engineering guidance is largely conceptual and technique-oriented; description suggests general best practices for instructions and prompts without product-specific configuration values, limits, or error mappings. Does not clearly meet any expert-knowledge criteria. |
 | [Bookshelf & Knowledge Bases](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-bookshelf-knowledge-bases) | 0.20 | Conceptual overview of Bookshelf and Knowledge Bases; no indication of numeric limits, config tables, or specific security/diagnostic details. |
 | [Cognition overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-cognition-overview) | 0.20 | Conceptual overview of cognition and reasoning loops; lacks specific configuration values, error codes, or quotas. |
+| [Create agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-agent-creation) | 0.20 | Primarily a how-to for creating agents and authoring flows; no indication of product-specific limits, security roles, configuration tables, or error mappings beyond generic tutorial content. |
 | [Discovery Engine overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-engine) | 0.20 | Overview of Discovery Engine behavior; focuses on conceptual description of autonomous research without concrete configuration or limits. |
 | [GitHub Copilot & Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-copilot) | 0.20 | Conceptual description of how GitHub Copilot interfaces with Discovery; appears high-level without concrete configuration parameters or error mappings. |
-| [Quickstart - First set of Agent and investigation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-agents-studio) | 0.20 | Quickstart/tutorial for creating agents and shared sessions; focuses on getting started steps rather than detailed limits, configuration matrices, or troubleshooting content. |
+| [Quickstart - Deploy infrastructure (portal or Bicep)](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure) | 0.20 | Quickstart deployment walkthrough for Discovery infrastructure without tier matrices, constraints, or detailed configuration parameters; primarily step-by-step setup. |
+| [Quickstart - First set of Agent and investigation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-agents-studio) | 0.20 | Quickstart for creating agents and shared sessions; appears procedural without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Service architecture overview](https://learn.microsoft.com/en-us/azure/microsoft-discovery/overview-service-architecture) | 0.20 | Service architecture overview appears conceptual; no indication of numeric thresholds, decision matrices, or detailed configuration tables. |
+| [Tutorial: Discovery Mode](https://learn.microsoft.com/en-us/azure/microsoft-discovery/tutorial-discovery-mode) | 0.20 | Tutorial-style, end-to-end walkthrough of running a first shared session with Discovery Engine. Description suggests step-by-step usage and timing but no indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other expert-only reference details. |
 | [Virtual Networks and Subnets](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-virtual-networks) | 0.20 | Explicitly described as high-level conceptual overview of VNets usage; not focused on concrete configuration parameters. |
 | [Discovery Supercomputer and model execution](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer) | 0.10 | Conceptual overview of the Microsoft Discovery Supercomputer and HPC layer; no indication of numeric limits, configuration parameters, decision matrices, or troubleshooting details. |
 | [Key scenarios](https://learn.microsoft.com/en-us/azure/microsoft-discovery/overview-key-scenarios) | 0.10 | Use case and scenario overview; does not include quantified trade-offs, limits, or configuration specifics. |
 | [Microsoft Discovery & the Microsoft Discovery app](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-discovery-and-discovery-app) | 0.10 | Conceptual overview comparing Microsoft Discovery cloud service and desktop app; no numeric limits, configuration tables, error codes, or product-specific decision matrices. |
-| [Microsoft Discovery Studio](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-studio) | 0.10 | Conceptual description of Discovery Studio UI and capabilities; lacks detailed configuration parameters or expert-only data. |
+| [Microsoft Discovery Studio](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-studio) | 0.10 | Conceptual overview of Microsoft Discovery Studio and its interface; no numeric limits, configuration tables, error codes, or product-specific settings. |
 | [Tutorials & how-to videos](https://learn.microsoft.com/en-us/azure/microsoft-discovery/tutorial-howto-videos) | 0.10 | Page is a navigation/collection of tutorial videos, not detailed technical content. No indication of limits, configs, troubleshooting, or decision matrices. |
 | [What is Microsoft Discovery?](https://learn.microsoft.com/en-us/azure/microsoft-discovery/overview-what-is-microsoft-discovery) | 0.10 | High-level product overview of Microsoft Discovery without specific limits, roles, configs, or error details. |
+| [Chemistry and drug discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog) | 0.05 | Catalog/overview of Discovery agents by category; navigation-style content without deep technical details, limits, or configuration parameters. |
+| [Engineering and hardware](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog) | 0.05 | Duplicate of the agent catalog page; same catalog/overview nature without expert-level configuration or limits. |
+| [Genomics and systems biology](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog) | 0.05 | Duplicate of the agent catalog page; navigation and discovery content, not detailed technical guidance. |
+| [Materials and simulation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog) | 0.05 | Duplicate of the agent catalog page; no specific quotas, configuration tables, or troubleshooting content indicated. |
+| [Proteins and structure](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog) | 0.05 | Duplicate of the agent catalog page; primarily a browsing/catalog experience, not expert configuration or limits. |
+| [Research and data](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog) | 0.05 | Duplicate of the agent catalog page; same high-level description of agents by category. |
+| [Spectroscopy and metabolomics](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog) | 0.05 | Duplicate of the agent catalog page; no indication of detailed technical parameters or error mappings. |
 | [Use GitHub Copilot in Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-copilot) | - | The page is about enabling and using GitHub Copilot within Microsoft Discovery Studio preview. Based on the summary, it appears to be a feature overview/usage guide without detailed configuration tables, limits, or product-specific error codes, so it does not meet the expert-knowledge criteria for any sub-skill type. |

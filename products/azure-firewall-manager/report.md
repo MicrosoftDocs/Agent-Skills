@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-10-18'
 category_descriptions:
   configuration: 'Configuring Azure Firewall Manager and policies: DDoS plans, DNS/DNS
     proxy, FQDN/IP group rules, WAF policy management, rule hierarchy, private endpoint
@@ -32,13 +32,13 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 - **Total Pages**: 27
 - **Fetched**: 27
 - **Fetch Failed**: 0
-- **Classified**: 12
-- **Unclassified**: 15
+- **Classified**: 11
+- **Unclassified**: 16
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 27
+- **Updated Pages**: 1
+- **Unchanged**: 26
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall-manager/azure-firewall-manager.csv`
 
@@ -47,12 +47,17 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 3.7% |
-| configuration | 9 | 33.3% |
+| configuration | 8 | 29.6% |
 | decision-making | 1 | 3.7% |
 | security | 1 | 3.7% |
-| *(Unclassified)* | 15 | 55.6% |
+| *(Unclassified)* | 16 | 59.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [IP Groups](https://learn.microsoft.com/en-us/azure/firewall-manager/ip-groups)
+  - Updated: 2024-12-03T08:00:00.000Z → 2026-10-14T11:44:00.000Z
 
 ## Classified Pages
 
@@ -64,7 +69,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 | [Define a rule hierarchy](https://learn.microsoft.com/en-us/azure/firewall-manager/rule-hierarchy) | configuration | 0.70 | Explains how to structure rule hierarchy in Firewall policy to enforce compliance while enabling CI/CD; this is product-specific configuration of rule ordering and scope. |
 | [FQDN in network rules](https://learn.microsoft.com/en-us/azure/firewall-manager/fqdn-filtering-network-rules) | configuration | 0.70 | Describes using FQDNs in network rules based on DNS resolution and the requirement to enable DNS Proxy; these are concrete, product-specific configuration requirements. |
 | [Threat intelligence settings](https://learn.microsoft.com/en-us/azure/firewall-manager/threat-intelligence-settings) | security | 0.70 | Covers how to enable and process threat intelligence-based filtering in Firewall policy, including ordering relative to NAT/network/app rules; these are product-specific security configuration behaviors. |
-| [IP Groups](https://learn.microsoft.com/en-us/azure/firewall-manager/ip-groups) | configuration | 0.65 | Describes IP Groups as reusable objects in DNAT, network, and application rules, including constraints like uniqueness of group names and how they’re used across regions/subscriptions; this is product-specific configuration behavior not captured by generic knowledge. |
 | [Manage WAF policies](https://learn.microsoft.com/en-us/azure/firewall-manager/manage-web-application-firewall-policies) | configuration | 0.65 | Covers how to centrally create and associate WAF policies for Azure Front Door and Application Gateway using Firewall Manager, implying product-specific policy configuration steps and options rather than just conceptual overview. |
 | [Migrate to Firewall policy - PowerShell](https://learn.microsoft.com/en-us/azure/firewall-manager/migrate-to-policy) | configuration | 0.65 | Details a migration script that creates FirewallPolicy and RuleCollectionGroup objects with specific structure; these are product-specific configuration objects and migration behavior. |
 | [Secure your virtual hub - portal](https://learn.microsoft.com/en-us/azure/firewall-manager/secure-cloud-network) | configuration | 0.65 | Tutorial includes concrete Azure Firewall Manager settings and steps to secure a virtual hub (e.g., specific hub types, traffic routing behaviors, and configuration options) that go beyond generic concepts and represent product-specific configuration knowledge. |
@@ -86,6 +90,7 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 | [Secure your hub virtual network - portal](https://learn.microsoft.com/en-us/azure/firewall-manager/secure-hybrid-network) | 0.30 | Portal tutorial for securing hub virtual network; focuses on how-to steps, not detailed product-specific configs or limits. |
 | [Secure your virtual hub - PowerShell](https://learn.microsoft.com/en-us/azure/firewall-manager/secure-cloud-network-powershell) | 0.30 | PowerShell tutorial for Virtual WAN + Firewall; step-by-step scenario, not a configuration/limits/troubleshooting reference. |
 | [General deployment process](https://learn.microsoft.com/en-us/azure/firewall-manager/deployment-overview) | 0.20 | High-level deployment overview; describes general process but not specific deployment constraints, matrices, or limits. |
+| [IP Groups](https://learn.microsoft.com/en-us/azure/firewall-manager/ip-groups) | 0.20 | Page describes what IP Groups are and how they can be used, but the summary shows no specific configuration parameter tables, limits, security roles, or detailed troubleshooting/decision matrices. It appears to be a conceptual/feature overview without the kind of product-specific numeric limits, config options, or error mappings required for expert-knowledge classification. |
 | [Policy overview](https://learn.microsoft.com/en-us/azure/firewall-manager/policy-overview) | 0.20 | Conceptual overview of Firewall Policy as a global resource; lacks numeric limits, config parameter tables, or decision matrices. |
 | [Security partner providers](https://learn.microsoft.com/en-us/azure/firewall-manager/trusted-security-partners) | 0.20 | Overview of security partner providers; marketing/feature description without detailed configuration parameters or limits. |
 | [What is Azure Firewall Manager?](https://learn.microsoft.com/en-us/azure/firewall-manager/overview) | 0.20 | High-level product/feature overview of Azure Firewall Manager without concrete limits, configs, or error mappings. |

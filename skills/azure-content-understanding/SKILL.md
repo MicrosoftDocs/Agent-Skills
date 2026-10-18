@@ -1,9 +1,9 @@
 ---
 name: azure-content-understanding
-description: Expert knowledge for Azure Content Understanding in Foundry Tools development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building Content Understanding analyzers, RAG document flows, agentic workflows, REST/SDK calls, or GA migrations, and other Azure Content Understanding in Foundry Tools related development tasks. Not for Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech), Azure AI Vision (use azure-ai-vision), Azure AI Document Intelligence (use azure-document-intelligence).
+description: Expert knowledge for Azure Content Understanding in Foundry Tools development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when designing Content Understanding analyzers, RAG document flows, agentic workflows, REST/SDK calls, or Foundry deployments, and other Azure Content Understanding in Foundry Tools related development tasks. Not for Azure Speech in Foundry Tools (use azure-speech), Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Video Indexer (use azure-video-indexer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Content Understanding in Foundry Tools Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L40 | Using diagnostics from the Content Understanding REST API to investigate failures, interpret error codes, and troubleshoot processing or configuration issues. |
 | Best Practices | L41-L46 | Improving Content Understanding accuracy using layout, labels, and feedback, plus using confidence scores and grounding to validate and refine document analysis results. |
-| Decision Making | L47-L55 | Guidance on choosing Azure AI/Foundry tools, model deployments, and Studio vs Foundry; migrating Content Understanding from preview to GA; and estimating/optimizing pricing. |
+| Decision Making | L47-L55 | Guidance on choosing Azure AI tools, model deployments, and Studio vs Foundry, plus migration from preview to GA and estimating/optimizing Content Understanding costs. |
 | Architecture & Design Patterns | L56-L62 | Guidance on when to use agentic mode, how to design RAG-based document solutions, and how to build RPA workflows using Azure Content Understanding. |
 | Limits & Quotas | L63-L68 | Guidance on safe use of synchronous Content Understanding calls plus detailed quotas, rate limits, and throughput constraints for Foundry Tools. |
 | Security | L69-L74 | Configuring security for Content Understanding: setting guardrails on analyzer outputs, securing analyzers and data, access control, and safe handling of sensitive content. |
@@ -51,7 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose model deployments for Content Understanding analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments |
 | Choose between Content Understanding Studio and Foundry | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio |
 | Migrate Content Understanding from preview to GA | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga |
-| Estimate and optimize Content Understanding pricing | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer |
+| Estimate and optimize Azure Content Understanding costs | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer |
 
 ### Architecture & Design Patterns
 | Topic | URL |

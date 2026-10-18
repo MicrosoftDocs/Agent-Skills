@@ -1,9 +1,9 @@
 ---
 name: azure-batch
-description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools, autoscale, private networking, CMK encryption, or CI/CD for HPC/render jobs, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools/jobs, autoscale, private networking, quotas, or HPC/rendering workloads, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Batch Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L43 | Diagnosing and resolving Azure Batch job, task, pool, and node failures, including common error patterns, prevention strategies, and recovery/handling techniques. |
-| Best Practices | L44-L55 | Guidance on optimizing Azure Batch workloads: efficient queries, job/task setup, concurrency, rendering and financial workloads, security, and scaling jobs with many tasks. |
-| Decision Making | L56-L69 | Guidance on choosing VM sizes, images, disks, Spot/GPU usage, capacity and quotas, cost planning, and migration strategies for Azure Batch pools and large-scale simulations. |
-| Architecture & Design Patterns | L70-L75 | Architectural guidance for burst rendering with Azure Batch, including choosing batch/topology patterns and designing storage, caching, and data movement for large render workloads. |
-| Limits & Quotas | L76-L82 | Planning Batch capacity, understanding service limits/quotas, managing quotas via .NET, and using metrics/logs to monitor and stay within Azure Batch limits. |
-| Security | L83-L99 | Securing Batch accounts and pools: key rotation, Entra ID auth/RBAC, CMK and disk encryption, private endpoints/Private Link, network perimeters, and Azure Policy-based governance. |
-| Configuration | L100-L136 | Configuring Azure Batch pools, nodes, networking, monitoring, autoscale, OS/cert rotation, events/logs, containers, disks, and task runtime/user settings for secure, optimized operation. |
+| Best Practices | L44-L54 | Guidance on optimizing Azure Batch workloads: efficient queries, job/task setup, concurrency, rendering and financial workloads, security, and scaling jobs with many tasks. |
+| Decision Making | L55-L68 | Guidance on choosing VM sizes, images, disks, Spot/GPU usage, capacity and quotas, cost planning, and migration strategies for Azure Batch pools and large-scale simulations. |
+| Architecture & Design Patterns | L69-L74 | Architectural guidance for burst rendering with Azure Batch, including choosing batch/topology patterns and designing storage, caching, and data movement for large render workloads. |
+| Limits & Quotas | L75-L81 | Planning Batch capacity, understanding service limits/quotas, managing quotas via .NET, and using metrics/logs to monitor and stay within Azure Batch limits. |
+| Security | L82-L99 | Securing Batch accounts and pools: identity/auth (Entra ID, managed identities, RBAC), keys and encryption, private endpoints/network access, and Azure Policy-based governance. |
+| Configuration | L100-L136 | Configuring Azure Batch pools, tasks, networking, monitoring, autoscale, events/logs, OS/cert rotation, security, containers, disks, and node communication behavior. |
 | Integrations & Coding Patterns | L137-L153 | Patterns and code samples for integrating Azure Batch with CLI, SDKs, containers, MPI, storage/file mounts, Key Vault, telemetry, and automating jobs/tasks across languages. |
 | Deployment | L154-L158 | Guides for moving Azure Batch accounts across regions with ARM templates and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines. |
 
@@ -50,7 +50,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Batch capabilities for rendering workloads | https://learn.microsoft.com/en-us/azure/batch/batch-rendering-functionality |
 | Apply product-specific best practices for Azure Batch | https://learn.microsoft.com/en-us/azure/batch/best-practices |
 | Optimize Azure Batch jobs with large task counts | https://learn.microsoft.com/en-us/azure/batch/large-number-tasks |
-| Apply security best practices to Azure Batch | https://learn.microsoft.com/en-us/azure/batch/security-best-practices |
 | Package financial models in Batch containers | https://learn.microsoft.com/en-us/azure/batch/tutorials/financial-risk-simulations/package-models-with-containers |
 
 ### Decision Making
@@ -95,6 +94,7 @@ This skill requires **network access** to fetch documentation content:
 | Use built-in Azure Policy definitions for Azure Batch governance | https://learn.microsoft.com/en-us/azure/batch/policy-reference |
 | Configure Azure Batch private endpoints with Private Link | https://learn.microsoft.com/en-us/azure/batch/private-connectivity |
 | Configure public network access for Azure Batch accounts | https://learn.microsoft.com/en-us/azure/batch/public-network-access |
+| Apply security best practices for Azure Batch accounts | https://learn.microsoft.com/en-us/azure/batch/security-best-practices |
 | Apply Azure Policy compliance controls to Batch | https://learn.microsoft.com/en-us/azure/batch/security-controls-policy |
 
 ### Configuration
@@ -112,7 +112,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure Batch pool delete start diagnostic event | https://learn.microsoft.com/en-us/azure/batch/batch-pool-delete-start-event |
 | Understand Azure Batch pool resize complete diagnostic event | https://learn.microsoft.com/en-us/azure/batch/batch-pool-resize-complete-event |
 | Understand Azure Batch pool resize start diagnostic event | https://learn.microsoft.com/en-us/azure/batch/batch-pool-resize-start-event |
-| Update configuration properties of Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties |
+| Update configuration properties for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties |
 | Use Azure Batch special task event schemas | https://learn.microsoft.com/en-us/azure/batch/batch-special-task-event |
 | Analyze Azure Batch task complete event details | https://learn.microsoft.com/en-us/azure/batch/batch-task-complete-event |
 | Handle Azure Batch task fail event logs | https://learn.microsoft.com/en-us/azure/batch/batch-task-fail-event |

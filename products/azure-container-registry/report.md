@@ -1,26 +1,26 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-18'
 category_descriptions:
-  security: 'Securing ACR access: auth methods (Entra, managed identity, tokens),
-    RBAC/ABAC, network/firewall/VNet rules, policy/compliance, encryption keys, image
-    signing/verification, and Defender scanning.'
+  security: 'Securing Azure Container Registry: auth methods, RBAC and ABAC, network/firewall/VNet
+    rules, trusted services, image signing/verification, encryption keys, policies,
+    and Defender-based scanning.'
   integrations: Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, Helm,
     and webhooks; configuring auth, caching, transfers, image builds, and Notation-based
     signing/verification.
-  configuration: 'Configuring ACR behavior: caching, retention/soft delete, purge,
-    locks, IPv6, metrics/logs, webhooks, and setting up/automating ACR Tasks (YAML,
-    timers, agent pools, patching).'
+  configuration: 'Configuring Azure Container Registry behavior: caching, retention/soft
+    delete, locks, IPv6, metrics/logs, webhooks, and ACR Tasks (YAML, scheduling,
+    patching, agent pools).'
   decision-making: Guidance on choosing Kubernetes auth methods for ACR, deciding
     geo-replication strategy, and migrating image signing from Docker Content Trust
     to Notary Project
   best-practices: 'Best practices for ACR operations: managing public image dependencies,
-    safe image deletion and storage cleanup, and robust image tagging/versioning strategies.'
+    safe image deletion, tagging/versioning strategies, and securing registries, images,
+    and access.'
   troubleshooting: 'Diagnosing and fixing ACR issues: health checks, error codes,
-    login/auth, network, performance, transfer, logs, artifact cache/streaming, Arc
-    extension, and customer-managed keys.'
-  limits-quotas: Details on ACR SKUs (Basic/Standard/Premium) feature differences,
-    performance and throughput limits, and how image storage capacity and quotas are
-    calculated and enforced.
+    login/auth, networking, performance, task logs, transfers, artifact cache/streaming,
+    Arc extension, and CMK problems.'
+  limits-quotas: Details on ACR SKUs, performance and feature limits, plus how image
+    storage capacity, repository counts, and size quotas are calculated and enforced
   deployment: Using ARM templates to automate ACR quick tasks and data transfer, and
     deploying/managing ACR connected registries via Azure Arc extension
   architecture-patterns: 'Patterns for ACR performance and governance: caching image
@@ -29,14 +29,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Registry development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ACR Tasks, geo-replication, connected registries, image signing/verification,
-  or Defender scanning, and other Azure Container Registry related development tasks.
-  Not for Azure Container Apps (use azure-container-apps), Azure Container Instances
-  (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Use when using ACR Tasks, geo-replication, connected registries, Kubernetes/ACI
+  pulls, or Notation image signing, and other Azure Container Registry related development
+  tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container
+  Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Red Hat OpenShift (use azure-redhat-openshift).
-use_when: Use when configuring ACR Tasks, geo-replication, connected registries, image
-  signing/verification, or Defender scanning, and other Azure Container Registry related
-  development tasks.
+use_when: Use when using ACR Tasks, geo-replication, connected registries, Kubernetes/ACI
+  pulls, or Notation image signing, and other Azure Container Registry related development
+  tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
@@ -45,16 +45,16 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ## Summary
 
-- **Total Pages**: 125
-- **Fetched**: 125
+- **Total Pages**: 128
+- **Fetched**: 128
 - **Fetch Failed**: 0
-- **Classified**: 91
-- **Unclassified**: 34
+- **Classified**: 92
+- **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 125
+- **New Pages**: 3
+- **Updated Pages**: 8
+- **Unchanged**: 117
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -63,30 +63,55 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.6% |
-| best-practices | 4 | 3.2% |
-| configuration | 17 | 13.6% |
-| decision-making | 3 | 2.4% |
+| best-practices | 5 | 3.9% |
+| configuration | 17 | 13.3% |
+| decision-making | 3 | 2.3% |
 | deployment | 2 | 1.6% |
-| integrations | 14 | 11.2% |
+| integrations | 14 | 10.9% |
 | limits-quotas | 2 | 1.6% |
-| security | 35 | 28.0% |
-| troubleshooting | 12 | 9.6% |
-| *(Unclassified)* | 34 | 27.2% |
+| security | 35 | 27.3% |
+| troubleshooting | 12 | 9.4% |
+| *(Unclassified)* | 36 | 28.1% |
 
 ## Changes
+
+### New Pages
+
+- [Use Grafana dashboards](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-dashboards-with-grafana)
+- [Security overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-security-overview)
+- [Secure your Azure Container Registry deployment](https://learn.microsoft.com/en-us/azure/container-registry/secure-container-registry)
+
+### Updated Pages
+
+- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference)
+  - Updated: 2026-06-12T06:03:00.000Z → 2026-10-16T17:05:00.000Z
+- [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-troubleshoot-performance)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-16T17:05:00.000Z
+- [Monitor Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-16T17:05:00.000Z
+- [Customer managed keys - Overview](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-14T22:10:00.000Z
+- [Enable Customer managed key on your registry](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-enable-customer-managed-keys)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-14T22:10:00.000Z
+- [Rotate or revoke a Customer managed key](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-rotate-revoke-customer-managed-keys)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-14T22:10:00.000Z
+- [Troubleshoot customer managed keys](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-troubleshoot-customer-managed-keys)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-14T22:10:00.000Z
+- [SKU features and limits](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus)
+  - Updated: 2026-06-16T11:06:00.000Z → 2026-10-16T17:05:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Role directory reference](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-directory-reference) | security | 0.95 | Directory of built-in roles with detailed control-plane and data-plane permissions; highly specific security/RBAC knowledge. |
-| [SKU features and limits](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus) | limits-quotas | 0.95 | SKU page explicitly focuses on 'features and limits in various SKUs'; these pages contain tier-specific numeric limits (storage, throughput, webhooks, etc.) and plan comparison tables that an LLM wouldn’t reliably know from training. |
+| [SKU features and limits](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus) | limits-quotas | 0.93 | The page describes Azure Container Registry SKUs (pricing tiers) and explicitly focuses on the features and limits of each plan. These SKU pages typically include exact numerical limits (storage, webhooks, throughput, concurrent operations) and tier-specific constraints in tabular form, which are not inferable from general training data and match the limits-quotas criteria. |
 | [Authenticate with non-Microsoft Entra token-based repository permissions](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-token-based-repository-permissions) | security | 0.90 | Describes non-Entra tokens, scope maps, and fine-grained repository permissions; includes specific permission scopes and token behaviors, clearly security-focused. |
 | [Health check errors](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-health-error-reference) | troubleshooting | 0.90 | Lists specific error codes from az acr check-health with their meanings and possible solutions, matching the symptom→cause→solution troubleshooting pattern. |
 | [Troubleshoot artifact cache](https://learn.microsoft.com/en-us/azure/container-registry/troubleshoot-artifact-cache) | troubleshooting | 0.90 | Explicit troubleshooting article organized around symptoms, causes, and solutions for artifact cache; likely includes product-specific error patterns and resolutions. |
+| [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-troubleshoot-performance) | troubleshooting | 0.90 | The page is explicitly a troubleshooting guide for ACR performance, organized around performance symptoms, likely including specific error messages, causes (e.g., network constraints, SKU limitations, throttling), and concrete resolutions. This matches the troubleshooting sub-skill definition: symptom → cause → solution mappings that are specific to Azure Container Registry and not generic debugging advice. |
 | [Troubleshoot transfer artifacts](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-transfer-troubleshooting) | troubleshooting | 0.88 | Explicit troubleshooting article for ACR Transfer; summary mentions specific technical limitation (artifact layer size up to 8 GB) and focuses on deployment failures, Key Vault and storage access, implying symptom→cause→solution mappings and product-specific constraints. |
 | [Troubleshoot artifact streaming](https://learn.microsoft.com/en-us/azure/container-registry/troubleshoot-artifact-streaming) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for artifact streaming in Azure Container Registry, focused on diagnosing and resolving concrete issues. Such articles typically include product-specific error symptoms, log locations, and diagnostic steps unique to ACR artifact streaming, which qualify as expert knowledge under the troubleshooting category. |
-| [Troubleshoot customer managed keys](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-troubleshoot-customer-managed-keys) | troubleshooting | 0.86 | Explicitly a troubleshooting article for CMK-enabled registries. Such pages map symptoms and common problems (often with specific error messages or codes) to causes and resolutions, which is exactly the troubleshooting sub-skill definition. |
 | [Authenticate with managed identity](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication-managed-identity) | security | 0.85 | Product-specific security configuration using managed identities, including role assignments and registry access scopes. |
 | [Authenticate with service principal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal) | security | 0.85 | Shows how to configure service principals with push/pull permissions; includes RBAC roles and auth configuration details, fitting security. |
 | [Configure conditional access](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-configure-conditional-access) | security | 0.85 | Shows how to apply Conditional Access to ACR with specific policy settings and conditions; clearly security configuration. |
@@ -109,12 +134,12 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Enable unauthenticated anonymous pull access](https://learn.microsoft.com/en-us/azure/container-registry/anonymous-pull-access) | security | 0.80 | Describes enabling unauthenticated pull, tier constraints (Standard/Premium), and security implications; product-specific security setting. |
 | [Restrict access using service endpoint (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-vnet) | security | 0.80 | Shows configuring VNet service endpoints for ACR; includes subnet/endpoint settings, a network security configuration scenario. |
 | [Tag and version images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-tag-version) | best-practices | 0.80 | Provides concrete DO/DON'T strategies for image tags and versions in ACR deployments; product-specific lifecycle guidance. |
-| [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-troubleshoot-performance) | troubleshooting | 0.80 | Describes performance symptoms, likely with causes (e.g., SKU, region, network) and recommended fixes specific to ACR, which is expert troubleshooting guidance. |
+| [Troubleshoot customer managed keys](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-troubleshoot-customer-managed-keys) | troubleshooting | 0.80 | Explicit troubleshooting article for CMK-enabled registries; likely organized by common problems with associated causes and resolutions, possibly including specific error messages and diagnostic steps unique to ACR. |
 | [Azure ABAC repository permissions](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions) | security | 0.78 | The page describes Azure ABAC usage specifically for Azure Container Registry repositories, including repository-level permission conditions and how they extend Azure RBAC. It contains product-specific security configuration details (role assignments with repository attributes and conditions) that go beyond generic security concepts. |
-| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference) | configuration | 0.78 | The page is a monitoring data reference for Azure Container Registry, listing specific metrics, diagnostic log categories, and activity log schemas. It provides product-specific field names, dimensions, and categories that an LLM is unlikely to fully know from training. This aligns best with configuration, as it documents concrete monitoring/diagnostic configuration options and data schemas rather than generic concepts. |
 | [RBAC overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-overview) | security | 0.78 | RBAC overview pages for Azure services typically list specific built-in role names and their exact permissions/scopes, which are product-specific security details not reliably known from training. This fits the security sub-skill because it focuses on Entra RBAC roles and role assignments for Azure Container Registry. |
 | [Cross-registry authentication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-cross-registry-authentication) | security | 0.75 | Product-specific pattern for using managed identity to pull from another private registry, including CLI parameters and identity usage, which is security-focused configuration. |
-| [Enable Customer managed key on your registry](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-enable-customer-managed-keys) | security | 0.75 | Shows concrete steps and parameters (CLI, portal, ARM) to enable CMK; contains product-specific security configuration values. |
+| [Customer managed keys - Overview](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys) | security | 0.75 | Tutorial for enabling customer-managed keys for ACR Premium using Key Vault/Managed HSM; typically includes specific security-related configuration steps, parameter names, and constraints unique to ACR encryption. |
+| [Enable Customer managed key on your registry](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-enable-customer-managed-keys) | security | 0.75 | Walkthrough for enabling CMK on ACR via CLI, portal, or ARM; contains concrete security configuration commands and parameters tied to ACR and Key Vault, which are product-specific security settings. |
 | [Enable managed identity on a task](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-authentication-managed-identity) | security | 0.75 | Shows how to enable system- or user-assigned managed identities on ACR Tasks via CLI, including specific parameters and scopes, which are product-specific security configuration details. |
 | [Endpoint reference](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-endpoint-reference) | configuration | 0.75 | Provides a detailed reference of ACR endpoint types (global, regional, dedicated data) and associated CLI flags; this is a configuration reference with product-specific parameters and behaviors. |
 | [External authentication using key vault](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-authentication-key-vault) | security | 0.75 | Details how an ACR Task uses managed identity to read secrets from Key Vault, including CLI and resource configuration, which is product-specific security integration. |
@@ -127,7 +152,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Artifact cache wildcard support](https://learn.microsoft.com/en-us/azure/container-registry/wildcards-artifact-cache) | configuration | 0.70 | Page explicitly 'lists the wildcards supported' for artifact cache; this is a product-specific configuration surface (supported wildcard patterns, their semantics, and constraints) that functions as a parameter/behavior reference not generally known from training. |
 | [Audit compliance using Azure Policy](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-azure-policy) | security | 0.70 | Shows how to assign built-in Azure Policy definitions to ACR; includes specific policy names/effects and compliance behavior, which are product-specific security/governance configurations. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/container-registry/policy-reference) | security | 0.70 | Index of ACR-specific Azure Policy built-ins with names and links to definitions; these are concrete security/governance configurations unique to the product. |
-| [Customer managed keys - Overview](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys) | security | 0.70 | Tutorial on customer-managed keys for ACR Premium; likely includes Key Vault integration details and ACR-specific encryption settings. |
 | [Dedicated data endpoints](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-dedicated-data-endpoints) | security | 0.70 | Explains dedicated data endpoint URLs, how they differ from default *.blob.core.windows.net endpoints, and how to scope firewall rules to mitigate data exfiltration; this is product-specific security configuration and endpoint behavior. |
 | [Enable artifact cache - CLI](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli) | configuration | 0.70 | Provides CLI-based steps and options to enable artifact cache, including authentication-related configuration. These are specific feature flags and commands unique to Azure Container Registry. |
 | [Enable artifact cache - Portal](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-portal) | configuration | 0.70 | Describes portal-based configuration of the artifact cache feature, including specific settings and options for ACR. This is detailed product configuration rather than conceptual guidance. |
@@ -137,11 +161,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Lock container images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-lock) | configuration | 0.70 | Describes using az acr repository update with specific attribute flags to lock images/repositories from deletion or overwrite. This is product-specific configuration detail (exact command, parameters, and behavior) rather than generic concepts. |
 | [Manage network bypass policy for tasks](https://learn.microsoft.com/en-us/azure/container-registry/manage-network-bypass-policy-for-tasks) | security | 0.70 | Describes the networkRuleBypassAllowedForTasks setting, its security implications, and how it interacts with managed identities and network restrictions, which is product-specific security configuration. |
 | [Manage public images](https://learn.microsoft.com/en-us/azure/container-registry/buffer-gate-public-content) | best-practices | 0.70 | Describes concrete practices and workflows for mirroring public content into a private ACR; product-specific operational guidance. |
+| [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference) | configuration | 0.70 | A monitoring data reference page for ACR typically lists all supported metrics, diagnostic log categories, dimensions, and sometimes specific field names and values. These are product-specific configuration and monitoring parameters (e.g., metric names, log categories, dimensions, and their meanings) that an LLM is unlikely to fully know from training. This aligns best with the configuration sub-skill, as it is a structured reference of monitoring-related settings and data schema rather than conceptual guidance. |
 | [Push and pull a Helm chart](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-helm-repos) | integrations | 0.70 | Shows how to store Helm charts as OCI artifacts in ACR with Helm 3; includes ACR-specific integration and repository behavior. |
 | [Retention policy for untagged manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-retention-policy) | configuration | 0.70 | Describes product-specific retention policy settings for untagged manifests in Premium tier, including how to enable and configure the number-of-days parameter via portal and CLI. This is concrete configuration guidance rather than conceptual overview, but does not focus on numeric service limits/quotas. |
-| [Rotate or revoke a Customer managed key](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-rotate-revoke-customer-managed-keys) | security | 0.70 | Covers rotation, update, and revocation flows for CMK on ACR with product-specific security behavior and requirements. |
+| [Rotate or revoke a Customer managed key](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-rotate-revoke-customer-managed-keys) | security | 0.70 | Covers rotation, update, and revocation of CMKs for ACR; includes specific operational security procedures and configuration steps that are product-specific and not just conceptual. |
 | [Run task on dedicated agent pool (preview)](https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools) | configuration | 0.70 | Explains how to set up and use ACR agent pools, including tier requirement (Premium) and pool selection, which are product-specific configuration and constraints. |
 | [Secure deployment options](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-connected-registry-arc) | security | 0.70 | Details HTTPS/TLS/no-TLS, BYOC certificates, and trust distribution for the extension; contains concrete security configuration options. |
+| [Secure your Azure Container Registry deployment](https://learn.microsoft.com/en-us/azure/container-registry/secure-container-registry) | best-practices | 0.70 | Article explicitly provides security recommendations and best practices for securing ACR, likely including product-specific guidance (for example, network rules, access patterns, and configuration choices) that go beyond generic security concepts. |
 | [Service Tag](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-service-tag) | security | 0.70 | Explains ACR service tags and how they map to IP prefixes for network ACLs; includes product-specific tag names and behavior relevant to secure network configuration. |
 | [Set up continuous patching](https://learn.microsoft.com/en-us/azure/container-registry/how-to-continuous-patching) | configuration | 0.70 | How-to article on installing, enabling, and configuring continuous patching with product-specific settings and options, which are configuration details beyond generic knowledge. |
 | [Sign container images with Notation and AKV using a CA issued certificate](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-sign-trusted-ca) | security | 0.70 | Step-by-step configuration of Notation with Azure Key Vault using CA-issued certificates, including product-specific CLI commands, Key Vault integration details, and signing/verification flows that go beyond generic security concepts. |
@@ -183,12 +209,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Content formats](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-formats) | 0.45 | Lists supported content formats (Docker, OCI, Helm); mostly compatibility info without numeric limits or config matrices. |
 | [Multi-arch images](https://learn.microsoft.com/en-us/azure/container-registry/push-multi-architecture-images) | 0.45 | Introduces multi-architecture images and how ACR supports them; largely conceptual without detailed config matrices or limits. |
 | [Manage content with client libraries](https://learn.microsoft.com/en-us/azure/container-registry/quickstart-client-libraries) | 0.40 | Client libraries quickstart with example code; likely basic usage patterns rather than detailed configuration matrices. |
-| [Monitor Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry) | 0.40 | High-level monitoring article; likely describes how to use Azure Monitor with ACR but not focused on detailed metrics tables or config parameters. |
+| [Security overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-security-overview) | 0.40 | Security overview describing threat model, shared responsibility, and defense-in-depth; high-level conceptual security content without specific RBAC role lists, config parameters, or detailed settings. |
 | [YAML and Dockerfiles](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-samples) | 0.40 | Index of sample task YAMLs and Dockerfiles; mostly links to examples rather than consolidated expert reference content. |
 | [Zone-redundant registries](https://learn.microsoft.com/en-us/azure/container-registry/zone-redundancy) | 0.40 | Describes that zone redundancy is enabled by default for all SKUs and at no extra cost, but the summary does not indicate any concrete numeric limits, configuration parameter tables, or decision matrices. It is primarily conceptual/behavioral guidance about availability, not detailed limits, configuration, or troubleshooting content. |
 | [1 - Build from source context](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-quick-task) | 0.35 | Tutorial for quick tasks; focuses on basic usage pattern rather than detailed configuration options or limits. |
 | [2a - Build on code commit](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-build-task) | 0.35 | Tutorial for code-commit-triggered builds; mostly procedural steps without extensive configuration reference or error mappings. |
 | [Build, push, and run image - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-quickstart-task-cli) | 0.35 | Quickstart tutorial for building an image; mostly step-by-step commands LLMs generally know, without detailed product-specific configuration matrices. |
+| [Use Grafana dashboards](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-dashboards-with-grafana) | 0.35 | Describes using integrated Grafana dashboards for ACR metrics visualization; appears to be a usage/tutorial-style article without detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [About ACR Tasks](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview) | 0.30 | Tasks overview; primarily conceptual description of ACR Tasks capabilities without deep configuration tables or limits. |
 | [Artifact cache overview](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview) | 0.30 | Overview of artifact cache benefits and behavior; summary suggests conceptual description (performance, availability, private access) without specific numeric limits, configuration parameter tables, or error codes. |
 | [Base image updates](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-base-images) | 0.30 | Background article on base image updates; conceptual explanation of triggers without detailed configuration tables or limits. |
@@ -197,6 +224,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Create container registry - ARM template](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-geo-replication-template) | 0.30 | ARM template quickstart for geo-replicated registry; mainly step-by-step deployment, no detailed matrices or limits. |
 | [Create container registry - Bicep](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-bicep) | 0.30 | Bicep quickstart for creating a registry; focuses on example template, not exhaustive configuration reference. |
 | [Get started with Azure Container Registry using Terraform](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-terraform) | 0.30 | Terraform quickstart for creating registry and resource group; no detailed tier constraints or config tables. |
+| [Monitor Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry) | 0.30 | Monitoring overview for Azure Container Registry using Azure Monitor; summary suggests conceptual guidance on metrics/logs and alerts without specific numeric limits, config tables, or error-code-based troubleshooting. |
 | [Push and pull an image](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli) | 0.30 | Basic push/pull tutorial using Docker CLI; standard workflow without deep product-specific reference details. |
 | [Restrict access using private endpoint](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-private-endpoints) | 0.30 | Primarily a how-to for setting up Private Link/private endpoints for ACR. The summary suggests step-by-step configuration and conceptual description of private connectivity, but no clear indication of detailed parameter tables, limits, or security role definitions beyond generic Private Link usage. |
 | [Send events to Event Grid - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-event-grid-quickstart) | 0.30 | Event Grid quickstart wiring registry events to a sample app; tutorial-style, no deep config tables or error codes. |

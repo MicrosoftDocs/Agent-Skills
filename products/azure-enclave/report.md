@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   configuration: Configuring enclaves, governance, approvals, DNS/AVD setup, observability,
     policy exemptions, and using service catalog templates for Azure Enclave workloads.
@@ -9,12 +9,11 @@ category_descriptions:
   security: 'Configuring Azure Enclave security: RBAC, managed identities, CMK encryption,
     policy/guardrails for AKS, App Service, SQL, Storage, ACR, Cosmos DB, Key Vault,
     and governance/JIT access.'
-  deployment: 'Guides for deploying Enclave workloads: app installation on RemoteApp
-    VMs, using Bicep/ARM/CLI templates, and setting up ExpressRoute/VPN connectivity
-    and shared dependencies.'
-  troubleshooting: Diagnosing and resolving common Azure Enclave issues, including
-    error codes, configuration problems, deployment failures, and runtime/attestation
-    troubleshooting.
+  deployment: 'Deploying Enclave workloads: installing apps on RemoteApp VMs, using
+    Bicep/ARM templates, and setting up shared dependencies, ExpressRoute, and VPN
+    transit hub connections via CLI.'
+  troubleshooting: Diagnosing and fixing common Azure Enclave issues, including error
+    codes, configuration problems, deployment failures, and runtime/attestation troubleshooting.
   best-practices: Design, security, and operational best practices for Azure Enclave,
     including secure architecture patterns and how to harden and manage admin VMs
     safely.
@@ -25,17 +24,17 @@ category_descriptions:
     and regional availability to plan compliant deployments and capacity.
 skill_description: Expert knowledge for Azure Enclave development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and deployment. Use when building DMZ/AVD/AKS enclave apps,
-  configuring RBAC/CMK, deploying via Bicep/ARM, or setting up ExpressRoute/VPN, and
+  security, configuration, and deployment. Use when building Azure Enclave apps with
+  AVD/AKS, RBAC/managed identities, CMK encryption, Bicep/ARM, or ExpressRoute, and
   other Azure Enclave related development tasks. Not for Azure Confidential Computing
   (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure
-  Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
-use_when: Use when building DMZ/AVD/AKS enclave apps, configuring RBAC/CMK, deploying
-  via Bicep/ARM, or setting up ExpressRoute/VPN, and other Azure Enclave related development
+  Cloud Hsm (use azure-cloud-hsm), Azure Dedicated HSM (use azure-dedicated-hsm).
+use_when: Use when building Azure Enclave apps with AVD/AKS, RBAC/managed identities,
+  CMK encryption, Bicep/ARM, or ExpressRoute, and other Azure Enclave related development
   tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
-  Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Cloud Hsm (use azure-cloud-hsm).
+  Azure Attestation (use azure-attestation), Azure Cloud Hsm (use azure-cloud-hsm),
+  Azure Dedicated HSM (use azure-dedicated-hsm).
 ---
 # Azure Enclave Crawl Report
 
@@ -48,9 +47,9 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 47
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 93
+- **New Pages**: 0
+- **Updated Pages**: 7
+- **Unchanged**: 89
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-enclave/azure-enclave.csv`
 
@@ -70,23 +69,29 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ## Changes
 
-### New Pages
-
-- [Connect Azure Enclave to an existing Azure landing zone](https://learn.microsoft.com/en-us/azure/enclave/connect-enclave-existing-landing-zone-transit-hub)
-
 ### Updated Pages
 
-- [Why use Azure Enclave?](https://learn.microsoft.com/en-us/azure/enclave/why-azure-enclave)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-01T22:10:00.000Z
+- [Deploy App Service Web App from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-app-service-web-app-service-catalog)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-17T05:12:00.000Z
+- [Deploy Azure Kubernetes Service from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-kubernetes-service-service-catalog)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-23T08:00:00.000Z
+- [Deploy Key Vault from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-key-vault-service-catalog)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-17T05:12:00.000Z
+- [Deploy Private DNS Zones from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-private-dns-zones-service-catalog)
+  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-13T05:17:00.000Z
+- [Deploy service catalog Template from Azure CLI](https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli)
+  - Updated: 2026-08-26T17:11:00.000Z → 2026-10-17T05:12:00.000Z
 - [Troubleshoot guide](https://learn.microsoft.com/en-us/azure/enclave/troubleshoot)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-01T22:10:00.000Z
+  - Updated: 2026-10-01T22:10:00.000Z → 2026-10-16T05:18:00.000Z
+- [Create a community](https://learn.microsoft.com/en-us/azure/enclave/1-1-create-community)
+  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-23T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Quotas and region availability](https://learn.microsoft.com/en-us/azure/enclave/quotas-region-availability) | limits-quotas | 0.95 | The page documents Azure Enclave default resource limits and quotas, including specific numerical limits for VM sizes and regional availability details, which are product- and time-specific values not reliably known from training. |
-| [Troubleshoot guide](https://learn.microsoft.com/en-us/azure/enclave/troubleshoot) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Enclave, listing specific errors and their solutions. It maps symptoms (error messages) to causes and resolutions, which is product-specific troubleshooting knowledge beyond generic debugging guidance. |
+| [Troubleshoot guide](https://learn.microsoft.com/en-us/azure/enclave/troubleshoot) | troubleshooting | 0.90 | Explicitly a troubleshooting page listing example errors and their solutions. This implies symptom → cause → resolution mappings and likely includes specific error messages or codes unique to Azure Enclave, which fits the troubleshooting sub-skill definition. |
 | [Naming rules and restrictions](https://learn.microsoft.com/en-us/azure/enclave/name-rules-restrictions-azure-enclave-resources) | limits-quotas | 0.85 | Summarizes naming rules and restrictions per resource provider; likely includes exact character limits, allowed patterns, and constraints that are specific and numeric. |
 | [Configure customer managed key encryption](https://learn.microsoft.com/en-us/azure/enclave/configure-customer-managed-key-encryption-within-enclave) | security | 0.82 | CMK configuration article details how to deploy customer-managed keys via a specific service catalog template and comply with Enclave’s default governance posture requiring CMK for all resources. It involves encryption modes, policy requirements, and product-specific security configuration, aligning with the security category. |
 | [App Service Enclaves Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/app-service-initiative) | security | 0.80 | Describes policy guardrails for secure App Service deployment; includes specific policy definitions and required settings tailored to Enclave. |
@@ -122,6 +127,7 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Create Azure Virtual Desktop workloads](https://learn.microsoft.com/en-us/azure/enclave/create-azure-virtual-desktop-workloads) | configuration | 0.65 | The page discusses non-default access patterns, constraints around Azure Bastion, and how to set up AVD workloads in an enclave. This implies specific configuration steps and patterns unique to Azure Enclave and AVD rather than generic remote access guidance. |
 | [Create an enclave endpoint and connection](https://learn.microsoft.com/en-us/azure/enclave/1-5-create-enclave-endpoint-connections) | configuration | 0.65 | Creating enclave and community endpoint resources involves defining how inbound and outbound traffic is allowed, which typically includes endpoint configuration parameters (types of endpoints, allowed destinations, connection properties). These are product-specific settings that govern connectivity and are best categorized as configuration. |
 | [Deploy ExpressRoute Connection from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-express-route-connection-service-catalog) | deployment | 0.65 | Describes connecting transit hub ExpressRoute gateway to customer circuits; likely includes Enclave-specific requirements (existing circuit, private peering) and constraints for connection objects. |
+| [Deploy service catalog Template from Azure CLI](https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli) | deployment | 0.65 | Focuses on deploying templates from the Azure Enclave service catalog using Azure CLI. This is a product-specific deployment method; such pages typically include exact CLI commands, required parameters, and possibly constraints unique to Enclave catalog deployments, which qualify as expert deployment knowledge beyond generic ARM/Bicep deployment. |
 | [List of service catalog Templates](https://learn.microsoft.com/en-us/azure/enclave/list-service-catalog-templates) | configuration | 0.65 | A list of service catalog templates for specific Azure services implies detailed, product-specific deployment configurations (template names, parameters) that are not generally known; fits configuration-focused expert knowledge. |
 | [Move data inside an enclave](https://learn.microsoft.com/en-us/azure/enclave/move-data-inside-enclave) | architecture-patterns | 0.65 | Discusses default intra-enclave traffic behavior and strategies for initial data migration; likely includes Enclave-specific network patterns and trade-offs for moving data into isolated environments. |
 | [Plan your architecture for Azure Virtual Desktop and AKS workloads](https://learn.microsoft.com/en-us/azure/enclave/2-1-plan-architecture-workloads) | architecture-patterns | 0.65 | Planning tutorial for specific workloads (AVD, AKS) likely includes product-specific architectural guidance and trade-offs for enclave design beyond generic patterns. |
@@ -129,7 +135,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Policy compliance exemptions](https://learn.microsoft.com/en-us/azure/enclave/policy-compliance-exemptions) | configuration | 0.64 | Policy exemptions article explains how to create and manage Azure Policy exemptions specifically for Enclave-managed initiatives. It contains product-specific governance configuration steps and behavior (how Enclave-managed policies can be overridden), which is configuration-focused expert knowledge rather than generic governance theory. |
 | [Defense in Depth](https://learn.microsoft.com/en-us/azure/enclave/defense-in-depth) | security | 0.60 | Although high-level in tone, the defense-in-depth page for Azure Enclave typically outlines specific boundary protections, guardrails, and integration patterns (for example, VNet integration, Entra ID, ABAC) that form a product-specific security model. |
 | [Deploy Common Dependencies from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-common-dependencies-service-catalog) | deployment | 0.60 | Deploying 'Common Dependencies' from the Enclave service catalog is a product-specific deployment pattern. Even though it notes the sample isn’t full best practice, it likely includes concrete resource choices and deployment steps unique to Azure Enclave’s catalog, fitting deployment-focused expert guidance. |
-| [Deploy service catalog Template from Azure CLI](https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli) | deployment | 0.60 | This quickstart focuses on deploying Enclave service catalog templates via Azure CLI. It likely includes specific commands, parameters, and Enclave-related deployment behavior that go beyond generic Azure CLI usage, making it a deployment-oriented expert configuration guide. |
 | [Host a publicly accessible application in an Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/1-7-host-publicly-accessible-application-azure-enclave) | architecture-patterns | 0.60 | Describes a specific enclave architecture pattern: hosting a web app inside an enclave and exposing it via a separate DMZ enclave using Application Gateway, WAF, public IP, enclave endpoints, and enclave connections. This is a product-specific design pattern for secure public exposure of enclave workloads, which is expert architectural guidance beyond generic web app patterns. |
 | [Install application on a Remote App Virtual Machine](https://learn.microsoft.com/en-us/azure/enclave/application-deployment-using-remote-app-vm) | deployment | 0.60 | Describes application installation scripting scenarios for RemoteApp VM template; includes product-specific deployment scripting patterns for Azure Virtual Desktop in Enclave. |
 | [Shared responsibility model](https://learn.microsoft.com/en-us/azure/enclave/shared-responsibility-model) | security | 0.60 | A shared responsibility model page for Azure Enclave will detail which security and configuration tasks are handled by the platform versus the customer, including Enclave-specific boundaries and obligations. While conceptual, this division of responsibilities is product-specific security guidance that informs how to securely operate workloads within Enclave. |
@@ -148,21 +153,17 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Deploy Virtual Machine from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-virtual-machine-service-catalog) | 0.45 | VM template with optional domain join and RemoteApp; while it mentions Azure Virtual Desktop RemoteApp, article is framed as demo deployment and likely lacks deep configuration tables or quotas. |
 | [Create a transit hub](https://learn.microsoft.com/en-us/azure/enclave/create-transit-hub-portal) | 0.40 | Transit hub creation tutorial; summary explains purpose and association but not detailed configuration parameters or constraints. |
 | [Deploy App Service Function App from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-app-service-function-app-service-catalog) | 0.40 | Function App deployment quickstart; sample/demo instructions without detailed product-specific configuration parameters beyond standard App Service knowledge. |
-| [Deploy App Service Web App from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-app-service-web-app-service-catalog) | 0.40 | Web App deployment quickstart; similar to other service catalog articles, focused on basic deployment steps rather than expert-level configuration or limits. |
 | [Deploy Azure Cosmos DB from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-cosmos-db-service-catalog) | 0.40 | Cosmos DB deployment quickstart; demo-focused and unlikely to include detailed Enclave-specific configuration or limits beyond standard Cosmos DB usage. |
 | [Deploy Azure Kubernetes Service (AKS) workload](https://learn.microsoft.com/en-us/azure/enclave/2-4-deploy-kubernetes-workload) | 0.40 | Tutorial-style deployment of AKS in an enclave; likely step-by-step portal/template usage without detailed config tables, limits, or product-specific gotchas beyond generic AKS knowledge. |
-| [Deploy Azure Kubernetes Service from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-kubernetes-service-service-catalog) | 0.40 | AKS deployment from service catalog; similar to other quickstarts, focused on template deployment rather than expert configuration or Enclave-specific constraints. |
 | [Deploy Azure SQL from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-sql-service-catalog) | 0.40 | Azure SQL deployment quickstart; sample/demo instructions without detailed configuration matrices or quotas. |
 | [Deploy Azure Service Bus from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-service-bus-service-catalog) | 0.40 | Service Bus deployment quickstart; sample/demo instructions, not focused on Enclave-specific configuration or quotas. |
-| [Deploy Key Vault from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-key-vault-service-catalog) | 0.40 | Key Vault deployment quickstart; demo-focused and unlikely to contain detailed Enclave-specific configuration tables beyond standard Key Vault deployment. |
-| [Deploy Private DNS Zones from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-private-dns-zones-service-catalog) | 0.40 | Private DNS zones deployment quickstart; primarily template deployment steps without deep configuration matrices or limits. |
 | [Deploy Workload Quickstart from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-workload-quickstart-service-catalog) | 0.40 | Quickstart for deploying a workload template; primarily step-by-step portal usage without detailed configuration matrices or limits beyond generic ARM template deployment. |
 | [Deploy a Storage Account from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-storage-account-service-catalog) | 0.40 | Storage account deployment quickstart; generic deployment steps without detailed Enclave-specific configuration parameters or limits. |
 | [Deploy an Admin Virtual Machine from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-admin-vm-service-catalog) | 0.40 | Admin VM/jumpbox deployment template article; mostly sample deployment instructions, explicitly not representing best practices, and unlikely to contain detailed Enclave-specific limits or config matrices. |
 | [Monitor your enclaves](https://learn.microsoft.com/en-us/azure/enclave/1-6-monitor-your-enclaves) | 0.40 | Tutorial on monitoring enclaves using existing Azure Monitor and service monitoring capabilities. The summary suggests high-level guidance on using standard monitoring features, not detailed product-specific configuration tables, limits, or troubleshooting mappings, so it does not clearly qualify as expert knowledge. |
 | [Use the service catalog to create Azure resources inside a workload](https://learn.microsoft.com/en-us/azure/enclave/1-4-use-service-catalog-create-azure-resources-workloads) | 0.40 | Tutorial for creating Azure resources from the service catalog. The summary explicitly notes it is a sample deployment and not a best-practices reference. It appears as a step-by-step tutorial rather than a parameter reference, limits table, or configuration catalog, so it does not meet the expert-knowledge criteria. |
 | [Connect Azure Enclave to an existing Azure landing zone](https://learn.microsoft.com/en-us/azure/enclave/connect-enclave-existing-landing-zone-transit-hub) | 0.30 | Appears to be a how-to connectivity guide for integrating Azure Enclave with an existing landing zone; likely step-by-step instructions without detailed configuration parameter tables, limits, or troubleshooting mappings. |
-| [Create a community](https://learn.microsoft.com/en-us/azure/enclave/1-1-create-community) | 0.30 | Tutorial for deploying a community via portal; primarily step-by-step instructions without detailed configuration option tables or numeric constraints. |
+| [Create a community](https://learn.microsoft.com/en-us/azure/enclave/1-1-create-community) | 0.30 | The page is a step-by-step tutorial for deploying an Azure Enclave community via the Azure portal. It appears to be procedural guidance without detailed configuration parameter tables, limits/quotas, error-code-based troubleshooting, or decision matrices. It focuses on how to perform a deployment rather than exposing product-specific expert reference data or nuanced best-practice guidance. |
 | [Create a community](https://learn.microsoft.com/en-us/azure/enclave/create-community-portal) | 0.30 | How-to tutorial for creating a community via portal; likely step-by-step UI instructions without detailed configuration tables or expert-only constraints. |
 | [Create a community endpoint](https://learn.microsoft.com/en-us/azure/enclave/create-community-endpoint-portal) | 0.30 | How-to for creating a community endpoint; appears to be procedural with minimal product-specific configuration details or numeric constraints. |
 | [Create a workload](https://learn.microsoft.com/en-us/azure/enclave/create-workload-portal) | 0.30 | Tutorial for creating workloads in portal; focuses on logical grouping and basic creation steps, not on configuration parameter tables or expert patterns. |
@@ -172,6 +173,10 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Create enclaves inside a community](https://learn.microsoft.com/en-us/azure/enclave/1-2-create-enclaves-inside-community) | 0.30 | Tutorial for creating enclaves inside a community; focuses on basic topology and creation steps, not on expert-only limits, configs, or decision matrices. |
 | [Create new Enclave Subnet](https://learn.microsoft.com/en-us/azure/enclave/create-new-enclave-subnet) | 0.30 | Page appears to be a procedural guide for replacing and creating subnets in an Azure Enclave virtual network. The summary indicates step-by-step instructions and a general constraint that subnets with attached resources can't be deleted, but does not suggest presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
 | [Create workloads inside an enclave](https://learn.microsoft.com/en-us/azure/enclave/1-3-create-workloads-inside-enclave) | 0.30 | Tutorial for creating workloads in an enclave; procedural content without clear indication of detailed configuration parameters or product-specific troubleshooting. |
+| [Deploy App Service Web App from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-app-service-web-app-service-catalog) | 0.30 | Quickstart-style deployment of an App Service Web App from the Azure Enclave service catalog; appears to be a step-by-step demo without configuration tables, limits, or product-specific expert patterns beyond generic deployment instructions. |
+| [Deploy Azure Kubernetes Service from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-kubernetes-service-service-catalog) | 0.30 | Quickstart-style deployment of AKS from the Azure Enclave service catalog; described as a demo and not best practices, likely just procedural steps without detailed limits, configuration matrices, or advanced decision/troubleshooting content. |
+| [Deploy Key Vault from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-key-vault-service-catalog) | 0.30 | How-to for deploying Key Vault from the Azure Enclave service catalog; summary suggests basic deployment guidance rather than detailed configuration parameters, limits, or security role mappings specific enough to count as expert knowledge. |
+| [Deploy Private DNS Zones from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-private-dns-zones-service-catalog) | 0.30 | How-to for deploying private DNS zones from the Azure Enclave service catalog; framed as a demo without best practices, likely just procedural steps and not detailed configuration, limits, or decision matrices. |
 | [What is a community endpoint?](https://learn.microsoft.com/en-us/azure/enclave/what-community-endpoint) | 0.30 | Conceptual description of community endpoints; summary doesn’t indicate detailed settings tables or numeric constraints. |
 | [What is a dedicated hub?](https://learn.microsoft.com/en-us/azure/enclave/what-dedicated-hub) | 0.30 | Describes what dedicated hubs are and their purpose (network isolation vs pooled hubs). Summary reads as a conceptual/architectural overview without explicit numeric thresholds, decision matrices, or configuration tables, so it does not meet the bar for expert-knowledge sub-skill types. |
 | [What is a transit hub?](https://learn.microsoft.com/en-us/azure/enclave/what-transit-hub) | 0.30 | Conceptual description of transit hubs; no detailed configuration or numeric constraints indicated. |

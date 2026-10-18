@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, autoforwarding chains, geo-replication, or JMS/Java clients, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Queue Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics with sessions, partitioning, autoforwarding, JMS/AMQP integrations, or geo-disaster recovery, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Queue Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -24,22 +24,22 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L46 | Diagnosing and resolving Azure Service Bus errors and exceptions (AMQP, .NET, Resource Manager), configuring tracing, and fixing common messaging and connectivity issues. |
-| Best Practices | L47-L58 | Guidance on reliable, high-throughput messaging: duplicate detection, ordering/sessions, timestamps, maintenance prep, loss/duplicate prevention, serialization, prefetch, timeouts, and retries. |
-| Decision Making | L59-L67 | Guidance on choosing Service Bus vs other messaging options, configuring geo-disaster recovery/replication, Java/JMS client choices, and migrating from Standard to Premium. |
-| Architecture & Design Patterns | L68-L78 | Patterns for resilient, geo-replicated, multi-namespace Service Bus architectures, including partitioning, autoforwarding chains, federation, and message replication with NServiceBus. |
-| Limits & Quotas | L79-L86 | Service Bus limits, quotas, throttling behavior, FAQs, and guidance on handling large messages (especially with Premium tier). |
-| Security | L87-L110 | Securing Service Bus: identity-based auth, SAS, keys and encryption, TLS, network isolation (VNet, Private Link, firewalls), Azure Policy, and compliance best practices. |
-| Configuration | L111-L135 | Configuring Service Bus behavior: scaling, partitions, sessions, forwarding, TTL/dead-lettering, filters/actions, monitoring/metrics, geo-replication, and management via ARM, PowerShell, and emulator. |
-| Integrations & Coding Patterns | L136-L150 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters/actions, replication tasks, and batch message deletion. |
-| Deployment | L151-L160 | Deploying Service Bus namespaces and entities (queues, topics, subscriptions, rules) using ARM/Bicep templates, and moving namespaces across Azure regions. |
+| Troubleshooting | L37-L46 | Diagnosing and fixing Service Bus issues: AMQP errors, SDK/Resource Manager exceptions, legacy error codes, and tracing end-to-end operations for debugging. |
+| Best Practices | L47-L61 | Designing reliable, high-performance Service Bus messaging: message design, filters, locks/settlement, duplicate detection, prefetch, timeouts/retries, metrics, and maintenance to avoid loss/duplicates. |
+| Decision Making | L62-L71 | Guidance for choosing Service Bus vs other messaging options, selecting tiers and SDKs, and planning geo-disaster recovery and migrations (Standard→Premium) for your workloads. |
+| Architecture & Design Patterns | L72-L82 | Patterns for resilient, geo-replicated, multi-namespace Service Bus architectures, including partitioning, autoforwarding chains, federation, and message replication with NServiceBus. |
+| Limits & Quotas | L83-L89 | Service Bus entity size, connection, and throughput limits, quota behaviors, and how throttling works (including common throttling scenarios and mitigation guidance). |
+| Security | L90-L114 | Configuring Service Bus security: Entra ID auth, managed identities, SAS, encryption/CMK, network isolation (VNet, Private Link, firewalls), TLS policies, and compliance/Azure Policy. |
+| Configuration | L115-L140 | Configuring and managing Service Bus entities: scaling, sessions, partitioning, forwarding, TTL/dead-lettering, filters/actions, AMQP/HTTP settings, monitoring, automation, and local emulation. |
+| Integrations & Coding Patterns | L141-L153 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), ActiveMQ, RabbitMQ, Event Grid, Logic Apps, Functions, plus batch message deletion and interoperability over AMQP. |
+| Deployment | L154-L163 | Deploying Service Bus namespaces and entities (queues, topics, subscriptions, rules) using ARM/Bicep templates, and moving namespaces across Azure regions. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot AMQP errors in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-troubleshoot |
-| Configure end-to-end tracing for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-end-to-end-tracing |
-| Diagnose and resolve Azure Service Bus .NET exceptions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions |
+| Trace and diagnose end-to-end Azure Service Bus operations | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-end-to-end-tracing |
+| Interpret legacy Azure Service Bus messaging errors | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions |
 | Handle Azure Service Bus messaging exceptions (current SDK) | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-exceptions-latest |
 | Diagnose Azure Service Bus Resource Manager exceptions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-exceptions |
 | Diagnose and fix common Azure Service Bus issues | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-troubleshooting-guide |
@@ -47,13 +47,16 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Configure duplicate message detection in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection |
+| Configure duplicate message detection in Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection |
+| Retrieve and use Service Bus message count metrics | https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-counters |
 | Use sequencing and timestamps in Service Bus messages | https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sequencing |
+| Handle message locks and settlement in Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement |
 | Prepare Service Bus namespaces for planned maintenance | https://learn.microsoft.com/en-us/azure/service-bus-messaging/prepare-for-planned-maintenance |
+| Define and apply Service Bus subscription filters | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-filter-examples |
 | Prevent message loss and duplicates in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-message-loss-and-duplicates |
-| Handle messages and serialization in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads |
-| Optimize Azure Service Bus performance and throughput | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements |
-| Optimize Azure Service Bus performance with prefetch | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch |
+| Design Azure Service Bus messages and payloads | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads |
+| Apply performance best practices for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements |
+| Optimize Azure Service Bus prefetch behavior | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-prefetch |
 | Configure Service Bus timeouts and retry policies | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-timeouts-retries |
 
 ### Decision Making
@@ -64,6 +67,7 @@ This skill requires **network access** to fetch documentation content:
 | Set up Service Bus Geo-Disaster Recovery | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr |
 | Choose between JMS and native Java SDK for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-jms-versus-native-sdk |
 | Migrate Azure Service Bus from Standard to Premium | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-migrate-standard-premium |
+| Choose Azure Service Bus Premium tier for workloads | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-premium-messaging |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -80,14 +84,13 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Azure Service Bus FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-faq |
-| Use Azure Service Bus Premium for large messages | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-premium-messaging |
-| Reference Azure Service Bus quotas and limits | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas |
+| Review Azure Service Bus quotas and throttling limits | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quotas |
 | Understand Azure Service Bus throttling limits and behavior | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-throttling |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure Microsoft Entra authentication for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/authenticate-application |
+| Configure Microsoft Entra authentication for Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/authenticate-application |
 | Enable confidential computing for Service Bus Premium | https://learn.microsoft.com/en-us/azure/service-bus-messaging/confidential-computing |
 | Configure customer-managed keys for Service Bus encryption | https://learn.microsoft.com/en-us/azure/service-bus-messaging/configure-customer-managed-key |
 | Disable SAS local authentication for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/disable-local-authentication |
@@ -102,35 +105,37 @@ This skill requires **network access** to fetch documentation content:
 | Use managed identities to securely access Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity |
 | Migrate Service Bus apps to passwordless Entra ID auth | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-migrate-azure-credentials |
 | Create Service Bus authorization rules with ARM templates | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-auth-rule |
+| Send Service Bus messages with Entra ID tokens via REST | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-send-entra-token-how-to |
 | Implement Shared Access Signature authorization for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-sas |
 | Configure Service Bus virtual network service endpoints | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-service-endpoints |
 | Audit Service Bus TLS minimum version compliance with Azure Policy | https://learn.microsoft.com/en-us/azure/service-bus-messaging/transport-layer-security-audit-minimum-version |
 | Configure minimum TLS version for a Service Bus namespace | https://learn.microsoft.com/en-us/azure/service-bus-messaging/transport-layer-security-configure-minimum-version |
-| Enforce minimum TLS version for Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/transport-layer-security-enforce-minimum-version |
+| Enforce minimum TLS version for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/transport-layer-security-enforce-minimum-version |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
 | Configure autoscale for Service Bus messaging units | https://learn.microsoft.com/en-us/azure/service-bus-messaging/automate-update-messaging-units |
 | Map classic Service Bus management APIs to ARM | https://learn.microsoft.com/en-us/azure/service-bus-messaging/deprecate-service-bus-management |
-| Configure auto-forwarding for Service Bus queues and subscriptions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-auto-forward |
-| Enable dead-lettering for Service Bus queues and subscriptions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-dead-letter |
-| Configure duplicate message detection in Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-duplicate-detection |
+| Configure auto forwarding between Service Bus entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-auto-forward |
+| Enable dead-letter queues for Service Bus entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-dead-letter |
+| Configure duplicate detection for Service Bus entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-duplicate-detection |
 | Enable and configure Service Bus message sessions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-message-sessions |
 | Enable partitioning for Service Bus queues and topics | https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-basic-standard |
 | Suspend and reactivate Azure Service Bus entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/entity-suspend |
-| Use Azure Service Bus message browsing and peek operations | https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-browsing |
-| Retrieve Service Bus queue and subscription message counts | https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-counters |
+| Use peek operations to browse Service Bus messages | https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-browsing |
 | Configure message expiration and TTL in Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-expiration |
 | Configure monitoring for Azure Service Bus with Azure Monitor | https://learn.microsoft.com/en-us/azure/service-bus-messaging/monitor-service-bus |
-| Reference metrics and logs for Azure Service Bus monitoring | https://learn.microsoft.com/en-us/azure/service-bus-messaging/monitor-service-bus-reference |
+| Configure AMQP settings when migrating .NET Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-dotnet |
 | Use AMQP request/response operations in Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-request-response |
 | Configure Azure Functions-based Service Bus replication tasks | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-federation-configuration |
 | Use Azure Monitor insights for Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-insights |
 | Manage Service Bus resources with Azure PowerShell | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-manage-with-ps |
-| Programmatically manage Service Bus namespaces and entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-management-libraries |
-| Use SQL filter syntax for Service Bus subscription rules | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter |
+| Programmatically create and manage Service Bus namespaces and entities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-management-libraries |
+| Configure SQL filter expressions for Service Bus subscriptions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter |
 | Use SQL action syntax for Service Bus subscription rules | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-rule-action |
+| Map HTTP headers to Service Bus message properties | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-message-properties |
+| Configure REST namespace addressing for Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-rest-namespace-access |
 | Configure and run Azure Service Bus local emulator | https://learn.microsoft.com/en-us/azure/service-bus-messaging/test-locally-with-service-bus-emulator |
 
 ### Integrations & Coding Patterns
@@ -140,10 +145,8 @@ This skill requires **network access** to fetch documentation content:
 | Use JMS 2.0 API with Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20 |
 | Develop Azure Service Bus clients using JMS 2.0 | https://learn.microsoft.com/en-us/azure/service-bus-messaging/jms-developer-guide |
 | Migrate JMS apps from ActiveMQ to Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/migrate-jms-activemq-to-servicebus |
-| Use legacy .NET Service Bus library with AMQP | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-dotnet |
-| Define Azure Service Bus subscription filters and actions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-filter-examples |
 | Integrate RabbitMQ with Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-integrate-with-rabbitmq |
-| Use JMS 1.1 with AMQP on Service Bus Standard | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp |
+| Integrate JMS 1.1 over AMQP with Service Bus Standard | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp |
 | Integrate Azure Service Bus with Event Grid | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept |
 | Integrate Service Bus events with Event Grid and Logic Apps | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-example |
 | Handle Service Bus events via Event Grid and Azure Functions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-function |

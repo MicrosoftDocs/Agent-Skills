@@ -8,13 +8,12 @@
 | Topic | URL |
 |-------|-----|
 | Monitor and revoke Databricks personal access tokens | https://learn.microsoft.com/en-us/azure/databricks/admin/access-control/tokens |
-| Use Azure Databricks diagnostic audit logs securely | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-logs |
+| Configure Azure Databricks budget ACL permissions | https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/budget-permissions |
+| Configure governed tags for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/governed-tags/ |
 | Manage permissions for governed tags in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/admin/governed-tags/manage-permissions |
-| Use Azure Databricks system tables for monitoring | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/ |
-| Analyze network access events with Databricks system tables | https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/network |
 | Configure users, groups, and principals in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/ |
-| Configure automatic identity management for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/automatic-identity-management/ |
-| Use account access denylist with automatic identity management | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/automatic-identity-management/account-access-denylist |
+| Use account access denylist for Databricks identities | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/automatic-identity-management/account-access-denylist |
+| Control group visibility with Databricks filters | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/automatic-identity-management/group-visibility-filters |
 | Configure identity attributes for Unity Catalog ABAC | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/identity-attributes/ |
 | Control identity attributes with Databricks Attribute Control List | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/identity-attributes/attribute-control-list |
 | Configure SCIM user and group sync for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/users-groups/scim/ |
@@ -22,21 +21,23 @@
 | Enforce user isolation cluster types in Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace-settings/enforce-user-isolation |
 | Restrict Azure Databricks workspace admin capabilities | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace-settings/restrict-workspace-admins |
 | Configure Azure Databricks personnel workspace access | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/workspace-access |
-| Configure authentication for Databricks Apps agents | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/agent-authentication |
-| Configure authentication for Databricks agents using Model Serving | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/agent-authentication-model-serving |
-| Connect agents with Databricks managed OAuth | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/managed-oauth |
-| Configure MCP Services and tool governance | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/mcp-services |
+| Configure authentication and authorization for Databricks agents | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/agent-authentication |
+| Configure authentication for Databricks Model Serving agents | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/model-serving/agent-authentication-model-serving |
+| Securely connect Databricks agents to Microsoft Teams | https://learn.microsoft.com/en-us/azure/databricks/agents/custom-agents/teams-agent |
+| Configure MCP authentication and network access | https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/authentication-networking |
 | Secure and govern Unity Gateway Skills with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/agents/uc-skills/ |
-| Configure AI/BI access controls in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/admin/ |
+| Manage consumer access entitlement for Genie One | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/consumers/ |
+| Govern AI traffic with Unity Gateway policies | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/ |
 | Register and secure agents as Unity Catalog services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/agent-services |
-| Govern models and MCPs with GRANT policies | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-access-to-models-with-grant-policies |
+| Apply ABAC GRANT policies to Databricks models and MCPs | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-access-to-models-with-grant-policies |
 | Govern coding agent model access and spending with Unity Gateway | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-coding-agent-models |
-| Govern coding agent GitHub MCP access with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-coding-agent-tutorial |
-| Govern MCP services with Unity Catalog and Gateway | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-mcp-service |
-| Govern access to external model providers | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-model-provider-services |
-| Discover and secure Databricks model services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-model-services |
-| Secure and govern skills as Unity Catalog assets | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-skills |
-| Apply service policy guardrails to model services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/moderate-tutorial |
+| Control coding agents’ GitHub MCP access with policies | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-coding-agent-tutorial |
+| Govern MCP access and rate limits in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-mcp-service |
+| Govern access to external model providers in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-model-provider-services |
+| Discover and control access to Databricks model services | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-model-services |
+| Govern Unity Catalog skills with privileges and audits | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/govern-skills |
+| Register and govern external model providers in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/model-provider-services |
+| Securely route external model providers via Unity Gateway | https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/query-model-provider-services |
 | Secure AI Search with OAuth tokens and low-latency paths | https://learn.microsoft.com/en-us/azure/databricks/ai-search/vector-search-oauth-token |
 | Enable Microsoft Entra conditional access for Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/azure-admin/conditional-access |
 | Configure legacy credential passthrough security in Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/credential-passthrough/ |
@@ -44,6 +45,7 @@
 | Manage Databricks secrets with the legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/secrets-cli |
 | Manage Databricks personal access tokens with legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/tokens-cli |
 | Interpret Databricks audit log schemas for monitoring | https://learn.microsoft.com/en-us/azure/databricks/archive/security/monitor-log-schemas |
+| Manage ABAC beta to public preview transition | https://learn.microsoft.com/en-us/azure/databricks/archive/unity-catalog/abac-public-preview-transition |
 | Configure Unity Catalog storage with service principals | https://learn.microsoft.com/en-us/azure/databricks/archive/unity-catalog/service-principals |
 | Upgrade Unity Catalog to privilege inheritance model | https://learn.microsoft.com/en-us/azure/databricks/archive/unity-catalog/upgrade-privilege-model |
 | Configure dedicated group access for Databricks compute | https://learn.microsoft.com/en-us/azure/databricks/compute/group-access |
@@ -52,54 +54,50 @@
 | Enforce fine-grained access control on dedicated compute | https://learn.microsoft.com/en-us/azure/databricks/compute/single-user-fgac |
 | Configure Lakeflow Connect managed ingestion connections | https://learn.microsoft.com/en-us/azure/databricks/connect/managed-ingestion |
 | Configure Kafka authentication on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/connect/streaming/kafka/authentication |
-| Configure Unity Catalog connections for external systems | https://learn.microsoft.com/en-us/azure/databricks/connect/uc-connections |
 | Govern external cloud service access with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-services/ |
-| Configure and govern Unity Catalog service credentials | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-services/manage-service-credentials |
 | Create Unity Catalog service credentials for external services | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-services/service-credentials |
-| Configure Unity Catalog service credentials for external access | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-services/use-service-credentials |
-| Use Azure managed identities for Unity Catalog storage access | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities |
+| Use Azure managed identities with Unity Catalog storage | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities |
 | Securely connect Unity Catalog to ADLS Gen2 external locations | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/external-locations-adls |
-| Administer Unity Catalog external locations securely | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/manage-external-locations |
 | Administer Unity Catalog storage credentials and permissions | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/manage-storage-credentials |
-| Securely embed Databricks dashboards for external users | https://learn.microsoft.com/en-us/azure/databricks/dashboards/share/embedding/external-embed |
+| Implement basic iframe embedding with Databricks auth | https://learn.microsoft.com/en-us/azure/databricks/dashboards/share/embedding/basic |
+| Secure external user embedding with service principals | https://learn.microsoft.com/en-us/azure/databricks/dashboards/share/embedding/external-embed |
 | Implement ABAC for Unity Catalog row and column security | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/ |
-| Understand Unity Catalog ABAC core concepts and roles | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/core-concepts |
+| Understand Unity Catalog ABAC core concepts | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/core-concepts |
 | Configure Unity Catalog ABAC DENY policies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies |
 | Define and manage Unity Catalog ABAC GRANT policies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/grant-policies |
-| Implement dynamic access control with mapping tables | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/mapping-tables |
+| Use mapping tables for dynamic ABAC access | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/mapping-tables |
 | Apply metastore-level ABAC policies in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies |
-| Implement multi-domain masking with ABAC sensitivity tiers | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/multi-domain |
-| Share ABAC-protected data via OpenSharing in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/opensharing |
+| Implement multi-domain masking with ABAC | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/multi-domain |
+| Use ABAC with OpenSharing in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/opensharing |
 | Create and manage Unity Catalog ABAC policies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policies |
-| Evaluate ABAC row filter and column mask runtime behavior | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation |
-| Secure new Unity Catalog tables by default with ABAC | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/secure-by-default |
-| Use time travel with ABAC-protected Unity Catalog tables | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/time-travel |
-| Configure access control models in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/ |
+| ABAC policy evaluation and runtime behavior | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation |
+| Secure new Unity Catalog tables by default | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/secure-by-default |
+| Tutorial: Configure ABAC policies with SQL | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/tutorial-sql |
+| Configure Unity Catalog access control models | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/ |
 | Use fine-grained DML privileges in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/fine-grained-dml-privileges |
 | Understand Unity Catalog permissions model and inheritance | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/permissions-concepts |
-| Reference Unity Catalog privileges and securable mappings | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference |
+| Unity Catalog privilege and securable reference | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference |
 | Configure legacy Hive metastore table access control | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/table-acls/ |
 | Control ANY FILE securable access in Hive metastore | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/table-acls/any-file |
 | Manage Hive metastore privileges and securable objects | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/table-acls/object-privileges |
 | Enable Hive metastore table ACLs on Databricks clusters | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/table-acls/table-acl |
 | Restrict catalog access with workspace-catalog binding | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/workspace-catalog-binding |
-| Disable direct Hive metastore access in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/disable-hms |
-| Configure Unity Catalog row filters and column masks | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/ |
-| Manually apply row filters and column masks with mapping tables | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/manually-apply |
-| Manage Unity Catalog privileges and object ownership | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/ |
-| Configure Unity Catalog access request destinations | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/access-request-destinations |
-| Understand admin roles and privileges in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/admin-privileges |
+| Apply Unity Catalog row filters and column masks | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/ |
+| Manually apply filters and masks with mapping tables | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/manually-apply |
+| Manage Unity Catalog privileges and ownership | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/ |
+| Understand Unity Catalog admin roles and scopes | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/admin-privileges |
 | Configure Unity Catalog allowlists for standard compute | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/allowlist |
-| Understand and manage Unity Catalog securable objects | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/securable-objects |
-| Configure service policies to govern AI securables | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/ |
-| Create and attach Unity Catalog AI service policies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/create-service-policy |
-| Use Sensitive Data Detection service policy for AI | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/detect-sensitive-data |
-| Apply and manage Unity Catalog tags securely | https://learn.microsoft.com/en-us/azure/databricks/database-objects/tags |
-| Understand data protection for Databricks AI features | https://learn.microsoft.com/en-us/azure/databricks/databricks-ai/databricks-ai-trust |
+| Reference Unity Catalog securable objects and privileges | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/securable-objects |
+| Configure service policies for AI securables | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/ |
+| Create and attach Unity Catalog service policies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/create-service-policy |
+| Use Sensitive Data Detection service policy | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/detect-sensitive-data |
+| Enforce external guardrails with service policies | https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/service-policies/external-policies |
+| Apply and manage Unity Catalog tags on securable objects | https://learn.microsoft.com/en-us/azure/databricks/database-objects/tags |
+| Configure partner-powered AI model usage in Databricks | https://learn.microsoft.com/en-us/azure/databricks/databricks-ai/partner-powered |
 | Disable DBFS root and mounts for Unity Catalog governance | https://learn.microsoft.com/en-us/azure/databricks/dbfs/disable-dbfs-root-mounts |
-| Authorize access to Azure Databricks via CLI and APIs | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/ |
+| Authorize Azure Databricks CLI and API access | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/ |
 | Manually generate Microsoft Entra tokens for Databricks APIs | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/aad-token-manual |
-| Configure Azure DevOps pipelines to authenticate Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/auth-with-azure-devops |
+| Configure Azure DevOps auth for Databricks CLI and APIs | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/auth-with-azure-devops |
 | Authenticate Databricks access using the Azure CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/azure-cli |
 | Sign in to Azure Databricks with Azure CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/azure-cli-login |
 | Authenticate to Databricks using Azure managed identities | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/azure-mi |
@@ -107,29 +105,28 @@
 | Authenticate to Azure Databricks with Azure PowerShell | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/azure-powershell-login |
 | Authenticate Databricks with Microsoft Entra service principals | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/azure-sp |
 | Use OAuth token federation for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-federation |
-| Authenticate Databricks APIs with federated IdP tokens | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-federation-exchange |
-| Configure OAuth token federation policies in Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-federation-policy |
+| Authenticate to Databricks with federated IdP tokens | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-federation-exchange |
+| Configure OAuth federation policy for Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-federation-policy |
 | Enable workload identity federation in Databricks CI/CD | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-federation-provider |
-| Authorize Databricks service principals with OAuth | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-m2m |
-| Authorize user access to Databricks APIs with OAuth | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-u2m |
-| Authenticate to Databricks with personal access tokens | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/pat |
-| Enable AWS IAM workload identity federation for Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-aws-iam |
+| Configure OAuth for Databricks service principals | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-m2m |
+| Set up OAuth user access for Databricks APIs | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/oauth-u2m |
+| Configure AWS IAM workload identity for Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-aws-iam |
 | Configure OAuth federation for Azure DevOps with Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-azure-devops |
 | Configure OAuth federation for CircleCI and Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-circleci |
-| Configure OAuth federation for GitHub Actions and Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-github |
+| Enable GitHub Actions workload identity for Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-github |
 | Configure OAuth federation for GitLab CI/CD and Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-gitlab |
 | Configure OAuth federation for Terraform, Bitbucket, and Jenkins | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/provider-other |
 | Use Databricks service principals for CI/CD access control | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/service-principals |
-| Use Databricks unified authentication across tools and SDKs | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/unified-auth |
+| Use Databricks unified authentication across tools | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/unified-auth |
 | Configure authentication for Databricks bundles | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/authentication |
 | Configure permissions for Databricks bundle resources | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/permissions |
-| Set run identities for Databricks bundle workflows | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/run-as |
+| Configure run identities for Databricks bundle workflows | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/run-as |
 | Configure secure authentication for Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/authentication |
 | Configure Databricks account access-control via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-access-control-commands |
 | Manage Databricks account encryption keys via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-encryption-keys-commands |
 | Manage Databricks account groups using CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-groups-commands |
 | Use Databricks account groups-v2 CLI commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-groups-v2-commands |
-| Manage Databricks IAM v2 identities via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-iam-v2-commands |
+| Manage Databricks account IAM v2 via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-iam-v2-commands |
 | Configure Databricks account IP access lists via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-ip-access-lists-commands |
 | Configure Databricks private access settings via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-private-access-commands |
 | Manage Databricks service principals using CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/account-service-principals-commands |
@@ -163,22 +160,22 @@
 | Manage Databricks users with users-v2 CLI commands | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/users-v2-commands |
 | Manage Databricks workspace IAM v2 with CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/workspace-iam-v2-commands |
 | Configure governance and permissions with Databricks App Spaces | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/app-spaces |
-| Configure OAuth-based authorization for Databricks apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/auth |
-| Configure network access controls for Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/networking |
+| Configure OAuth-based authorization for Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/auth |
+| Secure Databricks Apps networking with fine-grained controls | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/networking |
 | Manage Databricks app permissions and access control | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/permissions |
 | Use Databricks secrets as secure app resources | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/secrets |
 | Provision Databricks service principals with Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/service-principals |
 | Set up OAuth authorization for the Databricks IDE extension | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/authentication |
 | Configure Unity Catalog for external data access | https://learn.microsoft.com/en-us/azure/databricks/external-access/admin |
-| Configure Unity Catalog credential vending for external engines | https://learn.microsoft.com/en-us/azure/databricks/external-access/credential-vending |
-| Enforce cross-engine ABAC, row filters, and masks in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/external-access/cross-engine-abac |
+| Configure Unity Catalog credential vending for external access | https://learn.microsoft.com/en-us/azure/databricks/external-access/credential-vending |
+| Enforce ABAC and row-level security across engines | https://learn.microsoft.com/en-us/azure/databricks/external-access/cross-engine-abac |
 | Enable external access to streaming tables and materialized views | https://learn.microsoft.com/en-us/azure/databricks/external-access/external-for-pipelines |
 | Manage account-only user access to Genie One | https://learn.microsoft.com/en-us/azure/databricks/genie-one/account-only-user-access |
-| Securely connect external sources to Genie One chat | https://learn.microsoft.com/en-us/azure/databricks/genie-one/external-sources |
-| Securely configure and deploy the Genie mobile app | https://learn.microsoft.com/en-us/azure/databricks/genie-one/mobile-admin |
-| Configure secure ADLS access for ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/copy-into/configure-data-access |
+| Configure secure code execution in Genie One | https://learn.microsoft.com/en-us/azure/databricks/genie-one/code-execution |
+| Configure secure ADLS data access for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/copy-into/configure-data-access |
 | Generate temporary ADLS credentials for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/copy-into/generate-temporary-credentials |
 | Use temporary credentials with COPY INTO securely | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/copy-into/temporary-credentials |
+| Use COPY INTO with a Databricks service principal | https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/copy-into/tutorial-dbsql |
 | Configure 1Password authentication for Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/1password-event-logs-source-setup |
 | Configure Aha! authentication for Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/aha-source-setup |
 | Understand Akamai WAF roles and connector behavior | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/akamai-waf-faq |
@@ -187,97 +184,108 @@
 | Configure Anthropic authentication for Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/anthropic-source-setup |
 | Configure Anysphere Audit Logs authentication | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/anysphere-audit-logs-source-setup |
 | Configure Anysphere Organization authentication | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/anysphere-organization-source-setup |
-| Configure Atlassian authentication for Databricks connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/atlassian-audit-logs-source-setup |
+| Configure Atlassian authentication for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/atlassian-audit-logs-source-setup |
 | Configure Azure SQL firewall for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/azure-sql-db-firewall |
 | Configure Celigo authentication for Databricks Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/celigo-source-setup |
 | Configure Confluence connections and privileges in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/confluence-connection |
 | Configure OAuth U2M for Confluence ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/confluence-source-setup |
 | Configure CrowdStrike Falcon authentication for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/crowdstrike-falcon-event-stream-source-setup |
 | Create secure Dynamics 365 connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/d365-connection |
-| Configure Parquet-based Dynamics 365 export for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/d365-parquet-source-setup |
-| Configure CSV-based Dynamics 365 export for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/d365-source-setup |
-| Create secure GitHub connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/github-connection |
 | Configure OAuth U2M security for GitHub ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/github-source-setup |
+| Configure GitLab OAuth app for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/gitlab-source-setup |
 | Configure Glean authentication for Lakeflow connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/glean-source-setup |
-| Create secure Gmail connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/gmail-connection |
-| Configure Gmail service account for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/gmail-source-setup |
-| Configure OAuth for Google Ads ingestion in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-ads-source-setup |
-| Plan Google Drive ingestion authentication methods | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-drive-source-setup |
-| Configure OAuth service account for Drive ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-drive-source-setup-service-account |
+| Configure Gmail service account and delegation for ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/gmail-source-setup |
+| Configure OAuth for Google Ads Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-ads-source-setup |
+| Set up Google Drive ingestion authentication methods | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-drive-source-setup |
+| Configure OAuth service account for Google Drive ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-drive-source-setup-service-account |
 | Configure custom OAuth U2M for Google Drive | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-drive-source-setup-u2m |
-| Configure Databricks-managed OAuth U2M for Drive | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-drive-source-setup-u2m-databricks-managed |
-| Create secure LinkedIn Ads connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/linkedin-ads-connection |
-| Create secure Marketo connections in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/marketo-connection |
-| Configure Marketo OAuth M2M authentication | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/marketo-source-setup |
+| Configure Databricks-managed OAuth U2M for Google Drive | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-drive-source-setup-u2m-databricks-managed |
+| Create and secure a Kafka connection in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/kafka-connection |
+| Configure Unity Catalog connection to Apache Kafka | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/kafka-source-setup |
+| Configure LinkedIn Ads as Lakeflow Connect source | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/linkedin-ads-source-setup |
+| Configure Marketo OAuth M2M authentication for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/marketo-source-setup |
 | Create Meta Ads connections in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/meta-ads-connection |
-| Set up Meta Ads OAuth for Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/meta-ads-source-setup |
+| Set up Meta Ads authentication for Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/meta-ads-source-setup |
 | Create secure Microsoft 365 audit connection | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/microsoft-365-connection |
 | Configure Entra auth for Databricks M365 connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/microsoft-365-source-setup |
 | Create secure Monday.com Lakeflow connection | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/monday-com-connection |
 | Configure Monday.com API auth for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/monday-com-source-setup |
-| Create secure MySQL connections in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-connection |
 | Grant MySQL privileges for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-privileges |
 | Create secure Netskope Logs connection | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netskope-logs-connection |
-| Configure Netskope REST API auth for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netskope-logs-source-setup |
-| Configure NetSuite token-based authentication for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netsuite-source-setup |
+| Configure Netskope authentication for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netskope-logs-source-setup |
+| Set up NetSuite token-based auth for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netsuite-source-setup |
 | Configure Notion authentication for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/notion-source-setup |
 | Create secure Okta System Logs connection in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/okta-system-logs-connection |
-| Configure Okta authentication for Databricks connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/okta-system-logs-source-setup |
+| Configure Okta SSWS token for Databricks connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/okta-system-logs-source-setup |
+| Configure custom-managed OAuth U2M for OneDrive ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/onedrive-source-setup-u2m |
+| Configure Databricks-managed OAuth U2M for OneDrive ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/onedrive-source-setup-u2m-databricks-managed |
 | Create secure OpenAI connection in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/openai-connection |
 | Configure OpenAI authentication for Databricks connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/openai-source-setup |
-| Create secure Oracle connections in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/oracle-integrated-connection |
-| Grant Oracle replication user privileges for ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/oracle-privileges |
-| Configure OAuth M2M authentication for Outlook ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/outlook-source-setup |
+| Grant Oracle replication user privileges for Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/oracle-privileges |
+| Configure OAuth M2M auth for Outlook ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/outlook-source-setup |
 | Configure PagerDuty authentication for Databricks connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/pagerduty-source-setup |
-| Create secure PostgreSQL connections in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-connection |
 | Grant PostgreSQL replication user privileges for ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-privileges |
+| Configure Productboard OAuth authentication for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/productboard-source-setup |
+| Create and secure a RabbitMQ connection in Catalog Explorer | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/rabbitmq-connection |
+| Configure Unity Catalog connection to RabbitMQ | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/rabbitmq-source-setup |
+| Configure Reddit Ads OAuth for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/reddit-ads-source-setup |
 | Configure Run-as identities for Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/run-as |
-| Configure SendGrid authentication for Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sendgrid-source-setup |
+| Configure SendGrid authentication for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sendgrid-source-setup |
+| Configure ServiceNow for secure Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/servicenow-source-setup |
+| Configure OAuth security for Salesforce Marketing Cloud ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sfmc-source-setup |
+| Understand SharePoint ingestion authentication methods | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sharepoint-source-setup-overview |
+| Configure custom-managed OAuth for SharePoint ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sharepoint-source-setup-u2m |
+| Configure Databricks-managed OAuth for SharePoint | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sharepoint-source-setup-u2m-databricks-managed |
 | Configure Shopify authentication for Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/shopify-source-setup |
+| Configure Smartsheet OAuth for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/smartsheet-source-setup |
 | Grant SQL Server privileges for Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sql-server-privileges |
 | Configure Square authentication for Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/square-source-setup |
-| Obtain Strac API keys for Databricks authentication | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/strac-source-setup |
+| Obtain and configure Strac API key for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/strac-source-setup |
+| Create TikTok Ads connection in Databricks Catalog | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/tiktok-ads-connection |
+| Configure TikTok Ads authentication for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/tiktok-ads-source-setup |
 | Configure TLS certificate validation for Lakeflow connectors | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/tls-server-certificate-validation |
+| Create Veeva Vault connection in Databricks Catalog | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/veeva-vault-connection |
 | Configure OAuth M2M security for Veeva Vault access | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/veeva-vault-source-setup |
 | Configure secure authentication to Verkada | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/verkada-source-setup |
 | Configure Wiz OAuth authentication for Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/wiz-audit-logs-source-setup |
 | Configure Workday OAuth for activity logging | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/workday-activity-logging-source-setup |
 | Configure authentication from Databricks to Workday HCM | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/workday-hcm-setup |
-| Create secure Zendesk Support connections | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zendesk-support-connection |
-| Configure OAuth authentication for Zendesk Support | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zendesk-support-source-setup |
+| Configure Zendesk OAuth for Azure Databricks ingestion | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zendesk-support-source-setup |
 | Configure Zip connector authentication for Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zip-source-setup |
 | Configure Zoho Books authentication for Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/zoho-books-source-setup |
 | Secure Zerobus Ingest networking and connectivity | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-networking |
 | Configure OAuth sign-on from BI partner tools to Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/configuration |
-| Configure dbt Core SSO with Databricks and Entra ID | https://learn.microsoft.com/en-us/azure/databricks/integrations/configure-oauth-dbt |
-| Configure Databricks SSO from Tableau Server | https://learn.microsoft.com/en-us/azure/databricks/integrations/configure-oauth-tableau |
 | Enable or disable partner OAuth apps in Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/enable-disable-oauth |
 | Configure authentication for Databricks JDBC Driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/authentication |
 | Configure authentication for legacy Simba JDBC Driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc/authentication |
 | Use legacy Databricks JDBC authentication options safely | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc/legacy |
-| Override OAuth token lifetime for partner apps | https://learn.microsoft.com/en-us/azure/databricks/integrations/manage-oauth |
-| Configure authentication for the Databricks ODBC Driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/odbc/authentication |
-| Configure single-use refresh tokens for Databricks partners | https://learn.microsoft.com/en-us/azure/databricks/integrations/single-use-tokens |
-| Run Azure Databricks jobs as Entra service principals | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/run-jobs-with-service-principals |
-| Configure Lakeflow Jobs identities and permissions | https://learn.microsoft.com/en-us/azure/databricks/jobs/privileges |
+| Override OAuth token lifetimes for Databricks partners | https://learn.microsoft.com/en-us/azure/databricks/integrations/manage-oauth |
+| Configure single-use OAuth refresh tokens in Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/single-use-tokens |
+| Configure Lakeflow Jobs to run as Entra service principals | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/run-jobs-with-service-principals |
+| Manage Lakeflow Jobs identities and permissions | https://learn.microsoft.com/en-us/azure/databricks/jobs/privileges |
 | Apply data and AI governance principles with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/data-governance/ |
-| Design Databricks account and identity strategy | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/account-setup |
+| Design Azure Databricks account and identity strategy | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/account-setup |
 | Design Unity Catalog architecture for governed Databricks data | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/deployment-guide/unity-catalog |
 | Apply security, compliance, and privacy principles on Databricks | https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/security-compliance-and-privacy/ |
+| Understand Lakewatch access control with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/lakewatch/admin/access-control/ |
+| Lakewatch access control model in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/lakewatch/admin/access-control/access-control-model |
+| Map Lakewatch roles to Unity Catalog privileges | https://learn.microsoft.com/en-us/azure/databricks/lakewatch/admin/access-control/role-capability-matrix |
+| Set up least-privilege access for Lakewatch | https://learn.microsoft.com/en-us/azure/databricks/lakewatch/admin/access-control/set-up-access-control |
 | Configure AI Functions Unity Catalog permissions | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/ai-functions-uc-permissions |
-| Implement GDPR right-to-be-forgotten in pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/gdpr |
+| Implement GDPR right-to-be-forgotten in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ldp/gdpr |
 | Configure identities and permissions for Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/privileges |
 | Use Unity Catalog security with Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/unity-catalog |
 | Configure authentication for third-party online stores | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/fs-authentication |
 | Configure legacy Feature Store access control | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/workspace-feature-store/access-control |
-| Review compliance and security profiles for Foundation Model APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/compliance |
+| Foundation Model APIs compliance and security profiles | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/compliance |
 | Control access with foundation model UC permissions | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/model-uc-permissions |
+| Manage ML model lifecycle with Unity Catalog security | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/manage-model-lifecycle/ |
 | Meet OpenAI high-risk use mitigation requirements on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/open-ai-mitigation-requirements |
 | Use custom and private Python libraries in Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/private-libraries-model-serving |
 | Configure secure resource access for model serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/store-env-variable-model-serving |
-| Register as a Databricks Marketplace provider and assign roles | https://learn.microsoft.com/en-us/azure/databricks/marketplace/become-provider |
+| Configure Databricks Marketplace provider roles | https://learn.microsoft.com/en-us/azure/databricks/marketplace/become-provider |
 | Govern and redact MLflow traces in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/govern-redact |
-| Control access and collaborate in Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebooks-collaborate |
+| Manage sharing and permissions for Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebooks-collaborate |
 | Configure Lakebase authentication with OAuth or passwords | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/authentication |
 | Configure customer-managed keys for Lakebase data | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/customer-managed-keys |
 | Configure Lakebase data protection and access controls | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/data-protection |
@@ -285,51 +293,53 @@
 | Grant Lakebase project permissions programmatically | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/grant-permissions-programmatically |
 | Grant Lakebase project and Postgres access securely | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/grant-user-access-tutorial |
 | Query HIPAA audit logs in Azure Databricks Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/hipaa-audit-logging |
+| Implement HIPAA-aligned controls for Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/hipaa-compliance |
 | Manage Lakebase project-level permissions | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-project-permissions |
 | Manage Lakebase Postgres roles and permissions | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-roles |
 | Grant Lakebase database permissions with GRANT | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-roles-permissions |
 | Create and manage Lakebase Postgres roles | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/postgres-roles |
-| Configure Azure Private Link for Lakebase traffic | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/private-link |
+| Configure Private Link connectivity for Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/private-link |
 | Set up Postgres roles for Lakebase access | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/roles-permissions |
 | Transfer Postgres object ownership in Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/transfer-object-ownership |
-| Connect custom Databricks apps to Lakebase securely | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/tutorial-databricks-apps-autoscaling |
 | Configure Omnigent identity and access on Databricks | https://learn.microsoft.com/en-us/azure/databricks/omnigent/identity-access |
 | Restrict OpenSharing access with IP allow lists | https://learn.microsoft.com/en-us/azure/databricks/opensharing/access-list |
 | Create OpenSharing recipients in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/opensharing/create-recipient |
 | Enable OIDC federation for OpenSharing recipients | https://learn.microsoft.com/en-us/azure/databricks/opensharing/create-recipient-oidc-fed |
 | Create bearer-token recipients for OpenSharing | https://learn.microsoft.com/en-us/azure/databricks/opensharing/create-recipient-token |
-| Create and manage OpenSharing shares in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/opensharing/create-share |
+| Create and manage OpenSharing Unity Catalog shares | https://learn.microsoft.com/en-us/azure/databricks/opensharing/create-share |
 | Grant and revoke access to OpenSharing shares | https://learn.microsoft.com/en-us/azure/databricks/opensharing/grant-access |
 | Manage OpenSharing recipients and access controls | https://learn.microsoft.com/en-us/azure/databricks/opensharing/manage-recipients |
-| Securely share data behind firewalls with SecureConnect | https://learn.microsoft.com/en-us/azure/databricks/opensharing/secureconnect-provider |
+| Configure SecureConnect for OpenSharing behind firewalls | https://learn.microsoft.com/en-us/azure/databricks/opensharing/secureconnect-provider |
 | Configure firewall egress for Databricks SecureConnect recipients | https://learn.microsoft.com/en-us/azure/databricks/opensharing/secureconnect-recipient |
 | Use M2M OIDC federation for OpenSharing Python clients | https://learn.microsoft.com/en-us/azure/databricks/opensharing/sharing-over-oidc-m2m |
-| Use U2M OIDC federation to access OpenSharing data | https://learn.microsoft.com/en-us/azure/databricks/opensharing/sharing-over-oidc-u2m |
-| Configure Databricks service principals for Power BI M2M | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi/m2m |
-| Create Unity Catalog Power BI connections for orchestration | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi/uc-connect |
+| Access OpenSharing data via U2M OIDC federation | https://learn.microsoft.com/en-us/azure/databricks/opensharing/sharing-over-oidc-u2m |
+| Configure Databricks service principals for Power BI M2M OAuth | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi/m2m |
 | Decrypt data with aes_decrypt in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/aes_decrypt |
 | Encrypt data with aes_encrypt in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/aes_encrypt |
+| Configure Entra ID authentication for SQL Server federation in Databricks | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sql-server-entra |
 | Configure Entra service principals for Databricks Git access | https://learn.microsoft.com/en-us/azure/databricks/repos/automate-with-ms-entra |
 | Authorize Databricks service principals for Git folders | https://learn.microsoft.com/en-us/azure/databricks/repos/automate-with-sp |
-| Configure Databricks Designated Services data residency | https://learn.microsoft.com/en-us/azure/databricks/resources/designated-services |
-| Manage Databricks access control lists for objects | https://learn.microsoft.com/en-us/azure/databricks/security/auth/access-control/ |
+| Configure Git provider credentials for Databricks repos | https://learn.microsoft.com/en-us/azure/databricks/repos/get-access-tokens-from-git-provider |
+| Manage Databricks Designated Services data residency | https://learn.microsoft.com/en-us/azure/databricks/resources/designated-services |
+| Manage Databricks workspace access control lists | https://learn.microsoft.com/en-us/azure/databricks/security/auth/access-control/ |
 | Assign roles for managing Databricks service principals | https://learn.microsoft.com/en-us/azure/databricks/security/auth/access-control/service-principal-acl |
-| Configure permissions for Databricks personal access tokens | https://learn.microsoft.com/en-us/azure/databricks/security/auth/api-access-permissions |
+| Configure Databricks personal access token permissions | https://learn.microsoft.com/en-us/azure/databricks/security/auth/api-access-permissions |
 | Understand default workspace permissions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/auth/default-permissions |
-| Manage Databricks user and group entitlements | https://learn.microsoft.com/en-us/azure/databricks/security/auth/entitlements |
+| Manage Azure Databricks workspace entitlements | https://learn.microsoft.com/en-us/azure/databricks/security/auth/entitlements |
 | Configure just-in-time user provisioning in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/auth/jit |
 | Configure role-based access control in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/ |
-| Use Databricks RBAC together with Unity Catalog ABAC | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/abac-interaction |
+| Use Databricks RBAC with Unity Catalog ABAC | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/abac-interaction |
 | Implement exclusive access patterns with Databricks RBAC | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/exclusive-access |
 | Understand Azure Databricks RBAC feature limitations | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/limitations |
-| Control sharing of Databricks workspace assets | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/sharing-controls |
-| Assume and switch roles in Databricks RBAC | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/switch-roles |
-| Migrate Azure Databricks workspace entitlement behavior | https://learn.microsoft.com/en-us/azure/databricks/security/auth/system-group-entitlements-migration |
+| Control sharing of Databricks workspace assets by roles | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/sharing-controls |
+| Assume and switch roles in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/auth/rbac/switch-roles |
+| Migrate Azure Databricks workspace entitlement model | https://learn.microsoft.com/en-us/azure/databricks/security/auth/system-group-entitlements-migration |
 | Configure customer-managed keys for Unity Catalog encryption | https://learn.microsoft.com/en-us/azure/databricks/security/keys/cmek-unity-catalog |
 | Configure HSM-backed customer-managed keys for Databricks managed disks | https://learn.microsoft.com/en-us/azure/databricks/security/keys/cmk-managed-disks-azure/cmk-hsm-managed-disks-azure |
 | Configure customer-managed keys for Databricks Azure managed disks | https://learn.microsoft.com/en-us/azure/databricks/security/keys/cmk-managed-disks-azure/cmk-managed-disks-azure |
 | Enable HSM customer-managed keys for Databricks managed services | https://learn.microsoft.com/en-us/azure/databricks/security/keys/cmk-managed-services-azure/cmk-hsm-managed-services-azure |
 | Enable customer-managed keys for Databricks managed services | https://learn.microsoft.com/en-us/azure/databricks/security/keys/cmk-managed-services-azure/customer-managed-key-managed-services-azure |
+| Use customer-managed keys for Databricks encryption | https://learn.microsoft.com/en-us/azure/databricks/security/keys/customer-managed-keys |
 | Configure DBFS customer-managed keys using Azure CLI | https://learn.microsoft.com/en-us/azure/databricks/security/keys/customer-managed-keys-dbfs/cmk-dbfs-azure-cli |
 | Configure DBFS customer-managed keys using Azure portal | https://learn.microsoft.com/en-us/azure/databricks/security/keys/customer-managed-keys-dbfs/cmk-dbfs-azure-portal |
 | Configure DBFS customer-managed keys using PowerShell | https://learn.microsoft.com/en-us/azure/databricks/security/keys/customer-managed-keys-dbfs/cmk-dbfs-powershell |
@@ -339,53 +349,44 @@
 | Enable double encryption for Databricks DBFS root | https://learn.microsoft.com/en-us/azure/databricks/security/keys/double-encryption |
 | Configure KMS-based encryption for S3 access in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/keys/kms-s3 |
 | Manage encryption for Databricks SQL queries and history | https://learn.microsoft.com/en-us/azure/databricks/security/keys/sql-encryption |
-| Secure classic compute plane networking in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/ |
+| Secure classic Databricks compute plane networking | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/ |
 | Harden intra-VNet NSG rules for Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/harden-nsg-rule-100 |
 | Connect Azure Databricks to on-premises networks securely | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/on-prem-network |
-| Configure Private Link for Databricks classic compute | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/private-link-standard |
-| Enable secure cluster connectivity for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/secure-cluster-connectivity |
-| Restrict Databricks classic compute with VNet service endpoints | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/service-endpoints |
-| Deploy Azure Databricks with VNet injection networking | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/vnet-inject |
+| Configure Private Link for classic Databricks compute | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/private-link-standard |
+| Enable secure cluster connectivity (no public IP) in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/secure-cluster-connectivity |
+| Configure VNet service endpoint policies for Databricks storage | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/service-endpoints |
 | Configure data exfiltration protection for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/data-exfiltration-protection/ |
 | Secure user access to Azure Databricks front-end | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/ |
-| Configure context-based ingress control for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/context-based-ingress |
-| Configure cross-workspace network access for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/cross-workspace-access |
-| Configure inbound Private Link for Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/front-end-private-connect |
-| Configure inbound Private Link for Databricks account resources | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/front-end-private-connect-account |
-| Configure account console IP access lists for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/ip-access-list-account |
+| Configure cross-workspace network access in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/cross-workspace-access |
+| Configure account-level IP access lists for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/ip-access-list-account |
+| Configure IP access lists for Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/ip-access-list-workspace |
 | Configure account-level context-based ingress policies | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/manage-ingress-account |
-| Manage workspace-level context-based ingress policies | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/manage-ingress-workspace |
-| Secure performance-intensive Databricks services with Private Link | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/service-direct-privatelink |
-| Configure serverless compute networking for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/ |
-| Manage serverless egress network policies in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/manage-network-policies |
-| Understand and configure Databricks serverless egress control | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/network-policies |
-| Use private network gateway with Databricks serverless compute | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/private-network-gateway |
+| Manage Databricks workspace context-based ingress policies | https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/manage-ingress-workspace |
+| Secure networking for Databricks serverless compute plane | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/ |
+| Manage network policies for Databricks serverless egress | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/manage-network-policies |
+| Configure serverless egress control for Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/network-policies |
 | Configure firewalls for Databricks serverless compute access | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/serverless-firewall-config |
-| Configure SSH reverse tunnels for Databricks to on-premises | https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/ssh-reverse-tunnel |
 | Enable firewall rules for Databricks workspace storage | https://learn.microsoft.com/en-us/azure/databricks/security/network/storage/firewall-support |
-| Apply C5 compliance controls in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/c5 |
-| Configure Azure Databricks for Canada Protected B | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/cccs-medium-protected-b |
-| Configure enhanced security and compliance in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/enhanced-security-compliance |
+| Configure C5 compliance controls in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/c5 |
+| Implement Canada Protected B controls in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/cccs-medium-protected-b |
 | Enable enhanced security monitoring in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/enhanced-security-monitoring |
-| Enable HIPAA compliance controls in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/hipaa |
-| Use HITRUST compliance profile in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/hitrust |
-| Configure Azure Databricks for IRAP compliance | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/irap |
-| Apply ISMAP compliance controls in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/ismap |
-| Implement K-FSI compliance controls in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/k-fsi |
-| Configure Azure Databricks for PCI DSS v4.0 | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/pci |
-| Configure Azure Databricks compliance security profile | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/security-profile |
-| Enable TISAX compliance controls in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/tisax |
-| Apply UK Cyber Essentials Plus controls in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/uk-cyber-essentials-plus |
-| Configure external secrets in Unity Catalog with Key Vault | https://learn.microsoft.com/en-us/azure/databricks/security/secrets/configure-external-secrets |
+| Configure Databricks for HIPAA and PHI data | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/hipaa |
+| Enable HITRUST compliance controls in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/hitrust |
+| Use IRAP compliance controls in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/irap |
+| Configure ISMAP compliance for Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/ismap |
+| Apply Korean K-FSI compliance controls in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/k-fsi |
+| Configure Databricks for PCI DSS v4.0 compliance | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/pci |
+| Apply compliance security profile in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/security-profile |
+| Implement TISAX compliance controls in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/tisax |
+| Use UK Cyber Essentials Plus controls in Databricks | https://learn.microsoft.com/en-us/azure/databricks/security/privacy/uk-cyber-essentials-plus |
 | Use external secret managers with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/security/secrets/external-secrets |
-| Manage and secure secrets in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/security/secrets/unity-catalog-secrets |
+| Manage and govern secrets in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/security/secrets/unity-catalog-secrets |
 | Decrypt AES-encrypted data in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/aes_decrypt |
 | Encrypt data with AES in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/aes_encrypt |
 | Control OpenSharing access with current_recipient properties | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/current_recipient |
 | Check Databricks account-level group membership in SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/is_account_group_member |
 | Evaluate Databricks workspace and account group membership | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/is_member |
 | List Databricks secrets with list_secrets function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/list_secrets |
-| Use Databricks SQL secret function for secure values | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/secret |
 | Retrieve current Databricks SQL session user | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/session_user |
 | View catalog privileges via Databricks information schema | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/information-schema/catalog_privileges |
 | Inspect column masking metadata in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/information-schema/column_masks |
@@ -415,11 +416,12 @@
 | Determine authorized and session users in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-authorized-user |
 | Configure external locations in Databricks Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-external-locations |
 | Create and manage external tables in Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-external-tables |
+| Use IDENTIFIER clause for safe SQL parameterization | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-names-identifier-clause |
 | Understand principals in Databricks SQL security model | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-principal |
 | Manage Unity Catalog privileges and securable objects | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-privileges |
 | Manage Hive metastore privileges and securable objects | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-privileges-hms |
 | Configure storage credentials for external access in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-storage-credentials |
-| Use DESCRIBE POLICY for Databricks security policies | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-describe-policy |
+| Describe Unity Catalog policies with DESCRIBE POLICY | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-describe-policy |
 | Show accessible credentials in Databricks Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-credentials |
 | Show governed tags in Databricks Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-governed-tags |
 | Show groups and memberships in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-groups |
@@ -451,9 +453,9 @@
 | Drop tables and manage privileges in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-drop-table |
 | Drop Databricks views and remove catalog metadata | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-drop-view |
 | Configure row filter functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-row-filter |
-| Set Unity Catalog tags with required privileges | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-set-tag |
-| Unset Unity Catalog tags and preview constraints | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-unset-tag |
+| Set Unity Catalog tags with Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-set-tag |
+| Remove Unity Catalog tags with Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-unset-tag |
 | Use Unity Catalog governance with Structured Streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/unity-catalog |
-| Understand Unity Catalog view types and permissions | https://learn.microsoft.com/en-us/azure/databricks/views/ |
-| Implement dynamic views for fine-grained access control | https://learn.microsoft.com/en-us/azure/databricks/views/dynamic |
+| Manage access and lifecycle of metric views | https://learn.microsoft.com/en-us/azure/databricks/uc-semantics/metric-views/manage |
+| Create Unity Catalog dynamic views for fine-grained access | https://learn.microsoft.com/en-us/azure/databricks/views/dynamic |
 | Configure Unity Catalog volume privileges and permissions | https://learn.microsoft.com/en-us/azure/databricks/volumes/privileges |

@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 212
+- **Updated Pages**: 0
+- **Unchanged**: 215
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
 
@@ -72,15 +72,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | *(Unclassified)* | 30 | 14.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/)
-  - Updated: 2026-07-10T17:20:00.000Z → 2026-09-30T22:11:00.000Z
-- [Windows agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/windows)
-  - Updated: 2026-07-10T05:18:00.000Z → 2026-09-30T22:11:00.000Z
-- [Linux agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/linux)
-  - Updated: 2026-06-23T17:23:00.000Z → 2026-09-30T22:11:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L192-L217 | Patterns and reference architectures for AI agents, change feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL. |
 | Limits & Quotas | L218-L252 | Limits, quotas, and behaviors for Cosmos DB throughput, partitions, backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache, and PostgreSQL clusters. |
 | Security | L253-L319 | Securing Cosmos DB across APIs (NoSQL, MongoDB, Cassandra, Gremlin, Table, PostgreSQL): identity/RBAC, networking, encryption/CMK, auditing, policies, TLS, data masking, and Defender protections. |
-| Configuration | L320-L446 | Configuring and tuning Azure Cosmos DB and its APIs (NoSQL, Mongo, Cassandra, Gremlin, Table, PostgreSQL): throughput, indexing, backup/restore, monitoring, SDK performance, fleets, emulators, and HA. |
-| Integrations & Coding Patterns | L447-L573 | SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo, Gremlin, and PostgreSQL APIs. |
-| Deployment | L574-L599 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
+| Configuration | L320-L448 | Configuring and tuning Cosmos DB and its APIs (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL): throughput, indexing, backup/restore, fleets, monitoring, SDK performance, emulators, and alerts. |
+| Integrations & Coding Patterns | L449-L572 | SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo, Gremlin, and PostgreSQL APIs. |
+| Deployment | L573-L598 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -327,7 +327,7 @@ This skill requires **network access** to fetch documentation content:
 | Reconfigure Azure Cosmos DB container partition key | https://learn.microsoft.com/en-us/azure/cosmos-db/change-partition-key |
 | Configure resource model for Cosmos DB point-in-time restore | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-resource-model |
 | Configure Azure Monitor alerts for Cosmos DB metrics and logs | https://learn.microsoft.com/en-us/azure/cosmos-db/create-alerts |
-| Configure and run Azure Cosmos DB Linux-based emulator | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux |
+| Configure and run Azure Cosmos DB Linux emulator | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux |
 | Use Windows Cosmos DB emulator command-line and PowerShell | https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-windows-arguments |
 | Use Fleet Analytics to monitor Cosmos DB usage and cost | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-analytics |
 | Reference schema for Cosmos DB Fleet Analytics tables | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-analytics-schema-reference |
@@ -337,6 +337,7 @@ This skill requires **network access** to fetch documentation content:
 | Access and use system properties in Cosmos DB Gremlin | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/access-system-properties |
 | Interpret execution profile metrics in Cosmos DB Gremlin | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/reference-execution-profile |
 | Understand Gremlin feature support in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/support |
+| Configure and use distributed transactions in Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-and-use-distributed-transactions |
 | Configure Azure Functions trigger for Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-cosmos-db-trigger |
 | Configure global secondary indexes in Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-global-secondary-indexes |
 | Configure Cosmos DB integrated cache and gateway | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-integrated-cache |
@@ -419,6 +420,7 @@ This skill requires **network access** to fetch documentation content:
 | Restore Cosmos DB accounts using continuous backup | https://learn.microsoft.com/en-us/azure/cosmos-db/restore-account-continuous-backup |
 | Configure resource model for Cosmos DB same-account restore | https://learn.microsoft.com/en-us/azure/cosmos-db/restore-in-account-continuous-backup-resource-model |
 | Deploy Azure Cosmos DB accounts with ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-resource-manager-templates |
+| Reference Azure Cosmos DB .NET SDK versions and changes | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3 |
 | Apply Azure Cosmos DB Go SDK release updates | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-go |
 | Maintain and migrate Azure Cosmos DB Java Async v2 | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-async-v2 |
 | Configure Spring Data Azure Cosmos DB v2 | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-spring-data-v2 |
@@ -479,7 +481,6 @@ This skill requires **network access** to fetch documentation content:
 | Quickstart: Connect .NET Gremlin client to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/quickstart-dotnet |
 | Quickstart: Connect Node.js Gremlin client to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/quickstart-nodejs |
 | Quickstart: Connect Python Gremlin client to Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/quickstart-python |
-| Use distributed transactions with Azure Cosmos DB .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-and-use-distributed-transactions |
 | Convert Cosmos DB .NET SDK session token formats | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-convert-session-token |
 | Create Azure Cosmos DB containers via portal, CLI, and SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-container |
 | Delete Azure Cosmos DB items by partition key value | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-delete-by-partition-key |
@@ -546,7 +547,6 @@ This skill requires **network access** to fetch documentation content:
 | Create Cosmos DB vector index with Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-java |
 | Create Cosmos DB vector index with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-python |
 | Create Cosmos DB vector index with TypeScript SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript |
-| Use Azure Cosmos DB with .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet |
 | Use Azure Cosmos DB with Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java |
 | Use Azure Cosmos DB with Node.js SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs |
 | Use Azure Cosmos DB with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-python |
@@ -561,7 +561,6 @@ This skill requires **network access** to fetch documentation content:
 | Scale Cosmos DB throughput on a schedule with Functions | https://learn.microsoft.com/en-us/azure/cosmos-db/scale-on-schedule |
 | Bulk Executor .NET SDK reference for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-bulk-executor-v2 |
 | .NET Change Feed Processor SDK reference for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-change-feed-v2 |
-| .NET SDK v3 usage and resources for Cosmos DB NoSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3 |
 | Legacy Java SDK v2 reference and retirement for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-v2 |
 | Node.js SDK usage and release notes for Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-nodejs |
 | Use Cosmos DB as ASP.NET session state and cache provider | https://learn.microsoft.com/en-us/azure/cosmos-db/session-state-and-caching-provider |

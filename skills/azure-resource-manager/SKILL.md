@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries, or securing with Key Vault/RBAC, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries, securing with Key Vault/RBAC, or handling quotas, and other Azure Resource Manager related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -24,11 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L136 | Diagnosing and fixing Azure Bicep/ARM deployment and template errors, including specific BCP codes, decorator and type issues, resource name/scope problems, and common Azure policy/SKU/region failures. |
-| Best Practices | L137-L189 | Best practices for authoring, linting, validating, and testing Bicep/ARM templates and scripts, including locations, types, dependencies, resource IDs, versions, and custom endpoints. |
-| Decision Making | L190-L203 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
-| Architecture & Design Patterns | L204-L211 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
-| Limits & Quotas | L212-L241 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
+| Troubleshooting | L37-L137 | Diagnosing and fixing Bicep and ARM deployment issues: compiler/diagnostic codes, decorators, scopes, resource/type/name errors, policy/quota/SKU failures, and common Azure deployment failures. |
+| Best Practices | L138-L190 | Best practices for authoring, linting, validating, and testing Bicep/ARM templates and scripts, including locations, types, dependencies, resource IDs, versions, and custom endpoints. |
+| Decision Making | L191-L204 | Guidance on migration and relocation decisions: moving from classic/ASM to ARM/Bicep, blueprint-to-stack migration, regional move planning, resource move/tag support, and relocation strategies. |
+| Architecture & Design Patterns | L205-L212 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
+| Limits & Quotas | L213-L241 | Limits, quotas, and constraints for ARM/Bicep deployments: resource counts, parameters/outputs, naming/tag rules, throttling, subscription/RG limits, history cleanup, and quota error troubleshooting. |
 | Security | L242-L271 | Securing ARM/Bicep deployments: secrets handling, secure parameters, cross-tenant auth, Private Link, RBAC, locks, policy/regulatory mapping, and Key Vault integration. |
 | Configuration | L272-L331 | Configuring and deploying Azure resources with Bicep and ARM templates, including scopes, parameters, tags, policies, custom providers, monitoring, and Azure portal form-based deployment UI. |
 | Integrations & Coding Patterns | L332-L394 | Using Bicep/ARM functions, operators, and CLI/SDK/REST integrations to programmatically deploy, manage, tag, and query Azure resources, including advanced patterns and tooling integration. |
@@ -129,6 +129,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve location ineligible errors for Azure regions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-region-access-policy |
 | Fix resource provider registration errors in ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-register-resource-provider |
 | Fix reserved resource name errors in Azure | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-reserved-resource-name |
+| Diagnose and fix Azure Resource Manager quota errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-resource-quota |
 | Fix SKU not available errors in Azure deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-sku-not-available |
 | Fix storage account name errors in ARM deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-storage-account-name |
 | Find ARM and Bicep deployment error codes | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/find-error-code |
@@ -237,7 +238,6 @@ This skill requires **network access** to fetch documentation content:
 | Use ARM template expressions and syntax rules | https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-expressions |
 | Resolve deployment quota exceeded errors in ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/deployment-quota-exceeded |
 | Resolve ARM job size exceeded deployment errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-job-size-exceeded |
-| Resolve resource quota errors in ARM deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-resource-quota |
 
 ### Security
 | Topic | URL |

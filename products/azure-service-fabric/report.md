@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 405
+- **Updated Pages**: 0
+- **Unchanged**: 406
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Dedicated Hosts with managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-dedicated-hosts)
-  - Updated: 2026-03-22T08:00:00.000Z → 2026-09-25T08:00:00.000Z
 
 ## Classified Pages
 

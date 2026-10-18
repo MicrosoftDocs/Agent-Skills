@@ -34,6 +34,7 @@
 | Configure per-disk resiliency behavior for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-per-disk-resiliency |
 | Enable and manage per-disk resiliency on managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-per-disk-resiliency-configure |
 | Change performance tiers for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-tiers |
+| Configure and use Azure shared managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared |
 | Enable and configure Azure managed shared disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable |
 | Configure atomic writes to prevent torn writes on Azure disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention |
 | Check supported OS images for Azure NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface |
@@ -72,6 +73,7 @@
 | Identify Azure-hosted VMs via SMBIOS asset tag | https://learn.microsoft.com/en-us/azure/virtual-machines/identify-azure-vm-from-guest |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
+| Install and configure AMD GPU drivers on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
 | Create and upload CentOS-based VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
 | Create and encrypt Linux VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-cli-quickstart |
@@ -102,6 +104,7 @@
 | Configure and enable NVMe on Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview |
 | Select and use Azure HPC/AI VM images | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/azure-hpc-vm-images |
 | Configure InfiniBand and RDMA on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/setup-infiniband |
+| Configure and use soft delete in Azure Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/soft-delete-gallery |
 | Create and store SSH keys with Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-azure-cli |
 | Configure and manage SSH keys in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-portal |
 | List, update, and delete Compute Gallery resources | https://learn.microsoft.com/en-us/azure/virtual-machines/update-image-resources |

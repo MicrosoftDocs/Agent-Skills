@@ -1,9 +1,9 @@
 ---
 name: azure-managed-redis
-description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Redis tiers, Entra ID auth, clustering/sharding, persistence/geo-replication, or ARM/Bicep deployments, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
+description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Redis tiers, clustering/sharding, Entra ID auth, geo-replication, or ARM/Bicep deployments, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Redis Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L87-L96 | Securing Azure Managed Redis: ACL-based access, Entra ID auth, disk encryption with CMK, TLS configuration, security best practices, and enforcing compliance via Azure Policy. |
 | Configuration | L97-L116 | Configuring Azure Managed Redis instances: settings, scaling, persistence, modules, networking, geo-replication, maintenance, monitoring, alerts, metrics, logs, and admin via CLI/PowerShell. |
 | Integrations & Coding Patterns | L117-L130 | Client integration patterns for Azure Managed Redis: language SDKs (.NET, Go, Node, Python), Entra ID auth, ASP.NET caching, data import/export, tools, and semantic routing. |
-| Deployment | L131-L139 | Guides for migrating to Azure Managed Redis (self-service, tier upgrades, Redis Enterprise conversion) and deploying new instances using ARM templates or Bicep. |
+| Deployment | L131-L139 | Migrating Redis workloads to Azure Managed Redis (self-service, tooling-based, Redis Enterprise) and deploying new instances via ARM templates and Bicep. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -134,6 +134,6 @@ This skill requires **network access** to fetch documentation content:
 | Execute self-service migration to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-self-service |
 | Use Azure migration tooling for Redis tier upgrade | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-with-tooling |
 | Execute migration from Redis Enterprise to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-self-service |
-| Use tooling to convert Redis Enterprise to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling |
+| Use Azure tooling to migrate Redis Enterprise to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling |
 | Provision Azure Managed Redis with ARM templates | https://learn.microsoft.com/en-us/azure/redis/redis-cache-arm-provision |
 | Deploy Azure Managed Redis using Bicep | https://learn.microsoft.com/en-us/azure/redis/redis-cache-bicep-provision |

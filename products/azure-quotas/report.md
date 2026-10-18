@@ -1,20 +1,18 @@
 ---
-generated_at: '2026-06-21'
+generated_at: '2026-10-18'
 category_descriptions:
-  limits-quotas: How to request and manage per-region Azure Storage account quota
-    increases, including limits, prerequisites, and support request steps.
+  limits-quotas: How to view current Azure Storage account limits and request quota
+    increases (capacity, IOPS, throughput) via portal, CLI, or support.
 skill_description: Expert knowledge for Azure Quotas development including limits
-  & quotas. Use when requesting per-region Storage account quota increases, checking
-  limits, or filing Azure support requests, and other Azure Quotas related development
-  tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor
-  (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use
-  azure-resource-manager).
-use_when: Use when requesting per-region Storage account quota increases, checking
-  limits, or filing Azure support requests, and other Azure Quotas related development
+  & quotas. Use when checking storage account capacity, IOPS, throughput, portal views,
+  or CLI-based quota increase requests, and other Azure Quotas related development
+  tasks. Not for Azure Monitor (use azure-monitor), Azure Resource Manager (use azure-resource-manager),
+  Azure Policy (use azure-policy).
+use_when: Use when checking storage account capacity, IOPS, throughput, portal views,
+  or CLI-based quota increase requests, and other Azure Quotas related development
   tasks.
-confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
-  Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager
-  (use azure-resource-manager).
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resource Manager
+  (use azure-resource-manager), Azure Policy (use azure-policy).
 ---
 # Azure Quotas Crawl Report
 
@@ -28,8 +26,8 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quotas/azure-quotas.csv`
 
@@ -42,11 +40,16 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ## Changes
 
+### Updated Pages
+
+- [Increase storage account quotas](https://learn.microsoft.com/en-us/azure/quotas/storage-account-quota-requests)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-16T22:13:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Increase storage account quotas](https://learn.microsoft.com/en-us/azure/quotas/storage-account-quota-requests) | limits-quotas | 0.70 | Explicitly mentions increasing Storage account quota from 250 to 500 per subscription per region, which is a concrete numeric limit change that qualifies as expert limits/quotas knowledge. |
+| [Increase storage account quotas](https://learn.microsoft.com/en-us/azure/quotas/storage-account-quota-requests) | limits-quotas | 0.78 | The page is specifically about increasing Azure Storage account quotas, including concrete numeric limits such as raising the per-region storage account quota from 250 to 500 and how those limits apply to standard and premium accounts. It focuses on viewing current quotas and requesting increases, which is expert, product-specific limits/quotas knowledge rather than generic conceptual guidance. |
 
 ## Unclassified Pages
 

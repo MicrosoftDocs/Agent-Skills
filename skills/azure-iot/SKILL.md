@@ -1,14 +1,14 @@
 ---
 name: azure-iot
-description: Expert knowledge for Azure IoT development including decision making, architecture & design patterns, and configuration. Use when managing Azure Device Registry X.509 PKI, ADR policies, IoT Hub cert revocation, or device schema namespaces, and other Azure IoT related development tasks. Not for Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Defender For Iot (use azure-defender-for-iot).
+description: Expert knowledge for Azure IoT development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when managing Device Registry namespaces, device certs/CAs, fleet config, IoT SDK connectivity, or software updates, and other Azure IoT related development tasks. Not for Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Skill
 
-This skill provides expert guidance for Azure IoT. Covers decision making, architecture & design patterns, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure IoT. Covers best practices, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,26 +24,49 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L31-L36 | Guidance on designing Azure Device Registry namespaces and schema registries, including structure, organization, and planning for IoT device data models and metadata. |
-| Architecture & Design Patterns | L37-L42 | Designing certificate lifecycle flows for Azure Device Registry and IoT Hub, including issuance, renewal planning, automation, and minimizing downtime for IoT device certificates |
-| Configuration | L43-L49 | Configuring Azure Device Registry for X.509 PKI: setting up credentials, creating ADR policies with Microsoft or external root CAs, and revoking certificates/policies for IoT Hub. |
+| Best Practices | L33-L38 | Designing Azure Device Registry namespaces and schema registries, including structure, naming, isolation, versioning, and governance best practices for large-scale IoT solutions |
+| Security | L39-L52 | Managing IoT device certificates and CAs in Azure: issuance, renewal, revocation, CA hierarchy, namespaces/security boundaries, and configuring Microsoft or external CAs via Device Registry. |
+| Configuration | L53-L62 | Configuring Azure Device Registry for fleets: namespaces/dependencies, device groups, enabling/disabling devices, importing updates, and running fleet-scale software update jobs. |
+| Integrations & Coding Patterns | L63-L67 | Using unified Azure IoT SDKs to connect devices to Azure Device Registry and IoT Hub, including setup, authentication, and coding patterns for device connectivity. |
+| Deployment | L68-L72 | Deploying and managing software updates to IoT devices via Device Registry, including onboarding updates and targeting specific device groups and namespaces. |
 
-### Decision Making
+### Best Practices
 | Topic | URL |
 |-------|-----|
-| Design and choose Azure Device Registry namespaces | https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-namespace-guidance |
-| Plan Azure Device Registry schema registries for IoT | https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-schema-registry-guidance |
+| Design Azure Device Registry namespaces effectively | https://learn.microsoft.com/en-us/azure/iot/device-registry/best-practices-namespaces |
+| Design Azure Device Registry schema registries | https://learn.microsoft.com/en-us/azure/iot/device-registry/best-practices-schema-registries |
 
-### Architecture & Design Patterns
+### Security
 | Topic | URL |
 |-------|-----|
-| Understand certificate issuance flow in ADR and IoT Hub | https://learn.microsoft.com/en-us/azure/iot/concept-certificate-issuance |
-| Plan and execute certificate renewal for IoT devices | https://learn.microsoft.com/en-us/azure/iot/concept-certificate-renewal |
+| Understand device certificate issuance in Azure IoT | https://learn.microsoft.com/en-us/azure/iot/concept-certificate-issuance |
+| Manage IoT device certificate renewal in Azure IoT | https://learn.microsoft.com/en-us/azure/iot/concept-certificate-renewal |
+| Understand Azure Device Registry CA hierarchy | https://learn.microsoft.com/en-us/azure/iot/concept-managed-ca-hierarchy |
+| Revoke IoT certificates and manage policies in Device Registry | https://learn.microsoft.com/en-us/azure/iot/concepts-certificate-policy-management |
+| Understand Azure Device Registry namespaces and security boundaries | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-namespaces |
+| Create and manage certificate policies for IoT devices | https://learn.microsoft.com/en-us/azure/iot/how-to-create-edit-certificate-policy |
+| Set up Microsoft-managed root and intermediate CAs | https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy |
+| Configure external certificate authorities for Device Registry | https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy-external-certificate |
+| Key concepts for Azure IoT certificate management | https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts |
+| Manage IoT device certificates with Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-overview |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Azure Device Registry credential for X.509 PKI | https://learn.microsoft.com/en-us/azure/iot/how-to-configure-credential |
-| Create policy with Microsoft root CA in ADR | https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy |
-| Configure ADR policy with external root CA | https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy-external-certificate |
-| Revoke certificates and delete ADR policies for IoT Hub | https://learn.microsoft.com/en-us/azure/iot/how-to-revoke-certificate-delete-policy |
+| Use Azure Device Registry groups for fleet targeting | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-groups |
+| Run fleet-scale jobs in Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-jobs |
+| Manage software updates with Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-software-updates |
+| Set up Azure Device Registry namespaces and dependencies | https://learn.microsoft.com/en-us/azure/iot/device-registry/get-started-azure-device-registry |
+| Disable or enable IoT devices in Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-disable-enable-device |
+| Import software updates into an Azure Device Registry namespace | https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-import-software-update |
+
+### Integrations & Coding Patterns
+| Topic | URL |
+|-------|-----|
+| Use unified Azure IoT SDKs with Device Registry and IoT Hub | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-unified-iot-sdks |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Deploy onboarding software updates to Device Registry namespaces | https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-deploy-onboarding-update-namespace |
+| Deploy software updates to IoT device groups via Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-deploy-software-update-group |

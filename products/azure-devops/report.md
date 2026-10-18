@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   configuration: 'Configuring Azure DevOps/Server: managed pools, networks, scaling,
     notifications, auditing, work item/process customization, Analytics/OData, dashboards,
@@ -44,16 +44,16 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 
 ## Summary
 
-- **Total Pages**: 1002
-- **Fetched**: 1002
+- **Total Pages**: 1003
+- **Fetched**: 1003
 - **Fetch Failed**: 0
 - **Classified**: 257
-- **Unclassified**: 745
+- **Unclassified**: 746
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 2
-- **Unchanged**: 996
+- **New Pages**: 1
+- **Updated Pages**: 4
+- **Unchanged**: 998
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -70,23 +70,24 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | limits-quotas | 12 | 1.2% |
 | security | 54 | 5.4% |
 | troubleshooting | 14 | 1.4% |
-| *(Unclassified)* | 745 | 74.4% |
+| *(Unclassified)* | 746 | 74.4% |
 
 ## Changes
 
 ### New Pages
 
-- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-280-update)
-- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/repos/sprint-280-update)
-- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/testplans/sprint-280-update)
-- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/ghazdo/sprint-280-update)
+- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-280-update)
 
 ### Updated Pages
 
-- [Configure provisioning scripts](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-provisioning-scripts?view=azure-devops)
-  - Updated: 2026-09-11T20:59:00.000Z → 2026-09-30T08:00:00.000Z
-- [Released features](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline-released)
-  - Updated: 2026-09-04T08:00:00.000Z → 2026-09-24T08:00:00.000Z
+- [Roadmap](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline)
+  - Updated: 2026-08-05T08:00:00.000Z → 2026-10-14T22:06:00.000Z
+- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-280-update)
+  - Updated: 2026-10-02T22:04:00.000Z → 2026-10-05T21:42:00.000Z
+- [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops)
+  - Updated: 2026-09-10T08:00:00.000Z → 2026-10-13T08:00:00.000Z
+- [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops)
+  - Updated: 2026-09-10T22:20:00.000Z → 2026-10-13T19:41:00.000Z
 
 ## Classified Pages
 
@@ -371,7 +372,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019-sha?view=azure-devops) | 0.40 | Contains SHA-1 hashes for 2019 ISO files; these are file integrity values, not reusable expert knowledge such as limits, configuration options, or troubleshooting procedures. |
 | [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2020-sha?view=azure-devops) | 0.40 | Page provides SHA-1 hashes for 2020 ISO downloads; while specific, these are static checksums and do not fit any expert-knowledge sub-skill categories like limits, configuration, or troubleshooting. |
 | [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2022-sha?view=azure-devops) | 0.40 | Page lists SHA-1/SHA-256 hashes for Azure DevOps 2022 downloads and a generic Get-FileHash usage; these are integrity values, not product configuration, limits, or troubleshooting content as defined by the sub-skill types. |
-| [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops) | 0.40 | Page provides SHA-256 hashes for downloads, which are specific values but not within any defined sub-skill type (no limits, configs, troubleshooting mappings, or decision guidance). |
+| [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops) | 0.40 | Page provides SHA-256 hashes for specific Azure DevOps Server downloads, which are essentially static file integrity values rather than reusable product knowledge like limits, configs, or troubleshooting mappings; does not fit any defined sub-skill category. |
 | [Sprint burndown](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-sprintburndown?view=azure-devops) | 0.40 | Sprint burndown sample report; includes example queries and charts but no product-specific limits, configuration parameter tables, or troubleshooting mappings. |
 | [View wiki history and revert](https://learn.microsoft.com/en-us/azure/devops/project/wiki/wiki-view-history?view=azure-devops) | 0.40 | Covers viewing wiki page history and reverting changes; mostly UI-driven without detailed error codes, limits, or configuration matrices. |
 | [August 12](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-208-update) | 0.35 | Hosted image updates and brownout schedule; dates/versions are operational announcements, not configuration or quota references. |
@@ -434,10 +435,10 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [October 1](https://learn.microsoft.com/en-us/azure/devops/release-notes/2018/sprint-141-update) | 0.30 | Sprint 141 release notes mention compliance and security validations conceptually; they lack specific RBAC roles, scopes, or security config parameters. |
 | [October 16](https://learn.microsoft.com/en-us/azure/devops/release-notes/2024/sprint-246-update) | 0.30 | Describes improved service connection creation and markdown rendering; likely procedural/UX-focused rather than a structured config reference. |
 | [October 19](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-194-update) | 0.30 | Mentions default deny for protected resources and neutral GitHub status; likely policy/behavior change but not detailed config tables or error mappings. |
-| [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-280-update) | 0.30 | Sprint release notes summarize new capabilities (Copilot Autofix, EPSS data, code review effort levels) but are typically descriptive rather than containing detailed limits, configuration parameter tables, or error-resolution mappings required for expert-knowledge classification. |
+| [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-280-update) | 0.30 | Sprint release notes typically describe new features and changes at a high level without structured limits, configuration tables, error-code troubleshooting, or decision matrices as defined by the sub-skill types. This page is primarily update/announcement content rather than a stable reference of expert knowledge. |
 | [Open bugs](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-openbugs?view=azure-devops) | 0.30 | Sample report for listing open bugs/user stories; provides example queries but not in the form of configuration matrices or product-specific best-practice tables. |
 | [Organization management overview](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/organization-management?view=azure-devops) | 0.30 | General organization management overview; mostly conceptual and navigational without detailed limits, config matrices, or error mappings. |
-| [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops) | 0.30 | Release notes summary/landing page; description does not indicate detailed limits, configs, error codes, or other structured expert data per the defined categories. |
+| [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops) | 0.30 | Release notes summary/landing page; description indicates high-level links to requirements, downloads, and general release info without detailed limits, configs, error codes, or other structured expert data as defined by the sub-skill types. |
 | [Rename or delete a team](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/rename-remove-team?view=azure-devops) | 0.30 | Procedural guide for renaming/removing teams; no evidence of numeric limits, configuration matrices, or detailed troubleshooting content. |
 | [Resolve orphaned organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/resolve-orphaned-organization?view=azure-devops) | 0.30 | Primarily a procedural guide for assigning an owner to an orphaned organization; no numeric limits, configuration tables, error codes, or other expert-only details. |
 | [Security Best Practices](https://learn.microsoft.com/en-us/azure/devops/organizations/security/security-overview?view=azure-devops) | 0.30 | High-level security overview for Azure DevOps; describes concepts like Zero Trust, network protection, and access controls without specific RBAC role names, configuration parameters, or detailed settings tables. |
@@ -1061,7 +1062,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [October 4](https://learn.microsoft.com/en-us/azure/devops/release-notes/2022/sprint-210-update) | 0.10 | Kanban accessibility improvement for moving work items; UI behavior, not expert technical content. |
 | [Open another project or repo](https://learn.microsoft.com/en-us/azure/devops/project/navigation/go-to-project-repo?view=azure-devops) | 0.10 | Navigation/how-to page about switching projects, repositories, or teams in Azure DevOps; no limits, configuration tables, error codes, or product-specific numeric thresholds. It does not match any expert-knowledge sub-skill category. |
 | [Reporting and Analytics >>](https://learn.microsoft.com/en-us/azure/devops/report/?view=azure-devops) | 0.10 | Landing/overview page for Azure DevOps analytics and reporting with conceptual guidance on dashboards and tracking progress, but no evidence of specific limits, configuration tables, error codes, or other product-specific expert details. |
-| [Roadmap](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline) | 0.10 | Roadmap/feature timeline page focused on what's new and upcoming; does not provide detailed limits, configuration parameters, error codes, or other product-specific expert guidance as defined by the sub-skill types. |
 | [Roadmap and features timeline](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/features-timeline?view=azure-devops) | 0.10 | A features timeline/roadmap page is primarily release/marketing-style information about new features and timing, not detailed limits, configuration parameters, or troubleshooting content. |
 | [September 4](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-279-update) | 0.10 | Sprint release note announcing a public preview feature with high-level description; no specific quotas, configuration tables, error codes, or decision guidance present in the summary. |
 | [TFS is now Azure DevOps Server](https://learn.microsoft.com/en-us/azure/devops/server/tfs-is-now-azure-devops-server?view=azure-devops) | 0.10 | Rebranding/overview content without technical limits, configs, or decision matrices. |
@@ -1092,6 +1092,8 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [May 21](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-274-update) | - | Sprint release notes describe new features and changes but are not organized as limits, patterns, best practices, troubleshooting, decision guidance, security configuration, integrations, configuration references, or deployment matrices. They lack the structured numeric limits, config tables, error-code mappings, or decision matrices required by the defined sub-skill types. |
 | [May 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-273-update) | - | Sprint release notes describe new and changed features but do not focus on structured limits, configuration matrices, troubleshooting mappings, or other categorized expert patterns defined in the sub-skill types. |
 | [May 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/testplans/sprint-273-update) | - | Sprint release notes describe new features and changes but do not focus on structured limits, configuration matrices, troubleshooting mappings, or other categorized expert-knowledge patterns defined in the sub-skill types. |
+| [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-280-update) | - | Sprint release notes describing new features; no clear evidence of detailed limits, configuration tables, or error/diagnostic mappings from the summary. |
+| [Roadmap](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline) | - | Roadmap/feature timeline content; primarily marketing and high-level updates without detailed limits, configs, or troubleshooting data. |
 | [September 4](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/boards/sprint-279-update) | - | Sprint release notes describe new features and changes but don't provide structured limits, configuration tables, error codes, or decision matrices; content is primarily update/overview rather than reusable expert knowledge per the defined sub-skill types. |
 | [September 4](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/general/sprint-279-update) | - | Sprint release notes are primarily feature announcements and high-level changes, without detailed limits, configuration tables, error-code troubleshooting, or decision matrices that meet the expert-knowledge criteria. |
 | [September 4](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/ghazdo/sprint-279-update) | - | Sprint release notes for GitHub Advanced Security in Azure DevOps are primarily feature/announcement content and typically lack the structured limits, configuration tables, error-code mappings, or decision matrices required by the defined sub-skill types. |

@@ -1,14 +1,14 @@
 ---
 name: azure-artifacts
-description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, .npmrc auth, GitHub Actions CI/CD, or package retention limits, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
+description: Expert knowledge for Azure Artifacts development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing feeds, upstream sources, views, .npmrc auth, .artifactignore, or GitHub Actions package publishing, and other Azure Artifacts related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifacts Skill
 
-This skill provides expert guidance for Azure Artifacts. Covers best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Artifacts. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,13 +24,19 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L41 | Best practices for secure, reliable Azure Artifacts package management, including configuring and using upstream sources safely and restoring packages from them. |
-| Decision Making | L42-L48 | Guidance on planning and choosing Azure Artifacts feeds (project vs org scope) and migration paths from file shares or MyGet to Azure Artifacts. |
-| Limits & Quotas | L49-L56 | Storage, size, count, and retention limits for Azure Artifacts packages, plus how to monitor usage, configure deletion/retention, and publish universal packages within quota constraints. |
-| Security | L57-L62 | Securing Azure Artifacts feeds: configuring upstream source protections against malicious packages and managing feed/view permissions and access control. |
-| Configuration | L63-L70 | Configuring Azure Artifacts feeds: views, upstream sources, npm .npmrc auth/settings, and .artifactignore for optimizing Azure Pipelines artifact behavior and performance. |
-| Integrations & Coding Patterns | L71-L110 | How to connect build tools (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources, and debug with symbols |
-| Deployment | L111-L114 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
+| Troubleshooting | L36-L40 | Diagnosing and resolving common Azure Artifacts problems, including feed access issues, authentication/permissions errors, package publishing/restore failures, and client tooling misconfigurations. |
+| Best Practices | L41-L47 | Best practices for secure, reliable Azure Artifacts package management, including configuring and using upstream sources safely and restoring packages from them. |
+| Decision Making | L48-L54 | Guidance on planning and choosing Azure Artifacts feeds (project vs org scope) and migration paths from file shares or MyGet to Azure Artifacts. |
+| Limits & Quotas | L55-L62 | Storage, size, count, and retention limits for Azure Artifacts packages, plus how to monitor usage, configure deletion/retention, and publish universal packages within quota constraints. |
+| Security | L63-L68 | Securing Azure Artifacts feeds: configuring upstream source protections against malicious packages and managing feed/view permissions and access control. |
+| Configuration | L69-L76 | Configuring Azure Artifacts feeds: views, upstream sources, npm .npmrc auth/settings, and .artifactignore for optimizing Azure Pipelines artifact behavior and performance. |
+| Integrations & Coding Patterns | L77-L116 | How to connect build tools (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell) to Azure Artifacts feeds, publish/restore packages, use upstream sources, and debug with symbols |
+| Deployment | L117-L120 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
+
+### Troubleshooting
+| Topic | URL |
+|-------|-----|
+| Diagnose and fix common Azure Artifacts issues | https://learn.microsoft.com/en-us/azure/devops/artifacts/troubleshooting?view=azure-devops |
 
 ### Best Practices
 | Topic | URL |

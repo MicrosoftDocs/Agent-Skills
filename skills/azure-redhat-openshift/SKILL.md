@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ARO/HCP clusters, configuring networking/storage, securing with Entra/NSGs, or integrating ACR/Key Vault, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ARO clusters, configuring HCP networking, integrating ACR/Key Vault, or securing Entra/OIDC access, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L52-L58 | Guidance on choosing ARO architectures and immutable settings, planning networking for hosted control planes, and understanding shared responsibilities between Microsoft, Red Hat, and customers. |
 | Architecture & Design Patterns | L59-L63 | Planning network topology for ARO HCP clusters, including VNet design, subnets, private endpoints, connectivity options, and required ports and dependencies. |
 | Limits & Quotas | L64-L69 | Scaling ARO clusters with multiple load balancer IPs and understanding built‑in service limits, quotas, and standard service definitions for Azure Red Hat OpenShift. |
-| Security | L70-L89 | Identity, access, and data protection for ARO: Entra auth, managed identities/SPs, workload identity, NSGs/egress control, disk/etcd encryption, FIPS, Front Door security, and support access control. |
-| Configuration | L90-L117 | Configuring ARO and ARO HCP clusters: networking (DNS, proxy, MTU), registries and pull secrets, storage classes, autoscaling/node pools, identities, logging, alerts, and resource policies. |
+| Security | L70-L89 | Identity, auth, and network security for ARO: Entra/OIDC auth, managed identities/SPs, workload identity, NSGs/egress control, disk/etcd encryption, FIPS, Front Door, and support access control. |
+| Configuration | L90-L117 | Configuring ARO clusters: networking (DNS, proxies, MTU), registries and pull secrets, storage classes, autoscaling/node pools, identities, logging, alerts, and resource tagging. |
 | Integrations & Coding Patterns | L118-L127 | Patterns for connecting ARO apps to Azure services: workload identity, ACR, Key Vault, NetApp Files, GPU workloads, and exporting Prometheus metrics to Azure Monitor. |
 | Deployment | L128-L139 | Deploying and upgrading ARO clusters and apps: private/standard clusters, ARM/Bicep, WebSphere, S2I and serverless, Velero backup/restore, SDN-to-OVN migration, and HCP control plane/node pool upgrades. |
 
@@ -102,7 +102,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Files StorageClass on ARO HCP | https://learn.microsoft.com/en-us/azure/openshift/howto-configure-azure-files-hosted-cluster |
 | Configure image digest mirrors for immutable images on ARO | https://learn.microsoft.com/en-us/azure/openshift/howto-configure-cluster-immutable-images |
 | Create Azure Files storage class on ARO 4 | https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-storageclass |
-| Configure and create Azure Red Hat OpenShift HCP clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster |
+| Configure custom Azure Red Hat OpenShift HCP clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster |
 | Configure node pools for Azure Red Hat OpenShift HCP | https://learn.microsoft.com/en-us/azure/openshift/howto-create-hosted-node-pool |
 | Configure managed identities for standard OpenShift clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-cluster |
 | Configure custom DNS resolvers for ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-custom-dns |

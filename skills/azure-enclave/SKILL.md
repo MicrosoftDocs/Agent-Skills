@@ -1,9 +1,9 @@
 ---
 name: azure-enclave
-description: Expert knowledge for Azure Enclave development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building DMZ/AVD/AKS enclave apps, configuring RBAC/CMK, deploying via Bicep/ARM, or setting up ExpressRoute/VPN, and other Azure Enclave related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm).
+description: Expert knowledge for Azure Enclave development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building Azure Enclave apps with AVD/AKS, RBAC/managed identities, CMK encryption, Bicep/ARM, or ExpressRoute, and other Azure Enclave related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Attestation (use azure-attestation), Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated HSM (use azure-dedicated-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Enclave Skill
@@ -24,20 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L41 | Diagnosing and resolving common Azure Enclave issues, including error codes, configuration problems, deployment failures, and runtime/attestation troubleshooting. |
+| Troubleshooting | L36-L41 | Diagnosing and fixing common Azure Enclave issues, including error codes, configuration problems, deployment failures, and runtime/attestation troubleshooting. |
 | Best Practices | L42-L47 | Design, security, and operational best practices for Azure Enclave, including secure architecture patterns and how to harden and manage admin VMs safely. |
 | Decision Making | L48-L53 | Planning disaster recovery and business continuity for Azure Enclave, and strategies, steps, and considerations for migrating existing Azure workloads into an Enclave environment. |
 | Architecture & Design Patterns | L54-L60 | Architectural patterns for Azure Enclave apps: DMZ-based public access, integrating with AVD/AKS, and secure data ingress design for enclave environments. |
 | Limits & Quotas | L61-L66 | Naming rules for Azure Enclave resources plus service limits, quotas, and regional availability to plan compliant deployments and capacity. |
 | Security | L67-L91 | Configuring Azure Enclave security: RBAC, managed identities, CMK encryption, policy/guardrails for AKS, App Service, SQL, Storage, ACR, Cosmos DB, Key Vault, and governance/JIT access. |
 | Configuration | L92-L106 | Configuring enclaves, governance, approvals, DNS/AVD setup, observability, policy exemptions, and using service catalog templates for Azure Enclave workloads. |
-| Deployment | L107-L115 | Guides for deploying Enclave workloads: app installation on RemoteApp VMs, using Bicep/ARM/CLI templates, and setting up ExpressRoute/VPN connectivity and shared dependencies. |
+| Deployment | L107-L115 | Deploying Enclave workloads: installing apps on RemoteApp VMs, using Bicep/ARM templates, and setting up shared dependencies, ExpressRoute, and VPN transit hub connections via CLI. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Resolve common questions and issues in Azure Enclave | https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq |
-| Diagnose and fix common Azure Enclave errors | https://learn.microsoft.com/en-us/azure/enclave/troubleshoot |
+| Diagnose and resolve common Azure Enclave errors | https://learn.microsoft.com/en-us/azure/enclave/troubleshoot |
 
 ### Best Practices
 | Topic | URL |
@@ -111,5 +111,5 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Enclave Bicep and ARM deployment templates | https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-templates |
 | Deploy common dependency templates to Enclave workloads | https://learn.microsoft.com/en-us/azure/enclave/deploy-common-dependencies-service-catalog |
 | Deploy ExpressRoute connections in Azure Enclave workloads | https://learn.microsoft.com/en-us/azure/enclave/deploy-express-route-connection-service-catalog |
-| Deploy Azure Enclave templates using Azure CLI | https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli |
+| Deploy Azure Enclave catalog templates via Azure CLI | https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli |
 | Deploy VPN connections for Azure Enclave transit hubs | https://learn.microsoft.com/en-us/azure/enclave/deploy-vpn-connection-service-catalog |

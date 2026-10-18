@@ -1,9 +1,9 @@
 ---
 name: azure-event-grid
-description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Event Grid/MQTT namespaces, securing endpoints, routing events, integrating Functions/Service Bus, or troubleshooting delivery, and other Azure Event Grid related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
+description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building Event Grid topics/namespaces, MQTT broker routes, webhooks, Functions integrations, or dead-lettering, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Grid Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L50-L60 | Guidance for choosing Event Grid tiers, schemas, Kubernetes vs Azure hosting, MQTT routing, autoscale, push delivery, and migration from Event Grid on IoT Edge to IoT Edge hub. |
 | Architecture & Design Patterns | L61-L67 | Patterns for routing events between namespaces, designing MQTT topic hierarchies, and implementing MQTT command/response flows using Azure Event Grid. |
 | Limits & Quotas | L68-L79 | Event Grid delivery/retry behavior, custom headers, event retention, and region-specific quotas/limits for topics, namespaces, and Kubernetes-based Event Grid |
-| Security | L80-L132 | Securing Event Grid endpoints and MQTT: auth (keys, SAS, Entra, JWT, certs), RBAC, managed identities, webhooks, TLS, IP/firewalls, private endpoints, policies, and cross-tenant delivery. |
-| Configuration | L133-L204 | Configuring Event Grid and MQTT namespaces, domains, filtering, monitoring, autoscale, and dead-lettering, plus detailed event schemas and subscription setup for many Azure and Microsoft services. |
+| Security | L80-L130 | Securing Event Grid: auth (keys, Entra ID, JWT, OAuth), RBAC, managed identities, MQTT auth, webhooks, IP firewalls, private endpoints, TLS, and Azure Policy compliance. |
+| Configuration | L131-L204 | Configuring Event Grid and namespaces: topics, schemas, filters, dead-lettering, monitoring, MQTT broker/clients, TLS, autoscale/throughput, and integrating many Azure/Microsoft services. |
 | Integrations & Coding Patterns | L205-L245 | Patterns and guides for integrating Event Grid with Auth0, Graph/M365 apps, MQTT, webhooks, Functions, Service Bus, Event Hubs, and understanding event schemas and handler configuration. |
 
 ### Troubleshooting
@@ -126,9 +126,7 @@ This skill requires **network access** to fetch documentation content:
 | Authenticate event delivery to handlers in Azure Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/security-authentication |
 | Configure Azure RBAC access control for Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/security-authorization |
 | Azure Policy regulatory compliance controls for Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/security-controls-policy |
-| Configure minimum TLS version for Event Grid topics and domains | https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version |
-| Configure minimum TLS version for Event Grid topics/domains | https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version |
-| Enforce minimum TLS versions for Azure Event Grid endpoints | https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-enforce-minimum-version |
+| Configure minimum TLS version for Event Grid Basic | https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-enforce-minimum-version |
 
 ### Configuration
 | Topic | URL |
@@ -201,6 +199,8 @@ This skill requires **network access** to fetch documentation content:
 | Subscribe to Azure Resource Notifications Health Resources events | https://learn.microsoft.com/en-us/azure/event-grid/subscribe-to-resource-notifications-health-resources-events |
 | Subscribe to Azure Resource Notifications Resource Management events | https://learn.microsoft.com/en-us/azure/event-grid/subscribe-to-resource-notifications-resources-events |
 | Configure Azure Event Grid subscription request schema | https://learn.microsoft.com/en-us/azure/event-grid/subscription-creation-schema |
+| Configure minimum TLS version for Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version |
+| Configure minimum TLS version for Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

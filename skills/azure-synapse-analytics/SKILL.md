@@ -1,9 +1,9 @@
 ---
 name: azure-synapse-analytics
-description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Synapse workspaces, SQL/dedicated pools, serverless SQL, Spark pools, or Synapse Link for Cosmos DB, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Synapse SQL pools, Spark pools, Delta Lake, Synapse Link (Cosmos/SQL), or ELT via PolyBase, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -24,21 +24,22 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L66 | Diagnosing and fixing Synapse workspace, SQL pool, Spark, Studio, and Synapse Link errors, including connectivity, performance, workload classification, and known issues/workarounds. |
-| Best Practices | L67-L128 | Best practices for Synapse performance, SQL/T-SQL patterns, Spark optimization, indexing/statistics, data loading, and migrating/modernizing from Netezza, Oracle, and Teradata. |
-| Decision Making | L129-L151 | Guidance for choosing Synapse components, migration tools, cost and capacity models, Spark runtimes, and SQL pool generations to design, migrate, and optimize Synapse solutions. |
-| Architecture & Design Patterns | L152-L171 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition strategies, ELT/PolyBase loading, and workload management. |
-| Limits & Quotas | L172-L184 | Spark runtime versions/support, SQL pool memory/concurrency limits, capacity quotas, and feature/limit details for Delta Lake, Synapse Link for Cosmos DB, and Synapse Link for SQL. |
-| Security | L185-L245 | Securing Synapse workspaces end-to-end: auth and RBAC, network and private endpoints, firewall and data exfiltration, encryption/TDE, policies, managed identities, and secure data access/migration. |
-| Configuration | L246-L292 | Configuring Synapse workspaces, Spark pools, libraries, monitoring/metrics, backups/restore, workload management, and integrations with Purview, Azure ML, and Azure Monitor. |
-| Integrations & Coding Patterns | L293-L342 | Integrating Synapse with Spark, SQL, ML, storage, Cosmos DB, and external tools; patterns for data movement, querying files, logging/metrics, and managing compute via APIs and automation. |
-| Deployment | L343-L350 | Guides for deploying Synapse workspaces and dedicated SQL pools with CI/CD and ARM templates, plus operational readiness checks and configuring SQL pool maintenance windows. |
+| Troubleshooting | L37-L67 | Diagnosing and fixing Synapse workspace, SQL pool, Spark, Link, and Studio issues, including connectivity, performance, workload classification, and known/compatibility problems. |
+| Best Practices | L68-L130 | Best practices for Synapse performance and design: migrations (Netezza/Oracle/Teradata), Spark tuning, Delta/Hyperspace, dedicated/serverless SQL optimization, indexing, stats, T-SQL patterns, and governance. |
+| Decision Making | L131-L153 | Guidance for choosing Synapse architectures, cost and capacity planning, Spark runtimes, and migration/upgrade strategies from other warehouses and SQL pools. |
+| Architecture & Design Patterns | L154-L173 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition strategies, ELT/PolyBase loading, and workload management. |
+| Limits & Quotas | L174-L186 | Spark runtime versions/support, SQL pool memory/concurrency limits, capacity quotas, and feature/limit details for Delta Lake, Synapse Link for Cosmos DB, and Synapse Link for SQL. |
+| Security | L187-L271 | Securing Synapse workspaces and SQL: identity/auth (Entra, MFA, managed identities), RBAC, networking (VNets, private endpoints, firewalls), encryption/TDE, auditing, Defender, and data protection. |
+| Configuration | L272-L321 | Configuring Synapse workspaces, Spark pools, and SQL pools: environment setup, autoscale, libraries, monitoring/metrics, backups/restore, workload management, auditing, and integrations (Purview, AML). |
+| Integrations & Coding Patterns | L322-L371 | Integrating Synapse with Spark, SQL, ML, storage, Cosmos DB, and external tools; patterns for data movement, querying files, logging/metrics, and managing compute via APIs and automation. |
+| Deployment | L372-L379 | Guides for deploying Synapse workspaces and dedicated SQL pools with CI/CD and ARM templates, plus operational readiness checks and configuring SQL pool maintenance windows. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Recover Synapse workspaces after Entra tenant move | https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-recover-workspace-after-tenant-move |
 | Known issues and workarounds for Azure Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/known-issues |
+| Resolve common Azure Synapse Analytics FAQ issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq |
 | Resolve compatibility issues between SQL Server apps and Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/compatibility-issues |
 | Diagnose and resolve Livy job errors in Synapse Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-handle-livy-error |
 | Debug Synapse Spark apps with extended history server | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-history-server |
@@ -107,6 +108,7 @@ This skill requires **network access** to fetch documentation content:
 | Indexing strategies for Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index |
 | Create and maintain statistics in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-statistics |
 | Use temporary tables effectively in dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-temporary |
+| Apply production auditing best practices in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-best-practices |
 | Apply performance best practices for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool |
 | Implement performance and cost best practices for serverless SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/best-practices-serverless-sql-pool |
 | Tune columnstore compression in dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-load-columnstore-compression |
@@ -200,7 +202,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply built-in Azure Policy definitions for Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/policy-reference |
 | Apply Azure Policy compliance controls to Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/security-controls-policy |
 | Connect Synapse workspace to secure storage accounts | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/connect-to-a-secure-storage-account |
-| Manage connectivity settings for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/connectivity-settings |
+| Configure secure connectivity settings in Azure Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/connectivity-settings |
 | Use Synapse gateway IP addresses for network rules | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/gateway-ip-addresses |
 | Connect to Synapse Studio from restricted networks | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-from-restricted-network |
 | Connect to Synapse workspaces using private endpoints | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-with-private-links |
@@ -209,7 +211,7 @@ This skill requires **network access** to fetch documentation content:
 | Grant workspace managed identity permissions in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-grant-workspace-managed-identity-permissions |
 | Manage Synapse RBAC role assignments in Synapse Studio | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-manage-synapse-rbac-role-assignments |
 | Review Synapse RBAC role assignments in Synapse Studio | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-review-synapse-rbac-role-assignments |
-| Set up access control for Synapse workspaces | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control |
+| Configure role-based access control in Azure Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control |
 | Secure Synapse Studio access with private link hubs | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-private-link-hubs |
 | Understand access control mechanisms in Synapse workspaces | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-access-control-overview |
 | Configure IP firewall rules for Synapse workspaces | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-ip-firewall |
@@ -231,14 +233,38 @@ This skill requires **network access** to fetch documentation content:
 | Configure authentication for Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-authentication |
 | Configure Transparent Data Encryption in Synapse portal | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde |
 | Manage Transparent Data Encryption in Synapse with T-SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde-tsql |
-| Secure Azure Synapse dedicated SQL pool with roles and encryption | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-manage-security |
+| Secure Azure Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-manage-security |
 | Configure Microsoft Entra authentication for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/active-directory-authentication |
+| Audit Synapse SQL to storage behind VNet and firewall | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/audit-write-storage-account-behind-vnet-firewall |
+| Configure Synapse SQL auditing with managed identity | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-managed-identity |
+| Audit Microsoft support operations on Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-microsoft-support-operations |
+| Configure and understand Synapse SQL auditing | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-overview |
+| Configure server-level and database-level auditing policies | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-server-level-database-level |
+| Set up Azure Synapse SQL auditing destinations | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-setup |
+| Configure Microsoft Entra authentication for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-aad-configure |
+| Assign Directory Readers role for Synapse managed identities | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-aad-directory-readers-role-tutorial |
+| Use Microsoft Entra server principals in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-logins |
+| Create and manage Microsoft Entra logins in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-logins-tutorial |
+| Configure Microsoft Entra-only authentication for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-only-authentication |
+| Configure Synapse SQL authentication with managed identities | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-user-assigned-managed-identity |
+| Connect to Synapse SQL using Microsoft Entra authentication | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-microsoft-entra-connect-to-azure-sql |
+| Enable and manage Microsoft Defender for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/azure-defender-for-sql |
+| Classify and label sensitive data in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-discovery-and-classification-overview |
 | Configure storage access control for serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-storage-access-control |
+| Configure logins, users, and roles in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/logins-create-manage |
 | Configure Entra MFA authentication for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication |
+| Configure network access controls for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/network-access-controls-overview |
+| Use Azure Private Link with Synapse SQL endpoints | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/private-endpoint-overview |
 | Configure access control for shared databases in serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/shared-databases-access-control |
 | Configure SQL authentication options in Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/sql-authentication |
+| Enable Synapse TDE using Key Vault via PowerShell and CLI | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/transparent-data-encryption-byok-configure |
+| Rotate customer-managed TDE protector for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/transparent-data-encryption-byok-key-rotation |
+| Configure customer-managed TDE with Azure Key Vault | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/transparent-data-encryption-byok-overview |
+| Remove compromised TDE protector for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/transparent-data-encryption-byok-remove-tde-protector |
+| Enable Transparent Data Encryption for Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/transparent-data-encryption-tde-overview |
 | Use managed identity to load external data securely | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-external-tables-using-managed-identity |
 | Use Entra ID passthrough for external tables | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-load-data-using-entra-id |
+| Configure Synapse SQL virtual network service endpoints | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/vnet-service-endpoint-rule-overview |
 | Secure Synapse Link for Azure SQL Database with network controls | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/connect-synapse-link-sql-database-vnet |
 | Configure secure networking for Synapse Link SQL Server 2022 | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/connect-synapse-link-sql-server-2022-vnet |
 | Use managed identities with Azure Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-service-identity |
@@ -285,6 +311,9 @@ This skill requires **network access** to fetch documentation content:
 | Set workload importance for Synapse SQL queries | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-importance |
 | Configure workload isolation with workload groups in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-isolation |
 | Enable Synapse workspace features on existing SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/workspace-connected-create |
+| Interpret Azure Synapse SQL audit log format | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/audit-log-format |
+| Analyze Synapse SQL audit logs in monitoring tools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-analyze-audit-logs |
+| Manage Synapse SQL auditing via PowerShell, CLI, and REST | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-manage-using-api |
 | Configure connection strings for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings |
 | Create and use views in serverless SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-use-views |
 | Configure collation types in Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/reference-collation-types |

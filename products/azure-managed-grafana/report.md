@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-18'
 category_descriptions:
   integrations: 'Integrating Grafana with Azure AI agents and monitoring tools: MCP
     setup, AI Foundry dashboards, alerts, Prometheus/AKS, and Azure Data Explorer
     data sources.'
-  security: 'Securing Managed Grafana: encryption, auth (users, service accounts,
-    tokens), roles/permissions, private endpoints, Entra group sync, dashboard sharing,
-    and security best practices.'
+  security: 'Securing Managed Grafana: encryption, auth (Entra, identities, tokens),
+    RBAC and dashboard permissions, private endpoints, Azure Monitor access, group
+    sync, and security best practices.'
   limits-quotas: Details on Managed Grafana regional availability, quotas and constraints,
     plus how to use features like reporting and image rendering within those limits.
   configuration: 'Configuring Managed Grafana instances: MCP endpoints, instance settings,
@@ -20,13 +20,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
   integrations & coding patterns. Use when configuring MCP/AI Foundry dashboards,
-  Prometheus/AKS or ADX data sources, private endpoints, or Enterprise upgrades, and
-  other Azure Managed Grafana related development tasks. Not for Azure Monitor (use
-  azure-monitor).
-use_when: Use when configuring MCP/AI Foundry dashboards, Prometheus/AKS or ADX data
-  sources, private endpoints, or Enterprise upgrades, and other Azure Managed Grafana
-  related development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor).
+  Entra auth/RBAC, private endpoints, plugins, or Enterprise upgrades, and other Azure
+  Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor),
+  Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when configuring MCP/AI Foundry dashboards, Entra auth/RBAC, private
+  endpoints, plugins, or Enterprise upgrades, and other Azure Managed Grafana related
+  development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service (use
+  azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Managed Grafana Crawl Report
 
@@ -39,10 +40,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 44
-- **Deleted Pages**: 0
+- **New Pages**: 3
+- **Updated Pages**: 2
+- **Unchanged**: 39
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
 ## Classification Statistics
@@ -59,32 +60,51 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 
 ## Changes
 
+### New Pages
+
+- [Configure Grafana authentication](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions)
+- [Grant access to Azure Monitor data](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions)
+- [Grant access to Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities)
+
+### Updated Pages
+
+- [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli)
+  - Updated: 2025-09-29T08:00:00.000Z → 2026-10-06T11:41:00.000Z
+- [Secure Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana)
+  - Updated: 2026-09-03T22:14:00.000Z → 2026-10-06T11:41:00.000Z
+
+### Deleted Pages
+
+- ~~Configure Grafana resource authentication and permissions~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions)
+- ~~Manage access and permissions for users and identities~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities)
+- ~~Modify access permissions to Azure Monitor~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions)
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Troubleshoot connecting managed private endpoint to a private link service](https://learn.microsoft.com/en-us/azure/managed-grafana/troubleshoot-mpe-connection) | troubleshooting | 0.90 | Troubleshooting guide for managed private endpoint to private link service; includes specific diagnostics and resolutions unique to this product. |
 | [Service limits](https://learn.microsoft.com/en-us/azure/managed-grafana/known-limitations) | limits-quotas | 0.86 | Page explicitly documents current service limits, quotas, and constraints for Azure Managed Grafana, including which Grafana features are disabled or restricted in the managed service. These are product-specific limitations that an LLM wouldn't reliably know from training and fit the limits-quotas category. |
-| [Modify access permissions to Azure Monitor](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions) | security | 0.85 | Details default Monitoring Reader role on Azure Monitor and Log Analytics resources and how to manually adjust permissions; RBAC-role-specific guidance. |
+| [Grant access to Azure Monitor data](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions) | security | 0.85 | Details specific RBAC roles (for example, Monitoring Reader) and default assignment behavior at subscription scope for the system-assigned managed identity, including conditions under which the role assignment is created; this is product-specific IAM configuration with explicit role names and scopes. |
 | [Add Azure Data Explorer](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-data-explorer) | integrations | 0.80 | Details ADX data source configuration and authentication options; includes specific parameters and auth flows unique to this integration. |
 | [Configure SMTP settings](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-smtp-settings) | configuration | 0.80 | Details SMTP server settings and how to enable email alerts via portal/CLI; includes specific configuration parameters and constraints (e.g., not available at creation time). |
+| [Grant access to Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities) | security | 0.80 | Describes how to use Azure RBAC to grant Microsoft Entra users, groups, service principals, and managed identities access to an Azure Managed Grafana workspace, mapping Azure roles to Grafana roles; includes product-specific access control patterns and role usage. |
 | [Set up private access](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-set-up-private-access) | security | 0.80 | Covers disabling public access and configuring private endpoints; product-specific network security configuration. |
 | [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/managed-grafana/troubleshoot-managed-grafana) | troubleshooting | 0.80 | Described as a troubleshooting guide for errors related to data fetching, dashboards, and performance, which typically includes symptom-to-cause-to-solution mappings and possibly specific error messages unique to Azure Managed Grafana. |
 | [Authenticate data plane APIs with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authenticate-data-plane-api) | security | 0.78 | Contains product-specific authentication details, including the exact Microsoft Entra audience value required for Azure Managed Grafana data plane APIs and guidance on token acquisition methods. These are concrete security configuration parameters unique to this service that an LLM is unlikely to infer from general training. |
 | [Grafana settings](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings) | configuration | 0.78 | A Grafana settings page for a managed service typically enumerates concrete configuration keys, allowed values, and defaults that differ from generic Grafana. These product-specific parameters and how they behave in Azure Managed Grafana qualify as configuration expert knowledge. |
-| [Manage access and permissions for users and identities](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities) | security | 0.76 | A guide on assigning roles to users, groups, service principals, and managed identities in Azure Managed Grafana will include specific role names, permission scopes, and IAM configuration steps, which are product-specific security details. |
 | [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | integrations | 0.75 | Shows how to wire the Azure Managed Grafana MCP endpoint into Azure AI Foundry agents so they can query Azure resources, metrics, logs, and dashboards. This is a concrete cross-service integration pattern with product-specific configuration steps. |
 | [Connect to a data source privately](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-to-data-source-privately) | configuration | 0.75 | Provides product-specific instructions on using managed private endpoints from a managed virtual network, including how Azure Managed Grafana sets up and manages these endpoints and which Azure data sources can be accessed. This is detailed configuration behavior unique to the service. |
 | [Migrate from Essential service tier](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate-essential-service-tier) | decision-making | 0.75 | Provides migration paths, timelines, and guidance to choose between Standard tier and Azure Monitor dashboards with Grafana, including deprecation dates and scenario-based recommendations—classic decision-making content. |
 | [Agent Framework Workflow dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-workflow-dashboard) | integrations | 0.70 | Prebuilt dashboard for multi-agent workflows with OpenTelemetry and Application Insights; product-specific metrics and visualization patterns. |
-| [Configure Grafana resource authentication and permissions](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions) | security | 0.70 | Covers how to configure authentication using managed identity or service principal and explicitly calls out assigning the Monitoring Reader role on subscriptions. This includes specific RBAC role usage and identity configuration patterns unique to Azure Managed Grafana. |
+| [Configure Grafana authentication](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions) | security | 0.70 | Explains concrete authentication options (system-assigned vs user-assigned managed identity vs app registration/service principal) and how to select/configure them for data sources; this is product-specific security/auth configuration with explicit identity types and selection behavior. |
 | [Connect to self-hosted Prometheus through managed private endpoint](https://learn.microsoft.com/en-us/azure/managed-grafana/tutorial-mpe-oss-prometheus) | integrations | 0.70 | Product-specific integration pattern between AKS-hosted Prometheus and Azure Managed Grafana via managed private endpoint, likely with concrete endpoint settings and constraints. |
 | [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-enable-zone-redundancy) | configuration | 0.70 | Explains how to configure zone-redundant workspaces, including deployment across a minimum of three availability zones and billing implications. These are concrete, product-specific configuration options and constraints. |
 | [Encryption](https://learn.microsoft.com/en-us/azure/managed-grafana/encryption) | security | 0.70 | Describes product-specific encryption behavior and data storage details for Azure Managed Grafana, including how and where data is encrypted at rest and in transit. This is security-focused configuration/behavior information that isn't generic and would be considered expert knowledge about this specific service. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/managed-grafana/faq) | limits-quotas | 0.70 | FAQ includes product-specific expert details such as supported regions, data source support, licensing/tenant constraints, and other concrete service behaviors that are not generic knowledge. It also typically documents specific service limits (for example, region availability, tenant or workspace constraints), which best align with the limits-quotas sub-skill compared to other categories. |
 | [Microsoft Foundry dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard) | integrations | 0.70 | Prebuilt dashboard for AI metrics (latency, throughput, token usage); includes specific metrics, queries, and panel configurations tied to Azure AI Foundry. |
 | [Migrate to Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate) | decision-making | 0.70 | Migration guide with what can be migrated automatically and how; supports decision-making and concrete migration steps between environments. |
-| [Secure Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana) | security | 0.70 | Described as a security recommendations article implementing Zero Trust principles for Azure Managed Grafana. Such pages typically include product-specific guidance like RBAC roles, identity configuration, network access controls, and concrete security settings unique to the service, which qualifies as expert security configuration knowledge beyond generic concepts. |
+| [Secure Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana) | security | 0.70 | Provides security recommendations and best practices specific to Azure Managed Grafana aligned with Zero Trust principles; focuses on concrete secure configuration patterns for this service rather than generic security theory. |
 | [Use Azure Monitor alerts with Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-azure-monitor-alerts) | integrations | 0.70 | Describes using Azure Monitor alerts with Azure Managed Grafana, including plan-specific availability (Essential plan lacks Grafana alerts) and product-specific alerting behavior and limits, which are integration-focused details. |
 | [Use Grafana Team Sync](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups) | security | 0.70 | Page describes product-specific RBAC role mappings (Grafana Viewer, Grafana Editor) and how Entra groups integrate with Grafana Teams and folder/dashboard permissions. This is concrete, product-specific security/authorization configuration rather than generic concepts. |
 | [Use deterministic outbound IPs](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-deterministic-ip) | configuration | 0.70 | Describes how to enable deterministic outbound IP support and configure data source firewalls to allow requests from the workspace, including the constraint that the feature is only available on the Standard plan. These are product-specific network configuration details. |
@@ -107,8 +127,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | [Grafana UI](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-app-ui) | 0.30 | Reference for Grafana UI components linking to upstream Grafana docs; mostly conceptual UI overview without Azure-specific expert configuration or limits. |
 | [Agent Framework dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-dashboard) | 0.20 | From the summary, the page is a how-to guide for creating and customizing an Agent Framework dashboard in Azure Managed Grafana. It describes using a prebuilt dashboard to visualize performance, token usage, costs, and errors, but there is no indication of specific limits, configuration parameter tables, error-code mappings, or other product-specific expert details as defined in the sub-skill types. It appears to be primarily tutorial/usage content rather than expert reference material. |
 | [Create a dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-create-dashboard) | 0.20 | Dashboard creation tutorial for Azure Managed Grafana; primarily UI-driven instructions. No indication of numeric limits, configuration matrices, or specialized best-practice guidance beyond generic dashboard creation concepts. |
+| [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli) | 0.20 | Quickstart for creating a Managed Grafana workspace via Azure CLI; primarily step-by-step provisioning instructions without detailed configuration tables, limits, or product-specific best practices beyond generic deployment steps. |
 | [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal) | 0.20 | Quickstart for creating an Azure Managed Grafana workspace via the portal; primarily step-by-step UI guidance without detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. |
 | [Monitor using metrics](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics) | 0.20 | Appears to be a how-to/tutorial on viewing Azure Managed Grafana metrics in Azure Monitor. Summary suggests conceptual and procedural guidance without mention of specific limits, configuration tables, error codes, or product-specific parameter details. |
 | [About Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview) | 0.10 | High-level overview of Azure Managed Grafana and its benefits; no specific limits, configuration parameters, error codes, or decision matrices. |
-| [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli) | 0.10 | Quickstart for creating a workspace via CLI; procedural tutorial, not configuration reference or limits. |
 | [Support](https://learn.microsoft.com/en-us/azure/managed-grafana/find-help-open-support-ticket) | - | Support/help navigation content for Azure Managed Grafana; does not include technical limits, configuration parameters, error codes, or product-specific expert details. |
