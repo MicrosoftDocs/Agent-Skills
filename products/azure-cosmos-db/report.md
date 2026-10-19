@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   integrations: SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka
     Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo,
@@ -10,9 +10,9 @@ category_descriptions:
   architecture-patterns: Patterns and reference architectures for AI agents, change
     feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and
     vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL.
-  configuration: 'Configuring and tuning Azure Cosmos DB and its APIs (NoSQL, Mongo,
-    Cassandra, Gremlin, Table, PostgreSQL): throughput, indexing, backup/restore,
-    monitoring, SDK performance, fleets, emulators, and HA.'
+  configuration: 'Configuring and tuning Cosmos DB and its APIs (NoSQL, Mongo, Cassandra,
+    Gremlin, PostgreSQL): throughput, indexing, backup/restore, fleets, monitoring,
+    SDK performance, emulators, and alerts.'
   decision-making: Guides for choosing Cosmos DB deployment, scaling, consistency,
     backup, pricing, and migration options across SQL, MongoDB, Cassandra, Table,
     and PostgreSQL APIs.
@@ -31,33 +31,33 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or
-  Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks. Not
-  for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
-  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer
-  (use azure-data-explorer).
-use_when: Use when using NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA,
-  vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development
-  tasks.
+  using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector
+  search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development
+  tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database
+  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region
+  HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related
+  development tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
   Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Data Explorer (use azure-data-explorer).
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Cosmos DB Crawl Report
 
 ## Summary
 
-- **Total Pages**: 723
-- **Fetched**: 723
+- **Total Pages**: 722
+- **Fetched**: 722
 - **Fetch Failed**: 0
-- **Classified**: 528
+- **Classified**: 527
 - **Unclassified**: 195
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 722
-- **Deleted Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 718
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
 ## Classification Statistics
@@ -66,10 +66,10 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 |------|-------|------------|
 | architecture-patterns | 22 | 3.0% |
 | best-practices | 49 | 6.8% |
-| configuration | 123 | 17.0% |
+| configuration | 125 | 17.3% |
 | decision-making | 47 | 6.5% |
 | deployment | 23 | 3.2% |
-| integrations | 123 | 17.0% |
+| integrations | 120 | 16.6% |
 | limits-quotas | 31 | 4.3% |
 | security | 63 | 8.7% |
 | troubleshooting | 47 | 6.5% |
@@ -77,9 +77,20 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Secure your deployment](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/secure-managed-instance-apache-cassandra)
+- [Use with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet)
+  - Updated: 2026-04-27T13:06:00.000Z → 2026-10-09T17:09:00.000Z
+- [Linux emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux)
+  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-07T22:10:00.000Z
+- [Configure distributed transactions (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-and-use-distributed-transactions)
+  - Updated: 2026-06-03T12:06:00.000Z → 2026-10-12T17:12:00.000Z
+- [.NET SDK v3](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3)
+  - Updated: 2026-04-27T13:06:00.000Z → 2026-10-07T22:10:00.000Z
+
+### Deleted Pages
+
+- ~~Multi-vector search with MaxSim~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/multi-vector-search)
 
 ## Classified Pages
 
@@ -270,6 +281,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Use Azure Key Vault to store keys](https://learn.microsoft.com/en-us/azure/cosmos-db/store-credentials-key-vault) | security | 0.75 | Tutorial on storing connection strings and keys in Key Vault; includes secure configuration patterns specific to Cosmos DB. |
 | [How to soft delete (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-soft-delete) | configuration | 0.74 | The page describes how to configure soft delete behavior for Azure Cosmos DB, including specific configuration options (such as enabling soft delete, retention behavior, and management operations) that are product-specific and not purely conceptual. These are concrete configuration steps and options rather than general concepts, fitting the configuration sub-skill best. |
 | [Develop with the emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator) | configuration | 0.73 | The page describes detailed, product-specific configuration and usage of the Azure Cosmos DB emulator for local development and CI, including emulator-specific connection settings, endpoints/keys, command-line options, and behaviors that differ from the cloud service. These are concrete configuration details and patterns unique to the emulator that an LLM is unlikely to infer from general training data. |
+| [.NET SDK v3](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3) | configuration | 0.72 | The page is a detailed reference for the Azure Cosmos DB .NET SDK for the SQL (NoSQL) API, including specific version numbers, release and retirement dates, and version-specific changes. These are product- and time-specific details that an LLM is unlikely to know from training. While it’s not classic runtime configuration, the closest sub-skill is configuration because it provides precise SDK version information and guidance on which versions to use, which is essential for configuring applications against Cosmos DB. |
 | [Async Java SDK v2](https://learn.microsoft.com/en-us/azure/cosmos-db/performance-tips-async-java) | configuration | 0.72 | Performance tips for an older async SDK version typically document specific configuration knobs and their impact; these are version-specific configuration details not derivable from general knowledge. |
 | [Configure per-partition automatic failover](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-per-partition-automatic-failover) | configuration | 0.72 | Provides step-by-step, product-specific configuration details for enabling PPAF on Cosmos DB accounts. This is focused on how to configure a specific feature rather than just conceptual description, matching the configuration sub-skill. |
 | [Monitor with diagnostic logs](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-resource-logs) | configuration | 0.72 | Describes diagnostic settings, log categories, and data plane log content; this involves specific configuration options and log schema details unique to Cosmos DB. |
@@ -277,7 +289,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Security](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/security) | security | 0.72 | The page focuses on securing Azure Cosmos DB for MongoDB, likely including product-specific security configurations such as required network settings, authentication/authorization options, and possibly RBAC roles or other Azure-specific security parameters. This is concrete, implementation-focused security guidance rather than generic concepts. |
 | [Social media apps](https://learn.microsoft.com/en-us/azure/cosmos-db/social-media-apps) | architecture-patterns | 0.72 | Design-pattern page for social media apps on Cosmos DB; likely includes product-specific modeling and architecture guidance (feeds, followers, denormalization, partitioning, query patterns) tailored to this service, which constitutes expert, product-specific architecture knowledge beyond generic social network concepts. |
 | [Sync Java SDK v2](https://learn.microsoft.com/en-us/azure/cosmos-db/performance-tips-java) | configuration | 0.72 | Similar to the async article, this focuses on performance via client configuration options for a specific SDK version, which are concrete configuration parameters and recommended values. |
-| [.NET SDK v3](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3) | integrations | 0.70 | SDK reference/release notes typically include API surface details, configuration options, and version-specific behaviors unique to this product. |
 | [API version 3.2](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/feature-support-32) | configuration | 0.70 | As with other versioned feature-support pages, this documents exactly which MongoDB 3.2 features work in Cosmos DB, which is product-specific configuration/compatibility detail. |
 | [API version 3.6](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/feature-support-36) | configuration | 0.70 | Provides a matrix of supported MongoDB 3.6 commands and features in Cosmos DB, which is expert compatibility/configuration knowledge. |
 | [API version 4.0](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/feature-support-40) | configuration | 0.70 | Lists specific MongoDB features and syntax supported by Cosmos DB for MongoDB 4.0. This is detailed compatibility/configuration data unique to this product. |
@@ -318,7 +329,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Compatibility](https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/support) | configuration | 0.70 | Documents which TinkerPop/Gremlin steps and features are supported or not in Cosmos DB Gremlin, a compatibility matrix that is product-specific reference. |
 | [Compute and storage](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/resources-compute) | decision-making | 0.70 | Compute and storage options page will compare node sizes, storage types, and scaling options, helping choose capacity and SKUs. |
 | [Configure Customer-Managed Keys](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/customer-managed-keys) | security | 0.70 | Details how to use Azure Key Vault for disk encryption with customer-managed keys for this service; involves product-specific security configuration steps. |
-| [Configure distributed transactions (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-and-use-distributed-transactions) | integrations | 0.70 | Shows how to enable distributed transactions on the account and use them via the .NET SDK, including product-specific API patterns and configuration steps for multi-partition atomic operations. |
+| [Configure distributed transactions (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-and-use-distributed-transactions) | configuration | 0.70 | The article describes how to enable distributed transactions on an Azure Cosmos DB for NoSQL account and use them via the .NET SDK, which involves product-specific configuration steps and SDK usage patterns that go beyond generic knowledge. While the summary doesn't show numeric limits or quotas, it clearly focuses on enabling a preview feature and using specific APIs/configuration unique to Cosmos DB distributed transactions, fitting best under configuration. |
 | [Configure multi-region writes](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-multi-region-write) | configuration | 0.70 | Multi-region write configuration content for Cosmos DB API for MongoDB typically documents specific settings, required flags, portal/CLI options, and possibly consistency or failover configuration parameters; these are product-specific configuration details rather than generic concepts. |
 | [Conflict resolution policies](https://learn.microsoft.com/en-us/azure/cosmos-db/conflict-resolution-policies) | best-practices | 0.70 | Details conflict categories and built-in/custom resolution policies specific to Cosmos DB multi-region writes; product-specific behavioral nuances. |
 | [Considerations and guidance](https://learn.microsoft.com/en-us/azure/cosmos-db/security-considerations) | security | 0.70 | Security considerations article; likely lists Cosmos DB–specific features and best practices beyond generic security advice. |
@@ -373,7 +384,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Java SDK v4](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-v4) | configuration | 0.70 | Release notes pages for SDKs typically include version-specific changes, configuration flags, default values, and sometimes breaking changes or migration details that are not broadly known to LLMs. For a core SDK like Cosmos DB Java v4, this usually covers expert details such as specific client options, defaults, and behavior changes. While the summary is high-level, the full page is expected to contain detailed configuration and version behavior information, fitting best under configuration. |
 | [Kafka Connect V1 overview](https://learn.microsoft.com/en-us/azure/cosmos-db/kafka-connector) | integrations | 0.70 | Connector-focused article; Kafka Connect integrations typically document connector-specific configuration properties and patterns unique to Cosmos DB. |
 | [Lightweight Transactions in API for Apache Cassandra](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/lightweight-transactions) | limits-quotas | 0.70 | Covers how to enable LWT and 'key limitations'. LWT support in Cosmos DB for Cassandra typically includes specific constraints (supported operations, performance/throughput impacts, possibly numeric limits on concurrency or partition behavior) that are product-specific and not generally known. The emphasis on limitations suggests explicit constraints that fit limits-quotas better than generic conceptual content. |
-| [Linux emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux) | configuration | 0.70 | Linux-based emulator pages generally document container image parameters, environment variables, ports, and feature support flags for the emulator. Those are product-specific configuration options (e.g., command-line args, env vars) that qualify as expert knowledge under configuration, beyond a simple conceptual overview of what the emulator is. |
+| [Linux emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux) | configuration | 0.70 | Page describes the Linux-based Cosmos DB emulator as a Docker container with product-specific behavior (API for NoSQL only, gateway mode, subset of features, no authentication enforcement). These are concrete, implementation-specific details about supported modes and constraints that go beyond generic knowledge and are needed to correctly configure and use this emulator variant, fitting best under configuration. |
 | [MCP server setup](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/model-context-protocol-setup) | configuration | 0.70 | MCP server setup is likely to include concrete configuration parameters (endpoints, ports, auth settings, environment variables) and possibly default values. This is product-specific configuration for enabling AI-powered access, matching the configuration sub-skill. |
 | [Manage agent memories](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agentic-memories) | architecture-patterns | 0.70 | Describes concrete patterns, data models, and query strategies for agent memory; includes trade-offs and when to use each pattern. |
 | [Manage consistency levels](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-consistency) | configuration | 0.70 | Covers concrete configuration of consistency levels, including default vs per-request overrides and session token handling, which are product-specific configuration details rather than generic concepts. |
@@ -559,7 +570,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Upgrade cluster](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-upgrade) | deployment | 0.65 | Upgrade docs usually detail supported version paths, constraints, and timing/behavior during upgrade that are specific to Cosmos DB for PostgreSQL. |
 | [Use VPN with Azure Managed Instance for Apache Cassandra](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/use-vpn) | security | 0.65 | Content focuses on securing Azure Managed Instance for Apache Cassandra when using a VPN, and likely includes specific outbound network rules, firewall/user-defined route configurations, and Azure service access requirements that are product-specific security configuration details. |
 | [Use dual-write proxy - live](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/dual-write-proxy-migration) | decision-making | 0.65 | Compares native hybrid replication vs dual-write proxy with Apache Spark, and explains when hybrid isn’t feasible; provides scenario-based migration guidance and recommendations, fitting decision-making. |
-| [Use with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet) | integrations | 0.65 | Quickstart for Azure Cosmos DB .NET SDK; typically includes concrete client options, connection settings, and API usage patterns specific to Cosmos DB. |
 | [Use with a Java app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java) | integrations | 0.65 | Java quickstart; includes Cosmos DB Java client configuration and method usage that qualify as integration patterns. |
 | [Use with a JavaScript app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs) | integrations | 0.65 | Node.js quickstart; shows Cosmos DB client configuration and API calls, which are product-specific integration patterns. |
 | [Use with a Python app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-python) | integrations | 0.65 | Python quickstart for Cosmos DB; contains product-specific client initialization, configuration options, and API method usage. |
@@ -727,7 +737,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [MongoDB native tools (offline)](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-mongotools-cosmos-db) | 0.30 | Tutorial-style migration walkthrough using MongoDB native tools; summary indicates step-by-step guidance but no evidence of specific limits, quotas, error-code mappings, or product-specific configuration tables that go beyond generic migration knowledge. |
 | [Monitor Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor) | 0.30 | High-level monitoring overview; likely conceptual description of Azure Monitor integration without detailed metrics tables or configuration parameters. |
 | [Move data between containers](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy) | 0.30 | From the summary, this appears to be a feature overview/tutorial for container copy jobs with high-level scenarios and mentions of using Azure CLI or portal. There is no clear indication of detailed limits, configuration parameter tables, error codes, or decision matrices. Without evidence of such specifics, it does not meet the bar for expert knowledge under the defined sub-skill types. |
-| [Multi-vector search with MaxSim](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/multi-vector-search) | 0.30 | Multi-vector search with MaxSim is described conceptually (store more than one vector at an embedding path); the summary lacks specific numeric thresholds, configuration options, or troubleshooting/error code content. |
 | [Node.js](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/quickstart-nodejs) | 0.30 | Node.js quickstart focuses on creating an account and basic CRUD; typically does not include detailed limits, quotas, or specialized configuration tables. |
 | [Node.js and React app](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/tutorial-develop-react) | 0.30 | Video-based React/Node tutorial; primarily app-building guidance, not detailed product-specific configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cosmos-db/synapse-link) | 0.30 | High-level description of Synapse Link HTAP; summary does not show concrete limits, configs, or decision matrices. |
@@ -779,6 +788,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Use Data Explorer](https://learn.microsoft.com/en-us/azure/cosmos-db/data-explorer) | 0.20 | Primarily an overview of the Data Explorer UI and its advantages; likely focuses on navigation and conceptual capabilities rather than detailed configuration parameters, limits, or troubleshooting specifics. |
 | [Use cases](https://learn.microsoft.com/en-us/azure/cosmos-db/analytics-and-business-intelligence-use-cases) | 0.20 | Use-case/overview content for near real-time analytics; no concrete limits, configs, or error mappings. |
 | [Use the Agent Kit](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/usage) | 0.20 | Usage page describes how to prompt the kit and example tasks; appears to be conceptual/usage guidance without specific configuration values, limits, or troubleshooting mappings. |
+| [Use with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet) | 0.20 | Quickstart tutorial for a basic .NET app using Azure Cosmos DB; primarily step-by-step deployment and sample code without detailed configuration tables, limits, quotas, or product-specific troubleshooting/error-code mappings. |
 | [Use with a Go app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-go) | 0.20 | Quickstart tutorial for using Azure Cosmos DB with the Go SDK; primarily step-by-step sample code and setup, without configuration tables, limits, error-code mappings, or other expert-only reference details. |
 | [Use with a Rust app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-rust) | 0.20 | Quickstart tutorial for using Azure Cosmos DB with the Rust SDK; focuses on deploying a sample app and basic operations, not on limits, configuration matrices, or detailed troubleshooting content. |
 | [Vector databases](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-database) | 0.20 | Appears to be an overview of using Cosmos DB as a vector database and RAG patterns, likely conceptual and marketing-oriented without detailed limits, configs, or decision matrices. |

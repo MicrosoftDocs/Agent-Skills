@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   configuration: 'Configuring Azure WAF (Front Door & App Gateway): custom/managed
     rules, geo/ASN/bot/JA4 filters, rate limiting, exclusions, logging/metrics, custom
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: 'Using WAF with other Azure services: integrating logs with Sentinel/Log
     Analytics, automating incident response, investigating events, and protecting
     APIM/Azure OpenAI via Front Door WAF.'
-  security: 'Configuring Azure WAF/Front Door/App Gateway security: IP/geo rules,
-    default/CRS/DRS rule sets, exclusions/exceptions, log scrubbing for sensitive
-    data, governance, and securing Azure OpenAI APIs.'
+  security: 'Configuring and tuning Azure WAF/Front Door/Application Gateway security:
+    custom/managed rules, IP/geo/service tag filters, DDoS, exclusions, log scrubbing,
+    sensitive data protection, and policy governance.'
   best-practices: Best practices for configuring and tuning WAF on Azure Front Door
     and Application Gateway, including rule tuning, reducing false positives, and
     using geomatch rules for stronger security.
@@ -23,32 +23,31 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web Application Firewall development
   including best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when configuring Front Door/App
-  Gateway WAF rules, geo/bot filters, rate limits, Sentinel logging, or APIM/Azure
-  OpenAI protection, and other Azure Web Application Firewall related development
-  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
-  Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure Firewall
-  Manager (use azure-firewall-manager).
-use_when: Use when configuring Front Door/App Gateway WAF rules, geo/bot filters,
-  rate limits, Sentinel logging, or APIM/Azure OpenAI protection, and other Azure
-  Web Application Firewall related development tasks.
+  Gateway WAF rules, rate limits, geo/IP filters, Sentinel logging, or IaC deployments,
+  and other Azure Web Application Firewall related development tasks. Not for Azure
+  Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door),
+  Azure Firewall (use azure-firewall), Azure DDoS Protection (use azure-ddos-protection).
+use_when: Use when configuring Front Door/App Gateway WAF rules, rate limits, geo/IP
+  filters, Sentinel logging, or IaC deployments, and other Azure Web Application Firewall
+  related development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure
-  Firewall Manager (use azure-firewall-manager).
+  DDoS Protection (use azure-ddos-protection).
 ---
 # Azure Web Application Firewall Crawl Report
 
 ## Summary
 
-- **Total Pages**: 84
-- **Fetched**: 84
+- **Total Pages**: 85
+- **Fetched**: 85
 - **Fetch Failed**: 0
-- **Classified**: 56
-- **Unclassified**: 28
+- **Classified**: 58
+- **Unclassified**: 27
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 83
+- **Updated Pages**: 2
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -56,29 +55,38 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 4 | 4.8% |
-| configuration | 26 | 31.0% |
+| best-practices | 4 | 4.7% |
+| configuration | 25 | 29.4% |
 | decision-making | 2 | 2.4% |
-| deployment | 3 | 3.6% |
+| deployment | 3 | 3.5% |
 | integrations | 6 | 7.1% |
 | limits-quotas | 2 | 2.4% |
-| security | 13 | 15.5% |
-| *(Unclassified)* | 28 | 33.3% |
+| security | 16 | 18.8% |
+| *(Unclassified)* | 27 | 31.8% |
 
 ## Changes
 
 ### New Pages
 
-- [IPv6 geo-based custom rules (preview)](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-rules-geo-based-ipv6)
+- [Service tag matching](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/service-tag-match-condition)
+
+### Updated Pages
+
+- [HTTP DDoS protection](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/http-ddos-ruleset)
+  - Updated: 2026-04-27T22:14:00.000Z → 2026-10-15T22:12:00.000Z
+- [Custom rules overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-10-08T22:13:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Request size limits](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits) | limits-quotas | 0.90 | Describes exact request and file upload size limits, lower/upper boundaries, and controls (including disabling max size enforcement) for Application Gateway WAF, which are precise numeric constraints and behaviors not generally known from training. |
+| [Service tag matching](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/service-tag-match-condition) | security | 0.83 | Page explains how to configure WAF custom rules using the ServiceTagMatch operator, including required match variables (SocketAddr or RemoteAddr) and how service tags map to Azure service IP prefixes. These are specific RBAC-like network identity constructs and configuration parameters unique to Azure Front Door WAF, making this expert security configuration knowledge. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-best-practices) | best-practices | 0.80 | Explicitly labeled as best practices for Azure WAF in Azure Front Door Premium. These articles usually contain concrete, product-specific guidance and configuration recommendations rather than just conceptual overviews, fitting the best-practices sub-skill. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/best-practices) | best-practices | 0.80 | Explicitly labeled as best practices for Azure WAF on Application Gateway V2. Such pages typically include product-specific DOs/DON’Ts, configuration recommendations, and gotchas unique to WAF on Application Gateway, matching the best-practices sub-skill. |
 | [Exclusion lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-configuration) | configuration | 0.80 | Explains how to configure exclusion lists in WAF policies; includes specific fields and behaviors for excluding parts of requests, which are product-specific settings. |
+| [Custom rules overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules) | security | 0.78 | Page details Azure Front Door WAF custom rules, including rule types (match vs rate limit), priority semantics, match conditions, and actions. These are concrete, product-specific security configuration patterns (how to structure and apply WAF rules) that an LLM wouldn’t reliably infer without documentation, so it fits the security sub-skill. |
 | [Managed rules overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-drs) | security | 0.78 | Page lists specific WAF Default Rule Set (DRS) rule groups and individual rules for Azure Front Door, including rule IDs and their security purposes. These are product-specific security configurations and mappings that go beyond generic WAF knowledge and qualify as expert security configuration details. |
 | [Policy settings](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-policy-settings) | configuration | 0.78 | Describes specific WAF policy-level settings (scope, state, mode, blocked-response behavior, redirect URIs) and their allowed values/behaviors for Azure Front Door. This is product-specific configuration detail beyond generic WAF concepts. |
 | [Tuning](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-tuning) | best-practices | 0.76 | Provides concrete tuning actions, log review guidance, and handling of false positives specific to Azure Front Door WAF and its Microsoft-managed rule set. These are product-specific operational best practices rather than generic WAF advice. |
@@ -91,6 +99,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [AS number matching](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/asn-match-condition) | configuration | 0.74 | Details how to configure Autonomous System Number (ASN) match conditions in custom WAF rules, including match variables and operators. These are specific configuration options unique to Azure Front Door WAF. |
 | [Client fingerprint matching](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/client-fingerprint-match-condition) | configuration | 0.74 | Describes using JA4 TLS client fingerprint as a match variable and the required operators in Azure Front Door WAF custom rules. This is product-specific configuration using a particular fingerprinting standard. |
 | [Configure rate limit](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-rate-limit-configure) | configuration | 0.72 | Explains how to configure WAF rate-limit rules with tier-specific behavior (Standard vs Premium) and rule parameters. Contains product-specific configuration patterns for rate limiting rather than just conceptual guidance. |
+| [HTTP DDoS protection](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/http-ddos-ruleset) | security | 0.72 | Page describes Azure Front Door WAF’s HTTP DDoS ruleset behavior and configuration specifics (how it baselines traffic per client IP, bot classification, country/region handling, and automated protection model). These are product-specific security controls and behaviors that go beyond generic WAF/DDoS concepts and qualify as expert security configuration knowledge. |
 | [Secure your Azure Web Application Firewall](https://learn.microsoft.com/en-us/azure/web-application-firewall/secure-web-application-firewall) | security | 0.72 | Page focuses on securing Azure Web Application Firewall deployments with concrete, product-specific security recommendations (network security, IAM, data protection, logging, compliance, recovery). This aligns with security sub-skill guidance, and such WAF-specific hardening steps and configurations are more detailed than generic security concepts an LLM would know. |
 | [Associate a policy with an existing Application Gateway](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/associate-waf-policy-existing-gateway) | configuration | 0.70 | Describes constraints (same region/subscription) and steps to bind a WAF policy to an existing gateway; product-specific configuration behavior. |
 | [CAPTCHA challenge](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/captcha-challenge) | configuration | 0.70 | Describes CAPTCHA feature behavior and configuration for login/sign-up flows; includes WAF action settings and usage constraints. |
@@ -115,7 +124,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Upgrade to WAF policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ag-waf-policy) | deployment | 0.70 | Contains product-specific upgrade guidance tied to a deprecation timeline (exact retirement dates, SKU-specific behavior, and required migration path from inline WAF configuration to WAF policy). This is concrete, time-bound operational guidance that an LLM wouldn't reliably infer from training data and is directly related to how and when to change deployment/configuration for production environments. |
 | [Managed ruleset support policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ruleset-support-policy) | decision-making | 0.68 | Ruleset support policy pages typically include version-specific support timelines, upgrade paths, and extended support details that guide when to move between ruleset versions. This is expert, product-specific decision guidance about choosing and upgrading WAF managed rulesets, not just conceptual info. |
 | [Protect Azure OpenAI](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/protect-azure-open-ai) | security | 0.68 | Gives product-specific guidance on using Azure Front Door WAF to protect Azure OpenAI APIs against OWASP, CVEs, and bot attacks. Contains concrete security configuration and usage patterns tailored to this integration scenario. |
-| [Custom rules overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules) | configuration | 0.65 | Defines product-specific custom rule structure (priority numbers, rule types, match conditions, rate limit rules) and how to configure them, which is detailed configuration knowledge unique to Front Door WAF. |
 | [Geo-filtering](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-geo-filtering) | configuration | 0.65 | Shows how to define custom access rules by country/region; involves specific match variables and allowed values for geo-filtering in WAF policies. |
 | [Microsoft Security Copilot](https://learn.microsoft.com/en-us/azure/web-application-firewall/waf-copilot) | integrations | 0.65 | Describes integration between WAF and Security Copilot, including how WAF logs are surfaced and queried; product-specific integration behavior. |
 | [Monitoring and logging](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-metrics) | configuration | 0.65 | Covers specific WAF metrics exposed via Azure Monitor and how to configure them; includes metric names and monitoring configuration details. |
@@ -148,7 +156,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Create a WAF policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-waf-policy-ag) | 0.30 | How to create WAF policies and associate them; procedural and conceptual, not a detailed configuration or limits document. |
 | [Custom rule examples](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-custom-waf-rules) | 0.30 | The page is primarily a how-to/tutorial for creating WAF v2 custom rules with example conditions. It doesn’t emphasize configuration tables, limits, security role matrices, or troubleshooting mappings with error codes; it’s general usage guidance that an LLM can infer from product knowledge. |
 | [Geomatch custom rules](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/geomatch-custom-rules) | 0.30 | Article is described as an overview of geomatch custom rules and how to select Geo location as a match type and choose countries/regions. The summary suggests high-level feature explanation without detailed configuration tables, limits, or error mappings, so it does not clearly meet any expert-knowledge sub-skill criteria. |
-| [HTTP DDoS protection](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/http-ddos-ruleset) | 0.30 | Appears to be a conceptual/feature overview of the HTTP DDoS ruleset in Front Door WAF. The summary emphasizes motivation and preview status; there’s no clear indication of specific numeric thresholds, configuration tables, or detailed rule parameters in the provided text. |
 | [HTTP DDoS protection](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ddos-ruleset) | 0.30 | The summary indicates a conceptual description of the HTTP DDoS ruleset for Application Gateway WAF, focusing on what it is and why it exists. There is no evidence of specific numeric limits, configuration parameter tables, error codes, or decision matrices. Without concrete values, settings, or troubleshooting mappings, it does not meet the criteria for any expert-knowledge sub-skill type. |
 | [Upgrade ruleset version](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ruleset-version) | 0.30 | Summary indicates general guidance to run the latest DRS/CRS ruleset and describes protections and benefits, but does not show specific rule IDs, version matrices, or configuration parameters in the provided text. It reads as conceptual/maintenance guidance rather than detailed configuration, limits, or troubleshooting content. |
 | [WAF engine](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/waf-engine) | 0.30 | High-level description of the WAF engine and features; no concrete limits, configs, or error mappings. |

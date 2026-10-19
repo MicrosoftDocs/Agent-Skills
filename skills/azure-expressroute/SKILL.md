@@ -1,9 +1,9 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ExpressRoute circuits/gateways, BGP routing (incl. IPv6), FastPath, Global Reach, or MACsec/IPsec, and other Azure ExpressRoute related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Internet Peering (use azure-internet-peering).
+description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ExpressRoute bandwidth/gateways, configuring BGP/NAT, deploying circuits via ARM/Terraform, or automating CLI-based management, and other Azure ExpressRoute related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Internet Peering (use azure-internet-peering).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure ExpressRoute Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L53 | Best practices for ExpressRoute capacity planning, QoS, BGP communities, gateway hardware migration, and validating resiliency via gateway and circuit failover testing. |
 | Decision Making | L54-L62 | Guidance on choosing and configuring ExpressRoute gateways, SKUs, resiliency/topology options, VNet connectivity patterns, and planning/managing ExpressRoute-related costs. |
 | Architecture & Design Patterns | L63-L74 | Designing resilient, highly available ExpressRoute architectures, including DR patterns, multi-circuit routing/Global Reach, VPN coexistence and failover, and using Microsoft peering for PSTN. |
-| Limits & Quotas | L75-L83 | ExpressRoute limits on bandwidth, routes, gateways, FastPath, provider rate limiting, plus monitoring and FAQs to avoid hitting connectivity and quota constraints. |
-| Security | L84-L92 | Encryption and security for ExpressRoute: IPsec/MACsec setup, NAT requirements, RBAC roles/permissions, and applying network security controls to private circuits. |
-| Configuration | L93-L121 | Configuring ExpressRoute circuits, gateways, routing/peering, BGP (incl. IPv6, communities, BFD), NAT, monitoring, resiliency, and coexistence with VPN using portal, CLI, and PowerShell |
-| Integrations & Coding Patterns | L122-L129 | Configuring and automating ExpressRoute circuits and connectivity, including Azure CLI management, NAT setups for Cisco/Juniper, and S2S VPN over Microsoft peering. |
-| Deployment | L130-L137 | Guides for deploying and migrating ExpressRoute circuits/gateways, including Direct SKUs, zone/AZ-enabled gateways, and ARM/Terraform-based provisioning and traffic migration. |
+| Limits & Quotas | L75-L84 | ExpressRoute bandwidth, route, and gateway limits; FastPath usage; provider rate limiting; monitoring advertised routes; and FAQs on staying within connectivity quotas. |
+| Security | L85-L93 | Encryption and security for ExpressRoute: IPsec/MACsec setup, NAT requirements, RBAC roles/permissions, and applying network security controls to private circuits. |
+| Configuration | L94-L122 | Configuring ExpressRoute circuits, gateways, routing/peering, BGP (incl. IPv6, communities, BFD), NAT, monitoring, resiliency, and coexistence with VPN using portal, CLI, and PowerShell |
+| Integrations & Coding Patterns | L123-L130 | Configuring and automating ExpressRoute circuits and connectivity, including Azure CLI management, NAT setups for Cisco/Juniper, and S2S VPN over Microsoft peering. |
+| Deployment | L131-L138 | Guides for deploying and migrating ExpressRoute circuits/gateways, including Direct SKUs, zone/AZ-enabled gateways, and ARM/Terraform-based provisioning and traffic migration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -76,6 +76,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Evaluate Azure ExpressRoute FastPath limits and usage | https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath |
+| Manage ExpressRoute advertised route scale within limits | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connection-manage-advertised-routes |
 | Azure ExpressRoute FAQs on limits and connectivity details | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-faqs |
 | Monitor ExpressRoute advertised routes to avoid limits | https://learn.microsoft.com/en-us/azure/expressroute/how-to-custom-route-alert |
 | Understand rate limiting on provider-based ExpressRoute circuits | https://learn.microsoft.com/en-us/azure/expressroute/provider-rate-limit |

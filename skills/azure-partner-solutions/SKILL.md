@@ -1,9 +1,9 @@
 ---
 name: azure-partner-solutions
-description: Expert knowledge for Azure Partner Solutions development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic/New Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development tasks.
+description: Expert knowledge for Azure Partner Solutions development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic/New Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry), Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure Oracle (use azure-oracle).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Partner Solutions Skill

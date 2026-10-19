@@ -1,9 +1,9 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME metrics/partitions, choosing tiers, securing auth/ACLs/legal tags, or integrating ACZ/DDMS with Databricks/Fabric, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Data Manager for Agriculture (use azure-data-manager-for-agri).
+description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME metrics/CORS, choosing tiers, using DDMS/RAFS/Seismic APIs, securing legal tags/ACLs, or deploying GCZ on AKS, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L46-L50 | Guidance on architecting resilient ADME deployments in Azure Energy Data Services, including zone redundancy, disaster recovery strategies, and high-availability design patterns. |
 | Security | L51-L65 | Securing Azure Data Manager for Energy: auth tokens, ACLs, encryption, legal tags, user/group entitlements, managed identities, private endpoints, and API Management access control. |
 | Configuration | L66-L74 | Configuring ADME operations: monitoring metrics, data partitioning, CORS, audit logging, and milestone upgrade settings for secure, scalable data management. |
-| Integrations & Coding Patterns | L75-L96 | Patterns and examples for integrating Azure Energy data (ACZ/ADME/DDMS) with Databricks, Fabric, Snowflake, external sources, logs/monitoring, and domain APIs (seismic, wells, reservoirs). |
-| Deployment | L97-L100 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
+| Integrations & Coding Patterns | L75-L97 | Patterns and examples for integrating Azure Energy data with Databricks, Fabric, Snowflake, external services, and using DDMS/RAFS/Seismic/Well APIs, logs, and file APIs. |
+| Deployment | L98-L101 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
 
 ### Troubleshooting
 | Topic | URL |
@@ -89,6 +89,7 @@ This skill requires **network access** to fetch documentation content:
 | Read reservoir data using Reservoir DDMS REST APIs | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-reservoir-ddms-apis |
 | Use Reservoir DDMS websocket endpoints for data | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-reservoir-ddms-websocket |
 | Call RAFS DDMS APIs for rock and fluid samples | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-rock-and-fluid-samples-ddms |
+| Use Seismic DDMS Analytics API for scheduled reports | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-analytics |
 | Call Seismic DDMS APIs with cURL | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-ddms |
 | Use sdutil CLI to interact with Seismic Store | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-ddms-sdutil |
 | Manage well records with Well Delivery DDMS APIs | https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-well-delivery-ddms |

@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 132
+- **Updated Pages**: 0
+- **Unchanged**: 133
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 | *(Unclassified)* | 32 | 24.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Known issues](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues)
-  - Updated: 2026-08-21T17:12:00.000Z → 2026-10-02T17:19:00.000Z
 
 ## Classified Pages
 

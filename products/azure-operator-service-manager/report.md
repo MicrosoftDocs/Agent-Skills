@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-07-05'
+generated_at: '2026-10-18'
 category_descriptions:
-  best-practices: Best practices for AOSM onboarding, config group design, Helm charts,
-    artifact cleanup, and controlling CNF upgrade failure behavior.
+  best-practices: Best practices for onboarding/deploying AOSM, designing configuration
+    groups, packaging CNFs with Helm, cleaning up publisher resources, and controlling
+    CNF upgrade failure behavior.
   integrations: Using CLI/ARM/Helm with AOSM to onboard CNFs/VNFs, manage images and
     artifacts (ACR/storage-backed stores), and add ARM resources to network service
     designs
@@ -16,17 +17,17 @@ category_descriptions:
     extension and troubleshooting Helm chart installation failures in AOSM CNF deployments.
 skill_description: Expert knowledge for Azure Operator Service Manager development
   including troubleshooting, best practices, security, configuration, and integrations
-  & coding patterns. Use when onboarding CNFs/VNFs, designing config groups, managing
-  ACR artifacts, using ARM/CLI, or securing with Private Link, and other Azure Operator
-  Service Manager related development tasks. Not for Azure Operator Nexus (use azure-operator-nexus),
-  Azure Operator Insights (use azure-operator-insights), Azure Network Function Manager
-  (use azure-network-function-manager), Azure Networking (use azure-networking).
-use_when: Use when onboarding CNFs/VNFs, designing config groups, managing ACR artifacts,
-  using ARM/CLI, or securing with Private Link, and other Azure Operator Service Manager
+  & coding patterns. Use when onboarding CNFs/VNFs with Helm, managing ACR artifacts,
+  configuring cluster registry, Private Link, or RBAC, and other Azure Operator Service
+  Manager related development tasks. Not for Azure Operator Insights (use azure-operator-insights),
+  Azure Operator Nexus (use azure-operator-nexus), Azure Resource Manager (use azure-resource-manager),
+  Azure Networking (use azure-networking).
+use_when: Use when onboarding CNFs/VNFs with Helm, managing ACR artifacts, configuring
+  cluster registry, Private Link, or RBAC, and other Azure Operator Service Manager
   related development tasks.
-confusable_not_for: Not for Azure Operator Nexus (use azure-operator-nexus), Azure
-  Operator Insights (use azure-operator-insights), Azure Network Function Manager
-  (use azure-network-function-manager), Azure Networking (use azure-networking).
+confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights),
+  Azure Operator Nexus (use azure-operator-nexus), Azure Resource Manager (use azure-resource-manager),
+  Azure Networking (use azure-networking).
 ---
 # Azure Operator Service Manager Crawl Report
 
@@ -40,8 +41,8 @@ confusable_not_for: Not for Azure Operator Nexus (use azure-operator-nexus), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 47
+- **Updated Pages**: 1
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -57,6 +58,11 @@ confusable_not_for: Not for Azure Operator Nexus (use azure-operator-nexus), Azu
 | *(Unclassified)* | 23 | 48.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Publisher Resource Cleanup Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/resource-cleanup-management)
+  - Updated: 2025-09-19T22:11:00.000Z → 2026-10-08T05:11:00.000Z
 
 ## Classified Pages
 
@@ -79,7 +85,7 @@ confusable_not_for: Not for Azure Operator Nexus (use azure-operator-nexus), Azu
 | [Onboard a containerized network function (CNF) - CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-onboard-containerized-network-function-cli) | integrations | 0.70 | How-to for onboarding CNFs via CLI; likely includes specific CLI commands, parameters, and patterns unique to AOSM. |
 | [Onboard a virtualized network function (VNF) - CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-onboard-virtualized-network-function-cli) | integrations | 0.70 | Similar to CNF onboarding but for VNFs; includes AOSM CLI commands and parameters specific to this integration. |
 | [Onboarding and Deploying Basics](https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy) | best-practices | 0.70 | Described as best practice recommendations for onboarding and deploying network functions with Azure Operator Service Manager. While the summary doesn’t show numbers, these product-specific DO/DON'T guidelines for NF onboarding and deployment are likely concrete and implementation-focused, fitting the best-practices sub-skill. |
-| [Publisher Resource Cleanup Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/resource-cleanup-management) | best-practices | 0.70 | Describes a specific cleanup feature and how to use it to manage artifacts; likely includes concrete operational recommendations and edge cases. |
+| [Publisher Resource Cleanup Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/resource-cleanup-management) | best-practices | 0.68 | The page describes a specific AOSM feature for detecting unused publisher artifacts and automating their deletion, with concrete guidance on how and when to use it to reduce storage costs and improve security. This is product-specific operational guidance (DOs for managing resource clean-up) rather than generic concepts, fitting best under best-practices. |
 | [Control Upgrade Failure Behavior](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrades-nf-level-rollback) | best-practices | 0.65 | Focuses on specific upgrade failure behaviors (pause on failure, rollback on failure) for CNFs in AOSM. This is product-specific operational guidance on how and when to use particular behaviors for faster retries or full rollback, which aligns with best-practices rather than generic concepts. |
 | [Interrupt a service deployment operation](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-cancel-service-deployments) | configuration | 0.65 | Describes using tags on managed resource groups to control deployments; product-specific operational configuration behavior. |
 | [Publisher Artifact Store Resiliency](https://learn.microsoft.com/en-us/azure/operator-service-manager/publisher-artifact-store-resiliency) | configuration | 0.65 | Explains enabling geo-replication for ACR-backed artifact stores; likely includes specific configuration steps and parameters unique to AOSM integration. |

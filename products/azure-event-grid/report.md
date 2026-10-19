@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-10-18'
 category_descriptions:
-  security: 'Securing Event Grid endpoints and MQTT: auth (keys, SAS, Entra, JWT,
-    certs), RBAC, managed identities, webhooks, TLS, IP/firewalls, private endpoints,
-    policies, and cross-tenant delivery.'
-  configuration: Configuring Event Grid and MQTT namespaces, domains, filtering, monitoring,
-    autoscale, and dead-lettering, plus detailed event schemas and subscription setup
-    for many Azure and Microsoft services.
+  security: 'Securing Event Grid: auth (keys, Entra ID, JWT, OAuth), RBAC, managed
+    identities, MQTT auth, webhooks, IP firewalls, private endpoints, TLS, and Azure
+    Policy compliance.'
+  configuration: 'Configuring Event Grid and namespaces: topics, schemas, filters,
+    dead-lettering, monitoring, MQTT broker/clients, TLS, autoscale/throughput, and
+    integrating many Azure/Microsoft services.'
   integrations: Patterns and guides for integrating Event Grid with Auth0, Graph/M365
     apps, MQTT, webhooks, Functions, Service Bus, Event Hubs, and understanding event
     schemas and handler configuration.
@@ -27,17 +27,16 @@ category_descriptions:
     errors.'
 skill_description: Expert knowledge for Azure Event Grid development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when configuring
-  Event Grid/MQTT namespaces, securing endpoints, routing events, integrating Functions/Service
-  Bus, or troubleshooting delivery, and other Azure Event Grid related development
-  tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
-  Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
-use_when: Use when configuring Event Grid/MQTT namespaces, securing endpoints, routing
-  events, integrating Functions/Service Bus, or troubleshooting delivery, and other
-  Azure Event Grid related development tasks.
-confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Service
-  Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs),
-  Azure Web PubSub (use azure-web-pubsub).
+  security, configuration, and integrations & coding patterns. Use when building Event
+  Grid topics/namespaces, MQTT broker routes, webhooks, Functions integrations, or
+  dead-lettering, and other Azure Event Grid related development tasks. Not for Azure
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
+  Notification Hubs (use azure-notification-hubs).
+use_when: Use when building Event Grid topics/namespaces, MQTT broker routes, webhooks,
+  Functions integrations, or dead-lettering, and other Azure Event Grid related development
+  tasks.
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs).
 ---
 # Azure Event Grid Crawl Report
 
@@ -51,8 +50,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 265
+- **Updated Pages**: 3
+- **Unchanged**: 262
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -62,15 +61,24 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 |------|-------|------------|
 | architecture-patterns | 3 | 1.1% |
 | best-practices | 1 | 0.4% |
-| configuration | 68 | 25.7% |
+| configuration | 70 | 26.4% |
 | decision-making | 7 | 2.6% |
 | integrations | 38 | 14.3% |
 | limits-quotas | 8 | 3.0% |
-| security | 49 | 18.5% |
+| security | 47 | 17.7% |
 | troubleshooting | 5 | 1.9% |
 | *(Unclassified)* | 86 | 32.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Transport Layer Security (TLS)](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version)
+  - Updated: 2024-01-25T18:05:00.000Z → 2026-10-13T05:17:00.000Z
+- [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version)
+  - Updated: 2024-01-25T18:05:00.000Z → 2026-10-13T05:17:00.000Z
+- [Enforce minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-enforce-minimum-version)
+  - Updated: 2024-01-26T05:34:00.000Z → 2026-10-13T05:17:00.000Z
 
 ## Classified Pages
 
@@ -116,13 +124,11 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | [Azure Resource Management](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-resources) | configuration | 0.80 | Provides schema and properties for Resource Management events, which are specific event payload definitions for Event Grid. |
 | [Choose the right tier](https://learn.microsoft.com/en-us/azure/event-grid/choose-right-tier) | decision-making | 0.80 | The page compares Event Grid basic and standard tiers to help choose the appropriate tier based on throughput, MQTT support, and delivery options. This aligns with decision-making: tier selection guidance, comparison of capabilities, and recommendations for different scenarios. These tier-specific trade-offs and criteria are product-specific expert knowledge. |
 | [Configure IP firewall](https://learn.microsoft.com/en-us/azure/event-grid/configure-firewall) | security | 0.80 | Product-specific firewall configuration including CIDR-based allow lists and behavior (403 responses for non-allowed IPs). |
-| [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version) | security | 0.80 | Product-specific TLS configuration including default support (TLS 1.0+) and how to enforce higher minimum versions with resulting failure behavior. |
 | [Create an event subscription that uses the managed identity](https://learn.microsoft.com/en-us/azure/event-grid/managed-service-identity) | security | 0.80 | Page focuses on configuring managed identities for Event Grid topics/domains and using them to securely deliver events to Service Bus, Event Hubs, and Storage. It necessarily includes product-specific security configuration details such as identity types, role assignments, and destination-specific auth settings, which fits the security sub-skill. |
 | [Custom delivery properties](https://learn.microsoft.com/en-us/azure/event-grid/delivery-properties) | limits-quotas | 0.80 | Specifies exact limits (up to 10 headers, each ≤ 4096 bytes) and behavior for non-conformant headers, which are numeric quotas and constraints. |
 | [Delivery and retry](https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry) | limits-quotas | 0.80 | Explains durable delivery with a fixed retry schedule and policy; this article in full includes concrete retry intervals, maximum duration, and batch behavior that are numeric service limits. |
 | [Delivery and retry](https://learn.microsoft.com/en-us/azure/event-grid/namespace-delivery-retry) | limits-quotas | 0.80 | Describes retry schedule and policy, including default behaviors and possibly max durations/attempts, which are timeout/limit details. |
 | [Enable Autoscale](https://learn.microsoft.com/en-us/azure/event-grid/namespace-enable-autoscale) | configuration | 0.80 | Describes how to enable autoscale and configure minimum and maximum throughput unit limits via portal, ARM template, or REST API. Contains concrete configuration properties (enable flag, min/max TU) and product-specific setup steps, fitting configuration patterns. |
-| [Enforce minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-enforce-minimum-version) | security | 0.80 | Specifies supported TLS versions, defaults, and how to configure minimum TLS for topics/domains/subscriptions, which are concrete security settings. |
 | [Enforce security controls with custom Azure policies](https://learn.microsoft.com/en-us/azure/event-grid/custom-azure-policies-for-security-control) | security | 0.80 | Provides concrete Azure Policy definitions and parameters to restrict Event Grid destinations, including policy JSON and effect behaviors. |
 | [Grant managed identity the access to Event Grid destination](https://learn.microsoft.com/en-us/azure/event-grid/add-identity-roles) | security | 0.80 | Contains concrete RBAC role assignments for identities on Service Bus, Event Hubs, Storage, including specific role names and scopes. |
 | [Graph API event sources](https://learn.microsoft.com/en-us/azure/event-grid/partner-events-graph-api) | configuration | 0.80 | Describes events for specific Microsoft Graph resources with a table of supported resources and event types, which are concrete event contract details. |
@@ -141,13 +147,15 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | [Push delivery data reference](https://learn.microsoft.com/en-us/azure/event-grid/monitor-namespace-push-reference) | configuration | 0.80 | Reference of metrics and diagnostic logs for push delivery using namespaces, including product-specific telemetry fields. |
 | [Secure WebHook delivery with Microsoft Entra App in Azure Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/scripts/powershell-webhook-secure-delivery-microsoft-entra-app) | security | 0.80 | Describes configuration for delivering events to HTTPS endpoints protected by Entra application, including app registration, permissions, and Event Grid subscription settings. These are detailed, product-specific security configurations. |
 | [Secure WebHook delivery with Microsoft Entra user in Azure Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/scripts/powershell-webhook-secure-delivery-microsoft-entra-user) | security | 0.80 | Covers configuration for delivering events to HTTPS endpoints protected by Entra user auth, including specific auth flows and Event Grid settings. This is product-specific security configuration detail. |
-| [Transport Layer Security (TLS)](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version) | security | 0.80 | Explains how to enforce minimum TLS versions and behavior of requests with older versions; product-specific security setting. |
 | [Advanced Messaging Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-advanced-messaging-events) | integrations | 0.78 | The page defines the detailed Event Grid schema for Azure Communication Services Advanced Messaging events, including event type names, property names, and payload structure. These are product-specific integration details (event contracts) that an LLM is unlikely to fully know from training and are required to correctly integrate ACS with Event Grid, fitting the integrations & coding patterns category. |
 | [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/event-grid/configure-firewall-namespaces) | security | 0.78 | Firewall configuration for Event Grid namespaces will list specific setting names (allow/deny rules, default action, IPv4/CIDR formats, possibly portal/CLI parameters). These are product-specific security configuration details, not just conceptual guidance. |
 | [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/event-grid/configure-private-endpoints-pull) | security | 0.78 | Private endpoint setup for Event Grid namespaces requires specific configuration steps and parameters (subnet selection, private DNS, network policies). These are concrete, product-specific security/network configuration details. |
+| [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version) | configuration | 0.78 | Page describes product-specific TLS configuration for Event Grid topics/domains, including supported resource types, API version-specific behavior, and how minimum TLS versions (including TLS 1.3 opt-in) are enforced. This is concrete configuration guidance with service-specific behavior rather than a generic TLS overview. |
 | [Container Service Event Resources](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-containerservice-resources) | configuration | 0.78 | Describes Container Service Event Resources system topic with maintenance stages and provides schema links, which are specific event contracts and timing details (e.g., 7 days and 24 hours notifications). |
+| [Enforce minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-enforce-minimum-version) | security | 0.78 | Page describes product-specific security configuration for Azure Event Grid Basic, including how to enforce a minimum TLS version (e.g., TLS 1.2 or 1.3) for inbound requests. This is concrete security configuration guidance with specific protocol version options and behavior, fitting the security sub-skill type. |
 | [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/event-grid/microsoft-entra-events) | integrations | 0.78 | Page documents Microsoft Entra event types published via Microsoft Graph to Azure Event Grid, including detailed event schemas and sample payloads (property names, structures, and values). These are product-specific integration details for consuming Entra events through Event Grid, which qualify as expert knowledge and align best with the integrations & coding patterns sub-skill. |
 | [Overview](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-communication-services) | configuration | 0.78 | Describes supported event types and schema details for Azure Communication Services with Event Grid, which are concrete contract/configuration details. |
+| [Transport Layer Security (TLS)](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version) | configuration | 0.78 | Page describes product-specific TLS configuration for Event Grid topics/domains, including supported resource types, API version-specific behavior, and how minimum TLS versions (including TLS 1.3 opt-in) are enforced. This is concrete configuration guidance with service-specific behavior rather than a generic TLS overview. |
 | [AKS resources](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-aks-resources) | configuration | 0.76 | Describes AKS resources events via Fleet Manager and Gate resources, with schema links; these are specific event and resource contract details. |
 | [Authenticate event delivery to event handlers](https://learn.microsoft.com/en-us/azure/event-grid/security-authentication) | security | 0.75 | Details product-specific authentication methods (keys, managed identities, secure webhooks) and how they apply to event delivery, including configuration nuances. |
 | [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-blob-storage) | integrations | 0.75 | Gives Blob Storage event schema and notes on supported storage account kinds. These are concrete integration details and product-specific constraints. |

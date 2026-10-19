@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 45
+- **Updated Pages**: 0
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
@@ -66,11 +66,6 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 | *(Unclassified)* | 11 | 23.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Ingestion overview](https://learn.microsoft.com/en-us/azure/planetary-computer/ingestion-overview)
-  - Updated: 2025-06-24T22:35:00.000Z → 2026-09-28T22:12:00.000Z
 
 ## Classified Pages
 

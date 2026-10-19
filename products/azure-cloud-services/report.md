@@ -1,21 +1,19 @@
 ---
-generated_at: '2026-09-27'
+generated_at: '2026-10-18'
 category_descriptions:
   limits-quotas: Guest OS versions, retirement timelines, upgrade planning, and VM
     size/capacity options for Azure Cloud Services deployments
   security: Using Key Vault for certificates in Cloud Services and understanding Azure
     Guest OS security updates, support lifecycle, and retirement policies
-  deployment: Planning and managing Guest OS upgrades for Azure Cloud Services, including
-    supported OS families, upgrade paths, scheduling, and minimizing downtime.
+  decision-making: 'Planning Cloud Services (classic/extended) lifecycle: OS upgrade
+    paths, feature comparison with VM Scale Sets, and migration/requirements for moving
+    classic and non-VNet services into VNets.'
   configuration: 'Configuring Cloud Services roles and deployments: .csdef/.cscfg
     schemas, networking, load balancers, diagnostics, RDP, Key Vault, extensions,
     alerts, and SKU/instance overrides'
   best-practices: Guidance on designing and configuring autoscale rules for Cloud
     Services, including metrics, thresholds, and patterns to optimize performance,
     reliability, and cost.
-  decision-making: Guidance on planning Cloud Services guest OS upgrades, comparing
-    Cloud Services vs VM Scale Sets, and migrating classic/non-VNet Cloud Services
-    to extended support and VNets.
   troubleshooting: Diagnosing and fixing common migration errors when moving classic
     Cloud Services to Cloud Services (extended support), including deployment, configuration,
     and compatibility issues.
@@ -24,17 +22,16 @@ category_descriptions:
     cloud service instances.'
 skill_description: Expert knowledge for Azure Cloud Services development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when managing Cloud Services
-  guest OS versions, Key Vault certs, .csdef/.cscfg configs, autoscale, or PowerShell
-  automation, and other Azure Cloud Services related development tasks. Not for Azure
-  App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use
-  azure-functions).
-use_when: Use when managing Cloud Services guest OS versions, Key Vault certs, .csdef/.cscfg
-  configs, autoscale, or PowerShell automation, and other Azure Cloud Services related
+  and integrations & coding patterns. Use when managing Guest OS versions, Key Vault
+  certs, .csdef/.cscfg configs, autoscale rules, or PowerShell automation, and other
+  Azure Cloud Services related development tasks. Not for Azure Virtual Machines (use
+  azure-virtual-machines), Azure App Service (use azure-app-service), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions).
+use_when: Use when managing Guest OS versions, Key Vault certs, .csdef/.cscfg configs,
+  autoscale rules, or PowerShell automation, and other Azure Cloud Services related
   development tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
+  App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Functions (use azure-functions).
 ---
 # Azure Cloud Services Crawl Report
@@ -49,8 +46,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 45
+- **Updated Pages**: 2
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -60,8 +57,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 |------|-------|------------|
 | best-practices | 1 | 2.2% |
 | configuration | 15 | 33.3% |
-| decision-making | 4 | 8.9% |
-| deployment | 1 | 2.2% |
+| decision-making | 5 | 11.1% |
 | integrations | 3 | 6.7% |
 | limits-quotas | 3 | 6.7% |
 | security | 2 | 4.4% |
@@ -69,6 +65,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 | *(Unclassified)* | 15 | 33.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Guest OS release news](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-update-matrix)
+  - Updated: 2026-09-22T08:00:00.000Z → 2026-10-14T08:00:00.000Z
+- [Guest OS patches](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-microsoft-security-response-center-releases)
+  - Updated: 2026-09-16T08:00:00.000Z → 2026-10-14T08:00:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +100,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 | [Family 1 retirement notice](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-family-1-retirement) | limits-quotas | 0.70 | Provides specific retirement dates and behavior (deploy/upgrade failures) for OS Family 1; time-based constraints on what can be deployed. |
 | [Family 2, 3, 4 retirement notice](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-family-2-3-4-retirement) | limits-quotas | 0.70 | Lists announced retirement dates for OS Families 2, 3, and 4; these are concrete time-based constraints affecting deployments. |
 | [Get cloud service details](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/sample-get-cloud-service) | integrations | 0.70 | The page provides PowerShell samples to query Cloud Services (extended support), including specific cmdlets, parameters, and usage patterns unique to this service. That is product-specific API/SDK usage, fitting the integrations category and representing expert knowledge beyond generic PowerShell usage. |
-| [Guest OS release news](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-update-matrix) | deployment | 0.70 | The page provides a detailed Guest OS update matrix for Azure Cloud Services (extended support), including specific OS family versions, release timelines, support/retirement dates, and SDK compatibility. These product- and time-specific details are not inferable from general training data and are critical for planning upgrade and deprecation timelines, fitting best under deployment-related planning and constraints. |
+| [Guest OS release news](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-update-matrix) | decision-making | 0.70 | The page provides a detailed Guest OS update matrix and SDK compatibility information specific to Azure Cloud Services (extended support). This includes version-to-version upgrade paths and deprecation timelines that help users decide when and how to move between Guest OS versions before they are disabled. These matrices and timelines are product-specific, change over time, and are not inferable from general training data, fitting the decision-making category best. |
 | [Migration overview](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-overview) | decision-making | 0.70 | Migration overview that likely includes when/how to move, benefits, and scenario-based guidance; helps decide migration approach between models. |
 | [Migration technical details](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-technical-details) | decision-making | 0.70 | Technical details and requirements for migration tool; includes constraints and conditions that drive migration decisions and planning. |
 | [Reset a cloud service](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/sample-reset-cloud-service) | integrations | 0.70 | Reset samples will show exact PowerShell cmdlets and parameter combinations for resetting Cloud Services (extended support) deployments, which are specific integration patterns with Azure APIs. This is expert, product-specific scripting guidance, best classified as integrations. |
@@ -115,7 +118,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 | [Deploy the cloud service - PowerShell](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/deploy-powershell) | 0.40 | PowerShell deployment tutorial; uses Az.CloudService but appears as a how-to guide rather than a constraints/matrix-focused deployment reference. |
 | [Deploy the cloud service - SDK](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/deploy-sdk) | 0.40 | SDK deployment how-to; focuses on creating a deployment and RDP extension usage, but framed as a tutorial rather than a config/options reference. |
 | [Generate ARM template using the portal](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/generate-template-portal) | 0.40 | Portal-based template generation how-to; mainly procedural without deep configuration option tables or constraints. |
-| [Guest OS patches](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-microsoft-security-response-center-releases) | 0.40 | The page is primarily a changelog/list of MSRC security updates applied to Azure Guest OS families. It does not focus on limits, configuration parameters, deployment matrices, troubleshooting mappings, or other defined sub-skill patterns. While it contains detailed version/update information, this is release-note style data rather than reusable expert guidance in the categories defined. |
+| [Guest OS patches](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-microsoft-security-response-center-releases) | 0.40 | The page is primarily a changelog/list of MSRC security updates applied to Azure Guest OS families. It does not focus on limits, configuration parameters, deployment matrices, troubleshooting mappings, or other defined sub-skill patterns. While it contains detailed version-specific update information, this is release-note style data rather than the structured expert knowledge types defined (limits, configuration, troubleshooting, etc.), so it does not fit any sub-skill category. |
 | [Migrate using PowerShell](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-powershell) | 0.40 | PowerShell migration tutorial; step-by-step commands without strong indication of decision matrices or config parameter tables. |
 | [Migrate using the Azure portal](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-portal) | 0.40 | Portal-based migration how-to; primarily procedural steps rather than decision matrices or detailed configuration references. |
 | [Deploy the cloud service - Portal](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/deploy-portal) | 0.30 | Portal deployment walkthrough; primarily step-by-step UI instructions without deployment matrices or tier-specific constraints. |

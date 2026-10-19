@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 65
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -63,10 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | *(Unclassified)* | 35 | 53.0% |
 
 ## Changes
-
-### New Pages
-
-- [Monitor AKS traffic flows](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-aks-scenarios)
 
 ## Classified Pages
 

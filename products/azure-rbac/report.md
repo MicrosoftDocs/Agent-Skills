@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-18'
 category_descriptions:
   best-practices: 'Security-focused guidance on designing Azure RBAC: choosing scopes,
     delegating access with ABAC conditions, and applying least privilege and separation-of-duties
     best practices.'
-  security: 'Managing Azure RBAC security: built-in and custom roles, permissions,
-    ABAC conditions, deny assignments, PIM, policy integration, and secure role assignment/administration
-    practices.'
+  security: Azure RBAC role definitions, permissions, and conditions for security-related
+    resources, including privileged roles, deny assignments, ABAC, PIM, policy, and
+    secure subscription/tenant administration.
   troubleshooting: 'Diagnosing and fixing Azure RBAC problems: auditing role changes,
     resolving role/custom role limits, and troubleshooting role assignment condition
     and common access issues.'
@@ -23,16 +23,17 @@ category_descriptions:
     group-based access.
 skill_description: Expert knowledge for Azure Role-based access control development
   including troubleshooting, best practices, decision making, limits & quotas, security,
-  configuration, and integrations & coding patterns. Use when defining custom/built-in
-  roles, ABAC conditions, deny assignments, PIM, or ARM/Bicep-based role automation,
+  configuration, and integrations & coding patterns. Use when defining custom roles,
+  ABAC conditions, deny assignments, PIM-eligible roles, or ARM/Bicep-based role assignments,
   and other Azure Role-based access control related development tasks. Not for Azure
-  Policy (use azure-policy), Azure Security (use azure-security), Azure Resource Manager
-  (use azure-resource-manager), Azure Portal (use azure-portal).
-use_when: Use when defining custom/built-in roles, ABAC conditions, deny assignments,
-  PIM, or ARM/Bicep-based role automation, and other Azure Role-based access control
+  Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
+  Azure Security (use azure-security), Azure Lighthouse (use azure-lighthouse).
+use_when: Use when defining custom roles, ABAC conditions, deny assignments, PIM-eligible
+  roles, or ARM/Bicep-based role assignments, and other Azure Role-based access control
   related development tasks.
-confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use azure-security),
-  Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
+confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Manager
+  (use azure-resource-manager), Azure Security (use azure-security), Azure Lighthouse
+  (use azure-lighthouse).
 ---
 # Azure Role-based access control Crawl Report
 
@@ -46,8 +47,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
+- **Updated Pages**: 1
+- **Unchanged**: 103
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -65,6 +66,11 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | *(Unclassified)* | 9 | 8.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [List deny assignments](https://learn.microsoft.com/en-us/azure/role-based-access-control/deny-assignments)
+  - Updated: 2025-04-24T08:00:00.000Z → 2026-10-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -139,6 +145,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | [Role definitions](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions) | configuration | 0.75 | Explains detailed role definition structure (actions, notActions, dataActions, etc.) with examples; core configuration model for RBAC roles. |
 | [External users](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-external-users) | security | 0.74 | Covers how to securely grant Azure RBAC access to external users via Entra B2B, including specific role assignment flows and security-scoped configuration unique to Azure. |
 | [CLI](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-cli) | security | 0.72 | Provides Azure CLI commands and flags for custom role management; these are concrete, product-specific security configuration patterns. |
+| [List deny assignments](https://learn.microsoft.com/en-us/azure/role-based-access-control/deny-assignments) | security | 0.72 | Page is focused on Azure RBAC deny assignments and how to list them using product-specific commands/APIs. It contains security-focused, implementation-level details (scope handling, preview caveats, and RBAC-specific constructs) that go beyond generic security concepts, fitting the security sub-skill. While it’s primarily procedural, the deny-assignment mechanics and RBAC object details are product-specific expert knowledge. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-powershell) | security | 0.72 | Contains specific Azure PowerShell cmdlets and parameters for listing, creating, and updating custom roles; these are product-specific security configuration commands. |
 | [REST API](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-rest) | security | 0.72 | REST API reference-style usage for custom roles with specific request bodies and fields; this is detailed security configuration knowledge. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-template) | security | 0.70 | Provides ARM template schema and property names for custom roles; these are specific security configuration parameters and structures. |
@@ -152,7 +159,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | [Create a custom role - PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-powershell) | configuration | 0.70 | Describes custom role JSON structure and permissions plus PowerShell parameters; focuses on role definition configuration rather than generic scripting. |
 | [Custom security attributes example](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-custom-security-attributes-example) | decision-making | 0.70 | Discusses subscription role assignment limits and shows when to switch to ABAC with custom security attributes; includes limits and scenario-based recommendations. |
 | [Example conditions](https://learn.microsoft.com/en-us/azure/role-based-access-control/delegate-role-assignments-examples) | best-practices | 0.70 | Provides concrete examples of how to delegate role assignment management using conditions; these are product-specific recommended patterns and gotchas. |
-| [List deny assignments](https://learn.microsoft.com/en-us/azure/role-based-access-control/deny-assignments) | security | 0.70 | Explains how to list deny assignments with specific commands/filters and describes deny assignment behavior; this is product-specific security configuration/behavior knowledge. |
 | [Managed identity](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal-managed-identity) | integrations | 0.70 | Describes an alternate portal workflow specific to managed identities; includes RBAC-specific constraints and preview behavior. |
 | [Portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal) | security | 0.70 | Page provides product-specific, step-by-step security/authorization guidance for Azure RBAC in the portal, including how to enumerate role assignments for users, groups, service principals, and managed identities. This is concrete security configuration/inspection knowledge (RBAC usage patterns and UI paths) rather than conceptual overview, and is most aligned with the security sub-skill. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-powershell) | integrations | 0.70 | Provides concrete Azure PowerShell cmdlets and parameters for querying RBAC role assignments, which are product-specific API/SDK usage patterns rather than generic scripting guidance. |

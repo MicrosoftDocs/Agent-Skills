@@ -1,9 +1,9 @@
 ---
 name: azure-web-pubsub
-description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT apps, using Socket.IO, configuring event routing, geo-replication, or chat workloads, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT apps, Socket.IO chat, geo-replicated hubs, custom domains, or autoscale deployments, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-27"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Web PubSub Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L47 | Diagnosing and fixing Web PubSub errors, event handler/debug issues, service and Socket.IO problems, using resource/diagnostic logs and error codes for troubleshooting. |
 | Best Practices | L48-L52 | Guidance on building resilient WebSocket clients for Azure Web PubSub, including reconnection strategies, handling disconnects, error handling, and connection lifecycle best practices. |
-| Decision Making | L53-L59 | Guidance on choosing chat SDK vs REST, selecting Web PubSub features for your scenario, and understanding pricing, billing units, and cost implications. |
+| Decision Making | L53-L59 | Guidance on choosing chat SDK vs REST, selecting Web PubSub features for your scenario, and understanding pricing, billing meters, and cost implications. |
 | Architecture & Design Patterns | L60-L66 | Architectural patterns for Web PubSub: multi-region resiliency, bridging MQTT with WebSocket/Web PubSub, and understanding Socket.IO support internals for integration design. |
 | Limits & Quotas | L67-L72 | Capacity and performance limits for Web PubSub (connections, messages, scaling) and which Socket.IO server APIs aren’t supported or behave differently. |
 | Security | L73-L101 | Securing Azure Web PubSub: authN/Z for clients and apps (keys, Entra ID, identities, roles), mTLS, network/private endpoints, firewalls, outbound restrictions, and compliance via Azure Policy. |

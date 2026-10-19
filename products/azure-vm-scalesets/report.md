@@ -1,9 +1,12 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-18'
 category_descriptions:
   configuration: 'Configuring VM scale sets: templates, networking, disks, zones,
     upgrades, autoscale, standby pools, instance mix/protection, health/maintenance,
     and CLI/PowerShell/API management.'
+  architecture-patterns: Designing VM scale sets for high availability and low latency
+    using automatic zone balancing and proximity placement groups for optimal placement
+    and resilience.
   decision-making: Guidance on choosing VM scale set modes, availability, upgrade
     and autoscale strategies, Spot/Hybrid benefits, and cost/performance tradeoffs
     for different deployment scenarios.
@@ -16,9 +19,6 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing issues with VMSS instance mix, standby pools
     behavior, and autoscale (rules, scaling delays, capacity mismatches, and common
     error scenarios).
-  architecture-patterns: Designing scale sets with proximity placement groups to minimize
-    latency, improve performance, and ensure VMs are co-located for tightly coupled
-    or high-performance workloads
   integrations: Configuring VM scale set standby pools with Log Analytics for monitoring
     and integrating scale sets with Azure DSC extension for automated configuration
     management.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Machine Scale Sets development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when configuring autoscale, standby pools, PPG-based layouts,
-  disk encryption with Key Vault, or VMSS APIs/CLI, and other Azure Virtual Machine
+  and deployment. Use when configuring autoscale/standby pools, zone-balancing, disk
+  encryption with Key Vault, or rolling upgrades, and other Azure Virtual Machine
   Scale Sets related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service
-  (use azure-app-service), Azure Service Fabric (use azure-service-fabric).
-use_when: Use when configuring autoscale, standby pools, PPG-based layouts, disk encryption
-  with Key Vault, or VMSS APIs/CLI, and other Azure Virtual Machine Scale Sets related
-  development tasks.
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances
+  (use azure-container-instances), Azure App Service (use azure-app-service).
+use_when: Use when configuring autoscale/standby pools, zone-balancing, disk encryption
+  with Key Vault, or rolling upgrades, and other Azure Virtual Machine Scale Sets
+  related development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
-  azure-app-service), Azure Service Fabric (use azure-service-fabric).
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances
+  (use azure-container-instances), Azure App Service (use azure-app-service).
 ---
 # Azure Virtual Machine Scale Sets Crawl Report
 
@@ -50,32 +50,42 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Total Pages**: 96
 - **Fetched**: 96
 - **Fetch Failed**: 0
-- **Classified**: 77
-- **Unclassified**: 19
+- **Classified**: 76
+- **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 0
-- **Unchanged**: 96
-- **Deleted Pages**: 0
+- **Unchanged**: 94
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 1.0% |
+| architecture-patterns | 2 | 2.1% |
 | best-practices | 2 | 2.1% |
-| configuration | 41 | 42.7% |
+| configuration | 39 | 40.6% |
 | decision-making | 14 | 14.6% |
 | deployment | 4 | 4.2% |
 | integrations | 2 | 2.1% |
 | limits-quotas | 2 | 2.1% |
 | security | 8 | 8.3% |
 | troubleshooting | 3 | 3.1% |
-| *(Unclassified)* | 19 | 19.8% |
+| *(Unclassified)* | 20 | 20.8% |
 
 ## Changes
+
+### New Pages
+
+- [Automatic zone balance](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-overview)
+- [Enable a scale set with automatic zone balance](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-enable)
+
+### Deleted Pages
+
+- ~~Enable a scale set with automatic zone balance (Preview)~~ (https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-enable)
+- ~~Automatic zone balance (Preview)~~ (https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-overview)
 
 ## Classified Pages
 
@@ -95,7 +105,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Application Health extension](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension) | configuration | 0.75 | Details extension settings and how health signals drive rolling upgrades and automatic repairs; product-specific health configuration. |
 | [Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-overview) | security | 0.75 | Provides end-to-end instructions for enabling ADE on VMSS, including security-related settings and prerequisites; focused on encryption configuration rather than generic concepts. |
 | [Create a standby pool](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-create) | configuration | 0.75 | Step-by-step creation of standby pools with settings like max ready capacity; includes product-specific configuration parameters. |
-| [Enable a scale set with automatic zone balance (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-enable) | configuration | 0.75 | Step-by-step enabling of a specific feature with required properties/flags; contains concrete configuration details unique to this feature. |
 | [Migrate to Flexible Orchestration](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-migration-resources) | decision-making | 0.75 | Covers migration considerations, resource mappings, and when to move from availability sets or Uniform to Flexible; decision and migration guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) | configuration | 0.75 | Explains how to enable and configure automatic OS upgrades for VMSS, including requirements and behavior; contains product-specific settings and operational details. |
 | [Scale-In Policy](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy) | configuration | 0.75 | Explains three scale-in configuration options and how they affect which VMs are removed; includes specific policy names and settings. |
@@ -104,7 +113,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Use an existing virtual network](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-mvss-existing-vnet) | configuration | 0.75 | Shows how to modify VMSS ARM templates to reference existing VNets, including specific template properties and structures; this is detailed configuration guidance. |
 | [API comparison](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/orchestration-modes-api-comparison) | decision-making | 0.70 | Compares API differences between Uniform and Flexible orchestration modes; likely includes tables and criteria that help decide which mode to use for specific scenarios. |
 | [Automatic instance repairs](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-instance-repairs) | configuration | 0.70 | Defines automatic repair policy options and actions (delete, reimage, restart) tied to health probes; product-specific configuration behavior. |
-| [Automatic zone balance (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-overview) | configuration | 0.70 | Describes a preview feature’s behavior and conditions for moving VMs across zones; these are product-specific configuration semantics. |
 | [Automatic zone placement (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-zone-placement) | configuration | 0.70 | The page describes how to configure automatic zone placement, including placement requirements and supported orchestration modes. This is detailed, product-specific configuration of a preview feature, aligning with the configuration sub-skill. |
 | [Availability zone options](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones) | decision-making | 0.70 | The page guides how to choose between customer-selected zones, automatic zone placement, and regional deployment for Virtual Machine Scale Sets, providing product-specific decision criteria on when to use each option. This is concrete selection guidance rather than just conceptual overview, fitting the decision-making sub-skill. |
 | [Azure Spot Virtual Machines](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/use-spot) | decision-making | 0.70 | Explains when Spot VMs are appropriate, eviction behavior, and trade-offs between cost and reliability for specific workloads. |
@@ -140,6 +148,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Utilize predictive pooling (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-prediction-results) | configuration | 0.70 | Explains using runtime view APIs to retrieve prediction results and interpret them; includes product-specific fields and usage patterns. |
 | [Zone balancing in virtual machine scale sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-zone-balancing) | configuration | 0.70 | Explains balanced vs unbalanced modes and rebalancing behavior, which are specific configuration modes and operational semantics for this service. |
 | [Migrate from regional to zonal scale sets (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/migrate-scale-set-flex-to-availability-zones) | deployment | 0.68 | Page gives a prescriptive, product-specific migration procedure from regional (non-zonal) flexible VM scale sets to zonal scale sets while preserving VM state. This is specialized deployment/migration guidance for Azure VMSS, including constraints tied to preview functionality, and fits best under deployment as a migration/upgrade path rather than generic how-to content. |
+| [Automatic zone balance](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-overview) | architecture-patterns | 0.65 | Describes a product-specific resiliency/placement pattern (automatic zone balance) for Azure Virtual Machine Scale Sets, including how it behaves, when it should and should not be used (for zone resiliency but not zone-down recovery), and how it mitigates capacity and scaling-related zone imbalance. This is detailed, service-specific behavior that goes beyond generic concepts and helps make architecture decisions about zone-resilient deployments. |
 | [Changing the upgrade policy mode](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-change-upgrade-policy) | configuration | 0.65 | Explains how to modify upgrade policy after deployment via portal and APIs; specific configuration operations. |
 | [Create with ARM template](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-rest-api) | configuration | 0.65 | ARM template article typically includes schema, property names, and allowed values for VMSS resources, which are product-specific configuration parameters. |
 | [Deploy your application](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app) | deployment | 0.65 | Discusses patterns for app deployment (custom images vs scripts) specific to scale sets; production deployment considerations. |
@@ -178,6 +187,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Create in the Azure portal](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-portal) | 0.30 | Step-by-step portal tutorial for creating a scale set; no configuration matrices, limits, or deep product-specific patterns. |
 | [Create with Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-powershell) | 0.30 | PowerShell tutorial for creating a scale set; focuses on basic creation steps, not on limits, troubleshooting, or advanced configuration matrices. |
 | [Create with Bicep](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/quick-create-bicep-windows) | 0.30 | Quickstart using Bicep to create a scale set; primarily a deployment example, not a catalog of configuration options or limits. |
+| [Enable a scale set with automatic zone balance](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-enable) | 0.30 | Appears to be a how-to guide for enabling the feature, likely focused on step-by-step instructions rather than detailed configuration matrices, limits, or product-specific troubleshooting. From the summary, it does not clearly expose configuration tables, parameters, or error mappings that would qualify as expert knowledge under the defined categories. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli) | 0.20 | Tutorial for creating and managing a VM Scale Set with Azure CLI is primarily step-by-step guidance and basic management operations. It is unlikely to contain structured limits tables, configuration matrices, or other expert-only reference data; instead it focuses on how to run commands, which is generic tutorial content. |
 | [Create with the Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli) | 0.20 | CLI-based how-to for creating a flexible VM scale set; primarily a step-by-step tutorial without configuration tables, limits, quotas, error-code troubleshooting, or product-specific best-practice guidance beyond generic commands. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/vmss-support-help) | 0.20 | Support/help options page; primarily navigational and informational about where to get help, without technical configuration, limits, or troubleshooting details. |

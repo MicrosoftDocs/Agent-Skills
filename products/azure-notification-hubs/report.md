@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-10-18'
 category_descriptions:
   integrations: Implementing and migrating push notification integrations (FCM v1,
     APNS, WNS), device/user targeting, templates, localization, and using REST/SDKs
     (Java, PHP, Python, UWP, Android, iOS).
   decision-making: Guidance on choosing and switching Notification Hubs pricing tiers,
     comparing feature limits, scale, and cost implications for different workloads.
-  configuration: 'Configuring Notification Hubs: PNS credentials (APNS, FCM/FCM v1,
-    WNS, MPNS, Baidu), IaC setup (Bicep/ARM/Terraform), monitoring/logging, iOS push
-    changes, and PowerShell management.'
+  configuration: Configuring Notification Hubs (PNS credentials for APNS/FCM/WNS/MPNS/Baidu),
+    IaC setup (Bicep/ARM/Terraform), and monitoring/automation via metrics, logs,
+    and PowerShell.
   security: 'Security, encryption, TLS, and network isolation for Notification Hubs:
     data-at-rest encryption, EU data boundary, SAS/role-based access, TLS version
     planning, and Private Link setup.'
@@ -27,15 +27,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Notification Hubs development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when integrating FCM/APNS/WNS, targeting devices/users, using tags/templates,
-  IaC config, or Private Link, and other Azure Notification Hubs related development
+  Use when sending FCM/APNS/WNS pushes, using tags/templates, managing tiers, IaC
+  configs, or Private Link access, and other Azure Notification Hubs related development
   tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
-  Azure Web PubSub (use azure-web-pubsub).
-use_when: Use when integrating FCM/APNS/WNS, targeting devices/users, using tags/templates,
-  IaC config, or Private Link, and other Azure Notification Hubs related development
+  Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub).
+use_when: Use when sending FCM/APNS/WNS pushes, using tags/templates, managing tiers,
+  IaC configs, or Private Link access, and other Azure Notification Hubs related development
   tasks.
 confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Service
-  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub).
+  Bus (use azure-service-bus), Azure SignalR Service (use azure-signalr-service),
+  Azure Web PubSub (use azure-web-pubsub).
 ---
 # Azure Notification Hubs Crawl Report
 
@@ -44,13 +45,13 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 - **Total Pages**: 68
 - **Fetched**: 68
 - **Fetch Failed**: 0
-- **Classified**: 53
-- **Unclassified**: 15
+- **Classified**: 54
+- **Unclassified**: 14
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 68
+- **Updated Pages**: 1
+- **Unchanged**: 67
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
 
@@ -60,16 +61,21 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 |------|-------|------------|
 | architecture-patterns | 1 | 1.5% |
 | best-practices | 4 | 5.9% |
-| configuration | 16 | 23.5% |
+| configuration | 17 | 25.0% |
 | decision-making | 1 | 1.5% |
 | deployment | 1 | 1.5% |
 | integrations | 23 | 33.8% |
 | limits-quotas | 1 | 1.5% |
 | security | 5 | 7.4% |
 | troubleshooting | 1 | 1.5% |
-| *(Unclassified)* | 15 | 22.1% |
+| *(Unclassified)* | 14 | 20.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Deploy and manage notification hubs using Azure PowerShell](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-deploy-and-manage-powershell)
+  - Updated: 2025-09-23T22:10:00.000Z → 2026-10-13T22:18:00.000Z
 
 ## Classified Pages
 
@@ -87,6 +93,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | [Configure Microsoft Push Notification Service](https://learn.microsoft.com/en-us/azure/notification-hubs/configure-microsoft-push-notification-service) | configuration | 0.70 | Even though deprecated, MPNS configuration is product-specific and likely lists concrete setting names and values in the portal. |
 | [Configure Windows Push Notification Service](https://learn.microsoft.com/en-us/azure/notification-hubs/configure-windows-push-notification-service) | configuration | 0.70 | WNS setup for Notification Hubs involves specific configuration fields (SID, secret, etc.) that are product-specific. |
 | [Configure a notification hub](https://learn.microsoft.com/en-us/azure/notification-hubs/configure-notification-hub-portal-pns-settings) | configuration | 0.70 | Portal-based setup of PNS credentials per platform (APNS, FCM, etc.) involves specific setting names and required values unique to Notification Hubs. |
+| [Deploy and manage notification hubs using Azure PowerShell](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-deploy-and-manage-powershell) | configuration | 0.70 | The page provides product-specific PowerShell cmdlets and parameters for creating and managing Azure Notification Hubs (for example, specific cmdlet names, parameter sets, and required arguments). These are configuration-focused, command-level details that go beyond generic knowledge and are organized around how to configure and manage hubs via PowerShell, fitting the configuration sub-skill best. |
 | [Enable resource logs](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-diagnostic-logs) | configuration | 0.70 | Covers operational/diagnostic logs and how to enable them; likely includes specific log categories and settings names for this service. |
 | [Initial configuration to receive push notification from Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/notification-hubs/ios-sdk-current) | integrations | 0.70 | Details SDK version-specific APIs and patterns for integrating iOS apps with Notification Hubs, which are product-specific integration details. |
 | [Move resources between regions](https://learn.microsoft.com/en-us/azure/notification-hubs/move-registrations) | deployment | 0.70 | Region move guidance for Notification Hubs typically includes product-specific constraints and required steps (for example, handling registrations, connection strings, and sequencing) that go beyond generic deployment knowledge and are unique to this service’s behavior when relocating resources. |
@@ -135,7 +142,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 |-----------|------------|--------|
 | [Export and import registrations in bulk](https://learn.microsoft.com/en-us/azure/notification-hubs/export-modify-registrations-bulk) | 0.50 | Bulk import/export article mentions availability only on the Standard tier but no specific numeric limits or detailed config tables in the summary. |
 | [Create notification hub - Azure CLI](https://learn.microsoft.com/en-us/azure/notification-hubs/create-notification-hub-azure-cli) | 0.40 | CLI quickstart for creating a hub; shows commands but not deep configuration matrices or product-specific constraints. |
-| [Deploy and manage notification hubs using Azure PowerShell](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-deploy-and-manage-powershell) | 0.40 | PowerShell deployment/management tutorial; description doesn’t indicate detailed config parameter tables, limits, or troubleshooting mappings. |
 | [Push notifications using Baidu cloud push](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-baidu-china-android-notifications-get-started) | 0.40 | Getting started tutorial for Baidu push; primarily step-by-step usage, not configuration tables, limits, or troubleshooting mappings. |
 | [Send secure notifications to users](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-aspnet-backend-windows-dotnet-wns-secure-push-notification) | 0.40 | Secure push tutorial for Windows with C#; likely step-by-step and sample code, but summary doesn’t show RBAC roles or detailed security config tables. |
 | [Create notification hub - Node.js](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-nodejs-push-notification-tutorial) | 0.30 | Node.js push tutorial; typical how-to without indication of config tables, limits, or troubleshooting mappings. |

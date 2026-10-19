@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
-  configuration: 'Configuring Azure AI Search: data sources, indexers, skillsets,
-    analyzers, vectorization, semantic ranking, monitoring, and agentic retrieval/knowledge
-    bases for RAG and answer synthesis.'
+  configuration: 'Configuring Azure AI Search: data sources, knowledge bases, skillsets,
+    analyzers, vectorization, semantic ranking, and query options for agentic retrieval
+    and enrichment.'
   security: 'Securing Azure AI Search: RBAC/Entra ID, keys, encryption, network isolation,
     indexer auth to data sources (SQL, Storage, SharePoint, Cosmos, Functions), and
     document-level/label-based access control.'
@@ -22,21 +22,21 @@ category_descriptions:
   best-practices: Best practices for designing, scaling, and troubleshooting enrichment/indexing
     pipelines, optimizing vector search, performance, and costs, and safely updating
     Azure AI Search resources.
-  deployment: 'Deploying and moving Azure AI Search: ARM/Bicep/Terraform provisioning,
-    cross-region migration, and deploying C# search apps to Azure Container Apps.'
+  deployment: Provision and deploy Azure AI Search services and apps using ARM, Bicep,
+    Terraform, and Container Apps, plus guidance on region moves and checking regional
+    feature availability.
   architecture-patterns: 'Architectural patterns for Azure AI Search: combining vector
     and keyword search, designing multitenant or isolated indexes, and building resilient
     multi-region search deployments.'
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building indexes, skillsets, indexers, vector/semantic search, or RAG knowledge
-  bases with Azure AI Search, and other Azure AI Search related development tasks.
-  Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use
-  azure-synapse-analytics), Azure Cosmos DB (use azure-cosmos-db).
-use_when: Use when building indexes, skillsets, indexers, vector/semantic search,
-  or RAG knowledge bases with Azure AI Search, and other Azure AI Search related development
-  tasks.
+  building indexes, skillsets, vector/semantic search, secured indexers, or multi-region
+  search apps, and other Azure AI Search related development tasks. Not for Azure
+  Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Cosmos DB (use azure-cosmos-db).
+use_when: Use when building indexes, skillsets, vector/semantic search, secured indexers,
+  or multi-region search apps, and other Azure AI Search related development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Cosmos DB (use azure-cosmos-db).
 ---
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 313
+- **Updated Pages**: 3
+- **Unchanged**: 312
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -64,8 +64,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | architecture-patterns | 2 | 0.6% |
 | best-practices | 14 | 4.4% |
 | configuration | 89 | 28.3% |
-| decision-making | 13 | 4.1% |
-| deployment | 5 | 1.6% |
+| decision-making | 12 | 3.8% |
+| deployment | 6 | 1.9% |
 | integrations | 72 | 22.9% |
 | limits-quotas | 6 | 1.9% |
 | security | 39 | 12.4% |
@@ -76,10 +76,12 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Updated Pages
 
+- [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new)
+  - Updated: 2026-08-31T22:12:00.000Z → 2026-10-09T08:00:00.000Z
 - [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2026-08-26T06:04:00.000Z → 2026-10-01T22:15:00.000Z
-- [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote)
-  - Updated: 2026-09-17T22:12:00.000Z → 2026-10-01T08:00:00.000Z
+  - Updated: 2026-10-01T22:15:00.000Z → 2026-10-13T06:07:00.000Z
+- [REST](https://learn.microsoft.com/en-us/azure/search/search-manage-rest)
+  - Updated: 2026-07-02T22:13:00.000Z → 2026-10-13T06:07:00.000Z
 
 ## Classified Pages
 
@@ -269,7 +271,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Plan and manage costs](https://learn.microsoft.com/en-us/azure/search/search-sku-manage-costs) | decision-making | 0.70 | Cost planning and billing model guidance for Dedicated vs Serverless, with billable events and cost-control tips; helps choose pricing approaches and manage spend, fitting decision-making. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/search/search-manage-powershell) | configuration | 0.70 | Uses Az.Search module cmdlets with product-specific parameters for scaling, key management, and system info. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-vector) | integrations | 0.70 | Covers REST and SDK APIs for vector workloads, including supported embedding models and likely request/parameter details specific to Azure AI Search. |
-| [REST](https://learn.microsoft.com/en-us/azure/search/search-manage-rest) | configuration | 0.70 | Management REST article for creating and configuring the service generally includes specific API operations, request schemas, and configuration parameters for the service, which are detailed configuration references beyond generic REST knowledge. |
 | [Rewrite queries with semantic ranker (preview)](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-query-rewrite) | integrations | 0.70 | A detailed 'rewrite queries with semantic ranker' guide will include request/response schemas, API parameters, and possibly SDK method signatures for enabling query rewrite, which are product-specific integration patterns. |
 | [Sample facets](https://learn.microsoft.com/en-us/azure/search/search-faceted-navigation-examples) | integrations | 0.70 | A page of faceted navigation examples that demonstrates query syntax for facet hierarchies, distinct counts, aggregations, and filters will contain concrete query parameters, syntax forms, and combinations unique to Azure AI Search. This is expert-level query/integration pattern knowledge rather than generic search concepts. |
 | [Sample queries (Lucene syntax)](https://learn.microsoft.com/en-us/azure/search/search-query-lucene-examples) | integrations | 0.70 | Provides detailed examples of Lucene query syntax as implemented in Azure AI Search (field scoping, fuzzy, proximity, regex, wildcard, boosting) with concrete query strings and parameter usage. These are product-specific integration/query patterns rather than generic concepts. |
@@ -279,7 +280,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Shaper](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-shaper) | configuration | 0.70 | Shaper skill documentation provides detailed configuration for reshaping the enrichment tree and mapping to index/knowledge store structures, which is product-specific configuration. |
 | [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote) | configuration | 0.70 | Page describes detailed, product-specific configuration for setting up a SharePoint (Remote) knowledge source in Azure AI Search/agentic retrieval, including specific parameters and options unique to this integration, which go beyond generic tutorial content. |
 | [Simple query syntax](https://learn.microsoft.com/en-us/azure/search/query-simple-syntax) | integrations | 0.70 | Reference for a product-specific query language; includes operators, parameters, and syntax rules that function like an API surface for queries. |
-| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | decision-making | 0.70 | Page contains a region-by-region matrix of Azure AI Search availability and which premium features are supported in each region. This is expert, product-specific data that changes over time and isn't reliably known from training. The matrix helps users decide which region to deploy in based on feature support, fitting the decision-making sub-skill. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform) | deployment | 0.70 | Terraform quickstart should include provider/resource blocks, arguments, and constraints unique to Azure AI Search infrastructure. |
 | [Upgrade .NET client libraries](https://learn.microsoft.com/en-us/azure/search/search-dotnet-sdk-migration-version-11) | decision-making | 0.70 | A version-to-version SDK migration article for Azure AI Search .NET will contain specific API changes, renamed classes/methods, altered configuration patterns, and guidance on how to update existing code. These are detailed, product-specific upgrade paths and trade-offs (for example, how to replace older client types or options with new ones) that go beyond generic SDK usage and are not captured in general training data, fitting the migration/upgrade decision-making category. |
 | [Upgrade a service](https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade) | decision-making | 0.70 | Service upgrade guidance typically explains when and why to upgrade, mapping existing SKUs to new capacities and describing trade-offs and constraints. This is decision guidance about capacity and upgrade paths specific to Azure AI Search. |
@@ -314,6 +314,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Sample shapes and projections](https://learn.microsoft.com/en-us/azure/search/knowledge-store-projection-example-long) | integrations | 0.65 | Detailed end-to-end example of shaping and projection for a rich skillset; includes concrete projection definitions and field mappings unique to Azure AI Search knowledge stores. |
 | [Scale out a custom skill](https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-scale) | best-practices | 0.65 | Focuses on tools and techniques for efficiently scaling custom skills for maximum throughput, which implies concrete, product-specific operational guidance and patterns for running custom skill web APIs at scale. This aligns with best-practices for this service rather than generic scaling theory. |
 | [SharePoint in Microsoft 365 (preview)](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sharepoint-online) | security | 0.65 | Summary emphasizes permission setup for the SharePoint in Microsoft 365 indexer. The full article typically includes specific permission scopes, identity setup, and RBAC/consent details unique to this integration, which fits security-focused configuration. |
+| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | deployment | 0.65 | Region support matrices for a specific service are expert knowledge that changes over time and aren't reliably known from training. A region/feature availability table effectively acts as a deployment support matrix, indicating where specific capabilities can be deployed. |
 | [Update or rebuild an index](https://learn.microsoft.com/en-us/azure/search/search-howto-reindex) | best-practices | 0.65 | Schema vs content updates and incremental indexing typically include product-specific guidance and gotchas (when to rebuild vs partial reindex) that go beyond generic concepts. |
 | [Upgrade .NET management libraries](https://learn.microsoft.com/en-us/azure/search/search-dotnet-mgmt-sdk-migration) | decision-making | 0.65 | Migration/upgrade guidance between specific Azure Search .NET management SDK packages and versions, including which libraries to use for particular control-plane operations. This is product-specific decision/selection guidance for SDKs rather than generic concepts. |
 | [Use a multi-vector field (preview)](https://learn.microsoft.com/en-us/azure/search/vector-search-multi-vector-fields) | configuration | 0.65 | Multi-vector field support configuration will involve index schema definitions, field attributes, and possibly limits on vector dimensions or counts per document. These are specific configuration options and patterns for Azure AI Search indexes, fitting the configuration sub-skill. |
@@ -332,6 +333,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Portal](https://learn.microsoft.com/en-us/azure/search/search-create-service-portal) | decision-making | 0.60 | Service creation article that includes resource group, region, and pricing tier selection; likely provides concrete guidance and criteria for choosing tiers/regions. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-semantic) | integrations | 0.60 | Shows how to modify an index and run semantic queries via SDK/REST; likely includes product-specific API parameters and configuration steps for semantic ranker. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-text) | integrations | 0.60 | Uses Azure AI Search .NET client library; likely includes SDK-specific parameters, request patterns, and product-specific code usage beyond generic search concepts. |
+| [REST](https://learn.microsoft.com/en-us/azure/search/search-manage-rest) | configuration | 0.60 | Management REST documentation typically includes detailed configuration parameters, API versions, and preview/GA distinctions that are product-specific and time-sensitive. These are configuration-focused expert details not generally known from pretraining. |
 | [Supported data sources](https://learn.microsoft.com/en-us/azure/search/search-data-sources-gallery) | decision-making | 0.60 | Data sources gallery lists connectors from Microsoft and partners, effectively serving as a selection guide for ingestion options; while largely catalog-like, it helps decide which connector to use for different sources, aligning with decision-making for integrations. |
 
 ## Unclassified Pages
@@ -396,12 +398,12 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [What is retrieval-augmented generation (RAG)?](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) | 0.20 | RAG and generative AI overview explains the RAG pattern and how Azure AI Search supports it, focusing on conceptual challenges and capabilities. The summary does not show concrete limits, configuration tables, or decision matrices with thresholds, so it should not be classified as expert knowledge. |
 | [What is semantic ranking?](https://learn.microsoft.com/en-us/azure/search/semantic-search-overview) | 0.20 | Semantic ranking overview describes how Azure AI Search uses deep learning models to rerank results and improve relevance. The summary indicates a conceptual feature explanation, not specific limits, configuration parameters, or troubleshooting mappings, so it doesn't meet the expert-knowledge criteria. |
 | [What is vector search?](https://learn.microsoft.com/en-us/azure/search/vector-search-overview) | 0.20 | High-level conceptual overview of vector search in Azure AI Search without specific limits, configuration tables, error codes, or product-specific decision matrices. |
+| [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new) | 0.20 | What's New pages are primarily release notes and announcements; the provided summary doesn't indicate specific limits, configuration tables, error codes, or other structured expert details as defined by the sub-skill types. |
 | [JavaScript samples](https://learn.microsoft.com/en-us/azure/search/samples-javascript) | 0.10 | Catalog page listing JavaScript sample links for Azure AI Search; summary indicates navigation to samples, not embedded expert configuration, limits, or troubleshooting content. |
 | [Training](https://learn.microsoft.com/en-us/azure/search/resource-training) | 0.10 | Training modules listing; navigational content pointing to learning resources, not detailed technical reference or configuration. |
 | [What is AI enrichment?](https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-intro) | 0.10 | Conceptual overview of AI enrichment in Azure AI Search (what it is, why it’s used). No indication of numeric limits, configuration tables, error codes, or decision matrices; it’s primarily descriptive rather than expert configuration or troubleshooting guidance. |
 | [What is a search index?](https://learn.microsoft.com/en-us/azure/search/search-what-is-an-index) | 0.10 | An index overview page focuses on conceptual explanation of search indexes, schema design, and attributes. It doesn’t indicate presence of numeric limits, configuration tables, or product-specific troubleshooting/decision matrices, so it doesn’t meet any expert-knowledge sub-skill criteria. |
 | [What is full-text search?](https://learn.microsoft.com/en-us/azure/search/search-lucene-query-architecture) | 0.10 | Conceptual/architectural explanation of full-text search and query processing; no concrete limits, configuration tables, or decision matrices with thresholds. |
 | [What's Azure AI Search?](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) | 0.10 | Introductory overview of Azure AI Search and scenarios; no numeric limits, configuration tables, or product-specific error/decision details. |
-| [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new) | 0.10 | A 'what's new' changelog/announcement page; likely high-level feature updates without detailed limits, configs, or troubleshooting matrices. |
 | [ADLS Gen2](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-data-lake-storage) | - | Indexer setup/how-to page for ADLS Gen2 with Azure AI Search. From the summary it looks like a connection tutorial or conceptual guidance, not a detailed configuration reference with parameter tables, quotas, or error-code-based troubleshooting. |
 | [Design a multilingual index](https://learn.microsoft.com/en-us/azure/search/search-language-support) | - | Appears to be a conceptual/how-to page about multi-language indexing and analyzers for Azure AI Search. The summary doesn't indicate specific numeric limits, configuration tables, error codes, or product-specific quotas; likely general guidance LLMs already know. |

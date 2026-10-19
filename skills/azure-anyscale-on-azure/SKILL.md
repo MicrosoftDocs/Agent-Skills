@@ -1,14 +1,14 @@
 ---
 name: azure-anyscale-on-azure
-description: Expert knowledge for Azure Anyscale On Azure development including limits & quotas, security, configuration, and deployment. Use when authoring ARM templates, hardening images, configuring Private Link, or checking Anyscale regional availability, and other Azure Anyscale On Azure related development tasks. Not for Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Anyscale On Azure development including limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when registering AKS as Anyscale clouds, wiring ACR images, enabling Private Link/RBAC, ARM-based deployments, or region checks, and other Azure Anyscale On Azure related development tasks. Not for Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Machine Learning (use azure-machine-learning), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Anyscale On Azure Skill
 
-This skill provides expert guidance for Azure Anyscale On Azure. Covers limits & quotas, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Anyscale On Azure. Covers limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,30 +24,35 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L32-L36 | Supported Azure regions for deploying and running Anyscale on Azure, including how to check regional availability and constraints. |
-| Security | L37-L43 | Securing Anyscale on Azure: container image build hardening, identity and access configuration, RBAC, regions, and data residency/compliance behavior. |
-| Configuration | L44-L49 | Configuring Anyscale networking on Azure, including Private Link setup, secure cluster connectivity, and controlling outbound/egress traffic paths. |
-| Deployment | L50-L53 | Using ARM templates to provision and manage Anyscale cloud resources on Azure, including template structure, parameters, and deployment steps. |
+| Limits & Quotas | L33-L37 | Checking which Azure regions support Anyscale, regional constraints, and how to verify availability before deployment |
+| Security | L38-L44 | Securing Anyscale on Azure: setting up Private Link, configuring identity/RBAC, and controlling networking/egress for secure, restricted cluster access. |
+| Configuration | L45-L49 | Configuring Azure Container Registry (ACR) to build, store, and use container images for Anyscale clusters, including setup, permissions, and integration steps. |
+| Integrations & Coding Patterns | L50-L54 | Using Azure Resource Manager templates and patterns to define, deploy, and manage Anyscale workloads programmatically on Azure. |
+| Deployment | L55-L58 | How to register and configure AKS clusters as Anyscale cloud resources using Azure Resource Manager templates and required Azure settings |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Check supported Azure regions for Anyscale | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/supported-regions |
+| Check regional availability for Anyscale on Azure | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/supported-regions |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Enable secure container image builds for Anyscale clouds | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-container-image-builds |
-| Understand identity, regions, and data residency for Anyscale on Azure | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/faq |
+| Set up Azure Private Link for Anyscale on Azure | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-private-link |
 | Configure identity and RBAC for Anyscale on Azure | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/identity-access |
+| Configure networking and egress for Anyscale on Azure | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Set up Azure Private Link for Anyscale clusters | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-private-link |
-| Configure networking and egress for Anyscale on Azure | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking |
+| Enable container image builds with ACR for Anyscale | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-container-image-builds |
+
+### Integrations & Coding Patterns
+| Topic | URL |
+|-------|-----|
+| Create Anyscale workloads via Azure Resource Manager | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/create-workloads-arm |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Add Anyscale cloud resources using ARM templates | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/add-cloud-resource |
+| Add AKS clusters as Anyscale cloud resources with ARM | https://learn.microsoft.com/en-us/azure/anyscale-on-azure/add-cloud-resource |

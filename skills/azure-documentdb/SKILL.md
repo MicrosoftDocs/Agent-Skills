@@ -1,9 +1,9 @@
 ---
 name: azure-documentdb
-description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Mongo-compatible APIs, vector search, cross-region replication, change streams, or the HTTPS Data API, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring DocumentDB search, vector indexes, cross-region replication, Mongo API apps, or AI/RAG workloads, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DocumentDB Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Diagnosing and fixing DocumentDB issues: common errors, CMK encryption problems, query performance via explain(), connectivity, and replication troubleshooting. |
-| Best Practices | L46-L56 | Best practices for DocumentDB indexing and queries, safe index changes, and configuring cross-region replication and high availability for resilient, performant data access. |
-| Decision Making | L57-L71 | Guidance on choosing DocumentDB vs MongoDB services, planning and migrating MongoDB workloads, configuring cross-region failover, and selecting optimal vector index/search algorithms across languages |
-| Architecture & Design Patterns | L72-L83 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
-| Limits & Quotas | L84-L97 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
-| Security | L98-L109 | Securing DocumentDB clusters: encryption at rest and with customer keys, firewall and public access controls, Private Link, Entra ID RBAC, native users/privileges, and security best practices. |
-| Configuration | L110-L130 | Configuring DocumentDB features: search (BM25, vector, fuzzy, phrase, geo), MongoDB compatibility, change streams, replication/scale, transactions, Data API, alerts, and monitoring. |
-| Integrations & Coding Patterns | L131-L156 | Patterns and code to connect apps and AI/RAG tools to Azure DocumentDB, including drivers, HTTPS Data API, migrations (Mongo/Cassandra), vector search, and sample app integrations. |
-| Deployment | L157-L163 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
+| Troubleshooting | L37-L46 | Diagnosing and fixing DocumentDB issues: query performance, CMK encryption, replication, and common connectivity/network errors including migration-related problems. |
+| Best Practices | L47-L57 | Best practices for DocumentDB indexing and queries, safe index changes, and configuring cross-region replication and high availability for resilient, performant data access. |
+| Decision Making | L58-L73 | Guides for choosing between DocumentDB and MongoDB services, planning and connecting migrations, configuring cross-region failover, and selecting vector index/search algorithms across major languages. |
+| Architecture & Design Patterns | L74-L85 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
+| Limits & Quotas | L86-L99 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
+| Security | L100-L111 | Securing DocumentDB clusters: encryption at rest and with customer keys, firewall and public access controls, Private Link, Entra ID RBAC, native users/privileges, and security best practices. |
+| Configuration | L112-L132 | Configuring DocumentDB features: search (BM25, vector, fuzzy, phrase, geo), MongoDB compatibility, change streams, replication/scale, transactions, Data API, alerts, and monitoring. |
+| Integrations & Coding Patterns | L133-L155 | Patterns and code samples for integrating Azure DocumentDB with languages, drivers, RAG tools, and vector search, plus migrations (Mongo/Cassandra) and app scenarios like MERN and AI ads. |
+| Deployment | L156-L162 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -41,6 +41,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot CMK encryption issues in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-database-encryption-troubleshoot |
 | Diagnose query performance using explain() in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-read-explain-output |
 | Troubleshoot common Azure DocumentDB errors and connectivity | https://learn.microsoft.com/en-us/azure/documentdb/troubleshoot-common-issues |
+| Troubleshoot network connectivity for DocumentDB migrations | https://learn.microsoft.com/en-us/azure/documentdb/troubleshoot-connectivity |
 | Troubleshoot Azure DocumentDB replication issues | https://learn.microsoft.com/en-us/azure/documentdb/troubleshoot-replication |
 
 ### Best Practices
@@ -62,7 +63,8 @@ This skill requires **network access** to fetch documentation content:
 | Choose cross-region failover modes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/failover-modes |
 | Assess MongoDB readiness and plan migration to DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness |
 | Evaluate MongoDB compatibility in managed services | https://learn.microsoft.com/en-us/azure/documentdb/managed-service-compatibility |
-| Choose migration options from MongoDB to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
+| Choose and plan MongoDB to Azure DocumentDB migrations | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
+| Select connectivity scenarios for DocumentDB migrations | https://learn.microsoft.com/en-us/azure/documentdb/migration-scenarios |
 | Evaluate vector search algorithms with .NET | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-select-algorithm |
 | Compare vector index options in Go on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-select-algorithm |
 | Test and select vector indexes with Java | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm |
@@ -132,23 +134,20 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use LangChain Azure AI vector store with DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-applications |
-| Integrate Haystack RAG pipelines with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines |
+| Build Haystack RAG pipelines with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines |
 | Convert Cassandra schemas to Azure DocumentDB with VS Code | https://learn.microsoft.com/en-us/azure/documentdb/cassandra-how-to-schema-conversion-vs-code |
 | Use Azure DocumentDB Data API over HTTPS | https://learn.microsoft.com/en-us/azure/documentdb/data-api |
 | Connect Azure Databricks to Azure DocumentDB with Spark | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-from-databricks |
 | Migrate MongoDB to DocumentDB using native tools | https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-native-tools |
-| Migrate MongoDB using Azure DocumentDB VS Code extension | https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension |
 | Persist LangGraph agent state in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/persist-agent-state |
 | Integrate LlamaIndex vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base |
 | Integrate .NET/C# apps with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet |
 | Perform vector search with .NET on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search |
 | Use Go drivers with Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go |
 | Implement vector search in Go on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search |
-| Connect Java applications to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java |
 | Use Java for vector search on Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-vector-search |
 | Use Node.js drivers with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs |
 | Use Node.js for vector search on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search |
-| Connect Python applications to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python |
 | Implement vector search in Python on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search |
 | Integrate Rust applications with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-rust |
 | Generate AI advertisements using DocumentDB and OpenAI | https://learn.microsoft.com/en-us/azure/documentdb/tutorial-ai-advertisement-generation |

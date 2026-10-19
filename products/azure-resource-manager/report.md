@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-18'
 category_descriptions:
   best-practices: Best practices for authoring, linting, validating, and testing Bicep/ARM
     templates and scripts, including locations, types, dependencies, resource IDs,
@@ -10,9 +10,9 @@ category_descriptions:
   configuration: Configuring and deploying Azure resources with Bicep and ARM templates,
     including scopes, parameters, tags, policies, custom providers, monitoring, and
     Azure portal form-based deployment UI.
-  troubleshooting: Diagnosing and fixing Azure Bicep/ARM deployment and template errors,
-    including specific BCP codes, decorator and type issues, resource name/scope problems,
-    and common Azure policy/SKU/region failures.
+  troubleshooting: 'Diagnosing and fixing Bicep and ARM deployment issues: compiler/diagnostic
+    codes, decorators, scopes, resource/type/name errors, policy/quota/SKU failures,
+    and common Azure deployment failures.'
   deployment: 'Deploying and moving Azure resources with ARM/Bicep: scripts, stacks,
     registries, multi-scope deployments, CI/CD, and region/subscription relocation
     for many Azure services.'
@@ -32,30 +32,31 @@ skill_description: Expert knowledge for Azure Resource Manager development inclu
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries,
-  or securing with Key Vault/RBAC, and other Azure Resource Manager related development
-  tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph),
-  Azure Portal (use azure-portal), Azure Role-based access control (use azure-rbac).
+  securing with Key Vault/RBAC, or handling quotas, and other Azure Resource Manager
+  related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure
+  Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure
+  Portal (use azure-portal).
 use_when: Use when authoring Bicep/ARM templates, using CLI/SDK/REST, deploying stacks/registries,
-  or securing with Key Vault/RBAC, and other Azure Resource Manager related development
-  tasks.
-confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Graph
-  (use azure-resource-graph), Azure Portal (use azure-portal), Azure Role-based access
-  control (use azure-rbac).
+  securing with Key Vault/RBAC, or handling quotas, and other Azure Resource Manager
+  related development tasks.
+confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Policy
+  (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal
+  (use azure-portal).
 ---
 # Azure Resource Manager Crawl Report
 
 ## Summary
 
-- **Total Pages**: 494
-- **Fetched**: 494
+- **Total Pages**: 495
+- **Fetched**: 495
 - **Fetch Failed**: 0
 - **Classified**: 376
-- **Unclassified**: 118
+- **Unclassified**: 119
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 494
+- **New Pages**: 1
+- **Updated Pages**: 3
+- **Unchanged**: 491
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -69,12 +70,25 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | decision-making | 10 | 2.0% |
 | deployment | 50 | 10.1% |
 | integrations | 59 | 11.9% |
-| limits-quotas | 26 | 5.3% |
+| limits-quotas | 25 | 5.1% |
 | security | 26 | 5.3% |
-| troubleshooting | 96 | 19.4% |
-| *(Unclassified)* | 118 | 23.9% |
+| troubleshooting | 97 | 19.6% |
+| *(Unclassified)* | 119 | 24.0% |
 
 ## Changes
+
+### New Pages
+
+- [Noise reduction](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if-noise-reduction)
+
+### Updated Pages
+
+- [What-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if)
+  - Updated: 2026-08-14T05:11:00.000Z → 2026-10-07T17:13:00.000Z
+- [Resource quota exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-resource-quota)
+  - Updated: 2025-04-28T08:00:00.000Z → 2026-10-12T22:13:00.000Z
+- [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview)
+  - Updated: 2026-05-26T22:16:00.000Z → 2026-10-15T22:12:00.000Z
 
 ## Classified Pages
 
@@ -92,6 +106,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [BladeInvokeControl](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-microsoft-solutions-bladeinvokecontrol) | configuration | 0.86 | Describes the Microsoft.Solutions.BladeInvokeControl UI element, including how to invoke Azure portal blades and store returned data. This is a product-specific UI element with configuration parameters and usage constraints, matching configuration expert knowledge. |
 | [Elements](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/form-view-elements) | configuration | 0.86 | Reference list of supported Form view (uiFormDefinition.json) elements with their properties such as name, type, label, defaultValue, constraints, options, and visible. This is a product-specific configuration reference with parameter names and behaviors, fitting the configuration sub-skill. |
 | [Invalid template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-template) | troubleshooting | 0.86 | The article maps specific Azure Resource Manager deployment error messages (invalid template variants) to their causes and resolutions, including product-specific behaviors like circular dependencies and parameter validation. It is organized as symptom → cause → fix for ARM/Bicep deployments, which matches the troubleshooting sub-skill definition and contains expert, product-specific diagnostic guidance beyond generic debugging advice. |
+| [Resource quota exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-resource-quota) | troubleshooting | 0.86 | Page focuses on resolving resource quota errors during ARM/Bicep deployments, mapping specific quota-related error messages and codes to causes and remediation steps (e.g., how to identify which quota was exceeded and how to request increases). This is symptom → cause → solution guidance specific to Azure Resource Manager, which fits the troubleshooting category and contains product-specific diagnostic and resolution details. |
 | [Common deployment errors](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/common-deployment-errors) | troubleshooting | 0.85 | Catalogs common deployment error codes with their causes and resolutions, providing explicit symptom→cause→solution mappings. |
 | [CreateUiDefinition test cases](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/createuidefinition-test-cases) | best-practices | 0.85 | Describes specific tests for createUiDefinition.json, including UI control rules and pass/fail examples. These are detailed, ARM-specific best-practices and constraints for UI definitions, not generic knowledge. |
 | [Max asserts](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-max-asserts) | limits-quotas | 0.85 | Explicitly states a numeric limit (number of predeployment conditions must not exceed 32). This is a concrete product limit that LLMs may not know and fits the limits-quotas category. |
@@ -338,7 +353,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Resource functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-resource) | integrations | 0.70 | Page documents Azure Resource Manager template resource functions with precise function names, parameter signatures, and behavior specific to ARM/Bicep. This is product-specific API/config-style knowledge (how to retrieve resource values in templates) that goes beyond generic LLM knowledge. It fits the integrations category as it details how templates programmatically interact with Azure resources via these functions. |
 | [Resource group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-resource-group) | deployment | 0.70 | Explains scoping deployments to resource groups and expanding scope, including syntax and constraints for multi-resource-group deployments. |
 | [Resource providers and types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types) | configuration | 0.70 | Explains provider registration, resource type schemas, API version lists, and region availability; these are concrete configuration capabilities for ARM resources. |
-| [Resource quota exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-resource-quota) | limits-quotas | 0.70 | Focuses on quota-related deployment failures and how to address them, involving specific platform quota behaviors and error patterns. |
 | [Resources (resource)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-declaration) | limits-quotas | 0.70 | Describes resource declaration syntax and explicitly states a numeric limit (800 resources per Bicep file), which is a concrete product limit not generally known. |
 | [Resources supported for move](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources) | decision-making | 0.70 | Page provides a detailed, product-specific matrix of which Azure resource types can be moved between resource groups, subscriptions, or regions, along with special considerations and constraints. This is expert knowledge not inferable from general training data and directly supports decision-making about whether and how to move particular resources. |
 | [Scope functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-scope) | integrations | 0.70 | Describes Bicep scope functions and how to obtain scope-related values, which are specific function APIs for ARM deployments. |
@@ -525,6 +539,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Get started with custom resource providers](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/tutorial-get-started-with-custom-providers) | 0.30 | Tutorial on creating custom actions/resources; conceptual and procedural, not focused on limits, configs, or error diagnostics. |
 | [Import (import)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-import) | 0.30 | Describes how to export/import shared functionality and namespaces in Bicep; focuses on syntax and concepts, not on numeric limits, configuration matrices, security roles, or troubleshooting mappings. |
 | [Manage service groups and members](https://learn.microsoft.com/en-us/azure/governance/service-groups/manage-service-groups) | 0.30 | Management article for creating, updating, reading, and deleting Service Groups and members; appears to be procedural guidance without detailed configuration tables, limits, or structured troubleshooting or decision matrices. |
+| [Noise reduction](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if-noise-reduction) | 0.30 | Page explains how deployment stacks reduce noise in what-if results by comparing evaluations against a baseline. This is primarily conceptual behavior/feature explanation; the summary does not indicate detailed configuration parameters, numeric thresholds, or error-code-based troubleshooting that would qualify as expert reference knowledge. |
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/export-bicep-portal) | 0.30 | Explains how to export Bicep/ARM templates from the portal; primarily procedural guidance without detailed configuration matrices, limits, or specialized patterns. |
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources-portal) | 0.30 | Portal tagging walkthrough; primarily UI steps referencing another article for recommendations and limits; no detailed config tables or numeric constraints. |
 | [Portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/export-template-portal) | 0.30 | How-to guide for exporting ARM templates via Azure portal; focuses on workflow steps without product-specific limits, configuration matrices, or troubleshooting mappings. |
@@ -537,6 +552,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Using (using/using none)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-using) | 0.30 | Explains Bicep `using` and `using none` syntax and behavior for parameter files; this is language usage/tutorial content without limits, quotas, configuration tables, error-code troubleshooting, or product-specific decision matrices. |
 | [Variables](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/variables) | 0.30 | Covers how to use variables in ARM templates; focuses on syntax and concepts without unique limits, configs, or troubleshooting data. |
 | [What are Azure Custom Resource Providers?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/overview) | 0.30 | High-level overview and preview/deprecation notice for custom resource providers; no detailed limits, configs, or error mappings. |
+| [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview) | 0.30 | Overview of Azure Service Groups describing conceptual usage, scenarios, and benefits without detailed limits, configuration tables, error codes, or product-specific numeric thresholds. Content is primarily introductory governance/organization guidance rather than expert-level reference data. |
+| [What-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if) | 0.30 | Page describes how to use the what-if operation with deployment stacks, but from the summary it appears to be a procedural/tutorial-style guide without specific configuration tables, limits, error codes, or product-specific numeric thresholds. It focuses on previewing changes conceptually and operationally rather than providing expert-only reference data. |
 | [What-if check](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if) | 0.30 | Primarily explains the what-if and snapshot operations conceptually and how to use them; does not focus on numeric limits, detailed configuration matrices, or product-specific error codes. |
 | [1 - Deploy a local template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-tutorial-local-template) | 0.25 | Tutorial on deploying a local template; early in a series, mostly step-by-step deployment, not deep deployment constraints. |
 | [10 - Use parameter file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-parameter-file) | 0.25 | Tutorial on using parameter files; standard deployment pattern, no extensive configuration matrices or quotas. |
@@ -566,8 +583,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [User-defined data types (type)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/user-defined-data-types) | 0.20 | Describes how to define and use user-defined data types in Bicep, including required CLI and language versions, but does not include product-specific limits, quotas, configuration parameter tables, or troubleshooting mappings. This is language feature documentation rather than expert operational knowledge. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code) | 0.20 | How-to article for using Visual Studio Code with Bicep; focuses on editor usage and basic workflow without product-specific limits, configuration tables, error-code troubleshooting, or decision matrices. |
 | [What are ARM templates?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | 0.20 | High-level overview of ARM templates benefits and concepts; no detailed limits, configs, or product-specific best practices. |
-| [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview) | 0.20 | Overview of Azure Service Groups describing conceptual usage and benefits; no detailed limits, configuration tables, error codes, or product-specific numeric thresholds or decision matrices. |
-| [What-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if) | 0.20 | Page is a how-to/tutorial style guide on using the what-if operation with deployment stacks to preview changes. It focuses on workflow steps and conceptual behavior (previewing created/updated/unchanged resources) rather than detailed configuration tables, limits, error codes, or decision matrices. It does not meet the thresholds for limits, configuration, troubleshooting, or other expert-knowledge categories. |
 | [1 - Create first template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-first-template) | 0.15 | Introductory tutorial on creating and deploying a first ARM template; mostly syntax and basic deployment steps. |
 | [2 - Add resource](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-add-resource) | 0.15 | Tutorial on adding a storage account resource; standard example without product-specific expert patterns or limits. |
 | [3 - Add parameters](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-add-parameters) | 0.15 | Tutorial on adding parameters to make templates reusable; generic pattern, no special limits or config tables. |

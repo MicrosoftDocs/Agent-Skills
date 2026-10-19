@@ -1,12 +1,11 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   limits-quotas: Limits, quotas, and behaviors for Private Link/Endpoints, how to
     check service availability per resource, and how to request increases to VNet
     Private Endpoint limits.
-  configuration: 'Configuring Azure Private Link, endpoints, and Network Security
-    Perimeters: setup via CLI/portal/PowerShell/Terraform, DNS, SNAT, IPv6, policies,
-    cross-perimeter links, monitoring, and diagnostics.'
+  configuration: Configuring Azure Private Link, endpoints, DNS, NSPs, policies, monitoring,
+    and IPv4/IPv6 connectivity using portal, CLI, PowerShell, and Terraform.
   security: RBAC setup for Private Link and Network Security Perimeters, security
     best practices, and inspecting/controlling Private Endpoint traffic with Azure
     Firewall.
@@ -21,17 +20,17 @@ category_descriptions:
     with on-premises or hybrid networks
 skill_description: Expert knowledge for Azure Private Link development including best
   practices, decision making, architecture & design patterns, limits & quotas, security,
-  and configuration. Use when configuring Private Endpoints, DNS, NSGs/Firewall, Network
-  Security Perimeters, or Azure Private Resolver, and other Azure Private Link related
-  development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
-  azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
-use_when: Use when configuring Private Endpoints, DNS, NSGs/Firewall, Network Security
-  Perimeters, or Azure Private Resolver, and other Azure Private Link related development
+  and configuration. Use when configuring Private Endpoints, DNS zones, NSGs/NSPs,
+  Azure Firewall traffic inspection, or Private Resolver, and other Azure Private
+  Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
+  WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute).
+use_when: Use when configuring Private Endpoints, DNS zones, NSGs/NSPs, Azure Firewall
+  traffic inspection, or Private Resolver, and other Azure Private Link related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
-  azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
+  azure-virtual-wan), Azure ExpressRoute (use azure-expressroute).
 ---
 # Azure Private Link Crawl Report
 
@@ -44,9 +43,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 56
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 55
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -64,15 +63,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
-### New Pages
-
-- [Metrics](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-metrics)
-- [Configure service tag access on inbound rules](https://learn.microsoft.com/en-us/azure/private-link/configure-network-security-perimeter-service-tag)
-
 ### Updated Pages
 
-- [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts)
-  - Updated: 2026-07-08T08:00:00.000Z → 2026-10-02T08:00:00.000Z
+- [Standard service endpoint](https://learn.microsoft.com/en-us/azure/private-link/service-endpoint-standard-overview)
+  - Updated: 2026-09-14T08:00:00.000Z → 2026-10-15T05:11:00.000Z
+- [Configure a standard service endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-portal)
+  - Updated: 2026-07-22T12:23:00.000Z → 2026-09-22T08:00:00.000Z
+- [Configure a standard service endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-cli)
+  - Updated: 2026-07-22T12:23:00.000Z → 2026-10-15T05:11:00.000Z
+- [Configure a standard service endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-powershell)
+  - Updated: 2026-07-22T12:23:00.000Z → 2026-09-22T08:00:00.000Z
 
 ## Classified Pages
 
@@ -87,9 +87,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Availability](https://learn.microsoft.com/en-us/azure/private-link/availability) | limits-quotas | 0.70 | Describes which Azure services support Private Link; typically implemented as a service support/availability matrix, which is product-specific reference data not inferable from training. |
 | [Azure Private Link over IPv6 (Preview)](https://learn.microsoft.com/en-us/azure/private-link/private-link-ipv6) | configuration | 0.70 | How-to article for configuring IPv6-based private endpoints, DNS, ExpressRoute, and routing; likely includes specific configuration parameters, address ranges, and validation steps that are product-specific. |
 | [Configure a perimeter link between network security perimeters](https://learn.microsoft.com/en-us/azure/private-link/configure-perimeter-link) | configuration | 0.70 | Configuration-focused article that teaches how to set up a perimeter link between two network security perimeters. Such how-to configuration pages typically include product-specific settings (e.g., link properties, allowed values, required parameters, CLI/PowerShell flags) that an LLM would not know from training, fitting the configuration sub-skill. |
-| [Configure a standard service endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-cli) | configuration | 0.70 | CLI-focused configuration article; typically includes exact command parameters, property names, and allowed values for standard service endpoints and NSP. |
-| [Configure a standard service endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-portal) | configuration | 0.70 | Portal-based configuration guide for standard service endpoints with network identifiers and NSP; expected to contain concrete configuration parameters, resource names, and associations. |
-| [Configure a standard service endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-powershell) | configuration | 0.70 | PowerShell configuration guide with cmdlet parameters and property names for standard service endpoints and network security perimeters, which are product-specific configuration details. |
+| [Configure a standard service endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-cli) | configuration | 0.70 | CLI-focused configuration article with concrete az command parameters and resource relationships for standard service endpoints and NSP; these are product-specific configuration details not captured by generic training. |
+| [Configure a standard service endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-portal) | configuration | 0.70 | Step-by-step configuration of standard service endpoints with NSP and network identifiers; includes specific Azure resource settings and associations that are product-specific configuration knowledge beyond generic concepts. |
+| [Configure a standard service endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-powershell) | configuration | 0.70 | PowerShell-based configuration steps with specific cmdlets, parameter names, and resource wiring for standard service endpoints and NSP; represents detailed configuration knowledge unique to this Azure feature. |
 | [Configure a standard service endpoint - Terraform](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-terraform) | configuration | 0.70 | Quickstart includes Terraform resource definitions and Azure-specific parameters (network identifier, network security perimeter, subnet/service endpoint configuration) that represent product-specific configuration details rather than generic concepts. |
 | [Configure service tag access on inbound rules](https://learn.microsoft.com/en-us/azure/private-link/configure-network-security-perimeter-service-tag) | configuration | 0.70 | How-to article for configuring inbound access rules using Azure service tags in an NSP profile. Contains product-specific configuration steps and parameters (for NSP profiles and service tag-based rules), which qualify as configuration expert knowledge beyond generic concepts. |
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization) | decision-making | 0.70 | Cost optimization guidance for a specific service usually includes scenario-based recommendations and trade-offs between security and cost, qualifying as decision-making content. |
@@ -125,6 +125,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Create a private endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-powershell) | 0.30 | PowerShell quickstart; primarily step-by-step commands, not a catalog of parameters, limits, or troubleshooting mappings. |
 | [Export private endpoint DNS records](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-export-dns) | 0.30 | Tutorial on exporting DNS records via portal; operational steps but no detailed configuration parameter tables or numeric constraints. |
 | [Monitor Private Link](https://learn.microsoft.com/en-us/azure/private-link/monitor-private-link) | 0.30 | Monitoring overview for Azure Private Link; describes available metrics/logs and tools but summary does not indicate specific numeric limits, configuration parameter tables, or error-code-based troubleshooting. Likely general guidance LLM already knows. |
+| [Standard service endpoint](https://learn.microsoft.com/en-us/azure/private-link/service-endpoint-standard-overview) | 0.30 | Overview of standard service endpoints and NSP concepts without detailed limits, configuration tables, or product-specific decision matrices; primarily conceptual/introductory content. |
 | [What are network security perimeter links?](https://learn.microsoft.com/en-us/azure/private-link/perimeter-links-overview) | 0.30 | Page is an overview of perimeter links (cross-perimeter connections) and supported regions/services during preview; summary indicates conceptual/feature overview without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. |
 | [Connect to a SQL server - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/tutorial-private-endpoint-sql-cli) | 0.25 | Tutorial for connecting to Azure SQL via Private Endpoint using CLI; scenario walkthrough rather than reference limits, configuration matrices, or troubleshooting. |
 | [Create a network security perimeter - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli) | 0.25 | CLI quickstart for network security perimeter; tutorial-style content without expert-level configuration matrices or limits. |
@@ -137,7 +138,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Create a network security perimeter - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-bicep) | 0.20 | Quickstart for creating a network security perimeter using Bicep. It demonstrates basic deployment of a perimeter and access rules but does not expose detailed limits, specialized configuration matrices, or troubleshooting mappings that would count as expert knowledge. |
 | [Create a network security perimeter - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-powershell) | 0.20 | Quickstart showing how to create a network security perimeter using Azure PowerShell. It’s primarily a step-by-step tutorial without detailed configuration tables, limits, quotas, or product-specific error codes; it focuses on basic resource creation rather than expert-only details. |
 | [Private Link service](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview) | 0.20 | Conceptual overview of Azure Private Link service from provider side; lacks numeric limits, config matrices, or troubleshooting details. |
-| [Standard service endpoint](https://learn.microsoft.com/en-us/azure/private-link/service-endpoint-standard-overview) | 0.20 | Page is an overview of standard service endpoints for Azure Private Link, describing concepts like network security perimeters and network identifiers. The provided summary does not indicate specific numeric limits, configuration parameter tables, error codes, or decision matrices. It appears to be conceptual/introductory preview documentation rather than detailed expert configuration, limits, or troubleshooting guidance. |
 | [What is Azure Private Link?](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) | 0.20 | High-level overview of Azure Private Link features and concepts; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts) | 0.20 | Conceptual overview of Azure Network Security Perimeter; no specific limits, configuration parameter tables, error codes, or detailed decision matrices. Primarily explains what an NSP is and its high-level behavior. |
 | [What is a private endpoint?](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview) | 0.20 | Overview of private endpoints and concepts; no detailed limits, configuration tables, or product-specific error/decision data. |

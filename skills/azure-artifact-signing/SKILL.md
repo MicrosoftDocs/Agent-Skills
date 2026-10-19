@@ -1,9 +1,9 @@
 ---
 name: azure-artifact-signing
-description: Expert knowledge for Azure Artifact Signing development including decision making, security, configuration, and integrations & coding patterns. Use when handling cert lifecycles, RBAC for signers, DGSSv2 migration, diagnostic logs, or CI/CD signing integration, and other Azure Artifact Signing related development tasks.
+description: Expert knowledge for Azure Artifact Signing development including decision making, security, configuration, and integrations & coding patterns. Use when handling cert lifecycles, RBAC for signers, DGSSv2 migration, diagnostic logs, or CI/CD signing integration, and other Azure Artifact Signing related development tasks. Not for Azure Key Vault (use azure-key-vault), Azure Artifacts (use azure-artifacts), Azure Information Protection (use azure-information-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifact Signing Skill

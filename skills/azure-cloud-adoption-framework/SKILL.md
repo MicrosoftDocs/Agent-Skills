@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning AVD, SAP, Oracle, VMware, AI/ML workloads, or designing Azure landing zones and governance, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning AVD, SAP, Oracle, Arc, AI/agent workloads, or Azure landing zones and governance, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -24,21 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Strategy | L37-L58 | Strategic planning for cloud and AI adoption: business cases, org-wide roadmaps, hybrid/multicloud, data and SAP/Oracle strategies, AVS/AVD benefits, security, resiliency, cost, and sustainability. |
-| Planning | L59-L86 | Planning Azure cloud and AI adoption: migration waves, workload readiness, data/tech architecture, cost, skills, and roadmaps for AVD, VMware, Oracle, SAP, and cloud modernization. |
-| Readiness & Landing Zones | L87-L187 | Designing, deploying, and operating Azure landing zones: network, identity, subscriptions, governance, automation/DevOps, multitenant setups, and specialized patterns for AI, AVD, SAP, Citrix, and Oracle. |
-| Adoption Patterns | L188-L209 | Patterns and guidance for planning, building, migrating, and modernizing Azure solutions, including AI/ML, cloud-native apps, SAP, and Azure Virtual Desktop, with secure, resilient architectures. |
-| Governance | L210-L243 | Designing and enforcing governance, security, compliance, tagging, and cost controls for Azure, AI, Fabric, Arc, and SAP workloads, including policies, tooling, and NIST/RAI-aligned frameworks |
-| Security | L244-L271 | Designing secure Azure landing zones and AI workloads: identity/RBAC, network encryption, keys, DevOps security, Zero Trust, SAP/Oracle security, and ongoing security governance/operations. |
-| Operations & Management | L272-L303 | Operating, monitoring, and optimizing Azure and hybrid workloads (AI, data, AKS, AVD, SAP, Oracle, Arc, VMware), including lifecycle, BCDR, automation, and management baselines. |
-| Organization & Teams | L304-L323 | Designing org structures, roles, RACI, and team topologies (CoE, governance, ops, security, data, DevOps) to support Azure/cloud and AI adoption, operations, and cost-conscious transformation. |
-| Adoption Scenarios | L324-L366 | Guidance for adopting Azure via real-world scenarios: AVD, Citrix, Arc-enabled Kubernetes/servers, Oracle, and SAP—covering landing zones, networking, security, BCDR, DevOps, and integration. |
+| Strategy | L37-L57 | Cloud and AI adoption strategy guidance: business cases, exec strategy, hybrid/multicloud, VMware/Oracle, data & analytics, security, resiliency, cost, sustainability, and virtual desktop. |
+| Planning | L58-L84 | Planning cloud and AI adoption: migration waves, workload assessments, data/AI architecture, cost and capacity planning, skills readiness, and detailed plans for AVD, SAP, Oracle, and startups. |
+| Readiness & Landing Zones | L85-L184 | Designing and operating Azure landing zones: network, identity, subscriptions, governance, automation/DevOps, multitenant setups, and integrating AI, data, VDI, SAP, Oracle, and Arc workloads. |
+| Adoption Patterns | L185-L205 | Patterns for planning, migrating, modernizing, and operating Azure solutions, including AI agent architectures, cloud-native rollout, AVD, and SAP data integration. |
+| Governance | L206-L239 | Designing and enforcing Azure governance: policies, tagging, cost controls, compliance, AI and data governance, landing zones, Arc, SAP, and Virtual Desktop security and risk management. |
+| Security | L240-L268 | Designing secure Azure landing zones and AI workloads: identity, RBAC, networking, encryption, DevOps, SAP/Oracle, and ongoing security governance and operations. |
+| Operations & Management | L269-L300 | Operating, monitoring, automating, and optimizing Azure and Arc-based workloads (AI, data, AVD, SAP, Oracle), including lifecycle, BCDR, governance, and post-deployment management. |
+| Organization & Teams | L301-L320 | Designing org structures, roles, RACI, and team topologies (CoE, governance, ops, security, data, DevOps) to support Azure/cloud and AI adoption, operations, and cost-conscious transformation. |
+| Adoption Scenarios | L321-L365 | Designing and implementing Azure landing zones, networking, security, BCDR, and DevOps for AI PaaS, Azure Virtual Desktop, Arc-enabled Kubernetes/servers, Oracle, and SAP workloads. |
 
 ### Strategy
 | Topic | URL |
 |-------|-----|
 | Create a business plan for AI agent adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/business-strategy-plan |
-| Create an organization-wide AI strategy and roadmap | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy |
+| Define organizational AI adoption strategy with Microsoft solutions | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy |
 | Evaluate and position Azure VMware Solution strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/azure-vmware-solution/strategy |
 | Define unified data strategy for AI and analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform |
 | Identify innovation opportunities with Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/innovate |
@@ -46,7 +46,6 @@ This skill requires **network access** to fetch documentation content:
 | Define hybrid and multicloud strategy using Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Define unified hybrid and multicloud operations strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Assess strategic impact of migrating Oracle workloads to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-strategy |
-| Define cloud strategy for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |
 | Define executive strategy for Microsoft Sovereign Cloud adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/sovereignty/executive-strategy |
 | Develop a measurable cloud adoption strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ |
 | Establish and structure a cloud strategy team | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team |
@@ -64,10 +63,9 @@ This skill requires **network access** to fetch documentation content:
 | Define technology plan for AI agents on Microsoft | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy |
 | Create an actionable AI adoption plan in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/plan |
 | Plan Azure migration waves for large estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/migration-wave-planning |
-| Create detailed workload migration plans to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/plan-migration |
-| Prepare workloads for reliable migration to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/prepare-workloads-cloud |
-| Plan Azure cloud modernization strategies and roadmap | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/plan-cloud-modernization |
-| Prepare organization for Azure cloud modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/prepare-organization-cloud-modernization |
+| Create detailed Azure workload migration plans | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/plan-migration |
+| Plan structured Azure workload modernization projects | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/plan-cloud-modernization |
+| Prepare and prioritize workloads for cloud modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/prepare-organization-cloud-modernization |
 | Assess workloads for Azure cloud migration readiness | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/assess-workloads-for-cloud-migration |
 | Use a cloud-native startup adoption plan template | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/cloud-native-adoption-plan |
 | Discover and prioritize workload inventory for migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/discover-existing-workload-inventory |
@@ -90,8 +88,7 @@ This skill requires **network access** to fetch documentation content:
 | Design networking for AI workloads on Azure infrastructure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/networking |
 | Select storage architectures for AI on Azure infrastructure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/storage |
 | Decide AI platform sharing, isolation, and colocation | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/ai-platform-sharing-isolation-colocation |
-| Configure secure networking for Azure AI PaaS workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/networking |
-| Prepare Azure landing zones for AI workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/ready |
+| Integrate AI workloads into Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/ready |
 | Integrate Fabric and Purview into Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/architecture-azure-landing-zones-unify-data-platform |
 | Design Fabric architecture for a unified data platform | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/architecture-fabric-data-lake-unify-data-platform |
 | Use Azure Virtual Network Manager to implement landing zone topologies | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/azure-virtual-network-manager |
@@ -193,14 +190,13 @@ This skill requires **network access** to fetch documentation content:
 | Implement AI workloads using Azure CycleCloud and Slurm | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/ai-azure-infrastructure-implementation |
 | Choose compute for AI workloads on Azure infrastructure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/compute |
 | Apply well-architected principles to AI on Azure infrastructure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/well-architected |
-| Use Azure AI PaaS architectures for AI workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/architectures |
-| Select Azure AI PaaS resources for AI solutions | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/resource-selection |
 | Build resilient cloud-native solutions on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/build-cloud-native-solutions |
-| Deploy cloud-native Azure solutions with safe rollout | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/deploy-cloud-native-solutions |
-| Plan cloud-native Azure solutions aligned to CAF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/plan-cloud-native-solutions |
+| Deploy cloud-native Azure solutions with safe rollout patterns | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/deploy-cloud-native-solutions |
+| Plan Azure cloud-native application architectures and delivery | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/plan-cloud-native-solutions |
 | Decommission on-premises workloads after Azure migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/decommission-source-workload |
-| Execute structured Azure workload migrations | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/execute-migration |
-| Execute Azure cloud modernization projects safely | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/execute-cloud-modernization |
+| Execute structured Azure migration cutovers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/execute-migration |
+| Prepare workloads for Azure cloud migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/prepare-workloads-cloud |
+| Execute Azure workload modernization safely and reliably | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/execute-cloud-modernization |
 | Apply replatform, refactor, rearchitect patterns for Azure modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/modernization-cloud-replatform-refactor-rearchitect |
 | Deploy Azure Virtual Desktop using CAF migration patterns | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-deploy |
 | Perform post-deployment and release tasks for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-release |
@@ -213,7 +209,7 @@ This skill requires **network access** to fetch documentation content:
 | Establish governance and security baseline for AI agents | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization |
 | Establish organizational AI governance aligned to NIST AI RMF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/govern |
 | Apply governance to AI workloads on Azure infrastructure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/governance |
-| Implement governance for Azure AI PaaS workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/governance |
+| Establish governance for Azure AI PaaS workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/governance |
 | Define and enforce responsible AI policies in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/responsible-ai-policies |
 | Set governance and security baselines for Fabric OneLake | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/governance-security-baselines-fabric-data-lake-unify-data-platform |
 | Establish Purview-based data governance and security | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/governance-security-baselines-purview-data-estate-unify-data-platform |
@@ -245,7 +241,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Secure data, compute, and networking for AI on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/security |
-| Apply security baselines to Azure AI PaaS workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/security |
+| Implement secure networking for Azure AI PaaS | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/networking |
+| Secure AI workloads on Azure platform services | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/security |
 | Set up an organizational AI security process in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/secure |
 | Define security standards for AI and analytics data products | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/operational-standards-data-product-security-standards-unify-data-platform |
 | Define network encryption between on-premises and Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/define-network-encryption-requirements |
@@ -276,14 +273,14 @@ This skill requires **network access** to fetch documentation content:
 | Monitor and manage AI workloads on Azure infrastructure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/infrastructure/management |
 | Establish lifecycle management for AI workloads in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/manage |
 | Operate and manage Azure AI PaaS workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/management |
-| Optimize Azure cloud-native solutions post-deployment | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/optimize-cloud-native-solutions |
+| Optimize and operate cloud-native Azure solutions post-deployment | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/optimize-cloud-native-solutions |
 | Standardize data processing for AI and analytics in Fabric | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/operational-standards-data-processing-standards-unify-data-platform |
 | Administer and control Azure cloud operations | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/administer |
 | Plan and configure monitoring for Azure estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/monitor |
 | Protect and ensure reliability of Azure estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/protect |
 | Prepare Azure cloud operations using RAMP model | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/ready-cloud-operations |
-| Optimize Azure workloads after migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/optimize-workloads-after-migration |
-| Optimize and operate Azure workloads post-modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/optimize-after-cloud-modernization |
+| Optimize and stabilize workloads after Azure migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/optimize-workloads-after-migration |
+| Optimize and continuously improve modernized Azure workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/optimize-after-cloud-modernization |
 | Implement shared management cloud operations model | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/shared-management-operating-model |
 | Deploy baseline monitoring for Azure landing zone platform | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-monitor |
 | Implement workload management and monitoring in landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-workloads |
@@ -324,6 +321,8 @@ This skill requires **network access** to fetch documentation content:
 ### Adoption Scenarios
 | Topic | URL |
 |-------|-----|
+| Design AI architectures using Azure PaaS services | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/architectures |
+| Select Azure PaaS platforms for AI workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/platform/resource-selection |
 | Apply CAF to migrate desktops to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/ |
 | Deploy Azure Virtual Desktop with enterprise-scale landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone |
 | Design network topology and connectivity for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-network-topology-and-connectivity |
@@ -363,4 +362,4 @@ This skill requires **network access** to fetch documentation content:
 | Implement SAP and Power Platform integration workflow | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow |
 | Extend SAP landing zones to integrate Power Platform | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-extend-landing-zone |
 | Apply SAP and Power Platform integration fundamentals | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-fundamental |
-| Define strategy for SAP adoption on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |
+| Plan SAP workload adoption strategy on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |

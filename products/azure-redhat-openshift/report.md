@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   best-practices: Best practices for sizing and deploying ARO clusters and infra nodes,
     optimizing OpenShift Virtualization VMs, and staying within supported configurations
     and policies.
-  configuration: 'Configuring ARO and ARO HCP clusters: networking (DNS, proxy, MTU),
-    registries and pull secrets, storage classes, autoscaling/node pools, identities,
-    logging, alerts, and resource policies.'
+  configuration: 'Configuring ARO clusters: networking (DNS, proxies, MTU), registries
+    and pull secrets, storage classes, autoscaling/node pools, identities, logging,
+    alerts, and resource tagging.'
   decision-making: Guidance on choosing ARO architectures and immutable settings,
     planning networking for hosted control planes, and understanding shared responsibilities
     between Microsoft, Red Hat, and customers.
-  security: 'Identity, access, and data protection for ARO: Entra auth, managed identities/SPs,
-    workload identity, NSGs/egress control, disk/etcd encryption, FIPS, Front Door
-    security, and support access control.'
+  security: 'Identity, auth, and network security for ARO: Entra/OIDC auth, managed
+    identities/SPs, workload identity, NSGs/egress control, disk/etcd encryption,
+    FIPS, Front Door, and support access control.'
   deployment: 'Deploying and upgrading ARO clusters and apps: private/standard clusters,
     ARM/Bicep, WebSphere, S2I and serverless, Velero backup/restore, SDN-to-OVN migration,
     and HCP control plane/node pool upgrades.'
@@ -31,12 +31,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Red Hat OpenShift development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when deploying ARO/HCP clusters, configuring networking/storage, securing with
-  Entra/NSGs, or integrating ACR/Key Vault, and other Azure Red Hat OpenShift related
+  Use when deploying ARO clusters, configuring HCP networking, integrating ACR/Key
+  Vault, or securing Entra/OIDC access, and other Azure Red Hat OpenShift related
   development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when deploying ARO/HCP clusters, configuring networking/storage, securing
-  with Entra/NSGs, or integrating ACR/Key Vault, and other Azure Red Hat OpenShift
+use_when: Use when deploying ARO clusters, configuring HCP networking, integrating
+  ACR/Key Vault, or securing Entra/OIDC access, and other Azure Red Hat OpenShift
   related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 84
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -75,14 +75,14 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Changes
 
-### New Pages
-
-- [Quickstart - Create a default cluster](https://learn.microsoft.com/en-us/azure/openshift/quickstart-create-default-hosted-cluster)
-
 ### Updated Pages
 
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq)
-  - Updated: 2026-09-15T16:59:00.000Z → 2026-09-29T22:21:00.000Z
+- [Quickstart - Create a default cluster](https://learn.microsoft.com/en-us/azure/openshift/quickstart-create-default-hosted-cluster)
+  - Updated: 2026-09-28T22:09:00.000Z → 2026-10-01T08:00:00.000Z
+- [Create a cluster with customizations](https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster)
+  - Updated: 2026-09-21T08:00:00.000Z → 2026-10-01T08:00:00.000Z
+- [Configure an external authentication provider](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-external-authentication)
+  - Updated: 2026-09-15T16:59:00.000Z → 2026-10-06T22:17:00.000Z
 
 ## Classified Pages
 
@@ -97,6 +97,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Change the cluster network MTU](https://learn.microsoft.com/en-us/azure/openshift/howto-change-maximum-transmission-unit) | configuration | 0.80 | Details supported process and scope (only intra-cluster OVN overlay traffic) for changing MTU; includes product-specific network configuration constraints. |
 | [Configure Azure Files storage](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-azure-files-hosted-cluster) | configuration | 0.80 | Details use of built-in azurefile-csi StorageClass and creation of custom StorageClasses with specific storage settings, which are product-specific storage configuration options. |
 | [Configure an Azure File StorageClass](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-azure-file-storageclass) | configuration | 0.80 | Details StorageClass configuration, CSI driver dependency on shared keys, and behavior when managed identity is enabled; includes specific storage config parameters. |
+| [Configure an external authentication provider](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-external-authentication) | security | 0.80 | External authentication configuration for Azure Red Hat OpenShift HCP with OIDC identity providers is security-focused and likely includes specific auth-related parameters (issuer URLs, client IDs, scopes, callback URLs, OpenShift/OAuth settings) and product-specific security configuration steps that qualify as expert security configuration knowledge. |
 | [Configure cluster-wide proxy](https://learn.microsoft.com/en-us/azure/openshift/cluster-wide-proxy-configure) | configuration | 0.80 | Details proxy configuration for ARO clusters, including specific settings and behavior; product-specific network configuration. |
 | [Configure the cluster to pull immutable images from a mirror](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-cluster-immutable-images) | configuration | 0.80 | Explains configuring image digest mirrors with specific behavior (digest-only, mirror order, fallback), which is a product-specific image pull configuration. |
 | [Deploy and configure an application using workload identity](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-configure-application-with-workload-identity) | integrations | 0.80 | Covers deploying and configuring applications to use Azure Workload Identity, including annotations, labels, and webhook behavior, which are product-specific integration and coding patterns with Azure services. |
@@ -110,7 +111,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Configure Azure Monitor managed service for Prometheus remote write](https://learn.microsoft.com/en-us/azure/openshift/howto-remotewrite-prometheus) | integrations | 0.76 | Configures remote write from built-in Prometheus on ARO to Azure Monitor managed Prometheus; includes endpoint, auth, and config parameters unique to this integration. |
 | [Configure Azure NetApp Files for OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-netapp-files) | integrations | 0.75 | Describes using Trident CSI driver and operator with ARO and OpenShift Virtualization; includes integration-specific configuration steps. |
 | [Configure DNS forwarding](https://learn.microsoft.com/en-us/azure/openshift/dns-forwarding) | configuration | 0.75 | Shows how to modify the DNS operator and configure forwarding rules (e.g., *.example.com to specific IP); includes concrete config parameters. |
-| [Configure an external authentication provider](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-external-authentication) | security | 0.75 | Describes configuring external OIDC identity providers, including product-specific auth configuration parameters and behavior differences from built-in OAuth, which is security-focused configuration. |
 | [Enable control plane logs](https://learn.microsoft.com/en-us/azure/openshift/howto-enable-control-plane-logs) | configuration | 0.75 | Describes configuring Azure Monitor diagnostic settings for the Microsoft.RedHatOpenShift/HCPOpenShiftClusters resource, including log categories and destinations, which are product-specific logging configuration details. |
 | [Manage customer data access requests](https://learn.microsoft.com/en-us/azure/openshift/howto-use-lockbox) | security | 0.74 | Explains how Lockbox mediates support access to ARO resources, including approval flows and scopes; security/compliance configuration specific to this integration. |
 | [Bring your own Network Security Group](https://learn.microsoft.com/en-us/azure/openshift/howto-bring-nsg) | security | 0.70 | Describes bringing your own NSG for ARO with specific rules, resource group relationships, and constraints; product-specific network security configuration. |
@@ -120,7 +120,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Configure capacity reservations by using machine sets](https://learn.microsoft.com/en-us/azure/openshift/howto-capacity-reservations) | configuration | 0.70 | How-to for configuring capacity reservations on ARO machine sets, likely includes specific Azure/ARO parameters (capacity reservation group names, VM sizes, regions, machineSet fields) and product-specific configuration steps that go beyond generic knowledge. |
 | [Configure cluster autoscaling](https://learn.microsoft.com/en-us/azure/openshift/howto-cluster-auto-scaling) | configuration | 0.70 | Describes configuring the cluster autoscaler for ARO HCP, which typically includes product-specific parameters and behaviors beyond generic autoscaling concepts. |
 | [Configure custom DNS](https://learn.microsoft.com/en-us/azure/openshift/howto-custom-dns) | configuration | 0.70 | DNS resolver configuration and cluster requirements are product-specific network configuration details. |
-| [Create a cluster with customizations](https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster) | configuration | 0.70 | The article describes creating an ARO HCP cluster via Azure CLI and Bicep, defining all required Azure resources (networking, managed identities, role assignments, cluster configuration, node pools). It necessarily includes product-specific CLI flags, Bicep properties, and configuration parameters (names, required/optional fields, allowed values) that constitute detailed configuration knowledge unique to this service. |
+| [Create a cluster with customizations](https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster) | configuration | 0.70 | Custom cluster creation article for Azure Red Hat OpenShift HCP likely includes detailed Bicep/CLI parameters (networking, managed identities, role assignments, node pools, cluster configuration) with specific setting names and allowed values, which constitutes product-specific configuration knowledge beyond generic deployment instructions. |
 | [Create a node pool](https://learn.microsoft.com/en-us/azure/openshift/howto-create-hosted-node-pool) | configuration | 0.70 | The node pool creation guide for ARO HCP includes product-specific node pool properties (such as VM size, OS disk encryption options with customer-managed keys or encryption at host, and which properties are immutable). These are concrete configuration parameters and constraints unique to this product, beyond generic Kubernetes knowledge. |
 | [Create a service principal](https://learn.microsoft.com/en-us/azure/openshift/howto-create-service-principal) | security | 0.70 | Step-by-step creation of Microsoft Entra service principal for ARO; includes specific role/permission requirements and CLI parameters unique to this deployment scenario. |
 | [Create an Azure Files storage class](https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-storageclass) | configuration | 0.70 | Covers defining a StorageClass for Azure Files on ARO 4, which usually includes specific storage class YAML fields, provisioner names, parameters, and required versions that are detailed configuration knowledge. |
@@ -171,10 +171,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Delete a cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-hosted-control-planes-cluster) | 0.30 | From the summary, this is a quickstart showing how to delete an ARO HCP cluster via Azure CLI and what resources are or aren’t deleted automatically. It appears to be a straightforward procedural tutorial without detailed configuration matrices, limits, or product-specific edge-case behavior; thus it likely lacks the kind of expert-only knowledge targeted here. |
 | [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app) | 0.30 | Quickstart/tutorial for deploying JBoss EAP on Azure Red Hat OpenShift via the portal. It focuses on step-by-step setup using a Marketplace offer, not on limits, configuration matrices, error codes, or product-specific parameter tables. No clear expert-only limits, quotas, or specialized configuration references are indicated. |
 | [Overview of egress lockdown](https://learn.microsoft.com/en-us/azure/openshift/concepts-egress-lockdown) | 0.30 | Described as an overview of egress lockdown; based on the summary it focuses on conceptual explanation of required access/URLs rather than detailed endpoint lists, configuration tables, or numeric constraints. |
+| [Quickstart - Create a default cluster](https://learn.microsoft.com/en-us/azure/openshift/quickstart-create-default-hosted-cluster) | 0.30 | Quickstart for creating a default Azure Red Hat OpenShift HCP cluster using CLI/Bicep; primarily a step-by-step tutorial without detailed configuration tables, limits, or product-specific best-practice guidance beyond generic deployment steps. |
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
 | [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.30 | Release notes typically list version changes and features but not structured limits, configs, or decision matrices as defined by the sub-skill types. Without clear evidence of numeric limits, config tables, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any category. |
 | [About Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/intro-openshift) | 0.20 | Introductory overview of Azure Red Hat OpenShift features and benefits without detailed limits, configs, or product-specific patterns. |
-| [Quickstart - Create a default cluster](https://learn.microsoft.com/en-us/azure/openshift/quickstart-create-default-hosted-cluster) | 0.20 | Quickstart for creating an Azure Red Hat OpenShift HCP cluster using default settings via CLI/Bicep; primarily a step-by-step tutorial without detailed configuration tables, limits, quotas, or product-specific troubleshooting/decision matrices. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq) | - | FAQ page is primarily conceptual and explanatory; it doesn't focus on detailed limits, configuration tables, error-code troubleshooting, or other expert-only data as defined by the sub-skill types. |
 | [Networking](https://learn.microsoft.com/en-us/azure/openshift/concepts-networking) | - | Networking article is an overview with diagrams and endpoint lists but no specific configuration tables, limits, or product-unique patterns with quantified guidance. |
 | [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization) | - | The page is a how-to/tutorial for using OpenShift Virtualization on ARO. Based on the summary, it focuses on capabilities and migration benefits, not on detailed configuration parameter tables, limits, or troubleshooting mappings required for the defined sub-skill types. |

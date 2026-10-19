@@ -1,9 +1,9 @@
 ---
 name: azure-sql-virtual-machines
-description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI HADR, DTU/capacity limits, Key Vault/MI security, or Blob backups, and other SQL Server on Azure Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
+description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning SQL VM vs Managed Instance, Always On/FCI HADR, Azure storage/backups, Key Vault/Entra auth, or KQL telemetry, and other SQL Server on Azure Virtual Machines related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # SQL Server on Azure Virtual Machines Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L52 | Diagnosing and fixing performance, connectivity, capacity, memory, I/O, and transaction log issues for Azure SQL Database, Managed Instance, and SQL Server on Azure VMs. |
+| Troubleshooting | L37-L52 | Diagnosing and fixing Azure SQL and SQL Server on Azure VM issues: connectivity, capacity, performance, memory, I/O, geo-replication, and transaction log full errors, plus IaaS agent problems. |
 | Best Practices | L53-L67 | Best practices for SQL Server on Azure VMs: sizing, storage, tempdb, performance tuning, baselines, HADR/FCI with DNN, backups/restores, and planned maintenance preparation. |
 | Decision Making | L68-L78 | Guidance for choosing Azure SQL options and pricing, comparing SQL VMs vs Managed Instance, planning migrations (including Db2), HADR choices, regional feature support, and SQL VM licensing/AHB. |
 | Architecture & Design Patterns | L79-L87 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
 | Limits & Quotas | L88-L92 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
 | Security | L93-L102 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault/EKM, managed identities, Entra auth, Extended Security Updates, hardening guidance, and confidential VM deployment. |
 | Configuration | L103-L149 | Configuring SQL Server/Managed Instance on Azure VMs: HA/DR (AGs, FCIs, listeners, load balancers), storage and backup layout, IaaS Agent, performance/monitoring, and deployment options. |
-| Integrations & Coding Patterns | L150-L156 | Querying SQL performance telemetry with KQL and configuring backups from SQL Server on Azure VMs to Blob Storage, including setups that use managed identities. |
-| Deployment | L157-L173 | Deploying and migrating SQL Server on Azure VMs, including Always On/FCI availability groups (single/multi-subnet, cross-region), regional moves, Ultra Disk, and Confidential VM setups. |
+| Integrations & Coding Patterns | L150-L155 | Querying SQL performance telemetry with KQL and configuring backups from SQL Server on Azure VMs to Blob Storage, including setups that use managed identities. |
+| Deployment | L156-L172 | Deploying and migrating SQL Server on Azure VMs, including Always On/FCI availability groups (single/multi-subnet, cross-region), regional moves, Ultra Disk, and Confidential VM setups. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -150,7 +150,6 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Query Azure SQL performance telemetry with KQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/query-performance-monitoring-telemetry?view=azuresql |
 | Back up SQL Server on Azure VMs to Azure Blob Storage | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/azure-storage-sql-server-backup-restore-use?view=azuresql |
 | Back up SQL Server VM databases to Blob using managed identity | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/backup-restore-to-url-using-managed-identities?view=azuresql |
 

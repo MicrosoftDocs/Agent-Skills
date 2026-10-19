@@ -1,9 +1,9 @@
 ---
 name: azure-advisor
-description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Advisor alerts/digests, managing rec states, using workbooks, Resource Graph, or RBAC for access, and other Azure Advisor related development tasks. Not for Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use azure-security).
+description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Advisor alerts, digests, recommendation states, Resource Graph queries, or RBAC access, and other Azure Advisor related development tasks. Not for Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Advisor Skill
@@ -24,18 +24,18 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L34-L46 | Guidance on using Azure Advisor to assess architectures and apply cost, performance, reliability, and operational excellence recommendations, including bulk fixes and cost savings estimates. |
+| Best Practices | L34-L46 | Guidance for assessing workloads and applying Azure Advisor’s cost, performance, reliability, and operational excellence recommendations, including bulk fixes and cost savings calculations. |
 | Decision Making | L47-L55 | Using Advisor workbooks and critical risk views to assess reliability, plan migrations, and estimate cost impact of Azure Advisor recommendations across key resources |
 | Limits & Quotas | L56-L60 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
 | Security | L61-L65 | Managing Azure Advisor permissions, roles, and RBAC settings so users and apps have appropriate access to Advisor recommendations and data |
-| Configuration | L66-L76 | Configuring Azure Advisor alerts, digests, and recommendation states via portal, ARM/Bicep, tags, and workbooks to control how and when recommendations are delivered and viewed. |
-| Integrations & Coding Patterns | L77-L80 | Querying Azure Advisor data via Resource Graph, using sample Kusto queries, and integrating Advisor MCP tools with AI/LLM clients for automated insights |
+| Configuration | L66-L75 | Configuring Azure Advisor alerts, digests, and recommendation states via portal, ARM/Bicep, tags, and workbooks to control how and when recommendations are delivered and viewed. |
+| Integrations & Coding Patterns | L76-L80 | Programmatic access to Advisor: querying recommendations via Azure Resource Graph and integrating Advisor MCP tools with AI/LLM clients for automated analysis and actions. |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
 | Run Well-Architected assessments in Azure Advisor | https://learn.microsoft.com/en-us/azure/advisor/advisor-assessments |
-| Optimize VM and VMSS costs using Azure Advisor | https://learn.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations |
+| Apply Azure Advisor cost recommendations for VMs and VMSS | https://learn.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations |
 | Calculate and export Azure Advisor cost savings | https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-calculate-total-cost-savings |
 | Improve high-usage VM performance with Azure Advisor | https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-performance-resize-high-usage-vm-recommendations |
 | Use Quick Fix for bulk remediation of Advisor recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-quick-fix |
@@ -69,7 +69,6 @@ This skill requires **network access** to fetch documentation content:
 | Create Azure Advisor alerts with ARM templates | https://learn.microsoft.com/en-us/azure/advisor/advisor-alerts-arm |
 | Define Azure Advisor alert rules using Bicep | https://learn.microsoft.com/en-us/azure/advisor/advisor-alerts-bicep |
 | Configure Azure Advisor alerts in the Azure portal | https://learn.microsoft.com/en-us/azure/advisor/advisor-alerts-portal |
-| Configure Azure Advisor recommendation state management | https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management |
 | Configure periodic Azure Advisor recommendation digests | https://learn.microsoft.com/en-us/azure/advisor/advisor-recommendations-digest |
 | Filter Azure Advisor recommendations by resource tags | https://learn.microsoft.com/en-us/azure/advisor/advisor-tag-filtering |
 | Use Azure Advisor workbook templates for insights | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbooks |
@@ -77,4 +76,5 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Query Azure Advisor recommendations via Resource Graph | https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-resource-graph |
 | Integrate Azure Advisor MCP tools with AI clients | https://learn.microsoft.com/en-us/azure/advisor/advisor-mcp-tools |

@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 177
+- **Updated Pages**: 0
+- **Unchanged**: 181
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -73,17 +73,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 54 | 29.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy Application Gateway for Containers ALB Controller - Helm](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/quickstart-deploy-application-gateway-for-containers-alb-controller-helm)
-  - Updated: 2026-09-09T08:00:00.000Z → 2026-10-01T08:00:00.000Z
-- [Private Deployment](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-private-deployment)
-  - Updated: 2026-08-25T22:15:00.000Z → 2026-10-01T08:00:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/troubleshooting-guide)
-  - Updated: 2026-09-09T08:00:00.000Z → 2026-10-01T08:00:00.000Z
-- [ALB Controller release notes](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes)
-  - Updated: 2026-09-09T22:11:00.000Z → 2026-10-01T22:10:00.000Z
 
 ## Classified Pages
 

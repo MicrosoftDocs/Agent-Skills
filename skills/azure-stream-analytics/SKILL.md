@@ -1,9 +1,9 @@
 ---
 name: azure-stream-analytics
-description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ASA jobs with Event Hubs/Kafka, Cosmos/SQL outputs, ML/UDF queries, autoscale, or IoT Edge clusters, and other Azure Stream Analytics related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Event Hubs (use azure-event-hubs), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ASA jobs with Event Hubs/Kafka, Cosmos/SQL outputs, autoscale, VNets/private endpoints, or edge/IoT workloads, and other Azure Stream Analytics related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Event Hubs (use azure-event-hubs).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stream Analytics Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L59-L73 | Best practices for Stream Analytics job design, query patterns, performance tuning, scaling, reliability, time handling, geospatial logic, ML/Cosmos/SQL outputs, and alerting. |
 | Decision Making | L74-L82 | Guidance on choosing Stream Analytics tools and services, migrating from Visual Studio/.NET UDFs, and configuring autoscale and real-time processing options. |
 | Architecture & Design Patterns | L83-L88 | Designing resilient, geo-redundant Stream Analytics topologies and scaling jobs using Streaming Units, input/output partitioning, and performance tuning patterns. |
-| Limits & Quotas | L89-L95 | Info on Stream Analytics capacity limits, streaming units (SUs), how to size/resize clusters, performance tuning, and specific constraints for Azure Stream Analytics on IoT Edge. |
-| Security | L96-L116 | Securing Stream Analytics jobs: managed identities for inputs/outputs (Event Hubs, SQL, Synapse, Cosmos, Blob, Service Bus, Power BI), VNet/private endpoints, data protection, and Azure Policy compliance. |
-| Configuration | L117-L149 | Configuring Stream Analytics jobs: inputs, outputs (Cosmos DB, SQL, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, ordering, error handling, monitoring, and compatibility. |
-| Integrations & Coding Patterns | L150-L166 | Patterns for connecting Stream Analytics to Kafka/SQL/ML, using UDFs/aggregates, handling complex formats, HFT scenarios, and managing jobs via .NET and schema registry. |
+| Limits & Quotas | L89-L96 | Limits, sizing, and performance of Stream Analytics: Event Hubs output size caps, streaming unit/cluster scaling, and IoT Edge-specific limits and support. |
+| Security | L97-L117 | Securing Stream Analytics jobs: managed identities for inputs/outputs (Event Hubs, SQL, Synapse, Cosmos, Blob, Service Bus, Power BI), VNet/private endpoints, data protection, and Azure Policy compliance. |
+| Configuration | L118-L149 | Configuring Stream Analytics jobs: inputs, outputs (Cosmos DB, SQL, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, ordering, error handling, monitoring, and compatibility. |
+| Integrations & Coding Patterns | L150-L166 | Patterns and code for integrating Stream Analytics with Kafka, SQL, Azure ML, UDFs (C#/JS), anomaly detection, schema registry, and advanced scenarios like HFT and .NET job management |
 | Deployment | L167-L180 | Automating deployment, migration, and lifecycle (start/stop/delete) of Stream Analytics jobs and clusters using ARM/Bicep, GitHub Actions, Azure DevOps, REST, and edge/Stack Hub tools |
 
 ### Troubleshooting
@@ -89,6 +89,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Use Event Hubs as Stream Analytics output with size limits | https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-output |
 | Resize Azure Stream Analytics clusters by streaming units | https://learn.microsoft.com/en-us/azure/stream-analytics/scale-cluster |
 | Understand Azure Stream Analytics on IoT Edge limits and support | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge |
 | Understand and tune Azure Stream Analytics streaming units | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-streaming-unit-consumption |
@@ -123,7 +124,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Synapse Analytics dedicated SQL pool as Stream Analytics output | https://learn.microsoft.com/en-us/azure/stream-analytics/azure-synapse-analytics-output |
 | Configure Blob Storage and Data Lake Gen2 outputs for Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/blob-storage-azure-data-lake-gen2-output |
 | Configure Stream Analytics autoscale settings via CI/CD tool | https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-autoscale |
-| Configure Azure Event Hubs as output for Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-output |
 | Configure event ordering policies in Azure Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/event-ordering |
 | Reference for Stream Analytics JobConfig.json fields in VS Code | https://learn.microsoft.com/en-us/azure/stream-analytics/job-config-json |
 | Configure Kafka output for Azure Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/kafka-output |

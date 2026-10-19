@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   best-practices: 'Performance and operations guidance for HorizonDB: data prep for
     AI, pgvector tuning, partitioning, extensions, Apache AGE, Query Store, and cluster
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Total Pages**: 146
 - **Fetched**: 146
 - **Fetch Failed**: 0
-- **Classified**: 111
-- **Unclassified**: 35
+- **Classified**: 110
+- **Unclassified**: 36
 
 ### Incremental Update
 - **New Pages**: 0
@@ -60,21 +60,21 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 |------|-------|------------|
 | architecture-patterns | 1 | 0.7% |
 | best-practices | 7 | 4.8% |
-| configuration | 73 | 50.0% |
+| configuration | 72 | 49.3% |
 | decision-making | 2 | 1.4% |
 | deployment | 1 | 0.7% |
 | integrations | 9 | 6.2% |
 | limits-quotas | 2 | 1.4% |
 | security | 12 | 8.2% |
 | troubleshooting | 4 | 2.7% |
-| *(Unclassified)* | 35 | 24.0% |
+| *(Unclassified)* | 36 | 24.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Scalable vector indexing with DiskANN](https://learn.microsoft.com/en-us/azure/horizondb/ai/vector-index-diskann)
-  - Updated: 2026-07-08T11:04:00.000Z → 2026-09-29T11:08:00.000Z
+- [AI pipelines](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-pipelines)
+  - Updated: 2026-07-08T11:04:00.000Z → 2026-10-16T22:13:00.000Z
 
 ## Classified Pages
 
@@ -117,7 +117,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Restore to a custom restore point](https://learn.microsoft.com/en-us/azure/horizondb/backup-restore/how-to-restore-custom-restore-point) | configuration | 0.75 | Explains PITR behavior (new server in same region, snapshot + WAL replay) with HorizonDB-specific restore process and retention-period constraints. |
 | [Use pg_partman](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-use-pg-partman) | best-practices | 0.75 | Shows how to enable and use pg_partman specifically on HorizonDB, with product-specific guidance and patterns for partitioning large tables to improve performance. |
 | [AI functions (azure_ai)](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-functions) | integrations | 0.70 | Overview of AI functions in the azure_ai extension; likely includes specific function names, parameters, and integration patterns with Foundry models unique to HorizonDB. |
-| [AI pipelines](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-pipelines) | configuration | 0.70 | AI pipelines are defined declaratively in SQL with durable execution semantics. The page likely documents specific pipeline catalog schema, state fields, retry/scheduling parameters, and configuration options for crash recovery and checkpoints—product-specific configuration details not known from general training. |
 | [Adaptive autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-adaptive-autovacuum) | configuration | 0.70 | Page is specifically about adaptive autovacuum parameters; such pages typically contain parameter names, allowed values, and defaults for HorizonDB, which are product-specific configuration details. |
 | [Add or remove replicas](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-add-remove-replica) | limits-quotas | 0.70 | States a specific numeric limit (up to 15 replicas per cluster) and discusses impact on high availability; this is a concrete quota not generally known from training. |
 | [Autovacuum](https://learn.microsoft.com/en-us/azure/horizondb/parameters/parameters-autovacuum) | configuration | 0.70 | Dedicated autovacuum parameters page; expected to list HorizonDB-specific parameter names, defaults, and ranges, which are expert configuration details. |
@@ -218,6 +217,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 | [Scale compute](https://learn.microsoft.com/en-us/azure/horizondb/configure-maintain/how-to-scale-compute) | 0.40 | Step-by-step scaling instructions; summary mentions restart behavior but no detailed configuration matrices, limits, or parameters. |
 | [Tutorial - Build a semantic search application](https://learn.microsoft.com/en-us/azure/horizondb/ai/build-semantic-search-app) | 0.40 | Primarily a hands-on tutorial for building a semantic search app. While it uses HorizonDB features, tutorials generally show example usage rather than comprehensive configuration tables or decision matrices. |
 | [Identify parameter group connected to a cluster](https://learn.microsoft.com/en-us/azure/horizondb/parameters/how-to-parameter-groups-identify-connected-cluster) | 0.35 | Simple identification of which parameter group is connected; no expert-level configuration or numeric constraints shown. |
+| [AI pipelines](https://learn.microsoft.com/en-us/azure/horizondb/ai/ai-pipelines) | 0.30 | Summary describes conceptual capabilities of AI pipelines in Azure HorizonDB (declarative SQL workflows, durability, retries) but does not expose concrete configuration parameters, limits, error codes, or product-specific numeric thresholds. Without detailed content such as parameter tables, error mappings, or specific settings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Connect and query](https://learn.microsoft.com/en-us/azure/horizondb/connectivity/how-to-connect-query-guide) | 0.30 | Navigation/overview page linking to connection quickstarts; conceptual description of endpoints and compatibility only. |
 | [Connect with Java](https://learn.microsoft.com/en-us/azure/horizondb/connectivity/connect-java) | 0.30 | Java/JDBC quickstart; focuses on sample app and standard PostgreSQL authentication, not HorizonDB-specific expert details. |
 | [Connect with Python](https://learn.microsoft.com/en-us/azure/horizondb/connectivity/connect-python) | 0.30 | Python quickstart with generic connection and CRUD operations; summary does not expose HorizonDB-specific parameters or constraints. |

@@ -1,9 +1,9 @@
 ---
 name: azure-quotas
-description: Expert knowledge for Azure Quotas development including limits & quotas. Use when requesting per-region Storage account quota increases, checking limits, or filing Azure support requests, and other Azure Quotas related development tasks. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager).
+description: Expert knowledge for Azure Quotas development including limits & quotas. Use when checking storage account capacity, IOPS, throughput, portal views, or CLI-based quota increase requests, and other Azure Quotas related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resource Manager (use azure-resource-manager), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-06-21"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quotas Skill
@@ -24,9 +24,9 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L29-L32 | How to request and manage per-region Azure Storage account quota increases, including limits, prerequisites, and support request steps. |
+| Limits & Quotas | L29-L32 | How to view current Azure Storage account limits and request quota increases (capacity, IOPS, throughput) via portal, CLI, or support. |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Increase Azure Storage account quota per region | https://learn.microsoft.com/en-us/azure/quotas/storage-account-quota-requests |
+| Request and manage Azure Storage account quota increases | https://learn.microsoft.com/en-us/azure/quotas/storage-account-quota-requests |

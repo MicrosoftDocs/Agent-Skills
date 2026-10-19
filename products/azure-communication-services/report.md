@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   decision-making: Planning and decision guides for migrating ACS chat/calling/telephony,
     integrating with Teams/Teams Phone, choosing PSTN/number options, and understanding
@@ -76,8 +76,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Updated Pages
 
-- [Use Event Grid to send calling push notifications](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/add-voip-push-notifications-event-grid)
-  - Updated: 2025-07-01T11:22:00.000Z → 2026-09-28T22:12:00.000Z
+- [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq)
+  - Updated: 2026-09-01T17:13:00.000Z → 2026-10-13T17:20:00.000Z
 
 ## Classified Pages
 
@@ -597,6 +597,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Server events](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
 | [Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/services) | 0.20 | Services overview describes available ACS capabilities at a conceptual level without detailed limits, configs, or decision matrices. |
 | [Set up for Node.JS app](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/building-app-start) | 0.20 | Introductory tutorial for building a baseline web app; focuses on getting started rather than detailed configuration matrices, limits, or troubleshooting. |
+| [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq) | 0.20 | FAQ-style page about Teams Phone extensibility; description suggests general Q&A and retirement notice without clear evidence of numeric limits, configuration tables, error-code-based troubleshooting, or other detailed expert-only data per the defined categories. |
 | [Use cases](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-use-cases) | 0.20 | Describes use cases and scenarios for ACS support of Teams identities; appears conceptual without specific configuration parameters, limits, or error mappings. |
 | [What's new](https://learn.microsoft.com/en-us/azure/communication-services/whats-new) | 0.20 | What's new page is primarily release/marketing-style updates and high-level feature announcements without detailed limits, configs, or troubleshooting mappings. |
 | [Help and support options](https://learn.microsoft.com/en-us/azure/communication-services/support) | 0.10 | Support options overview; primarily navigation and process info, not technical expert content. |
@@ -608,6 +609,5 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [What is Azure Communication Services?](https://learn.microsoft.com/en-us/azure/communication-services/overview) | 0.10 | High-level product overview of Azure Communication Services without concrete limits, configs, or error details. |
 | [Advanced messaging for WhatsApp terms of service](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-terms-of-service) | - | Terms of service and data transfer explanation; no product-specific technical limits, configs, or error details. |
 | [Pricing](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/pricing) | - | Pricing overview; summary doesn't show concrete per-message or tier-specific numeric prices or quotas. |
-| [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq) | - | FAQ-style content about Teams Phone extensibility; based on the description it likely covers general questions, behavior explanations, and conceptual guidance rather than specific limits, configuration tables, error-code mappings, or decision matrices with quantified trade-offs. |
 | [Teams Phone extensibility quick start](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-quickstart) | - | Quickstart-style provisioning and usage guide for Teams Phone Extensibility with Azure Communication Services; based on the description, it focuses on how an ISV can provision and guide tenants rather than listing detailed limits, configuration parameter tables, error codes, or decision matrices. Lacks the specific numeric limits, RBAC role lists, or product-specific configuration tables required for expert-knowledge classification. |
 | [Voice and video terminology](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/about-call-types) | - | Conceptual overview of call types (voice, video, PSTN); no indication of numeric limits, configs, or troubleshooting details. |

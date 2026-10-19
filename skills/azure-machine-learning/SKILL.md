@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AutoML, Prompt Flow, online/batch endpoints, vector stores/RAG, or MLflow/ONNX deployments, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AutoML, Prompt Flow, online/batch endpoints, vector stores/RAG, or Model Catalog in Azure ML, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L81-L108 | Guides for planning and making migration, upgrade, networking, DR, data, compute, deployment, and monitoring decisions across Azure ML v1/v2, Fabric, Prompt Flow, and Agent Framework. |
 | Architecture & Design Patterns | L109-L114 | Designing real-time inference architectures with online endpoints and building RAG solutions using Azure ML vector stores, including deployment, scaling, and integration patterns. |
 | Limits & Quotas | L115-L124 | Limits, quotas, and availability for Azure ML: regional/sovereign support, VM SKUs, workspace soft delete, and capacity planning for managed online endpoints. |
-| Security | L125-L174 | Securing Azure ML workspaces, endpoints, and data: encryption, identity/RBAC, network isolation/VNet, Key Vault secrets, policies, compliance, and secure access to other Azure/on-prem resources. |
+| Security | L125-L174 | Securing Azure ML: encryption, keys, identity/RBAC, secrets, network isolation/VNets, private endpoints, policy/compliance, and secure access to compute, storage, endpoints, and Model Catalog. |
 | Configuration | L175-L408 | Configuring Azure ML components, compute, networking, AutoML, YAML schemas, monitoring, and Prompt Flow so you can build, train, deploy, and manage ML workflows and infrastructure. |
 | Integrations & Coding Patterns | L409-L451 | Integrating Azure ML with data platforms, REST/MLflow APIs, Spark, Databricks/Synapse/Fabric, and building/debugging prompt flow/RAG tools and deployments. |
 | Deployment | L452-L481 | Deploying and operationalizing models and pipelines on Azure ML (online/batch endpoints, CI/CD, MLOps, prompt flow, RAG, HF/MLflow/ONNX), including rollout strategies and cross-workspace/registry use. |
@@ -132,7 +132,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan enterprise security and governance for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/concept-enterprise-security?view=azureml-api-2 |
 | Secret injection concepts for AML online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/concept-secret-injection?view=azureml-api-2 |
 | Understand secure network traffic flow for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2 |
-| Network isolation concepts for AML managed endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-online-endpoint?view=azureml-api-2 |
+| Configure network isolation for Azure ML online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-online-endpoint?view=azureml-api-2 |
 | Manage vulnerabilities in Azure Machine Learning images | https://learn.microsoft.com/en-us/azure/machine-learning/concept-vulnerability-management?view=azureml-api-2 |
 | Configure inbound and outbound traffic for secure Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-azureml-behind-firewall?view=azureml-api-2 |
 | Securely connect Azure ML managed VNet to on-premises | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-on-premises-resources?view=azureml-api-2 |
@@ -150,18 +150,18 @@ This skill requires **network access** to fetch documentation content:
 | Disable shared key access for Azure ML workspace storage | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-disable-local-auth-storage?view=azureml-api-2 |
 | Configure identity-based service authentication for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-identity-based-service-authentication?view=azureml-api-2 |
 | Enforce Azure ML workspace compliance with Azure Policy | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-integrate-azure-policy?view=azureml-api-2 |
-| Configure managed virtual network isolation for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-managed-network?view=azureml-api-2 |
+| Use managed virtual networks to isolate Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-managed-network?view=azureml-api-2 |
 | Configure Model Catalog access with workspace managed virtual networks | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-isolation-model-catalog?view=azureml-api-2 |
-| Secure Azure ML workspaces with VNets and isolation | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-security-overview?view=azureml-api-2 |
+| Configure VNet-based network security for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-security-overview?view=azureml-api-2 |
 | Configure data exfiltration prevention for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-prevent-data-loss-exfiltration?view=azureml-api-2 |
 | Secure Azure ML batch endpoints with private networks | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-batch-endpoint?view=azureml-api-2 |
 | Secure Azure ML online inferencing with VNets | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-inferencing-vnet?view=azureml-api-2 |
 | Secure AKS inferencing environments for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-kubernetes-inferencing-environment?view=azureml-api-2 |
 | Configure TLS/SSL for Azure ML Kubernetes endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-kubernetes-online-endpoint?view=azureml-api-2 |
-| Secure Azure ML managed online endpoints with network isolation | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-online-endpoint?view=azureml-api-2 |
+| Secure Azure ML managed online endpoints with private networking | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-online-endpoint?view=azureml-api-2 |
 | Secure Azure ML RAG workflows with network isolation | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-rag-workflows?view=azureml-api-2 |
 | Secure Azure ML training with virtual networks | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-training-vnet?view=azureml-api-2 |
-| Secure Azure ML workspace using virtual networks | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-workspace-vnet?view=azureml-api-2 |
+| Secure Azure ML workspaces with custom VNets | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-workspace-vnet?view=azureml-api-2 |
 | Configure RBAC access to Azure ML feature store | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-access-control-feature-store?view=azureml-api-2 |
 | Set up authentication to Azure ML workspaces | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-authentication?view=azureml-api-2 |
 | Configure customer-managed keys for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-customer-managed-keys?view=azureml-api-2 |

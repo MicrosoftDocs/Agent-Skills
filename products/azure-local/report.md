@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-18'
 category_descriptions:
   security: 'Security and compliance for Azure Local: standards mapping (FedRAMP,
     HIPAA, PCI, ISO), identity/RBAC, firewalls/NSGs, certificates/PKI, Trusted Launch/CVMs,
@@ -11,7 +11,7 @@ category_descriptions:
     disaggregated and multi-rack clusters, including host/physical networking and
     update/support constraints.
   configuration: 'Configuring Azure Local infrastructure: networking, storage, GPUs,
-    monitoring, disconnected/Arc scenarios, multi-rack, VM images/management, migrations,
+    monitoring, disconnected/Arc scenarios, VM lifecycle, SDN, multi-rack, patterns,
     and update/health settings.'
   best-practices: Guidance on networking and SDN tuning, drift detection, supported
     VM operations (Arc-enabled and multi-rack), and best practices for planning and
@@ -19,43 +19,42 @@ category_descriptions:
   architecture-patterns: 'Network and resiliency design for Azure Local: reference
     topologies, SDN, multi-rack/room, disconnected ops, availability zones, DR, and
     VM/storage network patterns.'
-  deployment: Deploying, expanding, updating, and decommissioning Azure Local/Stack
-    HCI environments, including rack-aware, disaggregated, SDN, disconnected, and
-    small form factor deployments.
+  deployment: 'Deploying and upgrading Azure Local/Stack HCI: rack-aware, disaggregated
+    and small-form-factor clusters, SDN, disconnected setups, OS/solution updates,
+    and VM migration/maintenance tasks.'
   troubleshooting: 'Diagnosing and fixing Azure Local issues: provisioning, SDN/NSG,
-    Arc VMs, multi‑rack/SFF, upgrades, disconnected ops, known bugs, and collecting
-    logs/traces for support.'
+    Arc VMs, confidential VMs, multi-rack/SFF, upgrades, plus log collection, health/drift
+    tools, and known issues/workarounds.'
   integrations: Patterns for connecting to and migrating VMs into Azure Local (SSH/RDP,
     multi-rack), using images/galleries, Azure Migrate, automation (CLI/PowerShell/Terraform),
     and GPU/monitoring integrations.
 skill_description: Expert knowledge for Azure Local development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  designing Azure Local clusters, SDN networking, multi-rack/disconnected setups,
-  Arc VMs, or Stack HCI deployments, and other Azure Local related development tasks.
-  Not for Microsoft Foundry Local (use microsoft-foundry-local), Azure Stack Edge
-  (use azure-stack-edge), Azure Arc (use azure-arc).
-use_when: Use when designing Azure Local clusters, SDN networking, multi-rack/disconnected
-  setups, Arc VMs, or Stack HCI deployments, and other Azure Local related development
-  tasks.
+  planning Azure Local clusters, SDN networking, multi-rack/disconnected setups, Arc
+  VMs, or GPU workloads, and other Azure Local related development tasks. Not for
+  Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry (use microsoft-foundry),
+  Microsoft Foundry Classic (use microsoft-foundry-classic).
+use_when: Use when planning Azure Local clusters, SDN networking, multi-rack/disconnected
+  setups, Arc VMs, or GPU workloads, and other Azure Local related development tasks.
 confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local),
-  Azure Stack Edge (use azure-stack-edge), Azure Arc (use azure-arc).
+  Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic).
 ---
 # Azure Local Crawl Report
 
 ## Summary
 
-- **Total Pages**: 401
-- **Fetched**: 401
+- **Total Pages**: 402
+- **Fetched**: 402
 - **Fetch Failed**: 0
-- **Classified**: 346
-- **Unclassified**: 55
+- **Classified**: 344
+- **Unclassified**: 58
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 14
-- **Unchanged**: 381
-- **Deleted Pages**: 5
+- **New Pages**: 2
+- **Updated Pages**: 7
+- **Unchanged**: 393
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-local/azure-local.csv`
 
 ## Classification Statistics
@@ -63,65 +62,43 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 33 | 8.2% |
-| best-practices | 6 | 1.5% |
-| configuration | 141 | 35.2% |
+| best-practices | 5 | 1.2% |
+| configuration | 141 | 35.1% |
 | decision-making | 18 | 4.5% |
-| deployment | 43 | 10.7% |
+| deployment | 41 | 10.2% |
 | integrations | 12 | 3.0% |
 | limits-quotas | 5 | 1.2% |
-| security | 54 | 13.5% |
-| troubleshooting | 34 | 8.5% |
-| *(Unclassified)* | 55 | 13.7% |
+| security | 54 | 13.4% |
+| troubleshooting | 35 | 8.7% |
+| *(Unclassified)* | 58 | 14.4% |
 
 ## Changes
 
 ### New Pages
 
-- [Hyperconverged](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2609)
-- [Multi-rack (preview)](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-whats-new?view=azloc-2609)
-- [Small form factor](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-overview?view=azloc-2609)
-- [VM migration](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-whats-new?view=azloc-2609)
-- [Reuse Azure Arc-enabled servers](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-arc-reuse?view=azloc-2609)
-- [Disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-whats-new?view=azloc-2609)
+- [Plan updates](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-plan-updates?view=azloc-2609)
+- [Apply updates](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-update?view=azloc-2609)
 
 ### Updated Pages
 
-- [Find your deployment type](https://learn.microsoft.com/en-us/azure/azure-local/plan/find-your-deployment-type?view=azloc-2609)
-  - Updated: 2026-08-20T22:03:00.000Z → 2026-09-28T17:33:00.000Z
-- [What is Azure Local VM management?](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-overview?view=azloc-2609)
-  - Updated: 2026-07-28T17:08:00.000Z → 2026-09-17T08:00:00.000Z
-- [Migration overview](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migration-options-overview?view=azloc-2609)
-  - Updated: 2026-09-10T17:03:00.000Z → 2026-09-28T22:05:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migration-azure-migrate-overview?view=azloc-2609)
-  - Updated: 2026-05-15T22:06:00.000Z → 2026-09-24T08:00:00.000Z
-- [Review requirements](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-hyperv-requirements?view=azloc-2609)
-  - Updated: 2026-08-18T22:16:00.000Z → 2026-09-24T08:00:00.000Z
-- [Complete prerequisites](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-hyperv-prerequisites?view=azloc-2609)
-  - Updated: 2026-08-18T22:16:00.000Z → 2026-09-28T22:05:00.000Z
-- [Discover, replicate](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-hyperv-replicate?view=azloc-2609)
-  - Updated: 2026-07-30T22:08:00.000Z → 2026-09-28T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migration-azure-migrate-vmware-overview?view=azloc-2609)
-  - Updated: 2026-05-15T22:06:00.000Z → 2026-09-24T08:00:00.000Z
-- [Review requirements](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-vmware-requirements?view=azloc-2609)
-  - Updated: 2026-08-18T22:16:00.000Z → 2026-09-28T22:05:00.000Z
-- [Complete prerequisites](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-vmware-prerequisites?view=azloc-2609)
-  - Updated: 2026-08-18T22:16:00.000Z → 2026-09-24T08:00:00.000Z
-- [Discover, replicate](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-vmware-replicate?view=azloc-2609)
-  - Updated: 2026-09-10T17:03:00.000Z → 2026-09-28T08:00:00.000Z
-- [Migration FAQ](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-faq?view=azloc-2609)
-  - Updated: 2026-07-28T17:08:00.000Z → 2026-09-28T22:05:00.000Z
-- [About multi-rack deployments](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-overview?view=azloc-2609)
-  - Updated: 2026-07-21T17:07:00.000Z → 2026-09-28T17:33:00.000Z
-- [Use Azure Site Recovery](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-site-recovery?view=azloc-2609)
-  - Updated: 2026-07-13T17:04:00.000Z → 2026-09-30T22:04:00.000Z
+- [Deploy via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-local-identity-with-key-vault?view=azloc-2609)
+  - Updated: 2026-09-11T22:04:00.000Z → 2026-10-05T22:03:00.000Z
+- [Hyperconverged](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2609)
+  - Updated: 2026-09-16T08:00:00.000Z → 2026-10-01T08:00:00.000Z
+- [Release information](https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2609)
+  - Updated: 2026-09-11T22:04:00.000Z → 2026-10-01T08:00:00.000Z
+- [Drift detection](https://learn.microsoft.com/en-us/azure/azure-local/manage/drift-detection?view=azloc-2609)
+  - Updated: 2026-02-19T23:06:00.000Z → 2026-10-12T22:03:00.000Z
+- [Add a node](https://learn.microsoft.com/en-us/azure/azure-local/manage/add-server?view=azloc-2609)
+  - Updated: 2026-08-27T17:06:00.000Z → 2026-10-06T17:05:00.000Z
+- [Back up disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-back-up-restore?view=azloc-2609)
+  - Updated: 2026-09-03T17:05:00.000Z → 2026-10-07T17:04:00.000Z
+- [Disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-whats-new?view=azloc-2609)
+  - Updated: 2026-09-15T17:03:00.000Z → 2026-10-06T17:05:00.000Z
 
 ### Deleted Pages
 
-- ~~What's new~~ (https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-whats-new?view=azloc-2609)
-- ~~What's new in VM migration?~~ (https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-whats-new?view=azloc-2609)
-- ~~What's new (multi-rack)~~ (https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-whats-new?view=azloc-2609)
-- ~~About small form factor deployments~~ (https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-overview?view=azloc-2609)
-- ~~What's new~~ (https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2609)
+- ~~Update~~ (https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-update?view=azloc-2609)
 
 ## Classified Pages
 
@@ -204,7 +181,6 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Configure JIT access](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-configure-jit?view=azloc-2609) | security | 0.75 | Covers one-time setup of JIT access via Microsoft Entra PIM and short-lived certificates; likely includes specific RBAC roles, permissions, and security configuration steps. |
 | [Configure network security groups with tags](https://learn.microsoft.com/en-us/azure/azure-local/manage/configure-network-security-groups-with-tags?view=azloc-2609) | security | 0.75 | Describes network security tags and applying NSG policies based on tags; product-specific security configuration pattern. |
 | [Create and manage L3 isolation domains](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-configure-layer-3-isolation-domain?view=azloc-2609) | configuration | 0.75 | Describes creating, updating, deleting, and checking status of L3 isolation domains via Azure CLI/portal, including product-specific networking configuration parameters. |
-| [Deploy via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-local-identity-with-key-vault?view=azloc-2609) | deployment | 0.75 | Step-by-step deployment using local identity and Key Vault; product-specific deployment configuration and flows. |
 | [Deploy via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/deploy/rack-aware-cluster-deploy-portal?view=azloc-2609) | deployment | 0.75 | Portal-based deployment steps for rack aware clusters, including configuration and validation; specialized deployment flow. |
 | [Enable SDN integration](https://learn.microsoft.com/en-us/azure/azure-local/deploy/enable-sdn-integration?view=azloc-2609) | configuration | 0.75 | Describes enabling SDN using a PowerShell action plan with specific steps and parameters; product-specific configuration procedure. |
 | [Enable at scale using Azure policies](https://learn.microsoft.com/en-us/azure/azure-local/manage/monitor-multi-azure-policies?view=azloc-2609) | configuration | 0.75 | Using Azure Policy to enable Insights involves specific policy definitions, parameters, and assignments tailored to Azure Local resources. |
@@ -251,7 +227,6 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [5. Create Azure Local VMs](https://learn.microsoft.com/en-us/azure/azure-local/manage/create-arc-virtual-machines?view=azloc-2609) | configuration | 0.70 | VM creation article; includes ARM schema, CLI parameters, and configuration options unique to Azure Local Arc-enabled VMs. |
 | [About Azure Local deployments](https://learn.microsoft.com/en-us/azure/azure-local/scalability-deployments?view=azloc-2609) | decision-making | 0.70 | Describes deployment types and scalability options to choose the right solution; likely includes concrete scale ranges and guidance for when to choose each deployment type. |
 | [Acquire disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-acquire?view=azloc-2609) | configuration | 0.70 | The article describes creating a virtual appliance resource and downloading specific installation files for disconnected operations. Such guidance typically includes product-specific configuration parameters (resource types, required settings, file/package names) that qualify as configuration expert knowledge beyond generic tutorials. |
-| [Add a node](https://learn.microsoft.com/en-us/azure/azure-local/manage/add-server?view=azloc-2609) | deployment | 0.70 | Scaling out by adding nodes includes specific steps, prerequisites, and constraints for Azure Local 24H2, which are deployment/scale-out procedures unique to this product. |
 | [Add a node (disaggregated)](https://learn.microsoft.com/en-us/azure/azure-local/manage/add-server-disaggregated?view=azloc-2609) | deployment | 0.70 | Adding nodes in disaggregated deployments has platform-specific steps and constraints; this is deployment/scale-out expert knowledge. |
 | [Add and repair nodes](https://learn.microsoft.com/en-us/azure/azure-local/concepts/rack-aware-cluster-add-server?view=azloc-2609) | configuration | 0.70 | Explains node add/repair procedures with product-specific steps and constraints for rack aware clusters. |
 | [Assess environment readiness](https://learn.microsoft.com/en-us/azure/azure-local/manage/use-environment-checker?view=azloc-2609) | configuration | 0.70 | Describes a product-specific readiness tool that checks detailed connectivity, hardware, networking, and AD requirements; likely includes specific parameters and thresholds, fitting configuration-focused expert knowledge. |
@@ -262,7 +237,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-cli?view=azloc-2609) | configuration | 0.70 | Contains product-specific Azure Local CLI setup details, including required CLI versions, specific cloud registration commands, certificate trust steps, and extension installation/configuration parameters for disconnected environments, which go beyond generic CLI knowledge. |
 | [Azure Container Registry](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-azure-container-registry?view=azloc-2609) | deployment | 0.70 | Covers prerequisites, deployment steps, and image management for ACR running on Azure Local disconnected operations, which is a specific deployment pattern. |
 | [Azure verification for VMs](https://learn.microsoft.com/en-us/azure/azure-local/deploy/azure-verification?view=azloc-2609) | security | 0.70 | Feature modeled after IMDS attestation; such pages typically document attestation flows, token/claim formats, and security configuration specifics that are product- and version-specific and not broadly known. |
-| [Back up disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-back-up-restore?view=azloc-2609) | configuration | 0.70 | Provides concrete backup parameter configurations and operational steps for Azure Local disconnected environments, including RBAC requirements and backup triggers. |
+| [Back up disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-back-up-restore?view=azloc-2609) | configuration | 0.70 | Backup article likely includes Azure Local–specific backup parameters, required RBAC roles, and configuration options for disconnected environments (for example, named parameters, flags, and their allowed values). These are product-specific configuration details that an LLM wouldn't reliably infer from training data, fitting the configuration sub-skill. |
 | [Certificate rotation](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-certificate-rotation?view=azloc-2609) | security | 0.70 | Gives product-specific procedures for rotating external ingress and identity provider trust certificates in disconnected mode, including security and continuity considerations. |
 | [Collect log files for Azure Local VM](https://learn.microsoft.com/en-us/azure/azure-local/manage/collect-log-files-arc-enabled-vms?view=azloc-2609) | troubleshooting | 0.70 | Explicitly about collecting logs to troubleshoot issues; such pages usually specify log locations, commands, and file sets unique to Azure Local Arc-enabled VMs. |
 | [Collect logs](https://learn.microsoft.com/en-us/azure/azure-local/manage/collect-logs?view=azloc-2609) | configuration | 0.70 | Describes how to collect diagnostic logs via portal and PowerShell, including specific commands and options for Azure Local hyperconverged deployments. |
@@ -284,6 +259,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Decommission system](https://learn.microsoft.com/en-us/azure/azure-local/manage/decommission-azure-local?view=azloc-2609) | deployment | 0.70 | Decommissioning Azure Local involves specific resource objects, order of deletion, and constraints; these are platform-specific operational/deployment procedures. |
 | [Deploy an Azure Local cluster via ARM template](https://learn.microsoft.com/en-us/azure/azure-local/manage/confidential-vm-deploy-cluster-via-arm-template?view=azloc-2609) | deployment | 0.70 | ARM-based deployment for CVM-ready clusters; likely includes template parameters, required SKUs, and constraints specific to confidential VM support. |
 | [Deploy disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-deploy?view=azloc-2609) | deployment | 0.70 | Step-by-step deployment of Azure Local disconnected operations with product-specific requirements and sequences that go beyond generic deployment knowledge. |
+| [Deploy via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-local-identity-with-key-vault?view=azloc-2609) | deployment | 0.70 | The page describes a specific Azure Local deployment model using local identity with Azure Key Vault, including product-specific deployment configuration steps and requirements that go beyond generic knowledge. It focuses on how to deploy Azure Local in this particular configuration rather than just conceptual guidance, fitting the deployment sub-skill. |
 | [Disaggregated network reference patterns overview](https://learn.microsoft.com/en-us/azure/azure-local/plan/network-patterns-overview-disaggregated?view=azloc-2609) | architecture-patterns | 0.70 | Overview of network reference patterns with leaf-spine architecture and traffic flows; pattern-specific guidance for Azure Local disaggregated deployments. |
 | [Download managed disks from Azure](https://learn.microsoft.com/en-us/azure/azure-local/manage/manage-data-disks?view=azloc-2609) | integrations | 0.70 | Covers moving managed disks from Azure to Azure Local; likely includes specific CLI/API parameters and integration steps between services. |
 | [Download managed disks from Azure](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-manage-data-disks?view=azloc-2609) | configuration | 0.70 | Covers disk transfer from Azure to Azure Local; expected to include specific commands, flags, and storage constraints unique to this workflow, which are configuration/integration details. |
@@ -372,6 +348,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Without Arc gateway](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-without-azure-arc-gateway?view=azloc-2609) | configuration | 0.70 | Details script and UI-based registration flows with proxy configuration; includes specific parameters and environment settings for Arc registration. |
 | [Update via PowerShell](https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-2609) | deployment | 0.69 | PowerShell-based update procedure; includes specific cmdlets, parameters, and constraints for updating single and multi-node systems. |
 | [6A. Deploy via Azure portal (disaggregated)](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-via-portal-disaggregated?view=azloc-2609) | deployment | 0.68 | Portal-based deployment workflow for disaggregated instances; contains Azure Local–specific deployment options and constraints. |
+| [Drift detection](https://learn.microsoft.com/en-us/azure/azure-local/manage/drift-detection?view=azloc-2609) | troubleshooting | 0.68 | The page describes how the Azure Local drift detection framework identifies configuration deviations and supports troubleshooting configuration-related issues. It contains product-specific diagnostic behavior and mappings from configuration drift symptoms to remediation actions, which qualify as troubleshooting-oriented expert knowledge rather than generic concepts. |
 | [System requirements (disaggregated)](https://learn.microsoft.com/en-us/azure/azure-local/concepts/system-requirements-disaggregated?view=azloc-2609) | limits-quotas | 0.68 | System requirements article; likely includes specific machine, storage, and networking specs (CPU, RAM, node counts, SAN capabilities) that act as numeric limits/requirements. |
 | [Physical network requirements (disaggregated)](https://learn.microsoft.com/en-us/azure/azure-local/concepts/physical-network-requirements-disaggregated?view=azloc-2609) | limits-quotas | 0.66 | Physical network requirements for disaggregated architectures; likely lists switch capabilities, port counts, bandwidth, and other numeric constraints. |
 | [Plan Network Controller](https://learn.microsoft.com/en-us/azure/azure-local/concepts/plan-network-controller-deployment?view=azloc-2609) | decision-making | 0.66 | Planning article with minimum VM counts and HA requirements; provides concrete guidance (for example, minimum three VMs) for how to size and plan Network Controller deployment. |
@@ -379,6 +356,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [3A. Install manually via ISO](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-install-os?view=azloc-2609) | deployment | 0.65 | Step-by-step OS installation for Azure Local nodes using SConfig; includes product-specific deployment steps and options. |
 | [About local identity with Azure Key Vault](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-local-identity-with-key-vault-overview?view=azloc-2609) | decision-making | 0.65 | Overview focuses on benefits, supported tools/services, and compatibility considerations for environments without AD; helps decide when to use this deployment model. |
 | [Activate Windows Server VMs](https://learn.microsoft.com/en-us/azure/azure-local/manage/vm-activate?view=azloc-2609) | configuration | 0.65 | Explains Automatic VM Activation add-on subscription and setup; likely includes specific activation modes, keys, and configuration parameters unique to Azure Local integration. |
+| [Apply updates](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-update?view=azloc-2609) | deployment | 0.65 | Explains how to apply updates to Azure Local appliances in disconnected mode, which typically involves product-specific update commands, prerequisites, and sequencing constraints. These update procedures and requirements are deployment/operations-specific expert knowledge not generally known from training. |
 | [Azure Policy](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-policy?view=azloc-2609) | security | 0.65 | Provides product-specific guidance on using Azure Policy for compliance in disconnected environments, including how policies evaluate local resource properties. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-powershell?view=azloc-2609) | configuration | 0.65 | Provides product-specific steps to configure Azure PowerShell modules and environment for Azure Local disconnected operations. |
 | [Billing (disconnected)](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-billing?view=azloc-2609) | decision-making | 0.65 | Details capacity-based pricing using physical cores and Windows Server VM licensing requirements in disconnected mode, enabling informed capacity and licensing decisions. |
@@ -397,7 +375,6 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Deploy Windows Server Azure Edition VMs](https://learn.microsoft.com/en-us/azure/azure-local/manage/windows-server-azure-edition-23h2?view=azloc-2609) | deployment | 0.65 | Covers deploying Azure Edition VMs and hotpatching on specific Azure Local versions; likely includes version constraints, supported paths (Azure Local vs Azure Marketplace images), and deployment-specific requirements. |
 | [Discover, replicate](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-hyperv-replicate?view=azloc-2609) | integrations | 0.65 | Discovery and replication steps for Hyper-V via Azure Migrate generally include appliance configuration parameters, replication policy settings, and specific options unique to this integration. Those are detailed integration patterns and settings that count as expert knowledge. |
 | [Discover, replicate](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-vmware-replicate?view=azloc-2609) | integrations | 0.65 | Discovery and replication for VMware via Azure Migrate involves configuring the Azure Migrate appliance, replication policies, and VMware-specific settings. These integration details and parameters are product-specific expert knowledge. |
-| [Drift detection](https://learn.microsoft.com/en-us/azure/azure-local/manage/drift-detection?view=azloc-2609) | best-practices | 0.65 | Describes a product-specific drift detection framework, how it validates component state against baselines, and how to use it for troubleshooting and reducing configuration issues—actionable, Azure-Local-specific operational guidance beyond generic concepts. |
 | [External storage support](https://learn.microsoft.com/en-us/azure/azure-local/concepts/external-storage-support?view=azloc-2609) | decision-making | 0.65 | Covers benefits, supported configurations, and essential information for external storage support; likely includes decision criteria and supported patterns for when/how to use external SAN with Azure Local. |
 | [Get remote support](https://learn.microsoft.com/en-us/azure/azure-local/manage/get-remote-support?view=azloc-2609) | configuration | 0.65 | Explains enabling Remote Support, proxy settings, and operational steps—product-specific support configuration parameters and flows. |
 | [Get support for Azure Local](https://learn.microsoft.com/en-us/azure/azure-local/manage/get-support?view=azloc-2609) | limits-quotas | 0.65 | Includes a specific support/update window (up to six months to install updates) and support process details; this is a concrete lifecycle limit relevant to operations. |
@@ -419,12 +396,10 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Post-restore rehydration overview](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-post-restore-overview?view=azloc-2609) | architecture-patterns | 0.65 | Defines a recommended sequence, decision points, and validation checkpoints for rehydrating components after restore, forming a product-specific operational pattern. |
 | [Prepare to deploy](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-prepare-to-deploy?view=azloc-2609) | deployment | 0.65 | Covers deployment sequence and subscription preparation; expected to list required feature registrations, resource providers, and permission requirements specific to this deployment type. |
 | [Register disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-registration?view=azloc-2609) | deployment | 0.65 | Covers specific registration steps and requirements for disconnected Azure Local environments, including compliance-related actions unique to this product. |
-| [Release information](https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2609) | deployment | 0.65 | Release information with supported update paths and OS build mappings; this is deployment/upgrade-specific knowledge about staying in a supported state. |
 | [Repair a node](https://learn.microsoft.com/en-us/azure/azure-local/manage/repair-server?view=azloc-2609) | configuration | 0.65 | Operational procedure to repair a node; includes product-specific steps and commands for node repair in Azure Local. |
 | [SAN requirements](https://learn.microsoft.com/en-us/azure/azure-local/concepts/san-requirements?view=azloc-2609) | configuration | 0.65 | Details supported SAN solutions (FC/iSCSI) from specific partners; likely includes supported models and configurations, which are product-specific configuration constraints. |
 | [Supported operations for VMs](https://learn.microsoft.com/en-us/azure/azure-local/manage/virtual-machine-operations?view=azloc-2609) | best-practices | 0.65 | Identifies supported and unsupported VM operations and warns about operations to avoid; this is product-specific DO/DON'T guidance with concrete recommendations. |
 | [Unregister and reregister machines](https://learn.microsoft.com/en-us/azure/azure-local/manage/unregister-register-machine?view=azloc-2609) | configuration | 0.65 | Uses specific PowerShell cmdlets and conditions for re-registration without OS reinstall; product-specific operational configuration steps. |
-| [Update](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-update?view=azloc-2609) | deployment | 0.65 | Describes product-specific update procedures and support requirements for disconnected Azure Local environments, including operational constraints not generally known. |
 | [Upgrade SDN gateway VMs](https://learn.microsoft.com/en-us/azure/azure-local/manage/upgrade-sdn-gateways?view=azloc-2609) | deployment | 0.65 | Explains controlled sequence for upgrading redundant/active gateways to maintain connectivity; this is deployment/upgrade orchestration knowledge. |
 | [Upgrade SDN infrastructure](https://learn.microsoft.com/en-us/azure/azure-local/manage/upgrade-sdn?view=azloc-2609) | deployment | 0.65 | Provides guidance and troubleshooting for safely upgrading SDN infrastructure; upgrade sequencing and remediation steps are deployment-focused and product-specific. |
 | [Upgrade via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-solution-upgrade?view=azloc-2609) | deployment | 0.65 | Describes installing solution upgrades after specific OS versions with phased rollout and regional availability constraints; this is deployment/upgrade-specific guidance with product constraints. |
@@ -481,6 +456,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [About hyperconverged deployments](https://learn.microsoft.com/en-us/azure/azure-local/overview/hyperconverged-overview?view=azloc-2609) | 0.50 | Overview of hyperconverged deployments; description suggests benefits and use cases, not detailed configuration parameters or numeric constraints beyond a generic max node count. |
 | [Connect using JIT access](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-connect-jit?view=azloc-2609) | 0.45 | Explains how to use JIT access from the portal Connect page; appears to be an end-user connection workflow rather than deep security configuration or troubleshooting. |
 | [4. Validate solution upgrade readiness](https://learn.microsoft.com/en-us/azure/azure-local/upgrade/validate-solution-upgrade-readiness?view=azloc-2609) | 0.40 | Upgrade readiness assessment article appears mostly procedural/step-by-step without clear evidence of numeric limits, error-code mappings, or detailed config tables in the summary. |
+| [Add a node](https://learn.microsoft.com/en-us/azure/azure-local/manage/add-server?view=azloc-2609) | 0.40 | The description suggests a procedural guide for adding a node to an Azure Local hyperconverged deployment to manage capacity. Without evidence of specific numeric limits, configuration parameter tables, or tier-based constraints, it appears to be a general how-to scale-out guide rather than expert-knowledge content such as limits, configuration matrices, or troubleshooting mappings. |
 | [Azure Local VMs](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-arc-vm?view=azloc-2609) | 0.40 | Primarily a high-level overview of disconnected VM management features and differences; lacks detailed error codes, configuration tables, or specific procedures. |
 | [Azure Local VMs FAQ](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vms-faq?view=azloc-2609) | 0.40 | FAQ format; may contain some specifics but is not organized as config, troubleshooting, or limits tables; likely high-level Q&A without deep expert-only data. |
 | [Create a small form factor provisioned machine via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-connect-portal?view=azloc-2609) | 0.40 | Portal-based connection workflow for a provisioned machine; appears procedural without detailed limits, config tables, or error-code troubleshooting. |
@@ -490,6 +466,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Install small form factor](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-installation?view=azloc-2609) | 0.40 | Installation/how-to guide for maintenance environment and ownership vouchers; likely step-by-step but not focused on limits, config matrices, RBAC roles, or troubleshooting mappings. |
 | [Manage VM extensions](https://learn.microsoft.com/en-us/azure/azure-local/manage/virtual-machine-manage-extension?view=azloc-2609) | 0.40 | Task-focused how-to for enabling guest management and installing VM extensions via portal; likely step-by-step without detailed config tables, limits, or error-code-based troubleshooting. |
 | [Monitoring overview (multi-rack)](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-monitor-overview?view=azloc-2609) | 0.40 | Overview of monitoring; primarily conceptual description of monitoring goals without clear evidence of detailed metrics tables or configuration parameters in the summary. |
+| [Release information](https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2609) | 0.40 | Release information/overview of builds and update paths; description does not show detailed configuration parameters, limits, or troubleshooting mappings that would qualify as expert knowledge. |
 | [Run SQL Server on Azure Local](https://learn.microsoft.com/en-us/azure/azure-local/deploy/sql-server-23h2?view=azloc-2609) | 0.40 | Guidance on deploying SQL Server on Azure Local; summary suggests a deployment tutorial without explicit limits, config matrices, or troubleshooting mappings. |
 | [Run containerized workloads](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-containerized-workloads?view=azloc-2609) | 0.40 | Describes running containerized workloads with Docker or K3s; summary suggests tutorial-style steps rather than detailed configuration matrices or quotas. |
 | [Update via PowerShell with limited connectivity](https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2609) | 0.40 | The summary indicates a procedural guide for downloading and importing Azure Local update packages in limited connectivity scenarios, but there is no evidence of specific limits/quotas, configuration parameter tables, error-code-based troubleshooting, or other detailed expert-only data. It appears to be a how-to workflow rather than a reference of expert knowledge as defined. |
@@ -507,11 +484,13 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Deployment overview](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-introduction?view=azloc-2609) | 0.30 | Deployment overview; likely high-level description of methods without detailed constraints, matrices, or config tables. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-local/faq?view=azloc-2609) | 0.30 | FAQ summary only; likely broad Q&A without structured error codes, configs, or numeric limits in the provided description. |
 | [Hybrid capabilities with Azure services](https://learn.microsoft.com/en-us/azure/azure-local/hybrid-capabilities-with-azure-services-23h2?view=azloc-2609) | 0.30 | Described as an overview of cloud service components and their functionality; primarily conceptual integration/architecture overview without clear evidence of detailed limits, configs, or decision matrices. |
+| [Hyperconverged](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2609) | 0.30 | What's new/release highlights page listing new features and enhancements; no indication of detailed limits, configuration tables, error codes, or other expert-only specifics. |
 | [Monitoring overview](https://learn.microsoft.com/en-us/azure/azure-local/concepts/monitoring-overview?view=azloc-2609) | 0.30 | Monitoring overview article; primarily conceptual explanation of monitoring approach and benefits, not detailed expert configuration or troubleshooting content. |
 | [OEM license FAQ](https://learn.microsoft.com/en-us/azure/azure-local/license-billing?view=azloc-2609) | 0.30 | FAQ about OEM license and billing; largely conceptual and policy-oriented without technical configuration or numeric constraints. |
 | [OEM license information](https://learn.microsoft.com/en-us/azure/azure-local/oem-license?view=azloc-2609) | 0.30 | OEM license overview and benefits; mostly conceptual licensing information without detailed numeric limits or configuration parameters. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migration-azure-migrate-overview?view=azloc-2609) | 0.30 | Described as an overview of using Azure Migrate for Hyper-V to Azure Local; likely high-level conceptual content about what Azure Migrate is and general flow, without detailed limits, configs, or troubleshooting matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migration-azure-migrate-vmware-overview?view=azloc-2609) | 0.30 | Described as an overview of using Azure Migrate for VMware to Azure Local; likely focuses on conceptual flow and benefits rather than detailed configuration tables, limits, or troubleshooting mappings. |
+| [Plan updates](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-plan-updates?view=azloc-2609) | 0.30 | Described as planning and sequencing updates conceptually for control plane, data plane, and workloads. No indication of concrete configuration parameters, numeric thresholds, or decision matrices; it sounds like process guidance rather than detailed expert configuration or limits. |
 | [Reset and reinstall OS](https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-os?view=azloc-2609) | 0.30 | OS reset/reinstall instructions; procedural content without clear indication of expert-level configuration or limits. |
 | [SDN technical reference](https://learn.microsoft.com/en-us/azure/azure-local/manage/sdn-technical-reference?view=azloc-2609) | 0.30 | Technical reference hub/landing page aggregating resources; not focused on specific configs, limits, or troubleshooting details. |
 | [Telemetry and diagnostics extension](https://learn.microsoft.com/en-us/azure/azure-local/concepts/telemetry-and-diagnostics-overview?view=azloc-2609) | 0.30 | Described as an overview of telemetry and diagnostics extension, benefits, and options; likely conceptual without detailed parameter tables or error mappings. |
@@ -527,8 +506,7 @@ confusable_not_for: Not for Microsoft Foundry Local (use microsoft-foundry-local
 | [Route reflector overview](https://learn.microsoft.com/en-us/azure/azure-local/concepts/route-reflector-overview?view=azloc-2609) | 0.24 | BGP Route Reflector overview; high-level explanation of role in SDN, no explicit mention of configuration parameters or numeric thresholds. |
 | [6A. Deploy via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-via-portal?view=azloc-2609) | 0.20 | Page is a step-by-step portal deployment tutorial for Azure Local instances without detailed configuration matrices, limits, or product-specific deployment constraints; it does not include expert-only numerical limits, tier matrices, or specialized configuration tables beyond what a generic deployment guide would cover. |
 | [Azure Local security book](https://learn.microsoft.com/en-us/azure/azure-local/security-book/overview?view=azloc-2609) | 0.20 | Overview of a security book; navigation/summary content without concrete configuration or error details. |
-| [Disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-whats-new?view=azloc-2609) | 0.20 | A 'what's new' article for disconnected operations typically lists new features and known issues at a high level. The description suggests release-note style content and conceptual limitations, not detailed limits/quotas, configuration parameter tables, or structured troubleshooting mappings required for expert-knowledge classification. |
-| [Hyperconverged](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2609) | 0.20 | Release notes / what's new content; primarily feature announcements and high-level descriptions without detailed limits, configuration tables, error mappings, or decision matrices. |
+| [Disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-whats-new?view=azloc-2609) | 0.20 | The page is a 'what's new' changelog for disconnected operations in Azure Local. Such content typically lists new features and improvements without detailed limits, configuration tables, error-code troubleshooting, or decision matrices. It reads as release/feature notes rather than deep technical reference, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Multi-rack (preview)](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-whats-new?view=azloc-2609) | 0.20 | Multi-rack 'what's new' release notes; lists features and improvements but not detailed limits, configuration parameters, or structured troubleshooting/decision content. |
 | [SDN FAQ](https://learn.microsoft.com/en-us/azure/azure-local/concepts/sdn-frequently-asked-questions?view=azloc-2609) | 0.20 | FAQ/overview for SDN; summary suggests high-level information and availability notes, not detailed error codes, configs, or limits. |
 | [What is Azure Local VM management?](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-overview?view=azloc-2609) | 0.20 | Page is an overview of Azure Local VM management (benefits, components, high-level workflow) without detailed limits, configuration tables, error codes, or product-specific decision matrices; it does not meet any sub-skill expert-knowledge criteria. |

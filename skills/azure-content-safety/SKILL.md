@@ -1,9 +1,9 @@
 ---
 name: azure-content-safety
-description: Expert knowledge for Content Safety in Foundry Control Plane development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Content Safety APIs, Docker containers, text blocklists, media provenance, or groundedness checks, and other Content Safety in Foundry Control Plane related development tasks. Not for Azure Content Understanding in Foundry Tools (use azure-content-understanding), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Defender For Cloud (use azure-defender-for-cloud).
+description: Expert knowledge for Content Safety in Foundry Control Plane development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure AI Content Safety limits, Docker containers, Prompt Shields, media provenance, or groundedness APIs, and other Content Safety in Foundry Control Plane related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-18"
   generator: "docs2skills/1.0.0"
 ---
 # Content Safety in Foundry Control Plane Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L53-L57 | Architectural guidance for combining cloud, hybrid, and on-device Azure AI Content Safety, including design patterns, deployment options, and integration strategies. |
 | Limits & Quotas | L58-L66 | Limits, quotas, and regional caps for Content Safety/Moderator (image & term lists, custom categories, code protected-material checks) and how to configure or stay within them. |
 | Security | L67-L71 | Details on how Azure AI Content Safety encrypts data at rest, including encryption models, key management options, and compliance/security considerations. |
-| Configuration | L72-L77 | Configuring Content Safety runtime via Docker containers and setting up/managing text blocklists to customize and enforce content filtering rules |
-| Integrations & Coding Patterns | L78-L83 | Using Content Safety APIs in code, including media provenance detection and groundedness checks, with request patterns, parameters, and integration examples. |
-| Deployment | L84-L89 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
+| Configuration | L72-L78 | Configuring and running Azure AI Content Safety and Prompt Shields Docker containers, and setting up/using text blocklists to filter unsafe or disallowed content. |
+| Integrations & Coding Patterns | L79-L85 | APIs and patterns for integrating content safety: media provenance checks, groundedness detection with Azure AI, and prompt shield calls to block prompt injection attacks. |
+| Deployment | L86-L90 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -73,6 +73,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure and run Azure AI Content Safety Docker containers | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/install-run-container |
+| Configure and run Azure Content Safety Prompt Shields container | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/prompt-shields-container |
 | Configure and use text blocklists in Content Safety | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/use-blocklist |
 
 ### Integrations & Coding Patterns
@@ -80,10 +81,10 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Use Content Provenance Detection API for media | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/how-to-provenance-detection |
 | Use Azure AI Content Safety groundedness detection API | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness |
+| Call Prompt Shields API to detect prompt attacks | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-jailbreak |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
 | Deploy image analysis Content Safety container with Docker | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/image-container |
-| Run Prompt Shields Content Safety container for prompt attacks | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/prompt-shields-container |
 | Deploy text analysis Content Safety container with Docker | https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/text-container |
