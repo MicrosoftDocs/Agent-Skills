@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-25'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, Helm/Kubernetes, and syncing configs
@@ -11,8 +11,8 @@ category_descriptions:
     into apps (.NET, Go, JS, Python, Functions, AKS), using dynamic config, feature
     flags, filters, and REST/Key Vault APIs.
   configuration: 'Configuring App Configuration behavior: feature flags, snapshots,
-    geo-replication, soft delete, Kubernetes/Spring integration, Front Door, AI/chat
-    settings, and dynamic refresh.'
+    geo-replication, soft delete, Kubernetes provider, Spring refresh, Front Door,
+    and AI/chat completion settings.'
   security: 'Configuring encryption, identity, and access for App Configuration: keys,
     Entra ID/RBAC, managed identities, private endpoints, network perimeters, HMAC/REST
     auth, and security best practices/policies.'
@@ -29,13 +29,13 @@ skill_description: Expert knowledge for Azure App Configuration development incl
   integrations & coding patterns, and deployment. Use when using feature flags, dynamic
   config refresh, snapshots, Key Vault integration, or CI/CD config sync, and other
   Azure App Configuration related development tasks. Not for Azure App Service (use
-  azure-app-service), Azure Key Vault (use azure-key-vault), Azure Functions (use
-  azure-functions).
+  azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use
+  azure-key-vault).
 use_when: Use when using feature flags, dynamic config refresh, snapshots, Key Vault
   integration, or CI/CD config sync, and other Azure App Configuration related development
   tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
-  (use azure-key-vault), Azure Functions (use azure-functions).
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Key Vault (use azure-key-vault).
 ---
 # Azure App Configuration Crawl Report
 
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 171
+- **Updated Pages**: 1
+- **Unchanged**: 170
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | *(Unclassified)* | 45 | 26.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config)
+  - Updated: 2026-06-22T08:00:00.000Z → 2026-10-23T22:10:00.000Z
 
 ## Classified Pages
 
@@ -94,6 +99,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Set up private endpoints](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-set-up-private-access) | security | 0.80 | How-to guide for creating private endpoints for App Configuration; likely includes specific portal/CLI parameters, network settings, and access configuration steps that are product-specific security configuration details. |
 | [Versioning](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-versioning) | integrations | 0.80 | Specifies required api-version parameter, SemVer format, lack of negotiation, and error responses; concrete protocol semantics. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-best-practices) | best-practices | 0.78 | The page focuses on concrete usage patterns for Azure App Configuration (key groupings, key-value composition, bootstrap patterns, etc.). These are product-specific DO/DON'T recommendations and patterns that go beyond generic configuration advice, fitting the best-practices category. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config) | configuration | 0.78 | The page describes how to define chat completion configuration in Azure App Configuration, including model selection, prompts, and model-specific settings such as temperature and token limits. This is product-specific configuration guidance with concrete parameter names/values, fitting the configuration sub-skill. It goes beyond generic concepts by showing how to store and manage these settings in App Configuration. |
 | [Snapshots](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-snapshot) | integrations | 0.78 | REST reference for snapshot operations with product-specific resource behavior, API version caveats, and operation details that go beyond generic REST knowledge. |
 | [Authorization](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authorization-index) | security | 0.75 | Details how authorization depends on chosen authentication method and lists models; product-specific access control behavior. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-console-app) | integrations | 0.75 | Quickstart uses the Azure App Configuration Go provider client library, including binding to structs, label composition, key prefix trimming, and Key Vault reference resolution. These are concrete, product-specific integration and coding patterns with provider-specific options. |
@@ -151,7 +157,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Managed identities](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-integrate-azure-managed-service-identity) | security | 0.70 | Details managed identity support in App Configuration and client libraries; includes product-specific authentication configuration patterns. |
 | [Network security perimeter](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-network-security-perimeter) | security | 0.70 | Describes product-specific use of Azure network security perimeters with App Configuration, including how inbound/outbound access is controlled and configured for this service. This is concrete security configuration guidance rather than a generic overview. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-app-configuration-event) | integrations | 0.70 | Describes App Configuration events via Event Grid; typically includes event types, schema, and subscription configuration parameters, which are integration-specific. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config) | configuration | 0.70 | Focuses on defining chat completion configuration (model selection, temperature, token limits, prompts) in Azure App Configuration; likely includes specific setting names and allowed ranges for model parameters, fitting configuration patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter) | best-practices | 0.70 | Describes product-specific targeting filter behavior for Azure App Configuration feature flags, including how users, groups, and percentage rollouts interact and are evaluated. This is actionable feature-management guidance specific to this service rather than generic theory. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags) | configuration | 0.70 | Explains how to set up variant feature flags; likely includes flag schema, variant properties, and configuration fields specific to Azure App Configuration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-deployment-overview) | security | 0.70 | The page focuses on roles, permissions, and authentication modes for managing Azure App Configuration via deployment processes. This is product-specific security guidance (RBAC and auth setup for service principals) rather than generic deployment steps, matching the security sub-skill. |

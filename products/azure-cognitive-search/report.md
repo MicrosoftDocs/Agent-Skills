@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   configuration: 'Configuring Azure AI Search: data sources, knowledge bases, skillsets,
     analyzers, vectorization, semantic ranking, and query options for agentic retrieval
     and enrichment.'
-  security: 'Securing Azure AI Search: RBAC/Entra ID, keys, encryption, network isolation,
-    indexer auth to data sources (SQL, Storage, SharePoint, Cosmos, Functions), and
-    document-level/label-based access control.'
+  security: 'Securing Azure AI Search: RBAC/Entra ID auth, keyless access, keys and
+    encryption, indexer permissions (SQL, Storage, SharePoint, Cosmos), ACL/Purview
+    label ingestion, and network isolation (firewall, private endpoints).'
   decision-making: Guidance on choosing regions, tiers, pricing, capacity, and connectors,
     plus migration/upgrade paths for APIs and SDKs to plan, scale, and modernize Azure
     AI Search solutions.
@@ -22,23 +22,24 @@ category_descriptions:
   best-practices: Best practices for designing, scaling, and troubleshooting enrichment/indexing
     pipelines, optimizing vector search, performance, and costs, and safely updating
     Azure AI Search resources.
-  deployment: Provision and deploy Azure AI Search services and apps using ARM, Bicep,
-    Terraform, and Container Apps, plus guidance on region moves and checking regional
-    feature availability.
+  deployment: Automating Azure AI Search deployment with ARM/Bicep/Terraform, moving
+    services across regions, checking regional feature support, and deploying C# search
+    apps to Azure Container Apps.
   architecture-patterns: 'Architectural patterns for Azure AI Search: combining vector
     and keyword search, designing multitenant or isolated indexes, and building resilient
     multi-region search deployments.'
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building indexes, skillsets, vector/semantic search, secured indexers, or multi-region
-  search apps, and other Azure AI Search related development tasks. Not for Azure
-  Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Cosmos DB (use azure-cosmos-db).
-use_when: Use when building indexes, skillsets, vector/semantic search, secured indexers,
-  or multi-region search apps, and other Azure AI Search related development tasks.
-confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Cosmos DB (use azure-cosmos-db).
+  configuring data sources, skillsets, vector/semantic search, indexers, or multi-region
+  search architectures, and other Azure AI Search related development tasks. Not for
+  Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer),
+  Azure Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when configuring data sources, skillsets, vector/semantic search, indexers,
+  or multi-region search architectures, and other Azure AI Search related development
+  tasks.
+confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer
+  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 ---
 # Azure AI Search Crawl Report
 
@@ -52,8 +53,8 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 312
+- **Updated Pages**: 2
+- **Unchanged**: 313
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -76,12 +77,10 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new)
-  - Updated: 2026-08-31T22:12:00.000Z → 2026-10-09T08:00:00.000Z
 - [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2026-10-01T22:15:00.000Z → 2026-10-13T06:07:00.000Z
-- [REST](https://learn.microsoft.com/en-us/azure/search/search-manage-rest)
-  - Updated: 2026-07-02T22:13:00.000Z → 2026-10-13T06:07:00.000Z
+  - Updated: 2026-10-13T06:07:00.000Z → 2026-10-23T08:00:00.000Z
+- [Configure customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/search/search-security-manage-encryption-keys)
+  - Updated: 2026-08-05T08:00:00.000Z → 2026-10-13T08:00:00.000Z
 
 ## Classified Pages
 
@@ -91,7 +90,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [OData Language Grammar](https://learn.microsoft.com/en-us/azure/search/search-query-odata-syntax-reference) | configuration | 0.90 | Provides formal grammar and syntax for OData expressions as used by Azure AI Search, including allowed operators, functions, and structure; this is detailed configuration reference material. |
 | [Troubleshoot SharePoint permission filtering (preview)](https://learn.microsoft.com/en-us/azure/search/troubleshoot-sharepoint-query-permission-filtering) | troubleshooting | 0.90 | Explicit troubleshooting article for SharePoint permission filtering; likely organized by symptoms (missing/unexpected results, query failures) with causes and resolutions specific to Azure AI Search and SharePoint integration. |
 | [Troubleshoot errors and warnings](https://learn.microsoft.com/en-us/azure/search/cognitive-search-common-errors-warnings) | troubleshooting | 0.90 | Explicitly a troubleshooting article mapping indexer and AI enrichment errors/warnings to causes and solutions, including parameters like maxFailedItems and behavior when thresholds are exceeded. |
-| [Configure customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/search/search-security-manage-encryption-keys) | security | 0.88 | Configuring CMK/BYOK for Azure AI Search involves specific Key Vault integration steps, required access policies, key types, and service behavior when keys are rotated or disabled. These are detailed security configuration settings and behaviors unique to Azure AI Search, clearly fitting the security sub-skill. |
 | [Assign roles (users)](https://learn.microsoft.com/en-us/azure/search/search-security-rbac) | security | 0.86 | Page is focused on role-based access control for Azure AI Search using Microsoft Entra ID, including specific Azure role names and how they map to administration, development, and query access. This is product-specific security configuration detail that qualifies as expert knowledge. |
 | [Troubleshoot a private connection](https://learn.microsoft.com/en-us/azure/search/troubleshoot-shared-private-link-resources) | troubleshooting | 0.86 | Organized around resolving errors when managing shared private link resources, including provisioning states and likely error codes; symptom → cause → solution guidance. |
 | [$orderby](https://learn.microsoft.com/en-us/azure/search/search-query-odata-orderby) | configuration | 0.85 | Provides syntax and examples for the $orderby parameter specific to Azure AI Search, including supported field types and behaviors; these are concrete configuration details for query behavior. |
@@ -148,6 +146,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Azure SQL (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-azure-sql) | configuration | 0.78 | Defining an indexed Azure SQL knowledge source involves specifying table/view names, key columns, and indexing/enrichment settings; these are documented as configuration fields and options. |
 | [Azure Storage](https://learn.microsoft.com/en-us/azure/search/search-howto-managed-identities-storage) | security | 0.78 | How-to for configuring an Azure AI Search indexer connection to Azure Storage using managed identities. Likely includes specific Azure RBAC role names (for blob/file access), required scopes, and product-specific connection/auth settings, which are security configuration details beyond generic concepts. |
 | [Azure blob](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-blob) | configuration | 0.78 | A blob knowledge source how-to will list configuration properties (storage connection, container paths, enrichment options) and their allowed values, which are product-specific configuration parameters. |
+| [Configure customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/search/search-security-manage-encryption-keys) | security | 0.78 | Page is about configuring customer-managed keys (CMK/BYOK) for Azure AI Search using Azure Key Vault. Such pages typically include product-specific security configuration details like required Key Vault access policies, specific RBAC role names, key types and versions supported, and how encryption keys are associated with search services. These are security configuration details unique to Azure AI Search and Azure Key Vault integration, which qualify as expert knowledge under the security sub-skill type. |
 | [Configure network access](https://learn.microsoft.com/en-us/azure/search/service-configure-firewall) | security | 0.78 | Network access configuration article; typically includes specific firewall rule settings, trusted service options, and possibly example configurations that define product-specific security behavior and parameters. |
 | [Configure semantic ranker](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-configure) | configuration | 0.78 | A 'how to configure' article for Semantic Ranker will enumerate index-level semantic configuration objects, parameter names, allowed values, and possibly default behaviors for semantic configurations. This is product-specific configuration detail beyond generic LLM knowledge. |
 | [Content metadata properties](https://learn.microsoft.com/en-us/azure/search/search-blob-metadata-properties) | configuration | 0.78 | A metadata properties reference for indexers will list supported property names, types, and how they map into index fields. This is a configuration-oriented catalog of parameters and behaviors specific to Azure AI Search indexers, fitting the configuration sub-skill. |
@@ -280,6 +279,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Shaper](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-shaper) | configuration | 0.70 | Shaper skill documentation provides detailed configuration for reshaping the enrichment tree and mapping to index/knowledge store structures, which is product-specific configuration. |
 | [SharePoint (preview)](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote) | configuration | 0.70 | Page describes detailed, product-specific configuration for setting up a SharePoint (Remote) knowledge source in Azure AI Search/agentic retrieval, including specific parameters and options unique to this integration, which go beyond generic tutorial content. |
 | [Simple query syntax](https://learn.microsoft.com/en-us/azure/search/query-simple-syntax) | integrations | 0.70 | Reference for a product-specific query language; includes operators, parameters, and syntax rules that function like an API surface for queries. |
+| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | deployment | 0.70 | Page lists which Azure regions support Azure AI Search and which premium features are available in each region. This is region/SKU support matrix information that an LLM is unlikely to know from training and is critical for planning where and how to deploy the service. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform) | deployment | 0.70 | Terraform quickstart should include provider/resource blocks, arguments, and constraints unique to Azure AI Search infrastructure. |
 | [Upgrade .NET client libraries](https://learn.microsoft.com/en-us/azure/search/search-dotnet-sdk-migration-version-11) | decision-making | 0.70 | A version-to-version SDK migration article for Azure AI Search .NET will contain specific API changes, renamed classes/methods, altered configuration patterns, and guidance on how to update existing code. These are detailed, product-specific upgrade paths and trade-offs (for example, how to replace older client types or options with new ones) that go beyond generic SDK usage and are not captured in general training data, fitting the migration/upgrade decision-making category. |
 | [Upgrade a service](https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade) | decision-making | 0.70 | Service upgrade guidance typically explains when and why to upgrade, mapping existing SKUs to new capacities and describing trade-offs and constraints. This is decision guidance about capacity and upgrade paths specific to Azure AI Search. |
@@ -314,7 +314,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Sample shapes and projections](https://learn.microsoft.com/en-us/azure/search/knowledge-store-projection-example-long) | integrations | 0.65 | Detailed end-to-end example of shaping and projection for a rich skillset; includes concrete projection definitions and field mappings unique to Azure AI Search knowledge stores. |
 | [Scale out a custom skill](https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-scale) | best-practices | 0.65 | Focuses on tools and techniques for efficiently scaling custom skills for maximum throughput, which implies concrete, product-specific operational guidance and patterns for running custom skill web APIs at scale. This aligns with best-practices for this service rather than generic scaling theory. |
 | [SharePoint in Microsoft 365 (preview)](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sharepoint-online) | security | 0.65 | Summary emphasizes permission setup for the SharePoint in Microsoft 365 indexer. The full article typically includes specific permission scopes, identity setup, and RBAC/consent details unique to this integration, which fits security-focused configuration. |
-| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | deployment | 0.65 | Region support matrices for a specific service are expert knowledge that changes over time and aren't reliably known from training. A region/feature availability table effectively acts as a deployment support matrix, indicating where specific capabilities can be deployed. |
 | [Update or rebuild an index](https://learn.microsoft.com/en-us/azure/search/search-howto-reindex) | best-practices | 0.65 | Schema vs content updates and incremental indexing typically include product-specific guidance and gotchas (when to rebuild vs partial reindex) that go beyond generic concepts. |
 | [Upgrade .NET management libraries](https://learn.microsoft.com/en-us/azure/search/search-dotnet-mgmt-sdk-migration) | decision-making | 0.65 | Migration/upgrade guidance between specific Azure Search .NET management SDK packages and versions, including which libraries to use for particular control-plane operations. This is product-specific decision/selection guidance for SDKs rather than generic concepts. |
 | [Use a multi-vector field (preview)](https://learn.microsoft.com/en-us/azure/search/vector-search-multi-vector-fields) | configuration | 0.65 | Multi-vector field support configuration will involve index schema definitions, field attributes, and possibly limits on vector dimensions or counts per document. These are specific configuration options and patterns for Azure AI Search indexes, fitting the configuration sub-skill. |

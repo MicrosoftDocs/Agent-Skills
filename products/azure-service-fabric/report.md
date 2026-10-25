@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-25'
 category_descriptions:
   architecture-patterns: 'Designing Service Fabric cluster architecture: cross-AZ
     replica rings, CRP/CRM internals, service affinity, movement cost, defragmentation,
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring Service Fabric clusters, apps, and networking: backups,
     scaling, manifests, actors, containers, monitoring/telemetry, reverse proxy, ARM/managed
     clusters, and Cluster Resource Manager settings.'
-  decision-making: 'Guidance on planning Service Fabric clusters: choosing OS and
-    versions, disk and node types, capacity and reliability sizing, and migration
-    targets for Cloud Services workloads.'
+  decision-making: 'Guidance on sizing and configuring Service Fabric clusters: capacity
+    planning, disk and OS options, stateless node types, platform (Linux vs Windows),
+    versions, and migration targets.'
   best-practices: Best practices for designing, deploying, upgrading, testing, monitoring,
     and operating Azure Service Fabric apps and clusters, including Reliable Collections/Actors,
     backup/restore, networking, capacity, and DR.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Fabric development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing Service Fabric clusters, Reliable Services/Actors, reverse proxy/API
-  gateways, CRP/CRM settings, or sfctl automation, and other Azure Service Fabric
-  related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, reverse
-  proxy/API gateways, CRP/CRM settings, or sfctl automation, and other Azure Service
-  Fabric related development tasks.
+  Use when designing Service Fabric clusters, Reliable Services/Actors, CRP/CRM, reverse
+  proxy, or sfctl/EventStore APIs, and other Azure Service Fabric related development
+  tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure
+  Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
+  Azure Functions (use azure-functions).
+use_when: Use when designing Service Fabric clusters, Reliable Services/Actors, CRP/CRM,
+  reverse proxy, or sfctl/EventStore APIs, and other Azure Service Fabric related
+  development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
-  Azure Virtual Machines (use azure-virtual-machines).
+  Azure Functions (use azure-functions).
 ---
 # Azure Service Fabric Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 406
+- **Updated Pages**: 1
+- **Unchanged**: 405
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
+  - Updated: 2026-09-17T08:00:00.000Z → 2026-10-20T17:08:00.000Z
 
 ## Classified Pages
 
@@ -330,6 +335,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Service Fabric cluster with ARM template](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-template) | deployment | 0.70 | ARM template quickstart for Service Fabric test clusters; includes cluster resource schema and required properties that are product-specific. |
 | [Service Fabric cluster with Bicep](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-bicep) | deployment | 0.70 | Bicep-based deployment of a Service Fabric test cluster; includes resource definitions and cluster-specific deployment parameters unique to Service Fabric. |
 | [Service Fabric events](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-events) | configuration | 0.70 | Describes structured events, their mapping to entities, and provides a list; product-specific event schema and usage patterns qualify as expert configuration knowledge. |
+| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | decision-making | 0.70 | Page contains detailed tables of currently supported Service Fabric and platform versions, with specific version numbers and support status. This is expert, time-sensitive knowledge used to decide which runtime/cluster version to deploy or upgrade to, fitting decision-making around version selection and support lifecycle rather than generic concepts. |
 | [Service Remoting - C#](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting) | integrations | 0.70 | Shows how to configure Service Fabric remoting for C# services with specific APIs, listener setup, and parameters unique to Service Fabric remoting. |
 | [Service Remoting - Java](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-remoting-java) | integrations | 0.70 | Provides Java-specific Service Fabric remoting setup with concrete API usage and configuration patterns unique to this product. |
 | [Service movement](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-movement-cost) | architecture-patterns | 0.70 | Explains movement cost concept and how to specify it to meet architectural needs; includes product-specific trade-offs and configuration patterns. |
@@ -359,7 +365,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [WCF](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-services-communication-wcf) | integrations | 0.70 | Describes how to plug in the built-in WCF communication stack via ICommunicationListener and related APIs, which are Service Fabric–specific integration patterns. |
 | [Patch cluster nodes (Windows)](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-patch-cluster-nodes-windows) | best-practices | 0.68 | Contains product-specific guidance such as requiring silver or greater durability for VM Scale Set automatic OS image upgrades and explicit support end dates for Windows Server versions, which are concrete, time-bound details and recommendations unique to Service Fabric operations rather than generic patching advice. |
 | [Scale to zero nodes](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-scale-to-zero) | configuration | 0.68 | How-to article for enabling and configuring scale-to-zero on node types; likely includes specific Service Fabric managed cluster settings/parameters and constraints that are product-specific and not general knowledge. |
-| [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions) | decision-making | 0.68 | Page provides detailed tables of actively supported Service Fabric and platform versions, which are time-sensitive, product-specific data not reliably known from training. This information guides decisions on which cluster/runtime versions to deploy or upgrade to, fitting decision-making around version selection and support status. |
 | [1- Create container images](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-container-images) | integrations | 0.65 | Shows how to prepare container images for a multi-container Service Fabric application; includes Dockerfile and image configuration tailored to Service Fabric. |
 | [2- Debug the application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-debug-log-local-cluster) | troubleshooting | 0.65 | Covers attaching remote debugger and redirecting logs; likely includes specific log locations, commands, and debugging configuration unique to Service Fabric Java apps. |
 | [2- Package and deploy containers](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-package-containers) | configuration | 0.65 | Uses Yeoman to generate Service Fabric application definitions; includes application manifest and service configuration specific to container packaging. |

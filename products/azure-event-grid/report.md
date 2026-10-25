@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 262
+- **Updated Pages**: 0
+- **Unchanged**: 265
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -70,15 +70,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 86 | 32.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Transport Layer Security (TLS)](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version)
-  - Updated: 2024-01-25T18:05:00.000Z → 2026-10-13T05:17:00.000Z
-- [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version)
-  - Updated: 2024-01-25T18:05:00.000Z → 2026-10-13T05:17:00.000Z
-- [Enforce minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-enforce-minimum-version)
-  - Updated: 2024-01-26T05:34:00.000Z → 2026-10-13T05:17:00.000Z
 
 ## Classified Pages
 

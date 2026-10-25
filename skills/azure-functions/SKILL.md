@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Functions to DBs/queues/HTTP, securing with managed identity/VNet, tuning scaling limits, or deploying via CI/CD, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues, using bindings, VNet/private endpoints, managed identity, or CI/CD deploys, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L72 | Diagnosing and fixing Azure Functions errors (AZFD/AZFW codes), storage and config issues, runtime/SDK/version problems, networking, and language-specific (Node.js/Python) failures. |
 | Best Practices | L73-L89 | Guidance on performance, reliability, HttpClient usage, DI, idempotency, event processing, and language-specific (Node.js, .NET, Python) optimization best practices for Azure Functions |
-| Decision Making | L90-L113 | Guidance on choosing Functions hosting/runtime options, cost and networking tradeoffs, and planning/migrating between plans, runtimes, languages, and from AWS Lambda. |
-| Limits & Quotas | L114-L121 | Scaling limits, concurrency settings, target-based trigger scaling, and language/runtime support lifecycles for Azure Functions. |
-| Security | L122-L134 | Guides for securing Functions: encryption at rest, secure storage and keys, private access (VNet/private endpoints), managed identity for SQL, and App Service security features. |
-| Configuration | L135-L179 | Configuring Azure Functions runtime, bindings, networking, monitoring, and local development, including triggers, app settings, runtime versions, tracing, and hosted skills. |
-| Integrations & Coding Patterns | L180-L283 | Patterns and guides for wiring Functions to external systems (DBs, messaging, HTTP, OpenAI, Dapr, MCP, SignalR, Web PubSub) using triggers/bindings and language-specific integration code. |
-| Deployment | L284-L312 | Deploying and hosting Azure Functions: provisioning plans, CI/CD (GitHub/Azure Pipelines), slots, containers/Kubernetes, Flex migrations, language-specific deploy guides, and rollback/recovery. |
+| Decision Making | L90-L113 | Guidance on choosing Functions hosting/scale/networking options, cost planning, AI integration, and step-by-step migrations (plans, runtimes, languages, extensions, AWS Lambda). |
+| Limits & Quotas | L114-L120 | Scaling limits, concurrency settings, target-based trigger scaling, and language/runtime support lifecycles for Azure Functions. |
+| Security | L121-L133 | Guides for securing Functions: encryption at rest, secure storage and keys, private access (VNet/private endpoints), managed identity for SQL, and App Service security features. |
+| Configuration | L134-L178 | Configuring how Functions run and integrate: app settings, host.json, runtime versions, plans, networking, monitoring/telemetry, local dev, bindings/triggers, and MCP/hosted skills setup. |
+| Integrations & Coding Patterns | L179-L282 | Patterns and examples for wiring Functions to external systems (HTTP, storage, messaging, databases, AI/OpenAI, Dapr, MCP, SignalR, Web PubSub) using triggers, input/output bindings, and worker extensions. |
+| Deployment | L283-L311 | Deploying and hosting Azure Functions: provisioning plans, CI/CD (GitHub/Azure Pipelines), slots, containers/Kubernetes, Flex migrations, language-specific deploy guides, and rollback/recovery. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -101,14 +101,14 @@ This skill requires **network access** to fetch documentation content:
 | Choose Azure Functions networking options | https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-options |
 | Choose Azure Functions scale and hosting plans | https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale |
 | Choose Azure Functions hosting and scale options | https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale |
-| Choose the right Azure Functions runtime version | https://learn.microsoft.com/en-us/azure/azure-functions/functions-versions |
+| Choose and migrate Azure Functions runtime versions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-versions |
 | Understand Azure Functions language support lifecycle | https://learn.microsoft.com/en-us/azure/azure-functions/language-support-policy |
 | Upgrade Azure Cosmos DB Functions extension from v3 to v4 | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-cosmos-db-version-3-version-4 |
 | Migrate C# Azure Functions from in-process to isolated | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-dotnet-to-isolated-model |
 | Migrate Azure Functions Service Bus extension to v5 | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-service-bus-version-4-version-5 |
 | Upgrade Azure Functions v1 apps to v4 runtime | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-version-1-version-4 |
 | Plan migration from Azure Functions v3 to v4 runtime | https://learn.microsoft.com/en-us/azure/azure-functions/migrate-version-3-version-4 |
-| Decide and plan migration from AWS Lambda to Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-aws-lambda-to-azure-functions |
+| Plan and execute AWS Lambda to Azure Functions migration | https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-aws-lambda-to-azure-functions |
 | Plan Azure Functions storage usage by hosting plan | https://learn.microsoft.com/en-us/azure/azure-functions/storage-considerations |
 
 ### Limits & Quotas
@@ -117,7 +117,6 @@ This skill requires **network access** to fetch documentation content:
 | Understand event-driven scaling limits in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/event-driven-scaling |
 | Configure concurrency behavior in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-concurrency |
 | Use target-based scaling for Azure Functions triggers | https://learn.microsoft.com/en-us/azure/azure-functions/functions-target-based-scaling |
-| Check Azure Functions language support lifecycle | https://learn.microsoft.com/en-us/azure/azure-functions/supported-languages |
 
 ### Security
 | Topic | URL |
@@ -153,7 +152,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure timer trigger schedules in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer |
 | Configure and use Azure Functions warmup trigger | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup |
 | Use Azure Functions CLI and Core Tools locally | https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference |
-| Configure Azure Functions custom handlers for any runtime | https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers |
+| Configure Azure Functions custom handlers | https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers |
 | Configure and run Azure Functions locally | https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local |
 | Configure host.json settings for Azure Functions v2+ | https://learn.microsoft.com/en-us/azure/azure-functions/functions-host-json |
 | Configure host.json settings for Azure Functions 1.x | https://learn.microsoft.com/en-us/azure/azure-functions/functions-host-json-v1 |
@@ -275,7 +274,7 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Azure Functions with Azure Cosmos DB for unstructured data | https://learn.microsoft.com/en-us/azure/azure-functions/functions-integrate-store-unstructured-data-cosmosdb |
 | Integrate Azure Functions MCP servers with Foundry | https://learn.microsoft.com/en-us/azure/azure-functions/functions-mcp-foundry-tools |
 | Expose Azure Functions as APIs via API Management | https://learn.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition |
-| Develop Azure Functions using the Go worker SDK | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-go |
+| Develop Go-based Azure Functions with worker SDK | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-go |
 | Use Java-specific patterns in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-java |
 | Integrate Azure Functions with Logic Apps and AI | https://learn.microsoft.com/en-us/azure/azure-functions/functions-twitter-email |
 | Stream HTTP requests and responses in Node.js Functions | https://learn.microsoft.com/en-us/azure/azure-functions/node-http-stream |

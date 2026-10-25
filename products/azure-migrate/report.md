@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   configuration: Configuring Azure Migrate appliances, credentials, networking (Private
     Link), Arc/Resource Mover, and assessment settings for VMs, SQL, .NET, and PostgreSQL,
@@ -10,9 +10,8 @@ category_descriptions:
   best-practices: Best practices for preparing on-prem/VMware machines and appliances,
     creating custom assessment rules (AppCAT, PostgreSQL), running test migrations,
     and applying pre-migration hydration changes.
-  limits-quotas: Support matrices, prerequisites, and scale/limit guidance for Azure
-    Migrate appliances and discovery/migration of VMware, Hyper-V, and physical servers,
-    including unsupported regions.
+  limits-quotas: Limits, prerequisites, region support, and scalability for Azure
+    Migrate appliances and discovery/assessment of VMware, Hyper-V, and physical servers.
   security: 'Securing Azure Migrate: least-privilege roles/accounts, RBAC, Private
     Link usage, SSE + customer-managed keys, Entra ID app registration, and moving
     encrypted VMs securely.'
@@ -32,14 +31,16 @@ skill_description: Expert knowledge for Azure Migrate development including trou
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
   configuring Azure Migrate appliances, Private Link, Arc/Resource Mover, VMware/Hyper-V
-  discovery, or REST-based migrations, and other Azure Migrate related development
+  discovery, or REST-based VMware migration, and other Azure Migrate related development
   tasks. Not for Azure Database Migration Service (use azure-database-migration),
-  Azure Site Recovery (use azure-site-recovery), Azure Backup (use azure-backup).
+  Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 use_when: Use when configuring Azure Migrate appliances, Private Link, Arc/Resource
-  Mover, VMware/Hyper-V discovery, or REST-based migrations, and other Azure Migrate
-  related development tasks.
+  Mover, VMware/Hyper-V discovery, or REST-based VMware migration, and other Azure
+  Migrate related development tasks.
 confusable_not_for: Not for Azure Database Migration Service (use azure-database-migration),
-  Azure Site Recovery (use azure-site-recovery), Azure Backup (use azure-backup).
+  Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 ---
 # Azure Migrate Crawl Report
 
@@ -53,9 +54,9 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 205
-- **Deleted Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 214
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
 ## Classification Statistics
@@ -77,32 +78,10 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 
 ### Updated Pages
 
-- [Agentless migrations using portal](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-vmware?view=migrate)
-  - Updated: 2026-06-28T11:46:00.000Z → 2026-10-10T17:15:00.000Z
 - [VMware vSphere migration requirements](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-vmware-migration?view=migrate)
-  - Updated: 2026-08-25T11:45:00.000Z → 2026-10-13T17:20:00.000Z
-- [Overview of Web App Migration and Modernization](https://learn.microsoft.com/en-us/azure/migrate/web-app-migration-modernization?view=migrate)
-  - Updated: 2026-09-28T11:48:00.000Z → 2026-10-06T11:41:00.000Z
-- [Migrate to Azure Cloud](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-hyper-v?view=migrate)
-  - Updated: 2026-05-01T11:12:00.000Z → 2026-10-10T17:15:00.000Z
-- [Discover and assess using Azure Private Link](https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate)
-  - Updated: 2026-08-25T11:45:00.000Z → 2026-09-24T11:41:00.000Z
-- [Replicate using ExpressRoute](https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate)
-  - Updated: 2026-08-25T11:45:00.000Z → 2026-09-24T11:41:00.000Z
-- [Migrate to Trusted Launch or Confidential Virtual Machines with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-to-trusted-launch-virtual-machines-with-azure-migrate?view=migrate)
-  - Updated: 2026-07-06T17:11:00.000Z → 2026-10-12T11:45:00.000Z
-- [How to migrate VMware VMs at scale using the agentless replication method](https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate)
-  - Updated: 2026-07-17T11:42:00.000Z → 2026-10-10T17:15:00.000Z
-- [Stuck replication and slow migration in agentless VMware](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-replication-vmware?view=migrate)
-  - Updated: 2025-05-13T05:03:00.000Z → 2026-10-12T11:45:00.000Z
-- [What is Azure Copilot Migration Agent?](https://learn.microsoft.com/en-us/azure/migrate/azure-copilot-migration-agent?view=migrate)
-  - Updated: 2026-04-15T08:00:00.000Z → 2026-10-14T11:44:00.000Z
-- [Hydration process workflow](https://learn.microsoft.com/en-us/azure/migrate/hydration-process?view=migrate)
-  - Updated: 2025-05-27T17:04:00.000Z → 2026-10-13T11:51:00.000Z
-
-### Deleted Pages
-
-- ~~Containerize Java web apps and migrate to Azure Container Apps~~ (https://learn.microsoft.com/en-us/azure/migrate/tutorial-app-containerization-java-container-apps?view=migrate)
+  - Updated: 2026-10-13T17:20:00.000Z → 2026-10-21T11:43:00.000Z
+- [Hyper-V migration requirements](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v-migration?view=migrate)
+  - Updated: 2025-04-02T08:00:00.000Z → 2026-10-21T11:43:00.000Z
 
 ## Classified Pages
 
@@ -111,12 +90,12 @@ confusable_not_for: Not for Azure Database Migration Service (use azure-database
 | [Azure Migrate VM Extension for Arc-enabled servers](https://learn.microsoft.com/en-us/azure/migrate/migrate-virtual-machine-extension-reference?view=migrate) | configuration | 0.90 | Technical reference with settings schema, endpoints, and configuration options; clearly a configuration parameter reference with defaults and constraints. |
 | [How to migrate VMware VMs at scale using the agentless replication method](https://learn.microsoft.com/en-us/azure/migrate/how-to-scale-out-for-migration?view=migrate) | limits-quotas | 0.90 | Explicitly states numeric limits for agentless VMware migration (e.g., up to 300 VMs per appliance and 500 VMs with scale-out) and how scale-out affects capacity, which are concrete limits/quotas not generally known. |
 | [Stuck replication and slow migration in agentless VMware](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-replication-vmware?view=migrate) | troubleshooting | 0.90 | Organized around symptoms (slow replication, stuck migration) with product-specific causes and resolutions for Azure Migrate agentless VMware replication, fitting the troubleshooting pattern. |
+| [Hyper-V migration requirements](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v-migration?view=migrate) | limits-quotas | 0.86 | Support matrix pages for Hyper-V migration contain detailed, product-specific support constraints and limitations (supported/unsupported OS versions, features, configurations, and environment constraints). These matrices define exact compatibility limits and boundaries that are updated over time and not generally known to an LLM, fitting the limits-quotas category best. |
 | [Replication in agentless VMware migration](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-changed-block-tracking-replication?view=migrate) | troubleshooting | 0.86 | Troubleshooting guide for agentless VMware replication with product-specific replication cycle behavior, error conditions, and resolutions; organized around replication failures and their causes, which is detailed operational knowledge beyond generic debugging. |
-| [VMware vSphere migration requirements](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-vmware-migration?view=migrate) | limits-quotas | 0.86 | A 'support matrix' page for VMware vSphere migration typically lists supported/unsupported OS versions, configurations, and limitations with specific values. These matrices encode detailed constraints and limits that are product- and version-specific and not generally known from training, fitting the limits-quotas category. |
+| [VMware vSphere migration requirements](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-vmware-migration?view=migrate) | limits-quotas | 0.86 | Support matrix pages for VMware vSphere migration list detailed, product-specific support constraints and limitations (supported/unsupported OS versions, features, configurations, and environment constraints). These are effectively hard limits/quotas and compatibility boundaries that an LLM wouldn't reliably know from training and are maintained as a matrix unique to Azure Migrate. |
 | [Create least privileged credentials for PostgreSQL discovery](https://learn.microsoft.com/en-us/azure/migrate/postgresql-least-privilege-configuration?view=migrate) | security | 0.85 | Details minimum PostgreSQL permissions and setup for discovery; includes specific grants/roles, a product-specific least-privilege security pattern. |
 | [Credentials:Security best practices](https://learn.microsoft.com/en-us/azure/migrate/best-practices-least-privileged-account?view=migrate) | security | 0.85 | Details read-only VMware roles with guest operations and scoped permissions for the appliance; includes specific role/permission configurations, a product-specific security pattern. |
 | [Discovery methods](https://learn.microsoft.com/en-us/azure/migrate/discovery-methods-modes?view=migrate) | decision-making | 0.85 | Explicitly mentions a decision-making table for discovery modes; provides guidance on when to use each method based on requirements, a clear decision-making pattern. |
-| [Hyper-V migration requirements](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v-migration?view=migrate) | limits-quotas | 0.85 | Support settings and limitations for Hyper-V migration usually list specific supported OS versions, VM sizes, and numeric constraints. |
 | [Server discovery](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-discovery?view=migrate) | troubleshooting | 0.85 | Troubleshooting ongoing discovery, software inventory, and SQL/web app discovery; likely maps specific discovery failures to causes and fixes. |
 | [Support Matrix](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix?view=migrate) | limits-quotas | 0.85 | Support matrix summarizing settings and limitations for scenarios; typically includes explicit supported/unsupported combinations and constraints, which are expert limits. |
 | [Troubleshoot Azure Migrate appliance](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-appliance?view=migrate) | troubleshooting | 0.85 | Focused on diagnosing appliance deployment and discovery issues; likely includes specific errors, causes, and fixes. |

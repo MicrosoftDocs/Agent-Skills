@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-10-25'
 category_descriptions:
   integrations: Automating Azure DNS zone/record management and subdomain delegation
     with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 77
+- **Updated Pages**: 8
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -66,6 +66,25 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | *(Unclassified)* | 50 | 64.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
+- [Traffic Manager linked records](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-manager-linked-records)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
+- [What is Azure Public DNS?](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
+- [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
+- [Create Traffic Manager linked records - Portal](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-portal)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
+- [Create Traffic Manager linked records - CLI](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-cli)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
+- [Create Traffic Manager linked records - PowerShell](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-powershell)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
 
 ## Classified Pages
 
@@ -110,17 +129,12 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Alias records for load balanced web apps](https://learn.microsoft.com/en-us/azure/dns/dns-alias-appservice) | 0.40 | Describes using alias records at zone apex; likely conceptual and scenario-based without detailed numeric thresholds or config tables. |
 | [Autoregistration](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration) | 0.40 | Autoregistration feature overview; summary focuses on behavior, not on specific configuration parameters, limits, or error codes. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/dns/dns-operations-dnszones-portal) | 0.40 | Portal how-to for managing DNS zones; primarily step-by-step UI operations without comprehensive configuration parameter tables or limits. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq) | 0.40 | Azure DNS FAQ likely mixes conceptual Q&A and some practical info, but from the description we can't confirm presence of specific limits, config tables, or error-code-based troubleshooting; treated as general FAQ rather than a focused expert-knowledge page per the given categories. |
 | [Private DNS records](https://learn.microsoft.com/en-us/azure/dns/dns-private-records) | 0.40 | Overview of supported record types; likely descriptive without numeric limits, config tables, or troubleshooting mappings. |
 | [Resolve Azure and on-premises domains](https://learn.microsoft.com/en-us/azure/dns/private-resolver-hybrid-dns) | 0.40 | Hybrid DNS resolution tutorial; focuses on setup steps rather than detailed configuration matrices or error mappings. |
 | [Virtual network links](https://learn.microsoft.com/en-us/azure/dns/private-dns-virtual-network-links) | 0.40 | Conceptual explanation of virtual network link subresources; summary does not indicate numeric limits or detailed configuration tables. |
 | [Create alias records for zone records](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-rr) | 0.35 | Tutorial for alias records referencing other records; scenario-focused, not a comprehensive configuration reference. |
 | [Create custom DNS records for a web app](https://learn.microsoft.com/en-us/azure/dns/dns-web-sites-custom-domain) | 0.35 | Tutorial for custom DNS records for web apps; mostly step-by-step, without detailed product-specific config matrices. |
-| [Alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias) | 0.30 | Alias records overview describes what alias records are and how they conceptually work in Azure DNS, but there's no indication of numeric limits, configuration parameter tables, or product-specific best-practice gotchas; it appears to be a conceptual feature overview. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/dns/dns-import-export-portal) | 0.30 | Page describes how to import/export DNS zone files via Azure portal. From the summary, it appears to be a procedural tutorial without detailed configuration tables, limits, or product-specific parameter references beyond basic portal usage. It lacks the kind of expert-only numeric limits, configuration matrices, or error-code-based troubleshooting required by the defined sub-skill types. |
-| [Create Traffic Manager linked records - CLI](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-cli) | 0.30 | CLI tutorial for creating Traffic Manager Linked Records; shows commands but not comprehensive configuration option tables, limits, or decision matrices. |
-| [Create Traffic Manager linked records - Portal](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-portal) | 0.30 | Portal tutorial for Traffic Manager Linked Records; primarily procedural, lacks detailed config matrices, limits, or error-code-based troubleshooting. |
-| [Create Traffic Manager linked records - PowerShell](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-powershell) | 0.30 | PowerShell tutorial for Traffic Manager Linked Records; focuses on example commands rather than exhaustive configuration parameters, limits, or troubleshooting content. |
 | [Create a private resolver - ARM Template](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-template) | 0.30 | ARM template quickstart for DNS Private Resolver; deployment example without detailed settings tables. |
 | [Create a private resolver - Bicep](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-bicep) | 0.30 | Bicep quickstart for DNS Private Resolver; example deployment only, no exhaustive parameter documentation. |
 | [Create a private resolver - PowerShell](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-powershell) | 0.30 | PowerShell quickstart for DNS Private Resolver; procedural, not a detailed configuration or troubleshooting reference. |
@@ -136,20 +150,25 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Create a public zone - PowerShell](https://learn.microsoft.com/en-us/azure/dns/dns-getstarted-powershell) | 0.30 | PowerShell quickstart for creating DNS zones/records; procedural, no detailed configuration reference or limits. |
 | [Create a public zone - Terraform](https://learn.microsoft.com/en-us/azure/dns/dns-get-started-terraform) | 0.30 | Terraform quickstart; shows basic resource creation, not deep configuration or troubleshooting content. |
 | [Create a public zone - portal](https://learn.microsoft.com/en-us/azure/dns/dns-getstarted-portal) | 0.30 | Step-by-step portal quickstart; shows basic creation of zone and record without config matrices or product-specific edge cases. |
-| [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) | 0.30 | Step-by-step tutorial for creating an alias record; focuses on how-to flow without detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Host your domain in Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns) | 0.30 | Tutorial for hosting a domain in Azure DNS; step-by-step configuration without detailed parameter or limits reference. |
 | [Private DNS scenarios](https://learn.microsoft.com/en-us/azure/dns/private-dns-scenarios) | 0.30 | Scenario-based conceptual guidance; no indication of numeric thresholds, decision matrices, or config tables. |
-| [Traffic Manager linked records](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-manager-linked-records) | 0.30 | Traffic Manager Linked Records overview explains the feature and its behavior (removing CNAME redirects, preview status), but the summary shows no error codes, numeric limits, configuration matrices, or detailed settings; it reads as a conceptual/feature overview. |
 | [Create child DNS zones](https://learn.microsoft.com/en-us/azure/dns/tutorial-public-dns-zones-child) | 0.25 | Tutorial for creating child DNS zones; basic procedural content, no expert-level configuration tables. |
+| [Alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias) | 0.20 | Alias records overview describes what alias records are and how they conceptually work in Azure DNS, but the summary does not indicate specific numeric limits, configuration parameter tables, error codes, or detailed troubleshooting/decision matrices. It appears to be a conceptual feature overview rather than expert configuration or limits content. |
+| [Create Traffic Manager linked records - CLI](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-cli) | 0.20 | CLI-based tutorial for creating Traffic Manager Linked Records; summary indicates procedural guidance without detailed configuration parameter tables, limits, or troubleshooting details. |
+| [Create Traffic Manager linked records - Portal](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-portal) | 0.20 | Portal-based tutorial for creating Traffic Manager Linked Records; focuses on how-to steps, not on expert-level limits, quotas, configuration matrices, or error-resolution content. |
+| [Create Traffic Manager linked records - PowerShell](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-powershell) | 0.20 | PowerShell-based tutorial for creating Traffic Manager Linked Records; appears to be a step-by-step guide without expert-level limits, quotas, or specialized troubleshooting/decision-making content. |
+| [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) | 0.20 | Tutorial-style walkthrough for creating alias records with Traffic Manager; summary suggests step-by-step instructions rather than detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip) | 0.20 | Tutorial-style walkthrough for creating an Azure DNS alias record to a public IP; primarily step-by-step UI guidance without detailed configuration tables, limits, or product-specific best-practice nuances. |
 | [Custom domains for Azure resources](https://learn.microsoft.com/en-us/azure/dns/dns-custom-domain) | 0.20 | Walkthrough for integrating Azure DNS with Azure resources and configuring custom domains; focuses on general setup steps, not on numeric limits, configuration parameter matrices, or specialized troubleshooting guidance. |
 | [Delegation with Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-domain-delegation) | 0.20 | High-level explanation of domain delegation to Azure DNS; no numeric limits, config tables, or detailed troubleshooting content. |
 | [Integrate with other Azure services](https://learn.microsoft.com/en-us/azure/dns/dns-for-azure-services) | 0.20 | Describes how to use Azure DNS with other Azure services and lists supported record types; this is an overview/usage mapping rather than detailed configuration parameters, limits, or troubleshooting content. |
 | [Reverse DNS](https://learn.microsoft.com/en-us/azure/dns/dns-reverse-dns-overview) | 0.20 | Conceptual overview of reverse DNS in Azure; lacks specific limits, configuration parameters, or error mappings. |
+| [Traffic Manager linked records](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-manager-linked-records) | 0.20 | Traffic Manager Linked Records overview explains the feature and its behavior conceptually (direct link between Azure DNS record sets and Traffic Manager profiles) without exposing numeric limits, configuration parameter tables, or detailed troubleshooting/decision guidance. It reads as a high-level overview, not expert-level configuration or limits documentation. |
 | [What is Azure Private DNS?](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) | 0.20 | Overview of Azure Private DNS; conceptual description without detailed settings or limits. |
-| [What is Azure Public DNS?](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview) | 0.20 | High-level overview of Azure Public DNS; no specific limits, configuration tables, error codes, or product-specific numeric details. |
 | [What is DNS resolver policy?](https://learn.microsoft.com/en-us/azure/dns/dns-security-policy) | 0.20 | High-level overview of DNS resolver policy and threat intelligence; appears conceptual and points to other how-to guides for configuration details, without explicit RBAC roles, parameter tables, or numeric thresholds. |
 | [What is an Azure Private DNS zone?](https://learn.microsoft.com/en-us/azure/dns/private-dns-privatednszone) | 0.20 | Page is an overview of Azure Private DNS zones (what they are, high-level behavior). The description mentions setup, limits, and best practices, but the provided summary only shows conceptual information about resolution scope and linking to virtual networks. No concrete numeric limits, configuration parameter tables, error codes, or decision matrices are evident, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Azure DNS overview](https://learn.microsoft.com/en-us/azure/dns/dns-overview) | 0.10 | High-level overview of Azure DNS hosting and resolution without specific limits, configuration parameters, error codes, or decision matrices. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq) | 0.10 | FAQ pages often mix conceptual and practical information, but the provided description is generic and does not show specific limits, configuration tables, error codes, or decision matrices. Without evidence of such detailed content, it is treated as general Q&A/overview rather than expert knowledge per the defined categories. |
 | [What is Azure DNS Private Resolver?](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) | 0.10 | Conceptual overview of Azure DNS Private Resolver features and benefits; lacks numeric limits, detailed configuration parameters, or troubleshooting mappings. |
+| [What is Azure Public DNS?](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview) | 0.10 | High-level overview of Azure Public DNS capabilities and usage; summary does not indicate specific limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records) | 0.10 | Page is an overview of DNS zones and records in Azure DNS with conceptual explanations; no specific numeric limits, configuration parameter tables, error codes, or decision matrices indicating expert-only operational details. |

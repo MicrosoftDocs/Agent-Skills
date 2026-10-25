@@ -1,9 +1,9 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic config refresh, snapshots, Key Vault integration, or CI/CD config sync, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Key Vault (use azure-key-vault), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using feature flags, dynamic config refresh, snapshots, Key Vault integration, or CI/CD config sync, and other Azure App Configuration related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-13"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Configuration Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L50-L56 | Guidance on App Configuration client library lifecycle, upgrading Spring Boot apps to v6, and using scorecards to evaluate feature flag impact and decision outcomes. |
 | Limits & Quotas | L57-L65 | Limits, quotas, retention, and lifecycle rules for App Configuration: snapshots, soft delete, feature flag/key-value revisions, throttling, and preview API behavior. |
 | Security | L66-L89 | Configuring encryption, identity, and access for App Configuration: keys, Entra ID/RBAC, managed identities, private endpoints, network perimeters, HMAC/REST auth, and security best practices/policies. |
-| Configuration | L90-L105 | Configuring App Configuration behavior: feature flags, snapshots, geo-replication, soft delete, Kubernetes/Spring integration, Front Door, AI/chat settings, and dynamic refresh. |
+| Configuration | L90-L105 | Configuring App Configuration behavior: feature flags, snapshots, geo-replication, soft delete, Kubernetes provider, Spring refresh, Front Door, and AI/chat completion settings. |
 | Integrations & Coding Patterns | L106-L184 | Patterns and code samples for integrating Azure App Configuration into apps (.NET, Go, JS, Python, Functions, AKS), using dynamic config, feature flags, filters, and REST/Key Vault APIs. |
 | Deployment | L185-L192 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, Helm/Kubernetes, and syncing configs via GitHub Actions. |
 
@@ -95,7 +95,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure and interpret Azure App Configuration feature flag telemetry | https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-flag-telemetry-reference |
 | Configure Azure App Configuration integration with Front Door | https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-connect-azure-front-door |
 | Configure AI agents via Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config |
-| Configure chat completion settings in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config |
+| Configure chat completion settings in Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config |
 | Create and manage App Configuration snapshots | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-create-snapshots |
 | Configure and manage geo-replication for Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-geo-replication |
 | Configure soft delete retention and recovery for App Configuration stores | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-recover-deleted-stores-in-azure-app-configuration |

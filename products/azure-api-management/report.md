@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with AI/LLM backends,
     logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs
@@ -7,15 +7,15 @@ category_descriptions:
   configuration: 'Configuring Azure API Management and AI Gateway: networking/VNet,
     domains, auth, caching, logging/monitoring, policies, backends, self-hosted gateways,
     IaC deployment, and LLM/MCP-specific settings.'
-  security: 'Securing Azure API Management and AI Gateway: auth (Entra ID, OAuth2,
-    mTLS, JWT), developer portal security, RBAC/managed identity, threat protection,
-    policies, and compliance controls.'
+  security: 'Securing Azure API Management and AI Gateway: auth (OAuth2, Entra ID,
+    B2C, mTLS, JWT), RBAC, certs/TLS, content safety, DDoS/Defender, self-hosted gateway
+    auth, and security best practices.'
   decision-making: Planning and migrating API Management deployments, including pricing
     tiers, scaling, networking, DevOps, analytics, portals, workspaces, monetization,
     and cross-platform/API gateway migrations.
-  limits-quotas: Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket),
-    including rate/usage caps, token limits, validation policies, and service/gateway
-    constraints in Azure API Management.
+  limits-quotas: 'Limits, quotas, and validation rules for API Management: rate/quotas
+    per key, concurrent requests, LLM token limits, payload/header/parameter checks,
+    and format/gateway/WebSocket service limits.'
   troubleshooting: 'Diagnosing and fixing API Management issues: request tracing,
     SNAT port exhaustion, custom domain/Key Vault cert errors, and developer portal
     problems using Diagnose and Solve tools.'
@@ -31,14 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring APIM gateways, policies, VNet networking, Entra/OAuth auth,
-  or AI/LLM backends, and other Azure API Management related development tasks. Not
-  for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps),
-  Azure Service Bus (use azure-service-bus).
-use_when: Use when configuring APIM gateways, policies, VNet networking, Entra/OAuth
-  auth, or AI/LLM backends, and other Azure API Management related development tasks.
-confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
-  (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+  Use when configuring APIM/AI Gateway, securing OAuth/JWT, importing OpenAPI/SAP
+  APIs, or deploying self-hosted gateways, and other Azure API Management related
+  development tasks. Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus
+  (use azure-service-bus).
+use_when: Use when configuring APIM/AI Gateway, securing OAuth/JWT, importing OpenAPI/SAP
+  APIs, or deploying self-hosted gateways, and other Azure API Management related
+  development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus
+  (use azure-service-bus).
 ---
 # Azure API Management Crawl Report
 
@@ -51,9 +54,9 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 - **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 0
-- **Unchanged**: 285
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 286
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -74,11 +77,12 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Tool threat protection](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-policy-tool-threat)
-- [Migrate to AI Gateway resource type](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-resource)
-- [Govern tools with Agent 365](https://learn.microsoft.com/en-us/azure/api-management/agent-365)
+- [authentication-managed-identity](https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy)
+  - Updated: 2026-05-07T22:15:00.000Z → 2026-10-22T17:12:00.000Z
+- [Self-hosted gateway support policy](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies)
+  - Updated: 2026-02-06T18:19:00.000Z → 2026-10-23T22:10:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +102,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [quota-by-key](https://learn.microsoft.com/en-us/azure/api-management/quota-by-key-policy) | limits-quotas | 0.83 | Describes per-key quotas, increment conditions, single increment per request, and behavior when exceeded, which are detailed quota semantics and limits. |
 | [validate-content](https://learn.microsoft.com/en-us/azure/api-management/validate-content-policy) | limits-quotas | 0.83 | The validate-content policy reference explicitly states a maximum API schema size of 4 MB and describes supported schema formats and content types. This is a concrete numerical limit and constraint specific to Azure API Management, matching the limits-quotas sub-skill. |
 | [Run self-hosted gateway in production](https://learn.microsoft.com/en-us/azure/api-management/how-to-self-hosted-gateway-on-kubernetes-in-production) | best-practices | 0.82 | Production guidance; likely includes concrete recommendations on replicas, resource requests/limits, backup strategies, and failure handling specific to APIM gateway. |
-| [authentication-managed-identity](https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy) | security | 0.82 | Describes the authentication-managed-identity policy with product-specific security behavior: how API Management uses managed identity to obtain tokens from Entra ID, how tokens are cached until expiry, and how Authorization headers are set. Contains concrete, product-specific security configuration details rather than generic concepts. |
 | [cache-store](https://learn.microsoft.com/en-us/azure/api-management/cache-store-policy) | configuration | 0.82 | Explains cache settings, requirement for a corresponding cache-lookup policy, and built-in cache characteristics, which are product-specific configuration details. |
 | [cache-store-value](https://learn.microsoft.com/en-us/azure/api-management/cache-store-value-policy) | configuration | 0.82 | Describes asynchronous storage behavior and retrieval via Get value from cache, which are detailed configuration and behavior specifics. |
 | [cosmosdb-data-source](https://learn.microsoft.com/en-us/azure/api-management/cosmosdb-data-source-policy) | configuration | 0.82 | Includes tier applicability, preview status, and configuration for query/read/write/delete operations against Cosmos DB, which are detailed product-specific configuration parameters. |
@@ -144,6 +147,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Manage protocols and ciphers](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-manage-protocols-ciphers) | security | 0.78 | The page contains product-specific details about which TLS versions (up to TLS 1.3) and cipher suites are supported for client and backend connectivity in Azure API Management, along with guidance on managing these settings. These are concrete, service-specific security configuration details (protocol and cipher support matrix, transition requirements to TLS 1.2+) that go beyond generic TLS knowledge. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference) | configuration | 0.78 | A monitoring data reference for Azure API Management in Azure Monitor typically lists all available metrics, dimensions, and log fields with their exact names, types, and meanings. This is product-specific expert knowledge that an LLM wouldn't reliably know from training. The content is configuration-oriented because it defines the precise telemetry schema (metric names, categories, properties) used when configuring monitoring, alerts, and dashboards, rather than general concepts or limits. |
 | [Use managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-managed-service-identity) | security | 0.78 | Describes product-specific steps and settings to create and use system-assigned and user-assigned managed identities for API Management to access Entra-protected resources like Key Vault. This is concrete security configuration (identity setup and usage) rather than conceptual guidance. |
+| [authentication-managed-identity](https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy) | security | 0.78 | Policy reference pages for Azure API Management typically list exact policy attributes, allowed values, and behavior details (for example, which managed identity types are supported, required attributes like resource or audience, header behavior, and caching semantics). These are product-specific security configuration details (managed identity auth via Entra ID, Authorization header handling) that go beyond generic knowledge and map directly to concrete policy settings, so this best fits the security sub-skill. |
 | [cache-lookup](https://learn.microsoft.com/en-us/azure/api-management/cache-lookup-policy) | configuration | 0.78 | Policy reference pages for APIM typically list exact policy attributes, allowed values, defaults, and usage constraints (for example, key expressions, vary-by parameters, scope limitations, and interactions with corresponding cache-store policies). These are product-specific configuration details that go beyond generic LLM knowledge and match the configuration sub-skill definition. |
 | [check-header](https://learn.microsoft.com/en-us/azure/api-management/check-header-policy) | configuration | 0.78 | Policy reference pages list policy XML shape, attributes, and allowed values (for headers, status codes, error messages) that are product-specific configuration details rather than generic concepts. |
 | [forward-request](https://learn.microsoft.com/en-us/azure/api-management/forward-request-policy) | configuration | 0.78 | Documents how forward-request interacts with API settings and set-backend-service, including policy attributes, which are APIM-specific configuration details. |
@@ -254,7 +258,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Reuse policy configurations](https://learn.microsoft.com/en-us/azure/api-management/policy-fragments) | configuration | 0.70 | Describes how to define and apply reusable policy XML fragments, including limitations; product-specific configuration pattern. |
 | [Secure access to MCP servers](https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers) | security | 0.70 | Page focuses on securing inbound and outbound access to MCP servers via API Management. Security-focused article likely includes product-specific security configurations such as authentication options, RBAC roles, and policy settings for MCP servers, which qualifies as expert security configuration knowledge. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/api-management/security-controls-policy) | security | 0.70 | Lists Azure Policy regulatory compliance controls and built-in policy definitions specific to Azure API Management. These are concrete, product-specific security/compliance configuration artifacts rather than conceptual security guidance. |
-| [Self-hosted gateway support policy](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies) | limits-quotas | 0.70 | Support policies article typically lists explicit limitations, supported versions, and constraints (for tiers, environments) that function as product-specific limits/quotas. |
+| [Self-hosted gateway support policy](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies) | limits-quotas | 0.70 | Support policy pages for self-hosted gateway typically enumerate explicit technical limitations and constraints (for example, which features are unsupported, environment constraints, and version/support boundaries) that are not generic knowledge. These are effectively product-specific limits/constraints, even if framed as support policies rather than classic quotas. |
 | [Set or edit policies](https://learn.microsoft.com/en-us/azure/api-management/set-edit-policies) | configuration | 0.70 | Explains how to configure policies via XML policy definitions and the policy editor. Policy configuration in API Management is highly product-specific and typically includes concrete policy names, XML elements, and allowed settings, which qualifies as expert configuration knowledge. |
 | [Tool threat protection](https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-policy-tool-threat) | security | 0.70 | Page describes a specific AI Gateway policy that uses Microsoft Defender and Purview to evaluate MCP/OpenAPI tool calls for threats and sensitive data. This is product-specific security configuration/policy behavior that an LLM is unlikely to know from training, and it focuses on how to protect tool calls rather than generic concepts. |
 | [Upgrade and scale](https://learn.microsoft.com/en-us/azure/api-management/upgrade-and-scale) | decision-making | 0.70 | Covers tier-specific scaling behavior, unit-based capacity guidance, and how to choose scale units/tiers for load, which is concrete decision guidance beyond generic knowledge. |

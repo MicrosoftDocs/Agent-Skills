@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 25
+- **Updated Pages**: 0
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-route-server/azure-route-server.csv`
 
@@ -63,13 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 8 | 29.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Route Server FAQ](https://learn.microsoft.com/en-us/azure/route-server/route-server-faq)
-  - Updated: 2025-11-05T05:32:00.000Z → 2026-10-13T05:17:00.000Z
-- [Monitor Route Server](https://learn.microsoft.com/en-us/azure/route-server/monitor-route-server)
-  - Updated: 2026-08-27T08:00:00.000Z → 2026-10-13T05:17:00.000Z
 
 ## Classified Pages
 

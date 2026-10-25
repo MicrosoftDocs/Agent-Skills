@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-10-25'
 category_descriptions:
   security: 'Securing Document Intelligence resources: creating SAS tokens, configuring
     data-at-rest encryption with customer-managed keys, and using managed identities
@@ -7,9 +7,9 @@ category_descriptions:
   best-practices: Guidance on designing, training, labeling, composing, and maintaining
     custom/classification/template models to maximize Document Intelligence accuracy
     and confidence
-  limits-quotas: Capacity limits, quotas, language/locale support, container image
-    tags, and how to scale/batch Document Intelligence workloads and add capacity
-    by pricing tier.
+  limits-quotas: Docs on capacity limits, quotas, supported languages/locales, scaling
+    with batch analysis and add-ons, and container image tags for deploying Azure
+    Document Intelligence at different tiers.
   integrations: Using Document Intelligence APIs/SDKs, interpreting AnalyzeDocument/Markdown
     outputs, and integrating with Azure Functions or Logic Apps for end-to-end document
     processing workflows
@@ -26,15 +26,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Document Intelligence development
   including troubleshooting, best practices, decision making, limits & quotas, security,
   configuration, integrations & coding patterns, and deployment. Use when using AnalyzeDocument
-  APIs, custom/classification models, containers, managed identities, or v4.0 migrations,
-  and other Azure AI Document Intelligence related development tasks. Not for Azure
-  AI Search (use azure-cognitive-search), Azure AI Vision (use azure-ai-vision), Azure
-  AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer).
-use_when: Use when using AnalyzeDocument APIs, custom/classification models, containers,
-  managed identities, or v4.0 migrations, and other Azure AI Document Intelligence
+  APIs, custom/classification/template models, batch analysis, containers, or v4.0
+  migration, and other Azure AI Document Intelligence related development tasks. Not
+  for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
+  Azure AI Search (use azure-cognitive-search), Azure AI Video Indexer (use azure-video-indexer).
+use_when: Use when using AnalyzeDocument APIs, custom/classification/template models,
+  batch analysis, containers, or v4.0 migration, and other Azure AI Document Intelligence
   related development tasks.
-confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
-  Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
+confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom
+  Vision (use azure-custom-vision), Azure AI Search (use azure-cognitive-search),
   Azure AI Video Indexer (use azure-video-indexer).
 ---
 # Azure AI Document Intelligence Crawl Report
@@ -44,13 +44,13 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Total Pages**: 77
 - **Fetched**: 77
 - **Fetch Failed**: 0
-- **Classified**: 35
-- **Unclassified**: 42
+- **Classified**: 36
+- **Unclassified**: 41
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 77
+- **Updated Pages**: 1
+- **Unchanged**: 76
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -63,12 +63,17 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | decision-making | 3 | 3.9% |
 | deployment | 4 | 5.2% |
 | integrations | 6 | 7.8% |
-| limits-quotas | 6 | 7.8% |
+| limits-quotas | 7 | 9.1% |
 | security | 4 | 5.2% |
 | troubleshooting | 3 | 3.9% |
-| *(Unclassified)* | 42 | 54.5% |
+| *(Unclassified)* | 41 | 53.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0)
+  - Updated: 2026-07-10T22:08:00.000Z → 2026-10-19T22:12:00.000Z
 
 ## Classified Pages
 
@@ -86,6 +91,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Disconnected containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/disconnected?view=doc-intel-4.0.0) | deployment | 0.80 | Disconnected-environment guidance for containers typically includes licensing, billing, and connectivity requirements, plus specific steps and constraints for offline deployment, which are product-specific deployment details. |
 | [Known issues and troubleshooting](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/reference/known-issues?view=doc-intel-4.0.0) | troubleshooting | 0.80 | Tracks known issues, their impact, and mitigation guidance; product-specific symptom → mitigation information. |
 | [Troubleshoot latency issues](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/troubleshoot-latency?view=doc-intel-4.0.0) | troubleshooting | 0.80 | Explicitly a troubleshooting article with remedial solutions and best practices for latency; likely includes product-specific diagnostics and mitigation steps. |
+| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0) | limits-quotas | 0.78 | FAQ pages for Azure cognitive services typically include concrete, product-specific limits such as pages per document, file size caps, requests per second, and regional availability, often broken down by API version or SKU. These numeric constraints and version-specific behaviors qualify as expert knowledge that an LLM is unlikely to infer from training data and align best with the limits-quotas sub-skill. |
 | [Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0) | security | 0.75 | How-to for creating user delegation and SAS tokens with Azure Storage; includes security configuration details and token parameters relevant to secure access. |
 | [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/install-run?view=doc-intel-4.0.0) | deployment | 0.75 | Container installation and execution guidance for on-premises use typically includes image names, required environment variables, and runtime constraints specific to Document Intelligence containers. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/encrypt-data-at-rest?view=doc-intel-4.0.0) | security | 0.75 | Describes Microsoft-managed vs customer-managed keys and how to enable CMK; product-specific encryption configuration and compliance details. |
@@ -122,7 +128,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Custom template model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-template?view=doc-intel-4.0.0) | 0.45 | Custom template model overview; explains what it extracts and general training behavior, not detailed configuration parameters or numeric thresholds. |
 | [Incremental classifier](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/incremental-classifier?view=doc-intel-4.0.0) | 0.45 | Incremental classifiers concept article; describes model type and training approach, but summary does not indicate specific configuration values or limits. |
 | [Changelog](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/changelog-release-history?view=doc-intel-4.0.0) | 0.40 | Changelog and migration guide index; likely links out to detailed content but itself is mostly release history and package references. |
-| [Frequently asked questions (FAQ)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/faq?view=doc-intel-4.0.0) | 0.40 | FAQ page; summary suggests general Q&A about use cases, not detailed error codes, limits, or configuration tables. |
 | [General document](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/general-document?view=doc-intel-4.0.0) | 0.40 | General document model overview and deprecation guidance; migration dates are lifecycle info, not technical limits/quotas or configuration matrices. |
 | [ID document](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/id-document?view=doc-intel-4.0.0) | 0.40 | Identity document model overview; mentions expanded regional support and API version, but lacks detailed limits, config parameters, or error codes. |
 | [Project sharing with custom models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/project-share-custom-models?view=doc-intel-4.0.0) | 0.40 | Describes how to share projects in Studio; summary suggests UI-driven steps without detailed configuration parameters, limits, or error-resolution mappings. |

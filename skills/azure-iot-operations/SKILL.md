@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MQTT/OPC UA data flows, WASM/ONNX processing, Dapr/Fabric RT endpoints, or Arc Kubernetes deployments, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT/OPC UA data flows, WASM/Dapr pipelines, Arc Kubernetes deployments, or ISA‑95 UN topologies, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L46 | Diagnosing and fixing Azure IoT Operations issues: health reason codes, private connectivity problems, known component bugs, debugging WASM modules, and using tools for troubleshooting. |
+| Troubleshooting | L37-L46 | Diagnosing and fixing Azure IoT Operations issues: debugging WASM modules, interpreting health reason codes, resolving private connectivity problems, and using tools for known issue troubleshooting. |
 | Best Practices | L47-L54 | Guidance on production-ready Azure IoT Operations: MQTT broker HA design, persistent edge state storage, and testing/troubleshooting MQTT connectivity. |
 | Decision Making | L55-L65 | Guidance for planning and choosing Azure IoT Operations architectures: data flows vs graphs, deployment topology/sizing, MQTT broker diagnostics, buffering and persistence, and OPC UA asset discovery modes. |
 | Architecture & Design Patterns | L66-L71 | Designing Azure IoT architectures using ISA-95 unified namespace concepts and planning layered, segmented networking topologies for secure, scalable IoT Operations deployments. |
 | Limits & Quotas | L72-L78 | Capacity planning for OPC UA sessions and HA, baseline resource usage estimates, and MQTT broker feature, packet, and throughput limits in Azure IoT Operations. |
 | Security | L79-L96 | Securing Azure IoT Operations: TLS and certificates, MQTT auth/authorization, OPC UA trust, private networking, RBAC/ABAC roles, secret management, and image authenticity. |
-| Configuration | L97-L135 | Configuring IoT data flows, endpoints, transforms, MQTT/OPC UA/connectors, storage, observability, and health/metrics for Azure IoT Operations deployments |
-| Integrations & Coding Patterns | L136-L158 | Patterns and code for integrating IoT data flows: MQTT/OPC UA/media connectors, routing/filters/aggregation, state store, WASM/ONNX, OpenTelemetry, and Dapr/Fabric Real-Time endpoints. |
+| Configuration | L97-L133 | Configuring IoT Operations data flows, endpoints, transforms, MQTT/OPC UA features, observability, and resource management, including storage, analytics, WASM, and connector setups. |
+| Integrations & Coding Patterns | L134-L158 | Patterns and code for wiring Azure IoT Operations data flows: expressions, filters, routing, throttling, windowed aggregation, WASM/Dapr/ONNX, state store, schema, and connectors (MQTT/HTTP/media/SSE/Fabric). |
 | Deployment | L159-L172 | Deploying, upgrading, cloning, and removing Azure IoT Operations on Arc-enabled Kubernetes, including secure/prod setups, private networks/registries, and Dapr MQTT components. |
 
 ### Troubleshooting
@@ -40,7 +40,7 @@ This skill requires **network access** to fetch documentation content:
 | Debug Azure IoT WASM modules in VS Code | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-debug-wasm-modules |
 | Troubleshoot private connectivity issues in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/howto-troubleshoot-private-connectivity |
 | Interpret Azure IoT Operations health reason codes | https://learn.microsoft.com/en-us/azure/iot-operations/reference/health-status-reason-codes |
-| Resolve known issues in Azure IoT Operations components | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues |
+| Diagnose known issues in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues |
 | Use tools to troubleshoot Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/tips-tools |
 | Diagnose and fix Azure IoT Operations issues | https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/troubleshoot |
 
@@ -123,10 +123,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure advanced OPC UA data collection features | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-configure-opc-ua-advanced-data-collection |
 | Configure OPC UA asset discovery in Azure IoT | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-detect-opc-ua-assets |
 | Create and manage connector templates in Azure IoT | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-manage-connector-templates |
-| Configure HTTP/REST connector assets and devices | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-http-connector |
 | Configure ONVIF connector for camera media streams | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-onvif-connector |
 | Manage Azure IoT Operations resources in the operations experience UI | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-operations-experience |
-| Configure SSE connector for server-sent events | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector |
 | Configure data persistence for Azure IoT Operations MQTT broker | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-broker-persistence |
 | Monitor Akri and connectors with Azure IoT metrics | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-akri-connectors |
 | Monitor Azure IoT Operations data flows with metrics | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-data-flows |
@@ -152,8 +150,10 @@ This skill requires **network access** to fetch documentation content:
 | Use state store with Azure IoT WASM operators | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-wasm-state-store |
 | Implement Azure IoT Operations state store protocol | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/reference-state-store-protocol |
 | Control OPC UA server data via Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-control-opc-ua |
+| Configure Azure IoT Operations HTTP connector | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-http-connector |
 | Configure Azure IoT media connector for cameras | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-media-connector |
 | Configure MQTT connector assets in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-mqtt-connector |
+| Configure Azure IoT Operations SSE connector | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector |
 | Capture ONVIF camera media to Azure Blob Storage | https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-onvif-media-blob-storage |
 
 ### Deployment

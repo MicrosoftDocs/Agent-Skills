@@ -44,7 +44,6 @@
 | Convert SCOM management packs into Azure Monitor DCRs | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/convert-management-packs-into-data-collection-rules |
 | Mirror Azure Monitor Logs into Microsoft Fabric | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/monitor-cross-domain-fabric |
 | Query Azure Monitor resources with Resource Graph | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-graph-samples |
-| Use Azure CLI health-models extension for health models | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/cli |
 | Submit externally evaluated health signals via Health Report Ingestion API | https://learn.microsoft.com/en-us/azure/azure-monitor/health-models/health-report-ingestion |
 | Authenticate and access Azure Monitor Logs API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/access-api |
 | Format Azure Monitor Logs query API requests | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/request-format |
@@ -67,6 +66,7 @@
 | Use Azure Monitor metrics via REST API | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/rest-api-walkthrough |
 | Assign Code Optimizations work items to GitHub Copilot | https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-github-copilot |
 | Write .NET request tracking code for Application Insights Profiler | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests |
+| Use sample Kusto queries for Azure Monitor tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries-by-table |
 | Run Kusto queries on AACAudit App Config logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/aacaudit |
 | Query AACHttpRequest logs for throttling and errors | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/aachttprequest |
 | Query AAD custom security attribute audit logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/aadcustomsecurityattributeauditlogs |
@@ -212,6 +212,12 @@
 | Analyze Azure Functions logs with FunctionAppLogs queries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/functionapplogs |
 | Query GCP audit logs ingested into Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/gcpauditlogs |
 | Monitor agent heartbeats and latency with KQL | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/heartbeat |
+| Query HorizonDBAutovacuumStats logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/horizondbautovacuumstats |
+| Analyze HorizonDBPgStatActivitySessions with log queries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/horizondbpgstatactivitysessions |
+| Identify slow HorizonDB queries with runtime stats | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/horizondbquerystoreruntimestats |
+| Query HorizonDB wait statistics in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/horizondbquerystorewaitsstats |
+| Search HorizonDBServerLogs for errors and events | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/horizondbserverlogs |
+| Monitor HorizonDB transaction statistics via logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/horizondbtransactionsstats |
 | Query identity directory events for group and password changes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/identitydirectoryevents |
 | Detect cleartext LDAP logons with IdentityLogonEvents | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/identitylogonevents |
 | Identify SAMR query activity with IdentityQueryEvents | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/identityqueryevents |
@@ -259,13 +265,7 @@
 | OTelSpans queries for span counts and average duration | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/otelspans |
 | Performance counter analysis with Perf log queries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/perf |
 | Analyze PerfInsightsImpactedResources with KQL queries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/perfinsightsimpactedresources |
-| Query PGSQLAutovacuumStats logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlautovacuumstats |
-| Query PGSQLDbTransactionsStats logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqldbtransactionsstats |
 | PGSQLPgBouncer queries for connection pooler error logs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlpgbouncer |
-| Analyze PGSQLPgStatActivitySessions with Azure Monitor queries | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlpgstatactivitysessions |
-| Use PGSQLQueryStoreRuntime queries for performance analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlquerystoreruntime |
-| Query PGSQLQueryStoreWaits for wait event analysis | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlquerystorewaits |
-| Query PGSQLServerLogs for PostgreSQL diagnostics in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/pgsqlserverlogs |
 | Query PowerAppsActivity logs in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/powerappsactivity |
 | Query PowerAutomateActivity logs with KQL | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/powerautomateactivity |
 | Analyze PowerBIActivity audit logs via KQL | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/powerbiactivity |

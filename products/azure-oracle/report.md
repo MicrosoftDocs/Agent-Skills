@@ -32,9 +32,9 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 11
+- **Unchanged**: 12
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
 
@@ -48,10 +48,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 8 | 66.7% |
 
 ## Changes
-
-### New Pages
-
-- [Azure proximity placement groups with Oracle AI Database@Azure](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/proximity-placement-groups-with-oracle)
 
 ## Classified Pages
 

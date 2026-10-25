@@ -1,18 +1,17 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
-  configuration: 'Configuring AMLustre: prerequisites, auto-mount (fstab), ARM template
-    parameters, scaling capacity/throughput, and setting up/understanding monitoring,
+  configuration: 'Configuring Azure Managed Lustre/CSI: prerequisites, client install/upgrade,
+    auto-mounts, ARM parameters, scaling capacity/throughput, and setting up monitoring,
     metrics, and alerts.'
-  architecture-patterns: 'Design patterns for Azure Managed Lustre: regional redundancy
-    and failover, tiered checkpoint architectures, and AKS networking/CSI integration
-    planning.'
-  integrations: Patterns for mounting Azure Managed Lustre, integrating with Blob
-    Storage, migrating/importing/exporting data, Terraform provisioning, and using
-    the CSI driver with AKS (static/dynamic).
+  architecture-patterns: 'Architectural patterns for Azure Managed Lustre: regional
+    redundancy/failover, tiered checkpoint design, and AKS networking/CSI driver integration.'
+  integrations: Patterns for connecting Linux/AKS clients and CSI to Azure Managed
+    Lustre, plus workflows to import, export, migrate, and restore data with Blob
+    Storage and Terraform provisioning.
   security: 'Securing Azure Managed Lustre: secure boot, firewalls/NSGs, CMK encryption,
-    root squash, CSI image integrity, and virtual network encryption configuration
-    and validation.'
+    root squash access control, CSI image integrity, and virtual network encryption
+    configuration.'
   limits-quotas: Configuring and managing user, group, and project storage quotas
     in Azure Managed Lustre, including setup steps, commands, and best practices for
     capacity control.
@@ -27,79 +26,70 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Lustre development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when sizing AMLustre, integrating Blob, using AKS CSI, setting quotas, or tuning
-  high‑throughput HPC/AI I/O, and other Azure Managed Lustre related development tasks.
-  Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files),
-  Azure Files (use azure-files).
-use_when: Use when sizing AMLustre, integrating Blob, using AKS CSI, setting quotas,
-  or tuning high‑throughput HPC/AI I/O, and other Azure Managed Lustre related development
-  tasks.
-confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
-  Files (use azure-netapp-files), Azure Files (use azure-files).
+  when mounting AML via CSI, tuning capacity/throughput, integrating with Blob, securing
+  CMK/NSGs, or tuning MLPerf IO, and other Azure Managed Lustre related development
+  tasks. Not for Azure NetApp Files (use azure-netapp-files), Azure Blob Storage (use
+  azure-blob-storage), Azure Files (use azure-files).
+use_when: Use when mounting AML via CSI, tuning capacity/throughput, integrating with
+  Blob, securing CMK/NSGs, or tuning MLPerf IO, and other Azure Managed Lustre related
+  development tasks.
+confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure Blob
+  Storage (use azure-blob-storage), Azure Files (use azure-files).
 ---
 # Azure Managed Lustre Crawl Report
 
 ## Summary
 
-- **Total Pages**: 36
-- **Fetched**: 36
+- **Total Pages**: 38
+- **Fetched**: 38
 - **Fetch Failed**: 0
-- **Classified**: 32
-- **Unclassified**: 4
+- **Classified**: 36
+- **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 10
-- **Updated Pages**: 3
-- **Unchanged**: 23
-- **Deleted Pages**: 6
+- **New Pages**: 2
+- **Updated Pages**: 7
+- **Unchanged**: 29
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 8.3% |
-| best-practices | 2 | 5.6% |
-| configuration | 6 | 16.7% |
-| decision-making | 1 | 2.8% |
-| integrations | 10 | 27.8% |
-| limits-quotas | 1 | 2.8% |
-| security | 7 | 19.4% |
-| troubleshooting | 2 | 5.6% |
-| *(Unclassified)* | 4 | 11.1% |
+| architecture-patterns | 3 | 7.9% |
+| best-practices | 2 | 5.3% |
+| configuration | 10 | 26.3% |
+| decision-making | 1 | 2.6% |
+| integrations | 10 | 26.3% |
+| limits-quotas | 1 | 2.6% |
+| security | 7 | 18.4% |
+| troubleshooting | 2 | 5.3% |
+| *(Unclassified)* | 2 | 5.3% |
 
 ## Changes
 
 ### New Pages
 
-- [Azure Blob Storage integration overview](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration)
-- [Import data from Blob Storage](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/import-data)
-- [Export data to Blob Storage](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/export-data)
-- [Restore data from Blob Storage](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/restore-data)
-- [Azure Lustre CSI driver overview](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes)
-- [Plan network architecture for AKS](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-network-planning)
-- [Use dynamic provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-dynamic-provisioning)
-- [Use static provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-static-provisioning)
-- [Validate CSI driver image security](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-image-security)
-- [Expand a file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/expand-file-system-portal)
+- [Install the CSI driver](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-install)
+- [Upgrade or uninstall the CSI driver](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-upgrade)
 
 ### Updated Pages
 
-- [Introduction to Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-overview)
-  - Updated: 2025-02-03T18:05:00.000Z → 2026-10-16T22:03:00.000Z
-- [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites)
-  - Updated: 2026-04-02T17:05:00.000Z → 2026-10-16T08:00:00.000Z
-- [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal)
-  - Updated: 2026-09-01T22:13:00.000Z → 2026-10-14T22:07:00.000Z
-
-### Deleted Pages
-
-- ~~Export data using auto-export jobs~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-export)
-- ~~Import data using auto-import jobs~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/auto-import)
-- ~~Use Azure Blob Storage with Azure Managed Lustre~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration)
-- ~~Import data using manual import jobs~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-import-job)
-- ~~Export data using manual export jobs~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/export-with-archive-jobs)
-- ~~Use Azure Lustre CSI driver for Kubernetes~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes)
+- [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install)
+  - Updated: 2026-06-11T22:13:00.000Z → 2026-10-20T08:00:00.000Z
+- [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade)
+  - Updated: 2026-09-15T17:03:00.000Z → 2026-10-20T08:00:00.000Z
+- [Azure Lustre CSI driver overview](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes)
+  - Updated: 2026-10-16T22:03:00.000Z → 2026-10-23T22:03:00.000Z
+- [Plan network architecture for AKS](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-network-planning)
+  - Updated: 2026-10-16T22:03:00.000Z → 2026-10-23T22:03:00.000Z
+- [Use dynamic provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-dynamic-provisioning)
+  - Updated: 2026-10-16T22:03:00.000Z → 2026-10-23T22:03:00.000Z
+- [Use static provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-static-provisioning)
+  - Updated: 2026-10-16T22:03:00.000Z → 2026-10-23T22:03:00.000Z
+- [Validate CSI driver image security](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-image-security)
+  - Updated: 2026-10-16T22:03:00.000Z → 2026-10-23T22:03:00.000Z
 
 ## Classified Pages
 
@@ -112,12 +102,13 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Set and configure Lustre quotas](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/lustre-quotas) | limits-quotas | 0.80 | Quota article will include specific quota types, commands, and likely numeric examples/constraints for storage limits, which are detailed quota configurations. |
 | [Use Azure Managed Lustre with Secure Boot](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-secure-boot) | security | 0.80 | Details how Lustre client kernel modules behave under Secure Boot and when/how to customize UEFI Secure Boot keys so modules load; includes product-specific security configuration behavior. |
 | [Use customer-managed encryption keys](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/customer-managed-encryption-keys) | security | 0.80 | Explains how to integrate Key Vault CMKs with Managed Lustre, including key scopes and configuration parameters, which are product-specific security settings. |
-| [Validate CSI driver image security](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-image-security) | security | 0.80 | Details how to validate container image signatures using Notation CLI and AKS Image Integrity; includes product-specific security verification steps and settings. |
 | [Monitoring reference for metrics and logs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system-reference) | configuration | 0.78 | Monitoring reference pages for Azure services typically list all available metrics, dimensions, and log categories with exact names, units, and sometimes default/aggregation behavior. These are product-specific configuration details that LLMs are unlikely to know from training and are needed to correctly configure monitoring, alerts, and dashboards. The content is not about limits/quotas or troubleshooting, but rather a catalog of monitoring configuration options (metric names, log categories, dimensions) for Azure Managed Lustre. |
-| [Azure Lustre CSI driver overview](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes) | integrations | 0.75 | Shows how to use the Azure Lustre CSI Driver with AKS, including driver-specific parameters and Kubernetes resource patterns; this is a concrete integration pattern. |
+| [Validate CSI driver image security](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-image-security) | security | 0.78 | Provides concrete security steps using Notation CLI and AKS Image Integrity, including commands, key handling, and policy configuration specific to Azure Lustre CSI images. These are detailed, product-specific security configuration instructions. |
+| [Install the CSI driver](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-install) | configuration | 0.76 | Provides concrete Helm chart values, versioned driver references (v0.6.0), and AKS preparation steps, including configuration parameters and verification commands. These are detailed, product-specific configuration instructions. |
 | [Enable VNet encryption](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/vnet-encryption) | security | 0.75 | Covers enabling and testing VNet encryption for this service, including specific configuration steps and validation commands/logs. |
-| [Use dynamic provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-dynamic-provisioning) | integrations | 0.75 | Dynamic provisioning behavior tied to CSI driver version 0.3.0, with Kubernetes StorageClass/PVC specifics; these are detailed integration and provisioning patterns. |
-| [Use static provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-static-provisioning) | integrations | 0.75 | Describes static provisioning using existing AML file systems, including specifying file system name and MGS IP in Kubernetes resources; concrete integration configuration. |
+| [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install) | configuration | 0.72 | Page contains OS-specific package names, repository URLs, and command sequences for installing Lustre client software (including distinctions between kmod and DKMS methods). These are product- and version-specific configuration details that go beyond generic knowledge. |
+| [Use static provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-static-provisioning) | integrations | 0.72 | Shows how to manually create Kubernetes resources (StorageClass, PV, PVC) that reference existing Lustre clusters, including fields like MGS IP address and other CSI parameters. These are detailed integration patterns unique to this product. |
+| [Azure Lustre CSI driver overview](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-csi-driver-kubernetes) | integrations | 0.71 | Explains how to integrate Azure Managed Lustre with AKS via the CSI driver, including Kubernetes resource definitions, driver parameters, and usage patterns for persistent volumes. These integration details (API objects, fields, and constraints) are product-specific. |
 | [Automount Lustre clients with fstab](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/automount-clients-fstab) | configuration | 0.70 | Provides specific fstab entry formats and options for Lustre mounts, which are concrete configuration details. |
 | [Azure Blob Storage integration overview](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/blob-integration) | integrations | 0.70 | Describes how AML integrates with Azure Blob Storage, including required container configuration and integration-specific parameters; this is a product-specific integration pattern. |
 | [Configure root squash settings](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/root-squash-configure-settings) | security | 0.70 | Describes nodemap-based root squash options and how to set them via REST or other APIs; these are product-specific security configuration details. |
@@ -130,19 +121,20 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Optimize file and directory layouts](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/optimize-file-layouts) | best-practices | 0.70 | Focuses on scaling file/directory layouts for performance; likely includes concrete recommendations (stripe counts, directory structures) specific to this product. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites) | configuration | 0.70 | Prerequisites pages for storage/network typically list specific subnet, NSG, DNS, and other configuration requirements unique to the service; these are product-specific configuration details beyond generic knowledge. |
 | [Tiered checkpoints for AI training](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/tiered-checkpoints) | architecture-patterns | 0.70 | The article explains when to use a tiered checkpointing architecture for large-scale AI training, how Azure Managed Lustre and Azure Blob Storage are combined into Accelerator and Core Storage layers, and what performance characteristics to expect. This is product-specific architectural guidance for AI training workloads rather than a generic overview, matching the architecture-patterns sub-skill. |
+| [Upgrade or uninstall the CSI driver](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-upgrade) | configuration | 0.70 | Contains specific steps and commands to upgrade to driver v0.6.0 or uninstall Helm/script-based installations, including versioned artifacts and recovery steps. These are product-specific configuration and lifecycle management details. |
 | [Use Azure Firewall with Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-firewall) | security | 0.70 | Provides firewall rule and topology guidance specific to Managed Lustre traffic patterns, which are product-specific security/network configuration practices. |
+| [Use dynamic provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-dynamic-provisioning) | integrations | 0.70 | Describes how to enable dynamic provisioning via the CSI driver, including StorageClass definitions, parameters, and version-specific behavior (available from v0.3.0). These Kubernetes integration settings and constraints are specific to Azure Lustre CSI. |
+| [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade) | configuration | 0.68 | Describes concrete steps and commands to upgrade existing Lustre client packages to the current version, including package names and sequencing. These upgrade instructions are specific to Azure Managed Lustre clients and constitute expert configuration knowledge. |
 | [Connect client to the file system](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/connect-clients) | integrations | 0.65 | Explains how to prepare Linux clients and mount the Azure Managed Lustre file system, likely including mount options and parameters specific to this service, which are integration patterns between clients and AML. |
 | [Create file system using Terraform](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-aml-file-system-terraform) | integrations | 0.65 | Terraform article will define resource blocks and parameters specific to Azure Managed Lustre, including required/optional fields and defaults, which are product-specific integration patterns. |
 | [MLPerf Storage v3.0 results](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/mlperf-storage-v3-results) | decision-making | 0.65 | Benchmark result pages usually contain quantified performance metrics (IOPS, throughput, latency) and workload-specific outcomes that help decide whether the service meets training/checkpointing requirements. These numeric results and their interpretation support capacity and technology selection decisions, matching the decision-making sub-skill. |
-| [Plan network architecture for AKS](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-network-planning) | architecture-patterns | 0.65 | Network planning article for AKS–AML CSI with supported network types and architecture options; provides product-specific architecture choices and when to use each. |
 | [Recover from a regional outage](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-region-recovery) | architecture-patterns | 0.65 | Describes a specific DR pattern using multi-region Blob and clusters; includes product-specific architectural guidance and trade-offs for failover. |
 | [Restore data from Blob Storage](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/restore-data) | integrations | 0.65 | Explains using Lustre HSM restore commands (lfs hsm_restore) to prefetch blob contents; includes command-level behavior specific to AML–Blob integration. |
+| [Plan network architecture for AKS](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-network-planning) | architecture-patterns | 0.64 | Covers supported network types and architecture options for connecting AKS to Azure Managed Lustre, likely including specific supported topologies, port/endpoint requirements, and constraints. This is product-specific network architecture guidance beyond generic concepts. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal) | 0.30 | Portal creation tutorial; likely step-by-step UI guidance without detailed config tables or limits; primarily procedural, not expert reference content. |
-| [Install Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install) | 0.30 | Primarily a step-by-step client installation guide for Azure Managed Lustre with OS-specific instructions; no clear indication of configuration parameter tables, limits, quotas, or other structured expert details as defined by the sub-skill types. |
-| [Upgrade Lustre client](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade) | 0.30 | Appears to be a procedural upgrade guide for Lustre client packages without clear indication of configuration tables, limits, or product-specific best-practice details beyond generic upgrade steps. |
 | [Introduction to Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-overview) | 0.20 | High-level product overview describing what Azure Managed Lustre is and its benefits; no concrete limits, configs, or detailed patterns. |

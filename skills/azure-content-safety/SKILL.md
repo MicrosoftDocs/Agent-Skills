@@ -1,9 +1,9 @@
 ---
 name: azure-content-safety
-description: Expert knowledge for Content Safety in Foundry Control Plane development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure AI Content Safety limits, Docker containers, Prompt Shields, media provenance, or groundedness APIs, and other Content Safety in Foundry Control Plane related development tasks.
+description: Expert knowledge for Content Safety in Foundry Control Plane development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure AI Content Safety limits, Docker containers, Prompt Shields, media provenance, or groundedness APIs, and other Content Safety in Foundry Control Plane related development tasks. Not for Azure Content Understanding in Foundry Tools (use azure-content-understanding), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Content Safety in Foundry Control Plane Skill

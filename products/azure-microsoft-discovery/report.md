@@ -32,7 +32,8 @@ skill_description: Expert knowledge for Azure Microsoft Discovery development in
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building Discovery shared sessions, AKS supercomputers, ACR tool images,
   Bookshelf indexes, or REST jobs, and other Azure Microsoft Discovery related development
-  tasks.
+  tasks. Not for Azure Portal (use azure-portal), Azure Resource Graph (use azure-resource-graph),
+  Azure Monitor (use azure-monitor), Azure Cost Management (use azure-cost-management).
 use_when: Use when building Discovery shared sessions, AKS supercomputers, ACR tool
   images, Bookshelf indexes, or REST jobs, and other Azure Microsoft Discovery related
   development tasks.
@@ -51,9 +52,9 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 - **Unclassified**: 40
 
 ### Incremental Update
-- **New Pages**: 8
-- **Updated Pages**: 8
-- **Unchanged**: 82
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-discovery/azure-microsoft-discovery.csv`
 
@@ -73,36 +74,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Grap
 | *(Unclassified)* | 40 | 40.8% |
 
 ## Changes
-
-### New Pages
-
-- [Chemistry and drug discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
-- [Engineering and hardware](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
-- [Genomics and systems biology](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
-- [Materials and simulation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
-- [Proteins and structure](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
-- [Research and data](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
-- [Spectroscopy and metabolomics](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-agent-catalog)
-- [AKS upgrades for Discovery Supercomputer](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-supercomputer-aks-upgrades)
-
-### Updated Pages
-
-- [Tutorial: Discovery Mode](https://learn.microsoft.com/en-us/azure/microsoft-discovery/tutorial-discovery-mode)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-06T22:16:00.000Z
-- [Configure secure networking for Supercomputer](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-configure-supercomputer-network-security)
-  - Updated: 2026-08-14T11:42:00.000Z → 2026-10-12T22:13:00.000Z
-- [Create agents](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-agent-creation)
-  - Updated: 2026-06-24T05:15:00.000Z → 2026-10-06T22:16:00.000Z
-- [Create Bookshelf and index a Knowledgebase](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-index-bookshelf-knowledgebase)
-  - Updated: 2026-04-20T15:52:00.000Z → 2026-10-06T22:16:00.000Z
-- [Deploy a tool to Microsoft Discovery](https://learn.microsoft.com/en-us/azure/microsoft-discovery/how-to-deploy-tool-to-discovery)
-  - Updated: 2026-05-03T22:14:00.000Z → 2026-10-06T22:16:00.000Z
-- [Microsoft Discovery Studio](https://learn.microsoft.com/en-us/azure/microsoft-discovery/concept-studio)
-  - Updated: 2026-06-02T20:30:00.000Z → 2026-10-06T22:16:00.000Z
-- [Quickstart - Deploy infrastructure (portal or Bicep)](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-infrastructure)
-  - Updated: 2026-09-04T08:00:00.000Z → 2026-10-01T08:00:00.000Z
-- [Quickstart - First set of Agent and investigation](https://learn.microsoft.com/en-us/azure/microsoft-discovery/quickstart-agents-studio)
-  - Updated: 2026-09-17T22:12:00.000Z → 2026-10-06T22:16:00.000Z
 
 ## Classified Pages
 

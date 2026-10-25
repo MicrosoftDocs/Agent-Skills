@@ -1,9 +1,9 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing ACA with Entra/OIDC, tuning workload profiles/GPUs, configuring KEDA/Dapr, or integrating Dapr/OpenTelemetry, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps (use azure-spring-apps).
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA auth/networking, workload profiles/GPUs, CI/CD deployments, KEDA/Dapr scaling, or Java microservices, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps (use azure-spring-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Apps Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L62-L82 | Guidance for planning and cost-optimizing Azure Container Apps: capacity, plans, workload profiles, GPUs, hosting options, and migrations from Heroku, Functions, Java/Spring/Tomcat, and MCP servers. |
 | Architecture & Design Patterns | L83-L88 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
 | Limits & Quotas | L89-L95 | Limits, quotas, and capacity rules for Container Apps, plus how to view current limits, request quota increases, and understand scaling/behavioral constraints. |
-| Security | L96-L134 | Securing Container Apps: auth (Entra, social, OIDC, mTLS), secrets and certs, managed identity, network controls (private endpoints, NSG, firewall, WAF), RBAC, and security best practices. |
-| Configuration | L135-L172 | Configuring Container Apps runtime: networking, ingress, revisions, scaling (KEDA/Dapr/Functions), workload profiles, storage mounts, Java features, and ARM/YAML/Bicep-based setup. |
+| Security | L96-L135 | Auth, identity, and network security for Container Apps: Entra and social logins, mTLS, certs/CORS/domains, secrets and managed identity, RBAC/policy, private endpoints, firewalls, and WAF. |
+| Configuration | L136-L172 | Configuring Container Apps environments, networking, ingress, revisions, scaling (KEDA/Dapr/Functions), workload profiles, Java features, storage, and maintenance via ARM, YAML, CLI, and Bicep. |
 | Integrations & Coding Patterns | L173-L196 | Patterns for connecting Container Apps to each other and external services (Dapr, Spring, Front Door, Private Link) plus OpenTelemetry exports and code-interpreter/dynamic session integrations. |
 | Deployment | L197-L204 | Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose deployments, Arc-enabled Kubernetes, logging migration, and self-hosted runners/jobs. |
 
@@ -127,6 +127,7 @@ This skill requires **network access** to fetch documentation content:
 | Assign required RBAC role for Container Apps Sandboxes | https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-get-started |
 | Manage security and roles for Container Apps Sandboxes | https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview |
 | Apply security best practices to Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/secure-deployment |
+| Use managed identity for Azure Files mounts in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files |
 | Configure token store-backed auth for Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/token-store |
 | Secure Container Apps egress via Azure Firewall | https://learn.microsoft.com/en-us/azure/container-apps/use-azure-firewall |
 | Control Container Apps outbound traffic via Azure Firewall | https://learn.microsoft.com/en-us/azure/container-apps/user-defined-routes |
@@ -164,7 +165,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure service discovery resiliency policies | https://learn.microsoft.com/en-us/azure/container-apps/service-discovery-resiliency |
 | Enable session affinity (sticky sessions) in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/sticky-sessions |
 | Configure storage mounts for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts |
-| Create Azure Files volume mounts in Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files |
 | Configure traffic splitting across Container Apps revisions | https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting |
 | Configure VNet integration for Azure Container Apps environments | https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom |
 | Configure Container Apps workload profiles with Azure CLI | https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-manage-cli |

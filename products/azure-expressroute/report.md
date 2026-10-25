@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 97
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -75,10 +75,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 31 | 31.6% |
 
 ## Changes
-
-### New Pages
-
-- [Manage advertised route scale](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connection-manage-advertised-routes)
 
 ## Classified Pages
 

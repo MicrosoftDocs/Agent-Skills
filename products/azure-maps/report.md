@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-25'
 category_descriptions:
   integrations: Patterns and code samples for integrating Azure Maps via Web/REST
     SDKs, migrating from Bing/Google, rendering and styling data (layers, drawing,
@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 148
+- **Updated Pages**: 1
+- **Unchanged**: 147
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -67,6 +67,11 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 35 | 23.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary)
+  - Updated: 2023-03-23T00:00:00.000Z → 2026-10-22T22:11:00.000Z
 
 ## Classified Pages
 
@@ -207,7 +212,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [EV routing using Jupyter Notebooks](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-ev-routing) | 0.30 | EV routing tutorial in Jupyter; primarily example code and workflow, not structured configuration references or limits. |
 | [Weather service FAQ](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-faq) | 0.30 | Only described as a general FAQ about Azure Maps Weather service data and features; no clear indication of numeric limits, configuration tables, error codes, or decision matrices. Without evidence of such specifics, it’s treated as conceptual/support content rather than expert configuration or troubleshooting knowledge. |
 | [Weather service concepts](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-concepts) | 0.30 | Conceptual introduction to weather service; likely high-level concepts rather than detailed configuration or limits. |
-| [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary) | 0.25 | Glossary of terms; definitional, not expert configuration, limits, or troubleshooting content. |
 | [Provide data feedback](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-feedback-tool) | 0.25 | Feedback tool article is about reporting map data issues; process-oriented, not about configuration, limits, or troubleshooting of the platform itself. |
 | [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer) | 0.20 | Page describes how to add and use a reference layer in the Azure Maps Power BI visual, but based on the summary it appears to be a feature-usage/how-to article without numeric limits, configuration parameter tables, error-code troubleshooting, or decision matrices. It does not match any expert-knowledge sub-skill criteria. |
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
@@ -222,6 +226,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Route to a destination](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-route-location) | 0.20 | Routing tutorial showing how to call Route service; no indication of limits, configuration tables, or troubleshooting mappings. |
 | [Search for point of interest](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-search-location) | 0.20 | Tutorial on searching locations; focuses on example usage rather than product-specific limits, configuration options, or error codes. |
 | [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.20 | This Spatial IO Module release notes page is a change log for the Azure Maps Spatial IO Module. It does not present structured limits, configuration tables, error codes, or decision-making guidance required for classification into the defined sub-skill types. |
+| [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary) | 0.10 | Glossary page with definitions of terms; no product-specific limits, configurations, error codes, or decision matrices that meet the expert knowledge criteria. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.10 | Quickstart tutorial showing how to build an interactive map; focuses on step-by-step usage rather than detailed configuration parameters, limits, or troubleshooting matrices. |
 | [Manage accounts](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys) | 0.10 | Portal how-to for creating and deleting Azure Maps accounts; appears procedural without deep configuration or constraints. |
 | [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.10 | High-level overview of Azure Maps services and capabilities without detailed limits, configuration tables, or product-specific numeric constraints. |

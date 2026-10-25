@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 137
+- **Updated Pages**: 0
+- **Unchanged**: 138
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -68,11 +68,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 46 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure VPN Client versions](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-versions)
-  - Updated: 2026-05-28T05:20:00.000Z → 2026-07-01T23:48:00.000Z
 
 ## Classified Pages
 

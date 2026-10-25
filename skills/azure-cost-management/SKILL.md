@@ -1,9 +1,9 @@
 ---
 name: azure-cost-management
-description: Expert knowledge for Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Azure billing accounts, reservations, savings plans, Cost Management exports, or cost/budget alerts, and other Cost Management related development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas), Azure Portal (use azure-portal).
+description: Expert knowledge for Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Azure billing APIs, cost exports, budgets/alerts, reservations/savings plans, or subscription transfers, and other Cost Management related development tasks. Not for Azure Advisor (use azure-advisor), Azure Carbon Optimization (use azure-carbon-optimization), Azure Impact Reporting (use azure-impact-reporting), Azure Quotas (use azure-quotas).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Cost Management Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L65 | Diagnosing and fixing Azure billing, subscription, and reservation issues (sign-up, access, payments, invoices, utilization, and error codes) including EA, MCA, CSP, and student accounts. |
 | Best Practices | L66-L78 | Best practices for analyzing and optimizing Azure costs, using Advisor, managing subscriptions and agreements, leveraging savings plans and SQL licensing, and setting up cost governance processes. |
-| Decision Making | L79-L115 | Guidance for choosing and configuring Azure billing, cost allocation, reservations, savings plans, EA/MCA/CSP transitions, and optimizing long‑term cost and discount strategies. |
-| Limits & Quotas | L116-L128 | Limits, quotas, and timing for Cost Management data; free account and credit limits; subscription spending limits; savings plan exclusions/utilization; multi-sub limits; dormant billing accounts. |
-| Security | L129-L151 | Managing secure access, roles, and permissions for Azure billing, subscriptions, EA/MCA accounts, reservations, savings plans, tax docs, and checking credit balances via portal/APIs. |
-| Configuration | L152-L174 | Configuring Cost Management: tags, views, filters, exports, budgets, alerts, reservations/savings plans, SQL licensing, and subscription/billing ownership and policies. |
-| Integrations & Coding Patterns | L175-L192 | APIs, scripts, and PowerShell patterns to automate cost analysis, billing data retrieval, and programmatic creation/migration of Azure subscriptions and reservations. |
-| Deployment | L193-L196 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
+| Decision Making | L79-L116 | Guides for choosing and configuring Azure billing, cost allocation, reservations, savings plans, EA/MCA/CSP transitions, and subscription/account transfers to optimize and govern cloud spend. |
+| Limits & Quotas | L117-L129 | Limits, quotas, and timing for Cost Management data; free account and credit limits; subscription spending limits; savings plan exclusions/utilization; multi-sub limits; dormant billing accounts. |
+| Security | L130-L152 | Managing secure access, roles, and permissions for Azure billing, subscriptions, EA/MCA accounts, reservations, savings plans, tax docs, and checking credit balances via portal/APIs. |
+| Configuration | L153-L175 | Configuring Cost Management: tags, views, filters, exports, budgets, alerts, reservations/savings plans, SQL licensing, and subscription/billing ownership and policies. |
+| Integrations & Coding Patterns | L176-L193 | APIs, scripts, and PowerShell patterns to automate cost analysis, billing data retrieval, and programmatic creation/migration of Azure subscriptions and reservations. |
+| Deployment | L194-L197 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -87,9 +87,10 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure data transfer fees and scenarios | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/data-transfer-fees |
 | Decide on Azure EA VM reserved instances savings | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-portal-vm-reservations |
 | Evaluate Azure EA pricing and usage calculations | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-pricing-overview |
+| Transfer MCA-Online Azure subscriptions to Enterprise Agreement | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-online-ea-transfer |
 | Transfer Azure billing ownership to MCA | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-request-billing-ownership |
 | Transition Enterprise Agreement billing to Microsoft Customer Agreement | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-setup-account |
-| Decide and understand supported Azure product transfers | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-transfer |
+| Decide and plan Azure subscription and product transfers | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-transfer |
 | Decide and execute Azure subscription offer changes | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/switch-azure-offer |
 | Choose and upgrade Azure free or student accounts | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/upgrade-azure-subscription |
 | Prepare subscriptions for Microsoft Customer Agreement billing migration | https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/checklist-microsoft-customer-agreement-billing-migration |

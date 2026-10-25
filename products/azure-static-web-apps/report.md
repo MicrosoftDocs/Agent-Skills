@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 78
+- **Updated Pages**: 0
+- **Unchanged**: 79
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
 
@@ -67,11 +67,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 21 | 26.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Supported languages and runtimes](https://learn.microsoft.com/en-us/azure/static-web-apps/languages-runtimes)
-  - Updated: 2026-10-02T22:12:00.000Z → 2026-10-05T08:00:00.000Z
 
 ## Classified Pages
 

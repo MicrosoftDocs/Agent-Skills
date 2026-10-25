@@ -1,9 +1,9 @@
 ---
 name: azure-site-recovery
-description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ASR for VMware/Hyper-V, protecting SAP/SQL apps, securing ADE/CMK, or automating with PowerShell/Terraform, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ASR for VMware/Hyper-V, protecting SAP/SQL apps, automating with ARM/Terraform, or securing ADE/CMK VMs, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Site Recovery Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L69-L86 | Planning and sizing Azure Site Recovery for DR: choosing tools (ASR vs Azure Migrate), VM sizes, failback types, managed disk and DR costs, and using/reading Deployment Planner reports for Hyper-V/VMware. |
 | Architecture & Design Patterns | L87-L98 | Design patterns and reference architectures for using Azure Site Recovery to protect networks and complex apps (SAP, SharePoint, IIS, Dynamics AX, SQL, file servers) and build end-to-end DR solutions. |
 | Limits & Quotas | L99-L107 | Limits, quotas, and constraints for Site Recovery: high-churn VM limits, shared disk support, safe coexistence with Backup, Deployment Planner limits/history, and Mobility service resource usage. |
-| Security | L108-L120 | Encrypting and securing ASR: ADE/CMK VM encryption, trusted launch, TLS, NSGs, RBAC, managed identities, Hyper‑V encryption remediation, and secure VMware‑to‑Azure replication. |
+| Security | L108-L120 | Encrypting and securing ASR: handling ADE/CMK-encrypted VMs, NSGs, TLS, RBAC, trusted launch, VMware-to-Azure security, and replacing legacy Run As/encryption setups |
 | Configuration | L121-L162 | Configuring Azure Site Recovery for VMware/Hyper-V/Azure VMs: networking, IPs, disks, appliances, policies, monitoring, and DR setup for AVS, Extended Zones, and shared/clustered workloads. |
 | Integrations & Coding Patterns | L163-L179 | Automating and integrating Azure Site Recovery using PowerShell, ARM/Bicep/Terraform, ExpressRoute, Traffic Manager, and runbooks, including Hyper-V, VMware, shared disk, and Azure VM DR setups. |
 | Deployment | L180-L191 | Guides for setting up and managing ASR replication/migration (Azure VMs, VMware, Hyper-V, physical), including support matrices, appliances, and failover/failback workflows. |
@@ -114,7 +114,7 @@ This skill requires **network access** to fetch documentation content:
 | Use trusted launch VMs with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-trusted-vm |
 | Remediate deprecated Site Recovery encryption for Hyper-V | https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation |
 | Migrate Site Recovery automation from Run As accounts to managed identities | https://learn.microsoft.com/en-us/azure/site-recovery/how-to-migrate-run-as-accounts-managed-identity |
-| Configure RBAC roles for Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control |
+| Configure RBAC roles for Azure Site Recovery access | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control |
 | Configure TLS security for Azure Site Recovery traffic | https://learn.microsoft.com/en-us/azure/site-recovery/transport-layer-security |
 | Configure secure VMware to Azure replication with ASR | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-set-up-replication-tutorial-modernized |
 

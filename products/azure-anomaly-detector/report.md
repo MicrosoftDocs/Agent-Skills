@@ -37,10 +37,10 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 - **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 0
-- **Deleted Pages**: 24
+- **Unchanged**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anomaly-detector/azure-anomaly-detector.csv`
 
 ## Classification Statistics
@@ -48,34 +48,6 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 *No classified pages*
 
 ## Changes
-
-### New Pages
-
-- [More technical articles ...](https://learn.microsoft.com/en-us/previous-versions/azure/ai-services/anomaly-detector/whats-new)
-
-### Deleted Pages
-
-- ~~Configure containers~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/anomaly-detector-container-configuration)
-- ~~Install and run containers~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/anomaly-detector-container-howto)
-- ~~Anomaly Detector API best practices (univariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices)
-- ~~Anomaly Detector API best practices (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/best-practices-multivariate)
-- ~~Predictive maintenance architecture (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/multivariate-architecture)
-- ~~Error codes (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/troubleshoot)
-- ~~FAQ~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/faq)
-- ~~Batch inference~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/batch-inference)
-- ~~Create an Anomaly Detector Resource~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/create-resource)
-- ~~Use container instances~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-container-instances)
-- ~~Deploy to IoT Edge~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge)
-- ~~Identify anomalies in your data~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/identify-anomalies)
-- ~~Prepare and upload your data~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/prepare-data)
-- ~~Streaming inference~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/streaming-inference)
-- ~~Train a model~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/train-model)
-- ~~What is Anomaly Detector?~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview)
-- ~~Client libraries (univariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/quickstarts/client-libraries)
-- ~~Client libraries (multivariate)~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/quickstarts/client-libraries-multivariate)
-- ~~Region support details~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/regions)
-- ~~Service limits~~ (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/service-limits)
-- *...and 4 more*
 
 ## Classified Pages
 

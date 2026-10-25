@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   security: Managing secure access, roles, and permissions for Azure billing, subscriptions,
     EA/MCA accounts, reservations, savings plans, tax docs, and checking credit balances
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: Limits, quotas, and timing for Cost Management data; free account
     and credit limits; subscription spending limits; savings plan exclusions/utilization;
     multi-sub limits; dormant billing accounts.
-  decision-making: Guidance for choosing and configuring Azure billing, cost allocation,
-    reservations, savings plans, EA/MCA/CSP transitions, and optimizing long‑term
-    cost and discount strategies.
+  decision-making: Guides for choosing and configuring Azure billing, cost allocation,
+    reservations, savings plans, EA/MCA/CSP transitions, and subscription/account
+    transfers to optimize and govern cloud spend.
   integrations: APIs, scripts, and PowerShell patterns to automate cost analysis,
     billing data retrieval, and programmatic creation/migration of Azure subscriptions
     and reservations.
@@ -27,30 +27,32 @@ category_descriptions:
     ongoing cost analysis.
 skill_description: Expert knowledge for Cost Management development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when managing Azure billing accounts, reservations,
-  savings plans, Cost Management exports, or cost/budget alerts, and other Cost Management
-  related development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor
-  (use azure-monitor), Azure Quotas (use azure-quotas), Azure Portal (use azure-portal).
-use_when: Use when managing Azure billing accounts, reservations, savings plans, Cost
-  Management exports, or cost/budget alerts, and other Cost Management related development
+  & coding patterns, and deployment. Use when managing Azure billing APIs, cost exports,
+  budgets/alerts, reservations/savings plans, or subscription transfers, and other
+  Cost Management related development tasks. Not for Azure Advisor (use azure-advisor),
+  Azure Carbon Optimization (use azure-carbon-optimization), Azure Impact Reporting
+  (use azure-impact-reporting), Azure Quotas (use azure-quotas).
+use_when: Use when managing Azure billing APIs, cost exports, budgets/alerts, reservations/savings
+  plans, or subscription transfers, and other Cost Management related development
   tasks.
-confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (use
-  azure-monitor), Azure Quotas (use azure-quotas), Azure Portal (use azure-portal).
+confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Carbon Optimization
+  (use azure-carbon-optimization), Azure Impact Reporting (use azure-impact-reporting),
+  Azure Quotas (use azure-quotas).
 ---
 # Cost Management Crawl Report
 
 ## Summary
 
-- **Total Pages**: 273
-- **Fetched**: 273
+- **Total Pages**: 274
+- **Fetched**: 274
 - **Fetch Failed**: 0
-- **Classified**: 130
+- **Classified**: 131
 - **Unclassified**: 143
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 268
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 272
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -59,29 +61,25 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 9 | 3.3% |
-| configuration | 19 | 7.0% |
-| decision-making | 33 | 12.1% |
+| configuration | 19 | 6.9% |
+| decision-making | 34 | 12.4% |
 | deployment | 1 | 0.4% |
 | integrations | 14 | 5.1% |
 | limits-quotas | 9 | 3.3% |
-| security | 19 | 7.0% |
+| security | 19 | 6.9% |
 | troubleshooting | 26 | 9.5% |
-| *(Unclassified)* | 143 | 52.4% |
+| *(Unclassified)* | 143 | 52.2% |
 
 ## Changes
 
+### New Pages
+
+- [Transfer MCA-Online subscriptions to EA](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-online-ea-transfer)
+
 ### Updated Pages
 
-- [Create an EA subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-enterprise-subscription)
-  - Updated: 2026-06-07T08:00:00.000Z → 2026-10-08T11:43:00.000Z
-- [EA roles in Azure](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles)
-  - Updated: 2026-09-18T08:00:00.000Z → 2026-10-08T08:00:00.000Z
-- [EA billing administration](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration)
-  - Updated: 2026-09-21T08:00:00.000Z → 2026-10-08T08:00:00.000Z
-- [What is a cloud subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/cloud-subscription)
-  - Updated: 2026-06-07T08:00:00.000Z → 2026-10-14T22:14:00.000Z
-- [Microsoft Entra ID Free](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/microsoft-entra-id-free)
-  - Updated: 2026-04-01T22:41:00.000Z → 2026-10-07T17:13:00.000Z
+- [Azure billing product transfers](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-transfer)
+  - Updated: 2026-04-02T18:15:00.000Z → 2026-10-16T08:00:00.000Z
 
 ## Classified Pages
 
@@ -127,7 +125,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Act on recommendations](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) | best-practices | 0.70 | Tutorial on acting on optimization recommendations; provides concrete, product-specific actions and patterns to lower costs, aligning with best practices. |
 | [Analyze Azure costs with the Power BI template app](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/analyze-cost-data-azure-cost-management-power-bi-template-app) | integrations | 0.70 | Covers installing and using a specific Power BI app with constraints (EA-only, unsupported clouds) and likely connection parameters; fits integrations & coding patterns. |
 | [Azure account sign-up issues](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-subscription/troubleshoot-azure-sign-up) | troubleshooting | 0.70 | Walks through sign-up flow and common issues at each step; likely includes specific error messages and their resolutions, fitting troubleshooting criteria. |
-| [Azure billing product transfers](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-transfer) | decision-making | 0.70 | Describes which Azure subscriptions, reservations, and savings plans can be transferred between specific agreement types and billing arrangements, with product- and agreement-specific rules and constraints that are not generic knowledge. This is guidance to decide if and how a transfer is supported across agreements, fitting decision-making more than other categories. |
+| [Azure billing product transfers](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-transfer) | decision-making | 0.70 | The page describes specific, product- and agreement-type–dependent rules and requirements for transferring Azure subscriptions, reservations, and savings plans between different billing agreements. It provides concrete guidance on which transfer types are supported or not for particular agreement combinations and scenarios, helping users decide if and how they can move products. This is specialized, policy-level knowledge that changes over time and is unlikely to be fully known from training data, and it directly supports decision-making about transfer options rather than just giving a conceptual overview. |
 | [Can't view or find invoices](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-cant-find-invoice) | troubleshooting | 0.70 | Explicit troubleshooting guide for not being able to view invoices; likely organized by symptom with specific causes and steps, which is product-specific troubleshooting knowledge. |
 | [Change administrator](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/add-change-subscription-administrator) | security | 0.70 | Describes concrete Azure RBAC role names, scopes, and who can assign administrative access for subscriptions. This is product-specific IAM configuration detail rather than a conceptual overview. |
 | [Change reservation directory](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/troubleshoot-reservation-transfers-between-tenants) | troubleshooting | 0.70 | Explains how changing reservation directories affects RBAC access and billing; includes product-specific steps and edge cases for directory transfer, fitting troubleshooting of reservation ownership issues. |
@@ -173,6 +171,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Savings plan recommendations](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/purchase-recommendations) | decision-making | 0.70 | Explains how recommendations are generated via Advisor, portal, and API, guiding when and how much savings plan to purchase. |
 | [Split shared costs](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/allocate-costs) | decision-making | 0.70 | Covers how to reassign or distribute shared service costs via cost allocation rules. It provides concrete guidance on when and how to allocate costs between subscriptions, resource groups, or tags, which is decision-focused and specific to Azure Cost Management. |
 | [Subscription sign-in issues](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-subscription/troubleshoot-sign-in-issue) | troubleshooting | 0.70 | Guide specifically for resolving Azure subscription sign-in issues; likely includes distinct scenarios, causes, and steps, aligning with troubleshooting symptom → cause → solution patterns. |
+| [Transfer MCA-Online subscriptions to EA](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-online-ea-transfer) | decision-making | 0.70 | The article gives detailed, agreement-specific rules for when and how you can transfer Azure subscriptions from an MCA-Online billing account to an EA enrollment, including that only Individual MCA-Online accounts are supported and that other account types require alternative approaches. It includes warnings and constraints that determine whether a transfer is possible and what path to choose, which is specialized policy/process knowledge used to make transfer decisions between billing constructs, not generic conceptual content. |
 | [Troubleshoot utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/troubleshoot-savings-plan-utilization) | troubleshooting | 0.70 | Focuses on diagnosing why utilization can exceed 100% in reports; likely maps specific utilization symptoms to causes in Azure’s metering/reporting pipeline and explains expected vs problematic behavior, which is product-specific troubleshooting knowledge. |
 | [Understand Cost Management data](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/understand-cost-mgt-data) | limits-quotas | 0.70 | Explains how frequently data is processed, collected, and shown; typically includes specific time delays, closure times, and processing cadences, which are numeric service limits/behaviors. |
 | [Use cost alerts](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending) | configuration | 0.70 | Describes different alert types and how they’re generated and configured; includes specific alert settings and thresholds, fitting configuration. |

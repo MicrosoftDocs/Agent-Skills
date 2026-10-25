@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 - **Unclassified**: 258
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 12
-- **Unchanged**: 869
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 882
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -76,37 +76,6 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | *(Unclassified)* | 258 | 29.3% |
 
 ## Changes
-
-### New Pages
-
-- [IBM Spectrum Symphony on Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/ibm-spectrum-symphony-overview)
-
-### Updated Pages
-
-- [Dalsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dalsv6-series)
-  - Updated: 2026-04-02T17:04:00.000Z → 2026-10-05T22:05:00.000Z
-- [Easv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv6-series)
-  - Updated: 2026-03-10T22:04:00.000Z → 2026-10-05T22:05:00.000Z
-- [Eadsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/eadsv6-series)
-  - Updated: 2026-03-10T22:04:00.000Z → 2026-10-05T22:05:00.000Z
-- [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide)
-  - Updated: 2026-09-24T17:04:00.000Z → 2026-10-08T06:11:00.000Z
-- [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-amd-driver-setup)
-  - Updated: 2026-09-22T22:04:00.000Z → 2026-10-16T06:03:00.000Z
-- [Lasv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lasv5-series)
-  - Updated: 2026-09-25T06:03:00.000Z → 2026-10-07T22:05:00.000Z
-- [Known issues with HB-series and N-series VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hb-hc-known-issues)
-  - Updated: 2026-09-27T11:03:00.000Z → 2026-10-05T17:05:00.000Z
-- [Soft delete a gallery](https://learn.microsoft.com/en-us/azure/virtual-machines/soft-delete-gallery)
-  - Updated: 2025-09-30T05:22:00.000Z → 2026-10-12T22:04:00.000Z
-- [About shared disks](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared)
-  - Updated: 2026-09-17T08:00:00.000Z → 2026-10-16T22:04:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/create-portal-availability-zone)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-10-06T11:04:00.000Z
-- [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-hybrid-benefit-linux)
-  - Updated: 2026-05-12T22:04:00.000Z → 2026-10-15T11:03:00.000Z
-- [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux)
-  - Updated: 2026-08-25T17:04:00.000Z → 2026-10-13T08:00:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   decision-making: Guidance on choosing Azure AI tools, model deployments, and Studio
     vs Foundry, plus migration from preview to GA and estimating/optimizing Content
@@ -21,20 +21,21 @@ category_descriptions:
   integrations: Patterns and code samples for calling Content Understanding via REST/SDKs,
     integrating with Microsoft Agent Framework/LangChain, and implementing agentic
     workflows.
-  limits-quotas: Guidance on safe use of synchronous Content Understanding calls plus
-    detailed quotas, rate limits, and throughput constraints for Foundry Tools.
+  limits-quotas: Guidance on safe use of synchronous Content Understanding calls and
+    detailed quotas/limits (throughput, payload sizes, concurrency) for planning and
+    troubleshooting usage.
 skill_description: Expert knowledge for Azure Content Understanding in Foundry Tools
   development including troubleshooting, best practices, decision making, architecture
   & design patterns, limits & quotas, security, configuration, and integrations &
   coding patterns. Use when designing Content Understanding analyzers, RAG document
-  flows, agentic workflows, REST/SDK calls, or Foundry deployments, and other Azure
-  Content Understanding in Foundry Tools related development tasks. Not for Azure
-  Speech in Foundry Tools (use azure-speech), Azure AI Search (use azure-cognitive-search),
+  flows, agentic/RPA workflows, REST/SDK calls, or quotas, and other Azure Content
+  Understanding in Foundry Tools related development tasks. Not for Azure Speech in
+  Foundry Tools (use azure-speech), Azure AI Search (use azure-cognitive-search),
   Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Video
   Indexer (use azure-video-indexer).
 use_when: Use when designing Content Understanding analyzers, RAG document flows,
-  agentic workflows, REST/SDK calls, or Foundry deployments, and other Azure Content
-  Understanding in Foundry Tools related development tasks.
+  agentic/RPA workflows, REST/SDK calls, or quotas, and other Azure Content Understanding
+  in Foundry Tools related development tasks.
 confusable_not_for: Not for Azure Speech in Foundry Tools (use azure-speech), Azure
   AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence),
   Azure AI Video Indexer (use azure-video-indexer).
@@ -51,8 +52,8 @@ confusable_not_for: Not for Azure Speech in Foundry Tools (use azure-speech), Az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 43
+- **Updated Pages**: 3
+- **Unchanged**: 41
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-understanding/azure-content-understanding.csv`
 
@@ -74,14 +75,18 @@ confusable_not_for: Not for Azure Speech in Foundry Tools (use azure-speech), Az
 
 ### Updated Pages
 
-- [Pricing model details and examples](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer)
-  - Updated: 2026-08-10T22:02:00.000Z → 2026-10-07T08:00:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new)
+  - Updated: 2026-09-08T08:00:00.000Z → 2026-10-12T08:00:00.000Z
+- [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits)
+  - Updated: 2026-09-16T06:06:00.000Z → 2026-10-21T17:17:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq)
+  - Updated: 2026-08-10T22:02:00.000Z → 2026-10-19T22:12:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits) | limits-quotas | 0.95 | Page explicitly lists service quotas and limits for Azure Content Understanding in Foundry Tools; these are numeric, version-specific constraints that change over time and aren't reliably known from training. |
+| [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits) | limits-quotas | 0.95 | Explicitly described as listing quotas and limits for Azure Content Understanding; such pages typically contain exact numerical limits, size constraints, and tier-specific tables that qualify as expert knowledge not inferable from training. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/best-practices) | best-practices | 0.90 | Explicit best-practices article; expected to contain product-specific recommendations (file formats, sizes, schema design, sampling strategies) that go beyond generic advice. |
 | [Elements](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/elements) | configuration | 0.85 | Explains the contents object with kind: "audioVisual" and capabilities for audio/video inputs; includes product-specific schema and configuration details. |
 | [LangChain](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/integrations/langchain) | integrations | 0.85 | Integration guide for LangChain; expected to document loader parameters, metadata fields, and usage patterns specific to this product integration. |
@@ -119,14 +124,14 @@ confusable_not_for: Not for Azure Speech in Foundry Tools (use azure-speech), Az
 | [Image](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/image/overview) | 0.40 | Image overview; primarily conceptual explanation of standardized extraction and schemas without explicit mention of detailed configuration tables. |
 | [Video Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/overview) | 0.40 | Video overview; summary suggests high-level description of capabilities rather than detailed configs or numeric limits. |
 | [Bring your own cross-resource capacity](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/bring-your-own-cross-resource-capacity) | 0.30 | Describes connecting external Azure OpenAI/Foundry capacity to Content Understanding; summary suggests a how-to/tutorial style without explicit configuration tables, limits, or product-specific error mappings. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | 0.30 | FAQ summary only; FAQs can mix content, but no indication of detailed error codes, configs, or numeric limits in the provided description. |
 | [Logic Apps](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/integrations/logic-apps) | 0.30 | Tutorial-style Logic Apps integration walkthrough; likely focuses on step-by-step workflow creation rather than detailed configuration tables, limits, or product-specific error/diagnostic references. Does not clearly match any expert-knowledge sub-skill types defined. |
 | [MarkItDown](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/integrations/markitdown) | 0.30 | Integration tutorial for configuring MarkItDown with Content Understanding; description suggests a how-to guide without explicit configuration parameter tables, limits, or error-code-based troubleshooting. Does not meet the thresholds for configuration, integrations, or other expert-knowledge categories. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.30 | Document overview; primarily conceptual description of capabilities without detailed configs, limits, or patterns in the summary. |
+| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) | 0.30 | Release notes/what's-new summary with high-level info about GA/preview API versions; no clear evidence of detailed limits, configs, or error mappings from the provided summary. |
 | [Analyze a document with agentic mode (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/agentic-mode) | 0.20 | Quickstart focuses on how to create and run an agentic analyzer; this is tutorial content rather than limits, configuration tables, or troubleshooting mappings, so it doesn't meet the expert-knowledge criteria. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | 0.20 | FAQ pages often mix conceptual and practical info, but the summary indicates generic Q&A about the service without clear evidence of detailed limits, configs, or error-code-based troubleshooting. |
 | [Language and region support](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/language-region-support) | 0.20 | Region and language support pages typically list availability matrices but not configuration, limits, or decision matrices; summary suggests a descriptive list of supported regions/locales without deeper expert-only details. |
 | [Prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers) | 0.20 | Conceptual description of prebuilt analyzers and their use; no evidence of numeric limits, configuration tables, error codes, or other detailed product-specific parameters. |
 | [Studio and Foundry quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | 0.20 | Quickstart tutorial for trying analyzers; focuses on getting started rather than detailed configuration matrices or limits. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) | 0.20 | Release notes/what's-new summary with GA/preview info but no detailed limits, configs, error codes, or other product-specific technical parameters visible in the snippet. |
 | [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) | 0.10 | High-level overview of Azure Content Understanding capabilities, workflows, and use cases without product-specific limits, configuration tables, or detailed parameters. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/glossary) | - | Glossary of terms and definitions; conceptual reference without configuration, limits, or troubleshooting mappings. |

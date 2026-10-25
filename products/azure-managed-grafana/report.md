@@ -40,10 +40,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 2
-- **Unchanged**: 39
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 44
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
 ## Classification Statistics
@@ -59,25 +59,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure App Service
 | *(Unclassified)* | 12 | 27.3% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Grafana authentication](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions)
-- [Grant access to Azure Monitor data](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions)
-- [Grant access to Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities)
-
-### Updated Pages
-
-- [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli)
-  - Updated: 2025-09-29T08:00:00.000Z → 2026-10-06T11:41:00.000Z
-- [Secure Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/secure-azure-managed-grafana)
-  - Updated: 2026-09-03T22:14:00.000Z → 2026-10-06T11:41:00.000Z
-
-### Deleted Pages
-
-- ~~Configure Grafana resource authentication and permissions~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions)
-- ~~Manage access and permissions for users and identities~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities)
-- ~~Modify access permissions to Azure Monitor~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions)
 
 ## Classified Pages
 

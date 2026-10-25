@@ -3,7 +3,7 @@ name: azure-cloud-hsm
 description: Expert knowledge for Azure Cloud Hsm development including troubleshooting, best practices, limits & quotas, security, and integrations & coding patterns. Use when configuring Cloud HSM auth/networking, routing logs, managing PKCS#11 keys/certs, or handling capacity/alg limits, and other Azure Cloud Hsm related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Hsm Skill

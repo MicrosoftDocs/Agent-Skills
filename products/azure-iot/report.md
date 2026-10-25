@@ -38,10 +38,10 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 22
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 6
-- **Deleted Pages**: 12
+- **Unchanged**: 28
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
 ## Classification Statistics
@@ -56,45 +56,6 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | *(Unclassified)* | 7 | 25.0% |
 
 ## Changes
-
-### New Pages
-
-- [What is Azure Device Registry?](https://learn.microsoft.com/en-us/azure/iot/device-registry/overview-device-registry)
-- [Azure IoT Hub get started (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/get-started-azure-device-registry)
-- [What is an Azure Device Registry namespace?](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-namespaces)
-- [Best practices for namespaces](https://learn.microsoft.com/en-us/azure/iot/device-registry/best-practices-namespaces)
-- [Best practices for schema registries](https://learn.microsoft.com/en-us/azure/iot/device-registry/best-practices-schema-registries)
-- [Unified Azure IoT SDKs for IoT Hub and Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-unified-iot-sdks)
-- [Certificate management overview](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-overview)
-- [PKI fundamentals](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts)
-- [Certificate Authorities in Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/concept-managed-ca-hierarchy)
-- [Set up a root and intermediate CA](https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy)
-- [Bring your own CA](https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy-external-certificate)
-- [Create or edit a certificate policy](https://learn.microsoft.com/en-us/azure/iot/how-to-create-edit-certificate-policy)
-- [Issue device certificates](https://learn.microsoft.com/en-us/azure/iot/concept-certificate-issuance)
-- [Renew device certificates](https://learn.microsoft.com/en-us/azure/iot/concept-certificate-renewal)
-- [Revoke certificates](https://learn.microsoft.com/en-us/azure/iot/concepts-certificate-policy-management)
-- [Disable or enable a device (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-disable-enable-device)
-- [Groups concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-groups)
-- [Jobs concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-jobs)
-- [Software updates concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-software-updates)
-- [Import a software update (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-import-software-update)
-- *...and 2 more*
-
-### Deleted Pages
-
-- ~~Issuance of device certificates~~ (https://learn.microsoft.com/en-us/azure/iot/concept-certificate-issuance)
-- ~~Renewal of device certificates~~ (https://learn.microsoft.com/en-us/azure/iot/concept-certificate-renewal)
-- ~~Certificate revocation and policy management~~ (https://learn.microsoft.com/en-us/azure/iot/concepts-certificate-policy-management)
-- ~~Configure a credential~~ (https://learn.microsoft.com/en-us/azure/iot/how-to-configure-credential)
-- ~~Create a policy with a Microsoft root CA~~ (https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy)
-- ~~Create a policy with an external root CA~~ (https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy-external-certificate)
-- ~~Revoke certificates and delete policies~~ (https://learn.microsoft.com/en-us/azure/iot/how-to-revoke-certificate-delete-policy)
-- ~~Key concepts for certificate management~~ (https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts)
-- ~~Certificate management (preview) in Azure Device Registry~~ (https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-overview)
-- ~~Best practices for namespaces~~ (https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-namespace-guidance)
-- ~~What is Azure Device Registry?~~ (https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-overview)
-- ~~Best practices for schema registries~~ (https://learn.microsoft.com/en-us/azure/iot/iot-device-registry-schema-registry-guidance)
 
 ## Classified Pages
 

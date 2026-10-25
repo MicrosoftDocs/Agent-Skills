@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 73
+- **Unchanged**: 74
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -67,10 +67,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 20 | 27.0% |
 
 ## Changes
-
-### New Pages
-
-- [Troubleshoot Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/troubleshooting?view=azure-devops)
 
 ## Classified Pages
 

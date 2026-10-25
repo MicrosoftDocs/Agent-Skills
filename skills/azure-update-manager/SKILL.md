@@ -1,9 +1,9 @@
 ---
 name: azure-update-manager
-description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers, configuring patch schedules/ESU, using SDK/REST APIs, or integrating runbooks/webhooks, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when onboarding VMs/Arc, configuring update schedules/ESU, automating via SDK/REST, or migrating from ConfigMgr, and other Azure Update Manager related development tasks. Not for Azure Automation (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Update Manager Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L68-L73 | Configuring disk encryption for Automanaged VMs and setting up RBAC roles/permissions to securely manage and control access to Azure Update Manager. |
 | Configuration | L74-L93 | Configuring Azure Update Manager: profiles, scopes, schedules, alerts, ESU, client settings, data collection, Resource Graph, policy-based assessments, and pre/post maintenance events. |
 | Integrations & Coding Patterns | L94-L106 | Using SDKs (Go/Java/JS/Python) and REST APIs to assign Automanage profiles, manage VM/Arc server updates, and implement pre/post maintenance with Functions, webhooks, and runbooks |
-| Deployment | L107-L120 | Deploying and managing Automanage/Update Manager at scale: onboarding VMs/Arc servers, upgrading profiles, cross-region moves, tenant repairs, Azure Policy deployment, and supported OS/update sources. |
+| Deployment | L107-L120 | Deploying and managing Automanage/Update Manager at scale: onboarding VMs/Arc, moving configs/VMs across regions, upgrading/repairing setups, enabling via Policy, and supported OS/update sources. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -117,4 +117,4 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Change Tracking at scale using Azure Policy | https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/enable-change-tracking-at-scale-policy |
 | Track Arc-enabled VM extension releases and issues for Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/overview-arc-enabled-vm-extensions |
 | Supported update sources and types in Azure Update Manager | https://learn.microsoft.com/en-us/azure/update-manager/support-matrix |
-| Azure Update Manager OS and feature support matrix | https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates |
+| Review Azure Update Manager OS support matrix | https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates |

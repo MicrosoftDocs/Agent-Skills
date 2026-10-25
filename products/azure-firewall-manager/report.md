@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 26
+- **Updated Pages**: 0
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall-manager/azure-firewall-manager.csv`
 
@@ -53,11 +53,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual N
 | *(Unclassified)* | 16 | 59.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [IP Groups](https://learn.microsoft.com/en-us/azure/firewall-manager/ip-groups)
-  - Updated: 2024-12-03T08:00:00.000Z → 2026-10-14T11:44:00.000Z
 
 ## Classified Pages
 

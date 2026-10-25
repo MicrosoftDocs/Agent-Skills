@@ -40,10 +40,10 @@ confusable_not_for: Not for Cost Management (use azure-cost-management), Azure M
 - **Unclassified**: 9
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 1
-- **Unchanged**: 29
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
 ## Classification Statistics
@@ -59,23 +59,6 @@ confusable_not_for: Not for Cost Management (use azure-cost-management), Azure M
 | *(Unclassified)* | 9 | 27.3% |
 
 ## Changes
-
-### New Pages
-
-- [Get recommendations in Azure Resource Graph](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-resource-graph)
-- [Manage recommendation state](https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management)
-- [Optimize virtual machine costs by resizing or shutting down underutilized instances](https://learn.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations)
-
-### Updated Pages
-
-- [What's new?](https://learn.microsoft.com/en-us/azure/advisor/advisor-release-notes)
-  - Updated: 2026-03-29T08:00:00.000Z → 2026-10-06T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Advisor data in Azure Resource Graph~~ (https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-resource-graph)
-- ~~Recommendation state management~~ (https://learn.microsoft.com/en-us/azure/advisor/advisor-azure-state-management)
-- ~~Optimize virtual machine spend by resizing or shutting down underutilized instances~~ (https://learn.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations)
 
 ## Classified Pages
 

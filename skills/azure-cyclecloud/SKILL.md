@@ -3,7 +3,7 @@ name: azure-cyclecloud
 description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when automating CycleCloud via API/CLI/SDK, configuring Slurm clusters, tuning HB/HC VMs, or securing access, and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure CycleCloud Skill

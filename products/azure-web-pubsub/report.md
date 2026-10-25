@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 120
-- **Deleted Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 122
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
 ## Classification Statistics
@@ -71,18 +71,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 38 | 31.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Tutorial](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-tutorial)
-  - Updated: 2026-07-21T06:10:00.000Z → 2026-10-12T11:45:00.000Z
-- [SDKs and REST API](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-reference-sdk-and-rest)
-  - Updated: 2026-09-16T11:51:00.000Z → 2026-10-12T11:45:00.000Z
-
-### Deleted Pages
-
-- ~~Service SDK - Java~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-reference-service-sdk-java)
-- ~~Service SDK - JavaScript~~ (https://learn.microsoft.com/en-us/azure/azure-web-pubsub/chat-reference-service-sdk-javascript)
 
 ## Classified Pages
 

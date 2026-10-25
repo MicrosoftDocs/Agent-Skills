@@ -1,9 +1,9 @@
 ---
 name: microsoft-foundry-classic
-description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents, configuring model routing, integrating Azure OpenAI/Search, securing RBAC/Entra, or tuning quotas, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech).
+description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Foundry agents, model routing, Azure OpenAI/RAG, multi-agent apps, or secure on-your-data tools, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Classic Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L47-L63 | Designing safe, efficient Azure OpenAI/Foundry apps: system messages, safety templates, fine-tuning (incl. vision/reasoning), latency/throughput, token budgets, and chat app evaluation. |
 | Decision Making | L64-L91 | Guidance for choosing models, regions, deployments, billing, and migration paths in Foundry, including sizing PTU, lifecycle/retirement planning, and disaster recovery decisions. |
 | Architecture & Design Patterns | L92-L98 | Designing multi-agent architectures, configuring Foundry Agent Service for resilience, and understanding model router behavior, failover, and disaster recovery strategies. |
-| Limits & Quotas | L99-L114 | Quotas, rate limits, and regional availability for Foundry Agents, Models, Claude, and Azure OpenAI, plus how to manage, increase, and use dynamic/provisioned throughput and batch limits |
+| Limits & Quotas | L99-L114 | Quotas, rate limits, and regional availability for Foundry agents, models (incl. Claude, Azure OpenAI), plus how to manage, request, and increase deployment and throughput quotas. |
 | Security | L115-L160 | Security, privacy, and compliance for Foundry: RBAC, Entra ID, network isolation, CMK, Azure Policy, guardrails/content filters, and secure use of models, tools, and on-your-data features. |
 | Configuration | L161-L210 | Configuring, monitoring, and troubleshooting Foundry classic: agents, evaluators, models, storage, networking, compute, OpenAI integrations, observability, and automation (Terraform, SDKs). |
-| Integrations & Coding Patterns | L211-L308 | Patterns and code for integrating Foundry classic/Agents with Azure AI Search, Bing, SharePoint, MCP/OpenAPI tools, external data stores, Azure OpenAI (incl. audio/vision), fine-tuning, and SDKs like LangChain/Semantic Kernel. |
-| Deployment | L309-L328 | Deploying Foundry hubs/models at scale: regions, deployment types, Bicep/Terraform/CLI, managed and serverless compute, HF models, fine-tunes, evaluations, and region feature support |
+| Integrations & Coding Patterns | L211-L307 | Integrating Foundry classic agents and models with external tools, data, and APIs (Azure AI Search, Bing, SharePoint, MCP, OpenAPI, LangChain, SK), plus Azure OpenAI usage, fine-tuning, RAG, and realtime audio. |
+| Deployment | L308-L327 | Deploying Foundry hubs/models at scale: regions, deployment types, Bicep/Terraform/CLI, managed and serverless compute, HF models, fine-tunes, evaluations, and region feature support |
 
 ### Troubleshooting
 | Topic | URL |
@@ -110,7 +110,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure OpenAI global batch processing quotas | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/batch |
 | Use dynamic quota for Azure OpenAI deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/dynamic-quota |
 | Manage Azure OpenAI quota and rate limits in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/quota |
-| Azure OpenAI quotas and limits in Foundry Models | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/quotas-limits |
+| Review Azure OpenAI quotas and limits in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/quotas-limits |
 
 ### Security
 | Topic | URL |
@@ -256,13 +256,13 @@ This skill requires **network access** to fetch documentation content:
 | Rebuild Prompt Flow workflows using Agent Framework | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/how-to-migrate-prompt-flow-to-agent-framework |
 | Create and manage hub-scoped connections in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/hub-connections-add |
 | Migrate Azure AI Inference SDK apps to OpenAI SDK | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/model-inference-to-openai-migration |
-| Get started with Azure OpenAI audio generation | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/audio-completions-quickstart |
 | Interpret Guardrail annotations for Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-annotations |
 | Format prompts with document embeddings for Guardrails in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-document-embedding |
 | Use groundedness detection for RAG in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-groundedness |
 | Apply protected material detection to LLM outputs in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-protected-material |
 | Implement Computer Use agents in Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/computer-use |
 | Use Azure OpenAI image generation and editing APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/dall-e |
+| Call Azure OpenAI Decisions API with gpt-6-luna | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/decisions |
 | Run deep research using Azure OpenAI Responses API | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/deep-research |
 | Migrate from Azure.AI.OpenAI .NET 1.x beta to 2.x | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/dotnet-migration |
 | Generate embeddings with Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/embeddings |
@@ -276,7 +276,7 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Azure OpenAI to JavaScript SDK v4 | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/migration-javascript |
 | Integrate GPT Realtime audio via SIP in Azure | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-sip |
 | Implement GPT Realtime audio via WebRTC in Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-webrtc |
-| Connect to GPT Realtime audio using WebSockets | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-websockets |
+| Use Azure OpenAI GPT Realtime via WebSockets | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-websockets |
 | Implement Azure OpenAI Responses API with tools and streaming | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/responses |
 | Use structured outputs with Azure OpenAI models | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/structured-outputs |
 | Switch Python code between OpenAI and Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/switching-endpoints |
@@ -291,8 +291,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure OpenAI v1 REST API in Foundry Models | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest |
 | Use Azure OpenAI v1 REST API in Foundry Models | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest |
 | Use Azure OpenAI v1 REST API in Foundry Models | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/latest |
-| Use realtime audio events with Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/realtime-audio-reference |
-| Implement GA realtime audio events in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/realtime-audio-reference-ga |
+| Use Realtime and Voice Live audio events in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/realtime-audio-reference-ga |
 | Call Azure OpenAI image and audio REST APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference |
 | Integrate with Azure OpenAI preview REST APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview |
 | Use Azure OpenAI v1 preview REST APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/reference-preview-latest |

@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 - **Unclassified**: 27
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 19
-- **Unchanged**: 67
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 87
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
 ## Classification Statistics
@@ -74,55 +74,6 @@ confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager),
 | *(Unclassified)* | 27 | 31.0% |
 
 ## Changes
-
-### New Pages
-
-- [Platform-managed zone allocation](https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell)
-
-### Updated Pages
-
-- [Best practices for performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-best-practices)
-  - Updated: 2026-06-16T22:28:00.000Z → 2026-10-14T08:00:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/deploy-multi-public-ip-powershell)
-  - Updated: 2026-06-16T22:28:00.000Z → 2026-10-14T08:00:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/firewall/quick-create-multiple-ip-bicep)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-10-14T11:44:00.000Z
-- [Terraform](https://learn.microsoft.com/en-us/azure/firewall/quick-create-multiple-ip-terraform)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-10-14T08:00:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/firewall/quick-create-multiple-ip-template)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-10-14T11:44:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/firewall/deploy-bicep)
-  - Updated: 2026-03-28T08:00:00.000Z → 2026-10-12T11:45:00.000Z
-- [Terraform](https://learn.microsoft.com/en-us/azure/firewall/deploy-terraform)
-  - Updated: 2026-03-31T06:10:00.000Z → 2026-10-12T11:45:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/firewall/deploy-template)
-  - Updated: 2025-12-31T08:00:00.000Z → 2026-10-12T11:45:00.000Z
-- [Secured hub customer public IP](https://learn.microsoft.com/en-us/azure/firewall/secured-hub-customer-public-ip)
-  - Updated: 2025-10-02T22:32:00.000Z → 2026-10-14T08:00:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/firewall/firewall-azure-policy)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-10-12T11:45:00.000Z
-- [Scale outbound SNAT ports](https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway)
-  - Updated: 2026-09-14T22:37:00.000Z → 2026-10-14T11:44:00.000Z
-- [Scale outbound SNAT ports with zone redundancy](https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway-v2)
-  - Updated: 2026-04-01T22:41:00.000Z → 2026-10-09T08:00:00.000Z
-- [Secure firewall deployment](https://learn.microsoft.com/en-us/azure/firewall/secure-firewall)
-  - Updated: 2026-08-19T08:00:00.000Z → 2026-10-09T08:00:00.000Z
-- [What is Azure Firewall?](https://learn.microsoft.com/en-us/azure/firewall/overview)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-10-09T08:00:00.000Z
-- [Azure Firewall features by SKU](https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
-  - Updated: 2026-08-28T05:12:00.000Z → 2026-10-14T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
-  - Updated: 2026-09-15T17:13:00.000Z → 2026-10-14T11:44:00.000Z
-- [Implementation guide](https://learn.microsoft.com/en-us/azure/firewall/premium-features)
-  - Updated: 2025-10-01T05:10:00.000Z → 2026-10-09T08:00:00.000Z
-- [Deploy dual-stack firewall (IPv6)](https://learn.microsoft.com/en-us/azure/firewall/deploy-dual-stack-firewall)
-  - Updated: 2026-08-20T11:46:00.000Z → 2026-10-09T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/firewall/ip-groups)
-  - Updated: 2026-03-29T11:12:00.000Z → 2026-10-14T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Deploy with Availability Zones~~ (https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell)
 
 ## Classified Pages
 

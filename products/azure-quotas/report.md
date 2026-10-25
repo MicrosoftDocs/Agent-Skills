@@ -26,8 +26,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resource Ma
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 14
+- **Updated Pages**: 0
+- **Unchanged**: 15
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quotas/azure-quotas.csv`
 
@@ -39,11 +39,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resource Ma
 | *(Unclassified)* | 14 | 93.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Increase storage account quotas](https://learn.microsoft.com/en-us/azure/quotas/storage-account-quota-requests)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-16T22:13:00.000Z
 
 ## Classified Pages
 

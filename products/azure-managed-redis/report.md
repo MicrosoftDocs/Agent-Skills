@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 80
+- **Updated Pages**: 0
+- **Unchanged**: 81
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -66,11 +66,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | *(Unclassified)* | 8 | 9.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migration using tooling](https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-with-tooling)
-  - Updated: 2026-08-18T17:12:00.000Z → 2026-10-08T22:18:00.000Z
 
 ## Classified Pages
 

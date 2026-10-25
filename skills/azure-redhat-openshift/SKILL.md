@@ -3,7 +3,7 @@ name: azure-redhat-openshift
 description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ARO clusters, configuring HCP networking, integrating ACR/Key Vault, or securing Entra/OIDC access, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill

@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 123
+- **Updated Pages**: 0
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -70,11 +70,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Service Hea
 | *(Unclassified)* | 73 | 58.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy)
-  - Updated: 2026-09-03T22:14:00.000Z → 2026-10-13T05:17:00.000Z
 
 ## Classified Pages
 

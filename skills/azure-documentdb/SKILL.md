@@ -1,9 +1,9 @@
 ---
 name: azure-documentdb
-description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring DocumentDB search, vector indexes, cross-region replication, Mongo API apps, or AI/RAG workloads, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using DocumentDB vector search, MongoDB-compatible APIs, change streams, cross-region replication, or Data API, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DocumentDB Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing DocumentDB issues: query performance, CMK encryption, replication, and common connectivity/network errors including migration-related problems. |
 | Best Practices | L47-L57 | Best practices for DocumentDB indexing and queries, safe index changes, and configuring cross-region replication and high availability for resilient, performant data access. |
-| Decision Making | L58-L73 | Guides for choosing between DocumentDB and MongoDB services, planning and connecting migrations, configuring cross-region failover, and selecting vector index/search algorithms across major languages. |
+| Decision Making | L58-L73 | Guides for choosing DocumentDB vs MongoDB/Atlas, planning MongoDB migrations, selecting connectivity and cross-region failover, and picking optimal vector index/search algorithms in .NET, Go, TS, and Python |
 | Architecture & Design Patterns | L74-L85 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
 | Limits & Quotas | L86-L99 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
 | Security | L100-L111 | Securing DocumentDB clusters: encryption at rest and with customer keys, firewall and public access controls, Private Link, Entra ID RBAC, native users/privileges, and security best practices. |
@@ -63,11 +63,11 @@ This skill requires **network access** to fetch documentation content:
 | Choose cross-region failover modes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/failover-modes |
 | Assess MongoDB readiness and plan migration to DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness |
 | Evaluate MongoDB compatibility in managed services | https://learn.microsoft.com/en-us/azure/documentdb/managed-service-compatibility |
-| Choose and plan MongoDB to Azure DocumentDB migrations | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
+| Plan and choose MongoDB to Azure DocumentDB migration options | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
 | Select connectivity scenarios for DocumentDB migrations | https://learn.microsoft.com/en-us/azure/documentdb/migration-scenarios |
 | Evaluate vector search algorithms with .NET | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-select-algorithm |
 | Compare vector index options in Go on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-select-algorithm |
-| Test and select vector indexes with Java | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm |
+| Choose optimal vector index algorithm in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm |
 | Choose vector index algorithms using TypeScript | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-select-algorithm |
 | Select optimal vector index and similarity in Python | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-select-algorithm |
 

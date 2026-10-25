@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 46
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -58,11 +58,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | *(Unclassified)* | 23 | 48.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Publisher Resource Cleanup Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/resource-cleanup-management)
-  - Updated: 2025-09-19T22:11:00.000Z → 2026-10-08T05:11:00.000Z
 
 ## Classified Pages
 
