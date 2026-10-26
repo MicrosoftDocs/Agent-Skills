@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 35
+- **Updated Pages**: 0
+- **Unchanged**: 36
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -63,11 +63,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 | *(Unclassified)* | 20 | 55.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deployment](https://learn.microsoft.com/en-us/azure/copilot/deployment-agent)
-  - Updated: 2026-08-10T21:58:00.000Z → 2026-10-15T22:12:00.000Z
 
 ## Classified Pages
 

@@ -3,7 +3,7 @@ name: azure-arc
 description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Arc-enabled Kubernetes, Arc SQL MI, resource bridge, Arc Agentic Retrieval, or Edge Volumes, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L114-L121 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
 | Limits & Quotas | L122-L133 | Limits, constraints, billing rules, and offline behavior for Arc agents, resource bridge, Arc-enabled Kubernetes, storage, ESU, and pay-as-you-go Windows Server. |
 | Security | L134-L193 | Securing Azure Arc resources: identity/RBAC, AD and Entra auth, keytabs, TDE, TLS, workload identity, network/Private Link, policies, and protecting data/secrets across servers, Kubernetes, and Arc SQL. |
-| Configuration | L194-L305 | Configuring Azure Arc and Arc-enabled services: networking, agents, storage, data services, GitOps, monitoring, security, and Agentic Retrieval data/model endpoints and observability. |
-| Integrations & Coding Patterns | L306-L336 | APIs, CLIs, and automation patterns for Arc: agentic retrieval REST/MCP, Arc server onboarding at scale, VM extensions, ESU licensing, monitoring, Event Grid, and Terraform/Ansible/PowerShell tools. |
-| Deployment | L337-L365 | Deploying and managing Azure Arc components: data controllers, Agentic Retrieval, storage/volumes, resource bridge, Arc-enabled servers/VMware/SCVMM, and workload orchestration, including upgrades and DR. |
+| Configuration | L194-L304 | Configuring Azure Arc and Arc-enabled services: networking, agents, storage, data services, GitOps, monitoring, security, and Agentic Retrieval data/model endpoints and observability. |
+| Integrations & Coding Patterns | L305-L335 | APIs, CLIs, and automation patterns for Arc: agentic retrieval REST/MCP, Arc server onboarding at scale, VM extensions, ESU licensing, monitoring, Event Grid, and Terraform/Ansible/PowerShell tools. |
+| Deployment | L336-L364 | Deploying and managing Azure Arc components: data controllers, Agentic Retrieval, storage/volumes, resource bridge, Arc-enabled servers/VMware/SCVMM, and workload orchestration, including upgrades and DR. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -260,7 +260,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Key Vault Secret Store extension for Arc Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension |
 | Configure Azure Arc Secret Store extension resources | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-reference |
 | Apply Flux v2 configurations at scale with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy-flux-2 |
-| Configure multicloud connector to onboard EKS to Arc | https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc |
 | Configure Azure Arc network endpoints, ports, and protocols | https://learn.microsoft.com/en-us/azure/azure-arc/network-requirements-consolidated |
 | Configure network requirements for Azure Arc resource bridge | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements |
 | Configure Azure Arc gateway network endpoints and usage | https://learn.microsoft.com/en-us/azure/azure-arc/servers/arc-gateway |

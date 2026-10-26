@@ -3,7 +3,7 @@ name: azure-face
 description: Expert knowledge for Azure AI Face development including troubleshooting, best practices, decision making, limits & quotas, security, and integrations & coding patterns. Use when using Face detection, identification, verification, liveness, PersonGroup/Directory, or Face API quotas, and other Azure AI Face related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer), Azure AI Document Intelligence (use azure-document-intelligence).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-09"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Face Skill

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   security: 'Securing Azure Pipelines: auth for agents and service connections, secrets/Key
     Vault, permissions and approvals, artifact/repo protection, policy/compliance
     checks, and secure YAML practices.'
   configuration: 'Configuring Azure Pipelines: agents, triggers, variables, environments,
-    YAML schema, deployment strategies, and detailed setup for built-in tasks and
-    artifact/test handling.'
+    YAML schema, deployment strategies, and detailed task/task-input setup for building,
+    testing, and deploying apps.'
   decision-making: Guidance on choosing and configuring GitHub/Microsoft-hosted agents,
     handling image deprecation, and safely migrating from Jenkins or Classic pipelines
     and retiring tasks to YAML equivalents.
@@ -31,12 +31,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Pipelines development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring YAML pipelines, agents, service connections, Key Vault secrets, or web/Kubernetes
-  deployments, and other Azure Pipelines related development tasks. Not for Azure
+  configuring YAML pipelines, agents, service connections, Key Vault secrets, or Kubernetes/web
+  app deployments, and other Azure Pipelines related development tasks. Not for Azure
   DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos),
   Azure Test Plans (use azure-test-plans).
 use_when: Use when configuring YAML pipelines, agents, service connections, Key Vault
-  secrets, or web/Kubernetes deployments, and other Azure Pipelines related development
+  secrets, or Kubernetes/web app deployments, and other Azure Pipelines related development
   tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
   Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 576
+- **Updated Pages**: 1
+- **Unchanged**: 578
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -64,12 +64,12 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 |------|-------|------------|
 | architecture-patterns | 4 | 0.7% |
 | best-practices | 8 | 1.4% |
-| configuration | 366 | 63.2% |
+| configuration | 367 | 63.4% |
 | decision-making | 5 | 0.9% |
 | deployment | 52 | 9.0% |
 | integrations | 25 | 4.3% |
 | limits-quotas | 5 | 0.9% |
-| security | 45 | 7.8% |
+| security | 44 | 7.6% |
 | troubleshooting | 8 | 1.4% |
 | *(Unclassified)* | 61 | 10.5% |
 
@@ -77,12 +77,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Updated Pages
 
-- [Microsoft-hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops)
-  - Updated: 2026-09-29T08:00:00.000Z → 2026-10-06T08:00:00.000Z
-- [Deprecation schedule](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops)
-  - Updated: 2026-02-02T14:04:00.000Z → 2026-10-13T15:07:00.000Z
-- [Manage service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops)
-  - Updated: 2026-08-18T08:00:00.000Z → 2026-10-15T08:00:00.000Z
+- [Convert service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/convert-service-connections?view=azure-devops)
+  - Updated: 2026-06-18T01:03:00.000Z → 2026-10-22T15:08:00.000Z
 
 ## Classified Pages
 
@@ -476,7 +472,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [IISWebAppDeploymentOnMachineGroup@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-on-machine-group-v0?view=azure-pipelines) | configuration | 0.77 | Classic IIS web app deploy task reference with specific inputs (MSDeploy settings, machine groups, etc.), fitting configuration. |
 | [IISWebAppManagementOnMachineGroup@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-management-on-machine-group-v0?view=azure-pipelines) | configuration | 0.77 | Lists parameters for creating/updating IIS sites, apps, and pools, which are specific configuration options. |
 | [Azure Resource Manager special cases](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/azure-resource-manager-alternate-approaches?view=azure-devops) | security | 0.76 | Describes nonstandard ARM service connection setups (agent-assigned managed identity, publish profile, app registration with secret) with concrete configuration steps and required permissions, which are detailed security configurations. |
-| [Convert service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/convert-service-connections?view=azure-devops) | security | 0.76 | Page covers how to migrate workload identity federation service connections from the deprecated Azure DevOps issuer to the Microsoft Entra issuer, including specific issuer URL formats and configuration changes for secure authentication. This is product-specific identity configuration and migration guidance, fitting the security sub-skill. |
 | [Gradle@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v1?view=azure-pipelines) | configuration | 0.76 | Provides full parameter list and behavior for Gradle@1, which is detailed task configuration. |
 | [Gradle@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v2?view=azure-pipelines) | configuration | 0.76 | Deprecated task reference still documents exact inputs and behavior for Gradle@2, which are specific configuration parameters. |
 | [Gradle@3](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v3?view=azure-pipelines) | configuration | 0.76 | Lists Gradle@3 task inputs, defaults, and supported options unique to Azure Pipelines, which are configuration details. |
@@ -565,6 +560,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Virtual machine resource](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments-virtual-machines?view=azure-devops) | configuration | 0.70 | Describes adding VM resources via agents and using environment deployment history; includes product-specific steps and configuration for VM-based environments. |
 | [Agent version 5.x](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v5-agent?view=azure-devops) | deployment | 0.68 | Page is about a specific agent major version for Azure Pipelines, including version-specific behavior and OS/runtime support details that affect how and where agents can be deployed. These are product- and version-specific deployment constraints that an LLM is unlikely to know from training. |
 | [Baseline Azure Pipelines architecture](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture?view=azure-devops) | architecture-patterns | 0.68 | Defines a concrete baseline CI/CD architecture specific to Azure Pipelines (PR, CI, CD pipelines, interactions with Azure Repos, Key Vault, staging/production), providing product-specific architectural guidance and patterns beyond generic CI/CD concepts. |
+| [Convert service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/convert-service-connections?view=azure-devops) | configuration | 0.68 | Page describes how to convert workload identity federation service connections from the deprecated Azure DevOps issuer (https://vstoken.dev.azure.com) to the Microsoft Entra issuer (https://login.microsoftonline.com), which is a product-specific configuration change. It likely includes exact issuer URLs, parameter names, and step-by-step configuration details unique to Azure DevOps/Microsoft Entra integration, which qualify as expert configuration knowledge rather than generic concepts. |
 | [Agent version 4.x](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v4-agent?view=azure-devops) | deployment | 0.65 | Page covers the v4 agent lifecycle and guidance to move to v5, including version-specific support and upgrade implications. This is expert, product-specific deployment and lifecycle information rather than generic concepts. |
 | [Approach to securing YAML pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/security/approach?view=azure-devops) | security | 0.65 | Guidance on incrementally applying security recommendations to YAML pipelines; likely references specific Azure Pipelines security features and configurations, not just generic security concepts. |
 | [Artifact policy checks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/artifact-policy?view=azure-devops) | security | 0.65 | Describes artifact policy checks, supported artifact types, and configuration of custom policies that gate deployments to critical environments. |

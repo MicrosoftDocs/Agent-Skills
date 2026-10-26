@@ -1,9 +1,9 @@
 ---
 name: azure-event-hubs
-description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka-compatible clients, Flink/Spark, geo-replication, Avro capture, or the Event Hubs emulator, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs), Azure Event Grid (use azure-event-grid), Azure Web PubSub (use azure-web-pubsub).
+description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Kafka clients, Flink/Spark, geo-replication, Entra ID/RBAC auth, or Event Hubs Capture/Avro, and other Azure Event Hubs related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Hubs Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L57-L63 | Guidance on choosing Event Hubs tiers, auto-inflate settings, geo-replication modes, and planning migrations from Apache Kafka to Event Hubs. |
 | Architecture & Design Patterns | L64-L69 | Patterns and guidance for Event Hubs reliability: availability/consistency design, geo-disaster recovery, and building/operating replication tasks (often with Azure Functions). |
 | Limits & Quotas | L70-L79 | Event Hubs limits, quotas, and tier differences; max message sizes, capture intervals, platform behaviors, and governance via application groups. |
-| Security | L80-L108 | Securing Event Hubs: auth (Entra ID, SAS, RBAC, managed identities), encryption/CMK, confidential computing, TLS, and network access (NSP, VNet, firewall, Private Link, Azure Policy compliance). |
+| Security | L80-L108 | Securing Event Hubs: auth with Entra ID/managed identities/SAS, RBAC, encryption and CMK, TLS settings, and network controls (firewalls, VNets, Private Link, NSP, policy/compliance). |
 | Configuration | L109-L120 | Configuring Event Hubs behavior: partitions, retention, cleanup, geo-DR, replication, log compaction, Avro capture, monitoring, app groups, and using the local emulator. |
 | Integrations & Coding Patterns | L121-L137 | Patterns and code for integrating Event Hubs with .NET, Kafka (clients, Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding metadata or managing hubs programmatically |
 | Deployment | L138-L143 | Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2), setting up geo-replication, and running/local-testing Event Hubs apps using the emulator. |
@@ -103,7 +103,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply regulatory compliance policies to Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/security-controls-policy |
 | Audit Event Hubs TLS compliance using Azure Policy | https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-audit-minimum-version |
 | Configure Event Hubs client applications to use specific TLS versions | https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-client-version |
-| Set minimum TLS version for Azure Event Hubs namespaces | https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-minimum-version |
+| Configure minimum TLS version for Azure Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-minimum-version |
 | Enforce minimum TLS version for Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-enforce-minimum-version |
 
 ### Configuration

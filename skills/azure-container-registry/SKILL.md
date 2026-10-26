@@ -1,9 +1,9 @@
 ---
 name: azure-container-registry
-description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using ACR Tasks, geo-replication, connected registries, Kubernetes/ACI pulls, or Notation image signing, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACR Tasks, geo-replication, connected registries, image signing, or Kubernetes/ACI integrations, and other Azure Container Registry related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Registry Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L62-L68 | Guidance on choosing Kubernetes auth methods for ACR, deciding geo-replication strategy, and migrating image signing from Docker Content Trust to Notary Project |
 | Architecture & Design Patterns | L69-L74 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
 | Limits & Quotas | L75-L80 | Details on ACR SKUs, performance and feature limits, plus how image storage capacity, repository counts, and size quotas are calculated and enforced |
-| Security | L81-L119 | Securing Azure Container Registry: auth methods, RBAC and ABAC, network/firewall/VNet rules, trusted services, image signing/verification, encryption keys, policies, and Defender-based scanning. |
-| Configuration | L120-L140 | Configuring Azure Container Registry behavior: caching, retention/soft delete, locks, IPv6, metrics/logs, webhooks, and ACR Tasks (YAML, scheduling, patching, agent pools). |
-| Integrations & Coding Patterns | L141-L158 | Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, Helm, and webhooks; configuring auth, caching, transfers, image builds, and Notation-based signing/verification. |
-| Deployment | L159-L163 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
+| Security | L81-L120 | Securing Azure Container Registry: auth methods (Entra, managed identity, tokens), RBAC/ABAC, network/firewall/VNet controls, encryption keys, image signing/verification, policy/compliance, and Defender scanning. |
+| Configuration | L121-L141 | Configuring ACR behavior: caching, retention/soft delete, purge, locks, IPv6, webhooks, metrics/logs, and ACR Tasks (YAML, timers, patching, agent pools, wildcard cache). |
+| Integrations & Coding Patterns | L142-L159 | Integrating ACR with Kubernetes, ACI, GitHub Actions, ORAS, and ACR Transfer; configuring auth, pull secrets, Helm, artifact caching, webhooks, and image signing/verification. |
+| Deployment | L160-L164 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
 
 ### Troubleshooting
 | Topic | URL |
@@ -98,7 +98,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference for Azure Container Registry built-in RBAC roles | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-directory-reference |
 | Assign and manage ACR RBAC built-in roles | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-overview |
 | Create and assign custom RBAC roles for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-custom-roles |
-| Use Azure Container Registry service tags for network rules | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-service-tag |
+| Configure Azure Container Registry service tag network access | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-service-tag |
 | Access Key Vault secrets from ACR Tasks via managed identity | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-authentication-key-vault |
 | Configure managed identity for ACR Tasks | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-authentication-managed-identity |
 | Use managed identity for cross-registry auth in ACR Tasks | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-cross-registry-authentication |
@@ -112,6 +112,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure client tokens to pull from connected registries | https://learn.microsoft.com/en-us/azure/container-registry/pull-images-from-connected-registry |
 | Scan ACR images with Microsoft Defender for Cloud | https://learn.microsoft.com/en-us/azure/container-registry/scan-images-defender |
 | Apply Azure Policy compliance controls to ACR | https://learn.microsoft.com/en-us/azure/container-registry/security-controls-policy |
+| Migrate ACR task agent pool RBAC permissions | https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools-permission-migration |
 | Secure connected registry Arc extension deployments | https://learn.microsoft.com/en-us/azure/container-registry/tutorial-connected-registry-arc |
 | Configure customer-managed encryption keys for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys |
 | Enable customer-managed keys on Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/tutorial-enable-customer-managed-keys |
@@ -132,10 +133,10 @@ This skill requires **network access** to fetch documentation content:
 | YAML schema reference for Azure Container Registry Tasks | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-reference-yaml |
 | Schedule Azure Container Registry Tasks with timers | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-scheduled |
 | Configure multi-step ACR Tasks for build workflows | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-multistep-task |
-| Webhook payload schema for Azure Container Registry events | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook-reference |
+| Configure Azure Container Registry webhooks for image events | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook |
 | Configure continuous patching for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/how-to-continuous-patching |
 | Reference monitoring metrics and logs for Azure Container Registry | https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry-reference |
-| Configure dedicated agent pools for ACR Tasks | https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools |
+| Configure dedicated agent pools for ACR tasks | https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools |
 | Configure wildcard rules for ACR artifact cache | https://learn.microsoft.com/en-us/azure/container-registry/wildcards-artifact-cache |
 
 ### Integrations & Coding Patterns
@@ -154,7 +155,7 @@ This skill requires **network access** to fetch documentation content:
 | Verify signed ACR images in GitHub Actions workflows | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-github-verify-notation-artifact-signing |
 | Sign ACR images with Notation using Azure Key Vault certificates | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-sign-build-push |
 | Sign and verify ACR images using Notation and Artifact Signing | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-sign-verify-notation-artifact-signing |
-| Configure ACR webhooks for registry event notifications | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook |
+| Use ACR webhook JSON schema for integrations | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook-reference |
 
 ### Deployment
 | Topic | URL |

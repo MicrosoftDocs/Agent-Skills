@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 12
-- **Unchanged**: 102
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -59,33 +59,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 91 | 79.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Partner services](https://learn.microsoft.com/en-us/azure/partner-solutions/partners)
-  - Updated: 2026-08-28T22:12:00.000Z → 2026-10-12T08:00:00.000Z
-- [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/)
-  - Updated: 2026-05-26T17:19:00Z → 2026-10-09T17:23:00Z
-- [Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/)
-  - Updated: 2026-05-26T17:19:00Z → 2026-10-12T22:13:00Z
-- [What is Apache Airflow on Astro – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/overview)
-  - Updated: 2025-01-21T23:02:00.000Z → 2026-10-12T22:13:00.000Z
-- [Astro resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/tools)
-  - Updated: 2025-09-15T08:00:00.000Z → 2026-10-12T22:13:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/faq)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-10-12T22:13:00.000Z
-- [Create an Apache Airflow deployment on Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/create)
-  - Updated: 2025-03-13T11:18:00.000Z → 2026-10-12T22:13:00.000Z
-- [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage)
-  - Updated: 2025-09-05T17:17:00.000Z → 2026-10-12T22:13:00.000Z
-- [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview)
-  - Updated: 2026-06-03T11:36:00.000Z → 2026-10-09T17:23:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-10-09T17:23:00.000Z
-- [Create an Elastic resource](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/create)
-  - Updated: 2026-06-03T11:36:00.000Z → 2026-10-09T17:23:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/manage)
-  - Updated: 2026-06-03T11:36:00.000Z → 2026-10-09T17:23:00.000Z
 
 ## Classified Pages
 

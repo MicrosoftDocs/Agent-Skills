@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 94
-- **Deleted Pages**: 2
+- **Unchanged**: 96
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
 ## Classification Statistics
@@ -76,16 +76,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 20 | 20.8% |
 
 ## Changes
-
-### New Pages
-
-- [Automatic zone balance](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-overview)
-- [Enable a scale set with automatic zone balance](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-enable)
-
-### Deleted Pages
-
-- ~~Enable a scale set with automatic zone balance (Preview)~~ (https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-enable)
-- ~~Automatic zone balance (Preview)~~ (https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-overview)
 
 ## Classified Pages
 

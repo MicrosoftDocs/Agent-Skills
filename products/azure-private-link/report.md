@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 55
+- **Updated Pages**: 0
+- **Unchanged**: 59
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -62,17 +62,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 30 | 50.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Standard service endpoint](https://learn.microsoft.com/en-us/azure/private-link/service-endpoint-standard-overview)
-  - Updated: 2026-09-14T08:00:00.000Z → 2026-10-15T05:11:00.000Z
-- [Configure a standard service endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-portal)
-  - Updated: 2026-07-22T12:23:00.000Z → 2026-09-22T08:00:00.000Z
-- [Configure a standard service endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-cli)
-  - Updated: 2026-07-22T12:23:00.000Z → 2026-10-15T05:11:00.000Z
-- [Configure a standard service endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/configure-service-endpoint-standard-powershell)
-  - Updated: 2026-07-22T12:23:00.000Z → 2026-09-22T08:00:00.000Z
 
 ## Classified Pages
 

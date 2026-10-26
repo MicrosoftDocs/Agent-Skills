@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 89
+- **Updated Pages**: 0
+- **Unchanged**: 96
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-enclave/azure-enclave.csv`
 
@@ -68,23 +68,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 47 | 49.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy App Service Web App from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-app-service-web-app-service-catalog)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-17T05:12:00.000Z
-- [Deploy Azure Kubernetes Service from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-azure-kubernetes-service-service-catalog)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-09-23T08:00:00.000Z
-- [Deploy Key Vault from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-key-vault-service-catalog)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-17T05:12:00.000Z
-- [Deploy Private DNS Zones from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-private-dns-zones-service-catalog)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-13T05:17:00.000Z
-- [Deploy service catalog Template from Azure CLI](https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli)
-  - Updated: 2026-08-26T17:11:00.000Z → 2026-10-17T05:12:00.000Z
-- [Troubleshoot guide](https://learn.microsoft.com/en-us/azure/enclave/troubleshoot)
-  - Updated: 2026-10-01T22:10:00.000Z → 2026-10-16T05:18:00.000Z
-- [Create a community](https://learn.microsoft.com/en-us/azure/enclave/1-1-create-community)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-09-23T08:00:00.000Z
 
 ## Classified Pages
 

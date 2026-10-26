@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   security: 'Configuring Cloud HSM security: auth methods, network/private link setup,
     secure user management, and routing/querying audit and security logs via Event
@@ -38,10 +38,10 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 17
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 20
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
 
 ## Classification Statistics
@@ -57,22 +57,10 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ## Changes
 
-### New Pages
-
-- [HSM operations audit logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-hsm-operation-audit-logs)
-- [Configure Event Hubs for logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-configure-event-hub)
-
 ### Updated Pages
 
-- [Secure your Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-14T17:37:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq)
-  - Updated: 2026-06-12T22:35:00.000Z → 2026-10-14T17:37:00.000Z
-
-### Deleted Pages
-
-- ~~Configure Event Hub for logging~~ (https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-configure-event-hub)
-- ~~Operation event logging~~ (https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-operation-event-logging)
+- [About Azure Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/overview)
+  - Updated: 2026-09-23T22:33:00.000Z → 2026-10-22T22:33:00.000Z
 
 ## Classified Pages
 
@@ -102,5 +90,5 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [PowerShell](https://learn.microsoft.com/en-us/azure/cloud-hsm/quickstart-powershell) | 0.40 | Quickstart deployment walkthrough using PowerShell; primarily step-by-step instructions without configuration matrices, limits, or product-specific best-practice tables. |
 | [Azure Cloud HSM Integration Guides](https://learn.microsoft.com/en-us/azure/cloud-hsm/integration-guides) | 0.30 | Meta page listing integration guides; summary is generic and does not expose specific configuration parameters, limits, or error-handling details itself. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/cloud-hsm/quickstart-portal) | 0.30 | Portal-based deployment quickstart; focuses on steps rather than detailed configuration matrices, limits, or advanced patterns. |
-| [About Azure Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/overview) | 0.20 | High-level overview of Azure Cloud HSM capabilities and use cases without detailed limits, configuration parameters, or error/decision matrices. |
+| [About Azure Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/overview) | 0.20 | Page is an overview of Azure Cloud HSM describing what the service is and its high-level capabilities (FIPS level, single-tenant, use cases). It does not expose detailed limits, configuration parameters, error codes, or other product-specific expert data as defined by the sub-skill types. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-hsm/faq) | 0.20 | FAQ is described only as answering common questions across general topics; from the summary it appears high-level and conceptual without clear evidence of detailed limits, error codes, or configuration parameters that meet the expert-knowledge criteria. |

@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing Nexus clusters, fabric ACLs/BGP, isolation domains, near‑edge storage, or upgrade workflows, and other Azure Operator Nexus related development tasks. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring Nexus fabric ACLs/BGP, isolation domains, AKS settings, storage topology, or upgrade workflows, and other Azure Operator Nexus related development tasks. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L83 | Diagnosing and fixing Nexus bare-metal, storage, networking, Kubernetes, and upgrade issues, including provisioning failures, pod/volume errors, connectivity, and hardware validation problems. |
-| Best Practices | L84-L89 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
-| Decision Making | L90-L97 | Guidance for planning Nexus cluster placement, choosing Nexus and Kubernetes VM SKUs/versions, and mapping Nexus releases to supported storage software. |
-| Architecture & Design Patterns | L98-L102 | Design patterns and reference architectures for resilient Nexus deployments, including rack-failure-tolerant control planes and near-edge storage topology and capacity planning. |
-| Limits & Quotas | L103-L116 | Capacity planning, storage appliance sizing/expansion, supported versions and upgrade cadence, isolation domain requirements, platform limits/quotas, and related operational troubleshooting. |
-| Security | L117-L155 | Securing Nexus: identity/RBAC, managed identities, ACLs, SSH/serial access, break-glass methods, credential/Key Vault rotation, Defender/Policy, and secure VM/cluster connectivity. |
-| Configuration | L156-L228 | Configuring and operating Azure Operator Nexus: cluster templates/parameters, fabric ACLs and route policies, BGP/VRF limits, isolation domains, Kubernetes settings, monitoring, security, and upgrade workflows. |
-| Deployment | L229-L236 | Deploying and maintaining Nexus platform and fabric: prerequisites, image building, OS and fabric upgrades, and replacing or updating terminal servers in the network fabric. |
+| Best Practices | L84-L88 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
+| Decision Making | L89-L95 | Guidance for planning Nexus cluster placement, choosing Nexus and Kubernetes VM SKUs/versions, and mapping Nexus releases to supported storage software. |
+| Architecture & Design Patterns | L96-L100 | Design patterns and reference architectures for resilient Nexus deployments, including rack-failure-tolerant control planes and near-edge storage topology and capacity planning. |
+| Limits & Quotas | L101-L113 | Limits, capacity planning, and quotas for Nexus storage and isolation domains, supported software/runtime versions, upgrade cadence, and troubleshooting issues like node restarts or log disruption. |
+| Security | L114-L152 | Securing Nexus: identity/RBAC, managed identities, ACLs, SSH/serial access, break-glass methods, credential/Key Vault rotation, Defender/Policy, and secure VM/cluster connectivity. |
+| Configuration | L153-L225 | Configuring and operating Azure Operator Nexus: cluster templates/parameters, fabric ACLs and route policies, BGP/VRF limits, isolation domains, Kubernetes settings, monitoring, security, and upgrade workflows. |
+| Deployment | L226-L233 | Deploying and maintaining Nexus platform and fabric: prerequisites, image building, OS and fabric upgrades, and replacing or updating terminal servers in the network fabric. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -85,7 +85,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Best practices for bare metal machine lifecycle operations in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-bare-metal-best-practices |
-| Perform storage appliance component repairs in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-storage-device-repair |
 
 ### Decision Making
 | Topic | URL |
@@ -93,7 +92,6 @@ This skill requires **network access** to fetch documentation content:
 | Plan resource placement for Nexus Kubernetes clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-kubernetes-placement |
 | Select Azure Operator Nexus Kubernetes VM SKUs | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-kubernetes-cluster-sku |
 | Select and manage supported Kubernetes versions in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-kubernetes-cluster-supported-versions |
-| Choose appropriate Azure Operator Nexus SKUs | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-operator-nexus-skus |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -108,8 +106,7 @@ This skill requires **network access** to fetch documentation content:
 | Restart Nexus Kubernetes nodes and handle timeouts | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-action-restart |
 | Meet technical requirements for Nexus isolation domains | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-isolation-domain-technical-requirements |
 | Review Azure Operator Nexus limits and quotas | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-limits-and-quotas |
-| Plan storage appliance SKUs and capacity for Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-storage |
-| Map storage appliance software versions to Nexus releases | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-storage-supported-versions |
+| Understand Azure Operator Nexus near-edge storage limits | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-storage |
 | Operator Nexus platform runtime upgrade cadence and support | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-platform-runtime-upgrades |
 | Check supported software versions for Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/reference-supported-software-versions |
 | Troubleshoot log disruption after 48-hour Nexus disconnection | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-logs-disrupted-post-prolonged-disconnection |

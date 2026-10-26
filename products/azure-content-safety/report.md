@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   limits-quotas: Limits, quotas, and regional caps for Content Safety/Moderator (image
     & term lists, custom categories, code protected-material checks) and how to configure
@@ -28,7 +28,9 @@ skill_description: Expert knowledge for Content Safety in Foundry Control Plane 
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
   and deployment. Use when using Azure AI Content Safety limits, Docker containers,
   Prompt Shields, media provenance, or groundedness APIs, and other Content Safety
-  in Foundry Control Plane related development tasks.
+  in Foundry Control Plane related development tasks. Not for Azure Content Understanding
+  in Foundry Tools (use azure-content-understanding), Azure Security (use azure-security),
+  Azure Sentinel (use azure-sentinel), Azure Defender For Cloud (use azure-defender-for-cloud).
 use_when: Use when using Azure AI Content Safety limits, Docker containers, Prompt
   Shields, media provenance, or groundedness APIs, and other Content Safety in Foundry
   Control Plane related development tasks.
@@ -48,8 +50,8 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 46
+- **Updated Pages**: 1
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -72,14 +74,8 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 ### Updated Pages
 
-- [Content Safety containers overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/container-overview)
-  - Updated: 2026-02-05T23:08:00.000Z → 2026-10-14T22:16:00.000Z
-- [Prompt Shields container](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/prompt-shields-container)
-  - Updated: 2026-02-05T23:08:00.000Z → 2026-10-14T22:16:00.000Z
-- [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)
-  - Updated: 2026-09-18T22:15:00.000Z → 2026-10-14T22:16:00.000Z
-- [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-jailbreak)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-10-14T22:16:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new)
+  - Updated: 2025-11-11T06:03:00.000Z → 2026-10-22T22:16:00.000Z
 
 ## Classified Pages
 
@@ -138,5 +134,5 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [REST API samples in C#](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-rest) | 0.20 | Code samples via REST; summary does not show specific configuration parameters, limits, or error codes. |
 | [Using the client library or REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/client-libraries) | 0.20 | Client library quickstart; summary is conceptual and does not expose product-specific configuration tables or limits. |
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | High-level overview and deprecation notice for Content Moderator; no specific limits, configs, or error details. |
+| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.20 | Release notes / what's-new page summarizing recent features and updates; no clear evidence of detailed limits, configuration tables, error codes, or other structured expert knowledge as defined by the sub-skill types. |
 | [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.10 | Page is a high-level overview of Azure AI Content Safety describing what the service does and its capabilities, without specific limits, configuration parameters, error codes, or detailed decision matrices. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.10 | Release notes/what’s new index without detailed technical tables or configs in the summary; treated as navigation/update listing. |

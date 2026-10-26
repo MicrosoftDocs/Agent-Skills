@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-09'
+generated_at: '2026-10-25'
 category_descriptions:
   security: 'Security and compliance for Face and liveness: abuse monitoring, token-based
     access control, network isolation, encryption/CMK, shared responsibility, and
@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 31
+- **Updated Pages**: 1
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-face/azure-face.csv`
 
@@ -60,6 +60,11 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 14 | 45.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Face documentation](https://learn.microsoft.com/en-us/azure/ai-services/face/face-index)
+  - Updated: 2026-06-05T22:11:00Z → 2026-10-19T22:12:00Z
 
 ## Classified Pages
 
@@ -99,5 +104,5 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | [Face recognition data structures](https://learn.microsoft.com/en-us/azure/ai-services/face/concept-face-recognition-data-structures) | 0.30 | Conceptual overview of recognition data structures; no numeric thresholds or configuration tables mentioned. |
 | [Verify a user](https://learn.microsoft.com/en-us/azure/ai-services/face/use-case-identity-verification) | 0.30 | Use-case overview for verification; primarily scenario description without detailed technical limits or configs. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/face/whats-new-face) | 0.20 | What's new/change log; typically feature summaries without detailed limits, configs, or troubleshooting mappings. |
+| [Azure Face documentation](https://learn.microsoft.com/en-us/azure/ai-services/face/face-index) | 0.10 | Page is a high-level service overview/index for Azure Face with quickstarts and tutorials; it does not expose specific limits, configuration tables, error codes, or other detailed expert-only data. |
 | [What is Azure Face?](https://learn.microsoft.com/en-us/azure/ai-services/face/overview-identity) | 0.10 | Service overview and eligibility info; lacks numeric limits, config tables, or error codes. |
-| [Azure Face documentation](https://learn.microsoft.com/en-us/azure/ai-services/face/face-index) | - | Documentation index/overview page; no detailed limits, configs, or error mappings. |

@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using NoSQL/Mongo/Cassandra/Gremlin/PostgreSQL APIs, change feed, vector search, multi-region HA, or bulk ops, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L87 | Diagnosing and fixing Cosmos DB issues across APIs and SDKs: connection and timeout errors, RU/latency problems, encryption/CMK and replication issues, and advanced diagnostics/log queries. |
-| Best Practices | L88-L140 | Performance, scaling, partitioning, RU/cost optimization, SDK usage, change feed, resilience/DR, and best practices for Cosmos DB APIs (NoSQL, MongoDB, Cassandra, PostgreSQL, vector). |
-| Decision Making | L141-L191 | Guides for choosing Cosmos DB deployment, scaling, consistency, backup, pricing, and migration options across SQL, MongoDB, Cassandra, Table, and PostgreSQL APIs. |
-| Architecture & Design Patterns | L192-L217 | Patterns and reference architectures for AI agents, change feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL. |
-| Limits & Quotas | L218-L252 | Limits, quotas, and behaviors for Cosmos DB throughput, partitions, backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache, and PostgreSQL clusters. |
-| Security | L253-L319 | Securing Cosmos DB across APIs (NoSQL, MongoDB, Cassandra, Gremlin, Table, PostgreSQL): identity/RBAC, networking, encryption/CMK, auditing, policies, TLS, data masking, and Defender protections. |
-| Configuration | L320-L448 | Configuring and tuning Cosmos DB and its APIs (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL): throughput, indexing, backup/restore, fleets, monitoring, SDK performance, emulators, and alerts. |
+| Best Practices | L88-L141 | Performance, cost, partitioning, and resilience best practices for Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including SDK tuning, RU optimization, change feed, autoscale, and vector search. |
+| Decision Making | L142-L192 | Guides for choosing Cosmos DB deployment, scaling, consistency, backup, pricing, and migration options across SQL, MongoDB, Cassandra, Table, and PostgreSQL APIs. |
+| Architecture & Design Patterns | L193-L218 | Patterns and reference architectures for AI agents, change feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL. |
+| Limits & Quotas | L219-L253 | Limits, quotas, and behaviors for Cosmos DB throughput, partitions, backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache, and PostgreSQL clusters. |
+| Security | L254-L320 | Securing Cosmos DB across APIs (NoSQL, MongoDB, Cassandra, Gremlin, PostgreSQL, Table): identity/RBAC, networking, encryption/CMK, auditing, Defender, policies, TLS, and compliance. |
+| Configuration | L321-L448 | Configuring and tuning Cosmos DB and its APIs (NoSQL, Mongo, Cassandra, Gremlin, PostgreSQL): throughput, indexing, backup/restore, fleets, monitoring, SDK performance, emulators, and alerts. |
 | Integrations & Coding Patterns | L449-L572 | SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo, Gremlin, and PostgreSQL APIs. |
 | Deployment | L573-L598 | Deploying and migrating Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL, Table) using Bicep, ARM, Terraform, CI/CD, emulator, AKS, and handling upgrades, restores, and maintenance. |
 
@@ -133,6 +133,7 @@ This skill requires **network access** to fetch documentation content:
 | Estimate and manage Cosmos DB request units | https://learn.microsoft.com/en-us/azure/cosmos-db/request-units |
 | Apply best practices for scaling Cosmos DB throughput | https://learn.microsoft.com/en-us/azure/cosmos-db/scaling-provisioned-throughput-best-practices |
 | Design synthetic partition keys in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/synthetic-partition-keys |
+| Choose and configure Cosmos DB Spark throughput control | https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-control-spark |
 | Optimize Cosmos DB request unit consumption | https://learn.microsoft.com/en-us/azure/cosmos-db/understand-request-unit-consumption |
 | Optimize Azure Managed Cassandra performance | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/best-practice-performance |
 | Apply resilience best practices to Cassandra apps | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/resilient-applications |
@@ -434,7 +435,6 @@ This skill requires **network access** to fetch documentation content:
 | Create and configure containers in Azure Cosmos DB for Table | https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-create-container |
 | Configure throughput buckets for shared Cosmos DB containers | https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-buckets |
 | Configure throughput control groups in Cosmos DB Java SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-control-java |
-| Configure throughput control in Azure Cosmos DB Spark connector | https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-control-spark |
 | Configure Cosmos DB time-to-live for automatic expiry | https://learn.microsoft.com/en-us/azure/cosmos-db/time-to-live |
 | Tune Java v4 Cosmos DB connection configuration | https://learn.microsoft.com/en-us/azure/cosmos-db/tune-connection-configurations-java-sdk-v4 |
 | Tune Azure Cosmos DB .NET SDK v3 connection settings | https://learn.microsoft.com/en-us/azure/cosmos-db/tune-connection-configurations-net-sdk-v3 |

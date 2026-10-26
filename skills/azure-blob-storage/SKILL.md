@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using tiers/archival, NFS/SFTP, BlobFuse, Storage Mover, SAS/RBAC auth, or static website hosting, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using tiers/archival, NFS/SFTP/BlobFuse mounts, immutability/WORM, lifecycle policies, or Storage Mover, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -24,21 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L49 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover errors, networking and job codes, BlobFuse/BlobFuse2 mounts and I/O, metrics/logging quirks, NFS 3.0, and SFTP limitations. |
-| Best Practices | L50-L85 | Performance, reliability, and cost-optimization guidance for Azure Blob/Data Lake: access tiers, lifecycle, hot partitions, NFS/SFTP, client tuning, retries, monitoring, and backup best practices. |
+| Troubleshooting | L36-L49 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover networking/jobs, BlobFuse/BlobFuse2 mounts and I/O, metrics/logging anomalies, NFS 3.0 problems, and SFTP limitations/errors. |
+| Best Practices | L50-L85 | Performance, cost, and reliability best practices for Azure Blob/Data Lake: access tiers, lifecycle, partitioning, concurrency, retries, client tuning, NFS/SFTP, monitoring, events, and backups. |
 | Decision Making | L86-L115 | Cost, pricing, and architecture guidance for Azure Blob and related storage: tiers, archive, networking, migrations, tools, reserved capacity, and feature tradeoffs (e.g., SFTP, soft delete, BlobFuse). |
 | Limits & Quotas | L116-L134 | Limits, quotas, performance, and known issues for Blob Storage features (tiers, lifecycle, replication, NFS/SFTP, static sites, premium accounts, tools like BlobFuse and Storage Mover). |
 | Security | L135-L196 | Securing Blob Storage: identity-based access (RBAC/ABAC), SAS tokens, SFTP, networking, anonymous access, encryption (CSE, CPK, scopes), ACLs, WORM, and security best practices. |
-| Configuration | L197-L252 | Configuring Blob Storage and related tools: monitoring, lifecycle, immutability, networking, NFS, restore, BlobFuse, Storage Mover, and third‑party backup/migration integrations. |
-| Integrations & Coding Patterns | L253-L379 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: mounting, copying/migrating data, managing containers/blobs (leases, metadata, tiers, SAS, tags), and querying/analyzing inventory data. |
-| Deployment | L380-L392 | Guides for deploying static websites on Blob Storage, enabling Data Lake features, and migrating data from on-prem, AWS, and third‑party NAS solutions into Azure Storage. |
+| Configuration | L197-L253 | Configuring Blob Storage monitoring, lifecycle, networking, mounts (BlobFuse/NFS), immutability, versioning, inventory, and third‑party backup/migration tools, plus Storage Mover and Discovery setup. |
+| Integrations & Coding Patterns | L254-L380 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: mounting, copying/migrating data, managing containers/blobs (leases, metadata, tiers, SAS, tags), and querying/analyzing inventory data. |
+| Deployment | L381-L394 | Guides for deploying and migrating data and static sites with Blob Storage: Storage Discovery setup, HDFS/Hadoop migrations, static website deployment (GitHub/Terraform), and partner tools (NetApp, Nasuni, Tiger Bridge). |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot common Azure storage task issues | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-troubleshooting |
 | Troubleshoot Azure Storage Mover agent networking | https://learn.microsoft.com/en-us/azure/storage-mover/network-troubleshooting |
-| Use Storage Mover release notes for known issues | https://learn.microsoft.com/en-us/azure/storage-mover/release-notes |
+| Diagnose issues using Azure Storage Mover release notes | https://learn.microsoft.com/en-us/azure/storage-mover/release-notes |
 | Resolve Azure Storage Mover AZSM job error codes | https://learn.microsoft.com/en-us/azure/storage-mover/status-code |
 | Generate and analyze Azure Storage Mover support bundles | https://learn.microsoft.com/en-us/azure/storage-mover/troubleshooting |
 | Diagnose and resolve common BlobFuse2 issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-faq |
@@ -51,7 +51,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Apply best practices for Azure Storage Tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-best-practices |
-| Apply deployment best practices for Azure Storage Discovery | https://learn.microsoft.com/en-us/azure/storage-discovery/deployment-planning |
+| Analyze Azure Blob capacity details with advanced insights | https://learn.microsoft.com/en-us/azure/storage-discovery/analyze-blob-capacity-details |
 | Model Azure Storage Mover resources for migrations | https://learn.microsoft.com/en-us/azure/storage-mover/resource-hierarchy |
 | Best practices for choosing and managing blob access tiers | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-best-practices |
 | Blob inventory performance tuning and best practices | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-inventory-performance-characteristics |
@@ -202,7 +202,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure JSON conditions for Azure storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions |
 | Define JSON operations for Azure storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-operations |
 | Reference monitoring data for Azure Storage Actions | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-tasks-monitor-data-reference |
-| Configure Azure Storage Discovery workspace scopes and reporting | https://learn.microsoft.com/en-us/azure/storage-discovery/create-workspace |
+| Configure Blob prefixes for Azure Storage Discovery analysis | https://learn.microsoft.com/en-us/azure/storage-discovery/configure-blob-storage-prefixes |
+| Configure and manage Azure Storage Discovery workspaces | https://learn.microsoft.com/en-us/azure/storage-discovery/create-workspace |
 | Deploy a Storage Discovery workspace using Bicep | https://learn.microsoft.com/en-us/azure/storage-discovery/create-workspace-bicep |
 | Deploy and configure Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/agent-deploy |
 | Deploy and configure Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/agent-deploy |
@@ -380,6 +381,7 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Plan and design Azure Storage Discovery deployments | https://learn.microsoft.com/en-us/azure/storage-discovery/deployment-planning |
 | Move Storage Discovery workspaces across Azure scopes | https://learn.microsoft.com/en-us/azure/storage-discovery/resource-move |
 | Migrate on-premises HDFS data to Azure Storage using Data Box | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster |
 | Migrate Hadoop data to Azure Data Lake Storage with WANdisco LiveData | https://learn.microsoft.com/en-us/azure/storage/blobs/migrate-gen2-wandisco-live-data-platform |

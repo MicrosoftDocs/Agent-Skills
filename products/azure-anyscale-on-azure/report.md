@@ -37,10 +37,10 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Kuber
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 11
-- **Updated Pages**: 3
-- **Unchanged**: 0
-- **Deleted Pages**: 10
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 14
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anyscale-on-azure/azure-anyscale-on-azure.csv`
 
 ## Classification Statistics
@@ -55,42 +55,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Kuber
 | *(Unclassified)* | 7 | 50.0% |
 
 ## Changes
-
-### New Pages
-
-- [What is Anyscale on Azure](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/overview)
-- [Deploy to AKS](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/quickstart-azure-cli)
-- [Control and data plane architecture](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/architecture)
-- [Networking and traffic flows](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking)
-- [Configure Private Link](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-private-link)
-- [Identity, SSO, and access](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/identity-access)
-- [Create workloads through Azure Resource Manager](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/create-workloads-arm)
-- [Add a cloud resource with ARM](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/add-cloud-resource)
-- [Get support](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/support-model)
-- [Regions and availability](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/supported-regions)
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/faq)
-
-### Updated Pages
-
-- [Configure container image builds](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-container-image-builds)
-  - Updated: 2026-09-18T22:09:00.000Z → 2026-10-07T13:59:00.000Z
-- [Cloud resources](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/cloud-resources-overview)
-  - Updated: 2026-09-18T22:09:00.000Z → 2026-10-05T08:00:00.000Z
-- [Terms and privacy](https://learn.microsoft.com/en-us/azure/anyscale-on-azure/legal)
-  - Updated: 2026-06-02T19:03:00.000Z → 2026-10-07T13:59:00.000Z
-
-### Deleted Pages
-
-- ~~Add a cloud resource~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/add-cloud-resource)
-- ~~Architecture overview~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/architecture)
-- ~~Private Link~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/configure-private-link)
-- ~~FAQ~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/faq)
-- ~~Identity and access~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/identity-access)
-- ~~Networking~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/networking)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/overview)
-- ~~Quickstart~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/quickstart-azure-cli)
-- ~~Support model~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/support-model)
-- ~~Supported regions~~ (https://learn.microsoft.com/en-us/azure/anyscale-on-azure/supported-regions)
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using DPS provisioning, device twins/jobs, routing/enrichments, Device Update, or IoT Hub messaging APIs, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using IoT Hub/DPS provisioning, device twins, routing, direct methods, or Device Update workloads, and other Azure IoT Hub related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Hub Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L53 | Diagnosing and fixing IoT Hub, DPS, and Device Update issues: connectivity, routing, provisioning errors, error codes, and collecting/using device and service diagnostic logs. |
-| Best Practices | L54-L61 | Best practices for secure, scalable IoT Hub/DPS deployments: device provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection, auto device config, and IoT Hub hardening. |
+| Best Practices | L54-L61 | Best practices for large-scale DPS provisioning, OEM device security, resilient device reconnection patterns, and automatic device configuration in Azure IoT Hub. |
 | Decision Making | L62-L74 | Guidance for choosing IoT Hub vs alternatives, DR usage, routing options, C2D/D2C patterns, pricing and tiers, and methods for monitoring device connections. |
 | Architecture & Design Patterns | L75-L81 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
 | Limits & Quotas | L82-L88 | Limits, quotas, and throttling for IoT Hub, Device Provisioning Service, and Device Update, including per‑service caps, scaling behavior, and what happens when limits are exceeded. |
 | Security | L89-L127 | Securing IoT Hub, DPS, and Device Update: auth (Entra, RBAC, SAS, X.509), certificates/keys, TLS/ciphers, IP/VNet/private endpoints, outbound/DLP, and security best practices/policies. |
 | Configuration | L128-L159 | Configuring IoT Hub and DPS behavior: device/module twins, jobs, messaging, routing, enrichments, protocols, IPs/endpoints, Device Update manifests, file upload, and monitoring settings. |
 | Integrations & Coding Patterns | L160-L184 | Device-to-cloud integration patterns: DPS provisioning (HTTPS/MQTT, symmetric/X.509/TPM), IoT Hub messaging, twins, direct methods, file upload, modules, bulk ops, and protocol usage. |
-| Deployment | L185-L199 | Deploying and updating IoT devices and IoT Hub: Device Update setup/agents, delta/image/package updates, failover, platform support, migrations, and job scheduling. |
+| Deployment | L185-L198 | Deploying and updating IoT devices and IoT Hub: Device Update setup/agents, delta/image/package updates, failover, platform support, migrations, and job scheduling. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -56,7 +56,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply DPS best practices for large-scale IoT deployments | https://learn.microsoft.com/en-us/azure/iot-dps/concepts-deploy-at-scale |
 | Implement OEM security practices for DPS-enabled devices | https://learn.microsoft.com/en-us/azure/iot-dps/concepts-device-oem-security-practices |
-| Design resilient Azure IoT Hub device reconnection | https://learn.microsoft.com/en-us/azure/iot-hub/concepts-manage-device-reconnections |
+| Implement resilient device reconnection for Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-hub/concepts-manage-device-reconnections |
 | Apply IoT Hub automatic device configuration best practices | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-configuration-best-practices |
 
 ### Decision Making
@@ -193,7 +193,6 @@ This skill requires **network access** to fetch documentation content:
 | Use regional failover mappings for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-region-mapping |
 | Deploy package-based Device Update with Ubuntu agent | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-ubuntu-agent |
 | Check supported platforms for Device Update | https://learn.microsoft.com/en-us/azure/iot-hub-device-update/support |
-| Deploy IoT Hub with Device Registry and X.509 | https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup |
 | Manually migrate Azure IoT Hub across regions or SKUs | https://learn.microsoft.com/en-us/azure/iot-hub/migrate-hub-arm |
 | Migrate Azure IoT Hub using Azure CLI state commands | https://learn.microsoft.com/en-us/azure/iot-hub/migrate-hub-state-cli |
 | Schedule IoT Hub jobs for device groups using Azure CLI | https://learn.microsoft.com/en-us/azure/iot-hub/schedule-jobs-cli |

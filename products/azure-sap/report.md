@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 - **Unclassified**: 41
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 227
+- **Unchanged**: 228
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -76,10 +76,6 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 | *(Unclassified)* | 41 | 18.0% |
 
 ## Changes
-
-### New Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/faq)
 
 ## Classified Pages
 

@@ -55,9 +55,9 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 160
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 164
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
 ## Classification Statistics
@@ -76,21 +76,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 55 | 33.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [High-frequency trading](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-high-frequency-trading)
-  - Updated: 2026-06-02T20:30:00.000Z → 2026-10-13T22:18:00.000Z
-- [Visualize fraudulent calls in Power BI](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-real-time-fraud-detection)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-10-13T22:18:00.000Z
-- [Integrate third party services using Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-with-azure-functions)
-  - Updated: 2026-04-29T08:00:00.000Z → 2026-10-13T22:18:00.000Z
-- [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-output)
-  - Updated: 2023-05-23T14:25:00.000Z → 2026-10-13T22:18:00.000Z
-
-### Deleted Pages
-
-- ~~Toll booth sensor data analysis~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics)
 
 ## Classified Pages
 

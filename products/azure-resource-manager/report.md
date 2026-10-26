@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 - **Unclassified**: 119
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 491
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 495
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -76,19 +76,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Polic
 | *(Unclassified)* | 119 | 24.0% |
 
 ## Changes
-
-### New Pages
-
-- [Noise reduction](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if-noise-reduction)
-
-### Updated Pages
-
-- [What-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks-what-if)
-  - Updated: 2026-08-14T05:11:00.000Z → 2026-10-07T17:13:00.000Z
-- [Resource quota exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-resource-quota)
-  - Updated: 2025-04-28T08:00:00.000Z → 2026-10-12T22:13:00.000Z
-- [What are Azure Service Groups?](https://learn.microsoft.com/en-us/azure/governance/service-groups/overview)
-  - Updated: 2026-05-26T22:16:00.000Z → 2026-10-15T22:12:00.000Z
 
 ## Classified Pages
 

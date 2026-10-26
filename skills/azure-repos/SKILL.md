@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies/PR checks, TFVC→Git migrations, large files, or security scanning, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies/PR checks, CodeQL/secret scanning, ELM sync, or TFVC→Git migrations, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L77-L85 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
 | Limits & Quotas | L86-L93 | Repo size and usage limits, ELM (Enterprise Lifecycle Management) sync timing/windows, and billing/licensing details for GitHub Advanced Security in Azure Repos |
 | Security | L94-L122 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, credential managers, Xcode), permissions/branch locks, secure imports, and GitHub Advanced Security scanning and policies. |
-| Configuration | L123-L155 | Configuring Azure Repos/TFVC behavior: branch policies, PR checks/notifications, Git/VS settings, Copilot/CodeQL/security scanning, and TFVC check-in policies, workspaces, and project settings. |
-| Integrations & Coding Patterns | L156-L207 | Integrating Azure Repos with CLIs, automation, and collaboration tools (Slack/Teams), plus detailed TFVC and Git command usage, branch policies, PR status servers, and SARIF scanner integration. |
+| Configuration | L123-L156 | Configuring Azure Repos/TFVC: branch policies, PR checks/notifications, Copilot reviews, security/CodeQL/secret scanning, Git/VS settings, and TFVC check-in policies, workspaces, and project options |
+| Integrations & Coding Patterns | L157-L208 | Integrating Azure Repos with CLIs, automation, and collaboration tools (Slack/Teams), plus detailed TFVC and Git command usage, branch policies, PR status servers, and SARIF scanner integration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -129,6 +129,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Repos Git branch policies | https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops |
 | Use Visual Studio Git commands and Azure DevOps integration | https://learn.microsoft.com/en-us/azure/devops/repos/git/command-prompt?view=azure-devops |
 | Configure Copilot code review instructions and agent skills | https://learn.microsoft.com/en-us/azure/devops/repos/git/configure-copilot-code-review-instructions?view=azure-devops |
+| Configure GitHub Copilot code reviews in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops |
 | Configure Git preferences and config files in Visual Studio | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-config?view=azure-devops |
 | Configure external status branch policies in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/pr-status-policy?view=azure-devops |
 | Configure Azure Repos pull request notification subscriptions | https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-notifications?view=azure-devops |

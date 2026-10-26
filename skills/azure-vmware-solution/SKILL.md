@@ -3,7 +3,7 @@ name: azure-vmware-solution
 description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVS networking/vSAN, HCX migrations, Horizon/VDI, JetStream DR, or AVS–Azure service integrations, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Red Hat OpenShift (use azure-redhat-openshift), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VMware Solution Skill

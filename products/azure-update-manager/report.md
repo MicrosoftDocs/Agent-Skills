@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-10-25'
 category_descriptions:
   deployment: 'Deploying and managing Automanage/Update Manager at scale: onboarding
-    VMs/Arc servers, upgrading profiles, cross-region moves, tenant repairs, Azure
-    Policy deployment, and supported OS/update sources.'
+    VMs/Arc, moving configs/VMs across regions, upgrading/repairing setups, enabling
+    via Policy, and supported OS/update sources.'
   best-practices: Best practices for configuring Automanage and guest patching on
     Windows/Linux/Arc VMs, handling SQL Server and Ubuntu/Ubuntu Pro updates, and
     managing SMB over QUIC in Update Manager.
@@ -25,32 +25,31 @@ category_descriptions:
     migrating patch management from Configuration Manager to Azure Update Manager
 skill_description: Expert knowledge for Azure Update Manager development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when onboarding VMs/Arc servers,
-  configuring patch schedules/ESU, using SDK/REST APIs, or integrating runbooks/webhooks,
-  and other Azure Update Manager related development tasks. Not for Azure Automation
-  (use azure-automation), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor),
+  integrations & coding patterns, and deployment. Use when onboarding VMs/Arc, configuring
+  update schedules/ESU, automating via SDK/REST, or migrating from ConfigMgr, and
+  other Azure Update Manager related development tasks. Not for Azure Automation (use
+  azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy),
   Azure Site Recovery (use azure-site-recovery).
-use_when: Use when onboarding VMs/Arc servers, configuring patch schedules/ESU, using
-  SDK/REST APIs, or integrating runbooks/webhooks, and other Azure Update Manager
-  related development tasks.
-confusable_not_for: Not for Azure Automation (use azure-automation), Azure Policy
-  (use azure-policy), Azure Monitor (use azure-monitor), Azure Site Recovery (use
-  azure-site-recovery).
+use_when: Use when onboarding VMs/Arc, configuring update schedules/ESU, automating
+  via SDK/REST, or migrating from ConfigMgr, and other Azure Update Manager related
+  development tasks.
+confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monitor
+  (use azure-monitor), Azure Policy (use azure-policy), Azure Site Recovery (use azure-site-recovery).
 ---
 # Azure Update Manager Crawl Report
 
 ## Summary
 
-- **Total Pages**: 84
-- **Fetched**: 84
+- **Total Pages**: 85
+- **Fetched**: 85
 - **Fetch Failed**: 0
 - **Classified**: 54
-- **Unclassified**: 30
+- **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
@@ -58,17 +57,28 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 7 | 8.3% |
-| configuration | 16 | 19.0% |
+| best-practices | 7 | 8.2% |
+| configuration | 16 | 18.8% |
 | decision-making | 2 | 2.4% |
-| deployment | 11 | 13.1% |
-| integrations | 9 | 10.7% |
-| limits-quotas | 4 | 4.8% |
+| deployment | 11 | 12.9% |
+| integrations | 9 | 10.6% |
+| limits-quotas | 4 | 4.7% |
 | security | 2 | 2.4% |
-| troubleshooting | 3 | 3.6% |
-| *(Unclassified)* | 30 | 35.7% |
+| troubleshooting | 3 | 3.5% |
+| *(Unclassified)* | 31 | 36.5% |
 
 ## Changes
+
+### New Pages
+
+- [Enable Periodic Assessment for Azure Virtual Machine Scale Sets Uniform](https://learn.microsoft.com/en-us/azure/update-manager/enable-periodic-assessment-azure-virtual-machine-scale-sets-uniform)
+
+### Updated Pages
+
+- [What's New](https://learn.microsoft.com/en-us/azure/update-manager/whats-new)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-10-22T11:45:00.000Z
+- [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates)
+  - Updated: 2026-05-19T17:12:00.000Z → 2026-10-22T11:45:00.000Z
 
 ## Classified Pages
 
@@ -87,7 +97,7 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | [Access Azure Update Manager operations data using Azure Resource Graph](https://learn.microsoft.com/en-us/azure/update-manager/query-logs) | configuration | 0.70 | Explains how operations data is stored and accessed in Resource Graph, likely including specific resource types, properties, and query patterns unique to Update Manager. |
 | [Automate assessment at scale using Policy](https://learn.microsoft.com/en-us/azure/update-manager/periodic-assessment-at-scale) | configuration | 0.70 | Describes a specific machine setting and its behavior (fetches updates every 24 hours) and how to configure it at scale via policy—product-specific configuration detail. |
 | [Change a workspace and configure Data Collection Rule](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/tutorial-change-workspace-configure-data-collection-rule) | configuration | 0.70 | Changing workspace and configuring DCRs involves specific rule settings and parameters, fitting configuration criteria. |
-| [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates) | deployment | 0.70 | Support matrix pages list exactly which OS versions, environments, and features (one-time updates, periodic assessments, scheduled patching) are supported or unsupported. This is product- and version-specific expert knowledge that changes over time and is not reliably known from training. It functions as a deployment/supportability matrix for where Update Manager can be used. |
+| [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates) | deployment | 0.70 | A support matrix for updates and scheduled patching is effectively a deployment/supportability matrix. These matrices typically list which OS versions, environments (Azure VMs, Arc, on-prem), and scenarios (one-time updates, periodic assessments, scheduled patching) are supported or not, which is product-specific expert knowledge that changes over time and isn't reliably known from training. This aligns best with the deployment category’s focus on platform/tier support matrices and constraints by environment. |
 | [Create alerts (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-alerts) | configuration | 0.70 | Explains how to enable alerts (preview) based on updates data; likely includes specific alert rules, conditions, and configuration parameters. |
 | [Create custom profile](https://learn.microsoft.com/en-us/azure/automanage/virtual-machines-custom-profile) | configuration | 0.70 | Creating custom profiles involves selecting services and settings; article likely lists specific configuration options and allowed values. |
 | [Create pre and post events](https://learn.microsoft.com/en-us/azure/update-manager/pre-post-events-schedule-maintenance-configuration) | configuration | 0.70 | Provides concrete steps and settings to define pre/post events tied to maintenance configurations, which are specific configuration options. |
@@ -154,12 +164,13 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Polic
 | [Check VM status](https://learn.microsoft.com/en-us/azure/automanage/overview-vm-status) | 0.30 | Explains VM status concepts; likely procedural UI steps without expert-only limits, configs, or troubleshooting mappings. |
 | [Configuration profiles](https://learn.microsoft.com/en-us/azure/automanage/overview-configuration-profiles) | 0.30 | Conceptual description of configuration profiles; summary doesn’t indicate detailed settings tables or product-specific patterns. |
 | [Disable Azure Automanage](https://learn.microsoft.com/en-us/azure/automanage/how-to-disable-automanage) | 0.30 | How-to disable Automanage; mostly procedural without detailed configuration matrices, limits, or troubleshooting codes. |
+| [Enable Periodic Assessment for Azure Virtual Machine Scale Sets Uniform](https://learn.microsoft.com/en-us/azure/update-manager/enable-periodic-assessment-azure-virtual-machine-scale-sets-uniform) | 0.30 | The page is a how-to guide describing steps to enable periodic assessment for VM Scale Sets with Uniform orchestration. From the summary, it appears to be procedural tutorial content without explicit configuration parameter tables, limits, error codes, or support matrices. It doesn’t clearly expose unique numeric limits, configuration ranges, or troubleshooting mappings, so it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
 | [July 2025](https://learn.microsoft.com/en-us/azure/update-manager/arc-enabled-vm-extensions) | 0.30 | Release notes and known issues are product-specific but typically list changes, fixes, and OS support without structured limits, configs, or error-code troubleshooting mappings. |
 | [Manage Hotpatches on Arc-Enabled Machines (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-hot-patching-arc-machines) | 0.30 | The hotpatching article appears to be a how-to/tutorial style guide on managing hotpatches on Arc-enabled machines, without clear indication of detailed configuration tables, limits, or error-code-based troubleshooting. From the summary, it focuses on explaining how to install hotpatches and create schedules, which is generic procedural content rather than expert-knowledge configuration matrices or constraints. |
 | [Update options and orchestration](https://learn.microsoft.com/en-us/azure/update-manager/updates-maintenance-schedules) | 0.30 | Marked as an overview of update and maintenance options; likely conceptual orchestration explanation without detailed config or limits. |
-| [What's New](https://learn.microsoft.com/en-us/azure/update-manager/whats-new) | 0.30 | What's new/release notes; mostly feature announcements, not structured troubleshooting, limits, or configuration matrices. |
 | [About Azure Update Manager](https://learn.microsoft.com/en-us/azure/update-manager/overview) | 0.20 | Overview of Azure Update Manager features and benefits; conceptual without detailed limits or configuration tables. |
 | [Enable Azure Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory) | 0.20 | Quickstart focused on enabling Change Tracking and Inventory via the Azure portal; primarily step-by-step UI instructions without detailed configuration parameter tables, limits, error codes, or product-specific best-practice guidance. Does not meet thresholds for limits, configuration, troubleshooting, or other expert sub-skill types. |
 | [Enable on VMs in the Azure portal](https://learn.microsoft.com/en-us/azure/automanage/quick-create-virtual-machines-portal) | 0.20 | Quickstart for enabling Automanage via portal; mostly step-by-step UI instructions without deep configuration matrices or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/automanage/faq) | 0.20 | FAQ page description suggests general Q&A and support guidance without clear indication of numeric limits, configuration tables, error-code mappings, or other product-specific expert details as defined by the sub-skill types. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.20 | Page is an overview of Azure Change Tracking and Inventory using Azure Monitor Agent, describing capabilities and high-level usage. The summary does not indicate presence of specific limits, configuration parameter tables, error codes, or detailed troubleshooting/decision matrices. Aside from a version recommendation for the Change Tracking extension (2.20.0.0 or later), it lacks the kind of product-specific numeric limits, settings, or diagnostic mappings required for expert-knowledge classification. |
+| [What's New](https://learn.microsoft.com/en-us/azure/update-manager/whats-new) | 0.20 | Release notes / what's new page summarizing recent features and changes; does not primarily provide limits, configuration tables, troubleshooting mappings, or other structured expert details as defined by the sub-skill types. |

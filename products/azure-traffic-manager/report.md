@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-08-16'
+generated_at: '2026-10-25'
 category_descriptions:
   configuration: Configuring Traffic Manager profiles, routing methods (weighted,
     geographic, subnet, MultiValue, nested), endpoints, monitoring/logs, and IaC setup
@@ -41,13 +41,13 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 - **Total Pages**: 46
 - **Fetched**: 46
 - **Fetch Failed**: 0
-- **Classified**: 28
-- **Unclassified**: 18
+- **Classified**: 27
+- **Unclassified**: 19
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 46
+- **Updated Pages**: 4
+- **Unchanged**: 42
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
 
@@ -57,14 +57,25 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 |------|-------|------------|
 | architecture-patterns | 4 | 8.7% |
 | best-practices | 1 | 2.2% |
-| configuration | 16 | 34.8% |
+| configuration | 15 | 32.6% |
 | decision-making | 2 | 4.3% |
 | integrations | 2 | 4.3% |
 | security | 1 | 2.2% |
 | troubleshooting | 2 | 4.3% |
-| *(Unclassified)* | 18 | 39.1% |
+| *(Unclassified)* | 19 | 41.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Traffic Manager?](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
+- [Endpoint types](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
+- [Strictly typed profiles](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-strictly-typed-profiles)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
+- [FAQs](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-faqs)
+  - Updated: 2026-06-01T08:00:00.000Z → 2026-10-05T08:00:00.000Z
 
 ## Classified Pages
 
@@ -89,7 +100,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Manage endpoints](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-manage-endpoints) | configuration | 0.65 | Explains adding, disabling, and moving endpoints; likely includes endpoint property options and behaviors specific to Traffic Manager. |
 | [Measure Traffic Manager performance](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-performance-considerations) | best-practices | 0.65 | Discusses performance considerations and how to test; likely includes concrete recommendations and scenarios specific to Traffic Manager behavior under failover. |
 | [Nested Traffic Manager profiles](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-nested-profiles) | architecture-patterns | 0.65 | Explains how and when to nest profiles to combine routing methods; describes product-specific architectural patterns for complex routing scenarios. |
-| [Strictly typed profiles](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-strictly-typed-profiles) | configuration | 0.65 | Explains the Strictly Typed Profiles feature, including how to set profile types and constraints (e.g., type cannot be changed once set) for linked records. This is product-specific configuration behavior not generally known, though it likely lacks numeric limits. |
 | [Combine load balancing services](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-load-balancing-azure) | architecture-patterns | 0.60 | Tutorial combining Traffic Manager, Application Gateway, and Load Balancer; provides product-specific architectural patterns and when to use each service together. |
 | [Control traffic with weighted endpoints](https://learn.microsoft.com/en-us/azure/traffic-manager/tutorial-traffic-manager-weighted-endpoint-routing) | configuration | 0.60 | Includes the specific allowed weight range (1–1000) and how weights affect routing, which is a concrete product-specific configuration constraint. |
 | [Create a Traffic Manager profile - Terraform](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile-terraform) | configuration | 0.60 | Terraform configuration for Traffic Manager with HCL resource blocks and arguments; contains product-specific configuration fields and values. |
@@ -106,9 +116,10 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Configure performance routing in Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-configure-performance-routing-method) | 0.40 | Performance routing configuration article appears conceptual with basic steps; summary does not indicate detailed parameter tables or numeric thresholds. |
 | [Configure subnet override - Azure CLI](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-subnet-override-cli) | 0.40 | Describes the subnet override feature conceptually and how traffic is directed based on source IP ranges; likely a feature explanation/tutorial without detailed configuration parameter tables, limits, or troubleshooting matrices that would qualify as expert knowledge. |
 | [Real User Measurements](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-rum-overview) | 0.40 | RUM overview; mostly conceptual explanation of how measurements work, not a detailed config or troubleshooting reference. |
-| [FAQs](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-faqs) | 0.30 | FAQ page likely covers common questions at a high level; summary does not indicate presence of specific limits, configuration parameters, or troubleshooting mappings. Without explicit evidence of such details, it should not be classified. |
+| [FAQs](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-faqs) | 0.30 | FAQ format likely covers common questions but, based on the summary, does not clearly expose specific numeric limits, configuration matrices, or detailed error-code troubleshooting required for expert-knowledge classification. |
 | [IPv6 and DNS record types](https://learn.microsoft.com/en-us/azure/traffic-manager/dns-record-types) | 0.30 | Explains supported DNS record types (A, AAAA, CNAME) and IPv6/IPv4 support. This is largely conceptual and descriptive; it doesn’t appear to provide product-specific limits, configuration parameter tables, or decision matrices beyond standard DNS behavior. |
 | [Route traffic based on user's subnet](https://learn.microsoft.com/en-us/azure/traffic-manager/tutorial-traffic-manager-subnet-routing) | 0.30 | Subnet routing tutorial; mainly scenario and portal steps, likely without detailed parameter tables or numeric constraints. |
+| [Strictly typed profiles](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-strictly-typed-profiles) | 0.30 | Explains the Strictly Typed Profiles feature and behavior conceptually; no detailed configuration parameter tables, numeric thresholds, or error-code-based troubleshooting content. |
 | [Use Azure PowerShell to manage Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-powershell-arm) | 0.30 | Appears to be a general how-to for managing Traffic Manager via Azure PowerShell/ARM with no indication of detailed configuration tables, limits, or product-specific error mappings; more of a usage/tutorial page than expert reference content. |
 | [Distribute traffic to a set of endpoints](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-configure-weighted-routing-method) | 0.25 | Tutorial for weighted routing; describes concept and steps but not deep config matrices or limits beyond generic behavior. |
 | [Route traffic based on geographic location of endpoint](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-configure-geographic-routing-method) | 0.25 | How-to tutorial for geographic routing; focuses on portal steps rather than detailed configuration tables or thresholds. |
@@ -117,7 +128,7 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Create a Traffic Manager profile - Azure CLI](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile-cli) | 0.20 | Quickstart for creating a Traffic Manager profile via Azure CLI. Similar to index 0, it focuses on basic setup steps and does not include detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Create a Traffic Manager profile - Portal](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile) | 0.20 | Quickstart wizard-style portal steps; no config tables, limits, or product-specific troubleshooting. |
 | [Create a Traffic Manager profile - PowerShell](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile-powershell) | 0.20 | Quickstart showing how to create a Traffic Manager profile via PowerShell. It’s a step-by-step tutorial without tables of limits, specific configuration parameter ranges, error codes, or product-specific best-practice guidance beyond generic usage. |
-| [Endpoint types](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types) | 0.20 | Describes endpoint types conceptually (Azure, external, nested) without detailed configuration parameters, limits, or troubleshooting mappings. |
+| [Endpoint types](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types) | 0.20 | Describes endpoint types conceptually (Azure endpoints, external endpoints, nested endpoints) without numeric limits, configuration parameter tables, or troubleshooting mappings. |
 | [How Traffic Manager works](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-how-it-works) | 0.20 | Explains how Traffic Manager works at the DNS level and routing concepts; appears architectural and conceptual without concrete limits, configuration tables, or error-resolution mappings. |
 | [Point your Internet domain to Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-point-internet-domain) | 0.20 | Primarily a how-to for creating a CNAME to point a custom domain to a Traffic Manager profile. No configuration tables, limits, error codes, or product-specific parameters beyond a basic DNS record example. |
-| [What is Traffic Manager?](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) | 0.10 | High-level overview of Azure Traffic Manager; describes what it is and basic behavior without specific limits, configuration tables, error codes, or decision matrices. |
+| [What is Traffic Manager?](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) | 0.20 | High-level overview of Azure Traffic Manager; describes what it is and basic behavior without detailed limits, configuration tables, error codes, or product-specific decision matrices. |

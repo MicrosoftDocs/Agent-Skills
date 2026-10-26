@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
-  integrations: End-to-end code patterns for calling FHIR/DICOM APIs, bulk export/import,
-    de-identification, change feeds, search, Synapse/Data Factory integration, and
-    Da Vinci/CARIN interoperability.
+  integrations: Patterns and code samples for calling FHIR/DICOM APIs, bulk import/export,
+    de-identification, events, and standards (CARIN/Da Vinci), plus integration with
+    Synapse, ADF, Logic Apps, and tools like cURL/SDKs.
   security: 'Securing Azure Health Data Services: Entra app registration, auth tokens,
     RBAC, CMK encryption, Private Link/network lockdown, SMART on FHIR, B2C/External
     ID, and policy/compliance setup.'
@@ -29,17 +29,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Health Data Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using FHIR/DICOM APIs, bulk export/import, de-identification, change feeds,
-  or Synapse/Data Factory, and other Azure Health Data Services related development
-  tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use
-  azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure
-  Machine Learning (use azure-machine-learning).
-use_when: Use when using FHIR/DICOM APIs, bulk export/import, de-identification, change
-  feeds, or Synapse/Data Factory, and other Azure Health Data Services related development
+  Use when using FHIR/DICOM APIs, bulk import/export, de-identification, Synapse integration,
+  or SMART on FHIR, and other Azure Health Data Services related development tasks.
+  Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer (use
+  azure-data-explorer).
+use_when: Use when using FHIR/DICOM APIs, bulk import/export, de-identification, Synapse
+  integration, or SMART on FHIR, and other Azure Health Data Services related development
   tasks.
 confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data Factory
   (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Machine Learning (use azure-machine-learning).
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Health Data Services Crawl Report
 
@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 49
-- **Unchanged**: 153
-- **Deleted Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 201
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
 ## Classification Statistics
@@ -64,10 +64,10 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 |------|-------|------------|
 | architecture-patterns | 3 | 1.5% |
 | best-practices | 4 | 2.0% |
-| configuration | 46 | 22.8% |
+| configuration | 45 | 22.3% |
 | decision-making | 2 | 1.0% |
 | deployment | 14 | 6.9% |
-| integrations | 33 | 16.3% |
+| integrations | 34 | 16.8% |
 | limits-quotas | 4 | 2.0% |
 | security | 37 | 18.3% |
 | troubleshooting | 6 | 3.0% |
@@ -77,51 +77,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ### Updated Pages
 
-- [Business continuity & disaster recovery](https://learn.microsoft.com/en-us/azure/healthcare-apis/business-continuity-disaster-recovery)
-  - Updated: 2026-06-11T17:23:00.000Z → 2026-10-13T17:20:00.000Z
-- [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability)
-  - Updated: 2026-09-02T11:41:00.000Z → 2026-10-05T17:12:00.000Z
-- [Built-in policy definitions](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-health-data-services-policy-reference)
-  - Updated: 2025-06-02T08:00:00.000Z → 2026-10-07T22:20:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-faqs)
-  - Updated: 2026-02-27T06:11:00.000Z → 2026-10-05T17:12:00.000Z
-- [FHIR REST API capabilities](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-rest-api-capabilities)
-  - Updated: 2025-11-20T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Microsoft Entra ID and Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/azure-active-directory-identity-configuration)
-  - Updated: 2025-07-24T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Get started with Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/get-started-with-azure-api-fhir)
-  - Updated: 2025-11-21T08:00:00.000Z → 2025-11-21T18:10:00.000Z
-- [Azure Portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-paas-portal-quickstart)
-  - Updated: 2025-11-20T08:00:00.000Z → 2025-11-20T18:41:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-paas-powershell-quickstart)
-  - Updated: 2025-11-20T08:00:00.000Z → 2025-11-20T18:41:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-service-bicep)
-  - Updated: 2026-06-16T05:25:00.000Z → 2026-10-05T17:12:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/azure-api-fhir-resource-manager-template)
-  - Updated: 2025-07-24T08:00:00.000Z → 2025-10-08T05:12:00.000Z
-- [2. Register public client application](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-web-app-public-app-reg)
-  - Updated: 2025-02-14T23:44:00.000Z → 2025-09-22T22:32:00.000Z
-- [SMART on FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/smart-on-fhir)
-  - Updated: 2026-01-26T18:11:00.000Z → 2026-10-05T11:41:00.000Z
-- [CMS interoperability and patient access rule](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/centers-for-medicare-tutorial-introduction)
-  - Updated: 2025-07-24T08:00:00.000Z → 2025-07-24T22:10:00.000Z
-- [CARIN implementation for Blue Button](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/carin-implementation-guide-blue-button-tutorial)
-  - Updated: 2025-07-24T08:00:00.000Z → 2025-09-22T22:32:00.000Z
-- [Da Vinci drug formulary](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/davinci-drug-formulary-tutorial)
-  - Updated: 2025-11-20T08:00:00.000Z → 2025-11-20T18:41:00.000Z
-- [Da Vinci plan net](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/davinci-plan-net)
-  - Updated: 2025-11-20T08:00:00.000Z → 2025-11-20T18:41:00.000Z
-- [Register applications for Azure API for FHIR overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-app-registration)
-  - Updated: 2025-11-20T08:00:00.000Z → 2025-11-20T18:41:00.000Z
-- [Resource application](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/register-resource-azure-ad-client-app)
-  - Updated: 2025-12-05T08:00:00.000Z → 2025-12-05T18:30:00.000Z
-- [Confidential client application](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/register-confidential-azure-ad-client-app)
-  - Updated: 2025-12-05T08:00:00.000Z → 2025-12-05T18:30:00.000Z
-- *...and 29 more*
-
-### Deleted Pages
-
-- ~~SMART on FHIR proxy~~ (https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/smart-on-fhir-proxy)
+- [Import FHIR data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/import-data)
+  - Updated: 2025-10-09T08:00:00.000Z → 2026-10-23T08:00:00.000Z
 
 ## Classified Pages
 
@@ -167,7 +124,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [DICOMweb standard APIs](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicomweb-standard-apis-with-dicom-services) | integrations | 0.76 | Lists supported DICOMweb operations plus Microsoft-specific custom APIs, including endpoints and capabilities not generally known. |
 | [Enable diagnostic settings in the FHIR service](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-diagnostic-logs) | configuration | 0.76 | Describes enabling diagnostic settings and provides sample log queries. Contains product-specific log categories, settings, and Kusto query examples that are not generic knowledge. |
 | [Export FHIR data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/export-data) | configuration | 0.76 | Explains how to invoke $export with this FHIR service, including endpoint usage, required configuration, and behavior aligned with Bulk Data Access spec but implemented specifically here. |
-| [Import FHIR data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/import-data) | configuration | 0.76 | Describes using the import operation with NDJSON, including operation parameters, throughput behavior, and constraints unique to this FHIR service. |
 | [Store profiles](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/store-profiles-in-fhir) | configuration | 0.76 | How-to for storing FHIR profiles in this service, including endpoints, resource types, and any service-specific constraints on profile storage. |
 | [$member-match](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-member-match) | integrations | 0.75 | Describes the $member-match operation, including request/response structure, headers, and constraints specific to this implementation. |
 | [$purge-history](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/purge-history) | configuration | 0.75 | Describes the $purge-history operation, including constraints, parameters, and operational behavior specific to Azure API for FHIR. |
@@ -223,6 +179,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Get an access token](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/get-access-token) | security | 0.70 | Explains how to obtain tokens for the DICOM service using Azure CLI and specific identifiers/scopes, which are security/auth configuration details. |
 | [Get an access token](https://learn.microsoft.com/en-us/azure/healthcare-apis/get-access-token) | security | 0.70 | Describes concrete steps and commands to get access tokens and manage permissions via role assignments for FHIR/DICOM services. This is product-specific authentication and authorization configuration, matching the security category. |
 | [Import DICOM files](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/import-files) | integrations | 0.70 | Bulk import API usage will include request schema, parameters, and storage configuration specific to this DICOM service. |
+| [Import FHIR data](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/import-data) | integrations | 0.70 | The page describes the FHIR $import operation for Azure Health Data Services, including product-specific request formats, NDJSON usage, and operation behavior that go beyond generic knowledge. It focuses on how to ingest FHIR data with high throughput using Azure’s specific import mechanism, which aligns best with integrations & coding patterns. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/healthcare-apis/known-issues) | troubleshooting | 0.70 | Known issues pages typically list specific symptoms, causes, and workarounds with dates. These are highly product-specific troubleshooting details that an LLM will not know from training. |
 | [Manage network access security](https://learn.microsoft.com/en-us/azure/healthcare-apis/network-access-security) | security | 0.70 | Focuses on securing network access and outbound connections for FHIR and DICOM; likely includes product-specific network security options and settings (firewall, private endpoints, allowed origins) that qualify as security configuration details. |
 | [Patient/$everything](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/patient-everything) | integrations | 0.70 | Explains how to call Patient-everything, including request syntax, parameters, and behavior differences specific to Azure API for FHIR’s implementation. |

@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 522
+- **Updated Pages**: 0
+- **Unchanged**: 523
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -73,11 +73,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | *(Unclassified)* | 121 | 23.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Teams Phone extensibility FAQ](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-faq)
-  - Updated: 2026-09-01T17:13:00.000Z → 2026-10-13T17:20:00.000Z
 
 ## Classified Pages
 

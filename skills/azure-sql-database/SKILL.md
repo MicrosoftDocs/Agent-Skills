@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Hyperscale, serverless, geo-replication, Always Encrypted, or CI/CD/Terraform deployments, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore tiers, configuring serverless or Hyperscale, geo-replication/DR, CI/CD, or Terraform, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L62 | Diagnosing and fixing Azure SQL issues like performance bottlenecks, deadlocks, blocking, capacity/CPU/memory/log problems, connectivity and geo-replication errors, and Data Sync/Elastic Scale failures. |
-| Best Practices | L63-L79 | Operational best practices for Azure SQL: monitoring, HA/DR, maintenance, security, auditing, scaling, file management, Data Sync, and adapting on-prem SQL workloads to Azure SQL. |
-| Decision Making | L80-L105 | Guidance on choosing Azure SQL tiers, pricing models, migration paths, DR/HA options, automation, and cost/security features like Hyperscale, serverless, Hybrid Benefit, and Always Encrypted. |
-| Architecture & Design Patterns | L106-L124 | Architectural patterns for Azure SQL apps: geo-replication, DR/BCP, connectivity/routing, sharding & elastic scale, multi-tenant SaaS models, Hyperscale internals, and upgrade/failover designs. |
-| Limits & Quotas | L125-L138 | Limits, quotas, and billing rules for Azure SQL: free tiers, free account deployments, DTU/vCore and serverless resource caps, backups immutability, and maintenance window constraints. |
-| Security | L139-L206 | Configuring Azure SQL security: Entra auth and identities, networking and firewalls, auditing and threat protection, TDE and Key Vault keys, data masking, DR security, and compliance controls. |
-| Configuration | L207-L278 | Configuring Azure SQL databases: monitoring, alerts, backups, replication/failover, scaling (single, pools, serverless), security (enclaves, TLS, audit), and automation via CLI/PowerShell/REST. |
-| Integrations & Coding Patterns | L279-L308 | Connecting to Azure SQL from various languages/tools, managing auditing, sharding, geo-replication, scaling, and automating operations via PowerShell, CLI, REST, Spark, and Stream Analytics. |
-| Deployment | L309-L320 | Deploying and managing Azure SQL databases: CI/CD with GitHub Actions, scaling and tier changes (Hyperscale, elastic pools), regional moves, redundancy, Terraform provisioning, and feature availability by region. |
+| Troubleshooting | L37-L61 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), connectivity, scaling, import/export, geo-replication, Data Sync, and transaction log/full errors. |
+| Best Practices | L62-L78 | Operational best practices for Azure SQL: monitoring, HA/DR, maintenance, security, auditing, scaling, file management, Data Sync, and adapting on-prem SQL workloads to Azure SQL. |
+| Decision Making | L79-L105 | Guidance on choosing Azure SQL tiers, pricing models, migration paths, DR options, automation, and cost/benefit decisions (DTU vs vCore, serverless, Hyperscale, reservations, Hybrid Benefit). |
+| Architecture & Design Patterns | L106-L123 | Architectural patterns for Azure SQL apps: geo-replication, DR/BCP, connectivity/routing, sharding & elastic scale, multi-tenant SaaS models, Hyperscale internals, and upgrade/failover designs. |
+| Limits & Quotas | L124-L139 | Backup immutability, free tier quotas/limits, DTU/vCore and serverless resource caps, billing rules, and maintenance window limits for Azure SQL Database and elastic pools. |
+| Security | L140-L207 | Configuring Azure SQL security: Entra auth and identities, networking and firewalls, auditing and threat protection, TDE and Key Vault keys, data masking, DR security, and compliance controls. |
+| Configuration | L208-L279 | Configuring Azure SQL databases: monitoring, alerts, backups, replication/failover, scaling (single, pools, serverless), security (encryption, audit), maintenance windows, and CLI/PowerShell automation. |
+| Integrations & Coding Patterns | L280-L309 | Connecting to Azure SQL from various languages/tools, managing auditing, sharding, geo-replication, scaling, and automating operations via PowerShell, CLI, REST, Spark, and Stream Analytics. |
+| Deployment | L310-L321 | Deploying and managing Azure SQL databases: CI/CD with GitHub Actions, scaling and tier changes (Hyperscale, elastic pools), regional moves, redundancy, Terraform provisioning, and feature availability by region. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -49,7 +49,6 @@ This skill requires **network access** to fetch documentation content:
 | Monitor and troubleshoot In-Memory OLTP storage capacity | https://learn.microsoft.com/en-us/azure/azure-sql/database/in-memory-oltp-monitor-space?view=azuresql |
 | Diagnose Azure SQL performance using DMVs | https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql |
 | Use Azure Resource Health to troubleshoot Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-health-to-troubleshoot-connectivity?view=azuresql |
-| Resolve common issues with Azure SQL serverless compute | https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-faq?view=azuresql |
 | Troubleshoot common Azure SQL Data Sync issues | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-troubleshoot?view=azuresql |
 | Troubleshoot transient connectivity errors for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql |
 | Troubleshoot Azure SQL and Fabric SQL connectivity errors | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql |
@@ -82,7 +81,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Decide when to use Azure Hybrid Benefit for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/azure-hybrid-benefit?view=azuresql |
 | Use Azure SQL decision tree to choose service | https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql |
-| Understand Copilot in Azure SQL capabilities and usage | https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-faq?view=azuresql |
 | Plan deployment of Always Encrypted secure enclaves in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-plan?view=azuresql |
 | Plan and manage Azure SQL Database costs | https://learn.microsoft.com/en-us/azure/azure-sql/database/cost-management?view=azuresql |
 | Choose Azure SQL disaster recovery options for regional outages | https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-guidance?view=azuresql |
@@ -96,17 +94,18 @@ This skill requires **network access** to fetch documentation content:
 | Choose and use Azure Reservations for Azure SQL compute | https://learn.microsoft.com/en-us/azure/azure-sql/database/reservations-discount-overview?view=azuresql |
 | Reverse migrate Azure SQL Hyperscale to General Purpose | https://learn.microsoft.com/en-us/azure/azure-sql/database/reverse-migrate-from-hyperscale?view=azuresql |
 | Decide when to use Azure SQL serverless compute tier | https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview?view=azuresql |
+| Decide when to use Azure SQL Hyperscale tier | https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale-frequently-asked-questions-faq?view=azuresql |
 | Choose and use Hyperscale secondary replica types | https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale-replicas?view=azuresql |
 | Decide when to use Azure SQL Hyperscale tier | https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale?view=azuresql |
 | Use DTU-based purchasing model for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu?view=azuresql |
 | Choose and configure vCore purchasing model for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tiers-sql-database-vcore?view=azuresql |
 | Select migration alternatives for retiring SQL Data Sync | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-retirement-migration?view=azuresql |
+| Choose and plan migration to Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql |
 | Plan and decide SQL Server to Azure SQL migrations | https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql |
 
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Design and use active geo-replication for Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql |
 | Plan Azure SQL Database business continuity and DR | https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql |
 | Understand Azure SQL connectivity architecture and routing | https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-architecture?view=azuresql |
 | Understand Azure SQL connectivity architecture and connection policies | https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-architecture?view=azuresql |
@@ -126,15 +125,17 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand automatic backup immutability for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql |
-| Understand Azure SQL Database free offer limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer-faq?view=azuresql |
-| Understand Azure SQL Database free tier limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql |
-| Use Azure free account to deploy free Azure SQL database | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql |
-| Understand Azure SQL Database maintenance windows | https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window-faq?view=azuresql |
+| Use Azure free account to deploy free SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql |
+| Clarify Azure SQL Database free tier quotas | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier-faq?view=azuresql |
+| Understand Azure SQL Database free tier limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier?view=azuresql |
+| Understand Azure SQL long-term backup retention limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql |
+| Understand Azure SQL Database maintenance window limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window-faq?view=azuresql |
 | Elastic pool DTU resource limits for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-dtu-elastic-pools?view=azuresql |
 | Single database DTU resource limits for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-dtu-single-databases?view=azuresql |
 | Elastic pool vCore resource limits for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-vcore-elastic-pools?view=azuresql |
 | Single database vCore resource limits in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-vcore-single-databases?view=azuresql |
 | Understand Azure SQL serverless billing limits and rules | https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-billing?view=azuresql |
+| Understand Azure SQL serverless billing and limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-faq?view=azuresql |
 
 ### Security
 | Topic | URL |
@@ -223,8 +224,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure legal hold immutability for Azure SQL LTR backups | https://learn.microsoft.com/en-us/azure/azure-sql/database/backup-immutability-legal-hold?view=azuresql |
 | Configure time-based immutability for Azure SQL LTR backups | https://learn.microsoft.com/en-us/azure/azure-sql/database/backup-immutability-time-based?view=azuresql |
 | Configure MAXDOP for Azure SQL and Fabric databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/configure-max-degree-of-parallelism?view=azuresql |
-| Configure TLS and connection policy for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-settings?view=azuresql |
-| Configure and execute Azure SQL database copy | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-copy?view=azuresql |
+| Configure TLS and connectivity for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-settings?view=azuresql |
+| Configure and execute Azure SQL database copy operations | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-copy?view=azuresql |
 | Configure and use soft delete for Azure SQL logical servers | https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql |
 | Understand DTU benchmark characteristics for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/dtu-benchmark?view=azuresql |
 | Use performance counters for Azure SQL shard maps | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-perf-counters?view=azuresql |

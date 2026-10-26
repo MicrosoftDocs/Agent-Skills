@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
-  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS), secrets and
-    certs, managed identity, network controls (private endpoints, NSG, firewall, WAF),
-    RBAC, and security best practices.'
+  security: 'Auth, identity, and network security for Container Apps: Entra and social
+    logins, mTLS, certs/CORS/domains, secrets and managed identity, RBAC/policy, private
+    endpoints, firewalls, and WAF.'
   decision-making: 'Guidance for planning and cost-optimizing Azure Container Apps:
     capacity, plans, workload profiles, GPUs, hosting options, and migrations from
     Heroku, Functions, Java/Spring/Tomcat, and MCP servers.'
@@ -13,9 +13,9 @@ category_descriptions:
   deployment: 'Deploying and automating Container Apps: CI/CD with GitHub Actions/Azure
     Pipelines, Docker Compose deployments, Arc-enabled Kubernetes, logging migration,
     and self-hosted runners/jobs.'
-  configuration: 'Configuring Container Apps runtime: networking, ingress, revisions,
-    scaling (KEDA/Dapr/Functions), workload profiles, storage mounts, Java features,
-    and ARM/YAML/Bicep-based setup.'
+  configuration: Configuring Container Apps environments, networking, ingress, revisions,
+    scaling (KEDA/Dapr/Functions), workload profiles, Java features, storage, and
+    maintenance via ARM, YAML, CLI, and Bicep.
   best-practices: 'Deployment, cold-start, and runtime tuning guidance: blue-green
     rollouts, reducing scale-out latency, and optimizing Java memory usage in Azure
     Container Apps.'
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing ACA with Entra/OIDC, tuning workload profiles/GPUs, configuring
-  KEDA/Dapr, or integrating Dapr/OpenTelemetry, and other Azure Container Apps related
+  Use when configuring ACA auth/networking, workload profiles/GPUs, CI/CD deployments,
+  KEDA/Dapr scaling, or Java microservices, and other Azure Container Apps related
   development tasks. Not for Azure App Service (use azure-app-service), Azure Functions
   (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Spring Apps (use azure-spring-apps).
-use_when: Use when securing ACA with Entra/OIDC, tuning workload profiles/GPUs, configuring
-  KEDA/Dapr, or integrating Dapr/OpenTelemetry, and other Azure Container Apps related
-  development tasks.
+use_when: Use when configuring ACA auth/networking, workload profiles/GPUs, CI/CD
+  deployments, KEDA/Dapr scaling, or Java microservices, and other Azure Container
+  Apps related development tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
   (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Spring Apps (use azure-spring-apps).
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 228
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 232
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
 ## Classification Statistics
@@ -66,39 +66,25 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 |------|-------|------------|
 | architecture-patterns | 2 | 0.9% |
 | best-practices | 3 | 1.3% |
-| configuration | 34 | 14.5% |
+| configuration | 33 | 14.0% |
 | decision-making | 17 | 7.2% |
 | deployment | 5 | 2.1% |
 | integrations | 20 | 8.5% |
 | limits-quotas | 3 | 1.3% |
-| security | 35 | 14.9% |
+| security | 36 | 15.3% |
 | troubleshooting | 14 | 6.0% |
 | *(Unclassified)* | 102 | 43.4% |
 
 ## Changes
 
-### New Pages
-
-- [Lifecycle](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-snapshots-state-management)
-- [Troubleshoot environment capacity](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity)
-
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview)
-  - Updated: 2026-07-20T22:11:00.000Z → 2026-10-16T22:20:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting)
-  - Updated: 2026-08-31T22:26:00.000Z → 2026-10-16T22:20:00.000Z
-- [Deployment failures](https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors)
-  - Updated: 2026-07-31T05:12:00.000Z → 2026-10-09T08:00:00.000Z
-- [Quotas](https://learn.microsoft.com/en-us/azure/container-apps/quotas)
-  - Updated: 2026-09-24T22:17:00.000Z → 2026-10-16T22:20:00.000Z
+- [Use storage mounts](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts)
+  - Updated: 2026-08-21T08:00:00.000Z → 2026-10-20T22:12:00.000Z
+- [Create an Azure Files storage mount](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files)
+  - Updated: 2025-06-09T08:00:00.000Z → 2026-10-20T22:12:00.000Z
 - [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview)
-  - Updated: 2026-08-31T22:26:00.000Z → 2026-10-09T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Deploy using the Dapr extension for Azure Functions~~ (https://learn.microsoft.com/en-us/azure/container-apps/dapr-functions-extension)
-- ~~Lifecycle (preview)~~ (https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-snapshots-state-management)
+  - Updated: 2026-10-09T08:00:00.000Z → 2026-10-22T22:11:00.000Z
 
 ## Classified Pages
 
@@ -150,7 +136,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Azure Container Registry image pull with managed identity](https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull) | security | 0.76 | Explains Container Apps image pull behavior (always pull policy) and how to wire managed identities to ACR pulls, which is a product-specific security/auth configuration detail. |
 | [Connect to Azure services via Azure portal](https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-connection) | integrations | 0.76 | Shows how Service Connector and Dapr work together to create components with valid metadata and identities (example: Service Bus pub/sub), which is concrete integration configuration. |
 | [Billing](https://learn.microsoft.com/en-us/azure/container-apps/billing) | decision-making | 0.75 | Billing article will include plan-specific pricing dimensions, what is billed where, and how features like private endpoints incur charges—used for cost-based decision making between plans and features. |
-| [Create an Azure Files storage mount](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files) | configuration | 0.75 | Tutorial for Azure Files mounts with SMB/NFS; includes mount configuration parameters and supported protocols, which are configuration specifics. |
 | [GitHub Actions](https://learn.microsoft.com/en-us/azure/container-apps/github-actions) | deployment | 0.75 | Describes GitHub Actions workflow that updates images and triggers new revisions; includes product-specific CI/CD workflow configuration. |
 | [GitHub Actions with Azure CLI](https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli) | deployment | 0.75 | Focuses on generating a GitHub Actions workflow tailored to Container Apps using CLI; contains specific workflow and deployment configuration. |
 | [Set up environment custom DNS suffix](https://learn.microsoft.com/en-us/azure/container-apps/environment-custom-dns-suffix) | security | 0.75 | Explains configuring environment-level DNS suffix and TLS certificates with specific routing behavior and constraints for Container Apps. |
@@ -213,7 +198,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Use a private endpoint](https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint) | security | 0.70 | Private endpoint setup for Container Apps uses Azure Private Link–specific configuration, subnet and DNS requirements, and possibly role/permission scopes—security-focused, product-specific configuration. |
 | [Use mTLS](https://learn.microsoft.com/en-us/azure/container-apps/mtls) | security | 0.70 | Describes product-specific mTLS behavior and headers (e.g., how Envoy terminates mTLS, certificate handling via X-Forwarded-* headers) that are unique implementation details for Azure Container Apps security configuration. |
 | [Use premium ingress](https://learn.microsoft.com/en-us/azure/container-apps/premium-ingress) | configuration | 0.70 | Premium ingress exposes product-specific ingress configuration knobs (scaling behavior, concurrency, capacity settings) with named parameters and allowed values that go beyond generic ingress concepts. |
-| [Use storage mounts](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts) | configuration | 0.70 | Contains product-specific constraints and gotchas (for example, special characters like '.' in volume names causing deployment failures, and unsupported storage backends such as Azure NetApp Files and Azure Blob Storage). These are detailed behavioral nuances and configuration rules that go beyond generic knowledge, fitting best under configuration. |
+| [Use storage mounts](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts) | configuration | 0.70 | Page describes product-specific storage mount behavior and constraints (e.g., unsupported backends like Azure NetApp Files/Azure Blob Storage, and naming constraints that cause deployment failures). These are concrete, implementation-specific configuration details that go beyond generic knowledge, but it does not focus on limits/quotas or troubleshooting flows. |
 | [Virtual network configuration](https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks) | configuration | 0.70 | A VNet configuration article for Container Apps typically includes product-specific settings such as required subnets, address space constraints, delegated subnet requirements, and specific parameters for environment networking. These are configuration details (subnet names, integration modes, required ports, and NSG/route settings) that go beyond generic networking concepts and represent expert knowledge about how Container Apps environments must be wired into VNets. |
 | [X](https://learn.microsoft.com/en-us/azure/container-apps/authentication-twitter) | security | 0.70 | X/Twitter auth integration for Container Apps generally includes specific configuration fields, redirect URLs, and provider options unique to this product and provider. These are concrete, product-specific security configuration steps rather than generic OAuth guidance. |
 | [Custom domain with a free certificate](https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates) | security | 0.68 | Page describes product-specific configuration for binding custom domains and enabling free managed certificates in Azure Container Apps, including constraints such as requiring public accessibility from specific DigiCert IP addresses and restrictions when a custom environment DNS suffix is configured. These are detailed, service-specific security/SSL configuration behaviors that go beyond generic knowledge. |
@@ -224,6 +209,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Compose for agents](https://learn.microsoft.com/en-us/azure/container-apps/compose-agent) | deployment | 0.65 | Describes a product-specific deployment mechanism where the az containerapp extension translates Docker Compose for Agents files into Container Apps resources and manages identities, scaling, and model lifecycle. This is deployment-focused, with Azure-specific behavior that goes beyond generic Docker or Container Apps knowledge. |
 | [Confidential compute](https://learn.microsoft.com/en-us/azure/container-apps/confidential-compute) | configuration | 0.65 | Describes when and how to enable confidential compute, including supported regions and workload profile configurations. This implies specific configuration flags/fields and allowed combinations (e.g., certain workload profiles/regions only), which are product-specific configuration constraints not derivable from general knowledge. |
 | [Configure WAF Application Gateway](https://learn.microsoft.com/en-us/azure/container-apps/waf-app-gateway) | security | 0.65 | Describes using Application Gateway as a reverse proxy with Web Application Firewall in front of Azure Container Apps. This is a product-specific security configuration/integration pattern for securing ingress, fitting the security sub-skill (and not just a conceptual overview). |
+| [Create an Azure Files storage mount](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files) | security | 0.65 | Tutorial focuses on using managed identity authentication (preview) for Azure Files SMB mounts in Container Apps, which is a product-specific security and auth configuration pattern. It includes guidance about using the environment’s managed identity instead of storage keys, which is specific security configuration knowledge rather than generic tutorial content. |
 | [Environment](https://learn.microsoft.com/en-us/azure/container-apps/environment) | decision-making | 0.65 | Includes criteria for when to use single vs multiple environments, which is environment topology decision guidance. |
 | [Get started](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-get-started) | security | 0.65 | Contains a product-specific RBAC role name (Container Apps SandboxGroup Data Owner) that must be assigned to manage sandboxes. This is concrete, configuration-level security information unique to the service, not generic guidance. |
 | [Managing outbound connections with Azure Firewall](https://learn.microsoft.com/en-us/azure/container-apps/use-azure-firewall) | security | 0.65 | Guidance on integrating Container Apps with Azure Firewall using UDRs generally includes product-specific route table entries, required next-hop types, specific outbound endpoints/FQDNs that must be allowed, and firewall rule patterns unique to Container Apps. These are concrete security configuration details (UDR settings, firewall rules) that constitute expert knowledge rather than generic firewall concepts. |
@@ -306,7 +292,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Lifecycle](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-snapshots-state-management) | 0.30 | Summary indicates a conceptual lifecycle overview (suspend modes, auto-delete, snapshots) without clear evidence of numeric limits, config tables, or specific error codes; likely high-level behavior description rather than detailed expert configuration or troubleshooting data. |
 | [LlamaIndex](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex) | 0.30 | Tutorial on using code interpreter sessions in LlamaIndex with Azure Container Apps. Likely step-by-step guidance without detailed configuration tables, limits, or product-specific error mappings; primarily instructional, not expert reference content as defined. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/express-overview) | 0.30 | Service overview for Container Apps express; primarily conceptual and marketing-style description without detailed limits, configuration matrices, or decision criteria. |
-| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview) | 0.30 | Ingress overview for Azure Container Apps appears to describe options and concepts (public, VNET, internal) without clear evidence of numeric limits, detailed configuration parameter tables, or troubleshooting error mappings; based on the summary, it is primarily conceptual routing/ingress behavior rather than expert-only configuration or limits. |
+| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview) | 0.30 | Ingress overview for Azure Container Apps appears to be conceptual, describing options and behavior at a high level without clear evidence of numeric limits, configuration parameter tables, or detailed error/diagnostic mappings that would qualify as expert knowledge under the defined sub-skill types. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sessions) | 0.30 | Conceptual description of dynamic sessions and their use cases; summary does not indicate presence of numeric limits, config parameter tables, or troubleshooting/error code mappings. |
 | [Python code interpreter with MCP](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-python-mcp) | 0.30 | Tutorial-style walkthrough for using platform-managed MCP with dynamic sessions in Azure Container Apps. From the summary, it focuses on how to create a session pool and execute Python code remotely, without exposing configuration tables, limits, quotas, or product-specific error mappings. Lacks the structured expert details required for any sub-skill category. |
 | [Session pools](https://learn.microsoft.com/en-us/azure/container-apps/session-pool) | 0.30 | Summary suggests a conceptual/usage explanation of session pools (subsecond allocation and lifecycle management) without clear indication of numeric limits, configuration parameter tables, or troubleshooting/error mappings. Likely a usage/overview page rather than expert-knowledge content as defined by the sub-skill types. |

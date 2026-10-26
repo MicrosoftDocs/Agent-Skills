@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring host pools, FSLogix profiles, MSIX App Attach, Teams optimization, or autoscale in Azure Virtual Desktop, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Stack Edge (use azure-stack-edge).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AVD host pools, FSLogix profiles, autoscale, MSIX App Attach, or Teams/OneDrive optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent updates, autoscale, connectivity, session host health, graphics/Teams performance, MSIX App Attach, and using logs/Insights for troubleshooting. |
 | Best Practices | L54-L65 | Best practices for scaling, validating, and updating AVD host pools; handling Advisor and Start VM on Connect, proxy usage, FAQs, and Windows Enterprise multi-session configuration. |
 | Decision Making | L66-L81 | Planning and design guidance for AVD: autoscale, regions/zones, data location, host pool and deployment models, storage/FSLogix, licensing, management tools, and cost estimation. |
-| Architecture & Design Patterns | L82-L90 | Designing resilient AVD architectures, including DR strategies, FSLogix profile management, RDP Multipath connectivity, and automated scaling with Automation/Logic Apps. |
-| Limits & Quotas | L91-L96 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L97-L118 | Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), Conditional Access/MFA, RBAC and delegated admin, external identities, session protections (watermarking, screen capture, clipboard), and compliance features. |
-| Configuration | L119-L179 | Configuring AVD environments: images, autoscale, networking, licensing, RDP/peripheral redirection, Teams/Office, language packs, monitoring, and client/RemoteApp behavior. |
-| Integrations & Coding Patterns | L180-L186 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L187-L195 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/ConfigMgr. |
+| Architecture & Design Patterns | L82-L89 | Designing resilient AVD architectures, including DR strategies, FSLogix profile management, RDP Multipath connectivity, and automated scaling with Automation/Logic Apps. |
+| Limits & Quotas | L90-L95 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
+| Security | L96-L116 | Securing Azure Virtual Desktop: auth/SSO (Entra ID, AD FS, Kerberos, MFA, external users), RBAC and delegated admin, and session protections (clipboard, watermarking, screen capture, WebAuthn, Purview). |
+| Configuration | L117-L177 | Configuring AVD environments: images, autoscale, networking, RDP/peripheral redirection, licensing, language packs, Teams/OneDrive, GPU, monitoring, and client/RemoteApp behavior. |
+| Integrations & Coding Patterns | L178-L184 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
+| Deployment | L185-L193 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/ConfigMgr. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -84,7 +84,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Design disaster recovery architecture for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/disaster-recovery-concepts |
 | Design AVD user profile management with FSLogix containers | https://learn.microsoft.com/en-us/azure/virtual-desktop/fslogix-profile-containers |
-| Use RDP Multipath to optimize Azure Virtual Desktop connectivity | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath |
 | Use Automation and Logic Apps to scale AVD session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/scaling-automation-logic-apps |
 | Understand Azure Virtual Desktop resilient architecture | https://learn.microsoft.com/en-us/azure/virtual-desktop/service-architecture-resilience |
 
@@ -101,7 +100,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure AD FS single sign-on for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso |
 | Configure managed identities and RBAC for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity |
 | Configure Microsoft Entra ID SSO for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on |
-| Configure context-based redirection policies in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd |
 | Implement delegated administrative access in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/delegated-access-virtual-desktop |
 | Set up Kerberos KDC proxy for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/key-distribution-center-proxy |
 | Configure Azure Virtual Desktop access for external identities | https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities |
@@ -143,7 +141,7 @@ This skill requires **network access** to fetch documentation content:
 | Install Microsoft 365 Apps on AVD custom images | https://learn.microsoft.com/en-us/azure/virtual-desktop/install-office-on-wvd-master-image |
 | Configure Windows 10 language packs on Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/language-packs |
 | Use MSIXMGR tool parameters for AVD App Attach workflows | https://learn.microsoft.com/en-us/azure/virtual-desktop/msixmgr-tool-syntax-description |
-| Configure multimedia redirection for Azure Virtual Desktop sessions | https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls |
+| Configure multimedia redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls |
 | Launch OneDrive automatically with AVD RemoteApps | https://learn.microsoft.com/en-us/azure/virtual-desktop/onedrive-remoteapp |
 | Configure preferred application group type for pooled AVD host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/preferred-application-group-type |
 | Set up Private Link endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-setup |

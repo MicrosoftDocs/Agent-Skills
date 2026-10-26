@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   decision-making: 'Guidance on choosing Azure regions and services for reliability:
     region types, availability zones, geo-paired regions, multiregion and nonregional
@@ -32,14 +32,14 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 - **Total Pages**: 92
 - **Fetched**: 92
 - **Fetch Failed**: 0
-- **Classified**: 44
-- **Unclassified**: 48
+- **Classified**: 45
+- **Unclassified**: 47
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 6
-- **Unchanged**: 83
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 91
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
 ## Classification Statistics
@@ -47,38 +47,17 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 3.3% |
-| best-practices | 33 | 35.9% |
+| best-practices | 34 | 37.0% |
 | decision-making | 6 | 6.5% |
 | limits-quotas | 2 | 2.2% |
-| *(Unclassified)* | 48 | 52.2% |
+| *(Unclassified)* | 47 | 51.1% |
 
 ## Changes
 
-### New Pages
-
-- [Azure VM Image Builder](https://learn.microsoft.com/en-us/azure/reliability/reliability-vm-image-builder)
-- [Azure Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/reliability/reliability-application-gateway-containers)
-- [Azure Monitor health models](https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-health-models)
-
 ### Updated Pages
 
-- [Services with availability zone support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support)
-  - Updated: 2026-09-21T22:12:00.000Z → 2026-10-14T06:03:00.000Z
-- [Azure Storage Discovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-discovery)
-  - Updated: 2026-04-15T22:12:00.000Z → 2026-10-14T06:03:00.000Z
-- [Paired and nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-paired)
-  - Updated: 2026-06-26T06:03:00.000Z → 2026-10-15T11:02:00.000Z
-- [Services with multiregion support](https://learn.microsoft.com/en-us/azure/reliability/regions-multiregion-support)
-  - Updated: 2026-06-02T17:15:00.000Z → 2026-10-13T11:02:00.000Z
-- [Azure regions list](https://learn.microsoft.com/en-us/azure/reliability/regions-list)
-  - Updated: 2026-09-23T22:08:00.000Z → 2026-10-13T06:03:00.000Z
-- [Azure Batch](https://learn.microsoft.com/en-us/azure/reliability/reliability-batch)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-10-12T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Azure Application Gateway for Containers~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-app-gateway-containers)
-- ~~Azure Virtual Machine Image Builder~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-image-builder)
+- [Azure Storage Actions](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-actions)
+  - Updated: 2026-01-22T23:17:00.000Z → 2026-10-18T22:03:00.000Z
 
 ## Classified Pages
 
@@ -108,6 +87,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql) | best-practices | 0.68 | Reliability guidance for Azure Database for MySQL typically includes product-specific recommendations (for example, how to configure HA/DR, backup/restore behavior, handling transient faults, and zone/region outage strategies) that go beyond generic concepts. These are actionable DO/DON'T patterns tied to this service’s capabilities rather than just conceptual reliability theory. |
 | [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/reliability/reliability-aks) | best-practices | 0.68 | AKS-specific guidance for transient faults, AZs, multi-region support, backups, and maintenance; actionable reliability configuration and patterns. |
 | [Azure Monitor Logs](https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-logs) | best-practices | 0.68 | Page focuses on making Log Analytics workspaces resilient to specific outage scenarios (transient faults, AZ outages, region outages) with product-specific guidance and patterns. While not about numeric limits, it provides concrete, Azure Monitor Logs–specific resiliency recommendations and configurations that go beyond generic reliability concepts, fitting best-practices. |
+| [Azure Storage Actions](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-actions) | best-practices | 0.68 | The page focuses on making Azure Storage Actions resilient to transient faults, configuration issues, AZ/region failures, and maintenance, including backup/restore guidance. This is product-specific reliability guidance with concrete DO/DON'T style recommendations for how to configure and operate Storage Actions for resiliency, which fits best under best-practices. It is not primarily about numeric limits, decision matrices, or deployment matrices. |
 | [Enable zone resiliency](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency) | best-practices | 0.68 | The page provides concrete, product-specific guidance on how to enable zone resiliency for Azure workloads, including when and how to distribute resources across availability zones and how to convert existing non-zonal deployments. This is actionable design and implementation guidance specific to Azure reliability rather than generic concepts, fitting best-practices. |
 | [Multiregion solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired) | architecture-patterns | 0.68 | The page lists specific Azure services and concrete configuration patterns for achieving geo-redundancy and geo-replication when regions aren't paired. This is product-specific architectural guidance about when and how to use particular multiregion configurations, which fits architecture-patterns. It goes beyond generic concepts by enumerating service capabilities and recommended patterns for nonpaired-region scenarios. |
 | [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-hubs) | best-practices | 0.67 | Event Hubs–specific handling of transient faults, AZs, geo-DR, geo-replication, and backups; detailed resiliency guidance. |
@@ -159,7 +139,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) | 0.30 | Page appears to be a conceptual reliability overview for Azure SQL Database (shared responsibility, resiliency concepts, backup/restore, SLAs) without clear evidence of specific numeric limits, configuration tables, error-code-based troubleshooting, or detailed decision matrices. Likely high-level guidance rather than expert-only configuration or pattern details. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-managed-instance) | 0.30 | Reliability overview for Azure SQL Managed Instance; focuses on high availability, backups, and shared responsibility conceptually, not on numeric limits or configuration parameter tables. |
 | [Azure Service Bus](https://learn.microsoft.com/en-us/azure/reliability/reliability-service-bus) | 0.30 | Reliability in Azure Service Bus; summary highlights built-in reliability features and shared responsibility at a conceptual level, without specific limits, configs, or troubleshooting details. |
-| [Azure Storage Actions](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-actions) | 0.30 | Reliability in Azure Storage Actions; summary focuses on zones and DR without indicating numeric limits or detailed configuration tables. |
 | [Azure Storage Mover](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-mover) | 0.30 | Reliability overview for Azure Storage Mover describing behavior under outages and shared responsibility. The summary does not indicate specific numeric limits, configuration settings, or error-code-based troubleshooting; it appears to be conceptual guidance rather than detailed expert knowledge. |
 | [Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-machine-scale-sets) | 0.30 | Reliability in Virtual Machine Scale Sets; summary is conceptual about resiliency and scaling, without explicit expert-level limits, configs, or troubleshooting mappings. |
 | [Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network-manager) | 0.30 | Reliability guidance for Azure Virtual Network Manager appears to be high-level resiliency concepts (shared responsibility, general patterns for handling faults and failures) without specific numeric limits, configuration tables, or product-specific error codes. |

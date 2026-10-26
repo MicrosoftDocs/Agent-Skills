@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Azure Virtual Network development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNets, peering, service endpoints, NSGs, load balancers, or upgrading Basic to Standard public IPs, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Virtual Network development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring IPs/routing, VNet peering, NSGs/service endpoints, gateways/firewalls, or upgrading Basic to Standard IPs, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Route Server (use azure-route-server).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L54-L60 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
 | Limits & Quotas | L61-L68 | Network resource limits and behaviors for Azure VMs/VNets: accelerated networking support, public IP quotas, VM throughput caps, and Virtual Network scale/performance constraints. |
 | Security | L69-L78 | Securing Virtual Networks: network policies, encryption, service tags, service endpoint policies, and applying Azure Policy/security controls to VNets and Kubernetes traffic. |
-| Configuration | L79-L113 | Configuring Azure Virtual Network components: IPs (public/private/custom), DNS, MTU, DHCP, encryption, monitoring, Azure CNI/Kubernetes, and gateway/firewall/load balancer settings. |
-| Deployment | L114-L117 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
+| Configuration | L79-L114 | Configuring Azure Virtual Network components: IPs (public/private/IPv4/IPv6), routing, peering, DNS, MTU, DHCP, monitoring, Azure CNI, and gateway/firewall/load balancer settings. |
+| Deployment | L115-L118 | Guidance for upgrading Azure Basic public IP addresses to Standard SKU, including requirements, steps, and considerations for network resources and downtime. |
 
 ### Best Practices
 | Topic | URL |
@@ -81,6 +81,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure Azure Network Adapter (MANA) for Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux |
 | Configure MANA behavior for NVAs on existing VM sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out |
+| Configure peering route propagation on Azure route tables | https://learn.microsoft.com/en-us/azure/virtual-network/configure-disable-peering-route-propagation |
 | Configure Azure CNI for Kubernetes virtual networks | https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking |
 | Install and configure Azure CNI on Linux Docker hosts | https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking-docker-linux |
 | Configure advertised gateway prefixes for hub VNets | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-advertised-gateway-prefixes |

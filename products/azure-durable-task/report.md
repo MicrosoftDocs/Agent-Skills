@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 17
-- **Unchanged**: 5
+- **Updated Pages**: 0
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-durable-task/azure-durable-task.csv`
 
@@ -64,43 +64,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 6 | 27.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Durable Task?](https://learn.microsoft.com/en-us/azure/durable-task/common/what-is-durable-task)
-  - Updated: 2026-08-13T22:14:00.000Z → 2026-10-12T08:00:00.000Z
-- [Choose your hosting model](https://learn.microsoft.com/en-us/azure/durable-task/common/choose-orchestration-framework)
-  - Updated: 2026-05-06T06:11:00.000Z → 2026-10-12T08:00:00.000Z
-- [Programming model](https://learn.microsoft.com/en-us/azure/durable-task/common/programming-model-overview)
-  - Updated: 2026-04-22T08:00:00.000Z → 2026-10-12T08:00:00.000Z
-- [Sub-orchestrations](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-sub-orchestrations)
-  - Updated: 2026-08-03T22:12:00.000Z → 2026-10-13T05:17:00.000Z
-- [Durable entities](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-entities)
-  - Updated: 2026-07-24T17:11:00.000Z → 2026-10-13T05:17:00.000Z
-- [Timers and timeouts](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-timers)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-10-13T05:17:00.000Z
-- [Orchestrator code constraints](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-code-constraints)
-  - Updated: 2026-08-24T08:00:00.000Z → 2026-10-12T08:00:00.000Z
-- [Instance management](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-instance-management)
-  - Updated: 2026-08-14T22:12:00.000Z → 2026-10-12T08:00:00.000Z
-- [Eternal orchestrations](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-eternal-orchestrations)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-10-13T05:17:00.000Z
-- [External events](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-external-events)
-  - Updated: 2026-05-04T08:00:00.000Z → 2026-10-13T05:17:00.000Z
-- [Custom orchestration status](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-custom-orchestration-status)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-10-13T05:17:00.000Z
-- [Function chaining](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-sequence)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-10-12T08:00:00.000Z
-- [Fan-out/fan-in](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-fan-in-fan-out)
-  - Updated: 2026-04-22T17:34:00.000Z → 2026-10-13T05:17:00.000Z
-- [Monitors](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-monitor)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-10-12T08:00:00.000Z
-- [Human interaction](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-human-interaction)
-  - Updated: 2026-08-05T17:12:00.000Z → 2026-10-12T08:00:00.000Z
-- [Error handling and retries](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-task-error-handling)
-  - Updated: 2026-09-08T08:00:00.000Z → 2026-10-13T05:17:00.000Z
-- [Orchestration versioning](https://learn.microsoft.com/en-us/azure/durable-task/common/durable-orchestration-versioning)
-  - Updated: 2026-05-01T08:00:00.000Z → 2026-10-12T08:00:00.000Z
 
 ## Classified Pages
 

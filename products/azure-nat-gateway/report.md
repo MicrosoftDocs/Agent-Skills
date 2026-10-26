@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 22
+- **Updated Pages**: 0
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -67,15 +67,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 12 | 48.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [NAT gateway resource](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource)
-  - Updated: 2026-07-28T17:15:00.000Z → 2026-10-13T22:18:00.000Z
-- [Use a NAT gateway with Azure Firewall](https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-hub-spoke-nat-firewall)
-  - Updated: 2026-09-14T22:37:00.000Z → 2026-10-14T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq)
-  - Updated: 2026-08-11T22:11:00.000Z → 2026-10-12T22:13:00.000Z
 
 ## Classified Pages
 

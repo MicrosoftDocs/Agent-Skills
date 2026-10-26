@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   integrations: Patterns and code for integrating Event Hubs with .NET, Kafka (clients,
     Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding
@@ -9,9 +9,9 @@ category_descriptions:
     troubleshooting.'
   decision-making: Guidance on choosing Event Hubs tiers, auto-inflate settings, geo-replication
     modes, and planning migrations from Apache Kafka to Event Hubs.
-  security: 'Securing Event Hubs: auth (Entra ID, SAS, RBAC, managed identities),
-    encryption/CMK, confidential computing, TLS, and network access (NSP, VNet, firewall,
-    Private Link, Azure Policy compliance).'
+  security: 'Securing Event Hubs: auth with Entra ID/managed identities/SAS, RBAC,
+    encryption and CMK, TLS settings, and network controls (firewalls, VNets, Private
+    Link, NSP, policy/compliance).'
   limits-quotas: Event Hubs limits, quotas, and tier differences; max message sizes,
     capture intervals, platform behaviors, and governance via application groups.
   configuration: 'Configuring Event Hubs behavior: partitions, retention, cleanup,
@@ -29,16 +29,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Kafka-compatible clients, Flink/Spark, geo-replication, Avro capture, or the
-  Event Hubs emulator, and other Azure Event Hubs related development tasks. Not for
-  Azure Service Bus (use azure-service-bus), Azure Notification Hubs (use azure-notification-hubs),
-  Azure Event Grid (use azure-event-grid), Azure Web PubSub (use azure-web-pubsub).
-use_when: Use when using Kafka-compatible clients, Flink/Spark, geo-replication, Avro
-  capture, or the Event Hubs emulator, and other Azure Event Hubs related development
+  using Kafka clients, Flink/Spark, geo-replication, Entra ID/RBAC auth, or Event
+  Hubs Capture/Avro, and other Azure Event Hubs related development tasks. Not for
+  Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
+  Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub).
+use_when: Use when using Kafka clients, Flink/Spark, geo-replication, Entra ID/RBAC
+  auth, or Event Hubs Capture/Avro, and other Azure Event Hubs related development
   tasks.
-confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Event Grid (use azure-event-grid), Azure
-  Web PubSub (use azure-web-pubsub).
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
+  Azure Web PubSub (use azure-web-pubsub).
 ---
 # Azure Event Hubs Crawl Report
 
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 112
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
@@ -76,12 +76,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 
 ### Updated Pages
 
-- [Dynamically add partitions](https://learn.microsoft.com/en-us/azure/event-hubs/dynamically-add-partitions)
-  - Updated: 2023-10-16T22:16:00.000Z → 2026-10-13T22:18:00.000Z
-- [.NET exceptions](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-messaging-exceptions)
-  - Updated: 2023-03-08T08:00:00.000Z → 2026-10-06T08:00:00.000Z
-- [SDKs](https://learn.microsoft.com/en-us/azure/event-hubs/sdks)
-  - Updated: 2025-12-04T08:00:00.000Z → 2026-10-13T22:18:00.000Z
+- [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-minimum-version)
+  - Updated: 2022-10-12T17:06:00.000Z → 2026-10-09T08:00:00.000Z
 
 ## Classified Pages
 
@@ -99,7 +95,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 | [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/event-hubs/private-link-service) | security | 0.85 | Private Link configuration involves specific resource properties, endpoint settings, and access behavior, which are detailed security configuration patterns. |
 | [Authenticate from an application](https://learn.microsoft.com/en-us/azure/event-hubs/authenticate-application) | security | 0.85 | Includes the exact resource identifiers to request OAuth tokens (https://eventhubs.azure.net/ and Kafka-specific resource URL), and likely details on client configuration and scopes. These are precise, product-specific authentication parameters that qualify as expert security knowledge. |
 | [Compare tiers](https://learn.microsoft.com/en-us/azure/event-hubs/compare-tiers) | limits-quotas | 0.85 | Explicitly compares Basic, Standard, Premium, and Dedicated tiers focusing on features and quotas; such comparison pages typically contain detailed numeric limits and tier-specific constraints that qualify as expert limits/quotas knowledge. |
-| [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-minimum-version) | security | 0.85 | TLS minimum version configuration exposes specific setting names and allowed values (for example, 1.0/1.1/1.2), which are product-specific security configuration details. |
 | [Configure properties for an event hub](https://learn.microsoft.com/en-us/azure/event-hubs/configure-event-hub-properties) | configuration | 0.85 | Explicitly about configuring status, partition count, cleanup policy, and retention; such pages usually list property names, allowed ranges, and defaults, which are expert configuration details. |
 | [Enable managed identity for a namespace](https://learn.microsoft.com/en-us/azure/event-hubs/enable-managed-identity) | security | 0.85 | Covers enabling system- and user-assigned managed identities with specific portal/ARM settings and role assignments, which are product-specific security configuration details. |
 | [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/event-hubs/troubleshooting-guide) | troubleshooting | 0.85 | Organized around connectivity symptoms (permanent vs transient failures) and how to diagnose and resolve them. Likely includes specific checks (firewall, connection strings, network configuration) and symptom→cause→solution guidance unique to Event Hubs, matching the troubleshooting criteria. |
@@ -131,6 +126,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Not
 | [Auto inflate overview](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-auto-inflate) | decision-making | 0.70 | Explains how Auto Inflate works specifically for Azure Event Hubs, including when to use it for variable traffic patterns and that it is only supported on the Standard tier. This is concrete, product-specific guidance to decide whether to enable the feature, fitting decision-making. It is not just a conceptual overview and includes tier-specific constraints. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/event-hubs/policy-reference) | security | 0.70 | Lists specific built-in policy definitions and their scopes for Event Hubs, which are security/compliance configuration artifacts. |
 | [Configure TLS version for client](https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-client-version) | security | 0.70 | Shows client-side TLS configuration with concrete parameter names and version values for Event Hubs connectivity, which are product-specific security patterns. |
+| [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-minimum-version) | security | 0.70 | Page provides product-specific security configuration for Azure Event Hubs, including how to enforce a minimum TLS version at the namespace level and the exact supported TLS versions. This is concrete security configuration guidance (TLS policy behavior and enforcement) that goes beyond generic TLS concepts. |
 | [Event replication task patterns](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-federation-patterns) | architecture-patterns | 0.70 | Provides detailed implementation guidance for specific replication patterns unique to Event Hubs federation, going beyond conceptual overview into concrete pattern usage. |
 | [Explore captured Avro files](https://learn.microsoft.com/en-us/azure/event-hubs/explore-captured-avro-files) | configuration | 0.70 | Provides the exact Avro schema for captured files and tools to explore them; this is precise format/configuration information not inferable from general knowledge. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-faq) | limits-quotas | 0.70 | Event Hubs FAQ pages commonly document concrete service behaviors and numeric constraints (for example, partition limits, throughput units, retention behaviors, and feature-specific limits) that are not purely conceptual. These numeric and behavioral details align with limits/quotas-style expert knowledge even though they are presented in FAQ form. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   best-practices: Best practices for sizing and deploying ARO clusters and infra nodes,
     optimizing OpenShift Virtualization VMs, and staying within supported configurations
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 83
+- **Updated Pages**: 1
+- **Unchanged**: 85
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -77,12 +77,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Updated Pages
 
-- [Quickstart - Create a default cluster](https://learn.microsoft.com/en-us/azure/openshift/quickstart-create-default-hosted-cluster)
-  - Updated: 2026-09-28T22:09:00.000Z → 2026-10-01T08:00:00.000Z
-- [Create a cluster with customizations](https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster)
-  - Updated: 2026-09-21T08:00:00.000Z → 2026-10-01T08:00:00.000Z
-- [Configure an external authentication provider](https://learn.microsoft.com/en-us/azure/openshift/howto-configure-external-authentication)
-  - Updated: 2026-09-15T16:59:00.000Z → 2026-10-06T22:17:00.000Z
+- [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization)
+  - Updated: 2026-08-27T17:21:00.000Z → 2026-10-22T08:00:00.000Z
 
 ## Classified Pages
 
@@ -175,7 +171,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
 | [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.30 | Release notes typically list version changes and features but not structured limits, configs, or decision matrices as defined by the sub-skill types. Without clear evidence of numeric limits, config tables, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any category. |
 | [About Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/intro-openshift) | 0.20 | Introductory overview of Azure Red Hat OpenShift features and benefits without detailed limits, configs, or product-specific patterns. |
+| [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization) | 0.20 | Page appears to be a how-to/tutorial for enabling and using OpenShift Virtualization on Azure Red Hat OpenShift, without clear evidence of detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert references as defined. Based on the available summary, it reads as a usage guide rather than a deep reference for limits, configuration matrices, or decision criteria. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq) | - | FAQ page is primarily conceptual and explanatory; it doesn't focus on detailed limits, configuration tables, error-code troubleshooting, or other expert-only data as defined by the sub-skill types. |
 | [Networking](https://learn.microsoft.com/en-us/azure/openshift/concepts-networking) | - | Networking article is an overview with diagrams and endpoint lists but no specific configuration tables, limits, or product-unique patterns with quantified guidance. |
-| [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization) | - | The page is a how-to/tutorial for using OpenShift Virtualization on ARO. Based on the summary, it focuses on capabilities and migration benefits, not on detailed configuration parameter tables, limits, or troubleshooting mappings required for the defined sub-skill types. |
 | [Support lifecycle for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-lifecycle) | - | Support lifecycle page describes release cadence and support policy conceptually; it does not include detailed version matrices, dates, or constraints that would qualify as expert configuration, limits, or decision-making guidance. |

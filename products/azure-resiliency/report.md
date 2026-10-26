@@ -35,10 +35,10 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 11
-- **Unchanged**: 23
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 36
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
 ## Classification Statistics
@@ -52,40 +52,6 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 | *(Unclassified)* | 20 | 55.6% |
 
 ## Changes
-
-### New Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-agent-transparency)
-- [Assign goals and view resilience posture](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-assign-goals-view-posture)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-overview)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-15T11:42:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/resiliency/infrastructure-resiliency-manager-overview)
-  - Updated: 2026-07-28T08:00:00.000Z → 2026-10-14T11:44:00.000Z
-- [Availability Zone Down Drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-about)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-14T11:44:00.000Z
-- [Recovery orchestration plan](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-about)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-14T11:44:00.000Z
-- [Availability zone down drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-support-matrix)
-  - Updated: 2026-09-28T08:00:00.000Z → 2026-10-14T11:44:00.000Z
-- [Recovery orchestration plan](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-support-matrix)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-12T08:00:00.000Z
-- [Define](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define)
-  - Updated: 2026-09-28T08:00:00.000Z → 2026-10-14T11:44:00.000Z
-- [Execute](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-execute)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-14T11:44:00.000Z
-- [Review recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-review-recommendations)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-14T11:44:00.000Z
-- [Use the Resiliency agent](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent)
-  - Updated: 2026-07-16T11:41:00.000Z → 2026-10-14T11:44:00.000Z
-- [Create and configure](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-14T11:44:00.000Z
-
-### Deleted Pages
-
-- ~~Assign goals and view resiliency posture~~ (https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-assign-goals-view-posture)
 
 ## Classified Pages
 

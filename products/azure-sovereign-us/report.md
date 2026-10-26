@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Extended Zones 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 38
+- **Updated Pages**: 0
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
@@ -63,11 +63,6 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Extended Zones 
 | *(Unclassified)* | 8 | 20.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
-  - Updated: 2026-09-17T08:00:00.000Z → 2026-10-13T22:18:00.000Z
 
 ## Classified Pages
 

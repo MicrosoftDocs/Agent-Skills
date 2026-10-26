@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 15
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
@@ -60,11 +60,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 | *(Unclassified)* | 3 | 18.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dedicated-hsm/faq)
-  - Updated: 2026-10-02T22:44:00.000Z → 2026-10-06T17:34:00.000Z
 
 ## Classified Pages
 

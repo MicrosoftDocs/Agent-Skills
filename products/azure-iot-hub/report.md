@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   security: 'Securing IoT Hub, DPS, and Device Update: auth (Entra, RBAC, SAS, X.509),
     certificates/keys, TLS/ciphers, IP/VNet/private endpoints, outbound/DLP, and security
     best practices/policies.'
-  best-practices: 'Best practices for secure, scalable IoT Hub/DPS deployments: device
-    provisioning at scale, OEM security, cert renewal/ADR, resilient reconnection,
-    auto device config, and IoT Hub hardening.'
+  best-practices: Best practices for large-scale DPS provisioning, OEM device security,
+    resilient device reconnection patterns, and automatic device configuration in
+    Azure IoT Hub.
   architecture-patterns: Design patterns for DPS lifecycle/HA/DR, VNet connectivity,
     secure device streams, and reliably persisting ordered IoT Hub events with Cosmos
     DB.
@@ -30,13 +30,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Hub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using DPS provisioning, device twins/jobs, routing/enrichments, Device Update, or
-  IoT Hub messaging APIs, and other Azure IoT Hub related development tasks. Not for
-  Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT
-  Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
-use_when: Use when using DPS provisioning, device twins/jobs, routing/enrichments,
-  Device Update, or IoT Hub messaging APIs, and other Azure IoT Hub related development
-  tasks.
+  using IoT Hub/DPS provisioning, device twins, routing, direct methods, or Device
+  Update workloads, and other Azure IoT Hub related development tasks. Not for Azure
+  IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
+  azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+use_when: Use when using IoT Hub/DPS provisioning, device twins, routing, direct methods,
+  or Device Update workloads, and other Azure IoT Hub related development tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
   Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
 ---
@@ -44,16 +43,16 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ## Summary
 
-- **Total Pages**: 194
-- **Fetched**: 194
+- **Total Pages**: 193
+- **Fetched**: 193
 - **Fetch Failed**: 0
-- **Classified**: 128
+- **Classified**: 127
 - **Unclassified**: 66
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 184
+- **Updated Pages**: 1
+- **Unchanged**: 192
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
@@ -61,45 +60,27 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 1.5% |
+| architecture-patterns | 3 | 1.6% |
 | best-practices | 4 | 2.1% |
-| configuration | 28 | 14.4% |
-| decision-making | 9 | 4.6% |
-| deployment | 12 | 6.2% |
-| integrations | 21 | 10.8% |
-| limits-quotas | 3 | 1.5% |
-| security | 35 | 18.0% |
+| configuration | 28 | 14.5% |
+| decision-making | 9 | 4.7% |
+| deployment | 11 | 5.7% |
+| integrations | 21 | 10.9% |
+| limits-quotas | 3 | 1.6% |
+| security | 35 | 18.1% |
 | troubleshooting | 13 | 6.7% |
-| *(Unclassified)* | 66 | 34.0% |
+| *(Unclassified)* | 66 | 34.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Azure Device Registry integration (preview)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-overview)
-  - Updated: 2026-02-24T06:10:00.000Z → 2026-10-05T17:12:00.000Z
-- [Choose an IoT Hub SDK](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks)
-  - Updated: 2025-02-28T23:02:00.000Z → 2026-09-22T08:00:00.000Z
-- [Libraries and SDKs](https://learn.microsoft.com/en-us/azure/iot-dps/libraries-sdks)
-  - Updated: 2026-04-15T22:11:00.000Z → 2026-10-05T17:12:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-new)
-  - Updated: 2026-05-15T08:00:00.000Z → 2026-10-06T17:12:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-faq)
-  - Updated: 2026-05-15T08:00:00.000Z → 2026-10-05T17:12:00.000Z
-- [Resource Manager template](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks)
-  - Updated: 2025-02-28T23:02:00.000Z → 2026-09-22T08:00:00.000Z
-- [Self-sign script for external CSR](https://learn.microsoft.com/en-us/azure/iot-hub/reference-self-sign-script)
-  - Updated: 2026-04-15T22:11:00.000Z → 2026-10-05T17:12:00.000Z
-- [IoT Service SDKs](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks)
-  - Updated: 2025-02-28T23:02:00.000Z → 2026-09-22T08:00:00.000Z
-- [IoT Device SDKs](https://learn.microsoft.com/en-us/azure/iot-hub/iot-sdks)
-  - Updated: 2026-04-15T22:11:00.000Z → 2026-10-05T17:12:00.000Z
-- [What is Device Update for IoT Hub?](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/understand-device-update)
-  - Updated: 2024-11-21T23:02:00.000Z → 2026-10-05T08:00:00.000Z
+- [Manage device reconnections](https://learn.microsoft.com/en-us/azure/iot-hub/concepts-manage-device-reconnections)
+  - Updated: 2026-03-30T17:14:00.000Z → 2026-10-21T22:11:00.000Z
 
 ### Deleted Pages
 
-- ~~Enable or disable device in ADR (preview)~~ (https://learn.microsoft.com/en-us/azure/iot-hub/how-to-disable-enable-device)
+- ~~Get started (ADR integration)~~ (https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup)
 
 ## Classified Pages
 
@@ -205,11 +186,10 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | [Use TLS downloads](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-tls-download) | security | 0.70 | The page explains Device Update for IoT Hub TLS download capabilities, including the download security setting that controls whether devices use HTTP or HTTPS, the default behavior for deployments created with API version 2026-06-01, and guidance that HTTPS is recommended. These are product-specific security configuration details (protocol choice, default behavior tied to a specific API version) rather than generic TLS concepts. |
 | [Use related files](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/related-files) | configuration | 0.70 | Describes how to express relationships between multiple update files in import manifests; involves specific manifest fields and structures. |
 | [User roles and access](https://learn.microsoft.com/en-us/azure/iot-hub-device-update/device-update-control-access) | security | 0.70 | Describes how Device Update uses Azure RBAC and Entra ID, including specific roles and access requirements for the Device Update resource and linked IoT hub. |
-| [Manage device reconnections](https://learn.microsoft.com/en-us/azure/iot-hub/concepts-manage-device-reconnections) | best-practices | 0.68 | The article provides concrete, product-specific guidance on how to implement reconnection strategies with Azure IoT Hub device SDKs (for example, handling transient disconnects, retry patterns, and SDK-specific behaviors). This is actionable DO/DON'T style guidance tied to IoT Hub’s connection model rather than generic networking advice, so it fits best under best-practices. |
+| [Manage device reconnections](https://learn.microsoft.com/en-us/azure/iot-hub/concepts-manage-device-reconnections) | best-practices | 0.68 | The page provides product-specific guidance on how to design and implement reconnection strategies using Azure IoT Hub device SDKs, including concrete recommendations and patterns for handling disconnects and reconnections that are unique to IoT Hub behavior. It goes beyond generic networking advice and focuses on actionable, service-specific best practices for resilient device connections. |
 | [Control a device connected to an IoT hub](https://learn.microsoft.com/en-us/azure/iot-hub/quickstart-control-device) | integrations | 0.65 | Quickstart with concrete .NET service and device apps invoking direct methods; includes SDK calls and patterns specific to IoT Hub direct methods. |
 | [Create back-end app to schedule jobs](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-schedule-broadcast-jobs) | integrations | 0.65 | Shows backend code using the service SDK to schedule jobs; includes SDK method names, parameters, and patterns specific to IoT Hub job scheduling. |
 | [Disable disaster recovery](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-disable-dr) | decision-making | 0.65 | Explains disabling DR and its regional replication implications, guiding decisions about data residency vs. failover for specific regions. |
-| [Get started (ADR integration)](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup) | deployment | 0.65 | Page describes how to deploy IoT Hub specifically with Azure Device Registry integration and Microsoft-backed X.509 certificate management, including preview-specific deployment steps and constraints that are product- and feature-specific and not just generic tutorial content. |
 | [Get started with module twins](https://learn.microsoft.com/en-us/azure/iot-hub/how-to-module-twins) | integrations | 0.65 | How-to for creating and updating module identities and module twins using specific IoT Hub SDK APIs and patterns, which are product-specific integration details beyond generic LLM knowledge. |
 | [High availability and disaster recovery](https://learn.microsoft.com/en-us/azure/iot-dps/iot-dps-ha-dr) | architecture-patterns | 0.65 | Describes HA/DR capabilities and how to architect DPS within a resilient IoT solution; product-specific reliability architecture guidance. |
 | [How to send additional data from devices](https://learn.microsoft.com/en-us/azure/iot-dps/how-to-send-additional-data) | integrations | 0.65 | Describes how to transfer extra payload data in DPS registration flows; involves DPS-specific request/response fields and patterns used by custom allocation policies. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   configuration: 'Configuring AVS infrastructure: networking, DNS/DHCP, storage/datastores,
     backup, monitoring/alerts, HCX/Cloud Director, Arc/Run Command, and performance/placement
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 140
+- **Updated Pages**: 1
+- **Unchanged**: 142
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -78,11 +78,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 ### Updated Pages
 
 - [Plan maintenance for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/maintenance-orchestration)
-  - Updated: 2026-07-21T17:18:00.000Z → 2026-10-07T17:13:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-vmware/faq)
-  - Updated: 2026-07-09T22:04:00.000Z → 2026-10-09T22:12:00.000Z
-- [Azure VMware Solution license-included service retirement, using portable VCF and other options](https://learn.microsoft.com/en-us/azure/azure-vmware/license-included-service-retirement)
-  - Updated: 2026-09-01T22:21:00.000Z → 2026-10-09T22:12:00.000Z
+  - Updated: 2026-10-07T17:13:00.000Z → 2026-10-22T17:12:00.000Z
 
 ## Classified Pages
 
@@ -197,7 +193,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [6 - Create an NSX network segment](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-nsx-t-network-segment) | 0.40 | Tutorial on adding NSX network segments; mentions default Tier-0/Tier-1 gateway modes and visibility in Azure/NSX/vCenter, but the summary doesn't indicate detailed configuration parameters, limits, or decision matrices—more of a how-to guide. |
 | [Configure DNS forwarder](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-dns-azure-vmware-solution) | 0.40 | Network extension creation is a straightforward procedural step; summary does not indicate detailed config tables or constraints. |
 | [Disable internet access or enable a default route](https://learn.microsoft.com/en-us/azure/azure-vmware/disable-internet-access) | 0.40 | Explains options to set a default internet route or disable internet access. From the summary it appears to be a how-to/tutorial style article without explicit configuration parameter tables, limits, or security role definitions as required by the categories. |
-| [Plan maintenance for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/maintenance-orchestration) | 0.40 | Based on the summary, the page explains how to use maintenance orchestration in the Azure portal to schedule or reschedule planned maintenance. It appears to be a procedural/portal how-to without explicit numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Lacking clear evidence of product-specific limits, configs, or error mappings, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Setup Backup Server](https://learn.microsoft.com/en-us/azure/azure-vmware/set-up-backup-server-for-azure-vmware-solution) | 0.40 | Setup article for Azure Backup Server with Azure VMware Solution; from the summary it appears to be environment preparation and basic backup/restore usage, without explicit quotas, config parameter tables, RBAC role lists, or troubleshooting mappings that would qualify as expert knowledge under the defined sub-skills. |
 | [Upgrade VMware HCX on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/upgrade-hcx-azure-vmware-solutions) | 0.40 | Upgrade guide for HCX on AVS; primarily procedural steps without configuration tables, limits, or product-specific error mappings. |
 | [Vulnerability Management](https://learn.microsoft.com/en-us/azure/azure-vmware/vulnerability-management) | 0.35 | Describes high-level vulnerability management process and SDL compliance; mostly conceptual and policy-level. |
@@ -224,6 +219,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-vmware/faq) | 0.30 | The page is an FAQ for Azure VMware Solution. FAQs often mix conceptual and practical information, but the provided summary doesn't indicate specific numeric limits, configuration parameter tables, error codes, or detailed decision matrices. Without clear evidence of such expert details, it is treated as general Q&A rather than a focused expert-knowledge page for the defined sub-skill types. |
 | [Internet connectivity options](https://learn.microsoft.com/en-us/azure/azure-vmware/native-internet-connectivity-design-considerations) | 0.30 | Internet connectivity options article; summary indicates design considerations and options, but no clear evidence of numeric thresholds, decision matrices, or detailed configuration tables. |
 | [Move Azure VMware Solution subscriptions](https://learn.microsoft.com/en-us/azure/azure-vmware/move-ea-csp-subscriptions) | 0.30 | Describes moving an AVS subscription between subscriptions, likely as a procedural/billing operation. The summary does not indicate presence of limits tables, configuration parameter references, or decision matrices; it appears to be a how-to without reusable expert constraints. |
+| [Plan maintenance for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/maintenance-orchestration) | 0.30 | The page appears to be a procedural guide on using maintenance orchestration for Azure VMware Solution via the Azure portal. From the summary, it doesn't clearly indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Without evidence of detailed limits, configuration options, or troubleshooting mappings, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Remove Arc-enabled Azure VMware Solution vSphere resources from Azure](https://learn.microsoft.com/en-us/azure/azure-vmware/remove-arc-enabled-azure-vmware-solution-vsphere-resources-from-azure) | 0.30 | Procedural how-to for removing Arc-enabled vSphere resources; no detailed configuration tables, limits, error-code mappings, or product-specific parameters beyond generic portal steps. |
 | [Restore VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/restore-azure-netapp-files-vms) | 0.30 | Procedural restore-how-to for Cloud Backup and vCenter; description suggests step-by-step operations without explicit limits, config tables, error-code mappings, or product-specific parameter references that meet any sub-skill criteria. |
 | [Restore guest files and folders](https://learn.microsoft.com/en-us/azure/azure-vmware/restore-guest-files-folders) | 0.30 | How-to guide for restoring guest files/folders from VMDK; summary indicates operational steps only, with no numeric limits, configuration matrices, error-code troubleshooting, or detailed parameter tables required for any sub-skill type. |

@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring APIM gateways, policies, VNet networking, Entra/OAuth auth, or AI/LLM backends, and other Azure API Management related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring APIM/AI Gateway, securing OAuth/JWT, importing OpenAPI/SAP APIs, or deploying self-hosted gateways, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -28,8 +28,8 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L46-L54 | Best practices for caching, throttling, security (OWASP API Top 10), SSE setup, and running the self-hosted gateway on Kubernetes in production for Azure API Management. |
 | Decision Making | L55-L74 | Planning and migrating API Management deployments, including pricing tiers, scaling, networking, DevOps, analytics, portals, workspaces, monetization, and cross-platform/API gateway migrations. |
 | Architecture & Design Patterns | L75-L80 | Patterns for placing API Management in front of AKS microservices and Azure Front Door, including routing, security, scaling, and global API gateway architectures. |
-| Limits & Quotas | L81-L101 | Limits, quotas, and throttling rules for APIs (REST/SOAP/WebSocket), including rate/usage caps, token limits, validation policies, and service/gateway constraints in Azure API Management. |
-| Security | L102-L146 | Securing Azure API Management and AI Gateway: auth (Entra ID, OAuth2, mTLS, JWT), developer portal security, RBAC/managed identity, threat protection, policies, and compliance controls. |
+| Limits & Quotas | L81-L101 | Limits, quotas, and validation rules for API Management: rate/quotas per key, concurrent requests, LLM token limits, payload/header/parameter checks, and format/gateway/WebSocket service limits. |
+| Security | L102-L146 | Securing Azure API Management and AI Gateway: auth (OAuth2, Entra ID, B2C, mTLS, JWT), RBAC, certs/TLS, content safety, DDoS/Defender, self-hosted gateway auth, and security best practices. |
 | Configuration | L147-L246 | Configuring Azure API Management and AI Gateway: networking/VNet, domains, auth, caching, logging/monitoring, policies, backends, self-hosted gateways, IaC deployment, and LLM/MCP-specific settings. |
 | Integrations & Coding Patterns | L247-L278 | Patterns and samples for integrating API Management with AI/LLM backends, logging/monitoring, Event Hubs/Service Bus/Dapr, OAuth/Graph, and importing APIs from OpenAPI, SAP, web apps, and tools. |
 | Deployment | L279-L299 | Deploying and scaling APIM: autoscale, multi-region, backup/restore, region migration, vNet/external access, self-hosted gateways (K8s/AKS/Docker/Arc), portal automation, and MCP rollout. |
@@ -91,7 +91,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure quota policy limits in API Management | https://learn.microsoft.com/en-us/azure/api-management/quota-policy |
 | Set rate-limit policy thresholds in API Management | https://learn.microsoft.com/en-us/azure/api-management/rate-limit-policy |
 | Import and convert SOAP APIs to REST in API Management | https://learn.microsoft.com/en-us/azure/api-management/restify-soap-api |
-| Understand support policies and limitations for self-hosted gateway | https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies |
+| Understand support limits for self-hosted API gateway | https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies |
 | Understand Azure API Management service limits | https://learn.microsoft.com/en-us/azure/api-management/service-limits |
 | Validate request and response content with size limits | https://learn.microsoft.com/en-us/azure/api-management/validate-content-policy |
 | Validate response headers with validate-headers policy in API Management | https://learn.microsoft.com/en-us/azure/api-management/validate-headers-policy |
@@ -118,7 +118,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure RBAC roles for Azure API Management access | https://learn.microsoft.com/en-us/azure/api-management/api-management-role-based-access-control |
 | Configure Microsoft Entra applications for product-level OAuth access | https://learn.microsoft.com/en-us/azure/api-management/applications |
 | Use authentication-basic policy to secure backend calls in API Management | https://learn.microsoft.com/en-us/azure/api-management/authentication-basic-policy |
-| Configure managed identity authentication in API Management | https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy |
+| Configure authentication-managed-identity policy in API Management | https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy |
 | Migrate API Management identity providers from ADAL to MSAL | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/identity-provider-adal-retirement-sep-2025 |
 | Prepare Azure API Management for TLS 1.0/1.1 retirement | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/tls-versions-retirement-oct-2025 |
 | Configure credential providers in API Management | https://learn.microsoft.com/en-us/azure/api-management/credentials-configure-common-providers |

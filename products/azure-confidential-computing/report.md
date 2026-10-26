@@ -47,9 +47,9 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 68
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 71
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
@@ -67,17 +67,6 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 | *(Unclassified)* | 22 | 31.0% |
 
 ## Changes
-
-### New Pages
-
-- [Attest a Linux workload with dm-verity and IMA](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-attest-linux-workload)
-
-### Updated Pages
-
-- [FAQ for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-faq)
-  - Updated: 2026-05-25T05:26:00.000Z → 2026-10-09T22:12:00.000Z
-- [Guest attestation Design for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-virtual-machines-design)
-  - Updated: 2025-02-07T23:03:00.000Z → 2026-10-04T11:43:00.000Z
 
 ## Classified Pages
 

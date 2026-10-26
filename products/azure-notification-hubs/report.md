@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 67
+- **Updated Pages**: 0
+- **Unchanged**: 68
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
 
@@ -71,11 +71,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 | *(Unclassified)* | 14 | 20.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy and manage notification hubs using Azure PowerShell](https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-deploy-and-manage-powershell)
-  - Updated: 2025-09-23T22:10:00.000Z → 2026-10-13T22:18:00.000Z
 
 ## Classified Pages
 

@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 16
-- **Unchanged**: 168
+- **Updated Pages**: 0
+- **Unchanged**: 184
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -69,41 +69,6 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | *(Unclassified)* | 87 | 47.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview)
-  - Updated: 2026-09-10T07:38:00.000Z → 2026-10-14T12:37:00.000Z
-- [Manage with the Azure CLI](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/key-management)
-  - Updated: 2026-07-06T08:00:00.000Z → 2026-10-06T08:00:00.000Z
-- [Enable Multi-Region Replication on Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/multi-region-replication)
-  - Updated: 2026-04-30T06:17:00.000Z → 2026-10-09T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-overview)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-16T17:34:00.000Z
-- [Architecture](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-architecture)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-15T08:00:00.000Z
-- [SLA and shared responsibility](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-shared-responsibility)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-14T12:37:00.000Z
-- [Create your first external key (Azure CLI)](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-quickstart-cli)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-15T08:00:00.000Z
-- [Create your first external key (Azure portal)](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-quickstart-portal)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-15T08:00:00.000Z
-- [Key lifecycle](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-key-lifecycle)
-  - Updated: 2026-07-09T17:34:00.000Z → 2026-10-14T12:37:00.000Z
-- [Configure networking and mTLS](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-networking)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-15T08:00:00.000Z
-- [Logging and monitoring](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-logging-monitoring)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-14T12:37:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-troubleshooting)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-15T08:00:00.000Z
-- [Migrate workloads off external keys](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-migration)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-14T12:37:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-faq)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-16T17:34:00.000Z
-- [EKM Proxy API reference](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/external-key-management-proxy-api-reference)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-14T12:37:00.000Z
-- [Access control](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/access-control)
-  - Updated: 2026-07-07T13:06:00.000Z → 2026-10-06T08:00:00.000Z
 
 ## Classified Pages
 

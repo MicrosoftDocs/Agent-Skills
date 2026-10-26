@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Unclassified**: 22
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 61
+- **Unchanged**: 62
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -68,10 +68,6 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | *(Unclassified)* | 22 | 35.5% |
 
 ## Changes
-
-### New Pages
-
-- [Schedule seismic analytics reports](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-analytics)
 
 ## Classified Pages
 

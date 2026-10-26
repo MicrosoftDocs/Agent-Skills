@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning AVD, SAP, Oracle, Arc, AI/agent workloads, or Azure landing zones and governance, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when planning AVD, SAP, Oracle, Arc, AI/data architectures, or Azure landing zones, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Strategy | L37-L57 | Cloud and AI adoption strategy guidance: business cases, exec strategy, hybrid/multicloud, VMware/Oracle, data & analytics, security, resiliency, cost, sustainability, and virtual desktop. |
-| Planning | L58-L84 | Planning cloud and AI adoption: migration waves, workload assessments, data/AI architecture, cost and capacity planning, skills readiness, and detailed plans for AVD, SAP, Oracle, and startups. |
-| Readiness & Landing Zones | L85-L184 | Designing and operating Azure landing zones: network, identity, subscriptions, governance, automation/DevOps, multitenant setups, and integrating AI, data, VDI, SAP, Oracle, and Arc workloads. |
+| Planning | L58-L84 | Planning cloud and AI adoption: migration waves, workload assessments, modernization, data/AI architecture, cost and capacity planning, skills readiness, and app-specific plans (AVD, Oracle, SAP). |
+| Readiness & Landing Zones | L85-L184 | Designing and operating Azure landing zones: network, identity, subscriptions, management groups, automation/DevOps, multitenancy, governance, and integrating AI, data, SAP, AVD, Citrix, and Oracle workloads. |
 | Adoption Patterns | L185-L205 | Patterns for planning, migrating, modernizing, and operating Azure solutions, including AI agent architectures, cloud-native rollout, AVD, and SAP data integration. |
 | Governance | L206-L239 | Designing and enforcing Azure governance: policies, tagging, cost controls, compliance, AI and data governance, landing zones, Arc, SAP, and Virtual Desktop security and risk management. |
 | Security | L240-L268 | Designing secure Azure landing zones and AI workloads: identity, RBAC, networking, encryption, DevOps, SAP/Oracle, and ongoing security governance and operations. |
-| Operations & Management | L269-L300 | Operating, monitoring, automating, and optimizing Azure and Arc-based workloads (AI, data, AVD, SAP, Oracle), including lifecycle, BCDR, governance, and post-deployment management. |
-| Organization & Teams | L301-L320 | Designing org structures, roles, RACI, and team topologies (CoE, governance, ops, security, data, DevOps) to support Azure/cloud and AI adoption, operations, and cost-conscious transformation. |
+| Operations & Management | L269-L299 | Operating, monitoring, automating, and optimizing Azure and Arc-based workloads (AI, data, AVD, SAP, Oracle), including lifecycle, BCDR, governance, and post-deployment management. |
+| Organization & Teams | L300-L320 | Org design for cloud/AI: team structures, roles, RACI, CoEs, ops/governance/security functions, operating models, and practices to align, de-silo, and run cost-conscious Azure adoption. |
 | Adoption Scenarios | L321-L365 | Designing and implementing Azure landing zones, networking, security, BCDR, and DevOps for AI PaaS, Azure Virtual Desktop, Arc-enabled Kubernetes/servers, Oracle, and SAP workloads. |
 
 ### Strategy
@@ -65,7 +65,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan Azure migration waves for large estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/migration-wave-planning |
 | Create detailed Azure workload migration plans | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/plan-migration |
 | Plan structured Azure workload modernization projects | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/plan-cloud-modernization |
-| Prepare and prioritize workloads for cloud modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/prepare-organization-cloud-modernization |
+| Prioritize and plan cloud modernization investments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/prepare-organization-cloud-modernization |
 | Assess workloads for Azure cloud migration readiness | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/assess-workloads-for-cloud-migration |
 | Use a cloud-native startup adoption plan template | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/cloud-native-adoption-plan |
 | Discover and prioritize workload inventory for migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/discover-existing-workload-inventory |
@@ -281,7 +281,6 @@ This skill requires **network access** to fetch documentation content:
 | Prepare Azure cloud operations using RAMP model | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/ready-cloud-operations |
 | Optimize and stabilize workloads after Azure migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/optimize-workloads-after-migration |
 | Optimize and continuously improve modernized Azure workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/optimize-after-cloud-modernization |
-| Implement shared management cloud operations model | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/shared-management-operating-model |
 | Deploy baseline monitoring for Azure landing zone platform | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-monitor |
 | Implement workload management and monitoring in landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-workloads |
 | Design business continuity and disaster recovery for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery |
@@ -314,6 +313,7 @@ This skill requires **network access** to fetch documentation content:
 | Address silos and fiefdoms in cloud transformations | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/fiefdoms-silos |
 | Design mature cloud team structures by stage | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/organization-structures |
 | Create cross-team RACI for cloud responsibilities | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/raci-alignment |
+| Implement a shared management cloud operating model | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/shared-management-operating-model |
 | Design DevOps team topologies for Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/devops-teams-topologies |
 | Define security teams, roles, and functions for Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/teams-roles |
 | Prepare organizational alignment for cloud adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/prepare-organizational-alignment |

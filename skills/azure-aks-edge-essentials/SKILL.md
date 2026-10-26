@@ -1,9 +1,9 @@
 ---
 name: azure-aks-edge-essentials
-description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying AKS Edge/Hybrid with Arc, Azure Local, GitOps, IoT/OPC/ONVIF, or Key Vault-integrated workloads, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
+description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Hybrid/Arc clusters, Azure Local, MetalLB/BGP networking, GitOps, or IoT/OPC workloads, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service Edge Essentials Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L71 | Diagnosing and fixing AKS Edge/Hybrid/Arc issues: cluster creation/upgrade failures, networking, storage, encryption, auth, node health, logs/diagnostics, and Azure Local integration errors. |
+| Troubleshooting | L37-L71 | Diagnosing and fixing AKS Edge/Hybrid/Arc issues: cluster creation/upgrade failures, networking, storage, auth, encryption, logs, node health, and Azure Local/MetalLB/BGP problems. |
 | Best Practices | L72-L80 | Guidance on resilient AKS Edge Essentials setups: availability sets, Azure Policy on Windows Server, restoring AKS Arc after VM failure, and upgrading AKS Arc clusters/Kubernetes versions. |
 | Decision Making | L81-L89 | Guidance on AKS Edge/Hybrid deployment choices, pricing/licensing, trials, monitoring/logging options, and planning/operating disconnected or on-premises AKS environments. |
 | Architecture & Design Patterns | L90-L96 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
 | Limits & Quotas | L97-L112 | System requirements, capacity planning, and scale/support limits for AKS Edge/Hybrid/Azure Local/Windows Server, including IP planning, VM sizes, and supported Kubernetes versions. |
-| Security | L113-L141 | Securing AKS Edge/Hybrid/Arc: auth (Entra ID, AD, gMSA, SSO), RBAC/Azure RBAC, SSH hardening, cert/key/secret management, workload identity, and container image security. |
-| Configuration | L142-L198 | Configuring AKS Edge/Hybrid/Arc clusters: networking, load balancers, storage (CSI/NFS), GPUs, proxies, autoscaling, GitOps, Arc integration, and online/offline updates. |
+| Security | L113-L141 | Securing AKS Edge/Hybrid/Arc: auth (Entra, AD, gMSA, SSO), RBAC, SSH hardening, cert and key management, etcd encryption, and container image validation. |
+| Configuration | L142-L198 | Configuring AKS Edge/Hybrid/Arc clusters: networking, storage (CSI/NFS), load balancers, autoscaling, GPU, proxies, GitOps, offline/online updates, and cluster/node pool setup. |
 | Integrations & Coding Patterns | L199-L214 | Integrations, APIs, and PowerShell for connecting AKS Edge/Hybrid to Arc, IoT/OPC/ONVIF, TPM, storage/backup, metrics, AI models, CSI plugins, and Key Vault secrets. |
-| Deployment | L215-L228 | Deploying, upgrading, and managing AKS Arc/AKS on Azure Local clusters on Windows/Windows Server, including Terraform/ARM deployments, node pools, OS upgrades, and safe cluster lifecycle tasks. |
+| Deployment | L215-L228 | Deploying, upgrading, and maintaining AKS Arc/AKS on Azure Local clusters on Windows/Windows Server, including Terraform/ARM deployments, node pools, OS upgrades, and safe cluster lifecycle operations. |
 
 ### Troubleshooting
 | Topic | URL |

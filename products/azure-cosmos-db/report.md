@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   integrations: SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka
     Connect, language-specific samples, and integrations for NoSQL, Cassandra, Mongo,
     Gremlin, and PostgreSQL APIs.
-  security: 'Securing Cosmos DB across APIs (NoSQL, MongoDB, Cassandra, Gremlin, Table,
-    PostgreSQL): identity/RBAC, networking, encryption/CMK, auditing, policies, TLS,
-    data masking, and Defender protections.'
+  security: 'Securing Cosmos DB across APIs (NoSQL, MongoDB, Cassandra, Gremlin, PostgreSQL,
+    Table): identity/RBAC, networking, encryption/CMK, auditing, Defender, policies,
+    TLS, and compliance.'
   architecture-patterns: Patterns and reference architectures for AI agents, change
     feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and
     vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL.
@@ -16,9 +16,9 @@ category_descriptions:
   decision-making: Guides for choosing Cosmos DB deployment, scaling, consistency,
     backup, pricing, and migration options across SQL, MongoDB, Cassandra, Table,
     and PostgreSQL APIs.
-  best-practices: Performance, scaling, partitioning, RU/cost optimization, SDK usage,
-    change feed, resilience/DR, and best practices for Cosmos DB APIs (NoSQL, MongoDB,
-    Cassandra, PostgreSQL, vector).
+  best-practices: Performance, cost, partitioning, and resilience best practices for
+    Cosmos DB (NoSQL, Mongo, Cassandra, PostgreSQL), including SDK tuning, RU optimization,
+    change feed, autoscale, and vector search.
   limits-quotas: Limits, quotas, and behaviors for Cosmos DB throughput, partitions,
     backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache,
     and PostgreSQL clusters.
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector
-  search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development
-  tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database
-  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra APIs, change feed, multi-region
-  HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related
-  development tasks.
+  using NoSQL/Mongo/Cassandra/Gremlin/PostgreSQL APIs, change feed, vector search,
+  multi-region HA, or bulk ops, and other Azure Cosmos DB related development tasks.
+  Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
+  (use azure-virtual-machines).
+use_when: Use when using NoSQL/Mongo/Cassandra/Gremlin/PostgreSQL APIs, change feed,
+  vector search, multi-region HA, or bulk ops, and other Azure Cosmos DB related development
+  tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
   Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   Azure Virtual Machines (use azure-virtual-machines).
@@ -55,9 +55,9 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 718
-- **Deleted Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 720
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
 ## Classification Statistics
@@ -65,8 +65,8 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 22 | 3.0% |
-| best-practices | 49 | 6.8% |
-| configuration | 125 | 17.3% |
+| best-practices | 50 | 6.9% |
+| configuration | 124 | 17.2% |
 | decision-making | 47 | 6.5% |
 | deployment | 23 | 3.2% |
 | integrations | 120 | 16.6% |
@@ -79,18 +79,10 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ### Updated Pages
 
-- [Use with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-10-09T17:09:00.000Z
-- [Linux emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-07T22:10:00.000Z
-- [Configure distributed transactions (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-and-use-distributed-transactions)
-  - Updated: 2026-06-03T12:06:00.000Z → 2026-10-12T17:12:00.000Z
-- [.NET SDK v3](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-10-07T22:10:00.000Z
-
-### Deleted Pages
-
-- ~~Multi-vector search with MaxSim~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/multi-vector-search)
+- [Rotate keys](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-rotate-keys)
+  - Updated: 2026-06-19T12:06:00.000Z → 2026-10-20T22:11:00.000Z
+- [Throughput control](https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-control-spark)
+  - Updated: 2026-05-04T23:12:00.000Z → 2026-10-21T22:14:00.000Z
 
 ## Classified Pages
 
@@ -280,6 +272,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Troubleshoot issues with advanced diagnostics queries](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/diagnostic-queries) | troubleshooting | 0.75 | Shows how to query diagnostics logs with specific query patterns and fields to troubleshoot issues; symptom→diagnostic query→interpretation. |
 | [Use Azure Key Vault to store keys](https://learn.microsoft.com/en-us/azure/cosmos-db/store-credentials-key-vault) | security | 0.75 | Tutorial on storing connection strings and keys in Key Vault; includes secure configuration patterns specific to Cosmos DB. |
 | [How to soft delete (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-soft-delete) | configuration | 0.74 | The page describes how to configure soft delete behavior for Azure Cosmos DB, including specific configuration options (such as enabling soft delete, retention behavior, and management operations) that are product-specific and not purely conceptual. These are concrete configuration steps and options rather than general concepts, fitting the configuration sub-skill best. |
+| [Throughput control](https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-control-spark) | best-practices | 0.74 | The page provides product-specific guidance on when to use server-side throughput buckets vs client-side throughput control for Azure Cosmos DB Spark connector bulk data movement, including concrete configuration patterns (e.g., global throughput control groups) and recommendations about preferring server-side buckets where supported. This is actionable, scenario-driven guidance rather than just conceptual description, fitting the best-practices category. |
 | [Develop with the emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator) | configuration | 0.73 | The page describes detailed, product-specific configuration and usage of the Azure Cosmos DB emulator for local development and CI, including emulator-specific connection settings, endpoints/keys, command-line options, and behaviors that differ from the cloud service. These are concrete configuration details and patterns unique to the emulator that an LLM is unlikely to infer from general training data. |
 | [.NET SDK v3](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-dotnet-v3) | configuration | 0.72 | The page is a detailed reference for the Azure Cosmos DB .NET SDK for the SQL (NoSQL) API, including specific version numbers, release and retirement dates, and version-specific changes. These are product- and time-specific details that an LLM is unlikely to know from training. While it’s not classic runtime configuration, the closest sub-skill is configuration because it provides precise SDK version information and guidance on which versions to use, which is essential for configuring applications against Cosmos DB. |
 | [Async Java SDK v2](https://learn.microsoft.com/en-us/azure/cosmos-db/performance-tips-async-java) | configuration | 0.72 | Performance tips for an older async SDK version typically document specific configuration knobs and their impact; these are version-specific configuration details not derivable from general knowledge. |
@@ -428,7 +421,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Read an item](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-read-item) | integrations | 0.70 | Documents point-read patterns, including partition key and id usage, request options, and response handling specific to Cosmos DB’s .NET SDK. |
 | [Reading change feed](https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed) | integrations | 0.70 | Describes push vs pull consumption models with SDK/processor usage; includes product-specific APIs and behavior for each model. |
 | [Restore cluster](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-restore-portal) | configuration | 0.70 | Restore how-to pages describe concrete restore options, parameters (time, region, target), and constraints unique to this service. |
-| [Rotate keys](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-rotate-keys) | security | 0.70 | The page covers concrete security operations for Cosmos DB keys, including how to rotate primary and secondary keys and guidance on avoiding ROPC in favor of Entra ID RBAC. This is product-specific security configuration and operational guidance (authentication methods, key handling) that goes beyond generic security concepts. |
+| [Rotate keys](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-rotate-keys) | security | 0.70 | Page provides product-specific security guidance on rotating Cosmos DB keys and explicitly recommends against using the ROPC flow in production in favor of Microsoft Entra ID RBAC, which is concrete, service-specific security configuration advice rather than generic concepts. |
 | [Row-level security](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-row-level-security) | security | 0.70 | Row-level security article describes specific role setups and policy definitions to secure multi-tenant data on this platform. |
 | [Ruby](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-app-stacks-ruby) | integrations | 0.70 | Ruby guide will show product-specific connection URIs and driver options for this managed distributed PostgreSQL service. |
 | [Run Jaeger with Azure Managed Instance for Apache Cassandra](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/jaeger) | integrations | 0.70 | Page describes a concrete integration of Jaeger with Azure Managed Instance for Apache Cassandra, likely including product-specific connection details, configuration parameters, and settings unique to this service rather than just conceptual tracing guidance. |
@@ -453,7 +446,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [System document properties](https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/access-system-properties) | configuration | 0.70 | Explains how to read/write system document properties like _ts, _rid, _etag in Cosmos DB Gremlin, which are product-specific configuration/usage details. |
 | [Tenant monitoring fundamentals](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-multi-tenant-monitoring) | configuration | 0.70 | Multi-tenant monitoring docs typically expose special metrics, views, or configuration options unique to this service’s multi-tenant model, which are not generic PostgreSQL features. |
 | [Terraform support](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-terraform) | deployment | 0.70 | Terraform support reference will list resource types, arguments, and constraints for managing clusters, which are product-specific deployment/configuration details via IaC. |
-| [Throughput control](https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-control-spark) | configuration | 0.70 | The article describes how to configure global throughput control groups for the Azure Cosmos DB Spark connector, including product-specific settings and parameters that govern RU consumption. This is detailed configuration guidance for a specific integration/SDK feature rather than a generic concept, but it focuses on how to set and use the throughput control configuration rather than listing numeric limits or quotas. |
 | [Throughput control groups](https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-control-java) | configuration | 0.70 | The page describes product-specific throughput control group settings (for example, per-group RU limits and behavior) in the Azure Cosmos DB Java SDK v4. These are concrete configuration options and API parameters unique to this product, going beyond generic concepts of rate limiting. While it’s about limiting RU consumption, it focuses on how to configure the SDK behavior rather than listing service-wide numeric quotas, so it best fits the configuration category. |
 | [Time to live](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/time-to-live) | configuration | 0.70 | TTL feature description for Mongo API likely includes specific TTL field names, allowed values, and behavior; these are product-specific configuration parameters. |
 | [Tips for vector search performance](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/vector-search-performance-tips) | best-practices | 0.70 | Described as a practical optimization guide focusing on embedding shape/precision, index selection, partitioning, throughput sizing, ingestion patterns, SDK concurrency, and query-time tuning. This is product-specific performance tuning guidance with concrete recommendations and likely configuration patterns unique to Cosmos DB vector search, fitting the best-practices category. |

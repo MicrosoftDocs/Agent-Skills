@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data connectors, ASIM/analytics rules, KQL automation, data lake integrations, or CI/CD deployments, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Sentinel data connectors, analytics rules, playbooks, ASIM, or data lake integrations, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Defender For Iot (use azure-defender-for-iot), Azure Monitor (use azure-monitor), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -24,21 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L50 | Diagnosing and fixing Microsoft Sentinel ingestion, connector, KQL, notebook, MCP, SAP, and analytics rule errors, plus monitoring and troubleshooting scheduled rule execution. |
+| Troubleshooting | L37-L50 | Diagnosing and fixing Microsoft Sentinel ingestion, connectors (AWS/S3, Blob, Syslog/CEF, SAP), KQL/jobs, notebooks, MCP tools, and analytics rule/scheduled rule execution issues. |
 | Best Practices | L51-L74 | Best practices for designing, tuning, and operating Microsoft Sentinel: automation, playbooks, KQL hunting, analytics rules, UEBA, ASIM, watchlists, SOC metrics, and solution quality. |
 | Decision Making | L75-L117 | Guidance for planning Sentinel deployments, pricing and data tiers, and making migration, integration, connector, and detection design decisions (including from legacy SIEMs and SOAR tools). |
 | Architecture & Design Patterns | L118-L129 | Designing Microsoft Sentinel architectures: workspace/tenant layouts, SIEM patterns, BCDR/resiliency, data lake/graph designs, and coexisting with or migrating from other SIEMs. |
 | Limits & Quotas | L130-L142 | Limits, quotas, pricing, and availability of Sentinel features (rules, data lake, MCP), plus constraints and safe management of search jobs and watchlists, and removal implications. |
-| Security | L143-L162 | Configuring secure access, permissions, encryption, and RBAC for Microsoft Sentinel, including playbooks, data lake, storage connectors, SAP integration, and automated attack disruption across clouds. |
-| Configuration | L163-L299 | Configuring Microsoft Sentinel: data connectors, ASIM schemas, analytics rules, automation/playbooks, data lake, SAP/Power Platform solutions, health/auditing, and threat intelligence integration. |
-| Integrations & Coding Patterns | L300-L345 | Patterns and examples for integrating Microsoft Sentinel with external data, APIs, Logic Apps, MCP tools, threat intel feeds, and for querying/automating via KQL, REST, graphs, and data lake. |
-| Deployment | L346-L360 | Deploying and customizing Sentinel solutions and content (rules, automation, notebooks, SAP, Copilot agents) via CI/CD, ARM, data lake, and multi-cloud/Stack Hub onboarding. |
+| Security | L143-L163 | Securing Microsoft Sentinel: configuring roles, RBAC, playbook auth, CMK, storage/network protections, SAP and AWS security integration, data lake auditing, and secure MCP/Copilot tool access. |
+| Configuration | L164-L300 | Configuring Microsoft Sentinel: data connectors, ASIM schemas, analytics rules, automation/playbooks, data lake, SAP/Power Platform solutions, health/auditing, and threat intelligence integration. |
+| Integrations & Coding Patterns | L301-L346 | Patterns and examples for integrating Microsoft Sentinel with external data, APIs, Logic Apps, MCP tools, threat intel feeds, and for querying/automating via KQL, REST, graphs, and data lake. |
+| Deployment | L347-L361 | Deploying and customizing Sentinel content (rules, automation, notebooks, SAP/BTP, data lake), CI/CD and ARM-based deployments, cloud availability, and publishing solutions/agents. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot AWS S3 log ingestion connector in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/aws-s3-troubleshoot |
-| Troubleshoot Microsoft Sentinel Azure Storage Blob connector issues | https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot |
+| Diagnose and fix Microsoft Sentinel Blob connector issues | https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot |
 | Troubleshoot Syslog and CEF AMA connectors in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/cef-syslog-ama-troubleshooting |
 | Troubleshoot KQL queries and jobs in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-troubleshoot |
 | Resolve common Jupyter notebook errors in Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks-troubleshooting |
@@ -157,6 +157,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Microsoft Sentinel roles and permissions | https://learn.microsoft.com/en-us/azure/sentinel/roles |
 | Prepare SAP security settings for Sentinel connector | https://learn.microsoft.com/en-us/azure/sentinel/sap/preparing-sap |
 | Assign required ABAP authorizations for Sentinel SAP user | https://learn.microsoft.com/en-us/azure/sentinel/sap/required-abap-authorizations |
+| Use built-in Sentinel security content for SAP BTP | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-btp-security-content |
 | Use Sentinel built-in SAP security content | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-solution-security-content |
 | Monitor SAP security parameters for suspicious changes | https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-suspicious-configuration-security-parameters |
 

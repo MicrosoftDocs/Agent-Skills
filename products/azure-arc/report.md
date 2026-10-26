@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   configuration: 'Configuring Azure Arc and Arc-enabled services: networking, agents,
     storage, data services, GitOps, monitoring, security, and Agentic Retrieval data/model
@@ -45,16 +45,16 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Summary
 
-- **Total Pages**: 446
-- **Fetched**: 446
+- **Total Pages**: 447
+- **Fetched**: 447
 - **Fetch Failed**: 0
-- **Classified**: 294
-- **Unclassified**: 152
+- **Classified**: 293
+- **Unclassified**: 154
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 28
-- **Unchanged**: 417
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 445
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -64,68 +64,25 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 |------|-------|------------|
 | architecture-patterns | 4 | 0.9% |
 | best-practices | 8 | 1.8% |
-| configuration | 108 | 24.2% |
+| configuration | 107 | 23.9% |
 | decision-making | 20 | 4.5% |
 | deployment | 26 | 5.8% |
-| integrations | 27 | 6.1% |
+| integrations | 27 | 6.0% |
 | limits-quotas | 8 | 1.8% |
-| security | 56 | 12.6% |
+| security | 56 | 12.5% |
 | troubleshooting | 37 | 8.3% |
-| *(Unclassified)* | 152 | 34.1% |
+| *(Unclassified)* | 154 | 34.5% |
 
 ## Changes
 
 ### New Pages
 
-- [Onboard VMware vCenter resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-vcenter-resources-in-azure)
-
-### Updated Pages
-
-- [Available extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions-release)
-  - Updated: 2026-08-28T08:00:00.000Z → 2026-10-14T08:00:00.000Z
-- [GitOps (Flux) Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/flux-gitops-release-notes)
-  - Updated: 2026-09-15T08:00:00.000Z → 2026-10-09T08:00:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension)
-  - Updated: 2026-08-28T08:00:00.000Z → 2026-10-14T08:00:00.000Z
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-troubleshooting)
-  - Updated: 2025-11-18T19:04:00.000Z → 2026-10-15T17:05:00.000Z
-- [What's new with Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/release-notes)
-  - Updated: 2026-08-10T21:58:00.000Z → 2026-10-12T22:15:00.000Z
-- [Reference](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-reference)
-  - Updated: 2026-03-26T17:15:00.000Z → 2026-10-14T22:10:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes)
-  - Updated: 2026-08-26T11:03:00.000Z → 2026-10-14T22:10:00.000Z
-- [Migrate from AKV Secrets Provider](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-migration)
-  - Updated: 2026-08-28T08:00:00.000Z → 2026-10-15T17:05:00.000Z
-- [Access secrets without local copies](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-akv-secrets-provider)
-  - Updated: 2025-02-19T08:00:00.000Z → 2026-10-14T08:00:00.000Z
-- [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-arc/servers/prerequisites)
-  - Updated: 2026-08-27T22:12:00.000Z → 2026-10-13T17:11:00.000Z
-- [Connect vCenter to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/quick-start-connect-vcenter-to-arc-using-script)
-  - Updated: 2026-08-12T22:17:00.000Z → 2026-10-04T08:00:00.000Z
-- [Link Arc-enabled server machines to VMware vSphere](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-virtual-hardware)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-10-05T17:13:00.000Z
-- [Create a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/create-virtual-machine)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-10-08T17:05:00.000Z
-- [Perform VM powercycle operations](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/perform-powercycle-operations)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-10-05T17:13:00.000Z
-- [Apply Azure tags on resources](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/apply-azure-tags)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-10-04T08:00:00.000Z
-- [Update configuration and resize a VM](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/update-configuration-resize-vm)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-10-04T08:00:00.000Z
-- [Delete a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/delete-virtual-machine)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-10-05T17:13:00.000Z
-- [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-10-06T17:08:00.000Z
-- [Procure and deliver Extended Security Updates](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/deliver-extended-security-updates-for-vmware-vms-through-arc)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-10-06T17:08:00.000Z
-- [Prepare to deliver Extended Security Updates](https://learn.microsoft.com/en-us/azure/azure-arc/servers/prepare-extended-security-updates)
-  - Updated: 2026-08-06T06:10:00.000Z → 2026-10-05T22:11:00.000Z
-- *...and 8 more*
+- [Manage the Power Cycle of Multicloud VMs](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/multicloud-lifecycle-management)
+- [Onboard Kubernetes clusters to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc)
 
 ### Deleted Pages
 
-- ~~Enable VMware vCenter resources in Azure~~ (https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure)
+- ~~Onboard Amazon EKS clusters to Azure Arc~~ (https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc)
 
 ## Classified Pages
 
@@ -361,7 +318,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Configure NFS server](https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/configure-nfs-server) | configuration | 0.68 | Installing NFS server packages and creating shared directories for use as a data source is concrete configuration for this product’s ingestion pipeline. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq) | troubleshooting | 0.68 | As an FAQ for a niche preview feature, this page is likely to contain product-specific questions with concrete answers such as known limitations, error behaviors, and how to resolve or work around them. FAQ entries for preview Azure services commonly include expert details like unsupported scenarios, specific configuration caveats, and symptom→cause→resolution guidance that aren't generic knowledge. This aligns best with the troubleshooting sub-skill, even though it's in FAQ format rather than a formal troubleshooting guide. |
 | [How to manage Argo CD extension](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/how-to-manage-gitops-argo-cd-extension) | configuration | 0.68 | How-to article for managing the Argo CD extension on AKS and Azure Arc-enabled Kubernetes typically includes product-specific extension settings, parameter names, and configuration options (for example, extension instance properties, update/upgrade parameters, and configuration flags) that go beyond generic GitOps or Argo CD knowledge and are unique to Azure’s extension model. |
-| [Onboard Amazon EKS clusters to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc) | configuration | 0.68 | The page describes a specific onboarding solution for Amazon EKS clusters into Azure Arc via the multicloud connector, which typically includes product-specific configuration steps, required parameters (such as cloud account connection details, permissions, and connector settings), and Azure-side setup unique to this integration. These are concrete, product-specific configuration details that go beyond generic knowledge. It is not primarily a conceptual overview, marketing, or navigation page, and it focuses on how to enable and configure the EKS Arc onboarding solution rather than general Kubernetes concepts. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-data-controller-direct-prerequisites) | deployment | 0.68 | Prerequisites for direct-connect deployment; likely includes specific Kubernetes, Azure, and resource requirements that are product- and mode-specific for deployment. |
 | [Remove your SCVMM environment from Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/remove-scvmm-from-azure-arc) | deployment | 0.68 | Describes the exact steps and ordering to decommission SCVMM from Arc and delete related resources. These teardown/deployment lifecycle requirements are product-specific and important for correct environment management. |
 | [Securely connect to cluster from anywhere](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/cluster-connect) | security | 0.68 | The page describes product-specific secure connectivity for Azure Arc-enabled Kubernetes using cluster connect, including how to access the API server without inbound firewall ports. This involves detailed security/connection configuration patterns unique to Azure Arc cluster connect, which an LLM is unlikely to fully infer from training data. |
@@ -474,7 +430,9 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Install client tools](https://learn.microsoft.com/en-us/azure/azure-arc/data/install-client-tools) | 0.40 | Tool installation pointer article; mostly links to install azdata/kubectl/Azure CLI/psql, which are generic and not Arc-specific configuration references. |
 | [Limitations](https://learn.microsoft.com/en-us/azure/azure-arc/data/limitations-managed-instance) | 0.40 | Describes limitations conceptually; summary does not indicate concrete numeric limits or quotas tables. |
 | [Link Arc-enabled server machines to VMware vSphere](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-virtual-hardware) | 0.40 | Explains enabling additional capabilities by linking Arc-enabled Servers to vCenter; summary suggests high-level steps rather than detailed configuration parameters or limits. |
+| [Manage the Power Cycle of Multicloud VMs](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/multicloud-lifecycle-management) | 0.40 | Page appears to be a how-to guide for starting/stopping AWS EC2 instances via Azure Arc Multicloud Connector. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details; it mainly describes capabilities and a preview note. |
 | [Monitor, log analytics, and billing information - portal](https://learn.microsoft.com/en-us/azure/azure-arc/data/monitoring-log-analytics-azure-portal-managed-instance) | 0.40 | Monitoring/log analytics overview; summary suggests high-level experiences rather than detailed configuration parameter tables. |
+| [Onboard Kubernetes clusters to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/onboard-elastic-kubernetes-service-clusters-arc) | 0.40 | Page describes onboarding Amazon EKS clusters to Azure Arc via the multicloud connector. From the summary, it looks like a procedural/tutorial-style onboarding guide without explicit limits, configuration matrices, or detailed troubleshooting mappings, so it likely lacks the kind of expert-only numeric/configuration content required. |
 | [Onboard using Azure portal](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/set-up-workload-orchestration-azure-portal) | 0.40 | Portal-based setup guide for workload orchestration; mostly UI-driven steps without clear indication of parameter tables or expert-only configuration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/deploy-overview) | 0.40 | Deployment overview describing components and workflow, including options to deploy layers. Summary suggests conceptual guidance rather than detailed deployment matrices or tier-specific constraints. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/agents-tools-foundry-local/disconnected-operations/overview-disconnected) | 0.40 | Disconnected operations overview focuses on how deployments differ conceptually; summary doesn’t indicate detailed parameter tables or numeric constraints. |

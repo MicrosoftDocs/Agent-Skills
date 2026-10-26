@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 - **Unclassified**: 746
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 998
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 1003
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -73,21 +73,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | *(Unclassified)* | 746 | 74.4% |
 
 ## Changes
-
-### New Pages
-
-- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/pipelines/sprint-280-update)
-
-### Updated Pages
-
-- [Roadmap](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline)
-  - Updated: 2026-08-05T08:00:00.000Z → 2026-10-14T22:06:00.000Z
-- [October 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-280-update)
-  - Updated: 2026-10-02T22:04:00.000Z → 2026-10-05T21:42:00.000Z
-- [RTW Release Notes](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops)
-  - Updated: 2026-09-10T08:00:00.000Z → 2026-10-13T08:00:00.000Z
-- [SHA-256 Values](https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver-sha?view=azure-devops)
-  - Updated: 2026-09-10T22:20:00.000Z → 2026-10-13T19:41:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building indexes, skillsets, vector/semantic search, secured indexers, or multi-region search apps, and other Azure AI Search related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Cosmos DB (use azure-cosmos-db).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data sources, skillsets, vector/semantic search, indexers, or multi-region search architectures, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L67-L82 | Guidance on choosing regions, tiers, pricing, capacity, and connectors, plus migration/upgrade paths for APIs and SDKs to plan, scale, and modernize Azure AI Search solutions. |
 | Architecture & Design Patterns | L83-L88 | Architectural patterns for Azure AI Search: combining vector and keyword search, designing multitenant or isolated indexes, and building resilient multi-region search deployments. |
 | Limits & Quotas | L89-L98 | Limits, quotas, and capacity planning for Azure AI Search: billing/free enrichment, indexer schedules/concurrency/runtime, service capacity limits, and vector index size/throughput constraints. |
-| Security | L99-L141 | Securing Azure AI Search: RBAC/Entra ID, keys, encryption, network isolation, indexer auth to data sources (SQL, Storage, SharePoint, Cosmos, Functions), and document-level/label-based access control. |
+| Security | L99-L141 | Securing Azure AI Search: RBAC/Entra ID auth, keyless access, keys and encryption, indexer permissions (SQL, Storage, SharePoint, Cosmos), ACL/Purview label ingestion, and network isolation (firewall, private endpoints). |
 | Configuration | L142-L234 | Configuring Azure AI Search: data sources, knowledge bases, skillsets, analyzers, vectorization, semantic ranking, and query options for agentic retrieval and enrichment. |
 | Integrations & Coding Patterns | L235-L310 | Patterns and code for integrating Azure AI Search: indexers, skills, vectorization, query syntax (Lucene/OData), semantic ranking, filters, pagination, and app/Power BI integrations. |
-| Deployment | L311-L319 | Provision and deploy Azure AI Search services and apps using ARM, Bicep, Terraform, and Container Apps, plus guidance on region moves and checking regional feature availability. |
+| Deployment | L311-L319 | Automating Azure AI Search deployment with ARM/Bicep/Terraform, moving services across regions, checking regional feature support, and deploying C# search apps to Azure Container Apps. |
 
 ### Troubleshooting
 | Topic | URL |

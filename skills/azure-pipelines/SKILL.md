@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, agents, service connections, Key Vault secrets, or web/Kubernetes deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, agents, service connections, Key Vault secrets, or Kubernetes/web app deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L61-L69 | Guidance on choosing and configuring GitHub/Microsoft-hosted agents, handling image deprecation, and safely migrating from Jenkins or Classic pipelines and retiring tasks to YAML equivalents. |
 | Architecture & Design Patterns | L70-L77 | Designing end-to-end CI/CD architectures and patterns for Azure Web Apps and IaaS/VM-based applications, including baseline pipelines, DevTest/DevOps environments, and deployment topologies. |
 | Limits & Quotas | L78-L86 | Limits, quotas, and planning for Azure Pipelines: agent/image limits, pool concurrency, large package size handling, parallel job capacity, and run retention configuration. |
-| Security | L87-L135 | Securing Azure Pipelines: auth for agents and service connections, secrets/Key Vault, permissions and approvals, artifact/repo protection, policy/compliance checks, and secure YAML practices. |
-| Configuration | L136-L505 | Configuring Azure Pipelines: agents, triggers, variables, environments, YAML schema, deployment strategies, and detailed setup for built-in tasks and artifact/test handling. |
+| Security | L87-L134 | Securing Azure Pipelines: auth for agents and service connections, secrets/Key Vault, permissions and approvals, artifact/repo protection, policy/compliance checks, and secure YAML practices. |
+| Configuration | L135-L505 | Configuring Azure Pipelines: agents, triggers, variables, environments, YAML schema, deployment strategies, and detailed task/task-input setup for building, testing, and deploying apps. |
 | Integrations & Coding Patterns | L506-L534 | Patterns for building/testing apps (ASP.NET, .NET, Java, Python, Ruby, Xcode), integrating tools (Slack, ServiceNow, Jenkins, Key Vault), and scripting/REST/Function automation in pipelines. |
 | Deployment | L535-L589 | Deploying apps and packages with Azure Pipelines: configuring agents, containers, artifacts, classic releases, databases, and Kubernetes/VM/web app deployments. |
 
@@ -118,7 +118,6 @@ This skill requires **network access** to fetch documentation content:
 | Use secret variables securely in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/set-secret-variables?view=azure-devops |
 | Create ARM service connection using client secret | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-app-secret?view=azure-devops |
 | Manually configure ARM workload identity service connections | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-workload-identity?view=azure-devops |
-| Convert Azure DevOps issuer connections to Entra issuer | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/convert-service-connections?view=azure-devops |
 | Secure Azure Pipelines access to private Key Vault | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/key-vault-access?view=azure-devops |
 | Plan an approach for securing YAML pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/approach?view=azure-devops |
 | Securely handle variables and parameters in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/security/inputs?view=azure-devops |
@@ -161,6 +160,7 @@ This skill requires **network access** to fetch documentation content:
 | Define and manage stages in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops |
 | Configure and control Azure Pipelines task behavior | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/tasks?view=azure-devops |
 | Configure and use variables in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops |
+| Reconfigure Azure DevOps service connections to Microsoft Entra | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/convert-service-connections?view=azure-devops |
 | Configure Classic pipeline agent jobs and properties | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/options?view=azure-devops |
 | Set build completion triggers in classic pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/pipeline-triggers-classic?view=azure-devops |
 | Configure classic release triggers in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops |

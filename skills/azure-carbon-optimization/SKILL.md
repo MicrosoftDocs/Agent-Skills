@@ -1,14 +1,14 @@
 ---
 name: azure-carbon-optimization
-description: Expert knowledge for Azure Carbon Optimization development including troubleshooting, security, and integrations & coding patterns. Use when using Carbon Service REST API, Python exports, RBAC roles, emissions data quality, or dashboard issues, and other Azure Carbon Optimization related development tasks. Not for Azure Cost Management (use azure-cost-management), Azure Impact Reporting (use azure-impact-reporting), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Carbon Optimization development including troubleshooting, best practices, security, and integrations & coding patterns. Use when exporting emissions via REST/Python, setting RBAC, or applying Azure Advisor carbon optimization guidance, and other Azure Carbon Optimization related development tasks. Not for Cost Management (use azure-cost-management), Azure Impact Reporting (use azure-impact-reporting), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Carbon Optimization Skill
 
-This skill provides expert guidance for Azure Carbon Optimization. Covers troubleshooting, security, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Carbon Optimization. Covers troubleshooting, best practices, security, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,14 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and resolving common Azure Carbon Optimization issues, including data collection gaps, configuration problems, inaccurate emissions estimates, and troubleshooting dashboards or reports. |
-| Security | L36-L40 | Setting up Azure RBAC roles and permissions so users and apps can securely access and manage Azure Carbon Optimization resources. |
-| Integrations & Coding Patterns | L41-L45 | Using the Carbon Service REST API and Python scripts to programmatically export Azure emissions data, authenticate, query, and integrate carbon metrics into external systems. |
+| Troubleshooting | L32-L36 | Diagnosing and resolving Azure Carbon Optimization issues, including data collection problems, configuration errors, and troubleshooting carbon reporting or optimization results. |
+| Best Practices | L37-L41 | Using Azure Advisor to identify, prioritize, and implement recommendations that reduce carbon emissions by optimizing resource usage and configuration. |
+| Security | L42-L46 | Configuring role-based access control (RBAC) for Azure Carbon Optimization, including permissions, roles, and access setup for users and service principals. |
+| Integrations & Coding Patterns | L47-L51 | Exporting Azure carbon optimization data via REST and Python, including endpoints, auth, payload formats, and sample code for integrating emissions data into external systems. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common Azure Carbon optimization issues | https://learn.microsoft.com/en-us/azure/carbon-optimization/troubleshooting |
+| Diagnose and fix Azure Carbon optimization issues | https://learn.microsoft.com/en-us/azure/carbon-optimization/troubleshooting |
+
+### Best Practices
+| Topic | URL |
+|-------|-----|
+| Apply Azure Advisor recommendations to cut emissions | https://learn.microsoft.com/en-us/azure/carbon-optimization/reduce-emissions |
 
 ### Security
 | Topic | URL |
@@ -41,5 +47,5 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Use Carbon Service REST API to export emissions data | https://learn.microsoft.com/en-us/azure/carbon-optimization/api-export-data |
+| Export Azure Carbon optimization data via REST API | https://learn.microsoft.com/en-us/azure/carbon-optimization/api-export-data |
 | Export Azure carbon data via Python REST integration | https://learn.microsoft.com/en-us/azure/carbon-optimization/tutorial-export-python |

@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 110
+- **Updated Pages**: 0
+- **Unchanged**: 112
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
@@ -74,13 +74,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 28 | 25.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [About gateway root certificate migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about-gateway-certificate-migration)
-  - Updated: 2026-06-11T22:20:00.000Z → 2026-07-01T23:48:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new)
-  - Updated: 2026-09-01T05:17:00.000Z → 2026-09-17T17:12:00.000Z
 
 ## Classified Pages
 

@@ -3,7 +3,7 @@ name: azure-reliability
 description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when choosing regions/AZs, geo-pairs, multiregion designs, Azure Storage Discovery, Queue Storage, or Web PubSub, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
@@ -24,10 +24,10 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L68 | Patterns and guidance for designing, configuring, and hardening highly available, zone-resilient architectures across core Azure services (compute, data, networking, and monitoring). |
-| Decision Making | L69-L78 | Guidance on choosing Azure regions and services for reliability: region types, availability zones, geo-paired regions, multiregion and nonregional services, and disaster recovery options. |
-| Architecture & Design Patterns | L79-L85 | Patterns for designing highly available Azure apps: zonal deployments, multiregion architectures (including nonpaired regions), and resilient Azure Storage Discovery setups. |
-| Limits & Quotas | L86-L90 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
+| Best Practices | L32-L69 | Patterns and guidance for designing, configuring, and hardening highly available, zone-resilient architectures across core Azure services (compute, data, networking, and monitoring). |
+| Decision Making | L70-L79 | Guidance on choosing Azure regions and services for reliability: region types, availability zones, geo-paired regions, multiregion and nonregional services, and disaster recovery options. |
+| Architecture & Design Patterns | L80-L86 | Patterns for designing highly available Azure apps: zonal deployments, multiregion architectures (including nonpaired regions), and resilient Azure Storage Discovery setups. |
+| Limits & Quotas | L87-L91 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
 
 ### Best Practices
 | Topic | URL |
@@ -61,6 +61,7 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient Azure Monitor Logs workspaces | https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-logs |
 | Design resilient Azure Notification Hubs deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs |
 | Harden Azure Private Link Service for high reliability | https://learn.microsoft.com/en-us/azure/reliability/reliability-private-link-service |
+| Design resilient Azure Storage Actions workflows | https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-actions |
 | Increase reliability of Azure Stream Analytics jobs | https://learn.microsoft.com/en-us/azure/reliability/reliability-stream-analytics |
 | Design resilient architectures with Azure Traffic Manager | https://learn.microsoft.com/en-us/azure/reliability/reliability-traffic-manager |
 | Improve reliability of Azure VM Image Builder | https://learn.microsoft.com/en-us/azure/reliability/reliability-vm-image-builder |

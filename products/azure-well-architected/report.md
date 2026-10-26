@@ -44,8 +44,8 @@ use_when: Use when designing AI/HPC/SaaS workloads, AVD/AVS deployments, WAF ass
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 211
+- **Updated Pages**: 0
+- **Unchanged**: 214
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -63,15 +63,6 @@ use_when: Use when designing AI/HPC/SaaS workloads, AVD/AVS deployments, WAF ass
 | *(Unclassified)* | 38 | 17.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new)
-  - Updated: 2026-09-11T08:00:00.000Z → 2026-10-09T08:00:00.000Z
-- [Azure Container Apps](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps)
-  - Updated: 2026-03-17T17:08:00.000Z → 2026-10-16T17:04:00.000Z
-- [Azure Service Bus](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-service-bus)
-  - Updated: 2025-10-31T22:06:00.000Z → 2026-10-13T08:00:00.000Z
 
 ## Classified Pages
 

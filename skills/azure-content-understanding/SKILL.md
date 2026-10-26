@@ -1,9 +1,9 @@
 ---
 name: azure-content-understanding
-description: Expert knowledge for Azure Content Understanding in Foundry Tools development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when designing Content Understanding analyzers, RAG document flows, agentic workflows, REST/SDK calls, or Foundry deployments, and other Azure Content Understanding in Foundry Tools related development tasks. Not for Azure Speech in Foundry Tools (use azure-speech), Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Video Indexer (use azure-video-indexer).
+description: Expert knowledge for Azure Content Understanding in Foundry Tools development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when designing Content Understanding analyzers, RAG document flows, agentic/RPA workflows, REST/SDK calls, or quotas, and other Azure Content Understanding in Foundry Tools related development tasks. Not for Azure Speech in Foundry Tools (use azure-speech), Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Video Indexer (use azure-video-indexer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-10-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Content Understanding in Foundry Tools Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L41-L46 | Improving Content Understanding accuracy using layout, labels, and feedback, plus using confidence scores and grounding to validate and refine document analysis results. |
 | Decision Making | L47-L55 | Guidance on choosing Azure AI tools, model deployments, and Studio vs Foundry, plus migration from preview to GA and estimating/optimizing Content Understanding costs. |
 | Architecture & Design Patterns | L56-L62 | Guidance on when to use agentic mode, how to design RAG-based document solutions, and how to build RPA workflows using Azure Content Understanding. |
-| Limits & Quotas | L63-L68 | Guidance on safe use of synchronous Content Understanding calls plus detailed quotas, rate limits, and throughput constraints for Foundry Tools. |
+| Limits & Quotas | L63-L68 | Guidance on safe use of synchronous Content Understanding calls and detailed quotas/limits (throughput, payload sizes, concurrency) for planning and troubleshooting usage. |
 | Security | L69-L74 | Configuring security for Content Understanding: setting guardrails on analyzer outputs, securing analyzers and data, access control, and safe handling of sensitive content. |
 | Configuration | L75-L88 | Configuring and customizing Content Understanding analyzers, classifiers, workflows, and audiovisual/Markdown outputs, including creating, copying, and managing custom analyzers and Foundry resources. |
 | Integrations & Coding Patterns | L89-L94 | Patterns and code samples for calling Content Understanding via REST/SDKs, integrating with Microsoft Agent Framework/LangChain, and implementing agentic workflows. |
@@ -64,7 +64,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use synchronous Content Understanding operations safely | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-synchronous-rest-api |
-| Review Content Understanding quotas and limits in Foundry Tools | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits |
+| Reference quotas and limits for Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits |
 
 ### Security
 | Topic | URL |

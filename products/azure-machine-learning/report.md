@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 548
+- **Updated Pages**: 0
+- **Unchanged**: 553
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -75,19 +75,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 143 | 25.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Network isolation with managed online endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-online-endpoint?view=azureml-api-2)
-  - Updated: 2025-11-13T08:00:00.000Z → 2026-10-13T08:00:00.000Z
-- [Secure your managed online endpoints with network isolation](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-online-endpoint?view=azureml-api-2)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-10-13T17:14:00.000Z
-- [Virtual network overview](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-security-overview?view=azureml-api-2)
-  - Updated: 2025-12-31T23:04:00.000Z → 2026-10-13T08:00:00.000Z
-- [Use managed virtual network](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-managed-network?view=azureml-api-2)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-10-13T08:00:00.000Z
-- [Secure workspace resources](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-workspace-vnet?view=azureml-api-2)
-  - Updated: 2026-02-05T08:00:00.000Z → 2026-10-13T08:00:00.000Z
 
 ## Classified Pages
 

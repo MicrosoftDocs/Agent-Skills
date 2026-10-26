@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-10-25'
 category_descriptions:
   architecture-patterns: Patterns for scaling, HA/DR, sharding, multi‑cloud setups,
     and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB.
-  decision-making: Guides for choosing between DocumentDB and MongoDB services, planning
-    and connecting migrations, configuring cross-region failover, and selecting vector
-    index/search algorithms across major languages.
+  decision-making: Guides for choosing DocumentDB vs MongoDB/Atlas, planning MongoDB
+    migrations, selecting connectivity and cross-region failover, and picking optimal
+    vector index/search algorithms in .NET, Go, TS, and Python
   best-practices: Best practices for DocumentDB indexing and queries, safe index changes,
     and configuring cross-region replication and high availability for resilient,
     performant data access.
@@ -29,13 +29,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure DocumentDB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring DocumentDB search, vector indexes, cross-region replication, Mongo API
-  apps, or AI/RAG workloads, and other Azure DocumentDB related development tasks.
+  using DocumentDB vector search, MongoDB-compatible APIs, change streams, cross-region
+  replication, or Data API, and other Azure DocumentDB related development tasks.
   Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage),
   Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
-use_when: Use when configuring DocumentDB search, vector indexes, cross-region replication,
-  Mongo API apps, or AI/RAG workloads, and other Azure DocumentDB related development
-  tasks.
+use_when: Use when using DocumentDB vector search, MongoDB-compatible APIs, change
+  streams, cross-region replication, or Data API, and other Azure DocumentDB related
+  development tasks.
 confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage
   (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance).
@@ -51,9 +51,9 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 6
-- **Unchanged**: 116
+- **New Pages**: 0
+- **Updated Pages**: 5
+- **Unchanged**: 120
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-documentdb/azure-documentdb.csv`
 
@@ -74,26 +74,18 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 
 ## Changes
 
-### New Pages
-
-- [Migrate using Azure portal](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-dms-portal)
-- [Migration scenarios](https://learn.microsoft.com/en-us/azure/documentdb/migration-scenarios)
-- [Troubleshoot connectivity](https://learn.microsoft.com/en-us/azure/documentdb/troubleshoot-connectivity)
-
 ### Updated Pages
 
+- [Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm)
+  - Updated: 2026-05-24T12:09:00.000Z → 2026-10-21T17:16:00.000Z
 - [Migration options](https://learn.microsoft.com/en-us/azure/documentdb/migration-options)
-  - Updated: 2026-09-15T17:13:00.000Z → 2026-10-06T12:05:00.000Z
+  - Updated: 2026-10-06T12:05:00.000Z → 2026-10-23T12:05:00.000Z
 - [Migrate using Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension)
-  - Updated: 2026-07-30T22:20:00.000Z → 2026-10-06T12:05:00.000Z
-- [Python](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-25T17:18:00.000Z
-- [Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-08-25T17:18:00.000Z
-- [Haystack](https://learn.microsoft.com/en-us/azure/documentdb/build-rag-pipelines)
-  - Updated: 2026-05-08T12:04:00.000Z → 2026-10-05T17:19:00.000Z
+  - Updated: 2026-10-06T12:05:00.000Z → 2026-10-23T12:05:00.000Z
+- [Migrate using Azure portal](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-dms-portal)
+  - Updated: 2026-10-06T12:05:00.000Z → 2026-10-23T12:05:00.000Z
 - [Connect using Visual Studio Code](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-visual-studio-code-extension)
-  - Updated: 2026-04-27T13:06:00.000Z → 2026-10-08T22:18:00.000Z
+  - Updated: 2026-10-08T22:18:00.000Z → 2026-10-21T17:16:00.000Z
 
 ## Classified Pages
 
@@ -117,7 +109,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | [High performance storage (Premium SSD v2)](https://learn.microsoft.com/en-us/azure/documentdb/high-performance-storage) | limits-quotas | 0.80 | Discusses maximum configurable IOPS and bandwidth settings; full doc likely includes exact numeric limits and relationships to compute tiers. |
 | [Hybrid search (BM25 + vector)](https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-hybrid) | configuration | 0.80 | Details how to run combined keyword and vector queries and configure both index types on the same cluster, including fusion behavior and settings. |
 | [Indexing overview](https://learn.microsoft.com/en-us/azure/documentdb/indexing) | limits-quotas | 0.80 | States that only _id is indexed by default and its maximum size is 2 KB; includes concrete size limits and default behaviors that are product-specific. |
-| [Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm) | decision-making | 0.80 | Java quickstart focuses on comparing DiskANN, HNSW, IVF and similarity functions to select optimal index configuration for DocumentDB vector search. |
 | [Migrate to ordered indexes](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-ordered-indexes) | best-practices | 0.80 | Provides migration path, behavior changes (compound index serving queries only when filtering on first field), and rollout strategy; product-specific gotchas and recommendations. |
 | [Monitor diagnostics logs](https://learn.microsoft.com/en-us/azure/documentdb/how-to-monitor-diagnostics-logs) | limits-quotas | 0.80 | States feature unavailability for compute tier M30 or lower and free-tier SKUs, indicating tier-specific support limits for diagnostics. |
 | [Overview](https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-overview) | configuration | 0.80 | Overview of full-text search likely includes index types, configuration options, and migration tables from legacy text search to new BM25-based search. |
@@ -153,7 +144,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | [LlamaIndex](https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base) | integrations | 0.70 | Describes llama-index-vector-stores-azurecosmosmongo package and AzureCosmosDBMongoDBVectorSearch; likely contains SDK parameters and index configuration specific to DocumentDB. |
 | [Manage public access](https://learn.microsoft.com/en-us/azure/documentdb/how-to-public-access) | security | 0.70 | Describes cluster-level firewall rules and IP range-based public access; product-specific security configuration guidance. |
 | [Managed service compatibility](https://learn.microsoft.com/en-us/azure/documentdb/managed-service-compatibility) | decision-making | 0.70 | Compares managed MongoDB services using compatibility and feature support criteria, likely including concrete feature matrices and trade-offs for choosing Azure DocumentDB vs alternatives. |
-| [Migration options](https://learn.microsoft.com/en-us/azure/documentdb/migration-options) | decision-making | 0.70 | Described as covering migration options, key phases, and best practices to reduce risk and downtime for MongoDB-to-DocumentDB moves. This is concrete migration decision guidance (which option to use, when, and how) rather than just a conceptual overview, fitting decision-making around migration approaches. |
 | [Native tools](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-native-tools) | integrations | 0.70 | Describes using mongoexport/mongoimport and mongodump/mongorestore with DocumentDB connection strings, including product-specific connection and compatibility details. |
 | [Node.js web application](https://learn.microsoft.com/en-us/azure/documentdb/tutorial-nodejs-web-app) | integrations | 0.70 | Shows how a Node.js/MERN app connects to DocumentDB, including connection configuration and document management patterns specific to the service. |
 | [Pre-migration assessment](https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness) | decision-making | 0.70 | Focuses on up-front planning and critical decisions for migration, likely including criteria and recommendations for when/how to migrate. |
@@ -169,6 +159,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | [TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-nodejs) | architecture-patterns | 0.70 | Demonstrates a two-agent architecture using LangChain and DocumentDB vector search, providing product-specific agentic design patterns. |
 | [TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search) | integrations | 0.70 | Provides Node.js-specific code and configuration for vector search operations against DocumentDB, including handling hotel dataset embeddings. |
 | [Upgrade cluster](https://learn.microsoft.com/en-us/azure/documentdb/how-to-upgrade-cluster) | deployment | 0.70 | Upgrade guide will contain product-specific requirements, supported version paths, and constraints for performing self-service upgrades. |
+| [Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-select-algorithm) | decision-making | 0.68 | The page focuses on testing and comparing DiskANN, HNSW, and IVF vector indexes in Azure DocumentDB to select the best algorithm for a given workload. This is explicit decision guidance between multiple technical options, likely including scenario-based recommendations and trade-offs (performance, configuration choices) rather than just a generic tutorial. That aligns best with the decision-making sub-skill. It is more about algorithm selection than generic coding, so it is not purely integrations or configuration. |
 | [C#](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet) | integrations | 0.65 | Shows .NET driver usage, connection settings, and code patterns tailored to Azure DocumentDB’s MongoDB-compatible endpoint. |
 | [Configure firewall](https://learn.microsoft.com/en-us/azure/documentdb/how-to-configure-firewall) | security | 0.65 | Provides product-specific firewall behavior for Azure DocumentDB, including how to grant access by IP and a concrete propagation detail (changes can take up to 15 minutes and may behave inconsistently during that period). This is security configuration guidance specific to the service. |
 | [Connect using Spark connector from Azure Databricks](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-from-databricks) | integrations | 0.65 | Uses MongoDB Spark connector with Databricks; likely includes connector configuration options, connection string formats, and constraints specific to DocumentDB. |
@@ -176,6 +167,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | [Go](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go) | integrations | 0.65 | Provides Go client configuration and usage details for connecting to DocumentDB via MongoDB protocol, which are product-specific integration patterns. |
 | [High availability](https://learn.microsoft.com/en-us/azure/documentdb/high-availability) | architecture-patterns | 0.65 | Explains in-region HA behavior, standby replicas, failover behavior, and availability zone placement—service-specific design and trade-offs for HA. |
 | [MCP Toolkit](https://learn.microsoft.com/en-us/azure/documentdb/mcp-toolkit) | configuration | 0.65 | Describes an MCP server with tool-only behavior, admin-controlled connection details, and likely specific tool definitions and parameters unique to DocumentDB MCP usage. |
+| [Migration options](https://learn.microsoft.com/en-us/azure/documentdb/migration-options) | decision-making | 0.65 | The article focuses on planning and executing migrations from MongoDB to Azure DocumentDB, describing phases, tools, and best practices to reduce risk and downtime. This is migration/approach selection guidance (which option to use in which scenario), fitting decision-making. It goes beyond a simple tutorial and provides scenario-based guidance, but does not emphasize specific error codes, limits, or configuration tables. |
 | [Migration scenarios](https://learn.microsoft.com/en-us/azure/documentdb/migration-scenarios) | decision-making | 0.65 | Covers supported MongoDB source environments and public/private connectivity options for DMS-based migrations. This is migration-scenario selection guidance (which connectivity pattern to use for which environment), which is specific decision-making content for planning migrations. |
 | [Multicloud solution](https://learn.microsoft.com/en-us/azure/documentdb/multi-cloud) | architecture-patterns | 0.65 | Focuses on multi-cloud usage patterns and vendor-neutral design with DocumentDB; likely includes product-specific guidance on when and how to use multi-cloud patterns. |
 | [Rust](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-rust) | integrations | 0.65 | Rust quickstart includes crate usage, connection configuration, and code patterns specific to DocumentDB’s MongoDB-compatible API. |
@@ -213,12 +205,12 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table S
 | [Exact Nearest Neighbor (ENN) Vector Search](https://learn.microsoft.com/en-us/azure/documentdb/enn-vector-search) | 0.30 | Describes ENN vector search conceptually and support statement; no numeric limits, config tables, or product-specific error/decision details. |
 | [Half-Precision Vector Indexing](https://learn.microsoft.com/en-us/azure/documentdb/half-precision) | 0.30 | Overview of half-precision vector support; no detailed limits, config tables, or product-specific patterns visible. |
 | [Manage replication](https://learn.microsoft.com/en-us/azure/documentdb/how-to-cluster-replica) | 0.30 | Summary indicates a quick guide to enable/disable replication and promote replica clusters for DR, but does not clearly show specific limits, error codes, configuration tables, or detailed DR decision matrices. Likely more of a procedural/tutorial guide than a configuration, troubleshooting, or decision-making reference with expert-only details. |
-| [Migrate using Azure portal](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-dms-portal) | 0.30 | Portal-based migration tutorial for Azure Database Migration Service; summary focuses on creating and managing migration jobs and supported modes (online/offline, public/private). It reads as procedural guidance without explicit evidence of detailed configuration parameters, limits, or decision matrices. |
-| [Migrate using Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension) | 0.30 | Tutorial-style guidance on using the VS Code migration extension; summary emphasizes step-by-step usage and benefits (no extra infrastructure, secure connectivity, zero-cost). Lacks clear indication of detailed configuration tables, limits, or product-specific troubleshooting; more of a how-to tutorial than expert reference content. |
+| [Migrate using Azure portal](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-dms-portal) | 0.30 | This page describes using Azure Database Migration Service in the Azure portal to migrate MongoDB to Azure DocumentDB. The summary indicates a guided portal experience (online/offline migrations, connectivity options, collection-level settings) but not detailed configuration parameter tables, limits, or decision matrices. It appears to be a procedural tutorial rather than expert-level reference or decision guidance. |
+| [Migrate using Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension) | 0.30 | This is a tutorial-style article on using the Azure DocumentDB Migration Extension in VS Code to migrate MongoDB to Azure DocumentDB. The summary suggests step-by-step usage and general benefits (secure connectivity, zero-cost, granular control) but does not indicate detailed configuration tables, limits, or error-code-based troubleshooting. It reads as a how-to tutorial rather than expert reference content. |
 | [Product Quantization](https://learn.microsoft.com/en-us/azure/documentdb/product-quantization) | 0.30 | High-level description of product quantization trade-offs; lacks concrete configuration parameters, limits, or decision matrices. |
 | [Regional availability](https://learn.microsoft.com/en-us/azure/documentdb/regional-availability) | 0.30 | Region availability list is largely marketing/overview; summary doesn’t indicate detailed matrices or constraints beyond generic availability. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-portal) | 0.20 | Quickstart for creating an Azure DocumentDB cluster via portal; primarily step-by-step creation and basic usage. No detailed limits, quotas, configuration tables, or product-specific expert patterns beyond generic provisioning instructions. |
-| [Connect using Visual Studio Code](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-visual-studio-code-extension) | 0.20 | Primarily a conceptual/usage overview of the DocumentDB VS Code extension GUI (browsing documents, running queries, managing collections). The summary does not indicate detailed configuration tables, specific parameters, or error codes; it reads as a feature/tour-style article rather than deep expert configuration or troubleshooting content. |
+| [Connect using Visual Studio Code](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-visual-studio-code-extension) | 0.20 | Page appears to be a how-to/tutorial for connecting to Azure DocumentDB from Visual Studio Code using an extension. It likely focuses on installation steps and basic usage rather than detailed configuration tables, limits, security roles, or troubleshooting mappings. No evidence of specific numeric limits, config parameter tables, or error-code-based troubleshooting, so it does not meet the expert knowledge criteria for any sub-skill type. |
 | [Financial services and technology](https://learn.microsoft.com/en-us/azure/documentdb/solutions-finance) | 0.20 | Financial solutions page is marketing-focused; summary doesn’t indicate product-specific configuration or numeric guidance. |
 | [Healthcare](https://learn.microsoft.com/en-us/azure/documentdb/solutions-healthcare) | 0.20 | Healthcare solutions page is conceptual/marketing; lacks indication of detailed technical parameters or limits. |
 | [Java](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java) | 0.20 | Quickstart tutorial showing basic Java usage of Azure DocumentDB with MongoDB API; provides introductory CRUD example code without detailed limits, configuration matrices, or troubleshooting content. |

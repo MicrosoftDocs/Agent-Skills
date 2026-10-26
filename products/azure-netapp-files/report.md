@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 232
+- **Updated Pages**: 0
+- **Unchanged**: 242
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -74,29 +74,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Blob Storage (u
 | *(Unclassified)* | 71 | 29.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [General performance considerations for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-performance-considerations)
-  - Updated: 2026-08-19T11:41:00.000Z → 2026-10-14T17:16:00.000Z
-- [Linux NFS mount options best practices](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-mount-options)
-  - Updated: 2025-05-07T08:00:00.000Z → 2026-10-05T08:00:00.000Z
-- [Manage Microsoft Entra Kerberos authentication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-entra-kerberos-authentication-for-hybrid-cloud-identities)
-  - Updated: 2026-09-24T17:11:00.000Z → 2026-10-16T11:43:00.000Z
-- [Create an SMB volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb)
-  - Updated: 2026-04-30T17:19:00.000Z → 2026-10-16T11:43:00.000Z
-- [Configure network features for a volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-network-features)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-10-14T06:12:00.000Z
-- [Resource limits for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits)
-  - Updated: 2026-09-24T17:11:00.000Z → 2026-10-14T08:00:00.000Z
-- [Networking FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-networking)
-  - Updated: 2026-09-17T11:41:00.000Z → 2026-10-13T05:17:00.000Z
-- [NFS FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-nfs)
-  - Updated: 2026-05-12T17:16:00.000Z → 2026-10-17T11:51:00.000Z
-- [SMB FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-smb)
-  - Updated: 2026-09-29T17:31:00.000Z → 2026-10-17T11:51:00.000Z
-- [Manage data restores](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-manage-data-restores)
-  - Updated: 2026-09-22T17:11:00.000Z → 2026-10-07T17:13:00.000Z
 
 ## Classified Pages
 

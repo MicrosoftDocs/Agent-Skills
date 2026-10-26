@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 121
+- **Updated Pages**: 0
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -73,15 +73,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | *(Unclassified)* | 37 | 29.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-10-05T08:00:00.000Z
-- [Update pool properties](https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties)
-  - Updated: 2026-01-06T06:10:00.000Z → 2026-10-05T22:13:00.000Z
-- [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption)
-  - Updated: 2026-07-29T18:02:00.000Z → 2026-10-05T22:13:00.000Z
 
 ## Classified Pages
 

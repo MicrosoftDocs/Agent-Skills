@@ -1,29 +1,29 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-10-25'
 category_descriptions:
-  integrations: Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook),
-    embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management
-    APIs, and proactive scenario invocation
+  security: 'Security, compliance, and privacy for Health Bot: auth providers, end-user
+    auth/consent, data access/deletion, encryption keys, secrets/keys, abuse monitoring,
+    safeguards, and portal permissions'
   configuration: 'Configuring bot behavior and conversations: welcome/help messages,
     feedback, interruptions, human/Teams handoff, terms links, and managing scenarios,
     variables, cards, and versions.'
-  security: 'Configuring security, privacy, and compliance: user consent, data access/deletion,
-    encryption keys, abuse safeguards, authentication, secrets management, and portal
-    permissions for Healthcare bots/agents.'
+  integrations: Integrating Azure Health Bot/Agent with channels (Teams, SMS, WhatsApp,
+    Facebook), embedding web chat, calling/triggering scenarios via APIs/JS, telemetry
+    with App Insights, and enabling voice and clinical safeguards.
   best-practices: Guidance on designing robust error-handling flows in Azure Health
     Bot scenarios, including detecting failures, user-friendly recovery paths, and
     safe handling of clinical conversation errors.
 skill_description: Expert knowledge for Azure Health Bot development including best
   practices, security, configuration, and integrations & coding patterns. Use when
-  wiring Teams/SMS/WhatsApp channels, embedding web chat, calling external APIs, configuring
-  handoff, or enforcing consent, and other Azure Health Bot related development tasks.
+  configuring Health Bot auth, Teams/web chat, channel integrations, App Insights
+  telemetry, or voice safeguards, and other Azure Health Bot related development tasks.
   Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services
-  (use azure-communication-services), Azure Functions (use azure-functions).
-use_when: Use when wiring Teams/SMS/WhatsApp channels, embedding web chat, calling
-  external APIs, configuring handoff, or enforcing consent, and other Azure Health
-  Bot related development tasks.
+  (use azure-communication-services).
+use_when: Use when configuring Health Bot auth, Teams/web chat, channel integrations,
+  App Insights telemetry, or voice safeguards, and other Azure Health Bot related
+  development tasks.
 confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Communication
-  Services (use azure-communication-services), Azure Functions (use azure-functions).
+  Services (use azure-communication-services).
 ---
 # Azure Health Bot Crawl Report
 
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 78
+- **Updated Pages**: 3
+- **Unchanged**: 75
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
@@ -48,11 +48,20 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 |------|-------|------------|
 | best-practices | 1 | 1.3% |
 | configuration | 14 | 17.9% |
-| integrations | 19 | 24.4% |
-| security | 9 | 11.5% |
+| integrations | 18 | 23.1% |
+| security | 10 | 12.8% |
 | *(Unclassified)* | 35 | 44.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Data Connections](https://learn.microsoft.com/en-us/azure/health-bot/data_connection)
+  - Updated: 2025-10-17T07:10:00.000Z → 2026-10-19T07:30:00.000Z
+- [Authentication Providers](https://learn.microsoft.com/en-us/azure/health-bot/authentication_providers)
+  - Updated: 2025-01-21T09:57:00.000Z → 2026-10-19T07:30:00.000Z
+- [Conversation Logs](https://learn.microsoft.com/en-us/azure/health-bot/conversation_logs)
+  - Updated: 2025-01-21T09:57:00.000Z → 2026-10-19T07:30:00.000Z
 
 ## Classified Pages
 
@@ -61,10 +70,9 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Abuse Monitoring](https://learn.microsoft.com/en-us/azure/health-bot/copilot/abuse-monitoring) | security | 0.75 | Describes abuse monitoring, automatic blocking, and portal-based unblocking—product-specific safety/security controls and behaviors. |
 | [Overview](https://learn.microsoft.com/en-us/azure/health-bot/keys) | security | 0.75 | Page covers secrets, keys, endpoints, and custom telemetry for Healthcare agent service. This typically includes product-specific key types, endpoint formats, and configuration details for secure access, fitting the security sub-skill with expert configuration knowledge. |
 | [Scenario management API](https://learn.microsoft.com/en-us/azure/health-bot/integrations/managementapi) | integrations | 0.75 | Management API for programmatic import/export and other actions is a product-specific API surface with unique operations and parameters. |
-| [Authentication Providers](https://learn.microsoft.com/en-us/azure/health-bot/authentication_providers) | integrations | 0.70 | Explains an authentication layer on top of data connections for third-party APIs; product-specific integration pattern for authenticated HTTP calls. |
 | [Configure Customer Managed Keys](https://learn.microsoft.com/en-us/azure/health-bot/cmk) | security | 0.70 | Describes CMK support, including creation date requirement and encryption behavior; CMK setup is a product-specific security configuration topic. |
 | [Custom Telemetry](https://learn.microsoft.com/en-us/azure/health-bot/custom_telemetry) | integrations | 0.70 | Describes custom telemetry integration with Application Insights and Power BI, including enabling it; this is a product-specific integration pattern. |
-| [Data Connections](https://learn.microsoft.com/en-us/azure/health-bot/data_connection) | integrations | 0.70 | Describes the data connection object, base URL vs endpoint path, and scenario integration; this is a product-specific integration and coding pattern for external HTTP APIs. |
+| [Data Connections](https://learn.microsoft.com/en-us/azure/health-bot/data_connection) | integrations | 0.70 | Page describes the healthcare agent service 'data connection' object for making HTTPS calls to third-party or custom APIs, including how to define base URLs at the connection level and paths at the scenario step level. This is a product-specific integration pattern for connecting scenarios to external services, which qualifies as integrations-focused expert knowledge beyond generic HTTP call concepts. |
 | [Deleting your data](https://learn.microsoft.com/en-us/azure/health-bot/bot_docs/deleting_data) | security | 0.70 | Explains built-in commands to delete user variables and conversation history, a product-specific privacy/security feature. |
 | [Direct Line](https://learn.microsoft.com/en-us/azure/health-bot/channels/directline) | integrations | 0.70 | Explicitly a configuration page for Direct Line channel; Direct Line setup involves product-specific channel parameters and constraints. |
 | [End user authentication](https://learn.microsoft.com/en-us/azure/health-bot/end-user-authentication) | security | 0.70 | Page is about enabling end-user authentication for Healthcare agent service, likely detailing channel-specific auth flows, required settings, and possibly RBAC/identity configuration. This is product-specific security configuration rather than a generic overview. |
@@ -78,6 +86,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [SMS via Twilio](https://learn.microsoft.com/en-us/azure/health-bot/channels/twilio) | integrations | 0.70 | Step-by-step Twilio channel setup including toggles and Twilio credentials; Twilio-specific configuration for this product qualifies as integration knowledge. |
 | [View and export your data](https://learn.microsoft.com/en-us/azure/health-bot/bot_docs/viewing_data) | security | 0.70 | Describes how users can retrieve stored personal data via system commands, tied to privacy and data access controls. |
 | [WhatsApp](https://learn.microsoft.com/en-us/azure/health-bot/channels/whatsapp) | integrations | 0.70 | Describes enabling WhatsApp (via Twilio) channel and providing Twilio credentials; product-specific integration and configuration details. |
+| [Authentication Providers](https://learn.microsoft.com/en-us/azure/health-bot/authentication_providers) | security | 0.65 | Page explains the healthcare agent service 'authentication providers' layer used on top of data connections to call authenticated third-party APIs. This is product-specific security/auth configuration for integrating external services, including how authentication is wired into data connections, which fits the security sub-skill (auth configuration patterns) with integration aspects. |
 | [Clinical Safeguards API](https://learn.microsoft.com/en-us/azure/health-bot/integrations/clinicalsafeguardsapi) | integrations | 0.65 | Private preview API offering of healthcare-specific safeguards; as an API surface, it represents product-specific integration details even if summary is brief. |
 | [Configure interrupting scenarios](https://learn.microsoft.com/en-us/azure/health-bot/configuring_interruptions) | configuration | 0.65 | Explains how to configure interruption behavior and resumption; detailed conversation-flow configuration. |
 | [Dynamics Omnichannel](https://learn.microsoft.com/en-us/azure/health-bot/channels/oc_channel) | integrations | 0.65 | Channel integration with Microsoft Dynamics Omnichannel; involves product-specific configuration to enable chat interactions. |
@@ -112,7 +121,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Create a healthcare agent service Instance using Azure PowerShell](https://learn.microsoft.com/en-us/azure/health-bot/integrations/create-your-healthcare-bot-quickstart-powershell) | 0.45 | Quickstart for creating an instance via PowerShell; likely mostly step-by-step commands without reusable configuration matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/health-bot/channels/main) | 0.45 | Conceptual overview of channels and accessibility recommendation; summary does not show channel-specific configuration parameters or constraints. |
 | [Billing rates and management](https://learn.microsoft.com/en-us/azure/health-bot/pricing-details) | 0.40 | Pricing overview for healthcare agent service; description mentions actions-based billing but no explicit limits/quotas, configuration parameters, or decision matrices with quantified technical trade-offs. Primarily billing/marketing-style information rather than expert technical knowledge as defined. |
-| [Conversation Logs](https://learn.microsoft.com/en-us/azure/health-bot/conversation_logs) | 0.40 | Explains that conversation logs provide full list of conversations; summary lacks specific log schema, retention limits, or configuration options. |
 | [Credible Sources](https://learn.microsoft.com/en-us/azure/health-bot/bot_docs/credible_sources) | 0.40 | Overview of credible medical sources; lists sources but not configuration parameters or decision matrices. |
 | [Dynamics 365 Omnichannel](https://learn.microsoft.com/en-us/azure/health-bot/omnichannel) | 0.40 | Conceptual description of Dynamics 365 Omnichannel integration and escalation; summary lacks concrete settings, parameters, or error mappings. |
 | [Reports](https://learn.microsoft.com/en-us/azure/health-bot/reports) | 0.40 | Describes available analytics reports and time filters; summary does not show detailed configuration parameters or numeric limits beyond generic time ranges. |
@@ -121,6 +129,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Localize a scenario](https://learn.microsoft.com/en-us/azure/health-bot/localization_howto) | 0.35 | Tutorial-style walkthrough for localizing a scenario; appears procedural without exposing reusable configuration schemas or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/health-bot/localization) | 0.35 | Explains localization capability and notes language support; summary does not show concrete settings, parameter tables, or numeric constraints. |
 | [Authoring custom scenarios](https://learn.microsoft.com/en-us/azure/health-bot/scenario-authoring/scenario-elements) | 0.30 | Conceptual introduction to scenario elements and editor navigation; lacks detailed config tables or limits. |
+| [Conversation Logs](https://learn.microsoft.com/en-us/azure/health-bot/conversation_logs) | 0.30 | Summary only indicates that conversation logs allow administrators to access a list of end user conversations. No evidence of specific configuration parameters, limits, error codes, or other detailed expert knowledge; likely a conceptual/feature overview. |
 | [Conversational](https://learn.microsoft.com/en-us/azure/health-bot/scenario-authoring/conversational) | 0.30 | Conceptual guide to conversational elements; mostly explains interaction concepts rather than detailed configuration. |
 | [Extend your healthcare agent service with Conversational Language Understanding](https://learn.microsoft.com/en-us/azure/health-bot/language_model_conversational-language-understanding) | 0.30 | High-level description of Conversational Language Understanding integration; summary shows no concrete configuration parameters, limits, or error mappings. |
 | [Extend your healthcare agent service with QnA Maker](https://learn.microsoft.com/en-us/azure/health-bot/language_model_qna) | 0.30 | Retirement notice and conceptual description of QnA Maker; no detailed configuration, limits, or error-resolution guidance evident. |

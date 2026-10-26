@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 - **Unclassified**: 174
 
 ### Incremental Update
-- **New Pages**: 31
-- **Updated Pages**: 8
-- **Unchanged**: 443
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 482
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -75,49 +75,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | *(Unclassified)* | 174 | 36.1% |
 
 ## Changes
-
-### New Pages
-
-- [Create alerts](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/alerts-create)
-- [Database access control](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/logins-create-manage)
-- [Microsoft Defender for SQL](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/azure-defender-for-sql)
-- [Data Discovery & Classification](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-discovery-and-classification-overview)
-- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-aad-overview)
-- [Configure Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-aad-configure)
-- [Connect with Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-microsoft-entra-connect-to-azure-sql)
-- [Microsoft Entra server principals](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-logins)
-- [Create Microsoft Entra server logins](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-logins-tutorial)
-- [Assign Directory Readers role](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-aad-directory-readers-role-tutorial)
-- [Microsoft Entra-only authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-only-authentication)
-- [Managed identity authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/authentication-azure-ad-user-assigned-managed-identity)
-- [Dynamic data masking](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/dynamic-data-masking-overview)
-- [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-overview)
-- [Set up auditing](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-setup)
-- [Audit log format](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/audit-log-format)
-- [Analyze audit logs and reports](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-analyze-audit-logs)
-- [Best practices](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-best-practices)
-- [Manage auditing using APIs](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-manage-using-api)
-- [Auditing using managed identity](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/auditing-managed-identity)
-- *...and 11 more*
-
-### Updated Pages
-
-- [Features overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-features)
-  - Updated: 2026-02-04T08:00:00.000Z → 2026-10-05T08:00:00.000Z
-- [Set up access control](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-set-up-access-control)
-  - Updated: 2024-09-26T08:00:00.000Z → 2026-10-05T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq)
-  - Updated: 2025-12-12T23:21:00.000Z → 2026-10-07T22:20:00.000Z
-- [Connectivity settings](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/connectivity-settings)
-  - Updated: 2025-03-19T17:20:00.000Z → 2026-10-05T08:00:00.000Z
-- [Runtime release channels](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-runtime-release-channels)
-  - Updated: 2026-09-23T05:11:00.000Z → 2026-10-12T08:00:00.000Z
-- [Recent Release](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/release-notes-10-0-10106-0)
-  - Updated: 2022-04-25T22:04:00.000Z → 2026-10-07T22:20:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-manage-security)
-  - Updated: 2026-05-03T11:12:00.000Z → 2026-10-07T22:20:00.000Z
-- [All migration guides](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/)
-  - Updated: 2025-08-21T22:11:00Z → 2026-10-14T05:17:00Z
 
 ## Classified Pages
 
