@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   decision-making: 'Planning and sizing Azure Site Recovery for DR: choosing tools
     (ASR vs Azure Migrate), VM sizes, failback types, managed disk and DR costs, and
@@ -46,40 +46,44 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machi
 
 ## Summary
 
-- **Total Pages**: 179
-- **Fetched**: 179
+- **Total Pages**: 180
+- **Fetched**: 180
 - **Fetch Failed**: 0
-- **Classified**: 120
-- **Unclassified**: 59
+- **Classified**: 119
+- **Unclassified**: 61
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
+- **New Pages**: 2
+- **Updated Pages**: 0
 - **Unchanged**: 178
-- **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
+- **Deleted Pages**: 1
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 8 | 4.5% |
+| architecture-patterns | 8 | 4.4% |
 | best-practices | 3 | 1.7% |
-| configuration | 38 | 21.2% |
+| configuration | 37 | 20.6% |
 | decision-making | 14 | 7.8% |
 | deployment | 9 | 5.0% |
-| integrations | 13 | 7.3% |
+| integrations | 13 | 7.2% |
 | limits-quotas | 5 | 2.8% |
 | security | 9 | 5.0% |
 | troubleshooting | 21 | 11.7% |
-| *(Unclassified)* | 59 | 33.0% |
+| *(Unclassified)* | 61 | 33.9% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [About role-based access control with Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control)
-  - Updated: 2026-10-01T17:22:00.000Z → 2026-10-21T17:10:00.000Z
+- [Enable Azure to Azure replication for Virtual machines in Flexible scale sets](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-vmss-flex)
+- [Enable replication for an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk)
+
+### Deleted Pages
+
+- ~~For an added disk~~ (https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk)
 
 ## Classified Pages
 
@@ -113,7 +117,6 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machi
 | [Using Site Recovery with Azure Backup](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-backup-interoperability) | limits-quotas | 0.80 | Interoperability matrix between Site Recovery and Backup includes specific supported/unsupported combinations and constraints (e.g., scenarios where MARS agents can’t co-exist). |
 | [VMware/physical to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix) | deployment | 0.80 | Summarizes supported components and settings for VMware/physical to Azure DR, including detailed compatibility matrices (hypervisors, OS versions, configurations). These are product-specific deployment requirements and constraints for using Site Recovery. |
 | [About role-based access control with Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control) | security | 0.78 | Page is focused on Azure RBAC for Site Recovery and describes product-specific access control, including the three built-in Site Recovery roles and how they map to permissions. This is security-focused expert knowledge with concrete role names and scope usage that an LLM is unlikely to fully know from training. |
-| [For an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk) | configuration | 0.75 | Explains behavior when adding disks to already-protected VMs and how to enable replication; includes Site Recovery-specific state transitions and options. |
 | [For an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-enable-replication-added-disk) | configuration | 0.75 | Explains behavior and steps when adding disks to already-protected VMware VMs; product-specific replication state and configuration details. |
 | [Migrate from a Run As account to Managed Identities](https://learn.microsoft.com/en-us/azure/site-recovery/how-to-migrate-run-as-accounts-managed-identity) | security | 0.75 | Shows how to reconfigure Automation runbooks and identities; includes specific identity/auth configuration steps for Site Recovery agent updates. |
 | [Migrate to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/migrate-overview) | decision-making | 0.75 | Explicitly compares Azure Migrate vs Site Recovery for migration; provides recommendations and trade-offs for service selection. |
@@ -235,7 +238,9 @@ confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machi
 | [Active Directory and DNS](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-active-directory) | 0.30 | Describes how to implement DR for Active Directory/DNS using Site Recovery, but the summary indicates conceptual and procedural guidance without explicit numeric limits, configuration parameter tables, or detailed troubleshooting mappings. |
 | [Azure to Azure disaster recovery architecture](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture) | 0.30 | Described as an architecture overview of components and processes for Azure-to-Azure DR. This is primarily conceptual architecture content without clear indication of numeric thresholds, decision matrices, or detailed config tables. |
 | [Configure Site Recovery reports](https://learn.microsoft.com/en-us/azure/site-recovery/report-site-recovery) | 0.30 | Configuration article for Site Recovery reporting using Azure Monitor logs and workbooks; likely a step-by-step setup guide without detailed config parameter tables, limits, or product-specific best-practice nuances beyond generic reporting setup. |
+| [Enable Azure to Azure replication for Virtual machines in Flexible scale sets](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-vmss-flex) | 0.30 | Procedural how-to for enabling Site Recovery on VMSS Flex; primarily step-by-step replication/failover instructions without clear evidence of detailed limits, configuration parameter tables, error-code mappings, or decision matrices. |
 | [Enable replication between zones within a region](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-zone-to-zone-disaster-recovery) | 0.30 | Appears to be a step-by-step tutorial for enabling zone-to-zone disaster recovery for Azure VMs using Site Recovery. Based on the summary, it focuses on how to replicate, fail over, and fail back between availability zones, but there's no indication of specific limits/quotas, error-code-based troubleshooting, detailed configuration parameter tables, or decision matrices. Without evidence of product-specific numeric limits, RBAC role lists, or configuration option tables, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
+| [Enable replication for an added disk](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk) | 0.30 | Task-focused guide for enabling replication on an added disk; describes behavior when adding disks but does not clearly expose numeric limits, config tables, or structured troubleshooting/decision content. |
 | [Exchange](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-workload) | 0.30 | Duplicate workload overview entry; conceptual description of supported workloads, not detailed expert guidance. |
 | [Exclude disks from replication](https://learn.microsoft.com/en-us/azure/site-recovery/exclude-disks-replication) | 0.30 | Appears to be a how-to guide on excluding disks from Azure Site Recovery replication without clear evidence of numeric limits, configuration parameter tables, or error-code-based troubleshooting. Based on the summary, it is primarily procedural rather than containing expert-only configuration matrices or quotas. |
 | [Hyper-V to Azure architecture](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-architecture) | 0.30 | Architecture article is primarily an overview of components and flows for Hyper-V DR to Azure. It describes how replication and failover work conceptually but does not clearly indicate decision matrices, numeric thresholds, or configuration tables that meet the expert-knowledge criteria. |

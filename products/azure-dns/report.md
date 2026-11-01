@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 69
+- **Updated Pages**: 0
+- **Unchanged**: 77
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
 ## Classification Statistics
 
@@ -66,25 +66,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | *(Unclassified)* | 50 | 64.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
-- [Traffic Manager linked records](https://learn.microsoft.com/en-us/azure/dns/dns-traffic-manager-linked-records)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
-- [What is Azure Public DNS?](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
-- [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
-- [Create Traffic Manager linked records - Portal](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-portal)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
-- [Create Traffic Manager linked records - CLI](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-cli)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
-- [Create Traffic Manager linked records - PowerShell](https://learn.microsoft.com/en-us/azure/dns/tutorial-traffic-manager-linked-records-powershell)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
 
 ## Classified Pages
 

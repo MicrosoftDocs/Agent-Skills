@@ -3,7 +3,7 @@ name: azure-site-recovery
 description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ASR for VMware/Hyper-V, protecting SAP/SQL apps, automating with ARM/Terraform, or securing ADE/CMK VMs, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Site Recovery Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L87-L98 | Design patterns and reference architectures for using Azure Site Recovery to protect networks and complex apps (SAP, SharePoint, IIS, Dynamics AX, SQL, file servers) and build end-to-end DR solutions. |
 | Limits & Quotas | L99-L107 | Limits, quotas, and constraints for Site Recovery: high-churn VM limits, shared disk support, safe coexistence with Backup, Deployment Planner limits/history, and Mobility service resource usage. |
 | Security | L108-L120 | Encrypting and securing ASR: handling ADE/CMK-encrypted VMs, NSGs, TLS, RBAC, trusted launch, VMware-to-Azure security, and replacing legacy Run As/encryption setups |
-| Configuration | L121-L162 | Configuring Azure Site Recovery for VMware/Hyper-V/Azure VMs: networking, IPs, disks, appliances, policies, monitoring, and DR setup for AVS, Extended Zones, and shared/clustered workloads. |
-| Integrations & Coding Patterns | L163-L179 | Automating and integrating Azure Site Recovery using PowerShell, ARM/Bicep/Terraform, ExpressRoute, Traffic Manager, and runbooks, including Hyper-V, VMware, shared disk, and Azure VM DR setups. |
-| Deployment | L180-L191 | Guides for setting up and managing ASR replication/migration (Azure VMs, VMware, Hyper-V, physical), including support matrices, appliances, and failover/failback workflows. |
+| Configuration | L121-L161 | Configuring Azure Site Recovery for VMware/Hyper-V/Azure VMs: networking, IPs, disks, appliances, policies, monitoring, and DR setup for AVS, Extended Zones, and shared/clustered workloads. |
+| Integrations & Coding Patterns | L162-L178 | Automating and integrating Azure Site Recovery using PowerShell, ARM/Bicep/Terraform, ExpressRoute, Traffic Manager, and runbooks, including Hyper-V, VMware, shared disk, and Azure VM DR setups. |
+| Deployment | L179-L190 | Guides for setting up and managing ASR replication/migration (Azure VMs, VMware, Hyper-V, physical), including support matrices, appliances, and failover/failback workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -126,7 +126,6 @@ This skill requires **network access** to fetch documentation content:
 | Prepare Azure resources for Azure VMware Solution disaster recovery | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-prepare-azure |
 | Configure automatic Mobility service updates in ASR | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-autoupdate |
 | Configure networking for Azure Site Recovery failover VMs | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-customize-networking |
-| Enable replication for newly added Azure VM data disks | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk |
 | Exclude Azure VM disks from Site Recovery using PowerShell | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-exclude-disks |
 | Configure Azure Site Recovery with private endpoints | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-private-endpoints |
 | Configure Site Recovery for Storage Spaces Direct guest clusters | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-s2d-vms |

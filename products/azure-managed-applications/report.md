@@ -40,7 +40,7 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Resou
 - **Updated Pages**: 0
 - **Unchanged**: 62
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-applications/azure-managed-applications.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-managed-applications/azure-managed-applications.csv`
 
 ## Classification Statistics
 

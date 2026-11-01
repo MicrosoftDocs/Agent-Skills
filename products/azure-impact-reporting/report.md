@@ -37,7 +37,7 @@ confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimiza
 - **Updated Pages**: 0
 - **Unchanged**: 15
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
 
 ## Classification Statistics
 

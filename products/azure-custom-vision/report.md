@@ -46,7 +46,7 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI serv
 - **Updated Pages**: 0
 - **Unchanged**: 23
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-custom-vision/azure-custom-vision.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-custom-vision/azure-custom-vision.csv`
 
 ## Classification Statistics
 

@@ -1,9 +1,9 @@
 ---
 name: azure-table-storage
-description: Expert knowledge for Azure Table Storage development including best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when securing Table Storage, tuning telemetry, planning scale limits, designing keys, or scripting with PowerShell, and other Azure Table Storage related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage).
+description: Expert knowledge for Azure Table Storage development including best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when configuring Entra/RBAC access, enabling metrics/logs, planning partition throughput, designing schemas, or scripting PowerShell ops, and other Azure Table Storage related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage), Azure Files (use azure-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Table Storage Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L39-L48 | Designing Azure Table Storage schemas: partition/row key strategies, query-optimized models, handling relationships, efficient updates, and common design patterns/anti-patterns. |
 | Limits & Quotas | L49-L53 | Scalability limits, throughput targets, and performance constraints for Azure Table Storage, including partition key design, request rates, and capacity planning. |
 | Security | L54-L60 | Configuring Azure Table Storage security: using Microsoft Entra ID, assigning RBAC roles, and applying best practices for access control and data protection. |
-| Configuration | L61-L65 | Configuring Azure Table Storage monitoring: enabling metrics and logs, understanding available telemetry, and setting up alerts for performance, availability, and diagnostics. |
+| Configuration | L61-L65 | Metrics and logging for Azure Table Storage: available metrics, diagnostic logs, how to enable/interpret them, and using monitoring tools to track performance and issues. |
 | Integrations & Coding Patterns | L66-L69 | Using Azure PowerShell to manage Table storage: create/delete tables, insert/query/update/delete entities, and script common data operations. |
 
 ### Best Practices
@@ -61,7 +61,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Reference monitoring metrics and logs for Azure Table storage | https://learn.microsoft.com/en-us/azure/storage/tables/monitor-table-storage-reference |
+| Reference metrics and logs for Azure Table Storage | https://learn.microsoft.com/en-us/azure/storage/tables/monitor-table-storage-reference |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

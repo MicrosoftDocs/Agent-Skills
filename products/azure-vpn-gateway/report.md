@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-01'
 category_descriptions:
   architecture-patterns: 'Designing Azure VPN Gateway architectures: choosing topologies,
     active-active setups, cross-region peering, and high-availability connectivity
@@ -13,9 +13,9 @@ category_descriptions:
   configuration: 'Configuring Azure VPN Gateway and clients for P2S/S2S: auth methods,
     certificates, IPsec/BGP/NAT policies, routing, monitoring, Always-On, VNet-to-VNet,
     and device/Entra/Intune setup.'
-  deployment: Deploying and upgrading Azure VPN Gateways (SKUs, zones, active/active),
-    creating S2S VPNs via PowerShell/CLI, and distributing Azure VPN client profiles
-    with Intune.
+  deployment: Deploying and upgrading VPN gateways (Basic/Standard SKUs, zone-redundant,
+    ExpressRoute), and creating/migrating S2S and P2S VPNs via PowerShell or Azure
+    CLI.
   best-practices: Guidance on using network virtual appliances (NVAs) in Azure as
     VPN endpoints for remote access, including design, routing, security, and integration
     with Azure VPN Gateway.
@@ -30,13 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VPN Gateway development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring S2S/P2S tunnels, BGP/NAT, IPsec/IKE crypto, VPN client auth, or cross-cloud/ExpressRoute
-  VPNs, and other Azure VPN Gateway related development tasks. Not for Azure Virtual
-  Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
-use_when: Use when configuring S2S/P2S tunnels, BGP/NAT, IPsec/IKE crypto, VPN client
-  auth, or cross-cloud/ExpressRoute VPNs, and other Azure VPN Gateway related development
-  tasks.
+  configuring P2S/S2S tunnels, IPsec/IKE crypto, BGP/NAT routing, ExpressRoute VPN,
+  or Cisco/ASA integrations, and other Azure VPN Gateway related development tasks.
+  Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use
+  azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure Application
+  Gateway (use azure-application-gateway).
+use_when: Use when configuring P2S/S2S tunnels, IPsec/IKE crypto, BGP/NAT routing,
+  ExpressRoute VPN, or Cisco/ASA integrations, and other Azure VPN Gateway related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute),
   Azure Application Gateway (use azure-application-gateway).
@@ -45,18 +46,18 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 112
-- **Fetched**: 112
+- **Total Pages**: 113
+- **Fetched**: 113
 - **Fetch Failed**: 0
-- **Classified**: 84
+- **Classified**: 85
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 112
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
 
@@ -64,16 +65,20 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |------|-------|------------|
 | architecture-patterns | 3 | 2.7% |
 | best-practices | 1 | 0.9% |
-| configuration | 46 | 41.1% |
-| decision-making | 6 | 5.4% |
-| deployment | 7 | 6.2% |
-| integrations | 4 | 3.6% |
+| configuration | 46 | 40.7% |
+| decision-making | 6 | 5.3% |
+| deployment | 8 | 7.1% |
+| integrations | 4 | 3.5% |
 | limits-quotas | 1 | 0.9% |
-| security | 13 | 11.6% |
+| security | 13 | 11.5% |
 | troubleshooting | 3 | 2.7% |
-| *(Unclassified)* | 28 | 25.0% |
+| *(Unclassified)* | 28 | 24.8% |
 
 ## Changes
+
+### New Pages
+
+- [Migrate a P2S gateway root certificate](https://learn.microsoft.com/en-us/azure/vpn-gateway/how-to-migrate-gateway-root-certificate)
 
 ## Classified Pages
 
@@ -131,6 +136,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Install VPN client certificates](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert) | configuration | 0.70 | Provides OS-specific steps and requirements for installing client certificates for P2S certificate authentication, including how certificates must be present locally and possibly Intune-based deployment. This is detailed configuration guidance specific to Azure VPN Gateway. |
 | [MakeCert](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-makecert) | configuration | 0.70 | Provides MakeCert command lines and parameter values to create root and client certificates for Azure P2S, which are detailed configuration instructions. |
 | [Manage legacy gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-skus-legacy) | limits-quotas | 0.70 | A SKU-focused VPN Gateway article almost certainly includes SKU-specific capacity details (throughput, tunnels, connections) and deprecation timelines that are numeric and product-specific, which qualify as limits/quotas expert knowledge beyond generic conceptual info. |
+| [Migrate a P2S gateway root certificate](https://learn.microsoft.com/en-us/azure/vpn-gateway/how-to-migrate-gateway-root-certificate) | deployment | 0.70 | Page describes a specific, time-bound migration workflow (Prepare, Migrate, Commit) for P2S VPN gateways with concrete portal steps and constraints (e.g., migration must be committed before a specific date, requirement to download and distribute updated VPN client profiles before starting). This is specialized operational guidance for a product-specific migration/deployment scenario rather than generic VPN knowledge. |
 | [Migrate classic gateways to Resource Manager](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-classic-resource-manager-migration) | decision-making | 0.70 | Covers migration path, constraints, and considerations between deployment models, guiding upgrade decisions. |
 | [Migrate from Azure VPN Client for Linux](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-linux-retirement) | decision-making | 0.70 | Retirement and migration guide typically includes specific dates, supported/unsupported client options, and prescriptive guidance on which alternative clients to choose for different scenarios. This is product-specific decision guidance rather than generic overview. |
 | [Monitor VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/monitor-vpn-gateway) | configuration | 0.70 | Monitoring article typically lists specific metrics, log categories, and diagnostic settings to enable—product-specific configuration details. |

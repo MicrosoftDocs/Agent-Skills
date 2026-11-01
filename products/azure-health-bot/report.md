@@ -37,10 +37,10 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 75
+- **Updated Pages**: 0
+- **Unchanged**: 78
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
 ## Classification Statistics
 
@@ -53,15 +53,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | *(Unclassified)* | 35 | 44.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Data Connections](https://learn.microsoft.com/en-us/azure/health-bot/data_connection)
-  - Updated: 2025-10-17T07:10:00.000Z → 2026-10-19T07:30:00.000Z
-- [Authentication Providers](https://learn.microsoft.com/en-us/azure/health-bot/authentication_providers)
-  - Updated: 2025-01-21T09:57:00.000Z → 2026-10-19T07:30:00.000Z
-- [Conversation Logs](https://learn.microsoft.com/en-us/azure/health-bot/conversation_logs)
-  - Updated: 2025-01-21T09:57:00.000Z → 2026-10-19T07:30:00.000Z
 
 ## Classified Pages
 

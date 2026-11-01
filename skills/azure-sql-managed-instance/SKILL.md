@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI networking, migrations, HA/DR, backup/restore, or Entra-integrated security, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI sizing/networking, configuring HA/DR and backups, securing access, or integrating apps and tools, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L82-L98 | Guidance for choosing Azure SQL services and tiers, planning subnet/IPs, and deciding or executing migrations (SQL Server, Db2, Oracle) and replication options (link, LRS, standby). |
 | Architecture & Design Patterns | L99-L103 | Connectivity architecture for Azure SQL DB and HA design for Managed Instance, including network topology, routing, failover behavior, and resilience patterns. |
 | Limits & Quotas | L104-L115 | Backup retention/immutability rules, DTU benchmarks, free-tier and memory limits, maintenance windows, operation durations, and all key resource/scale limits for Azure SQL Managed Instance. |
-| Security | L116-L167 | Configuring Azure SQL Managed Instance security: Entra auth (users, logins, Windows/Kerberos), managed identities, TDE & customer-managed keys, TLS, auditing, networking, and Azure Policy. |
-| Configuration | L168-L217 | Configuring and managing Azure SQL Managed Instance: deployment, networking, backups/restore, monitoring, maintenance windows, update policy, time zone/tempdb, and high availability/failover. |
-| Integrations & Coding Patterns | L218-L241 | Client connectivity, coding patterns, and tools for apps using Azure SQL Managed Instance, plus automation, DTC, XEvents, Spark, Managed Instance link, and backup/restore scenarios. |
-| Deployment | L242-L257 | Deploying and managing Azure SQL Managed Instance and databases: scaling, start/stop for cost control, DR/replication, region/subnet moves, and required virtual network setup. |
+| Security | L116-L168 | Entra-based auth, identities, keys, TLS, auditing, networking, and best practices to secure Azure SQL Managed Instance (logins, TDE, Windows/Kerberos auth, private endpoints, Azure Policy). |
+| Configuration | L169-L218 | Configuring and managing Azure SQL Managed Instance: deployment, networking, backups/restore, monitoring, maintenance windows, update policy, time zone/tempdb, and high availability/failover. |
+| Integrations & Coding Patterns | L219-L242 | Client connectivity, coding patterns, and tools for apps using Azure SQL Managed Instance, plus automation, DTC, XEvents, Spark, Managed Instance link, and backup/restore scenarios. |
+| Deployment | L243-L258 | Deploying and managing Azure SQL Managed Instance and databases: scaling, start/stop for cost control, DR/replication, region/subnet moves, and required virtual network setup. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -129,10 +129,11 @@ This skill requires **network access** to fetch documentation content:
 | Enforce Entra-only authentication with Azure Policy for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-policy?view=azuresql |
 | Enable Entra-only authentication on existing Azure SQL resources | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-tutorial?view=azuresql |
 | Enable Microsoft Entra-only authentication for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication?view=azuresql |
-| Configure managed identities for Azure SQL access | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql |
+| Configure managed identities for Azure SQL authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql |
 | Connect to Azure SQL using Microsoft Entra authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-microsoft-entra-connect-to-azure-sql?view=azuresql |
 | Block T-SQL CRUD for Azure SQL resource protection | https://learn.microsoft.com/en-us/azure/azure-sql/database/block-crud-tsql?view=azuresql |
 | Configure Conditional Access policies for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/conditional-access-configure?view=azuresql |
+| Set up database-level managed identity for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-level-managed-identity?view=azuresql |
 | Use built-in Azure Policy definitions for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql |
 | Apply security best practices to Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql |
 | Use Azure Policy regulatory compliance controls for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/security-controls-policy?view=azuresql |

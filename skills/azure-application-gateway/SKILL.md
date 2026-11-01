@@ -1,9 +1,9 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring App Gateway v2/for Containers with AKS/AGIC, WAF, mTLS, Private Link, or header/URL rewrites, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners/routing, WAF/TLS/mTLS, AGIC/AKS integrations, AppGW for Containers, or Key Vault certs, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Gateway Skill
@@ -24,20 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L43 | Diagnosing backend health and metrics, interpreting health states, and troubleshooting configuration, connectivity, and runtime issues for Application Gateway and Application Gateway for Containers. |
-| Best Practices | L44-L49 | Tuning health probes, understanding probe behavior, and planning Application Gateway capacity, scaling, and configuration for high-traffic workloads. |
-| Decision Making | L50-L60 | Guidance on choosing networking and pricing for Application Gateway for Containers and planning/migrating from AGIC, App Gateway V1, and classic VMs to newer Azure offerings. |
-| Architecture & Design Patterns | L61-L65 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
-| Limits & Quotas | L66-L71 | Configuring autoscaling, zone redundancy, and multi-site hosting limits for Application Gateway v2, including capacity, scaling behavior, and site/hostname constraints. |
-| Security | L72-L112 | TLS/SSL security for Application Gateway: listener policies, cert prep/rotation, Key Vault, end-to-end and mutual TLS (incl. mTLS, mTLS with Istio), WAF, HSTS, and AKS/containers integration. |
-| Configuration | L113-L176 | Configuring Application Gateway and Application Gateway for Containers: listeners, routing, probes, health, TLS/mTLS, Private Link, header/URL rewrites, WebSockets, HTTP/3, monitoring, and AKS/Ingress integration. |
-| Integrations & Coding Patterns | L177-L186 | Patterns and scripts for integrating App Gateway with AKS, Key Vault, Prometheus/Grafana, Sentinel/Defender, HTTP header rewrites, request mirroring, and autoscaling pods via gateway metrics |
-| Deployment | L187-L199 | Deploying and scaling Application Gateway and AGIC: portal/ARM/PowerShell setup, IPv6 frontends, AKS add-on enable/disable, migrations, and Helm-based upgrades. |
+| Troubleshooting | L37-L44 | Diagnosing backend health and metrics, reading diagnostic logs, and troubleshooting issues for Application Gateway and Application Gateway for Containers (including ALB Controller). |
+| Best Practices | L45-L50 | Tuning health probes, understanding probe behavior, and planning Application Gateway capacity, scaling, and configuration for high-traffic workloads. |
+| Decision Making | L51-L61 | Guidance on choosing networking and pricing for Application Gateway for Containers and planning/migrating from AGIC, App Gateway V1, and classic VMs to newer Azure offerings. |
+| Architecture & Design Patterns | L62-L66 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
+| Limits & Quotas | L67-L73 | Autoscaling, zone redundancy, multi-site hosting behavior, and FAQs about capacity limits, scaling behaviors, and configuration constraints for Azure Application Gateway v2. |
+| Security | L74-L115 | TLS/SSL security for Application Gateway: cert prep/management, TLS policies/ciphers, end-to-end and mutual TLS, mTLS for containers, WAF, HSTS, Key Vault, FIPS, Private Link, and JWT validation. |
+| Configuration | L116-L179 | Configuring Application Gateway and Application Gateway for Containers: listeners, routing, probes, headers, session affinity, TLS, Private Link, monitoring, diagnostics, and Kubernetes/AGIC integration. |
+| Integrations & Coding Patterns | L180-L189 | Patterns and scripts for integrating App Gateway with AKS, Key Vault, Prometheus/Grafana, Sentinel/Defender, HTTP header rewrites, request mirroring, and autoscaling pods via gateway metrics |
+| Deployment | L190-L202 | Deploying and scaling Application Gateway and AGIC: portal/ARM/PowerShell setup, IPv6 frontends, AKS add-on enable/disable, migrations, and Helm-based upgrades. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Diagnose backend health states in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health |
+| Use Application Gateway diagnostic logs for troubleshooting | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-diagnostics |
 | Use ALB Controller backend health and metrics for troubleshooting | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-backend-health-metrics |
 | Diagnose and fix Application Gateway for Containers issues | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/troubleshooting-guide |
 
@@ -67,7 +68,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure autoscaling and zone redundancy for Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant |
-| Configure multi-site hosting limits on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview |
+| Azure Application Gateway FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
+| Configure and understand multi-site hosting on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview |
 
 ### Security
 | Topic | URL |
@@ -80,6 +82,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure TLS policies for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview |
 | Plan for TLS 1.0/1.1 retirement on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-tls-version-retirement |
 | Prepare certificates for backend authentication in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/certificates-for-backend-authentication |
+| Understand Application Gateway Confidential Compute security model | https://learn.microsoft.com/en-us/azure/application-gateway/confidential-compute-overview |
 | Configure Key Vault TLS termination for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configure-key-vault-portal |
 | Set up end-to-end TLS on Application Gateway via portal | https://learn.microsoft.com/en-us/azure/application-gateway/end-to-end-ssl-portal |
 | Enable FIPS 140-compliant mode on Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/fips |
@@ -113,9 +116,9 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Configure Advanced Rules Engine for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/advanced-rules |
 | Configure custom probe in classic Application Gateway via PowerShell | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-classic-ps |
 | Configure custom health probes for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-ps |
-| Configure and interpret Application Gateway diagnostic logs | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-diagnostics |
 | Create and manage Application Gateway with ILB endpoint | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ilb-arm |
 | Use Azure Monitor metrics for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-metrics |
 | Configure frontend IP addresses for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip |

@@ -50,7 +50,7 @@ confusable_not_for: Not for Azure Maps (use azure-maps), Azure Open Datasets (us
 - **Updated Pages**: 0
 - **Unchanged**: 46
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
 ## Classification Statistics
 

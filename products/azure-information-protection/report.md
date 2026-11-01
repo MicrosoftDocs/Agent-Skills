@@ -38,7 +38,7 @@ confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Securit
 - **Updated Pages**: 0
 - **Unchanged**: 20
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-information-protection/azure-information-protection.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-information-protection/azure-information-protection.csv`
 
 ## Classification Statistics
 

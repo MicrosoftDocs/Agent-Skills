@@ -51,7 +51,7 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Sear
 - **Updated Pages**: 0
 - **Unchanged**: 83
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
 ## Classification Statistics
 

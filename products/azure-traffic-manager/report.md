@@ -46,10 +46,10 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 42
+- **Updated Pages**: 0
+- **Unchanged**: 46
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
 
 ## Classification Statistics
 
@@ -65,17 +65,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 19 | 41.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Traffic Manager?](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
-- [Endpoint types](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-05T08:00:00.000Z
-- [Strictly typed profiles](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-strictly-typed-profiles)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-19T17:13:00.000Z
-- [FAQs](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-faqs)
-  - Updated: 2026-06-01T08:00:00.000Z → 2026-10-05T08:00:00.000Z
 
 ## Classified Pages
 

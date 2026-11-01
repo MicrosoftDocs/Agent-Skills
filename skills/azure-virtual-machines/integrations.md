@@ -44,6 +44,7 @@
 | Configure MPI for RDMA-capable Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/setup-mpi |
 | Author ARM templates for Azure VM managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments |
 | Create Azure VM restore points using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-cli |
+| Create Azure VM restore points with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-powershell |
 | Azure Disk Encryption sample scripts for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts |
 | Configure VM virtual networks using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-network-ref |
 | Manage Azure VMs with PowerShell commands | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-ref |

@@ -40,7 +40,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Updated Pages**: 0
 - **Unchanged**: 39
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
 ## Classification Statistics
 

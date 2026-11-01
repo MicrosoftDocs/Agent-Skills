@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, ExpressRoute/SD-WAN, or Private Link, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
+description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs, P2S/Always On VPN, BGP/IPsec routing, ExpressRoute, or SD-WAN/NVA integrations, and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Application Network (use azure-application-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual WAN Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L78-L84 | Limits and design guidance for Virtual WAN: P2S client pool sizing, hub routing/throughput caps, and using Private Link endpoints within scale and quota constraints. |
 | Security | L85-L94 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions. |
 | Configuration | L95-L147 | Configuring Azure Virtual WAN hubs, routing, NVAs, BGP, IPsec, and P2S/Always On VPN (cert- and Entra-based), including policies, route-maps, client profiles, and monitoring/logging. |
-| Integrations & Coding Patterns | L148-L154 | PowerShell and automation patterns for integrating Virtual WAN with ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure Private Link |
-| Deployment | L155-L158 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
+| Integrations & Coding Patterns | L148-L155 | Scripts and patterns for integrating Virtual WAN with ExpressRoute, Linux strongSwan P2S, RADIUS VSAs for user groups, and automating SD-WAN/VPN CPE connectivity. |
+| Deployment | L156-L159 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -149,6 +149,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Create ExpressRoute associations to Virtual WAN via PowerShell | https://learn.microsoft.com/en-us/azure/virtual-wan/expressroute-powershell |
+| Configure Linux strongSwan client for Azure Virtual WAN P2S | https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-ike-linux |
 | Configure RADIUS VSAs for Virtual WAN user groups | https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-radius |
 | Automate SD-WAN and VPN CPE integration with Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-configure-automation-providers |
 

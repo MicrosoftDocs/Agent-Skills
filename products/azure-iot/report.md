@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-01'
 category_descriptions:
   security: 'Managing IoT device certificates and CAs in Azure: issuance, renewal,
     revocation, CA hierarchy, namespaces/security boundaries, and configuring Microsoft
@@ -34,28 +34,33 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 - **Total Pages**: 28
 - **Fetched**: 28
 - **Fetch Failed**: 0
-- **Classified**: 21
-- **Unclassified**: 7
+- **Classified**: 20
+- **Unclassified**: 8
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 28
+- **Updated Pages**: 1
+- **Unchanged**: 27
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 7.1% |
-| configuration | 6 | 21.4% |
+| configuration | 5 | 17.9% |
 | deployment | 2 | 7.1% |
 | integrations | 1 | 3.6% |
 | security | 10 | 35.7% |
-| *(Unclassified)* | 7 | 25.0% |
+| *(Unclassified)* | 8 | 28.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Jobs concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-jobs)
+  - Updated: 2026-10-05T22:13:00.000Z → 2026-10-28T05:11:00.000Z
 
 ## Classified Pages
 
@@ -78,7 +83,6 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | [Deploy an onboarding update to a namespace (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-deploy-onboarding-update-namespace) | deployment | 0.70 | Explains onboarding update jobs that run at device onboarding time and remain active; deployment behavior and constraints specific to Device Registry. |
 | [Disable or enable a device (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-disable-enable-device) | configuration | 0.70 | How-to for toggling device state; likely includes specific API/portal options and behavior of disabled devices in IoT Hub preview deployments. |
 | [Groups concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-groups) | configuration | 0.70 | Concepts for query-defined groups with cached membership; includes product-specific query semantics and behavior for organizing devices. |
-| [Jobs concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-jobs) | configuration | 0.70 | Explains jobs that run namespace-wide operations across multiple IoT hubs; includes product-specific job behavior and scope. |
 | [Software updates concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-software-updates) | configuration | 0.70 | Concepts for importing and deploying OTA updates using groups and jobs; product-specific update model and flows. |
 | [Unified Azure IoT SDKs for IoT Hub and Azure Device Registry](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-unified-iot-sdks) | integrations | 0.70 | Describes lifecycle-aware unified SDKs for IoT Hub and Device Registry; likely includes SDK-specific patterns, parameters, and flows unique to this integration. |
 | [What is an Azure Device Registry namespace?](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-namespaces) | security | 0.65 | Concepts article about namespaces as organizational and security boundaries; likely details RBAC usage, scope, and namespace-level access patterns with specific role/scope semantics unique to Device Registry. |
@@ -88,6 +92,7 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies) | 0.20 | Describes available Azure IoT services; appears as catalog/overview without detailed decision matrices or quantified comparisons. |
+| [Jobs concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-jobs) | 0.20 | Page appears to be a conceptual overview of Azure Device Registry jobs (what they are and how they operate at fleet scale). No evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices; content is primarily descriptive preview/feature explanation rather than expert, configuration, or troubleshooting specifics. |
 | [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.20 | High-level security and best practices overview for Azure IoT solutions without specific RBAC roles, configuration parameters, numeric limits, or product-specific settings; content is conceptual rather than detailed expert guidance. |
 | [What is Azure Device Registry?](https://learn.microsoft.com/en-us/azure/iot/device-registry/overview-device-registry) | 0.20 | High-level overview of Azure Device Registry and its role as a unified control plane; no concrete limits, configs, error codes, or product-specific decision matrices. |
 | [IoT device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of IoT device development concepts and components; does not expose concrete configuration tables, quotas, error mappings, or product-specific best-practice details. |

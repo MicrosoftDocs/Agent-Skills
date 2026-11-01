@@ -42,10 +42,10 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 31
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-face/azure-face.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-face/azure-face.csv`
 
 ## Classification Statistics
 
@@ -60,11 +60,6 @@ confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI Cust
 | *(Unclassified)* | 14 | 45.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Face documentation](https://learn.microsoft.com/en-us/azure/ai-services/face/face-index)
-  - Updated: 2026-06-05T22:11:00Z → 2026-10-19T22:12:00Z
 
 ## Classified Pages
 

@@ -51,10 +51,10 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 192
-- **Deleted Pages**: 1
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
+- **Updated Pages**: 0
+- **Unchanged**: 193
+- **Deleted Pages**: 0
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-iot-hub/azure-iot-hub.csv`
 
 ## Classification Statistics
 
@@ -72,15 +72,6 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use az
 | *(Unclassified)* | 66 | 34.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage device reconnections](https://learn.microsoft.com/en-us/azure/iot-hub/concepts-manage-device-reconnections)
-  - Updated: 2026-03-30T17:14:00.000Z → 2026-10-21T22:11:00.000Z
-
-### Deleted Pages
-
-- ~~Get started (ADR integration)~~ (https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-device-registry-setup)
 
 ## Classified Pages
 

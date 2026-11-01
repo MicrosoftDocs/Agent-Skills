@@ -1,9 +1,9 @@
 ---
 name: azure-application-network
-description: Expert knowledge for Azure Application Network development including decision making, and configuration. Use when enabling App Network logs, Azure Monitor metrics, AKS/App Gateway versioning, or upgrade compatibility, and other Azure Application Network related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Networking (use azure-networking), Azure Application Gateway (use azure-application-gateway).
+description: Expert knowledge for Azure Application Network development including decision making, and configuration. Use when enabling App Network logs, analyzing Azure Monitor metrics, or selecting AKS App Network versions and upgrades, and other Azure Application Network related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-06"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Network Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L30-L34 | Guidance on choosing compatible AKS, Application Gateway, and Application Network versions, including supported combinations and upgrade considerations. |
+| Decision Making | L30-L34 | Guidance on choosing compatible Azure Kubernetes Application Network versions, including version matrices, upgrade paths, and interoperability considerations. |
 | Configuration | L35-L39 | Configuring Application Network observability: enabling and analyzing logs in Azure Monitor and setting up/using metrics for monitoring and troubleshooting. |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Select compatible versions for AKS Application Network | https://learn.microsoft.com/en-us/azure/application-network/supported-versions |
+| Select compatible Azure Kubernetes Application Network versions | https://learn.microsoft.com/en-us/azure/application-network/supported-versions |
 
 ### Configuration
 | Topic | URL |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   integrations: Patterns and examples for wiring Functions to external systems (HTTP,
     storage, messaging, databases, AI/OpenAI, Dapr, MCP, SignalR, Web PubSub) using
@@ -7,9 +7,9 @@ category_descriptions:
   security: 'Guides for securing Functions: encryption at rest, secure storage and
     keys, private access (VNet/private endpoints), managed identity for SQL, and App
     Service security features.'
-  configuration: 'Configuring how Functions run and integrate: app settings, host.json,
-    runtime versions, plans, networking, monitoring/telemetry, local dev, bindings/triggers,
-    and MCP/hosted skills setup.'
+  configuration: Configuring Azure Functions runtime, bindings, triggers, networking,
+    monitoring/telemetry, local development, runtime versions, and hosted skills behavior
+    via app settings and host.json.
   decision-making: Guidance on choosing Functions hosting/scale/networking options,
     cost planning, AI integration, and step-by-step migrations (plans, runtimes, languages,
     extensions, AWS Lambda).
@@ -27,13 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Functions development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues,
-  using bindings, VNet/private endpoints, managed identity, or CI/CD deploys, and
-  other Azure Functions related development tasks. Not for Azure App Service (use
-  azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps
-  (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
-use_when: Use when wiring Functions to HTTP/storage/queues, using bindings, VNet/private
-  endpoints, managed identity, or CI/CD deploys, and other Azure Functions related
-  development tasks.
+  securing with VNets/MI, tuning host.json, or deploying via CI/CD, and other Azure
+  Functions related development tasks. Not for Azure App Service (use azure-app-service),
+  Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+use_when: Use when wiring Functions to HTTP/storage/queues, securing with VNets/MI,
+  tuning host.json, or deploying via CI/CD, and other Azure Functions related development
+  tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Logic
   Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service).
@@ -42,63 +42,39 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 
 ## Summary
 
-- **Total Pages**: 311
-- **Fetched**: 311
+- **Total Pages**: 313
+- **Fetched**: 313
 - **Fetch Failed**: 0
-- **Classified**: 245
-- **Unclassified**: 66
+- **Classified**: 246
+- **Unclassified**: 67
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 9
-- **Unchanged**: 301
-- **Deleted Pages**: 1
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
+- **New Pages**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 311
+- **Deleted Pages**: 0
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 13 | 4.2% |
-| configuration | 41 | 13.2% |
+| configuration | 42 | 13.4% |
 | decision-making | 20 | 6.4% |
-| deployment | 26 | 8.4% |
-| integrations | 100 | 32.2% |
+| deployment | 26 | 8.3% |
+| integrations | 100 | 31.9% |
 | limits-quotas | 3 | 1.0% |
 | security | 9 | 2.9% |
-| troubleshooting | 33 | 10.6% |
-| *(Unclassified)* | 66 | 21.2% |
+| troubleshooting | 33 | 10.5% |
+| *(Unclassified)* | 67 | 21.4% |
 
 ## Changes
 
 ### New Pages
 
-- [Go](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-go)
-
-### Updated Pages
-
-- [Low-latency Blob trigger using Event Grid](https://learn.microsoft.com/en-us/azure/azure-functions/functions-event-grid-blob-trigger)
-  - Updated: 2026-08-19T08:00:00.000Z → 2026-10-12T08:00:00.000Z
-- [Compare runtime versions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-versions)
-  - Updated: 2026-09-18T05:11:00.000Z → 2026-10-12T08:00:00.000Z
-- [About triggers and bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
-  - Updated: 2026-09-23T22:40:00.000Z → 2026-10-12T08:00:00.000Z
-- [Command line tools](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-azure-cli)
-  - Updated: 2026-06-03T05:14:00.000Z → 2026-10-12T08:00:00.000Z
-- [Debug Event Grid trigger locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-event-grid-blob-trigger)
-  - Updated: 2026-08-19T08:00:00.000Z → 2026-10-12T08:00:00.000Z
-- [Work with Flex Consumption apps](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to)
-  - Updated: 2026-09-08T08:00:00.000Z → 2026-10-12T08:00:00.000Z
-- [Custom handlers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers)
-  - Updated: 2025-12-03T23:21:00.000Z → 2026-10-12T08:00:00.000Z
-- [Supported languages](https://learn.microsoft.com/en-us/azure/azure-functions/supported-languages)
-  - Updated: 2026-09-17T04:41:00.000Z → 2026-10-22T05:12:00.000Z
-- [Migrate from AWS Lambda](https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-aws-lambda-to-azure-functions)
-  - Updated: 2026-08-28T08:00:00.000Z → 2026-10-12T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Go (Preview)~~ (https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-go)
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-connector)
+- [Trigger (Preview)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-connector-trigger)
 
 ## Classified Pages
 
@@ -284,6 +260,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-output) | integrations | 0.70 | Output binding docs for Azure Queue storage usually list binding properties (queueName, connection, dataType, etc.) and how they map to function parameters, including default behaviors. These configuration parameters and patterns are product-specific integration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-mysql) | integrations | 0.70 | Overview of MySQL trigger/input/output bindings; product-specific integration behavior and extension details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache) | integrations | 0.70 | Describes Redis triggers/bindings for Functions with product-specific integration patterns and binding configuration parameters. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-connector) | configuration | 0.70 | The page describes how to install and configure the Connector extension for Azure Functions, which typically includes product-specific configuration names, parameters, and settings unique to this preview feature. These configuration details (such as extension configuration names and supported connector settings) are expert knowledge not generally known from training. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2) | integrations | 0.70 | Binding reference for Cosmos DB triggers/input/output in Functions, which typically includes binding configuration properties, parameter names, and constraints. These are product-specific integration patterns and settings that qualify as integrations expert knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-dapr) | integrations | 0.70 | The Dapr extension reference for Azure Functions describes specific trigger and binding types, their configuration properties, and how they map to Dapr components. This is product-specific integration knowledge (binding names, attributes, config fields) rather than generic concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-documentdb) | integrations | 0.70 | Binding overview with trigger/input/output behavior and considerations for the DocumentDB extension; product-specific integration details. |
@@ -420,3 +397,4 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Log
 | [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij) | 0.10 | Tutorial-style guide for creating and running a Java HTTP-triggered Azure Function using IntelliJ. It focuses on step-by-step creation and deployment, not on limits, configuration matrices, error-code troubleshooting, or product-specific quotas/thresholds. No detailed tables of settings, limits, or decision criteria are indicated, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Scenarios](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scenarios) | 0.10 | Scenario listing for Azure Functions that describes common use cases; does not include numeric limits, configuration parameters, or detailed troubleshooting or decision matrices. |
 | [Supported languages](https://learn.microsoft.com/en-us/azure/azure-functions/supported-languages) | - | Supported languages page is primarily a capability and lifecycle overview (which languages, support levels, end-of-support dates). It doesn’t focus on numeric limits, configuration parameters, or troubleshooting mappings, so it doesn’t meet the expert-knowledge criteria for any sub-skill type. |
+| [Trigger (Preview)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-connector-trigger) | - | Appears to be a feature/usage overview for the Azure Connector trigger in Azure Functions (preview). Description focuses on what it does and where it can be used, with references to other docs for configuration and bindings. No evidence of numeric limits, detailed configuration tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |

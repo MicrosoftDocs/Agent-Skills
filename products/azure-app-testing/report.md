@@ -57,7 +57,7 @@ confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Azure DevOp
 - **Updated Pages**: 0
 - **Unchanged**: 78
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-app-testing/azure-app-testing.csv`
 
 ## Classification Statistics
 

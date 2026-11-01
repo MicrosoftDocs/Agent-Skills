@@ -1,14 +1,14 @@
 ---
 name: azure-ddos-protection
-description: Expert knowledge for Azure DDoS Protection development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when enabling DDoS IP/Network Protection, tuning policies, analyzing logs/metrics, or integrating NVAs and Azure Policy, and other Azure DDos Protection related development tasks. Not for Azure Firewall (use azure-firewall), Azure Firewall Manager (use azure-firewall-manager), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure DDoS Protection development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when enabling DDoS IP/Network Protection, tuning thresholds, analyzing logs, running simulations, or using Rapid Response, and other Azure DDoS Protection related development tasks. Not for Azure Firewall (use azure-firewall), Azure Firewall Manager (use azure-firewall-manager), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DDoS Protection Skill
 
-This skill provides expert guidance for Azure DDoS Protection. Covers troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure DDoS Protection. Covers troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,20 +24,18 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L41 | Handling and investigating DDoS attacks: engaging Rapid Response, reading Defender for Cloud DDoS alerts, and analyzing DDoS Protection logs in Log Analytics for root cause and mitigation. |
-| Best Practices | L42-L49 | Guidance on DDoS Protection design, cost optimization, incident response planning, and running/evaluating attack simulations to validate and improve your protection strategy. |
-| Decision Making | L50-L55 | Guidance on when to enable Azure DDoS Protection, comparing Standard tiers and pricing, and choosing the best tier for your app’s scale, risk, and cost requirements. |
-| Architecture & Design Patterns | L56-L61 | Reference architectures and design patterns for deploying Azure DDoS Protection, including integrating inline L7 protection with network virtual appliances (NVAs). |
-| Security | L62-L72 | Configuring and securing Azure DDoS IP/Network Protection using portal, CLI, and PowerShell, including permissions setup and hardening best practices. |
-| Configuration | L73-L85 | Configuring and deploying Azure DDoS IP/Network Protection (portal, ARM, Bicep, PowerShell), plus monitoring, metrics/logs, and Azure Policy for governance. |
-| Integrations & Coding Patterns | L86-L89 | Using Azure CLI to define, configure, and manage custom DDoS protection policies, including policy parameters, scopes, and deployment steps. |
+| Troubleshooting | L34-L39 | Handling and investigating DDoS attacks: engaging Rapid Response, reading Defender for Cloud DDoS alerts, and analyzing DDoS Protection logs in Log Analytics for root cause and mitigation. |
+| Best Practices | L40-L47 | Guidance on DDoS Protection design, cost optimization, incident response planning, and running/evaluating attack simulations to validate and improve your protection strategy. |
+| Decision Making | L48-L53 | Guidance on when to enable Azure DDoS Protection, comparing Standard tiers and pricing, and choosing the best tier for your app’s scale, risk, and cost requirements. |
+| Architecture & Design Patterns | L54-L60 | Designing and tuning Azure DDoS Protection architectures, including custom detection thresholds, reference deployment patterns, and integrating inline L7 protection with NVAs. |
+| Security | L61-L71 | Configuring and securing Azure DDoS IP/Network Protection using portal, CLI, and PowerShell, including permissions setup and hardening best practices. |
+| Configuration | L72-L82 | Configuring and deploying Azure DDoS IP/Network Protection (portal, ARM, Bicep, PowerShell), plus monitoring, metrics/logs, and Azure Policy for governance. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Engage Azure DDoS Rapid Response during attacks | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-rapid-response |
 | Interpret Azure DDoS alerts in Defender for Cloud | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-alerts-defender-for-cloud |
-| Analyze Azure DDoS Protection logs in Log Analytics | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-diagnostic-logs |
 
 ### Best Practices
 | Topic | URL |
@@ -56,6 +54,7 @@ This skill requires **network access** to fetch documentation content:
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
+| Tune Azure DDoS custom policy detection thresholds | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-custom-policy-overview |
 | Use Azure DDoS Protection reference architectures | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-reference-architectures |
 | Implement inline L7 DDoS protection with NVAs | https://learn.microsoft.com/en-us/azure/ddos-protection/inline-protection-glb |
 
@@ -73,7 +72,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Azure DDoS custom policy in portal | https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-portal |
 | Deploy Azure DDoS custom policy via ARM template | https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-template |
 | Deploy Azure DDoS IP Protection with ARM template | https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-template |
 | Deploy Azure DDoS Network Protection with Bicep | https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-bicep |
@@ -82,8 +80,3 @@ This skill requires **network access** to fetch documentation content:
 | Configure monitoring for Azure DDoS Protection | https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection |
 | Reference Azure DDoS Protection monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection-reference |
 | Use Azure Policy definitions for DDoS Protection | https://learn.microsoft.com/en-us/azure/ddos-protection/policy-reference |
-
-### Integrations & Coding Patterns
-| Topic | URL |
-|-------|-----|
-| Create Azure DDoS custom policy using CLI | https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-cli |

@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 85
+- **Updated Pages**: 0
+- **Unchanged**: 86
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
 ## Classification Statistics
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 18 | 20.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization)
-  - Updated: 2026-08-27T17:21:00.000Z → 2026-10-22T08:00:00.000Z
 
 ## Classified Pages
 

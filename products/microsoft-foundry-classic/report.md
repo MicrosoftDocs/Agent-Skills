@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring, monitoring, and troubleshooting Foundry classic: agents,
     evaluators, models, storage, networking, compute, OpenAI integrations, observability,
@@ -50,15 +50,15 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Total Pages**: 369
 - **Fetched**: 369
 - **Fetch Failed**: 0
-- **Classified**: 256
-- **Unclassified**: 113
+- **Classified**: 255
+- **Unclassified**: 114
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 5
-- **Unchanged**: 361
-- **Deleted Pages**: 3
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-classic/microsoft-foundry-classic.csv`
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 367
+- **Deleted Pages**: 0
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/microsoft-foundry-classic/microsoft-foundry-classic.csv`
 
 ## Classification Statistics
 
@@ -69,38 +69,20 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | configuration | 46 | 12.5% |
 | decision-making | 24 | 6.5% |
 | deployment | 17 | 4.6% |
-| integrations | 93 | 25.2% |
+| integrations | 92 | 24.9% |
 | limits-quotas | 12 | 3.3% |
 | security | 42 | 11.4% |
 | troubleshooting | 6 | 1.6% |
-| *(Unclassified)* | 113 | 30.6% |
+| *(Unclassified)* | 114 | 30.9% |
 
 ## Changes
 
-### New Pages
-
-- [GPT Realtime 2.1](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/realtime-2)
-- [Decisions API](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/decisions)
-- [Realtime API reference](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/realtime-audio-reference-ga)
-
 ### Updated Pages
 
-- [Foundry Models FAQ](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/faq)
-  - Updated: 2026-06-05T22:11:00.000Z → 2026-10-19T22:12:00.000Z
-- [Quotas and limits](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/quotas-limits)
-  - Updated: 2026-08-20T08:00:00.000Z → 2026-08-20T22:12:00.000Z
-- [Audio generation](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/audio-completions-quickstart)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-10-23T22:13:00.000Z
-- [Realtime API via WebSockets](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-websockets)
-  - Updated: 2026-06-05T22:11:00.000Z → 2026-10-23T22:13:00.000Z
-- [Foundry (classic) FAQ](https://learn.microsoft.com/en-us/azure/foundry-classic/faq)
-  - Updated: 2026-04-14T22:13:00.000Z → 2026-10-19T22:12:00.000Z
-
-### Deleted Pages
-
-- ~~GPT Realtime 2.0 (preview)~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/realtime-2)
-- ~~Realtime API reference (preview)~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/realtime-audio-reference)
-- ~~Realtime API reference (GA)~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/realtime-audio-reference-ga)
+- [Reasoning models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/reasoning)
+  - Updated: 2026-09-21T08:00:00.000Z → 2026-10-23T08:00:00.000Z
+- [Groundedness detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-groundedness)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-04-14T22:13:00.000Z
 
 ## Classified Pages
 
@@ -327,7 +309,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Fine-tuning in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/fine-tuning-overview) | decision-making | 0.65 | Explains when to fine-tune and which type to choose; likely includes scenario-based guidance and trade-offs for different fine-tuning approaches, which is decision-making content. |
 | [Foundry Models lifecycle and support policy](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements) | decision-making | 0.65 | Describes the lifecycle and support policy for Foundry models, including deprecation/retirement behavior and how it affects deployments. This provides concrete guidance for when and how to migrate or choose replacement models, which fits decision-making around lifecycle and upgrade paths. |
 | [Generate synthetic and simulated data for evaluation](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/simulator-interaction-data) | configuration | 0.65 | How-to for generating synthetic data for evaluation; likely includes SDK calls, parameters, and dataset schema requirements that are specific to Foundry’s evaluation system. |
-| [Groundedness detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-groundedness) | integrations | 0.65 | Describes groundedness detection requirements such as document embedding and prompt formatting for RAG scenarios. Involves product-specific API usage patterns and parameters for integrating Content Safety with LLM responses. |
 | [Limited access](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/limited-access) | security | 0.65 | Describes a limited access policy for Azure OpenAI within Foundry, which is part of responsible AI and access control. Such a policy typically includes specific conditions and restrictions for who can access what, making it product-specific security/permission guidance. This is specialized knowledge beyond generic concepts. |
 | [MedImageInsight model for embedding](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/healthcare-ai/deploy-medimageinsight) | integrations | 0.65 | Step-by-step deployment plus API examples for a specific healthcare model; likely includes endpoint paths, request/response schemas, and model-specific parameters that qualify as product-specific integration patterns. |
 | [MedImageParse models for prompted segmentation](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/healthcare-ai/deploy-medimageparse) | integrations | 0.65 | Model-specific how-to for MedImageParse and MedImageParse 3D; likely documents input formats, parameters, and API usage patterns that are not generic LLM knowledge. |
@@ -406,6 +387,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Fine-tuning](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/fine-tuning-considerations) | 0.30 | Fine-tuning considerations are likely conceptual guidance (data quality, overfitting, etc.) without product-specific numeric thresholds or configuration tables. |
 | [Fine-tuning GPT-4o mini](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/tutorials/fine-tune) | 0.30 | Tutorial on fine-tuning gpt-4o-mini in Foundry (classic) is primarily a step-by-step how-to; summary does not indicate configuration tables, limits, or product-specific best-practice/diagnostic content that meets the expert-knowledge criteria. |
 | [GPT Realtime 2.1](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/realtime-2) | 0.30 | This is an overview of GPT Realtime 2.1 models, describing capabilities (speech-to-speech, low latency, deployments). Overviews typically explain what the model is and high-level usage, not detailed limits, configuration parameters, or troubleshooting mappings. The summary doesn't indicate numeric thresholds, config tables, or decision matrices, so it doesn't qualify for any expert-knowledge sub-skill type. |
+| [Groundedness detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-groundedness) | 0.30 | Page appears to be a conceptual/feature explanation of groundedness detection for RAG scenarios in Azure OpenAI/Foundry. The summary doesn't indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed security/decision matrices. It reads as guidance on what groundedness detection is and how to use it conceptually, rather than expert-knowledge details like quotas, config options, or diagnostic mappings. |
 | [High availability & disaster recovery](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/high-availability-resiliency) | 0.30 | High availability and resiliency guidance is usually architectural and conceptual (patterns, recommendations) without product-specific numeric thresholds, configuration tables, or error-code-based troubleshooting. The summary emphasizes planning for business continuity rather than listing concrete limits, configs, or decision matrices with quantified trade-offs. |
 | [LLM tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/llm-tool) | 0.30 | LLM tool article is described as an introduction; likely conceptual/usage overview without detailed parameter tables or numeric limits. |
 | [MAI image models](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/use-foundry-models-mai-image) | 0.30 | Appears to be a usage/deployment guide for MAI image models. The summary doesn't show specific quotas, configuration parameter tables, or troubleshooting error mappings; likely a general tutorial-style integration/usage doc. |
@@ -424,7 +406,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Prompt transformations](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/prompt-transformation) | 0.30 | Page is a conceptual explanation of prompt transformation for Azure OpenAI image generation; available snippet shows no numeric limits, configuration tables, error codes, or product-specific configuration parameters. It describes what prompt transformation is and why it's needed, not detailed settings, quotas, or troubleshooting mappings. |
 | [Python tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/python-tool) | 0.30 | Python tool article is an introductory how-to; no sign of configuration parameter tables, numeric ranges, or error-code-based troubleshooting. |
 | [Realtime API for speech and audio](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio) | 0.30 | The page describes using the GPT Realtime API for speech and audio and highlights use cases and low-latency interactions. The summary does not indicate specific error codes, numeric limits, configuration parameter tables, or deployment/plan matrices. It reads as a feature/how-to overview rather than expert configuration, limits, or troubleshooting content, so it does not qualify for any sub-skill type. |
-| [Reasoning models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/reasoning) | 0.30 | The summary describes capabilities of Azure OpenAI reasoning models (GPT-6 Astra, GPT-5, o-series) in a conceptual way without exposing specific limits, configuration parameters, error codes, or decision matrices. It appears to be an overview of model capabilities rather than detailed expert guidance in any of the defined sub-skill types. |
+| [Reasoning models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/reasoning) | 0.30 | From the available summary, the page describes capabilities and usage of Azure OpenAI reasoning models (GPT-6 Astra, GPT-5, o-series) at a conceptual/how-to level. There is no evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, security role details, or deployment matrices. Without clear signs of specific limits, config tables, or decision matrices, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Retired Foundry Models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/retired-models) | 0.30 | Lists retired models and alternatives; likely a catalog/status list rather than detailed limits, configuration parameters, or troubleshooting mappings. |
 | [Run evaluations in the cloud](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/cloud-evaluation) | 0.30 | How-to for running cloud evaluations with the Foundry SDK; likely focuses on workflow and usage patterns rather than detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Submit batch run and evaluate a flow](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/flow-bulk-test-evaluation) | 0.30 | The summary emphasizes how to submit a batch run and use built-in evaluation methods, which is likely a procedural tutorial. There's no clear indication of detailed configuration tables, limits, or error-code-based troubleshooting, so it likely doesn't meet the expert-knowledge bar. |

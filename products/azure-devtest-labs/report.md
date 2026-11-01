@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-07-19'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring DevTest Labs environments and VMs: images, networks,
     policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, and
@@ -49,15 +49,15 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 - **Total Pages**: 97
 - **Fetched**: 97
 - **Fetch Failed**: 0
-- **Classified**: 64
-- **Unclassified**: 33
+- **Classified**: 63
+- **Unclassified**: 34
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 97
+- **Updated Pages**: 1
+- **Unchanged**: 96
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devtest-labs/azure-devtest-labs.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-devtest-labs/azure-devtest-labs.csv`
 
 ## Classification Statistics
 
@@ -65,16 +65,21 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 |------|-------|------------|
 | architecture-patterns | 1 | 1.0% |
 | best-practices | 1 | 1.0% |
-| configuration | 18 | 18.6% |
+| configuration | 17 | 17.5% |
 | decision-making | 5 | 5.2% |
 | deployment | 4 | 4.1% |
 | integrations | 16 | 16.5% |
 | limits-quotas | 1 | 1.0% |
 | security | 14 | 14.4% |
 | troubleshooting | 4 | 4.1% |
-| *(Unclassified)* | 33 | 34.0% |
+| *(Unclassified)* | 34 | 35.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Manage formulas](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-manage-formulas)
+  - Updated: 2024-06-11T11:24:00.000Z → 2026-10-30T22:14:00.000Z
 
 ## Classified Pages
 
@@ -104,7 +109,6 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | [Create custom artifacts](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-artifact-author) | configuration | 0.70 | Custom artifact creation uses an artifact definition JSON schema and script structure that are product-specific configuration details (parameter names, structure, and usage) that go beyond generic knowledge. |
 | [Customize permissions with custom roles](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-grant-user-permissions-to-specific-lab-policies) | security | 0.70 | Focuses on granting user permissions to specific lab policies; involves detailed RBAC/permission configuration unique to DevTest Labs. |
 | [Define start order for lab VMs](https://learn.microsoft.com/en-us/azure/devtest-labs/start-machines-use-automation-runbooks) | integrations | 0.70 | Uses Azure Automation runbooks and VM tags to orchestrate startup order; includes specific script patterns and tag usage unique to DevTest Labs integration. |
-| [Manage formulas](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-manage-formulas) | configuration | 0.70 | Explains formula objects (default property lists) and how to create/manage them; includes DevTest Labs-specific configuration fields and behaviors. |
 | [Manage lab storage account](https://learn.microsoft.com/en-us/azure/devtest-labs/encrypt-storage) | security | 0.70 | Covers storage accounts, encryption, customer-managed keys, and artifact result expiration; includes product-specific security and configuration options. |
 | [Move to new region](https://learn.microsoft.com/en-us/azure/devtest-labs/how-to-move-labs) | deployment | 0.70 | Describes the supported method and constraints for moving labs and schedules between regions; these are DevTest Labs–specific deployment/migration behaviors not covered by generic knowledge. |
 | [Publish an app for testing](https://learn.microsoft.com/en-us/azure/devtest-labs/test-app-azure) | integrations | 0.70 | Shows how to publish from Visual Studio to Azure file shares for DevTest Labs VMs; involves specific configuration steps and parameters for this integration path. |
@@ -180,5 +184,6 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | [Specify mandatory artifacts](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-mandatory-artifacts) | 0.30 | Describes configuring mandatory artifacts conceptually; summary doesn’t indicate detailed configuration tables, limits, or error mappings. |
 | [Use Platform-as-a-Service (PaaS) services](https://learn.microsoft.com/en-us/azure/devtest-labs/use-paas-services) | 0.30 | Describes what PaaS environments are in DevTest Labs and a conceptual example (SharePoint farm). No concrete configuration tables, limits, security roles, or troubleshooting mappings. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-concepts) | 0.20 | Concepts/definitions article; primarily terminology and high-level behavior, not detailed configuration or limits. |
+| [Manage formulas](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-manage-formulas) | 0.20 | Page appears to be a how-to guide for creating and managing formulas (VM templates) in Azure DevTest Labs, focused on UI steps and conceptual explanation of formulas. The summary does not indicate presence of numeric limits, configuration parameter tables, RBAC role lists, error-code-based troubleshooting, or decision matrices. It looks like a procedural tutorial rather than detailed configuration, limits, or best-practices content with product-specific parameters. |
 | [What is DevTest Labs?](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-overview) | 0.20 | High-level overview of DevTest Labs features and scenarios without detailed limits, configs, or product-specific patterns. |
 | [Roadmap for Azure DevTest Labs](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-labs-roadmap) | 0.10 | Roadmap/marketing-style future-features description, not technical guidance with concrete parameters or limits. |

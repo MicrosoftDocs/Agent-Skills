@@ -1,9 +1,9 @@
 ---
 name: azure-container-instances
-description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring ACI standby pools, static IP networking, GPU containers, secure ACR pulls, or GitHub Actions deploys, and other Azure Container Instances related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring ACI standby pools, static IP networking, GitHub Actions deploys, Spot containers, or secure ACR pulls, and other Azure Container Instances related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-02"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Instances Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L43-L47 | Guidance on designing and running ACI workloads reliably: resource sizing, networking, storage, security, scaling, image management, and operational best practices. |
 | Decision Making | L48-L53 | Guidance on cost-optimizing ACI with Spot containers and using prediction-based sizing to configure and right-size Azure Container Instances standby pools. |
 | Architecture & Design Patterns | L54-L60 | Design patterns for giving ACI containers static inbound/outbound IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable network egress/ingress. |
-| Limits & Quotas | L61-L69 | ACI limits, quotas, and behaviors: max CPU/memory (Big Containers), per‑region quotas, standby pool limits, VNet constraints, and FAQs on scaling, performance, and resource usage. |
+| Limits & Quotas | L61-L69 | ACI CPU/memory limits, quotas, standby pool caps, VNet constraints, and FAQs on scaling, resource behavior, and how to check or stay within these limits. |
 | Security | L70-L84 | Securing Azure Container Instances: TLS/HTTPS setup, secrets and CMK encryption, managed identities/RBAC, secure ACR pulls, DNS reuse protection, and Azure Policy for compliance. |
 | Configuration | L85-L116 | Configuring ACI container groups: env vars, DNS, volumes, GPUs, probes, logging/monitoring, standby pools, restarts, entrypoints, updates, and runtime command execution. |
 | Deployment | L117-L120 | Using GitHub Actions to build, push, and automatically deploy container images to Azure Container Instances, including workflow YAML setup and authentication configuration. |

@@ -1,9 +1,9 @@
 ---
 name: azure-blueprints
-description: Expert knowledge for Azure Blueprints development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when migrating off Blueprints, mapping to PBMM/ISO/SWIFT, automating via CLI/PowerShell/REST, or fixing deployment errors, and other Azure Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
+description: Expert knowledge for Azure Blueprints development including troubleshooting, decision making, security, configuration, integrations & coding patterns, and deployment. Use when migrating off Azure Blueprints, mapping compliance blueprints, automating via CLI/PowerShell/REST, or fixing deployment issues, and other Azure Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Role-based access control (use azure-rbac).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blueprints Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L34-L38 | Diagnosing and fixing common Azure Blueprints deployment and assignment errors, including policy, role assignment, and resource lock issues, with step-by-step troubleshooting guidance. |
-| Decision Making | L39-L44 | Guidance on Azure Blueprints retirement timelines, planning and executing migrations, and answers to common questions about moving off Blueprints. |
+| Decision Making | L39-L44 | Guidance on Azure Blueprints retirement: how to plan and execute migrations, choose replacement services, and answer common questions about impacts and alternatives. |
 | Security | L45-L60 | Security-focused deployment stages, resource locks, operator roles, and using/mapping Azure Blueprints for compliance frameworks like PBMM, ISM PROTECTED, ISO 27001, SWIFT CSP, and UK OFFICIAL/NHS. |
 | Configuration | L61-L72 | Configuring and deploying Azure Blueprints (including security/ISO/CAF/SWIFT samples), using blueprint functions, and importing/exporting blueprints via PowerShell. |
 | Integrations & Coding Patterns | L73-L79 | Automating Azure Blueprints as code using CLI, PowerShell, and REST: create, import/export, and manage blueprint definitions and assignments programmatically. |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan migration off Azure Blueprints with timelines | https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement |
+| Plan migration from Azure Blueprints retirement | https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement |
 | Answer migration questions for Blueprints retirement | https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq |
 
 ### Security

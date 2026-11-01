@@ -55,10 +55,10 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 152
-- **Deleted Pages**: 1
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
+- **Updated Pages**: 0
+- **Unchanged**: 158
+- **Deleted Pages**: 0
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
 ## Classification Statistics
 
@@ -76,25 +76,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 36 | 22.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Thin client partners](https://learn.microsoft.com/en-us/azure/virtual-desktop/thin-clients)
-  - Updated: 2026-10-13T20:42:00.000Z → 2026-10-21T02:43:00.000Z
-- [Redirect video playback and calls](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-10-20T05:36:00.000Z
-- [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new)
-  - Updated: 2026-09-24T08:00:00.000Z → 2026-10-21T08:00:00.000Z
-- [Browser Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection-extension)
-  - Updated: 2026-09-25T02:40:00.000Z → 2026-10-20T05:36:00.000Z
-- [Security recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations)
-  - Updated: 2026-08-26T08:00:00.000Z → 2026-10-19T08:00:00.000Z
-- [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath)
-  - Updated: 2026-09-15T02:45:00.000Z → 2026-10-22T20:35:00.000Z
-
-### Deleted Pages
-
-- ~~Context-based redirections (Preview)~~ (https://learn.microsoft.com/en-us/azure/virtual-desktop/context-based-redirections-avd)
 
 ## Classified Pages
 

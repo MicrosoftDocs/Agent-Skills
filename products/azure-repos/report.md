@@ -50,10 +50,10 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 219
+- **Updated Pages**: 0
+- **Unchanged**: 220
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
 ## Classification Statistics
 
@@ -70,11 +70,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 78 | 35.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get started](https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops)
-  - Updated: 2026-09-29T08:00:00.000Z → 2026-10-19T18:04:00.000Z
 
 ## Classified Pages
 

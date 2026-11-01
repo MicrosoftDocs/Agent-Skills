@@ -58,7 +58,7 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 - **Updated Pages**: 0
 - **Unchanged**: 228
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
 ## Classification Statistics
 

@@ -9,11 +9,10 @@
 |-------|-----|
 | Use long-running AgentServer SDK APIs for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/long-running-agent-reference |
 | Add Responses or Invocations protocol adapters to hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/add-protocol-adapter |
-| Connect enterprise AI gateways to Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/ai-gateway |
+| Integrate external AI gateways with Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/ai-gateway |
 | Cancel in-flight turns on hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/cancel-hosted-agent-turn |
 | Connect Foundry agents to Foundry IQ knowledge bases | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-connect |
 | Validate private agentic retrieval with Foundry IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-tutorial-private-retrieval |
-| Invoke Microsoft Foundry hosted agents with azd | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/invoke-hosted-agent |
 | Enable agent optimizer integration for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/make-agent-optimizer-ready |
 | Send image input to Foundry voice agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/send-image-input-voice-agent |
 | Connect Foundry agents to remote A2A endpoints | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent |
@@ -21,24 +20,27 @@
 | Integrate Azure Speech MCP tool with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/azure-ai-speech |
 | Integrate Azure Functions as tools for Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/azure-functions |
 | Use Bing Search grounding tools with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/bing-tools |
-| Automate web browsing with Foundry Browser Automation Tool | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/browser-automation |
+| Automate web browsing with Foundry Browser Automation | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/browser-automation |
 | Use Code Interpreter tool with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/code-interpreter |
 | Add managed connector MCP servers to agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/connectors |
 | Use Microsoft Fabric data agent with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric |
 | Connect Foundry agents to Microsoft Fabric via Fabric IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric-iq |
 | Configure file search tool for Microsoft Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/file-search |
 | Use Foundry image generation tool in agent workflows | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/image-generation |
-| Connect Foundry agents to MCP server endpoints | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol |
-| Integrate OpenAPI tools with Microsoft Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/openapi |
+| Integrate MCP server endpoints with Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol |
+| Connect OpenAPI tools to Microsoft Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/openapi |
 | Use reminder_preview tool for self-scheduling agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/reminder-tool |
-| Connect hosted agents to toolboxes via MCP | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/use-toolbox-hosted-agent |
+| Connect Foundry hosted agents to toolboxes via MCP | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/use-toolbox-hosted-agent |
 | Use the Foundry web search tool with agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/web-search |
 | Connect Foundry agents to Microsoft 365 with Work IQ | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq |
 | Forward user tokens to Foundry hosted-agent code | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/use-on-behalf-of-flow |
-| Connect telephony channels to Microsoft Foundry voice agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/voice-agent-telephony-channels |
+| Integrate telephony channels with Foundry voice agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/voice-agent-telephony-channels |
+| Connect Foundry voice agents to SIP telephony | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/voice-agent-telephony-channels-sip |
+| Create and configure prompt agents with Foundry SDKs | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent |
 | Connect Foundry IQ knowledge base to hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-foundry-iq-hosted-agent |
-| Call Foundry Responses API to build agents | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api |
-| Map interactive training loops to Foundry Python SDK | https://learn.microsoft.com/en-us/azure/foundry/fine-tuning/interactive-post-training/sdk-cheatsheet |
+| Integrate custom code with Foundry Responses API | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api |
+| Run Programmed Training reinforcement learning recipes | https://learn.microsoft.com/en-us/azure/foundry/fine-tuning/programmed-training/quickstart |
+| Use the Programmed Training Python SDK cheatsheet | https://learn.microsoft.com/en-us/azure/foundry/fine-tuning/programmed-training/sdk-cheatsheet |
 | Generate text with Foundry Models via Responses API | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/generate-responses |
 | Deploy and call Hugging Face models in Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/hugging-face-models |
 | Call Foundry reasoning models via Chat Completions | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-chat-reasoning |
@@ -50,10 +52,10 @@
 | Integrate third-party safety guardrails with Foundry | https://learn.microsoft.com/en-us/azure/foundry/guardrails/third-party-integrations |
 | Route Foundry managed network traffic to on-premises | https://learn.microsoft.com/en-us/azure/foundry/how-to/access-on-premises-resources |
 | Deploy LoRA adapters on Foundry managed compute | https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-lora-managed-compute |
-| Host Microsoft Agent Framework agents on Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/framework-hosted-agents |
-| Integrate LangChain/LangGraph with Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain |
+| Host Microsoft Agent Framework agents as Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/framework-hosted-agents |
+| Build LangChain and LangGraph apps with Foundry | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain |
 | Integrate LangGraph and LangChain with Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain-agents |
-| Host LangGraph agents on Foundry hosted agent service | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain-hosted-agents |
+| Host LangGraph agents on Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain-hosted-agents |
 | Use Foundry Memory with LangChain and LangGraph | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain-memory |
 | Integrate LangChain with Microsoft Foundry models | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain-models |
 | Use Foundry Toolbox tools in LangChain agents | https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/langchain-toolbox |

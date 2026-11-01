@@ -36,7 +36,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Updated Pages**: 0
 - **Unchanged**: 12
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
 
 ## Classification Statistics
 

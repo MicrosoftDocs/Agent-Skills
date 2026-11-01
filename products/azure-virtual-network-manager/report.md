@@ -48,7 +48,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Updated Pages**: 0
 - **Unchanged**: 51
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
 ## Classification Statistics
 

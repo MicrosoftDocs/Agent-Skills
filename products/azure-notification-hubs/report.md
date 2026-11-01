@@ -53,7 +53,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Servi
 - **Updated Pages**: 0
 - **Unchanged**: 68
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
 
 ## Classification Statistics
 

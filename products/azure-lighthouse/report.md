@@ -44,7 +44,7 @@ confusable_not_for: Not for Azure Arc (use azure-arc), Azure Managed Application
 - **Updated Pages**: 0
 - **Unchanged**: 28
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-lighthouse/azure-lighthouse.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-lighthouse/azure-lighthouse.csv`
 
 ## Classification Statistics
 

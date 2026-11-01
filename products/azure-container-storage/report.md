@@ -42,7 +42,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 - **Updated Pages**: 0
 - **Unchanged**: 33
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-storage/azure-container-storage.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-container-storage/azure-container-storage.csv`
 
 ## Classification Statistics
 

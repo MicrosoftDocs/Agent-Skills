@@ -1,9 +1,9 @@
 ---
 name: azure-synapse-analytics
-description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Synapse SQL pools, Spark pools, Delta Lake, Synapse Link (Cosmos/SQL), or ELT via PolyBase, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Synapse workspaces, Spark/SQL pools, Synapse Link, Delta Lake tables, or ELT with PolyBase, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L67 | Diagnosing and fixing Synapse workspace, SQL pool, Spark, Link, and Studio issues, including connectivity, performance, workload classification, and known/compatibility problems. |
+| Troubleshooting | L37-L67 | Diagnosing and fixing Synapse workspace, SQL pool, Spark, Link, and Studio issues, including connectivity, performance, workload classification, tenant moves, and known limitations. |
 | Best Practices | L68-L130 | Best practices for Synapse performance and design: migrations (Netezza/Oracle/Teradata), Spark tuning, Delta/Hyperspace, dedicated/serverless SQL optimization, indexing, stats, T-SQL patterns, and governance. |
 | Decision Making | L131-L153 | Guidance for choosing Synapse architectures, cost and capacity planning, Spark runtimes, and migration/upgrade strategies from other warehouses and SQL pools. |
 | Architecture & Design Patterns | L154-L173 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table/distribution/partition strategies, ELT/PolyBase loading, and workload management. |
@@ -38,7 +38,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Recover Synapse workspaces after Entra tenant move | https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-recover-workspace-after-tenant-move |
-| Known issues and workarounds for Azure Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/known-issues |
+| Diagnose and work around Azure Synapse known issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/known-issues |
 | Resolve common Azure Synapse Analytics FAQ issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq |
 | Resolve compatibility issues between SQL Server apps and Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/compatibility-issues |
 | Diagnose and resolve Livy job errors in Synapse Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-handle-livy-error |

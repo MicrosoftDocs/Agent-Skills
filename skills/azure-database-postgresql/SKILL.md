@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Flexible Server, pgvector/AI search, Private Link/TLS, PITR/restore, or replicas/sharding, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Flexible Server, pgvector/AI search, Private Link/TLS security, replicas/HA, or PITR/restore, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L150-L181 | Securing Azure Database for PostgreSQL: identity and auth (Entra, managed identities, SCRAM), network/firewall/Private Link, TLS, encryption, auditing, roles, policies, and Defender integration. |
 | Configuration | L182-L268 | Configuring Azure Database for PostgreSQL Flexible Server: maintenance windows, HA, networking, logging/metrics, extensions, tuning/parameters, PgBouncer, VS Code tools, CLI, and read replica virtual endpoints. |
 | Integrations & Coding Patterns | L269-L294 | Patterns and code for integrating Azure PostgreSQL with AI/ML (Language, AML, LangChain, Foundry, MCP), vector search (pgvector, DiskANN), SDK automation, Data Factory, CLI, and VS Code/Copilot tools. |
-| Deployment | L295-L304 | Guides for deploying and migrating PostgreSQL to Azure flexible server (from Aurora, RDS, on-prem/VM, Oracle), configuring VNet/private endpoints, and point-in-time restore. |
+| Deployment | L295-L304 | Guides for deploying and migrating PostgreSQL to Azure flexible server (from Aurora, RDS, on-prem/VM, Oracle), configuring private endpoints, and point-in-time restore. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -300,5 +300,5 @@ This skill requires **network access** to fetch documentation content:
 | Offline migration from VM/on-prem PostgreSQL to Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-iaas-offline |
 | Offline migration from Amazon RDS PostgreSQL to Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-rds-offline |
 | Deploy converted Oracle schemas to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-setup |
-| Migrate PostgreSQL flexible server VNet to private endpoint | https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server |
+| Migrate Azure PostgreSQL flexible server to private endpoint networking | https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server |
 | Restore PostgreSQL flexible server to a point in time | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-point-in-time-restore |

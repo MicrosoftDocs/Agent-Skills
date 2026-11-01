@@ -1,9 +1,9 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using tiers/archival, NFS/SFTP/BlobFuse mounts, immutability/WORM, lifecycle policies, or Storage Mover, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure Cosmos DB (use azure-cosmos-db).
+description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning tiers/costs, configuring lifecycle/immutability, securing with SAS/RBAC, using NFS/SFTP, or BlobFuse, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L49 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover networking/jobs, BlobFuse/BlobFuse2 mounts and I/O, metrics/logging anomalies, NFS 3.0 problems, and SFTP limitations/errors. |
-| Best Practices | L50-L85 | Performance, cost, and reliability best practices for Azure Blob/Data Lake: access tiers, lifecycle, partitioning, concurrency, retries, client tuning, NFS/SFTP, monitoring, events, and backups. |
-| Decision Making | L86-L115 | Cost, pricing, and architecture guidance for Azure Blob and related storage: tiers, archive, networking, migrations, tools, reserved capacity, and feature tradeoffs (e.g., SFTP, soft delete, BlobFuse). |
-| Limits & Quotas | L116-L134 | Limits, quotas, performance, and known issues for Blob Storage features (tiers, lifecycle, replication, NFS/SFTP, static sites, premium accounts, tools like BlobFuse and Storage Mover). |
-| Security | L135-L196 | Securing Blob Storage: identity-based access (RBAC/ABAC), SAS tokens, SFTP, networking, anonymous access, encryption (CSE, CPK, scopes), ACLs, WORM, and security best practices. |
-| Configuration | L197-L253 | Configuring Blob Storage monitoring, lifecycle, networking, mounts (BlobFuse/NFS), immutability, versioning, inventory, and third‑party backup/migration tools, plus Storage Mover and Discovery setup. |
-| Integrations & Coding Patterns | L254-L380 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: mounting, copying/migrating data, managing containers/blobs (leases, metadata, tiers, SAS, tags), and querying/analyzing inventory data. |
-| Deployment | L381-L394 | Guides for deploying and migrating data and static sites with Blob Storage: Storage Discovery setup, HDFS/Hadoop migrations, static website deployment (GitHub/Terraform), and partner tools (NetApp, Nasuni, Tiger Bridge). |
+| Troubleshooting | L36-L49 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover networking/jobs, support bundles, BlobFuse/BlobFuse2 mount & I/O errors, metrics/logging quirks, NFS 3.0 problems, and SFTP limitations. |
+| Best Practices | L50-L85 | Performance, cost, and reliability best practices for Azure Blob/Data Lake: access tiers, lifecycle, partitioning, concurrency, client tuning, retries, monitoring, NFS/SFTP, events, and backups. |
+| Decision Making | L86-L115 | Cost planning and design choices for Blob Storage: pricing, tiers, archive vs hot, private connectivity, migration tools, SFTP, reserved capacity, and cost-optimized access patterns. |
+| Limits & Quotas | L116-L134 | Limits, quotas, and performance behaviors for Blob Storage features: scalability targets, archive/rehydration, lifecycle policies, NFS, static websites, replication, BlobFuse, and Storage Mover. |
+| Security | L135-L196 | Securing Blob Storage: RBAC/ABAC and Entra ID auth, SAS tokens, SFTP, private networking, ACLs, encryption (CSE, CPK, scopes), WORM, and hardening/remediating anonymous or cross-tenant access. |
+| Configuration | L197-L256 | Configuring and monitoring Blob Storage and related tools: storage tasks, discovery, Storage Mover, BlobFuse, lifecycle/immutability, versioning, restore, NFS, and third‑party backup/migration integrations. |
+| Integrations & Coding Patterns | L257-L383 | SDK and CLI patterns for integrating with Blob and ADLS Gen2: mounting, copying/migrating data, managing containers/blobs (leases, metadata, tiers, SAS, tags), and querying/analyzing inventory data. |
+| Deployment | L384-L397 | Guides for deploying and migrating data and static sites with Blob Storage: Storage Discovery setup, HDFS/Hadoop migrations, static website deployment (GitHub/Terraform), and partner tools (NetApp, Nasuni, Tiger Bridge). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot common Azure storage task issues | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-troubleshooting |
 | Troubleshoot Azure Storage Mover agent networking | https://learn.microsoft.com/en-us/azure/storage-mover/network-troubleshooting |
 | Diagnose issues using Azure Storage Mover release notes | https://learn.microsoft.com/en-us/azure/storage-mover/release-notes |
-| Resolve Azure Storage Mover AZSM job error codes | https://learn.microsoft.com/en-us/azure/storage-mover/status-code |
+| Diagnose Azure Storage Mover job run error codes | https://learn.microsoft.com/en-us/azure/storage-mover/status-code |
 | Generate and analyze Azure Storage Mover support bundles | https://learn.microsoft.com/en-us/azure/storage-mover/troubleshooting |
 | Diagnose and resolve common BlobFuse2 issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-faq |
 | Troubleshoot common BlobFuse mount and I/O issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-troubleshooting |
@@ -50,7 +50,7 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply best practices for Azure Storage Tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-best-practices |
+| Apply Azure Storage task best practices | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-best-practices |
 | Analyze Azure Blob capacity details with advanced insights | https://learn.microsoft.com/en-us/azure/storage-discovery/analyze-blob-capacity-details |
 | Model Azure Storage Mover resources for migrations | https://learn.microsoft.com/en-us/azure/storage-mover/resource-hierarchy |
 | Best practices for choosing and managing blob access tiers | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-best-practices |
@@ -87,7 +87,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Plan and manage Azure Storage Actions cost drivers | https://learn.microsoft.com/en-us/azure/storage-actions/storage-actions-plan-manage-costs |
-| Choose Azure Storage Discovery pricing plans and features | https://learn.microsoft.com/en-us/azure/storage-discovery/pricing |
+| Choose Azure Storage Discovery pricing plans | https://learn.microsoft.com/en-us/azure/storage-discovery/pricing |
 | Estimate and understand Azure Storage Mover migration costs | https://learn.microsoft.com/en-us/azure/storage-mover/billing |
 | Select Azure private connectivity for cloud-to-cloud links | https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configuration |
 | Plan Azure Storage Mover deployments and migrations | https://learn.microsoft.com/en-us/azure/storage-mover/deployment-planning |
@@ -116,7 +116,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand Azure Storage Tasks limits and issues | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-known-issues |
+| Review storage task limitations and known issues | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-known-issues |
 | Review Azure Storage Discovery FAQs and service limits | https://learn.microsoft.com/en-us/azure/storage-discovery/frequently-asked-questions |
 | Understand Azure Storage Mover scale and performance | https://learn.microsoft.com/en-us/azure/storage-mover/performance-targets |
 | Manage Azure Blob archive tier retention and access | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-blob |
@@ -136,7 +136,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use Azure RBAC roles for Storage Tasks access | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles |
-| Assign Storage Tasks with correct Azure roles | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles-assign |
+| Assign Azure roles for storage tasks securely | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles-assign |
 | Securely register Azure Storage Mover agents | https://learn.microsoft.com/en-us/azure/storage-mover/agent-register |
 | Configure cross-tenant Azure Blob migration security | https://learn.microsoft.com/en-us/azure/storage-mover/azure-cross-tenant-blob-migration |
 | Configure private networking for Azure Storage Mover migrations | https://learn.microsoft.com/en-us/azure/storage-mover/migrations-requiring-private-connections |
@@ -198,8 +198,11 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure monitoring for Azure Storage Actions with Azure Monitor | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/monitor-storage-tasks |
-| Configure Azure Storage Task assignments and scope | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-assignment |
-| Configure JSON conditions for Azure storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions |
+| Configure and scope storage task assignments | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-assignment |
+| Create and manage storage task assignments | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-assignment-create |
+| Configure JSON conditions for storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions |
+| Use visual editor for storage task rules | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions-operations-edit |
+| Define and create Azure storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-create |
 | Define JSON operations for Azure storage tasks | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-operations |
 | Reference monitoring data for Azure Storage Actions | https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-tasks-monitor-data-reference |
 | Configure Blob prefixes for Azure Storage Discovery analysis | https://learn.microsoft.com/en-us/azure/storage-discovery/configure-blob-storage-prefixes |
@@ -231,7 +234,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Blob lifecycle policies to delete data | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-delete |
 | Monitor Blob lifecycle policies with events, metrics, and logs | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-monitor |
 | Understand Azure Blob lifecycle management policy schema | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-structure |
-| Reference monitoring metrics and logs for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-reference |
+| Reference Azure Blob Storage monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-reference |
 | Configure NFS 3.0 mounting for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to |
 | Enable and perform point-in-time restore for block blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/point-in-time-restore-manage |
 | Use query acceleration SQL syntax for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/query-acceleration-sql-reference |

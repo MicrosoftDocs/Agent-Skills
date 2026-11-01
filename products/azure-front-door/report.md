@@ -56,7 +56,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Updated Pages**: 0
 - **Unchanged**: 101
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
 ## Classification Statistics
 

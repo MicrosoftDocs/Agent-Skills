@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues, using bindings, VNet/private endpoints, managed identity, or CI/CD deploys, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues, securing with VNets/MI, tuning host.json, or deploying via CI/CD, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L90-L113 | Guidance on choosing Functions hosting/scale/networking options, cost planning, AI integration, and step-by-step migrations (plans, runtimes, languages, extensions, AWS Lambda). |
 | Limits & Quotas | L114-L120 | Scaling limits, concurrency settings, target-based trigger scaling, and language/runtime support lifecycles for Azure Functions. |
 | Security | L121-L133 | Guides for securing Functions: encryption at rest, secure storage and keys, private access (VNet/private endpoints), managed identity for SQL, and App Service security features. |
-| Configuration | L134-L178 | Configuring how Functions run and integrate: app settings, host.json, runtime versions, plans, networking, monitoring/telemetry, local dev, bindings/triggers, and MCP/hosted skills setup. |
-| Integrations & Coding Patterns | L179-L282 | Patterns and examples for wiring Functions to external systems (HTTP, storage, messaging, databases, AI/OpenAI, Dapr, MCP, SignalR, Web PubSub) using triggers, input/output bindings, and worker extensions. |
-| Deployment | L283-L311 | Deploying and hosting Azure Functions: provisioning plans, CI/CD (GitHub/Azure Pipelines), slots, containers/Kubernetes, Flex migrations, language-specific deploy guides, and rollback/recovery. |
+| Configuration | L134-L179 | Configuring Azure Functions runtime, bindings, triggers, networking, monitoring/telemetry, local development, runtime versions, and hosted skills behavior via app settings and host.json. |
+| Integrations & Coding Patterns | L180-L283 | Patterns and examples for wiring Functions to external systems (HTTP, storage, messaging, databases, AI/OpenAI, Dapr, MCP, SignalR, Web PubSub) using triggers, input/output bindings, and worker extensions. |
+| Deployment | L284-L312 | Deploying and hosting Azure Functions: provisioning plans, CI/CD (GitHub/Azure Pipelines), slots, containers/Kubernetes, Flex migrations, language-specific deploy guides, and rollback/recovery. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -141,6 +141,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Python agent bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-agent-bindings |
 | Configure Azure Functions app settings and environment variables | https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings |
 | Configure Azure SQL trigger for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger |
+| Configure Connector extension for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-connector |
 | Use Azure Cosmos DB output binding in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-output |
 | Configure Azure Cosmos DB trigger binding for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger |
 | Configure Azure Event Hubs trigger bindings in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-hubs-trigger |

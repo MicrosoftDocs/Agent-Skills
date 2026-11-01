@@ -52,7 +52,7 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 - **Updated Pages**: 0
 - **Unchanged**: 184
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
 ## Classification Statistics
 

@@ -37,10 +37,10 @@ confusable_not_for: Not for Cost Management (use azure-cost-management), Azure I
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 2
+- **Updated Pages**: 0
+- **Unchanged**: 11
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-carbon-optimization/azure-carbon-optimization.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-carbon-optimization/azure-carbon-optimization.csv`
 
 ## Classification Statistics
 
@@ -53,27 +53,6 @@ confusable_not_for: Not for Cost Management (use azure-cost-management), Azure I
 | *(Unclassified)* | 6 | 54.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/carbon-optimization/overview)
-  - Updated: 2026-09-15T17:03:00.000Z → 2026-10-20T22:03:00.000Z
-- [View and analyze emission data](https://learn.microsoft.com/en-us/azure/carbon-optimization/quickstart-view-analyze-emission-data)
-  - Updated: 2025-10-30T17:37:00.000Z → 2026-10-20T22:03:00.000Z
-- [Assign permissions](https://learn.microsoft.com/en-us/azure/carbon-optimization/permissions)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-10-20T22:03:00.000Z
-- [View and analyze emissions data](https://learn.microsoft.com/en-us/azure/carbon-optimization/view-emissions)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-10-20T22:03:00.000Z
-- [Reduce emissions](https://learn.microsoft.com/en-us/azure/carbon-optimization/reduce-emissions)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-10-20T22:03:00.000Z
-- [Export emissions data to a CSV file](https://learn.microsoft.com/en-us/azure/carbon-optimization/export-data)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-10-20T22:03:00.000Z
-- [Export emissions data with API](https://learn.microsoft.com/en-us/azure/carbon-optimization/api-export-data)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-10-20T22:03:00.000Z
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/carbon-optimization/troubleshooting)
-  - Updated: 2025-10-07T08:00:00.000Z → 2026-10-20T22:03:00.000Z
-- [Carbon optimization API changelog](https://learn.microsoft.com/en-us/azure/carbon-optimization/api-changelog)
-  - Updated: 2025-12-02T23:19:00.000Z → 2026-10-20T22:03:00.000Z
 
 ## Classified Pages
 

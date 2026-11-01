@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Migrate appliances, Private Link, Arc/Resource Mover, VMware/Hyper-V discovery, or REST-based VMware migration, and other Azure Migrate related development tasks. Not for Azure Database Migration Service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure Migrate appliances, Arc/Private Link, VMware/Hyper-V discovery, AppCAT/DB assessments, or REST-based migrations, and other Azure Migrate related development tasks. Not for Azure Database Migration Service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L55 | Diagnosing and fixing Azure Migrate issues: appliance setup, discovery/dependency/assessment errors, project creation, private endpoints, VMware replication, OS upgrades, and web app migrations. |
 | Best Practices | L56-L66 | Best practices for preparing on-prem/VMware machines and appliances, creating custom assessment rules (AppCAT, PostgreSQL), running test migrations, and applying pre-migration hydration changes. |
-| Decision Making | L67-L107 | Guidance for interpreting Azure Migrate assessments, choosing tools and sizing, planning migration waves, and deciding services/VM types for on-prem, AWS, GCP, and Java workloads. |
-| Architecture & Design Patterns | L108-L113 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
-| Limits & Quotas | L114-L126 | Limits, prerequisites, region support, and scalability for Azure Migrate appliances and discovery/assessment of VMware, Hyper-V, and physical servers. |
-| Security | L127-L139 | Securing Azure Migrate: least-privilege roles/accounts, RBAC, Private Link usage, SSE + customer-managed keys, Entra ID app registration, and moving encrypted VMs securely. |
-| Configuration | L140-L165 | Configuring Azure Migrate appliances, credentials, networking (Private Link), Arc/Resource Mover, and assessment settings for VMs, SQL, .NET, and PostgreSQL, plus metadata and policy setup. |
-| Integrations & Coding Patterns | L166-L171 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
-| Deployment | L172-L182 | Guides for deploying Azure Migrate appliances, preparing legacy servers, configuring DevOps pipelines, and planning/executing cross-region VM and SQL moves with supported resource types. |
+| Decision Making | L67-L109 | Deciding migration strategies with Azure Migrate: interpreting assessments and business cases, choosing tools, sizing, services, and planning migrations from on-prem, AWS, GCP, and VMware. |
+| Architecture & Design Patterns | L110-L115 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
+| Limits & Quotas | L116-L128 | Limits, prerequisites, region support, and scalability for Azure Migrate appliances and discovery/assessment of VMware, Hyper-V, and physical servers. |
+| Security | L129-L141 | Permissions, encryption, and secure connectivity for Azure Migrate: least-privilege roles/accounts, Private Link usage, CMK/SSE, Entra app registration, RBAC, and moving encrypted VMs. |
+| Configuration | L142-L167 | Configuring Azure Migrate appliances, Arc/Private Link, assessments (VM, SQL, PostgreSQL, .NET/AppCAT), metadata, and Resource Mover settings for discovery and migration. |
+| Integrations & Coding Patterns | L168-L173 | Patterns and tools for integrating code analysis and automation into Azure Migrate, including GitHub Copilot insights, AppCAT CLI, CAST Highlight scans, and REST-based VMware migration. |
+| Deployment | L174-L184 | Guides for deploying Azure Migrate appliances, preparing legacy servers, configuring DevOps pipelines, and planning/executing cross-region VM and SQL moves with supported resource types. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -74,6 +74,7 @@ This skill requires **network access** to fetch documentation content:
 | Interpret Azure Migrate assessment report outputs | https://learn.microsoft.com/en-us/azure/migrate/assessment-report?view=migrate |
 | Interpret Azure Migrate business case calculations | https://learn.microsoft.com/en-us/azure/migrate/concepts-business-case-calculation?view=migrate |
 | Evaluate performance coverage in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/confidence-ratings?view=migrate |
+| Create Azure Migrate file share assessments | https://learn.microsoft.com/en-us/azure/migrate/create-file-share-assessment?view=migrate |
 | Choose the right Azure Migrate discovery method | https://learn.microsoft.com/en-us/azure/migrate/discovery-methods-modes?view=migrate |
 | Use Azure Migrate to build a migration business case | https://learn.microsoft.com/en-us/azure/migrate/how-to-build-a-business-case?view=migrate |
 | Plan VMware-to-Azure migrations with Copilot agent | https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-analyze-migration-with-agent?view=migrate |
@@ -83,6 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Evaluate readiness and savings for Arc-enabled servers | https://learn.microsoft.com/en-us/azure/migrate/quickstart-evaluate-readiness-savings-for-arc-resources?view=migrate |
 | Interpret and review Azure VM migration assessments | https://learn.microsoft.com/en-us/azure/migrate/review-assessment?view=migrate |
 | Review Azure VMware Solution assessment outputs | https://learn.microsoft.com/en-us/azure/migrate/review-azure-vmware-solution-assessment?view=migrate |
+| Interpret Azure Migrate file share assessments | https://learn.microsoft.com/en-us/azure/migrate/review-file-share-assessment?view=migrate |
 | Interpret SQL migration assessments in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/review-sql-assessment?view=migrate |
 | Review web app assessment insights for Azure migration | https://learn.microsoft.com/en-us/azure/migrate/review-web-app-assessment?view=migrate |
 | Choose agentless vs agent-based migration in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/server-migrate-overview?view=migrate |
@@ -130,7 +132,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure least-privilege VMware roles for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/best-practices-least-privileged-account?view=migrate |
 | Discover and assess servers via Azure Migrate Private Link | https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate |
 | Migrate VMware VMs with SSE and customer-managed keys | https://learn.microsoft.com/en-us/azure/migrate/how-to-migrate-vmware-vms-with-cmk-disks?view=migrate |
-| Register Azure Migrate appliance using Entra ID app | https://learn.microsoft.com/en-us/azure/migrate/how-to-register-appliance-using-entra-app?view=migrate |
+| Register Azure Migrate appliance with Entra app | https://learn.microsoft.com/en-us/azure/migrate/how-to-register-appliance-using-entra-app?view=migrate |
 | Create minimal-permission SQL account for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/least-privilege-credentials?view=migrate |
 | Migrate Hyper-V servers using Private Link endpoints | https://learn.microsoft.com/en-us/azure/migrate/migrate-hyper-v-servers-to-azure-using-private-link?view=migrate |
 | Configure least-privilege PostgreSQL account for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/postgresql-least-privilege-configuration?view=migrate |

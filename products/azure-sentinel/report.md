@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring Microsoft Sentinel: data connectors, ASIM schemas, analytics
     rules, automation/playbooks, data lake, SAP/Power Platform solutions, health/auditing,
@@ -10,15 +10,15 @@ category_descriptions:
   best-practices: 'Best practices for designing, tuning, and operating Microsoft Sentinel:
     automation, playbooks, KQL hunting, analytics rules, UEBA, ASIM, watchlists, SOC
     metrics, and solution quality.'
-  security: 'Securing Microsoft Sentinel: configuring roles, RBAC, playbook auth,
-    CMK, storage/network protections, SAP and AWS security integration, data lake
-    auditing, and secure MCP/Copilot tool access.'
+  security: 'Securing Microsoft Sentinel: auth, RBAC, CMK, data residency, SAP security,
+    MSSP IP protection, storage connectors, and secure automation/playbooks across
+    Azure, AWS, and Copilot tools.'
   integrations: Patterns and examples for integrating Microsoft Sentinel with external
     data, APIs, Logic Apps, MCP tools, threat intel feeds, and for querying/automating
     via KQL, REST, graphs, and data lake.
-  troubleshooting: Diagnosing and fixing Microsoft Sentinel ingestion, connectors
-    (AWS/S3, Blob, Syslog/CEF, SAP), KQL/jobs, notebooks, MCP tools, and analytics
-    rule/scheduled rule execution issues.
+  troubleshooting: Diagnosing and fixing Sentinel data connector, analytics rule,
+    KQL, notebook, and MCP tool issues, including AWS S3, Blob, Syslog/CEF, SAP, and
+    scheduled rule execution problems.
   architecture-patterns: 'Designing Microsoft Sentinel architectures: workspace/tenant
     layouts, SIEM patterns, BCDR/resiliency, data lake/graph designs, and coexisting
     with or migrating from other SIEMs.'
@@ -31,15 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Sentinel development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Sentinel data connectors, analytics rules, playbooks, ASIM, or data
-  lake integrations, and other Azure Sentinel related development tasks. Not for Azure
-  Defender For Cloud (use azure-defender-for-cloud), Azure Defender For Iot (use azure-defender-for-iot),
-  Azure Monitor (use azure-monitor), Azure Security (use azure-security).
-use_when: Use when configuring Sentinel data connectors, analytics rules, playbooks,
-  ASIM, or data lake integrations, and other Azure Sentinel related development tasks.
+  configuring Sentinel connectors, KQL analytics, automation/playbooks, ASIM schemas,
+  or data lake integrations, and other Azure Sentinel related development tasks. Not
+  for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use
+  azure-security), Azure Monitor (use azure-monitor), Azure External Attack Surface
+  Management (use azure-external-attack-surface-management).
+use_when: Use when configuring Sentinel connectors, KQL analytics, automation/playbooks,
+  ASIM schemas, or data lake integrations, and other Azure Sentinel related development
+  tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Defender For Iot (use azure-defender-for-iot), Azure Monitor (use azure-monitor),
-  Azure Security (use azure-security).
+  Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External
+  Attack Surface Management (use azure-external-attack-surface-management).
 ---
 # Azure Sentinel Crawl Report
 
@@ -48,15 +50,15 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Total Pages**: 412
 - **Fetched**: 412
 - **Fetch Failed**: 0
-- **Classified**: 290
-- **Unclassified**: 122
+- **Classified**: 289
+- **Unclassified**: 123
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 407
+- **Updated Pages**: 3
+- **Unchanged**: 409
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
 ## Classification Statistics
 
@@ -64,29 +66,25 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 |------|-------|------------|
 | architecture-patterns | 8 | 1.9% |
 | best-practices | 20 | 4.9% |
-| configuration | 133 | 32.3% |
-| decision-making | 39 | 9.5% |
+| configuration | 132 | 32.0% |
+| decision-making | 38 | 9.2% |
 | deployment | 12 | 2.9% |
 | integrations | 42 | 10.2% |
 | limits-quotas | 9 | 2.2% |
-| security | 17 | 4.1% |
+| security | 18 | 4.4% |
 | troubleshooting | 10 | 2.4% |
-| *(Unclassified)* | 122 | 29.6% |
+| *(Unclassified)* | 123 | 29.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/sentinel/whats-new)
-  - Updated: 2026-09-23T17:00:00.000Z → 2026-10-21T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-btp-solution-overview)
-  - Updated: 2026-05-14T07:40:00.000Z → 2026-10-21T12:37:00.000Z
-- [Security content reference](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-btp-security-content)
-  - Updated: 2026-05-14T07:40:00.000Z → 2026-10-21T12:37:00.000Z
-- [Deploy SAP BTP](https://learn.microsoft.com/en-us/azure/sentinel/sap/deploy-sap-btp-solution)
-  - Updated: 2026-07-01T08:00:00.000Z → 2026-10-21T12:37:00.000Z
-- [Troubleshoot Azure Storage Blob connector issues](https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot)
-  - Updated: 2026-05-14T07:40:00.000Z → 2026-10-23T22:36:00.000Z
+- [Geographical availability and data residency](https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency)
+  - Updated: 2026-09-08T17:37:00.000Z → 2026-10-26T12:37:00.000Z
+- [Troubleshoot SAP data connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot)
+  - Updated: 2026-09-16T08:00:00.000Z → 2026-10-26T21:47:00.000Z
+- [Monitor SAP system health and role](https://learn.microsoft.com/en-us/azure/sentinel/monitor-sap-system-health)
+  - Updated: 2026-08-05T17:42:00.000Z → 2026-10-29T17:40:00.000Z
 
 ## Classified Pages
 
@@ -111,6 +109,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [ASIM authentication schema](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-authentication) | configuration | 0.86 | Authentication normalization schema references define exact fields (for sign-in/out, auth methods, outcomes) and how to map device-specific logs into ASIM. These are product-specific schema configuration details. |
 | [Configure advanced MSTICPy settings](https://learn.microsoft.com/en-us/azure/sentinel/notebooks-msticpy-advanced) | configuration | 0.86 | Advanced MSTICPy/Jupyter article describes specific configuration parameters such as authentication settings for Azure and Sentinel APIs, autoloading query providers, kernel version management, and environment variables tied to msticpyconfig.yaml. These are product-specific configuration details and parameter names that go beyond generic knowledge. |
 | [Troubleshoot Azure Storage Blob connector issues](https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for the Azure Storage Blob connector in Microsoft Sentinel, likely organized by connector-specific symptoms, causes, and resolutions (for example, ingestion failures, connector status issues, and configuration problems). These are product-specific troubleshooting steps that go beyond generic debugging knowledge. |
+| [Troubleshoot SAP data connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot) | troubleshooting | 0.86 | The article is explicitly a troubleshooting guide for the Microsoft Sentinel solution for SAP applications agentless data connector, describing how to use SAP Integration Suite message logs and specific error messages to diagnose and resolve ingestion and deployment issues. This is product- and integration-specific troubleshooting knowledge that goes beyond generic debugging. |
 | [Azure Storage Blob data connector reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connection-rules-reference-azure-storage) | configuration | 0.85 | Provides reference JSON fields and properties for the Azure Storage Blob data connector and its data connection rules, including schema-level configuration parameters unique to Sentinel’s CCF, which fits configuration reference criteria. |
 | [DNS over AMA reference](https://learn.microsoft.com/en-us/azure/sentinel/dns-ama-fields) | configuration | 0.85 | Lists available fields and the normalization schema for DNS logs; includes field names and their mapping, which are detailed configuration/schema references. |
 | [SAP solution log and table reference](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-solution-log-reference) | configuration | 0.85 | Log and table reference describing available logs and tables; such content includes table names, column schemas, and usage, which is detailed configuration/expert knowledge. |
@@ -169,7 +168,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Sample API requests for creating Data Collection Rules (DCRs)](https://learn.microsoft.com/en-us/azure/sentinel/api-dcr-reference) | configuration | 0.78 | Shows concrete API request/response bodies for DCRs and associations; includes parameter names and structures, which are configuration details. |
 | [Set up customer-managed keys](https://learn.microsoft.com/en-us/azure/sentinel/customer-managed-keys) | security | 0.78 | CMK setup for Sentinel is highly product-specific security configuration involving Azure Key Vault, Log Analytics dedicated clusters, and precise prerequisites/steps that go beyond generic encryption concepts. It defines how to wire Sentinel to a customer-managed key, which is expert, implementation-level security guidance. |
 | [Threat intelligence upload API reference](https://learn.microsoft.com/en-us/azure/sentinel/stix-objects-api) | integrations | 0.78 | Reference for the STIX objects upload API with example requests/responses; detailed API parameters and behavior for integrating TIPs. |
-| [Troubleshoot SAP data connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot) | troubleshooting | 0.78 | The page is explicitly a troubleshooting guide for the Microsoft Sentinel solution for SAP applications agentless data connector. It focuses on diagnosing issues via SAP Integration Suite message logs and error messages, which are product- and integration-specific troubleshooting steps that an LLM is unlikely to infer from general knowledge. |
 | [Legacy upload indicator API reference](https://learn.microsoft.com/en-us/azure/sentinel/upload-indicators-api) | integrations | 0.76 | Reference for the legacy upload indicators API with example request/response; detailed integration pattern and parameters, even if deprecated. |
 | [Microsoft Purview Information Protection reference](https://learn.microsoft.com/en-us/azure/sentinel/microsoft-purview-record-types-activities) | configuration | 0.76 | Lists supported audit log record types and activities for the connector; these are detailed, product-specific schema/configuration capabilities. |
 | [AWS EKS logs](https://learn.microsoft.com/en-us/azure/sentinel/connect-aws-eks) | configuration | 0.75 | Connector article for EKS audit logs; likely includes specific S3, IAM, and connector configuration parameters for Sentinel ingestion. |
@@ -246,6 +244,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Export historical data](https://learn.microsoft.com/en-us/azure/sentinel/migration-qradar-historical-data) | decision-making | 0.70 | Describes using QRadar REST API and AQL with recommendations on query scope and what data to migrate; provides product-specific guidance on how to structure exports, a migration decision aid. |
 | [Export historical data](https://learn.microsoft.com/en-us/azure/sentinel/migration-splunk-historical-data) | decision-making | 0.70 | Provides multiple export methods and guidance based on data volume and interactivity; this is specific migration decision guidance on which export approach to use. |
 | [Feature support in different clouds](https://learn.microsoft.com/en-us/azure/sentinel/feature-availability) | deployment | 0.70 | Page provides detailed feature support matrices showing which Microsoft Sentinel capabilities are available or unavailable across specific Azure environments (commercial, government, other clouds). These environment- and feature-specific availability tables are expert knowledge not generally known from training and directly support deployment and planning decisions tied to particular clouds. |
+| [Geographical availability and data residency](https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency) | security | 0.70 | Geographical availability and data residency guidance for Sentinel is highly product- and region-specific, tied to compliance and sovereignty requirements that change over time and aren't reliably known from training data. The page informs architecture and configuration decisions to meet regulatory constraints, fitting best under security/compliance-focused guidance. |
 | [Get fine-tuning recommendations](https://learn.microsoft.com/en-us/azure/sentinel/detection-tuning) | best-practices | 0.70 | Offers Sentinel-specific tuning recommendations and workflows (auto-generated suggestions, rule adjustments) to reduce false positives, which are concrete best practices tied to this product. |
 | [Get started with notebooks and MSTICPy](https://learn.microsoft.com/en-us/azure/sentinel/notebook-get-started) | configuration | 0.70 | Describes prerequisites, permissions, Python setup, and external data provider accounts for Sentinel ML notebooks. This typically includes product-specific configuration steps and parameters for MSTICPy and notebook integration that go beyond generic Jupyter usage. |
 | [Graph REST API](https://learn.microsoft.com/en-us/azure/sentinel/datalake/graph-rest-api) | integrations | 0.70 | REST API usage for listing/querying custom graphs; likely includes endpoints, parameters, and request/response schemas, which are product-specific integration details. |
@@ -270,7 +269,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Migrate SOAR automation](https://learn.microsoft.com/en-us/azure/sentinel/migration-splunk-automation) | decision-making | 0.70 | Content about identifying SOAR use cases and migrating Splunk SOAR automation to Sentinel automation rules/playbooks is highly product-specific. It likely includes guidance on mapping Splunk playbooks/workflows to Sentinel constructs and choosing appropriate automation approaches, which aligns with decision-making for migration and approach selection. |
 | [Migrate detection rules](https://learn.microsoft.com/en-us/azure/sentinel/migration-arcsight-detection-rules) | decision-making | 0.70 | Migration guidance between ArcSight detection rules and Microsoft Sentinel analytics rules is product- and vendor-specific and not generally known from training. The article likely includes detailed mappings of rule types, terminology, and recommended migration paths, which fits decision-making (choosing how to migrate and which Sentinel rule types/templates to use). |
 | [Migrate detection rules](https://learn.microsoft.com/en-us/azure/sentinel/migration-qradar-detection-rules) | decision-making | 0.70 | The article describes inventorying QRadar rules, comparing terminology, and choosing migration paths (built-in templates vs converted queries vs custom KQL). These are detailed, vendor-specific migration decisions and mappings that constitute expert knowledge and fit the decision-making sub-skill type. |
-| [Monitor SAP system health and role](https://learn.microsoft.com/en-us/azure/sentinel/monitor-sap-system-health) | configuration | 0.70 | Covers using connector page, tables, functions, and alert rule template to track health; likely includes specific table names, function references, and rule configuration parameters, which are configuration details. |
 | [Monitor automation rules and playbooks health](https://learn.microsoft.com/en-us/azure/sentinel/monitor-automation-health) | configuration | 0.70 | The page details how to use SentinelHealth and AzureDiagnostics tables to track automation rules and playbook execution, and set up notifications. It includes product-specific logging and monitoring configuration for Sentinel automation, fitting the configuration sub-skill. |
 | [Notebook examples for data lake exploration](https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebook-examples) | integrations | 0.70 | Notebook examples for querying the Sentinel data lake include concrete code snippets, authentication setup, and environment configuration specific to Visual Studio Code and the Sentinel extension. These are integration patterns with specific parameters and code unique to this product, matching the integrations sub-skill. |
 | [Optimize costs with pre-purchase plan](https://learn.microsoft.com/en-us/azure/sentinel/billing-pre-purchase-plan) | decision-making | 0.70 | The article provides guidance on using Sentinel pre-purchase plans, including commit units, discounts, and how SCUs are consumed against USD costs. It helps decide how much to buy and how plans affect billing, which is product-specific cost optimization and tier/plan selection, fitting decision-making. |
@@ -330,7 +328,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Extend across multiple workspaces](https://learn.microsoft.com/en-us/azure/sentinel/extend-sentinel-across-workspaces-tenants) | architecture-patterns | 0.65 | Covers extending Sentinel across workspaces/tenants; likely includes product-specific architectural patterns and guidance on when to use single vs multiple workspaces and cross-tenant querying. |
 | [Extract incident entities with non-native actions](https://learn.microsoft.com/en-us/azure/sentinel/tutorial-extract-incident-entities) | integrations | 0.65 | Shows how to work with non-native entity types using built-in actions in playbooks; this is a product-specific integration/coding pattern for handling Sentinel entities via Logic Apps. |
 | [GQL reference for Sentinel custom graph](https://learn.microsoft.com/en-us/azure/sentinel/datalake/gql-reference-for-sentinel-custom-graph) | integrations | 0.65 | GQL reference for Sentinel graph; will contain language-specific operators, functions, and syntax unique to this product, fitting integrations/coding patterns. |
-| [Geographical availability and data residency](https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency) | decision-making | 0.65 | Geographical availability and data residency guidance for Sentinel typically includes region-specific support details and constraints that drive architecture and compliance decisions (for example, which regions support specific data residency behaviors). These are product- and region-specific facts that an LLM is unlikely to infer generically and are used to decide where and how to deploy Sentinel to meet sovereignty/compliance requirements. |
 | [Ingestion-time data transformation](https://learn.microsoft.com/en-us/azure/sentinel/data-transformation) | configuration | 0.65 | Custom ingestion and DCR-based transformation docs for Sentinel typically enumerate specific DCR schema fields, transformation rules, and configuration parameters unique to Azure Monitor Logs and Sentinel; this goes beyond conceptual overview into concrete configuration options. |
 | [Manage solution deprecation lifecycle](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solution-deprecation) | best-practices | 0.65 | Guides how to identify deprecated solutions and what actions to take; Sentinel-specific operational best practices. |
 | [Microsoft Entra](https://learn.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory) | integrations | 0.65 | Explains enabling the Entra ID data connector, including specific log types, connector configuration steps, and how data appears in Sentinel; this is a product-specific integration pattern with concrete connector settings. |
@@ -455,6 +452,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Integrate with unified connectors](https://learn.microsoft.com/en-us/azure/sentinel/unified-connector-integration) | 0.30 | Connector overview/unification guidance; no detailed limits, configs, or error-code-based troubleshooting. |
 | [Manage jobs](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-manage-jobs) | 0.30 | Page appears to describe how to view and manage KQL jobs in the Sentinel data lake Jobs page, but the summary does not indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. It looks like a functional UI/how-to overview rather than expert-knowledge reference content. |
 | [Microsoft Sentinel data lake overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-overview) | 0.30 | Overview of Sentinel data lake capabilities; summary indicates conceptual/marketing-style description without detailed configuration tables, limits, or error mappings. |
+| [Monitor SAP system health and role](https://learn.microsoft.com/en-us/azure/sentinel/monitor-sap-system-health) | 0.30 | The page describes how to monitor SAP system health and connectivity using Sentinel tables and an alert rule template, but the summary suggests it is more of a usage/monitoring guide without detailed error codes, configuration parameter tables, or quantified thresholds. It appears closer to a how-to article than a deep troubleshooting, configuration, or decision-making reference. |
 | [Onboard to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard) | 0.30 | Quickstart onboarding to Sentinel and a data connector; typical tutorial-style content rather than detailed configuration matrices or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sentinel/business-applications/solution-overview) | 0.30 | High-level overview of Sentinel solution for Business Apps; mostly conceptual description of capabilities. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources) | 0.30 | General description of data connectors; appears to be an overview of supported sources without detailed limits, configs, or troubleshooting. |

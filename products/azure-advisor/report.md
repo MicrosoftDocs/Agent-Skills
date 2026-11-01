@@ -44,7 +44,7 @@ confusable_not_for: Not for Cost Management (use azure-cost-management), Azure M
 - **Updated Pages**: 0
 - **Unchanged**: 33
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
 ## Classification Statistics
 

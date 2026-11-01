@@ -38,7 +38,7 @@ confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-
 - **Updated Pages**: 0
 - **Unchanged**: 10
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-large-instances/azure-large-instances.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-large-instances/azure-large-instances.csv`
 
 ## Classification Statistics
 

@@ -47,7 +47,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Updated Pages**: 0
 - **Unchanged**: 127
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
 ## Classification Statistics
 

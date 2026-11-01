@@ -52,11 +52,11 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 - **Unclassified**: 36
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 124
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 129
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
 ## Classification Statistics
 
@@ -74,21 +74,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 36 | 27.9% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate agent pool permissions](https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools-permission-migration)
-
-### Updated Pages
-
-- [Service Tag](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-service-tag)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-19T22:12:00.000Z
-- [Use ACR webhooks](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-19T22:12:00.000Z
-- [Run task on dedicated agent pool (preview)](https://learn.microsoft.com/en-us/azure/container-registry/tasks-agent-pools)
-  - Updated: 2025-12-10T06:03:00.000Z → 2026-10-22T06:03:00.000Z
-- [Webhook schema](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-webhook-reference)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-10-19T22:12:00.000Z
 
 ## Classified Pages
 

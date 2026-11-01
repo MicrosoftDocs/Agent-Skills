@@ -41,7 +41,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Updated Pages**: 0
 - **Unchanged**: 26
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-manager-for-agri/azure-data-manager-for-agri.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-data-manager-for-agri/azure-data-manager-for-agri.csv`
 
 ## Classification Statistics
 

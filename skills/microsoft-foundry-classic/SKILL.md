@@ -3,7 +3,7 @@ name: microsoft-foundry-classic
 description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Foundry agents, model routing, Azure OpenAI/RAG, multi-agent apps, or secure on-your-data tools, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Classic Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L99-L114 | Quotas, rate limits, and regional availability for Foundry agents, models (incl. Claude, Azure OpenAI), plus how to manage, request, and increase deployment and throughput quotas. |
 | Security | L115-L160 | Security, privacy, and compliance for Foundry: RBAC, Entra ID, network isolation, CMK, Azure Policy, guardrails/content filters, and secure use of models, tools, and on-your-data features. |
 | Configuration | L161-L210 | Configuring, monitoring, and troubleshooting Foundry classic: agents, evaluators, models, storage, networking, compute, OpenAI integrations, observability, and automation (Terraform, SDKs). |
-| Integrations & Coding Patterns | L211-L307 | Integrating Foundry classic agents and models with external tools, data, and APIs (Azure AI Search, Bing, SharePoint, MCP, OpenAPI, LangChain, SK), plus Azure OpenAI usage, fine-tuning, RAG, and realtime audio. |
-| Deployment | L308-L327 | Deploying Foundry hubs/models at scale: regions, deployment types, Bicep/Terraform/CLI, managed and serverless compute, HF models, fine-tunes, evaluations, and region feature support |
+| Integrations & Coding Patterns | L211-L306 | Integrating Foundry classic agents and models with external tools, data, and APIs (Azure AI Search, Bing, SharePoint, MCP, OpenAPI, LangChain, SK), plus Azure OpenAI usage, fine-tuning, RAG, and realtime audio. |
+| Deployment | L307-L326 | Deploying Foundry hubs/models at scale: regions, deployment types, Bicep/Terraform/CLI, managed and serverless compute, HF models, fine-tunes, evaluations, and region feature support |
 
 ### Troubleshooting
 | Topic | URL |
@@ -258,7 +258,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate Azure AI Inference SDK apps to OpenAI SDK | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/model-inference-to-openai-migration |
 | Interpret Guardrail annotations for Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-annotations |
 | Format prompts with document embeddings for Guardrails in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-document-embedding |
-| Use groundedness detection for RAG in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-groundedness |
 | Apply protected material detection to LLM outputs in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-protected-material |
 | Implement Computer Use agents in Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/computer-use |
 | Use Azure OpenAI image generation and editing APIs | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/dall-e |

@@ -1,9 +1,9 @@
 ---
 name: azure-chaos-studio
-description: Expert knowledge for Chaos Studio development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when automating Chaos Studio via CLI/ARM/REST, configuring AKS pod faults, VNet-injected agents, or Workspaces vs classic, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Chaos Studio development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when automating Chaos Studio via CLI/ARM/REST, configuring AKS agents, Private Link, CMK, or migrating to Workspaces, and other Chaos Studio related development tasks. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Chaos Studio Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L45-L50 | Guidance on designing Chaos Studio scenarios to test AKS node resilience and on filtering/targeting specific Azure resources when configuring chaos experiments. |
 | Decision Making | L51-L56 | Guidance on when to use Chaos Workspaces vs classic Experiments and how to migrate existing Chaos Studio classic experiments into Workspaces. |
 | Limits & Quotas | L57-L63 | Limits, quotas, and known issues for Chaos Studio classic and Workspaces preview, including experiment constraints, feature gaps, and current platform limitations. |
-| Security | L64-L78 | Networking, identity, RBAC, and encryption setup for Chaos Studio/AKS: agent connectivity, IP allowlists, Private Link, workspace roles, least-privilege access, and customer-managed keys. |
-| Configuration | L79-L90 | Configuring Chaos Studio experiments: AKS pod faults, fault/action library, workspaces/scenarios via CLI, VNet injection, and classic target selection (static/dynamic, capabilities, Azure Policy). |
-| Integrations & Coding Patterns | L91-L113 | Patterns and examples for automating, integrating, and scripting Chaos Studio experiments and agents using CLI, ARM/Bicep, REST, Logic Apps, and Azure monitoring/telemetry tools. |
+| Security | L64-L77 | Networking, identity, RBAC, and encryption setup for Chaos Studio/AKS: agent connectivity, IP allowlists, Private Link, workspace roles, least-privilege access, and customer-managed keys. |
+| Configuration | L78-L91 | Configuring Chaos Studio experiments: workspaces, scenarios, targets (static/dynamic), virtual network injection, Azure Policy, and using fault/action libraries and templates. |
+| Integrations & Coding Patterns | L92-L113 | Patterns and examples for automating, integrating, and scripting Chaos Studio experiments and agents using CLI, ARM/Bicep, REST, Logic Apps, and Azure monitoring/telemetry tools. |
 | Deployment | L114-L121 | Checking OS/region/model compatibility, and deploying Chaos Studio classic experiments and targets using ARM templates, including version and fault support details. |
 
 ### Troubleshooting
@@ -70,7 +70,6 @@ This skill requires **network access** to fetch documentation content:
 | Authorize Chaos Studio IP ranges for AKS experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-ip-ranges |
 | Assign RBAC permissions for Chaos Studio experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-assign-experiment-permissions |
 | Configure customer-managed keys for Chaos Studio classic | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys |
-| Review supported resources and roles for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers |
 | Configure permissions and security for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-permissions-security |
 | Configure Private Link for Chaos Studio agent | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-link-agent-service |
 | Configure Chaos Studio Workspace permissions and identities | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspace-permissions |
@@ -83,9 +82,11 @@ This skill requires **network access** to fetch documentation content:
 | Manage Chaos Studio Workspaces and Scenarios via CLI | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-manage-cli |
 | Set up virtual network injection for Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-networking |
 | Run and manage classic Chaos Studio experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-run-experiment |
+| Use Chaos Studio scenario and outage templates | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenarios |
 | Configure target selection for classic experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-target-selection |
 | Configure targets and capabilities for classic experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-targets-capabilities |
 | Configure dynamic targets in portal for classic experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dynamic-target-portal |
+| Map Chaos Studio actions to supported resources | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-supported-resources |
 | Configure Chaos Studio classic targets via Azure Policy | https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets |
 
 ### Integrations & Coding Patterns
@@ -105,7 +106,6 @@ This skill requires **network access** to fetch documentation content:
 | Create AKS Chaos Mesh faults in portal for classic experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-aks-portal |
 | Simulate availability zone down on VM scale sets | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-availability-zone-down-portal |
 | Simulate DNS outages with NSG rules in classic experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dns-outage |
-| Configure dynamic VM targets with Azure CLI for Chaos Experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dynamic-target-cli |
 | Script service-direct faults with Azure CLI and REST | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-service-direct-cli |
 | Create service-direct faults in portal for classic experiments | https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-service-direct-portal |
 | Use CLI and portal experiment examples in Chaos Studio | https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples |

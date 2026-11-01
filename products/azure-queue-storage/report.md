@@ -41,7 +41,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 - **Updated Pages**: 0
 - **Unchanged**: 25
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-queue-storage/azure-queue-storage.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-queue-storage/azure-queue-storage.csv`
 
 ## Classification Statistics
 

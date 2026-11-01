@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
-  limits-quotas: Backup immutability, free tier quotas/limits, DTU/vCore and serverless
-    resource caps, billing rules, and maintenance window limits for Azure SQL Database
-    and elastic pools.
+  limits-quotas: 'Limits, quotas, and billing rules for Azure SQL: free tier usage,
+    DTU/vCore and serverless resource caps, maintenance windows, backup retention,
+    and backup immutability.'
   decision-making: Guidance on choosing Azure SQL tiers, pricing models, migration
     paths, DR options, automation, and cost/benefit decisions (DTU vs vCore, serverless,
     Hyperscale, reservations, Hybrid Benefit).
@@ -16,120 +16,85 @@ category_descriptions:
   best-practices: 'Operational best practices for Azure SQL: monitoring, HA/DR, maintenance,
     security, auditing, scaling, file management, Data Sync, and adapting on-prem
     SQL workloads to Azure SQL.'
-  security: 'Configuring Azure SQL security: Entra auth and identities, networking
-    and firewalls, auditing and threat protection, TDE and Key Vault keys, data masking,
-    DR security, and compliance controls.'
+  security: 'Securing Azure SQL: authentication (Entra, MI, MFA), networking, auditing,
+    TDE/CMK, threat protection, DR replicas, and policy/compliance configurations
+    and best practices.'
   integrations: Connecting to Azure SQL from various languages/tools, managing auditing,
     sharding, geo-replication, scaling, and automating operations via PowerShell,
     CLI, REST, Spark, and Stream Analytics.
   architecture-patterns: 'Architectural patterns for Azure SQL apps: geo-replication,
     DR/BCP, connectivity/routing, sharding & elastic scale, multi-tenant SaaS models,
     Hyperscale internals, and upgrade/failover designs.'
-  deployment: 'Deploying and managing Azure SQL databases: CI/CD with GitHub Actions,
-    scaling and tier changes (Hyperscale, elastic pools), regional moves, redundancy,
-    Terraform provisioning, and feature availability by region.'
+  deployment: 'Deploying and scaling Azure SQL databases/Managed Instances: CI/CD
+    with GitHub Actions, Hyperscale setup and upgrades, zone redundancy, regional
+    moves, feature availability, and Terraform provisioning.'
 skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing DTU/vCore tiers, configuring serverless or Hyperscale, geo-replication/DR,
-  CI/CD, or Terraform, and other Azure SQL Database related development tasks. Not
-  for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure
-  Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db),
-  Azure Data Factory (use azure-data-factory).
-use_when: Use when choosing DTU/vCore tiers, configuring serverless or Hyperscale,
-  geo-replication/DR, CI/CD, or Terraform, and other Azure SQL Database related development
-  tasks.
+  choosing DTU/vCore/serverless tiers, configuring Hyperscale, geo-replication, Data
+  Sync, backups, or CI/CD, and other Azure SQL Database related development tasks.
+  Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server
+  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use
+  azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+use_when: Use when choosing DTU/vCore/serverless tiers, configuring Hyperscale, geo-replication,
+  Data Sync, backups, or CI/CD, and other Azure SQL Database related development tasks.
 confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Data Factory (use azure-data-factory).
+  DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
 ---
 # Azure SQL Database Crawl Report
 
 ## Summary
 
-- **Total Pages**: 372
-- **Fetched**: 372
+- **Total Pages**: 374
+- **Fetched**: 374
 - **Fetch Failed**: 0
-- **Classified**: 250
+- **Classified**: 252
 - **Unclassified**: 122
 
 ### Incremental Update
 - **New Pages**: 2
-- **Updated Pages**: 21
-- **Unchanged**: 349
-- **Deleted Pages**: 2
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
+- **Updated Pages**: 6
+- **Unchanged**: 366
+- **Deleted Pages**: 0
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 14 | 3.8% |
+| architecture-patterns | 14 | 3.7% |
 | best-practices | 13 | 3.5% |
-| configuration | 68 | 18.3% |
-| decision-making | 23 | 6.2% |
-| deployment | 9 | 2.4% |
+| configuration | 68 | 18.2% |
+| decision-making | 23 | 6.1% |
+| deployment | 10 | 2.7% |
 | integrations | 26 | 7.0% |
 | limits-quotas | 12 | 3.2% |
-| security | 64 | 17.2% |
+| security | 65 | 17.4% |
 | troubleshooting | 21 | 5.6% |
-| *(Unclassified)* | 122 | 32.8% |
+| *(Unclassified)* | 122 | 32.6% |
 
 ## Changes
 
 ### New Pages
 
-- [Azure SQL Database free tier](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier?view=azuresql)
-- [Azure SQL Database free tier FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier-faq?view=azuresql)
+- [Database-level managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-level-managed-identity?view=azuresql)
+- [Upgrade a free tier database to Hyperscale](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier-upgrade-to-hyperscale?view=azuresql)
 
 ### Updated Pages
 
-- [Serverless FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-faq?view=azuresql)
-  - Updated: 2026-09-29T05:53:00.000Z → 2026-10-19T17:38:00.000Z
-- [Logical server limits](https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-logical-server?view=azuresql)
-  - Updated: 2025-04-28T08:00:00.000Z → 2026-10-23T08:00:00.000Z
-- [Connectivity settings](https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-settings?view=azuresql)
-  - Updated: 2025-10-09T17:40:00.000Z → 2026-10-20T08:00:00.000Z
-- [Always Encrypted with secure enclaves](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-with-secure-enclaves-landing?view=azuresql)
-  - Updated: 2025-07-25T22:34:00Z → 2026-10-19T17:38:00Z
-- [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql)
-  - Updated: 2025-07-25T22:34:00Z → 2026-10-19T17:38:00Z
-- [Always Encrypted](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql)
-  - Updated: 2025-10-28T22:34:00Z → 2026-10-19T17:38:00Z
-- [Microsoft Entra authentication documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-landing?view=azuresql)
-  - Updated: 2025-06-11T22:31:00Z → 2026-10-19T17:38:00Z
-- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
-  - Updated: 2026-09-17T22:35:00.000Z → 2026-10-23T22:37:00.000Z
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql)
-  - Updated: 2024-08-23T22:35:00Z → 2026-10-19T17:38:00Z
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql)
-  - Updated: 2026-06-23T22:41:00Z → 2026-10-21T17:40:00Z
-- [Copilot with Azure SQL Database FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-faq?view=azuresql)
-  - Updated: 2025-04-09T22:30:00.000Z → 2026-10-19T17:38:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale-frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-10-05T17:40:00.000Z → 2026-10-19T17:38:00.000Z
-- [Design database using .NET](https://learn.microsoft.com/en-us/azure/azure-sql/database/design-first-database-csharp-tutorial?view=azuresql)
-  - Updated: 2025-02-03T18:31:00.000Z → 2026-10-21T17:40:00.000Z
-- [Ledger](https://learn.microsoft.com/en-us/azure/azure-sql/database/ledger-landing?view=azuresql)
-  - Updated: 2024-07-31T17:33:00Z → 2026-10-19T17:38:00Z
-- [Active geo-replication](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-10-23T22:37:00.000Z
-- [Maintenance window FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window-faq?view=azuresql)
-  - Updated: 2026-08-27T22:40:00.000Z → 2026-10-19T17:38:00.000Z
-- [Elastic tools FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-faq?view=azuresql)
-  - Updated: 2026-03-19T17:42:00.000Z → 2026-10-19T17:38:00.000Z
-- [Copy a database within Azure](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-copy?view=azuresql)
-  - Updated: 2026-10-07T08:00:00.000Z → 2026-10-23T22:37:00.000Z
-- [Develop a Kubernetes app with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-kubernetes-application?view=azuresql)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-10-21T08:00:00.000Z
-- [Try Azure SQL Database free with Azure free account (old offer)](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-10-21T17:40:00.000Z
-- *...and 1 more*
-
-### Deleted Pages
-
-- ~~Azure SQL Database free offer FAQ~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer-faq?view=azuresql)
-- ~~Azure SQL Database free offer~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql)
+- [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql)
+  - Updated: 2026-03-05T08:00:00.000Z → 2026-10-30T17:38:00.000Z
+- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql)
+  - Updated: 2026-10-01T08:00:00.000Z → 2026-10-29T08:00:00.000Z
+- [Azure SQL Database free tier](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier?view=azuresql)
+  - Updated: 2026-10-21T17:40:00.000Z → 2026-10-28T17:36:00.000Z
+- [Azure SQL Database free tier FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier-faq?view=azuresql)
+  - Updated: 2026-10-21T17:40:00.000Z → 2026-10-28T17:36:00.000Z
+- [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql)
+  - Updated: 2025-07-30T08:00:00.000Z → 2026-10-28T08:00:00.000Z
+- [Network Security Perimeter](https://learn.microsoft.com/en-us/azure/azure-sql/database/network-security-perimeter?view=azuresql)
+  - Updated: 2026-09-01T22:38:00.000Z → 2026-10-27T22:36:00.000Z
 
 ## Classified Pages
 
@@ -139,7 +104,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [vCore resource limits](https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-vcore-single-databases?view=azuresql) | limits-quotas | 0.95 | Explicitly a resource limits page with detailed numeric limits (vCores, memory, IOPS, sessions, workers) per tier/SKU in tabular form, which is exactly the limits-quotas category. |
 | [Audit log format](https://learn.microsoft.com/en-us/azure/azure-sql/database/audit-log-format?view=azuresql) | configuration | 0.90 | An audit log format article details the exact structure, field names, and meanings of audit logs for Azure SQL Database and Managed Instance. This is precise configuration/log schema knowledge that is product-specific and not generic. |
 | [Auditing best practices](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-best-practices?view=azuresql) | best-practices | 0.90 | The article explicitly focuses on recommendations for production, including geo-replication handling, storage key regeneration, and other Azure SQL–specific auditing behaviors. These are concrete DO/DON'T guidelines and gotchas unique to Azure SQL auditing. |
-| [Azure SQL Database free tier](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier?view=azuresql) | limits-quotas | 0.90 | Summary explicitly lists precise free-tier limits (100,000 vCore seconds, 32 GB data, 32 GB backup per database per month, and up to 10 free tier databases per subscription), which are product-specific numerical quotas. |
+| [Azure SQL Database free tier](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier?view=azuresql) | limits-quotas | 0.90 | Explicitly documents free-tier quotas: 100,000 vCore seconds, 32 GB data, 32 GB backup per database per month, and up to 10 free tier databases per subscription. These are precise numeric limits and quotas that change over time and are unlikely to be reliably known from training. |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.90 | Describes specific connection/transient error scenarios, connection string settings, and retry logic for Azure SQL Database, Managed Instance, Synapse, and Fabric. Organized around diagnosing and mitigating errors with product-specific guidance, fitting troubleshooting. |
 | [Connectivity errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql) | troubleshooting | 0.90 | The page explicitly focuses on troubleshooting connection failures and error messages for Azure SQL Database, SQL database in Fabric, and Azure SQL Managed Instance. It is expected to map specific error codes/messages to causes and resolutions, and may reference product-specific tools like Azure SQL Connectivity Checker. This matches the troubleshooting criteria of symptom → diagnosis → solution with service-specific details. |
 | [Create server configured with cross-tenant customer-managed TDE](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-create-server-cross-tenant?view=azuresql) | security | 0.90 | Cross-tenant CMK for TDE requires detailed identity, Key Vault, and permission configuration across tenants—highly product-specific security setup. |
@@ -165,12 +130,14 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [.NET with Microsoft Entra MFA](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-directory-interactive-connect-azure-sql-db?view=azuresql) | security | 0.80 | Provides concrete C# code using SqlAuthenticationMethod.ActiveDirectoryInteractive and Entra MFA-specific connection parameters, which are product-specific security configuration details. |
 | [Analyze and prevent deadlocks](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql) | troubleshooting | 0.80 | Deadlock analysis article; uses deadlock graphs, Query Store, and specific patterns to diagnose and prevent deadlocks—classic troubleshooting content. |
 | [Auditing Microsoft support operations](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-microsoft-support-operations?view=azuresql) | security | 0.80 | The article covers auditing of Microsoft support engineer operations, including specific action groups and how they are logged. This is specialized security/auditing configuration and behavior unique to Azure SQL support scenarios. |
+| [Azure SQL Database free tier FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier-faq?view=azuresql) | limits-quotas | 0.80 | A product-specific FAQ for the Azure SQL Database free tier will typically clarify detailed behaviors and edge cases around quotas (for example how limits are enforced, rollover behavior, or per-subscription constraints). Such FAQs often contain precise numeric and policy details that qualify as expert knowledge on limits and quotas. |
 | [Block T-SQL CRUD](https://learn.microsoft.com/en-us/azure/azure-sql/database/block-crud-tsql?view=azuresql) | security | 0.80 | The article describes a product-specific security feature that lets administrators block creation/modification of Azure SQL resources via T-SQL at subscription level. This necessarily involves specific configuration scopes, possibly Azure policy or RBAC interactions, and exact behaviors of the block mechanism that are unique to Azure SQL and not generic security theory, fitting the security sub-skill. |
 | [Capacity errors during deployment](https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql) | troubleshooting | 0.80 | Focuses on resolving capacity errors when deploying or scaling Azure SQL resources, likely including specific error messages and recommended resolution steps. |
 | [Configure TDE with BYOK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-configure?view=azuresql) | security | 0.80 | Covers Transparent Data Encryption with customer-managed keys in Key Vault; typically includes key vault access policies, managed identity roles, and encryption settings, which are concrete, product-specific security configuration details. |
 | [Configure maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window-configure?view=azuresql) | configuration | 0.80 | Step-by-step configuration of maintenance windows, including constraints by service level/region and long-running operation behavior—detailed configuration guidance. |
 | [Configure security for geo-replicas](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-security-configure?view=azuresql) | security | 0.80 | Covers authentication requirements, RBAC/permissions, and user access setup for geo-replication and failover groups, including security steps after restore/failover. |
 | [Configure the max degree of parallelism (MAXDOP)](https://learn.microsoft.com/en-us/azure/azure-sql/database/configure-max-degree-of-parallelism?view=azuresql) | configuration | 0.80 | Describes MAXDOP configuration setting, likely with recommended values, ranges, and product-specific behavior—detailed configuration guidance. |
+| [Database-level managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-level-managed-identity?view=azuresql) | security | 0.80 | Describes how to configure a database-level user-assigned managed identity for Azure SQL Database, including cross-tenant access behavior and product-specific authentication patterns to Azure Storage, which are security/identity configuration details. |
 | [Directory Readers role](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql) | security | 0.80 | Explains Directory Readers role and alternative lower-level permissions for managed identities; contains specific role/permission guidance unique to Azure SQL integration. |
 | [Enable secure enclaves](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-enable?view=azuresql) | configuration | 0.80 | Describes specific steps and settings to enable secure enclaves (selecting SGX-enabled hardware or VBS, required compute tiers, portal/CLI parameters), which are concrete configuration options and requirements. |
 | [Failover groups](https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql) | best-practices | 0.80 | Explicitly includes best practices and recommendations for using failover groups (geo-replication and coordinated failover) in Azure SQL, which are product-specific operational guidelines. |
@@ -203,7 +170,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Identity and key management with database level CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-basic-actions?view=azuresql) | security | 0.78 | This page describes identity and key management for database-level TDE CMK in Azure SQL Database, including use of user-assigned managed identities, cross-tenant Key Vault access, and specific steps/parameters to configure access and keys. It contains product-specific security and identity configuration details (managed identity setup, Key Vault access patterns), aligning best with the security sub-skill. |
 | [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | Page lists current known issues for Azure SQL Managed Instance with specific symptoms and corresponding workarounds or resolutions, which are product-specific troubleshooting details not generally known from training. |
 | [Maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window?view=azuresql) | configuration | 0.78 | The page describes how to configure Azure SQL Database and Azure SQL Managed Instance maintenance windows, including specific maintenance window options, allowed schedules, and product-specific behavior for planned maintenance. These are concrete configuration details and behaviors that qualify as expert knowledge beyond generic concepts. |
-| [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | security | 0.78 | Describes system-assigned and user-assigned managed identities for Azure SQL, including how they are created/assigned and used with Entra authentication. Such pages typically contain specific configuration steps, identity types, and required permissions/roles, which are product-specific security and identity configuration details. |
+| [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | security | 0.78 | Page is focused on Microsoft Entra managed identities (system-assigned and user-assigned) for Azure SQL Database and Managed Instance, including product-specific identity/auth configuration details and role/identity behavior that go beyond generic concepts. |
 | [Microsoft Entra server logins](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-logins-tutorial?view=azuresql) | security | 0.78 | Tutorial for creating and using Entra-backed logins in virtual master; this will include specific T-SQL statements, login options, and permission patterns that are concrete, product-specific security configuration details. |
 | [Purchasing models](https://learn.microsoft.com/en-us/azure/azure-sql/database/purchasing-models?view=azuresql) | decision-making | 0.78 | The article compares Azure SQL Database purchasing models (vCore vs DTU) with concrete, product-specific decision criteria such as cost, performance characteristics, and when to choose each model. It is explicitly framed as a comparison to help select between options, matching the decision-making sub-skill. While it may also mention limits or tiers, its primary purpose is guiding purchasing-model selection rather than listing quotas. |
 | [Serverless FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-faq?view=azuresql) | limits-quotas | 0.78 | Serverless tier FAQs typically include exact auto-pause thresholds, minimum/maximum vCore ranges, billing granularity, and scaling behaviors that are specific to Azure SQL Database serverless and not generally known. These are numeric, tier-specific limits and behaviors that match the limits-quotas criteria. |
@@ -241,7 +208,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Azure Hybrid Benefit](https://learn.microsoft.com/en-us/azure/azure-sql/azure-hybrid-benefit?view=azuresql) | decision-making | 0.70 | Describes Azure Hybrid Benefit discounts and how to allocate existing licenses; contains product-specific cost decision guidance beyond generic concepts. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql) | security | 0.70 | Lists specific Azure Policy definition names, effects, and scopes for Azure SQL Database and Managed Instance, which are product-specific security/compliance configurations. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql) | deployment | 0.70 | Centralized matrix of which Azure SQL Database features are available in which Azure regions; region-by-feature support tables are product-specific deployment constraints that an LLM wouldn't reliably know. |
-| [Azure SQL Database free tier FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier-faq?view=azuresql) | limits-quotas | 0.70 | FAQ for the free tier is likely to contain detailed, product-specific constraints (for example, how quotas are applied, renewal behavior, and edge cases) beyond the basic overview, fitting limits-quotas expert knowledge. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql) | deployment | 0.70 | Lists Azure SQL Managed Instance features and their availability per Azure region; region-specific support is a deployment constraint matrix that qualifies as expert knowledge. |
 | [Azure SQL decision tree](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql) | decision-making | 0.70 | Describes a product-specific decision tree in the Azure portal for selecting between Azure SQL Database, Managed Instance, and SQL Server on VM; this is concrete decision guidance unique to the product, even if much of the logic is embedded in the portal tool. |
 | [Backup immutability for LTR backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/backup-immutability?view=azuresql) | security | 0.70 | Describes WORM immutability semantics for Azure SQL LTR backups and how they protect against deletion/modification, which is product-specific security/compliance configuration. |
@@ -294,7 +260,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Migrate a .NET application](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration?view=azuresql) | security | 0.70 | Page is a concrete migration guide for .NET apps to use passwordless connections with Azure SQL. It likely includes product-specific authentication configuration (e.g., connection string formats, Azure AD / managed identity setup, specific parameters and code patterns) that go beyond generic security concepts, fitting the security sub-skill. |
 | [Migrate a Node.js application](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-nodejs?view=azuresql) | security | 0.70 | Similar to index 0 but for Node.js, this is a concrete migration guide to passwordless connections with Azure SQL. It likely contains Node.js-specific authentication configuration, library usage, and parameter details for Azure AD / managed identity, which are product-specific security configurations. |
 | [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql) | decision-making | 0.70 | Landing page for Azure SQL migration guides that aggregates scenario-based guidance and likely includes comparisons between Azure SQL Database, Managed Instance, and SQL Server on Azure VMs, helping users decide migration paths and options. This is migration/selection-focused content rather than generic overview. |
-| [Network Security Perimeter](https://learn.microsoft.com/en-us/azure/azure-sql/database/network-security-perimeter?view=azuresql) | security | 0.70 | Page is focused on a specific Azure SQL Database security feature (network security perimeter), with product-specific configuration behavior and constraints for securing inbound and outbound PaaS traffic. This is detailed security configuration guidance rather than a generic overview. |
 | [Ports - ADO.NET](https://learn.microsoft.com/en-us/azure/azure-sql/database/adonet-v12-develop-direct-route-ports?view=azuresql) | configuration | 0.70 | Explains connection behavior for ADO.NET 4.5+ and ports beyond 1433; includes product-specific connectivity configuration details and behavior. |
 | [Python with mssql-python](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql) | integrations | 0.70 | Covers mssql-python driver usage with Azure SQL and Entra auth; includes driver-specific parameters and connection options unique to this integration. |
 | [Recovery drills](https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-drills?view=azuresql) | best-practices | 0.70 | Provides guidance and recommended practices for performing DR drills with Azure SQL, including validation of application readiness and workflow design—product-specific best practices. |
@@ -315,6 +280,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [T-SQL differences from SQL Server](https://learn.microsoft.com/en-us/azure/azure-sql/database/transact-sql-tsql-differences-sql-server?view=azuresql) | best-practices | 0.70 | The page details product-specific T-SQL differences between SQL Server and Azure SQL Database, including which statements/features are unsupported or behave differently and how to re-engineer code. This is concrete, migration-focused guidance with Azure-SQL-specific gotchas rather than generic SQL concepts, fitting best-practices for this product. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-terraform-quickstart?view=azuresql) | deployment | 0.70 | Terraform configuration for Azure SQL uses provider-specific resource types and arguments; these are deployment-focused, product-specific settings. |
 | [Try Azure SQL Database free with Azure free account (old offer)](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql) | limits-quotas | 0.70 | Page describes the old Azure free account SQL Database offer with specific, numeric resource details (for example, S0 database with 10 DTUs and 250-GB storage and 12‑month duration). These are concrete limits/quotas tied to a specific offer that an LLM is unlikely to know precisely from training. |
+| [Upgrade a free tier database to Hyperscale](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier-upgrade-to-hyperscale?view=azuresql) | deployment | 0.70 | Page describes a specific, product-unique upgrade path from Azure SQL Database free tier to Hyperscale, including critical sequencing constraints (must remove free offer first, cannot combine operations, removal is permanent, billing implications). These are deployment/transition requirements and constraints that are not obvious from general knowledge and are essential for planning and executing this migration. |
 | [Use DMVs to monitor performance](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql) | troubleshooting | 0.70 | Dynamic management views and their specific T-SQL usage for diagnosing blocked/long-running queries and resource bottlenecks are product-specific diagnostic patterns that map symptoms to causes and resolutions; this is detailed troubleshooting guidance beyond generic knowledge. |
 | [Use Dapper framework](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-working-with-dapper?view=azuresql) | integrations | 0.70 | Provides specific code changes and patterns to compose shard management and data-dependent routing with Dapper; this is an integration-focused coding pattern. |
 | [Use Resource Health for connectivity issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-health-to-troubleshoot-connectivity?view=azuresql) | troubleshooting | 0.70 | Focuses on diagnosing connectivity/health issues using Azure Resource Health, mapping resource states to causes and mitigation steps, which is product-specific troubleshooting guidance. |
@@ -326,6 +292,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Database level CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-overview?view=azuresql) | security | 0.68 | Page provides product-specific security configuration details for Transparent Data Encryption using customer-managed keys at the database level, including which Azure SQL offerings support this capability and how it integrates with Azure Key Vault. This is concrete, implementation-focused security guidance rather than a generic conceptual overview. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-faq?view=azuresql) | troubleshooting | 0.68 | FAQ pages for preview monitoring features typically include product-specific error messages, behavioral quirks, and targeted resolutions (for example, why data isn’t appearing, supported regions/limitations, and how to interpret watcher output). These symptom→cause→solution details are not generic SQL knowledge and qualify as troubleshooting-focused expert knowledge. |
 | [Migrating SQL Server Workloads FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/modernization?view=azuresql) | decision-making | 0.68 | FAQ content for migrating SQL Server to Azure SQL typically includes scenario-based guidance, comparisons between Azure SQL Database, Managed Instance, and SQL Server on Azure VM, and recommendations for modernization paths. This goes beyond feature descriptions and helps choose between services and approaches, fitting the decision-making sub-skill. While the summary doesn't show numeric thresholds, migration FAQs on Microsoft Learn usually contain concrete criteria and trade-offs for selecting options. |
+| [Network Security Perimeter](https://learn.microsoft.com/en-us/azure/azure-sql/database/network-security-perimeter?view=azuresql) | security | 0.68 | Page is about Azure SQL Database network security perimeter (preview) and likely includes product-specific security configuration details (perimeter behavior, allowed/blocked traffic patterns, and how to secure PaaS resources). This is security-focused rather than a generic overview, and the feature is new/preview, so details are unlikely to be fully known from training. |
 | [.NET with SqlClient](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-quickstart?view=azuresql) | integrations | 0.65 | Uses Microsoft.Data.SqlClient with Azure SQL and passwordless auth; includes connection string keywords and auth configuration specific to Azure SQL integration. |
 | [Active geo-replication](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-configure-portal?view=azuresql) | configuration | 0.65 | Details configuration of active geo-replication and failover via portal/CLI, including specific settings and options unique to Azure SQL. |
 | [Analyze audit logs and reports](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-analyze-audit-logs?view=azuresql) | configuration | 0.65 | An article on analyzing audit logs typically includes specific log schema fields, query examples, and configuration of log destinations and tools (Log Analytics, Event Hubs). These are product-specific configuration and usage details for interpreting and querying Azure SQL audit logs. |
@@ -435,6 +402,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Restart database](https://learn.microsoft.com/en-us/azure/azure-sql/database/restart-database?view=azuresql) | 0.30 | Described as providing steps to restart an Azure SQL Database or elastic pool from the portal, with a note that the feature is preview and not recommended for production. This suggests procedural guidance and high-level cautions, but no indication of detailed limits, configuration matrices, or error-code troubleshooting content. |
 | [Transparent data encryption (TDE) in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql) | 0.30 | Transparent Data Encryption overview; explains at-rest encryption conceptually without detailed key management parameters, role mappings, or numeric constraints. |
 | [Upgrade client library](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-upgrade-client-library?view=azuresql) | 0.30 | Upgrade guide for the elastic database client library via NuGet; primarily a how-to/tutorial without detailed configuration tables, limits, or product-specific error/diagnostic mappings. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.30 | Release notes/what's new summary; the snippet only shows a single free-tier numeric example and otherwise describes documentation changes. It does not appear to be a dedicated limits table, configuration reference, or other structured expert-knowledge content. |
 | [With ledger and digest storage](https://learn.microsoft.com/en-us/azure/azure-sql/database/ledger-create-a-single-database-with-ledger-enabled?view=azuresql) | 0.30 | Quickstart for creating a ledger-enabled database via portal; summary suggests step-by-step UI guidance without detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Working with JSON data](https://learn.microsoft.com/en-us/azure/azure-sql/database/json-features?view=azuresql) | 0.30 | Feature overview of JSON support and scenarios; likely syntax examples but not focused on limits, configuration matrices, or product-specific troubleshooting. |
 | [Azure PowerShell samples guide](https://learn.microsoft.com/en-us/azure/azure-sql/database/powershell-script-content-guide?view=azuresql) | 0.25 | Navigation/overview page for PowerShell script examples; does not itself contain detailed configuration or troubleshooting content. |
@@ -448,7 +416,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Create a database project](https://learn.microsoft.com/en-us/azure/azure-sql/database/local-dev-experience-create-database-project?view=azuresql) | 0.20 | Page is a how-to/tutorial for creating a local Azure SQL Database project using the SQL Database Projects extension. It focuses on step-by-step usage and local dev workflow, without detailed configuration parameter tables, limits, quotas, error-code-based troubleshooting, or product-specific best-practice guidance with quantified impact. |
 | [Create sharded app](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-get-started?view=azuresql) | 0.20 | Intro/get-started article for Elastic Database Tools with a sample app; mostly conceptual and step-by-step usage, not detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Data discovery and classification](https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview?view=azuresql) | 0.20 | Data Discovery & Classification overview; explains purpose and scenarios without detailed config options, limits, or security role mappings. |
-| [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql) | 0.20 | Database watcher article is an overview of a managed monitoring solution, describing what it is and what it collects; the summary does not show specific configuration parameters, limits, or diagnostic mappings, so it does not meet the bar for configuration, troubleshooting, or other expert-knowledge categories. |
+| [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql) | 0.20 | Page is an overview of Azure SQL database watcher and its retirement timeline. The summary shows deprecation dates and high-level behavior but no detailed limits, configuration tables, error codes, or product-specific patterns with numeric thresholds. Content is primarily conceptual/announcement rather than expert-level technical reference. |
 | [Design database using SSMS](https://learn.microsoft.com/en-us/azure/azure-sql/database/design-first-database-tutorial?view=azuresql) | 0.20 | Tutorial on designing a first relational database using SSMS; primarily educational and conceptual with step-by-step instructions, not product-specific limits, configuration reference, or decision matrices. |
 | [Develop a Kubernetes app with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-kubernetes-application?view=azuresql) | 0.20 | This is a tutorial on building a Kubernetes application with Python, Docker, and Azure SQL Database. It’s primarily step-by-step development guidance and stack selection, without clear indication of product-specific limits, configuration tables, error codes, or decision matrices. It doesn’t meet the expert-knowledge criteria for any sub-skill type. |
 | [Dynamic data masking](https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql) | 0.20 | Dynamic Data Masking overview; describes concept and benefits but not specific masking configuration parameters, limits, or role-based rules in detail. |
@@ -472,7 +440,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/az-cli-script-samples-content-guide?view=azuresql) | 0.20 | Navigation/collection page for Azure CLI samples; no detailed technical content itself. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql) | 0.20 | High-level security overview and defense-in-depth concept for Azure SQL; no detailed RBAC role lists, config parameters, or numeric limits. |
 | [What is SQL Database?](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?view=azuresql) | 0.20 | Page is an overview of Azure SQL Database PaaS capabilities and marketing-style introduction; no evidence of detailed limits, configuration tables, error codes, or product-specific decision matrices. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes and 'what's new' summary; primarily announcements and high-level changes without detailed limits, configs, or troubleshooting mappings. |
 | [.NET with EF Core](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-entity-framework-core-quickstart?view=azuresql) | 0.10 | Quickstart for connecting with .NET and Entity Framework Core is primarily a tutorial showing basic connection and query patterns. It doesn’t focus on product-specific configuration tables, limits, or decision criteria beyond standard SDK usage that an LLM would already know. |
 | [Always Encrypted with secure enclaves](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-with-secure-enclaves-landing?view=azuresql) | 0.10 | This is a landing page that aggregates Always Encrypted with secure enclaves documentation. Landing pages usually provide navigation and high-level descriptions without detailed limits, configuration tables, or troubleshooting mappings, so it lacks the expert technical content required for classification. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' and documentation changes; release-note style summary without clear evidence of detailed limits, configs, error codes, or decision matrices. Functions primarily as historical/overview content rather than a focused expert-knowledge reference. |

@@ -46,7 +46,7 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 - **Updated Pages**: 0
 - **Unchanged**: 79
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
 
 ## Classification Statistics
 

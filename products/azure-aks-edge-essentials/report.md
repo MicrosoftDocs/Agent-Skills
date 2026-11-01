@@ -1,26 +1,26 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   security: 'Securing AKS Edge/Hybrid/Arc: auth (Entra, AD, gMSA, SSO), RBAC, SSH
-    hardening, cert and key management, etcd encryption, and container image validation.'
+    hardening, cert and key management, etcd encryption, and container image security/validation.'
   troubleshooting: 'Diagnosing and fixing AKS Edge/Hybrid/Arc issues: cluster creation/upgrade
     failures, networking, storage, auth, encryption, logs, node health, and Azure
     Local/MetalLB/BGP problems.'
-  limits-quotas: System requirements, capacity planning, and scale/support limits
-    for AKS Edge/Hybrid/Azure Local/Windows Server, including IP planning, VM sizes,
-    and supported Kubernetes versions.
+  limits-quotas: System requirements, scale and IP limits, supported versions, and
+    support policies for AKS Edge/Hybrid, AKS on Azure Local, bare metal, and Windows
+    Server deployments.
   configuration: 'Configuring AKS Edge/Hybrid/Arc clusters: networking, storage (CSI/NFS),
-    load balancers, autoscaling, GPU, proxies, GitOps, offline/online updates, and
-    cluster/node pool setup.'
+    load balancers, GPUs, autoscaling, GitOps, proxies, offline/online updates, and
+    host/cluster setup.'
   integrations: Integrations, APIs, and PowerShell for connecting AKS Edge/Hybrid
     to Arc, IoT/OPC/ONVIF, TPM, storage/backup, metrics, AI models, CSI plugins, and
     Key Vault secrets.
   decision-making: Guidance on AKS Edge/Hybrid deployment choices, pricing/licensing,
     trials, monitoring/logging options, and planning/operating disconnected or on-premises
     AKS environments.
-  deployment: Deploying, upgrading, and maintaining AKS Arc/AKS on Azure Local clusters
-    on Windows/Windows Server, including Terraform/ARM deployments, node pools, OS
-    upgrades, and safe cluster lifecycle operations.
+  deployment: Deploying, upgrading, and managing AKS Arc/AKS on Azure Local clusters,
+    including Windows node pools, OS/Kubernetes upgrades, migrations, and safe uninstall/reinstall
+    using Terraform, ARM, and PowerShell.
   best-practices: 'Guidance on resilient AKS Edge Essentials setups: availability
     sets, Azure Policy on Windows Server, restoring AKS Arc after VM failure, and
     upgrading AKS Arc clusters/Kubernetes versions.'

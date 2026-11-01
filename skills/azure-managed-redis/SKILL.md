@@ -1,9 +1,9 @@
 ---
 name: azure-managed-redis
-description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Redis tiers, clustering/sharding, Entra ID auth, geo-replication, or ARM/Bicep deployments, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
+description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Managed Redis tiers, Entra ID auth, clustering/sharding, persistence, or geo-replication, and other Azure Managed Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Redis Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L46 | Diagnosing and fixing Redis issues: using diagnostic commands, handling common errors, client and connectivity problems, data loss, server performance, latency, and timeouts. |
-| Best Practices | L47-L63 | Best practices for connecting, scaling, monitoring, and optimizing Azure Managed Redis, including memory, performance, resiliency, Kubernetes hosting, and common FAQ patterns. |
+| Troubleshooting | L36-L46 | Diagnosing and fixing Redis issues: using diagnostic commands, handling common errors, client-side and connectivity problems, data loss, and server performance/latency/timeouts. |
+| Best Practices | L47-L63 | Best practices for connecting to, scaling, tuning, and operating Azure Managed Redis, including client usage, Kubernetes hosting, memory/perf optimization, failover, and common FAQs. |
 | Decision Making | L64-L81 | Guidance on choosing Azure Managed Redis tiers, capacity, clustering, reliability, modules, and planning or executing migrations from legacy Redis and Redis Enterprise, including cost optimization. |
 | Architecture & Design Patterns | L82-L86 | Internal design of Azure Managed Redis: cluster topology, sharding, persistence, networking, and how architecture impacts performance, scaling, and reliability. |
 | Security | L87-L96 | Securing Azure Managed Redis: ACL-based access, Entra ID auth, disk encryption with CMK, TLS configuration, security best practices, and enforcing compliance via Azure Policy. |
-| Configuration | L97-L116 | Configuring Azure Managed Redis instances: settings, scaling, persistence, modules, networking, geo-replication, maintenance, monitoring, alerts, metrics, logs, and admin via CLI/PowerShell. |
-| Integrations & Coding Patterns | L117-L130 | Client integration patterns for Azure Managed Redis: language SDKs (.NET, Go, Node, Python), Entra ID auth, ASP.NET caching, data import/export, tools, and semantic routing. |
-| Deployment | L131-L139 | Migrating Redis workloads to Azure Managed Redis (self-service, tooling-based, Redis Enterprise) and deploying new instances via ARM templates and Bicep. |
+| Configuration | L97-L115 | Configuring Azure Managed Redis instances: settings, scaling, persistence, modules, networking, geo-replication, maintenance, monitoring, alerts, metrics, logs, and admin via CLI/PowerShell. |
+| Integrations & Coding Patterns | L116-L129 | Client integration patterns for Azure Managed Redis: language SDKs (.NET, Go, Node, Python), Entra ID auth, ASP.NET caching, data import/export, tools, and semantic routing. |
+| Deployment | L130-L139 | Scaling, migrating, and provisioning Azure Managed Redis using portal/CLI, ARM/Bicep, and Azure migration tools, including tier upgrades and moves from Redis Enterprise. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -41,8 +41,8 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure Managed Redis client-side issues | https://learn.microsoft.com/en-us/azure/redis/troubleshoot-client |
 | Troubleshoot connectivity issues in Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/troubleshoot-connectivity |
 | Diagnose and resolve data loss in Managed Redis | https://learn.microsoft.com/en-us/azure/redis/troubleshoot-data-loss |
-| Diagnose Azure Managed Redis server performance issues | https://learn.microsoft.com/en-us/azure/redis/troubleshoot-server |
-| Resolve latency and timeout problems in Managed Redis | https://learn.microsoft.com/en-us/azure/redis/troubleshoot-timeouts |
+| Resolve Azure Managed Redis server performance issues | https://learn.microsoft.com/en-us/azure/redis/troubleshoot-server |
+| Diagnose Azure Managed Redis latency and timeouts | https://learn.microsoft.com/en-us/azure/redis/troubleshoot-timeouts |
 
 ### Best Practices
 | Topic | URL |
@@ -103,7 +103,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure active geo-replication for Redis caches | https://learn.microsoft.com/en-us/azure/redis/how-to-active-geo-replication |
 | Administer Azure Managed Redis via PowerShell | https://learn.microsoft.com/en-us/azure/redis/how-to-manage-redis-cache-powershell |
 | Configure data persistence for Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/how-to-persistence |
-| Scale Azure Managed Redis instances across SKUs and tiers | https://learn.microsoft.com/en-us/azure/redis/how-to-scale |
 | Upgrade Redis server versions in Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/how-to-upgrade |
 | Configure monitoring and alerts for Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/monitor-cache |
 | Reference metrics and logs for Azure Managed Redis monitoring | https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference |
@@ -131,6 +130,7 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
+| Scale Azure Managed Redis instances using portal and CLI | https://learn.microsoft.com/en-us/azure/redis/how-to-scale |
 | Execute self-service migration to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-self-service |
 | Use Azure migration tooling for Redis tier upgrade | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-basic-standard-premium-with-tooling |
 | Execute migration from Redis Enterprise to Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migrate-redis-enterprise-self-service |

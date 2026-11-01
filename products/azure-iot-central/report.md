@@ -56,7 +56,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 - **Updated Pages**: 0
 - **Unchanged**: 91
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
 ## Classification Statistics
 
