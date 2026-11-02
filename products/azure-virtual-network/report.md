@@ -46,11 +46,11 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 129
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 132
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
 ## Classification Statistics
 
@@ -66,17 +66,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | *(Unclassified)* | 75 | 56.8% |
 
 ## Changes
-
-### New Pages
-
-- [Disable peering route propagation](https://learn.microsoft.com/en-us/azure/virtual-network/configure-disable-peering-route-propagation)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tap-overview)
-  - Updated: 2026-08-20T17:12:00.000Z → 2026-10-21T22:11:00.000Z
-- [Virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview)
-  - Updated: 2026-09-16T08:00:00.000Z → 2026-10-20T05:13:00.000Z
 
 ## Classified Pages
 

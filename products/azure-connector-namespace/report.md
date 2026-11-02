@@ -32,7 +32,7 @@ confusable_not_for: Not for Azure Service Connector (use azure-service-connector
 - **Updated Pages**: 0
 - **Unchanged**: 7
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-connector-namespace/azure-connector-namespace.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-connector-namespace/azure-connector-namespace.csv`
 
 ## Classification Statistics
 

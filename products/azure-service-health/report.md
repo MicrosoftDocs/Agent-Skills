@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-11-01'
 category_descriptions:
   integrations: Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty,
     ServiceNow) to programmatically access, query, and route Azure Service Health
@@ -41,10 +41,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 49
+- **Updated Pages**: 1
+- **Unchanged**: 48
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
 ## Classification Statistics
 
@@ -59,6 +59,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 57.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Resource health alerts overview](https://learn.microsoft.com/en-us/azure/service-health/resource-health-alert-monitor-guide)
+  - Updated: 2026-03-31T08:00:00.000Z → 2026-10-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -93,10 +98,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Create Resource Health alerts](https://learn.microsoft.com/en-us/azure/service-health/resource-health-alert-arm-template-guide) | 0.45 | Explains what Resource Health alerts are and their behavior; summary does not indicate detailed ARM schema, parameter tables, or constraints beyond generic tutorial content. |
 | [How to create Service health alerts](https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-portal) | 0.40 | Step-by-step portal guide to create Service Health alerts; typical tutorial without detailed configuration matrices, limits, or unique parameters. |
 | [Resource health types and checks](https://learn.microsoft.com/en-us/azure/service-health/resource-health-checks-resource-types) | 0.40 | Reference list of supported resource types and health checks; summary does not indicate numeric limits, config parameters, or troubleshooting mappings, only that checks exist. |
-| [Resource health alerts overview](https://learn.microsoft.com/en-us/azure/service-health/resource-health-alert-monitor-guide) | 0.35 | Resource Health alerts overview; describes concept and distinction from Service Health alerts without detailed config parameters or limits. |
 | [Service Health alerts overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-overview) | 0.35 | Health Alerts panel overview; mentions that alerts are based on rules but does not expose detailed configuration tables or constraints. |
 | [Deploy Service Health alert rules at scale using Azure Policy](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-deploy-policy) | 0.30 | Described as a process article for deploying Service Health alerts via Azure Policy. Likely a how-to/tutorial without detailed configuration parameter tables, limits, or decision matrices; no clear evidence of expert-only configuration or troubleshooting content. |
 | [Filter Service Health notifications by event level](https://learn.microsoft.com/en-us/azure/service-health/metadata-filter) | 0.30 | Describes the Event level metadata field conceptually and how to prioritize notifications; lacks detailed configuration parameters, numeric thresholds, or error-code-based troubleshooting. |
+| [Resource health alerts overview](https://learn.microsoft.com/en-us/azure/service-health/resource-health-alert-monitor-guide) | 0.30 | Page appears to be a conceptual/usage guide for Resource Health alerts in Azure Service Health without clear evidence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices; likely standard portal usage instructions rather than expert-only details. |
 | [Security notifications overview](https://learn.microsoft.com/en-us/azure/service-health/stay-informed-security) | 0.30 | Security notifications overview and high-level steps to route alerts; likely mentions roles generically but not detailed RBAC scopes or security config parameters. |
 | [Service Health notifications data properties](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-properties) | 0.30 | Describes metadata properties of Service Health notifications by event type; appears to be an overview of data fields without configuration tables, limits, or troubleshooting mappings. |
 | [AI-generated summary and timelines](https://learn.microsoft.com/en-us/azure/service-health/service-health-ai-summary-timeline) | 0.20 | Overview of AI-generated summaries and timelines for service health alerts; no indication of limits, configuration parameters, or troubleshooting mappings. |

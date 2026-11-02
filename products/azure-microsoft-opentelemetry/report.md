@@ -28,7 +28,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 - **Updated Pages**: 0
 - **Unchanged**: 5
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-opentelemetry/azure-microsoft-opentelemetry.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-microsoft-opentelemetry/azure-microsoft-opentelemetry.csv`
 
 ## Classification Statistics
 

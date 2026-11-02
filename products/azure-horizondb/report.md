@@ -52,7 +52,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Dat
 - **Updated Pages**: 0
 - **Unchanged**: 146
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-horizondb/azure-horizondb.csv`
 
 ## Classification Statistics
 

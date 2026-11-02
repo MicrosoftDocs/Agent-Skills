@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring Azure AI Search: data sources, knowledge bases, skillsets,
     analyzers, vectorization, semantic ranking, and query options for agentic retrieval
@@ -25,21 +25,21 @@ category_descriptions:
   deployment: Automating Azure AI Search deployment with ARM/Bicep/Terraform, moving
     services across regions, checking regional feature support, and deploying C# search
     apps to Azure Container Apps.
-  architecture-patterns: 'Architectural patterns for Azure AI Search: combining vector
-    and keyword search, designing multitenant or isolated indexes, and building resilient
-    multi-region search deployments.'
+  architecture-patterns: Guidance on designing Azure AI Search architectures for multitenancy
+    and multi-region deployments, including isolation models, scaling, resilience,
+    and data partitioning strategies.
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring data sources, skillsets, vector/semantic search, indexers, or multi-region
-  search architectures, and other Azure AI Search related development tasks. Not for
-  Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer),
-  Azure Synapse Analytics (use azure-synapse-analytics).
-use_when: Use when configuring data sources, skillsets, vector/semantic search, indexers,
-  or multi-region search architectures, and other Azure AI Search related development
+  building indexes, skillsets, vector/semantic search, indexers, or secure private
+  endpoint access, and other Azure AI Search related development tasks. Not for Azure
+  Cosmos DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure
+  Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when building indexes, skillsets, vector/semantic search, indexers,
+  or secure private endpoint access, and other Azure AI Search related development
   tasks.
-confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer
-  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
+confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure SQL Database
+  (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
 ---
 # Azure AI Search Crawl Report
 
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 313
+- **Updated Pages**: 1
+- **Unchanged**: 314
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
 ## Classification Statistics
 
@@ -77,10 +77,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 
 ### Updated Pages
 
-- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2026-10-13T06:07:00.000Z → 2026-10-23T08:00:00.000Z
-- [Configure customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/search/search-security-manage-encryption-keys)
-  - Updated: 2026-08-05T08:00:00.000Z → 2026-10-13T08:00:00.000Z
+- [Multi-tenancy](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications)
+  - Updated: 2026-06-10T08:00:00.000Z → 2026-10-27T06:04:00.000Z
 
 ## Classified Pages
 
@@ -188,7 +186,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Define an index projection](https://learn.microsoft.com/en-us/azure/search/search-how-to-define-index-projections) | configuration | 0.75 | Index projections for integrated vectorization and RAG patterns are a specialized Azure AI Search feature. Such a page typically documents projection syntax, field mapping rules, configuration parameters, and edge-case behaviors for parent-child content, which are product-specific configuration details not generally known from training. |
 | [Handling regional capacity constraints](https://learn.microsoft.com/en-us/azure/search/search-region-capacity) | decision-making | 0.75 | Provides evaluation criteria and guidance for selecting alternative regions when preferred regions are unavailable; focuses on deployment planning and region selection decisions, fitting decision-making with product-specific guidance. |
 | [Monitor queries](https://learn.microsoft.com/en-us/azure/search/search-monitor-queries) | configuration | 0.75 | Describes how to measure query performance and volume using built-in metrics and diagnostic logging, including specific metric names and logging options; these are concrete configuration details for monitoring. |
-| [Multi-tenancy](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications) | architecture-patterns | 0.75 | The page discusses tenant isolation strategies and multitenant SaaS design patterns specifically for Azure AI Search. These patterns (for example, index-per-tenant vs shared index with filters, partitioning approaches, and isolation trade-offs) are product-specific architecture guidance. This fits the architecture-patterns sub-skill and represents expert knowledge about when to choose each pattern and how to apply it in Azure AI Search. |
 | [Query honoring sensitivity labels](https://learn.microsoft.com/en-us/azure/search/search-query-sensitivity-labels) | security | 0.75 | Covers query-time enforcement of Purview sensitivity labels for secure document retrieval. This is detailed, product-specific security behavior (how labels affect query results) and configuration that qualifies as expert knowledge rather than generic security theory. |
 | [SQL Database](https://learn.microsoft.com/en-us/azure/search/search-howto-managed-identities-sql) | security | 0.75 | Describes how an Azure AI Search indexer uses system- or user-assigned managed identities to connect to Azure SQL, including specific identity and permission configuration steps. This is product-specific security/auth configuration. |
 | [Schedule an indexer](https://learn.microsoft.com/en-us/azure/search/search-howto-schedule-indexers) | limits-quotas | 0.75 | The summary explicitly references a 'typical 2-hour processing window' and discusses scheduling indexers to run on a 2‑hour cadence when indexing cannot complete within that window. This indicates specific time-related limits/quotas for indexer execution, which is expert, product-specific knowledge. While it also covers configuration of schedules, the presence of a concrete processing window limit aligns best with limits-quotas. |
@@ -204,6 +201,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Azure Vision multimodal embeddings (preview)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-vision-vectorize) | configuration | 0.72 | Skill reference pages for Azure AI Search skills typically include detailed input/output schema, parameter names, allowed values, and examples specific to this skill (for example, fields for image vs text inputs, embedding dimensions, and configuration options). This is product-specific configuration knowledge not derivable from general training data. |
 | [Compress using binary or scalar quantization](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-quantization) | configuration | 0.72 | Describes concrete, product-specific configuration of scalar and binary quantization, including options like oversampling and rescoring for Azure AI Search vector indexes. This is detailed configuration guidance rather than generic concepts. |
 | [Document Extraction](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-document-extraction) | configuration | 0.72 | Cognitive skill reference pages typically list skill-specific configuration parameters (inputs, outputs, options like content type handling, page ranges, and extraction modes) that are unique to Azure AI Search enrichment. These are product-specific settings with defined names and allowed values, which qualify as expert configuration knowledge rather than general concepts. |
+| [Multi-tenancy](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications) | architecture-patterns | 0.72 | Page discusses tenant isolation strategies and concrete multitenancy design patterns specific to Azure AI Search (for example, per-tenant index vs shared index with filters), including when to use each approach and their trade-offs, which constitutes product-specific architecture guidance beyond generic concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/search/query-odata-filter-orderby-syntax) | integrations | 0.72 | Service-specific OData language overview for this API; defines supported constructs and how they map into query parameters, which is integration-focused syntax knowledge. |
 | [Shape data for projection](https://learn.microsoft.com/en-us/azure/search/knowledge-store-projection-shape) | configuration | 0.72 | Describes how to define data shapes and pass them to projections, including product-specific schema/shape configuration for knowledge stores, which constitutes detailed configuration knowledge not captured by generic training. |
 | [Tables](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-tables) | integrations | 0.72 | Indexer how-to pages typically include data source–specific connection properties, field mappings, and indexer configuration parameters (names, allowed values, and behaviors) that are unique to Azure AI Search and Azure Table Storage. This is concrete integration/configuration detail beyond generic SDK usage. |

@@ -48,10 +48,10 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 147
+- **Updated Pages**: 0
+- **Unchanged**: 148
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
 ## Classification Statistics
 
@@ -67,11 +67,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 35 | 23.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary)
-  - Updated: 2023-03-23T00:00:00.000Z → 2026-10-22T22:11:00.000Z
 
 ## Classified Pages
 

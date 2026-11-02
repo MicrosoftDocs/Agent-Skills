@@ -57,7 +57,7 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure D
 - **Updated Pages**: 0
 - **Unchanged**: 32
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-deployment-environments/azure-deployment-environments.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-deployment-environments/azure-deployment-environments.csv`
 
 ## Classification Statistics
 

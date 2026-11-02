@@ -47,11 +47,11 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 82
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 85
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
 
 ## Classification Statistics
 
@@ -68,17 +68,6 @@ confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monit
 | *(Unclassified)* | 31 | 36.5% |
 
 ## Changes
-
-### New Pages
-
-- [Enable Periodic Assessment for Azure Virtual Machine Scale Sets Uniform](https://learn.microsoft.com/en-us/azure/update-manager/enable-periodic-assessment-azure-virtual-machine-scale-sets-uniform)
-
-### Updated Pages
-
-- [What's New](https://learn.microsoft.com/en-us/azure/update-manager/whats-new)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-10-22T11:45:00.000Z
-- [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates)
-  - Updated: 2026-05-19T17:12:00.000Z → 2026-10-22T11:45:00.000Z
 
 ## Classified Pages
 

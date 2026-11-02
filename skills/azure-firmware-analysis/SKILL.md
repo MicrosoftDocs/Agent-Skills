@@ -1,14 +1,14 @@
 ---
 name: azure-firmware-analysis
-description: Expert knowledge for Azure Firmware Analysis development including best practices, security, integrations & coding patterns, and deployment. Use when configuring RBAC/service principals, uploading firmware via CLI/PowerShell/Python, mapping results to Device Registry, reading SBOM paths, or deploying workspaces with ARM/Bicep/Terraform, and other Azure Firmware Analysis related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential Computing (use azure-confidential-computing).
+description: Expert knowledge for Azure Firmware Analysis development including troubleshooting, best practices, security, integrations & coding patterns, and deployment. Use when configuring AFA RBAC access, analyzing SBOM paths and CVEs, automating uploads, or deploying workspaces via IaC, and other Azure Firmware Analysis related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firmware Analysis Skill
 
-This skill provides expert guidance for Azure Firmware Analysis. Covers best practices, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Firmware Analysis. Covers troubleshooting, best practices, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,17 +24,24 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L38 | Guidance on reading firmware SBOM paths, understanding unsafe function call alerts, and interpreting/prioritizing firmware weakness findings for security analysis. |
-| Security | L39-L44 | Managing secure access to Azure Firmware Analysis using service principals and configuring role-based access control (RBAC) permissions for users and apps |
-| Integrations & Coding Patterns | L45-L52 | CLI, PowerShell, and Python examples for uploading firmware to Azure Firmware Analysis and mapping scan results to Azure Device Registry devices and assets. |
-| Deployment | L53-L58 | How to provision and deploy an Azure Firmware Analysis workspace using infrastructure-as-code tools: ARM templates, Bicep, and Terraform configuration and setup. |
+| Troubleshooting | L33-L37 | Diagnosing and fixing common Azure Firmware Analysis issues, including job failures, upload/scan problems, and environment or configuration-related errors. |
+| Best Practices | L38-L45 | Best practices for interpreting firmware SBOM paths, ranking unsafe functions and weaknesses, and understanding evolving CVE data to prioritize and remediate firmware security risks. |
+| Security | L46-L51 | Managing secure access to Azure Firmware Analysis using service principals and configuring role-based access control (RBAC) permissions for users and apps |
+| Integrations & Coding Patterns | L52-L59 | How to integrate firmware analysis with Azure Device Registry and programmatically upload firmware using CLI, PowerShell, or Python scripts. |
+| Deployment | L60-L65 | How to provision and deploy an Azure Firmware Analysis workspace using infrastructure-as-code tools: ARM templates, Bicep, and Terraform configuration and setup. |
+
+### Troubleshooting
+| Topic | URL |
+|-------|-----|
+| Resolve common Azure firmware analysis issues | https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
 | Interpret SBOM extractor paths in firmware analysis | https://learn.microsoft.com/en-us/azure/firmware-analysis/interpreting-extractor-paths |
-| Interpret unsafe function call findings in firmware analysis | https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-unsafe-function-calls |
+| Prioritize unsafe function calls in firmware analysis | https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-unsafe-function-calls |
 | Interpret and prioritize firmware weaknesses data | https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-weaknesses-data |
+| Interpret evolving CVE data in firmware analysis | https://learn.microsoft.com/en-us/azure/firmware-analysis/understanding-latest-cves |
 
 ### Security
 | Topic | URL |
@@ -45,7 +52,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Map firmware analysis results to Azure Device Registry assets | https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry |
+| Integrate firmware analysis with Azure Device Registry | https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry |
 | Upload firmware to Azure firmware analysis via CLI | https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-upload-firmware-using-azure-command-line-interface |
 | Upload firmware to Azure analysis with PowerShell | https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-upload-firmware-using-powershell |
 | Upload firmware to Azure analysis using Python | https://learn.microsoft.com/en-us/azure/firmware-analysis/quickstart-upload-firmware-using-python |

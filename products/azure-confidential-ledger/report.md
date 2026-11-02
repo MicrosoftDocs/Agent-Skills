@@ -45,11 +45,11 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 12
-- **Unchanged**: 23
-- **Deleted Pages**: 3
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 40
+- **Deleted Pages**: 0
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
 ## Classification Statistics
 
@@ -65,47 +65,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 16 | 40.0% |
 
 ## Changes
-
-### New Pages
-
-- [Limits](https://learn.microsoft.com/en-us/azure/confidential-ledger/limits)
-- [Overview](https://learn.microsoft.com/en-us/azure/confidential-ledger/server-side-programming)
-- [User defined functions (UDFs)](https://learn.microsoft.com/en-us/azure/confidential-ledger/user-defined-functions)
-- [User defined endpoints (UDEs)](https://learn.microsoft.com/en-us/azure/confidential-ledger/user-defined-endpoints)
-- [Choose how to manage ledger users](https://learn.microsoft.com/en-us/azure/confidential-ledger/choose-how-to-manage-ledger-users)
-
-### Updated Pages
-
-- [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview)
-  - Updated: 2026-06-14T12:35:00.000Z → 2026-10-19T22:33:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-cli)
-  - Updated: 2025-04-14T08:00:00.000Z → 2026-10-19T17:37:00.000Z
-- [Data organization](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization)
-  - Updated: 2026-06-12T08:00:00.000Z → 2026-10-19T22:33:00.000Z
-- [User authentication and authorization](https://learn.microsoft.com/en-us/azure/confidential-ledger/authentication-azure-ad)
-  - Updated: 2025-04-14T08:00:00.000Z → 2026-10-19T08:00:00.000Z
-- [Ensure end-to-end confidentiality of ledger data](https://learn.microsoft.com/en-us/azure/confidential-ledger/end-to-end-confidentiality)
-  - Updated: 2026-09-24T22:34:00.000Z → 2026-10-16T08:00:00.000Z
-- [Write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/write-transaction-receipts)
-  - Updated: 2026-06-14T12:35:00.000Z → 2026-10-19T22:33:00.000Z
-- [Register an ACL app with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/confidential-ledger/register-application)
-  - Updated: 2025-04-29T11:05:00.000Z → 2026-10-19T08:00:00.000Z
-- [Manage Microsoft Entra token-based users](https://learn.microsoft.com/en-us/azure/confidential-ledger/manage-azure-ad-token-based-users)
-  - Updated: 2024-08-07T16:44:00.000Z → 2026-10-19T17:37:00.000Z
-- [Verify write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-write-transaction-receipts)
-  - Updated: 2026-04-23T08:00:00.000Z → 2026-10-19T08:00:00.000Z
-- [Data ingress and egress from Azure confidential ledger using Power Automate Connector](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-power-automate-workflow)
-  - Updated: 2025-12-05T23:18:00.000Z → 2026-10-19T22:33:00.000Z
-- [Secure Confidential Computing Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
-  - Updated: 2026-07-10T22:34:00.000Z → 2026-10-16T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq)
-  - Updated: 2026-06-14T12:35:00.000Z → 2026-10-19T22:33:00.000Z
-
-### Deleted Pages
-
-- ~~UDF overview~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/server-side-programming)
-- ~~Advanced UDFs~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/user-defined-endpoints)
-- ~~Simple UDFs~~ (https://learn.microsoft.com/en-us/azure/confidential-ledger/user-defined-functions)
 
 ## Classified Pages
 

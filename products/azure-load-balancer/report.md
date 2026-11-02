@@ -53,7 +53,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Updated Pages**: 0
 - **Unchanged**: 87
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
 ## Classification Statistics
 

@@ -51,7 +51,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 - **Updated Pages**: 0
 - **Unchanged**: 79
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
 
 ## Classification Statistics
 

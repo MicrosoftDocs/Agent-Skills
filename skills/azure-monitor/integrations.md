@@ -28,6 +28,7 @@
 | Instrument web apps with Application Insights JavaScript SDK | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk |
 | Customize OpenTelemetry instrumentation in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify |
 | Enable OpenTelemetry distro for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable |
+| Query Azure Monitor traces via MCP server | https://learn.microsoft.com/en-us/azure/azure-monitor/app/traces-mcp-server |
 | Integrate Application Insights work items with GitHub and Azure DevOps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration |
 | Configure Container Insights to scrape and send Prometheus metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-logs |
 | Integrate KEDA autoscaling with Prometheus metrics from Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/integrate-keda |
@@ -40,6 +41,7 @@
 | Configure Kafka monitoring with Azure Managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-kafka-integration |
 | Configure Prometheus scrape CRDs for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-crd |
 | Configure Prometheus remote write with Entra auth | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-active-directory |
+| Implement Azure Monitor ingestion-time transformations | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations |
 | Stream Azure Monitor data to Event Hubs and SIEMs | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/stream-monitoring-data-event-hubs |
 | Convert SCOM management packs into Azure Monitor DCRs | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/convert-management-packs-into-data-collection-rules |
 | Mirror Azure Monitor Logs into Microsoft Fabric | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/monitor-cross-domain-fabric |

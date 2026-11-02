@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring and operating Azure Cache for Redis: server settings,
     geo-replication, persistence, zone redundancy, monitoring/logging, CLI/PowerShell
     management, and data import/export.'
   security: 'Securing Azure Cache for Redis: Entra auth/RBAC, TLS config, disk encryption,
     private endpoints/VNet, managed identities, and Azure Policy compliance settings.'
-  best-practices: Best practices for client usage, reliability, scaling, memory, performance
-    testing, monitoring, failover behavior, and Kubernetes/Enterprise tier usage in
-    Azure Cache for Redis
+  best-practices: Guidance on resilient client usage, scaling, memory and performance
+    tuning, Kubernetes access, monitoring, failover behavior, and enterprise-tier
+    best practices for Azure Cache for Redis
   architecture-patterns: Strategies for architecting highly available Redis caches
     on Azure, including redundancy, failover, disaster recovery, and SLA-focused design
     patterns.
@@ -23,14 +23,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cache for Redis development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, and deployment. Use when configuring geo-replication, persistence,
-  VNet/private endpoints, Entra/RBAC auth, or ARM/Bicep deployments, and other Azure
-  Cache for Redis related development tasks. Not for Azure Managed Redis (use azure-managed-redis),
-  Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage).
-use_when: Use when configuring geo-replication, persistence, VNet/private endpoints,
-  Entra/RBAC auth, or ARM/Bicep deployments, and other Azure Cache for Redis related
-  development tasks.
-confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage).
+  private endpoints, Entra auth, or ARM/Bicep-based deployments, and other Azure Cache
+  for Redis related development tasks. Not for Azure Managed Redis (use azure-managed-redis),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure App Service (use azure-app-service).
+use_when: Use when configuring geo-replication, persistence, private endpoints, Entra
+  auth, or ARM/Bicep-based deployments, and other Azure Cache for Redis related development
+  tasks.
+confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service).
 ---
 # Azure Cache for Redis Crawl Report
 
@@ -44,10 +46,10 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 63
+- **Updated Pages**: 1
+- **Unchanged**: 62
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
 ## Classification Statistics
 
@@ -64,6 +66,11 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ## Changes
 
+### Updated Pages
+
+- [Enterprise tiers best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-enterprise-tiers)
+  - Updated: 2026-08-18T17:12:00.000Z → 2026-10-14T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -74,6 +81,7 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | [Troubleshoot connectivity issues](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-connectivity) | troubleshooting | 0.80 | Connectivity troubleshooting article is organized by symptoms and causes, and likely includes specific error messages, configuration checks, and Azure networking details unique to this product. |
 | [Troubleshoot data loss](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-data-loss) | troubleshooting | 0.80 | Data-loss troubleshooting is symptom-driven and likely includes causes like eviction policies, persistence misconfiguration, and failover behavior, with concrete resolution steps unique to this service. |
 | [Troubleshoot latency and timeouts](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-timeouts) | troubleshooting | 0.80 | Latency/timeout troubleshooting covers high CPU, memory pressure, and bandwidth limits with product-specific metrics, client settings, and symptom→cause→solution mappings. |
+| [Enterprise tiers best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-enterprise-tiers) | best-practices | 0.78 | Page is explicitly about best practices for Azure Cache for Redis Enterprise and Enterprise Flash tiers, containing product-specific guidance and recommendations tailored to these SKUs rather than generic Redis advice. |
 | [Configure disk encryption](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-encryption) | security | 0.75 | Explains disk encryption options, scenarios, and configuration steps for Redis data at rest, which are product-specific security settings. |
 | [Import/Export data](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-import-export-data) | configuration | 0.75 | Describes how to configure RDB snapshot import/export with storage accounts, including specific parameters and constraints for Premium caches. |
 | [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference) | configuration | 0.75 | Monitoring data reference contains detailed metric names, dimensions, and log schemas unique to Azure Cache for Redis, which are expert-level configuration details. |
@@ -90,7 +98,6 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | [Create Redis cache - Bicep](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/redis-cache-bicep-provision) | deployment | 0.70 | Contains Bicep resource definitions and parameters for deploying Redis caches and diagnostics, which are product-specific deployment configuration details. |
 | [Create and manage premium cache with Azure CLI](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/scripts/create-manage-premium-cache-cluster) | configuration | 0.70 | Shows how to configure a Premium clustered cache (size, shard count) using CLI with explicit parameters and values, which are product-specific configuration patterns. |
 | [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-zone-redundancy) | configuration | 0.70 | Zone redundancy setup includes Azure-region support constraints and specific configuration options for Premium/Enterprise caches, which are unique to this service. |
-| [Enterprise tiers best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-enterprise-tiers) | best-practices | 0.70 | Enterprise-tier best practices cover configuration and usage patterns unique to those SKUs, including performance and memory considerations. |
 | [Kubernetes-hosted client applications best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-kubernetes) | best-practices | 0.70 | Kubernetes-hosted client best practices include concrete configuration and deployment patterns specific to integrating Kubernetes workloads with Azure Cache for Redis. |
 | [Managed identity for storage accounts](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-managed-identity) | security | 0.70 | Managed identity article explains how to configure Entra-based identities for Redis to access storage accounts, with product-specific security configuration. |
 | [Memory management best practice](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-memory-management) | best-practices | 0.70 | Memory management guidance is product-specific, with recommendations on eviction policies, key sizing, and patterns that go beyond generic theory. |

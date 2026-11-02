@@ -47,7 +47,7 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 - **Updated Pages**: 0
 - **Unchanged**: 28
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
 ## Classification Statistics
 

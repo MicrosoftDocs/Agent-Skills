@@ -58,7 +58,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Con
 - **Updated Pages**: 0
 - **Unchanged**: 174
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-spring-apps/azure-spring-apps.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-spring-apps/azure-spring-apps.csv`
 
 ## Classification Statistics
 

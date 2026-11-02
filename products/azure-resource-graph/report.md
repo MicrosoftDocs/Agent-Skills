@@ -46,7 +46,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 - **Updated Pages**: 0
 - **Unchanged**: 34
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-graph/azure-resource-graph.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-resource-graph/azure-resource-graph.csv`
 
 ## Classification Statistics
 

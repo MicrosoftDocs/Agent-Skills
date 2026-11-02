@@ -1,6 +1,6 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when submitting Q#/OpenQASM jobs, configuring workspaces, managing IonQ/Quantinuum/Rigetti usage, or running hybrid workflows, and other Azure Quantum related development tasks.
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when submitting Q#/OpenQASM jobs, configuring workspaces, managing IonQ/Quantinuum/Rigetti usage, or running hybrid workflows, and other Azure Quantum related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-10-25"

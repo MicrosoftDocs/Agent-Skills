@@ -1,9 +1,9 @@
 ---
 name: azure-documentdb
-description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using DocumentDB vector search, MongoDB-compatible APIs, change streams, cross-region replication, or Data API, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring DocumentDB indexing/search, HA/replicas, MongoDB migrations, vector search/RAG, or security/RBAC, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure Blob Storage (use azure-blob-storage), Azure SQL Database (use azure-sql-database).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DocumentDB Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L46 | Diagnosing and fixing DocumentDB issues: query performance, CMK encryption, replication, and common connectivity/network errors including migration-related problems. |
-| Best Practices | L47-L57 | Best practices for DocumentDB indexing and queries, safe index changes, and configuring cross-region replication and high availability for resilient, performant data access. |
+| Best Practices | L47-L57 | Best practices for DocumentDB indexing, query optimization, background indexing safety, and designing high-availability, cross-region replicated deployments. |
 | Decision Making | L58-L73 | Guides for choosing DocumentDB vs MongoDB/Atlas, planning MongoDB migrations, selecting connectivity and cross-region failover, and picking optimal vector index/search algorithms in .NET, Go, TS, and Python |
-| Architecture & Design Patterns | L74-L85 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
-| Limits & Quotas | L86-L99 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
-| Security | L100-L111 | Securing DocumentDB clusters: encryption at rest and with customer keys, firewall and public access controls, Private Link, Entra ID RBAC, native users/privileges, and security best practices. |
-| Configuration | L112-L132 | Configuring DocumentDB features: search (BM25, vector, fuzzy, phrase, geo), MongoDB compatibility, change streams, replication/scale, transactions, Data API, alerts, and monitoring. |
-| Integrations & Coding Patterns | L133-L155 | Patterns and code samples for integrating Azure DocumentDB with languages, drivers, RAG tools, and vector search, plus migrations (Mongo/Cassandra) and app scenarios like MERN and AI ads. |
-| Deployment | L156-L162 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
+| Architecture & Design Patterns | L74-L83 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
+| Limits & Quotas | L84-L97 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
+| Security | L98-L109 | Securing DocumentDB clusters: encryption at rest and with customer keys, firewall and public access controls, Private Link, Entra ID RBAC, native users/privileges, and security best practices. |
+| Configuration | L110-L132 | Configuring DocumentDB features: indexing, search (BM25, vector, fuzzy, full-text, geo), MongoDB compatibility, HA/replicas, scaling, transactions, monitoring, alerts, backups, and MCP toolkit. |
+| Integrations & Coding Patterns | L133-L156 | Patterns and code samples for integrating Azure DocumentDB with languages, frameworks, vector search/RAG tools, migrations (Mongo/Cassandra), and external services like Databricks and OpenAI. |
+| Deployment | L157-L163 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -49,7 +49,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Use background indexing safely in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/background-indexing |
 | Apply cross-region replication best practices in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/cross-region-replication |
-| Implement HA and replication best practices in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/high-availability-replication-best-practices |
+| Implement HA and cross-region replication best practices | https://learn.microsoft.com/en-us/azure/documentdb/high-availability-replication-best-practices |
 | Apply indexing best practices for Azure DocumentDB collections | https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-indexes |
 | Explore practical indexing scenarios in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-index |
 | Safely migrate from non-ordered to ordered indexes in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-ordered-indexes |
@@ -75,8 +75,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Apply autoscale behavior for Azure DocumentDB workloads | https://learn.microsoft.com/en-us/azure/documentdb/autoscale |
-| Understand HA and DR internals for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/availability-disaster-recovery-under-hood |
-| Plan high availability for Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/high-availability |
 | Design multi-cloud architectures with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/multi-cloud |
 | Design sharding strategy for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/partitioning |
 | Implement Go-based AI agents with DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-go |
@@ -121,9 +119,11 @@ This skill requires **network access** to fetch documentation content:
 | Configure full-text search in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-overview |
 | Implement phrase and proximity search on DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/full-text-search-phrase-proximity |
 | Configure and run geospatial queries in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/geospatial-support |
+| Configure high availability modes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/high-availability |
 | Configure wildcard indexes for dynamic schemas in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-create-wildcard-indexes |
-| Create and use replica clusters in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-cross-region-replica-portal |
+| Set up and use DocumentDB replica clusters | https://learn.microsoft.com/en-us/azure/documentdb/how-to-cross-region-replica-portal |
 | Configure metric-based alerts for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-manage-alerts |
+| Restore Azure DocumentDB clusters from backups | https://learn.microsoft.com/en-us/azure/documentdb/how-to-restore-cluster |
 | Scale and configure Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/how-to-scale-cluster |
 | Configure multi-operation transactions in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-transactions |
 | Configure and use the Azure DocumentDB MCP Toolkit | https://learn.microsoft.com/en-us/azure/documentdb/mcp-toolkit |
@@ -138,6 +138,7 @@ This skill requires **network access** to fetch documentation content:
 | Convert Cassandra schemas to Azure DocumentDB with VS Code | https://learn.microsoft.com/en-us/azure/documentdb/cassandra-how-to-schema-conversion-vs-code |
 | Use Azure DocumentDB Data API over HTTPS | https://learn.microsoft.com/en-us/azure/documentdb/data-api |
 | Connect Azure Databricks to Azure DocumentDB with Spark | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-from-databricks |
+| Connect Azure DocumentDB with VisuaLeaf desktop tool | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-visualeaf |
 | Migrate MongoDB to DocumentDB using native tools | https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-native-tools |
 | Persist LangGraph agent state in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/persist-agent-state |
 | Integrate LlamaIndex vector store with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/query-knowledge-base |

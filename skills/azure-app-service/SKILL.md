@@ -1,9 +1,9 @@
 ---
 name: azure-app-service
-description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring App Service plans, deployment slots, VNet integration, Entra auth, or managed identities, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
+description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring App Service plans/ASEs, deployment slots, VNet/private endpoints, managed identity auth, or CI/CD, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Service Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L56-L73 | Guidance for choosing tiers, hosting plans, networking, auth, custom domains, and migration paths (Windows→Linux, Docker Compose, VNet, ASE, Managed Instance) for Azure App Service. |
 | Architecture & Design Patterns | L74-L79 | Patterns for scaling App Service apps: geo-distributed deployments with App Service Environments and designing RAG chatbots using Foundry on App Service. |
 | Limits & Quotas | L80-L84 | App Service resource limits (CPU, memory, connections), quota types, how they’re measured/monitored, and how to use metrics to detect and avoid hitting plan or app quotas. |
-| Security | L85-L132 | Securing App Service apps: network/IP restrictions, TLS/certs, managed identities, Key Vault, Entra auth and social logins, OAuth tokens, database/storage access, and policy/compliance settings. |
+| Security | L85-L132 | Securing App Service apps: auth with Entra and social providers, managed identities, certificates/TLS, IP/VNet/firewall/private endpoints, Key Vault, and secure access to storage, SQL, and Graph. |
 | Configuration | L133-L181 | Configuring App Service apps: runtimes, containers, networking/VNet, auth, storage, scaling, certificates, domains, health checks, and environment/cluster settings. |
 | Integrations & Coding Patterns | L182-L196 | Patterns for integrating App Service apps with APM, TLS/SSL certs, Application Gateway, managed connectors, OpenAI/Phi-4 chatbots, OpenTelemetry sidecars, and WebJobs event bindings. |
 | Deployment | L197-L220 | Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure Pipelines), ZIP/FTP/local Git deploy, custom containers, deployment slots, ASE/plan scaling, DNS migration, and patching. |
@@ -121,7 +121,7 @@ This skill requires **network access** to fetch documentation content:
 | Grant delegated Microsoft Graph access for App Service users | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user |
 | Secure App Service access to Azure Storage with managed identities | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-storage |
 | Enable and configure App Service authentication | https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service |
-| Use Azure Policy compliance controls for App Service | https://learn.microsoft.com/en-us/azure/app-service/security-controls-policy |
+| Apply Azure Policy compliance controls to App Service | https://learn.microsoft.com/en-us/azure/app-service/security-controls-policy |
 | Manage minimum TLS versions for App Service and Functions | https://learn.microsoft.com/en-us/azure/app-service/tls-minimum-version |
 | Secure Azure App Service with Azure AD auth | https://learn.microsoft.com/en-us/azure/app-service/tutorial-auth-aad |
 | Connect App Service to SQL on behalf of signed-in user | https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-sql-database-as-user-dotnet |

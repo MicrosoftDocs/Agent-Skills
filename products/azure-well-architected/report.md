@@ -47,7 +47,7 @@ use_when: Use when designing AI/HPC/SaaS workloads, AVD/AVS deployments, WAF ass
 - **Updated Pages**: 0
 - **Unchanged**: 214
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
 ## Classification Statistics
 

@@ -55,7 +55,7 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 - **Updated Pages**: 0
 - **Unchanged**: 523
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
 ## Classification Statistics
 

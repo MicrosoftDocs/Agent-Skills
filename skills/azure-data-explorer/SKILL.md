@@ -1,9 +1,9 @@
 ---
 name: azure-data-explorer
-description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing ADX (RBAC/MI), automating cluster/schema deploys, tuning ingestion/queries, or integrating via ODBC/JDBC/Power BI, and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing ADX with RBAC/managed identities, automating cluster/schema deployment, tuning ingestion/queries, integrating via ODBC/JDBC or Event Hubs, or designing follower DB/multitenant architectures, and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-04"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Explorer Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L49 | Diagnosing and fixing ADX cluster health, connection, creation, ingestion, dashboard, DB/table, private endpoint, and resource health issues, including error codes and common failure patterns. |
 | Best Practices | L50-L61 | Guidance on optimizing ADX clusters and schemas, handling duplicates and JSON ingestion, tuning for high concurrency, monitoring queued ingestion, using hot windows, and applying Power BI best practices. |
-| Decision Making | L62-L76 | Guidance on ADX capacity planning, SKU and compute choices, scaling, cost optimization, reservations, business continuity, confidential compute, streaming ingestion, and Elasticsearch migration. |
+| Decision Making | L62-L76 | Guidance on ADX cluster sizing, SKUs, scaling, cost optimization, reservations, confidential/isolated compute, streaming ingestion choices, and migrating Elasticsearch workloads. |
 | Architecture & Design Patterns | L77-L83 | Designing ADX architectures for DR/BCP, cross-cluster access via follower DBs, and multitenant patterns (isolation, scaling, and resource sharing). |
 | Limits & Quotas | L84-L93 | Cluster limits and behaviors: free cluster quotas, auto-stop, safe delete/recover, ingestion file size and invalid data handling, and supported data/compression formats. |
 | Security | L94-L121 | Securing Azure Data Explorer: authn/z (RBAC, principals, Entra apps, Conditional Access), encryption, managed identities, network isolation, policies, data purging, and outbound/public access control. |

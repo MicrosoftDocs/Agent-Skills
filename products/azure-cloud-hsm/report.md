@@ -39,10 +39,10 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 20
+- **Updated Pages**: 0
+- **Unchanged**: 21
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
 
 ## Classification Statistics
 
@@ -56,11 +56,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 7 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/overview)
-  - Updated: 2026-09-23T22:33:00.000Z → 2026-10-22T22:33:00.000Z
 
 ## Classified Pages
 

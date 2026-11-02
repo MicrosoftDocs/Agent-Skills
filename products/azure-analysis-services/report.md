@@ -31,7 +31,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Updated Pages**: 0
 - **Unchanged**: 1
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-analysis-services/azure-analysis-services.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-analysis-services/azure-analysis-services.csv`
 
 ## Classification Statistics
 

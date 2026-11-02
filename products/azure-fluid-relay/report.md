@@ -47,7 +47,7 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Signa
 - **Updated Pages**: 0
 - **Unchanged**: 25
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-fluid-relay/azure-fluid-relay.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-fluid-relay/azure-fluid-relay.csv`
 
 ## Classification Statistics
 

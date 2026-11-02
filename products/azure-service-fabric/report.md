@@ -55,10 +55,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 405
+- **Updated Pages**: 0
+- **Unchanged**: 406
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
 ## Classification Statistics
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 75 | 18.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Service Fabric versions](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-versions)
-  - Updated: 2026-09-17T08:00:00.000Z → 2026-10-20T17:08:00.000Z
 
 ## Classified Pages
 

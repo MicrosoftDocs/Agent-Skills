@@ -45,7 +45,7 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vau
 - **Updated Pages**: 0
 - **Unchanged**: 16
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
 ## Classification Statistics
 

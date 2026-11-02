@@ -42,7 +42,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Da
 - **Updated Pages**: 0
 - **Unchanged**: 25
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-share/azure-data-share.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-data-share/azure-data-share.csv`
 
 ## Classification Statistics
 

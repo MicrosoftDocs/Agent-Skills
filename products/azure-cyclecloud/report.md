@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   integrations: APIs, CLI, and Python SDK for automating CycleCloud, plus patterns
     to integrate schedulers, monitoring, storage, events, and remote desktop tools
@@ -45,11 +45,11 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use 
 - **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 2
 - **Updated Pages**: 1
-- **Unchanged**: 122
-- **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
+- **Unchanged**: 121
+- **Deleted Pages**: 2
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
 ## Classification Statistics
 
@@ -69,12 +69,18 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use 
 
 ### New Pages
 
-- [8.10.1 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-10-1?view=cyclecloud-8)
+- [Current Release - 2026.10.23](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-10-23?view=cyclecloud-8)
+- [Previous Release - 2026.09.02](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-09-02?view=cyclecloud-8)
 
 ### Updated Pages
 
-- [Current Release - v8.x](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes?view=cyclecloud-8)
-  - Updated: 2026-08-28T08:00:00.000Z → 2026-10-21T08:00:00.000Z
+- [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8)
+  - Updated: 2026-09-01T22:21:00.000Z → 2026-10-28T22:31:00.000Z
+
+### Deleted Pages
+
+- ~~Previous Release - 2026.08.07~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-08-07?view=cyclecloud-8)
+- ~~Current Release - 2026.09.02~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-09-02?view=cyclecloud-8)
 
 ## Classified Pages
 
@@ -201,11 +207,11 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use 
 | [Connect to a Node](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/connect-to-node?view=cyclecloud-8) | 0.20 | Basic instructions for connecting to nodes via SSH/RDP; no unique error codes, config matrices, or product-specific constraints. |
 | [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-cluster?view=cyclecloud-8) | 0.20 | Page appears to be a how-to guide for creating clusters via CLI or web UI from templates. Based on the summary, it likely focuses on procedural steps rather than detailed configuration tables, limits, error codes, or product-specific best practices with quantified impact. No indication of numerical limits, RBAC roles, or decision matrices, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/tutorials/tutorial?view=cyclecloud-8) | 0.20 | Tutorial/learning path style content for first cluster creation; likely step-by-step but not focused on detailed limits, configs tables, or troubleshooting matrices. |
+| [Current Release - 2026.10.23](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-10-23?view=cyclecloud-8) | 0.20 | Release notes summary; provided snippet doesn't show concrete limits, configs, error codes, or other structured expert details. Without access to specific numeric limits, configuration tables, or troubleshooting mappings, it doesn't clearly match any sub-skill type. |
+| [Previous Release - 2026.09.02](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-09-02?view=cyclecloud-8) | 0.20 | Similar CycleCloud Workspace for Slurm release notes; the description indicates high-level new features and issues, but no visible expert content such as limits, configuration parameter tables, or error-code-based troubleshooting. |
 | [Clusters & Nodes](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/clusters?view=cyclecloud-8) | 0.10 | Conceptual explanation of clusters, nodes, and templates; no indication of configuration tables, limits, or troubleshooting content. |
 | [Core](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/core?view=cyclecloud-8) | 0.10 | Conceptual architecture overview of HPC and CycleCloud core concepts without product-specific numeric thresholds, configs, or error mappings. |
 | [Scheduling](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/scheduling?view=cyclecloud-8) | 0.10 | Scheduling concepts and autoscaling overview; describes REST API and Python library at a high level, not detailed config or error handling. |
 | [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8) | 0.10 | Overview of Azure CycleCloud Workspace for Slurm; describes what it is and why to use it, but lacks detailed configuration parameters, limits, or troubleshooting content. |
 | [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8) | 0.10 | High-level overview of Azure CycleCloud capabilities and scenarios; no specific limits, configuration tables, error codes, or decision matrices. |
-| [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8) | - | Navigation-style page indicating current release version only; no detailed technical guidance, limits, configuration, or troubleshooting information. |
-| [Current Release - 2026.09.02](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-09-02?view=cyclecloud-8) | - | Release notes summary; underlying content likely lists changes and issues but the provided snippet doesn't show specific limits, configs, error codes, or decision matrices required for any sub-skill type. |
-| [Previous Release - 2026.08.07](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-08-07?view=cyclecloud-8) | - | Release notes summary; snippet does not expose detailed technical data such as limits, configuration parameters, or troubleshooting mappings needed to classify as a sub-skill. |
+| [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8) | - | Release notes pages typically list version changes and fixes but do not systematically present limits, configuration matrices, troubleshooting mappings, or other structured expert patterns as defined; with only the summary available, there is no clear evidence of the specific numeric limits, config tables, or error-code-based troubleshooting required for any sub-skill type. |

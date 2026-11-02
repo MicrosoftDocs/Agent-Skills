@@ -39,7 +39,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Updated Pages**: 0
 - **Unchanged**: 33
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
 ## Classification Statistics
 

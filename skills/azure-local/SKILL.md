@@ -1,9 +1,9 @@
 ---
 name: azure-local
-description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying Azure Local racks/SDN, Arc gateway, SFF clusters, VM migration (Hyper-V/VMware), or GPUs, and other Azure Local related development tasks.
+description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying Azure Local racks, SDN/BGP networks, Arc-integrated AKS/VMs, GPUs, or disconnected clusters, and other Azure Local related development tasks. Not for Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Local Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L72 | Diagnosing and fixing Azure Local issues: provisioning, SDN/networking, Arc/VMs, upgrades, health checks, logs/diagnostics, known bugs, and version-specific or SFF/multi-rack workarounds. |
-| Best Practices | L73-L82 | Guidance for planning, deploying, and operating Azure Local rack-aware clusters, SDN, Arc VMs (single/multi-rack), and managing update/maintenance best practices for reliability and performance. |
-| Decision Making | L83-L102 | Guidance for choosing Azure Local deployment types, scale, networking/SDN, VM migration, DR, updates in disconnected setups, and container orchestrators for the right architecture. |
-| Architecture & Design Patterns | L103-L136 | Designing resilient Azure Local architectures: rack-aware clusters, SDN/BGP topologies, storage/network patterns, availability zones, DR, disconnected ops, and VM/network resiliency. |
+| Troubleshooting | L37-L73 | Diagnosing and fixing Azure Local issues: provisioning, SDN/NSG, Arc VMs, storage/SAN, multi-rack/SFF, upgrades, health checks, and collecting logs/using support tools for troubleshooting. |
+| Best Practices | L74-L83 | Guidance for planning, deploying, and operating Azure Local rack-aware clusters, SDN, Arc VMs (single/multi-rack), and managing update/maintenance best practices for reliability and performance. |
+| Decision Making | L84-L103 | Guidance for choosing Azure Local deployment types, scale, networking/SDN, VM migration, DR, updates in disconnected setups, and container orchestrators for the right architecture. |
+| Architecture & Design Patterns | L104-L136 | Designing resilient Azure Local architectures: rack-aware AKS, SDN/BGP topologies, storage/network patterns, availability zones, DR, disconnected ops, and VM resiliency. |
 | Limits & Quotas | L137-L148 | Requirements, limits, and supported configurations for Azure Local disaggregated clusters, networking, rack-aware setups, disconnected ops, and VM migration (Hyper-V/VMware). |
-| Security | L149-L194 | Security hardening for Azure Local: firewalls, NSGs, RBAC, identity, certificates/PKI, BitLocker, Trusted Launch/guest attestation, Defender, logging/SIEM, and SFF security features. |
-| Configuration | L195-L309 | Configuring and operating Azure Local: networking, storage, GPUs, SDN, monitoring, updates, Arc/Arc gateway, disconnected backup/restore, and VM lifecycle for single, multi-rack, and SFF setups. |
-| Integrations & Coding Patterns | L310-L320 | Patterns for integrating Azure Local with private endpoints, Arc gateway, ACR, Grafana, GPU REST APIs, and automating VM migration via Arc agents, PowerShell, CLI, and Terraform. |
-| Deployment | L321-L378 | End-to-end deployment and update guidance for Azure Local: cluster and SDN setup, VM/image prep, SFF scenarios, OS/solution upgrades, and protecting workloads (SQL, ASR, confidential VMs). |
+| Security | L149-L194 | Security hardening for Azure Local: firewalls, NSGs, RBAC, identities, certificates/PKI, BitLocker, Trusted Launch/guest attestation, Defender, syslog, and security for SDN, GPUs, VMs, and SFF. |
+| Configuration | L195-L311 | Configuring and operating Azure Local: networking, storage, GPUs, SDN, monitoring, Arc integration, disconnected backup/restore, multi-rack, and VM lifecycle/guest management. |
+| Integrations & Coding Patterns | L312-L321 | Patterns for integrating Azure Local with private endpoints, Arc gateway, ACR, Grafana, GPU REST APIs, and automating VM migration via Arc agents, PowerShell, CLI, and Terraform. |
+| Deployment | L322-L379 | End-to-end Azure Local deployment, OS install/upgrade, SDN setup, VM/image prep (including confidential and Arc VMs), SAN/multi-rack planning, SFF scenarios, and update/patch workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -59,8 +59,9 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure Local SDN Software Load Balancer | https://learn.microsoft.com/en-us/azure/azure-local/manage/troubleshoot-software-load-balancer?view=azloc-2610 |
 | Troubleshoot Azure Migrate VM migrations to Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-troubleshoot?view=azloc-2610 |
 | Resolve known Azure Migrate issues for Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migration-known-issues?view=azloc-2610 |
+| Monitor and troubleshoot Azure Local SAN appliances | https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-monitor-san-storage?view=azloc-2610 |
 | Use Azure CLI serial console to troubleshoot Azure Local VMs | https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-serial-console?view=azloc-2610 |
-| Resolve Azure Local multi-rack storage appliance error messages | https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-storage-appliance-error-messages?view=azloc-2610 |
+| Diagnose Azure Local multi-rack storage appliance errors | https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-storage-appliance-error-messages?view=azloc-2610 |
 | Troubleshoot Azure Local multi-rack Arc-enabled VMs and known issues | https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-troubleshoot-arc-enabled-vms?view=azloc-2610 |
 | Diagnose and work around Azure Local 23xx issues | https://learn.microsoft.com/en-us/azure/azure-local/previous-releases/known-issues-23?view=azloc-2610 |
 | Work around known issues in Azure Local 24xx releases | https://learn.microsoft.com/en-us/azure/azure-local/previous-releases/known-issues-24?view=azloc-2610 |
@@ -116,9 +117,8 @@ This skill requires **network access** to fetch documentation content:
 | Design virtual machine resiliency on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disaster-recovery-vm-resiliency?view=azloc-2610 |
 | Plan disconnected operations architecture for Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-overview?view=azloc-2610 |
 | Load balance multiple SDN logical networks in Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/load-balance-multiple-networks?view=azloc-2610 |
-| Migrate Azure Local from public to private path connectivity | https://learn.microsoft.com/en-us/azure/azure-local/manage/move-public-path-to-private-path?view=azloc-2610 |
 | Select Azure Local network deployment patterns | https://learn.microsoft.com/en-us/azure/azure-local/plan/choose-network-pattern?view=azloc-2610 |
-| Plan Azure Local cloud deployment network architecture | https://learn.microsoft.com/en-us/azure/azure-local/plan/cloud-deployment-network-considerations?view=azloc-2610 |
+| Design Azure Local cloud deployment network architecture | https://learn.microsoft.com/en-us/azure/azure-local/plan/cloud-deployment-network-considerations?view=azloc-2610 |
 | Plan FC disaggregated pattern without backup network | https://learn.microsoft.com/en-us/azure/azure-local/plan/fiber-channel-no-backup-disaggregated-pattern?view=azloc-2610 |
 | Plan FC disaggregated pattern with dedicated backup network | https://learn.microsoft.com/en-us/azure/azure-local/plan/fiber-channel-with-backup-disaggregated-pattern?view=azloc-2610 |
 | Plan four-node switchless dual-switch dual-link pattern | https://learn.microsoft.com/en-us/azure/azure-local/plan/four-node-switchless-two-switches-two-links?view=azloc-2610 |
@@ -232,7 +232,6 @@ This skill requires **network access** to fetch documentation content:
 | Re-register management and data clusters after restore | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-post-restore-repair-register-management-cluster?view=azloc-2610 |
 | Configure Azure PowerShell for disconnected Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-powershell?view=azloc-2610 |
 | Configure and execute restores for disconnected Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-restore?view=azloc-2610 |
-| Apply appliance updates in disconnected Azure Local environments | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-update?view=azloc-2610 |
 | Enable Azure Arc gateway on existing Azure Local instances | https://learn.microsoft.com/en-us/azure/azure-local/manage/enable-arc-gateway-after-deployment?view=azloc-2610 |
 | Enable nested virtualization on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/enable-nested-virtualization?view=azloc-2610 |
 | Manage Azure Local SDN gateway connections | https://learn.microsoft.com/en-us/azure/azure-local/manage/gateway-connections?view=azloc-2610 |
@@ -253,13 +252,15 @@ This skill requires **network access** to fetch documentation content:
 | Use Insights to monitor multiple Azure Local systems | https://learn.microsoft.com/en-us/azure/azure-local/manage/monitor-multi-23h2?view=azloc-2610 |
 | Enable Azure Local Insights at scale using Azure Policy | https://learn.microsoft.com/en-us/azure/azure-local/manage/monitor-multi-azure-policies?view=azloc-2610 |
 | Configure Insights to monitor a single Azure Local system | https://learn.microsoft.com/en-us/azure/azure-local/manage/monitor-single-23h2?view=azloc-2610 |
+| Move Azure Local from public to private connectivity path | https://learn.microsoft.com/en-us/azure/azure-local/manage/move-public-path-to-private-path?view=azloc-2610 |
+| Re-create storage-only Network ATC intent on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/recreate-storage-network-intent?view=azloc-2610 |
 | Enable and manage ReFS deduplication on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/refs-deduplication-and-compression?view=azloc-2610 |
 | Replace failed NICs in Network ATC intents on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/replace-network-adapter-to-network-intents?view=azloc-2610 |
 | Set up log-based alerts for Azure Local using Insights | https://learn.microsoft.com/en-us/azure/azure-local/manage/setup-system-alerts?view=azloc-2610 |
 | Manage SDN tenant logical networks in Windows Admin Center | https://learn.microsoft.com/en-us/azure/azure-local/manage/tenant-logical-networks?view=azloc-2610 |
 | Configure SDN tenant virtual networks with HNV | https://learn.microsoft.com/en-us/azure/azure-local/manage/tenant-virtual-networks?view=azloc-2610 |
 | Unregister and re-register Azure Local machines via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/manage/unregister-register-machine?view=azloc-2610 |
-| Update proxy and bypass settings for Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/update-proxy-settings?view=azloc-2610 |
+| Update Azure Local proxy and bypass settings post-deployment | https://learn.microsoft.com/en-us/azure/azure-local/manage/update-proxy-settings?view=azloc-2610 |
 | Use Environment Checker for Azure Local readiness | https://learn.microsoft.com/en-us/azure/azure-local/manage/use-environment-checker?view=azloc-2610 |
 | Configure AKS storage classes for external SAN on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/use-external-storage-for-containerized-workloads?view=azloc-2610 |
 | Use Get-SolutionHealthSummary to review Azure Local health | https://learn.microsoft.com/en-us/azure/azure-local/manage/use-get-solution-health-summary-powershell-command?view=azloc-2610 |
@@ -270,6 +271,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure virtual machine load balancing on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/vm-load-balancing?view=azloc-2610 |
 | Manage Azure Local VMs using PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/manage/vm-powershell?view=azloc-2610 |
 | Manage Azure Local VMs with Windows Admin Center | https://learn.microsoft.com/en-us/azure/azure-local/manage/vm?view=azloc-2610 |
+| Reuse Azure Arc agents when migrating VMs to Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-arc-reuse?view=azloc-2610 |
 | Configure guest management for Azure Local migrated VMs | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-enable-guest-management?view=azloc-2610 |
 | Preserve static IP addresses during Azure Local VM migration | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-maintain-ip-addresses?view=azloc-2610 |
 | Configure diagnostic settings to monitor Azure Local migrations | https://learn.microsoft.com/en-us/azure/azure-local/migrate/monitor-migration?view=azloc-2610 |
@@ -315,7 +317,6 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure Container Registry on disconnected Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-azure-container-registry?view=azloc-2610 |
 | Configure Grafana plugin for disconnected Azure Local monitoring | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-grafana-monitoring?view=azloc-2610 |
 | Use Azure Local GPU management REST APIs for discovery and partitioning | https://learn.microsoft.com/en-us/azure/azure-local/manage/gpu-rest-api-reference?view=azloc-2610 |
-| Reuse Azure Arc agents when migrating VMs to Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-arc-reuse?view=azloc-2610 |
 | Automate Azure Local VM migration with PowerShell, CLI, and Terraform | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-via-powershell?view=azloc-2610 |
 
 ### Deployment
@@ -323,7 +324,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Deploy rack-aware disaggregated Azure Local cluster with SAN | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-rack-aware-cluster-storage-area-network?view=azloc-2610 |
 | Deploy disaggregated Azure Local via Azure portal | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-via-portal-disaggregated?view=azloc-2610 |
-| Deploy Azure Local instance using Azure portal | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-via-portal?view=azloc-2610 |
 | Deploy disaggregated Azure Local using ARM templates | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-azure-resource-manager-template-disaggregated?view=azloc-2610 |
 | Deploy Azure Local 23H2 via ARM template | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-azure-resource-manager-template?view=azloc-2610 |
 | Install Azure Local OS for disaggregated deployments | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-install-os-disaggregated?view=azloc-2610 |
@@ -332,7 +332,6 @@ This skill requires **network access** to fetch documentation content:
 | Deploy virtualized Azure Local hyperconverged systems | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-virtual?view=azloc-2610 |
 | Download Azure Stack HCI OS for Azure Local deployment | https://learn.microsoft.com/en-us/azure/azure-local/deploy/download-23h2-software?view=azloc-2610 |
 | Enable SDN via PowerShell action plan on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/deploy/enable-sdn-integration?view=azloc-2610 |
-| Deploy rack aware cluster via Azure portal | https://learn.microsoft.com/en-us/azure/azure-local/deploy/rack-aware-cluster-deploy-portal?view=azloc-2610 |
 | Deploy rack aware cluster via ARM template | https://learn.microsoft.com/en-us/azure/azure-local/deploy/rack-aware-cluster-deployment-via-template?view=azloc-2610 |
 | Deploy SDN infrastructure using SDN Express on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/deploy/sdn-express-23h2?view=azloc-2610 |
 | Deploy SDN with Windows Admin Center on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/deploy/sdn-wizard-23h2?view=azloc-2610 |
@@ -359,6 +358,9 @@ This skill requires **network access** to fetch documentation content:
 | Create Azure Local Arc VMs from Storage account images | https://learn.microsoft.com/en-us/azure/azure-local/manage/virtual-machine-image-storage-account?view=azloc-2610 |
 | Prepare SUSE image via CLI for Azure Local VMs | https://learn.microsoft.com/en-us/azure/azure-local/manage/virtual-machine-image-suse?view=azloc-2610 |
 | Deploy Windows Server Azure Edition VMs on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/windows-server-azure-edition-23h2?view=azloc-2610 |
+| Discover and replicate Hyper-V VMs to Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-hyperv-replicate?view=azloc-2610 |
+| Discover and replicate VMware VMs to Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-vmware-replicate?view=azloc-2610 |
+| Plan SAN storage deployment for Azure Local multi-rack | https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-san-storage-deployment?view=azloc-2610 |
 | Plan Azure Local release and update paths | https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2610 |
 | Connect provisioned Azure Local SFF machine via portal | https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-connect-portal?view=azloc-2610 |
 | Run container workloads on Azure Local SFF machines | https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-containerized-workloads?view=azloc-2610 |
@@ -369,8 +371,7 @@ This skill requires **network access** to fetch documentation content:
 | Update software on Azure Local SFF deployments | https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-upgrade?view=azloc-2610 |
 | Test Azure Local small form factor in Hyper-V and Azure VMs | https://learn.microsoft.com/en-us/azure/azure-local/small-form-factor/small-form-factor-vm-installation?view=azloc-2610 |
 | Use Azure Update Manager to patch Azure Local systems | https://learn.microsoft.com/en-us/azure/azure-local/update/azure-update-manager-23h2?view=azloc-2610 |
-| Import and discover Azure Local updates in limited connectivity sites | https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2610 |
-| Understand Azure Local update workflow phases | https://learn.microsoft.com/en-us/azure/azure-local/update/update-phases-23h2?view=azloc-2610 |
+| Import Azure Local updates in limited connectivity environments | https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2610 |
 | Apply Azure Local 23H2 updates via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-2610 |
 | Deploy Azure Local solution upgrade using ARM templates | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-solution-upgrade-azure-resource-manager-template?view=azloc-2610 |
 | Install Azure Local solution upgrade after OS update | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-solution-upgrade?view=azloc-2610 |

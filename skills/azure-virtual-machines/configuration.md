@@ -8,7 +8,9 @@
 | Topic | URL |
 |-------|-----|
 | Configure attribute-based VM selection in Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/attribute-based-vm-selection |
-| Configure Spot VM behavior in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/spot-vm-configuration |
+| Configure Launch mode for Azure Compute Fleet orchestrators | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/launch-mode |
+| Configure Managed mode behavior for Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/managed-mode |
+| Configure Spot VM capacity types in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/spot-vm-configuration |
 | Inspect and manage Azure Linux AKS host packages | https://learn.microsoft.com/en-us/azure/azure-linux/aks-packages |
 | Configure networking on Azure Linux with systemd-networkd | https://learn.microsoft.com/en-us/azure/azure-linux/configure-networking |
 | Enable debuginfo repositories on Azure Linux | https://learn.microsoft.com/en-us/azure/azure-linux/install-debug-symbol-packages |
@@ -114,8 +116,6 @@
 | Configure Maintenance control for VM scale set OS upgrades in the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-portal |
 | Use PowerShell to manage Maintenance control for VM scale set OS upgrades | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-powershell |
 | Define Maintenance control for VM scale sets using ARM templates | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-template |
-| Configure and use Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points |
-| Create Azure VM restore points using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-powershell |
 | Configure cross-region copy of Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-copy |
 | Configure VM Snapshot extension for restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-vm-snapshot-extension |
 | Configure VM watch Collectors Suite for Azure VM health checks | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-watch-collector-suite |

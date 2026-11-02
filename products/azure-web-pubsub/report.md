@@ -53,7 +53,7 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 - **Updated Pages**: 0
 - **Unchanged**: 122
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
 ## Classification Statistics
 

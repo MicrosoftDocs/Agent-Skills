@@ -47,7 +47,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 - **Updated Pages**: 0
 - **Unchanged**: 66
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
 ## Classification Statistics
 

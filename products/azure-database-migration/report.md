@@ -46,7 +46,7 @@ confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Databas
 - **Updated Pages**: 0
 - **Unchanged**: 31
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-migration/azure-database-migration.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-database-migration/azure-database-migration.csv`
 
 ## Classification Statistics
 

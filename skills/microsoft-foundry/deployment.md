@@ -8,16 +8,17 @@
 | Topic | URL |
 |-------|-----|
 | Check Foundry Agent Service features in Azure Government | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/azure-government |
-| Develop and deploy agents with Azure Developer CLI | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/cli-agent-development |
-| Understand azd infrastructure for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/cli-infrastructure |
+| Use Azure Developer CLI for Foundry agent lifecycle | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/cli-agent-development |
+| Understand azd-hosted agent infrastructure with Bicep or Terraform | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/cli-infrastructure |
 | Deploy containerized Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent |
-| Deploy Foundry hosted agents with private Azure Container Registry | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-private-azure-container-registry |
+| Deploy hosted agents from source code in Foundry | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-code |
+| Deploy Foundry hosted agents with a private Azure Container Registry | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-private-azure-container-registry |
 | Promote Foundry hosted agents to production | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-production |
 | Deploy Foundry hosted agents using Terraform | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-terraform |
 | Deploy crash-resilient long-running Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-resilient-agent |
 | Deploy steerable long-running Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-steerable-agent |
 | Migrate Foundry hosted agents to latest backend | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview |
-| Set up CI/CD for Foundry hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/set-up-ci-cd-cli |
+| Set up CI/CD for Foundry hosted agents with azd | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/set-up-ci-cd-cli |
 | Deploy a hosted agent with browser automation | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/browser-automation-hosted-agent-quickstart |
 | Set up GitHub Actions CI/CD for hosted agents | https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/set-up-cicd-hosted-agent |
 | Deploy fine-tuned models on Foundry runtimes | https://learn.microsoft.com/en-us/azure/foundry/fine-tuning/deploy-fine-tuned-models |

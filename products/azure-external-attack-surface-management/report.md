@@ -32,7 +32,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Updated Pages**: 0
 - **Unchanged**: 22
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
 ## Classification Statistics
 

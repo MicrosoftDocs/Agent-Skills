@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   best-practices: 'Performance, tuning, and migration best practices for Azure PostgreSQL:
     query/store tuning, pgvector/Apache AGE, pooling, maintenance, bulk load, bloat
@@ -20,8 +20,8 @@ category_descriptions:
     Ultra Disk), networking/Private Link, hosting choices, replicas promotion, and
     PostgreSQL versioning, upgrades, and support.
   deployment: Guides for deploying and migrating PostgreSQL to Azure flexible server
-    (from Aurora, RDS, on-prem/VM, Oracle), configuring VNet/private endpoints, and
-    point-in-time restore.
+    (from Aurora, RDS, on-prem/VM, Oracle), configuring private endpoints, and point-in-time
+    restore.
   configuration: 'Configuring Azure Database for PostgreSQL Flexible Server: maintenance
     windows, HA, networking, logging/metrics, extensions, tuning/parameters, PgBouncer,
     VS Code tools, CLI, and read replica virtual endpoints.'
@@ -31,13 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for PostgreSQL development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using Flexible Server, pgvector/AI search, Private Link/TLS,
-  PITR/restore, or replicas/sharding, and other Azure Database for PostgreSQL related
-  development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL
-  Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
-  (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql).
-use_when: Use when using Flexible Server, pgvector/AI search, Private Link/TLS, PITR/restore,
-  or replicas/sharding, and other Azure Database for PostgreSQL related development
+  and deployment. Use when using Flexible Server, pgvector/AI search, Private Link/TLS
+  security, replicas/HA, or PITR/restore, and other Azure Database for PostgreSQL
+  related development tasks. Not for Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure
+  Virtual Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use
+  azure-database-mysql).
+use_when: Use when using Flexible Server, pgvector/AI search, Private Link/TLS security,
+  replicas/HA, or PITR/restore, and other Azure Database for PostgreSQL related development
   tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
@@ -54,11 +55,11 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 129
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 357
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 360
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
 ## Classification Statistics
 
@@ -77,20 +78,12 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Changes
 
-### New Pages
-
-- [October 21 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-october-21)
-
 ### Updated Pages
 
-- [Configure high availability](https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-configure-high-availability)
-  - Updated: 2026-09-15T08:00:00.000Z → 2026-10-22T11:05:00.000Z
-- [Maintenance release notes index](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/release-notes-maintenance-index)
-  - Updated: 2026-09-10T22:09:00.000Z → 2026-10-20T22:09:00.000Z
-- [October 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-october)
-  - Updated: 2026-10-01T11:05:00.000Z → 2026-10-21T22:08:00.000Z
-- [September 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-september)
-  - Updated: 2026-09-15T17:06:00.000Z → 2026-10-20T22:09:00.000Z
+- [API release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes-api)
+  - Updated: 2026-06-05T17:12:00.000Z → 2026-10-30T17:06:00.000Z
+- [How to migrate vnet private endpoint capable server](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server)
+  - Updated: 2026-09-16T22:10:00.000Z → 2026-10-30T11:03:00.000Z
 
 ## Classified Pages
 
@@ -216,7 +209,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Error Handling](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-error-handling) | configuration | 0.70 | Error handling parameters (e.g., log_min_error_statement) are specific configuration settings with defined values. |
 | [File Locations](https://learn.microsoft.com/en-us/azure/postgresql/parameters/parameters-file-locations) | configuration | 0.70 | File location parameters define paths and related settings; these are configuration options documented with specific values. |
 | [Full vacuum using pg_repack extension](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-perform-fullvacuum-pg-repack) | best-practices | 0.70 | How-to optimization guide for pg_repack on Azure Database for PostgreSQL flexible server with product-specific operational guidance and tuning steps, beyond generic PostgreSQL theory. |
-| [How to migrate vnet private endpoint capable server](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server) | deployment | 0.70 | Migration from VNet-injected to private endpoint–capable networking for Azure Database for PostgreSQL Flexible Server is a specific, product- and platform-bound procedure. Such docs typically include exact prerequisites, supported configurations, sequencing constraints, and required Azure resource changes (subnets, delegated networks, Private Link objects) that go beyond generic knowledge. This is effectively a deployment/migration pattern with product-specific requirements and constraints. |
+| [How to migrate vnet private endpoint capable server](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server) | deployment | 0.70 | Page describes a specific migration path from virtual network injection to a private endpoint-capable configuration for Azure Database for PostgreSQL Flexible Server, including product-specific steps and constraints for changing the network deployment model. This is deployment-focused expert guidance rather than generic networking concepts. |
 | [How to set up the network](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/how-to-network-setup-migration-service) | configuration | 0.70 | The page details product-specific networking scenarios and required configurations (VNet integration, private endpoints, firewall rules, connectivity options) for connecting source environments to Azure Database for PostgreSQL flexible server via the migration service. It focuses on concrete network setup patterns and settings rather than generic concepts, fitting the configuration sub-skill. |
 | [How to use the troubleshooting guides](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-troubleshooting-guides) | troubleshooting | 0.70 | Explains how to enable telemetry sources, open and work through Azure portal troubleshooting guides, and resolve empty charts; this is product-specific troubleshooting workflow and telemetry setup knowledge. |
 | [Invoke Azure Language capabilities](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-azure-cognitive) | integrations | 0.70 | Shows how to call Azure Language via Azure AI extension; includes function signatures and configuration unique to this integration. |
@@ -365,7 +358,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [From Google Cloud SQL for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-cloud-sql-online) | 0.35 | Online migration from Google Cloud SQL tutorial; likely step-by-step instructions without dense expert reference material. |
 | [Reject private endpoint connections](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-networking-servers-deployed-public-access-reject-private-endpoint) | 0.35 | Rejecting private endpoints is a simple operation; likely lacks deeper product-specific security configuration details. |
 | [.NET](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-csharp) | 0.30 | C#/.NET quickstart for basic CRUD; appears as a standard tutorial without detailed product-specific configuration or limits. |
-| [API release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes-api) | 0.30 | API release notes list recommended API versions and deprecation information, but are not organized as limits, configuration references, or troubleshooting guides; they function as update/announcement content rather than reusable expert patterns. |
+| [API release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes-api) | 0.30 | Release notes listing recommended and deprecated REST API versions; no detailed limits, configuration parameters, error codes, or decision matrices that match any sub-skill type. Primarily version/availability info rather than reusable expert patterns or constraints. |
 | [April 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-april) | 0.30 | April 2026 maintenance release notes; summary suggests general update information rather than detailed limits, configuration options, or error diagnostics. |
 | [August 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-august) | 0.30 | Maintenance release notes for a specific month; summary indicates new features and fixes but no mention of limits, configuration tables, or error-code-based troubleshooting. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-azure-cli) | 0.30 | Azure CLI quickstart for connect/execute; focuses on basic usage rather than detailed configuration parameters or product-specific constraints. |

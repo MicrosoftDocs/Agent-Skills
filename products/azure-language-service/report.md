@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-09-13'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring Azure AI Language features: CLU fine-tuning, containers,
     custom/health NER, orchestration None intent, CQA scoring/telemetry, FHIR output,
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 180
+- **Updated Pages**: 1
+- **Unchanged**: 179
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
 ## Classification Statistics
 
@@ -74,6 +74,11 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 96 | 53.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure tools and agents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents)
+  - Updated: 2026-02-07T06:03:00.000Z → 2026-10-29T22:16:00.000Z
 
 ## Classified Pages
 
@@ -237,7 +242,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/glossary) | 0.25 | Glossary of definitions and terms; conceptual reference without detailed operational parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/overview) | 0.25 | Conceptual overview of custom named entity recognition; describes what it is and general workflow, without specific numeric limits or configuration tables. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/overview) | 0.25 | Overview of language detection capability; likely conceptual with feature description, not detailed limits, configs, or decision matrices. |
-| [Azure tools and agents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents) | 0.20 | Appears to be an overview of Azure Language integrations with Foundry Tools (MCP endpoints, agents, routing, Q&A). Description and summary indicate conceptual integration/intro content, not detailed configuration tables, limits, error codes, or decision matrices. |
+| [Azure tools and agents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents) | 0.20 | The page is an introductory/conceptual overview of Azure Language integrations with Foundry Tools (MCP endpoints, intent routing agents, exact question answering agents). From the description it does not indicate specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices. It primarily explains what tools/agents exist and how they conceptually integrate, which does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Change default answer](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/change-default-answer) | 0.20 | Explains how default answers work in custom question answering and how to change them, but appears conceptual/behavioral without numeric limits, detailed configuration matrices, or error-code-based troubleshooting. Does not fit any expert-knowledge sub-skill type. |
 | [Connect to Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview) | 0.20 | Duplicate of the Custom Question Answering overview page; same conceptual content without specific limits, configs, or troubleshooting details. |
 | [Get started](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/quickstart) | 0.20 | Quickstart tutorial for creating a CLU project; primarily step-by-step guidance without detailed configuration tables or limits. |

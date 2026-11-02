@@ -49,7 +49,7 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 - **Updated Pages**: 0
 - **Unchanged**: 65
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
 ## Classification Statistics
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-11-01'
 category_descriptions:
   security: 'Securing Azure Data Explorer: authn/z (RBAC, principals, Entra apps,
     Conditional Access), encryption, managed identities, network isolation, policies,
@@ -18,9 +18,9 @@ category_descriptions:
     patterns for querying, ingestion, and automation.
   architecture-patterns: Designing ADX architectures for DR/BCP, cross-cluster access
     via follower DBs, and multitenant patterns (isolation, scaling, and resource sharing).
-  decision-making: Guidance on ADX capacity planning, SKU and compute choices, scaling,
-    cost optimization, reservations, business continuity, confidential compute, streaming
-    ingestion, and Elasticsearch migration.
+  decision-making: Guidance on ADX cluster sizing, SKUs, scaling, cost optimization,
+    reservations, confidential/isolated compute, streaming ingestion choices, and
+    migrating Elasticsearch workloads.
   troubleshooting: Diagnosing and fixing ADX cluster health, connection, creation,
     ingestion, dashboard, DB/table, private endpoint, and resource health issues,
     including error codes and common failure patterns.
@@ -30,14 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Explorer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when securing ADX (RBAC/MI), automating cluster/schema deploys, tuning ingestion/queries,
-  or integrating via ODBC/JDBC/Power BI, and other Azure Data Explorer related development
+  Use when securing ADX with RBAC/managed identities, automating cluster/schema deployment,
+  tuning ingestion/queries, integrating via ODBC/JDBC or Event Hubs, or designing
+  follower DB/multitenant architectures, and other Azure Data Explorer related development
   tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight
   (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
   (use azure-stream-analytics).
-use_when: Use when securing ADX (RBAC/MI), automating cluster/schema deploys, tuning
-  ingestion/queries, or integrating via ODBC/JDBC/Power BI, and other Azure Data Explorer
-  related development tasks.
+use_when: Use when securing ADX with RBAC/managed identities, automating cluster/schema
+  deployment, tuning ingestion/queries, integrating via ODBC/JDBC or Event Hubs, or
+  designing follower DB/multitenant architectures, and other Azure Data Explorer related
+  development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
   Azure Stream Analytics (use azure-stream-analytics).
@@ -54,10 +56,10 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 199
+- **Updated Pages**: 1
+- **Unchanged**: 198
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
 ## Classification Statistics
 
@@ -75,6 +77,11 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 92 | 46.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Reserved capacity](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-reserved-capacity)
+  - Updated: 2026-07-29T11:02:00.000Z → 2026-10-26T17:03:00.000Z
 
 ## Classified Pages
 
@@ -145,7 +152,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Purge data - Azure portal](https://learn.microsoft.com/en-us/azure/data-explorer/data-purge-portal) | security | 0.70 | Data purge/.purge command usage is tightly tied to GDPR-related deletion semantics and ADX-specific behavior; likely includes command syntax, constraints, and scenarios that are product-specific security/compliance knowledge. |
 | [Query cold data with hot windows](https://learn.microsoft.com/en-us/azure/data-explorer/hot-windows) | best-practices | 0.70 | Describes configuring cache policy and hot windows with product-specific guidance on when and how to use them for performance, representing concrete best practices. |
 | [Query data using Power Apps](https://learn.microsoft.com/en-us/azure/data-explorer/power-apps-connector) | integrations | 0.70 | Uses the Power Apps connector with Azure Data Explorer; includes connector-specific configuration and parameter usage beyond generic Power Apps knowledge. |
-| [Reserved capacity](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-reserved-capacity) | decision-making | 0.70 | Pricing and reservation guidance for Azure Data Explorer reserved capacity typically includes concrete terms (1-year vs 3-year), scope (all regions/deployments), and how reservations apply, helping users decide between pay-as-you-go and reserved capacity. This is product-specific cost/plan selection guidance, fitting decision-making. |
+| [Reserved capacity](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-reserved-capacity) | decision-making | 0.70 | Page provides detailed, product-specific guidance on purchasing Azure Data Explorer reserved instances (terms, scope, how it applies across regions and deployments) to optimize cost. This is expert decision guidance about when and how to use reserved capacity vs pay-as-you-go, fitting decision-making. It goes beyond generic pricing concepts and includes concrete, service-specific purchase and application behavior details. |
 | [Run KQL queries and stored functions](https://learn.microsoft.com/en-us/azure/data-explorer/sql-kql-queries-and-stored-functions) | integrations | 0.70 | Shows how to execute KQL and stored functions via parameterized RPC calls over TDS, including syntax and parameter mapping unique to Azure Data Explorer. |
 | [SQL Server emulation overview](https://learn.microsoft.com/en-us/azure/data-explorer/sql-server-emulation-overview) | integrations | 0.70 | Describes TDS-compliant endpoint, supported protocol versions, and how to connect via ODBC/JDBC and apps; these are detailed integration behaviors. |
 | [Serilog](https://learn.microsoft.com/en-us/azure/data-explorer/serilog-sink) | integrations | 0.70 | Describes Azure Data Explorer Serilog sink with concrete sink configuration options and parameters unique to this integration, not just conceptual logging info. |

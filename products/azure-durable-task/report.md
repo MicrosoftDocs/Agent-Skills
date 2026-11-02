@@ -48,7 +48,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 - **Updated Pages**: 0
 - **Unchanged**: 22
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-durable-task/azure-durable-task.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-durable-task/azure-durable-task.csv`
 
 ## Classification Statistics
 

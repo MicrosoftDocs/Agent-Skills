@@ -49,10 +49,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 170
+- **Updated Pages**: 0
+- **Unchanged**: 171
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
 ## Classification Statistics
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 45 | 26.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config)
-  - Updated: 2026-06-22T08:00:00.000Z → 2026-10-23T22:10:00.000Z
 
 ## Classified Pages
 

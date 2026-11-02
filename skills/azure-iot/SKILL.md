@@ -3,7 +3,7 @@ name: azure-iot
 description: Expert knowledge for Azure IoT development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when managing Device Registry namespaces, device certs/CAs, fleet config, IoT SDK connectivity, or software updates, and other Azure IoT related development tasks. Not for Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Skill
@@ -26,9 +26,9 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L33-L38 | Designing Azure Device Registry namespaces and schema registries, including structure, naming, isolation, versioning, and governance best practices for large-scale IoT solutions |
 | Security | L39-L52 | Managing IoT device certificates and CAs in Azure: issuance, renewal, revocation, CA hierarchy, namespaces/security boundaries, and configuring Microsoft or external CAs via Device Registry. |
-| Configuration | L53-L62 | Configuring Azure Device Registry for fleets: namespaces/dependencies, device groups, enabling/disabling devices, importing updates, and running fleet-scale software update jobs. |
-| Integrations & Coding Patterns | L63-L67 | Using unified Azure IoT SDKs to connect devices to Azure Device Registry and IoT Hub, including setup, authentication, and coding patterns for device connectivity. |
-| Deployment | L68-L72 | Deploying and managing software updates to IoT devices via Device Registry, including onboarding updates and targeting specific device groups and namespaces. |
+| Configuration | L53-L61 | Configuring Azure Device Registry for fleets: namespaces/dependencies, device groups, enabling/disabling devices, importing updates, and running fleet-scale software update jobs. |
+| Integrations & Coding Patterns | L62-L66 | Using unified Azure IoT SDKs to connect devices to Azure Device Registry and IoT Hub, including setup, authentication, and coding patterns for device connectivity. |
+| Deployment | L67-L71 | Deploying and managing software updates to IoT devices via Device Registry, including onboarding updates and targeting specific device groups and namespaces. |
 
 ### Best Practices
 | Topic | URL |
@@ -54,7 +54,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use Azure Device Registry groups for fleet targeting | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-groups |
-| Run fleet-scale jobs in Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-jobs |
 | Manage software updates with Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-software-updates |
 | Set up Azure Device Registry namespaces and dependencies | https://learn.microsoft.com/en-us/azure/iot/device-registry/get-started-azure-device-registry |
 | Disable or enable IoT devices in Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-disable-enable-device |

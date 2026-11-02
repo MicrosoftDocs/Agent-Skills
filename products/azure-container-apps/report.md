@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   security: 'Auth, identity, and network security for Container Apps: Entra and social
     logins, mTLS, certs/CORS/domains, secrets and managed identity, RBAC/policy, private
@@ -55,10 +55,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 232
+- **Updated Pages**: 1
+- **Unchanged**: 234
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
 ## Classification Statistics
 
@@ -79,12 +79,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Updated Pages
 
-- [Use storage mounts](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts)
-  - Updated: 2026-08-21T08:00:00.000Z → 2026-10-20T22:12:00.000Z
-- [Create an Azure Files storage mount](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files)
-  - Updated: 2025-06-09T08:00:00.000Z → 2026-10-20T22:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview)
-  - Updated: 2026-10-09T08:00:00.000Z → 2026-10-22T22:11:00.000Z
+- [Azure Developer CLI (azd) templates](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-cli-templates)
+  - Updated: 2026-09-04T08:00:00.000Z → 2026-10-27T22:17:00.000Z
 
 ## Classified Pages
 
@@ -319,7 +315,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/scale-app) | 0.20 | Appears to be a general overview of scaling behavior in Azure Container Apps and KEDA, without mention of specific numeric limits, configuration parameter tables, or detailed error/diagnostic information. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio) | 0.20 | Tutorial-style deployment walkthrough from Visual Studio without matrices, tier constraints, or detailed configuration tables; focuses on step-by-step actions rather than expert-only limits, settings, or decision criteria. |
 | [Workflow](https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview) | 0.20 | Overview of workflow options (Durable Functions, Logic Apps) for Azure Container Apps without concrete limits, configs, or error mappings; primarily conceptual guidance. |
-| [Azure Developer CLI (azd) templates](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-cli-templates) | 0.10 | Catalog/overview of Azure Developer CLI templates for Container Apps; primarily lists templates and authors, with no detailed configuration parameters, limits, error codes, or decision matrices. |
+| [Azure Developer CLI (azd) templates](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-cli-templates) | 0.10 | Template catalog/listing for Azure Developer CLI and Container Apps; no numeric limits, configuration parameter tables, error codes, or decision matrices. Primarily navigation/overview of available templates rather than detailed expert configuration, troubleshooting, or best-practice content. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro) | 0.10 | Intro to containers for Java is conceptual and generic; not specific to Container Apps configuration or limits. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/start-containers) | 0.10 | Introductory explanation of containers and motivations; no product-specific limits, configs, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview) | 0.10 | High-level overview of running Java on Azure Container Apps with benefits and general capabilities; no specific limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |

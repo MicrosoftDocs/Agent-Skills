@@ -52,10 +52,10 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 114
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
 
 ## Classification Statistics
 
@@ -73,11 +73,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 43 | 37.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-hubs/transport-layer-security-configure-minimum-version)
-  - Updated: 2022-10-12T17:06:00.000Z → 2026-10-09T08:00:00.000Z
 
 ## Classified Pages
 

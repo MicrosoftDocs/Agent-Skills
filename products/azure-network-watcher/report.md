@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-04'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: Configuring and managing Network Watcher agents and VNet/NSG flow
     logs, including schemas, filtering, Traffic Analytics, AKS monitoring, and deployment
@@ -13,25 +13,25 @@ category_descriptions:
   integrations: 'Using Network Watcher programmatically: triggering packet captures
     from Functions alerts, querying Traffic Analytics with KQL, and provisioning VNet
     flow logs via Terraform.'
-  limits-quotas: How to configure and run Network Watcher packet capture, storage
-    and filtering options, and the key limits/quotas (size, duration, concurrency)
-    that apply to captures
+  limits-quotas: Packet capture-specific limits and quotas in Azure Network Watcher,
+    including max sessions, storage constraints, size/time caps, and configuration
+    considerations.
   security: 'Securing Network Watcher: RBAC and least-privilege setup, Zero Trust
     segmentation with Traffic Analytics, investigating security issues, and protecting
     VNet flow logs with managed identities.'
 skill_description: Expert knowledge for Azure Network Watcher development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
-  integrations & coding patterns. Use when configuring VNet/NSG flow logs, Traffic
-  Analytics, packet capture, Connection Monitor migration, or VPN monitoring, and
-  other Azure Network Watcher related development tasks. Not for Azure Monitor (use
-  azure-monitor), Azure Virtual Network (use azure-virtual-network), Azure Networking
-  (use azure-networking), Azure Firewall (use azure-firewall).
-use_when: Use when configuring VNet/NSG flow logs, Traffic Analytics, packet capture,
-  Connection Monitor migration, or VPN monitoring, and other Azure Network Watcher
-  related development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Network
-  (use azure-virtual-network), Azure Networking (use azure-networking), Azure Firewall
-  (use azure-firewall).
+  integrations & coding patterns. Use when configuring flow logs/Traffic Analytics,
+  packet captures, Connection Monitor migrations, VPN checks, or KQL/Terraform automations,
+  and other Azure Network Watcher related development tasks. Not for Azure Monitor
+  (use azure-monitor), Azure Networking (use azure-networking), Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
+use_when: Use when configuring flow logs/Traffic Analytics, packet captures, Connection
+  Monitor migrations, VPN checks, or KQL/Terraform automations, and other Azure Network
+  Watcher related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking (use
+  azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual
+  Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Network Watcher Crawl Report
 
@@ -45,10 +45,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 66
+- **Updated Pages**: 1
+- **Unchanged**: 65
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
 ## Classification Statistics
 
@@ -64,12 +64,16 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 
 ## Changes
 
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-overview)
+  - Updated: 2026-02-24T23:11:00.000Z → 2026-10-27T17:14:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [RBAC permissions](https://learn.microsoft.com/en-us/azure/network-watcher/rbac-permissions) | security | 0.95 | The page is explicitly about Azure RBAC permissions for Network Watcher, listing which built-in roles (Owner, Contributor, Network Contributor) and custom role actions are required for each capability. It contains product-specific role/action mappings, which is expert security configuration knowledge. |
-| [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-overview) | limits-quotas | 0.80 | Overview explicitly mentions available configurations, limits, and considerations; likely includes numeric constraints (session counts, sizes, durations) that qualify as limits & quotas. |
 | [Schema](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-schema) | configuration | 0.80 | Describes fields in test and path data schemas; likely includes tables of column names, types, and meanings, which are product-specific configuration/data contract details. |
 | [Secure Network Watcher deployment](https://learn.microsoft.com/en-us/azure/network-watcher/secure-network-watcher) | security | 0.78 | The page provides product-specific security recommendations for Azure Network Watcher, including how to secure its deployment, data outputs, and identities that access it. This aligns with the security sub-skill type, as it focuses on securing a particular Azure service with concrete, service-specific guidance rather than generic security concepts. |
 | [Troubleshoot outbound connections](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-manage) | troubleshooting | 0.78 | How-to article for the connection troubleshoot feature; likely includes specific test statuses, result fields, and stepwise diagnosis for failed outbound connections, which are product-specific troubleshooting details. |
@@ -88,6 +92,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Virtual Net
 | [Manage NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-manage) | configuration | 0.70 | Page is a how-to for enabling, changing, disabling, and deleting NSG flow logs with product-specific options (storage accounts, retention, traffic analytics, versions). It likely includes concrete setting names and values for NSG flow log configuration rather than just conceptual guidance, which qualifies as configuration-focused expert knowledge. |
 | [Manage VNet flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-manage) | configuration | 0.70 | Management article for creating, enabling, disabling, and changing VNet flow logs via portal, PowerShell, and CLI; these typically include specific parameter names, flags, and settings unique to this feature. |
 | [Network Watcher Agent](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-agent-manage) | configuration | 0.70 | The page describes how to install, update, and uninstall the Network Watcher Agent VM extension on Windows and Linux VMs. Such content typically includes extension names, required settings, parameters, and platform-specific behaviors (for example, how the extension is deployed by other Azure services, and constraints around installation). These are product-specific configuration details that qualify as expert knowledge. |
+| [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-overview) | limits-quotas | 0.70 | The overview explicitly mentions 'available configurations, limits, and considerations' for packet capture. Network Watcher packet capture documentation typically includes concrete constraints such as maximum capture duration, file size limits, supported VM/scale set types, and other numeric capture limits that are product-specific and not generally known to an LLM from training. These are exact operational limits and quotas for the packet capture feature, fitting the limits-quotas sub-skill. |
 | [Schema and data aggregation](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) | configuration | 0.70 | Schema and data aggregation documentation; such pages typically define field names, types, and aggregation rules for Traffic Analytics data, which are detailed configuration/schema references. |
 | [VNet flow logs managed identity](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-managed-identity) | security | 0.70 | Describes using user-assigned managed identities for VNet flow logs to access storage; likely includes specific role assignments, scopes, and identity configuration steps, which are product-specific security details. |
 | [Monitor AKS traffic flows](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-aks-scenarios) | configuration | 0.68 | Page provides product-specific guidance on how AKS networking models map to virtual network flow logs, including which traffic types (pod-to-pod, pod-to-service, node-level, external) are or aren't captured and under what conditions. This is detailed, scenario-specific behavior for Network Watcher and AKS that goes beyond generic concepts and is effectively configuration/behavioral knowledge unique to this integration. |

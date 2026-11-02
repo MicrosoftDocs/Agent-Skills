@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-06-07'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring SignalR apps: connection strings, upstream endpoints,
     custom domains, monitoring/metrics, negotiation endpoints, Functions bindings,
@@ -22,18 +22,18 @@ category_descriptions:
     Event Grid, API Management, and Application Gateway.'
   limits-quotas: Message/connection billing rules, capacity planning, throughput limits,
     and how to scale Azure SignalR instances within quota and performance constraints.
-  troubleshooting: 'Diagnosing and fixing SignalR issues: connectivity and message
-    delivery problems, live trace and Azure Monitor logs, common error patterns, and
-    best practices for reliable operation.'
+  troubleshooting: Diagnosing and fixing SignalR issues using Azure Monitor logs and
+    live trace, including connectivity, message delivery, and common Azure SignalR
+    Service errors.
 skill_description: Expert knowledge for Azure SignalR Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring SignalR modes, upstreams, private endpoints, autoscale, multi-region
-  topologies, or Event Grid integration, and other Azure SignalR Service related development
-  tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus),
-  Azure Event Hubs (use azure-event-hubs).
-use_when: Use when configuring SignalR modes, upstreams, private endpoints, autoscale,
-  multi-region topologies, or Event Grid integration, and other Azure SignalR Service
+  Use when configuring SignalR modes, upstream endpoints, Entra auth, multi-region
+  topologies, or Event Grid/API Management integrations, and other Azure SignalR Service
+  related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+use_when: Use when configuring SignalR modes, upstream endpoints, Entra auth, multi-region
+  topologies, or Event Grid/API Management integrations, and other Azure SignalR Service
   related development tasks.
 confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Service
   Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
@@ -50,10 +50,10 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 1
+- **Unchanged**: 72
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
 
 ## Classification Statistics
 
@@ -72,6 +72,11 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 
 ## Changes
 
+### Updated Pages
+
+- [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq)
+  - Updated: 2024-09-11T18:38:00.000Z → 2026-10-26T11:42:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -89,6 +94,7 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-disable-local-auth) | security | 0.80 | Explains how to disable local key authentication and rely solely on Entra ID, including implications and configuration steps; this is a product-specific security configuration. |
 | [Overview of Microsoft Entra ID for Azure SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-authorize-azure-active-directory) | security | 0.80 | Describes using Entra ID and RBAC roles to authorize SignalR requests; includes role names and scope usage specific to this service. |
 | [Use managed identity](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-use-managed-identity) | security | 0.80 | Explains managed identity support (only one identity, system vs user-assigned) and how to configure it in SignalR serverless scenarios; includes product-specific identity configuration behavior. |
+| [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq) | troubleshooting | 0.78 | FAQ includes product-specific error behaviors and resolutions (e.g., connection limits, sticky sessions, server disconnect scenarios) organized as questions with targeted answers, which function as symptom→cause→solution guidance unique to Azure SignalR Service. |
 | [Access Key Vault in private network through Shared Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-shared-private-endpoints-key-vault) | security | 0.75 | Covers shared private endpoints from SignalR to Key Vault, including how shared private link resources are created and scoped; these are product-specific secure connectivity settings. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-signalr/policy-reference) | security | 0.75 | Lists specific built-in policy definitions, names, and versions for SignalR; these are product-specific compliance/security controls. |
 | [Configure upstream endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-upstream) | configuration | 0.75 | Describes upstream endpoint settings and message protocols, including serverless-mode-only constraint; clearly product-specific configuration behavior. |
@@ -131,7 +137,6 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Build a serverless real-time app with authentication](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions) | security | 0.65 | Focuses on authenticating SignalR clients via Functions bindings; contains product-specific auth configuration patterns beyond generic security concepts. |
 | [Client negotiation](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-client-negotiation) | configuration | 0.65 | Describes negotiation protocols and ways to customize negotiation endpoints; these are product-specific configuration behaviors. |
 | [Custom domain](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-custom-domain) | configuration | 0.65 | Custom domain setup for SignalR involves specific resource settings (hostnames, certificates, bindings) that are product-specific configuration details. |
-| [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq) | troubleshooting | 0.65 | An FAQ for Azure SignalR Service that explicitly includes troubleshooting and typical usage scenarios is likely to contain specific error messages, behaviors, and resolutions unique to the service. These symptom→cause→solution mappings and service-specific gotchas qualify as expert troubleshooting knowledge rather than generic concepts. |
 | [Monitor SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/monitor-signalr) | configuration | 0.65 | Monitoring article for a specific service usually lists SignalR-specific metrics, log categories, and configuration options in Azure Monitor, which are product-specific settings. |
 | [Performance considerations](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-performance) | limits-quotas | 0.65 | Performance guide and benchmarks typically include concrete throughput, connection, and latency numbers used for capacity planning. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-cli) | deployment | 0.60 | Collection of CLI scripts for creating and wiring SignalR with other Azure services; represents concrete deployment patterns and commands. |

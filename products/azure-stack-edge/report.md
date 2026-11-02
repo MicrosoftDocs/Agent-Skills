@@ -54,7 +54,7 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 - **Updated Pages**: 0
 - **Unchanged**: 234
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
 ## Classification Statistics
 

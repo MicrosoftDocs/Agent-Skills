@@ -51,7 +51,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 - **Updated Pages**: 0
 - **Unchanged**: 25
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
 ## Classification Statistics
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-01'
 category_descriptions:
   limits-quotas: 'Limits and design guidance for Virtual WAN: P2S client pool sizing,
     hub routing/throughput caps, and using Private Link endpoints within scale and
@@ -16,25 +16,26 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Virtual WAN issues, including P2S VPN client
     prerequisite checks, connectivity problems, and using built-in tools and diagnostics
     for troubleshooting.
-  integrations: PowerShell and automation patterns for integrating Virtual WAN with
-    ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure
-    Private Link
+  integrations: Scripts and patterns for integrating Virtual WAN with ExpressRoute,
+    Linux strongSwan P2S, RADIUS VSAs for user groups, and automating SD-WAN/VPN CPE
+    connectivity.
   deployment: PowerShell-based deployment of cross-tenant VNet connections to Virtual
     WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs.
   security: Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra
     ID (MFA, OpenVPN, custom app IDs), Azure VPN Client setup/migration, and hub roles/permissions.
 skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when configuring VWAN hubs,
-  P2S/Always On VPN, BGP/IPsec routing, ExpressRoute/SD-WAN, or Private Link, and
-  other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
+  integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs,
+  P2S/Always On VPN, BGP/IPsec routing, ExpressRoute, or SD-WAN/NVA integrations,
+  and other Azure Virtual WAN related development tasks. Not for Azure Virtual Network
   (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute
-  (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
-use_when: Use when configuring VWAN hubs, P2S/Always On VPN, BGP/IPsec routing, ExpressRoute/SD-WAN,
-  or Private Link, and other Azure Virtual WAN related development tasks.
+  (use azure-expressroute), Azure Application Network (use azure-application-network).
+use_when: Use when designing Virtual WAN hubs, P2S/Always On VPN, BGP/IPsec routing,
+  ExpressRoute, or SD-WAN/NVA integrations, and other Azure Virtual WAN related development
+  tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
-  Azure Traffic Manager (use azure-traffic-manager).
+  Azure Application Network (use azure-application-network).
 ---
 # Azure Virtual WAN Crawl Report
 
@@ -43,15 +44,15 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Total Pages**: 138
 - **Fetched**: 138
 - **Fetch Failed**: 0
-- **Classified**: 92
-- **Unclassified**: 46
+- **Classified**: 93
+- **Unclassified**: 45
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 138
+- **Updated Pages**: 1
+- **Unchanged**: 137
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
 ## Classification Statistics
 
@@ -61,13 +62,18 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | configuration | 49 | 35.5% |
 | decision-making | 4 | 2.9% |
 | deployment | 1 | 0.7% |
-| integrations | 3 | 2.2% |
+| integrations | 4 | 2.9% |
 | limits-quotas | 3 | 2.2% |
 | security | 6 | 4.3% |
 | troubleshooting | 2 | 1.4% |
-| *(Unclassified)* | 46 | 33.3% |
+| *(Unclassified)* | 45 | 32.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [IKEv2 - strongSwan](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-ike-linux)
+  - Updated: 2025-02-13T18:07:00.000Z → 2026-09-20T11:40:00.000Z
 
 ## Classified Pages
 
@@ -92,6 +98,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Selective Azure Firewall bypass](https://learn.microsoft.com/en-us/azure/virtual-wan/firewall-custom-bypass) | architecture-patterns | 0.75 | Covers specific design scenarios where selected traffic bypasses Azure Firewall inspection in a secure Virtual WAN hub, including constraints like incompatibility with routing intent and reliance on static routes. This is detailed, product-specific routing and inspection pattern guidance, matching architecture-patterns. |
 | [Spoke NVA inspection](https://learn.microsoft.com/en-us/azure/virtual-wan/spoke-inspection-north-south) | architecture-patterns | 0.75 | Describes advanced Virtual WAN designs using spoke NVAs to inspect private and internet-bound traffic, detailing routing flows and inspection paths. This is specific architecture and routing pattern guidance for Azure Virtual WAN, aligning with architecture-patterns. |
 | [Configure P2S - manually registered](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-azure-ad) | configuration | 0.72 | This page is a detailed, product-specific configuration guide for setting up Microsoft Entra ID authentication with Virtual WAN point-to-site VPN using a manually registered Azure VPN Client app ID. It includes precise settings (Audience values, app registration details, protocol requirements like OpenVPN-only), and step-by-step configuration parameters that are unique to this scenario, which qualify as expert configuration knowledge rather than generic tutorial content. |
+| [IKEv2 - strongSwan](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-ike-linux) | integrations | 0.72 | The article provides product-specific integration details between Azure Virtual WAN User VPN (P2S, certificate auth, IKEv2) and an Ubuntu Linux strongSwan client. It includes exact strongSwan configuration parameters, connection profiles, and Azure-specific values (e.g., IKE/ESP proposals, auth methods, key types, and required settings) that are unique to this integration and not just generic VPN setup guidance. |
 | [About gateway root certificate migration](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-about-gateway-certificate-migration) | configuration | 0.70 | Describes Azure Virtual WAN P2S VPN gateway root certificate rotation behavior and its impact on client VPN profiles, including product-specific migration behavior and required client configuration/profile updates that are not generic VPN knowledge. |
 | [About user groups and client address pools](https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-about) | configuration | 0.70 | The article describes how Virtual WAN P2S VPN gateway uses specific configuration parameters (user group definitions, IP address pools, matching rules based on identity/auth attributes) to assign addresses. These are concrete, product-specific settings and behaviors, fitting configuration with expert knowledge beyond generic VPN concepts. |
 | [About virtual hub routing](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing) | limits-quotas | 0.70 | Describes virtual hub router capabilities including a specific aggregate throughput limit (50 Gbps) and scope of routing; numeric limit qualifies as expert quota information. |
@@ -174,7 +181,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/nat-rules-vpn-gateway-powershell) | 0.45 | PowerShell-focused version of configuring NAT rules for a Virtual WAN VPN gateway. Appears to be a step-by-step script tutorial without explicit configuration matrices, limits, or troubleshooting mappings. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/nat-rules-vpn-gateway) | 0.45 | Explains and walks through configuring NAT rules for a Virtual WAN VPN gateway, but summary suggests a procedural tutorial without detailed parameter tables, limits, or error mappings. Lacks strong signals for configuration (no explicit defaults/ranges) or other expert categories. |
 | [Connect virtual network gateway to Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/connect-virtual-network-gateway-vwan) | 0.45 | How-to connect an Azure VPN gateway to Virtual WAN; description suggests step-by-step connectivity setup rather than detailed configuration matrices or limits. |
-| [IKEv2 - strongSwan](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-ike-linux) | 0.45 | Ubuntu strongSwan client configuration; primarily client commands and settings, not Virtual WAN configuration reference. |
 | [Native VPN client](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-cert-mac) | 0.45 | macOS native VPN client configuration; mostly UI steps and basic parameters, not detailed product-side configuration or limits. |
 | [OpenVPN client](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-openvpn-linux) | 0.45 | Tutorial for configuring Linux OpenVPN clients with certificate authentication for Virtual WAN P2S. Likely includes commands and example configs, but summary does not indicate structured configuration tables, limits, or troubleshooting mappings required for expert-knowledge classification. |
 | [OpenVPN client - iOS](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-openvpn-ios) | 0.45 | iOS OpenVPN client configuration; similar to other client how-tos, not a configuration or limits reference for the service. |

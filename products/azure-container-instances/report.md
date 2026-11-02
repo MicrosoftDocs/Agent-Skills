@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-02'
+generated_at: '2026-11-01'
 category_descriptions:
-  limits-quotas: 'ACI limits, quotas, and behaviors: max CPU/memory (Big Containers),
-    per‑region quotas, standby pool limits, VNet constraints, and FAQs on scaling,
-    performance, and resource usage.'
+  limits-quotas: ACI CPU/memory limits, quotas, standby pool caps, VNet constraints,
+    and FAQs on scaling, resource behavior, and how to check or stay within these
+    limits.
   architecture-patterns: Design patterns for giving ACI containers static inbound/outbound
     IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable
     network egress/ingress.
@@ -27,13 +27,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Instances development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when configuring ACI
-  standby pools, static IP networking, GPU containers, secure ACR pulls, or GitHub
-  Actions deploys, and other Azure Container Instances related development tasks.
+  standby pools, static IP networking, GitHub Actions deploys, Spot containers, or
+  secure ACR pulls, and other Azure Container Instances related development tasks.
   Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service
   (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service),
   Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when configuring ACI standby pools, static IP networking, GPU containers,
-  secure ACR pulls, or GitHub Actions deploys, and other Azure Container Instances
+use_when: Use when configuring ACI standby pools, static IP networking, GitHub Actions
+  deploys, Spot containers, or secure ACR pulls, and other Azure Container Instances
   related development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
@@ -43,18 +43,18 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ## Summary
 
-- **Total Pages**: 83
-- **Fetched**: 83
+- **Total Pages**: 84
+- **Fetched**: 84
 - **Fetch Failed**: 0
 - **Classified**: 54
-- **Unclassified**: 29
+- **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 83
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 81
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
 ## Classification Statistics
 
@@ -62,15 +62,26 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 |------|-------|------------|
 | architecture-patterns | 3 | 3.6% |
 | best-practices | 1 | 1.2% |
-| configuration | 28 | 33.7% |
+| configuration | 28 | 33.3% |
 | decision-making | 2 | 2.4% |
 | deployment | 1 | 1.2% |
 | limits-quotas | 5 | 6.0% |
-| security | 11 | 13.3% |
+| security | 11 | 13.1% |
 | troubleshooting | 3 | 3.6% |
-| *(Unclassified)* | 29 | 34.9% |
+| *(Unclassified)* | 30 | 35.7% |
 
 ## Changes
+
+### New Pages
+
+- [Enclaves for confidential containers (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-enclaves)
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq)
+  - Updated: 2026-07-26T11:03:00.000Z → 2026-10-29T17:04:00.000Z
+- [Confidential container groups](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-confidential-overview)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-10-26T08:00:00.000Z
 
 ## Classified Pages
 
@@ -83,7 +94,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Deploy using a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/using-azure-container-registry-mi) | security | 0.85 | Details configuring managed identities for ACI to access ACR, including behavior with private endpoints; contains product-specific identity and access configuration patterns. |
 | [Configure permissions](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-configure-permissions) | security | 0.80 | Contains specific RBAC role and permission requirements for standby pools, including scopes and scenarios where extra permissions are needed. |
 | [Deploy using a service principal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-using-azure-container-registry) | security | 0.80 | Shows how to configure ACI to pull from ACR using a Microsoft Entra service principal and Key Vault; includes product-specific security configuration (service principal usage, roles/permissions) beyond generic concepts. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | limits-quotas | 0.78 | FAQ includes product-specific numeric constraints (for example, maximum container group sizes, CPU/memory limits, port and IP constraints, restart and runtime behaviors) that qualify as limits/quotas beyond generic conceptual knowledge. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | limits-quotas | 0.78 | The FAQ for Azure Container Instances typically includes concrete service-specific details such as maximum container group sizes, supported OS images, port and IP constraints, restart and retention behaviors, and other numeric or tightly scoped operational limits that are not obvious from general knowledge. These are effectively limits/quotas and operational constraints surfaced in FAQ form, which qualify as expert knowledge beyond conceptual overviews. |
 | [Azure file share](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files) | configuration | 0.75 | Provides ACI-specific volume mount configuration (share names, storage account keys, mount paths) and constraints for persisting state. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances-reference) | configuration | 0.75 | Reference for all ACI monitoring signals (metrics, logs, dimensions), including names and meanings, which are product-specific configuration/usage details. |
 | [Use a managed identity](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-managed-identity) | security | 0.72 | Page describes how to enable and use managed identities specifically for Azure Container Instances, including product-specific identity configuration details and authentication patterns to other Azure services, which fall under security-focused configuration and are not purely conceptual. |
@@ -135,13 +146,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Confidential container groups](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-confidential-overview) | 0.45 | Overview of confidential containers; describes feature set, scenarios, and limitations at a high level, but not detailed config parameters or numeric thresholds. |
 | [Deploy a confidential container group - Resource Manager](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-confidential-containers-cce-arm) | 0.45 | Tutorial for confidential container ARM template; likely focused on a specific example rather than a full configuration matrix of enforcement policy options. |
 | [Resource Manager templates](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-samples-rm) | 0.45 | Template samples index; links to examples but itself is a navigation/collection page without detailed config tables or limits. |
 | [Virtual nodes on Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-nodes) | 0.45 | Virtual nodes overview; describes feature, availability, and resources but not detailed configuration matrices or numeric thresholds for decisions. |
 | [Attestation in Confidential containers](https://learn.microsoft.com/en-us/azure/container-instances/confidential-containers-attestation-concepts) | 0.40 | Attestation concepts; mostly conceptual explanation of attestation in confidential computing, not ACI-specific configuration or error-code troubleshooting. |
 | [Deploy a confidential container group - Portal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-confidential-container-default-portal) | 0.40 | Portal tutorial for confidential containers; mostly step-by-step UI instructions, not a detailed security configuration reference. |
 | [Deploy in a virtual network](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-vnet) | 0.40 | CLI-based how-to for deploying container groups into a virtual network; primarily a procedural tutorial without a structured configuration reference or numeric limits table. |
+| [Enclaves for confidential containers (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-enclaves) | 0.40 | The page explains how to run an enclave pod next to a confidential container group and communicate with it, but the summary suggests a tutorial-style, conceptual description of enclaves and preview caveats. There is no clear indication of configuration parameter tables, numeric limits, error codes, or product-specific diagnostic mappings that would qualify as expert knowledge under the defined sub-skill types. |
 | [NGroups Rolling Update](https://learn.microsoft.com/en-us/azure/container-instances/container-instance-ngroups/container-instances-rolling-update) | 0.40 | Rolling update intro for NGroups; likely conceptual or procedural, not a detailed configuration or limits reference. |
 | [Deploy a Spot container group - Azure CLI](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-spot-containers-cli) | 0.35 | CLI tutorial for Spot containers; example deployment, not a full limits table or decision matrix. |
 | [Deploy a Spot container group - Portal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-spot-containers-portal) | 0.35 | Portal tutorial for Spot containers; basic deployment steps, not detailed quotas or configuration matrices. |
@@ -151,6 +162,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Deploy virtual nodes on Azure Container Instances in your Azure Kubernetes Service cluster](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-virtual-nodes-helm) | 0.35 | Tutorial deploying AKS virtual nodes; focuses on steps with portal and Helm, not detailed ACI-specific configuration references. |
 | [Trigger with Azure Functions](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-azure-function-trigger) | 0.35 | Tutorial integrating Azure Functions with ACI; shows how to trigger deployments but not detailed config parameter tables or limits. |
 | [About NGroups](https://learn.microsoft.com/en-us/azure/container-instances/container-instance-ngroups/container-instances-about-ngroups) | 0.30 | Introduction to NGroups; high-level feature overview without detailed configuration parameters or numeric thresholds. |
+| [Confidential container groups](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-confidential-overview) | 0.30 | The page is an overview of confidential containers on Azure Container Instances, describing scenarios, feature set, and limitations at a high level. The summary does not indicate presence of specific numeric limits, configuration tables, RBAC roles, or detailed error/diagnostic information. It appears to be conceptual background rather than expert, configuration, or troubleshooting content. |
 | [Container groups](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-container-groups) | 0.30 | Introduction to container groups; conceptual explanation of what they are and scenarios, not detailed config or limits. |
 | [Deploy a container instance - CLI](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart) | 0.30 | Quickstart using Azure CLI; primarily step-by-step deployment, not a catalog of limits, configs, or troubleshooting mappings. |
 | [Deploy a container instance - Portal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-portal) | 0.30 | Portal quickstart; focuses on basic deployment steps, not detailed configuration option references or limits. |

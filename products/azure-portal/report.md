@@ -37,7 +37,7 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 - **Updated Pages**: 0
 - **Unchanged**: 29
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
 ## Classification Statistics
 

@@ -49,7 +49,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Updated Pages**: 0
 - **Unchanged**: 25
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-science-vm/azure-data-science-vm.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-data-science-vm/azure-data-science-vm.csv`
 
 ## Classification Statistics
 

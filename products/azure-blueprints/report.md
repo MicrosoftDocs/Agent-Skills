@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-11-01'
 category_descriptions:
-  decision-making: Guidance on Azure Blueprints retirement timelines, planning and
-    executing migrations, and answers to common questions about moving off Blueprints.
+  decision-making: 'Guidance on Azure Blueprints retirement: how to plan and execute
+    migrations, choose replacement services, and answer common questions about impacts
+    and alternatives.'
   security: Security-focused deployment stages, resource locks, operator roles, and
     using/mapping Azure Blueprints for compliance frameworks like PBMM, ISM PROTECTED,
     ISO 27001, SWIFT CSP, and UK OFFICIAL/NHS.
@@ -18,16 +19,15 @@ category_descriptions:
     troubleshooting guidance.
 skill_description: Expert knowledge for Azure Blueprints development including troubleshooting,
   decision making, security, configuration, integrations & coding patterns, and deployment.
-  Use when migrating off Blueprints, mapping to PBMM/ISO/SWIFT, automating via CLI/PowerShell/REST,
-  or fixing deployment errors, and other Azure Blueprints related development tasks.
-  Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
-  Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
-use_when: Use when migrating off Blueprints, mapping to PBMM/ISO/SWIFT, automating
-  via CLI/PowerShell/REST, or fixing deployment errors, and other Azure Blueprints
-  related development tasks.
+  Use when migrating off Azure Blueprints, mapping compliance blueprints, automating
+  via CLI/PowerShell/REST, or fixing deployment issues, and other Azure Blueprints
+  related development tasks. Not for Azure Policy (use azure-policy), Azure Resource
+  Manager (use azure-resource-manager), Azure Role-based access control (use azure-rbac).
+use_when: Use when migrating off Azure Blueprints, mapping compliance blueprints,
+  automating via CLI/PowerShell/REST, or fixing deployment issues, and other Azure
+  Blueprints related development tasks.
 confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Manager
-  (use azure-resource-manager), Azure Resource Graph (use azure-resource-graph), Azure
-  Portal (use azure-portal).
+  (use azure-resource-manager), Azure Role-based access control (use azure-rbac).
 ---
 # Azure Blueprints Crawl Report
 
@@ -41,10 +41,10 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 43
+- **Updated Pages**: 4
+- **Unchanged**: 39
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blueprints/azure-blueprints.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-blueprints/azure-blueprints.csv`
 
 ## Classification Statistics
 
@@ -60,6 +60,17 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 
 ## Changes
 
+### Updated Pages
+
+- [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview)
+  - Updated: 2026-08-17T22:15:00.000Z → 2026-10-30T08:00:00.000Z
+- [Azure Blueprints retirement](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement)
+  - Updated: 2026-06-26T08:00:00.000Z → 2026-10-31T05:11:00.000Z
+- [Retirement FAQ](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq)
+  - Updated: 2026-06-26T08:00:00.000Z → 2026-10-31T05:11:00.000Z
+- [Create from a blueprint sample](https://learn.microsoft.com/en-us/azure/governance/blueprints/tutorials/create-from-sample)
+  - Updated: 2023-09-07T08:00:00.000Z → 2025-10-08T05:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -71,7 +82,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | [Control mapping](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-shared/control-mapping) | security | 0.80 | Control mapping article linking ISO 27001 controls to specific Azure Policy definitions; detailed, product-specific security mapping. |
 | [Control mapping](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/control-mapping) | security | 0.80 | Detailed control mapping to Azure Policy initiatives; product-specific security mapping information. |
 | [Manage assignments with PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/manage-assignments-ps) | integrations | 0.75 | How-to for managing assignments using Az.Blueprint module; includes cmdlets and parameters unique to this product, fitting integration/coding patterns. |
-| [Azure Blueprints retirement](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement) | decision-making | 0.70 | Retirement article includes specific retirement dates, phased timeline milestones, and migration guidance to Deployment Stacks and template specs, which are concrete decision inputs for when and how to move off the service. |
+| [Azure Blueprints retirement](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement) | decision-making | 0.70 | Retirement article with specific retirement dates, phased timeline, and migration guidance to Deployment Stacks and template specs; helps decide when and how to migrate between options. |
 | [Configure your environment for a Blueprint Operator](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/configure-for-blueprint-operator) | security | 0.70 | Page is a how-to for configuring an environment specifically for the Azure Blueprints built-in Blueprint Operator role. It likely includes product-specific RBAC role names, required permissions, and scope configuration steps that are not generic security knowledge, matching the security sub-skill criteria. |
 | [Create a blueprint - REST API](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-rest-api) | integrations | 0.70 | REST API quickstart; will include request URIs, payload schemas, and parameters specific to Azure Blueprints, matching integration/API parameter guidance. |
 | [Migrate to template specs](https://learn.microsoft.com/en-us/azure/governance/blueprints/migrate-to-template-specs) | deployment | 0.70 | The article provides product-specific, step-by-step migration and deployment guidance for moving Azure Blueprints definitions and artifacts to template specs and deploying them with Azure Deployment Stacks before retirement. This includes concrete, Azure-specific migration paths and deployment behaviors that go beyond generic knowledge, fitting the deployment category best among the available types. |
@@ -87,7 +98,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | [Import and export with PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/import-export-ps) | configuration | 0.65 | Describes working with blueprint definitions as code via specific PowerShell commands; likely includes command names, parameters, and usage patterns that constitute product-specific configuration/management details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/) | security | 0.65 | Compliance blueprint overview mapping to SWIFT CSP-CSCF controls via Azure Policy; product-specific security/compliance guidance. |
 | [Protect new resources with blueprint resource locks](https://learn.microsoft.com/en-us/azure/governance/blueprints/tutorials/protect-new-resources) | security | 0.65 | Focuses on resource locks (ReadOnly, DoNotDelete) and interaction with Owner role; contains product-specific security/locking behavior and likely RBAC implications. |
-| [Retirement FAQ](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq) | decision-making | 0.65 | FAQ around retirement contains detailed answers about what changes, data retention, deny-assignment impact, and migration behavior, providing concrete criteria and implications for migration decisions. |
+| [Retirement FAQ](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq) | decision-making | 0.65 | FAQ for Azure Blueprints retirement with concrete details on what changes, data retention, deny assignments, and migration behavior; supports decisions on migration timing and approach. |
 | [Sequencing order of blueprint deployment](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/sequencing-order) | deployment | 0.65 | Explains default deployment sequence and how to customize it; this is a product-specific deployment behavior pattern, likely including ordering rules and constraints that are not generic knowledge. |
 | [UK OFFICIAL and UK NHS](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/ukofficial-uknhs) | security | 0.65 | Overview of a compliance blueprint mapping to UK OFFICIAL and UK NHS controls via Azure Policy; product-specific security/compliance guardrails. |
 | [Canada Federal PBMM](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/canada-federal-pbmm) | security | 0.60 | Overview of a compliance blueprint mapping to Canada Federal PBMM controls; product-specific security/compliance guardrails via Azure Policy. |
@@ -107,8 +118,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-migrate-landing-zone/) | 0.40 | CAF Migration landing zone blueprint sample overview; primarily architecture/overview content without explicit parameter tables or deployment constraints in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-ase-sql-workload/) | 0.40 | ASE/SQL workload blueprint sample overview; appears to be high-level architecture and mapping to ISO controls, not detailed configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-shared/) | 0.40 | Shared Services blueprint sample overview is primarily descriptive/architectural; summary does not indicate detailed configuration or security parameterization. |
-| [Create from a blueprint sample](https://learn.microsoft.com/en-us/azure/governance/blueprints/tutorials/create-from-sample) | 0.35 | Tutorial using a sample blueprint to set up resource groups and role assignments; mostly procedural without detailed config tables or error mappings. |
 | [Create a blueprint - Azure PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-powershell) | 0.30 | Quickstart for creating a blueprint with PowerShell; primarily procedural tutorial without configuration tables, limits, or detailed deployment constraints. |
 | [Create a blueprint - Portal](https://learn.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-portal) | 0.30 | Quickstart tutorial for creating a blueprint in the portal; step-by-step usage but no detailed configuration tables, limits, or troubleshooting content. |
+| [Create from a blueprint sample](https://learn.microsoft.com/en-us/azure/governance/blueprints/tutorials/create-from-sample) | 0.20 | Tutorial on creating a blueprint from a sample; primarily step-by-step guidance without configuration matrices, limits, or specialized troubleshooting or best-practice content. |
+| [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview) | 0.20 | Overview of Azure Blueprints with retirement notice; no detailed limits, configuration tables, error codes, or product-specific best practices. |
 | [Index](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/) | 0.10 | Index of sample blueprints; navigation/listing page without detailed technical content or expert-only parameters. |
-| [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview) | - | Page is an overview of Azure Blueprints and its retirement timeline; it does not provide specific limits, configuration parameters, error codes, or decision matrices. Content is conceptual/service description rather than detailed expert guidance. |

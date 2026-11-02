@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-01'
 category_descriptions:
   integrations: Patterns and steps for wiring Azure compute and Foundry agents to
     external services like Confluent Cloud and MongoDB Atlas using Service Connector
@@ -7,9 +7,9 @@ category_descriptions:
   security: Managing security for Azure partner services, including Confluent Cloud
     RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure
     resources.
-  troubleshooting: Diagnosing and fixing integration, configuration, and runtime issues
-    for Azure partner services (Confluent, Datadog, Dynatrace, Elastic, New Relic),
-    including log forwarding and Azure-native setups.
+  troubleshooting: Diagnosing and fixing integration, configuration, and log-forwarding
+    issues for Confluent Kafka/Flink, Datadog, Dynatrace, Elastic Cloud, and New Relic
+    on Azure
   configuration: Configuring and managing Azure-integrated partner resources (Datadog,
     Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINXaaS, etc.), including prerequisites,
     settings, and integrations.
@@ -19,13 +19,11 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Partner Solutions development including
   troubleshooting, architecture & design patterns, security, configuration, and integrations
   & coding patterns. Use when integrating Confluent/MongoDB via Service Connector,
-  managing Datadog/Dynatrace/Elastic/New Relic, or Palo Alto Cloud NGFW, and other
-  Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry),
-  Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use
-  azure-lighthouse), Azure Oracle (use azure-oracle).
+  managing Datadog/Dynatrace/Elastic/New Relic configs, or designing Palo Alto Cloud
+  NGFW with App Gateway, and other Azure Partner Solutions related development tasks.
 use_when: Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic/New
-  Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development
-  tasks.
+  Relic configs, or designing Palo Alto Cloud NGFW with App Gateway, and other Azure
+  Partner Solutions related development tasks.
 confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed Applications
   (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure
   Oracle (use azure-oracle).
@@ -42,10 +40,10 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 1
+- **Unchanged**: 113
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
 ## Classification Statistics
 
@@ -59,6 +57,11 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 91 | 79.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-10-30T22:14:00.000Z
 
 ## Classified Pages
 
@@ -75,9 +78,9 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Configure prerequisites](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/configure-prerequisites) | configuration | 0.70 | Pre-deployment prerequisites for Dynatrace in Azure/Entra ID will include specific roles, permissions, and configuration steps unique to this integration, fitting configuration expert knowledge. |
 | [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents) | integrations | 0.70 | The page describes a product-specific integration between Microsoft Foundry Agents and MongoDB Atlas via the MongoDB MCP Server, likely including concrete configuration parameters, connection details, and code/integration patterns that go beyond generic knowledge. |
 | [Deploy Cloud NGFW by Palo Alto Networks with the Application Gateway](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/application-gateway) | architecture-patterns | 0.70 | Describes a recommended deployment architecture for Cloud NGFW behind Application Gateway; likely includes product-specific topology guidance, traffic flow patterns, and when to use this pattern for securing web apps. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq) | troubleshooting | 0.70 | Datadog on Azure FAQ explicitly mentions troubleshooting; such FAQs typically map Azure-specific onboarding/metrics/logs issues to causes and resolutions, including product-specific error messages and diagnostic steps that qualify as expert troubleshooting knowledge. |
 | [Manage your Informatica IDMC organization](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/manage) | security | 0.70 | The article focuses on managing single sign-on for an Informatica IDMC organization, which typically involves specific identity configuration (SSO settings, possibly Azure AD app configuration, roles, or scopes). These are product-specific security/identity configuration details, fitting the security sub-skill. |
 | [Connect to compute services](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-connectors) | integrations | 0.65 | Describes using Service Connector to wire Confluent Cloud to Azure compute services; likely includes product-specific connection settings and authentication/network parameters. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq) | troubleshooting | 0.65 | FAQ pages for specific integrations typically include concrete error messages, billing edge cases, and platform-specific behaviors (for example, how Azure resource tags map into Datadog, what happens when you disable the integration, or how specific Azure subscription or marketplace constraints affect Datadog). These are product- and integration-specific troubleshooting details that go beyond generic knowledge and are organized as question → explanation → resolution, fitting the troubleshooting category best. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq) | troubleshooting | 0.65 | FAQ includes product-specific troubleshooting guidance and configuration details (for SSO, metrics/logs, OneAgent, billing, and data residency) that map symptoms and questions to concrete resolutions and settings, which qualify as expert, product-specific troubleshooting knowledge. |
 | [Manage Dynatrace](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/manage) | configuration | 0.65 | Managing settings, metrics, and logs for Dynatrace via Azure portal implies product-specific configuration options and toggles that qualify as configuration expert knowledge. |
 | [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/manage) | configuration | 0.65 | Managing MongoDB Atlas resource settings in Azure portal implies product-specific configuration options and mappings between Azure and Atlas. |

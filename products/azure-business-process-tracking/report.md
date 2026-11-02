@@ -31,7 +31,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Logic Apps 
 - **Updated Pages**: 0
 - **Unchanged**: 6
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-business-process-tracking/azure-business-process-tracking.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-business-process-tracking/azure-business-process-tracking.csv`
 
 ## Classification Statistics
 

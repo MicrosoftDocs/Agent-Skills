@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-01'
 category_descriptions:
   best-practices: Best practices for App Service deployments, handling inbound/outbound
     and TLS IP changes, minimizing maintenance downtime, and using Traffic Manager
@@ -13,9 +13,9 @@ category_descriptions:
   deployment: 'Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure
     Pipelines), ZIP/FTP/local Git deploy, custom containers, deployment slots, ASE/plan
     scaling, DNS migration, and patching.'
-  security: 'Securing App Service apps: network/IP restrictions, TLS/certs, managed
-    identities, Key Vault, Entra auth and social logins, OAuth tokens, database/storage
-    access, and policy/compliance settings.'
+  security: 'Securing App Service apps: auth with Entra and social providers, managed
+    identities, certificates/TLS, IP/VNet/firewall/private endpoints, Key Vault, and
+    secure access to storage, SQL, and Graph.'
   integrations: Patterns for integrating App Service apps with APM, TLS/SSL certs,
     Application Gateway, managed connectors, OpenAI/Phi-4 chatbots, OpenTelemetry
     sidecars, and WebJobs event bindings.
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Service development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring App Service plans, deployment slots, VNet integration, Entra auth, or
-  managed identities, and other Azure App Service related development tasks. Not for
-  Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
+  configuring App Service plans/ASEs, deployment slots, VNet/private endpoints, managed
+  identity auth, or CI/CD, and other Azure App Service related development tasks.
+  Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
   Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
-use_when: Use when configuring App Service plans, deployment slots, VNet integration,
-  Entra auth, or managed identities, and other Azure App Service related development
-  tasks.
+use_when: Use when configuring App Service plans/ASEs, deployment slots, VNet/private
+  endpoints, managed identity auth, or CI/CD, and other Azure App Service related
+  development tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Container
   Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure
   Static Web Apps (use azure-static-web-apps).
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 12
-- **Unchanged**: 233
+- **Updated Pages**: 1
+- **Unchanged**: 244
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
 ## Classification Statistics
 
@@ -77,30 +77,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 
 ### Updated Pages
 
-- [Connect to another app as user](https://learn.microsoft.com/en-us/azure/app-service/tutorial-auth-aad)
-  - Updated: 2025-07-08T17:24:00.000Z → 2026-10-19T22:15:00.000Z
-- [Deploy sidecar container](https://learn.microsoft.com/en-us/azure/app-service/tutorial-sidecar)
-  - Updated: 2025-07-16T22:08:00.000Z → 2026-10-19T22:15:00.000Z
-- [Chatbot with local SLM](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-slm-dotnet)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-10-19T22:15:00.000Z
-- [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-java)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-10-19T22:15:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs)
-  - Updated: 2025-11-20T18:41:00.000Z → 2026-10-19T22:15:00.000Z
-- [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-node)
-  - Updated: 2026-03-27T22:21:00.000Z → 2026-10-19T22:15:00.000Z
-- [Chatbot with local SLM](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-slm-expressjs)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-10-19T22:15:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python)
-  - Updated: 2026-07-27T08:00:00.000Z → 2026-07-27T22:17:00.000Z
-- [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-python)
-  - Updated: 2026-03-24T02:22:00.000Z → 2026-10-19T22:15:00.000Z
-- [Chatbot with local SLM](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-slm-fastapi)
-  - Updated: 2026-07-27T22:17:00.000Z → 2026-10-19T22:15:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-php)
-  - Updated: 2025-05-01T22:41:00.000Z → 2026-10-19T22:15:00.000Z
-- [Configure PremiumV4 tier](https://learn.microsoft.com/en-us/azure/app-service/app-service-configure-premium-v4-tier)
-  - Updated: 2026-08-18T08:00:00.000Z → 2026-10-19T08:00:00.000Z
+- [Security controls by Azure Policy reference](https://learn.microsoft.com/en-us/azure/app-service/security-controls-policy)
+  - Updated: 2025-07-04T11:10:00.000Z → 2026-08-12T11:45:00.000Z
 
 ## Classified Pages
 
@@ -134,7 +112,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Restrict access from IPs](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions) | security | 0.80 | How-to for defining ordered allow/deny lists with IPs and subnets; concrete security configuration for App Service apps. |
 | [Secure calls from Visual Studio Code](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-mcp-server-vscode) | security | 0.80 | Shows concrete configuration to protect MCP servers with Entra auth and access them from VS Code Copilot agent mode—product- and scenario-specific security setup. |
 | [Security](https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-security) | security | 0.80 | Article is specifically about Java security on App Service, including authentication, Key Vault references, and Java keystore configuration. This implies concrete security settings, parameter names, and platform-specific patterns that match the security sub-skill definition. |
-| [Security controls by Azure Policy reference](https://learn.microsoft.com/en-us/azure/app-service/security-controls-policy) | security | 0.80 | Lists built-in Azure Policy definitions for App Service with specific control names and scopes; this is detailed security/compliance configuration data. |
 | [Use Google](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-google) | security | 0.80 | Provides Google OAuth client configuration and App Service auth settings, including exact fields and URLs needed for secure integration. |
 | [Use file-based configuration](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-file-based) | configuration | 0.80 | Describes file-based configuration for App Service AuthN/AuthZ, including a dedicated config file and settings that travel with the app payload; this implies specific configuration keys/values unique to this feature. |
 | [Work with tokens](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-oauth-tokens) | security | 0.80 | Explains how to retrieve, refresh, and extend OAuth tokens via App Service auth endpoints and settings—detailed token management behavior unique to this feature. |
@@ -142,6 +119,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Configure](https://learn.microsoft.com/en-us/azure/app-service/configure-language-python) | configuration | 0.78 | Configuration article for Python on Linux App Service that describes how App Service runs Python apps, how deployment/build automation works (requirements.txt, pyproject.toml, setup.py), and how to customize container behavior. These are product-specific configuration details and behaviors (virtual environment activation, build automation, runtime settings) that go beyond generic knowledge and map to configuration sub-skill. |
 | [Configure common settings](https://learn.microsoft.com/en-us/azure/app-service/configure-common) | configuration | 0.78 | This page documents concrete App Service configuration options (e.g., app settings, platform settings, .NET/Java/PHP versions, ARR affinity, HTTP/HTTPS-only, client affinity, WebSockets, always-on, etc.) with specific setting names and values that are product-specific. It goes beyond a simple tutorial and lists how to configure these options via portal/CLI/PowerShell, matching the configuration sub-skill definition. |
 | [Disable basic auth](https://learn.microsoft.com/en-us/azure/app-service/configure-basic-auth-disable) | security | 0.78 | Page focuses on disabling basic auth for FTP/Web Deploy, including specific deployment options, how to configure disabling, and monitoring access attempts. This is product-specific security configuration with concrete behaviors and implications, matching the security sub-skill criteria. |
+| [Security controls by Azure Policy reference](https://learn.microsoft.com/en-us/azure/app-service/security-controls-policy) | security | 0.78 | Page lists specific Azure Policy built-in definitions mapped to regulatory/security controls for Azure App Service. These include concrete policy names and control mappings that are product- and standard-specific, which an LLM is unlikely to know from training. Content is focused on security/compliance configuration rather than generic concepts. |
 | [Use secrets from Key Vault](https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references) | security | 0.78 | How-to article for wiring Azure Key Vault references into App Service/Functions app settings and connection strings. Typically includes exact reference syntax, required identity/permissions, and platform-specific behaviors that are product-specific security configuration details rather than generic concepts. |
 | [Use settings from App Configuration](https://learn.microsoft.com/en-us/azure/app-service/app-service-configuration-references) | configuration | 0.78 | This page documents the exact syntax and behavior of App Configuration references in App Service/Functions (for example, @Microsoft.AppConfiguration(...) patterns, supported reference types, resolution behavior, and platform-specific settings). These are product-specific configuration details and parameter formats that go beyond generic knowledge and fit the configuration sub-skill. |
 | [Access user identities](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-user-identities) | security | 0.76 | Describes how identity claims are exposed (headers, tokens, environment) and how to use them in code—platform-specific security behavior. |

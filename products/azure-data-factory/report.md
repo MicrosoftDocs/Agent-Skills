@@ -57,7 +57,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Updated Pages**: 0
 - **Unchanged**: 505
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
 ## Classification Statistics
 

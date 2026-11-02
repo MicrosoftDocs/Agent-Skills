@@ -1,22 +1,23 @@
 ---
-generated_at: '2026-09-06'
+generated_at: '2026-11-01'
 category_descriptions:
   configuration: 'Configuring Application Network observability: enabling and analyzing
     logs in Azure Monitor and setting up/using metrics for monitoring and troubleshooting.'
-  decision-making: Guidance on choosing compatible AKS, Application Gateway, and Application
-    Network versions, including supported combinations and upgrade considerations.
+  decision-making: Guidance on choosing compatible Azure Kubernetes Application Network
+    versions, including version matrices, upgrade paths, and interoperability considerations.
 skill_description: Expert knowledge for Azure Application Network development including
-  decision making, and configuration. Use when enabling App Network logs, Azure Monitor
-  metrics, AKS/App Gateway versioning, or upgrade compatibility, and other Azure Application
-  Network related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Networking
-  (use azure-networking), Azure Application Gateway (use azure-application-gateway).
-use_when: Use when enabling App Network logs, Azure Monitor metrics, AKS/App Gateway
-  versioning, or upgrade compatibility, and other Azure Application Network related
-  development tasks.
+  decision making, and configuration. Use when enabling App Network logs, analyzing
+  Azure Monitor metrics, or selecting AKS App Network versions and upgrades, and other
+  Azure Application Network related development tasks. Not for Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager
+  (use azure-traffic-manager).
+use_when: Use when enabling App Network logs, analyzing Azure Monitor metrics, or
+  selecting AKS App Network versions and upgrades, and other Azure Application Network
+  related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Networking (use
-  azure-networking), Azure Application Gateway (use azure-application-gateway).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Application Gateway
+  (use azure-application-gateway), Azure Traffic Manager (use azure-traffic-manager).
 ---
 # Azure Application Network Crawl Report
 
@@ -30,10 +31,10 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 11
+- **Updated Pages**: 1
+- **Unchanged**: 10
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-network/azure-application-network.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-application-network/azure-application-network.csv`
 
 ## Classification Statistics
 
@@ -45,11 +46,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [Supported versions](https://learn.microsoft.com/en-us/azure/application-network/supported-versions)
+  - Updated: 2026-04-17T22:07:00.000Z → 2026-10-30T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Supported versions](https://learn.microsoft.com/en-us/azure/application-network/supported-versions) | decision-making | 0.70 | Supported versions page for a preview service typically includes tables mapping Application Network minor versions to specific AKS versions and regions, plus guidance on checking available versions. This is product-specific decision guidance with version compatibility matrices that an LLM would not know from training. |
+| [Supported versions](https://learn.microsoft.com/en-us/azure/application-network/supported-versions) | decision-making | 0.68 | Page documents specific supported Azure Kubernetes Application Network versions and their compatible AKS versions by region, which is expert, product-specific guidance used to decide which version to deploy. This aligns with decision-making because it helps choose version combinations based on compatibility matrices rather than just listing conceptual information. |
 | [Configure and view logs](https://learn.microsoft.com/en-us/azure/application-network/logs) | configuration | 0.65 | Logging article describes data plane and control plane logs, using Container Insights and diagnostic settings. Such pages usually contain specific log categories, diagnostic setting names, and workspace configuration options, which are product-specific configuration details not generally known to an LLM. |
 | [Configure and view metrics](https://learn.microsoft.com/en-us/azure/application-network/metrics) | configuration | 0.65 | Metrics configuration article for a specific service typically includes tables of metric names, dimensions, and configuration options for Azure Monitor, plus workspace and namespace settings. These product-specific metric and configuration details qualify as expert configuration knowledge. |
 

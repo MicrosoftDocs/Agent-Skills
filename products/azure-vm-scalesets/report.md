@@ -58,7 +58,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Updated Pages**: 0
 - **Unchanged**: 96
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
 ## Classification Statistics
 

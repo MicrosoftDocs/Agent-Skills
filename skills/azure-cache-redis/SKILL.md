@@ -1,9 +1,9 @@
 ---
 name: azure-cache-redis
-description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and deployment. Use when configuring geo-replication, persistence, VNet/private endpoints, Entra/RBAC auth, or ARM/Bicep deployments, and other Azure Cache for Redis related development tasks. Not for Azure Managed Redis (use azure-managed-redis), Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage).
+description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and deployment. Use when configuring geo-replication, persistence, private endpoints, Entra auth, or ARM/Bicep-based deployments, and other Azure Cache for Redis related development tasks. Not for Azure Managed Redis (use azure-managed-redis), Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cache for Redis Skill
@@ -25,7 +25,7 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L35-L43 | Diagnosing and fixing Azure Cache for Redis issues: client/server errors, connectivity, data loss, latency, and timeouts, plus targeted troubleshooting steps. |
-| Best Practices | L44-L58 | Best practices for client usage, reliability, scaling, memory, performance testing, monitoring, failover behavior, and Kubernetes/Enterprise tier usage in Azure Cache for Redis |
+| Best Practices | L44-L58 | Guidance on resilient client usage, scaling, memory and performance tuning, Kubernetes access, monitoring, failover behavior, and enterprise-tier best practices for Azure Cache for Redis |
 | Decision Making | L59-L68 | Guidance on sizing and tier selection, cost reservations, network isolation options, and planning/migrating Redis caches, including retirement and Private Link migrations. |
 | Architecture & Design Patterns | L69-L73 | Strategies for architecting highly available Redis caches on Azure, including redundancy, failover, disaster recovery, and SLA-focused design patterns. |
 | Security | L74-L86 | Securing Azure Cache for Redis: Entra auth/RBAC, TLS config, disk encryption, private endpoints/VNet, managed identities, and Azure Policy compliance settings. |
@@ -47,7 +47,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Redis client libraries effectively with Azure Cache | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-client-libraries |
 | Improve Azure Redis connection resilience and reliability | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-connection |
 | Implement development patterns for Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-development |
-| Use Azure Redis Enterprise and Flash tiers effectively | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-enterprise-tiers |
+| Apply best practices for Azure Redis Enterprise tiers | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-enterprise-tiers |
 | Run Kubernetes client apps against Azure Redis reliably | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-kubernetes |
 | Optimize memory management for Azure Redis caches | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-memory-management |
 | Conduct performance testing for Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-performance |

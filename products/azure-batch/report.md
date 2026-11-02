@@ -55,7 +55,7 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 - **Updated Pages**: 0
 - **Unchanged**: 124
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
 ## Classification Statistics
 

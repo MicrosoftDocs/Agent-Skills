@@ -1,9 +1,9 @@
 ---
 name: azure-vpn-gateway
-description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring S2S/P2S tunnels, BGP/NAT, IPsec/IKE crypto, VPN client auth, or cross-cloud/ExpressRoute VPNs, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
+description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring P2S/S2S tunnels, IPsec/IKE crypto, BGP/NAT routing, ExpressRoute VPN, or Cisco/ASA integrations, and other Azure VPN Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VPN Gateway Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L71-L87 | Securing Azure VPN Gateway: IPsec/IKE crypto, forced tunneling, P2S auth (Entra ID, RADIUS, MFA, Device SSO), access control, cert migration, roles/permissions, and security best practices. |
 | Configuration | L88-L137 | Configuring Azure VPN Gateway and clients for P2S/S2S: auth methods, certificates, IPsec/BGP/NAT policies, routing, monitoring, Always-On, VNet-to-VNet, and device/Entra/Intune setup. |
 | Integrations & Coding Patterns | L138-L145 | Configuring Azure VPN with external systems: NPS/RADIUS user groups, S2S certificate tunnels, VPN over ExpressRoute, Cisco ASA setups, and BGP connections with AWS. |
-| Deployment | L146-L155 | Deploying and upgrading Azure VPN Gateways (SKUs, zones, active/active), creating S2S VPNs via PowerShell/CLI, and distributing Azure VPN client profiles with Intune. |
+| Deployment | L146-L156 | Deploying and upgrading VPN gateways (Basic/Standard SKUs, zone-redundant, ExpressRoute), and creating/migrating S2S and P2S VPNs via PowerShell or Azure CLI. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -151,5 +151,6 @@ This skill requires **network access** to fetch documentation content:
 | Create a Basic SKU VPN Gateway via PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-basic-sku-powershell |
 | Deploy zone-redundant VPN and ExpressRoute gateways | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-zone-redundant-vnet-gateway |
 | Upgrade Azure VPN Gateway SKU with minimal downtime | https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-upgrade |
+| Migrate Azure P2S VPN gateway root certificate | https://learn.microsoft.com/en-us/azure/vpn-gateway/how-to-migrate-gateway-root-certificate |
 | Create S2S VPN with shared key using PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell |
 | Create S2S VPN with shared key using Azure CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli |

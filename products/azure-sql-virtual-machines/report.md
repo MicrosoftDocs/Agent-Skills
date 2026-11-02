@@ -56,10 +56,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 125
+- **Updated Pages**: 0
+- **Unchanged**: 130
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
 ## Classification Statistics
 
@@ -77,19 +77,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 28 | 21.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-08-27T22:40:00.000Z → 2026-10-19T17:38:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-09-29T05:53:00.000Z → 2026-10-19T17:38:00.000Z
-- [Connect to the Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-portal-classic?view=azuresql)
-  - Updated: 2026-03-18T11:48:00.000Z → 2026-10-21T17:40:00.000Z
-- [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql)
-  - Updated: 2025-07-25T22:34:00Z → 2026-10-19T17:38:00Z
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/?view=azuresql)
-  - Updated: 2026-06-23T22:41:00Z → 2026-10-19T17:38:00Z
 
 ## Classified Pages
 

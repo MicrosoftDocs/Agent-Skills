@@ -29,6 +29,9 @@ skill_description: Expert knowledge for Azure Quantum development including trou
   security, configuration, and integrations & coding patterns. Use when submitting
   Q#/OpenQASM jobs, configuring workspaces, managing IonQ/Quantinuum/Rigetti usage,
   or running hybrid workflows, and other Azure Quantum related development tasks.
+  Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use
+  azure-machine-learning).
 use_when: Use when submitting Q#/OpenQASM jobs, configuring workspaces, managing IonQ/Quantinuum/Rigetti
   usage, or running hybrid workflows, and other Azure Quantum related development
   tasks.
@@ -47,11 +50,11 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 - **Unclassified**: 95
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 9
-- **Unchanged**: 132
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 147
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
 
@@ -68,36 +71,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | *(Unclassified)* | 95 | 64.6% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Quantum workspace and storage security boundaries](https://learn.microsoft.com/en-us/azure/quantum/security-workspace-storage-boundaries)
-- [Stim support for quantum error correction](https://learn.microsoft.com/en-us/azure/quantum/qdk-stim-overview)
-- [Get started with QDK for error correction](https://learn.microsoft.com/en-us/azure/quantum/qdk-error-correction-overview)
-- [Install QDK for error correction](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-error-correction)
-- [Develop and validate a QEC protocol](https://learn.microsoft.com/en-us/azure/quantum/develop-validate-qec-protocol)
-- [Run and decode logical programs](https://learn.microsoft.com/en-us/azure/quantum/run-decode-logical-programs)
-
-### Updated Pages
-
-- [Manage the access to your Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/manage-workspace-access)
-  - Updated: 2025-01-08T08:00:00.000Z → 2026-10-23T18:02:00.000Z
-- [Work with jobs](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-jobs)
-  - Updated: 2024-09-16T08:00:00.000Z → 2026-10-23T18:02:00.000Z
-- [Work with Azure Quantum using the Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli)
-  - Updated: 2026-03-23T15:21:00.000Z → 2026-10-23T18:02:00.000Z
-- [Work with Azure Quantum using Bicep](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-using-bicep)
-  - Updated: 2026-03-19T18:58:00.000Z → 2026-10-23T18:02:00.000Z
-- [Quantum Development Kit overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview)
-  - Updated: 2026-08-04T00:02:00.000Z → 2026-10-22T00:02:00.000Z
-- [Set up the QDK](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk)
-  - Updated: 2026-08-05T18:04:00.000Z → 2026-10-22T00:02:00.000Z
-- [QDK language support overview](https://learn.microsoft.com/en-us/azure/quantum/qdk-language-support-overview)
-  - Updated: 2026-08-29T00:02:00.000Z → 2026-10-21T22:03:00.000Z
-- [Install and run the QDK quantum simulators](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-quantum-simulators)
-  - Updated: 2026-10-10T16:03:00.000Z → 2026-10-22T00:02:00.000Z
-- [Get started with the quantum resource estimator](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation)
-  - Updated: 2026-06-17T08:00:00.000Z → 2026-10-22T00:02:00.000Z
 
 ## Classified Pages
 

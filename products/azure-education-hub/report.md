@@ -31,7 +31,7 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 - **Updated Pages**: 0
 - **Unchanged**: 11
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-education-hub/azure-education-hub.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-education-hub/azure-education-hub.csv`
 
 ## Classification Statistics
 

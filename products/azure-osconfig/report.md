@@ -39,7 +39,7 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 - **Updated Pages**: 0
 - **Unchanged**: 32
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-osconfig/azure-osconfig.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-osconfig/azure-osconfig.csv`
 
 ## Classification Statistics
 

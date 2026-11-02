@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-01'
 category_descriptions:
-  configuration: 'Configuring drills, policies, and vaults for resiliency: zone-down
-    chaos tests, backup/replication policies, resilience goals/posture, vault lifecycle,
-    and recovery orchestration plans.'
+  configuration: 'Configuring zone-resilient setups: zone-down drills, resilience
+    goals, backup/replication policies, vault lifecycle, recovery orchestration plans,
+    and Copilot-assisted zone design.'
   deployment: Planning and validating zone-down drills for Azure apps, using support
     matrices to see which services, workloads, and scenarios are covered for resiliency
     testing.
@@ -13,16 +13,17 @@ category_descriptions:
   security: RBAC roles, limits, security levels, and recovery orchestration plans
     for designing, configuring, and reviewing secure, resilient Azure solutions.
 skill_description: Expert knowledge for Azure Resiliency development including best
-  practices, security, configuration, and deployment. Use when configuring backup/replication
-  policies, vault lifecycle, zone-down drills, RBAC roles, or recovery plans, and
-  other Azure Resiliency related development tasks. Not for Azure Reliability (use
-  azure-reliability), Azure Service Health (use azure-service-health), Azure Monitor
-  (use azure-monitor).
-use_when: Use when configuring backup/replication policies, vault lifecycle, zone-down
-  drills, RBAC roles, or recovery plans, and other Azure Resiliency related development
+  practices, security, configuration, and deployment. Use when designing zone-resilient
+  topologies, zone-down drills, backup/replication policies, vault lifecycle, or RBAC,
+  and other Azure Resiliency related development tasks. Not for Azure Reliability
+  (use azure-reliability), Azure Service Health (use azure-service-health), Azure
+  Monitor (use azure-monitor), Azure Site Recovery (use azure-site-recovery).
+use_when: Use when designing zone-resilient topologies, zone-down drills, backup/replication
+  policies, vault lifecycle, or RBAC, and other Azure Resiliency related development
   tasks.
 confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Service
-  Health (use azure-service-health), Azure Monitor (use azure-monitor).
+  Health (use azure-service-health), Azure Monitor (use azure-monitor), Azure Site
+  Recovery (use azure-site-recovery).
 ---
 # Azure Resiliency Crawl Report
 
@@ -36,10 +37,10 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 36
+- **Updated Pages**: 2
+- **Unchanged**: 34
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
+- **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
 ## Classification Statistics
 
@@ -53,15 +54,21 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 
 ## Changes
 
+### Updated Pages
+
+- [Define](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define)
+  - Updated: 2026-10-14T11:44:00.000Z → 2026-10-30T16:23:00.000Z
+- [Create and configure](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure)
+  - Updated: 2026-10-14T11:44:00.000Z → 2026-10-30T16:23:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Availability zone down drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-support-matrix) | deployment | 0.80 | Support matrix article with regional availability, supported scenarios, and limitations for Availability Zone Down Drills; this is deployment-focused with product-specific constraints by region and scenario. |
 | [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-protection-policy) | configuration | 0.75 | Defines backup and replication policies, including default settings (e.g., 24-hour retention, snapshot frequency); contains concrete policy parameters and default values. |
-| [Create and configure](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure) | configuration | 0.75 | Step-by-step configuration of Recovery Orchestration Plans, including resource protection, recovery groups, and group actions; contains product-specific configuration options and patterns unique to this feature. |
 | [Assign goals and view resilience posture](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-assign-goals-view-posture) | configuration | 0.70 | Covers assigning resilience goals, managing resource evaluation, excluding/attesting resources, and rediscovering resources; involves product-specific settings and options for posture evaluation, fitting configuration. |
-| [Define](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define) | configuration | 0.70 | How-to article for defining Zone Down Drills, including configuring Chaos Workspaces, managing identities, and designing faults; likely includes specific configuration options and identity settings unique to this feature. |
+| [Define](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define) | configuration | 0.70 | The article describes detailed, product-specific setup of Zone Down Drills, including configuring Chaos Workspaces, identities, and fault design for Infrastructure Resiliency Manager. This is concrete configuration guidance (names of features, flows, and options) rather than just conceptual content, and is unlikely to be fully captured in generic LLM training. |
 | [Goals and recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-support-matrix) | security | 0.70 | Support matrix for goals and recommendations explicitly includes Azure RBAC roles alongside supported scenarios and limitations; RBAC role names and scope requirements are product-specific security configuration knowledge. |
 | [Manage](https://learn.microsoft.com/en-us/azure/resiliency/manage-protection-policy) | configuration | 0.70 | Describes viewing and managing protection policies; likely includes specific policy fields and options, which are product-specific configuration details. |
 | [Manage](https://learn.microsoft.com/en-us/azure/resiliency/manage-vault) | configuration | 0.70 | Guides managing vault lifecycle; likely details specific vault states, operations, and settings that constitute product-specific configuration knowledge. |
@@ -70,6 +77,7 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 | [Review security posture](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-review-security-posture) | security | 0.70 | Describes how to review and modify security level for protected items in Resiliency in Azure and references Azure Backup security features. This typically includes product-specific security settings and configuration of protection levels, which falls under security configuration guidance. |
 | [Security levels](https://learn.microsoft.com/en-us/azure/resiliency/security-levels-concept) | security | 0.70 | Concept article on security levels in Resiliency; likely defines specific security level names, behaviors, and requirements unique to the product. |
 | [Availability Zone Down Drills](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drills-about) | deployment | 0.65 | Describes advanced Availability Zone Down Drill capability, including requirement for service group enrollment in a usage plan and preview constraints; effectively a support/feature matrix for where and how drills can be run, which aligns closest with deployment constraints by region and scenario. |
+| [Create and configure](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure) | configuration | 0.65 | The page explains how to create and configure Recovery Orchestration Plans, including resource protection, recovery groups, and group actions. These are product-specific configuration steps and structures (plan, groups, actions) that represent expert knowledge about how this Azure resiliency feature is configured, beyond generic concepts. |
 | [Execute](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-execute) | configuration | 0.65 | Describes executing Zone Down Drills, tracking execution, analyzing resource health, and ending drills; likely includes product-specific execution parameters and options, fitting configuration of drill runs. |
 | [Use the Resiliency agent](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent) | configuration | 0.65 | Describes using the Resiliency Agent to design and assess zone resilience, including supported capability areas; likely includes specific prompts, options, or modes for the agent, which are configuration-like usage details. |
 | [Review recommendations](https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-review-recommendations) | best-practices | 0.60 | Guides how to interpret and act on targeted resiliency recommendations and view resiliency at scale; likely includes product-specific guidance on addressing gaps and using recommendations, aligning with best-practices for this service. |

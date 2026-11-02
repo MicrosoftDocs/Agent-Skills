@@ -1,9 +1,9 @@
 ---
 name: azure-resiliency
-description: Expert knowledge for Azure Resiliency development including best practices, security, configuration, and deployment. Use when configuring backup/replication policies, vault lifecycle, zone-down drills, RBAC roles, or recovery plans, and other Azure Resiliency related development tasks. Not for Azure Reliability (use azure-reliability), Azure Service Health (use azure-service-health), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Resiliency development including best practices, security, configuration, and deployment. Use when designing zone-resilient topologies, zone-down drills, backup/replication policies, vault lifecycle, or RBAC, and other Azure Resiliency related development tasks. Not for Azure Reliability (use azure-reliability), Azure Service Health (use azure-service-health), Azure Monitor (use azure-monitor), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-01"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resiliency Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L32-L36 | Guidance on systematically assessing Azure workloads for resiliency gaps and applying standardized resiliency recommendations and patterns across many resources at scale. |
 | Security | L37-L44 | RBAC roles, limits, security levels, and recovery orchestration plans for designing, configuring, and reviewing secure, resilient Azure solutions. |
-| Configuration | L45-L56 | Configuring drills, policies, and vaults for resiliency: zone-down chaos tests, backup/replication policies, resilience goals/posture, vault lifecycle, and recovery orchestration plans. |
+| Configuration | L45-L56 | Configuring zone-resilient setups: zone-down drills, resilience goals, backup/replication policies, vault lifecycle, recovery orchestration plans, and Copilot-assisted zone design. |
 | Deployment | L57-L62 | Planning and validating zone-down drills for Azure apps, using support matrices to see which services, workloads, and scenarios are covered for resiliency testing. |
 
 ### Best Practices
@@ -45,14 +45,14 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Zone Down Drill and Chaos Workspaces | https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define |
+| Configure zone down drills in Resiliency Manager | https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define |
 | Execute and monitor Zone Down Drill runs | https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-execute |
 | Create backup and replication protection policies in Resiliency | https://learn.microsoft.com/en-us/azure/resiliency/backup-protection-policy |
 | Assign resilience goals and manage posture | https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-assign-goals-view-posture |
 | Use Azure Copilot Resiliency Agent for zone design | https://learn.microsoft.com/en-us/azure/resiliency/goals-recommendations-use-agent |
 | Manage backup and replication protection policies in Resiliency | https://learn.microsoft.com/en-us/azure/resiliency/manage-protection-policy |
 | Manage lifecycle of Azure Backup and Site Recovery vaults | https://learn.microsoft.com/en-us/azure/resiliency/manage-vault |
-| Create and configure Azure Recovery Orchestration Plans | https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure |
+| Configure recovery orchestration plans for zone resilience | https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure |
 
 ### Deployment
 | Topic | URL |
