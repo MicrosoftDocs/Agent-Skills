@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 125
+- **Updated Pages**: 0
+- **Unchanged**: 131
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -73,21 +73,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Queue
 | *(Unclassified)* | 37 | 28.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable partitions for queues or topics in premium tier](https://learn.microsoft.com/en-us/azure/service-bus-messaging/enable-partitions-premium)
-  - Updated: 2026-03-11T05:11:00.000Z → 2026-11-02T08:00:00.000Z
-- [Message sessions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sessions)
-  - Updated: 2026-08-24T17:12:00.000Z → 2026-10-30T08:00:00.000Z
-- [Topic filters and actions](https://learn.microsoft.com/en-us/azure/service-bus-messaging/topic-filters)
-  - Updated: 2026-08-24T17:12:00.000Z → 2026-10-30T08:00:00.000Z
-- [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication)
-  - Updated: 2026-09-26T05:12:00.000Z → 2026-11-02T08:00:00.000Z
-- [Throttling](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-throttling)
-  - Updated: 2026-06-22T22:13:00.000Z → 2026-10-31T05:11:00.000Z
-- [Authentication with Shared Access Signatures](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-sas)
-  - Updated: 2026-05-02T08:00:00.000Z → 2026-10-29T08:00:00.000Z
 
 ## Classified Pages
 

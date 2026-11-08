@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 39
+- **Updated Pages**: 0
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-blueprints/azure-blueprints.csv`
 
@@ -59,17 +59,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Mana
 | *(Unclassified)* | 14 | 32.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Blueprints?](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview)
-  - Updated: 2026-08-17T22:15:00.000Z → 2026-10-30T08:00:00.000Z
-- [Azure Blueprints retirement](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement)
-  - Updated: 2026-06-26T08:00:00.000Z → 2026-10-31T05:11:00.000Z
-- [Retirement FAQ](https://learn.microsoft.com/en-us/azure/governance/blueprints/blueprint-retirement-faq)
-  - Updated: 2026-06-26T08:00:00.000Z → 2026-10-31T05:11:00.000Z
-- [Create from a blueprint sample](https://learn.microsoft.com/en-us/azure/governance/blueprints/tutorials/create-from-sample)
-  - Updated: 2023-09-07T08:00:00.000Z → 2025-10-08T05:12:00.000Z
 
 ## Classified Pages
 

@@ -48,10 +48,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 - **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 66
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 69
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
 ## Classification Statistics
@@ -69,21 +69,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency 
 | *(Unclassified)* | 14 | 20.3% |
 
 ## Changes
-
-### New Pages
-
-- [Supported resources and Actions for Chaos Studio Workspaces](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-workspaces-supported-resources)
-
-### Updated Pages
-
-- [Scenarios and outage templates for Chaos Studio Workspaces](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-scenarios)
-  - Updated: 2026-09-29T12:04:00.000Z → 2026-10-25T12:04:00.000Z
-- [Configure dynamic targets with Azure CLI (classic)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-tutorial-dynamic-target-cli)
-  - Updated: 2026-09-06T12:06:00.000Z → 2026-10-25T12:04:00.000Z
-
-### Deleted Pages
-
-- ~~Supported resources for Experiments (classic)~~ (https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)
 
 ## Classified Pages
 

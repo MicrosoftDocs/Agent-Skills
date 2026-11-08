@@ -1,9 +1,9 @@
 ---
 name: microsoft-foundry-classic
-description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Foundry agents, model routing, Azure OpenAI/RAG, multi-agent apps, or secure on-your-data tools, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech).
+description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents, model router setups, Azure OpenAI/RAG apps, Terraform deployments, or secure Private Link hubs, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Classic Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L64-L91 | Guidance for choosing models, regions, deployments, billing, and migration paths in Foundry, including sizing PTU, lifecycle/retirement planning, and disaster recovery decisions. |
 | Architecture & Design Patterns | L92-L98 | Designing multi-agent architectures, configuring Foundry Agent Service for resilience, and understanding model router behavior, failover, and disaster recovery strategies. |
 | Limits & Quotas | L99-L114 | Quotas, rate limits, and regional availability for Foundry agents, models (incl. Claude, Azure OpenAI), plus how to manage, request, and increase deployment and throughput quotas. |
-| Security | L115-L160 | Security, privacy, and compliance for Foundry: RBAC, Entra ID, network isolation, CMK, Azure Policy, guardrails/content filters, and secure use of models, tools, and on-your-data features. |
-| Configuration | L161-L210 | Configuring, monitoring, and troubleshooting Foundry classic: agents, evaluators, models, storage, networking, compute, OpenAI integrations, observability, and automation (Terraform, SDKs). |
+| Security | L115-L160 | Securing Foundry: identity/RBAC, network isolation & Private Link, Azure Policy guardrails, content filters/PII, CMK & storage, and privacy/security for Azure OpenAI and other models. |
+| Configuration | L161-L210 | Configuring and monitoring Foundry classic: agents, evaluators, models, storage, networking, tracing, OpenAI usage, and deployment/compute settings, plus Terraform and cross-project access. |
 | Integrations & Coding Patterns | L211-L306 | Integrating Foundry classic agents and models with external tools, data, and APIs (Azure AI Search, Bing, SharePoint, MCP, OpenAPI, LangChain, SK), plus Azure OpenAI usage, fine-tuning, RAG, and realtime audio. |
 | Deployment | L307-L326 | Deploying Foundry hubs/models at scale: regions, deployment types, Bicep/Terraform/CLI, managed and serverless compute, HF models, fine-tunes, evaluations, and region feature support |
 
@@ -120,7 +120,7 @@ This skill requires **network access** to fetch documentation content:
 | Secure access to Microsoft Foundry with Entra ID and RBAC | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/authentication-authorization-foundry |
 | Configure customer-managed keys for Microsoft Foundry (classic) | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/encryption-keys-portal |
 | Configure customer-managed keys for Foundry hub projects | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/hub-encryption-keys-portal |
-| Configure RBAC for Microsoft Foundry hubs and projects | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/hub-rbac-foundry |
+| Configure RBAC roles for Microsoft Foundry hubs and projects | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/hub-rbac-foundry |
 | Configure guardrails for Azure-sold Foundry models | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-catalog-content-safety |
 | Configure RBAC roles for Microsoft Foundry projects | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/rbac-foundry |
 | Understand vulnerability management for Microsoft Foundry images | https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/vulnerability-management |
@@ -155,7 +155,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom block lists for Azure OpenAI content filtering | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/use-blocklists |
 | Configure data privacy and security for Claude in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/claude-models/data-privacy |
 | Apply copyright commitment mitigations for Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/customer-copyright-commitment |
-| Understand data privacy and security for Foundry Models | https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/data-privacy |
+| Understand data privacy and security for Azure Foundry models | https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/data-privacy |
 | Apply limited access policy for Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/limited-access |
 
 ### Configuration

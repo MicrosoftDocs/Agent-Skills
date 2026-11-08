@@ -1,9 +1,9 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners/routing, WAF/TLS/mTLS, AGIC/AKS integrations, AppGW for Containers, or Key Vault certs, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring App Gateway/AGIC for AKS, WAF/TLS, Private Link, header rewrites, or autoscaling, and other Azure Application Gateway related development tasks. Not for Azure Load Balancer (use azure-load-balancer), Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Gateway Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L44 | Diagnosing backend health and metrics, reading diagnostic logs, and troubleshooting issues for Application Gateway and Application Gateway for Containers (including ALB Controller). |
 | Best Practices | L45-L50 | Tuning health probes, understanding probe behavior, and planning Application Gateway capacity, scaling, and configuration for high-traffic workloads. |
-| Decision Making | L51-L61 | Guidance on choosing networking and pricing for Application Gateway for Containers and planning/migrating from AGIC, App Gateway V1, and classic VMs to newer Azure offerings. |
-| Architecture & Design Patterns | L62-L66 | Guidance on choosing and designing load-balancing strategies and traffic distribution patterns when using Azure Application Gateway for Containers. |
-| Limits & Quotas | L67-L73 | Autoscaling, zone redundancy, multi-site hosting behavior, and FAQs about capacity limits, scaling behaviors, and configuration constraints for Azure Application Gateway v2. |
-| Security | L74-L115 | TLS/SSL security for Application Gateway: cert prep/management, TLS policies/ciphers, end-to-end and mutual TLS, mTLS for containers, WAF, HSTS, Key Vault, FIPS, Private Link, and JWT validation. |
-| Configuration | L116-L179 | Configuring Application Gateway and Application Gateway for Containers: listeners, routing, probes, headers, session affinity, TLS, Private Link, monitoring, diagnostics, and Kubernetes/AGIC integration. |
-| Integrations & Coding Patterns | L180-L189 | Patterns and scripts for integrating App Gateway with AKS, Key Vault, Prometheus/Grafana, Sentinel/Defender, HTTP header rewrites, request mirroring, and autoscaling pods via gateway metrics |
-| Deployment | L190-L202 | Deploying and scaling Application Gateway and AGIC: portal/ARM/PowerShell setup, IPv6 frontends, AKS add-on enable/disable, migrations, and Helm-based upgrades. |
+| Decision Making | L51-L61 | Guidance on choosing AKS networking, estimating App Gateway for Containers costs, and planning/migrating between AGIC, V1/V2 gateways, and classic vs ARM VMs. |
+| Architecture & Design Patterns | L62-L69 | Patterns and best practices for designing, sharing, and securing Application Gateway for Containers, including inference, load balancing strategies, multi-team setups, and private ingress. |
+| Limits & Quotas | L70-L77 | Autoscaling, zone redundancy, multi-site hosting behavior, gateway limits/quotas, and ALB controller versions/compatibility for Application Gateway v2. |
+| Security | L78-L118 | TLS/SSL, certificates, mTLS, JWT auth, WAF, HSTS, Private Link, and Key Vault integration for securing Azure Application Gateway and App Gateway for Containers |
+| Configuration | L119-L183 | Configuring Application Gateway and AGIC/containers: listeners, routing, probes, health, TLS/mTLS, Private Link, header/URL rewrites, session affinity, WebSockets, HTTP/3, monitoring, and diagnostics. |
+| Integrations & Coding Patterns | L184-L197 | Patterns and scripts for integrating App Gateway with AKS/containers, Istio, MCP, vLLM, Key Vault, Prometheus/Grafana, Sentinel/Defender, header rewrites, mirroring, and autoscaling via metrics. |
+| Deployment | L198-L210 | Deploying and scaling Application Gateway and AGIC: portal/ARM/PowerShell setup, IPv6 frontends, AKS add-on enable/disable, migrations, and Helm-based upgrades. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -62,13 +62,17 @@ This skill requires **network access** to fetch documentation content:
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
+| Design inference gateway patterns on Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/inference-gateway |
 | Choose load balancing strategies in Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/load-balancing-strategies |
+| Implement multi-team shared gateway on Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/multi-team-shared-gateway |
+| Design private ingress patterns with Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/private-ingress |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Configure autoscaling and zone redundancy for Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant |
 | Azure Application Gateway FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
+| ALB Controller release history and compatibility matrix | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-release-notes |
 | Configure and understand multi-site hosting on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview |
 
 ### Security
@@ -82,7 +86,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure TLS policies for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview |
 | Plan for TLS 1.0/1.1 retirement on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-tls-version-retirement |
 | Prepare certificates for backend authentication in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/certificates-for-backend-authentication |
-| Understand Application Gateway Confidential Compute security model | https://learn.microsoft.com/en-us/azure/application-gateway/confidential-compute-overview |
 | Configure Key Vault TLS termination for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/configure-key-vault-portal |
 | Set up end-to-end TLS on Application Gateway via portal | https://learn.microsoft.com/en-us/azure/application-gateway/end-to-end-ssl-portal |
 | Enable FIPS 140-compliant mode on Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/fips |
@@ -93,10 +96,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure end-to-end TLS with Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-end-to-end-tls-gateway-api |
 | Configure end-to-end TLS with Application Gateway for Containers Ingress | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-end-to-end-tls-ingress-api |
 | Enable frontend mTLS on Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-frontend-mtls-gateway-api |
-| Configure SSL offloading on Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-ssl-offloading-gateway-api |
+| Configure JWT AuthPolicy for Application Gateway routes | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-jwt-validation-gateway-api |
 | Configure SSL offloading using Ingress API for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-ssl-offloading-ingress-api |
 | Test and configure Web Application Firewall on Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-waf-gateway-api |
-| Integrate Istio mTLS with Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration |
+| Configure JWT validation with AuthPolicy in Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/jwt-validation |
 | Configure Web Application Firewall on Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/web-application-firewall |
 | Add HSTS security header using Application Gateway rewrite | https://learn.microsoft.com/en-us/azure/application-gateway/hsts-http-headers-portal |
 | Use Let's Encrypt certificates with Application Gateway for AKS | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-letsencrypt-certificate-application-gateway |
@@ -132,8 +135,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Application Gateway with Azure App Service backend | https://learn.microsoft.com/en-us/azure/application-gateway/configure-web-app |
 | Create custom error pages in Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/custom-error |
 | Configure ALB Controller using Helm chart parameters | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-helm-chart |
-| Use Kubernetes API specification for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/api-specification-kubernetes |
-| Configure core components of Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components |
+| Kubernetes API specification for Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/api-specification-kubernetes |
 | Use Azure Monitor metrics with Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-metrics |
 | Configure custom health probes for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/custom-health-probe |
 | Enable and use diagnostic logs for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/diagnostics |
@@ -141,10 +143,12 @@ This skill requires **network access** to fetch documentation content:
 | Configure CORS in Gateway API for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-cors-gateway-api |
 | Configure HTTP header rewrite rules in Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-header-rewrite-gateway-api |
 | Configure HTTP header rewrite using Ingress API for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-header-rewrite-ingress-api |
-| Configure Application Gateway for Containers inference gateway | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-inference-gateway |
+| Configure multi-team shared gateway with ListenerSet | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-multi-team-listeners-gateway-api |
 | Configure multi-site hosting on Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-multiple-site-hosting-gateway-api |
 | Configure multi-site hosting using Ingress API for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-multiple-site-hosting-ingress-api |
 | Set up path, header, and query string routing in Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-path-header-query-string-routing-gateway-api |
+| Set up private ingress with Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-private-ingress-gateway-api |
+| Configure SSL offloading using Gateway API | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-ssl-offloading-gateway-api |
 | Configure traffic splitting and weighted routing in Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-traffic-splitting-gateway-api |
 | Configure URL redirect rules in Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-url-redirect-gateway-api |
 | Configure URL redirects using Ingress API for Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-url-redirect-ingress-api |
@@ -182,8 +186,12 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure HTTP header rewrite rules in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/add-http-header-rewrite-rule-powershell |
 | Integrate Key Vault certificates with Application Gateway via PowerShell | https://learn.microsoft.com/en-us/azure/application-gateway/configure-keyvault-ps |
+| Expose vLLM model server via Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-inference-gateway |
+| Configure MCP gateway routing on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-mcp-gateway-gateway-api |
 | Configure request mirroring with Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/how-to-request-mirroring-gateway-api |
+| Use Application Gateway for Containers as an MCP gateway | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/mcp-gateway |
 | Integrate App Gateway for Containers with Prometheus and Grafana | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/prometheus-grafana |
+| Integrate Istio service mesh with Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/service-mesh-integration |
 | Integrate Application Gateway for Containers logs with Microsoft Sentinel and Defender | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/siem-integration-with-sentinel |
 | Autoscale AKS pods using Application Gateway metrics | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-autoscale-pods |
 

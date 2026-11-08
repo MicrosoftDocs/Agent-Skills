@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 - **Unclassified**: 61
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 7
-- **Unchanged**: 218
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 227
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -71,28 +71,6 @@ confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights
 | *(Unclassified)* | 61 | 26.9% |
 
 ## Changes
-
-### New Pages
-
-- [How to configure feature flags in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric-feature-flags)
-- [Network Fabric feature flags](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-feature-flags)
-
-### Updated Pages
-
-- [Network Fabric Controller internal service metrics](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-network-fabric-controller-metrics)
-  - Updated: 2026-05-04T17:07:00.000Z → 2026-10-29T17:04:00.000Z
-- [Network Fabric Upgrades](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-nexus-fabric)
-  - Updated: 2026-04-09T17:04:00.000Z → 2026-10-29T17:04:00.000Z
-- [How to replace terminal server](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-replace-terminal-server)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-10-29T22:04:00.000Z
-- [How to upgrade os of terminal server](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-os-of-terminal-server)
-  - Updated: 2026-09-16T08:00:00.000Z → 2026-10-29T17:04:00.000Z
-- [Terminal Server as an Azure Operator Nexus Resource](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-terminal-server-as-resource)
-  - Updated: 2026-08-04T17:05:00.000Z → 2026-10-29T17:04:00.000Z
-- [How to disable or enable network interface](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-disable-enable-network-interface)
-  - Updated: 2026-02-17T18:04:00.000Z → 2026-10-29T17:04:00.000Z
-- [List of metrics collected](https://learn.microsoft.com/en-us/azure/operator-nexus/list-of-metrics-collected)
-  - Updated: 2026-09-10T17:03:00.000Z → 2026-10-28T08:00:00.000Z
 
 ## Classified Pages
 

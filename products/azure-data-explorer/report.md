@@ -56,8 +56,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 198
+- **Updated Pages**: 0
+- **Unchanged**: 199
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -77,11 +77,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 92 | 46.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Reserved capacity](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-reserved-capacity)
-  - Updated: 2026-07-29T11:02:00.000Z → 2026-10-26T17:03:00.000Z
 
 ## Classified Pages
 

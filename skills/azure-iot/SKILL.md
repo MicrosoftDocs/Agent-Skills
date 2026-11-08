@@ -1,9 +1,9 @@
 ---
 name: azure-iot
-description: Expert knowledge for Azure IoT development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when managing Device Registry namespaces, device certs/CAs, fleet config, IoT SDK connectivity, or software updates, and other Azure IoT related development tasks. Not for Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Defender For Iot (use azure-defender-for-iot).
+description: Expert knowledge for Azure IoT development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when managing Device Registry namespaces, IoT Hub DPS, cert-based auth, SDK device connectivity, or software updates, and other Azure IoT related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Skill
@@ -25,8 +25,8 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Best Practices | L33-L38 | Designing Azure Device Registry namespaces and schema registries, including structure, naming, isolation, versioning, and governance best practices for large-scale IoT solutions |
-| Security | L39-L52 | Managing IoT device certificates and CAs in Azure: issuance, renewal, revocation, CA hierarchy, namespaces/security boundaries, and configuring Microsoft or external CAs via Device Registry. |
-| Configuration | L53-L61 | Configuring Azure Device Registry for fleets: namespaces/dependencies, device groups, enabling/disabling devices, importing updates, and running fleet-scale software update jobs. |
+| Security | L39-L51 | Managing IoT device certificates and CAs in Azure: issuance, renewal, revocation, CA hierarchy, namespaces/security boundaries, and configuring Microsoft or external CAs via Device Registry. |
+| Configuration | L52-L61 | Configuring Azure Device Registry and IoT Hub DPS: namespaces, groups, software update import/targeting, device enable/disable, and certificate policy setup. |
 | Integrations & Coding Patterns | L62-L66 | Using unified Azure IoT SDKs to connect devices to Azure Device Registry and IoT Hub, including setup, authentication, and coding patterns for device connectivity. |
 | Deployment | L67-L71 | Deploying and managing software updates to IoT devices via Device Registry, including onboarding updates and targeting specific device groups and namespaces. |
 
@@ -44,7 +44,6 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure Device Registry CA hierarchy | https://learn.microsoft.com/en-us/azure/iot/concept-managed-ca-hierarchy |
 | Revoke IoT certificates and manage policies in Device Registry | https://learn.microsoft.com/en-us/azure/iot/concepts-certificate-policy-management |
 | Understand Azure Device Registry namespaces and security boundaries | https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-namespaces |
-| Create and manage certificate policies for IoT devices | https://learn.microsoft.com/en-us/azure/iot/how-to-create-edit-certificate-policy |
 | Set up Microsoft-managed root and intermediate CAs | https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy |
 | Configure external certificate authorities for Device Registry | https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy-external-certificate |
 | Key concepts for Azure IoT certificate management | https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts |
@@ -58,6 +57,7 @@ This skill requires **network access** to fetch documentation content:
 | Set up Azure Device Registry namespaces and dependencies | https://learn.microsoft.com/en-us/azure/iot/device-registry/get-started-azure-device-registry |
 | Disable or enable IoT devices in Azure Device Registry | https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-disable-enable-device |
 | Import software updates into an Azure Device Registry namespace | https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-import-software-update |
+| Configure certificate policies for Azure IoT Hub DPS | https://learn.microsoft.com/en-us/azure/iot/how-to-create-edit-certificate-policy |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

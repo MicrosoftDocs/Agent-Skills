@@ -1,9 +1,9 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, agents, and triggers, GitHub-hosted agents, classic-to-YAML migration, or Kubernetes/VM deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, agents, service connections, Key Vault secrets, or web/Kubernetes deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L49-L60 | Guidance on YAML template design, caching for faster builds, cross-platform scripts, and best practices for configuring, parallelizing, and stabilizing automated tests (including UI and VSTest). |
 | Decision Making | L61-L68 | Guidance on choosing GitHub-hosted agents and planning migrations: from Jenkins, from Classic to YAML pipelines, and from retiring Azure Pipelines tasks. |
 | Architecture & Design Patterns | L69-L76 | Designing end-to-end CI/CD architectures and patterns for Azure Web Apps and IaaS/VM-based applications, including baseline pipelines, DevTest/DevOps environments, and deployment topologies. |
-| Limits & Quotas | L77-L86 | Limits, quotas, and capacity planning for Azure Pipelines: hosted agent availability, images, concurrency, parallel jobs, run retention, and handling large Universal Packages. |
+| Limits & Quotas | L77-L86 | Managing Azure Pipelines capacity: hosted agent image lifecycle, agent pool concurrency, parallel job limits, large package handling, and run retention configuration. |
 | Security | L87-L134 | Securing Azure Pipelines: auth for agents and service connections, secrets/Key Vault, permissions and approvals, artifact/repo protection, policy/compliance checks, and secure YAML practices. |
 | Configuration | L135-L506 | Configuring Azure Pipelines: agents, triggers, variables, environments, YAML schema, and detailed setup for built-in tasks, deployments, artifacts, and test/analytics behavior. |
 | Integrations & Coding Patterns | L507-L535 | Patterns for building/testing apps (ASP.NET, .NET, Java, Python, Ruby, Xcode), integrating tools (Slack, ServiceNow, Jenkins, Key Vault), and scripting/REST/Function automation in pipelines. |
@@ -77,7 +77,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Track Azure Pipelines hosted agent deprecation timelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops |
+| Track Azure Pipelines hosted agent image deprecations | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops |
 | Use Microsoft-hosted agents and image limits in Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops |
 | Analyze Azure Pipelines agent pool concurrency | https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/pool-consumption-report?view=azure-devops |
 | Publish and download large Universal Packages | https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/universal-packages?view=azure-devops |

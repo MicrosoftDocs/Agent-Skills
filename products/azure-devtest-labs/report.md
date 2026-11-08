@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 96
+- **Updated Pages**: 0
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-devtest-labs/azure-devtest-labs.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Lab Services (use azure-lab-services), Azure D
 | *(Unclassified)* | 34 | 35.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage formulas](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-manage-formulas)
-  - Updated: 2024-06-11T11:24:00.000Z → 2026-10-30T22:14:00.000Z
 
 ## Classified Pages
 

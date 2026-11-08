@@ -1,9 +1,9 @@
 ---
 name: azure-site-recovery
-description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ASR for VMware/Hyper-V, protecting SAP/SQL apps, automating with ARM/Terraform, or securing ADE/CMK VMs, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning ASR for VMware/Hyper-V, AVS DR, SAP/SQL app protection, ADE/CMK VMs, or automation via ARM/Terraform, and other Azure Site Recovery related development tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Site Recovery Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L62-L68 | Best practices for preparing on-prem disks for ASR, reducing high data churn on protected VMs, and monitoring/tuning process server health and performance. |
 | Decision Making | L69-L86 | Planning and sizing Azure Site Recovery for DR: choosing tools (ASR vs Azure Migrate), VM sizes, failback types, managed disk and DR costs, and using/reading Deployment Planner reports for Hyper-V/VMware. |
 | Architecture & Design Patterns | L87-L98 | Design patterns and reference architectures for using Azure Site Recovery to protect networks and complex apps (SAP, SharePoint, IIS, Dynamics AX, SQL, file servers) and build end-to-end DR solutions. |
-| Limits & Quotas | L99-L107 | Limits, quotas, and constraints for Site Recovery: high-churn VM limits, shared disk support, safe coexistence with Backup, Deployment Planner limits/history, and Mobility service resource usage. |
-| Security | L108-L120 | Encrypting and securing ASR: handling ADE/CMK-encrypted VMs, NSGs, TLS, RBAC, trusted launch, VMware-to-Azure security, and replacing legacy Run As/encryption setups |
-| Configuration | L121-L161 | Configuring Azure Site Recovery for VMware/Hyper-V/Azure VMs: networking, IPs, disks, appliances, policies, monitoring, and DR setup for AVS, Extended Zones, and shared/clustered workloads. |
-| Integrations & Coding Patterns | L162-L178 | Automating and integrating Azure Site Recovery using PowerShell, ARM/Bicep/Terraform, ExpressRoute, Traffic Manager, and runbooks, including Hyper-V, VMware, shared disk, and Azure VM DR setups. |
-| Deployment | L179-L190 | Guides for setting up and managing ASR replication/migration (Azure VMs, VMware, Hyper-V, physical), including support matrices, appliances, and failover/failback workflows. |
+| Limits & Quotas | L99-L108 | Limits, supported scenarios, and resource usage for Azure Site Recovery: VM support caps, high churn handling, shared disks, safe use with Backup, planner limitations, and Mobility service impact. |
+| Security | L109-L121 | Encrypting and securing ASR: handling ADE/CMK-encrypted VMs, NSGs, TLS, RBAC, trusted launch, VMware-to-Azure security, and replacing legacy Run As/encryption setups |
+| Configuration | L122-L162 | Configuring Azure Site Recovery for VMware/Hyper-V/Azure VMs: networking, IPs, disks, appliances, policies, monitoring, and DR setup for AVS, Extended Zones, and shared/clustered workloads. |
+| Integrations & Coding Patterns | L163-L179 | Automating and integrating Azure Site Recovery using PowerShell, ARM/Bicep/Terraform, ExpressRoute, Traffic Manager, and runbooks, including Hyper-V, VMware, shared disk, and Azure VM DR setups. |
+| Deployment | L180-L190 | Guides for setting up and managing ASR replication/migration (Azure VMs, VMware, Hyper-V, physical), including support matrices, appliances, and failover/failback workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -99,6 +99,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
+| Check Azure Site Recovery VM support and limits | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix |
 | Apply high churn limits for Azure VM DR | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support |
 | Understand shared disk support for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/shared-disk-support-matrix |
 | Use Azure Site Recovery with Azure Backup safely | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-backup-interoperability |
@@ -181,7 +182,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Enable Azure-to-Azure VM replication with ASR | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication |
 | Reprotect and fail back Azure VMs with ASR | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-reprotect |
-| Azure-to-Azure VM disaster recovery support matrix | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix |
 | Execute migration from classic to modernized VMware DR | https://learn.microsoft.com/en-us/azure/site-recovery/how-to-move-from-classic-to-modernized-vmware-disaster-recovery |
 | Hyper-V to Azure disaster recovery support matrix | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix |
 | Migrate Windows Server 2008 machines to Azure | https://learn.microsoft.com/en-us/azure/site-recovery/migrate-tutorial-windows-server-2008 |

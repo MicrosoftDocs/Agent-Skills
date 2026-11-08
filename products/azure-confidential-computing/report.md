@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 - **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 25
-- **Updated Pages**: 9
-- **Unchanged**: 35
-- **Deleted Pages**: 27
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 69
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
 ## Classification Statistics
@@ -67,75 +67,6 @@ confusable_not_for: Not for Azure Enclave (use azure-enclave), Azure Dedicated H
 | *(Unclassified)* | 23 | 33.3% |
 
 ## Changes
-
-### New Pages
-
-- [Confidential AKS worker nodes](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-node-pool-aks)
-- [Confidential containers (preview)](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers)
-- [Confidential containers with Intel SGX enclaves (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers-enclaves)
-- [Application enclave with Intel SGX DCSv2/DCsv3 nodes (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-overview)
-- [Deploy application enclave nodes on AKS (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-enclave-nodes-aks-get-started)
-- [Enclave-aware containers (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-aware-containers)
-- [AKS add-on (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-addon)
-- [Confidential enclave nodes FAQ (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq)
-- [App enclaves overview (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/application-development)
-- [Create an Intel SGX VM through the Azure portal (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/quick-create-portal)
-- [Enclave development overview (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-enclaves)
-- [Attesting application enclaves (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/attestation)
-- [Open-source projects for enclave development (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-development-oss)
-- [Deploying Intel Software Guard Extensions (SGX) VMs (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-solutions-sgx)
-- [Application enclave VM FAQ (specialized)](https://learn.microsoft.com/en-us/azure/confidential-computing/faq-application-enclaves)
-- [Duality Technologies](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/duality-technologies)
-- [What is confidential computing?](https://learn.microsoft.com/en-us/azure/confidential-computing/overview)
-- [Azure confidential computing products](https://learn.microsoft.com/en-us/azure/confidential-computing/overview-azure-products)
-- [Build confidential computing solutions](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-solutions)
-- [Deploy confidential computing solutions](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-deployment-models)
-- *...and 5 more*
-
-### Updated Pages
-
-- [Confidential containers with Azure Container Instances](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers)
-  - Updated: 2023-09-12T08:00:00.000Z → 2026-10-28T22:31:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/partner-pages-index)
-  - Updated: 2025-11-20T06:12:00.000Z → 2026-10-28T22:31:00.000Z
-- [Use cases and scenarios](https://learn.microsoft.com/en-us/azure/confidential-computing/use-cases-scenarios)
-  - Updated: 2025-05-07T17:04:00.000Z → 2026-10-28T22:31:00.000Z
-- [Trusted execution environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment)
-  - Updated: 2025-05-07T17:04:00.000Z → 2026-10-28T22:31:00.000Z
-- [Trusted compute base (TCB)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-compute-base)
-  - Updated: 2025-05-07T17:04:00.000Z → 2026-10-28T22:31:00.000Z
-- [Multi-party and cleanroom collaboration](https://learn.microsoft.com/en-us/azure/confidential-computing/multi-party-data)
-  - Updated: 2025-02-28T12:19:00.000Z → 2026-10-28T22:31:00.000Z
-- [Confidential AI](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-ai)
-  - Updated: 2023-05-23T14:25:00.000Z → 2026-10-28T22:31:00.000Z
-- [About Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview)
-  - Updated: 2026-02-05T23:11:00.000Z → 2026-10-28T22:31:00.000Z
-- [Azure confidential VM options](https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-options)
-  - Updated: 2025-09-04T05:10:00.000Z → 2026-10-28T22:31:00.000Z
-
-### Deleted Pages
-
-- ~~App enclaves overview~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/application-development)
-- ~~Attesting application enclaves~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/attestation)
-- ~~Deploying solutions on confidential computing~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-deployment-models)
-- ~~Enclave development overview~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-enclaves)
-- ~~Building confidential computing solutions~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-solutions)
-- ~~Confidential containers overview~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers)
-- ~~Confidential containers with Intel SGX enclaves~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers-enclaves)
-- ~~Deploy application enclave nodes on AKS~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-enclave-nodes-aks-get-started)
-- ~~Confidential VM node pools in AKS~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-node-pool-aks)
-- ~~AKS Add-on~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-addon)
-- ~~Confidential enclave nodes FAQ~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-faq)
-- ~~Application enclave with Intel SGX DCSv2/DCsv3 nodes~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-overview)
-- ~~How to disable Virtual Machine Metablob Disk~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/disable-confidential-vm-metadata-blob)
-- ~~Enclave-aware containers~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-aware-containers)
-- ~~Open-source projects for development~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-development-oss)
-- ~~Application enclave VM FAQ~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/faq-application-enclaves)
-- ~~Guest attestation Design for confidential VMs~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-virtual-machines-design)
-- ~~Real-time protection of data in use~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/overview)
-- ~~Confidential computing on Azure~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/overview-azure-products)
-- ~~Enclaive~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/enclaive)
-- *...and 7 more*
 
 ## Classified Pages
 

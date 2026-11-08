@@ -45,10 +45,10 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use 
 - **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 121
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 124
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
 ## Classification Statistics
@@ -66,21 +66,6 @@ confusable_not_for: Not for Azure Batch (use azure-batch), Azure HDInsight (use 
 | *(Unclassified)* | 25 | 20.2% |
 
 ## Changes
-
-### New Pages
-
-- [Current Release - 2026.10.23](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-10-23?view=cyclecloud-8)
-- [Previous Release - 2026.09.02](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-09-02?view=cyclecloud-8)
-
-### Updated Pages
-
-- [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8)
-  - Updated: 2026-09-01T22:21:00.000Z → 2026-10-28T22:31:00.000Z
-
-### Deleted Pages
-
-- ~~Previous Release - 2026.08.07~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-08-07?view=cyclecloud-8)
-- ~~Current Release - 2026.09.02~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-09-02?view=cyclecloud-8)
 
 ## Classified Pages
 

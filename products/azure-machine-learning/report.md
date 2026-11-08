@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-08'
 category_descriptions:
   configuration: Configuring Azure ML components, compute, networking, AutoML, YAML
     schemas, monitoring, and Prompt Flow so you can build, train, deploy, and manage
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 553
+- **Updated Pages**: 1
+- **Unchanged**: 552
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -75,6 +75,11 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 143 | 25.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is RAG](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2)
+  - Updated: 2025-10-30T22:11:00.000Z → 2026-11-06T10:04:00.000Z
 
 ## Classified Pages
 
@@ -564,7 +569,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Share data assets](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-share-data-across-workspaces-with-registries?view=azureml-api-2) | 0.30 | Primarily explains how to share data via Azure ML registries and cross-workspace collaboration. Summary suggests a conceptual/how-to sharing workflow without detailed config tables, limits, or security role mappings. |
 | [Train a model](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-train-model?view=azureml-api-2) | 0.30 | Training tutorial using a sample dataset; no detailed product-specific configuration or limits. |
 | [Tune prompts using variants](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-tune-prompts-using-variants?view=azureml-api-2) | 0.30 | Tuning prompts using variants in prompt flow is primarily a workflow/tutorial-style document. Based on the summary, it likely explains how to create and compare prompt variants but doesn’t clearly indicate product-specific configuration tables, limits, or diagnostic mappings that qualify as expert knowledge under the defined categories. |
-| [What is RAG](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2) | 0.30 | Conceptual explanation of RAG pattern and its use with prompt flow; primarily overview without detailed configuration tables or numeric thresholds. |
 | [What is managed feature store](https://learn.microsoft.com/en-us/azure/machine-learning/concept-what-is-managed-feature-store?view=azureml-api-2) | 0.30 | High-level conceptual overview of managed feature store; mostly descriptive without detailed config, limits, or troubleshooting. |
 | [MLflow models](https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2) | 0.25 | Explains MLflow artifacts and models conceptually and how Azure ML uses them. No indication of numeric limits, configuration tables, or troubleshooting mappings. |
 | [Tools](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-tools?view=azureml-api-2) | 0.25 | Defines tools as building blocks of flows with general description of their role; appears conceptual without product-specific configuration tables or error mappings. |
@@ -611,6 +615,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Use a terminal](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2) | 0.20 | How-to guide for using the compute instance terminal (Git, package install, kernels). It’s procedural usage content without product-specific limits, configuration matrices, error-code mappings, or other expert-only details. |
 | [Use automated ML (interface)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-automated-ml-for-ml-models?view=azureml-api-2) | 0.20 | Page is a high-level how-to for setting up Automated ML in Azure ML Studio without detailed limits, configuration parameter tables, error-code-based troubleshooting, or product-specific best-practice guidance with quantified impact. |
 | [Visualize training results (preview)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-visualize-jobs?view=azureml-api-2) | 0.20 | Describes using dashboards to visualize experiment results in Azure ML studio; primarily conceptual/UX guidance without numeric limits, configuration parameter tables, or troubleshooting mappings. |
+| [What is RAG](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation?view=azureml-api-2) | 0.20 | Primarily a conceptual overview of RAG and Azure ML prompt flow with preview/deprecation notes; does not include product-specific limits, configuration tables, error codes, or detailed decision matrices that meet the expert-knowledge criteria. |
 | [Workspaces](https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2) | 0.20 | Conceptual description of workspaces and access; no detailed RBAC role lists, limits, or configuration tables. |
 | [Advance your maturity level](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-llmops-maturity?view=azureml-api-2) | 0.10 | Describes GenAIOps maturity stages and conceptual advancement guidance; this is high-level operational/maturity content without product-specific configs, limits, or detailed patterns that meet the expert-knowledge criteria. |
 | [Assess errors in ML models](https://learn.microsoft.com/en-us/azure/machine-learning/concept-error-analysis?view=azureml-api-2) | 0.10 | Conceptual explanation of error analysis and assessing model errors across cohorts. Focuses on why error analysis is useful, not on specific configuration values, limits, or troubleshooting mappings. |

@@ -1,9 +1,9 @@
 ---
 name: azure-database-mysql
-description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MySQL Flexible Server HA/DR, backups/geo-restore, read replicas, AKS connectivity, or Entra auth, and other Azure Database for MySQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using MySQL Flexible Server HA/replicas, backups/geo-restore, AKS connectivity, Entra auth, or migration tools, and other Azure Database for MySQL related development tasks. Not for Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for MySQL Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L53 | Diagnosing and fixing MySQL Flexible Server issues: connection and CLI errors, performance (CPU/memory/queries), capacity, corruption, replicas, and using logs/self-heal tools. |
 | Best Practices | L54-L73 | Best practices for monitoring, performance tuning, maintenance, replicas, BCDR, troubleshooting, safe restarts, and migration/ post-migration optimization for Azure Database for MySQL. |
-| Decision Making | L74-L90 | Guidance for planning MySQL on Azure: version policy, HA/DR and business continuity, sizing and tiers, performance baselines, and choosing/migrating/ upgrading to Flexible Server. |
+| Decision Making | L74-L90 | Guidance on version support, HA and business continuity, sizing and purchasing Flexible Server, and planning/executing MySQL migrations and upgrades to Azure. |
 | Architecture & Design Patterns | L91-L97 | Patterns for connecting AKS to MySQL Flexible Server, designing backup/restore, data-in/out replication, high availability (zone-redundant), and read-replica-based scaling. |
 | Limits & Quotas | L98-L106 | Limits, quotas, and performance caps for MySQL Flexible Server: max connections/cores/IOPS, storage IOPS behavior, quota increase requests, restart/stop limits, and delete/restore time limits. |
 | Security | L107-L132 | Network, auth, and encryption security for Azure MySQL: private/public access, firewalls, TLS, cert rotation, audit logging, CMK/data-at-rest encryption, Entra auth, and secure user/migration setup |
@@ -80,7 +80,7 @@ This skill requires **network access** to fetch documentation content:
 | High availability FAQ and choices for MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability-faq |
 | Select MySQL Flexible Server service tiers and storage | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-service-tiers-storage |
 | Perform minimal-downtime MySQL migration to Azure flexible server | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-migrate-online |
-| Plan and execute Azure MySQL major version upgrades | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade |
+| Plan and execute MySQL major version upgrades | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade |
 | Plan Azure Database for MySQL major version upgrades | https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade-faq |
 | Plan and execute MySQL migration to Azure Database | https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro |
 | Assess on-premises MySQL for migration to Azure | https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/03-assessment |

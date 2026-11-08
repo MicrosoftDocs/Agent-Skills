@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   limits-quotas: Limits, quotas, and regional caps for Content Safety/Moderator (image
     & term lists, custom categories, code protected-material checks) and how to configure
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 41
+- **Updated Pages**: 2
+- **Unchanged**: 48
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -70,24 +70,10 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 
 ### Updated Pages
 
-- [Content Safety containers overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/container-overview)
-  - Updated: 2026-10-14T22:16:00.000Z → 2026-10-28T22:11:00.000Z
-- [Embedded Content Safety (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/embedded-content-safety)
-  - Updated: 2025-09-16T08:00:00.000Z → 2026-10-20T08:00:00.000Z
 - [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
-  - Updated: 2026-10-01T17:21:00.000Z → 2026-10-20T08:00:00.000Z
-- [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness)
-  - Updated: 2026-02-20T06:04:00.000Z → 2026-10-20T08:00:00.000Z
-- [Custom categories (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/custom-categories)
-  - Updated: 2025-09-03T05:08:00.000Z → 2026-10-28T22:11:00.000Z
-- [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness)
-  - Updated: 2026-02-26T23:09:00.000Z → 2026-10-20T08:00:00.000Z
-- [Custom categories (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-custom-categories)
-  - Updated: 2025-09-02T08:00:00.000Z → 2026-10-20T08:00:00.000Z
-- [Multimodal moderation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-multimodal)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-10-20T08:00:00.000Z
-- [Use custom categories (rapid) (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/custom-categories-rapid)
-  - Updated: 2025-09-16T08:00:00.000Z → 2026-10-28T22:11:00.000Z
+  - Updated: 2026-10-20T08:00:00.000Z → 2026-11-06T08:00:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new)
+  - Updated: 2026-10-22T22:16:00.000Z → 2026-11-06T23:13:00.000Z
 
 ## Classified Pages
 
@@ -142,9 +128,9 @@ confusable_not_for: Not for Azure Content Understanding in Foundry Tools (use az
 | [Text moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/text-moderation-api) | 0.30 | Text moderation overview; summary is conceptual and deprecation-focused, without detailed configs, limits, or troubleshooting mappings. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest) | 0.30 | Encryption at rest overview; summary is high-level and lacks specific encryption configuration options or key management details. |
 | [Use Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.25 | Portal overview (classic) for Content Safety; primarily an interface/feature overview without detailed limits, configs, or troubleshooting mappings in summary. |
-| [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level overview of Azure AI Content Safety; summary indicates conceptual description of capabilities without numeric limits, configuration tables, error codes, or detailed decision matrices. |
+| [Azure AI Content Safety overview](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) | 0.20 | High-level overview of Azure AI Content Safety and guardrails; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) | 0.20 | Conceptual description of Prompt Shields behavior and attack types; no concrete limits, configuration tables, error codes, or product-specific parameter references that meet any sub-skill detection criteria. |
 | [REST API samples in C#](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-rest) | 0.20 | Code samples via REST; summary does not show specific configuration parameters, limits, or error codes. |
 | [Using the client library or REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/client-libraries) | 0.20 | Client library quickstart; summary is conceptual and does not expose product-specific configuration tables or limits. |
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | High-level overview and deprecation notice for Content Moderator; no specific limits, configs, or error details. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.20 | Release notes / what's-new page summarizing recent features and updates; no clear evidence of detailed limits, configuration tables, error codes, or other structured expert knowledge as defined by the sub-skill types. |
+| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) | 0.10 | Release notes/what's new page summarizing updates; does not expose detailed limits, configuration tables, or troubleshooting mappings. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   security: Managing secure access to Azure billing, cost data, EA/MCA/CSP accounts,
     reservations, and savings plans using RBAC roles, admin elevation, policies, and
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: Usage, timing, and granularity limits for Cost Management data; free
     account credits and quotas; subscription spending limits; savings plan utilization
     timing; multi-subscription and dormant account constraints
-  decision-making: Guidance for choosing and configuring Azure billing, cost allocation,
-    reservations, savings plans, EA/MCA/CSP transitions, and subscription/product
-    transfers to optimize and manage cloud spend.
+  decision-making: Guidance for choosing Azure billing, cost allocation, reservations,
+    savings plans, EA/MCA/CSP transitions, and subscription/product transfer strategies
+    to optimize overall costs.
   integrations: APIs, scripts, and PowerShell patterns to automate cost analysis,
     billing data retrieval, and programmatic creation/migration of Azure subscriptions
     and reservations.
@@ -27,16 +27,14 @@ category_descriptions:
     ongoing cost analysis.
 skill_description: Expert knowledge for Cost Management development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when managing Azure billing accounts, budgets/alerts,
-  cost exports, reservations/savings plans, or cost APIs, and other Cost Management
-  related development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor
-  (use azure-monitor), Azure Quotas (use azure-quotas), Azure Impact Reporting (use
-  azure-impact-reporting).
-use_when: Use when managing Azure billing accounts, budgets/alerts, cost exports,
-  reservations/savings plans, or cost APIs, and other Cost Management related development
-  tasks.
+  & coding patterns, and deployment. Use when managing Azure billing APIs, budgets/alerts,
+  exports to Storage, reservations, or savings plans, and other Cost Management related
+  development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor (use
+  azure-monitor), Azure Quotas (use azure-quotas), Azure Policy (use azure-policy).
+use_when: Use when managing Azure billing APIs, budgets/alerts, exports to Storage,
+  reservations, or savings plans, and other Cost Management related development tasks.
 confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (use
-  azure-monitor), Azure Quotas (use azure-quotas), Azure Impact Reporting (use azure-impact-reporting).
+  azure-monitor), Azure Quotas (use azure-quotas), Azure Policy (use azure-policy).
 ---
 # Cost Management Crawl Report
 
@@ -45,14 +43,14 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 - **Total Pages**: 274
 - **Fetched**: 274
 - **Fetch Failed**: 0
-- **Classified**: 127
-- **Unclassified**: 147
+- **Classified**: 129
+- **Unclassified**: 145
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 20
-- **Unchanged**: 253
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 272
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
 ## Classification Statistics
@@ -61,66 +59,22 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 |------|-------|------------|
 | best-practices | 8 | 2.9% |
 | configuration | 18 | 6.6% |
-| decision-making | 33 | 12.0% |
+| decision-making | 35 | 12.8% |
 | deployment | 1 | 0.4% |
 | integrations | 14 | 5.1% |
 | limits-quotas | 8 | 2.9% |
 | security | 19 | 6.9% |
 | troubleshooting | 26 | 9.5% |
-| *(Unclassified)* | 147 | 53.6% |
+| *(Unclassified)* | 145 | 52.9% |
 
 ## Changes
 
-### New Pages
-
-- [Manage savings plans](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/manage-savings-plan)
-
 ### Updated Pages
 
-- [What are savings plans?](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview)
-  - Updated: 2026-09-14T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [Savings plan recommendations](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/purchase-recommendations)
-  - Updated: 2026-03-14T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [How a savings plan discount is applied](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/discount-application)
-  - Updated: 2026-03-24T22:22:00.000Z → 2026-10-29T22:11:00.000Z
-- [Savings plan scopes](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/scope-savings-plan)
-  - Updated: 2026-03-14T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [Decide between savings plans and reservations](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/decide-between-savings-plan-reservation)
-  - Updated: 2026-03-14T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [Windows and SQL costs not included](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/software-costs-not-included)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-- [Cancellation policy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/cancel-savings-plan)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-- [Choose a commitment amount](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/choose-commitment-amount)
-  - Updated: 2026-08-06T22:11:00.000Z → 2026-10-29T22:11:00.000Z
-- [Buy a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/buy-savings-plan)
-  - Updated: 2026-08-06T22:11:00.000Z → 2026-10-29T22:11:00.000Z
-- [Trade a reservation for a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/reservation-trade-in)
-  - Updated: 2026-09-14T08:00:00.000Z → 2026-10-29T08:00:00.000Z
-- [Renew a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/renew-savings-plan)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-- [Download price sheet](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/download-savings-plan-price-sheet)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-- [Permissions to view and manage](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-view-manage)
-  - Updated: 2026-03-14T08:00:00.000Z → 2026-10-29T08:00:00.000Z
-- [Permission to buy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-buy-savings-plan)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-- [View savings plan utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-utilization)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-- [View savings plan cost and usage](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/utilization-cost-reports)
-  - Updated: 2026-03-14T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [View savings plan transactions](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-transactions)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-- [Charge back savings plan costs](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/charge-back-costs)
-  - Updated: 2026-03-14T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [Calculate EA cost savings](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/calculate-ea-savings-plan-savings)
-  - Updated: 2026-03-14T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [Troubleshoot utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/troubleshoot-savings-plan-utilization)
-  - Updated: 2026-03-17T22:33:00.000Z → 2026-10-29T22:11:00.000Z
-
-### Deleted Pages
-
-- ~~Manage savings plan~~ (https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/manage-savings-plan)
+- [GitHub AI Credits Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/github-ai-credits-pre-purchase-plan)
+  - Updated: 2026-07-17T08:00:00.000Z → 2026-11-04T08:00:00.000Z
+- [GitHub Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/github-pre-purchase)
+  - Updated: 2026-07-17T08:00:00.000Z → 2026-11-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -161,6 +115,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Decide between savings plans and reservations](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/decide-between-savings-plan-reservation) | decision-making | 0.75 | Provides product-specific guidance on when to choose savings plans vs reservations, including workload pattern considerations and trade-offs, fitting decision-making criteria. |
 | [Elevate access](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/elevate-access-global-admin) | security | 0.75 | Describes how a Microsoft Entra Global Administrator can elevate access to all billing accounts via portal or REST API, including specific permissions and scope behavior. This is product-specific security/authorization configuration. |
 | [Migrate from EA to MCA APIs](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/migrate-cost-management-api) | decision-making | 0.75 | Details differences in data structures, APIs, and integrations between EA and MCA accounts and how migration affects systems. This is explicit decision and migration guidance unique to these billing models. |
+| [GitHub AI Credits Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/github-ai-credits-pre-purchase-plan) | decision-making | 0.72 | The page describes how GitHub AI Credits pre-purchase plans work in Azure Cost Management, including commit units (GHAICCUs), how they map to USD retail costs, and discounted tiers based on purchase amounts. This is product- and plan-specific guidance that helps decide how much to commit and how the credits are applied, which goes beyond generic knowledge. It fits decision-making because it focuses on plan structure, discounts, and usage application rather than just conceptual billing. |
 | [SQL IaaS extension registration options](https://learn.microsoft.com/en-us/azure/cost-management-billing/scope-level/sql-iaas-extension-registration) | configuration | 0.72 | Explains SQL IaaS Agent extension registration options and steps; likely includes specific settings, modes, and registration options that are product-specific configuration details. |
 | [Act on recommendations](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) | best-practices | 0.70 | Tutorial on acting on optimization recommendations; provides concrete, product-specific actions and patterns to lower costs, aligning with best practices. |
 | [Analyze Azure costs with the Power BI template app](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/analyze-cost-data-azure-cost-management-power-bi-template-app) | integrations | 0.70 | Covers installing and using a specific Power BI app with constraints (EA-only, unsupported clouds) and likely connection parameters; fits integrations & coding patterns. |
@@ -188,6 +143,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Exchange and refund reservations](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations) | decision-making | 0.70 | Page contains product-specific rules and constraints for when and how Azure Reservations can be exchanged or refunded, including ownership requirements and distinctions between reservations and savings plans. This is specialized decision guidance on managing reservation commitments rather than generic billing concepts. |
 | [Export cost data with a Storage SAS key](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/export-cost-data-storage-account-sas-key) | configuration | 0.70 | Explains how partners export cost data to a storage account in another tenant using a SAS key. Involves product-specific configuration of SAS-based exports and billing account roles. |
 | [Find a reservation purchaser from Azure logs](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/find-reservation-purchaser-from-logs) | troubleshooting | 0.70 | Shows how to use directory logs in Azure Monitor to identify who purchased reservations, including specific log locations/fields—symptom-to-diagnosis guidance unique to reservations. |
+| [GitHub Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/github-pre-purchase) | decision-making | 0.70 | The page explains GitHub Pre-Purchase plans with commit units (GCUs), discounted tiers, and how GCUs pay down eligible GitHub usage in USD. These are specific, product-level billing mechanics that an LLM is unlikely to know from training. The content supports decisions about committing spend and understanding how credits are consumed, aligning best with the decision-making sub-skill type. |
 | [Grant access to billing](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-access) | security | 0.70 | Page is about managing access to billing information; for each billing account type it defines specific billing roles and how to grant them. This is product-specific security/authorization configuration (role names, scopes) that an LLM is unlikely to fully know from training. |
 | [Group and allocate costs using tag inheritance](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance) | configuration | 0.70 | Explains the product-specific 'tag inheritance' setting in Cost Management, including how it applies billing, resource group, and subscription tags to child resource usage records. This is a concrete configuration behavior unique to Cost Management rather than a generic tagging concept. |
 | [Keep your billing account active](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/keep-billing-accounts-active) | limits-quotas | 0.70 | Dormancy handling for billing accounts typically includes specific inactivity time thresholds and timelines for securing, disabling, and deleting accounts, tenants, and subscriptions. These are product-specific limits (time-based thresholds) that an LLM wouldn't reliably know from training, fitting the limits-quotas category. |
@@ -267,8 +223,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Copilot Credit Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/copilot-credit-p3) | 0.50 | Describes Copilot Credit commit units and discount tiers conceptually; no detailed tier tables or technical constraints in summary. |
 | [Cost Management for partners](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/get-started-partners) | 0.50 | Get-started guide for partners; mainly describes how partners use features and enable access, not detailed configs, limits, or troubleshooting. |
 | [Enterprise and Microsoft Customer Agreement usage data](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea) | 0.50 | Describes enhanced data for reservation costs and usage for EA/MCA; focuses on data consolidation and viewing charges, not on numeric limits or configuration parameters. |
-| [GitHub AI Credits Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/github-ai-credits-pre-purchase-plan) | 0.50 | GitHub AI Credits pre-purchase description is about billing units and discounts; no expert-level technical parameters or limits evident. |
-| [GitHub Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/github-pre-purchase) | 0.50 | GitHub Pre-Purchase plan summary focuses on commit units and discount behavior; lacks technical configuration or quota details. |
 | [Manage savings plans](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/manage-savings-plan) | 0.50 | Management/how-to article; summary mentions scope changes and permissions but no explicit config tables, limits, or troubleshooting mappings. |
 | [Reservation recommendations](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reserved-instance-purchase-recommendations) | 0.50 | Describes how reservation recommendations are calculated in general terms; likely algorithmic but summary does not show specific thresholds, matrices, or numeric rules that would qualify as decision-making expert knowledge. |
 | [Understand and work with scopes](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/understand-work-scopes) | 0.50 | Conceptual explanation of scopes and permissions; while product-specific, it’s more conceptual/role-based than configuration tables or numeric limits. |

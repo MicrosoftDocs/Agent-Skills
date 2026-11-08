@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   integrations: Patterns and steps for wiring Azure compute and Foundry agents to
     external services like Confluent Cloud and MongoDB Atlas using Service Connector
@@ -7,9 +7,9 @@ category_descriptions:
   security: Managing security for Azure partner services, including Confluent Cloud
     RBAC in Azure portal and configuring SSO/access control for Informatica IDMC Azure
     resources.
-  troubleshooting: Diagnosing and fixing integration, configuration, and log-forwarding
-    issues for Confluent Kafka/Flink, Datadog, Dynatrace, Elastic Cloud, and New Relic
-    on Azure
+  troubleshooting: Diagnosing and resolving integration and service issues for Azure-native
+    monitoring/observability partners (Confluent, Datadog, Dynatrace, Elastic, New
+    Relic), including log forwarding and configuration problems.
   configuration: Configuring and managing Azure-integrated partner resources (Datadog,
     Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINXaaS, etc.), including prerequisites,
     settings, and integrations.
@@ -19,30 +19,31 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Partner Solutions development including
   troubleshooting, architecture & design patterns, security, configuration, and integrations
   & coding patterns. Use when integrating Confluent/MongoDB via Service Connector,
-  managing Datadog/Dynatrace/Elastic/New Relic configs, or designing Palo Alto Cloud
-  NGFW with App Gateway, and other Azure Partner Solutions related development tasks.
-use_when: Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic/New
-  Relic configs, or designing Palo Alto Cloud NGFW with App Gateway, and other Azure
-  Partner Solutions related development tasks.
-confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed Applications
-  (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure
-  Oracle (use azure-oracle).
+  managing Datadog/Dynatrace/Elastic configs, or designing Palo Alto NGFW with App
+  Gateway, and other Azure Partner Solutions related development tasks. Not for Azure
+  DevOps (use azure-devops), Azure Migrate (use azure-migrate), Azure Security (use
+  azure-security), Azure Sentinel (use azure-sentinel).
+use_when: Use when integrating Confluent/MongoDB via Service Connector, managing Datadog/Dynatrace/Elastic
+  configs, or designing Palo Alto NGFW with App Gateway, and other Azure Partner Solutions
+  related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Migrate (use azure-migrate),
+  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel).
 ---
 # Azure Partner Solutions Crawl Report
 
 ## Summary
 
-- **Total Pages**: 114
-- **Fetched**: 114
+- **Total Pages**: 108
+- **Fetched**: 108
 - **Fetch Failed**: 0
 - **Classified**: 23
-- **Unclassified**: 91
+- **Unclassified**: 85
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 113
-- **Deleted Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 105
+- **Deleted Pages**: 6
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
 ## Classification Statistics
@@ -50,25 +51,37 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
-| configuration | 10 | 8.8% |
-| integrations | 2 | 1.8% |
-| security | 2 | 1.8% |
-| troubleshooting | 8 | 7.0% |
-| *(Unclassified)* | 91 | 79.8% |
+| configuration | 10 | 9.3% |
+| integrations | 2 | 1.9% |
+| security | 2 | 1.9% |
+| troubleshooting | 8 | 7.4% |
+| *(Unclassified)* | 85 | 78.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq)
-  - Updated: 2026-05-26T17:19:00.000Z → 2026-10-30T22:14:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/faq)
+  - Updated: 2026-05-26T17:19:00.000Z → 2026-11-03T18:18:00.000Z
+- [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources)
+  - Updated: 2026-01-28T08:00:00.000Z → 2026-11-03T08:00:00.000Z
+- [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/troubleshoot)
+  - Updated: 2025-09-19T08:00:00.000Z → 2026-11-03T18:18:00.000Z
+
+### Deleted Pages
+
+- ~~Astro~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/)
+- ~~Create an Apache Airflow deployment on Astro~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/create)
+- ~~FAQ~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/faq)
+- ~~Manage your Apache Airflow on Astro resource~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage)
+- ~~What is Apache Airflow on Astro – An Azure Native ISV Service?~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/overview)
+- ~~Astro resources and developer tools~~ (https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/tools)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article; likely organized by specific errors or symptoms with causes and resolutions unique to Azure Native New Relic (for example, provisioning failures, linkage issues, or billing sync problems). |
-| [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/troubleshoot) | troubleshooting | 0.80 | Explicit troubleshooting article; likely organized by symptoms and includes product-specific errors and resolutions. |
 | [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/troubleshoot) | troubleshooting | 0.80 | Explicit troubleshooting article for Datadog Azure Native Integration; described as a quick reference of common issues, implying symptom-to-solution mappings and likely specific error messages or conditions. |
 | [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/troubleshoot) | troubleshooting | 0.80 | Dedicated troubleshooting article; expected to contain Dynatrace-on-Azure specific error codes, causes, and resolutions, matching the troubleshooting criteria. |
 | [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/troubleshoot) | troubleshooting | 0.80 | Dedicated troubleshooting guide for Elastic Cloud on Azure with a quick reference table of scenarios, indicating symptom-to-cause-to-solution mappings and likely specific error conditions. |
@@ -78,6 +91,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Configure prerequisites](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/configure-prerequisites) | configuration | 0.70 | Pre-deployment prerequisites for Dynatrace in Azure/Entra ID will include specific roles, permissions, and configuration steps unique to this integration, fitting configuration expert knowledge. |
 | [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents) | integrations | 0.70 | The page describes a product-specific integration between Microsoft Foundry Agents and MongoDB Atlas via the MongoDB MCP Server, likely including concrete configuration parameters, connection details, and code/integration patterns that go beyond generic knowledge. |
 | [Deploy Cloud NGFW by Palo Alto Networks with the Application Gateway](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/application-gateway) | architecture-patterns | 0.70 | Describes a recommended deployment architecture for Cloud NGFW behind Application Gateway; likely includes product-specific topology guidance, traffic flow patterns, and when to use this pattern for securing web apps. |
+| [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/troubleshoot) | troubleshooting | 0.70 | The page is explicitly a troubleshooting guide for Apache Kafka & Apache Flink on Confluent Cloud in Azure Native Integrations. Such pages typically include symptom-to-solution mappings, product-specific steps, and possibly error messages or diagnostic guidance that go beyond generic debugging knowledge, fitting the troubleshooting sub-skill type. |
 | [Manage your Informatica IDMC organization](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/manage) | security | 0.70 | The article focuses on managing single sign-on for an Informatica IDMC organization, which typically involves specific identity configuration (SSO settings, possibly Azure AD app configuration, roles, or scopes). These are product-specific security/identity configuration details, fitting the security sub-skill. |
 | [Connect to compute services](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-connectors) | integrations | 0.65 | Describes using Service Connector to wire Confluent Cloud to Azure compute services; likely includes product-specific connection settings and authentication/network parameters. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq) | troubleshooting | 0.65 | FAQ pages for specific integrations typically include concrete error messages, billing edge cases, and platform-specific behaviors (for example, how Azure resource tags map into Datadog, what happens when you disable the integration, or how specific Azure subscription or marketplace constraints affect Datadog). These are product- and integration-specific troubleshooting details that go beyond generic knowledge and are organized as question → explanation → resolution, fitting the troubleshooting category best. |
@@ -96,7 +110,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Configure pre-deployment](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/prerequisites) | 0.40 | Prerequisites/setup for Datadog resource creation; likely lists required resources/permissions but summary does not indicate detailed config tables, limits, or security role definitions. |
-| [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources) | 0.40 | How to create Confluent environments/clusters/topics in Azure; appears procedural without explicit config parameter tables or limits. |
 | [Create a connector to Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-cosmos-db-connector) | 0.40 | Tutorial for creating a Cosmos DB connector; similar to index 26, focused on walkthrough rather than config matrices. |
 | [Create a connector to Blob Storage](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-confluent-connectors) | 0.40 | Tutorial for creating a Blob Storage connector; likely shows steps and some fields but not a full configuration reference with defaults/ranges. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/faq) | 0.40 | Informatica Intelligent Data Management Cloud FAQ is described as answering common questions about using the Azure Native ISV service; absent mention of limits, configuration matrices, or error-code-based troubleshooting, it is likely high-level usage guidance rather than expert configuration or troubleshooting content. |
@@ -112,14 +125,12 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Create a resource - Azure CLI](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-cli) | 0.30 | Quickstart for creating Confluent resource via CLI; focuses on basic creation flow, not full configuration matrices. |
 | [Create a resource - Azure PowerShell](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-powershell) | 0.30 | Quickstart for creating Confluent resource via PowerShell; basic example usage rather than exhaustive config. |
 | [Create a resource - Azure portal](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create) | 0.30 | Quickstart for creating Confluent resource via portal; step-by-step tutorial, not a comprehensive config reference. |
-| [Create an Apache Airflow deployment on Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/create) | 0.30 | Quickstart for creating an Astro resource; likely step-by-step portal instructions without detailed configuration matrices or limits. |
 | [Create an Elastic resource](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/create) | 0.30 | Quickstart for creating Elastic resources; focuses on portal creation and first search, not on expert-level limits or configuration matrices. |
 | [Create an Informatica IDMC advanced serverless runtime](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/create-advanced-serverless) | 0.30 | Quickstart for creating an advanced serverless deployment with Informatica IDMC via the portal. The description suggests a guided setup rather than a catalog of configuration parameters or limits; likely tutorial-style without structured expert configuration tables. |
 | [Create an NGINXaaS deployment](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/create) | 0.30 | Quickstart for creating NGINXaaS via Marketplace; likely basic provisioning steps without deep configuration tables or expert-only parameters. |
 | [Create new Datadog organization](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/create) | 0.30 | Quickstart for creating a Datadog resource; primarily step-by-step portal instructions without detailed configuration parameter tables or product-specific edge cases. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/faq) | 0.30 | FAQ for Confluent Cloud on Azure; description only indicates common questions, with no clear evidence of numeric limits, error codes, or config tables. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/faq) | 0.30 | FAQ pages often mix conceptual and procedural answers; based on the summary, this one appears to provide general Q&A about using Confluent Cloud on Azure without clearly indicating presence of numeric limits, detailed configuration tables, or error-code-based troubleshooting. Lacking evidence of the specific expert patterns required, it should not be classified. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/faq) | 0.30 | FAQ for Azure Native Arize AI Cloud Service; summary suggests general Q&A about the SaaS platform, not specific limits, configs, or error mappings. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/faq) | 0.30 | FAQ about subscribing and managing Astro; summary suggests general Q&A without specific limits, error codes, or config parameters. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/faq) | 0.30 | Dell PowerScale on Azure FAQ is described generically as answering common questions; without indication of numeric limits, configuration parameter tables, or error-code mappings, it is more likely conceptual/usage oriented than expert-knowledge focused. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq) | 0.30 | FAQ for Elastic on Azure; description indicates general questions, not detailed error-code mappings, limits, or config parameter tables. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/faq) | 0.30 | FAQ for MongoDB Atlas on Azure is likely high-level Q&A about setup, management, and support without structured limits, config tables, or detailed error-to-solution mappings; treated as general FAQ rather than expert troubleshooting or configuration content. |
@@ -129,7 +140,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Get started](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/create) | 0.30 | Quickstart for creating a New Relic resource in the portal; typically step-by-step UI instructions without detailed configuration matrices or expert-only parameters. |
 | [Link to an existing Datadog organization](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/link-to-existing-organization) | 0.30 | How to link an existing Datadog organization; appears to be procedural without detailed configuration options, limits, or troubleshooting mappings. |
 | [Manage](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/manage) | 0.30 | Manage Elastic resource via portal; summary shows general management guidance without detailed config tables, limits, or troubleshooting mappings. |
-| [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage) | 0.30 | Management article for Astro via portal; appears to be procedural UI guidance, not detailed config tables or expert constraints. |
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage) | 0.30 | Describes managing Everpure Cloud settings and connecting to AVS; summary suggests operational guidance but not detailed configuration tables, limits, or troubleshooting mappings. |
 | [What is Apache Kafka & Apache Flink on Confluent Cloud?](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/overview) | 0.30 | Overview of Confluent Cloud offering on Azure; summary is descriptive, no explicit limits, configs, or decision matrices. |
 | [What is Arize AI?](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/overview) | 0.30 | Overview of Arize AI Cloud Service; conceptual description of capabilities. |
@@ -138,8 +148,8 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/create) | 0.25 | Quickstart for creating a MongoDB Atlas resource in Azure portal; primarily procedural without clear expert-level configuration tables. |
 | [Create an Informatica IDMC organization](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/create) | 0.25 | Quickstart for creating an Informatica IDMC deployment via portal/Marketplace; primarily procedural without clear expert-level configuration matrices. |
 | [Link to existing Dynatrace resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/link-to-existing-resources) | 0.25 | Linking to an existing Dynatrace resource is a portal operation; while billing notes exist, summary doesn’t clearly indicate detailed configuration matrices or limits. |
-| [Astro resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/tools) | 0.20 | High-level description of developer resources/tools; no configuration tables, limits, or detailed integration parameters. |
 | [Confluent](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/) | 0.20 | Confluent Cloud with Azure landing/overview; summary focuses on managed Kafka/Flink service, not specific limits, configs, or troubleshooting. |
+| [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources) | 0.20 | The page is described as a how-to guide for creating environments, clusters, and topics via the Azure portal. This sounds like step-by-step tutorial content rather than detailed configuration tables, limits, or product-specific best-practices with quantified impact. No clear expert-knowledge indicators are present in the summary. |
 | [Create Projects & Clusters](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/create-projects-clusters) | 0.20 | From the summary, this appears to be a how-to/tutorial on creating and managing MongoDB Atlas projects and clusters via the Azure portal. There’s no indication of specific limits/quotas, configuration parameter tables, error codes, or product-specific decision matrices. Without detailed expert-only settings or constraints, it’s primarily procedural guidance rather than expert knowledge per the defined categories. |
 | [Create a Qumulo resource](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/create) | 0.20 | This is a quickstart for creating an Azure Native Qumulo Scalable File Service instance in the portal. Quickstarts are typically step-by-step tutorials without comprehensive configuration tables, limits, or detailed troubleshooting matrices. It likely shows one example configuration rather than enumerating all settings or expert-only constraints, so it does not meet the bar for expert knowledge under the defined sub-skill types. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/create) | 0.20 | Quickstart for creating a Dell PowerScale resource via the portal is likely a step-by-step tutorial. The summary does not indicate configuration tables, limits, or other expert-only details; it appears to be basic how-to content. |
@@ -158,13 +168,11 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [New Relic](https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/) | 0.20 | Overview for Azure Native New Relic Service; description indicates a general integrated experience, not detailed limits/config/troubleshooting. |
 | [Qumulo](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/) | 0.20 | Landing page for Azure Native Qumulo Scalable File Service; focuses on portal experience, not detailed limits/config/troubleshooting. |
 | [Start a free trial](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/free-trial) | 0.20 | Free trial page primarily describes how to start a 30-day trial and upgrade paths; it appears marketing/onboarding oriented without detailed limits tables, configuration parameters, or troubleshooting/error mappings, so it lacks the required expert-level technical specifics. |
-| [What is Apache Airflow on Astro – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/overview) | 0.20 | Overview/retirement notice for Apache Airflow on Astro; no detailed limits, configs, error codes, or product-specific patterns. |
 | [What is Datadog?](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/overview) | 0.20 | High-level overview of Datadog and its Azure Native Integration; no specific limits, configuration tables, error codes, or decision matrices. |
 | [What is Elastic on Azure?](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/overview) | 0.20 | Elastic integrations overview; marketing/positioning content without numeric limits, decision matrices, or config details. |
 | [What is Informatica Intelligent Data Management Cloud (IDMC)](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/overview) | 0.15 | Informatica IDMC overview is descriptive; no clear indication of detailed configuration, limits, or troubleshooting content. |
 | [What is MongoDB Atlas?](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/overview) | 0.15 | MongoDB Atlas overview is conceptual; no explicit expert-level configuration, limits, or troubleshooting content indicated. |
 | [Arize AI](https://learn.microsoft.com/en-us/azure/partner-solutions/arize-ai/) | 0.10 | Marketing-style integration overview for Arize AI; no indication of numeric limits, configuration tables, or troubleshooting details. |
-| [Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/) | 0.10 | Retirement notice for Apache Airflow on Astro as an Azure Native ISV Service; no detailed technical content, limits, configuration options, or troubleshooting guidance. |
 | [Commvault](https://learn.microsoft.com/en-us/azure/partner-solutions/commvault/) | 0.10 | Conceptual overview of Azure Native Commvault Cloud; lacks specific technical limits, configuration tables, troubleshooting mappings, or decision matrices. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/create) | 0.10 | Quickstart for creating an Everpure Cloud Azure Native resource via the Azure portal is primarily a step-by-step tutorial, not a reference of limits, configuration matrices, or troubleshooting mappings. |
 | [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/) | 0.10 | Describes Elastic’s capabilities on Azure at a conceptual level; lacks concrete configuration parameters, limits, error codes, or product-specific best practices. |

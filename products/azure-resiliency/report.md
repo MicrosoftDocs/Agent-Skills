@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   configuration: 'Configuring zone-resilient setups: zone-down drills, resilience
     goals, backup/replication policies, vault lifecycle, recovery orchestration plans,
@@ -37,8 +37,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 34
+- **Updated Pages**: 1
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
 
@@ -56,10 +56,8 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 
 ### Updated Pages
 
-- [Define](https://learn.microsoft.com/en-us/azure/resiliency/availability-zone-down-drill-define)
-  - Updated: 2026-10-14T11:44:00.000Z → 2026-10-30T16:23:00.000Z
-- [Create and configure](https://learn.microsoft.com/en-us/azure/resiliency/recovery-orchestration-plan-create-configure)
-  - Updated: 2026-10-14T11:44:00.000Z → 2026-10-30T16:23:00.000Z
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-agent-transparency)
+  - Updated: 2026-10-14T11:44:00.000Z → 2026-11-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -102,7 +100,7 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Ser
 | [Understand the protection estate](https://learn.microsoft.com/en-us/azure/resiliency/quick-understand-protection-estate) | 0.30 | Quickstart UI walkthrough to identify protected/unprotected resources; lacks detailed configuration tables, limits, or troubleshooting mappings. |
 | [View protectable resources](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-view-protectable-resources) | 0.30 | Tutorial on viewing unprotected resources; primarily step-by-step portal usage without product-specific config parameters or limits. |
 | [View protected items and perform actions](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-view-protected-items-and-perform-actions) | 0.30 | Tutorial on viewing protected items and performing actions; operational walkthrough without expert-level configuration or troubleshooting content. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-agent-transparency) | 0.20 | Transparency FAQ about Azure Copilot Resiliency Agent; focuses on capabilities, limitations, and responsible use, but not on concrete config parameters, limits, or troubleshooting details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/resiliency/infrastructure-resiliency-manager-overview) | 0.20 | Service overview for Infrastructure Resiliency Manager; describes purpose and concepts but no detailed configuration tables, limits, or troubleshooting mappings. |
 | [What's new](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-whats-new) | 0.20 | What's new/change log style page; primarily feature announcements and marketing-style descriptions, not detailed configuration, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-overview) | 0.10 | High-level overview of Azure Resiliency; conceptual description of capabilities without detailed limits, configs, error codes, or decision matrices. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-agent-transparency) | - | FAQ-style content about capabilities, limitations, reliability expectations, and responsible use of Azure Copilot Resiliency Agent. It doesn't provide numeric limits/quotas, configuration tables, error-code-based troubleshooting, or product-specific settings/parameters; it's primarily conceptual and explanatory. |

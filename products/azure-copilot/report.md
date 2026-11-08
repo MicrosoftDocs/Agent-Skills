@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-08'
 category_descriptions:
   decision-making: 'Using Copilot to compare options and make cost‑efficient Azure
     decisions: VM sizing, workload templates, Marketplace offers, storage estate insights,
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 36
+- **Updated Pages**: 1
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 | *(Unclassified)* | 20 | 55.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Resiliency](https://learn.microsoft.com/en-us/azure/copilot/resiliency-agent)
+  - Updated: 2026-08-10T21:58:00.000Z → 2026-11-03T23:09:00.000Z
 
 ## Classified Pages
 
@@ -101,7 +106,7 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Machine Learn
 | [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts) | 0.20 | Similar to the CLI page but for PowerShell; focuses on scenarios and sample prompts without expert-level configuration details, limits, or diagnostic guidance. |
 | [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent) | 0.20 | Migration Agent page focuses on conceptual migration assistance and artifacts like business cases and assessments; no explicit numeric thresholds, limits, or config parameters are evident. |
 | [Optimization](https://learn.microsoft.com/en-us/azure/copilot/optimization-agent) | 0.20 | Optimization Agent description is high-level (cost, carbon, performance recommendations) without specific quotas, configuration values, or detailed best-practice parameters. |
-| [Resiliency](https://learn.microsoft.com/en-us/azure/copilot/resiliency-agent) | 0.20 | Resiliency Agent page describes capabilities and use cases but does not expose concrete configuration options, numeric thresholds, or detailed troubleshooting mappings. |
+| [Resiliency](https://learn.microsoft.com/en-us/azure/copilot/resiliency-agent) | 0.20 | From the summary, the page describes what the Azure Copilot Resiliency Agent is and how it helps assess and improve resiliency via conversational interaction. It appears to be an overview/description of capabilities, without visible specific limits, configuration tables, error codes, or detailed product-specific settings. Therefore it doesn't meet the criteria for any expert-knowledge sub-skill type. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/copilot/troubleshooting-agent) | 0.20 | Page describes what the Azure Copilot Troubleshooting Agent does at a high level (diagnosing issues, root cause analysis, one-click fixes) but the provided summary does not include specific error codes, diagnostic commands, or symptom→cause→solution mappings. It reads as an overview/description of the tool rather than a detailed troubleshooting guide with expert-only technical content. |
 | [Write effective prompts](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts) | 0.15 | Prompt engineering guidance is conceptual and broadly known; not specific to Azure Copilot configuration or limits. |
 | [Capabilities](https://learn.microsoft.com/en-us/azure/copilot/capabilities) | 0.10 | Capabilities page is a general feature overview and entry point; no detailed limits, configuration parameters, or decision matrices are indicated. |

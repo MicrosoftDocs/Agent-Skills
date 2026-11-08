@@ -1,9 +1,9 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies/PR checks, CodeQL/secret scanning, ELM sync, or TFVC→Git migrations, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Git/TFVC repos, branch policies/PR checks, ELM migrations, GA Security, or SARIF scanners, and other Azure Repos related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Repos Skill
@@ -28,10 +28,10 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L52-L66 | Best practices for Git/TFVC in Azure Repos: branching, merges, commit identity, .gitignore, performance, cross‑platform compatibility, large file cleanup, repo health, and workspace maintenance. |
 | Decision Making | L67-L76 | Guidance on choosing and planning migrations (TFVC/SVN to Git, Azure Repos to GitHub), selecting Git vs TFVC, workspace types, and storage options for large files in Azure Repos. |
 | Architecture & Design Patterns | L77-L85 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
-| Limits & Quotas | L86-L93 | Repo size and usage limits, ELM (Enterprise Lifecycle Management) sync timing/windows, and billing/licensing details for GitHub Advanced Security in Azure Repos |
-| Security | L94-L122 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH, credential managers, Xcode), permissions/branch locks, secure imports, and GitHub Advanced Security scanning and policies. |
-| Configuration | L123-L156 | Configuring Azure Repos/TFVC: branch policies, PR checks/notifications, Copilot reviews, security/CodeQL/secret scanning, Git/VS settings, and TFVC check-in policies, workspaces, and project options |
-| Integrations & Coding Patterns | L157-L208 | Integrating Azure Repos with CLIs, automation, and collaboration tools (Slack/Teams), plus detailed TFVC and Git command usage, branch policies, PR status servers, and SARIF scanner integration. |
+| Limits & Quotas | L86-L93 | ELM cutover/sync timing and read-only windows, Git repo size/usage limits, and billing rules/quotas for GitHub Advanced Security in Azure Repos. |
+| Security | L94-L123 | Securing Azure Repos and TFVC: auth methods (PAT/SSH/Entra, credential managers, Xcode/Go), permissions/policies, branch protection, secure imports, and GitHub Advanced Security scanning. |
+| Configuration | L124-L155 | Configuring Azure Repos/TFVC: branch policies, PR checks/notifications, Copilot reviews, security/CodeQL/secret scanning, Git/VS settings, and TFVC check-in policies, workspaces, and project options |
+| Integrations & Coding Patterns | L156-L207 | Integrating Azure Repos with CLIs, automation, and collaboration tools (Slack/Teams), plus detailed TFVC and Git command usage, branch policies, PR status servers, and SARIF scanner integration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -89,7 +89,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan ELM cutover timing and read-only window | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/cut-over-to-github?view=azure-devops |
 | Monitor ELM sync duration and 21-day window | https://learn.microsoft.com/en-us/azure/devops/repos/enterprise-live-migrations/monitor-migration?view=azure-devops |
 | Git repository limits and quotas in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/limits?view=azure-devops |
-| Understand billing and licensing for GitHub Advanced Security | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-billing?view=azure-devops |
+| Understand billing rules for GitHub Advanced Security | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-billing?view=azure-devops |
 
 ### Security
 | Topic | URL |
@@ -109,9 +109,10 @@ This skill requires **network access** to fetch documentation content:
 | Configure secure authentication for Xcode with Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/share-your-code-in-git-xcode?view=azure-devops |
 | Configure SSH key authentication for Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops |
 | Configure GitHub Advanced Security in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops |
+| Use Copilot Autofix for security alerts in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-autofix?view=azure-devops |
 | Configure code scanning with GitHub Advanced Security | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops |
 | Supported ecosystems for GitHub Advanced Security dependency scanning | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-dependency-scanning-ecosystems?view=azure-devops |
-| Set up dependency scanning in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops |
+| Set up dependency scanning in Azure DevOps repos | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops |
 | Configure permissions for GitHub Advanced Security in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-permissions?view=azure-devops |
 | Use GitHub Advanced Security secret scan patterns in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scan-patterns?view=azure-devops |
 | Control TFVC access with permissions and inheritance | https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/control-access-team-foundation-version-control?view=azure-devops |
@@ -128,7 +129,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Repos Git branch policies for code quality | https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies-overview?view=azure-devops |
 | Configure Azure Repos Git branch policies | https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops |
 | Use Visual Studio Git commands and Azure DevOps integration | https://learn.microsoft.com/en-us/azure/devops/repos/git/command-prompt?view=azure-devops |
-| Configure Copilot code review instructions and agent skills | https://learn.microsoft.com/en-us/azure/devops/repos/git/configure-copilot-code-review-instructions?view=azure-devops |
 | Configure GitHub Copilot code reviews in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/copilot-code-reviews?view=azure-devops |
 | Configure Git preferences and config files in Visual Studio | https://learn.microsoft.com/en-us/azure/devops/repos/git/git-config?view=azure-devops |
 | Configure external status branch policies in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/pr-status-policy?view=azure-devops |
@@ -136,7 +136,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure custom pull request target branches in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-targets?view=azure-devops |
 | Configure Azure Repos Git repository-level settings | https://learn.microsoft.com/en-us/azure/devops/repos/git/repository-settings?view=azure-devops |
 | Configure commit message keywords to close Azure Boards work items | https://learn.microsoft.com/en-us/azure/devops/repos/git/resolution-mentions?view=azure-devops |
-| Use Copilot Autofix for security alerts in Azure Repos | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-autofix?view=azure-devops |
 | Configure custom CodeQL queries in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning-queries?view=azure-devops |
 | Configure secret scanning for GitHub Advanced Security in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops |
 | Configure TFVC check-in policies in Visual Studio | https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-check-policies?view=azure-devops |

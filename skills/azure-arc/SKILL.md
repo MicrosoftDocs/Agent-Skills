@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes/servers, resource bridge, data services, Edge Volumes, or Agentic Retrieval, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers/VMware/SCVMM, Agentic Retrieval, Edge Volumes, or SQL MI HA/DR, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L77 | Diagnosing and fixing Azure Arc issues across Kubernetes, servers, VMs, storage, data services, site manager, resource bridge, and workload orchestration, including connectivity, auth, and extension failures. |
 | Best Practices | L78-L89 | Best practices for Arc Agentic Retrieval (doc prep, evaluation, metrics) plus Arc storage/Edge Volumes behavior, capacity planning, and SCVMM/namespace-scoped validator administration. |
-| Decision Making | L90-L114 | Planning and decision guides for Azure Arc: choosing services, tiers, capacity, connectivity, Kubernetes platforms, licensing/ESU, migrations, and large-scale deployment strategies. |
+| Decision Making | L90-L114 | Guidance on choosing Arc services, connectivity, licensing, capacity, Kubernetes platforms, and migration/modernization paths for Arc-enabled servers and data services. |
 | Architecture & Design Patterns | L115-L122 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L123-L133 | Limits, constraints, billing rules, and offline behavior for Arc agents, resource bridge, Arc-enabled Kubernetes, storage, ESU, and pay-as-you-go Windows Server. |
-| Security | L134-L193 | Securing Azure Arc resources: identity/auth (AD, Entra, RBAC, keytabs), TLS/TDE, workload identities, network/Private Link, policy/compliance, and security best practices for servers, Kubernetes, and Arc data. |
-| Configuration | L194-L304 | Configuring Azure Arc environments: networking, security, GitOps, storage, monitoring, data services, Agentic Retrieval data sources, and large-scale onboarding/management of Arc-enabled resources. |
-| Integrations & Coding Patterns | L305-L335 | APIs, CLIs, and automation patterns for Arc: agentic retrieval REST/MCP, Arc server onboarding at scale, VM extensions, ESU licensing, monitoring, Event Grid, and Terraform/Ansible/PowerShell tools. |
-| Deployment | L336-L364 | Deploying and managing Azure Arc components: data controllers, Agentic Retrieval, storage/volumes, resource bridge, Arc-enabled servers/VMware/SCVMM, and workload orchestration, including upgrades and DR. |
+| Limits & Quotas | L123-L132 | Limits, constraints, billing rules, and offline behavior for Arc agents, resource bridge, Arc-enabled Kubernetes, storage, ESU, and pay-as-you-go Windows Server. |
+| Security | L133-L193 | Securing Azure Arc: identity, RBAC, AD/Kerberos, key/cert rotation, network/Private Link, policy/compliance, and workload/storage security for Kubernetes, servers, SQL MI, SCVMM, VMware. |
+| Configuration | L194-L305 | Configuring Azure Arc environments: networking, security, storage, monitoring, data services, Kubernetes extensions, Agentic Retrieval setup, and VM/server onboarding and management. |
+| Integrations & Coding Patterns | L306-L336 | APIs, CLIs, and automation patterns for Arc: agentic retrieval REST/MCP, Arc server onboarding at scale, VM extensions, ESU licensing, monitoring, Event Grid, and Terraform/Ansible/PowerShell tools. |
+| Deployment | L337-L365 | Deploying and managing Azure Arc components: data controllers, Agentic Retrieval, storage/volumes, resource bridge, Arc-enabled servers/VMware/SCVMM, and workload orchestration, including upgrades and DR. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -129,7 +129,6 @@ This skill requires **network access** to fetch documentation content:
 | Maintain Azure Arc resource bridge health and uptime | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/maintenance |
 | Check Azure Arc resource bridge system requirements | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/system-requirements |
 | Understand Azure Arc ESU billing rules and constraints | https://learn.microsoft.com/en-us/azure/azure-arc/servers/billing-extended-security-updates |
-| Review prerequisites for Azure Arc Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/prerequisites |
 
 ### Security
 | Topic | URL |
@@ -179,8 +178,9 @@ This skill requires **network access** to fetch documentation content:
 | Apply regulatory compliance policies to Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-controls-policy |
 | Understand data collection and privacy for Azure Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-data-privacy |
 | Secure and customize VM extensions on Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-extensions |
-| Configure identity and authorization for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-identity-authorization |
+| Configure managed identity and RBAC for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-identity-authorization |
 | Configure network security for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-networking |
+| Configure TPM-backed identity for Azure Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/tpm-backed-identity |
 | Check Azure Arc site security baseline compliance status | https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/view-security-compliance-status |
 | Use built-in RBAC roles for Arc-enabled SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/built-in-roles |
 | Create custom RBAC roles for Arc-enabled SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles |
@@ -289,6 +289,7 @@ This skill requires **network access** to fetch documentation content:
 | Onboard Arc servers via Windows Admin Center | https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-admin-center |
 | Onboard Windows Server to Arc via setup wizard | https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-server |
 | Organize Arc server inventory with tags and hierarchies | https://learn.microsoft.com/en-us/azure/azure-arc/servers/organize-inventory-servers |
+| Review prerequisites to install Azure Arc Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/prerequisites |
 | Use Azure Machine Configuration and remote access with Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-machine-configuration |
 | Enable SSH remoting to Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview |
 | Use PowerShell remoting over SSH with Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-powershell-remoting |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-09-20'
+generated_at: '2026-11-08'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), Entra
     auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security
     best practices.'
-  configuration: Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid
-    Runbook Workers, alerts, schedules, modules/packages, policies, networking, and
-    deployment/integration settings.
+  configuration: 'Configuring Automation accounts: runbooks, schedules, alerts, Hybrid
+    Workers, DSC/State Configuration, Change Tracking, source control, policies, modules,
+    Python packages, and deployment templates.'
   best-practices: 'Best practices for structuring and running Automation runbooks:
     modular parent-child design, execution patterns, error handling, stream/output
     usage, and avoiding context/locking issues.'
@@ -27,17 +27,16 @@ category_descriptions:
     and collecting logs for support.'
 skill_description: Expert knowledge for Azure Automation development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building runbooks, DSC configs, Hybrid
-  Runbook Workers, managed identities, or Automation deployments, and other Azure
-  Automation related development tasks. Not for Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps), Azure DevOps (use azure-devops), Azure
-  DevTest Labs (use azure-devtest-labs).
-use_when: Use when building runbooks, DSC configs, Hybrid Runbook Workers, managed
-  identities, or Automation deployments, and other Azure Automation related development
-  tasks.
+  & coding patterns, and deployment. Use when automating runbooks, Hybrid Workers,
+  DSC/State Config, Change Tracking, or AMA-based monitoring, and other Azure Automation
+  related development tasks. Not for Azure Functions (use azure-functions), Azure
+  Logic Apps (use azure-logic-apps), Azure DevOps (use azure-devops), Azure Resource
+  Manager (use azure-resource-manager).
+use_when: Use when automating runbooks, Hybrid Workers, DSC/State Config, Change Tracking,
+  or AMA-based monitoring, and other Azure Automation related development tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
-  (use azure-logic-apps), Azure DevOps (use azure-devops), Azure DevTest Labs (use
-  azure-devtest-labs).
+  (use azure-logic-apps), Azure DevOps (use azure-devops), Azure Resource Manager
+  (use azure-resource-manager).
 ---
 # Azure Automation Crawl Report
 
@@ -51,8 +50,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 111
+- **Updated Pages**: 1
+- **Unchanged**: 110
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -71,6 +70,11 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 25 | 22.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Run runbooks on Hybrid Runbook Worker](https://learn.microsoft.com/en-us/azure/automation/automation-hrw-run-runbooks)
+  - Updated: 2026-04-15T08:00:00.000Z → 2026-11-03T18:18:00.000Z
 
 ## Classified Pages
 
@@ -128,7 +132,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Manage variables](https://learn.microsoft.com/en-us/azure/automation/shared-resources/variables) | configuration | 0.70 | Describes Automation variable asset behavior and management via portal/PowerShell/runbooks; includes specific patterns for sharing values across jobs and runbooks. |
 | [Management of Azure Automation data](https://learn.microsoft.com/en-us/azure/automation/automation-managing-data) | security | 0.70 | Focused on how Azure Automation protects and secures data; likely includes product-specific security behaviors, data handling locations, and configuration details for securing Automation accounts, which qualify as expert security knowledge beyond generic concepts. |
 | [Migrate from Orchestrator to Azure Automation (Beta)](https://learn.microsoft.com/en-us/azure/automation/automation-orchestrator-migration) | decision-making | 0.70 | Migration guidance from Orchestrator to Automation, including how to convert integration packs and runbooks; supports technology selection and migration decisions. |
-| [Run runbooks on Hybrid Runbook Worker](https://learn.microsoft.com/en-us/azure/automation/automation-hrw-run-runbooks) | configuration | 0.70 | How-to article for running runbooks on Hybrid Runbook Workers typically includes worker-specific settings (e.g., specifying runbook execution target, worker group names, required modules, environment/connection configuration). These are product-specific configuration details beyond generic knowledge, but not primarily limits, security, or deployment. |
+| [Run runbooks on Hybrid Runbook Worker](https://learn.microsoft.com/en-us/azure/automation/automation-hrw-run-runbooks) | configuration | 0.70 | Hybrid Runbook Worker articles typically include product-specific configuration details (worker group settings, tags, runbook targeting options, environment requirements) and operational nuances unique to Azure Automation. These are concrete, implementation-focused settings rather than just conceptual guidance, fitting the configuration sub-skill. The summary indicates guidance on how to author, edit, and test runbooks specifically for Hybrid Runbook Workers, which usually involves expert configuration patterns not generally known from training. |
 | [Runbook execution overview](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-execution) | best-practices | 0.70 | Runbook execution behavior (jobs, restarts, interruptions) and guidance to write restart-safe runbooks are product-specific gotchas and patterns, fitting best-practices. |
 | [Runtime environment scenarios](https://learn.microsoft.com/en-us/azure/automation/manage-runtime-environment) | configuration | 0.70 | Covers creation and management of runtime environments via portal and REST; likely includes environment properties and constraints specific to Automation. |
 | [Send an email from a runbook](https://learn.microsoft.com/en-us/azure/automation/automation-send-email) | integrations | 0.70 | Shows how to integrate SendGrid with Automation runbooks; likely includes API keys, connection parameters, and PowerShell patterns specific to this integration. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-08'
 category_descriptions:
   integrations: Automating Azure DNS zone/record management and subdomain delegation
     with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure
@@ -7,6 +7,9 @@ category_descriptions:
   limits-quotas: DNS record, zone, and query limits for Azure DNS and Private DNS,
     including quotas, scaling behaviors, usage constraints, and how many zones/records
     you can create and manage.
+  architecture-patterns: 'Designing scalable, resilient Azure DNS Private Resolver
+    architectures: hub-spoke QPS planning, centralized vs distributed resolver topologies,
+    and sharding private DNS zones for high availability.'
   security: 'Securing Azure DNS and Private DNS: access control, monitoring, DNSSEC
     (enable/remove), resolver policies, and threat protection for zones, records,
     and name resolution.'
@@ -15,38 +18,35 @@ category_descriptions:
     settings for name resolution.'
   decision-making: Guidance for planning and executing migration of legacy Azure Private
     DNS zones to the new DNS zone model, including compatibility, steps, and considerations.
-  architecture-patterns: Designing resilient private DNS architectures in Azure, including
-    when to use centralized vs distributed DNS Private Resolvers and how to shard
-    Private DNS zones for high availability.
   troubleshooting: Diagnosing and resolving Azure DNS name resolution failures, including
     troubleshooting DNS records, zones, forwarding, and common configuration or connectivity
     issues.
 skill_description: Expert knowledge for Azure DNS development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
   and integrations & coding patterns. Use when automating DNS zones/records, configuring
-  Private DNS/resolvers, enabling DNSSEC, or migrating legacy zones, and other Azure
+  Private DNS/Resolvers, planning DNS migrations, or enabling DNSSEC, and other Azure
   DNS related development tasks. Not for Azure Traffic Manager (use azure-traffic-manager),
-  Azure Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
-  Azure Application Gateway (use azure-application-gateway).
-use_when: Use when automating DNS zones/records, configuring Private DNS/resolvers,
-  enabling DNSSEC, or migrating legacy zones, and other Azure DNS related development
+  Azure Load Balancer (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door).
+use_when: Use when automating DNS zones/records, configuring Private DNS/Resolvers,
+  planning DNS migrations, or enabling DNSSEC, and other Azure DNS related development
   tasks.
 confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), Azure
-  Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
-  Azure Application Gateway (use azure-application-gateway).
+  Load Balancer (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door).
 ---
 # Azure DNS Crawl Report
 
 ## Summary
 
-- **Total Pages**: 77
-- **Fetched**: 77
+- **Total Pages**: 78
+- **Fetched**: 78
 - **Fetch Failed**: 0
-- **Classified**: 27
+- **Classified**: 28
 - **Unclassified**: 50
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 77
 - **Deleted Pages**: 0
@@ -56,16 +56,20 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 2.6% |
-| configuration | 9 | 11.7% |
+| architecture-patterns | 3 | 3.8% |
+| configuration | 9 | 11.5% |
 | decision-making | 1 | 1.3% |
-| integrations | 6 | 7.8% |
+| integrations | 6 | 7.7% |
 | limits-quotas | 1 | 1.3% |
-| security | 7 | 9.1% |
+| security | 7 | 9.0% |
 | troubleshooting | 1 | 1.3% |
-| *(Unclassified)* | 50 | 64.9% |
+| *(Unclassified)* | 50 | 64.1% |
 
 ## Changes
+
+### New Pages
+
+- [Scale QPS in a hub-and-spoke network](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-scale-qps)
 
 ## Classified Pages
 
@@ -75,6 +79,7 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Azure DNS Monitoring data reference](https://learn.microsoft.com/en-us/azure/dns/monitor-dns-reference) | configuration | 0.80 | Monitoring data reference typically includes exact metric names, dimensions, log categories, and schemas, which are detailed configuration references unique to Azure DNS. |
 | [Fallback to internet resolution](https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback) | configuration | 0.75 | Explains setting the ResolutionPolicy property and its behavior; contains a specific configuration property and allowed behavior, which is product-specific configuration knowledge. |
 | [Private resolver architecture](https://learn.microsoft.com/en-us/azure/dns/private-resolver-architecture) | architecture-patterns | 0.75 | Explicit architecture guidance comparing centralized and noncentralized resolver designs in hub-and-spoke topologies with product-specific recommendations and example configurations. |
+| [Scale QPS in a hub-and-spoke network](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-scale-qps) | architecture-patterns | 0.72 | The article describes a specific hub-and-spoke design pattern for distributing DNS query load across Azure DNS Private Resolver endpoints, including how to partition traffic by spoke groups and plan capacity for peak demand and failover. This is product-specific architecture guidance on when and how to use particular resolution paths and endpoint layouts, rather than generic DNS concepts. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/dns/dns-import-export) | integrations | 0.70 | CLI-based import/export article; likely includes Azure DNS–specific CLI commands, parameters, and constraints for zone file handling. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export) | configuration | 0.70 | CLI-focused guide for zone file import/export; includes command parameters and options specific to Azure DNS. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export-portal) | configuration | 0.70 | How-to for importing/exporting zone files; likely includes specific options, constraints, and parameter usage for Azure Private DNS zone file operations. |

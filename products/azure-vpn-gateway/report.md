@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 112
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
@@ -75,10 +75,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 28 | 24.8% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate a P2S gateway root certificate](https://learn.microsoft.com/en-us/azure/vpn-gateway/how-to-migrate-gateway-root-certificate)
 
 ## Classified Pages
 

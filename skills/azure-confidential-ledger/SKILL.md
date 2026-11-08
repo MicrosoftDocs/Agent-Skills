@@ -1,9 +1,9 @@
 ---
 name: azure-confidential-ledger
-description: Expert knowledge for Azure Confidential Ledger development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, integrations & coding patterns, and deployment. Use when configuring Entra-secured ACL access, MST payloads, Blob/Cosmos integrations, node attestation, or ARM/Terraform deployments, and other Azure Confidential Ledger related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Enclave (use azure-enclave), Azure Key Vault (use azure-key-vault).
+description: Expert knowledge for Azure Confidential Ledger development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, integrations & coding patterns, and deployment. Use when configuring Entra auth, MST payloads, Blob/Cosmos integrations, node attestation, or ARM/Terraform deploys, and other Azure Confidential Ledger related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Enclave (use azure-enclave), Azure Key Vault (use azure-key-vault), Azure Attestation (use azure-attestation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Confidential Ledger Skill
@@ -27,10 +27,10 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L35-L40 | Diagnosing and resolving Microsoft Signing Transparency (MST) ledger verification issues, plus steps to verify ledger integrity and inspect individual ledger entries. |
 | Decision Making | L41-L46 | Choosing between ACL Explorer tools for viewing/querying ledgers, and guidance on migrating applications and data from Managed CCF to Azure Confidential Ledger |
 | Architecture & Design Patterns | L47-L51 | End-to-end architectures and patterns for building confidential workflows with Azure Confidential Ledger, including data flows, trust boundaries, and integration with other confidential computing services. |
-| Limits & Quotas | L52-L56 | Capacity and throughput limits for Azure Confidential Ledger, including max ledgers, transaction rates, payload sizes, and performance expectations under different workloads. |
-| Security | L57-L69 | Configuring secure access to Confidential Ledger: Entra ID auth, app registration, token/cert-based users and roles, client certs, node attestation/quote verification, and security best practices. |
-| Integrations & Coding Patterns | L70-L80 | Patterns for integrating ACL with Blob Storage, Power Automate, Cosmos DB, and for structuring data, MST payloads, auditing, server-side logic, user-defined endpoints, and UDFs. |
-| Deployment | L81-L85 | How to deploy and provision Azure Confidential Ledger instances using ARM templates or Terraform, including required parameters and configuration steps. |
+| Limits & Quotas | L52-L56 | Service capacity limits for Azure Confidential Ledger, including max ledgers, throughput, storage, request quotas, and constraints that affect scaling and usage. |
+| Security | L57-L68 | Configuring secure access to Confidential Ledger: Entra ID auth, app registration, token/cert-based users and roles, client certs, node attestation/quote verification, and security best practices. |
+| Integrations & Coding Patterns | L69-L79 | Patterns for integrating ACL with Blob Storage, Power Automate, Cosmos DB, and for structuring data, MST payloads, auditing, server-side logic, user-defined endpoints, and UDFs. |
+| Deployment | L80-L84 | How to deploy and provision Azure Confidential Ledger instances using ARM templates or Terraform, including required parameters and configuration steps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,14 +52,13 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure confidential ledger limits and performance expectations | https://learn.microsoft.com/en-us/azure/confidential-ledger/limits |
+| Review Azure Confidential Ledger service limits | https://learn.microsoft.com/en-us/azure/confidential-ledger/limits |
 
 ### Security
 | Topic | URL |
 |-------|-----|
 | Authenticate and attest Azure Confidential Ledger nodes securely | https://learn.microsoft.com/en-us/azure/confidential-ledger/authenticate-ledger-nodes |
 | Configure Microsoft Entra authentication for Azure confidential ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/authentication-azure-ad |
-| Choose control-plane vs data-plane user management in Azure confidential ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/choose-how-to-manage-ledger-users |
 | Create and configure client certificates for Confidential Ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/create-client-certificate |
 | Manage Microsoft Entra token-based users in Azure confidential ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/manage-azure-ad-token-based-users |
 | Manage certificate-based users and roles in Confidential Ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/manage-certificate-based-users |

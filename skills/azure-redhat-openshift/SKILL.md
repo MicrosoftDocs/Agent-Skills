@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying ARO clusters, configuring HCP networking, integrating ACR/Key Vault, or securing Entra/OIDC access, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when sizing ARO clusters, configuring HCP/VNet topology, Entra/OIDC identity, ACR/Key Vault access, or SDN‑OVN/HCP upgrades, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Stack Edge (use azure-stack-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L43 | Fixing common ARO cluster issues, restoring cluster access, and manually updating or troubleshooting cluster certificates and connectivity via CLI |
 | Best Practices | L44-L51 | Best practices for sizing and deploying ARO clusters and infra nodes, optimizing OpenShift Virtualization VMs, and staying within supported configurations and policies. |
-| Decision Making | L52-L58 | Guidance on choosing ARO architectures and immutable settings, planning networking for hosted control planes, and understanding shared responsibilities between Microsoft, Red Hat, and customers. |
+| Decision Making | L52-L58 | Guidance on selecting ARO architectures, choosing immutable HCP cluster settings, and understanding shared responsibilities between Microsoft and customers for ARO operations. |
 | Architecture & Design Patterns | L59-L63 | Planning network topology for ARO HCP clusters, including VNet design, subnets, private endpoints, connectivity options, and required ports and dependencies. |
 | Limits & Quotas | L64-L69 | Scaling ARO clusters with multiple load balancer IPs and understanding built‑in service limits, quotas, and standard service definitions for Azure Red Hat OpenShift. |
-| Security | L70-L89 | Identity, auth, and network security for ARO: Entra/OIDC auth, managed identities/SPs, workload identity, NSGs/egress control, disk/etcd encryption, FIPS, Front Door, and support access control. |
-| Configuration | L90-L117 | Configuring ARO clusters: networking (DNS, proxies, MTU), registries and pull secrets, storage classes, autoscaling/node pools, identities, logging, alerts, and resource tagging. |
+| Security | L70-L89 | Identity, auth, and encryption for ARO: Entra/OIDC setup, managed identities, workload identity, NSGs/egress, KMS key rotation, FIPS, Front Door, and support access control. |
+| Configuration | L90-L117 | Configuring ARO clusters: networking (DNS, proxy, MTU, spot VMs), storage (Azure Files, Prometheus), registries/pull secrets, autoscaling/node pools, identities, logging, tagging, and capacity. |
 | Integrations & Coding Patterns | L118-L127 | Patterns for connecting ARO apps to Azure services: workload identity, ACR, Key Vault, NetApp Files, GPU workloads, and exporting Prometheus metrics to Azure Monitor. |
 | Deployment | L128-L139 | Deploying and upgrading ARO clusters and apps: private/standard clusters, ARM/Bicep, WebSphere, S2I and serverless, Velero backup/restore, SDN-to-OVN migration, and HCP control plane/node pool upgrades. |
 
@@ -52,7 +52,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose between standard and hosted OpenShift architectures | https://learn.microsoft.com/en-us/azure/openshift/concepts-classic-hosted-control-planes-comparison |
+| Choose between Azure Red Hat OpenShift architectures | https://learn.microsoft.com/en-us/azure/openshift/concepts-classic-hosted-control-planes-comparison |
 | Choose immutable settings for ARO HCP clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-choose-cluster-configuration |
 | Understand responsibility matrix for ARO operations | https://learn.microsoft.com/en-us/azure/openshift/responsibility-matrix |
 
@@ -75,7 +75,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Microsoft Entra auth for ARO via portal | https://learn.microsoft.com/en-us/azure/openshift/configure-azure-ad-ui |
 | Use custom Network Security Groups with Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-bring-nsg |
 | Encrypt ARO OS disks with customer-managed keys | https://learn.microsoft.com/en-us/azure/openshift/howto-byok |
-| Configure external OIDC authentication for ARO HCP | https://learn.microsoft.com/en-us/azure/openshift/howto-configure-external-authentication |
+| Configure external OIDC authentication for Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-configure-external-authentication |
 | Create service principal for Azure Red Hat OpenShift deployment | https://learn.microsoft.com/en-us/azure/openshift/howto-create-service-principal |
 | Configure applications with ARO workload identity | https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-configure-application |
 | Enable FIPS-compliant cryptography on Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-enable-fips-openshift |
@@ -103,7 +103,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure image digest mirrors for immutable images on ARO | https://learn.microsoft.com/en-us/azure/openshift/howto-configure-cluster-immutable-images |
 | Create Azure Files storage class on ARO 4 | https://learn.microsoft.com/en-us/azure/openshift/howto-create-a-storageclass |
 | Configure custom Azure Red Hat OpenShift HCP clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-create-custom-hosted-cluster |
-| Configure node pools for Azure Red Hat OpenShift HCP | https://learn.microsoft.com/en-us/azure/openshift/howto-create-hosted-node-pool |
+| Configure node pool properties for Azure Red Hat OpenShift hosted control planes | https://learn.microsoft.com/en-us/azure/openshift/howto-create-hosted-node-pool |
 | Configure managed identities for standard OpenShift clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-cluster |
 | Configure custom DNS resolvers for ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-custom-dns |
 | Enable and route ARO HCP control plane logs | https://learn.microsoft.com/en-us/azure/openshift/howto-enable-control-plane-logs |

@@ -17,7 +17,9 @@ skill_description: Expert knowledge for Azure Firmware Analysis development incl
   troubleshooting, best practices, security, integrations & coding patterns, and deployment.
   Use when configuring AFA RBAC access, analyzing SBOM paths and CVEs, automating
   uploads, or deploying workspaces via IaC, and other Azure Firmware Analysis related
-  development tasks.
+  development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot),
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential
+  Computing (use azure-confidential-computing).
 use_when: Use when configuring AFA RBAC access, analyzing SBOM paths and CVEs, automating
   uploads, or deploying workspaces via IaC, and other Azure Firmware Analysis related
   development tasks.
@@ -36,9 +38,9 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 - **Unclassified**: 4
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 13
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -54,21 +56,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 4 | 22.2% |
 
 ## Changes
-
-### New Pages
-
-- [Understanding latest CVEs](https://learn.microsoft.com/en-us/azure/firmware-analysis/understanding-latest-cves)
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq)
-  - Updated: 2026-10-15T11:42:00.000Z → 2026-10-30T16:23:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
-  - Updated: 2026-09-21T08:00:00.000Z → 2026-10-30T16:23:00.000Z
-- [Understanding unsafe function call data](https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-unsafe-function-calls)
-  - Updated: 2026-09-23T22:40:00.000Z → 2026-10-28T08:00:00.000Z
-- [Firmware analysis integration with Azure Device Registry](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry)
-  - Updated: 2026-09-23T17:12:00.000Z → 2026-10-30T16:23:00.000Z
 
 ## Classified Pages
 

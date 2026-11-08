@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 112
+- **Updated Pages**: 0
+- **Unchanged**: 116
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
@@ -67,17 +67,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 38 | 32.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Synchronous document translation](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/rest-api/translate-synchronous)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-10-28T22:11:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/overview)
-  - Updated: 2026-08-07T08:00:00.000Z → 2026-10-28T22:11:00.000Z
-- [Prerequisites and setup](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/prerequisites)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-10-28T22:11:00.000Z
-- [Synchronous document translation with REST API](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/latest/quickstarts/synchronous)
-  - Updated: 2026-06-02T19:00:00.000Z → 2026-10-28T22:11:00.000Z
 
 ## Classified Pages
 

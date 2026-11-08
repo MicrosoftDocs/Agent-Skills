@@ -1,9 +1,9 @@
 ---
 name: azure-stack-edge
-description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream workloads, Arc GitOps, or local ARM integrations, and other Azure Stack Edge related development tasks. Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream workloads, Arc GitOps, or local ARM integrations, and other Azure Stack Edge related development tasks. Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials), Azure Local (use azure-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-08-31"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stack Edge Skill
@@ -24,14 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L87 | Release-specific known issues, alerts, and fixes for Azure Stack Edge/Data Box Gateway, plus troubleshooting for ordering, activation, certificates, ARM, storage, IoT Edge, VMs, GPU, diagnostics, and logs. |
-| Best Practices | L88-L93 | Best practices for Azure Stack Edge Pro: device failure recovery, GPU sharing/partitioning guidance, and operational guidelines for deployment, monitoring, and maintenance. |
-| Decision Making | L94-L102 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
-| Limits & Quotas | L103-L115 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes, GPU limits, and cross-subscription resource moves. |
-| Security | L116-L142 | Securing Azure Stack Edge: user access, certificates/TLS, Key Vault secrets, VPN/BCDR, encryption, secure wipe, Kubernetes RBAC, and built-in security features/policies. |
-| Configuration | L143-L195 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and hardware/system requirements. |
-| Integrations & Coding Patterns | L196-L207 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
-| Deployment | L208-L211 | Predeployment requirements and planning for Azure Stack Edge Pro GPU, including hardware, networking, certificates, capacity, and environment checks before deployment. |
+| Troubleshooting | L36-L88 | Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues: release-specific known problems, alerts, ordering, activation, certificates, ARM/blob/IoT/VM/GPU errors, and using diagnostics/logs. |
+| Best Practices | L89-L94 | Best practices for Azure Stack Edge Pro: device failure recovery, GPU sharing/partitioning guidance, and operational guidelines for deployment, monitoring, and maintenance. |
+| Decision Making | L95-L103 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
+| Limits & Quotas | L104-L116 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes, GPU limits, and cross-subscription resource moves. |
+| Security | L117-L143 | Securing Azure Stack Edge: user access, certificates/TLS, Key Vault secrets, VPN/BCDR, encryption, secure wipe, Kubernetes RBAC, and built-in security features/policies. |
+| Configuration | L144-L196 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and hardware/system requirements. |
+| Integrations & Coding Patterns | L197-L208 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
+| Deployment | L209-L212 | Predeployment requirements and planning for Azure Stack Edge Pro GPU, including hardware, networking, certificates, capacity, and environment checks before deployment. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -44,7 +44,8 @@ This skill requires **network access** to fetch documentation content:
 | Azure Data Box Gateway 2101 release known issues and workarounds | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2101-release-notes |
 | Azure Data Box Gateway 2105 release known issues and fixes | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2105-release-notes |
 | Azure Data Box Gateway 2301 release issues and fixes | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2301-release-notes |
-| Azure Data Box Gateway 2409 release issues and workarounds | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2409-release-notes |
+| Apply Azure Data Box Gateway 2409 release notes to diagnose problems | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2409-release-notes |
+| Use Azure Data Box Gateway 2610 release notes for issue resolution | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2610-release-notes |
 | Azure Data Box Gateway general availability release notes | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-release-notes |
 | Troubleshoot Azure Data Box Gateway using diagnostics and logs | https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-troubleshoot |
 | Interpret and respond to Azure Stack Edge alerts | https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-alerts |

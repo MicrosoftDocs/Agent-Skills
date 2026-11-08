@@ -3,7 +3,7 @@ name: azure-cloud-shell
 description: Expert knowledge for Azure Cloud Shell development including troubleshooting, architecture & design patterns, limits & quotas, security, and deployment. Use when configuring Cloud Shell storage, session limits, private VNet access, RBAC, or private endpoints, and other Azure Cloud Shell related development tasks. Not for Azure Portal (use azure-portal), Azure Virtual Machines (use azure-virtual-machines), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Shell Skill

@@ -1,9 +1,9 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building runbooks, DSC configs, Hybrid Runbook Workers, managed identities, or Automation deployments, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure DevOps (use azure-devops), Azure DevTest Labs (use azure-devtest-labs).
+description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when automating runbooks, Hybrid Workers, DSC/State Config, Change Tracking, or AMA-based monitoring, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure DevOps (use azure-devops), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-09-20"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Automation Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L56-L63 | Guidance on choosing runbook types and planning migrations: Orchestrator to Automation, Log Analytics to AMA, agent to extension workers, and Run As accounts to managed identities. |
 | Limits & Quotas | L64-L71 | Limits, quotas, and version details for Azure Automation: DSC extension history, Automation account capacity, job/runbook limits, and Change Tracking/Inventory support matrix with AMA. |
 | Security | L72-L92 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, credentials/certs, private endpoints, policies, and security best practices. |
-| Configuration | L93-L134 | Configuring Azure Automation runbooks, DSC/State Configuration, Hybrid Runbook Workers, alerts, schedules, modules/packages, policies, networking, and deployment/integration settings. |
+| Configuration | L93-L134 | Configuring Automation accounts: runbooks, schedules, alerts, Hybrid Workers, DSC/State Configuration, Change Tracking, source control, policies, modules, Python packages, and deployment templates. |
 | Integrations & Coding Patterns | L135-L147 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, webhooks, email (SendGrid), Azure Monitor logging, and using the graphical runbook SDK with managed identities |
 | Deployment | L148-L152 | Guides for deploying Automation resources: setting up DSC continuous deployment with Chocolatey and installing/configuring Windows and Linux Hybrid Runbook Worker agents (agent- and extension-based). |
 

@@ -49,9 +49,9 @@ confusable_not_for: Not for Azure Speech in Foundry Tools (use azure-speech), Az
 - **Unclassified**: 17
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 39
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-content-understanding/azure-content-understanding.csv`
 
@@ -70,23 +70,6 @@ confusable_not_for: Not for Azure Speech in Foundry Tools (use azure-speech), Az
 | *(Unclassified)* | 17 | 37.8% |
 
 ## Changes
-
-### New Pages
-
-- [CLI](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-content-understanding-cli)
-
-### Updated Pages
-
-- [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview)
-  - Updated: 2026-09-24T22:18:00.000Z → 2026-10-29T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new)
-  - Updated: 2026-10-12T08:00:00.000Z → 2026-10-29T08:00:00.000Z
-- [Prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers)
-  - Updated: 2026-09-09T22:15:00.000Z → 2026-10-29T08:00:00.000Z
-- [Create a custom analyzer](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer)
-  - Updated: 2026-07-16T08:00:00.000Z → 2026-10-29T08:00:00.000Z
-- [Create a Microsoft Foundry resource](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/create-multi-service-resource)
-  - Updated: 2026-03-31T08:00:00.000Z → 2026-10-30T22:11:00.000Z
 
 ## Classified Pages
 

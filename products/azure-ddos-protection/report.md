@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Firewall 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 33
+- **Updated Pages**: 0
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -61,19 +61,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Firewall 
 | *(Unclassified)* | 12 | 31.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [DDoS custom policy overview](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-custom-policy-overview)
-  - Updated: 2026-07-22T22:29:00.000Z → 2026-10-26T17:12:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-portal)
-  - Updated: 2026-07-22T22:29:00.000Z → 2026-10-26T17:12:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-cli)
-  - Updated: 2026-07-22T22:29:00.000Z → 2026-10-26T17:12:00.000Z
-- [Configure diagnostic logging alerts](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-diagnostic-alert-templates)
-  - Updated: 2026-03-17T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [View diagnostic logs in Log Analytics workspace](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-diagnostic-logs)
-  - Updated: 2026-03-17T08:00:00.000Z → 2026-10-30T05:22:00.000Z
 
 ## Classified Pages
 

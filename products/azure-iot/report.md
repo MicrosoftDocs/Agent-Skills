@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   security: 'Managing IoT device certificates and CAs in Azure: issuance, renewal,
     revocation, CA hierarchy, namespaces/security boundaries, and configuring Microsoft
@@ -7,24 +7,24 @@ category_descriptions:
   best-practices: Designing Azure Device Registry namespaces and schema registries,
     including structure, naming, isolation, versioning, and governance best practices
     for large-scale IoT solutions
-  configuration: 'Configuring Azure Device Registry for fleets: namespaces/dependencies,
-    device groups, enabling/disabling devices, importing updates, and running fleet-scale
-    software update jobs.'
+  configuration: 'Configuring Azure Device Registry and IoT Hub DPS: namespaces, groups,
+    software update import/targeting, device enable/disable, and certificate policy
+    setup.'
   integrations: Using unified Azure IoT SDKs to connect devices to Azure Device Registry
     and IoT Hub, including setup, authentication, and coding patterns for device connectivity.
   deployment: Deploying and managing software updates to IoT devices via Device Registry,
     including onboarding updates and targeting specific device groups and namespaces.
 skill_description: Expert knowledge for Azure IoT development including best practices,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing Device Registry namespaces, device certs/CAs, fleet config, IoT SDK connectivity,
+  managing Device Registry namespaces, IoT Hub DPS, cert-based auth, SDK device connectivity,
   or software updates, and other Azure IoT related development tasks. Not for Azure
-  IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure
-  IoT Hub (use azure-iot-hub), Azure Defender For Iot (use azure-defender-for-iot).
-use_when: Use when managing Device Registry namespaces, device certs/CAs, fleet config,
-  IoT SDK connectivity, or software updates, and other Azure IoT related development
+  IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central
+  (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
+use_when: Use when managing Device Registry namespaces, IoT Hub DPS, cert-based auth,
+  SDK device connectivity, or software updates, and other Azure IoT related development
   tasks.
-confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT Edge
-  (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Defender For Iot
+confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use
+  azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot
   (use azure-defender-for-iot).
 ---
 # Azure IoT Crawl Report
@@ -49,18 +49,18 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 7.1% |
-| configuration | 5 | 17.9% |
+| configuration | 6 | 21.4% |
 | deployment | 2 | 7.1% |
 | integrations | 1 | 3.6% |
-| security | 10 | 35.7% |
+| security | 9 | 32.1% |
 | *(Unclassified)* | 8 | 28.6% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Jobs concepts (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/concept-jobs)
-  - Updated: 2026-10-05T22:13:00.000Z → 2026-10-28T05:11:00.000Z
+- [Create or edit a certificate policy](https://learn.microsoft.com/en-us/azure/iot/how-to-create-edit-certificate-policy)
+  - Updated: 2026-10-05T17:12:00.000Z → 2026-11-02T23:14:00.000Z
 
 ## Classified Pages
 
@@ -73,12 +73,12 @@ confusable_not_for: Not for Azure IoT Central (use azure-iot-central), Azure IoT
 | [Set up a root and intermediate CA](https://learn.microsoft.com/en-us/azure/iot/how-to-create-policy) | security | 0.85 | How-to for provisioning managed CAs in Device Registry; includes specific security configuration steps, policy settings, and PKI behavior. |
 | [Best practices for schema registries](https://learn.microsoft.com/en-us/azure/iot/device-registry/best-practices-schema-registries) | best-practices | 0.80 | Best-practices for schema registries, including when to create or reuse registries and how to organize schemas; product-specific guidance and gotchas for Azure IoT Operations. |
 | [Certificate management overview](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-overview) | security | 0.80 | Certificate management overview focused on secure identities, managed CAs, and trust with Azure IoT services; includes product-specific security model and PKI behavior. |
-| [Create or edit a certificate policy](https://learn.microsoft.com/en-us/azure/iot/how-to-create-edit-certificate-policy) | security | 0.80 | Explains certificate policy settings (validity periods, association with intermediate CAs, DPS enrollments); security-focused configuration unique to Device Registry/IoT Hub. |
 | [Import a software update (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-import-software-update) | configuration | 0.80 | How-to for importing update files and manifests; includes manifest structure, required fields, and compatibility rules unique to Device Registry. |
 | [Issue device certificates](https://learn.microsoft.com/en-us/azure/iot/concept-certificate-issuance) | security | 0.80 | Describes CSR handling, issuance flow between ADR and DPS, and how IoT Hub trusts issued certificates; detailed security issuance pipeline. |
 | [Renew device certificates](https://learn.microsoft.com/en-us/azure/iot/concept-certificate-renewal) | security | 0.80 | Explains when and how to renew certificates, renewal paths, and device responsibilities; product-specific security lifecycle behavior. |
 | [PKI fundamentals](https://learn.microsoft.com/en-us/azure/iot/iot-certificate-management-concepts) | security | 0.75 | Explains certificate-based authentication concepts as implemented in Device Registry/IoT Hub; includes product-specific security flows and terminology. |
 | [Azure IoT Hub get started (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/get-started-azure-device-registry) | configuration | 0.70 | Get-started article that walks through connecting IoT Hub and DPS instances to a Device Registry namespace; likely includes specific resource relationships, required configurations, and portal/ARM parameters that are product-specific. |
+| [Create or edit a certificate policy](https://learn.microsoft.com/en-us/azure/iot/how-to-create-edit-certificate-policy) | configuration | 0.70 | A certificate policy defines issuance characteristics (such as validity period) for intermediate CAs in Azure IoT Hub Device Registry and DPS. This is product-specific configuration knowledge about how enrollments reference certificate policies and constraints like one policy per intermediate CA, which goes beyond generic PKI concepts. |
 | [Deploy a software update to a group (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-deploy-software-update-group) | deployment | 0.70 | Describes deploying updates as jobs to groups, including job configuration and rollout behavior; production-like deployment pattern for OTA updates. |
 | [Deploy an onboarding update to a namespace (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-deploy-onboarding-update-namespace) | deployment | 0.70 | Explains onboarding update jobs that run at device onboarding time and remain active; deployment behavior and constraints specific to Device Registry. |
 | [Disable or enable a device (preview)](https://learn.microsoft.com/en-us/azure/iot/device-registry/how-to-disable-enable-device) | configuration | 0.70 | How-to for toggling device state; likely includes specific API/portal options and behavior of disabled devices in IoT Hub preview deployments. |

@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 276
-- **Deleted Pages**: 8
+- **Updated Pages**: 0
+- **Unchanged**: 280
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
 ## Classification Statistics
@@ -75,28 +75,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | *(Unclassified)* | 56 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Virtual network injection (v2 tiers)](https://learn.microsoft.com/en-us/azure/api-management/inject-vnet-v2)
-  - Updated: 2026-01-06T23:12:00.000Z → 2026-10-28T08:00:00.000Z
-- [Virtual network integration (v2 tiers)](https://learn.microsoft.com/en-us/azure/api-management/integrate-vnet-outbound)
-  - Updated: 2025-12-06T06:11:00.000Z → 2026-10-29T05:12:00.000Z
-- [Enable availability zones](https://learn.microsoft.com/en-us/azure/api-management/enable-availability-zone-support)
-  - Updated: 2026-09-21T22:12:00.000Z → 2026-10-28T11:46:00.000Z
-- [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/api-management/policy-reference)
-  - Updated: 2026-08-21T08:00:00.000Z → 2026-08-22T05:14:00.000Z
-
-### Deleted Pages
-
-- ~~Private networking - AI Gateway tier (preview)~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-configure-private-networking)
-- ~~Govern, secure, and operate~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-govern-secure-assets)
-- ~~Manage models and tools~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-manage-models-tools)
-- ~~Overview~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-overview)
-- ~~Tool threat protection~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-policy-tool-threat)
-- ~~Migrate to AI Gateway resource type~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-resource)
-- ~~Set up your gateway~~ (https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-setup)
-- ~~Create an instance~~ (https://learn.microsoft.com/en-us/azure/api-management/quickstart-ai-gateway-create)
 
 ## Classified Pages
 

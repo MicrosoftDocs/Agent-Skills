@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure App Ser
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 267
+- **Updated Pages**: 0
+- **Unchanged**: 269
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -76,13 +76,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure App Ser
 | *(Unclassified)* | 64 | 23.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Secure traffic between Standard workflows and virtual networks](https://learn.microsoft.com/en-us/azure/logic-apps/secure-single-tenant-workflow-virtual-network-private-endpoint)
-  - Updated: 2026-03-10T08:00:00.000Z → 2026-10-30T08:00:00.000Z
-- [Service limits and configuration](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config)
-  - Updated: 2026-05-20T08:00:00.000Z → 2026-10-30T08:00:00.000Z
 
 ## Classified Pages
 

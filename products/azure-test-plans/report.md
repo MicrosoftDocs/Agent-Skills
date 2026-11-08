@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-11-08'
 category_descriptions:
-  limits-quotas: Limits, permissions, and retention rules for Azure Test Plans and
-    Pipelines, plus how to configure test run custom fields and pipeline retention
-    behavior.
+  limits-quotas: Configuring test plan and pipeline retention limits, understanding
+    quotas/behaviors for test artifacts, and using custom fields to manage and query
+    Azure DevOps test runs.
   configuration: Configuring and using test failure types in Azure Test Plans, including
     defining categories, managing them, and applying them to test results for better
     defect tracking.
@@ -14,15 +14,14 @@ category_descriptions:
     management tasks'
 skill_description: Expert knowledge for Azure Test Plans development including limits
   & quotas, security, configuration, and integrations & coding patterns. Use when
-  configuring test failure types, custom fields, retention, permissions, or tcm.exe-based
-  test suite automation, and other Azure Test Plans related development tasks. Not
-  for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure
-  Boards (use azure-boards), Azure App Testing (use azure-app-testing).
-use_when: Use when configuring test failure types, custom fields, retention, permissions,
-  or tcm.exe-based test suite automation, and other Azure Test Plans related development
-  tasks.
-confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
-  azure-pipelines), Azure Boards (use azure-boards), Azure App Testing (use azure-app-testing).
+  setting retention limits, custom fields, failure types, permissions, or tcm.exe
+  test automation, and other Azure Test Plans related development tasks. Not for Azure
+  DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use
+  azure-pipelines), Azure Repos (use azure-repos).
+use_when: Use when setting retention limits, custom fields, failure types, permissions,
+  or tcm.exe test automation, and other Azure Test Plans related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
+  Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos).
 ---
 # Azure Test Plans Crawl Report
 
@@ -36,8 +35,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
@@ -53,6 +52,11 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ## Changes
 
+### Updated Pages
+
+- [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops)
+  - Updated: 2026-08-17T22:06:00.000Z → 2026-11-03T19:17:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -60,7 +64,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops) | limits-quotas | 0.78 | The retention policies article documents specific numeric retention limits (days, number of runs/releases/tests kept), default values, and how they differ by pipeline type and scope. These are concrete, product-specific limits and behaviors that an LLM wouldn't reliably infer from training, matching the limits-quotas category. |
 | [Add custom data fields](https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops) | limits-quotas | 0.70 | Explicitly states a numeric limit: up to 100 custom fields per Azure DevOps project; this is a concrete quota not generally known from training. |
 | [Default permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/test/manual-test-permissions?view=azure-devops) | security | 0.70 | Covers Azure DevOps access levels, licensing, and permissions for manual and exploratory testing. Likely includes specific permission names, role mappings, and access requirements, which are product-specific security/authorization details. |
-| [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops) | limits-quotas | 0.70 | FAQ for test plans commonly includes specific details such as permissions/access levels, automated testing constraints, test configuration behaviors, and test data retention durations—these are product-specific limits and quotas not covered in generic knowledge. |
+| [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops) | limits-quotas | 0.70 | FAQ pages for Azure DevOps Test Plans typically include product-specific details such as how long test data is retained, limits on test case or test suite counts, access level requirements, and constraints around automated/manual testing and configurations. These are often expressed as exact behaviors or numeric limits that aren't obvious from general knowledge, fitting the limits-quotas category better than generic FAQ or conceptual content. |
 | [Test case management commands](https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops) | integrations | 0.70 | Reference for tcm.exe command-line tool, which is a product-specific integration/automation interface. Such pages typically list commands, arguments, and options (API-like parameters) unique to Azure Test Plans, matching the integrations & coding patterns criteria. |
 | [Manage test failure type](https://learn.microsoft.com/en-us/azure/devops/test/manage-test-failure-type?view=azure-devops) | configuration | 0.65 | Covers managing built-in and custom failure-type values, including use of Test Results REST API and project-level settings; this is product-specific configuration rather than generic usage. |
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-25'
+generated_at: '2026-11-08'
 category_descriptions:
   security: 'Configuring secure access to Confidential Ledger: Entra ID auth, app
     registration, token/cert-based users and roles, client certs, node attestation/quote
@@ -13,9 +13,9 @@ category_descriptions:
   decision-making: Choosing between ACL Explorer tools for viewing/querying ledgers,
     and guidance on migrating applications and data from Managed CCF to Azure Confidential
     Ledger
-  limits-quotas: Capacity and throughput limits for Azure Confidential Ledger, including
-    max ledgers, transaction rates, payload sizes, and performance expectations under
-    different workloads.
+  limits-quotas: Service capacity limits for Azure Confidential Ledger, including
+    max ledgers, throughput, storage, request quotas, and constraints that affect
+    scaling and usage.
   troubleshooting: Diagnosing and resolving Microsoft Signing Transparency (MST) ledger
     verification issues, plus steps to verify ledger integrity and inspect individual
     ledger entries.
@@ -23,16 +23,17 @@ category_descriptions:
     ARM templates or Terraform, including required parameters and configuration steps.
 skill_description: Expert knowledge for Azure Confidential Ledger development including
   troubleshooting, decision making, architecture & design patterns, limits & quotas,
-  security, integrations & coding patterns, and deployment. Use when configuring Entra-secured
-  ACL access, MST payloads, Blob/Cosmos integrations, node attestation, or ARM/Terraform
-  deployments, and other Azure Confidential Ledger related development tasks. Not
-  for Azure Confidential Computing (use azure-confidential-computing), Azure Enclave
-  (use azure-enclave), Azure Key Vault (use azure-key-vault).
-use_when: Use when configuring Entra-secured ACL access, MST payloads, Blob/Cosmos
-  integrations, node attestation, or ARM/Terraform deployments, and other Azure Confidential
-  Ledger related development tasks.
+  security, integrations & coding patterns, and deployment. Use when configuring Entra
+  auth, MST payloads, Blob/Cosmos integrations, node attestation, or ARM/Terraform
+  deploys, and other Azure Confidential Ledger related development tasks. Not for
+  Azure Confidential Computing (use azure-confidential-computing), Azure Enclave (use
+  azure-enclave), Azure Key Vault (use azure-key-vault), Azure Attestation (use azure-attestation).
+use_when: Use when configuring Entra auth, MST payloads, Blob/Cosmos integrations,
+  node attestation, or ARM/Terraform deploys, and other Azure Confidential Ledger
+  related development tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
-  Azure Enclave (use azure-enclave), Azure Key Vault (use azure-key-vault).
+  Azure Enclave (use azure-enclave), Azure Key Vault (use azure-key-vault), Azure
+  Attestation (use azure-attestation).
 ---
 # Azure Confidential Ledger Crawl Report
 
@@ -41,13 +42,13 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Total Pages**: 40
 - **Fetched**: 40
 - **Fetch Failed**: 0
-- **Classified**: 24
-- **Unclassified**: 16
+- **Classified**: 23
+- **Unclassified**: 17
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
+- **Updated Pages**: 2
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
@@ -60,21 +61,27 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | deployment | 2 | 5.0% |
 | integrations | 7 | 17.5% |
 | limits-quotas | 1 | 2.5% |
-| security | 9 | 22.5% |
+| security | 8 | 20.0% |
 | troubleshooting | 2 | 5.0% |
-| *(Unclassified)* | 16 | 40.0% |
+| *(Unclassified)* | 17 | 42.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Limits](https://learn.microsoft.com/en-us/azure/confidential-ledger/limits)
+  - Updated: 2026-10-19T22:33:00.000Z → 2026-11-05T00:34:00.000Z
+- [Choose how to manage ledger users](https://learn.microsoft.com/en-us/azure/confidential-ledger/choose-how-to-manage-ledger-users)
+  - Updated: 2026-10-19T22:33:00.000Z → 2026-11-04T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Limits](https://learn.microsoft.com/en-us/azure/confidential-ledger/limits) | limits-quotas | 0.95 | Explicitly documents numerical limits (collections, entry size, tags, UDFs, number of ledgers per subscription) and describes behavior when limits are exceeded and expected performance; this is expert-only limits and quotas data. |
+| [Limits](https://learn.microsoft.com/en-us/azure/confidential-ledger/limits) | limits-quotas | 0.95 | The page explicitly documents numeric limits on ledgers, collections, entry size, tags, users, roles, and user-defined functions, along with behavior when requests exceed those limits and performance expectations. These are product-specific quotas and constraints that aren't generally known from training, matching the limits-quotas criteria. |
 | [Manage Microsoft Entra token-based users](https://learn.microsoft.com/en-us/azure/confidential-ledger/manage-azure-ad-token-based-users) | security | 0.85 | Details roles (Reader, Contributor, Administrator), how users are identified by object ID, and how to manage grants via the data plane; includes product-specific RBAC roles and IAM patterns. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/confidential-ledger/microsoft-signing-transparency-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article for MST with common issues and their resolutions when verifying signatures; likely includes symptom-to-solution mappings and possibly specific error messages. |
 | [Authenticate ledger nodes](https://learn.microsoft.com/en-us/azure/confidential-ledger/authenticate-ledger-nodes) | security | 0.80 | Explains the product-specific trust model, TLS certificate retrieval, and Intel SGX attestation steps for Azure Confidential Ledger nodes. Contains concrete security configuration and verification flows unique to this service, matching the security sub-skill. |
-| [Choose how to manage ledger users](https://learn.microsoft.com/en-us/azure/confidential-ledger/choose-how-to-manage-ledger-users) | security | 0.80 | Explains product-specific differences between control-plane and data-plane user management, including how grants are applied and when to use each; this is detailed IAM/authorization configuration guidance. |
 | [Data ingress and egress from Azure confidential ledger using Power Automate Connector](https://learn.microsoft.com/en-us/azure/confidential-ledger/create-power-automate-workflow) | integrations | 0.80 | Shows a concrete integration pattern using the Power Automate connector to write to the ledger and store transaction IDs in Cosmos DB; includes product-specific workflow and connector usage details. |
 | [Establish trust on Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-node-quotes) | security | 0.80 | Covers remote attestation, quote contents (identity key hash, MRENCLAVE), and verification steps unique to confidential ledger’s TEE security model. |
 | [Manage certificate-based users](https://learn.microsoft.com/en-us/azure/confidential-ledger/manage-certificate-based-users) | security | 0.80 | Describes certificate fingerprint-based identities and role assignments, which are product-specific security and access control mechanisms. |
@@ -115,3 +122,4 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [.NET](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-net) | 0.20 | Quickstart showing basic .NET client usage; appears to be a step-by-step tutorial without detailed configuration tables, limits, or product-specific troubleshooting. |
 | [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview) | 0.20 | High-level service overview describing what Azure confidential ledger is and its benefits; no concrete limits, configs, or product-specific error/decision details. |
 | [CLI](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-cli) | 0.20 | Quickstart using Azure CLI to create and manage a ledger; primarily step-by-step tutorial without detailed configuration tables, limits, or troubleshooting mappings. |
+| [Choose how to manage ledger users](https://learn.microsoft.com/en-us/azure/confidential-ledger/choose-how-to-manage-ledger-users) | 0.20 | The page focuses on choosing between control-plane and data-plane APIs for managing Microsoft Entra users in Azure Confidential Ledger. From the summary, it provides conceptual guidance on when to use each, without exposing detailed configuration tables, numeric thresholds, or product-specific error codes. It reads as decision guidance at a high level rather than expert configuration or limits, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
