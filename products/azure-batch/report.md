@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-08'
 category_descriptions:
   security: 'Securing Batch accounts and pools: identity/auth (Entra ID, managed identities,
     RBAC), keys and encryption, private endpoints/network access, and Azure Policy-based
@@ -12,12 +12,12 @@ category_descriptions:
   limits-quotas: Planning Batch capacity, understanding service limits/quotas, managing
     quotas via .NET, and using metrics/logs to monitor and stay within Azure Batch
     limits.
-  integrations: Patterns and code samples for integrating Azure Batch with CLI, SDKs,
-    containers, MPI, storage/file mounts, Key Vault, telemetry, and automating jobs/tasks
-    across languages.
   decision-making: Guidance on choosing VM sizes, images, disks, Spot/GPU usage, capacity
     and quotas, cost planning, and migration strategies for Azure Batch pools and
     large-scale simulations.
+  integrations: Patterns and code samples for integrating Azure Batch with CLI, SDKs,
+    containers, MPI, storage/file mounts, Key Vault, telemetry, and automating jobs/tasks
+    across languages.
   best-practices: 'Guidance on optimizing Azure Batch workloads: efficient queries,
     job/task setup, concurrency, rendering and financial workloads, security, and
     scaling jobs with many tasks.'
@@ -47,13 +47,13 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 - **Total Pages**: 124
 - **Fetched**: 124
 - **Fetch Failed**: 0
-- **Classified**: 87
-- **Unclassified**: 37
+- **Classified**: 86
+- **Unclassified**: 38
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 124
+- **Updated Pages**: 2
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -66,13 +66,20 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | configuration | 33 | 26.6% |
 | decision-making | 10 | 8.1% |
 | deployment | 2 | 1.6% |
-| integrations | 13 | 10.5% |
+| integrations | 12 | 9.7% |
 | limits-quotas | 3 | 2.4% |
 | security | 14 | 11.3% |
 | troubleshooting | 3 | 2.4% |
-| *(Unclassified)* | 37 | 29.8% |
+| *(Unclassified)* | 38 | 30.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use Azure PowerShell](https://learn.microsoft.com/en-us/azure/batch/batch-powershell-cmdlets-get-started)
+  - Updated: 2026-06-16T08:00:00.000Z → 2026-11-03T18:18:00.000Z
+- [Use Azure CLI](https://learn.microsoft.com/en-us/azure/batch/batch-cli-get-started)
+  - Updated: 2026-01-05T08:00:00.000Z → 2026-10-30T08:00:00.000Z
 
 ## Classified Pages
 
@@ -162,7 +169,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Count resources by state](https://learn.microsoft.com/en-us/azure/batch/batch-get-resource-counts) | integrations | 0.60 | Describes specific Batch operations (like Get Task Counts) with their semantics for aggregating task and node states. This is API-surface knowledge (operations, parameters, and behavior) that goes beyond generic concepts and is needed for integrating monitoring logic with Batch. |
 | [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk) | decision-making | 0.60 | Provides Batch-specific trade-offs between ephemeral OS disks and managed disks (cost, startup time, behavior on node reimage) and guidance on when ephemeral OS disks are appropriate. This is service-specific decision guidance rather than generic VM info. |
 | [Storage and data movement](https://learn.microsoft.com/en-us/azure/batch/batch-rendering-storage-data-movement) | architecture-patterns | 0.60 | Covers concrete options and patterns for moving and storing scene and asset files for rendering workloads, representing Batch-specific architectural choices. |
-| [Use Azure CLI](https://learn.microsoft.com/en-us/azure/batch/batch-cli-get-started) | integrations | 0.60 | Explains Batch-specific Azure CLI commands and parameters for managing accounts, pools, jobs, and tasks, which are concrete integration details. |
 | [Use Linux compute nodes](https://learn.microsoft.com/en-us/azure/batch/batch-linux-nodes) | integrations | 0.60 | Shows how to create and manage Linux pools using the Batch Python and Azure.Compute.Batch client libraries. Contains SDK-specific usage patterns and parameters for this service, which are integration/coding patterns rather than generic Linux or Batch concepts. |
 | [Use RDMA or GPU instances](https://learn.microsoft.com/en-us/azure/batch/batch-pool-compute-intensive-sizes) | decision-making | 0.60 | Guides selection of HB/HC/NC/ND and other VM series for MPI and CUDA workloads, with product-specific recommendations and trade-offs for Batch scenarios (e.g., RDMA/InfiniBand requirements). |
 
@@ -174,7 +180,6 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Use Batch CLI templates](https://learn.microsoft.com/en-us/azure/batch/batch-cli-templates) | 0.45 | Describes using CLI templates and notes extension retirement; primarily workflow/tutorial content without explicit limits, decision matrices, or detailed configuration parameter tables in the summary. |
 | [Manage Batch accounts in the Azure portal](https://learn.microsoft.com/en-us/azure/batch/batch-account-create-portal) | 0.40 | Portal how-to for creating a Batch account; mostly UI steps, likely without detailed parameter tables or constraints. |
 | [Persist job and task output](https://learn.microsoft.com/en-us/azure/batch/batch-task-output) | 0.40 | Covers why and how to persist task output; summary does not indicate specific configuration parameters, limits, or detailed integration tables. |
-| [Use Azure PowerShell](https://learn.microsoft.com/en-us/azure/batch/batch-powershell-cmdlets-get-started) | 0.40 | Introductory overview of Batch PowerShell cmdlets; likely lists commands but not deep configuration tables or product-specific limits/diagnostics beyond what is standard for cmdlet references. |
 | [Add an application to an Azure Batch account](https://learn.microsoft.com/en-us/azure/batch/scripts/batch-cli-sample-add-application) | 0.35 | CLI script to add an application; example usage without exhaustive configuration options or constraints. |
 | [Create a Batch account in Batch service mode](https://learn.microsoft.com/en-us/azure/batch/scripts/batch-cli-sample-create-account) | 0.35 | CLI script example for creating a Batch account; shows commands but not a full parameter reference or limits. |
 | [Create a Batch account in user subscription mode](https://learn.microsoft.com/en-us/azure/batch/scripts/batch-cli-sample-create-user-subscription-account) | 0.35 | CLI script for user subscription mode account; describes mode conceptually, no detailed quotas or config tables. |
@@ -207,3 +212,5 @@ confusable_not_for: Not for Azure Container Instances (use azure-container-insta
 | [Parallel file processing - Python](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-python) | 0.20 | Tutorial-style content showing how to run a parallel workload with Azure Batch and Python; focuses on example workflow and ffmpeg usage without detailed limits, quotas, configuration tables, error-code mappings, or product-specific settings beyond generic SDK usage. |
 | [Rendering using Azure](https://learn.microsoft.com/en-us/azure/batch/batch-rendering-service) | 0.20 | High-level rendering overview and use cases; marketing/introductory style content without specific configuration, limits, or troubleshooting details. |
 | [What is Azure Batch?](https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview) | 0.20 | Technical overview of Azure Batch describing what the service does and general concepts; no evidence of specific limits, configuration tables, error codes, or other detailed product-specific parameters. |
+| [Use Azure CLI](https://learn.microsoft.com/en-us/azure/batch/batch-cli-get-started) | 0.10 | Getting-started article for managing Azure Batch via Azure CLI; describes basic commands and usage but lacks specific limits, configuration matrices, error-code-based troubleshooting, or detailed decision-making guidance. |
+| [Use Azure PowerShell](https://learn.microsoft.com/en-us/azure/batch/batch-powershell-cmdlets-get-started) | 0.10 | Introductory guidance on using Azure Batch PowerShell cmdlets; focuses on getting started and general usage, without detailed configuration tables, limits, error codes, or product-specific best practices. |

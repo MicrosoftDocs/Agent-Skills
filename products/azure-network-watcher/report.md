@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   configuration: Configuring and managing Network Watcher agents and VNet/NSG flow
     logs, including schemas, filtering, Traffic Analytics, AKS monitoring, and deployment
@@ -66,8 +66,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-overview)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-10-27T17:14:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview)
+  - Updated: 2026-06-25T11:43:00.000Z → 2026-11-03T12:41:00.000Z
 
 ## Classified Pages
 
@@ -140,7 +140,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Monitor communication between VMs](https://learn.microsoft.com/en-us/azure/network-watcher/monitor-vm-communication) | 0.20 | Step-by-step tutorial using portal; no indication of detailed settings tables, limits, or troubleshooting codes. |
 | [Monitor connectivity using Azure Monitor agent](https://learn.microsoft.com/en-us/azure/network-watcher/azure-monitor-agent-with-connection-monitor) | 0.20 | Appears to be a how-to/tutorial style page describing use of Azure Monitor Agent with Network Watcher Connection Monitor. The summary does not indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely focuses on enabling and using the agent rather than listing expert-only constraints or product-specific configuration catalogs. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) | 0.20 | Page is an overview of the Network Watcher connection troubleshoot feature, describing what it does and the kinds of issues it can detect, but not providing specific error codes, diagnostic commands, configuration parameters, or numeric limits. It lacks the concrete symptom→cause→solution mappings or detailed settings required for troubleshooting or configuration classifications. |
-| [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview) | 0.20 | Page is an overview of Azure Network Watcher virtual network flow logs, describing what they are and general usage. The summary indicates conceptual explanation and high-level capabilities (logging IP traffic, exporting to SIEM/IDS) without evidence of specific limits, configuration parameter tables, error codes, or detailed troubleshooting/decision matrices. It does not meet the criteria for any expert-knowledge sub-skill type. |
+| [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview) | 0.20 | The page is an overview of Azure Network Watcher virtual network flow logs, describing what they are and how they can be used. The provided summary does not show specific numeric limits, configuration parameter tables, error codes, or detailed troubleshooting mappings. It appears to be conceptual/feature overview content rather than expert, configuration, or limits-focused guidance. |
 | [Usage scenarios](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-usage-scenarios) | 0.20 | Usage scenarios article describing how Traffic Analytics can provide insights; scenario-focused but not clearly exposing configuration tables, limits, or error mappings. |
 | [VM Network Troubleshooter](https://learn.microsoft.com/en-us/azure/network-watcher/vm-network-troubleshooter) | 0.20 | Preview feature overview describing what VM Network Troubleshooter is and its purpose; no indication of concrete error codes, commands, or configuration specifics. |
 | [What is Azure Network Watcher?](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview) | 0.20 | High-level overview of Network Watcher capabilities without detailed limits, configs, or error mappings. |

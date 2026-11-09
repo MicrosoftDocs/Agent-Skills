@@ -1,9 +1,9 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AMA/Log Analytics, DCRs, alerts, App Insights, autoscale, Workbooks, or Container/AKS monitoring, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud), Cost Management (use azure-cost-management).
+description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when handling Log Analytics/AMA, App Insights, alerts/autoscale, Container Insights/Prometheus, or Workbooks, and other Azure Monitor related development tasks. Not for Azure Managed Grafana (use azure-managed-grafana), Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Monitor Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L119-L158 | Best practices for Azure Monitor configuration, alerts, autoscale, AKS/Kubernetes/VM monitoring, logs/Prometheus/PromQL, cost optimization, and performance/reliability tuning. |
 | Decision Making | L159-L197 | Guidance for planning and decision-making: choosing Azure Monitor agents, data collection and alerts, cost and billing strategies, and migration paths from legacy tools (MMA, WAD/LAD, SCOM, Splunk, Prometheus, etc.). |
 | Architecture & Design Patterns | L198-L203 | Designing end-to-end Azure Monitor architectures, including enterprise-scale layouts, data flows, and secure network topologies using Private Link for monitoring traffic. |
-| Limits & Quotas | L204-L230 | Azure Monitor limits, quotas, and performance planning: ingestion, retention, query timeouts, alert rules, autoscale, Container Insights, Managed Prometheus, metrics/logs support, and Workbooks limits. |
-| Security | L231-L301 | Securing Azure Monitor and related services: auth, RBAC, TLS, network/perimeter controls, policy, private access, and auditing/logging for Databricks, MDE, healthcare, Synapse, and threat intel. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor end to end: agents, data collection rules, pipelines, logs/metrics schemas, alerts, health models, autoscale, workbooks, and per‑service monitoring setup. |
+| Limits & Quotas | L204-L231 | Limits, quotas, and performance planning for Azure Monitor: data ingestion/retention, query timeouts, alert and autoscale limits, Container Insights/Prometheus scale, and supported regions/resources. |
+| Security | L232-L302 | Securing Azure Monitor and related services: auth, RBAC, TLS, network/perimeter controls, policy, private access, and auditing/logging for Databricks, MDE, healthcare, Synapse, and threat intel. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure Monitor: agents, data collection rules, diagnostics, alerts, autoscale, workbooks, and resource‑specific logs/metrics across Azure services and Kubernetes. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and code for integrating Azure Monitor with apps, logs, metrics, alerts, ITSM/DevOps tools, Prometheus/Grafana, OpenTelemetry, and Kusto queries across many Azure and third‑party services. |
 | Deployment | [deployment.md](deployment.md) | Guides for deploying Azure Monitor/AMA, migrating from legacy agents and policies, and enabling .NET profiling and Snapshot Debugger across App Service, Functions, VMs, containers, and Service Fabric. |
 
@@ -208,6 +208,7 @@ This skill requires **network access** to fetch documentation content:
 | Manage Azure Monitor alert instance retention and state | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-manage-alert-instances |
 | Monitor and interpret log alert rule health in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/log-alert-rule-health |
 | Deploy log search alert rules with ARM templates and size limits | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-log |
+| Understand Application Insights data limits and quotas | https://learn.microsoft.com/en-us/azure/azure-monitor/app/application-insights-faq |
 | Configure predictive autoscale thresholds and history requirements | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-predictive |
 | Enable high-scale log collection limits in Container Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-high-scale |
 | Use region mappings for Container Insights and Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping |

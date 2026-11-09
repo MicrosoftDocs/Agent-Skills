@@ -1,9 +1,9 @@
 ---
 name: azure-signalr-service
-description: Expert knowledge for Azure SignalR Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring SignalR modes, upstream endpoints, Entra auth, multi-region topologies, or Event Grid/API Management integrations, and other Azure SignalR Service related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+description: Expert knowledge for Azure SignalR Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring SignalR modes, auth/network setup, scaling multi-region hubs, Event Grid/API Mgmt integration, or live tracing, and other Azure SignalR Service related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SignalR Service Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L52-L56 | Guidance on choosing the right SignalR Service mode (Default/Serverless/Classic) and configuring availability zones/zone redundancy for high availability and resilience. |
 | Architecture & Design Patterns | L57-L63 | Patterns for scaling and sharding SignalR, designing resilient multi-region topologies, and architecting high-availability, high-throughput ASP.NET Core SignalR apps with Azure SignalR. |
 | Limits & Quotas | L64-L70 | Message/connection billing rules, capacity planning, throughput limits, and how to scale Azure SignalR instances within quota and performance constraints. |
-| Security | L71-L92 | Securing Azure SignalR: auth with Entra ID/managed identities, keys and rotation, network/private endpoints/NSGs, WAF, Key Vault access, RBAC, cross-tenant, and Azure Policy compliance. |
+| Security | L71-L92 | Securing Azure SignalR: auth (keys, Entra ID, managed identities, custom client auth), RBAC, cross-tenant access, network/private endpoints, NSGs, firewall, key rotation, and Azure Policy compliance. |
 | Configuration | L93-L104 | Configuring SignalR apps: connection strings, upstream endpoints, custom domains, monitoring/metrics, negotiation endpoints, Functions bindings, and using the local emulator. |
 | Integrations & Coding Patterns | L105-L120 | Patterns and APIs for integrating SignalR with servers and gateways: SDK usage, client management, REST data-plane versions, and wiring events through Event Grid, API Management, and Application Gateway. |
 | Deployment | L121-L131 | Deploying and managing Azure SignalR via CLI, ARM/Bicep templates, autoscale setup, regional moves, and end-to-end web app deployment (incl. GitHub auth) |

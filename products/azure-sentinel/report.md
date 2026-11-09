@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 409
+- **Updated Pages**: 0
+- **Unchanged**: 412
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
@@ -76,15 +76,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | *(Unclassified)* | 123 | 29.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Geographical availability and data residency](https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency)
-  - Updated: 2026-09-08T17:37:00.000Z → 2026-10-26T12:37:00.000Z
-- [Troubleshoot SAP data connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-deploy-troubleshoot)
-  - Updated: 2026-09-16T08:00:00.000Z → 2026-10-26T21:47:00.000Z
-- [Monitor SAP system health and role](https://learn.microsoft.com/en-us/azure/sentinel/monitor-sap-system-health)
-  - Updated: 2026-08-05T17:42:00.000Z → 2026-10-29T17:40:00.000Z
 
 ## Classified Pages
 

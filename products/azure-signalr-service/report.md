@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   configuration: 'Configuring SignalR apps: connection strings, upstream endpoints,
     custom domains, monitoring/metrics, negotiation endpoints, Functions bindings,
     and using the local emulator.'
   decision-making: Guidance on choosing the right SignalR Service mode (Default/Serverless/Classic)
     and configuring availability zones/zone redundancy for high availability and resilience.
-  security: 'Securing Azure SignalR: auth with Entra ID/managed identities, keys and
-    rotation, network/private endpoints/NSGs, WAF, Key Vault access, RBAC, cross-tenant,
-    and Azure Policy compliance.'
+  security: 'Securing Azure SignalR: auth (keys, Entra ID, managed identities, custom
+    client auth), RBAC, cross-tenant access, network/private endpoints, NSGs, firewall,
+    key rotation, and Azure Policy compliance.'
   deployment: Deploying and managing Azure SignalR via CLI, ARM/Bicep templates, autoscale
     setup, regional moves, and end-to-end web app deployment (incl. GitHub auth)
   best-practices: Guidance on safely shutting down SignalR app servers and managing
@@ -28,15 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SignalR Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring SignalR modes, upstream endpoints, Entra auth, multi-region
-  topologies, or Event Grid/API Management integrations, and other Azure SignalR Service
+  Use when configuring SignalR modes, auth/network setup, scaling multi-region hubs,
+  Event Grid/API Mgmt integration, or live tracing, and other Azure SignalR Service
   related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure
-  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
-use_when: Use when configuring SignalR modes, upstream endpoints, Entra auth, multi-region
-  topologies, or Event Grid/API Management integrations, and other Azure SignalR Service
-  related development tasks.
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
+  Relay (use azure-relay).
+use_when: Use when configuring SignalR modes, auth/network setup, scaling multi-region
+  hubs, Event Grid/API Mgmt integration, or live tracing, and other Azure SignalR
+  Service related development tasks.
 confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Service
-  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay
+  (use azure-relay).
 ---
 # Azure SignalR Service Crawl Report
 
@@ -74,8 +76,8 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 
 ### Updated Pages
 
-- [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq)
-  - Updated: 2024-09-11T18:38:00.000Z → 2026-10-26T11:42:00.000Z
+- [Manage network access control](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-network-access-control)
+  - Updated: 2024-12-27T12:22:00.000Z → 2026-11-03T06:10:00.000Z
 
 ## Classified Pages
 
@@ -95,6 +97,7 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Overview of Microsoft Entra ID for Azure SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-authorize-azure-active-directory) | security | 0.80 | Describes using Entra ID and RBAC roles to authorize SignalR requests; includes role names and scope usage specific to this service. |
 | [Use managed identity](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-use-managed-identity) | security | 0.80 | Explains managed identity support (only one identity, system vs user-assigned) and how to configure it in SignalR serverless scenarios; includes product-specific identity configuration behavior. |
 | [FAQs](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-resource-faq) | troubleshooting | 0.78 | FAQ includes product-specific error behaviors and resolutions (e.g., connection limits, sticky sessions, server disconnect scenarios) organized as questions with targeted answers, which function as symptom→cause→solution guidance unique to Azure SignalR Service. |
+| [Manage network access control](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-network-access-control) | security | 0.78 | The page describes product-specific network access control behavior for Azure SignalR Service, including how rules apply to different request types and network subsets and the interaction with authorization. This is concrete, service-specific security configuration guidance rather than generic concepts, fitting the security sub-skill. |
 | [Access Key Vault in private network through Shared Private Endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-shared-private-endpoints-key-vault) | security | 0.75 | Covers shared private endpoints from SignalR to Key Vault, including how shared private link resources are created and scoped; these are product-specific secure connectivity settings. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-signalr/policy-reference) | security | 0.75 | Lists specific built-in policy definitions, names, and versions for SignalR; these are product-specific compliance/security controls. |
 | [Configure upstream endpoints](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-upstream) | configuration | 0.75 | Describes upstream endpoint settings and message protocols, including serverless-mode-only constraint; clearly product-specific configuration behavior. |
@@ -104,7 +107,6 @@ confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Servi
 | [Disconnections and reconnections](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-client-disconnections) | best-practices | 0.75 | Explains nature of disconnections, maintenance behavior, and how to design apps to minimize impact; these are concrete, product-specific reliability best practices. |
 | [Event handling](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-event-grid-integration) | integrations | 0.75 | Shows how SignalR emits events to Event Grid and how to subscribe/trigger downstream services; event schema and wiring are product-specific integration details. |
 | [Local emulator for serverless development](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-emulator) | configuration | 0.75 | Explains emulator usage and constraints (only serverless, only Transient transport); these are specific configuration and environment behaviors. |
-| [Manage network access control](https://learn.microsoft.com/en-us/azure/azure-signalr/howto-network-access-control) | security | 0.75 | Network access control rules for SignalR are security settings with product-specific rule types and scopes; article likely details allowed request types and network subsets as concrete configuration. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-signalr/monitor-signalr-reference) | configuration | 0.75 | A monitoring data reference typically lists all metrics and log schemas for SignalR, including names, units, and dimensions—detailed configuration/reference data unique to the product. |
 | [Move across regions](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-move-across-regions) | deployment | 0.75 | Describes constraints (resources are region-specific and cannot be moved) and a template-based pattern to recreate configuration in another region—product-specific deployment behavior. |
 | [Troubleshooting with live trace tool](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-troubleshoot-live-trace) | troubleshooting | 0.75 | Explains how to capture and interpret live traces, including log categories and limitations (e.g., Entra ID not supported); this is product-specific diagnostic tooling knowledge. |

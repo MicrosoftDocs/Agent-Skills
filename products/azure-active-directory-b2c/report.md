@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 286
+- **Updated Pages**: 0
+- **Unchanged**: 289
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -74,15 +74,6 @@ confusable_not_for: Not for Azure Role-based access control (use azure-rbac), Az
 | *(Unclassified)* | 34 | 11.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Identity Protection and Conditional Access](https://learn.microsoft.com/en-us/azure/active-directory-b2c/conditional-access-identity-protection-overview)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-06-11T06:13:00.000Z
-- [Investigate risk with Identity Protection](https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-protection-investigate-risk)
-  - Updated: 2025-05-24T08:00:00.000Z → 2026-10-26T22:12:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-developer-notes)
-  - Updated: 2024-10-10T08:00:00.000Z → 2026-06-11T06:13:00.000Z
 
 ## Classified Pages
 

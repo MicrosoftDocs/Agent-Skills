@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   integrations: SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka
     Connect, and language-specific samples for integrating apps and tools with all
     Azure Cosmos DB APIs.
-  security: 'Securing Cosmos DB and related services: identity/RBAC, networking, encryption/CMK,
-    auditing, TLS, policies, and best-practice hardening for NoSQL, MongoDB, Cassandra,
-    Gremlin, and PostgreSQL.'
+  security: 'Securing Cosmos DB across APIs: identity/RBAC, keys & encryption, network
+    isolation (VNet, Private Link, firewalls), TLS, auditing, data masking, policy/governance,
+    and best‑practice hardening.'
   architecture-patterns: Patterns and reference architectures for AI agents, change
     feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and
     vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL.
@@ -31,33 +31,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Cosmos DB SQL/Mongo/Cassandra/Table/PostgreSQL APIs, change feed, multi-region
-  HA, or vector search, and other Azure Cosmos DB related development tasks. Not for
-  Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
-  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer
-  (use azure-data-explorer).
-use_when: Use when using Cosmos DB SQL/Mongo/Cassandra/Table/PostgreSQL APIs, change
-  feed, multi-region HA, or vector search, and other Azure Cosmos DB related development
-  tasks.
-confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
-  Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Data Explorer (use azure-data-explorer).
+  using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search,
+  or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks.
+  Not for Azure DocumentDB (use azure-documentdb), Azure Table Storage (use azure-table-storage),
+  Azure SQL Database (use azure-sql-database), Azure Blob Storage (use azure-blob-storage).
+use_when: Use when using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, multi-region
+  HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related
+  development tasks.
+confusable_not_for: Not for Azure DocumentDB (use azure-documentdb), Azure Table Storage
+  (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Blob
+  Storage (use azure-blob-storage).
 ---
 # Azure Cosmos DB Crawl Report
 
 ## Summary
 
-- **Total Pages**: 722
-- **Fetched**: 722
+- **Total Pages**: 723
+- **Fetched**: 723
 - **Fetch Failed**: 0
 - **Classified**: 529
-- **Unclassified**: 193
+- **Unclassified**: 194
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 9
-- **Unchanged**: 710
-- **Deleted Pages**: 3
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 721
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
 ## Classification Statistics
@@ -73,42 +72,18 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | limits-quotas | 31 | 4.3% |
 | security | 63 | 8.7% |
 | troubleshooting | 47 | 6.5% |
-| *(Unclassified)* | 193 | 26.7% |
+| *(Unclassified)* | 194 | 26.8% |
 
 ## Changes
 
 ### New Pages
 
-- [Install and verify](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/setup)
-- [Task recipes](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/usage)
-- [Supported AI coding assistants](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/compatibility)
+- [Quickstart](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search-quickstart)
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/overview)
-  - Updated: 2026-07-20T12:03:00.000Z → 2026-10-29T12:08:00.000Z
-- [Overview (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/)
-  - Updated: 2026-06-02T18:53:00.000Z → 2026-10-29T12:08:00.000Z
-- [Installation guide](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/install)
-  - Updated: 2026-05-06T17:55:00.000Z → 2026-10-29T12:08:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/get-started)
-  - Updated: 2026-06-11T17:38:00.000Z → 2026-10-29T12:08:00.000Z
-- [Command reference](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/command-reference)
-  - Updated: 2026-06-11T17:38:00.000Z → 2026-10-29T12:08:00.000Z
-- [Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/visual-studio-code)
-  - Updated: 2026-05-06T17:55:00.000Z → 2026-10-29T12:08:00.000Z
-- [MCP server setup](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/model-context-protocol-setup)
-  - Updated: 2026-05-06T17:55:00.000Z → 2026-10-29T12:08:00.000Z
-- [Security best practices](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/security)
-  - Updated: 2026-05-15T17:12:00.000Z → 2026-10-29T12:08:00.000Z
-- [Troubleshooting guide](https://learn.microsoft.com/en-us/azure/cosmos-db/shell/troubleshooting)
-  - Updated: 2026-05-06T17:55:00.000Z → 2026-10-29T12:08:00.000Z
-
-### Deleted Pages
-
-- ~~Where this works best~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/compatibility)
-- ~~Set up~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/setup)
-- ~~Use the Agent Kit~~ (https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/usage)
+- [Configure IP firewall](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-firewall)
+  - Updated: 2026-07-27T08:00:00.000Z → 2026-11-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -242,7 +217,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Use Always Encrypted](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-always-encrypted) | security | 0.80 | Details client-side encryption, package versions, and breaking changes; includes Cosmos DB–specific encryption configuration. |
 | [Use Micrometer client metrics for Java](https://learn.microsoft.com/en-us/azure/cosmos-db/client-metrics-java) | integrations | 0.80 | Shows how to consume Micrometer metrics, including configuration and scraping details for Prometheus and AKS; these are concrete SDK and observability integration patterns. |
 | [Use a service principal with the OLTP Spark 3 connector](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-spark-service-principal) | security | 0.80 | Covers creating Entra app/service principal and using RBAC to connect from Spark; likely includes specific roles, scopes, and connection configuration. |
-| [Configure IP firewall](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-firewall) | security | 0.78 | Page describes product-specific firewall configuration for Azure Cosmos DB, including IP-based access controls and how to restrict access to approved machines or services. This is concrete security configuration guidance (firewall rules, allowed IP ranges) rather than conceptual security theory. |
+| [Configure IP firewall](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-firewall) | security | 0.78 | Firewall configuration for Cosmos DB is product-specific security guidance. The page likely includes concrete steps and settings (such as how to define allowed IP ranges, interaction with private endpoints, and portal/API configuration fields) that go beyond generic firewall concepts and are unique to Cosmos DB’s security model, matching the security sub-skill criteria. |
 | [Connection Configurations for Java SDK v4](https://learn.microsoft.com/en-us/azure/cosmos-db/tune-connection-configurations-java-sdk-v4) | configuration | 0.78 | Connection configuration tuning for a specific SDK version implies detailed parameter names and recommended values (for example, connection pool sizes, timeouts), which are product-specific configuration details. |
 | [Disable key-based authentication](https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-connect-role-based-access-control) | security | 0.78 | RBAC setup guidance for Azure Cosmos DB for Table with Microsoft Entra ID typically includes specific built-in role names, required permissions, and scope assignments unique to this service, along with exact configuration steps and parameters. These product-specific security details qualify as expert knowledge under the security sub-skill. |
 | [Distribute throughput across partitions FAQ](https://learn.microsoft.com/en-us/azure/cosmos-db/distribute-throughput-across-partitions-faq) | limits-quotas | 0.78 | FAQ on distributing throughput across partitions is likely to include concrete numbers such as minimum RU/s per partition, redistribution timing, constraints on how often redistribution can occur, and possibly table-based limits. These are specific numeric constraints and quotas, fitting limits-quotas. |
@@ -802,6 +777,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Overview](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-overview) | 0.20 | Reference overview is navigational/summary content, not detailed configuration, limits, or troubleshooting. |
 | [Power BI with Azure Synapse Link](https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-power-bi-synapse-link) | 0.20 | Describes integrated Power BI experience for Synapse Link–enabled Cosmos DB accounts. Summary indicates a high-level feature description and deprecation guidance, without clear signs of numeric limits, config tables, or error-code-based troubleshooting. |
 | [Python](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-python) | 0.20 | Only marked as 'Important' in the summary with no visible detailed content; likely a version/SDK overview without the specific expert-level data required by any sub-skill type. |
+| [Quickstart](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search-quickstart) | 0.20 | Quickstart focuses on creating a database/container and running a sample full-text search query. It appears to be a step-by-step tutorial without detailed configuration tables, limits, quotas, error codes, or product-specific best-practice guidance. No expert-only numeric limits, RBAC details, or decision matrices are evident from the summary. |
 | [Retrieval-augmented generation (RAG)](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/rag) | 0.20 | RAG with Cosmos DB page is described as explaining how RAG works conceptually with vector search. The summary does not mention specific configuration parameters, limits, error codes, or decision tables; it is primarily architectural/conceptual guidance that an LLM is likely to know in general form. |
 | [Solution accelerators](https://learn.microsoft.com/en-us/azure/cosmos-db/solutions) | 0.20 | High-level best practices and solution accelerators for AI with Cosmos DB and Azure OpenAI; summary suggests conceptual/marketing-style guidance without concrete configuration values, limits, or detailed patterns. |
 | [Task recipes](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/usage) | 0.20 | Usage guidance for prompts and validation; focuses on how to use the kit conceptually, not on specific configuration values, limits, or error-resolution mappings. |

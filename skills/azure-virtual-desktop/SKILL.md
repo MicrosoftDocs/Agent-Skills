@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AVD host pools, FSLogix profiles, autoscale, MSIX App Attach, or Teams/OneDrive optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring session hosts, FSLogix profiles, autoscale, MSIX App Attach, or Teams media optimization, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L53 | Diagnosing and fixing AVD issues: agent updates, autoscale, connectivity, session host health, graphics/Teams performance, MSIX App Attach, and using logs/Insights for troubleshooting. |
-| Best Practices | L54-L65 | Best practices for scaling, validating, and updating AVD host pools; handling Advisor and Start VM on Connect, proxy usage, FAQs, and Windows Enterprise multi-session configuration. |
-| Decision Making | L66-L81 | Planning and design guidance for AVD: autoscale, regions/zones, data location, host pool and deployment models, storage/FSLogix, licensing, management tools, and cost estimation. |
-| Architecture & Design Patterns | L82-L89 | Designing resilient AVD architectures, including DR strategies, FSLogix profile management, RDP Multipath connectivity, and automated scaling with Automation/Logic Apps. |
-| Limits & Quotas | L90-L95 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
-| Security | L96-L116 | Securing Azure Virtual Desktop: auth/SSO (Entra ID, AD FS, Kerberos, MFA, external users), RBAC and delegated admin, and session protections (clipboard, watermarking, screen capture, WebAuthn, Purview). |
-| Configuration | L117-L177 | Configuring AVD environments: images, autoscale, networking, RDP/peripheral redirection, licensing, language packs, Teams/OneDrive, GPU, monitoring, and client/RemoteApp behavior. |
+| Best Practices | L54-L68 | Best practices for scaling, performance, media/Teams optimization, networking (proxy, Shortpath), validation pools, Start VM on Connect, and updating Windows multi-session hosts. |
+| Decision Making | L69-L83 | Guidance on planning and choosing AVD deployment models, regions, autoscale, data/storage, host pool and session host management, and estimating AVD and Insights costs. |
+| Architecture & Design Patterns | L84-L91 | Designing resilient AVD architectures, including DR strategies, FSLogix profile management, RDP Multipath connectivity, and automated scaling with Automation/Logic Apps. |
+| Limits & Quotas | L92-L97 | Guidance on RDP bandwidth requirements and optimizing Microsoft Teams (audio/video, collaboration features) performance and configuration in Azure Virtual Desktop. |
+| Security | L98-L119 | Securing Azure Virtual Desktop: identity/SO, MFA/Conditional Access, RBAC/roles, Kerberos/KDC, clipboard/screen/watermark controls, external identities, Purview evidence, and ESU management. |
+| Configuration | L120-L177 | Configuring AVD session hosts, images, autoscale, networking, RDP/peripheral redirection, licensing, monitoring, and app delivery (MSIX/App Attach, RemoteApps, user feed, GPU, updates). |
 | Integrations & Coding Patterns | L178-L184 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L185-L193 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD moves, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/ConfigMgr. |
+| Deployment | L185-L193 | Guides for deploying and migrating Azure Virtual Desktop: classic-to-AVD migration, hybrid/on-prem setups, region moves, and client/MMR extension deployment via Intune/Config Manager. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -54,12 +54,15 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply autoscale best practices for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq |
+| Apply autoscale best practices in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq |
 | Resolve Azure Advisor recommendations for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-advisor-recommendations |
 | Configure Azure Virtual Desktop validation host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-validation-environment |
 | Apply Azure Virtual Desktop FAQ best practices | https://learn.microsoft.com/en-us/azure/virtual-desktop/faq |
+| Configure multimedia redirection for AVD and Cloud PCs | https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls |
 | Apply proxy server guidelines for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/proxy-server-support |
+| Optimize Azure Virtual Desktop with RDP Shortpath | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath |
 | Start VM on Connect FAQ and usage best practices | https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect-faq |
+| Optimize Microsoft Teams media on Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd |
 | Apply best practices for Windows Enterprise multi-session | https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq |
 | Choose Windows update methods for AVD session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts |
 
@@ -72,10 +75,9 @@ This skill requires **network access** to fetch documentation content:
 | Choose Azure Virtual Desktop data location scope | https://learn.microsoft.com/en-us/azure/virtual-desktop/data-locations |
 | Choose Azure Virtual Desktop host pool management | https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches |
 | Estimate costs for Azure Virtual Desktop Insights | https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-costs |
-| Select licensing options for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/licensing |
 | Choose management tools for Azure Virtual Desktop session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/management |
 | Choose Azure Virtual Desktop deployment models | https://learn.microsoft.com/en-us/azure/virtual-desktop/organization-internal-external-commercial-purposes-recommendations |
-| Decide when to use Azure regional host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/regional-host-pools |
+| Choose and manage Azure Virtual Desktop regional host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/regional-host-pools |
 | Choose Azure storage options for FSLogix profiles on AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile |
 | Estimate and plan Azure Virtual Desktop costs | https://learn.microsoft.com/en-us/azure/virtual-desktop/understand-estimate-costs |
 
@@ -96,9 +98,10 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
+| Deploy Microsoft Entra joined session hosts in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts |
 | Control clipboard direction and data types in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/clipboard-transfer-direction-data-types |
 | Configure AD FS single sign-on for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso |
-| Configure managed identities and RBAC for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity |
+| Configure managed identities for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity |
 | Configure Microsoft Entra ID SSO for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on |
 | Implement delegated administrative access in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/delegated-access-virtual-desktop |
 | Set up Kerberos KDC proxy for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/key-distribution-center-proxy |
@@ -109,7 +112,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Entra ID authentication for Azure Virtual Desktop RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/require-authentication-using-microsoft-entra-id |
 | Configure screen capture protection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection |
 | Apply security recommendations for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations |
-| Assign RBAC and Entra roles to AVD service principals | https://learn.microsoft.com/en-us/azure/virtual-desktop/service-principal-assign-roles |
+| Assign Azure RBAC and Entra roles to Azure Virtual Desktop service principals | https://learn.microsoft.com/en-us/azure/virtual-desktop/service-principal-assign-roles |
 | Configure Conditional Access MFA for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa |
 | Manage Windows 10 ESU for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/understanding-extended-security-updates |
 | Configure watermarking to protect Azure Virtual Desktop sessions | https://learn.microsoft.com/en-us/azure/virtual-desktop/watermarking |
@@ -119,11 +122,11 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Add and use Azure Virtual Desktop ADMX in Group Policy | https://learn.microsoft.com/en-us/azure/virtual-desktop/administrative-template |
 | Create MSIX images for Azure Virtual Desktop App Attach | https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-create-msix-image |
+| Configure App Attach application containers in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview |
 | Add and manage App Attach apps in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup |
 | Apply Windows licensing to Azure Virtual Desktop session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/apply-windows-license |
-| Create and assign autoscale scaling plans for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan |
+| Configure autoscale scaling plans for AVD host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan |
 | Configure diagnostics for Azure Virtual Desktop autoscale | https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-diagnostics |
-| Deploy and access Entra-joined AVD session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts |
 | Configure Azure fabric communication IPs for AVD and Windows 365 | https://learn.microsoft.com/en-us/azure/virtual-desktop/azurecommunicationips |
 | Configure Configuration Manager updates for AVD multi-session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-automatic-updates |
 | Configure Azure Virtual Desktop host pool load balancing | https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-load-balancing |
@@ -141,12 +144,11 @@ This skill requires **network access** to fetch documentation content:
 | Install Microsoft 365 Apps on AVD custom images | https://learn.microsoft.com/en-us/azure/virtual-desktop/install-office-on-wvd-master-image |
 | Configure Windows 10 language packs on Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/language-packs |
 | Use MSIXMGR tool parameters for AVD App Attach workflows | https://learn.microsoft.com/en-us/azure/virtual-desktop/msixmgr-tool-syntax-description |
-| Configure multimedia redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls |
 | Launch OneDrive automatically with AVD RemoteApps | https://learn.microsoft.com/en-us/azure/virtual-desktop/onedrive-remoteapp |
 | Configure preferred application group type for pooled AVD host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/preferred-application-group-type |
-| Set up Private Link endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-setup |
-| Publish applications with RemoteApp in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/publish-applications-stream-remoteapp |
-| Configure supported RDP properties for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-properties |
+| Configure Private Link endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-setup |
+| Publish RemoteApp applications in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/publish-applications-stream-remoteapp |
+| Set supported RDP properties for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-properties |
 | Configure QoS policies for Azure Virtual Desktop RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-quality-of-service-qos |
 | Configure audio and video redirection over RDP for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-audio-video |
 | Configure RDP camera and video redirection | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-camera-webcam-video-capture |
@@ -154,7 +156,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure RDP drive and storage redirection | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-drives-storage |
 | Configure RDP location redirection for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-location |
 | Configure MTP/PTP device redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-plug-play-mtp-ptp |
-| Configure RDP printer redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers |
+| Configure printer redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers |
 | Configure scanner redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-scanners |
 | Configure serial and COM port redirection over RDP | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-serial-com-ports |
 | Configure smart card redirection for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-smart-cards |
@@ -162,7 +164,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure RDP peripheral and resource redirection | https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-remote-desktop-protocol |
 | Use advanced features of the Windows Remote Desktop client for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/client-features-windows-msrdc |
 | Connect to Azure Virtual Desktop using the Windows Remote Desktop client | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/connect-windows-cloud-services |
-| Enable enhanced RemoteApp windowing in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements |
+| Enable preview RemoteApp windowing enhancements in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements |
 | Allow required FQDNs for Azure Virtual Desktop connectivity | https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint |
 | Configure scheduled agent updates for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates |
 | Configure session host update for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-configure |
@@ -171,9 +173,7 @@ This skill requires **network access** to fetch documentation content:
 | Build a golden image for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-golden-image |
 | Set up Automation and Logic Apps scaling for AVD session hosts | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script |
 | Configure Azure Service Health alerts for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-service-alerts |
-| Configure Start VM on Connect for AVD host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect |
-| Configure Microsoft Teams optimizations on Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd |
-| Configure Windows 11 language packs on Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-11-language-packs |
+| Enable Start VM on Connect for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

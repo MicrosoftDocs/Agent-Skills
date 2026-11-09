@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-08'
 category_descriptions:
-  security: 'Securing Azure Web PubSub: authN/Z for clients and apps (keys, Entra
-    ID, identities, roles), mTLS, network/private endpoints, firewalls, outbound restrictions,
-    and compliance via Azure Policy.'
+  security: 'Securing Web PubSub: authN/authZ for clients (Entra, keys, certs, managed
+    identities, roles), network controls (private endpoints, firewalls, gateways),
+    and compliance/policy configuration.'
   configuration: 'Configuring Web PubSub runtime: storage/chat setup, metrics/logs
     and alerts, monitoring, custom domains, event routing, geo-replication, local
     tunneling, MQTT/Socket.IO options, and admin UI.'
@@ -28,15 +28,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building WebSocket/MQTT apps, Socket.IO chat, geo-replicated hubs, custom domains,
-  or autoscale deployments, and other Azure Web PubSub related development tasks.
-  Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use
-  azure-event-hubs), Azure Service Bus (use azure-service-bus).
-use_when: Use when building WebSocket/MQTT apps, Socket.IO chat, geo-replicated hubs,
-  custom domains, or autoscale deployments, and other Azure Web PubSub related development
-  tasks.
+  building real-time WebSocket/MQTT apps, using chat SDK/REST, Socket.IO, geo-replication,
+  or autoscale, and other Azure Web PubSub related development tasks. Not for Azure
+  SignalR Service (use azure-signalr-service), Azure Service Bus (use azure-service-bus),
+  Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
+use_when: Use when building real-time WebSocket/MQTT apps, using chat SDK/REST, Socket.IO,
+  geo-replication, or autoscale, and other Azure Web PubSub related development tasks.
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
-  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
+  Relay (use azure-relay).
 ---
 # Azure Web PubSub Crawl Report
 
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 122
+- **Updated Pages**: 1
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -71,6 +71,11 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 38 | 31.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Manage network access control](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-network-access-control)
+  - Updated: 2025-01-03T12:39:00.000Z → 2026-11-03T06:10:00.000Z
 
 ## Classified Pages
 
@@ -130,7 +135,7 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | [Geo-replication](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-enable-geo-replication) | configuration | 0.70 | Describes enabling geo-replication via portal with service-specific options and behavior; this is concrete configuration of a specialized feature. |
 | [How to connect MQTT WebSocket clients](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-connect-mqtt-websocket-client) | integrations | 0.70 | How-to for connecting MQTT clients to Azure Web PubSub is likely to include protocol-specific connection parameters, endpoint formats, and configuration details unique to this service, fitting the integrations & coding patterns category. |
 | [Integrate with API Management](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/socket-io-howto-integrate-apim) | integrations | 0.70 | Shows how to combine API Management with Web PubSub for Socket.IO; likely includes specific configuration for APIM routes, policies, and connection handling. |
-| [Manage network access control](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-network-access-control) | security | 0.70 | Explains endpoint access control by request type and network subset; includes product-specific security configuration options. |
+| [Manage network access control](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-network-access-control) | security | 0.70 | Page focuses on securing Azure Web PubSub endpoints via network access rules. It likely includes product-specific security settings such as allowed request types, network rule definitions, and configuration parameters for controlling access based on subnet or IP ranges. This is concrete, service-specific security configuration rather than generic concepts. |
 | [Monitor Azure Web PubSub data reference](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-monitor-data-reference) | configuration | 0.70 | Reference article listing specific metrics and log schemas; detailed data fields are product-specific configuration/monitoring knowledge. |
 | [Move across regions](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-move-across-regions) | deployment | 0.70 | Describes region move constraints and ARM-template-based recreation; includes product-specific deployment limitations and steps. |
 | [Performance considerations](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-performance) | limits-quotas | 0.70 | Performance guide and benchmarks typically include concrete throughput, connection counts, and latency metrics per unit/tier, which are numeric limits and planning thresholds. |

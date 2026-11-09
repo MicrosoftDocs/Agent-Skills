@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT/OPC UA data flows, WASM/Dapr transforms, ADX/ADLS sinks, HA brokers, or Arc deployments, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building MQTT/OPC UA data flows, WASM transforms, Dapr/Akri integrations, or Arc Kubernetes deployments, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L87-L93 | Capacity planning for OPC UA sessions and HA, baseline resource usage estimates, and MQTT broker feature, packet, and throughput limits in Azure IoT Operations. |
 | Security | L94-L111 | Securing Azure IoT Operations: TLS and certificates, MQTT auth/authorization, OPC UA trust, private networking, secrets/identities, RBAC, and image authenticity verification. |
 | Configuration | L112-L150 | Configuring IoT data flows, endpoints (MQTT, Kafka, ADX, ADLS, OneLake, local), WASM transforms, OPC UA/connectors, buffering, observability, metrics, and operations UI settings. |
-| Integrations & Coding Patterns | L151-L172 | Patterns and code for wiring Azure IoT Operations data flows: expressions, filters, routing, throttling, windowed aggregation, WASM/Dapr/ONNX, state store, schema, and connectors (MQTT/HTTP/media/SSE/Fabric). |
+| Integrations & Coding Patterns | L151-L172 | Patterns and how-tos for wiring Azure IoT Operations to MQTT/OPC UA/HTTP/media, using WASM, state store, schema registry, OpenTelemetry, Akri, Dapr, and ONNX in data flows. |
 | Deployment | L173-L186 | Deploying, upgrading, cloning, and removing Azure IoT Operations on Arc-enabled Kubernetes, including secure/prod setups, private networks/registries, and Dapr MQTT components. |
 
 ### Troubleshooting
@@ -157,7 +157,7 @@ This skill requires **network access** to fetch documentation content:
 | Route MQTT topics dynamically with IoT Operations data flows | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-topic-routing |
 | Configure OpenTelemetry endpoints for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/open-telemetry |
 | Build and test WASM modules for Azure IoT data flows | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-wasm-modules |
-| Build and deploy custom Akri REST connectors | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-akri-connectors |
+| Develop and deploy custom Akri REST connectors | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-akri-connectors |
 | Develop Dapr apps integrating with MQTT broker | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-dapr-apps |
 | Run ONNX inference inside IoT WASM data flows | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-wasm-onnx-inference |
 | Validate WASM messages with Azure IoT schema registry | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-wasm-schema-registry |

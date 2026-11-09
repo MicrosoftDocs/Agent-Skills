@@ -1,24 +1,21 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
-  limits-quotas: Backup retention/immutability rules, DTU benchmarks, free-tier and
-    memory limits, maintenance windows, operation durations, and all key resource/scale
-    limits for Azure SQL Managed Instance.
+  security: Authentication, encryption, access control, auditing, network protection,
+    and Azure Policy for securing Azure SQL Managed Instance and related Azure SQL
+    resources.
   decision-making: Guidance for choosing Azure SQL services and tiers, planning subnet/IPs,
     and deciding or executing migrations (SQL Server, Db2, Oracle) and replication
     options (link, LRS, standby).
-  troubleshooting: 'Diagnosing and fixing Azure SQL Managed Instance issues: deployment/scale
-    errors, connectivity, performance, backups, memory/log capacity, geo-replication,
-    XTP storage, auth, and common known problems.'
+  troubleshooting: 'Diagnosing and fixing Azure SQL Managed Instance/Database issues:
+    performance, connectivity, capacity, backups, transaction logs, security (ransomware),
+    auth, geo-replication, and known errors.'
   configuration: 'Configuring and managing Azure SQL Managed Instance: deployment,
     networking, backups/restore, monitoring, maintenance windows, update policy, time
     zone/tempdb, and high availability/failover.'
-  best-practices: Performance, HA/DR, and security best practices for Azure SQL Managed
-    Instance, including monitoring, query tuning, maintenance, failover/geo-replication,
-    migration, and app performance optimization.
-  security: Entra-based auth, identities, keys, TLS, auditing, networking, and best
-    practices to secure Azure SQL Managed Instance (logins, TDE, Windows/Kerberos
-    auth, private endpoints, Azure Policy).
+  best-practices: Performance, HA/DR, security, ransomware resilience, monitoring,
+    and maintenance best practices for Azure SQL Managed Instance and applications
+    using it.
   integrations: Client connectivity, coding patterns, and tools for apps using Azure
     SQL Managed Instance, plus automation, DTC, XEvents, Spark, Managed Instance link,
     and backup/restore scenarios.
@@ -28,17 +25,19 @@ category_descriptions:
   deployment: 'Deploying and managing Azure SQL Managed Instance and databases: scaling,
     start/stop for cost control, DR/replication, region/subnet moves, and required
     virtual network setup.'
+  limits-quotas: Backup retention/immutability rules, DTU benchmarks, free-tier and
+    memory limits, maintenance windows, operation durations, and all key resource/scale
+    limits for Azure SQL Managed Instance.
 skill_description: Expert knowledge for Azure SQL Managed Instance development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when planning MI sizing/networking, configuring HA/DR and backups, securing
-  access, or integrating apps and tools, and other Azure SQL Managed Instance related
-  development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server
-  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines
-  (use azure-virtual-machines).
-use_when: Use when planning MI sizing/networking, configuring HA/DR and backups, securing
-  access, or integrating apps and tools, and other Azure SQL Managed Instance related
-  development tasks.
+  Use when planning MI networking, HA/DR, backups, Managed Instance link, or app connectivity
+  patterns, and other Azure SQL Managed Instance related development tasks. Not for
+  Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when planning MI networking, HA/DR, backups, Managed Instance link,
+  or app connectivity patterns, and other Azure SQL Managed Instance related development
+  tasks.
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Server
   on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines
   (use azure-virtual-machines).
@@ -47,16 +46,16 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 
 ## Summary
 
-- **Total Pages**: 247
-- **Fetched**: 247
+- **Total Pages**: 255
+- **Fetched**: 255
 - **Fetch Failed**: 0
-- **Classified**: 187
-- **Unclassified**: 60
+- **Classified**: 196
+- **Unclassified**: 59
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 242
+- **New Pages**: 8
+- **Updated Pages**: 2
+- **Unchanged**: 245
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
@@ -65,32 +64,35 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 0.4% |
-| best-practices | 18 | 7.3% |
-| configuration | 46 | 18.6% |
-| decision-making | 13 | 5.3% |
-| deployment | 13 | 5.3% |
-| integrations | 20 | 8.1% |
-| limits-quotas | 8 | 3.2% |
-| security | 49 | 19.8% |
-| troubleshooting | 19 | 7.7% |
-| *(Unclassified)* | 60 | 24.3% |
+| best-practices | 25 | 9.8% |
+| configuration | 46 | 18.0% |
+| decision-making | 13 | 5.1% |
+| deployment | 13 | 5.1% |
+| integrations | 20 | 7.8% |
+| limits-quotas | 7 | 2.7% |
+| security | 51 | 20.0% |
+| troubleshooting | 20 | 7.8% |
+| *(Unclassified)* | 59 | 23.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Database-level managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-level-managed-identity?view=azuresql)
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-overview?view=azuresql)
+- [Step 0 - Protect](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-protect?view=azuresql)
+- [Step 1 - Detect](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-detect?view=azuresql)
+- [Step 2 - Contain](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-contain?view=azuresql)
+- [Step 3 - Assess](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-assess?view=azuresql)
+- [Step 4 - Restore](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-restore?view=azuresql)
+- [Step 5 - Validate](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-validate?view=azuresql)
+- [Step 6 - Harden](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-harden?view=azuresql)
 
 ### Updated Pages
 
-- [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql)
-  - Updated: 2026-03-05T08:00:00.000Z → 2026-10-30T17:38:00.000Z
-- [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql)
-  - Updated: 2025-07-30T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-09-28T08:00:00.000Z → 2026-10-29T08:00:00.000Z
-- [Internal connectivity tests](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql)
-  - Updated: 2026-05-13T22:35:00.000Z → 2026-10-29T17:38:00.000Z
+- [Dynamic data masking](https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql)
+  - Updated: 2026-10-12T22:37:00.000Z → 2026-11-03T08:00:00.000Z
+- [Automatic backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql)
+  - Updated: 2026-08-31T17:40:00.000Z → 2026-11-02T23:40:00.000Z
 
 ## Classified Pages
 
@@ -184,7 +186,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Add a managed instance to a failover group](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/scripts/add-to-failover-group-powershell?view=azuresql) | configuration | 0.70 | Script to create instances, add to failover group, and test failover uses specific cmdlets and parameters that represent detailed configuration patterns for this product. |
 | [Alerts](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-alerts?view=azuresql) | configuration | 0.70 | Details creating Azure Monitor log search alert rules and templates for watcher; product-specific alert configuration. |
 | [Analyze monitoring data](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-analyze?view=azuresql) | best-practices | 0.70 | Provides concrete KQL and T-SQL query examples for analyzing watcher data; product-specific analytical patterns and queries. |
-| [Automatic backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql) | limits-quotas | 0.70 | Contains a specific, product-enforced retention limit (immutability protection for up to the most recent seven days of PITR backups, enabled by default and at no extra cost). This is a concrete service behavior and numeric constraint that an LLM is unlikely to know from training, fitting the limits-quotas category. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql) | security | 0.70 | Lists concrete Azure Policy definitions, including policy names and scopes that enforce security/compliance and configuration; these are product-specific security and governance settings. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql) | deployment | 0.70 | Centralized matrix of which Azure SQL Database features are available in which Azure regions; region-by-feature support tables are product-specific deployment constraints that an LLM wouldn't reliably know. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql) | deployment | 0.70 | Lists Azure SQL Managed Instance features and their availability per Azure region; region-specific support is a deployment constraint matrix that qualifies as expert knowledge. |
@@ -207,6 +208,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Determine size of SQL MI subnet](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql) | decision-making | 0.70 | Guides subnet sizing and IP range decisions for Managed Instance deployment, likely with numeric requirements and planning thresholds. |
 | [Disaster recovery drills](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/disaster-recovery-drills?view=azuresql) | best-practices | 0.70 | Guidance for DR drills usually contains concrete, product-specific steps, recommended configurations, and gotchas for testing failover and validating applications, which qualify as best practices. |
 | [Distributed transactions with DTC](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/distributed-transaction-coordinator-dtc?view=azuresql) | integrations | 0.70 | Explains how to run distributed transactions across Managed Instance, SQL Server, and other participants; includes product-specific DTC integration patterns and constraints. |
+| [Dynamic data masking](https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql) | security | 0.70 | Dynamic Data Masking docs typically include product-specific security configuration details: exact masking functions, T-SQL syntax, role/permission behavior (for example, which logins can see unmasked data), and interaction with Azure SQL security features. These are concrete, service-specific settings rather than just conceptual security guidance. |
 | [Event file walkthrough](https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-code-event-file?view=azuresql) | integrations | 0.70 | Walkthrough for Extended Events using Azure Storage as event_file target; includes Azure-specific configuration (storage account, container, credential, target options) and T-SQL/parameter details unique to this integration. |
 | [Export a database to a BACPAC file](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-export?view=azuresql) | deployment | 0.70 | Covers exporting schema/data to BACPAC with Azure-specific storage options and tooling; relates to database deployment/migration patterns. |
 | [Extend an Always On availability group (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-extend-availability-group?view=azuresql) | integrations | 0.70 | Covers extending an Always On availability group to Azure SQL Managed Instance using link, involving detailed integration patterns and configuration between on-premises SQL Server and Managed Instance. |
@@ -239,6 +241,11 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-controls-policy?view=azuresql) | security | 0.70 | Lists specific built-in Azure Policy definitions and compliance controls for Azure SQL; product-specific security/compliance configuration knowledge. |
 | [Server trust groups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/server-trust-group-overview?view=azuresql) | security | 0.70 | Explains certificate-based trust between instances, required permissions, and cross-instance trust behavior; these are product-specific security and trust configuration details. |
 | [Service-aided subnet configuration](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/subnet-service-aided-configuration-enable?view=azuresql) | configuration | 0.70 | Describes enabling subnet delegation and automated network configuration; likely includes specific subnet delegation settings and required configuration parameters. |
+| [Step 0 - Protect](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-protect?view=azuresql) | best-practices | 0.70 | This page focuses on how to configure Azure SQL for ransomware resilience, including enabling specific backup retention options, long-term retention, and other Azure SQL–specific controls. It’s a DO/DO NOT style checklist with concrete, product-focused recommendations, fitting best-practices. |
+| [Step 1 - Detect](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-detect?view=azuresql) | troubleshooting | 0.70 | The article describes possible initial signals and detection steps for ransomware in Azure SQL, mapping symptoms to investigation actions. While the summary is brief, such content typically includes Azure-specific indicators and diagnostic guidance, aligning with troubleshooting (symptom → investigation → response). |
+| [Step 2 - Contain](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-contain?view=azuresql) | best-practices | 0.70 | The containment guidance includes explicit DO/DO NOT instructions (for example, don’t delete affected resources or logs) and prescriptive steps to limit impact while preserving evidence, tailored to Azure SQL resources and logging. This is actionable, product-specific recovery practice rather than generic advice. |
+| [Step 4 - Restore](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-restore?view=azuresql) | best-practices | 0.70 | This article describes how to choose recovery patterns and clean points based on Azure SQL backup and restore capabilities. It provides prescriptive, product-specific guidance on using Azure SQL restore options in a ransomware scenario, which is actionable best-practices content. |
+| [Step 5 - Validate](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-validate?view=azuresql) | best-practices | 0.70 | The page defines specific validation checks, documentation requirements, and approval steps before reconnecting production traffic, all tailored to Azure SQL recovery workflows. These are concrete operational practices rather than conceptual guidance, matching best-practices. |
 | [T-SQL differences](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server?view=azuresql) | best-practices | 0.70 | The page documents detailed, product-specific differences in T-SQL syntax and behavior between SQL Server and Azure SQL Managed Instance (for example, which statements/features are unsupported, altered behaviors, and platform-specific constraints). These are nuanced, implementation-specific details that go beyond generic SQL knowledge and are needed to correctly write and migrate T-SQL for this service. This aligns best with product-specific best practices and gotchas rather than limits/quotas or configuration tables. |
 | [Tune applications and databases for performance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/performance-guidance?view=azuresql) | best-practices | 0.70 | Provides concrete tuning guidance after monitoring, focused on Managed Instance-specific performance behaviors and remedies beyond generic SQL tuning. |
 | [Use Java and JDBC](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-java?view=azuresql) | integrations | 0.70 | Java/JDBC article usually documents connection strings, driver class names, and Azure SQL–specific parameters, which are product-specific integration details. |
@@ -255,6 +262,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Monitor backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/backup-activity-monitor?view=azuresql) | troubleshooting | 0.68 | The article provides product-specific guidance on monitoring backup activity in Azure SQL Managed Instance using msdb queries and extended events. It includes concrete T-SQL queries against system tables/views and XEvent session configuration that are specific to this service, which an LLM is unlikely to know from training. The content is oriented around observing and diagnosing backup behavior (what to query, which objects to use, how to interpret activity), fitting best under troubleshooting. |
 | [.NET with Visual Studio](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql) | integrations | 0.65 | Quickstart includes concrete connection string formats, provider/driver names, and code patterns specific to Azure SQL connectivity from .NET in Visual Studio. |
 | [Automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql) | configuration | 0.65 | Describes automated backup behavior and settings; likely includes retention periods, backup frequency, and geo-redundancy options specific to Managed Instance backup configuration. |
+| [Automatic backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql) | security | 0.65 | Backup immutability guidance for Azure SQL generally contains product-specific security and protection settings: how PITR backups are locked, configuration options to permanently enforce immutability, and constraints around modification/deletion. These are detailed, service-specific behaviors beyond generic backup concepts. |
 | [Azure Automation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/automation-manage?view=azuresql) | integrations | 0.65 | Introduces using Azure Automation to manage databases; includes product-specific runbook/integration patterns between Automation and Managed Instance. |
 | [Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/arm-templates-content-guide?view=azuresql) | configuration | 0.65 | ARM template content guide will reference specific resource types, properties, and allowed values for Managed Instance deployments, which are configuration details. |
 | [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql) | security | 0.65 | Customer-managed TDE with Azure Key Vault generally includes product-specific security configuration such as key vault permissions, key usage roles, and separation-of-duties patterns, which are expert security configuration details. |
@@ -270,10 +278,13 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Manage file space](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/file-space-manage?view=azuresql-mi) | best-practices | 0.65 | Covers product-specific guidance for monitoring and controlling file and log growth, including shrink/enlarge patterns and growth control that are specific to Managed Instance behavior. |
 | [Migrate with the link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-migrate?view=azuresql) | decision-making | 0.65 | Focuses on using Managed Instance link for migration, and references comparison with other tools; migration guidance and tool comparison provide decision-making criteria and scenarios. |
 | [Monitor operations](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-monitor?view=azuresql) | configuration | 0.65 | Describes specific monitoring mechanisms and possibly metrics/events for management operations; these are product-specific configuration/monitoring details. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-overview?view=azuresql) | best-practices | 0.65 | The ransomware recovery overview for Azure SQL describes a lifecycle with concrete, product-specific recovery steps and ordering (protect, detect, contain, assess, restore, validate, harden). It provides actionable guidance tailored to Azure SQL recovery rather than generic security theory, qualifying as best practices. |
 | [Prepare environment for link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation?view=azuresql) | configuration | 0.65 | Environment preparation for Managed Instance link typically includes specific prerequisites, ports, permissions, and configuration steps unique to this feature, which are product-specific configuration details. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-python?view=azuresql) | integrations | 0.65 | Quickstart shows concrete, product-specific connection code and parameters (driver, connection string fields, cursor usage) for Azure SQL from Python. While largely tutorial, it includes exact connection patterns and library usage that are specific to Azure SQL and the mssql-python/ODBC stack, which qualifies as an integration/coding pattern rather than generic SQL or Python knowledge. |
 | [Recover using backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/recovery-using-backups?view=azuresql) | configuration | 0.65 | Covers concrete restore operations including point-in-time restore up to 35 days, which is a product-specific backup/restore capability and configuration. |
 | [Restore database to a managed instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/scripts/restore-geo-backup?view=azuresql) | configuration | 0.65 | Geo-restore script includes specific PowerShell cmdlets and parameters for restore operations, which are product-specific configuration/invocation details. |
+| [Step 3 - Assess](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-assess?view=azuresql) | best-practices | 0.65 | The page focuses on how to determine attack start time and data destruction scope before restore, using Azure SQL–specific evidence and workflows. These are concrete assessment practices for this product, not just conceptual security discussion, fitting best-practices for incident handling. |
+| [Step 6 - Harden](https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-harden?view=azuresql) | best-practices | 0.65 | The hardening guidance converts identified gaps and failed validations into tracked corrective actions, focusing on Azure SQL controls and recovery readiness. It provides actionable, post-incident improvement steps specific to Azure SQL environments, aligning with best-practices. |
 | [Client VM connection](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connect-vm-instance-configure?view=azuresql) | configuration | 0.60 | Connectivity quickstart typically includes specific NSG rules, ports, and DNS/endpoint settings required to connect from an Azure VM, which are configuration details. |
 | [From Db2](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/managed-instance/db2-to-managed-instance-guide?view=azuresql) | decision-making | 0.60 | Migration guide typically includes assessment criteria, mapping of Db2 features to Managed Instance, and stepwise decisions using SSMA, which support migration decision-making. |
 | [From Oracle](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/managed-instance/oracle-to-managed-instance-guide?view=azuresql) | decision-making | 0.60 | Oracle migration guide usually details schema conversion, feature mapping, and migration paths using SSMA, helping choose approaches and handle trade-offs. |
@@ -320,7 +331,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Connect to the Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-portal-classic?view=azuresql) | 0.20 | Quickstart for using the Azure portal query editor (Classic) to connect and run T-SQL; primarily a step-by-step tutorial without product-specific limits, configuration tables, error-code-based troubleshooting, or other expert-only details. |
 | [Data discovery and classification](https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview?view=azuresql) | 0.20 | Data Discovery & Classification overview; explains purpose and scenarios without detailed config options, limits, or security role mappings. |
 | [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql) | 0.20 | Page is an overview of Azure SQL database watcher and its retirement timeline. The summary shows deprecation dates and high-level behavior but no detailed limits, configuration tables, error codes, or product-specific patterns with numeric thresholds. Content is primarily conceptual/announcement rather than expert-level technical reference. |
-| [Dynamic data masking](https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql) | 0.20 | Dynamic Data Masking overview; describes concept and benefits but not specific masking configuration parameters, limits, or role-based rules in detail. |
 | [How-to documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/how-to-content-reference-guide?view=azuresql) | 0.20 | Content reference/navigation guide pointing to other articles; does not itself contain expert configuration, limits, or troubleshooting details. |
 | [Instance pools](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/instance-pools-overview?view=azuresql) | 0.20 | Overview of instance pools focusing on what they are and benefits; appears conceptual/marketing without detailed limits, configuration parameter tables, or decision matrices. |
 | [Machine Learning Services in SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/machine-learning-services-overview?view=azuresql) | 0.20 | Page is an overview of Machine Learning Services in Azure SQL Managed Instance (what it is, supported languages, general usage). The summary shows no specific limits, configuration tables, error codes, or product-specific numeric thresholds; it’s conceptual capability description rather than detailed expert configuration or troubleshooting content. |

@@ -1,9 +1,9 @@
 ---
 name: azure-dns
-description: Expert knowledge for Azure DNS development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when automating DNS zones/records, configuring Private DNS/resolvers, enabling DNSSEC, or migrating legacy zones, and other Azure DNS related development tasks. Not for Azure Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network), Azure Application Gateway (use azure-application-gateway).
+description: Expert knowledge for Azure DNS development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when automating DNS zones/records, configuring Private DNS/Resolvers, planning DNS migrations, or enabling DNSSEC, and other Azure DNS related development tasks. Not for Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-25"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DNS Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L35-L39 | Diagnosing and resolving Azure DNS name resolution failures, including troubleshooting DNS records, zones, forwarding, and common configuration or connectivity issues. |
 | Decision Making | L40-L44 | Guidance for planning and executing migration of legacy Azure Private DNS zones to the new DNS zone model, including compatibility, steps, and considerations. |
-| Architecture & Design Patterns | L45-L50 | Designing resilient private DNS architectures in Azure, including when to use centralized vs distributed DNS Private Resolvers and how to shard Private DNS zones for high availability. |
-| Limits & Quotas | L51-L55 | DNS record, zone, and query limits for Azure DNS and Private DNS, including quotas, scaling behaviors, usage constraints, and how many zones/records you can create and manage. |
-| Security | L56-L66 | Securing Azure DNS and Private DNS: access control, monitoring, DNSSEC (enable/remove), resolver policies, and threat protection for zones, records, and name resolution. |
-| Configuration | L67-L79 | Configuring Azure DNS behavior: reverse DNS, private DNS zones and resolvers, zone file import/export, monitoring/metrics/logs, and query/ResolutionPolicy settings for name resolution. |
-| Integrations & Coding Patterns | L80-L88 | Automating Azure DNS zone/record management and subdomain delegation with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure services to DNS record types. |
+| Architecture & Design Patterns | L45-L51 | Designing scalable, resilient Azure DNS Private Resolver architectures: hub-spoke QPS planning, centralized vs distributed resolver topologies, and sharding private DNS zones for high availability. |
+| Limits & Quotas | L52-L56 | DNS record, zone, and query limits for Azure DNS and Private DNS, including quotas, scaling behaviors, usage constraints, and how many zones/records you can create and manage. |
+| Security | L57-L67 | Securing Azure DNS and Private DNS: access control, monitoring, DNSSEC (enable/remove), resolver policies, and threat protection for zones, records, and name resolution. |
+| Configuration | L68-L80 | Configuring Azure DNS behavior: reverse DNS, private DNS zones and resolvers, zone file import/export, monitoring/metrics/logs, and query/ResolutionPolicy settings for name resolution. |
+| Integrations & Coding Patterns | L81-L89 | Automating Azure DNS zone/record management and subdomain delegation with PowerShell/CLI, plus importing/exporting DNS zone files and mapping Azure services to DNS record types. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,6 +45,7 @@ This skill requires **network access** to fetch documentation content:
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
+| Design scalable DNS Private Resolver QPS in hub-spoke | https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-scale-qps |
 | Choose centralized vs distributed Azure DNS Private Resolver | https://learn.microsoft.com/en-us/azure/dns/private-resolver-architecture |
 | Shard Azure Private DNS zones for resiliency | https://learn.microsoft.com/en-us/azure/dns/sharding-private-dns-zones |
 

@@ -38,10 +38,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 43
-- **Deleted Pages**: 1
+- **Unchanged**: 45
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
 ## Classification Statistics
@@ -57,15 +57,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor).
 | *(Unclassified)* | 13 | 28.9% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Managed Grafana Remote MCP](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
-- [Azure Monitor dashboards remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-monitor-dashboards-mcp-server)
-
-### Deleted Pages
-
-- ~~Remote MCP server~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
 
 ## Classified Pages
 

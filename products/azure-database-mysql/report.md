@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
-  decision-making: 'Guidance for planning MySQL on Azure: version policy, HA/DR and
-    business continuity, sizing and tiers, performance baselines, and choosing/migrating/
-    upgrading to Flexible Server.'
+  decision-making: Guidance on version support, HA and business continuity, sizing
+    and purchasing Flexible Server, and planning/executing MySQL migrations and upgrades
+    to Azure.
   deployment: Automating MySQL Flexible Server deployments and changes (Azure Pipelines,
     GitHub Actions, Automation), handling backups, geo-restore, version upgrades,
     and scheduled maintenance.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for MySQL development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using MySQL Flexible Server HA/DR, backups/geo-restore, read replicas,
-  AKS connectivity, or Entra auth, and other Azure Database for MySQL related development
-  tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance
-  (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines),
-  Azure Database for PostgreSQL (use azure-database-postgresql).
-use_when: Use when using MySQL Flexible Server HA/DR, backups/geo-restore, read replicas,
-  AKS connectivity, or Entra auth, and other Azure Database for MySQL related development
-  tasks.
-confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
-  Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
-  (use azure-sql-virtual-machines), Azure Database for PostgreSQL (use azure-database-postgresql).
+  Use when using MySQL Flexible Server HA/replicas, backups/geo-restore, AKS connectivity,
+  Entra auth, or migration tools, and other Azure Database for MySQL related development
+  tasks. Not for Azure Database for PostgreSQL (use azure-database-postgresql), Azure
+  SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+use_when: Use when using MySQL Flexible Server HA/replicas, backups/geo-restore, AKS
+  connectivity, Entra auth, or migration tools, and other Azure Database for MySQL
+  related development tasks.
+confusable_not_for: Not for Azure Database for PostgreSQL (use azure-database-postgresql),
+  Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 ---
 # Azure Database for MySQL Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 166
+- **Updated Pages**: 4
+- **Unchanged**: 164
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -79,10 +79,14 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Updated Pages
 
-- [Accelerated logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-accelerated-logs)
-  - Updated: 2026-07-09T17:05:00.000Z → 2026-10-28T11:04:00.000Z
-- [Troubleshoot replication latency](https://learn.microsoft.com/en-us/azure/mysql/how-to-troubleshoot-replication-latency)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-10-28T11:04:00.000Z
+- [2026](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026)
+  - Updated: 2026-07-16T06:04:00.000Z → 2026-11-03T12:03:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026)
+  - Updated: 2026-07-16T06:04:00.000Z → 2026-11-03T12:03:00.000Z
+- [Application development best practices](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026)
+  - Updated: 2026-07-16T06:04:00.000Z → 2026-11-03T12:03:00.000Z
+- [Major version upgrade](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade)
+  - Updated: 2026-05-21T22:09:00.000Z → 2026-11-05T18:09:00.000Z
 
 ## Classified Pages
 
@@ -133,7 +137,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Configure slow-query logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-slow-query-logs) | configuration | 0.70 | Script configures slow query logs using service-specific parameters and defaults, representing concrete configuration knowledge. |
 | [Configure zone-redundant HA](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-zone-redundant-ha) | configuration | 0.70 | Shows CLI configuration for zone-redundant HA and states it can only be enabled at creation and is limited to specific pricing tiers, which are product-specific settings and constraints. |
 | [Error logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-error-logs) | troubleshooting | 0.70 | Error logs article describes how to access and interpret logs for this service; includes product-specific log locations and behaviors. |
-| [Major version upgrade](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade) | decision-making | 0.70 | Describes product-specific major version upgrade behavior for Azure Database for MySQL Flexible Server, including supported upgrade paths (for example, 5.7→8.0→8.4) and how upgrades work without data movement or connection string changes. This is concrete, provider-specific upgrade guidance that informs migration/upgrade decisions rather than generic MySQL knowledge. |
+| [Major version upgrade](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade) | decision-making | 0.70 | Major version upgrade guidance for Azure Database for MySQL Flexible Server typically includes product-specific constraints, supported upgrade paths (e.g., 5.7→8.0→8.4), prerequisites, and recommendations on when/how to upgrade without data movement or connection string changes. This is expert operational guidance that helps decide if/when to upgrade and how to do it safely, beyond generic MySQL knowledge. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/mysql/security/security-entra-authentication) | security | 0.70 | Concepts page for Entra authentication for Azure Database for MySQL generally includes specific Entra roles, permission scopes, and database-level mappings (e.g., how Entra principals map to MySQL users). These are product-specific security configuration details that qualify as expert knowledge. |
 | [Migrate RDS MySQL data using Data-in replication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-migrate-rds-mysql-data-in-replication) | integrations | 0.70 | Describes cross-service replication from RDS to Azure MySQL with data-in replication, involving product-specific replication configuration and constraints. |
 | [Migrate data from MySQL on-premises to Azure Database for MySQL flexible server](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro) | decision-making | 0.70 | Described as a migration guide focused on planning and executing MySQL migrations to Azure Database for MySQL; such guides typically include scenario-based recommendations, migration path choices, and trade-offs between approaches, which fits decision-making and goes beyond generic concepts. |
@@ -248,16 +252,16 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [2023](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2023) | 0.20 | This 'What's new - 2023' archive is primarily release/feature summaries; it does not present numeric limits, config tables, or decision matrices, so it does not qualify as expert knowledge under the defined sub-skills. |
 | [2024](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2024) | 0.20 | A yearly 'What's new' archive summarizes features chronologically and is not organized as troubleshooting, configuration, limits, or decision guidance; it lacks the specific structured expert content required. |
 | [2025](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2025) | 0.20 | Similar to other 'What's new' pages, this is a feature announcement archive without structured limits, configuration parameters, or decision guidance; it does not match the expert-knowledge criteria. |
-| [2026](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026) | 0.20 | A 'What's new' announcements page is primarily release/feature marketing and high-level change log content; it usually lacks structured limits, configuration tables, or decision matrices required by the sub-skill types. |
-| [Application development best practices](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026) | 0.20 | Duplicate of index 0; a 'what's new' feature announcement page that is primarily informational/marketing and not focused on limits, configuration matrices, or troubleshooting details. |
+| [Application development best practices](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026) | 0.20 | Duplicate of index 0; a release notes page summarizing new features, likely marketing/overview content rather than detailed expert configuration, limits, or troubleshooting guidance. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal) | 0.20 | Primarily a step-by-step portal how-to for stopping and starting Azure Database for MySQL Flexible Server. It does not focus on numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Any product-specific details are procedural rather than structured expert knowledge as defined by the sub-skill types. |
 | [Backup & restore concepts](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-backup-restore) | 0.20 | Characterized as concepts of backup and restore for Azure Database for MySQL Flexible Server. Summary discusses automatic backups, storage redundancy, and point-in-time restore at a high level, but does not show specific retention numbers, configuration parameters, or troubleshooting details. No qualifying limits, configuration tables, or decision guidance are evident. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026) | 0.20 | What's new/announcements page; summary description doesn't indicate detailed limits, configs, or troubleshooting content, and such pages are typically high-level feature overviews rather than expert reference data. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026) | 0.20 | A 'what's new' feature announcement page; description suggests high-level release notes without detailed limits, configuration tables, error codes, or decision matrices. |
 | [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql) | 0.20 | From the summary, this page is a conceptual overview of mirroring Azure Database for MySQL into Microsoft Fabric/OneLake and its benefits (BI, AI, data engineering). It does not indicate the presence of specific limits, configuration tables, error codes, or decision matrices. Without evidence of concrete parameters, quotas, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | 0.20 | Content is a conceptual overview of high availability and zone-redundant architecture for Azure Database for MySQL Flexible Server. The summary indicates no specific numeric limits, configuration parameter tables, error codes, or decision matrices; it mainly explains what HA is and that a standby replica is provisioned and billed. This does not meet the criteria for any expert-knowledge sub-skill type. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/sample-scripts-azure-cli) | 0.20 | Index of CLI sample scripts; navigation content without detailed parameters or limits in this page itself. |
 | [Servers](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concept-servers) | 0.20 | High-level server concepts and guidelines; summary suggests conceptual overview without detailed limits, configs, or error mappings. |
 | [Summary](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/14-summary) | 0.20 | Summary article recaps previous migration content; unlikely to introduce new detailed limits, configs, or troubleshooting information. |
+| [2026](https://learn.microsoft.com/en-us/azure/mysql/whats-new/whats-new-2026) | 0.10 | A 'what's new' feature announcement page is primarily release/marketing-style content and high-level summaries of new capabilities. It typically doesn't focus on detailed limits, configuration tables, error codes, or decision matrices required for the defined sub-skill types. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-cli) | 0.10 | Quickstart tutorial for creating a MySQL flexible server via Azure CLI; primarily step-by-step commands and basic setup, not configuration tables, limits, troubleshooting mappings, or other expert-only details. |
 | [Partners](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/partners-migration-mysql) | 0.10 | Partner listing for migration tools; mainly catalog/marketing content without detailed technical guidance, limits, or configs. |
 | [What is Azure Database for MySQL?](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview) | 0.10 | Page is a high-level product overview for Azure Database for MySQL flexible server without specific limits, configuration tables, error codes, or decision matrices. It describes capabilities and features conceptually rather than providing detailed expert configuration, quotas, or troubleshooting guidance. |

@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI sizing/networking, configuring HA/DR and backups, securing access, or integrating apps and tools, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning MI networking, HA/DR, backups, Managed Instance link, or app connectivity patterns, and other Azure SQL Managed Instance related development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L59 | Diagnosing and fixing Azure SQL Managed Instance issues: deployment/scale errors, connectivity, performance, backups, memory/log capacity, geo-replication, XTP storage, auth, and common known problems. |
-| Best Practices | L60-L81 | Performance, HA/DR, and security best practices for Azure SQL Managed Instance, including monitoring, query tuning, maintenance, failover/geo-replication, migration, and app performance optimization. |
-| Decision Making | L82-L98 | Guidance for choosing Azure SQL services and tiers, planning subnet/IPs, and deciding or executing migrations (SQL Server, Db2, Oracle) and replication options (link, LRS, standby). |
-| Architecture & Design Patterns | L99-L103 | Connectivity architecture for Azure SQL DB and HA design for Managed Instance, including network topology, routing, failover behavior, and resilience patterns. |
-| Limits & Quotas | L104-L115 | Backup retention/immutability rules, DTU benchmarks, free-tier and memory limits, maintenance windows, operation durations, and all key resource/scale limits for Azure SQL Managed Instance. |
-| Security | L116-L168 | Entra-based auth, identities, keys, TLS, auditing, networking, and best practices to secure Azure SQL Managed Instance (logins, TDE, Windows/Kerberos auth, private endpoints, Azure Policy). |
-| Configuration | L169-L218 | Configuring and managing Azure SQL Managed Instance: deployment, networking, backups/restore, monitoring, maintenance windows, update policy, time zone/tempdb, and high availability/failover. |
-| Integrations & Coding Patterns | L219-L242 | Client connectivity, coding patterns, and tools for apps using Azure SQL Managed Instance, plus automation, DTC, XEvents, Spark, Managed Instance link, and backup/restore scenarios. |
-| Deployment | L243-L258 | Deploying and managing Azure SQL Managed Instance and databases: scaling, start/stop for cost control, DR/replication, region/subnet moves, and required virtual network setup. |
+| Troubleshooting | L37-L60 | Diagnosing and fixing Azure SQL Managed Instance/Database issues: performance, connectivity, capacity, backups, transaction logs, security (ransomware), auth, geo-replication, and known errors. |
+| Best Practices | L61-L89 | Performance, HA/DR, security, ransomware resilience, monitoring, and maintenance best practices for Azure SQL Managed Instance and applications using it. |
+| Decision Making | L90-L106 | Guidance for choosing Azure SQL services and tiers, planning subnet/IPs, and deciding or executing migrations (SQL Server, Db2, Oracle) and replication options (link, LRS, standby). |
+| Architecture & Design Patterns | L107-L111 | Connectivity architecture for Azure SQL DB and HA design for Managed Instance, including network topology, routing, failover behavior, and resilience patterns. |
+| Limits & Quotas | L112-L122 | Backup retention/immutability rules, DTU benchmarks, free-tier and memory limits, maintenance windows, operation durations, and all key resource/scale limits for Azure SQL Managed Instance. |
+| Security | L123-L177 | Authentication, encryption, access control, auditing, network protection, and Azure Policy for securing Azure SQL Managed Instance and related Azure SQL resources. |
+| Configuration | L178-L227 | Configuring and managing Azure SQL Managed Instance: deployment, networking, backups/restore, monitoring, maintenance windows, update policy, time zone/tempdb, and high availability/failover. |
+| Integrations & Coding Patterns | L228-L251 | Client connectivity, coding patterns, and tools for apps using Azure SQL Managed Instance, plus automation, DTC, XEvents, Spark, Managed Instance link, and backup/restore scenarios. |
+| Deployment | L252-L267 | Deploying and managing Azure SQL Managed Instance and databases: scaling, start/stop for cost control, DR/replication, region/subnet moves, and required virtual network setup. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -41,6 +41,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve common Azure SQL database watcher issues | https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-faq?view=azuresql |
 | Fix slow database import and export in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql |
 | Troubleshoot Azure SQL performance using Intelligent Insights | https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-troubleshoot-performance?view=azuresql |
+| Detect ransomware attacks on Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-detect?view=azuresql |
 | Troubleshoot transient connectivity errors for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql |
 | Troubleshoot Azure SQL and Fabric SQL connectivity errors | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql |
 | Troubleshoot geo-replication and redo lag in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql |
@@ -63,6 +64,13 @@ This skill requires **network access** to fetch documentation content:
 | Analyze Azure SQL monitoring data with KQL and T-SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-analyze?view=azuresql |
 | Performance tuning guidance for Azure SQL applications | https://learn.microsoft.com/en-us/azure/azure-sql/database/performance-guidance?view=azuresql |
 | Plan for Azure SQL planned maintenance events | https://learn.microsoft.com/en-us/azure/azure-sql/database/planned-maintenance?view=azuresql |
+| Assess ransomware damage in Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-assess?view=azuresql |
+| Contain ransomware attacks in Azure SQL environments | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-contain?view=azuresql |
+| Harden Azure SQL after ransomware recovery | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-harden?view=azuresql |
+| Plan ransomware recovery for Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-overview?view=azuresql |
+| Protect Azure SQL databases against ransomware | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-protect?view=azuresql |
+| Restore Azure SQL data after ransomware attacks | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-restore?view=azuresql |
+| Validate Azure SQL ransomware recovery before cutover | https://learn.microsoft.com/en-us/azure/azure-sql/database/ransomware-recovery-validate?view=azuresql |
 | Configure and use read scale-out replicas in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql |
 | Apply security best practices for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/security-best-practice?view=azuresql |
 | Identify and resolve Azure SQL query performance issues | https://learn.microsoft.com/en-us/azure/azure-sql/identify-query-performance-issues?view=azuresql |
@@ -104,7 +112,6 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand automatic backup immutability for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql |
 | Understand DTU benchmark characteristics for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/dtu-benchmark?view=azuresql |
 | Understand Azure SQL long-term backup retention limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql |
 | Understand free-tier limits for Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/free-offer?view=azuresql |
@@ -116,6 +123,7 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
+| Configure automatic backup immutability in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql |
 | Configure Microsoft Entra authentication for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql |
 | Assign Directory Readers role for Azure SQL identities | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role-tutorial?view=azuresql |
 | Configure Directory Readers and permissions for Azure SQL identities | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql |
@@ -134,6 +142,7 @@ This skill requires **network access** to fetch documentation content:
 | Block T-SQL CRUD for Azure SQL resource protection | https://learn.microsoft.com/en-us/azure/azure-sql/database/block-crud-tsql?view=azuresql |
 | Configure Conditional Access policies for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/conditional-access-configure?view=azuresql |
 | Set up database-level managed identity for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-level-managed-identity?view=azuresql |
+| Configure dynamic data masking in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql |
 | Use built-in Azure Policy definitions for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/policy-reference?view=azuresql |
 | Apply security best practices to Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql |
 | Use Azure Policy regulatory compliance controls for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/security-controls-policy?view=azuresql |

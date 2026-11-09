@@ -1,9 +1,9 @@
 ---
 name: azure-documentdb
-description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring DocumentDB indexing/search, HA/replicas, MongoDB migrations, vector search/RAG, or security/RBAC, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure Blob Storage (use azure-blob-storage), Azure SQL Database (use azure-sql-database).
+description: Expert knowledge for Azure DocumentDB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure DocumentDB indexing/search, MongoDB API, HA/replicas, vector/RAG workloads, or IaC deployments, and other Azure DocumentDB related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DocumentDB Skill
@@ -24,20 +24,19 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L46 | Diagnosing and fixing DocumentDB issues: query performance, CMK encryption, replication, and common connectivity/network errors including migration-related problems. |
-| Best Practices | L47-L57 | Best practices for DocumentDB indexing, query optimization, background indexing safety, and designing high-availability, cross-region replicated deployments. |
-| Decision Making | L58-L73 | Guides for choosing DocumentDB vs MongoDB/Atlas, planning MongoDB migrations, selecting connectivity and cross-region failover, and picking optimal vector index/search algorithms in .NET, Go, TS, and Python |
-| Architecture & Design Patterns | L74-L83 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
-| Limits & Quotas | L84-L97 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
-| Security | L98-L109 | Securing DocumentDB clusters: encryption at rest and with customer keys, firewall and public access controls, Private Link, Entra ID RBAC, native users/privileges, and security best practices. |
-| Configuration | L110-L132 | Configuring DocumentDB features: indexing, search (BM25, vector, fuzzy, full-text, geo), MongoDB compatibility, HA/replicas, scaling, transactions, monitoring, alerts, backups, and MCP toolkit. |
-| Integrations & Coding Patterns | L133-L156 | Patterns and code samples for integrating Azure DocumentDB with languages, frameworks, vector search/RAG tools, migrations (Mongo/Cassandra), and external services like Databricks and OpenAI. |
-| Deployment | L157-L163 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
+| Troubleshooting | L37-L45 | Diagnosing and fixing DocumentDB issues: query performance, CMK encryption, replication, and common connectivity/network errors including migration-related problems. |
+| Best Practices | L46-L56 | Best practices for DocumentDB indexing, query optimization, background indexing safety, and designing high-availability, cross-region replicated deployments. |
+| Decision Making | L57-L72 | Guides for choosing between DocumentDB and MongoDB services, planning migrations and connectivity, cross-region failover, and selecting optimal vector index/search algorithms across languages. |
+| Architecture & Design Patterns | L73-L82 | Patterns for scaling, HA/DR, sharding, multi‑cloud setups, and building Go/TypeScript AI agents (including autonomous travel) on Azure DocumentDB. |
+| Limits & Quotas | L83-L96 | Limits, quotas, and configuration constraints for DocumentDB: compute/storage tiers, free tier caps, SSD performance, indexing/text index limits, document/batch sizes, diagnostics, and feature availability. |
+| Security | L97-L108 | Securing DocumentDB: encryption at rest and with customer keys, firewall and RBAC setup, Private Link and public access control, native user management, and cluster security best practices. |
+| Configuration | L109-L131 | Configuring DocumentDB features: indexing, search (BM25, vector, fuzzy, full-text, geo), MongoDB compatibility, HA/replicas, scaling, transactions, monitoring, alerts, backups, and MCP toolkit. |
+| Integrations & Coding Patterns | L132-L155 | Patterns and code samples for integrating Azure DocumentDB with languages, frameworks, vector search/RAG tools, migrations (Mongo/Cassandra), and external services like Databricks and OpenAI. |
+| Deployment | L156-L162 | Guides for deploying and managing DocumentDB clusters: local dev to Azure, backup/restore, version upgrades, and IaC deployment with Bicep and Terraform. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common Azure DocumentDB issues | https://learn.microsoft.com/en-us/azure/documentdb/faq |
 | Troubleshoot CMK encryption issues in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-database-encryption-troubleshoot |
 | Diagnose query performance using explain() in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-read-explain-output |
 | Troubleshoot common Azure DocumentDB errors and connectivity | https://learn.microsoft.com/en-us/azure/documentdb/troubleshoot-common-issues |
@@ -61,7 +60,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose Azure first-party services for MongoDB workloads | https://learn.microsoft.com/en-us/azure/documentdb/azure-mongo-first-party |
 | Decide between Azure DocumentDB and MongoDB Atlas | https://learn.microsoft.com/en-us/azure/documentdb/compare-mongodb-atlas |
 | Choose cross-region failover modes in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/failover-modes |
-| Assess MongoDB readiness and plan migration to DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness |
+| Assess MongoDB migration readiness to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness |
 | Evaluate MongoDB compatibility in managed services | https://learn.microsoft.com/en-us/azure/documentdb/managed-service-compatibility |
 | Plan and choose MongoDB to Azure DocumentDB migration options | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
 | Select connectivity scenarios for DocumentDB migrations | https://learn.microsoft.com/en-us/azure/documentdb/migration-scenarios |
@@ -100,11 +99,11 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Understand encryption at rest for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/database-encryption-at-rest |
 | Configure Azure DocumentDB firewall access rules | https://learn.microsoft.com/en-us/azure/documentdb/how-to-configure-firewall |
-| Configure Entra ID RBAC authentication for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control |
+| Configure Entra ID RBAC for Azure DocumentDB connections | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control |
 | Configure customer-managed encryption keys for Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-data-encryption |
 | Secure Azure DocumentDB with Azure Private Link | https://learn.microsoft.com/en-us/azure/documentdb/how-to-private-link |
 | Manage public network access to Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/how-to-public-access |
-| Manage secondary native users and privileges in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/secondary-users |
+| Configure secondary native users in Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/secondary-users |
 | Apply security best practices to Azure DocumentDB clusters | https://learn.microsoft.com/en-us/azure/documentdb/security |
 
 ### Configuration

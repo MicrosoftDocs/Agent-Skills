@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
-  integrations: 'Patterns and code for wiring Azure IoT Operations data flows: expressions,
-    filters, routing, throttling, windowed aggregation, WASM/Dapr/ONNX, state store,
-    schema, and connectors (MQTT/HTTP/media/SSE/Fabric).'
+  integrations: Patterns and how-tos for wiring Azure IoT Operations to MQTT/OPC UA/HTTP/media,
+    using WASM, state store, schema registry, OpenTelemetry, Akri, Dapr, and ONNX
+    in data flows.
   architecture-patterns: 'Patterns for building IoT data flows: model deployment,
     calibration, alignment, routing, aggregation, filtering, alarms, and network/namespace
     design in Azure IoT Operations.'
@@ -30,30 +30,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Operations development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building MQTT/OPC UA data flows, WASM/Dapr transforms, ADX/ADLS sinks,
-  HA brokers, or Arc deployments, and other Azure IoT Operations related development
+  Use when building MQTT/OPC UA data flows, WASM transforms, Dapr/Akri integrations,
+  or Arc Kubernetes deployments, and other Azure IoT Operations related development
   tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure
-  IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
-use_when: Use when building MQTT/OPC UA data flows, WASM/Dapr transforms, ADX/ADLS
-  sinks, HA brokers, or Arc deployments, and other Azure IoT Operations related development
+  IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+use_when: Use when building MQTT/OPC UA data flows, WASM transforms, Dapr/Akri integrations,
+  or Arc Kubernetes deployments, and other Azure IoT Operations related development
   tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub),
-  Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+  Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 ---
 # Azure IoT Operations Crawl Report
 
 ## Summary
 
-- **Total Pages**: 148
-- **Fetched**: 148
+- **Total Pages**: 149
+- **Fetched**: 149
 - **Fetch Failed**: 0
 - **Classified**: 115
-- **Unclassified**: 33
+- **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 15
-- **Updated Pages**: 5
-- **Unchanged**: 128
+- **New Pages**: 1
+- **Updated Pages**: 3
+- **Unchanged**: 145
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -61,49 +61,31 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 16 | 10.8% |
+| architecture-patterns | 16 | 10.7% |
 | best-practices | 4 | 2.7% |
-| configuration | 35 | 23.6% |
+| configuration | 35 | 23.5% |
 | decision-making | 8 | 5.4% |
 | deployment | 11 | 7.4% |
-| integrations | 18 | 12.2% |
+| integrations | 18 | 12.1% |
 | limits-quotas | 3 | 2.0% |
-| security | 14 | 9.5% |
-| troubleshooting | 6 | 4.1% |
-| *(Unclassified)* | 33 | 22.3% |
+| security | 14 | 9.4% |
+| troubleshooting | 6 | 4.0% |
+| *(Unclassified)* | 34 | 22.8% |
 
 ## Changes
 
 ### New Pages
 
-- [Report meaningful value changes](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-report-value-changes)
-- [Alarm hysteresis](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-stabilize-alarms)
-- [Detect offline sensors](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-detect-offline-sensors)
-- [Keep running totals](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-keep-running-totals)
-- [Reduce noise with an exponential moving average](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-smooth-each-reading)
-- [Common use cases and patterns](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/overview-dataflow-patterns)
-- [Add context to readings](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-add-context)
-- [Align and correlate records](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-align-correlate)
-- [Noise reduction](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-reduce-noise)
-- [Route readings by severity](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-route-by-severity)
-- [Route more than two message kinds](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-route-message-kinds)
-- [Route invalid messages to a dead-letter queue](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-route-invalid-messages)
-- [Calculate a prediction with known coefficients](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-predict-known-coefficients)
-- [Fit and activate an approved model](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-adapt-models)
-- [Deliver approved model updates through MQTT](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/dataflow-patterns/howto-deliver-model-updates)
+- [Understand custom Akri connector development with Rust](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/concept-akri-connector-development-rust)
 
 ### Updated Pages
 
-- [Filter, branch, and merge data](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-filter-route)
-  - Updated: 2026-08-03T08:00:00.000Z → 2026-10-28T22:31:00.000Z
-- [Aggregate data over time](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-window)
-  - Updated: 2026-08-11T17:12:00.000Z → 2026-10-19T08:00:00.000Z
-- [Throttle the flow of data](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graphs-throttle)
-  - Updated: 2026-08-11T17:12:00.000Z → 2026-10-28T22:31:00.000Z
-- [Authorization](https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-authorization)
-  - Updated: 2026-08-31T08:00:00.000Z → 2026-10-30T17:19:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-graphs)
-  - Updated: 2026-08-11T17:12:00.000Z → 2026-10-20T08:00:00.000Z
+- [Create a custom Akri connector with .NET](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-akri-connectors)
+  - Updated: 2026-07-31T19:23:00.000Z → 2026-09-10T08:00:00.000Z
+- [Build Akri connectors with VS Code extension](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-akri-connectors-vscode)
+  - Updated: 2026-05-14T17:14:00.000Z → 2026-09-10T08:00:00.000Z
+- [Develop custom connectors](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-akri-connectors)
+  - Updated: 2026-07-30T16:45:00.000Z → 2026-09-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -155,7 +137,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 | [Connect to MQTT endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-mqtt-connector) | integrations | 0.70 | How-to article for configuring the MQTT connector and modeling MQTT endpoints as assets. Likely includes product-specific connector settings, endpoint parameters, and configuration fields (topics, brokers, authentication) that go beyond generic MQTT knowledge, fitting the integrations & coding patterns category. |
 | [Connect to ONVIF-compliant cameras](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-onvif-connector) | configuration | 0.70 | ONVIF connector setup includes product-specific options (for endpoints, profiles, capabilities) and at least one explicit limitation (no network-level discovery); these are detailed configuration/behavior specifics beyond generic knowledge. |
 | [Connect to media sources](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-media-connector) | integrations | 0.70 | Shows how to configure assets/devices and media connector to capture snapshots and video from IP cameras; includes product-specific connector settings and asset-device relationships, fitting integrations. |
-| [Create a custom Akri connector with .NET](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-akri-connectors) | integrations | 0.70 | How-to for building a REST-based Akri connector using a specific .NET project template; likely includes connector configuration, polling patterns, and packaging details unique to Azure IoT Operations. |
+| [Create a custom Akri connector with .NET](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-akri-connectors) | integrations | 0.70 | The article goes beyond a generic tutorial and shows how to build and package Akri connectors using a specific Azure IoT Operations connector template (aiopollingtelemetryconnector.NET) and deployment flow so they become visible in the operations experience. This involves product-specific integration patterns and connector scaffolding unique to Azure IoT Operations, which an LLM is unlikely to know from training. |
 | [Create a data flow graph](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-create-dataflow-graph) | configuration | 0.70 | Step-by-step creation of data flow graphs with specific transform configuration using an expression language; focuses on concrete CRD fields and transform settings. |
 | [Create and manage connector template instances](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-manage-connector-templates) | configuration | 0.70 | Covers how to define reusable connector template instances for specific connector types; this is detailed product configuration (template fields, behaviors) rather than generic concepts. |
 | [Data flows](https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-data-flows) | configuration | 0.70 | Reference listing of data flow metrics (names, types, descriptions, dimensions) is detailed, product-specific monitoring configuration information that qualifies as expert knowledge. |
@@ -229,6 +211,7 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
+| [Build Akri connectors with VS Code extension](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-akri-connectors-vscode) | 0.40 | The page describes how to build, validate, debug, and publish Akri connectors using a VS Code extension. Based on the summary, it appears to be a tooling/tutorial guide rather than a reference of configuration parameters, limits, or detailed integration constraints. Without evidence of tables of settings, SDK parameters, or tier-specific deployment constraints, it doesn’t meet the expert-knowledge criteria. |
 | [Connect to Kafka endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-connect-kafka) | 0.40 | Kafka source connection how-to; focuses on combining data flows and MQTT connector to ingest Kafka-compatible data. Summary suggests a scenario tutorial, not detailed config/limits/troubleshooting content. |
 | [Create a data flow](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-create-dataflow) | 0.40 | Primarily a how-to for creating data flows; summary does not show detailed parameter tables, limits, or specialized troubleshooting/decision matrices beyond generic flow definition. |
 | [Enable and run management actions](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-management-actions) | 0.40 | Describes enabling and running management actions conceptually (methods, read/write values, Event Grid routing); summary does not indicate detailed configuration parameters, limits, or error-code mappings. |
@@ -236,10 +219,8 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 | [FAQ](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/iot-operations-faq) | 0.40 | FAQ page; summary does not indicate presence of detailed error codes, configuration tables, or limits. Likely high-level Q&A rather than structured expert troubleshooting or configuration reference. |
 | [Test WASM modules](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-test-wasm-modules) | 0.40 | Covers testing patterns (unit tests, output inspection, end-to-end tests) for WASM modules. While useful, it is likely procedural/testing guidance rather than a reference of product-specific configuration parameters, limits, or error-code mappings. It reads more like a tutorial than an expert-knowledge reference. |
 | [Bi-directional messaging with Event Grid](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/tutorial-mqtt-bridge) | 0.30 | Tutorial that uses default settings and no transformations; summary does not indicate detailed configuration tables, limits, or product-specific error handling. Likely a step-by-step example rather than expert reference material. |
-| [Build Akri connectors with VS Code extension](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-akri-connectors-vscode) | 0.30 | Primarily a how-to/tutorial for building Akri connectors with VS Code. Based on the description, it focuses on create/validate/debug/publish workflows and supported languages/platforms, but does not clearly indicate detailed configuration tables, limits, error-code mappings, or other expert-only reference content. |
 | [Build an event-driven app with Dapr](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/tutorial-event-driven-with-dapr) | 0.30 | Tutorial-style content on building an event-driven Dapr app that consumes and publishes MQTT data. While useful, it’s primarily a step-by-step example and doesn’t clearly indicate tables of configuration parameters, limits, or product-specific diagnostic details that qualify as expert knowledge under the defined categories. |
 | [Configure your instance](https://learn.microsoft.com/en-us/azure/iot-operations/get-started-end-to-end-sample/quickstart-configure) | 0.30 | Configuration quickstart for devices/assets/data flows; appears to be step-by-step sample setup rather than a parameter reference or best-practices guide with product-specific edge cases or numeric constraints. |
-| [Develop custom connectors](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-akri-connectors) | 0.30 | Overview of Akri connectors and capabilities; appears conceptual/introductory without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Get insights from your data](https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-get-insights) | 0.30 | End-to-end tutorial for building a real-time dashboard using Microsoft Fabric Real-Time Intelligence and Event Hubs. Primarily step-by-step tutorial content; the summary doesn’t indicate detailed configuration tables, limits, or product-specific diagnostic/decision matrices beyond what an LLM would generally know. |
 | [Map data](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-mapping) | 0.30 | Appears to be a conceptual description of the data flow mapping language syntax and capabilities; summary doesn't indicate specific configuration tables, limits, or product-unique gotchas beyond general mapping concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/overview-dataflow) | 0.30 | Overview of data flows and their purpose; summary indicates conceptual description of how data flows work and general configuration options without detailed parameter tables or product-specific numeric thresholds. |
@@ -248,9 +229,11 @@ confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-
 | [Send data to Data Lake Storage](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/tutorial-opc-ua-to-data-lake) | 0.30 | Tutorial-style integration scenario (OPC UA to Data Lake via Azure IoT Operations). Based on the summary, it describes creating schemas and data flows but doesn't clearly indicate detailed configuration tables, limits, or product-specific error mappings. Likely a step-by-step example rather than reference-style expert knowledge. |
 | [Understand WASM module capabilities](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/concepts-wasm-modules) | 0.30 | Described as an article that 'explains the operator types, the timely dataflow model, module configuration, host APIs, and the WIT schema'; this is primarily conceptual/architectural explanation rather than tables of config parameters, limits, or troubleshooting mappings. |
 | [Understand asset and device management](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-manage-assets) | 0.30 | Described as an overview of asset and device management concepts and options; likely conceptual without detailed configuration tables, limits, or error mappings. |
+| [Understand custom Akri connector development with Rust](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/concept-akri-connector-development-rust) | 0.30 | This page is primarily a conceptual explanation of how a custom Akri connector works in Rust and describes the connector programming model using a base sample. From the summary, it doesn’t clearly indicate detailed configuration tables, SDK parameter constraints, or error-code-based troubleshooting; it reads as an architectural/conceptual walkthrough rather than expert, configuration-level knowledge. |
 | [Add OPC UA assets to your cluster](https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-add-assets) | 0.20 | Tutorial for adding assets; likely UI/step instructions rather than deep configuration matrices or limits. |
 | [Broker overview](https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/overview-broker) | 0.20 | Page appears to be a high-level overview of the Azure IoT Operations MQTT broker (capabilities, positioning, and conceptual description). No indication of numeric limits, configuration parameter tables, error codes, or decision matrices; therefore it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Deployment overview](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/overview-deploy) | 0.20 | High-level overview of Azure IoT Operations deployment options; summary indicates conceptual guidance on components and scenarios without specific deployment matrices, constraints, or configuration parameters. |
+| [Develop custom connectors](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-akri-connectors) | 0.20 | From the summary, this is an overview of Akri connectors and their role as protocol adapters in Azure IoT Operations. It doesn't indicate specific limits, configuration tables, error codes, or detailed patterns with quantified trade-offs. It appears conceptual rather than containing product-specific expert details. |
 | [Developer guide](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-iot-operations-development) | 0.20 | High-level overview of Azure IoT Operations development tools and SDKs; no indication of detailed limits, configuration tables, error codes, or product-specific best practices. |
 | [Get insights from your data](https://learn.microsoft.com/en-us/azure/iot-operations/get-started-end-to-end-sample/quickstart-get-insights) | 0.20 | Quickstart focused on building a real-time dashboard with Event Hubs and Fabric; likely a step-by-step tutorial without detailed limits, configuration tables, or product-specific error codes. Does not appear to contain the kind of expert, reference-style data required for these sub-skills. |
 | [Monitor OPC UA server availability](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/concept-opc-ua-server-heartbeat-monitoring) | 0.20 | Conceptual description of heartbeat monitoring; summary does not indicate specific configuration parameters, thresholds, or error codes. |

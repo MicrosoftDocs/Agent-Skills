@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
-  integrations: Patterns and code samples for calling FHIR/DICOM APIs, bulk operations,
-    de-identification, events, and integrating Azure Health Data Services with Synapse,
-    ADF/Fabric, Logic Apps, and compliance profiles.
-  security: 'Configuring secure access to FHIR/DICOM/HD services: Entra auth, RBAC,
-    tokens, app registrations, Private Link, CMK encryption, SMART on FHIR, external/B2C
-    IDs, and network security.'
+  integrations: Patterns and code samples for calling FHIR/DICOM APIs, bulk import/export,
+    search and updates, de-identification, event workflows, and integrating with Synapse,
+    Logic Apps, and other Azure services.
+  security: Configuring auth, RBAC, policies, keys, network/Private Link, SMART on
+    FHIR, and client/identity setup for secure access to FHIR, DICOM, and de-identification
+    in Azure Health Data Services.
   limits-quotas: Autoscaling, capacity, DR behavior, deprecation impacts, de-identification
     language/locale support, and DICOM service requirements, quotas, and limits.
   troubleshooting: 'Diagnosing and fixing Azure Health Data Services issues: FHIR
@@ -15,9 +15,9 @@ category_descriptions:
   deployment: Guides for deploying and moving Azure Health Data Services (FHIR, DICOM,
     de-identification, workspaces) using portal, ARM, Bicep, PowerShell, and CLI across
     subscriptions and storage options.
-  configuration: 'Configuring Azure FHIR and DICOM services: CORS, logging, storage,
-    bulk import/export, de-identification, profiles/validation, search parameters,
-    events, and FHIR operations like $import/$export/$member-match.'
+  configuration: 'Configuring Azure FHIR/DICOM services: CORS, logging, storage, search,
+    versioning, bulk import/export, de-identification, CARIN/Da Vinci profiles, and
+    custom audit/validation settings.'
   architecture-patterns: BCDR planning, reliable de-identification deployments, and
     reference architectures for integrating DICOM service with Azure Data Lake and
     digital pathology workflows.
@@ -29,17 +29,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Health Data Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using FHIR/DICOM APIs, bulk import/export, de-identification, events, or
-  Synapse/ADF/Fabric integrations, and other Azure Health Data Services related development
-  tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use
-  azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure
-  Machine Learning (use azure-machine-learning).
-use_when: Use when using FHIR/DICOM APIs, bulk import/export, de-identification, events,
-  or Synapse/ADF/Fabric integrations, and other Azure Health Data Services related
-  development tasks.
+  Use when using FHIR/DICOM APIs, bulk import/export, de-identification, Synapse integration,
+  or SMART on FHIR, and other Azure Health Data Services related development tasks.
+  Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory),
+  Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when using FHIR/DICOM APIs, bulk import/export, de-identification, Synapse
+  integration, or SMART on FHIR, and other Azure Health Data Services related development
+  tasks.
 confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data Factory
-  (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Machine Learning (use azure-machine-learning).
+  (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Synapse
+  Analytics (use azure-synapse-analytics).
 ---
 # Azure Health Data Services Crawl Report
 
@@ -53,8 +52,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 21
-- **Unchanged**: 181
+- **Updated Pages**: 5
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
@@ -77,59 +76,30 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 
 ### Updated Pages
 
-- [Import DICOM files](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/import-files)
-  - Updated: 2023-10-27T22:02:00.000Z → 2026-10-30T05:22:00.000Z
-- [Transparency Note](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/transparency-note)
-  - Updated: 2026-01-27T18:10:00.000Z → 2026-10-30T05:22:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-arm)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-bicep)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-azure-cli)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-powershell)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-10-30T05:22:00.000Z
 - [Azure Health De-identification client library for .NET](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-sdk-net)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [Python - synchronous](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-python)
-  - Updated: 2026-01-27T18:10:00.000Z → 2026-10-30T05:22:00.000Z
+  - Updated: 2026-10-30T05:22:00.000Z → 2026-11-06T18:42:00.000Z
 - [Python - asynchronous](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-asynchronous-python)
-  - Updated: 2026-01-27T18:10:00.000Z → 2026-10-30T05:22:00.000Z
+  - Updated: 2026-10-30T05:22:00.000Z → 2026-11-06T18:42:00.000Z
 - [Configure Azure Storage to de-identify documents](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-storage)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [Configure private endpoints](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-private-endpoints)
-  - Updated: 2025-06-16T08:00:00.000Z → 2026-10-30T05:22:00.000Z
+  - Updated: 2026-10-30T05:22:00.000Z → 2026-11-06T18:42:00.000Z
 - [Use managed identities](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/managed-identities)
-  - Updated: 2025-06-16T08:00:00.000Z → 2026-10-30T05:22:00.000Z
+  - Updated: 2026-10-30T05:22:00.000Z → 2026-11-06T18:42:00.000Z
 - [Use Azure role-based access control](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/manage-access-rbac)
-  - Updated: 2025-06-16T08:00:00.000Z → 2026-10-30T05:22:00.000Z
-- [Languages supported](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/languages-supported)
-  - Updated: 2026-03-12T22:17:00.000Z → 2026-10-30T05:22:00.000Z
-- [Monitor the de-identification service](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/monitor-deidentification-service)
-  - Updated: 2025-06-16T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [Reliability](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/reliability-health-data-services-deidentification)
-  - Updated: 2026-03-12T22:17:00.000Z → 2026-10-28T08:00:00.000Z
-- [De-identification service monitoring data reference](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/monitor-deidentification-service-reference)
-  - Updated: 2025-06-16T22:03:00.000Z → 2026-10-30T05:22:00.000Z
-- [Grant permissions via Azure portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-azure-rbac)
-  - Updated: 2026-03-31T22:19:00.000Z → 2026-10-29T08:00:00.000Z
-- [$bulk-update](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-bulk-update)
-  - Updated: 2026-07-29T22:37:00.000Z → 2026-10-30T05:22:00.000Z
-- *...and 1 more*
+  - Updated: 2026-10-30T05:22:00.000Z → 2026-11-06T18:42:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Best practices](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-best-practices) | best-practices | 0.90 | Explicitly labeled as best practices for performance; for a specific managed FHIR service this typically includes concrete recommendations (query patterns, indexing, configuration values, and gotchas) that are unique to the product and go beyond generic performance advice. |
+| [Use Azure role-based access control](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/manage-access-rbac) | security | 0.90 | Describes built-in RBAC roles defined by the de-identification service, including specific role names and their permissions, which is product-specific security configuration detail not generally known from training. |
 | [Configure Azure RBAC](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-configure-azure-rbac) | security | 0.86 | RBAC configuration necessarily includes specific Azure role names, scopes, and assignment patterns unique to the DICOM service. |
 | [Configure Azure RBAC](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/configure-azure-rbac) | security | 0.85 | Explains using Azure RBAC for the FHIR data plane, including specific built-in role names, scopes, and assignment patterns unique to Azure API for FHIR; this is detailed security configuration. |
 | [Microsoft Entra ID and Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/azure-active-directory-identity-configuration) | security | 0.85 | Covers identity, authentication, and authorization using Microsoft Entra ID and OAuth 2.0 for Azure API for FHIR; likely includes specific scopes, roles, and configuration parameters unique to this product. |
-| [Use Azure role-based access control](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/manage-access-rbac) | security | 0.85 | Defines built-in roles for the de-identification service and their permissions; RBAC role names and scopes are product-specific security configuration details. |
+| [Use managed identities](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/managed-identities) | security | 0.85 | Page focuses on managed identities for this specific service and likely includes concrete configuration steps, identity types supported, and required access settings unique to Azure Health Data Services de-identification. |
 | [Access token validation](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/azure-api-fhir-access-token-validation) | troubleshooting | 0.80 | Walks through token validation steps and provides tips for troubleshooting access issues, likely mapping specific token claims and error conditions to causes and resolutions. |
 | [Built-in policy definitions](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-health-data-services-policy-reference) | security | 0.80 | Lists specific Azure Policy definitions, effects, and scopes for Health Data Services resources; this is product-specific security/ governance configuration with exact policy names and behaviors. |
+| [Configure Azure Storage to de-identify documents](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-storage) | configuration | 0.80 | Storage configuration guide is expected to list specific settings (permissions, container names, identity assignments, required roles) and possibly parameter values needed for the de-identification service to access Azure Storage securely. |
 | [Configure Private Link](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/configure-private-link) | security | 0.80 | Describes setting up private endpoints, DNS configuration, and network constraints specific to Azure API for FHIR; these are product-specific secure networking settings. |
 | [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/customer-managed-key) | security | 0.80 | Details enabling BYOK via Azure Key Vault, including key identifiers, key rotation behavior, and encryption settings specific to Azure API for FHIR; clearly security configuration. |
 | [Configure database settings](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/configure-database) | configuration | 0.80 | Describes database settings such as Request Units (RUs) and how they affect performance, including specific configuration options and ranges tied to Azure API for FHIR. |
@@ -147,7 +117,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Use DICOMweb standard APIs with C#](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicomweb-standard-apis-c-sharp) | integrations | 0.80 | Provides concrete C# code, endpoint formats, and sample UIDs specific to this service’s DICOMweb implementation. |
 | [Use DICOMweb standard APIs with Python](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicomweb-standard-apis-python) | integrations | 0.80 | Shows Python code, client usage, and endpoint details specific to this DICOM service. |
 | [Use DICOMweb standard APIs with cURL](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicomweb-standard-apis-curl) | integrations | 0.80 | Includes cURL commands, headers, and URL patterns specific to the Azure DICOM service. |
-| [Use managed identities](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/managed-identities) | security | 0.80 | Article describes how to grant the service access to storage via managed identities; likely includes specific role assignments, identity types, and configuration steps unique to this product, matching security/identity configuration. |
 | [Versioning policy and history management](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-versioning-policy-and-history-management) | configuration | 0.80 | Versioning policy and history management for the Azure Health Data Services FHIR service is configuration-focused and likely includes specific settings (per-resource policies, retention behaviors, allowed options) that define how history is stored, which are product-specific configuration details. |
 | [$purge-history](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/purge-history) | configuration | 0.78 | Describes a non-standard $purge-history operation unique to this service, including how to call it and its effects on resource history. |
 | [Access DICOM Change Feed logs](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/pull-dicom-changes-from-change-feed) | integrations | 0.78 | Shows C# code using the DICOM client package and REST API versioning details, including method names and parameters specific to this product. |
@@ -168,7 +137,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [$member-match](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-member-match) | integrations | 0.75 | Describes the $member-match operation, including request/response structure, headers, and constraints specific to this implementation. |
 | [$purge-history](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/purge-history) | configuration | 0.75 | Describes the $purge-history operation, including constraints, parameters, and operational behavior specific to Azure API for FHIR. |
 | [Confidential client application](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/register-confidential-azure-ad-client-app) | security | 0.75 | Covers registering a confidential client with specific redirect URIs, secrets/certs, and API permissions for Azure API for FHIR; these are concrete security configuration steps. |
-| [Configure Azure Storage to de-identify documents](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-storage) | configuration | 0.75 | Storage configuration article should contain specific settings (permissions, connection configuration, possibly SAS or role assignments) required for the de-identification service to access Azure Storage, which are product-specific configuration details. |
 | [Configure CORS](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/configure-cross-origin-resource-sharing) | configuration | 0.75 | Explains CORS settings (allowed origins, methods, headers) and how to configure them for Azure API for FHIR; includes specific configuration parameters. |
 | [Configure private endpoints](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-private-endpoints) | security | 0.75 | Private endpoint configuration for this service likely includes specific network settings, required properties, and Azure Private Link configuration details unique to the de-identification service, fitting security/network access configuration. |
 | [Customer-managed keys best practices](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/customer-managed-keys) | best-practices | 0.75 | Provides requirements, limitations, and best-practice guidance for using CMK with the DICOM service, including Azure Key Vault integration and troubleshooting, matching the best-practices category. |
@@ -193,7 +161,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Access using REST Client](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-rest-client) | integrations | 0.70 | Shows how to configure and use the REST Client extension with this service, including environment variables, auth headers, and request templates specific to the APIs. |
 | [Access using cURL](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-curl) | integrations | 0.70 | Provides concrete cURL command patterns, authentication headers, and endpoint usage specific to Azure Health Data Services, beyond generic HTTP usage. |
 | [Autoscale](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/autoscale-azure-api-fhir) | limits-quotas | 0.70 | Autoscale article typically includes specific RU ranges, scaling thresholds, and limits for manual vs autoscale; these numeric constraints and behaviors are product-specific limits/quotas. |
-| [Azure Health De-identification client library for .NET](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-sdk-net) | integrations | 0.70 | Quickstart for the .NET client library typically includes SDK types, method names, and parameters specific to this service, which are product-specific integration and coding patterns. |
+| [Azure Health De-identification client library for .NET](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-sdk-net) | integrations | 0.70 | Quickstart likely includes product-specific client construction, endpoint/credential parameters, and SDK method usage unique to the Azure Health De-identification service rather than generic .NET patterns. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/policy-reference) | security | 0.70 | Indexes Azure Policy definitions specific to Azure API for FHIR, including policy names and effects that are security/compliance configuration details. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-service-bicep) | deployment | 0.70 | Contains concrete Bicep templates and CLI/PowerShell parameters specific to deploying Azure Health Data Services FHIR; these deployment details and resource definitions are product-specific and not just generic ARM/Bicep knowledge. |
 | [Configure CORS](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/configure-cross-origin-resource-sharing) | configuration | 0.70 | CORS configuration for this specific DICOM service will list allowed origins, headers, methods, and portal/API parameters unique to the product. |
@@ -220,7 +188,7 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data 
 | [Manage network access security](https://learn.microsoft.com/en-us/azure/healthcare-apis/network-access-security) | security | 0.70 | Focuses on securing network access and outbound connections for FHIR and DICOM; likely includes product-specific network security options and settings (firewall, private endpoints, allowed origins) that qualify as security configuration details. |
 | [Patient/$everything](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/patient-everything) | integrations | 0.70 | Explains how to call Patient-everything, including request syntax, parameters, and behavior differences specific to Azure API for FHIR’s implementation. |
 | [Patient/$everything](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/patient-everything) | configuration | 0.70 | Explains how this FHIR service implements Patient-everything, including request parameters, pagination, and behavior specific to this platform. |
-| [Python - asynchronous](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-asynchronous-python) | integrations | 0.70 | Tutorial for asynchronous jobs with Python SDK likely includes job configuration parameters, request/response schemas, and storage interaction patterns specific to this service. |
+| [Python - asynchronous](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-asynchronous-python) | integrations | 0.70 | Tutorial for asynchronous/batch de-identification with Python SDK likely contains service-specific API calls, job configuration parameters, and usage patterns for Azure Storage integration that go beyond generic Python or Azure usage. |
 | [Python - synchronous](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-python) | integrations | 0.70 | Python quickstart for the synchronous endpoint likely shows request structure, endpoint URLs, and SDK/API parameters unique to the de-identification service, fitting integrations & coding patterns. |
 | [Register a client application](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-register-application) | security | 0.70 | Covers app registration steps and settings specific to the DICOM service, including redirect URIs and API permissions, which are security configuration details. |
 | [Register an application via Azure portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application) | security | 0.70 | Covers registering a client application in Microsoft Entra ID specifically for Azure Health Data Services, including adding secrets, certificates, and API permissions. This implies product-specific permission scopes and configuration steps for FHIR and DICOM access, which fall under security (auth configuration and access control) and are detailed, product-specific settings. |

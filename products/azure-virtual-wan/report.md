@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 137
+- **Updated Pages**: 0
+- **Unchanged**: 138
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 45 | 32.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [IKEv2 - strongSwan](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-ike-linux)
-  - Updated: 2025-02-13T18:07:00.000Z → 2026-09-20T11:40:00.000Z
 
 ## Classified Pages
 

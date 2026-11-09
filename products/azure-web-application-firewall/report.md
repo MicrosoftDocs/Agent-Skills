@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
+  security: 'Configuring and tuning Azure WAF/Front Door/Application Gateway security:
+    bot & DDoS rules, IP/geo restrictions, default/custom rules, CAPTCHA, exceptions/exclusions,
+    log scrubbing, governance, and OpenAI API protection.'
   configuration: 'Configuring Azure WAF (Front Door & App Gateway): custom/managed
     rules, geo/ASN filters, rate limits, bot & CAPTCHA/JS challenges, exclusions,
     responses, logging, metrics, and policy management.'
   integrations: 'Using WAF with other Azure services: integrating logs with Sentinel/Log
     Analytics, automating incident response, investigating events, and protecting
     APIM/Azure OpenAI via Front Door WAF.'
-  security: 'Configuring and hardening Azure WAF/Front Door/Application Gateway security:
-    custom/default rules, IP/geo filters, DDoS, CAPTCHA, exclusions, log scrubbing,
-    sensitive data protection, and governance.'
   best-practices: Best practices for configuring and tuning Azure WAF (Front Door
     & App Gateway), reducing false positives, using geomatch, and mitigating application-layer
     DDoS attacks.
@@ -24,31 +24,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web Application Firewall development
   including best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when configuring Front Door/App
-  Gateway WAF rules, rate limits, bot/CAPTCHA, Sentinel logging, or IaC deployments,
-  and other Azure Web Application Firewall related development tasks. Not for Azure
-  Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door),
-  Azure Firewall (use azure-firewall), Azure Firewall Manager (use azure-firewall-manager).
-use_when: Use when configuring Front Door/App Gateway WAF rules, rate limits, bot/CAPTCHA,
-  Sentinel logging, or IaC deployments, and other Azure Web Application Firewall related
-  development tasks.
+  Gateway WAF rules, rate limits, geo/IP filters, CAPTCHA/bot defense, or OpenAI/APIM
+  protection, and other Azure Web Application Firewall related development tasks.
+  Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door
+  (use azure-front-door), Azure Firewall (use azure-firewall), Azure DDoS Protection
+  (use azure-ddos-protection).
+use_when: Use when configuring Front Door/App Gateway WAF rules, rate limits, geo/IP
+  filters, CAPTCHA/bot defense, or OpenAI/APIM protection, and other Azure Web Application
+  Firewall related development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Firewall (use azure-firewall), Azure
-  Firewall Manager (use azure-firewall-manager).
+  DDoS Protection (use azure-ddos-protection).
 ---
 # Azure Web Application Firewall Crawl Report
 
 ## Summary
 
-- **Total Pages**: 85
-- **Fetched**: 85
+- **Total Pages**: 86
+- **Fetched**: 86
 - **Fetch Failed**: 0
-- **Classified**: 59
+- **Classified**: 60
 - **Unclassified**: 26
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 83
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -56,23 +57,25 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 5 | 5.9% |
-| configuration | 23 | 27.1% |
-| decision-making | 2 | 2.4% |
+| best-practices | 5 | 5.8% |
+| configuration | 22 | 25.6% |
+| decision-making | 2 | 2.3% |
 | deployment | 3 | 3.5% |
-| integrations | 6 | 7.1% |
+| integrations | 6 | 7.0% |
 | limits-quotas | 3 | 3.5% |
-| security | 17 | 20.0% |
-| *(Unclassified)* | 26 | 30.6% |
+| security | 19 | 22.1% |
+| *(Unclassified)* | 26 | 30.2% |
 
 ## Changes
 
+### New Pages
+
+- [AI bot ruleset (preview)](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/ai-bot-ruleset)
+
 ### Updated Pages
 
-- [CAPTCHA challenge](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/captcha-challenge)
-  - Updated: 2025-10-28T22:10:00.000Z → 2026-10-28T11:46:00.000Z
-- [Rate limiting](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview)
-  - Updated: 2026-08-19T22:10:00.000Z → 2026-10-30T22:14:00.000Z
+- [Exception lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/front-door-exceptions)
+  - Updated: 2026-06-29T22:28:00.000Z → 2026-11-04T23:11:00.000Z
 
 ## Classified Pages
 
@@ -107,7 +110,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Configure sensitive data masking](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-sensitive-data-protection-configure-frontdoor) | security | 0.70 | Provides detailed configuration steps for log scrubbing on Front Door WAF, including how to define rules to mask sensitive data; this is specific security configuration for the product. |
 | [Configure sensitive data masking](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/waf-sensitive-data-protection-configure) | security | 0.70 | Step-by-step configuration of the WAF log scrubbing feature, including how to define rules to mask sensitive fields; this is detailed, product-specific security configuration. |
 | [Detect new threats using Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/web-application-firewall/waf-new-threat-detection) | integrations | 0.70 | Focuses on using Sentinel analytics with WAF to detect threats; includes specific queries, rules, or integration patterns unique to this combo. |
-| [Exception lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/front-door-exceptions) | configuration | 0.70 | The page describes how to configure WAF exception lists in Azure Front Door WAF policies, including product-specific settings and behavior. This is detailed configuration guidance rather than a conceptual overview, fitting the configuration sub-skill. |
+| [Exception lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/front-door-exceptions) | security | 0.70 | Page describes how to configure Azure Front Door WAF exception lists in a WAF policy, which is a product-specific security configuration pattern (policy settings, exception behavior) rather than a generic overview. |
 | [Exception lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-exceptions) | security | 0.70 | Describes product-specific WAF exception list behavior and configuration for Azure Application Gateway, including how to safely bypass certain rules. This is concrete, security-focused configuration guidance rather than a generic overview. |
 | [Exclusion lists](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-exclusion) | security | 0.70 | Page describes detailed, product-specific WAF exclusion configuration for Azure Front Door (e.g., which request attributes/fields can be excluded, how to tune rules for specific scenarios like Entra ID tokens). This is concrete security configuration guidance with specific setting names and behaviors that go beyond generic WAF concepts. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq) | limits-quotas | 0.70 | FAQ includes concrete, product-specific constraints such as maximum number of sites per WAF policy, rule limits, size limits, and other numeric behaviors that are not obvious from general knowledge, fitting the limits-quotas category. |
@@ -122,6 +125,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [CAPTCHA challenge](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/captcha-challenge) | security | 0.68 | Page is about Azure Front Door WAF’s CAPTCHA feature, which is a product-specific security control. It likely includes detailed configuration options (policy/rule settings, conditions for triggering CAPTCHA, integration with WAF rules) that go beyond generic CAPTCHA concepts and are unique to this service, fitting the security sub-skill. No evidence of numeric limits, decision matrices, or troubleshooting focus. |
 | [Managed ruleset support policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ruleset-support-policy) | decision-making | 0.68 | Ruleset support policy pages typically include version-specific support timelines, upgrade paths, and extended support details that guide when to move between ruleset versions. This is expert, product-specific decision guidance about choosing and upgrading WAF managed rulesets, not just conceptual info. |
 | [Protect Azure OpenAI](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/protect-azure-open-ai) | security | 0.68 | Gives product-specific guidance on using Azure Front Door WAF to protect Azure OpenAI APIs against OWASP, CVEs, and bot attacks. Contains concrete security configuration and usage patterns tailored to this integration scenario. |
+| [AI bot ruleset (preview)](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/ai-bot-ruleset) | security | 0.65 | Page explains the AI bot ruleset in Azure Front Door WAF, including how to categorize AI crawlers/agents and configure actions (allow, block, log, challenge), which is product-specific security and access-control configuration. |
 | [Geo-filtering](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-geo-filtering) | configuration | 0.65 | Shows how to define custom access rules by country/region; involves specific match variables and allowed values for geo-filtering in WAF policies. |
 | [Microsoft Security Copilot](https://learn.microsoft.com/en-us/azure/web-application-firewall/waf-copilot) | integrations | 0.65 | Describes integration between WAF and Security Copilot, including how WAF logs are surfaced and queried; product-specific integration behavior. |
 | [Monitoring and logging](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-metrics) | configuration | 0.65 | Covers specific WAF metrics exposed via Azure Monitor and how to configure them; includes metric names and monitoring configuration details. |

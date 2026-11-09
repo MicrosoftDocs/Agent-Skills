@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   troubleshooting: Diagnosing and fixing common Cloud Shell errors, storage and connectivity
     issues, plus deployment and network problems when running Cloud Shell in private
@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 14
+- **Updated Pages**: 1
+- **Unchanged**: 17
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
 
@@ -58,14 +58,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 
 ### Updated Pages
 
-- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
-  - Updated: 2026-09-18T08:00:00.000Z → 2026-10-30T22:14:00.000Z
-- [Persist files in storage](https://learn.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage)
-  - Updated: 2024-06-19T22:02:00.000Z → 2026-10-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/overview)
-  - Updated: 2024-10-23T22:05:00.000Z → 2026-10-29T17:12:00.000Z
-- [Deploy using quickstart templates](https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/deployment)
-  - Updated: 2026-02-09T08:00:00.000Z → 2026-10-28T08:00:00.000Z
+- [Use the Cloud Shell editor](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor)
+  - Updated: 2026-08-08T05:14:00.000Z → 2026-11-02T23:14:00.000Z
 
 ## Classified Pages
 
@@ -92,5 +86,5 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machi
 | [Azure Cloud Shell pricing](https://learn.microsoft.com/en-us/azure/cloud-shell/pricing) | 0.20 | Pricing overview stating Cloud Shell is free; no detailed tier matrices, numeric cost comparisons, or decision criteria are shown. |
 | [Features & tools](https://learn.microsoft.com/en-us/azure/cloud-shell/features) | 0.20 | Feature overview without numeric limits, configuration tables, or product-specific troubleshooting; primarily conceptual description of capabilities. |
 | [Persist files in storage](https://learn.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage) | 0.20 | Persisting storage overview/walkthrough; summary indicates conceptual and procedural guidance without detailed configuration tables, limits, or product-specific error mappings. |
-| [Use the Cloud Shell editor](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor) | 0.20 | Overview of the integrated Cloud Shell editor (Monaco-based) and its features. The summary is feature-oriented and lacks specific configuration parameters, limits, or error codes; it’s not detailed enough to qualify as configuration, integrations, or best-practices expert content. |
 | [Use the window](https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window) | 0.20 | Explains how to use the Cloud Shell window and toolbar. From the summary, it appears to be UI usage guidance without detailed configuration tables, limits, or troubleshooting mappings, so it doesn’t meet any expert-knowledge sub-skill criteria. |
+| [Use the Cloud Shell editor](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor) | - | Page is an overview of using the Azure Cloud Shell editor (Monaco-based) with general features like language highlighting, command palette, and file explorer. It doesn't list product-specific limits, configuration tables, error codes, or detailed settings beyond what a generic editor tutorial would cover. |

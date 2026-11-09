@@ -1,9 +1,9 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when choosing regions/AZs, geo-pairing, DR, AKS HA, DB/network resilience, queues, or Web PubSub limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
+description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when choosing regions/AZs, geo-pairs, AKS HA, DB/network resilience, or Queue/Web PubSub limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
@@ -24,10 +24,10 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L67 | Patterns and guidance for designing, configuring, and hardening highly available, fault-tolerant architectures across core Azure services (AKS, DBs, networking, messaging, monitoring). |
-| Decision Making | L68-L77 | Guidance on choosing Azure regions and services for reliability: region types, availability zones, geo-paired regions, multiregion and nonregional services, and disaster recovery options. |
-| Architecture & Design Patterns | L78-L83 | Designing Azure apps for zone-resilient architectures and best practices to select, configure, and harden zonal deployments for high availability and fault isolation. |
-| Limits & Quotas | L84-L88 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
+| Best Practices | L32-L68 | Patterns and guidance for designing, configuring, and hardening resilient, highly available architectures across specific Azure services (AKS, DBs, networking, messaging, monitoring, and more). |
+| Decision Making | L69-L78 | Guidance on choosing Azure regions and services for reliability: region types, availability zones, geo-paired regions, multiregion and nonregional services, and disaster recovery options. |
+| Architecture & Design Patterns | L79-L84 | Designing Azure apps for zone-resilient architectures and best practices to select, configure, and harden zonal deployments for high availability and fault isolation. |
+| Limits & Quotas | L85-L89 | Guidance on Azure Queue Storage message size limits and designing reliable, scalable Azure Web PubSub apps under service quotas and constraints |
 
 ### Best Practices
 | Topic | URL |
@@ -43,6 +43,7 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient Azure Batch workloads | https://learn.microsoft.com/en-us/azure/reliability/reliability-batch |
 | Plan reliability for Azure Bot Service | https://learn.microsoft.com/en-us/azure/reliability/reliability-bot |
 | Design resilient Azure Cosmos DB deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db |
+| Design resilient Azure Data Explorer deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-data-explorer |
 | Harden Azure Data Factory for outages | https://learn.microsoft.com/en-us/azure/reliability/reliability-data-factory |
 | Design resilient Azure Database for MySQL deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
 | Implement resiliency for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-postgresql |

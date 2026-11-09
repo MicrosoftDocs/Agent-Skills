@@ -1,6 +1,6 @@
 ---
 name: azure-firmware-analysis
-description: Expert knowledge for Azure Firmware Analysis development including troubleshooting, best practices, security, integrations & coding patterns, and deployment. Use when configuring AFA RBAC access, analyzing SBOM paths and CVEs, automating uploads, or deploying workspaces via IaC, and other Azure Firmware Analysis related development tasks.
+description: Expert knowledge for Azure Firmware Analysis development including troubleshooting, best practices, security, integrations & coding patterns, and deployment. Use when configuring AFA RBAC access, analyzing SBOM paths and CVEs, automating uploads, or deploying workspaces via IaC, and other Azure Firmware Analysis related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential Computing (use azure-confidential-computing).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-11-01"

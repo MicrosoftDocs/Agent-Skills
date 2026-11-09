@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
-  security: 'Auth, identity, and network security for Container Apps: Entra and social
-    logins, mTLS, certs/CORS/domains, secrets and managed identity, RBAC/policy, private
-    endpoints, firewalls, and WAF.'
+  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS, certs), secrets
+    & identities, network controls (VNet, firewall, WAF, egress), DNS/domains, RBAC,
+    and security best practices.'
   decision-making: 'Guidance for planning and cost-optimizing Azure Container Apps:
     capacity, plans, workload profiles, GPUs, hosting options, and migrations from
     Heroku, Functions, Java/Spring/Tomcat, and MCP servers.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ACA auth/networking, workload profiles/GPUs, CI/CD deployments,
-  KEDA/Dapr scaling, or Java microservices, and other Azure Container Apps related
-  development tasks. Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Spring Apps (use azure-spring-apps).
-use_when: Use when configuring ACA auth/networking, workload profiles/GPUs, CI/CD
-  deployments, KEDA/Dapr scaling, or Java microservices, and other Azure Container
-  Apps related development tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Spring Apps (use azure-spring-apps).
+  Use when using Entra/OIDC auth, VNet ingress, KEDA/Dapr scaling, GitHub Actions
+  CI/CD, or Java microservices, and other Azure Container Apps related development
+  tasks. Not for Azure Container Instances (use azure-container-instances), Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
+  azure-app-service), Azure Functions (use azure-functions).
+use_when: Use when using Entra/OIDC auth, VNet ingress, KEDA/Dapr scaling, GitHub
+  Actions CI/CD, or Java microservices, and other Azure Container Apps related development
+  tasks.
+confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service
+  (use azure-app-service), Azure Functions (use azure-functions).
 ---
 # Azure Container Apps Crawl Report
 
@@ -79,8 +79,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ### Updated Pages
 
-- [Azure Developer CLI (azd) templates](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-cli-templates)
-  - Updated: 2026-09-04T08:00:00.000Z → 2026-10-27T22:17:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview)
+  - Updated: 2026-10-16T22:20:00.000Z → 2026-11-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -176,6 +176,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Override auto-generated KEDA scale rules](https://learn.microsoft.com/en-us/azure/container-apps/functions-scale-rule-override) | configuration | 0.70 | Page describes the specific configuration property template.scale.allowScalingRuleOverride and how to replace platform-generated KEDA triggers with custom rules in template.scale.rules. This is product-specific configuration detail (exact setting names and behavior) that an LLM is unlikely to infer from general knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-tutorial) | security | 0.70 | Page is focused on how to handle two categories of secrets (app-level secrets and access keys) specifically for Azure Functions running on Azure Container Apps, including how they differ and how to choose storage approaches. This is product-specific security/secret-management guidance rather than generic concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents) | integrations | 0.70 | Describes using a managed OpenTelemetry data agent with Azure Container Apps and routing data to various endpoints; likely includes product-specific configuration options, endpoint parameters, and integration patterns for OTLP-compatible backends. |
+| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview) | security | 0.70 | Page is mostly conceptual, but it includes a product-specific RBAC role name (Container Apps SandboxGroup Data Owner) required to create and manage sandboxes. This is concrete security configuration knowledge unique to the service, though other sub-skill criteria (limits, config tables, etc.) aren't present. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/structure) | decision-making | 0.70 | Explains relationship between plans and workload profiles and when to select each; this is SKU/plan selection guidance with scenario-based recommendations, fitting decision-making. |
 | [Planned maintenance](https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance) | configuration | 0.70 | Covers defining maintenance windows and how updates are applied; likely includes specific settings/parameters for maintenance configuration, fitting configuration. |
 | [Plans](https://learn.microsoft.com/en-us/azure/container-apps/plans) | decision-making | 0.70 | Explicitly compares available plan types; such plan/SKU comparison content is decision-making guidance. |
@@ -211,7 +212,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Managing outbound connections with Azure Firewall](https://learn.microsoft.com/en-us/azure/container-apps/use-azure-firewall) | security | 0.65 | Guidance on integrating Container Apps with Azure Firewall using UDRs generally includes product-specific route table entries, required next-hop types, specific outbound endpoints/FQDNs that must be allowed, and firewall rule patterns unique to Container Apps. These are concrete security configuration details (UDR settings, firewall rules) that constitute expert knowledge rather than generic firewall concepts. |
 | [Microservices](https://learn.microsoft.com/en-us/azure/container-apps/microservices) | architecture-patterns | 0.65 | Describes how to map microservices to Container Apps constructs (environment, app, containers, Functions, Spring Apps), which is a product-specific architecture pattern. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/networking) | configuration | 0.65 | Covers environment types, virtual network types, and accessibility levels with product-specific networking configuration options and constraints that go beyond generic concepts. |
-| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview) | security | 0.65 | Page introduces a specific Azure RBAC role name (Container Apps SandboxGroup Data Owner) required to manage sandboxes, which is product-specific security configuration detail not generally known from training. |
 | [Plan deployment](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-plan) | decision-making | 0.65 | A planning article for production clusters typically includes concrete capacity guidance, thresholds, and trade-offs (nodes, load balancing, DNS, storage, identity, logging, upgrades) to decide how to size and configure the environment, which fits decision-making with product-specific guidance. |
 | [Python SDK](https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-quickstart-python-sdk) | integrations | 0.65 | Python SDK quickstart that likely shows specific client classes, method names, and parameter usage for sandbox groups and sandboxes. These SDK patterns and parameter usages are product-specific integration details. |
 | [Query managed component logs](https://learn.microsoft.com/en-us/azure/container-apps/java-component-logs) | configuration | 0.65 | Explains how to query component logs, including log categories, queries, and locations specific to managed Java components on this platform. |

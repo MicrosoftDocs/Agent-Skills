@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-08'
 category_descriptions:
-  limits-quotas: Limits, quotas, and behaviors for Private Link/Endpoints, how to
-    check service availability per resource, and how to request increases to VNet
-    Private Endpoint limits.
+  limits-quotas: Limits, quotas, and behaviors for Private Link/Endpoints, including
+    per‑resource availability checks, VNet endpoint scaling, and common limit-related
+    FAQs.
   configuration: Configuring Azure Private Link, endpoints, DNS, NSPs, policies, monitoring,
     and IPv4/IPv6 connectivity using portal, CLI, PowerShell, and Terraform.
   security: RBAC setup for Private Link and Network Security Perimeters, security
@@ -20,17 +20,17 @@ category_descriptions:
     with on-premises or hybrid networks
 skill_description: Expert knowledge for Azure Private Link development including best
   practices, decision making, architecture & design patterns, limits & quotas, security,
-  and configuration. Use when configuring Private Endpoints, DNS zones, NSGs/NSPs,
-  Azure Firewall traffic inspection, or Private Resolver, and other Azure Private
-  Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
-  WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute).
-use_when: Use when configuring Private Endpoints, DNS zones, NSGs/NSPs, Azure Firewall
-  traffic inspection, or Private Resolver, and other Azure Private Link related development
+  and configuration. Use when configuring Private Endpoints, DNS zones, NSPs, Azure
+  Firewall rules, or Azure Private Resolver, and other Azure Private Link related
+  development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
+  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway).
+use_when: Use when configuring Private Endpoints, DNS zones, NSPs, Azure Firewall
+  rules, or Azure Private Resolver, and other Azure Private Link related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
-  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
-  azure-virtual-wan), Azure ExpressRoute (use azure-expressroute).
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
+  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway).
 ---
 # Azure Private Link Crawl Report
 
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 59
+- **Updated Pages**: 1
+- **Unchanged**: 58
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
@@ -63,11 +63,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Changes
 
+### Updated Pages
+
+- [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits)
+  - Updated: 2026-08-07T05:14:00.000Z → 2026-11-05T06:10:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits) | limits-quotas | 0.90 | The page discusses the current hard limit of 1,000 private endpoints per virtual network and a silently enforced limit of 4,000 private endpoints across peered VNets, and describes upgrading to High Scale Private Endpoints to increase these limits. These are specific numerical limits and constraints that qualify as expert knowledge under limits-quotas. |
+| [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits) | limits-quotas | 0.90 | The page describes the default per-virtual-network limit (1,000 private endpoints), a silently enforced cross-peered-network limit (4,000 private endpoints), and how to increase these limits via High Scale Private Endpoints. These are specific numerical limits and constraints unique to Azure Private Link that an LLM wouldn't reliably know from training, fitting the limits-quotas category. |
 | [RBAC permissions](https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions) | security | 0.86 | Page lists the exact built-in roles and custom role permissions required to create and manage private endpoints and private link services. It includes specific Azure RBAC actions/operations that must be granted, which are product-specific security configuration details not inferable from general knowledge. |
 | [Role-based access control permissions](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-role-based-access-control-requirements) | security | 0.85 | Describes specific RBAC actions and permissions required for NSP profiles, rules, associations, and diagnostics, which is detailed security configuration guidance. |
 | [Secure Private Link deployment](https://learn.microsoft.com/en-us/azure/private-link/secure-private-link) | security | 0.78 | The article is explicitly about security recommendations for Azure Private Link deployments. These are product-specific security best practices (for example, how to securely configure private endpoints, DNS, access controls, and network policies for Private Link) that go beyond generic security concepts. It focuses on concrete, Azure-Private-Link-specific guidance, which fits the 'security' sub-skill type and qualifies as expert knowledge. |

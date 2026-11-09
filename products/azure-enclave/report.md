@@ -48,9 +48,9 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 47
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 24
-- **Unchanged**: 72
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-enclave/azure-enclave.csv`
 
@@ -69,54 +69,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 47 | 48.5% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Enclave and Azure Local integration](https://learn.microsoft.com/en-us/azure/enclave/azure-local-integration)
-
-### Updated Pages
-
-- [Migrate Azure resources into Azure Enclave](https://learn.microsoft.com/en-us/azure/enclave/migrate-azure-resources-azure-enclave)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T05:12:00.000Z
-- [Azure Kubernetes Service (AKS) Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/aks-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [App Service Enclaves Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/app-service-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure Container Registry Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/container-registry-initiative)
-  - Updated: 2026-08-06T22:11:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure Cosmos DB Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/cosmosdb-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure Key Vault Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/key-vault-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure SQL Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/sql-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure Monitor Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/monitor-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure PostgreSQL Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/postgresql-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure Service Bus Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/service-bus-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Azure Storage Guardrail Initiative](https://learn.microsoft.com/en-us/azure/enclave/storage-initiative)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T17:12:00.000Z
-- [Create Azure Virtual Desktop workloads](https://learn.microsoft.com/en-us/azure/enclave/create-azure-virtual-desktop-workloads)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-28T22:31:00.000Z
-- [Create Domain Name Service forwarder](https://learn.microsoft.com/en-us/azure/enclave/create-domain-name-service-forwarder)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T05:12:00.000Z
-- [Defense in Depth](https://learn.microsoft.com/en-us/azure/enclave/defense-in-depth)
-  - Updated: 2026-07-31T19:23:00.000Z → 2026-10-28T22:31:00.000Z
-- [Create a user-assigned managed identity](https://learn.microsoft.com/en-us/azure/enclave/create-user-managed-identity)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-28T22:31:00.000Z
-- [Deploy Azure Service Bus from the service catalog](https://learn.microsoft.com/en-us/azure/enclave/deploy-service-bus-service-catalog)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-28T22:31:00.000Z
-- [Deploy service catalog Template from Azure CLI](https://learn.microsoft.com/en-us/azure/enclave/deploy-template-service-catalog-azure-cli)
-  - Updated: 2026-10-17T05:12:00.000Z → 2026-10-29T22:11:00.000Z
-- [Install application on a Remote App Virtual Machine](https://learn.microsoft.com/en-us/azure/enclave/application-deployment-using-remote-app-vm)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-29T05:12:00.000Z
-- [Maintenance mode](https://learn.microsoft.com/en-us/azure/enclave/maintenance-mode)
-  - Updated: 2026-09-11T22:13:00.000Z → 2026-10-27T11:43:00.000Z
-- [Naming rules and restrictions](https://learn.microsoft.com/en-us/azure/enclave/name-rules-restrictions-azure-enclave-resources)
-  - Updated: 2026-07-01T12:55:00.000Z → 2026-10-28T22:31:00.000Z
-- *...and 4 more*
 
 ## Classified Pages
 

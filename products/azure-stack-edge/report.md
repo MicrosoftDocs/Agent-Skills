@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-08-31'
+generated_at: '2026-11-08'
 category_descriptions:
   limits-quotas: Limits, capacities, performance, and system requirements for Azure
     Stack Edge and Data Box Gateway devices, including supported VM sizes, GPU limits,
     and cross-subscription resource moves.
-  troubleshooting: Release-specific known issues, alerts, and fixes for Azure Stack
-    Edge/Data Box Gateway, plus troubleshooting for ordering, activation, certificates,
-    ARM, storage, IoT Edge, VMs, GPU, diagnostics, and logs.
+  troubleshooting: 'Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues:
+    release-specific known problems, alerts, ordering, activation, certificates, ARM/blob/IoT/VM/GPU
+    errors, and using diagnostics/logs.'
   configuration: 'Configuring and managing Azure Stack Edge/Data Box Gateway devices:
     networking, power, storage, Kubernetes/VMs, GPUs, monitoring, automation, and
     hardware/system requirements.'
@@ -30,30 +30,29 @@ skill_description: Expert knowledge for Azure Stack Edge development including t
   apps, DeepStream workloads, Arc GitOps, or local ARM integrations, and other Azure
   Stack Edge related development tasks. Not for Azure IoT Edge (use azure-iot-edge),
   Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Kubernetes
-  Service Edge Essentials (use azure-aks-edge-essentials), Azure Virtual Machines
-  (use azure-virtual-machines).
+  Service Edge Essentials (use azure-aks-edge-essentials), Azure Local (use azure-local).
 use_when: Use when deploying IoT Edge modules, GPU/Kubernetes apps, DeepStream workloads,
   Arc GitOps, or local ARM integrations, and other Azure Stack Edge related development
   tasks.
 confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernetes
   Service (AKS) (use azure-kubernetes-service), Azure Kubernetes Service Edge Essentials
-  (use azure-aks-edge-essentials), Azure Virtual Machines (use azure-virtual-machines).
+  (use azure-aks-edge-essentials), Azure Local (use azure-local).
 ---
 # Azure Stack Edge Crawl Report
 
 ## Summary
 
-- **Total Pages**: 234
-- **Fetched**: 234
+- **Total Pages**: 235
+- **Fetched**: 235
 - **Fetch Failed**: 0
-- **Classified**: 145
+- **Classified**: 146
 - **Unclassified**: 89
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 0
-- **Unchanged**: 234
-- **Deleted Pages**: 0
+- **Unchanged**: 233
+- **Deleted Pages**: 1
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
 ## Classification Statistics
@@ -67,10 +66,19 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | integrations | 8 | 3.4% |
 | limits-quotas | 9 | 3.8% |
 | security | 23 | 9.8% |
-| troubleshooting | 48 | 20.5% |
-| *(Unclassified)* | 89 | 38.0% |
+| troubleshooting | 49 | 20.9% |
+| *(Unclassified)* | 89 | 37.9% |
 
 ## Changes
+
+### New Pages
+
+- [2610 - Current](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2610-release-notes)
+- [2409](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2409-release-notes)
+
+### Deleted Pages
+
+- ~~2409 - Current~~ (https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2409-release-notes)
 
 ## Classified Pages
 
@@ -109,7 +117,6 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | [2101](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2101-release-notes) | troubleshooting | 0.75 | Same pattern: critical issues plus resolutions for a specific software version, aiding troubleshooting. |
 | [2105](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2105-release-notes) | troubleshooting | 0.75 | Release notes with critical issues and workarounds; used to diagnose and resolve version-specific problems. |
 | [2301](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2301-release-notes) | troubleshooting | 0.75 | Version-specific release notes with known issues and resolutions; supports troubleshooting for that release. |
-| [2409 - Current](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2409-release-notes) | troubleshooting | 0.75 | Release notes list critical issues and workarounds; effectively troubleshooting guidance tied to specific versions. |
 | [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy) | configuration | 0.75 | Network, compute network, and web proxy configuration for this device will include specific setting names, allowed values, and constraints (IP ranges, VLANs, DNS, gateways, proxy formats) that are product-specific configuration parameters. |
 | [4 - Configure network](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy) | configuration | 0.75 | Network, compute network, and web proxy settings for a specific device will include concrete fields, allowed values, and possibly Wi-Fi deprecation notes that are product-specific configuration knowledge. |
 | [6 - Configure security](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-r-deploy-configure-certificates-vpn-encryption) | security | 0.75 | Certificate configuration for a specific device generally includes certificate types, required subject/SAN formats, and upload/usage details that are product-specific security settings. |
@@ -122,6 +129,8 @@ confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernete
 | [1905](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-1905-release-notes) | troubleshooting | 0.70 | GA release notes with critical issues and fixes; used for diagnosing problems on that release. |
 | [2008](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2008-release-notes) | troubleshooting | 0.70 | Preview release notes with critical open issues and workarounds; highly specific troubleshooting guidance for preview software. |
 | [2010](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2010-release-notes) | troubleshooting | 0.70 | GA release notes for Azure Stack Edge Pro with GPU; includes critical open issues and resolved issues for the GA build, used for troubleshooting deployments. |
+| [2409](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2409-release-notes) | troubleshooting | 0.70 | Versioned release notes for 2409 contain concrete open issues and resolutions, often with precise conditions and workarounds. This is expert, version-specific troubleshooting guidance beyond generic knowledge. |
+| [2610 - Current](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-2610-release-notes) | troubleshooting | 0.70 | Release notes typically list specific known issues, symptoms, and workarounds tied to this exact version (2610), including upgrade requirements and resolved problems. These are product- and version-specific troubleshooting details that an LLM wouldn't know from training. |
 | [6 - Configure certificates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-deploy-configure-certificates) | security | 0.70 | Certificate configuration for this device is a security-focused task and likely includes product-specific certificate types, required key lengths, trust chains, and binding locations; these are detailed security configuration settings unique to the service. |
 | [6 - Configure certificates](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-deploy-configure-certificates) | security | 0.70 | Certificate configuration for a specific hardware device typically includes concrete certificate types, usage, and binding/validation details that are product-specific security configuration knowledge. |
 | [Access, power, connectivity](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-manage-access-power-connectivity-mode) | configuration | 0.70 | Covers device access and connectivity modes; likely lists specific mode names and settings that are configuration parameters. |

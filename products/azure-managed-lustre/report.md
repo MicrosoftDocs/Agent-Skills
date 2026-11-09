@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure V
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 37
+- **Updated Pages**: 0
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -68,11 +68,6 @@ confusable_not_for: Not for Azure NetApp Files (use azure-netapp-files), Azure V
 | *(Unclassified)* | 2 | 5.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use static provisioning](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/use-container-storage-interface-driver-static-provisioning)
-  - Updated: 2026-10-23T22:03:00.000Z → 2026-10-26T22:03:00.000Z
 
 ## Classified Pages
 

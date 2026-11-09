@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-11-01 02:02:16
-**Total Duration**: 0m 8s
+**Generated**: 2026-11-08 02:02:10
+**Total Duration**: 0m 16s
 
 ## Product Crawl Summary
 
@@ -9,15 +9,15 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Well Architected | 214 | 176 | 0 | 0 | 0 | OK |
+| 1 | Azure Well Architected | 214 | 175 | 0 | 5 | 0 | OK |
 
 ### Totals
 
 - **Products Processed**: 1 success, 0 failed
 - **Total Pages**: 214
-- **Total Classified**: 176
+- **Total Classified**: 175
 - **Total New Pages**: 0
-- **Total Updated Pages**: 0
+- **Total Updated Pages**: 5
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
@@ -27,7 +27,7 @@ Quick overview for reviewers. See individual product reports for details.
 | assessments | 9 |
 | checklists | 5 |
 | design-principles | 12 |
-| recommendations | 70 |
+| recommendations | 69 |
 | service-guides | 33 |
 | tradeoffs | 6 |
 | workload-patterns | 41 |

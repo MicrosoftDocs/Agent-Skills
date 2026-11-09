@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 62
+- **Updated Pages**: 0
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | *(Unclassified)* | 10 | 15.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enterprise tiers best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-enterprise-tiers)
-  - Updated: 2026-08-18T17:12:00.000Z → 2026-10-14T08:00:00.000Z
 
 ## Classified Pages
 

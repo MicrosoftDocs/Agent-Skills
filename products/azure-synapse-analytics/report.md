@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 481
+- **Updated Pages**: 0
+- **Unchanged**: 482
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | *(Unclassified)* | 174 | 36.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Synapse Analytics known issues](https://learn.microsoft.com/en-us/azure/synapse-analytics/known-issues)
-  - Updated: 2025-09-24T22:10:00.000Z → 2026-10-31T05:11:00.000Z
 
 ## Classified Pages
 

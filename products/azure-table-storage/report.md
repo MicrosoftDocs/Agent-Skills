@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 15
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-table-storage/azure-table-storage.csv`
 
@@ -61,11 +61,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob St
 | *(Unclassified)* | 3 | 18.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring Table Storage data reference](https://learn.microsoft.com/en-us/azure/storage/tables/monitor-table-storage-reference)
-  - Updated: 2024-08-20T05:41:00.000Z → 2025-07-02T22:09:00.000Z
 
 ## Classified Pages
 

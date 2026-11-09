@@ -45,7 +45,7 @@
 | Configure Azure Monitor Dependency agent extension for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-windows |
 | Configure and manage Azure Linux VM Agent settings | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux |
 | Install and manage Azure Windows VM Agent | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-windows |
-| Configure Chef VM Extension on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/chef |
+| Configure Chef VM extension settings for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/chef |
 | Configure Custom Script Extension v2 on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux |
 | Configure Custom Script Extension on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows |
 | Overview and configuration of DSC extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview |
@@ -64,7 +64,7 @@
 | Configure Azure Key Vault VM extension on Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
 | Configure Azure Key Vault VM extension on Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows |
 | Configure Qualys Cloud Agent extension on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/qualys |
-| Configure Salt Minion VM Extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/salt-minion |
+| Configure Salt Minion VM extension on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/salt-minion |
 | Configure Stackify Retrace Linux agent extension on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/stackify-retrace-linux |
 | Configure Tenable One-Click Nessus VM Extension | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/tenable |
 | Use VMAccess extension to reset Linux VM access | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmaccess-linux |
@@ -82,7 +82,7 @@
 | Encrypt Linux VM disks via Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-portal-quickstart |
 | Create and encrypt Linux VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-powershell-quickstart |
 | Configure direct upload and cross-region copy for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-upload-vhd-to-managed-disk-cli |
-| Expand and resize Linux VM disks in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks |
+| Expand and resize disks on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks |
 | Use Flatcar Container Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd |
 | Configure Azure VM Image Builder with Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder |
 | Author Bicep and ARM templates for Azure Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-json |

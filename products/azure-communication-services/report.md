@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-08'
 category_descriptions:
   decision-making: Planning and decision guides for migrating ACS chat/calling/telephony,
     integrating with Teams/Teams Phone, choosing PSTN/number options, and understanding
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 523
+- **Updated Pages**: 2
+- **Unchanged**: 521
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -73,6 +73,13 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | *(Unclassified)* | 121 | 23.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Answer Teams Phone calls from Call Automation](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-answer-teams-calls)
+  - Updated: 2026-09-23T17:12:00.000Z → 2026-11-07T06:11:00.000Z
+- [Access Teams Phone without going through the Teams client](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-access-teams-phone)
+  - Updated: 2026-09-23T17:12:00.000Z → 2026-11-07T06:11:00.000Z
 
 ## Classified Pages
 
@@ -496,8 +503,6 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [1. Ensure user is on a supported browser](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/call-readiness/call-readiness-tutorial-part-1-browser-support) | 0.40 | Tutorial part about supported browsers; summary doesn’t indicate detailed limits tables or product-specific config parameters. |
 | [2. Request camera and microphone permissions](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/call-readiness/call-readiness-tutorial-part-2-requesting-device-access) | 0.40 | Tutorial for requesting device access; likely generic flow and permissions prompts rather than deep product-specific configuration. |
 | [3. Set up microphone and camera before a call](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/call-readiness/call-readiness-tutorial-part-3-camera-microphone-setup) | 0.40 | Tutorial for pre-call device setup; appears procedural without configuration tables or error-code mappings. |
-| [Access Teams Phone without going through the Teams client](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-access-teams-phone) | 0.40 | Quickstart on accessing a user’s Teams Phone is a how-to; description doesn’t suggest detailed config matrices or product-specific constraints beyond basic flow. |
-| [Answer Teams Phone calls from Call Automation](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-answer-teams-calls) | 0.40 | Quickstart on answering calls is primarily a tutorial; summary doesn’t indicate detailed configuration tables, limits, or error mappings. |
 | [Call networking internals](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-flows) | 0.40 | Conceptual description of call networking internals and flows; summary does not indicate detailed configuration tables, limits, or troubleshooting mappings. |
 | [Call readiness overview](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/call-readiness/call-readiness-overview) | 0.40 | Tutorial overview for call readiness; likely step-by-step guidance without detailed config matrices or limits. |
 | [Call recording overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/call-recording) | 0.40 | Described as an overview of Call Recording and APIs; summary does not indicate detailed limits, configuration tables, or troubleshooting content, so likely conceptual. |
@@ -602,7 +607,9 @@ confusable_not_for: Not for Azure Notification Hubs (use azure-notification-hubs
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sms/concepts) | 0.10 | SMS overview is conceptual, describing capabilities and eligibility at a high level without detailed limits, configs, or error mappings in the summary. |
 | [Samples index](https://learn.microsoft.com/en-us/azure/communication-services/samples/overview) | 0.10 | Samples overview; lists sample projects but not the detailed code or configuration itself. |
 | [What is Azure Communication Services?](https://learn.microsoft.com/en-us/azure/communication-services/overview) | 0.10 | High-level product overview of Azure Communication Services without concrete limits, configs, or error details. |
+| [Access Teams Phone without going through the Teams client](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-access-teams-phone) | - | Quickstart for accessing a user's Teams Phone via Teams Phone Extensibility; describes consent and basic call handling but lacks numeric limits, decision matrices, detailed configuration parameter tables, or troubleshooting mappings that would qualify as expert knowledge. |
 | [Advanced messaging for WhatsApp terms of service](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-terms-of-service) | - | Terms of service and data transfer explanation; no product-specific technical limits, configs, or error details. |
+| [Answer Teams Phone calls from Call Automation](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-answer-teams-calls) | - | Quickstart focused on using Call Automation to answer Teams Phone Extensibility calls; primarily step-by-step usage and conceptual guidance without detailed limits, configuration tables, error-code mappings, or other expert-only reference data. |
 | [Pricing](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/pricing) | - | Pricing overview; summary doesn't show concrete per-message or tier-specific numeric prices or quotas. |
 | [Teams Phone extensibility quick start](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-quickstart) | - | Quickstart-style provisioning and usage guide for Teams Phone Extensibility with Azure Communication Services; based on the description, it focuses on how an ISV can provision and guide tenants rather than listing detailed limits, configuration parameter tables, error codes, or decision matrices. Lacks the specific numeric limits, RBAC role lists, or product-specific configuration tables required for expert-knowledge classification. |
 | [Voice and video terminology](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/about-call-types) | - | Conceptual overview of call types (voice, video, PSTN); no indication of numeric limits, configs, or troubleshooting details. |

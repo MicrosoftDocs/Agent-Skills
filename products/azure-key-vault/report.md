@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-18'
+generated_at: '2026-11-08'
 category_descriptions:
   limits-quotas: Limits, quotas, and behaviors for Key Vault and Managed HSM (certificates,
     secrets, throttling, logging latency, IP firewall/network rules, soft-delete/recovery,
@@ -10,9 +10,9 @@ category_descriptions:
   security: 'Securing Azure Key Vault and Managed HSM: auth (Entra ID, RBAC/ABAC,
     access policies), networking/firewalls/private endpoints, Zero Trust, BYOK/HSM
     key transfer, backup/restore, and best practices.'
-  decision-making: Guidance on choosing access control models, safely updating Key
-    Vault APIs, and planning/migrating key workloads, including external keys and
-    Managed HSM capacity, scaling, and SLAs.
+  decision-making: Guidance on choosing access control and API versions, planning
+    and executing migrations (access policies→RBAC, external→Managed HSM keys), and
+    sizing/scaling Managed HSM capacity.
   configuration: Configuring Key Vault and Managed HSM for monitoring, logging, alerts,
     policies, key/secret types and rotation, secure key release, BYOK imports, and
     soft-delete/purge protection.
@@ -26,16 +26,16 @@ category_descriptions:
     key management.
 skill_description: Expert knowledge for Azure Key Vault development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when managing secrets/keys, Private Link,
-  Entra ID auth, BYOK/HSM, or ARM/Bicep/Terraform deployments, and other Azure Key
+  & coding patterns, and deployment. Use when using Key Vault/Managed HSM with Private
+  Link, Entra ID RBAC, BYOK/HSM keys, Event Grid, or Terraform, and other Azure Key
   Vault related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm),
-  Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm),
-  Azure Attestation (use azure-attestation).
-use_when: Use when managing secrets/keys, Private Link, Entra ID auth, BYOK/HSM, or
-  ARM/Bicep/Terraform deployments, and other Azure Key Vault related development tasks.
+  Azure Dedicated HSM (use azure-dedicated-hsm), Azure Attestation (use azure-attestation),
+  Azure Information Protection (use azure-information-protection).
+use_when: Use when using Key Vault/Managed HSM with Private Link, Entra ID RBAC, BYOK/HSM
+  keys, Event Grid, or Terraform, and other Azure Key Vault related development tasks.
 confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated
-  HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure
-  Attestation (use azure-attestation).
+  HSM (use azure-dedicated-hsm), Azure Attestation (use azure-attestation), Azure
+  Information Protection (use azure-information-protection).
 ---
 # Azure Key Vault Crawl Report
 
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 184
+- **Updated Pages**: 1
+- **Unchanged**: 183
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -69,6 +69,11 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | *(Unclassified)* | 87 | 47.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Update the API version you use](https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version)
+  - Updated: 2026-09-18T17:40:00.000Z → 2026-11-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -112,7 +117,7 @@ confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicat
 | [Enable logging](https://learn.microsoft.com/en-us/azure/key-vault/general/howto-logging) | configuration | 0.75 | Logging article will specify diagnostic settings categories, log types, and configuration parameters (e.g., storage account, retention), which are product-specific configuration options. |
 | [Key Vault authentication](https://learn.microsoft.com/en-us/azure/key-vault/general/authentication) | security | 0.75 | Details how Key Vault uses Microsoft Entra ID, including security principal types and object IDs; likely includes specific auth flows and configuration parameters. |
 | [Network security](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/network-security) | security | 0.75 | Covers Managed HSM firewall configurations and networking options, which are concrete security configuration details specific to the service. |
-| [Update the API version you use](https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version) | decision-making | 0.72 | Provides specific retirement dates for control plane API versions, identifies which versions are considered current/supported, and gives concrete guidance on determining and updating the API version used by applications and scripts. These version timelines and migration details are time-sensitive expert knowledge that go beyond generic concepts. |
+| [Update the API version you use](https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version) | decision-making | 0.72 | Contains product-specific retirement dates for specific Key Vault control plane API versions (all versions before 2026-02-01 retire on February 27, 2027) and guidance on determining current usage and moving to supported versions. This is expert, time-bound migration and version-selection information that an LLM wouldn't know from training, and it directly supports decisions about which API version to use and when to migrate. |
 | [Access Azure Blob Storage using Azure Databricks and Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/integrate-databricks-blob-storage) | integrations | 0.70 | Describes a specific integration pattern: Databricks to Blob Storage using a storage key stored in Key Vault; includes product-specific configuration and likely parameter details for Databricks, storage, and Key Vault interaction. |
 | [Access control](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/access-control) | security | 0.70 | Access control article for Managed HSM, covering authentication and authorization models and how to secure HSMs. Likely includes specific RBAC roles, permission scopes, and security configuration patterns unique to this service. |
 | [Assign an access policy (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy) | security | 0.70 | CLI-focused how-to for assigning Key Vault access policies to principals. Contains product-specific security configuration details (access policy model vs RBAC, role implications, and exact CLI commands/parameters) that go beyond generic security concepts. |

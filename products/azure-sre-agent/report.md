@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 70
-- **Unchanged**: 54
+- **Updated Pages**: 0
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -74,50 +74,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 50 | 40.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is SRE Agent?](https://learn.microsoft.com/en-us/azure/sre-agent/overview)
-  - Updated: 2026-08-27T22:11:00.000Z → 2026-10-28T08:00:00.000Z
-- [Evaluate SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/evaluate)
-  - Updated: 2026-09-25T22:14:00.000Z → 2026-10-28T08:00:00.000Z
-- [Run your first investigation](https://learn.microsoft.com/en-us/azure/sre-agent/first-investigation)
-  - Updated: 2026-08-25T22:15:00.000Z → 2026-10-28T08:00:00.000Z
-- [Automate incident response](https://learn.microsoft.com/en-us/azure/sre-agent/automate-incidents)
-  - Updated: 2026-08-25T22:15:00.000Z → 2026-10-28T08:00:00.000Z
-- [Automate workflows](https://learn.microsoft.com/en-us/azure/sre-agent/automate-workflows)
-  - Updated: 2026-09-25T22:14:00.000Z → 2026-10-28T08:00:00.000Z
-- [Subscription permission visibility](https://learn.microsoft.com/en-us/azure/sre-agent/subscription-permission-visibility)
-  - Updated: 2026-04-25T06:18:00.000Z → 2026-10-28T08:00:00.000Z
-- [Agent identity](https://learn.microsoft.com/en-us/azure/sre-agent/agent-identity)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-10-28T08:00:00.000Z
-- [Tool access policies](https://learn.microsoft.com/en-us/azure/sre-agent/tool-access-policies)
-  - Updated: 2026-06-11T17:23:00.000Z → 2026-10-28T08:00:00.000Z
-- [Connectors](https://learn.microsoft.com/en-us/azure/sre-agent/connectors)
-  - Updated: 2026-06-11T22:20:00.000Z → 2026-10-28T08:00:00.000Z
-- [Incident platforms](https://learn.microsoft.com/en-us/azure/sre-agent/incident-platforms)
-  - Updated: 2026-06-11T22:20:00.000Z → 2026-10-29T22:11:00.000Z
-- [Memory & knowledge](https://learn.microsoft.com/en-us/azure/sre-agent/memory)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-10-28T08:00:00.000Z
-- [Skills](https://learn.microsoft.com/en-us/azure/sre-agent/skills)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-10-28T08:00:00.000Z
-- [Threads](https://learn.microsoft.com/en-us/azure/sre-agent/threads)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-10-30T22:14:00.000Z
-- [Tools](https://learn.microsoft.com/en-us/azure/sre-agent/tools)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-10-28T08:00:00.000Z
-- [Connect knowledge](https://learn.microsoft.com/en-us/azure/sre-agent/connect-knowledge)
-  - Updated: 2026-06-06T00:22:00.000Z → 2026-10-29T22:11:00.000Z
-- [Incident response plans](https://learn.microsoft.com/en-us/azure/sre-agent/incident-response-plans)
-  - Updated: 2026-06-08T08:00:00.000Z → 2026-10-29T22:11:00.000Z
-- [Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/sre-agent/azure-monitor-alerts)
-  - Updated: 2026-06-06T00:22:00.000Z → 2026-10-29T22:11:00.000Z
-- [Create an HTTP trigger](https://learn.microsoft.com/en-us/azure/sre-agent/create-http-trigger)
-  - Updated: 2026-04-22T17:34:00.000Z → 2026-10-29T22:11:00.000Z
-- [Configure agent hooks](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-agent-hooks)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-10-29T22:11:00.000Z
-- [Create and manage hooks in the portal](https://learn.microsoft.com/en-us/azure/sre-agent/create-manage-hooks-ui)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-10-28T08:00:00.000Z
-- *...and 50 more*
 
 ## Classified Pages
 

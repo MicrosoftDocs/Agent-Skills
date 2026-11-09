@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   security: 'Securing Azure Pipelines: auth for agents and service connections, secrets/Key
     Vault, permissions and approvals, artifact/repo protection, policy/compliance
@@ -10,9 +10,9 @@ category_descriptions:
   decision-making: 'Guidance on choosing GitHub-hosted agents and planning migrations:
     from Jenkins, from Classic to YAML pipelines, and from retiring Azure Pipelines
     tasks.'
-  limits-quotas: 'Limits, quotas, and capacity planning for Azure Pipelines: hosted
-    agent availability, images, concurrency, parallel jobs, run retention, and handling
-    large Universal Packages.'
+  limits-quotas: 'Managing Azure Pipelines capacity: hosted agent image lifecycle,
+    agent pool concurrency, parallel job limits, large package handling, and run retention
+    configuration.'
   deployment: 'Deploying apps and packages with Azure Pipelines: configuring agents,
     containers, artifacts, classic releases, databases, and Kubernetes/VM/web app
     deployments.'
@@ -31,13 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Pipelines development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring YAML pipelines, agents, and triggers, GitHub-hosted agents, classic-to-YAML
-  migration, or Kubernetes/VM deployments, and other Azure Pipelines related development
-  tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
-  Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
-use_when: Use when configuring YAML pipelines, agents, and triggers, GitHub-hosted
-  agents, classic-to-YAML migration, or Kubernetes/VM deployments, and other Azure
-  Pipelines related development tasks.
+  configuring YAML pipelines, agents, service connections, Key Vault secrets, or web/Kubernetes
+  deployments, and other Azure Pipelines related development tasks. Not for Azure
+  DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos),
+  Azure Test Plans (use azure-test-plans).
+use_when: Use when configuring YAML pipelines, agents, service connections, Key Vault
+  secrets, or web/Kubernetes deployments, and other Azure Pipelines related development
+  tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
   Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 67
-- **Unchanged**: 512
+- **Updated Pages**: 1
+- **Unchanged**: 578
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -78,46 +78,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 ### Updated Pages
 
 - [Deprecation schedule](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops)
-  - Updated: 2026-10-13T15:07:00.000Z → 2026-10-30T22:08:00.000Z
-- [Task index](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [Task types & usage](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/tasks?view=azure-devops)
-  - Updated: 2026-09-25T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [Task retirement announcement](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/task-retirement?view=azure-devops)
-  - Updated: 2026-09-29T18:05:00.000Z → 2026-10-28T08:00:00.000Z
-- [DotNetCoreCLI@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [DotNetCoreCLI@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v0?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [DotNetCoreInstaller@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-installer-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [DotNetCoreInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-installer-v0?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [AndroidBuild@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/android-build-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [AndroidSigning@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/android-signing-v2?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [AzureNLBManagement@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/azure-nlb-management-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [AzurePowerShell@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/azure-powershell-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [AzureResourceGroupDeployment@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/azure-resource-group-deployment-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [PackerBuild@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/packer-build-v0?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [CacheBeta@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/cache-beta-v0?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [Chef@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/chef-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [ChefKnife@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/chef-knife-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [CmdLine@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/cmd-line-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T19:03:00.000Z
-- [CondaEnvironment@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/conda-environment-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- [Gradle@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v1?view=azure-pipelines)
-  - Updated: 2026-09-23T08:00:00.000Z → 2026-10-28T08:00:00.000Z
-- *...and 47 more*
+  - Updated: 2026-10-30T22:08:00.000Z → 2026-10-31T08:00:00.000Z
 
 ## Classified Pages
 
@@ -463,7 +424,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [CacheBeta@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/cache-beta-v0?view=azure-pipelines) | configuration | 0.78 | CacheBeta@0 reference page describes cache key, path, and behavior parameters with specific names and constraints, which are detailed configuration options for this deprecated task. |
 | [CondaEnvironment@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/conda-environment-v1?view=azure-pipelines) | configuration | 0.78 | CondaEnvironment@1 reference page defines task inputs for creating/activating Conda environments (environment name, packages, YAML file) with specific parameter names and constraints, which are detailed configuration settings. |
 | [DeployVisualStudioTestAgent@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/deploy-visual-studio-test-agent-v2?view=azure-pipelines) | configuration | 0.78 | Even though deprecated, the task reference contains specific inputs and options for deploying Visual Studio Test Agent, which are configuration parameters. |
-| [Deprecation schedule](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops) | limits-quotas | 0.78 | The page documents specific lifecycle and deprecation schedules for Microsoft-hosted images in Azure Pipelines, including concrete dates and version-specific timelines. These are time-bound, product-specific constraints that an LLM would not reliably know from training and function as operational limits on which images are available when. |
+| [Deprecation schedule](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted-deprecation-schedule?view=azure-devops) | limits-quotas | 0.78 | Deprecation schedules for Microsoft-hosted images include version-specific timelines and lifecycle details that function as time-based limits/constraints on which images can be used. These dates and version mappings are expert, product-specific information not generally known to LLMs and are critical for planning pipelines around image retirement. |
 | [FileTransform@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/file-transform-v2?view=azure-pipelines) | security | 0.78 | Beyond configuration inputs, it documents security-specific behavior (blocking xdt:Import and custom transform types) and allowed transform types, which are product-specific security settings and constraints. |
 | [FuncToolsInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/func-tools-installer-v0?view=azure-pipelines) | configuration | 0.78 | Lists parameters for selecting Functions Core Tools versions and install behavior, which are configuration settings. |
 | [GoTool@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/go-tool-v0?view=azure-pipelines) | configuration | 0.78 | Azure DevOps task reference pages list all task inputs, allowed values, defaults, and behavior details for GoTool@0 that aren't generally known, fitting configuration. |

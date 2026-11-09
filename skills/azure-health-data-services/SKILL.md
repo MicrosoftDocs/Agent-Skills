@@ -1,9 +1,9 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk import/export, de-identification, events, or Synapse/ADF/Fabric integrations, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM APIs, bulk import/export, de-identification, Synapse integration, or SMART on FHIR, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L55-L60 | Guidance for planning and executing migrations from Azure API for FHIR to Azure Health Data Services, including architecture, data, and operational considerations. |
 | Architecture & Design Patterns | L61-L68 | BCDR planning, reliable de-identification deployments, and reference architectures for integrating DICOM service with Azure Data Lake and digital pathology workflows. |
 | Limits & Quotas | L69-L77 | Autoscaling, capacity, DR behavior, deprecation impacts, de-identification language/locale support, and DICOM service requirements, quotas, and limits. |
-| Security | L78-L118 | Configuring secure access to FHIR/DICOM/HD services: Entra auth, RBAC, tokens, app registrations, Private Link, CMK encryption, SMART on FHIR, external/B2C IDs, and network security. |
-| Configuration | L119-L167 | Configuring Azure FHIR and DICOM services: CORS, logging, storage, bulk import/export, de-identification, profiles/validation, search parameters, events, and FHIR operations like $import/$export/$member-match. |
-| Integrations & Coding Patterns | L168-L204 | Patterns and code samples for calling FHIR/DICOM APIs, bulk operations, de-identification, events, and integrating Azure Health Data Services with Synapse, ADF/Fabric, Logic Apps, and compliance profiles. |
+| Security | L78-L118 | Configuring auth, RBAC, policies, keys, network/Private Link, SMART on FHIR, and client/identity setup for secure access to FHIR, DICOM, and de-identification in Azure Health Data Services. |
+| Configuration | L119-L167 | Configuring Azure FHIR/DICOM services: CORS, logging, storage, search, versioning, bulk import/export, de-identification, CARIN/Da Vinci profiles, and custom audit/validation settings. |
+| Integrations & Coding Patterns | L168-L204 | Patterns and code samples for calling FHIR/DICOM APIs, bulk import/export, search and updates, de-identification, event workflows, and integrating with Synapse, Logic Apps, and other Azure services. |
 | Deployment | L205-L220 | Guides for deploying and moving Azure Health Data Services (FHIR, DICOM, de-identification, workspaces) using portal, ARM, Bicep, PowerShell, and CLI across subscriptions and storage options. |
 
 ### Troubleshooting
@@ -99,7 +99,7 @@ This skill requires **network access** to fetch documentation content:
 | Grant FHIR and DICOM access using CLI and REST | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-azure-rbac-using-scripts |
 | Configure Private Link for Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-private-link |
 | Set up private endpoint access for de-identification | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-private-endpoints |
-| Manage de-identification service access using Azure RBAC | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/manage-access-rbac |
+| Manage de-identification access using Azure RBAC roles | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/manage-access-rbac |
 | Use managed identities with de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/managed-identities |
 | Configure customer-managed keys for DICOM encryption | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/configure-customer-managed-keys |
 | Configure Azure RBAC roles for DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-configure-azure-rbac |
@@ -136,7 +136,7 @@ This skill requires **network access** to fetch documentation content:
 | Store and manage FHIR profiles in Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/store-profiles-in-fhir |
 | Add custom headers to Azure API for FHIR audit logs | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/use-custom-headers |
 | Configure FHIR profile validation in Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/validation-against-profiles |
-| Configure Azure Storage for de-identification batch jobs | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-storage |
+| Configure Azure Storage for de-identification jobs | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/configure-storage |
 | Configure monitoring and alerts for de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/monitor-deidentification-service |
 | Reference for de-identification service monitoring data | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/monitor-deidentification-service-reference |
 | Define custom redaction formats for de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/redaction-format |
@@ -177,9 +177,9 @@ This skill requires **network access** to fetch documentation content:
 | Use FHIR search examples with Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/search-samples |
 | Use $member-match operation with Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-member-match |
 | Build a web app that calls Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/tutorial-web-app-write-web-app |
-| Bulk de-identify documents via Python batch API | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-asynchronous-python |
+| Bulk de-identify documents with Python SDK | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-asynchronous-python |
 | Call synchronous de-identification endpoint with Python | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-python |
-| Use Azure Health De-identification .NET client library | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-sdk-net |
+| Use Azure Health De-identification .NET SDK | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/quickstart-sdk-net |
 | Call DICOMweb APIs with C# and sample DICOM files | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicomweb-standard-apis-c-sharp |
 | Call DICOMweb APIs with cURL and sample DICOM files | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicomweb-standard-apis-curl |
 | Call DICOMweb APIs with Python and sample DICOM files | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicomweb-standard-apis-python |

@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB SQL/Mongo/Cassandra/Table/PostgreSQL APIs, change feed, multi-region HA, or vector search, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB SQL/Mongo/Cassandra APIs, change feed, multi-region HA, vector search, or Cosmos DB for PostgreSQL, and other Azure Cosmos DB related development tasks. Not for Azure DocumentDB (use azure-documentdb), Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Blob Storage (use azure-blob-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L142-L192 | Guides for choosing Cosmos DB deployment, scaling, consistency, backup, pricing, and migration options across SQL, MongoDB, Cassandra, Table, and PostgreSQL APIs. |
 | Architecture & Design Patterns | L193-L218 | Patterns and reference architectures for AI agents, change feed, analytics, multi-region HA, SaaS/multi-tenant design, microservices, and vector/AI search on Cosmos DB and Cosmos DB for PostgreSQL. |
 | Limits & Quotas | L219-L253 | Limits, quotas, and behaviors for Cosmos DB throughput, partitions, backup/restore, serverless, APIs (Cassandra, Gremlin, Table), integrated cache, and PostgreSQL clusters. |
-| Security | L254-L320 | Securing Cosmos DB and related services: identity/RBAC, networking, encryption/CMK, auditing, TLS, policies, and best-practice hardening for NoSQL, MongoDB, Cassandra, Gremlin, and PostgreSQL. |
+| Security | L254-L320 | Securing Cosmos DB across APIs: identity/RBAC, keys & encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, data masking, policy/governance, and best‑practice hardening. |
 | Configuration | L321-L449 | Configuring and tuning Cosmos DB and Cosmos DB for PostgreSQL: throughput, indexing, backup/restore, consistency, monitoring, SDK performance, emulators, fleets, and feature support per API. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK patterns, bulk ops, change feed, vector search, Kafka/Spark/Kafka Connect, and language-specific samples for integrating apps and tools with all Azure Cosmos DB APIs. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB (NoSQL, Cassandra, MongoDB, PostgreSQL, Table) with Bicep/ARM/Terraform, app deployments, bulk import/migration, restores, upgrades, and maintenance. |

@@ -1,9 +1,9 @@
 ---
 name: azure-route-server
-description: Expert knowledge for Azure Route Server development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, and configuration. Use when designing Route Server topologies, BGP peering and policies, route maps, RBAC access, or capacity limits, and other Azure Route Server related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure Traffic Manager (use azure-traffic-manager).
+description: Expert knowledge for Azure Route Server development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, and configuration. Use when designing Route Server topologies, BGP peers/policies, route maps, BGP communities, or capacity limits, and other Azure Route Server related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Route Server Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L34-L38 | Diagnosing and resolving common Azure Route Server problems, including BGP session issues, route propagation/advertisement errors, and connectivity or configuration troubleshooting steps. |
-| Best Practices | L39-L43 | Configuring Azure Route Server routing preferences, BGP path selection, and custom routing policies to control traffic flow and route advertisement to your NVA or on-premises routers. |
-| Architecture & Design Patterns | L44-L58 | Designing Azure Route Server network topologies: dual-homed, multi-region, anycast, hub-spoke; NVA next-hop, path selection, route injection, route maps, filtering, AS-path prepending, communities. |
-| Limits & Quotas | L59-L64 | Capacity planning, scale units, and detailed limits/behaviors for Azure Route Server (routes, peers, sessions, performance) to ensure deployments stay within supported bounds. |
-| Security | L65-L70 | RBAC roles, permissions, and security hardening guidance for Azure Route Server, including access control, best practices, and securing deployments against threats. |
-| Configuration | L71-L75 | Configuring Route Server BGP (peering, policies), setting up and using route maps, and monitoring Route Server health and performance with Azure Monitor metrics. |
+| Best Practices | L39-L47 | Advanced BGP routing with Azure Route Server: setting routing preference, dual-stack route maps, inbound route filtering, AS path prepending, and tagging routes with BGP communities. |
+| Architecture & Design Patterns | L48-L60 | Designing Azure Route Server network topologies: dual-homed, multi-region, anycast, hub-spoke, NVAs, path selection, route injection, and routing control with Route Server maps. |
+| Limits & Quotas | L61-L66 | Capacity planning, scale units, and detailed limits/behaviors of Azure Route Server (peer/session caps, route limits, performance, and scaling constraints). |
+| Security | L67-L72 | RBAC roles, permissions, and security hardening guidance for Azure Route Server, including access control, best practices, and securing deployments against threats. |
+| Configuration | L73-L78 | Configuring Route Server behavior: setting maintenance windows, managing BGP peers and policies, and creating route maps to control route advertisement and learning. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -40,6 +40,10 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure routing preference in Azure Route Server | https://learn.microsoft.com/en-us/azure/route-server/hub-routing-preference |
+| Implement dual-stack route maps for Azure Route Server | https://learn.microsoft.com/en-us/azure/route-server/route-maps-dual-stack-portal |
+| Filter inbound routes using Azure Route Server maps | https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-drop-inbound-routes |
+| Prepend AS paths with Azure Route Server route maps | https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-prepend-routes |
+| Tag BGP routes with communities in Azure Route Server | https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-tag-bgp-communities |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -51,16 +55,14 @@ This skill requires **network access** to fetch documentation content:
 | Design NVA next-hop IP patterns with Route Server | https://learn.microsoft.com/en-us/azure/route-server/next-hop-ip |
 | Configure path selection using Azure Route Server | https://learn.microsoft.com/en-us/azure/route-server/path-selection |
 | Use route injection in Azure hub-and-spoke networks | https://learn.microsoft.com/en-us/azure/route-server/route-injection-in-spokes |
-| Control Azure Route Server routing with route maps | https://learn.microsoft.com/en-us/azure/route-server/route-maps-about |
-| Filter and drop inbound BGP routes in Azure Route Server | https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-drop-inbound-routes |
-| Use route maps to prepend BGP AS paths in Azure | https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-prepend-routes |
-| Tag BGP routes with communities using Azure Route Server | https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-tag-bgp-communities |
+| Design routing control with Azure Route Server maps | https://learn.microsoft.com/en-us/azure/route-server/route-maps-about |
+| Use Route Server maps with spoke NVAs in hub-spoke | https://learn.microsoft.com/en-us/azure/route-server/route-maps-scenario-spoke-network-virtual-appliance |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Plan Azure Route Server capacity and scale units | https://learn.microsoft.com/en-us/azure/route-server/route-server-capacity |
-| Review Azure Route Server limits and behaviors | https://learn.microsoft.com/en-us/azure/route-server/route-server-faq |
+| Understand Azure Route Server limits and behavior | https://learn.microsoft.com/en-us/azure/route-server/route-server-faq |
 
 ### Security
 | Topic | URL |
@@ -71,5 +73,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Configure maintenance windows for Azure Route Server | https://learn.microsoft.com/en-us/azure/route-server/configure-customer-controlled-maintenance |
 | Configure and manage Azure Route Server BGP settings | https://learn.microsoft.com/en-us/azure/route-server/configure-route-server |
 | Configure Azure Route Server route maps | https://learn.microsoft.com/en-us/azure/route-server/route-maps-how-to |

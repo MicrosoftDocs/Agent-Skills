@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-11-01 02:03:35
-**Total Duration**: 47m 17s
+**Generated**: 2026-11-08 02:03:11
+**Total Duration**: 38m 49s
 
 ## Product Crawl Summary
 
@@ -11,155 +11,155 @@ Quick overview for reviewers. See individual product reports for details.
 |---|---------|-------|------------|-----|---------|---------|--------|
 | 1 | Azure AI Vision | 45 | 20 | 0 | 0 | 0 | OK |
 | 2 | Azure Kubernetes Service Edge Essentials | 0 | 0 | 0 | 0 | 0 | OK |
-| 3 | Azure Artifact Signing | 14 | 9 | 0 | 1 | 0 | OK |
+| 3 | Azure Artifact Signing | 14 | 9 | 0 | 0 | 0 | OK |
 | 4 | Azure Advisor | 33 | 24 | 0 | 0 | 0 | OK |
 | 5 | Azure Analysis Services | 1 | 1 | 0 | 0 | 0 | OK |
 | 6 | Azure AI Anomaly Detector | 1 | 0 | 0 | 0 | 0 | OK |
-| 7 | Azure API Management | 280 | 224 | 0 | 4 | 8 | OK |
-| 8 | Azure App Configuration | 171 | 126 | 0 | 0 | 0 | OK |
-| 9 | Azure App Service | 245 | 149 | 0 | 1 | 0 | OK |
+| 7 | Azure API Management | 280 | 224 | 0 | 0 | 0 | OK |
+| 8 | Azure App Configuration | 171 | 125 | 0 | 2 | 0 | OK |
+| 9 | Azure App Service | 245 | 146 | 0 | 10 | 0 | OK |
 | 10 | Azure App Testing | 78 | 59 | 0 | 0 | 0 | OK |
-| 11 | Azure Application Gateway | 186 | 131 | 3 | 5 | 0 | OK |
-| 12 | Azure Arc | 450 | 293 | 3 | 9 | 0 | OK |
+| 11 | Azure Application Gateway | 193 | 139 | 9 | 9 | 2 | OK |
+| 12 | Azure Arc | 452 | 294 | 3 | 4 | 1 | OK |
 | 13 | Azure Artifacts | 74 | 54 | 0 | 0 | 0 | OK |
 | 14 | Azure Attestation | 33 | 22 | 0 | 0 | 0 | OK |
-| 15 | Azure Automation | 111 | 86 | 0 | 0 | 0 | OK |
-| 16 | Azure Backup | 418 | 257 | 20 | 26 | 16 | OK |
+| 15 | Azure Automation | 111 | 86 | 0 | 1 | 0 | OK |
+| 16 | Azure Backup | 419 | 254 | 1 | 10 | 0 | OK |
 | 17 | Azure Bastion | 40 | 24 | 0 | 0 | 0 | OK |
-| 18 | Azure Batch | 124 | 87 | 0 | 0 | 0 | OK |
-| 19 | Azure Blob Storage | 432 | 331 | 0 | 18 | 0 | OK |
-| 20 | Azure Blueprints | 43 | 29 | 0 | 4 | 0 | OK |
-| 21 | Azure Boards | 124 | 34 | 0 | 0 | 0 | OK |
+| 18 | Azure Batch | 124 | 86 | 0 | 2 | 0 | OK |
+| 19 | Azure Blob Storage | 433 | 329 | 1 | 7 | 0 | OK |
+| 20 | Azure Blueprints | 43 | 29 | 0 | 0 | 0 | OK |
+| 21 | Azure Boards | 124 | 34 | 0 | 5 | 0 | OK |
 | 22 | Azure AI Bot Service | 66 | 49 | 0 | 0 | 0 | OK |
-| 23 | Azure Cache for Redis | 63 | 53 | 0 | 1 | 0 | OK |
+| 23 | Azure Cache for Redis | 63 | 53 | 0 | 0 | 0 | OK |
 | 24 | Azure Cloud Services | 45 | 30 | 0 | 0 | 0 | OK |
-| 25 | Azure Cloud Shell | 18 | 8 | 0 | 4 | 0 | OK |
-| 26 | Azure AI Search | 315 | 248 | 0 | 1 | 0 | OK |
-| 27 | Azure Communication Services | 523 | 402 | 0 | 0 | 0 | OK |
+| 25 | Azure Cloud Shell | 18 | 8 | 0 | 1 | 0 | OK |
+| 26 | Azure AI Search | 315 | 247 | 0 | 10 | 0 | OK |
+| 27 | Azure Communication Services | 523 | 402 | 0 | 2 | 0 | OK |
 | 28 | Azure Container Apps | 235 | 133 | 0 | 1 | 0 | OK |
-| 29 | Azure Container Instances | 84 | 54 | 1 | 2 | 0 | OK |
+| 29 | Azure Container Instances | 84 | 54 | 0 | 1 | 0 | OK |
 | 30 | Azure Container Registry | 129 | 93 | 0 | 0 | 0 | OK |
-| 31 | Azure Container Storage | 33 | 14 | 0 | 0 | 0 | OK |
-| 32 | Azure Cosmos DB | 722 | 529 | 3 | 9 | 3 | OK |
-| 33 | Cost Management | 274 | 127 | 1 | 20 | 1 | OK |
+| 31 | Azure Container Storage | 41 | 24 | 8 | 8 | 0 | OK |
+| 32 | Azure Cosmos DB | 723 | 529 | 1 | 1 | 0 | OK |
+| 33 | Cost Management | 274 | 129 | 0 | 2 | 0 | OK |
 | 34 | Azure AI Custom Vision | 23 | 17 | 0 | 0 | 0 | OK |
-| 35 | Azure CycleCloud | 124 | 99 | 2 | 1 | 2 | OK |
+| 35 | Azure CycleCloud | 124 | 99 | 0 | 0 | 0 | OK |
 | 36 | Azure Data Box | 79 | 51 | 0 | 0 | 0 | OK |
-| 37 | Azure Data Explorer | 199 | 107 | 0 | 1 | 0 | OK |
+| 37 | Azure Data Explorer | 199 | 107 | 0 | 0 | 0 | OK |
 | 38 | Azure Data Factory | 505 | 406 | 0 | 0 | 0 | OK |
 | 39 | Azure Data Science Virtual Machines | 25 | 18 | 0 | 0 | 0 | OK |
 | 40 | Azure Data Share | 25 | 16 | 0 | 0 | 0 | OK |
 | 41 | Azure Database Migration Service | 31 | 15 | 0 | 0 | 0 | OK |
-| 42 | Azure Database for MySQL | 168 | 113 | 0 | 2 | 0 | OK |
-| 43 | Azure Database for PostgreSQL | 362 | 233 | 0 | 2 | 0 | OK |
-| 44 | Azure Databricks | 5978 | 4047 | 123 | 756 | 21 | OK |
-| 45 | Azure DDoS Protection | 38 | 26 | 0 | 5 | 0 | OK |
+| 42 | Azure Database for MySQL | 168 | 113 | 0 | 4 | 0 | OK |
+| 43 | Azure Database for PostgreSQL | 362 | 233 | 0 | 6 | 0 | OK |
+| 44 | Azure Databricks | 6006 | 4036 | 43 | 748 | 15 | OK |
+| 45 | Azure DDoS Protection | 38 | 26 | 0 | 0 | 0 | OK |
 | 46 | Azure Dedicated HSM | 16 | 13 | 0 | 0 | 0 | OK |
-| 47 | Azure DevOps | 1011 | 257 | 8 | 4 | 0 | OK |
-| 48 | Azure Pipelines | 579 | 518 | 0 | 67 | 0 | OK |
-| 49 | Azure DevTest Labs | 97 | 63 | 0 | 1 | 0 | OK |
+| 47 | Azure DevOps | 1011 | 257 | 0 | 23 | 0 | OK |
+| 48 | Azure Pipelines | 579 | 518 | 0 | 1 | 0 | OK |
+| 49 | Azure DevTest Labs | 97 | 63 | 0 | 0 | 0 | OK |
 | 50 | Azure Digital Twins | 65 | 53 | 0 | 0 | 0 | OK |
-| 51 | Azure DNS | 77 | 27 | 0 | 0 | 0 | OK |
-| 52 | Azure DocumentDB | 126 | 92 | 1 | 7 | 0 | OK |
-| 53 | Azure Elastic SAN | 25 | 24 | 0 | 0 | 0 | OK |
-| 54 | Azure Event Grid | 266 | 178 | 1 | 7 | 0 | OK |
+| 51 | Azure DNS | 78 | 28 | 1 | 0 | 0 | OK |
+| 52 | Azure DocumentDB | 126 | 91 | 0 | 5 | 0 | OK |
+| 53 | Azure Elastic SAN | 25 | 24 | 0 | 1 | 0 | OK |
+| 54 | Azure Event Grid | 266 | 178 | 0 | 0 | 0 | OK |
 | 55 | Azure Event Hubs | 115 | 72 | 0 | 0 | 0 | OK |
 | 56 | Azure ExpressRoute | 98 | 67 | 0 | 0 | 0 | OK |
 | 57 | Azure AI Face | 31 | 17 | 0 | 0 | 0 | OK |
-| 58 | Azure Files | 130 | 109 | 4 | 24 | 7 | OK |
-| 59 | Azure Firewall | 87 | 60 | 0 | 0 | 0 | OK |
+| 58 | Azure Files | 130 | 108 | 0 | 3 | 0 | OK |
+| 59 | Azure Firewall | 87 | 60 | 0 | 1 | 0 | OK |
 | 60 | Azure Firewall Manager | 27 | 11 | 0 | 0 | 0 | OK |
-| 61 | Azure Front Door | 101 | 64 | 0 | 0 | 0 | OK |
-| 62 | Azure Functions | 313 | 246 | 2 | 0 | 0 | OK |
+| 61 | Azure Front Door | 103 | 67 | 2 | 12 | 0 | OK |
+| 62 | Azure Functions | 319 | 250 | 10 | 2 | 4 | OK |
 | 63 | Azure HDInsight | 426 | 337 | 0 | 0 | 0 | OK |
-| 64 | Azure Health Data Services | 202 | 149 | 0 | 21 | 0 | OK |
+| 64 | Azure Health Data Services | 202 | 149 | 0 | 5 | 0 | OK |
 | 65 | Azure AI Immersive Reader | 18 | 15 | 0 | 0 | 0 | OK |
 | 66 | Azure Information Protection | 20 | 15 | 0 | 0 | 0 | OK |
 | 67 | Azure IoT | 28 | 20 | 0 | 1 | 0 | OK |
 | 68 | Azure IoT Central | 91 | 58 | 0 | 0 | 0 | OK |
 | 69 | Azure IoT Edge | 99 | 72 | 0 | 0 | 0 | OK |
 | 70 | Azure IoT Hub | 193 | 127 | 0 | 0 | 0 | OK |
-| 71 | Azure IoT Operations | 148 | 115 | 15 | 5 | 0 | OK |
-| 72 | Azure Key Vault | 184 | 97 | 0 | 0 | 0 | OK |
-| 73 | Azure Kubernetes Service (AKS) | 673 | 491 | 1 | 13 | 0 | OK |
+| 71 | Azure IoT Operations | 149 | 115 | 1 | 3 | 0 | OK |
+| 72 | Azure Key Vault | 184 | 97 | 0 | 1 | 0 | OK |
+| 73 | Azure Kubernetes Service (AKS) | 693 | 505 | 28 | 26 | 8 | OK |
 | 74 | Azure Lab Services | 103 | 77 | 0 | 0 | 0 | OK |
 | 75 | Azure Lighthouse | 28 | 21 | 0 | 0 | 0 | OK |
 | 76 | Azure Load Balancer | 87 | 37 | 0 | 0 | 0 | OK |
-| 77 | Azure Local | 413 | 308 | 6 | 15 | 1 | OK |
-| 78 | Azure Logic Apps | 269 | 205 | 0 | 2 | 0 | OK |
-| 79 | Azure Machine Learning | 553 | 410 | 0 | 0 | 0 | OK |
+| 77 | Azure Local | 418 | 303 | 6 | 28 | 1 | OK |
+| 78 | Azure Logic Apps | 269 | 205 | 0 | 0 | 0 | OK |
+| 79 | Azure Machine Learning | 553 | 410 | 0 | 1 | 0 | OK |
 | 80 | Azure Managed Applications | 62 | 53 | 0 | 0 | 0 | OK |
-| 81 | Azure Managed Grafana | 45 | 32 | 2 | 0 | 1 | OK |
-| 82 | Azure Managed Lustre | 38 | 36 | 0 | 1 | 0 | OK |
-| 83 | Azure Managed Redis | 81 | 73 | 0 | 4 | 0 | OK |
+| 81 | Azure Managed Grafana | 45 | 32 | 0 | 0 | 0 | OK |
+| 82 | Azure Managed Lustre | 38 | 36 | 0 | 0 | 0 | OK |
+| 83 | Azure Managed Redis | 82 | 73 | 1 | 3 | 0 | OK |
 | 84 | Azure Maps | 148 | 113 | 0 | 0 | 0 | OK |
 | 85 | Azure AI Metrics Advisor | 0 | 0 | 0 | 0 | 0 | OK |
-| 86 | Azure Migrate | 216 | 113 | 0 | 5 | 0 | OK |
-| 87 | Azure Monitor | 2422 | 1845 | 7 | 16 | 0 | OK |
+| 86 | Azure Migrate | 221 | 120 | 12 | 6 | 7 | OK |
+| 87 | Azure Monitor | 2424 | 1845 | 2 | 18 | 0 | OK |
 | 88 | Azure NAT Gateway | 25 | 13 | 0 | 0 | 0 | OK |
-| 89 | Azure NetApp Files | 233 | 160 | 1 | 16 | 10 | OK |
+| 89 | Azure NetApp Files | 235 | 161 | 2 | 6 | 0 | OK |
 | 90 | Azure Network Watcher | 66 | 31 | 0 | 1 | 0 | OK |
 | 91 | Azure Notification Hubs | 68 | 54 | 0 | 0 | 0 | OK |
 | 92 | Azure Open Datasets | 40 | 1 | 0 | 0 | 0 | OK |
 | 93 | Azure AI Personalizer | 0 | 0 | 0 | 0 | 0 | OK |
-| 94 | Azure Policy | 215 | 187 | 0 | 88 | 0 | OK |
+| 94 | Azure Policy | 219 | 189 | 4 | 10 | 0 | OK |
 | 95 | Azure Portal | 29 | 12 | 0 | 0 | 0 | OK |
-| 96 | Azure Private Link | 59 | 29 | 0 | 0 | 0 | OK |
-| 97 | Azure Quantum | 147 | 52 | 0 | 0 | 0 | OK |
+| 96 | Azure Private Link | 59 | 29 | 0 | 1 | 0 | OK |
+| 97 | Azure Quantum | 147 | 51 | 0 | 5 | 0 | OK |
 | 98 | Azure Queue Storage | 25 | 24 | 0 | 0 | 0 | OK |
-| 99 | Azure Role-based access control | 104 | 95 | 0 | 2 | 0 | OK |
-| 100 | Azure Red Hat OpenShift | 86 | 68 | 0 | 0 | 0 | OK |
+| 99 | Azure Role-based access control | 104 | 93 | 0 | 3 | 0 | OK |
+| 100 | Azure Red Hat OpenShift | 86 | 68 | 0 | 6 | 0 | OK |
 | 101 | Azure Relay | 27 | 11 | 0 | 0 | 0 | OK |
-| 102 | Azure Repos | 220 | 142 | 0 | 0 | 0 | OK |
+| 102 | Azure Repos | 220 | 141 | 0 | 8 | 0 | OK |
 | 103 | Azure Resource Graph | 34 | 23 | 0 | 0 | 0 | OK |
-| 104 | Azure Resource Manager | 500 | 382 | 5 | 8 | 0 | OK |
+| 104 | Azure Resource Manager | 508 | 385 | 8 | 10 | 0 | OK |
 | 105 | SAP HANA on Azure Large Instances | 228 | 187 | 0 | 0 | 0 | OK |
-| 106 | Azure Service Bus | 131 | 94 | 0 | 6 | 0 | OK |
+| 106 | Azure Service Bus | 131 | 94 | 0 | 0 | 0 | OK |
 | 107 | Azure Service Fabric | 406 | 331 | 0 | 0 | 0 | OK |
-| 108 | Azure Service Health | 49 | 21 | 0 | 1 | 0 | OK |
+| 108 | Azure Service Health | 49 | 21 | 0 | 0 | 0 | OK |
 | 109 | Azure SignalR Service | 73 | 60 | 0 | 1 | 0 | OK |
-| 110 | Azure Site Recovery | 180 | 119 | 2 | 0 | 1 | OK |
-| 111 | Azure US Government | 39 | 31 | 0 | 0 | 0 | OK |
-| 112 | Azure Speech in Foundry Tools | 198 | 114 | 1 | 5 | 0 | OK |
+| 110 | Azure Site Recovery | 180 | 119 | 0 | 3 | 0 | OK |
+| 111 | Azure US Government | 39 | 30 | 0 | 1 | 0 | OK |
+| 112 | Azure Speech in Foundry Tools | 199 | 115 | 1 | 18 | 0 | OK |
 | 113 | Azure Spring Apps | 174 | 141 | 0 | 0 | 0 | OK |
-| 114 | Azure SQL Database | 374 | 252 | 2 | 6 | 0 | OK |
-| 115 | Azure SQL Managed Instance | 247 | 187 | 1 | 4 | 0 | OK |
+| 114 | Azure SQL Database | 382 | 260 | 11 | 6 | 3 | OK |
+| 115 | Azure SQL Managed Instance | 255 | 196 | 8 | 2 | 0 | OK |
 | 116 | SQL Server on Azure Virtual Machines | 130 | 102 | 0 | 0 | 0 | OK |
-| 117 | Azure Stack Edge | 234 | 145 | 0 | 0 | 0 | OK |
+| 117 | Azure Stack Edge | 235 | 146 | 2 | 0 | 1 | OK |
 | 118 | Azure Stream Analytics | 164 | 109 | 0 | 0 | 0 | OK |
-| 119 | Azure Synapse Analytics | 482 | 308 | 0 | 1 | 0 | OK |
-| 120 | Azure Table Storage | 16 | 13 | 0 | 1 | 0 | OK |
-| 121 | Azure Test Plans | 33 | 6 | 0 | 0 | 0 | OK |
+| 119 | Azure Synapse Analytics | 482 | 308 | 0 | 0 | 0 | OK |
+| 120 | Azure Table Storage | 16 | 13 | 0 | 0 | 0 | OK |
+| 121 | Azure Test Plans | 33 | 6 | 0 | 1 | 0 | OK |
 | 122 | Azure Traffic Manager | 46 | 27 | 0 | 0 | 0 | OK |
-| 123 | Azure Translator | 116 | 78 | 0 | 4 | 0 | OK |
+| 123 | Azure Translator | 116 | 78 | 0 | 0 | 0 | OK |
 | 124 | Azure AI Video Indexer | 83 | 37 | 0 | 0 | 0 | OK |
-| 125 | Azure Virtual Desktop | 158 | 122 | 0 | 0 | 0 | OK |
-| 126 | Azure Virtual Machines | 882 | 624 | 1 | 16 | 1 | OK |
+| 125 | Azure Virtual Desktop | 158 | 122 | 0 | 31 | 0 | OK |
+| 126 | Azure Virtual Machines | 884 | 625 | 2 | 12 | 0 | OK |
 | 127 | Azure Virtual Network | 132 | 57 | 0 | 0 | 0 | OK |
-| 128 | Azure Virtual WAN | 138 | 93 | 0 | 1 | 0 | OK |
+| 128 | Azure Virtual WAN | 138 | 93 | 0 | 0 | 0 | OK |
 | 129 | Azure Virtual Machine Scale Sets | 96 | 76 | 0 | 0 | 0 | OK |
-| 130 | Azure VMware Solution | 143 | 99 | 0 | 5 | 0 | OK |
-| 131 | Azure VPN Gateway | 113 | 85 | 1 | 0 | 0 | OK |
-| 132 | Azure Web Application Firewall | 85 | 59 | 0 | 2 | 0 | OK |
-| 133 | Azure Web PubSub | 122 | 84 | 0 | 0 | 0 | OK |
-| 134 | Chaos Studio | 69 | 55 | 1 | 2 | 1 | OK |
-| 135 | Content Safety in Foundry Control Plane | 50 | 21 | 0 | 9 | 0 | OK |
-| 136 | Azure Content Understanding in Foundry Tools | 45 | 28 | 1 | 5 | 0 | OK |
+| 130 | Azure VMware Solution | 144 | 101 | 1 | 5 | 0 | OK |
+| 131 | Azure VPN Gateway | 113 | 85 | 0 | 0 | 0 | OK |
+| 132 | Azure Web Application Firewall | 86 | 60 | 1 | 1 | 0 | OK |
+| 133 | Azure Web PubSub | 122 | 84 | 0 | 1 | 0 | OK |
+| 134 | Chaos Studio | 69 | 55 | 0 | 0 | 0 | OK |
+| 135 | Content Safety in Foundry Control Plane | 50 | 21 | 0 | 2 | 0 | OK |
+| 136 | Azure Content Understanding in Foundry Tools | 45 | 28 | 0 | 0 | 0 | OK |
 | 137 | Azure Data Manager for Agriculture | 26 | 18 | 0 | 0 | 0 | OK |
 | 138 | Azure AI Document Intelligence | 77 | 36 | 0 | 0 | 0 | OK |
-| 139 | Microsoft Foundry Local | 23 | 15 | 0 | 0 | 0 | OK |
-| 140 | Azure AI Language | 180 | 84 | 0 | 1 | 0 | OK |
-| 141 | Microsoft Foundry | 829 | 697 | 12 | 72 | 7 | OK |
+| 139 | Microsoft Foundry Local | 23 | 15 | 0 | 17 | 0 | OK |
+| 140 | Azure AI Language | 180 | 84 | 0 | 0 | 0 | OK |
+| 141 | Microsoft Foundry | 853 | 707 | 33 | 334 | 9 | OK |
 | 142 | Microsoft Planetary Computer Pro | 46 | 35 | 0 | 0 | 0 | OK |
-| 143 | Azure Route Server | 27 | 19 | 0 | 0 | 0 | OK |
+| 143 | Azure Route Server | 33 | 22 | 6 | 6 | 0 | OK |
 | 144 | Azure Static Web Apps | 79 | 58 | 0 | 0 | 0 | OK |
 | 145 | Azure Update Manager | 85 | 54 | 0 | 0 | 0 | OK |
 | 146 | Azure Virtual Network Manager | 51 | 36 | 0 | 0 | 0 | OK |
-| 147 | Azure Active Directory B2C | 289 | 255 | 0 | 3 | 0 | OK |
+| 147 | Azure Active Directory B2C | 289 | 255 | 0 | 0 | 0 | OK |
 | 148 | Azure Adaptive Cloud | 0 | 0 | 0 | 0 | 0 | OK |
-| 149 | Azure Anyscale On Azure | 14 | 7 | 0 | 0 | 0 | OK |
+| 149 | Azure Anyscale On Azure | 14 | 6 | 0 | 4 | 0 | OK |
 | 150 | Azure Api Center | 39 | 16 | 0 | 0 | 0 | OK |
-| 151 | Azure Application Network | 11 | 3 | 0 | 1 | 0 | OK |
+| 151 | Azure Application Network | 13 | 8 | 2 | 8 | 0 | OK |
 | 152 | Azure Fluid Relay | 25 | 16 | 0 | 0 | 0 | OK |
 | 153 | Azure Impact Reporting | 15 | 9 | 0 | 0 | 0 | OK |
 | 154 | Azure Large Instances | 10 | 3 | 0 | 0 | 0 | OK |
@@ -167,70 +167,70 @@ Quick overview for reviewers. See individual product reports for details.
 | 156 | Azure Business Process Tracking | 6 | 1 | 0 | 0 | 0 | OK |
 | 157 | Azure Carbon Optimization | 11 | 5 | 0 | 0 | 0 | OK |
 | 158 | Azure Cloud Hsm | 21 | 14 | 0 | 0 | 0 | OK |
-| 159 | Azure Confidential Computing | 69 | 46 | 25 | 9 | 27 | OK |
-| 160 | Azure Confidential Ledger | 40 | 24 | 0 | 0 | 0 | OK |
+| 159 | Azure Confidential Computing | 69 | 46 | 0 | 0 | 0 | OK |
+| 160 | Azure Confidential Ledger | 40 | 23 | 0 | 2 | 0 | OK |
 | 161 | Azure Connector Namespace | 7 | 1 | 0 | 0 | 0 | OK |
-| 162 | Azure Copilot | 36 | 16 | 0 | 0 | 0 | OK |
+| 162 | Azure Copilot | 36 | 16 | 0 | 1 | 0 | OK |
 | 163 | Azure Data Api Builder | 135 | 92 | 0 | 0 | 0 | OK |
-| 164 | Azure Defender For Cloud | 465 | 272 | 0 | 7 | 0 | OK |
+| 164 | Azure Defender For Cloud | 466 | 274 | 1 | 4 | 0 | OK |
 | 165 | Azure Defender For Iot | 180 | 121 | 0 | 0 | 0 | OK |
 | 166 | Azure Deployment Environments | 32 | 22 | 0 | 0 | 0 | OK |
 | 167 | Azure Dev Box | 65 | 44 | 0 | 0 | 0 | OK |
 | 168 | Azure Durable Task | 22 | 16 | 0 | 0 | 0 | OK |
 | 169 | Azure Education Hub | 11 | 3 | 0 | 0 | 0 | OK |
-| 170 | Azure Enclave | 97 | 50 | 1 | 24 | 0 | OK |
-| 171 | Azure Energy Data Services | 63 | 41 | 1 | 8 | 0 | OK |
+| 170 | Azure Enclave | 97 | 50 | 0 | 0 | 0 | OK |
+| 171 | Azure Energy Data Services | 64 | 42 | 1 | 4 | 0 | OK |
 | 172 | Azure Extended Zones | 18 | 5 | 0 | 0 | 0 | OK |
 | 173 | Azure External Attack Surface Management | 22 | 10 | 0 | 0 | 0 | OK |
-| 174 | Azure Firmware Analysis | 18 | 14 | 1 | 4 | 0 | OK |
-| 175 | Microsoft Foundry Classic | 369 | 255 | 0 | 2 | 0 | OK |
+| 174 | Azure Firmware Analysis | 18 | 14 | 0 | 0 | 0 | OK |
+| 175 | Microsoft Foundry Classic | 369 | 255 | 0 | 4 | 0 | OK |
 | 176 | Azure Health Bot | 78 | 43 | 0 | 0 | 0 | OK |
 | 177 | Azure Horizondb | 146 | 110 | 0 | 0 | 0 | OK |
 | 178 | Azure Import Export | 14 | 7 | 0 | 0 | 0 | OK |
 | 179 | Azure Integration Environments | 4 | 0 | 0 | 0 | 0 | OK |
 | 180 | Azure Internet Peering | 23 | 1 | 0 | 0 | 0 | OK |
-| 181 | Azure Microsoft Discovery | 98 | 58 | 5 | 1 | 5 | OK |
+| 181 | Azure Microsoft Discovery | 113 | 68 | 40 | 8 | 25 | OK |
 | 182 | Azure Microsoft Opentelemetry | 5 | 1 | 0 | 0 | 0 | OK |
 | 183 | Azure Networking | 53 | 39 | 0 | 0 | 0 | OK |
-| 184 | Azure Nutanix | 5 | 1 | 0 | 1 | 0 | OK |
+| 184 | Azure Nutanix | 5 | 1 | 0 | 0 | 0 | OK |
 | 185 | Azure Operator Insights | 0 | 0 | 0 | 0 | 0 | OK |
-| 186 | Azure Operator Nexus | 227 | 166 | 2 | 7 | 0 | OK |
+| 186 | Azure Operator Nexus | 227 | 166 | 0 | 0 | 0 | OK |
 | 187 | Azure Operator Service Manager | 47 | 24 | 0 | 0 | 0 | OK |
 | 188 | Azure Oracle | 12 | 4 | 0 | 0 | 0 | OK |
 | 189 | Azure Osconfig | 32 | 16 | 0 | 0 | 0 | OK |
-| 190 | Azure Partner Solutions | 114 | 23 | 0 | 1 | 0 | OK |
+| 190 | Azure Partner Solutions | 108 | 23 | 0 | 3 | 6 | OK |
 | 191 | Azure Payment Hsm | 28 | 18 | 0 | 0 | 0 | OK |
 | 192 | Azure Peering Service | 10 | 1 | 0 | 0 | 0 | OK |
 | 193 | Azure Quotas | 15 | 1 | 0 | 0 | 0 | OK |
-| 194 | Azure Reliability | 91 | 42 | 0 | 5 | 1 | OK |
-| 195 | Azure Resiliency | 36 | 16 | 0 | 2 | 0 | OK |
+| 194 | Azure Reliability | 91 | 43 | 0 | 1 | 0 | OK |
+| 195 | Azure Resiliency | 36 | 16 | 0 | 1 | 0 | OK |
 | 196 | Azure Security | 127 | 64 | 0 | 0 | 0 | OK |
-| 197 | Azure Sentinel | 412 | 289 | 0 | 3 | 0 | OK |
+| 197 | Azure Sentinel | 412 | 289 | 0 | 0 | 0 | OK |
 | 198 | Azure Service Connector | 60 | 40 | 0 | 0 | 0 | OK |
-| 199 | Azure Sre Agent | 124 | 74 | 0 | 70 | 0 | OK |
+| 199 | Azure Sre Agent | 124 | 74 | 0 | 0 | 0 | OK |
 
 ### Totals
 
 - **Products Processed**: 199 success, 0 failed
-- **Total Pages**: 35266
-- **Total Classified**: 24038
-- **Total New Pages**: 266
-- **Total Updated Pages**: 1471
-- **Total Deleted Pages**: 113
+- **Total Pages**: 35436
+- **Total Classified**: 24113
+- **Total New Pages**: 252
+- **Total Updated Pages**: 1505
+- **Total Deleted Pages**: 82
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| architecture-patterns | 595 |
-| best-practices | 1361 |
-| configuration | 7608 |
-| decision-making | 1481 |
-| deployment | 1228 |
-| integrations | 5457 |
-| limits-quotas | 1162 |
-| security | 3444 |
-| troubleshooting | 1702 |
+| architecture-patterns | 589 |
+| best-practices | 1402 |
+| configuration | 7588 |
+| decision-making | 1487 |
+| deployment | 1215 |
+| integrations | 5460 |
+| limits-quotas | 1167 |
+| security | 3462 |
+| troubleshooting | 1743 |
 
 ---
 

@@ -3,7 +3,7 @@ name: azure-batch
 description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Batch pools/jobs, autoscale, private networking, quotas, or HPC/rendering workloads, and other Azure Batch related development tasks. Not for Azure Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Batch Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L75-L81 | Planning Batch capacity, understanding service limits/quotas, managing quotas via .NET, and using metrics/logs to monitor and stay within Azure Batch limits. |
 | Security | L82-L99 | Securing Batch accounts and pools: identity/auth (Entra ID, managed identities, RBAC), keys and encryption, private endpoints/network access, and Azure Policy-based governance. |
 | Configuration | L100-L136 | Configuring Azure Batch pools, tasks, networking, monitoring, autoscale, events/logs, OS/cert rotation, security, containers, disks, and node communication behavior. |
-| Integrations & Coding Patterns | L137-L153 | Patterns and code samples for integrating Azure Batch with CLI, SDKs, containers, MPI, storage/file mounts, Key Vault, telemetry, and automating jobs/tasks across languages. |
-| Deployment | L154-L158 | Guides for moving Azure Batch accounts across regions with ARM templates and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines. |
+| Integrations & Coding Patterns | L137-L152 | Patterns and code samples for integrating Azure Batch with CLI, SDKs, containers, MPI, storage/file mounts, Key Vault, telemetry, and automating jobs/tasks across languages. |
+| Deployment | L153-L157 | Guides for moving Azure Batch accounts across regions with ARM templates and setting up CI/CD pipelines for Batch HPC workloads using Azure Pipelines. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -137,7 +137,6 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Manage Azure Batch with Azure CLI commands | https://learn.microsoft.com/en-us/azure/batch/batch-cli-get-started |
 | Run containerized workloads on Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-docker-container-workloads |
 | Use Azure Batch task and node count APIs | https://learn.microsoft.com/en-us/azure/batch/batch-get-resource-counts |
 | Build Azure Batch clients with JavaScript SDK | https://learn.microsoft.com/en-us/azure/batch/batch-js-get-started |

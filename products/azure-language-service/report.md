@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 179
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 96 | 53.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure tools and agents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents)
-  - Updated: 2026-02-07T06:03:00.000Z → 2026-10-29T22:16:00.000Z
 
 ## Classified Pages
 

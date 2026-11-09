@@ -1,9 +1,9 @@
 ---
 name: azure-files
-description: Expert knowledge for Azure Files development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Azure File Sync, NFS/SMB shares, cloud tiering, AVD FSLogix profiles, or RAG over Azure Files, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files).
+description: Expert knowledge for Azure Files development including best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure File Sync, cloud tiering, NFS/SMB shares, AVD FSLogix profiles, or RAG over Azure Files, and other Azure Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Files Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L75-L79 | Designing Azure Virtual Desktop hybrid architectures using Azure Files, including storage topology, identity/permissions, performance, and best practices for FSLogix profiles. |
 | Limits & Quotas | L80-L87 | Azure Files and File Sync limits for capacity, IOPS, throughput, scalability, and API throttling behavior, to plan performance, sizing, and avoid hitting quotas. |
 | Security | L88-L117 | Securing Azure Files and Azure File Sync: identity-based auth (AD DS, Entra, Kerberos), encryption, networking/firewalls, NTFS/ACLs, and secure mounting/permissions across Windows, Linux, and macOS. |
-| Configuration | L118-L141 | Configuring Azure Files and Azure File Sync: installs, tiering, redundancy, share size/perf, NFS mounts, private/public DNS/endpoints, and monitoring/alerts via Azure Monitor and logs |
-| Integrations & Coding Patterns | L142-L166 | Patterns and code samples for building RAG pipelines over Azure Files (Haystack, LangChain, LlamaIndex), using Pinecone/Qdrant/Weaviate, auth and data access, and .NET/Java/Python app integration. |
-| Deployment | L167-L175 | Guides for deploying Azure File Sync and migrating on-prem/NAS SMB/NFS data to Azure Files using portal/PowerShell/CLI, Storage Mover, and Data Box in hybrid or cloud-only setups. |
+| Configuration | L118-L140 | Configuring Azure Files and Azure File Sync: setup, tiering, endpoints, redundancy, NFS mounts, share size/perf, and monitoring/alerts via Azure Monitor and change feed. |
+| Integrations & Coding Patterns | L141-L165 | Patterns and code samples for building RAG pipelines over Azure Files (Haystack, LangChain, LlamaIndex), using Pinecone/Qdrant/Weaviate, auth and data access, and .NET/Java/Python app integration. |
+| Deployment | L166-L174 | Guides for deploying Azure File Sync and migrating on-prem/NAS SMB/NFS data to Azure Files using portal/PowerShell/CLI, Storage Mover, and Data Box. |
 
 ### Best Practices
 | Topic | URL |
@@ -121,7 +121,6 @@ This skill requires **network access** to fetch documentation content:
 | Silently install the Azure File Sync agent | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-agent-silent-installation |
 | Configure Azure File Sync cloud tiering date and space policies | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-policy |
 | Configure and monitor Azure File Sync with Azure Monitor | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring |
-| Track Azure File Sync agent versions and fixes | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-release-notes |
 | Plan and execute Azure File Sync resource moves | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-resource-move |
 | Configure Azure File Sync server endpoints and tiering | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoint-create |
 | Configure and manage Azure File Sync registered servers | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration |

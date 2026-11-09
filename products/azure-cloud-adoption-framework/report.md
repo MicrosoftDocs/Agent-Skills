@@ -49,10 +49,10 @@ use_when: Use when designing Azure landing zones, AVD, Arc-enabled Kubernetes, S
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 10
-- **Updated Pages**: 12
-- **Unchanged**: 184
-- **Deleted Pages**: 107
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 206
+- **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
 ## Classification Statistics
@@ -71,70 +71,6 @@ use_when: Use when designing Azure landing zones, AVD, Arc-enabled Kubernetes, S
 | *(Unclassified)* | 8 | 3.9% |
 
 ## Changes
-
-### New Pages
-
-- [Operating model](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/prepare-organization-for-cloud)
-- [Data governance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/data-governance-unified-data-platform)
-- [Skilling](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/prepare-people-for-cloud)
-- [Cost estimation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/estimate-total-cost-of-ownership)
-- [Adoption plan documentation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/document-cloud-adoption-plan)
-- [Data platform](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unified-data-platform)
-- [1. Planning](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/planning-unified-data-platform)
-- [2. Architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/architecture-unified-data-platform)
-- [4. Fabric governance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/fabric-governance-unified-data-platform)
-- [5. Operational standards](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/operational-standards-unified-data-platform)
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/whats-new)
-  - Updated: 2026-10-01T01:04:00.000Z → 2026-10-31T01:04:00.000Z
-- [1. Ready operations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/ready-cloud-operations)
-  - Updated: 2025-09-15T22:06:00.000Z → 2026-10-27T12:47:00.000Z
-- [2. Administer Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/administer)
-  - Updated: 2025-04-01T08:00:00.000Z → 2026-10-27T12:47:00.000Z
-- [3. Monitor Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/monitor)
-  - Updated: 2025-04-01T08:00:00.000Z → 2026-10-27T12:47:00.000Z
-- [4. Protect Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/protect)
-  - Updated: 2025-04-25T17:04:00.000Z → 2026-10-27T12:47:00.000Z
-- [Managing organization alignment](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/)
-  - Updated: 2026-04-10T18:03:00.000Z → 2026-10-31T01:04:00.000Z
-- [Cloud operations functions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-operations)
-  - Updated: 2026-04-10T18:03:00.000Z → 2026-10-31T01:04:00.000Z
-- [Cloud center of excellence functions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence)
-  - Updated: 2026-04-10T18:03:00.000Z → 2026-10-31T01:04:00.000Z
-- [Cloud automation functions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-automation)
-  - Updated: 2023-02-28T18:06:00.000Z → 2026-10-31T01:04:00.000Z
-- [Cloud data functions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-data)
-  - Updated: 2025-07-02T22:04:00.000Z → 2026-10-31T01:04:00.000Z
-- [Align the RACI matrix](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/raci-alignment)
-  - Updated: 2025-07-11T16:02:00.000Z → 2026-10-31T01:04:00.000Z
-- [Tools](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/resources/tools-templates)
-  - Updated: 2026-06-24T15:03:00.000Z → 2026-10-31T01:04:00.000Z
-
-### Deleted Pages
-
-- ~~2. Azure architecture~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/architecture-azure-landing-zones-unify-data-platform)
-- ~~1. Fabric architecture~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/architecture-fabric-data-lake-unify-data-platform)
-- ~~Data platform~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform)
-- ~~2. Baselines for Fabric (data lake)~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/governance-security-baselines-fabric-data-lake-unify-data-platform)
-- ~~1. Baselines with Purview (all data)~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/governance-security-baselines-purview-data-estate-unify-data-platform)
-- ~~1. Data processing~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/operational-standards-data-processing-standards-unify-data-platform)
-- ~~3. Data consumption~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/operational-standards-data-product-consumption-unify-data-platform)
-- ~~2. Data security~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/operational-standards-data-product-security-standards-unify-data-platform)
-- ~~1. Organizational readiness~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/organizational-readiness-unify-data-platform)
-- ~~5. Document adoption plan~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/document-cloud-adoption-plan)
-- ~~4. Estimate cloud costs~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/estimate-total-cost-of-ownership)
-- ~~1. Define operating model~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/prepare-organization-for-cloud)
-- ~~2. Gain cloud skills~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/prepare-people-for-cloud)
-- ~~Resource organization considerations for Azure Virtual Desktop~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org)
-- ~~Azure Virtual Desktop~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/)
-- ~~Enterprise-scale landing zone for Azure Virtual Desktop~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone)
-- ~~Business continuity and disaster recovery~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery)
-- ~~Enterprise enrollment~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-enterprise-enrollment)
-- ~~Identity and access management~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-identity-and-access-management)
-- ~~Management and monitoring~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-management-and-monitoring)
-- *...and 87 more*
 
 ## Classified Pages
 

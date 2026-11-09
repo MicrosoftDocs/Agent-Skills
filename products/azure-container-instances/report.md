@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-11-01'
+generated_at: '2026-11-08'
 category_descriptions:
   limits-quotas: ACI CPU/memory limits, quotas, standby pool caps, VNet constraints,
     and FAQs on scaling, resource behavior, and how to check or stay within these
@@ -10,9 +10,9 @@ category_descriptions:
   best-practices: 'Guidance on designing and running ACI workloads reliably: resource
     sizing, networking, storage, security, scaling, image management, and operational
     best practices.'
-  configuration: 'Configuring ACI container groups: env vars, DNS, volumes, GPUs,
-    probes, logging/monitoring, standby pools, restarts, entrypoints, updates, and
-    runtime command execution.'
+  configuration: 'Configuring ACI behavior: DNS, env vars, commands/entrypoints, probes,
+    restart policies, volumes, GPUs, standby pools, logging, and monitoring/log analytics
+    setup.'
   security: 'Securing Azure Container Instances: TLS/HTTPS setup, secrets and CMK
     encryption, managed identities/RBAC, secure ACR pulls, DNS reuse protection, and
     Azure Policy for compliance.'
@@ -27,17 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Instances development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when configuring ACI
-  standby pools, static IP networking, GitHub Actions deploys, Spot containers, or
-  secure ACR pulls, and other Azure Container Instances related development tasks.
-  Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service
-  (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when configuring ACI standby pools, static IP networking, GitHub Actions
-  deploys, Spot containers, or secure ACR pulls, and other Azure Container Instances
+  networking/IPs, standby pools, Spot containers, GitHub Actions deploys, or secure
+  ACR pulls, and other Azure Container Instances related development tasks. Not for
+  Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Batch (use azure-batch).
+use_when: Use when configuring ACI networking/IPs, standby pools, Spot containers,
+  GitHub Actions deploys, or secure ACR pulls, and other Azure Container Instances
   related development tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
-  azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Batch (use azure-batch).
 ---
 # Azure Container Instances Crawl Report
 
@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 - **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 81
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -72,16 +72,10 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ## Changes
 
-### New Pages
-
-- [Enclaves for confidential containers (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-enclaves)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq)
-  - Updated: 2026-07-26T11:03:00.000Z → 2026-10-29T17:04:00.000Z
-- [Confidential container groups](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-confidential-overview)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-10-26T08:00:00.000Z
+- [Configure monitoring and alerts](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pools-monitor-pool-events)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-11-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -105,6 +99,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Configure container group egress with NAT gateway](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-nat-gateway) | architecture-patterns | 0.70 | Documents the only supported outbound connectivity configuration for ACI in VNets and shows how to wire NAT Gateway and container groups, which is a product-specific pattern. |
 | [Configure custom DNS settings for container group](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-custom-dns) | configuration | 0.70 | Shows YAML fields and CLI usage for setting DNS servers and search domains for ACI container groups, including platform-specific behavior. |
 | [Configure liveness probes](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-liveness-probe) | configuration | 0.70 | Provides ACI-specific probe configuration fields (HTTP/TCP/exec, intervals, thresholds) in YAML/CLI, mapping Kubernetes-like probes to ACI. |
+| [Configure monitoring and alerts](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pools-monitor-pool-events) | configuration | 0.70 | The page describes how to integrate Azure Container Instances standby pools with Azure Log Analytics, including product-specific configuration steps and settings for capturing and analyzing standby pool events. This is concrete, service-specific monitoring configuration rather than a conceptual overview, but it doesn't focus on limits, troubleshooting error codes, or architecture decisions. |
 | [Configure readiness probes](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-readiness-probe) | configuration | 0.70 | Details readiness probe configuration options and fields for ACI container groups, including behavior and parameters. |
 | [Empty directory](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-emptydir) | configuration | 0.70 | Explains ACI-specific emptyDir volume configuration and Linux-only constraints, including how containers share ephemeral storage. |
 | [Enable SSL endpoint in sidecar](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-container-group-ssl) | security | 0.70 | Gives a concrete sidecar TLS pattern, including container group configuration, ports, and Nginx setup to terminate SSL for ACI workloads. |
@@ -134,7 +129,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Utilize predictive pooling (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-prediction-results) | decision-making | 0.65 | Shows how to interpret prediction metrics from runtime view APIs to adjust pool size, providing quantitative guidance for capacity decisions. |
 | [Viewing logs in Azure portal](https://learn.microsoft.com/en-us/azure/container-instances/viewing-logs-in-portal) | configuration | 0.65 | Shows portal-based configuration and workspace linkage for ACI logs, including which blades and options to use for Log Analytics integration. |
 | [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | limits-quotas | 0.65 | Describes scenarios and explicitly calls out limitations for deploying container groups into virtual networks; these typically include concrete constraints (such as supported subnets, IP ranges, or feature limits) that qualify as expert numeric/constraint knowledge. |
-| [Configure monitoring and alerts](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pools-monitor-pool-events) | configuration | 0.60 | Provides concrete configuration steps and query patterns to send and analyze standby pool events in Azure Monitor Logs. |
 | [Get pool and container details](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-get-details) | configuration | 0.60 | Explains how to query standby pool metadata and container group information via ACI APIs/commands, which is product-specific. |
 | [Monitor CPU and memory usage](https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances) | configuration | 0.60 | Same as index 31: service-specific guidance on enabling and using Azure Monitor metrics and logs for ACI. |
 | [Monitor Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances) | configuration | 0.60 | Describes how ACI integrates with Azure Monitor, including which metrics/logs are emitted and how to enable them, which is service-specific monitoring configuration. |

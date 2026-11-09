@@ -1,9 +1,9 @@
 ---
 name: azure-web-pubsub
-description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building WebSocket/MQTT apps, Socket.IO chat, geo-replicated hubs, custom domains, or autoscale deployments, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building real-time WebSocket/MQTT apps, using chat SDK/REST, Socket.IO, geo-replication, or autoscale, and other Azure Web PubSub related development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-10-18"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Web PubSub Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L53-L59 | Guidance on choosing chat SDK vs REST, selecting Web PubSub features for your scenario, and understanding pricing, billing meters, and cost implications. |
 | Architecture & Design Patterns | L60-L66 | Architectural patterns for Web PubSub: multi-region resiliency, bridging MQTT with WebSocket/Web PubSub, and understanding Socket.IO support internals for integration design. |
 | Limits & Quotas | L67-L72 | Capacity and performance limits for Web PubSub (connections, messages, scaling) and which Socket.IO server APIs aren’t supported or behave differently. |
-| Security | L73-L101 | Securing Azure Web PubSub: authN/Z for clients and apps (keys, Entra ID, identities, roles), mTLS, network/private endpoints, firewalls, outbound restrictions, and compliance via Azure Policy. |
+| Security | L73-L101 | Securing Web PubSub: authN/authZ for clients (Entra, keys, certs, managed identities, roles), network controls (private endpoints, firewalls, gateways), and compliance/policy configuration. |
 | Configuration | L102-L117 | Configuring Web PubSub runtime: storage/chat setup, metrics/logs and alerts, monitoring, custom domains, event routing, geo-replication, local tunneling, MQTT/Socket.IO options, and admin UI. |
 | Integrations & Coding Patterns | L118-L150 | Client and server integration patterns for Azure Web PubSub: SDK/REST usage, WebSocket/MQTT, JSON/protobuf subprotocols, auth, events (HTTP/AMQP/Functions), and Socket.IO integration. |
 | Deployment | L151-L156 | Guides for moving Web PubSub across regions, configuring Premium autoscale, and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub. |
@@ -84,7 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Disable key-based auth for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-disable-local-auth |
 | Secure Web PubSub with Azure Application Gateway | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-integrate-app-gateway |
 | Audit Azure Web PubSub compliance with Azure Policy | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-monitor-azure-policy |
-| Manage Azure Web PubSub network access control rules | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-network-access-control |
+| Configure network access control for Azure Web PubSub | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-network-access-control |
 | Secure Azure Web PubSub with private endpoints | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-private-endpoints |
 | Rotate Azure Web PubSub access keys safely | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-rotate-access-key |
 | Secure Web PubSub outbound traffic to Azure Functions via shared private endpoints | https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-secure-shared-private-endpoints |

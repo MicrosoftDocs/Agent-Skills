@@ -1,9 +1,9 @@
 ---
 name: azure-container-instances
-description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring ACI standby pools, static IP networking, GitHub Actions deploys, Spot containers, or secure ACR pulls, and other Azure Container Instances related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring ACI networking/IPs, standby pools, Spot containers, GitHub Actions deploys, or secure ACR pulls, and other Azure Container Instances related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Batch (use azure-batch).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-11-01"
+  generated_at: "2026-11-08"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Instances Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L54-L60 | Design patterns for giving ACI containers static inbound/outbound IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable network egress/ingress. |
 | Limits & Quotas | L61-L69 | ACI CPU/memory limits, quotas, standby pool caps, VNet constraints, and FAQs on scaling, resource behavior, and how to check or stay within these limits. |
 | Security | L70-L84 | Securing Azure Container Instances: TLS/HTTPS setup, secrets and CMK encryption, managed identities/RBAC, secure ACR pulls, DNS reuse protection, and Azure Policy for compliance. |
-| Configuration | L85-L116 | Configuring ACI container groups: env vars, DNS, volumes, GPUs, probes, logging/monitoring, standby pools, restarts, entrypoints, updates, and runtime command execution. |
+| Configuration | L85-L116 | Configuring ACI behavior: DNS, env vars, commands/entrypoints, probes, restart policies, volumes, GPUs, standby pools, logging, and monitoring/log analytics setup. |
 | Deployment | L117-L120 | Using GitHub Actions to build, push, and automatically deploy container images to Azure Container Instances, including workflow YAML setup and authentication configuration. |
 
 ### Troubleshooting
@@ -102,7 +102,7 @@ This skill requires **network access** to fetch documentation content:
 | Use standby pools to reduce Azure Container Instances scale-out latency | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-overview |
 | Request container groups from Azure Container Instances standby pools | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-request-container |
 | Update or delete Azure Container Instances standby pools | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-update-delete |
-| Monitor Azure Container Instances standby pool events with Log Analytics | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pools-monitor-pool-events |
+| Configure Log Analytics monitoring for ACI standby pools | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pools-monitor-pool-events |
 | Override container entrypoint command in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-start-command |
 | Manually stop and start Azure Container Instances container groups | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-stop-start |
 | Update running container groups in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-update |

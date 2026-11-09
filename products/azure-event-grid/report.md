@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 - **Unclassified**: 88
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 7
-- **Unchanged**: 258
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 266
 - **Deleted Pages**: 0
 - **Compared With**: `/home/runner/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -71,27 +71,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 88 | 33.1% |
 
 ## Changes
-
-### New Pages
-
-- [Configure IPv6 dual-stack support (preview)](https://learn.microsoft.com/en-us/azure/event-grid/namespace-ipv6-dual-stack)
-
-### Updated Pages
-
-- [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-configure-firewall)
-  - Updated: 2023-12-07T05:35:00.000Z → 2026-10-27T22:17:00.000Z
-- [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-configure-private-endpoints)
-  - Updated: 2023-12-07T05:35:00.000Z → 2026-10-27T22:17:00.000Z
-- [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/event-grid/configure-firewall-namespaces)
-  - Updated: 2023-11-30T05:35:00.000Z → 2026-10-27T22:17:00.000Z
-- [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/event-grid/configure-private-endpoints-pull)
-  - Updated: 2023-11-15T15:28:00.000Z → 2026-10-27T22:17:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-overview)
-  - Updated: 2026-05-08T06:13:00.000Z → 2026-10-27T22:17:00.000Z
-- [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/event-grid/policy-reference)
-  - Updated: 2024-02-06T18:05:00.000Z → 2025-08-06T05:10:00.000Z
-- [Create and manage namespaces](https://learn.microsoft.com/en-us/azure/event-grid/create-view-manage-namespaces)
-  - Updated: 2026-08-27T09:10:00.000Z → 2026-10-27T22:17:00.000Z
 
 ## Classified Pages
 
